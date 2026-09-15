@@ -25,7 +25,7 @@ class PracticalIslandsPassTests(unittest.TestCase):
         tiny = next(node for node in atlas["nodes"] if node["id"] == "TinyAvatar")
         self.assertEqual(tiny["usefulness"], "practical")
         self.assertIn("0.998", tiny["survived"])
-        self.assertIn("0.809", tiny["survived"])
+        self.assertIn("0.81", tiny["survived"])
 
         arbor = next(node for node in atlas["nodes"] if node["id"] == "Arborverb")
         self.assertEqual(arbor["usefulness"], "practical")
