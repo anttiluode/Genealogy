@@ -1,0 +1,94 @@
+{
+  "id": "moire-applied",
+  "title": "Applied Moire: from geometric claim to language-model substrate",
+  "summary": "This pass follows one of the few branches where the early geometric-interference story was pushed into ordinary machine learning at nontrivial scale. It keeps three stages separate: an early Moire neural-network demo whose strongest XOR/inevitable-oscillation claims were later killed, a One Formula synthesis whose physics leg failed a later null while its EEG and AI legs remained live, and MoireFormer as a 137.9M engineering artifact whose existence is stronger evidence than the biological interpretation wrapped around it.",
+  "order": 90,
+  "reviewed_at": "2026-09-15",
+  "nodes": [
+    {
+      "id": "moire-neural-network",
+      "url": "https://github.com/anttiluode/moire-neural-network",
+      "family": "neuron-machine",
+      "status": "ledger",
+      "claim": "An early attempt to replace explicit pairwise weights with frequency/angle/phase grid parameters whose geometric interference supplies nonlinear effective coupling, paired with the original PerceptionLab ECG feedback loop.",
+      "survived": "The repository packaged two durable experimental objects: an inspectable geometric-interference network and the checkerboard/sampling/homeostasis loop that later audits mechanized into a finite-resolution regime map. It is useful as an ancestor because the code made the later falsification possible.",
+      "killed": "The later Deerskin audit shows that the reported XOR advantage over an MLP was a restart-budget artifact under unmatched initialization budget, and the strong claim that finite-resolution self-observation must oscillate is false because fixed/dead regimes exist.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/moire-neural-network/blob/main/README.md",
+      "tags": ["moire", "geometric-interference", "xor", "ecg", "negative-results"],
+      "era": "Applied geometric interference",
+      "era_order": 2
+    },
+    {
+      "id": "One_formula_three_domains",
+      "url": "https://github.com/anttiluode/One_formula_three_domains",
+      "family": "geometric-neuron",
+      "status": "ledger",
+      "claim": "A synthesis repo asserting that the real Hermitian phase-coherence score Re[Q conj(K)] connects wave-field memory, schizophrenia EEG geometry and Moire attention.",
+      "survived": "The synthesis usefully isolates one mathematical operation across the three experiments. Its EEG leg records the same p=0.007, d=-1.21 zero-trained-parameter result, and its AI leg records a controlled 16M WikiText-2 comparison where the Moire arm ended 0.115 loss lower after five epochs before the idea was scaled further.",
+      "killed": "The wave-memory leg is no longer an independent proof: the later no-probe and wrong-phase controls show the claimed retrieval did not depend on the probe physics. The AI comparison also had about 4% more parameters in the Moire model, only two training runs, no full statistical test, and no independent ablation of theta gating versus phase scoring.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/One_formula_three_domains/blob/main/README.md",
+      "tags": ["phase-coherence", "eeg", "moire-attention", "wave-memory", "claim-audit"],
+      "era": "Applied geometric interference",
+      "era_order": 2
+    },
+    {
+      "id": "MoireFormer",
+      "url": "https://github.com/anttiluode/MoireFormer",
+      "family": "practical-tools",
+      "status": "experiment",
+      "claim": "A custom language-model implementation that replaces the standard attention score path with amplitude/phase projections and geometric interference, scaled to a 12-layer 137.9M-parameter model with a live chat artifact.",
+      "survived": "The strongest fact is engineering rather than biological: the repository contains a 137.9M-parameter custom Moire attention-style model, training/inference code and published weights/live demo, showing the mechanism can be implemented at ordinary language-model scale and produce nontrivial language behavior.",
+      "killed": "The artifact does not establish superiority over parameter-matched standard attention, does not prove that biological ephaptic phase coupling is the mechanism being exploited, and does not show that phase interference is necessary rather than one reparameterization of a trainable attention computation.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/MoireFormer/blob/main/README.md",
+      "tags": ["language-model", "moire-attention", "phase", "scaled-artifact", "huggingface"],
+      "era": "Applied geometric interference",
+      "era_order": 2
+    }
+  ],
+  "edges": [
+    {
+      "source": "moire-neural-network",
+      "target": "deerskin-hypothesis",
+      "type": "corrects",
+      "confidence": "medium",
+      "why": "The later Deerskin audit directly re-tests the matching MoireNet XOR and ECG/self-observation claims, but it does not explicitly name this repository as code provenance, so the correction link is kept below high confidence.",
+      "evidence": "https://github.com/anttiluode/deerskin-hypothesis/blob/main/README.md"
+    },
+    {
+      "source": "Geometric-Neuron",
+      "target": "One_formula_three_domains",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "One Formula packages the Geometric-Neuron wave-memory, EEG and Moire-attention experiments into a single formula-centered synthesis and identifies the Geometric-Neuron repository as its source repository.",
+      "evidence": "https://github.com/anttiluode/One_formula_three_domains/blob/main/README.md"
+    },
+    {
+      "source": "Geometric-Neuron",
+      "target": "MoireFormer",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "MoireFormer explicitly points to Geometric-Neuron as the theory/background origin of the architecture and says it was inspired by the Geometric Neuron / Deerskin concepts.",
+      "evidence": "https://github.com/anttiluode/MoireFormer/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "one-formula-three-fates",
+      "title": "One formula, three very different evidential fates",
+      "description": "The Hermitian phase-coherence motif is useful precisely because the branches do not all survive equally: wave-memory retrieval is killed by a no-probe null, the EEG signal remains an empirical small-cohort result needing replication, and the AI branch becomes a trainable 137.9M engineering artifact without thereby validating the biological story.",
+      "nodes": ["One_formula_three_domains", "Geometric-Neuron", "deerskin-hypothesis", "MoireFormer"]
+    },
+    {
+      "id": "artifact-stronger-than-metaphor",
+      "title": "A working artifact can survive after its motivating metaphor is narrowed",
+      "description": "The applied Moire line is most defensible when separated into mechanism and interpretation: an attention-like phase/interference parameterization can be trained and scaled even though earlier claims about inevitable oscillation, wave retrieval and biological identity are weakened or killed.",
+      "nodes": ["moire-neural-network", "Geometric-Neuron", "MoireFormer"]
+    }
+  ]
+}
