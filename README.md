@@ -1,121 +1,79 @@
 # Genealogy
 
-**A research archaeology of 400 public repositories: what descended from what, what failed, what survived, and what accidentally became useful.**
+Evidence-backed archaeology of Antti Luode's research repositories.
 
-Live atlas: **https://anttiluode.github.io/Genealogy/**
+The central premise is that hundreds of repositories are not hundreds of independent ideas. The project separates raw repository inventory from curated scientific interpretation, then records explicit inheritance, corrections, rediscoveries, convergences and extracted mechanisms.
 
-The important rule is that this repository keeps two different objects separate:
+## Live atlas
 
-```text
-repository census                     curated genealogy
-what exists                           what the evidence supports
-complete / mechanical                 deliberately incomplete
-names and metadata                    inspected claims and lineage
-no ancestry implied                   confidence-labelled edges
-```
+https://anttiluode.github.io/Genealogy/
 
-A missing genealogy edge means **not established yet**, not “unrelated.” Repository names and version numbers are useful search hints and nothing more.
+The static atlas includes:
 
-## What the page shows
+- the complete repository census,
+- a curated genealogy graph,
+- modular archaeology passes,
+- scientific-era Timeline and Corrections views,
+- survivor motifs and archaeology queue,
+- family/status/pass/edge filters,
+- one-hop lineage focus,
+- dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
-- **Genealogy** — evidence-backed relationships arranged by research family. Selection opens the narrow claim, what survived, what died, and upstream/downstream evidence. A 1-hop focus mode isolates the local ancestry trail.
-- **Timeline** — reviewed repositories grouped by scientific era. This is specifically designed to expose cases where the object itself changed even though the version naming continued.
-- **Corrections** — explicit `corrects` edges plus negative/ledger nodes and the claims they narrowed or killed.
-- **Census** — the full public repository inventory. Reviewed repos are distinguished from unread inventory.
-- **Survivors** — mechanisms that reappear across otherwise different metaphors.
-- **Archaeology queue** — transparent heuristics for deciding which unreviewed repositories deserve inspection next.
+## Current archaeology passes
 
-The header shows archaeology coverage so the page cannot visually confuse “40 interpreted repos” with “400 repos understood.”
+### Foundation atlas
 
-## Modular archaeology passes
+The first cross-family curated slice. It captures recurring mechanisms such as bounded observation, structural memory, operator compilation, active probing, persistent state, sparse publication, splat/world representation, and search/routing.
 
-The original cross-family scaffold remains in the base files:
+### GeometricNeuron ladder
 
-- `data/nodes.json`
-- `data/edges.json`
-- `data/motifs.json`
+Treats the numbered GeometricNeuron repositories as scientific eras instead of assuming version-number ancestry. Explicit corrections survive; unsupported numerical ladders do not become edges.
 
-Deeper digs live under:
+### Splat / WorldModel
 
-```text
-data/passes/
-    index.json
-    geometric-ladder.json
-    clockfield.json          # future
-    splats.json              # future
-    ...
-```
+Tracks layered Gabor tools, phase transport, persistent fields, sparse predictive belief, observer-resource attacks, shared operator worlds and active inverse sensing. This pass corrected the atlas's own earlier speculative `Splatworld2 → WorldModel` edge using WorldModel's explicit ancestry.
 
-Each pass carries its own metadata, nodes, edges and optional motifs. The Python validator and browser loader merge enabled passes at runtime while preserving `pass_id`.
+### Clockfield pruning
 
-This is intentional scientific bookkeeping. If a later pass changes our interpretation, we can see **which archaeology pass proposed which relationship** instead of silently rewriting one monolithic history.
+Separates four things that had become entangled in the Clockfield family:
 
-## Evidence rules
+1. executable toy field dynamics,
+2. grand physical identifications,
+3. later falsifiers/autopsies,
+4. computational mechanisms that remain useful after the physics story is removed.
 
-Edges use six meanings:
+The pass adds nine reviewed repositories, including `BirthOfClockfield`, `SimpsonsUniverse`, `HorizonNet`, `OutoSynapsi`, and `ClockfieldUnified`. The strongest survivors are not the cosmological claims: they are the Beurling-lattice mathematical object isolated by the SimpsonsUniverse audit, HorizonNet's idleness/observer-horizon result, traffic-shaped body geometry in OutoSynapsi, and the narrow Physics Router extraction in ClockfieldUnified.
 
-| edge | meaning |
-|---|---|
-| `inherits` | a mechanism/idea is explicitly carried forward |
-| `forks` | a deliberate descendant/new repo from a predecessor |
-| `rediscovery` | substantially the same mechanism reached by another route |
-| `corrects` | a later repo explicitly narrows or kills an earlier interpretation |
-| `extracts` | a smaller practical/scientific mechanism was pulled out of a larger project |
-| `converges` | formerly separate lineages are intentionally combined |
+## Evidence rule
 
-An edge needs repository evidence: an explicit lineage statement, result note, code descent, commit history, or other inspected material. **Name similarity or version order alone never earns an edge.**
+An edge means evidence was found for that relationship. Similar names and version numbers are only discovery hints.
 
-Confidence is part of the record. `high` means the relationship is explicit or directly evidenced; `medium` means there is real support but more commit-level archaeology is warranted; `low` should be rare and must still have evidence.
+Negative results remain in the tree. A failed interpretation often explains why a later mechanism exists, so deleting it would erase the actual genealogy.
 
-## Negative results are ancestors too
-
-This atlas keeps failed experiments because many of the strongest later mechanisms exist **because** a seductive earlier story failed.
-
-The genealogy tracks both:
+## Data layout
 
 ```text
-idea -> success -> extraction
-idea -> falsifier -> correction -> better question
+data/repos.json          complete census snapshot
+data/nodes.json          foundation curated nodes
+data/edges.json          foundation evidence edges
+data/motifs.json         foundation recurring mechanisms
+data/passes/index.json   enabled archaeology passes
+data/passes/*.json       separable reviewed passes
 ```
 
-The Geometric-ladder pass makes this explicit: V8, V21 and V22 are not dead ends. They are selection events that remove mechanisms and force narrower descendants.
+Passes stay modular so later archaeology can correct one family without rewriting the whole atlas.
 
-## Run locally
-
-The site has no build step and no frontend dependencies.
-
-```bash
-python -m http.server 8000
-```
-
-Open `http://localhost:8000/`.
-
-Validate the atlas and run tests:
+## Validation
 
 ```bash
 python scripts/validate_data.py
 python -m unittest discover -s tests -v
 node --check assets/app.js
+node --check assets/zoom.js
 ```
 
-## Refresh the repository census
+GitHub Actions runs the same checks on pull requests and `main` pushes. The repository census refresh remains separate from interpretation changes.
 
-```bash
-python scripts/refresh_repos.py anttiluode
-```
+## Rule
 
-The refresh uses GitHub's public API, paginates 100 repositories at a time, preserves existing review-state annotations, writes atomically, and refuses to replace a good census with an empty response.
-
-`.github/workflows/refresh-repos.yml` refreshes automatically and `static.yml` deploys the repository root directly to GitHub Pages.
-
-## Adding a research pass
-
-1. Read the repositories themselves. Prefer README/result ledgers, explicit lineage notes and relevant commits over retrospective memory.
-2. Create a pass file under `data/passes/`.
-3. Give each node a **narrow** `claim`, plus `survived`, `killed`, `usefulness`, `confidence`, `evidence`, tags, and an `era`/`era_order`.
-4. Add only edges you can defend. Do not create a chain because filenames look sequential.
-5. Add the pass to `data/passes/index.json`.
-6. Record surprising reversals or rediscoveries in `RESEARCH_LOG.md`.
-7. Run the validator and tests.
-
-The goal is not to make every old idea look prescient. The goal is to discover which small mechanisms survive repeated attempts to kill them—and which useful things were abandoned when the next repo began.
+**Names are hints, not evidence. Negative results stay in the family tree.**
