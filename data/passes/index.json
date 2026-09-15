@@ -54,5 +54,9 @@
   {
     "path": "measurement-discipline.json",
     "enabled": true
+  },
+  {
+    "path": "practical-islands.json",
+    "enabled": true
   }
 ]
