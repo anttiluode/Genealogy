@@ -1,0 +1,14 @@
+[
+  {
+    "id": "Seed",
+    "family": "seed",
+    "status": "experiment",
+    "claim": "Schema seed only.",
+    "survived": "Nothing; placeholder seed for contract validation.",
+    "killed": "Nothing.",
+    "usefulness": "none",
+    "confidence": "high",
+    "evidence": "Contract seed.",
+    "tags": ["schema"]
+  }
+]
