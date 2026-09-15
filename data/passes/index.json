@@ -18,5 +18,9 @@
   {
     "path": "causal-memory.json",
     "enabled": true
+  },
+  {
+    "path": "retention-economy.json",
+    "enabled": true
   }
 ]
