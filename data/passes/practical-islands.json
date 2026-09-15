@@ -1,7 +1,7 @@
 {
   "id": "practical-islands",
   "title": "Practical islands: artifacts that remain useful without the theory",
-  "summary": "Not every valuable repository needs a defensible ancestry edge. This pass selects artifacts that can be installed, played, measured or used directly even if every surrounding brain/physics metaphor is discarded. It deliberately keeps the graph sparse: usefulness is the selection criterion, and missing provenance is not replaced by thematic similarity.",
+  "summary": "Not every valuable repository needs a defensible ancestry edge. This pass selects artifacts that can be installed, played, measured or used directly even if every surrounding brain/physics metaphor is discarded. It deliberately keeps the graph sparse: usefulness is the selection criterion, and missing provenance is not replaced by thematic similarity. TinyAvatar is reused from the earlier Splat pass rather than duplicated here.",
   "order": 150,
   "reviewed_at": "2026-09-15",
   "nodes": [
@@ -17,21 +17,6 @@
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/PhaseSpaceVisualizerVST/blob/main/README.md",
       "tags": ["vst3", "audio", "phase-space", "visualization", "standalone"],
-      "era": "Practical islands",
-      "era_order": 6
-    },
-    {
-      "id": "TinyAvatar",
-      "url": "https://github.com/anttiluode/TinyAvatar",
-      "family": "practical-tools",
-      "status": "tool",
-      "claim": "A train-on-yourself webcam avatar whose decoder renders a face from a few hundred Gabor wave packets and whose live driver transports complex packet phases between encoder keyframes.",
-      "survived": "It is both a usable application and a measurement instrument: a bundled checkpoint can be driven immediately, users can train on their own video, the decoder exports to about 7 MB ONNX, and on real head-motion video packet phase steps predict rendered local optical flow with fitted slope +0.998 and weighted r = +0.809 over 16,401 packet-frame pairs; the per-packet scramble drops to r = +0.236.",
-      "killed": "The encoder does not transport arbitrary out-of-manifold image translation: a 28 px input slide moves the reconstruction only about 0.5 px, so it re-indexes onto the learned manifold. Phase-correlation on Gabor patches also produced wavelength-aliasing garbage and was replaced by a gradient-based flow instrument. The practical avatar survives those boundaries.",
-      "usefulness": "practical",
-      "confidence": "high",
-      "evidence": "https://github.com/anttiluode/TinyAvatar/blob/main/README.md",
-      "tags": ["avatar", "webcam", "gabor", "onnx", "phase-transport", "tool"],
       "era": "Practical islands",
       "era_order": 6
     },
