@@ -2,5 +2,9 @@
   {
     "path": "geometric-ladder.json",
     "enabled": true
+  },
+  {
+    "path": "splat-world.json",
+    "enabled": true
   }
 ]
