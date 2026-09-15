@@ -30,5 +30,9 @@
   {
     "path": "spectral-routing.json",
     "enabled": true
+  },
+  {
+    "path": "moire-applied.json",
+    "enabled": true
   }
 ]
