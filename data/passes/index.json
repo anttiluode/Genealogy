@@ -38,5 +38,9 @@
   {
     "path": "identifiability-spine.json",
     "enabled": true
+  },
+  {
+    "path": "dynamical-neuron-reset.json",
+    "enabled": true
   }
 ]
