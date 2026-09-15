@@ -62,5 +62,9 @@
   {
     "path": "eeg-instruments.json",
     "enabled": true
+  },
+  {
+    "path": "creative-dsp.json",
+    "enabled": true
   }
 ]

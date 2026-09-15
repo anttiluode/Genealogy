@@ -1,0 +1,78 @@
+{
+  "id": "creative-dsp",
+  "title": "Creative DSP survivors: mathematics as a control surface, not a proof",
+  "summary": "Three April 2026 audio artifacts where exotic mathematical language produced concrete software. The pass keeps the installable VST/standalone behavior, records one unusually explicit implementation lineage from AdelicPhaseFreezerVST into ButSeriously, and narrows DynamicalMRIlol's topology/chaos labels to the simple heuristics its code actually computes.",
+  "order": 170,
+  "reviewed_at": "2026-09-15",
+  "nodes": [
+    {
+      "id": "AdelicPhaseFreezerVST",
+      "url": "https://github.com/anttiluode/AdelicPhaseFreezerVST",
+      "family": "creative-dsp",
+      "status": "tool",
+      "claim": "A JUCE VST3/standalone stereo effect that embeds each channel with a short delay, applies a magnitude/phase-dependent nonlinear gate, then feeds the signal through a bank of delay arms interpolating between prime-number and harmonic length patterns.",
+      "survived": "The DSP object is concrete regardless of its theoretical vocabulary: Beta continuously changes the delay-length pattern, Base Time scales it, Resonance feeds the arm average back, the EML control changes a phase-dependent waveshaping gate, dry/wet is explicit, and the repository includes source plus a built VST3/standalone target and live delay-embedding scope.",
+      "killed": "Calling the interpolation a Bost-Connes phase transition or a quantum-thermodynamic/topological process is not established by the implementation. In code, Beta is a bounded linear interpolation between two delay-length arrays and the 'EML gate' is a hand-defined magnitude/atan2 mismatch passed through exp and tanh; the usable sound effect does not require the stronger Bost-Connes or fundamental-physics interpretation.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/AdelicPhaseFreezerVST/blob/main/PluginProcessor.cpp",
+      "tags": ["vst3", "delay", "phase", "waveshaper", "creative-tool"],
+      "era": "Practical instruments",
+      "era_order": 6
+    },
+    {
+      "id": "ButSeriously",
+      "url": "https://github.com/anttiluode/ButSeriously",
+      "family": "creative-dsp",
+      "status": "tool",
+      "claim": "A direct continuation of the Adelic processor that turns the same prime/harmonic delay network into a playable MIDI-tuned effect and adds saved presets.",
+      "survived": "The practical extension is load-bearing and visible in code: incoming MIDI note-on messages are converted to 1000/frequency milliseconds and temporarily override Base Delay, so a drum loop or other input can be retuned from a keyboard; manual delay changes release the MIDI override. The repository also ships a built VST3 and a preset directory, making the inherited effect more instrument-like.",
+      "killed": "MIDI tuning does not validate the README's Bost-Connes, topological-synthesizer or phase-transition interpretation. The core audio path remains the same engineered delay/gate network as AdelicPhaseFreezerVST; its value is that the mapping sounds and plays usefully, not that number theory or topology has been physically realized inside the plugin.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/ButSeriously/blob/main/Pluginprocessor.cpp",
+      "tags": ["vst3", "midi", "delay", "resonator", "presets", "creative-tool"],
+      "era": "Practical instruments",
+      "era_order": 6
+    },
+    {
+      "id": "DynamicalMRIlol",
+      "url": "https://github.com/anttiluode/DynamicalMRIlol",
+      "family": "creative-dsp",
+      "status": "tool",
+      "claim": "A JUCE VST3/standalone audio microscope combining several delayed-coordinate embeddings, recurrence visualization, a rotatable 3-D projection and simple live dynamical summaries.",
+      "survived": "As a visualizer it exposes several useful views unavailable in a plain spectrum: multiple delay scales, a recurrence matrix, a stereo/delayed 3-D cloud, a bounding-box volume estimate, local path-step divergence and a curvature-like trajectory statistic. These are concrete exploratory features for comparing periodic, noisy, transient and repeating audio.",
+      "killed": "The automatic TORUS/CHAOTIC/HYBRID/COLLAPSED labels are heuristics, not a topological classifier or validated chaos analysis. 'Attractor volume' is the axis-aligned bounding-box volume; 'chaos' is mean distance between consecutive embedded points; 'curvature' is an unnormalized 1-minus-dot statistic; and fixed thresholds such as chaos > 0.4 assign the names. The visual instrument survives, but those labels should not be read as proof of torus topology, an attractor, or deterministic chaos.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/DynamicalMRIlol/blob/main/TopologyAnalyzer.cpp",
+      "tags": ["vst3", "takens", "recurrence", "visualization", "heuristics"],
+      "era": "Practical instruments",
+      "era_order": 6
+    }
+  ],
+  "edges": [
+    {
+      "source": "AdelicPhaseFreezerVST",
+      "target": "ButSeriously",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "ButSeriously's repository description explicitly calls it 'AdelicPhasefreezer with midi input and preset saving'; it was created later the same day, and its processor preserves the earlier delay-embedding, EML-gate and prime/harmonic arm loop while adding MIDI note-to-delay control and parameter-listener logic.",
+      "evidence": "https://github.com/anttiluode/ButSeriously"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "mathematics-can-survive-as-control-surface",
+      "title": "A mathematical story can leave behind a useful control surface",
+      "description": "Even when Bost-Connes/topology language is demoted, the audio mappings remain manipulable objects: prime-versus-harmonic delay layouts, magnitude/phase-dependent gating, MIDI retuning and delayed-coordinate visualizations. The durable residue is often a distinctive control mapping rather than the explanatory theory that named it.",
+      "nodes": ["AdelicPhaseFreezerVST", "ButSeriously", "DynamicalMRIlol", "PrimeCrystalVST", "AnttisImageSynthVST"]
+    },
+    {
+      "id": "analysis-labels-need-calibration",
+      "title": "A vivid analysis label is not a calibrated measurement",
+      "description": "Phase portraits and recurrence plots are useful instruments, but labels such as torus, chaos, crystallization or topology require matched definitions and validation. DynamicalMRIlol makes this especially visible because its source exposes the exact simple heuristics behind the dramatic names.",
+      "nodes": ["DynamicalMRIlol", "PhaseSpaceVisualizerVST", "TakensPhaseSpaceVisualizerVST"]
+    }
+  ]
+}
