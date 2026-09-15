@@ -1,0 +1,41 @@
+name: Refresh repository census
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 3 * * 1'
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'data/repos.json'
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Refresh census
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/refresh_repos.py anttiluode
+      - name: Validate atlas
+        run: |
+          python scripts/validate_data.py
+          python -m unittest discover -s tests -v
+      - name: Commit changed census
+        run: |
+          if git diff --quiet -- data/repos.json; then
+            echo 'Census unchanged.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/repos.json
+          git commit -m 'data: refresh repository census'
+          git push
