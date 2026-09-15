@@ -3,27 +3,36 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Genealogy — 400 repos, fewer ideas</title>
-  <meta name="description" content="An evidence-backed archaeology of Antti Luode's research repositories: what descended, what died, and what survived.">
+  <title>Genealogy — 400 repos, fewer recurring machines</title>
+  <meta name="description" content="An evidence-backed archaeology of Antti Luode's research repositories: ancestry, corrections, surviving mechanisms, and unresolved branches.">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <header class="masthead">
     <div class="eyebrow">PERCEPTIONLAB / RESEARCH ARCHAEOLOGY</div>
     <h1>Genealogy</h1>
-    <p class="lede">Hundreds of repositories. Far fewer recurring machines. This atlas separates <strong>what exists</strong> from <strong>what we can actually prove descended from what</strong>.</p>
+    <p class="lede">Four hundred repositories are not four hundred ideas. This atlas tracks the smaller set of mechanisms that were inherited, rediscovered, corrected, killed, or extracted into something useful.</p>
     <div class="stats" id="stats" aria-live="polite">
       <div><span id="stat-repos">—</span><small>repos in census</small></div>
       <div><span id="stat-nodes">—</span><small>reviewed nodes</small></div>
       <div><span id="stat-edges">—</span><small>evidence edges</small></div>
+      <div><span id="stat-corrections">—</span><small>explicit corrections</small></div>
       <div><span id="stat-motifs">—</span><small>survivor motifs</small></div>
+      <div><span id="stat-passes">—</span><small>archaeology passes</small></div>
     </div>
+    <div class="coverage" aria-label="Archaeology coverage">
+      <div class="coverage-track"><i id="coverage-bar"></i></div>
+      <span id="coverage-text">—</span>
+    </div>
+    <div id="era-strip" class="era-strip" aria-label="Scientific eras"></div>
   </header>
 
   <main>
     <section class="control-deck" aria-label="Atlas controls">
       <nav class="tabs" aria-label="Views">
         <button class="tab active" data-view="genealogy">Genealogy</button>
+        <button class="tab" data-view="timeline">Timeline</button>
+        <button class="tab" data-view="corrections">Corrections</button>
         <button class="tab" data-view="census">Census</button>
         <button class="tab" data-view="survivors">Survivors</button>
         <button class="tab" data-view="queue">Archaeology queue</button>
@@ -32,6 +41,8 @@
         <label><span>Search</span><input id="search" type="search" placeholder="repo, mechanism, claim…"></label>
         <label><span>Family</span><select id="family-filter"><option value="">All families</option></select></label>
         <label><span>Status</span><select id="status-filter"><option value="">All statuses</option></select></label>
+        <label><span>Pass</span><select id="pass-filter"><option value="">All research passes</option></select></label>
+        <label><span>Edge</span><select id="edge-filter"><option value="">All edge types</option></select></label>
       </div>
     </section>
 
@@ -40,32 +51,68 @@
     <section class="view active" id="view-genealogy" data-view="genealogy">
       <div class="section-head">
         <div><div class="eyebrow">EVIDENCE-BACKED ONLY</div><h2>The braided river</h2></div>
-        <p>An edge means we found lineage evidence. No edge means <em>not established yet</em>, not “unrelated.” Dashed edges are medium-confidence archaeology.</p>
+        <p>An edge means we found evidence for that relationship. A missing edge means <em>not established yet</em>. Version numbers and similar names are discovery hints, never ancestry by themselves.</p>
       </div>
       <div class="graph-shell">
-        <div class="graph-toolbar"><div class="legend" id="edge-legend"></div><button id="reset-detail" class="quiet-button">Clear selection</button></div>
+        <div class="graph-toolbar">
+          <div class="legend" id="edge-legend"></div>
+          <div class="toolbar-actions">
+            <button id="focus-selected" class="quiet-button" disabled>Focus 1-hop trail</button>
+            <button id="reset-detail" class="quiet-button">Clear selection</button>
+          </div>
+        </div>
         <div class="graph-stage"><svg id="graph" role="img" aria-label="Repository genealogy graph" viewBox="0 0 1500 900"></svg></div>
-        <aside id="detail" class="detail-panel"><div class="detail-placeholder"><span class="crosshair">＋</span><h3>Select a repository</h3><p>The useful record is not just what a repo claimed. It is what survived, what died, and how confident the ancestry is.</p></div></aside>
+        <aside id="detail" class="detail-panel">
+          <div class="detail-placeholder"><span class="crosshair">＋</span><h3>Select a repository</h3><p>Inspect what survived, what died, and the evidence traffic around it.</p></div>
+        </aside>
       </div>
     </section>
 
+    <section class="view" id="view-timeline" data-view="timeline">
+      <div class="section-head">
+        <div><div class="eyebrow">THE OBJECT ITSELF CHANGED</div><h2>Scientific timeline</h2></div>
+        <p>Grouping by scientific era prevents a misleading “V2 → V3 → V4” story when later repositories are actually autopsies, corrections, or different machines wearing the same family name.</p>
+      </div>
+      <div id="timeline-content" class="timeline"></div>
+    </section>
+
+    <section class="view" id="view-corrections" data-view="corrections">
+      <div class="section-head">
+        <div><div class="eyebrow">SELECTION EVENTS</div><h2>Corrections & dead claims</h2></div>
+        <p>These are not embarrassing side notes. They are where the genealogy actually branches: an attractive explanation fails, and a smaller mechanism survives.</p>
+      </div>
+      <div id="corrections-content"></div>
+    </section>
+
     <section class="view" id="view-census" data-view="census">
-      <div class="section-head"><div><div class="eyebrow">INVENTORY ≠ INTERPRETATION</div><h2>Repository census</h2></div><p>Every discovered repo belongs here, even before anyone has earned the right to draw an ancestry arrow.</p></div>
+      <div class="section-head">
+        <div><div class="eyebrow">INVENTORY ≠ INTERPRETATION</div><h2>Repository census</h2></div>
+        <p>Every discovered repo belongs here, even before anyone has earned the right to draw an ancestry arrow.</p>
+      </div>
       <div id="census-content" class="panel"></div>
     </section>
 
     <section class="view" id="view-survivors" data-view="survivors">
-      <div class="section-head"><div><div class="eyebrow">WHAT KEPT COMING BACK?</div><h2>Survivor motifs</h2></div><p>Mechanisms recurring across different metaphors—field, neuron, splat, GA, observer—are stronger clues than naming continuity.</p></div>
+      <div class="section-head">
+        <div><div class="eyebrow">WHAT KEPT COMING BACK?</div><h2>Survivor motifs</h2></div>
+        <p>Mechanisms recurring across different metaphors—field, neuron, splat, GA, observer—are stronger clues than naming continuity.</p>
+      </div>
       <div id="motif-grid" class="motif-grid"></div>
     </section>
 
     <section class="view" id="view-queue" data-view="queue">
-      <div class="section-head"><div><div class="eyebrow">NEXT DIG SITES</div><h2>Archaeology queue</h2></div><p>The queue favors ancestors, abandoned starts, cross-links, practical tools and suspiciously repeated mechanisms—not novelty.</p></div>
+      <div class="section-head">
+        <div><div class="eyebrow">NEXT DIG SITES</div><h2>Archaeology queue</h2></div>
+        <p>The queue favors ancestors, abandoned starts, cross-links, practical tools and suspiciously repeated mechanisms—not novelty.</p>
+      </div>
       <div id="queue-content" class="queue-grid"></div>
     </section>
   </main>
 
-  <footer><p><strong>Rule:</strong> names are hints, not evidence. Negative results stay in the family tree.</p><a href="https://github.com/anttiluode/Genealogy">source / evidence ledger ↗</a></footer>
+  <footer>
+    <p><strong>Rule:</strong> names are hints, not evidence. Negative results stay in the family tree, and archaeology passes stay separable so later reinterpretation can be audited.</p>
+    <a href="https://github.com/anttiluode/Genealogy">source / evidence ledger ↗</a>
+  </footer>
   <script src="assets/app.js"></script>
 </body>
 </html>
