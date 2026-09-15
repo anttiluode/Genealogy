@@ -1,0 +1,215 @@
+{
+  "id": "early-adaptive-fossils",
+  "title": "Early adaptive fossils: embodied loops and AI-projection mismatches",
+  "summary": "Saturday's archive audit makes a useful distinction across the older projects: some loose-brain-era repos genuinely built living closed loops in which sensing changed persistent/adaptive state and action fed back into the world, while others used rich biological or dynamical language for implementations that were much simpler than the motivating question. This pass preserves both kinds of receipt. The goal is not to shame the early work; it is to recover the executable residue without silently upgrading names into mechanisms.",
+  "order": 130,
+  "reviewed_at": "2026-09-15",
+  "nodes": [
+    {
+      "id": "FractalBrain",
+      "url": "https://github.com/anttiluode/FractalBrain",
+      "family": "early-adaptive",
+      "status": "idea-mine",
+      "claim": "An early attempt at a living continuously adapting AI organism, assembled from a recursive grow/prune core plus BERT, GPT-2, VAE, memory, novelty, emotion and biologically named modules.",
+      "survived": "The durable question is structural plasticity and persistent internal state: novelty can trigger growth, low-activity structure can be pruned, state can be saved, and the system is framed more like a continuously changing creature than a one-shot function.",
+      "killed": "The README itself apologizes for ChatGPT-written hype and warns not to expect sensible speech. The grand brain-module interpretation is not evidence: much of the implementation is conventional pretrained-model/VAE plumbing with biological labels rather than a demonstrated new cognitive architecture.",
+      "usefulness": "conceptual",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/FractalBrain/blob/main/README.md",
+      "tags": ["growth", "pruning", "persistent-state", "ai-projection", "early-creature"],
+      "era": "Early adaptive fossils",
+      "era_order": 1
+    },
+    {
+      "id": "buginthemachine",
+      "url": "https://github.com/anttiluode/buginthemachine",
+      "family": "early-adaptive",
+      "status": "experiment",
+      "claim": "A webcam-driven adaptive creature loop: brightness and motion feed a Hebbian network whose nodes can grow or prune while the whole evolving network can be visualized, saved and restored.",
+      "survived": "The executable residue is embodiment and persistence: world sensing continuously changes an adaptive internal network, and that network is a stateful object that can be saved and resumed rather than recomputed from scratch each frame.",
+      "killed": "The repo does not establish that probabilistic growth/pruning or Hebbian adaptation improves a defined task, nor that the 3-D neural visualization reflects a biological mechanism. Its value is the closed adaptive loop, not a performance claim.",
+      "usefulness": "conceptual",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/buginthemachine/blob/main/README.md",
+      "tags": ["webcam", "hebbian", "growth", "pruning", "embodiment"],
+      "era": "Early adaptive fossils",
+      "era_order": 1
+    },
+    {
+      "id": "FractalBug",
+      "url": "https://github.com/anttiluode/FractalBug",
+      "family": "early-adaptive",
+      "status": "experiment",
+      "claim": "A webcam-driven multi-layer 'hive mind' in which several temporally stateful processors make weighted movement suggestions and jointly steer behavior.",
+      "survived": "Multiple internal perspectives with temporal state participate in action rather than only classification: forward/backward encoders, weighted layer contributions and live sensory input form a persistent perception-to-movement loop.",
+      "killed": "The README's collective-intelligence/emergence language is descriptive rather than a controlled scientific result. No matched baseline establishes that the hive-mind framing or bidirectional layers provide a unique advantage.",
+      "usefulness": "conceptual",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/FractalBug/blob/main/readme.md",
+      "tags": ["embodiment", "temporal-state", "multi-agent-inside", "webcam", "movement"],
+      "era": "Early adaptive fossils",
+      "era_order": 1
+    },
+    {
+      "id": "TiniOnes",
+      "url": "https://github.com/anttiluode/TiniOnes",
+      "family": "early-adaptive",
+      "status": "experiment",
+      "claim": "A shared sensory world populated by moving/hearing agents whose behavior can be influenced by learned EEG-autoencoder latent vectors and by sounds produced by the agents themselves.",
+      "survived": "The important residue is environmental closure: agents see and hear a common world, hear themselves weakly, emit signals that re-enter sensing, and can have learned latent state inserted into the behavior loop.",
+      "killed": "The EEG-derived latent does not by itself establish a biologically meaningful brain model, and the repo provides no controlled evidence that EEG-shaped internal state is necessary for the emergent behaviors. The useful object is the shared embodied loop.",
+      "usefulness": "conceptual",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/TiniOnes/blob/main/README.md",
+      "tags": ["agents", "shared-world", "self-hearing", "eeg-latent", "embodiment"],
+      "era": "Early adaptive fossils",
+      "era_order": 1
+    },
+    {
+      "id": "MoireBrain",
+      "url": "https://github.com/anttiluode/MoireBrain",
+      "family": "early-adaptive",
+      "status": "idea-mine",
+      "claim": "A WebGL living atlas using fast and slow procedural-noise layers plus observer zoom to create scale-dependent Moire patterns, interpreted at the time as a hippocampus/cortex memory-consolidation metaphor.",
+      "survived": "Two distinct relaxation/evolution scales and observer scale genuinely alter the visible pattern. The project is a useful visual intuition pump for interference and scale-dependent observation.",
+      "killed": "The fast/slow layers are procedural noise mixed by a slider, not learned hippocampal-to-cortical memory transfer. The cognition/thought interpretation is explicitly speculative, and the striking patterns arise from sampling/interference rather than demonstrated memory consolidation.",
+      "usefulness": "conceptual",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/MoireBrain/blob/main/README.md",
+      "tags": ["moire", "timescales", "observer-scale", "procedural-noise", "metaphor"],
+      "era": "Early adaptive fossils",
+      "era_order": 1
+    },
+    {
+      "id": "FieldLatentBridge",
+      "url": "https://github.com/anttiluode/FieldLatentBridge",
+      "family": "early-adaptive",
+      "status": "negative",
+      "claim": "A visual bridge sketch between field space and latent space using an encoder/decoder and animated interpolation.",
+      "survived": "It preserves a question that later became important elsewhere: can distributed field state and compact latent state be two views of one evolving representation? The visualization also separates field-like and latent-like coordinates enough to make that question tangible.",
+      "killed": "The implementation does not contain the persistent latent trajectory suggested by the idea. On every update it creates a fresh random field state, passes it through untrained encoder/decoder networks, and visualizes the result; there is no learned or persistent field-to-latent dynamics.",
+      "usefulness": "conceptual",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/FieldLatentBridge/blob/main/FieldLatentBridge.py",
+      "tags": ["field", "latent", "visualization", "negative-result", "ai-projection"],
+      "era": "Early adaptive fossils",
+      "era_order": 1
+    },
+    {
+      "id": "weirdfieldthingy",
+      "url": "https://github.com/anttiluode/weirdfieldthingy",
+      "family": "early-adaptive",
+      "status": "experiment",
+      "claim": "A continuously evolving 2-D convolution/decay/noise field that is perturbed by live webcam input and whose full state can be saved, loaded and reset.",
+      "survived": "Unlike the untrained FieldLatentBridge sketch, this really does maintain an evolving medium that external sensory input perturbs over time. The persistent field itself is the computational object, and later ephaptic variants continue that medium-first question.",
+      "killed": "A live evolving field is not by itself evidence for ephaptic brain computation, cognition or useful learning. The repo establishes a controllable persistent medium, not a task advantage or biological correspondence.",
+      "usefulness": "conceptual",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/weirdfieldthingy/blob/main/README.md",
+      "tags": ["field", "webcam", "persistent-medium", "ephaptic", "live-loop"],
+      "era": "Early adaptive fossils",
+      "era_order": 1
+    },
+    {
+      "id": "Little_dude",
+      "url": "https://github.com/anttiluode/Little_dude",
+      "family": "early-adaptive",
+      "status": "ledger",
+      "claim": "A brainwave-mapped multi-scale attention experiment that processes the same sequence through five parallel temporal windows and combines them with a cross-scale coherence detector.",
+      "survived": "The actual executable mechanism is straightforward multi-scale temporal processing: five parallel frequency-inspired processors expose different horizons and a soma-like detector measures when their representations align.",
+      "killed": "The repo's own retrospective says the intended gauge-field and true dendritic systems were not built. There are no dendritic trees, compartments, local dendritic nonlinearities, synaptic integration or gauge dynamics; the implementation is parallel temporal filtering with biological naming.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Little_dude/blob/main/README.md",
+      "tags": ["multi-scale", "temporal-filtering", "ai-projection", "dendrite-audit", "coherence"],
+      "era": "Early adaptive fossils",
+      "era_order": 1
+    }
+  ],
+  "edges": [
+    {
+      "source": "FractalBrain",
+      "target": "Saturday",
+      "type": "corrects",
+      "confidence": "high",
+      "why": "Saturday's archive map explicitly treats FractalBrain as an early fossil where the living-adaptive-organism question was implemented as BERT/GPT-2/VAE plus named brain modules; it keeps novelty-driven growth and persistent state while rejecting the old rhetoric as mechanism evidence.",
+      "evidence": "https://github.com/anttiluode/Saturday/blob/main/ARCHIVE_MAP.md"
+    },
+    {
+      "source": "buginthemachine",
+      "target": "Saturday",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "Saturday explicitly extracts the world-to-sensing-to-adaptive-structure loop and persistent saved state from Bug in the Machine as useful residue from the early creature era.",
+      "evidence": "https://github.com/anttiluode/Saturday/blob/main/ARCHIVE_MAP.md"
+    },
+    {
+      "source": "FractalBug",
+      "target": "Saturday",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "Saturday explicitly keeps FractalBug's distributed temporal state participating in action while discarding the need to inherit its hive-mind rhetoric.",
+      "evidence": "https://github.com/anttiluode/Saturday/blob/main/ARCHIVE_MAP.md"
+    },
+    {
+      "source": "TiniOnes",
+      "target": "Saturday",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "Saturday explicitly preserves TiniOnes as a receipt for agents inside a shared world, self-generated signals re-entering sensing, and learned latent state becoming part of the environment/behavior loop.",
+      "evidence": "https://github.com/anttiluode/Saturday/blob/main/ARCHIVE_MAP.md"
+    },
+    {
+      "source": "MoireBrain",
+      "target": "Saturday",
+      "type": "corrects",
+      "confidence": "high",
+      "why": "Saturday keeps MoireBrain's multiple relaxation times and scale-dependent observation but explicitly refuses to treat the two procedural-noise layers as evidence for learned memory consolidation.",
+      "evidence": "https://github.com/anttiluode/Saturday/blob/main/ARCHIVE_MAP.md"
+    },
+    {
+      "source": "FieldLatentBridge",
+      "target": "Saturday",
+      "type": "corrects",
+      "confidence": "high",
+      "why": "Saturday's audit calls out FieldLatentBridge specifically: the persistent field/latent-trajectory question survives, but the code redraws a fresh random field each update and never trains the bridge, so the intended persistent trajectory was not instantiated.",
+      "evidence": "https://github.com/anttiluode/Saturday/blob/main/ARCHIVE_MAP.md"
+    },
+    {
+      "source": "weirdfieldthingy",
+      "target": "Saturday",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "Saturday extracts weirdfieldthingy's live sensory perturbation of an evolving persistent medium without importing brain/ephaptic interpretation as a requirement.",
+      "evidence": "https://github.com/anttiluode/Saturday/blob/main/ARCHIVE_MAP.md"
+    },
+    {
+      "source": "Little_dude",
+      "target": "Saturday",
+      "type": "corrects",
+      "confidence": "high",
+      "why": "Saturday names Little_dude as the clearest AI-projection fossil: the intended spatial/material dendrite-and-field question was flattened into five parallel temporal filters and coherence detection.",
+      "evidence": "https://github.com/anttiluode/Saturday/blob/main/ARCHIVE_MAP.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "closed-loop-creature",
+      "title": "The early creature repos kept consequence inside the loop",
+      "description": "Before the later gate-heavy scientific style, several projects already treated the machine as something that lives in an environment: sensing changes internal state, internal state changes movement/sound, and those consequences alter later sensing. The biology was loose, but the closed-loop organization was real and recurs later in active sensing and world-model work.",
+      "nodes": ["buginthemachine", "FractalBug", "TiniOnes", "weirdfieldthingy", "Child", "WorldModel"]
+    },
+    {
+      "id": "ai-projection-fossil",
+      "title": "A repository name can preserve a question that its implementation never built",
+      "description": "FractalBrain, FieldLatentBridge and Little_dude are useful precisely because the mismatch is visible. Rich questions about living growth, persistent field/latent trajectories, dendrites or gauge-like structure were translated by the AI/tooling of the moment into familiar pretrained modules, untrained visualization plumbing or parallel temporal filters. Genealogy must track the question and the implementation separately.",
+      "nodes": ["FractalBrain", "FieldLatentBridge", "Little_dude", "Saturday"]
+    },
+    {
+      "id": "observer-scale-before-observability",
+      "title": "Observer scale appeared before formal bounded-observation theory",
+      "description": "MoireBrain's zoom-dependent interference patterns are not a memory theory, but they are an early visual precursor to a later recurring lesson: what structure is visible depends on how a system is sampled. GeometricNeuronV24 and ReadWrite later turn that intuition into explicit measurement operators, addresses, nullspaces and interventions.",
+      "nodes": ["MoireBrain", "GeometricNeuronV24", "ReadWrite"]
+    }
+  ]
+}
