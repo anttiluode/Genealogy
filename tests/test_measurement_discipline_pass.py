@@ -51,7 +51,7 @@ class MeasurementDisciplinePassTests(unittest.TestCase):
         self.assertIn("instrument", eromitta["killed"].lower())
 
         kaiku = next(node for node in atlas["nodes"] if node["id"] == "Kaiku")
-        self.assertIn("instrument", kaiku["killed"].lower())
+        self.assertIn("impeached", kaiku["killed"].lower())
 
         twc = next(node for node in atlas["nodes"] if node["id"] == "TransientWaveCompiler")
         self.assertIn("0.280", twc["killed"])
