@@ -22,13 +22,15 @@ class StaticPageTests(unittest.TestCase):
 
     def test_genealogy_graph_has_zoom_and_pan_controls(self):
         html = (ROOT / "index.html").read_text(encoding="utf-8")
-        js = (ROOT / "assets/app.js").read_text(encoding="utf-8")
+        zoom_path = ROOT / "assets/zoom.js"
+        zoom_js = zoom_path.read_text(encoding="utf-8") if zoom_path.exists() else ""
         for element_id in ("zoom-in", "zoom-out", "zoom-reset", "zoom-level"):
             self.assertIn(f'id="{element_id}"', html)
+        self.assertIn('assets/zoom.js', html)
         for function in ("setupGraphViewport", "zoomGraph", "panGraph", "resetGraphViewport"):
-            self.assertIn(f"function {function}", js)
-        self.assertIn("addEventListener('wheel'", js)
-        self.assertIn("addEventListener('pointermove'", js)
+            self.assertIn(f"function {function}", zoom_js)
+        self.assertIn("addEventListener('wheel'", zoom_js)
+        self.assertIn("addEventListener('pointermove'", zoom_js)
 
 if __name__ == "__main__":
     unittest.main()
