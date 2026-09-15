@@ -25,5 +25,12 @@ class AtlasDataTests(unittest.TestCase):
         for motif in atlas["motifs"]:
             self.assertTrue(set(motif["nodes"]).issubset(ids))
 
+    def test_first_slice_has_meaningful_curated_content(self):
+        atlas = load_atlas(ROOT)
+        self.assertGreaterEqual(len(atlas["nodes"]), 25)
+        self.assertGreaterEqual(len(atlas["edges"]), 20)
+        self.assertGreaterEqual(len(atlas["motifs"]), 5)
+        self.assertGreaterEqual(sum(node["usefulness"] == "practical" for node in atlas["nodes"]), 2)
+
 if __name__ == "__main__":
     unittest.main()
