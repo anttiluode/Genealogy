@@ -1,0 +1,114 @@
+{
+  "id": "eeg-instruments",
+  "title": "EEG instruments: keep the software, constrain the interpretation",
+  "summary": "A practical cross-section of the EEG/perception software line. These repositories load, transform, visualize, reconstruct, compare or sonify real EEG recordings, but their scientific rhetoric ranges from carefully bounded to dramatically overclaimed. The genealogy therefore preserves the instruments and their explicit limits without inventing thematic ancestry or treating a visualization pipeline as biological ground truth. The already-curated foundation PerceptionLab node is reused in motifs rather than duplicated here.",
+  "order": 160,
+  "reviewed_at": "2026-09-15",
+  "nodes": [
+    {
+      "id": "EEGTools",
+      "url": "https://github.com/anttiluode/EEGTools",
+      "family": "eeg-instruments",
+      "status": "tool",
+      "claim": "A collection of exploratory EEG viewers: a browser waveform/cross-correlation analyzer and Python scalp-wavefield viewers with filtering, interpolation, phase, power and phase-gradient displays.",
+      "survived": "The practical functions are concrete and lightweight: load CSV/EDF data, scroll and scrub channels, flag simple z-score events, inspect pairwise lag/correlation, interpolate scalp fields, select bands, apply notch/Laplacian processing, display phase-gradient vectors and save frames. The README explicitly frames the package as exploratory rather than clinical.",
+      "killed": "The repository records its own visualization trap: earlier pyramid-like patterns that attracted deep interpretation were recognized as the Delaunay/Voronoi grid used to build the display. Interpolated geometry is therefore not evidence of neural geometry, and none of these visualizations is a diagnostic instrument.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/EEGTools/blob/main/README.md",
+      "tags": ["eeg", "visualization", "cross-correlation", "wavefield", "artifact-audit"],
+      "era": "Practical instruments",
+      "era_order": 6
+    },
+    {
+      "id": "EEGBrainSourceReconstructionTool",
+      "url": "https://github.com/anttiluode/EEGBrainSourceReconstructionTool",
+      "family": "eeg-instruments",
+      "status": "tool",
+      "claim": "A GUI around MNE-Python EEG preprocessing and source-estimation workflows with several inverse methods, frequency-band views, 2-D/3-D visualization and export.",
+      "survived": "As a research/education wrapper it provides useful plumbing: common EEG formats, filtering, notch handling, bad-channel processing, optional ICA, standard montages, MNE-family inverse solutions, time navigation, plotting and source-estimate export in one interface.",
+      "killed": "The reconstructed activity is a model-based estimate on a template fsaverage brain, not a measured scan or individual anatomy. The README itself says the tool is not for medical use or diagnosis; generic head geometry, inverse-problem ambiguity and EEG spatial limits prevent treating the displayed cortical map as ground truth.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/EEGBrainSourceReconstructionTool/blob/main/README.md",
+      "tags": ["eeg", "mne", "source-localization", "gui", "template-brain"],
+      "era": "Practical instruments",
+      "era_order": 6
+    },
+    {
+      "id": "EEGFlowchartPlus3DBrain",
+      "url": "https://github.com/anttiluode/EEGFlowchartPlus3DBrain",
+      "family": "eeg-instruments",
+      "status": "tool",
+      "claim": "An integrated EEG explorer that couples template-brain source estimates to PCA/K-Means state clustering and a synchronized transition graph.",
+      "survived": "The interface combines preprocessing, MNE inverse estimation, short-window feature extraction, configurable clustering, an interactive 3-D source view and a 2-D transition chart whose current state is highlighted during playback. That makes it a useful exploratory state-segmentation viewer.",
+      "killed": "The phrase 'map of thoughts' is not earned by PCA plus user-chosen K-Means clusters. The states are partitions of model-derived features, their count is configurable, and the upstream cortical activity is itself a template-based inverse estimate; the visualization can suggest structure but cannot identify thoughts or uniquely recover neural states.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/EEGFlowchartPlus3DBrain/blob/main/README.md",
+      "tags": ["eeg", "state-space", "kmeans", "source-localization", "transition-graph"],
+      "era": "Practical instruments",
+      "era_order": 6
+    },
+    {
+      "id": "KoopmanEEGExplorer",
+      "url": "https://github.com/anttiluode/KoopmanEEGExplorer",
+      "family": "eeg-instruments",
+      "status": "ledger",
+      "claim": "A zero-learned-parameter EEG explorer that maps Gabor/STFT epochs with PCA, measures group geometry, sweeps channels and runs registered transient analyses at epoch and sub-second scales.",
+      "survived": "The reusable object is the analysis instrument: multi-format loading, spectrogram construction, a 2-D PCA navigator, convex-hull spread/fragmentation metrics, all-channel sweeps, 4-second and 100 ms transient tests, live nearest-atom inspection and dictionary saving. The repository also preserves null and unexpected-direction results instead of hiding them.",
+      "killed": "Its disease-mechanism interpretations are not established. The reported dataset has only 13 subjects per group; event-level samples are autocorrelated; the floor-effect explanation is explicitly a hypothesis; the 80-120 Hz band lies near the 125 Hz Nyquist limit; and the variance/correlation findings require subject-level analysis and independent replication before biological or causal claims.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/KoopmanEEGExplorer/blob/main/readme.md",
+      "tags": ["eeg", "pca", "gabor", "channel-sweep", "negative-results", "replication"],
+      "era": "Practical instruments",
+      "era_order": 6
+    },
+    {
+      "id": "EEG2AUDIO",
+      "url": "https://github.com/anttiluode/EEG2AUDIO",
+      "family": "eeg-instruments",
+      "status": "experiment",
+      "claim": "An interactive EDF-to-audio studio that drives a bank of prime-log-spaced resonators from EEG, previews waveform/spectrogram output, applies spectral subtraction and exports mono WAV files.",
+      "survived": "As sonification software it is a complete creative/research instrument: channel and time selection, adjustable resonator count, multiple carrier waveforms, playback-speed control, live waveform/spectrogram preview, automatic quiet-frame noise profiling, denoise strength and WAV export.",
+      "killed": "The README's stronger claim that prime-log resonance reveals a pre-existing speech skeleton in EEG is not tested against matched alternative resonator banks, task labels, intelligibility measures or null controls. Speech-like envelopes can be created by the transformation itself, so the software is retained as sonification while the BCI/prime-geometry interpretation remains a hypothesis.",
+      "usefulness": "practical",
+      "confidence": "medium",
+      "evidence": "https://github.com/anttiluode/EEG2AUDIO/blob/main/README.md",
+      "tags": ["eeg", "sonification", "audio", "resonator-bank", "hypothesis-boundary"],
+      "era": "Practical instruments",
+      "era_order": 6
+    },
+    {
+      "id": "RealtimeEEG3Dsystem",
+      "url": "https://github.com/anttiluode/RealtimeEEG3Dsystem",
+      "family": "eeg-instruments",
+      "status": "experiment",
+      "claim": "A runnable EEG-driven 3-D visualization/simulation that filters recordings, computes PAC-like drivers, projects them into a volume and animates thousands of synthetic neural elements with interactive HTML output.",
+      "survived": "The practical residue is a visualization demo: common EEG formats can be loaded, sampling rate and bands are adapted, a configurable 3-D synthetic field/neuron system is driven over time, lower-resolution fast mode is available, and frames can be explored as interactive visual output. It can be used to inspect how a chosen mapping makes temporal EEG features look in a synthetic volume.",
+      "killed": "The repository's claims that the display 'proves holonomic brain theory', recovers actual 3-D neural organization, validates ephaptic communication, or supports clinical interpretation do not follow from the implementation. The spatial field, dendrite population and coupling law are imposed by the simulator; visually organized output from that construction is not independent evidence that human EEG contains the same 3-D structure.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/RealtimeEEG3Dsystem/blob/main/README.md",
+      "tags": ["eeg", "3d-visualization", "simulation", "pac", "overclaim-audit"],
+      "era": "Practical instruments",
+      "era_order": 6
+    }
+  ],
+  "edges": [],
+  "motifs": [
+    {
+      "id": "instrument-survives-interpretation",
+      "title": "The instrument can survive after the interpretation is narrowed",
+      "description": "Across the EEG software line, useful operations remain after stronger stories are removed: PerceptionLab patches live signals and its known-answer wave-field timing demo predicts a 22.0-frame mean lag; other tools reconstruct under an explicit model, cluster features, measure group geometry, sonify a channel, or animate a chosen projection. The atlas separates what the program demonstrably computes from what its visualization is said to mean.",
+      "nodes": ["PerceptionLab", "EEGTools", "EEGBrainSourceReconstructionTool", "EEGFlowchartPlus3DBrain", "KoopmanEEGExplorer", "EEG2AUDIO", "RealtimeEEG3Dsystem"]
+    },
+    {
+      "id": "visualization-is-an-instrument-not-ground-truth",
+      "title": "Visualization pipelines can manufacture persuasive structure",
+      "description": "A scalp interpolation grid can look like a neural lattice, a template inverse can look like a measured cortex, K-Means states can look like thoughts, and a synthetic 3-D projection can look like recovered anatomy. EEGTools' grid autopsy makes the general lesson explicit: inspect the rendering and model pipeline before interpreting the picture.",
+      "nodes": ["EEGTools", "EEGBrainSourceReconstructionTool", "EEGFlowchartPlus3DBrain", "RealtimeEEG3Dsystem"]
+    }
+  ]
+}
