@@ -110,5 +110,21 @@ class AtlasDataTests(unittest.TestCase):
             edge = edges[(source, "CausalHorizon", "converges")]
             self.assertEqual(edge["confidence"], "medium")
 
+    def test_retention_economy_prices_memory_and_reuse(self):
+        atlas = load_atlas(ROOT)
+        pass_ids = {item["id"] for item in atlas["passes"]}
+        self.assertIn("retention-economy", pass_ids)
+        ids = {node["id"] for node in atlas["nodes"]}
+        for node_id in ("Paper", "368", "ThinkingJello"):
+            self.assertIn(node_id, ids)
+        edges = {(edge["source"], edge["target"], edge["type"]): edge for edge in atlas["edges"]}
+        self.assertIn(("JelloBrain", "Paper", "extracts"), edges)
+        self.assertIn(("Paper", "368", "inherits"), edges)
+        self.assertIn(("JelloBrain", "ThinkingJello", "inherits"), edges)
+        self.assertIn(("GelatinIsland", "ThinkingJello", "inherits"), edges)
+        memory = next(node for node in atlas["nodes"] if node["id"] == "368")
+        self.assertIn("storage itself does nothing", memory["survived"].lower())
+        self.assertIn("no recurrence", memory["killed"].lower())
+
 if __name__ == "__main__":
     unittest.main()
