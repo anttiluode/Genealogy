@@ -34,6 +34,7 @@
         <button class="tab active" data-view="genealogy">Genealogy</button>
         <button class="tab" data-view="timeline">Timeline</button>
         <button class="tab" data-view="corrections">Corrections</button>
+        <button class="tab" data-view="tools">Tools</button>
         <button class="tab" data-view="census">Census</button>
         <button class="tab" data-view="survivors">Survivors</button>
         <button class="tab" data-view="queue">Archaeology queue</button>
@@ -91,6 +92,14 @@
       <div id="corrections-content"></div>
     </section>
 
+    <section class="view" id="view-tools" data-view="tools">
+      <div class="section-head">
+        <div><div class="eyebrow">USEFUL EVEN IF THE THEORY VANISHES</div><h2>Tools & artifacts</h2></div>
+        <p>This view cuts across genealogy families and research eras. It keeps the reviewed repositories that can be installed, played, measured or used directly, while preserving the same “what survived / what not to overclaim” ledger.</p>
+      </div>
+      <div id="tools-content"></div>
+    </section>
+
     <section class="view" id="view-census" data-view="census">
       <div class="section-head">
         <div><div class="eyebrow">INVENTORY ≠ INTERPRETATION</div><h2>Repository census</h2></div>
@@ -121,6 +130,7 @@
     <a href="https://github.com/anttiluode/Genealogy">source / evidence ledger ↗</a>
   </footer>
   <script src="assets/app.js"></script>
+  <script src="assets/tools.js"></script>
   <script src="assets/zoom.js"></script>
 </body>
 </html>
