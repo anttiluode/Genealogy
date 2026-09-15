@@ -1,0 +1,275 @@
+{
+  "id": "measurement-discipline",
+  "title": "Measurement discipline: preregistered kills, instrument audits and negative capability",
+  "summary": "Across the July-August Fable-era wave/operator repos, the most durable inheritance is methodological. Hypotheses are written before runs, strong boring controls are invited to win, failed instruments are impeached rather than quietly replaced, and a mechanism can be accepted even when the architecture built from it loses to a conventional baseline. This pass follows that discipline from ArrowField/Eromitta through Kaiku/Ristikko and from Visertaja/Vino into GeometricNeuronPlusField, TransientWaveCompiler and KYY. RajapintaFable is included as a synthesis that makes the new rules explicit: toys license measured kinematics, not grand physical identity claims.",
+  "order": 140,
+  "reviewed_at": "2026-09-15",
+  "nodes": [
+    {
+      "id": "RajapintaFable",
+      "url": "https://github.com/anttiluode/RajapintaFable",
+      "family": "measurement-discipline",
+      "status": "ledger",
+      "claim": "A synthesis around the frozen/flowing interface that converts several earlier metaphors into three registered toy experiments on quench defects, storage geometry and topological fossils.",
+      "survived": "The quantitative residue is narrower than the thesis: local constraint structure produces a quench-rate defect census while global constraints suppress it; Janus-like and Zeta-like storage have similar linear capacity but different error structure; and after relaxation the smooth state forgets history while winding can survive as a topological fossil.",
+      "killed": "The registered intuition that Zeta should store more in the linear regime failed; directed-vs-random nucleation was killed when diagnosis showed the chosen substrate had strained winding states rather than the assumed pinned domains. The repo explicitly rejects using its toy physics to derive constants, gauge groups or fundamental dynamics.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/RajapintaFable/blob/main/README.md",
+      "tags": ["preregistration", "topology", "quench", "negative-results", "synthesis"],
+      "era": "Measurement discipline",
+      "era_order": 3
+    },
+    {
+      "id": "Visertaja",
+      "url": "https://github.com/anttiluode/Visertaja",
+      "family": "measurement-discipline",
+      "status": "ledger",
+      "claim": "Translates Nollas/Kuori's moving-frequency failure into a trainable latent layer whose units carry amplitude, phase and self-modulated frequency trajectories.",
+      "survived": "The layer genuinely trains, and the feedback version genuinely chirps across its internal window; a population audit finds most units live and almost all live units chirping. Phase is load-bearing in a resonant readout: removing phase costs about 2.8-2.9 percentage points on the reported MNIST readout comparison.",
+      "killed": "The competitive temporal hypothesis failed its registered discriminator: on row-sequential MNIST the parameter-matched GRU reached 97.34% versus 93.06% for chirp_resonant, beyond the 1% kill line, and resonant episode integration also lost to the snapshot readout. The trajectory exists; it did not beat boring gated memory under the tested conditions.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Visertaja/blob/main/README.md",
+      "tags": ["chirp", "trajectory-state", "phase", "gru-control", "negative-result"],
+      "era": "Measurement discipline",
+      "era_order": 3
+    },
+    {
+      "id": "Vino",
+      "url": "https://github.com/anttiluode/Vino",
+      "family": "measurement-discipline",
+      "status": "ledger",
+      "claim": "Fuses Visertaja's oscillator-state idea with the Geometric Neuron skew-operator result: rotation comes from antisymmetric cross-unit coupling rather than a driven scalar frequency.",
+      "survived": "Skew structure is load-bearing for direction and long-sequence recurrence. On the T=80 order task skew scores 88.9% versus 69.3% for the symmetric control, and on 784-step permuted MNIST the reported equal-budget result is 86.23% skew versus about 29% symmetric and 32.89% unconstrained full coupling. The mechanism boundary is clear: direction lives in the skew half.",
+      "killed": "The skew fix is not a universal GRU replacement. At T=80 the matched GRU reaches 100% and beats skew by about 11 points. The 784-step skew win over the GRU is explicitly only an equal-training-budget result because the GRU was still unconverged, so matched-convergence superiority was not established.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Vino/blob/main/README.md",
+      "tags": ["skew-operator", "antisymmetry", "direction", "long-sequence", "gru-control"],
+      "era": "Measurement discipline",
+      "era_order": 3
+    },
+    {
+      "id": "ArrowField",
+      "url": "https://github.com/anttiluode/ArrowField",
+      "family": "measurement-discipline",
+      "status": "ledger",
+      "claim": "Tests whether lag-covariance 'arrow' observables and self-slowing field dynamics actually support the earlier Chain story, with explicit scalar/complex and self-slowing controls.",
+      "survived": "A complex field decouples the lag-arrow from raw intensity and carries both chiralities; the self-slowing arm produces persistent phase defects where the matched no-slowing control produces essentially none; and the quench census reproduces an approximately 2/3 fast-quench Kibble-Zurek exponent in the toy.",
+      "killed": "The hollow-ring prediction died twice under two different mechanisms; the Chiral Eye is degenerate on a real scalar substrate; a preregistered exponent-difference kill later turned out to have fired on noise; and the repo explicitly records that a right-looking prediction with a wrong mechanism would still be a failure.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/ArrowField/blob/main/README.md",
+      "tags": ["phase", "self-slowing", "defects", "preregistration", "autopsy"],
+      "era": "Measurement discipline",
+      "era_order": 3
+    },
+    {
+      "id": "Eromitta",
+      "url": "https://github.com/anttiluode/Eromitta",
+      "family": "measurement-discipline",
+      "status": "ledger",
+      "claim": "Extends ArrowField by comparing intensity- versus gradient/frustration-screened media and by auditing the mathematical relation among entropy-like potentials, screening and the Gamma metric.",
+      "survived": "The registered headline prediction inverted dramatically: gradient/frustration screening produced about 5.05x as many persistent defects as intensity screening under matched conditions, and the inversion survived repaired timestep and snapshot instruments. The derivative tower linking log potential, first-derivative screening and second-derivative metric is verified numerically in the toy.",
+      "killed": "The prior that gradient screening would be sterile was wrong by roughly 5x in the opposite direction. The autopsy also found two bad instruments: an inherited time-averaged core check and an unmatched-physical-time timestep check. A registered raw-count interpretation of the Lambda residue also failed and was replaced only as a labeled post-hoc log-halo fit.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Eromitta/blob/main/README.md",
+      "tags": ["gradient-screening", "instrument-audit", "registered-kill", "defects", "fisher-metric"],
+      "era": "Measurement discipline",
+      "era_order": 3
+    },
+    {
+      "id": "Kaiku",
+      "url": "https://github.com/anttiluode/Kaiku",
+      "family": "measurement-discipline",
+      "status": "tool",
+      "claim": "Uses a fixed nonlinear wave medium as a physical-reservoir testbed and turns Boolean parity into a meter of what order of multiplication the medium/readout actually implements.",
+      "survived": "The parity ladder gives a reusable diagnostic: the linear medium reaches XOR but not parity-3, while nonlinear mixing reaches parity-3; a phase-reference theorem explains why pure phase encoding of odd parity is invisible to phase-invariant detection; and the repaired phase-sensitive multiplier gauge shows when coherent triple-product conversion actually turns on.",
+      "killed": "Two pilots died at chance before the theorem was understood, the narrow-window four-wave-mixing gauge was impeached because it confused broadband cascade with coherent conversion, and a registered linear-control band was statistically naive because it ignored finite-sample class imbalance. The original AI pitch that this replaces mathematical routing is explicitly rejected.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Kaiku/blob/main/README.md",
+      "tags": ["wave-computing", "parity-meter", "instrument-audit", "homodyne", "nonlinear-order"],
+      "era": "Measurement discipline",
+      "era_order": 3
+    },
+    {
+      "id": "Ristikko",
+      "url": "https://github.com/anttiluode/Ristikko",
+      "family": "measurement-discipline",
+      "status": "tool",
+      "claim": "Composes Kaiku's external homodyne reference with the Geometric Neuron lagged self-reference to test which hidden symmetry sectors a single wave field/readout can resolve.",
+      "survived": "The two references compose without measured loss in the registered hidden-arrow test: homodyne reads parity, lag reads arrow, and the combined readout recovers both at 1.000/1.000. The linear-medium control keeps arrow readability while killing nonlinear parity readability, separating the sectors mechanistically.",
+      "killed": "The first registered propagation-direction encoding leaked into raw intensity, giving auto-D about 0.90 instead of the intended blind null. The later hidden-arrow encoding was introduced after seeing that leak and is disclosed as post-hoc cleanup; the headline composition survives both encodings but the clean null does not belong to the original design.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Ristikko/blob/main/README.md",
+      "tags": ["receiver", "homodyne", "lag-reference", "symmetry", "composition"],
+      "era": "Measurement discipline",
+      "era_order": 3
+    },
+    {
+      "id": "GeometricNeuronPlusField",
+      "url": "https://github.com/anttiluode/GeometricNeuronPlusField",
+      "family": "measurement-discipline",
+      "status": "ledger",
+      "claim": "Splits the geometry-neuron story into slow anatomy/operator, moving field, local convergence and candidate eventization, then repeatedly audits which stage actually earns computational privilege.",
+      "survived": "Frozen anatomy cleanly defines a resonator-bank operator and higher graph modes carry temporal-order information; local soma-region observability is better explained by convergence/amplitude balance than magical soma computation. The operator-to-flow decomposition remains useful even after the active boundary fails.",
+      "killed": "The generic HH-like active boundary does not earn a positive computational role: relative to simpler matched controls it degrades spike-time precision, does not provide a clean tunable passband or simple refractory clock, preserving carrier phase does not rescue it, and it carries substantially less frequency information per matched spike. The branch explicitly stops rather than tuning around the nulls.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/GeometricNeuronPlusField/blob/main/README.md",
+      "tags": ["operator", "field", "eventization", "matched-control", "stopping-line"],
+      "era": "Measurement discipline",
+      "era_order": 3
+    },
+    {
+      "id": "TransientWaveCompiler",
+      "url": "https://github.com/anttiluode/TransientWaveCompiler",
+      "family": "measurement-discipline",
+      "status": "tool",
+      "claim": "A reciprocal-system compiler and diagnosis toolkit that survived the attempt to physically lower the Geometric Neuron into transient-wave hardware.",
+      "survived": "The practical mainline is exact sparse reciprocal response/sensitivity analysis, nuisance-aware fitting and explicit identifiability diagnostics. The topology-only negative-capability audit can predict response-equivalent internal-edge ambiguities before measurement and suggest perturbations that could disambiguate them; the software reports equivalence instead of inventing certainty.",
+      "killed": "The attractive small-cap stochastic physical-adjoint hypothesis failed: even averaging 1024 independently noisy physical gradients left median cosine only 0.280 to the clean gradient, with evidence of bias. Later topology-discovery gates also fail on gauge-like classes despite known-state perturbations, so the repo stops synthetic rescue rather than optimizing percentages upward.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/TransientWaveCompiler/blob/main/README.md",
+      "tags": ["compiler", "identifiability", "reciprocal-system", "negative-capability", "hardware-negative"],
+      "era": "Measurement discipline",
+      "era_order": 3
+    },
+    {
+      "id": "KYY",
+      "url": "https://github.com/anttiluode/KYY",
+      "family": "measurement-discipline",
+      "status": "negative",
+      "claim": "Tests whether an actual local geometric recurrence earns anything beyond the strong structured algebra already known in modern state-tracking models.",
+      "survived": "A local reciprocal scattering construction can solve parity, modulo-3 and noncommutative permutation-state tasks, and the repo turns geometry into a falsifiable inductive-bias question rather than an architectural assumption.",
+      "killed": "The first Laplacian wave candidate fails parity in the budget where stronger baselines work, and dense two-Householder transitions solve and extrapolate the first hard permutation gate with even smaller state. The current evidence therefore says reflection products are strong state trackers but does not establish that local geometry beats generic Householder structure.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/KYY/blob/main/README.md",
+      "tags": ["state-tracking", "geometry", "householder", "strong-baseline", "negative-result"],
+      "era": "Measurement discipline",
+      "era_order": 3
+    }
+  ],
+  "edges": [
+    {
+      "source": "Nollas",
+      "target": "Visertaja",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Visertaja explicitly says it was born out of the Nollas/Kuori campaign after a supposedly static ring-mode instrument encountered an evaporating chirping object instead.",
+      "evidence": "https://github.com/anttiluode/Visertaja/blob/main/README.md"
+    },
+    {
+      "source": "Visertaja",
+      "target": "Vino",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Vino explicitly identifies Visertaja as one of its two parent lines and replaces the parent's driven scalar frequency with cross-unit skew coupling.",
+      "evidence": "https://github.com/anttiluode/Vino/blob/main/README.md"
+    },
+    {
+      "source": "GeometricNeuronV21",
+      "target": "Vino",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Vino explicitly fuses Visertaja with the Geometric Neuron V9-V21 result that directionality lives in the skew half of the lag operator.",
+      "evidence": "https://github.com/anttiluode/Vino/blob/main/README.md"
+    },
+    {
+      "source": "ArrowField",
+      "target": "Eromitta",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Eromitta explicitly starts from ArrowField's open power-law/screening seam, reuses its protocol, reproduces its 402-defect intensity result exactly, and then adds the gradient-screening comparison and instrument repairs.",
+      "evidence": "https://github.com/anttiluode/Eromitta/blob/main/README.md"
+    },
+    {
+      "source": "Eromitta",
+      "target": "Nollas",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Nollas explicitly calls itself downstream of Eromitta and uses its Gamma/screening distinctions as the setup for asking whether the supposed clock is transport, lapse or thermodynamic time.",
+      "evidence": "https://github.com/anttiluode/Nollas/blob/main/README.md"
+    },
+    {
+      "source": "Kaiku",
+      "target": "Ristikko",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Ristikko explicitly says Kaiku is its parent and composes Kaiku's homodyne reference with the Geometric Neuron lagged reference.",
+      "evidence": "https://github.com/anttiluode/Ristikko/blob/main/README.md"
+    },
+    {
+      "source": "GeometricNeuronV21",
+      "target": "Ristikko",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Ristikko explicitly names the Geometric Neuron lag-covariance/skew line as its grandparent framework and uses its lagged reference as one row of the measurement lattice.",
+      "evidence": "https://github.com/anttiluode/Ristikko/blob/main/README.md"
+    },
+    {
+      "source": "GeometricNeuronPlusField",
+      "target": "TransientWaveCompiler",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "TransientWaveCompiler explicitly says it grew out of GeometricNeuronPlusField when the physical-hardware attempt forced geometry/topology into a sparse reciprocal operator/compiler abstraction.",
+      "evidence": "https://github.com/anttiluode/TransientWaveCompiler/blob/main/README.md"
+    },
+    {
+      "source": "TransientWaveCompiler",
+      "target": "KYY",
+      "type": "converges",
+      "confidence": "high",
+      "why": "KYY explicitly frames its question as coming from the Geometric Neuron / Transient Wave Compiler line, then attacks local geometric recurrence with established Householder and structured-state baselines.",
+      "evidence": "https://github.com/anttiluode/KYY/blob/main/README.md"
+    },
+    {
+      "source": "HorizonNet",
+      "target": "RajapintaFable",
+      "type": "converges",
+      "confidence": "high",
+      "why": "RajapintaFable's provenance table explicitly lists HorizonNet as one of the five independent sources for its frozen-versus-flowing synthesis and imports its fixed-point/path-independence negative result.",
+      "evidence": "https://github.com/anttiluode/RajapintaFable/blob/main/README.md"
+    },
+    {
+      "source": "Entrain",
+      "target": "RajapintaFable",
+      "type": "converges",
+      "confidence": "high",
+      "why": "RajapintaFable explicitly lists Entrain among its five provenance sources and imports measured entrainment routing, directed growth and loop-topology memory as an interface-regime example.",
+      "evidence": "https://github.com/anttiluode/RajapintaFable/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "registered-kills-and-instrument-audits",
+      "title": "A failed prediction can improve the instrument instead of spawning a rescue story",
+      "description": "ArrowField keeps two wrong mechanisms and a noisy kill; Eromitta finds its registered prior wrong by roughly 5x and then discovers two broken instruments during autopsy; Kaiku records dead pilots and impeaches a spectral gauge; Ristikko discloses a leaking first encoding; KYY lets strong algebraic controls erase a geometry advantage; TransientWaveCompiler parks a failed physical-adjoint program and keeps the useful compiler. This is a methodological lineage: the morgue becomes part of the output.",
+      "nodes": ["ArrowField", "Eromitta", "Kaiku", "Ristikko", "KYY", "TransientWaveCompiler", "RajapintaFable"]
+    },
+    {
+      "id": "receiver-is-part-of-computation",
+      "title": "What can be read depends on the reference, lens and intervention",
+      "description": "Kaiku proves that odd parity under a global phase flip is invisible to a phase-invariant detector until an external reference is supplied. Ristikko shows different references expose different hidden symmetry sectors and can compose. GeometricNeuronV24 and ReadWrite later generalize the same lesson into explicit measurement operators, addresses, nullspaces and active writes: the receiver is not merely a plotter outside the computation.",
+      "nodes": ["Kaiku", "Ristikko", "GeometricNeuronV24", "ReadWrite"]
+    },
+    {
+      "id": "mechanism-win-is-not-architecture-win",
+      "title": "A mechanism may be real even when the architecture loses",
+      "description": "Visertaja establishes genuine chirping and phase-bearing trajectories, then loses its temporal discriminator to a matched GRU. Vino confirms the skew-direction mechanism strongly, yet loses to the GRU at T=80 and keeps a convergence caveat on its long-sequence equal-budget win. KYY's local scattering works, yet generic Householder structure remains the stronger explanation. GeometricNeuronPlusField finds a real consequential active boundary that nevertheless loses every tested matched positive criterion.",
+      "nodes": ["Visertaja", "Vino", "KYY", "GeometricNeuronPlusField"]
+    },
+    {
+      "id": "negative-capability-before-more-optimization",
+      "title": "No optimizer can recover information the measurement does not contain",
+      "description": "TransientWaveCompiler's topology audit identifies response-equivalent realizations and recommends new perturbations rather than arbitrary fitted certainty. This is the engineering version of the bounded-observer lesson in GeometricNeuronV24 and ReadWrite: identify the nullspace first, then decide whether another measurement can open it.",
+      "nodes": ["TransientWaveCompiler", "GeometricNeuronV24", "ReadWrite", "AlgoSchalgo"]
+    }
+  ]
+}
