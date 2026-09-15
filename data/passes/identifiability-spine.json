@@ -1,0 +1,239 @@
+{
+  "id": "identifiability-spine",
+  "title": "Identifiability spine: stable causes, moving coordinates and active observation",
+  "summary": "This pass follows an unusually explicit late-August lineage from structural computation into blind source separation, recurrent routing, fast/slow sampling, moving representations and finally active sensing. The recurring question gradually sharpens from 'what can the structure compute?' to 'which computational distinction is actually identifiable under the observations available now?' MovingProblem and AlgoSchalgo then feed that question into Child and ThirdWay without being falsely collapsed into one ancestry chain.",
+  "order": 100,
+  "reviewed_at": "2026-09-15",
+  "nodes": [
+    {
+      "id": "Monday",
+      "url": "https://github.com/anttiluode/Monday",
+      "family": "operator-response",
+      "status": "ledger",
+      "claim": "Introduces blind source separation as a disciplined replacement for earlier hidden-cause metaphors and tests whether a persistent FunctionalArbor geometry can physically embody part of a demixing operator.",
+      "survived": "A FunctionalArbor could be remodeled toward a real AuxIVA demixing direction, and shared structural mutations moved multiple frequency coefficients together; the lasting decomposition is representation versus factorization versus use.",
+      "killed": "A one-bin kurtosis learner increased non-Gaussianity while moving away from the desired source, and the multi-frequency shared-body result was badly beaten by a constant-direction attacker, so morphology did not earn a general blind-source-separation advantage.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Monday/blob/main/README.md",
+      "tags": ["bss", "ica", "iva", "structure-as-operator", "negative-results"],
+      "era": "Moving representations",
+      "era_order": 5
+    },
+    {
+      "id": "Tuesday",
+      "url": "https://github.com/anttiluode/Tuesday",
+      "family": "operator-response",
+      "status": "survivor",
+      "claim": "Turns Monday's source-separation detour into a matrix laboratory for recovering enduring dynamical causes across changing observation geometries and testing whether useful computation transfers in recovered coordinates.",
+      "survived": "The strongest gate showed downstream transfer across a new sensor geometry: raw-coordinate prediction MSE was 2.76416, IVA-coordinate MSE 0.08215, and oracle-coordinate MSE 0.00116. IVA also preserved common source identity across multiple local mixing bases.",
+      "killed": "The linear matrix story has a measured boundary: after a nonlinear tanh mixture, the near-perfect linear ICA recovery falls to about 0.6697. Tuesday does not claim a new BSS algorithm or that the named dynamical systems are cognitive objects.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Tuesday/blob/main/README.md",
+      "tags": ["identifiability", "iva", "moving-basis", "transfer", "nonlinear-boundary"],
+      "era": "Moving representations",
+      "era_order": 5
+    },
+    {
+      "id": "yrotisopeRweN",
+      "url": "https://github.com/anttiluode/yrotisopeRweN",
+      "family": "search-routing",
+      "status": "ledger",
+      "claim": "Builds a continuously running point whose fast state, eligibility and finite structural allocation coexist with recurrent traffic, then asks whether useful return paths can grow without semantically named internal coordinates.",
+      "survived": "Finite conserved capacity can turn amplification into allocation; delayed consequence can credit vanished conjunctions; recurrent traffic can hold a vanished cue; useful loops can grow; and recurrence still works in a fixed dense random basis as long as internal addresses remain stable.",
+      "killed": "Coherence alone is not purpose, positive-only growth needs conserved capacity to retract obsolete structure, and phase or other semantically privileged coordinates are not required once a stable generic address basis is supplied.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/yrotisopeRweN/blob/main/README.md",
+      "tags": ["recurrent-traffic", "eligibility", "finite-allocation", "stable-address", "growth"],
+      "era": "Moving representations",
+      "era_order": 5
+    },
+    {
+      "id": "Twensday",
+      "url": "https://github.com/anttiluode/Twensday",
+      "family": "operator-response",
+      "status": "experiment",
+      "claim": "Stops adding mechanisms and inspects the effective matrix family produced by bounded positive structural masses over fixed signed basis directions.",
+      "survived": "Atlas 0 shows that basis geometry is already a computational prior: dense random bases naturally represent dense mixed rows better than clean selector/ring rows, and structural sparsity, effective-matrix sparsity and effective rank are distinct quantities.",
+      "killed": "The growing parameterization is not neutral. Much of the selector/ring error already exists in the best reachable convex-hull attacker, so failures cannot be attributed only to the growth rule.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Twensday/blob/main/README.md",
+      "tags": ["operator-family", "convex-hull", "basis-prior", "rank", "structure"],
+      "era": "Moving representations",
+      "era_order": 5
+    },
+    {
+      "id": "T-800NNP",
+      "url": "https://github.com/anttiluode/T-800NNP",
+      "family": "search-routing",
+      "status": "experiment",
+      "claim": "Keeps continuous receiver dynamics instead of reducing the learned object to a static matrix and tests whether temporal signal trains can be routed and structurally adapted with delayed local consequence but no BPTT/autograd.",
+      "survived": "Present-time-identical events can take different routes because receiver history differs; the first train-routing gate reports about 0.8823 route accuracy while forwarding the original event, and delayed eligibility can update bounded local routing after consequence arrives.",
+      "killed": "This is not general deep credit assignment: the environment still supplies a useful route consequence, and the local delayed update does not solve arbitrary multilayer task credit simply by avoiding reverse-mode differentiation.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/T-800NNP/blob/main/README.md",
+      "tags": ["temporal-routing", "receiver-state", "delayed-credit", "bounded-structure", "no-bptt"],
+      "era": "Moving representations",
+      "era_order": 5
+    },
+    {
+      "id": "KyberDyyni1",
+      "url": "https://github.com/anttiluode/KyberDyyni1",
+      "family": "search-routing",
+      "status": "ledger",
+      "claim": "Branches from T-800NNP by separating fast structured internal sampling, trajectory-relative address/eligibility and slow bounded structural consolidation.",
+      "survived": "The useful architecture is the timescale split itself: fast elastic state can sweep or retarget immediately, trajectory-relative address can bind a sampled possibility to later consequence, and slow structure can consolidate repeated utility without forcing all three jobs into one weight state.",
+      "killed": "The repo explicitly does not establish a hippocampus simulator or literal biological phase tags; fixed phase alone is not a universal address because reversing trajectories require orientation by the current sweep direction.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/KyberDyyni1/blob/main/README.md",
+      "tags": ["fast-slow", "sampling", "trajectory-address", "eligibility", "consolidation"],
+      "era": "Moving representations",
+      "era_order": 5
+    },
+    {
+      "id": "MovingProblem",
+      "url": "https://github.com/anttiluode/MovingProblem",
+      "family": "operator-response",
+      "status": "survivor",
+      "claim": "Asks how a learned computation can remain usable while its representation moves, then freezes at a topological counterexample showing that local identifiability checks do not guarantee globally consistent semantic orientation.",
+      "survived": "Gate 4 keeps the eigengap at 2.0000 and low-confidence fraction at 0.0000 around a closed loop, yet continuous local sign matching returns with oriented alignment -1.0000. In the 2-D toy, one bit of winding parity repairs the sign.",
+      "killed": "The repository explicitly retires broader novelty: dimensionality reduction explains earlier compression, Stiefel/Grassmann drift is established, Procrustes is the right answer when repeated paired anchors exist, and exact degeneracy remains genuinely unidentifiable.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/MovingProblem/blob/main/FREEZE.md",
+      "tags": ["moving-representation", "holonomy", "identifiability", "topology", "frozen-result"],
+      "era": "Identifiability & active observation",
+      "era_order": 6
+    },
+    {
+      "id": "AlgoSchalgo",
+      "url": "https://github.com/anttiluode/AlgoSchalgo",
+      "family": "active-sensing",
+      "status": "active",
+      "claim": "Turns ambiguity/observability into executable policies: track subspaces instead of ill-conditioned vectors, choose a better operator or local measurement when needed, and pulse for another observation when the current sensor cannot identify the state.",
+      "survived": "ProbePulse32 makes the sensing tradeoff explicit: at entropy threshold 0.6 it reaches 0.91675 exact-state accuracy while buying only 0.34970 optional reads per step, versus a 32-unit GRU at 0.90156 while reading all four optional sensors every step. The all-sensor transparent ceiling is 0.99374.",
+      "killed": "A crucial correction is that repeatability is not observability: split-half disagreement can be near zero for a perfectly repeatable but information-free sensor. Memory also cannot reconstruct an alias jump that never entered the observation stream, and a single globally chosen measurement can be suboptimal when different ambiguity blocks need different views.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/AlgoSchalgo/blob/main/results/HUNT6.md",
+      "tags": ["active-sensing", "ambiguity", "observability", "measurement-selection", "transparent-state"],
+      "era": "Identifiability & active observation",
+      "era_order": 6
+    }
+  ],
+  "edges": [
+    {
+      "source": "FunctionalArbors",
+      "target": "Monday",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Monday says it began when a source-separation detour collided with FunctionalArbors and then tests whether that persistent body can compile demixing coefficients.",
+      "evidence": "https://github.com/anttiluode/Monday/blob/main/README.md"
+    },
+    {
+      "source": "Monday",
+      "target": "Tuesday",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Tuesday explicitly opens with 'Tuesday starts where Monday ended' and turns the source-separation framing into a controlled matrix/identifiability laboratory.",
+      "evidence": "https://github.com/anttiluode/Tuesday/blob/main/README.md"
+    },
+    {
+      "source": "Tuesday",
+      "target": "yrotisopeRweN",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "MovingProblem's explicit provenance chain places Tuesday immediately before yrotisopeRweN: temporal identifiability gives way to continuous points, finite structural allocation and recurrent growth.",
+      "evidence": "https://github.com/anttiluode/MovingProblem/blob/main/README.md"
+    },
+    {
+      "source": "yrotisopeRweN",
+      "target": "Twensday",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Twensday explicitly says it starts where yrotisopeRweN stopped and calls yrotisopeRweN its direct parent.",
+      "evidence": "https://github.com/anttiluode/Twensday/blob/main/README.md"
+    },
+    {
+      "source": "Twensday",
+      "target": "T-800NNP",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "T-800NNP explicitly lists Twensday among the repositories it descends from and keeps the dynamics that Twensday had reduced to inspectable operators.",
+      "evidence": "https://github.com/anttiluode/T-800NNP/blob/main/README.md"
+    },
+    {
+      "source": "T-800NNP",
+      "target": "KyberDyyni1",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "KyberDyyni1 explicitly calls itself a new architecture branch from T-800NNP and lists the T-800 primitives it carries forward.",
+      "evidence": "https://github.com/anttiluode/KyberDyyni1/blob/main/README.md"
+    },
+    {
+      "source": "KyberDyyni1",
+      "target": "MovingProblem",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "MovingProblem's explicit shortest useful lineage places KyberDyyni1 immediately upstream: fast internal sampling, slow consolidation, cross-basis transfer, temporal alignment and selective consequence become the moving-representation problem.",
+      "evidence": "https://github.com/anttiluode/MovingProblem/blob/main/README.md"
+    },
+    {
+      "source": "MovingProblem",
+      "target": "Child",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Child explicitly names MovingProblem as the upstream lesson that persistent meaning can require more than the current coordinate frame, then places that operation around prediction.",
+      "evidence": "https://github.com/anttiluode/Child/blob/main/README.md"
+    },
+    {
+      "source": "AlgoSchalgo",
+      "target": "Child",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Child explicitly names AlgoSchalgo as the upstream active-observation operation: when the current observation is insufficient, choose another observation.",
+      "evidence": "https://github.com/anttiluode/Child/blob/main/README.md"
+    },
+    {
+      "source": "MovingProblem",
+      "target": "ThirdWay",
+      "type": "converges",
+      "confidence": "high",
+      "why": "ThirdWay's retrospective explicitly names MovingProblem as the moving-coordinate identity thread that precedes its transport-of-computational-identity problem.",
+      "evidence": "https://github.com/anttiluode/ThirdWay/blob/main/RETROSPECTIVE.md"
+    },
+    {
+      "source": "AlgoSchalgo",
+      "target": "ThirdWay",
+      "type": "converges",
+      "confidence": "high",
+      "why": "ThirdWay's retrospective explicitly names AlgoSchalgo as the active-observation/identifiability thread feeding the later causal-credit and rewrite stack.",
+      "evidence": "https://github.com/anttiluode/ThirdWay/blob/main/RETROSPECTIVE.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "identifiability-before-credit",
+      "title": "Do not assign credit to distinctions the observer cannot identify",
+      "description": "MovingProblem shows that even locally healthy coordinates can lose semantic orientation around a global path. AlgoSchalgo turns insufficient observation into an explicit measurement action. Child separates SENSE from LEARN/ACT under delayed audit. ThirdWay later limits credit resolution to the resolution at which computation itself is identifiable.",
+      "nodes": ["MovingProblem", "AlgoSchalgo", "Child", "ThirdWay", "GeometricNeuronV24"]
+    },
+    {
+      "id": "representation-moves-computation-persists",
+      "title": "The representation may move while the useful computation should persist",
+      "description": "Monday/Tuesday recover stable causes across mixtures; yrot/Twensday separate structural coordinates from effective operators; T-800/Kyber keep computation in continuous traffic and multiple timescales; MovingProblem finally exposes the global-history information needed when local coordinate tracking is insufficient.",
+      "nodes": ["Monday", "Tuesday", "yrotisopeRweN", "Twensday", "T-800NNP", "KyberDyyni1", "MovingProblem"]
+    },
+    {
+      "id": "measurement-is-part-of-the-machine",
+      "title": "Observation policy becomes part of computation",
+      "description": "The line ends up back at a lesson already hiding in the old ECG loop: the observer is not passive. AlgoSchalgo makes sensor choice an information-seeking pulse, Child learns when sensing is worth its cost, and ThirdWay treats identifiability as a prerequisite for preserving computational identity through change.",
+      "nodes": ["GeometricNeuronOriginReview", "AlgoSchalgo", "Child", "ThirdWay"]
+    }
+  ]
+}
