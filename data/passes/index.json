@@ -6,5 +6,9 @@
   {
     "path": "splat-world.json",
     "enabled": true
+  },
+  {
+    "path": "clockfield-pruning.json",
+    "enabled": true
   }
 ]
