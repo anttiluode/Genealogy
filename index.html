@@ -6,6 +6,7 @@
   <title>Genealogy — 400 repos, fewer recurring machines</title>
   <meta name="description" content="An evidence-backed archaeology of Antti Luode's research repositories: ancestry, corrections, surviving mechanisms, and unresolved branches.">
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/zoom.css">
 </head>
 <body>
   <header class="masthead">
@@ -57,6 +58,12 @@
         <div class="graph-toolbar">
           <div class="legend" id="edge-legend"></div>
           <div class="toolbar-actions">
+            <div class="zoom-controls" role="group" aria-label="Graph zoom controls">
+              <button id="zoom-out" class="zoom-button" type="button" aria-label="Zoom out" title="Zoom out">−</button>
+              <span id="zoom-level" class="zoom-level" aria-live="polite">100%</span>
+              <button id="zoom-in" class="zoom-button" type="button" aria-label="Zoom in" title="Zoom in">+</button>
+              <button id="zoom-reset" class="zoom-button fit" type="button" title="Fit the whole graph">Fit</button>
+            </div>
             <button id="focus-selected" class="quiet-button" disabled>Focus 1-hop trail</button>
             <button id="reset-detail" class="quiet-button">Clear selection</button>
           </div>
@@ -114,5 +121,6 @@
     <a href="https://github.com/anttiluode/Genealogy">source / evidence ledger ↗</a>
   </footer>
   <script src="assets/app.js"></script>
+  <script src="assets/zoom.js"></script>
 </body>
 </html>
