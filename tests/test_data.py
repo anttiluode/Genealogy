@@ -62,5 +62,23 @@ class AtlasDataTests(unittest.TestCase):
         self.assertIn(("ObjektiYksi", "Splatworld3", "converges"), edges)
         self.assertIn(("SlapstackBet8", "SlapStack9", "forks"), edges)
 
+    def test_clockfield_pass_prunes_grand_claims_without_name_based_birth_edge(self):
+        atlas = load_atlas(ROOT)
+        pass_ids = {item["id"] for item in atlas["passes"]}
+        self.assertIn("clockfield-pruning", pass_ids)
+        edges = {(edge["source"], edge["target"], edge["type"]): edge for edge in atlas["edges"]}
+        for source in ("ClockfieldBornRule", "ClockfieldCollapse", "ClockfieldBigBang", "Geometric-Neuron"):
+            self.assertIn((source, "ClockfieldAsUniversalOperator", "converges"), edges)
+            self.assertEqual(edges[(source, "ClockfieldAsUniversalOperator", "converges")]["confidence"], "high")
+        self.assertIn(("Clockfield", "ClockfieldUnified", "converges"), edges)
+        self.assertIn(("SimpsonsUniverse", "ClockfieldUnified", "corrects"), edges)
+        self.assertNotIn(("BirthOfClockfield", "Clockfield", "inherits"), edges)
+        self.assertNotIn(("BirthOfClockfield", "Clockfield", "forks"), edges)
+        unified = next(node for node in atlas["nodes"] if node["id"] == "ClockfieldUnified")
+        self.assertEqual(unified["status"], "survivor")
+        killed = unified["killed"].lower()
+        self.assertIn("1/137", killed)
+        self.assertIn("gauge", killed)
+
 if __name__ == "__main__":
     unittest.main()
