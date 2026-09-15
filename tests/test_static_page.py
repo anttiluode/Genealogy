@@ -10,16 +10,20 @@ class StaticPageTests(unittest.TestCase):
             self.assertIn(f'data-view="{view}"', html)
         for element_id in ("coverage-bar", "pass-filter", "edge-filter", "era-strip", "focus-selected", "tools-content"):
             self.assertIn(f'id="{element_id}"', html)
+        self.assertIn('assets/tools.js', html)
         self.assertNotIn("https://cdn", html)
         self.assertNotIn("unpkg.com", html)
 
     def test_app_loads_base_data_and_modular_pass_index(self):
         js = (ROOT / "assets/app.js").read_text(encoding="utf-8")
+        tools_js = (ROOT / "assets/tools.js").read_text(encoding="utf-8")
         for path in ("data/repos.json", "data/nodes.json", "data/edges.json", "data/motifs.json", "data/passes/index.json"):
             self.assertIn(path, js)
-        for function in ("renderTimeline", "renderCorrections", "renderTools", "renderEraStrip", "loadPasses"):
+        for function in ("renderTimeline", "renderCorrections", "renderEraStrip", "loadPasses"):
             self.assertIn(f"function {function}", js)
-        self.assertIn("node.usefulness === 'practical'", js)
+        self.assertIn("function renderTools", tools_js)
+        self.assertIn("node.usefulness === 'practical'", tools_js)
+        self.assertIn("currentView === 'tools'", tools_js)
 
     def test_genealogy_graph_has_zoom_and_pan_controls(self):
         html = (ROOT / "index.html").read_text(encoding="utf-8")
