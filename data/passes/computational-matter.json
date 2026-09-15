@@ -1,0 +1,155 @@
+{
+  "id": "computational-matter",
+  "title": "Computational matter: distinct timescales, sparse work and persistent configuration",
+  "summary": "Saturday is best read as a consolidation rather than another ancestor in the weekday chain. It explicitly reuses four independently executable residues: Entrain's surprise-gated resonant growth and routing, BlockNeuron's persistent configurable substrate, DifferentMachine's locally discoverable active frontier and lazy execution, and Nollas's separation of local dynamical time from transport/refraction. TheClutch sits immediately upstream of Entrain as the reusable surprise gate. Together these repos sharpen a recurring question from 'can matter remember?' into separate engineering variables: when to spend compute, what persists after activity, where propagation happens, and which notion of time is actually being slowed.",
+  "order": 120,
+  "reviewed_at": "2026-09-15",
+  "nodes": [
+    {
+      "id": "TheClutch",
+      "url": "https://github.com/anttiluode/TheClutch",
+      "family": "computational-matter",
+      "status": "tool",
+      "claim": "A substrate-agnostic dual-process controller that runs a cheap cached policy by default and invokes an expensive planner only when accumulated surprise trips a gate, then latches the new plan back into the cache.",
+      "survived": "The reusable mechanism is small and practical: on the reported 16-seed navigation benchmark the leaky-integrator clutch reached 100% success with 8,100 BFS expansions and 3.4 plan calls, about 3.6% of the replan-every-step compute; the same controller also gates refitting under concept drift.",
+      "killed": "The accelerometer/jerk gate is not a general win: under sensor noise it fires about 1.7x more often and burns roughly 50% more compute for the same navigation success, while on the drift task it under-fires. The simpler leaky integrator is the better engine in the tested worlds.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/TheClutch/blob/main/README.md",
+      "tags": ["surprise", "conditional-compute", "concept-drift", "cached-policy", "tool"],
+      "era": "Computational matter consolidation",
+      "era_order": 5
+    },
+    {
+      "id": "Entrain",
+      "url": "https://github.com/anttiluode/Entrain",
+      "family": "computational-matter",
+      "status": "survivor",
+      "claim": "A self-wiring resonator network in which surprise gates structural growth, entrainment supplies routing, and loop topology can retain relative phase after input release.",
+      "survived": "The strongest receipts are mechanism-specific: surprise-gated growth reaches 0.974 test accuracy with about 3.6 resonators versus 0.873 for same-size random placement; measured Arnold tongues predict routing resolution; closed-ring traveling-wave direction is retained 12/12 while the matched open chain is 0/12; and a cue-driven entrainment router reaches 0.941 mean context-conflict accuracy versus 0.525 for the monolithic control.",
+      "killed": "Explicit Euler produced a false frequency-dependent resonance instability and was replaced by an exponential integrator; a lazy surprise gate stopped growing too early; routing fails when slave frequencies fall inside the measured tongue-resolution limit; and the repo explicitly does not claim a transformer competitor or general AI architecture.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Entrain/blob/main/README.md",
+      "tags": ["resonator", "entrainment", "growth", "routing", "surprise-gate"],
+      "era": "Computational matter consolidation",
+      "era_order": 5
+    },
+    {
+      "id": "BlockNeuron",
+      "url": "https://github.com/anttiluode/BlockNeuron",
+      "family": "computational-matter",
+      "status": "ledger",
+      "claim": "Tests a structured dynamic substrate with fast activity, slower local configuration and persistent reconfiguration rather than treating the learned unit as a memoryless point.",
+      "survived": "Hysteretic local state can be written, retained after the drive disappears, erased and rewritten, and can configure later COPY/NEGATE/ROTATE/FILTER computation across long silent intervals. The useful organizational residue is a persistent middle timescale between activity and slow learned structure.",
+      "killed": "No general BlockNeuron advantage was established. Matched factorized MLP/GRU controls beat the structured system on held-out compositional generalization, a separately trained phase-clamped model performs similarly on the tiny cross-modal task, and an explicit latch/register ties the persistent-configuration capability more simply.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/BlockNeuron/blob/main/README.md",
+      "tags": ["persistent-configuration", "hysteresis", "timescales", "latch-control", "negative-results"],
+      "era": "Computational matter consolidation",
+      "era_order": 5
+    },
+    {
+      "id": "DifferentMachine",
+      "url": "https://github.com/anttiluode/DifferentMachine",
+      "family": "computational-matter",
+      "status": "ledger",
+      "claim": "Separates represented machine capacity from work per event: persistent substrate and local state may be large while each event executes only a receiver-relevant causal frontier.",
+      "survived": "The scaling result makes the design constraint precise: with bounded local degree work scales about N^0.001, whereas global fanout returns approximately linear work. The surviving rule is that relevance must be locally discoverable; repeated interaction can amortize future computation into persistent local structure, and a tiny shared developmental rule can regrow sparse phenotype on unseen larger worlds.",
+      "killed": "Sparse representation alone is insufficient if discovering relevance requires a global scan. The strongest current developmental result still benefits from a spatially smooth synthetic world, fixed population/query budgets and no real-stream or hardware benchmark, so it is a mechanism receipt rather than a production-performance claim.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/DifferentMachine/blob/main/README.md",
+      "tags": ["event-driven", "causal-frontier", "lazy-execution", "developmental-rule", "scaling"],
+      "era": "Computational matter consolidation",
+      "era_order": 5
+    },
+    {
+      "id": "Nollas",
+      "url": "https://github.com/anttiluode/Nollas",
+      "family": "computational-matter",
+      "status": "ledger",
+      "claim": "Audits what 'clock' means in the Clockfield/field ecosystem by separating local dynamical rate, transport/refraction and thermodynamic interpretation across three media.",
+      "survived": "The durable correction is categorical: slowing transport is not the same operation as slowing local execution time. The refraction-form field leaves its on-site oscillator unslowed, while the lapse-form dynamics changes force evolution; later calibrated-bath audits recover the ordinary canonical target rather than a new gravitational heat law.",
+      "killed": "The ecosystem-wide assumption that the field and graph branches implemented the same metric is false. Registered Tolman-style interpretations and the apparent anomalous static-lapse heat exponent do not survive the correctly calibrated Langevin-bath audit; the earlier 0.7-style exponent is a nonequilibrium transport fingerprint, not evidence of Tolman gravity.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Nollas/blob/main/README.md",
+      "tags": ["local-time", "transport", "refraction", "lapse", "audit"],
+      "era": "Computational matter consolidation",
+      "era_order": 5
+    },
+    {
+      "id": "Saturday",
+      "url": "https://github.com/anttiluode/Saturday",
+      "family": "computational-matter",
+      "status": "active",
+      "claim": "A consolidation repo for computational matter: fast local dynamics, slowly relaxing residue, persistent configuration and sparse structural routing are kept as separate mechanisms, with an event-driven runtime and an archive map that distinguishes the user's original question from what earlier AI implementations actually built.",
+      "survived": "The first executable composition separates ROTATE, MASS, LATCH and ROUTE, keeps local execution time distinct from transport delay and coupling, supports analytically lazy quiet-time materialization, and exposes the same fixed later probe to material changed by earlier input. Its archive discipline is itself useful: old repos remain receipts for mechanisms and killed branches rather than being silently rebuilt.",
+      "killed": "Saturday explicitly refuses to inherit a universal brain/GR story, does not claim waves replace matrix multiplication, and treats its first machine mainly as a wiring test. It also rejects the idea that every earlier repo using a biological or field word actually instantiated the intended mechanism.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Saturday/blob/main/README.md",
+      "tags": ["computational-matter", "multi-timescale", "persistent-state", "routing", "archive-audit"],
+      "era": "Computational matter consolidation",
+      "era_order": 5
+    }
+  ],
+  "edges": [
+    {
+      "source": "TheClutch",
+      "target": "Entrain",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Entrain explicitly says its growth rule feeds task error into the Clutch leaky-integrator gate and imports the Clutch as one of its named lineage components.",
+      "evidence": "https://github.com/anttiluode/Entrain/blob/main/README.md"
+    },
+    {
+      "source": "Entrain",
+      "target": "Saturday",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Saturday's archive map explicitly names Entrain as the audio parent and says Saturday should reuse its resonant ears, surprise-gated growth, entrainment routing, pruning and loop-memory results rather than build another cochlea.",
+      "evidence": "https://github.com/anttiluode/Saturday/blob/main/ARCHIVE_MAP.md"
+    },
+    {
+      "source": "BlockNeuron",
+      "target": "Saturday",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Saturday's archive map explicitly imports BlockNeuron's hysteretic write/hold/erase and configured-computation result as the LATCH family while preserving the explicit-latch control that ties the basic capability.",
+      "evidence": "https://github.com/anttiluode/Saturday/blob/main/ARCHIVE_MAP.md"
+    },
+    {
+      "source": "DifferentMachine",
+      "target": "Saturday",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Saturday's archive map explicitly imports DifferentMachine's result that represented capacity need not equal work per event when relevance is locally discoverable, and uses it to justify an event/frontier-driven runtime rather than global stepping.",
+      "evidence": "https://github.com/anttiluode/Saturday/blob/main/ARCHIVE_MAP.md"
+    },
+    {
+      "source": "Nollas",
+      "target": "Saturday",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Saturday explicitly cites Nollas for the discipline that local execution time, transport delay and coupling are different mechanisms and reserves its gamma variable for the dynamics it actually schedules.",
+      "evidence": "https://github.com/anttiluode/Saturday/blob/main/ARCHIVE_MAP.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "computational-matter-stack",
+      "title": "Computational matter decomposes into distinct state, routing and execution layers",
+      "description": "TheClutch decides when expensive computation should run. Entrain lets surprise grow and route resonant structure. BlockNeuron demonstrates persistent configurable local state but is tied by an explicit latch. DifferentMachine separates represented capacity from active causal-frontier work. Nollas separates local execution time from transport/refraction. Saturday's useful move is not to claim one magical material mechanism, but to compose these as distinct layers whose costs and persistence can be measured separately.",
+      "nodes": ["TheClutch", "Entrain", "BlockNeuron", "DifferentMachine", "Nollas", "Saturday"]
+    },
+    {
+      "id": "when-to-compute-versus-what-to-store",
+      "title": "When to compute and what to store are different problems",
+      "description": "TheClutch gates expensive replanning from surprise; DifferentMachine reduces work by following a local causal frontier; BlockNeuron and Saturday concern persistent configuration/material that changes later processing. These mechanisms can cooperate, but conditional execution should not be confused with memory and persistent state should not be confused with an active work schedule.",
+      "nodes": ["TheClutch", "DifferentMachine", "BlockNeuron", "Saturday"]
+    }
+  ]
+}
