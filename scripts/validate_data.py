@@ -14,13 +14,51 @@ def _read_json(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def _load_passes(data: Path) -> tuple[list[dict], list[dict], list[dict], list[dict]]:
+    index_path = data / "passes" / "index.json"
+    if not index_path.exists():
+        return [], [], [], []
+    entries = _read_json(index_path)
+    passes, nodes, edges, motifs = [], [], [], []
+    for entry in entries:
+        if not entry.get("enabled", True):
+            continue
+        path = data / "passes" / entry["path"]
+        payload = _read_json(path)
+        pass_id = payload["id"]
+        passes.append({
+            "id": pass_id,
+            "title": payload.get("title", pass_id),
+            "summary": payload.get("summary", ""),
+            "order": payload.get("order", 999),
+            "reviewed_at": payload.get("reviewed_at", ""),
+            "path": entry["path"],
+        })
+        for node in payload.get("nodes", []):
+            item = dict(node)
+            item.setdefault("pass_id", pass_id)
+            nodes.append(item)
+        edges.extend(dict(edge, pass_id=edge.get("pass_id", pass_id)) for edge in payload.get("edges", []))
+        motifs.extend(dict(motif, pass_id=motif.get("pass_id", pass_id)) for motif in payload.get("motifs", []))
+    return passes, nodes, edges, motifs
+
+
 def load_atlas(root: Path) -> dict[str, list[dict]]:
     data = root / "data"
+    base_nodes = _read_json(data / "nodes.json")
+    for node in base_nodes:
+        node.setdefault("pass_id", "foundation")
+        node.setdefault("era", "Foundation atlas")
+        node.setdefault("era_order", 0)
+    passes, pass_nodes, pass_edges, pass_motifs = _load_passes(data)
     return {
         "repos": _read_json(data / "repos.json"),
-        "nodes": _read_json(data / "nodes.json"),
-        "edges": _read_json(data / "edges.json"),
-        "motifs": _read_json(data / "motifs.json"),
+        "nodes": base_nodes + pass_nodes,
+        "edges": _read_json(data / "edges.json") + pass_edges,
+        "motifs": _read_json(data / "motifs.json") + pass_motifs,
+        "passes": [
+            {"id": "foundation", "title": "Foundation atlas", "summary": "The first cross-family curated slice.", "order": 0, "reviewed_at": "2026-09-15", "path": None}
+        ] + passes,
     }
 
 
@@ -40,11 +78,17 @@ def validate_atlas(atlas: dict[str, list[dict]]) -> list[str]:
     edges = atlas.get("edges", [])
     motifs = atlas.get("motifs", [])
     repos = atlas.get("repos", [])
+    passes = atlas.get("passes", [])
 
     node_ids = [node.get("id") for node in nodes]
     for value in _dupes(node_ids):
         errors.append(f"duplicate node id: {value}")
     ids = set(node_ids)
+
+    pass_ids = [item.get("id") for item in passes]
+    for value in _dupes(pass_ids):
+        errors.append(f"duplicate pass id: {value}")
+    known_passes = set(pass_ids)
 
     for node in nodes:
         node_id = node.get("id", "<missing>")
@@ -54,6 +98,10 @@ def validate_atlas(atlas: dict[str, list[dict]]) -> list[str]:
             errors.append(f"unknown usefulness for {node_id}: {node.get('usefulness')}")
         if node.get("confidence") not in KNOWN_CONFIDENCE:
             errors.append(f"unknown confidence for {node_id}: {node.get('confidence')}")
+        if node.get("pass_id") not in known_passes:
+            errors.append(f"unknown pass for {node_id}: {node.get('pass_id')}")
+        if not isinstance(node.get("era_order", 0), int):
+            errors.append(f"non-integer era_order for {node_id}")
 
     edge_keys = []
     for edge in edges:
@@ -67,9 +115,14 @@ def validate_atlas(atlas: dict[str, list[dict]]) -> list[str]:
             errors.append(f"dangling edge source: {edge.get('source')}")
         if edge.get("target") not in ids:
             errors.append(f"dangling edge target: {edge.get('target')}")
+        if edge.get("pass_id") and edge.get("pass_id") not in known_passes:
+            errors.append(f"unknown edge pass: {edge.get('pass_id')}")
     for value in _dupes(edge_keys):
         errors.append(f"duplicate edge: {value}")
 
+    motif_ids = [m.get("id") for m in motifs]
+    for value in _dupes(motif_ids):
+        errors.append(f"duplicate motif id: {value}")
     for motif in motifs:
         for node_id in motif.get("nodes", []):
             if node_id not in ids:
@@ -84,12 +137,13 @@ def validate_atlas(atlas: dict[str, list[dict]]) -> list[str]:
 
 def main() -> int:
     root = Path(__file__).resolve().parents[1]
-    errors = validate_atlas(load_atlas(root))
+    atlas = load_atlas(root)
+    errors = validate_atlas(atlas)
     if errors:
         for error in errors:
             print(error)
         return 1
-    print("atlas data: OK")
+    print(f"atlas data: OK ({len(atlas['nodes'])} nodes across {len(atlas['passes'])} passes)")
     return 0
 
 

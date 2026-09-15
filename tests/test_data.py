@@ -32,5 +32,22 @@ class AtlasDataTests(unittest.TestCase):
         self.assertGreaterEqual(len(atlas["motifs"]), 5)
         self.assertGreaterEqual(sum(node["usefulness"] == "practical" for node in atlas["nodes"]), 2)
 
+    def test_modular_passes_are_merged_and_auditable(self):
+        atlas = load_atlas(ROOT)
+        pass_ids = {item["id"] for item in atlas["passes"]}
+        self.assertIn("foundation", pass_ids)
+        self.assertIn("geometric-ladder", pass_ids)
+        node = next(node for node in atlas["nodes"] if node["id"] == "GeometricNeuronV21")
+        self.assertEqual(node["pass_id"], "geometric-ladder")
+        self.assertEqual(node["era"], "Autopsy & external reset")
+
+    def test_geometric_ladder_keeps_real_corrections_without_fake_version_edges(self):
+        atlas = load_atlas(ROOT)
+        edges = {(edge["source"], edge["target"], edge["type"]) for edge in atlas["edges"]}
+        self.assertIn(("GeometricNeuronV8", "GeometricNeuronV9", "corrects"), edges)
+        self.assertIn(("GeometricNeuronV21", "GeometricNeuronV24", "corrects"), edges)
+        self.assertNotIn(("GeometricNeuronV2", "GeometricNeuronV4", "inherits"), edges)
+        self.assertNotIn(("GeometricNeuronV2", "GeometricNeuronV4", "forks"), edges)
+
 if __name__ == "__main__":
     unittest.main()
