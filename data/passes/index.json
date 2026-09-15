@@ -66,5 +66,9 @@
   {
     "path": "creative-dsp.json",
     "enabled": true
+  },
+  {
+    "path": "exploration-tools.json",
+    "enabled": true
   }
 ]
