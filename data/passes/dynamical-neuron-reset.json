@@ -1,0 +1,148 @@
+{
+  "id": "dynamical-neuron-reset",
+  "title": "Dynamical-neuron reset: persistent material, trainable direction and audited learning",
+  "summary": "A compact bridge between the structural-memory work and the later moving-representation spine. Sunday demonstrates that teaching history can live in persistent substrate rather than fast activity, then audits much of its broad computation story down to a writable-medium distinction. RecurrentGeometricNet makes the GeometricNeuronV5 directed readout trainable with ordinary gradient descent. GeoNeuronX then restarts the line around history-generated branch state and explicit Oja/Sanger population learning, while retaining batch whitening as an unresolved global convenience. MovingProblem later turns the contrast into an explicit audit: trainable by backprop is not the same claim as non-backprop local specialization.",
+  "order": 110,
+  "reviewed_at": "2026-09-15",
+  "nodes": [
+    {
+      "id": "Sunday",
+      "url": "https://github.com/anttiluode/Sunday",
+      "family": "morphogenesis",
+      "status": "ledger",
+      "claim": "A falsification-driven structural-relational-memory toy in which equal-marginal teaching histories redistribute a fixed substrate mass and thereby change how later identical signals interact after fast activity is reset.",
+      "survived": "Persistent substrate state is causal rather than decorative: equal-marginal coactivity writes pair-specific routing memory, one mass field can carry several simultaneous relations, execution is graph-generic rather than intrinsically 3-D, and dormant WRITE geometry composed with READ sensitivity predicts much of the finite learned operator before long training.",
+      "killed": "The broad new-computing-primitive story is demoted by a fixed-reservoir + trained-readout null that spans the controlled relation family exactly; the isotropic/general relation-memory claim fails; much of the apparent three-mode structure is explained by ordinary ring symmetry; and Gate 12 misses its preregistered incremental-control threshold (1.076767 < 1.08).",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Sunday/blob/main/README.md",
+      "tags": ["persistent-material", "structural-memory", "routing", "reservoir-audit", "negative-results"],
+      "era": "Stateful neuron reset",
+      "era_order": 4
+    },
+    {
+      "id": "RecurrentGeometricNet",
+      "url": "https://github.com/anttiluode/RecurrentGeometricNet",
+      "family": "geometric-neuron",
+      "status": "ledger",
+      "claim": "Makes the GeometricNeuronV5 time-direction reader trainable: random filters and directed-edge maps are optimized so a bilinear cross-time observable solves an exact time-reversal task whose power spectra are matched by construction.",
+      "survived": "On held-out exact time reversals, the learned bilinear readout reaches 1.000 accuracy while the same trained network's power-only readout stays at 0.500; the filterbank and directed edge maps are learned rather than hand assigned, and the net angular-momentum signal flips sign under reversal.",
+      "killed": "This is a backprop-trained result, not a local/non-backprop learner: the implementation uses gradient descent through the trainable reader. The explicit Ky-Fan/Oja coverage term was not decisive under supervision, delta-code economy is only about 2x rather than the recurrent v5 result, some filters collapse toward DC, and part of the readout topology is built in.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/RecurrentGeometricNet/blob/main/README.md",
+      "tags": ["chirality", "bilinear", "time-reversal", "backprop", "trainable-edges"],
+      "era": "Stateful neuron reset",
+      "era_order": 4
+    },
+    {
+      "id": "GeoNeuronX",
+      "url": "https://github.com/anttiluode/GeoNeuronX",
+      "family": "geometric-neuron",
+      "status": "ledger",
+      "claim": "A falsification-first reset of the Geometric Neuron after Sunday/Monday/Tuesday: dendritic dynamics materialize recent history into simultaneous branch coordinates, local nonlinearities act on that state, and population learning adapts over those history-bearing coordinates before an AIS-like output bottleneck.",
+      "survived": "Gate 5 gives a concrete temporal-specialization bridge: at the longest tested internal allocation, independent Oja units collapse to nearly identical outputs (recovery 0.3311, duplication 0.9996), while temporal Sanger competition reaches 0.8440 recovery with duplication 0.0129, close to batch AMUSE at 0.8479; destroying the lag relation reduces recovery.",
+      "killed": "The local-learning story is not end-to-end local because Gate 5 still uses global batch whitening before Oja/Sanger. GeoNeuronX does not claim that real dendrites literally implement AMUSE/SOBI/Oja, and its own kill condition is that a standard online whitening + adaptive-filter bank may explain the useful result more cleanly as an implementation bias rather than a new algorithm.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/GeoNeuronX/blob/main/results/GATE5.md",
+      "tags": ["dynamical-state", "oja", "sanger", "temporal-specialization", "whitening-caveat"],
+      "era": "Stateful neuron reset",
+      "era_order": 4
+    }
+  ],
+  "edges": [
+    {
+      "source": "GeometricNeuronV5",
+      "target": "RecurrentGeometricNet",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "RecurrentGeometricNet explicitly says it is directly downstream of geometric_neuron_v5.py and exists to learn the bands and directed edge pairings that v5 had hand specified.",
+      "evidence": "https://github.com/anttiluode/RecurrentGeometricNet/blob/main/README.md"
+    },
+    {
+      "source": "Sunday",
+      "target": "GeoNeuronX",
+      "type": "converges",
+      "confidence": "high",
+      "why": "GeoNeuronX explicitly describes itself as a restart after the Saturday/Sunday/Monday/Tuesday work on state, persistent operators and temporal identification; Sunday supplies the persistent-material/history side of that reset.",
+      "evidence": "https://github.com/anttiluode/GeoNeuronX/blob/main/README.md"
+    },
+    {
+      "source": "Monday",
+      "target": "GeoNeuronX",
+      "type": "converges",
+      "confidence": "high",
+      "why": "GeoNeuronX explicitly names the Monday source-separation work among the immediate mathematical inputs to the restart.",
+      "evidence": "https://github.com/anttiluode/GeoNeuronX/blob/main/README.md"
+    },
+    {
+      "source": "Tuesday",
+      "target": "GeoNeuronX",
+      "type": "converges",
+      "confidence": "high",
+      "why": "GeoNeuronX explicitly imports Tuesday's AMUSE/SOBI temporal-identifiability lesson: dynamical causes can be distinguished by how they relate to their past.",
+      "evidence": "https://github.com/anttiluode/GeoNeuronX/blob/main/README.md"
+    },
+    {
+      "source": "GeoNeuronX",
+      "target": "T-800NNP",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "T-800NNP explicitly lists GeoNeuronX among the repositories it descends from and carries forward receiver-carried history and local nonlinear state before routing.",
+      "evidence": "https://github.com/anttiluode/T-800NNP/blob/main/README.md"
+    },
+    {
+      "source": "RecurrentGeometricNet",
+      "target": "MovingProblem",
+      "type": "corrects",
+      "confidence": "high",
+      "why": "MovingProblem Gate 1 explicitly audits RecurrentGeometricNet's hidden learner, notes that its filters/edges were trained with loss.backward(), then asks whether GeoNeuronX/yrot-style local machinery can replace that backprop learner on the same direction problem.",
+      "evidence": "https://github.com/anttiluode/MovingProblem/blob/main/README.md"
+    },
+    {
+      "source": "GeoNeuronX",
+      "target": "MovingProblem",
+      "type": "converges",
+      "confidence": "high",
+      "why": "MovingProblem Gate 1 explicitly names GeoNeuronX Gate 5's NumPy Sanger/Oja temporal-specialization learner as a source mechanism for replacing the earlier backprop hidden learner.",
+      "evidence": "https://github.com/anttiluode/MovingProblem/blob/main/README.md"
+    },
+    {
+      "source": "Sunday",
+      "target": "Twensday",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Twensday explicitly calls Sunday a much earlier conceptual ancestor where transient activity versus persistent transfer structure became a recurring question.",
+      "evidence": "https://github.com/anttiluode/Twensday/blob/main/README.md"
+    },
+    {
+      "source": "Sunday",
+      "target": "Child",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Child explicitly summarizes the Sunday/FunctionalArbors inheritance as the lesson that history changes persistent transfer structure, then places that operation around local next-state prediction.",
+      "evidence": "https://github.com/anttiluode/Child/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "audit-the-learning-rule",
+      "title": "Trainable is not the same claim as locally learned",
+      "description": "GeometricNeuronV5 first makes the directed cross-time readout explicit; RecurrentGeometricNet learns its bands/edges with ordinary backprop; GeoNeuronX shows that Oja/Sanger-style population learning can approach the same temporal eigensolver problem once history is already present in state; MovingProblem then audits the distinction directly rather than treating 'no autograd' as a result by itself.",
+      "nodes": ["GeometricNeuronV5", "RecurrentGeometricNet", "GeoNeuronX", "MovingProblem"]
+    },
+    {
+      "id": "history-outlives-activity",
+      "title": "History can survive in material or receiver state after the event is gone",
+      "description": "Sunday stores teaching history in slow substrate mass after fast state resets. GeoNeuronX materializes recent history into simultaneous dynamical branch coordinates. T-800NNP/yrot later carry history in receiver state, eligibility and recurrent traffic. These are different carriers of the same recurring requirement: current input alone need not determine current computation.",
+      "nodes": ["Sunday", "GeoNeuronX", "yrotisopeRweN", "T-800NNP", "Child"]
+    },
+    {
+      "id": "persistent-medium-versus-readout",
+      "title": "Where the learned information lives matters",
+      "description": "Sunday's reservoir audit demotes the broad computation novelty while preserving a narrower distinction: a fixed reservoir plus trained readout stores the learned relation in the readout, whereas Sunday's teaching history alters the persistent substrate itself. Monday and later writable-medium projects repeatedly revisit that storage-location distinction.",
+      "nodes": ["Sunday", "FunctionalArbors", "Monday", "GelatinIsland", "JelloBrain"]
+    }
+  ]
+}
