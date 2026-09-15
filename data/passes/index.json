@@ -10,5 +10,17 @@
   {
     "path": "clockfield-pruning.json",
     "enabled": true
+  },
+  {
+    "path": "machine-spine.json",
+    "enabled": true
+  },
+  {
+    "path": "causal-memory.json",
+    "enabled": true
+  },
+  {
+    "path": "retention-economy.json",
+    "enabled": true
   }
 ]

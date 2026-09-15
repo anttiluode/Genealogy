@@ -80,5 +80,51 @@ class AtlasDataTests(unittest.TestCase):
         self.assertIn("1/137", killed)
         self.assertIn("gauge", killed)
 
+    def test_machine_spine_uses_explicit_repository_lineage(self):
+        atlas = load_atlas(ROOT)
+        pass_ids = {item["id"] for item in atlas["passes"]}
+        self.assertIn("machine-spine", pass_ids)
+        ids = {node["id"] for node in atlas["nodes"]}
+        self.assertIn("AnttisBrain2", ids)
+        edges = {(edge["source"], edge["target"], edge["type"]): edge for edge in atlas["edges"]}
+        self.assertIn(("AnttisBrain2", "HorizonNet", "inherits"), edges)
+        for source in ("AnttisNeuron", "GrowingAnttisNeuron", "ActiveVectorNN"):
+            self.assertIn((source, "NewMachine", "inherits"), edges)
+            self.assertEqual(edges[(source, "NewMachine", "inherits")]["confidence"], "high")
+        self.assertNotIn(("NewMachine", "FusionMachine", "inherits"), edges)
+
+    def test_causal_memory_pass_keeps_motivation_separate_from_inheritance(self):
+        atlas = load_atlas(ROOT)
+        pass_ids = {item["id"] for item in atlas["passes"]}
+        self.assertIn("causal-memory", pass_ids)
+        ids = {node["id"] for node in atlas["nodes"]}
+        for node_id in ("GelatinIsland", "JelloBrain", "SighImageSuper", "GeometricNeuronOriginReview", "OperaattoriAktiivinenDendriitti", "IttnasNoruen", "CausalHorizon"):
+            self.assertIn(node_id, ids)
+        edges = {(edge["source"], edge["target"], edge["type"]): edge for edge in atlas["edges"]}
+        self.assertIn(("GelatinIsland", "JelloBrain", "inherits"), edges)
+        for source in ("SighImageSuper", "Operaattori", "GeometricNeuronOriginReview"):
+            self.assertIn((source, "OperaattoriAktiivinenDendriitti", "converges"), edges)
+        for source in ("SighImageSuper", "Kompressori", "GeometricNeuronOriginReview", "OperaattoriAktiivinenDendriitti", "Operaattori"):
+            self.assertIn((source, "IttnasNoruen", "converges"), edges)
+        for source in ("AnttisBrain2", "SighImageSuper", "GeometricNeuronV24", "Operaattori", "OperaattoriJako", "Kompressori", "JelloBrain", "IttnasNoruen"):
+            edge = edges[(source, "CausalHorizon", "converges")]
+            self.assertEqual(edge["confidence"], "medium")
+
+    def test_retention_economy_prices_memory_and_reuse(self):
+        atlas = load_atlas(ROOT)
+        pass_ids = {item["id"] for item in atlas["passes"]}
+        self.assertIn("retention-economy", pass_ids)
+        ids = {node["id"] for node in atlas["nodes"]}
+        for node_id in ("Paper", "368", "ThinkingJello"):
+            self.assertIn(node_id, ids)
+        edges = {(edge["source"], edge["target"], edge["type"]): edge for edge in atlas["edges"]}
+        self.assertIn(("JelloBrain", "Paper", "extracts"), edges)
+        self.assertIn(("Paper", "368", "inherits"), edges)
+        self.assertIn(("JelloBrain", "ThinkingJello", "inherits"), edges)
+        self.assertIn(("GelatinIsland", "ThinkingJello", "inherits"), edges)
+        memory = next(node for node in atlas["nodes"] if node["id"] == "368")
+        self.assertIn("storage itself does nothing", memory["survived"].lower())
+        self.assertIn("no recurrence", memory["killed"].lower())
+
 if __name__ == "__main__":
     unittest.main()

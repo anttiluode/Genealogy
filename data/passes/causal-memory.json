@@ -1,0 +1,263 @@
+{
+  "id": "causal-memory",
+  "title": "Causal memory: writable matter, active questions and finite event algebra",
+  "summary": "A pass through the recent memory/interrogation line. It follows writable media from GelatinIsland into JelloBrain, reuses the already-curated GeometricNeuronOriginReview audit, tracks SighImageSuper's recoverability view of memory into active dendritic experiment design and bounded behavioral-update guards, and records CausalHorizon's exact event-space identity as a mathematical convergence point rather than an ancestry claim.",
+  "order": 50,
+  "reviewed_at": "2026-09-15",
+  "nodes": [
+    {
+      "id": "GelatinIsland",
+      "url": "https://github.com/anttiluode/GelatinIsland",
+      "family": "writable-medium",
+      "status": "experiment",
+      "claim": "A spatial excitable medium where local carriers write slow material, material routes later signals, and receiver state separately gates arrival effectiveness.",
+      "survived": "Under a frozen-material matched probe, the grown spatial arrangement transmitted farther than a shuffled copy in all six reported Estuary seeds; the route × primer factorization also cleanly separates path limitation from receiver receptivity.",
+      "killed": "The geometry result is not useful learning, intelligence, a validated neuron, or evidence that biological signaling uses the exact primer/material equations.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/GelatinIsland/blob/main/README.md",
+      "tags": ["writable-medium", "routing", "primer", "intervention", "structural-memory"],
+      "era": "Writable material",
+      "era_order": 6
+    },
+    {
+      "id": "JelloBrain",
+      "url": "https://github.com/anttiluode/JelloBrain",
+      "family": "writable-medium",
+      "status": "ledger",
+      "claim": "Extends the gel substrate into persistent order codes, pair-specific signaling conventions, negative-image route repair, separate novelty/relevance states and failure-gated structural consolidation.",
+      "survived": "Ordered traffic writes spatial operator geometry; meaningless pulses can acquire pair-specific repairable roles; prediction error can expose alternatives hidden by inherited routes; familiar-but-relevant events remain publishable; and failure-gated plasticity stabilizes two competing routes after the controller is removed.",
+      "killed": "Inherited geometry can masquerade as learning, naive exploration and reward-every-success fail, fast expectation is not itself the problem, and repeated contingency reversal still breaks on representational interference in the shared scalar sheet.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/JelloBrain/blob/main/README.md",
+      "tags": ["structural-memory", "prediction-error", "relevance", "failure-gated-plasticity", "negative-results"],
+      "era": "Writable material",
+      "era_order": 6
+    },
+    {
+      "id": "SighImageSuper",
+      "url": "https://github.com/anttiluode/SighImageSuper",
+      "family": "causal-memory",
+      "status": "ledger",
+      "claim": "Uses a recursive image operator as a laboratory for asking which distinctions between past events remain recoverable, where history is carried, which query reveals it, and how retrieval changes the substrate.",
+      "survived": "Memory is broader than slow eigenmodes: an eight-cell nilpotent chain carries finite temporal history, AB versus BA teaching survives exact fast-state erasure in changed material, and active query geometry can reveal a distinction invisible to a passive readout. Private interventions can also help separate self-caused from external effects.",
+      "killed": "The late float16 spectral re-expansion is a quantization artifact, the transient singular spectrum is not literally a collapsing observability Gramian, and an eigenvalue-only account misses travelling and material memory.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/SighImageSuper/blob/main/README.md",
+      "tags": ["memory", "observability", "active-query", "structural-memory", "causal-intervention"],
+      "era": "Recoverable history",
+      "era_order": 7
+    },
+    {
+      "id": "OperaattoriAktiivinenDendriitti",
+      "url": "https://github.com/anttiluode/OperaattoriAktiivinenDendriitti",
+      "family": "operator",
+      "status": "active",
+      "claim": "Turns the active-question idea into a bounded experiment-design problem: choose physically realizable stimulation that separates plausible hidden dendritic changes from nuisance, model mismatch and calibration drift at limited recording sites.",
+      "survived": "Symmetry can make a real hidden change exactly invisible to one stimulation and visible to another; nuisance-aware fixed stimulation panels beat controlled random designs in the harder toy; paired baseline measurement and a compressed empirical transfer fingerprint are useful resources; ambiguity is reported rather than hidden.",
+      "killed": "The original ~99% localization result was largely unique stimulation coding, the first planner overvalued tiny separations, and the first adaptive planner did not beat the strong fixed Gate-4 design; current seven-way top-1 accuracy remains modest.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/OperaattoriAktiivinenDendriitti/blob/main/README.md",
+      "tags": ["experiment-design", "dendrite", "observability", "nuisance", "baseline-fingerprint"],
+      "era": "Active interrogation",
+      "era_order": 8
+    },
+    {
+      "id": "IttnasNoruen",
+      "url": "https://github.com/anttiluode/IttnasNoruen",
+      "family": "causal-memory",
+      "status": "ledger",
+      "claim": "Builds a bounded behavioral-update guard: proposed changes are measured against remembered queries, finite candidate effects are checked before commitment, and replay/reference coverage is treated as a resource rather than a free oracle.",
+      "survived": "The software guard can preserve declared old-response bounds while improving a new response; measured nonlinear compensation repairs a concrete failure of first-order preservation; partial-cue tests expose that preserving full answers is not the same as preserving access to them.",
+      "killed": "A finite reference bank does not certify unseen behavior, informed replay has not established an unseen-access advantage, added capacity did not help the tested mixed-cue benchmark, and temporary candidate evaluation is a software privilege rather than a biological mechanism.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/IttnasNoruen/blob/main/README.md",
+      "tags": ["continual-learning", "behavioral-guard", "replay", "finite-change", "reference-coverage"],
+      "era": "Active interrogation",
+      "era_order": 8
+    },
+    {
+      "id": "CausalHorizon",
+      "url": "https://github.com/anttiluode/CausalHorizon",
+      "family": "operator-response",
+      "status": "survivor",
+      "claim": "States an exact finite-rank identity for time-ordered linear propagators with ordered low-rank event edits, exposing event-event interaction through a finite nilpotent event-space resolvent and an observer-dependent algebraic interaction horizon.",
+      "survived": "The finite-event identity, rank bound, exact pair-interference term, observer projection and finite polynomial interaction-depth expansion are algebraically explicit and numerically verified to about 2.7e-15 worst relative error over the initial random test battery.",
+      "killed": "The repository does not claim historical priority, nonlinear generality, a brain mechanism, or that the motivating nonlinear repositories must obey the same factorization; the prior projects are explicitly labeled motivation only.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/CausalHorizon/blob/main/README.md",
+      "tags": ["linear-algebra", "low-rank-events", "causal-orthogonality", "observer", "interaction-horizon"],
+      "era": "Exact event algebra",
+      "era_order": 9
+    }
+  ],
+  "edges": [
+    {
+      "source": "GelatinIsland",
+      "target": "JelloBrain",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "JelloBrain opens by explicitly stating that it follows GelatinIsland, carrying forward the writable-medium idea into ordered traffic, private conventions and launch-boundary experiments.",
+      "evidence": "https://github.com/anttiluode/JelloBrain/blob/main/README.md"
+    },
+    {
+      "source": "SighImageSuper",
+      "target": "OperaattoriAktiivinenDendriitti",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Active Dendrite explicitly says it grows out of SighImageSuper's result that a distinction may exist physically yet require the right probe/readout geometry to become visible.",
+      "evidence": "https://github.com/anttiluode/OperaattoriAktiivinenDendriitti/blob/main/README.md"
+    },
+    {
+      "source": "Operaattori",
+      "target": "OperaattoriAktiivinenDendriitti",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Active Dendrite explicitly names Operaattori's morphology-compiled electrical operator and audited local tangents as one of its three source threads.",
+      "evidence": "https://github.com/anttiluode/OperaattoriAktiivinenDendriitti/blob/main/README.md"
+    },
+    {
+      "source": "GeometricNeuronOriginReview",
+      "target": "OperaattoriAktiivinenDendriitti",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Active Dendrite explicitly names the re-audited PerceptionLab feedback loop as a source thread showing that changing what a loop measures can change the trajectory subsequently observed.",
+      "evidence": "https://github.com/anttiluode/OperaattoriAktiivinenDendriitti/blob/main/README.md"
+    },
+    {
+      "source": "SighImageSuper",
+      "target": "IttnasNoruen",
+      "type": "converges",
+      "confidence": "high",
+      "why": "IttnasNoruen's research-boundary/lineage section explicitly cites SighImageSuper for persistence, interrogation and self/world confounds.",
+      "evidence": "https://github.com/anttiluode/IttnasNoruen/blob/main/README.md"
+    },
+    {
+      "source": "Kompressori",
+      "target": "IttnasNoruen",
+      "type": "converges",
+      "confidence": "high",
+      "why": "IttnasNoruen explicitly cites Kompressori for the fact that a preserved trajectory can still respond differently to the next perturbation and includes an executable Kompressori bridge.",
+      "evidence": "https://github.com/anttiluode/IttnasNoruen/blob/main/README.md"
+    },
+    {
+      "source": "GeometricNeuronOriginReview",
+      "target": "IttnasNoruen",
+      "type": "converges",
+      "confidence": "high",
+      "why": "IttnasNoruen explicitly cites the Origin Review for spatial measurement inside nonlinear feedback.",
+      "evidence": "https://github.com/anttiluode/IttnasNoruen/blob/main/README.md"
+    },
+    {
+      "source": "OperaattoriAktiivinenDendriitti",
+      "target": "IttnasNoruen",
+      "type": "converges",
+      "confidence": "high",
+      "why": "IttnasNoruen explicitly cites Active Dendrite as the measurement-selection thread for exposing hidden distinctions.",
+      "evidence": "https://github.com/anttiluode/IttnasNoruen/blob/main/README.md"
+    },
+    {
+      "source": "Operaattori",
+      "target": "IttnasNoruen",
+      "type": "converges",
+      "confidence": "high",
+      "why": "IttnasNoruen explicitly cites Operaattori's morphology-shaped propagation and geometry sensitivities as part of its lineage/context.",
+      "evidence": "https://github.com/anttiluode/IttnasNoruen/blob/main/README.md"
+    },
+    {
+      "source": "AnttisBrain2",
+      "target": "CausalHorizon",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "CausalHorizon explicitly lists AnttisBrain2 among the projects that motivated the theorem, while stressing that motivation is not mathematical inheritance.",
+      "evidence": "https://github.com/anttiluode/CausalHorizon/blob/main/README.md"
+    },
+    {
+      "source": "SighImageSuper",
+      "target": "CausalHorizon",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "CausalHorizon explicitly lists SighImageSuper among its motivating projects but labels the theorem standalone.",
+      "evidence": "https://github.com/anttiluode/CausalHorizon/blob/main/README.md"
+    },
+    {
+      "source": "GeometricNeuronV24",
+      "target": "CausalHorizon",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "CausalHorizon explicitly lists GeometricNeuronV24 among its motivating projects; this records influence/convergence rather than descent.",
+      "evidence": "https://github.com/anttiluode/CausalHorizon/blob/main/README.md"
+    },
+    {
+      "source": "Operaattori",
+      "target": "CausalHorizon",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "CausalHorizon explicitly lists Operaattori among its motivating projects and then abstracts away to a standalone finite-dimensional identity.",
+      "evidence": "https://github.com/anttiluode/CausalHorizon/blob/main/README.md"
+    },
+    {
+      "source": "OperaattoriJako",
+      "target": "CausalHorizon",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "CausalHorizon explicitly lists OperaattoriJako among its motivating projects while denying any claim that the theorem is a direct model of that nonlinear system.",
+      "evidence": "https://github.com/anttiluode/CausalHorizon/blob/main/README.md"
+    },
+    {
+      "source": "Kompressori",
+      "target": "CausalHorizon",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "CausalHorizon explicitly identifies Kompressori as both motivation and the strongest immediate empirical handoff for testing propagated overlap against finite non-additivity.",
+      "evidence": "https://github.com/anttiluode/CausalHorizon/blob/main/README.md"
+    },
+    {
+      "source": "JelloBrain",
+      "target": "CausalHorizon",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "CausalHorizon explicitly lists JelloBrain among the motivating projects; the edge records conceptual convergence only.",
+      "evidence": "https://github.com/anttiluode/CausalHorizon/blob/main/README.md"
+    },
+    {
+      "source": "IttnasNoruen",
+      "target": "CausalHorizon",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "CausalHorizon explicitly lists IttnasNoruen among the motivating projects while keeping the theorem independent of the software-update mechanism.",
+      "evidence": "https://github.com/anttiluode/CausalHorizon/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "memory-as-recoverable-distinction",
+      "title": "Memory is a distinction a later question can still recover",
+      "description": "SighImageSuper makes the definition explicit across lingering, travelling and material carriers; JelloBrain writes distinctions into spatial material; IttnasNoruen asks which old behavioral distinctions remain protected under updates; CausalHorizon factors the linear case into event entry, internal interaction and observer projection.",
+      "nodes": ["SighImageSuper", "JelloBrain", "IttnasNoruen", "CausalHorizon"]
+    },
+    {
+      "id": "question-can-change-future-dynamics",
+      "title": "The question can change the system being observed",
+      "description": "The re-audited PerceptionLab loop places measurement inside feedback; SighImageSuper studies query back-action; Active Dendrite turns the choice of stimulation/operating condition into experiment design; IttnasNoruen charges the cost of temporary candidate interrogation before a write is committed.",
+      "nodes": ["GeometricNeuronOriginReview", "SighImageSuper", "OperaattoriAktiivinenDendriitti", "IttnasNoruen"]
+    },
+    {
+      "id": "structure-compiles-future-response",
+      "title": "History becomes operator geometry",
+      "description": "GelatinIsland and JelloBrain let traffic write slow routing material; Operaattori compiles physical structure into response; SighImageSuper shows teaching can change later query geometry even after fast state is erased; Active Dendrite asks which experiment reveals that changed structure.",
+      "nodes": ["GelatinIsland", "JelloBrain", "Operaattori", "SighImageSuper", "OperaattoriAktiivinenDendriitti"]
+    },
+    {
+      "id": "event-interference-needs-propagated-overlap",
+      "title": "Static proximity is weaker than propagated causal overlap",
+      "description": "Kompressori finds overlap-dependent interference in operator responses; CausalHorizon isolates the exact directed propagated overlap Omega_ji for low-rank linear event edits and proposes it as the next measurable handoff back to Kompressori.",
+      "nodes": ["Kompressori", "CausalHorizon"]
+    }
+  ]
+}

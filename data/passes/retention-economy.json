@@ -1,0 +1,108 @@
+{
+  "id": "retention-economy",
+  "title": "Retention economy: when memory earns its keep",
+  "summary": "A small pass that follows JelloBrain's interference problem into a bounded research note, then into 368's stronger fast-forgetting baseline and explicit retain/retrieve/investigate split. ThinkingJello is kept as a separate practical continuation: it carries prediction-error and visible-intervention lessons forward without claiming to solve JelloBrain's structural reversal failure.",
+  "order": 60,
+  "reviewed_at": "2026-09-15",
+  "nodes": [
+    {
+      "id": "Paper",
+      "url": "https://github.com/anttiluode/Paper",
+      "family": "continual-learning",
+      "status": "ledger",
+      "claim": "Research note asking whether conflicting experience should revise, retrieve, investigate or justify a new specialization, built from JelloBrain's cross-write interference and explicit causal-timing controls.",
+      "survived": "The paper turns an intuitive growth story into bounded diagnostics: it reproduces the JelloBrain cross-write effect, shows why outcome-leaking selection is invalid, and records noise and coordinate controls that prevent gradient conflict from being treated as direct evidence for structural growth.",
+      "killed": "Opposing updates do not prove that growth is necessary; gradient cosine is coordinate-dependent; unpredictable noise can create apparent conflict; and the proposed prospective growth protocol is specified future work rather than an executed result.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Paper/blob/main/README.md",
+      "tags": ["continual-learning", "interference", "causal-timing", "growth", "claim-boundary"],
+      "era": "Memory admission",
+      "era_order": 10
+    },
+    {
+      "id": "368",
+      "url": "https://github.com/anttiluode/368",
+      "family": "continual-learning",
+      "status": "ledger",
+      "claim": "Attacks the question 'when should a learner split?' with a strong fast-forgetting baseline, matched-cost active probes, and a hybrid that separates adaptation from retained memory and causal retrieval.",
+      "survived": "Fast forgetting is the strong default; retained specialization can still help when old conditions recur; disagreement probes at adaptive times improve retrieval at matched observation cost; and storage itself does nothing unless retained models are actually reused.",
+      "killed": "Prediction failure alone is not evidence for growth, the original prospective grower loses badly to fast forgetting on overall switching error, and in a no recurrence A→B→C world the system still stores memories without gaining prediction value—so successful admission cannot justify indefinite retention.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/368/blob/main/README.md",
+      "tags": ["fast-forgetting", "retention", "retrieval", "active-probing", "memory-cost"],
+      "era": "Memory admission",
+      "era_order": 10
+    },
+    {
+      "id": "ThinkingJello",
+      "url": "https://github.com/anttiluode/ThinkingJello",
+      "family": "writable-medium",
+      "status": "tool",
+      "claim": "A visible predictive organism demo with an internal copy, learned echo model and residual-driven interaction, carrying selected JelloBrain and GelatinIsland lessons into an inspectable browser system.",
+      "survived": "In the simulated pond, the learned model explains 99.995–99.999% of future returns across six reported seeds when the body is stationary and learning is frozen; removing the internal copy drops that score to zero. The UI makes prediction, actual return, residual, intervention and saved adaptive state directly inspectable.",
+      "killed": "The three frequency channels are engineered rather than emergent, the learned object is an impulse response rather than a grown JelloBrain material sheet, the JelloBrain reversal failure remains unresolved, and real-room microphone behavior is explicitly unvalidated.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/ThinkingJello/blob/main/README.md",
+      "tags": ["prediction", "efference-copy", "residual", "browser-demo", "visible-state"],
+      "era": "Memory admission",
+      "era_order": 10
+    }
+  ],
+  "edges": [
+    {
+      "source": "JelloBrain",
+      "target": "Paper",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "Paper explicitly says the manuscript develops its structural-specialization question from the JelloBrain experiments and includes a fresh reproduction of the upstream JelloBrain cross-write diagnostic.",
+      "evidence": "https://github.com/anttiluode/Paper/blob/main/README.md"
+    },
+    {
+      "source": "Paper",
+      "target": "368",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "368 opens by explicitly stating that it follows the research note When Should a Learner Split? in Paper, then attacks the note with a missing fast-forgetting baseline and new gates.",
+      "evidence": "https://github.com/anttiluode/368/blob/main/README.md"
+    },
+    {
+      "source": "JelloBrain",
+      "target": "ThinkingJello",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "ThinkingJello's 'What carries forward' section explicitly names JelloBrain's separation of expected activity, meaningful mismatch and plasticity, while preserving its reversal failure as unresolved.",
+      "evidence": "https://github.com/anttiluode/ThinkingJello/blob/main/README.md"
+    },
+    {
+      "source": "GelatinIsland",
+      "target": "ThinkingJello",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "ThinkingJello explicitly names GelatinIsland as an upstream source for visible state, direct intervention and preservation of the whole adaptive organism rather than only a screenshot.",
+      "evidence": "https://github.com/anttiluode/ThinkingJello/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "storage-is-not-retrieval",
+      "title": "Storage is not retrieval",
+      "description": "JelloBrain shows that structural writing can stabilize useful routes but can also interfere; Paper asks when another specialization is justified; 368 shows that cached models have no predictive value unless they are causally retrieved and that memories should eventually be priced by reuse.",
+      "nodes": ["JelloBrain", "Paper", "368"]
+    },
+    {
+      "id": "adapt-retain-retrieve-investigate",
+      "title": "Adapt, retain, retrieve and investigate are separate decisions",
+      "description": "The line moves away from treating every surprise as a growth signal. A fast current model handles now; retention preserves a candidate; retrieval reuses old structure; active probing buys extra evidence only when ambiguity makes it worthwhile.",
+      "nodes": ["368", "IttnasNoruen", "JelloBrain"]
+    },
+    {
+      "id": "internal-copy-and-residual",
+      "title": "Prediction residual is useful only when its causal source is controlled",
+      "description": "JelloBrain uses context-keyed negative-image cancellation to reveal hidden alternatives; ThinkingJello exposes a simpler outgoing-command/return prediction loop; SighImageSuper and IttnasNoruen independently warn that correlation with an action or discrepancy alone does not identify cause.",
+      "nodes": ["JelloBrain", "ThinkingJello", "SighImageSuper", "IttnasNoruen"]
+    }
+  ]
+}
