@@ -24,10 +24,15 @@ class EEGInstrumentsPassTests(unittest.TestCase):
         ):
             self.assertIn(node_id, ids)
 
-        platform = next(node for node in atlas["nodes"] if node["id"] == "PerceptionLab")
-        self.assertEqual(platform["usefulness"], "practical")
-        self.assertIn("30", platform["survived"])
-        self.assertIn("22", platform["survived"])
+        # PerceptionLab is intentionally reused from the foundation atlas rather
+        # than duplicated in this pass; the six nodes below are the new records.
+        pass_node_ids = {
+            node["id"]
+            for node in atlas["nodes"]
+            if node.get("pass_id") == "eeg-instruments"
+        }
+        self.assertNotIn("PerceptionLab", pass_node_ids)
+        self.assertEqual(len(pass_node_ids), 6)
 
         source = next(node for node in atlas["nodes"] if node["id"] == "EEGBrainSourceReconstructionTool")
         self.assertEqual(source["usefulness"], "practical")
@@ -57,6 +62,7 @@ class EEGInstrumentsPassTests(unittest.TestCase):
                 "RealtimeEEG3Dsystem",
             }.issubset(set(motif["nodes"]))
         )
+        self.assertIn("22.0-frame", motif["description"])
 
     def test_thematic_similarity_does_not_create_fake_eeg_lineage(self):
         atlas = load_atlas(ROOT)
