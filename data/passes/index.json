@@ -46,5 +46,9 @@
   {
     "path": "computational-matter.json",
     "enabled": true
+  },
+  {
+    "path": "early-adaptive-fossils.json",
+    "enabled": true
   }
 ]
