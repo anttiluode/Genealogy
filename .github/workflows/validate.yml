@@ -24,4 +24,6 @@ jobs:
       - name: Run tests
         run: python -m unittest discover -s tests -v
       - name: Check browser JavaScript
-        run: node --check assets/app.js
+        run: |
+          node --check assets/app.js
+          node --check assets/zoom.js
