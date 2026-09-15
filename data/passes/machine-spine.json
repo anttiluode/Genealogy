@@ -1,7 +1,7 @@
 {
   "id": "machine-spine",
   "title": "Resident machines: state, events, publication and readiness",
-  "summary": "An explicit ancestry pass through the recent resident-state machine line. It adds the AnttisBrain2 rendering ancestor of HorizonNet, records the repository-declared AnttisNeuron/GrowingAnttisNeuron lineage into ActiveVectorNN and NewMachine, and deliberately leaves NewMachine→FusionMachine without an ancestry arrow because the current repositories do not document that descent explicitly.",
+  "summary": "An explicit ancestry pass through the recent resident-state machine line. The foundation atlas already contains the repository-declared AnttisNeuron/GrowingAnttisNeuron lineage into ActiveVectorNN and NewMachine; this pass adds AnttisBrain2 as the rendering ancestor of HorizonNet and groups the surviving resident-state/publication ideas without inventing a NewMachine→FusionMachine ancestry edge.",
   "order": 40,
   "reviewed_at": "2026-09-15",
   "nodes": [
@@ -29,46 +29,6 @@
       "confidence": "high",
       "why": "Both repositories explicitly state that HorizonNet came from AnttisBrain2's four-bounce recursive-mirror / observation-horizon rendering trick.",
       "evidence": "https://github.com/anttiluode/HorizonNet/blob/main/README.md"
-    },
-    {
-      "source": "AnttisNeuron",
-      "target": "ActiveVectorNN",
-      "type": "inherits",
-      "confidence": "high",
-      "why": "ActiveVectorNN explicitly names AnttisNeuron as part of its neuroscience lineage before stripping the idea down to maintained vector state, innovation events and slower persistence.",
-      "evidence": "https://github.com/anttiluode/ActiveVectorNN/blob/main/README.md"
-    },
-    {
-      "source": "GrowingAnttisNeuron",
-      "target": "ActiveVectorNN",
-      "type": "inherits",
-      "confidence": "high",
-      "why": "ActiveVectorNN explicitly names GrowingAnttisNeuron as part of its lineage while moving from grown/operator structure to a deliberately AI-only resident-state/event abstraction.",
-      "evidence": "https://github.com/anttiluode/ActiveVectorNN/blob/main/README.md"
-    },
-    {
-      "source": "AnttisNeuron",
-      "target": "NewMachine",
-      "type": "inherits",
-      "confidence": "high",
-      "why": "NewMachine contains an explicit lineage section naming AnttisNeuron's dendritic modes / persistent physical state as an upstream ingredient.",
-      "evidence": "https://github.com/anttiluode/NewMachine/blob/main/README.md"
-    },
-    {
-      "source": "GrowingAnttisNeuron",
-      "target": "NewMachine",
-      "type": "inherits",
-      "confidence": "high",
-      "why": "NewMachine's explicit lineage names GrowingAnttisNeuron's sparse grown wiring and physical operators as an upstream ingredient.",
-      "evidence": "https://github.com/anttiluode/NewMachine/blob/main/README.md"
-    },
-    {
-      "source": "ActiveVectorNN",
-      "target": "NewMachine",
-      "type": "inherits",
-      "confidence": "high",
-      "why": "NewMachine's explicit lineage names ActiveVectorNN's separation of resident state from sparse communication, then adds resident-state repair and publication control around that split.",
-      "evidence": "https://github.com/anttiluode/NewMachine/blob/main/README.md"
     }
   ],
   "motifs": [
