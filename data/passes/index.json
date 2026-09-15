@@ -22,5 +22,13 @@
   {
     "path": "retention-economy.json",
     "enabled": true
+  },
+  {
+    "path": "deerskin-origins.json",
+    "enabled": true
+  },
+  {
+    "path": "spectral-routing.json",
+    "enabled": true
   }
 ]
