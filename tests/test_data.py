@@ -49,5 +49,18 @@ class AtlasDataTests(unittest.TestCase):
         self.assertNotIn(("GeometricNeuronV2", "GeometricNeuronV4", "inherits"), edges)
         self.assertNotIn(("GeometricNeuronV2", "GeometricNeuronV4", "forks"), edges)
 
+    def test_splat_pass_replaces_speculative_worldmodel_edge_with_explicit_lineage(self):
+        atlas = load_atlas(ROOT)
+        pass_ids = {item["id"] for item in atlas["passes"]}
+        self.assertIn("splat-world", pass_ids)
+        edges = {(edge["source"], edge["target"], edge["type"]): edge for edge in atlas["edges"]}
+        self.assertNotIn(("Splatworld2", "WorldModel", "inherits"), edges)
+        for source in ("SplatWorld", "SplatField", "TheSplat5", "SplatNeuron", "SplatNeuronPlusField"):
+            self.assertIn((source, "WorldModel", "inherits"), edges)
+            self.assertEqual(edges[(source, "WorldModel", "inherits")]["confidence"], "high")
+        self.assertIn(("Splatworld2", "Splatworld3", "inherits"), edges)
+        self.assertIn(("ObjektiYksi", "Splatworld3", "converges"), edges)
+        self.assertIn(("SlapstackBet8", "SlapStack9", "forks"), edges)
+
 if __name__ == "__main__":
     unittest.main()
