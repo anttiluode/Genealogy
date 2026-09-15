@@ -50,5 +50,9 @@
   {
     "path": "early-adaptive-fossils.json",
     "enabled": true
+  },
+  {
+    "path": "measurement-discipline.json",
+    "enabled": true
   }
 ]
