@@ -1,0 +1,54 @@
+{
+  "id": "spectral-routing",
+  "title": "Spectral routing: computational identity, causal credit and collision-aware rewrite",
+  "summary": "A cross-pass synthesis centered on ThirdWay. Unlike a version-number ancestry, this pass records an explicit fusion: ThirdWay says it is the separate arm between GAx's modal/computational families and V25's route-local delayed credit. Later gates then explicitly fuse Kompressori's low-rank operator edits with CausalHorizon's propagated causal overlap. TransformerStudy is kept as a parallel controlled probe of algorithm/routing geometry rather than falsely labeled a descendant.",
+  "order": 80,
+  "reviewed_at": "2026-09-15",
+  "nodes": [],
+  "edges": [
+    {
+      "source": "GeometricNeuronV25GeneticAlgoAndFanningNeuron",
+      "target": "ThirdWay",
+      "type": "converges",
+      "confidence": "high",
+      "why": "ThirdWay explicitly defines itself as the separate fusion arm between V25's separated causal routes/delayed local credit and GAx's computational modes/context-dependent gain.",
+      "evidence": "https://github.com/anttiluode/ThirdWay/blob/main/README.md"
+    },
+    {
+      "source": "Kompressori",
+      "target": "ThirdWay",
+      "type": "converges",
+      "confidence": "high",
+      "why": "ThirdWay T4 explicitly brings Kompressori's low-rank experience-induced operator changes into its compatibility problem.",
+      "evidence": "https://github.com/anttiluode/ThirdWay/blob/main/README.md"
+    },
+    {
+      "source": "CausalHorizon",
+      "target": "ThirdWay",
+      "type": "converges",
+      "confidence": "high",
+      "why": "ThirdWay T4 explicitly uses CausalHorizon's propagated event-space overlap Omega as the coordinate for deciding whether locally useful edits collide.",
+      "evidence": "https://github.com/anttiluode/ThirdWay/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "same-answer-different-computation",
+      "title": "The same answer can hide different computation",
+      "description": "GAx Gate 4 makes two mechanisms observationally identical until a counterfactual breaks the cue correlation. ThirdWay promotes computational identity/continuation into the protected object. TransformerStudy independently probes whether task-conditioned residual interventions change downstream nonlinear routing rather than merely translating a vector. This is a recurring question, not an ancestry claim.",
+      "nodes": ["GAx", "ThirdWay", "TransformerStudy"]
+    },
+    {
+      "id": "route-credit-rewrite-stack",
+      "title": "Routing, credit and rewrite are separate jobs",
+      "description": "GAx supplies context-sensitive modal gain, V25 supplies route-local eligibility under delayed scalar consequence, ThirdWay transports identity/credit as coordinates move, and Kompressori plus CausalHorizon turn later writes into a causal collision problem.",
+      "nodes": ["GAx", "GeometricNeuronV25GeneticAlgoAndFanningNeuron", "ThirdWay", "Kompressori", "CausalHorizon"]
+    },
+    {
+      "id": "per-write-safety-does-not-compose",
+      "title": "Locally safe rewrites can accumulate global damage",
+      "description": "ThirdWay T7A shows that shrinking every individually acceptable write below a local risk ceiling does not make the sequence safe. The recurring lesson matches the broader genealogy: state must carry enough history of previous changes for future compatibility decisions.",
+      "nodes": ["ThirdWay", "IttnasNoruen", "Kompressori", "CausalHorizon"]
+    }
+  ]
+}

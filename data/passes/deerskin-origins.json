@@ -1,0 +1,140 @@
+{
+  "id": "deerskin-origins",
+  "title": "Deerskin / P-KAS origins: geometry, calcium and the audit trail",
+  "summary": "An older-roots pass through the speculative Deerskin and P-KAS branches that fed the Geometric Neuron ecosystem. It keeps the useful mechanisms and empirical receipts, but also records the later audit: the ECG loop does not have to oscillate, MoireNet's XOR advantage was a restart-budget artifact, phase-addressed memory failed its no-probe null, and the strongest surviving empirical claim is the zero-parameter EEG result in Geometric-Neuron.",
+  "order": 70,
+  "reviewed_at": "2026-09-15",
+  "nodes": [
+    {
+      "id": "deerskin-hypothesis",
+      "url": "https://github.com/anttiluode/deerskin-hypothesis",
+      "family": "geometric-neuron",
+      "status": "ledger",
+      "claim": "The speculative Deerskin origin: neuronal membranes as geometric sampling/interference surfaces, with moire mismatch, homeostatic feedback and phase/timing used as computational primitives.",
+      "survived": "The ECG-like feedback phenomenon and its sampling-resolution dependence were reproduced and mechanized; the tap-position intervention survived; Fourier/Janus multiplexing retained a real two-channel I/Q capacity result; and the sibling Geometric-Neuron EEG result remains untouched at p = 0.007, d = -1.21 with zero trained parameters.",
+      "killed": "The claim that finite-resolution feedback must oscillate is false because dead/fixed regimes exist; the MoireNet XOR advantage disappears under matched restart budget; the four-spin memory claim collapses to two I/Q channels; and phase-addressed retrieval in the sibling test fails wrong-phase/no-probe nulls.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/deerskin-hypothesis/blob/main/README.md",
+      "tags": ["moire", "sampling", "audit", "negative-results", "eeg", "phase"],
+      "era": "Deerskin / P-KAS origins",
+      "era_order": 1
+    },
+    {
+      "id": "PkasPCL3satSolver",
+      "url": "https://github.com/anttiluode/PkasPCL3satSolver",
+      "family": "search-routing",
+      "status": "experiment",
+      "claim": "A Phase-Calcium-Latent constraint solver: Kuramoto-like phases provide fast state, a calcium-like accumulator gates local adaptation, and an optional global ephaptic field supplies collective feedback.",
+      "survived": "In the repository's 3-SAT benchmark, the local PCL arm reports higher clause satisfaction than the field-augmented PCLF arm (94.7% versus 89.1%), supporting the narrower toy result that local temporal integration/gating can outperform the tested global synchronizing field.",
+      "killed": "The repository itself later states that it is not a biophysical calcium model. The result does not establish biological calcium credit assignment, superiority to modern SAT solvers, or that a global field is generally harmful.",
+      "usefulness": "scientific",
+      "confidence": "medium",
+      "evidence": "https://github.com/anttiluode/PkasPCL3satSolver/blob/main/README.md",
+      "tags": ["pkas", "calcium", "phase", "3sat", "local-learning", "ablation"],
+      "era": "Deerskin / P-KAS origins",
+      "era_order": 1
+    },
+    {
+      "id": "PkasDeerskin",
+      "url": "https://github.com/anttiluode/PkasDeerskin",
+      "family": "search-routing",
+      "status": "ledger",
+      "claim": "Explicitly fuses P-KAS phase/calcium/W-matrix dynamics with the Deerskin geometric prior, replacing an external temperature schedule with stress-driven viscous adaptation.",
+      "survived": "The geometric-prior version removes the catastrophic phase-collapse behavior of the original P-KAS control and reaches about 78% on the stated 50-node 3-regular MaxCut benchmark versus about 58% for the original P-KAS arm.",
+      "killed": "It does not beat the classical simulated-annealing baseline (about 86%), and the gauge-theory language is explicitly presented as a productive metaphor rather than a formal derivation.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/PkasDeerskin/blob/main/README.md",
+      "tags": ["pkas", "deerskin", "maxcut", "calcium", "geometric-prior", "collapse"],
+      "era": "Deerskin / P-KAS origins",
+      "era_order": 1
+    },
+    {
+      "id": "Deerskin-Cortex",
+      "url": "https://github.com/anttiluode/Deerskin-Cortex",
+      "family": "geometric-neuron",
+      "status": "negative",
+      "claim": "A synthesis of the Deerskin hypothesis with measured dwell-time hierarchies, proposing that sampling geometry generates slow-to-fast cortical dwell gradients and that alpha-like near-Nyquist layers are especially fragile.",
+      "survived": "The toy demonstrates that changing geometric sampling density can create different dwell statistics without standard learned scalar weights, making it a useful mechanistic sandbox for the measured dwell hierarchy.",
+      "killed": "Its strong statement that the feedback system must oscillate is contradicted by the later Deerskin/V21 regime-map audit, which found abundant fixed/dead states. Matching the direction of AD-like summary metrics is not by itself validation of the proposed biological mechanism.",
+      "usefulness": "conceptual",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Deerskin-Cortex/blob/main/README.md",
+      "tags": ["deerskin", "dwell", "sampling", "alzheimer", "negative-result"],
+      "era": "Deerskin / P-KAS origins",
+      "era_order": 1
+    },
+    {
+      "id": "Takens-Gated-Deerskin",
+      "url": "https://github.com/anttiluode/Takens-Gated-Deerskin",
+      "family": "geometric-neuron",
+      "status": "ledger",
+      "claim": "A broad Takens/Deerskin laboratory combining parameter-free delay-geometry recognition, theta timing gates, homeostatic delay growth and later outer-loop/visual experiments.",
+      "survived": "The repository records the two mechanisms that later remain load-bearing in Geometric-Neuron: 87.4% zero-parameter frequency discrimination and frustration-driven growth from a short delay bank to the depth needed for about 92% context-gap accuracy.",
+      "killed": "The broad claim that this is a biological replacement for Transformer attention was not established, and later Geometric-Neuron audits narrow phase from a general memory mechanism to timing/direction-specific roles.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Takens-Gated-Deerskin/blob/main/README.md",
+      "tags": ["takens", "deerskin", "zero-parameter", "structural-plasticity", "attention"],
+      "era": "Deerskin / P-KAS origins",
+      "era_order": 1
+    }
+  ],
+  "edges": [
+    {
+      "source": "deerskin-hypothesis",
+      "target": "PkasDeerskin",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "PkasDeerskin's lineage explicitly names the Deerskin Hypothesis as one of the ingredients fused with P-KAS and Fractal Instinct.",
+      "evidence": "https://github.com/anttiluode/PkasDeerskin/blob/main/README.md"
+    },
+    {
+      "source": "deerskin-hypothesis",
+      "target": "Deerskin-Cortex",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Deerskin-Cortex explicitly describes itself as a synthesis between Phi-Dwell and the Deerskin Hypothesis.",
+      "evidence": "https://github.com/anttiluode/Deerskin-Cortex/blob/main/README.md"
+    },
+    {
+      "source": "PkasPCL3satSolver",
+      "target": "PkasDeerskin",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both repositories instantiate the P-KAS phase/calcium local-credit idea, but PkasDeerskin cites the broader P-KAS conversation history rather than this solver as direct code ancestry.",
+      "evidence": "https://github.com/anttiluode/PkasDeerskin/blob/main/README.md"
+    },
+    {
+      "source": "Takens-Gated-Deerskin",
+      "target": "Geometric-Neuron",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "Takens-Gated-Deerskin explicitly points to Geometric-Neuron as the new de-cluttered repository concentrating the schizophrenia-recognition result from the broader idea set.",
+      "evidence": "https://github.com/anttiluode/Takens-Gated-Deerskin/blob/main/README.md"
+    },
+    {
+      "source": "deerskin-hypothesis",
+      "target": "GeometricNeuronV21",
+      "type": "corrects",
+      "confidence": "high",
+      "why": "The audited Deerskin README explicitly identifies V21 as the full autopsy of its original ECG loop and uses that downstream analysis to retire the must-oscillate deduction.",
+      "evidence": "https://github.com/anttiluode/deerskin-hypothesis/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "local-credit-before-global-control",
+      "title": "Local temporal traces repeatedly beat or replace global control",
+      "description": "P-KAS/PCL uses a calcium-like local accumulator as temporal integration and plasticity gate; PkasDeerskin retains that trace while adding a slower geometric prior. The useful recurring object is the local history/credit trace, not the claim that the toy literally models calcium.",
+      "nodes": ["PkasPCL3satSolver", "PkasDeerskin", "GeometricNeuronV25GeneticAlgoAndFanningNeuron", "ThirdWay"]
+    },
+    {
+      "id": "audit-parent-with-descendants",
+      "title": "Descendants are allowed to kill the parent",
+      "description": "The Deerskin origin is unusually useful as genealogy because later tools are explicitly turned back on it: V21 kills must-oscillate, matched budgets kill the XOR advantage, and phase-memory nulls kill the retrieval story while the EEG and sampling/tap results remain.",
+      "nodes": ["deerskin-hypothesis", "Geometric-Neuron", "GeometricNeuronV21"]
+    }
+  ]
+}
