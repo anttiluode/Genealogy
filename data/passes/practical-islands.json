@@ -1,0 +1,99 @@
+{
+  "id": "practical-islands",
+  "title": "Practical islands: artifacts that remain useful without the theory",
+  "summary": "Not every valuable repository needs a defensible ancestry edge. This pass selects artifacts that can be installed, played, measured or used directly even if every surrounding brain/physics metaphor is discarded. It deliberately keeps the graph sparse: usefulness is the selection criterion, and missing provenance is not replaced by thematic similarity.",
+  "order": 150,
+  "reviewed_at": "2026-09-15",
+  "nodes": [
+    {
+      "id": "PhaseSpaceVisualizerVST",
+      "url": "https://github.com/anttiluode/PhaseSpaceVisualizerVST",
+      "family": "practical-tools",
+      "status": "tool",
+      "claim": "A JUCE VST3/standalone real-time audio phase-space visualizer that plots each sample against the next sample and exposes waveform dynamics as a live geometric trace.",
+      "survived": "The artifact is independently useful: it is a transparent DAW visualization tool with a built VST3, standalone application, rotation/zoom controls and real-time rendering. Sine, square, multifrequency and noisy inputs produce visibly different phase portraits without requiring any later brain or field interpretation.",
+      "killed": "The simple sample[n] versus sample[n+1] portrait is a visualization, not evidence that a plotted attractor is cognition or that the audio source is a low-dimensional autonomous dynamical system. Its practical value does not require those claims.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/PhaseSpaceVisualizerVST/blob/main/README.md",
+      "tags": ["vst3", "audio", "phase-space", "visualization", "standalone"],
+      "era": "Practical islands",
+      "era_order": 6
+    },
+    {
+      "id": "TinyAvatar",
+      "url": "https://github.com/anttiluode/TinyAvatar",
+      "family": "practical-tools",
+      "status": "tool",
+      "claim": "A train-on-yourself webcam avatar whose decoder renders a face from a few hundred Gabor wave packets and whose live driver transports complex packet phases between encoder keyframes.",
+      "survived": "It is both a usable application and a measurement instrument: a bundled checkpoint can be driven immediately, users can train on their own video, the decoder exports to about 7 MB ONNX, and on real head-motion video packet phase steps predict rendered local optical flow with fitted slope +0.998 and weighted r = +0.809 over 16,401 packet-frame pairs; the per-packet scramble drops to r = +0.236.",
+      "killed": "The encoder does not transport arbitrary out-of-manifold image translation: a 28 px input slide moves the reconstruction only about 0.5 px, so it re-indexes onto the learned manifold. Phase-correlation on Gabor patches also produced wavelength-aliasing garbage and was replaced by a gradient-based flow instrument. The practical avatar survives those boundaries.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/TinyAvatar/blob/main/README.md",
+      "tags": ["avatar", "webcam", "gabor", "onnx", "phase-transport", "tool"],
+      "era": "Practical islands",
+      "era_order": 6
+    },
+    {
+      "id": "Arborverb",
+      "url": "https://github.com/anttiluode/Arborverb",
+      "family": "practical-tools",
+      "status": "tool",
+      "claim": "A VST3/standalone reverb that grows a scattering-waveguide graph, seeds its decay in closed form, and fits the remaining room coloration/early structure with an exact adjoint gradient.",
+      "survived": "The engineering receipts are unusually strong: the adjoint agrees with central finite differences up to correlation 0.999999998 with the expected V-shaped step-size error curve; a 90-cell end-to-end fit reduces loss 1.987 to 1.081; and a 255-edge body renders stereo at 7.4x realtime on one reported cloud core. The fitted structure can also be spatially re-listened, resized and morphed rather than merely replayed.",
+      "killed": "The README explicitly says the algorithmic ingredients are not novel and that ArborVerb does not beat convolution at exact static room reproduction. Branch delays are discrete/frozen during fitting, optimization is local, large bodies can choke live performance, and the 'fits itself to a room' phrase is acknowledged as an exaggeration depending on settings.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Arborverb/blob/main/README.md",
+      "tags": ["vst3", "reverb", "waveguide", "adjoint", "audio-tool"],
+      "era": "Practical islands",
+      "era_order": 6
+    },
+    {
+      "id": "AnttisImageSynthVST",
+      "url": "https://github.com/anttiluode/AnttisImageSynthVST",
+      "family": "practical-tools",
+      "status": "tool",
+      "claim": "A playable VST3/standalone MIDI synthesizer that scans a dropped image along a Lissajous path and maps its brightness/layout into a 24-oscillator additive synthesis engine.",
+      "survived": "The useful object is straightforward and complete: drag-and-drop common image formats, MIDI tracking, ADSR, a 24-voice additive engine, image-path controls and JUCE/CMake build instructions. It turns images into a directly playable sound-design surface without depending on a scientific claim.",
+      "killed": "The mathematical-scanning language does not establish that image structure is represented in any perceptually optimal or information-theoretically special way; this is a creative mapping instrument, not a result about vision, cognition or universal geometry.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/AnttisImageSynthVST/blob/main/README.md",
+      "tags": ["vst3", "synthesizer", "image-to-sound", "midi", "creative-tool"],
+      "era": "Practical islands",
+      "era_order": 6
+    },
+    {
+      "id": "PrimeCrystalVST",
+      "url": "https://github.com/anttiluode/PrimeCrystalVST",
+      "family": "practical-tools",
+      "status": "tool",
+      "claim": "A VST3 audio effect using prime-number-spaced delay taps, logarithmic-prime modulation frequencies and a nonlinear feedback wavefolder to create quasi-periodic evolving delay textures.",
+      "survived": "As an audio artifact it has a clear usable mechanism: six multi-tap delays are modulated at log-prime-related rates, producing incommensurate quasi-periodic motion, with a nonlinear feedback stage and a real-time vector visualizer. Musicians can install the built VST and use the mathematics simply as a sound-design parameterization.",
+      "killed": "The practical DSP does not require the README's much stronger Riemann-hypothesis, quantum-field or fundamental-physics narrative. The plugin does not prove RH, and hearing/visualizing a finite prime-log epicycle is not evidence for claims about Riemann zeros or physical reality; those interpretations are demoted away from the tool.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/PrimeCrystalVST/blob/main/README.md",
+      "tags": ["vst3", "delay", "prime-log", "quasiperiodic", "audio-tool"],
+      "era": "Practical islands",
+      "era_order": 6
+    }
+  ],
+  "edges": [],
+  "motifs": [
+    {
+      "id": "useful-without-grand-theory",
+      "title": "Useful artifacts can survive even when the explanatory story is discarded",
+      "description": "The strongest selection pressure in the archive is sometimes simply: can another person use the thing? PhaseSpaceVisualizerVST and TakensPhaseSpaceVisualizerVST are installable visualizers; TinyAvatar is a trainable live avatar plus a calibrated measurement instrument; ArborVerb is a working differentiable reverb; AnttisImageSynthVST is a playable creative tool; LentoOrava yielded PulseTriage; and TransientWaveCompiler became a real diagnosis toolkit after its hardware hypothesis failed. These artifacts do not need the grand theory around them to remain worthwhile.",
+      "nodes": ["PhaseSpaceVisualizerVST", "TakensPhaseSpaceVisualizerVST", "TinyAvatar", "Arborverb", "AnttisImageSynthVST", "PrimeCrystalVST", "LentoOrava", "TransientWaveCompiler"]
+    },
+    {
+      "id": "instrument-becomes-product",
+      "title": "Research instruments sometimes become the most reusable product",
+      "description": "Several projects become more valuable when the measuring or manipulating interface escapes the original hypothesis: audio phase portraits become VSTs, TinyAvatar's packet dynamics become an avatar and live telemetry tool, reciprocal sensitivity machinery becomes TransientWaveCompiler, and sparse rollback probing becomes PulseTriage. In these cases the instrument is more portable than the theory that created it.",
+      "nodes": ["PhaseSpaceVisualizerVST", "TakensPhaseSpaceVisualizerVST", "TinyAvatar", "LentoOrava", "TransientWaveCompiler", "Arborverb"]
+    }
+  ]
+}
