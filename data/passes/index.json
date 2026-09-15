@@ -42,5 +42,9 @@
   {
     "path": "dynamical-neuron-reset.json",
     "enabled": true
+  },
+  {
+    "path": "computational-matter.json",
+    "enabled": true
   }
 ]
