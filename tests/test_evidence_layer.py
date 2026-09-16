@@ -29,13 +29,14 @@ class EvidenceLayerTests(unittest.TestCase):
 
     def test_static_atlas_exposes_evidence_view_and_node_evidence(self):
         html = (ROOT / "index.html").read_text(encoding="utf-8")
-        js = (ROOT / "assets/app.js").read_text(encoding="utf-8")
+        evidence_js = (ROOT / "assets/evidence.js").read_text(encoding="utf-8")
         self.assertIn('data-view="evidence"', html)
         self.assertIn('id="evidence-content"', html)
-        self.assertIn("data/evidence.json", js)
-        self.assertIn("function renderEvidence", js)
-        self.assertIn("Empirical evidence", js)
-        self.assertIn("atlas.evidence", js)
+        self.assertIn('assets/evidence.js', html)
+        self.assertIn("data/evidence.json", evidence_js)
+        self.assertIn("function renderEvidence", evidence_js)
+        self.assertIn("Empirical evidence", evidence_js)
+        self.assertIn("atlas.evidence", evidence_js)
 
 
 if __name__ == "__main__":
