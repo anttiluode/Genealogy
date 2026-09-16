@@ -94,5 +94,9 @@
   {
     "path": "splatpack-extraction.json",
     "enabled": true
+  },
+  {
+    "path": "finished-creative-artifacts.json",
+    "enabled": true
   }
 ]
