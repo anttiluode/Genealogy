@@ -49,6 +49,8 @@ The ledger deliberately mixes positive, mixed, null and confounded results. Curr
 
 An evidence record may name the specific survivor motif it bears on. The atlas validates that the repository actually belongs to that motif before accepting the link.
 
+Claim outcome and motif relation are intentionally separate. `data/evidence.json` says what happened to the tested claim. `data/evidence_motif_relations.json` says whether that result **supports**, **limits**, or merely **documents** the broader motif. This matters because a contradicted claim can positively document the `negative-results` motif instead of being misread as evidence against it.
+
 This lets the Evidence view distinguish:
 
 ```text
@@ -64,7 +66,7 @@ motif has supporting controlled evidence in several repositories
 and from:
 
 ```text
-the same motif also accumulated nulls, mixed results or confounds
+the same motif has also been bounded, narrowed, or documented by failures
 ```
 
 Two supporting experiments inside one repository do not count as cross-repository support. The aggregation counts distinct repositories, not just record count.
@@ -105,13 +107,14 @@ Negative results remain in the tree and in the evidence ledger. A failed interpr
 ## Data layout
 
 ```text
-data/repos.json          complete census snapshot
-data/nodes.json          foundation curated nodes
-data/edges.json          foundation lineage/evidence-of-ancestry edges
-data/motifs.json         foundation recurring mechanisms
-data/evidence.json       structured empirical evidence records + motif links
-data/passes/index.json   enabled archaeology passes
-data/passes/*.json       separable reviewed passes
+data/repos.json                     complete census snapshot
+data/nodes.json                     foundation curated nodes
+data/edges.json                     foundation lineage/evidence-of-ancestry edges
+data/motifs.json                    foundation recurring mechanisms
+data/evidence.json                  structured empirical evidence records + motif links
+data/evidence_motif_relations.json  supports / limits / documents relation to each tagged motif
+data/passes/index.json              enabled archaeology passes
+data/passes/*.json                  separable reviewed passes
 ```
 
 Passes stay modular so later archaeology can correct one family without rewriting the whole atlas. Empirical evidence stays separate so the same claim can accumulate support, nulls, contradictions, stronger controls, or replication over time.
@@ -131,4 +134,4 @@ GitHub Actions runs the same checks on pull requests and `main` pushes. The repo
 
 ## Rule
 
-**Names are hints, not evidence. Negative results stay in the family tree. Documentary confidence and empirical support are different axes.**
+**Names are hints, not evidence. Negative results stay in the family tree. Documentary confidence, claim outcome, and motif support are different axes.**
