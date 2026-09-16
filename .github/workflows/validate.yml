@@ -28,4 +28,5 @@ jobs:
           node --check assets/app.js
           node --check assets/tools.js
           node --check assets/evidence.js
+          node --check assets/questions.js
           node --check assets/zoom.js
