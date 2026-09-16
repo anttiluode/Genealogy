@@ -1,0 +1,26 @@
+{
+  "id": "algorithm-compilation-boundary",
+  "title": "Search-to-program boundary",
+  "summary": "ResonantCortex2 asked whether successful search trajectories could be compressed into local modes and routed as a frozen reusable program. V0 found some local compressibility and cross-solver structure, but autonomous compiled execution failed, preserving an important boundary between finding useful trajectory fragments and acquiring an executable algorithm.",
+  "order": 190,
+  "reviewed_at": "2026-09-16",
+  "nodes": [
+    {
+      "id": "ResonantCortex2",
+      "url": "https://github.com/anttiluode/ResonantCortex2",
+      "family": "search-routing",
+      "status": "ledger",
+      "claim": "Tests whether generic search can discover successful trajectories, compress them into local affine modes, route those modes by source-state geometry and execute the frozen mode bank as a reusable algorithm on held-out problems.",
+      "survived": "Successful search traces can contain locally compressible structure, some cross-solver reuse geometry and post-hoc explanation fidelity.",
+      "killed": "Algorithm compilation did not survive V0: local compression and shared trace geometry did not produce useful autonomous routed execution on the held-out tasks, making composition and routing the important boundary rather than search score alone.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/ResonantCortex2/blob/main/README.md",
+      "tags": ["search", "routing", "algorithm-compilation", "compression", "negative-result"],
+      "era": "Search-to-program boundary",
+      "era_order": 8
+    }
+  ],
+  "edges": [],
+  "motifs": []
+}
