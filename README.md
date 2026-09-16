@@ -15,6 +15,7 @@ The static atlas includes:
 - modular archaeology passes,
 - scientific-era Timeline and Corrections views,
 - a first-class Empirical Evidence view,
+- cross-repository motif-evidence summaries,
 - per-repository evidence ledgers in the genealogy detail panel,
 - survivor motifs and archaeology queue,
 - family/status/pass/edge filters,
@@ -23,7 +24,7 @@ The static atlas includes:
 
 ## Two kinds of confidence
 
-Genealogy now keeps documentary and empirical questions separate.
+Genealogy keeps documentary and empirical questions separate.
 
 **Lineage / interpretation confidence** asks whether the corpus supports an ancestry edge or a curated reading of a repository. An explicit README statement can therefore justify a high-confidence inheritance edge even when the scientific claim itself is still weak, mixed, or untested.
 
@@ -31,13 +32,42 @@ Genealogy now keeps documentary and empirical questions separate.
 
 `data/evidence.json` stores those evidence objects without collapsing them into a universal score. Evidence records may be `supports`, `contradicts`, `mixed`, or `inconclusive`. Missing evidence records mean only that the archaeology layer has not encoded the experiment yet; they do not imply that the source repository has no experiments.
 
-The first seeded records intentionally span different outcomes:
+The ledger deliberately mixes positive, mixed, null and confounded results. Current audited examples include:
 
-- `GrowingAnttisNeuron` v0 matched-label controls — supporting multi-seed result,
-- `GrowingAnttisNeuron` v1 input placement — mixed/sparse effect,
-- `Operaattori` cross-cell nonlinear closure — cross-morphology numerical validation,
-- `PhaseStigmergy` morphology claim — replicated null/contradiction,
-- `FusionMachine` v3 readiness comparison — strong observed gap retained as inconclusive because training quality confounds attribution.
+- `GeometricNeuronV24` active sensing and the soma-noise observability boundary,
+- `ReadWrite` state-dependent probing plus the failed coprime-vs-best-single-grid claim,
+- `LentoOrava` PulseTriage and scalar-only repair localization,
+- `GrowingAnttisNeuron` matched developmental controls,
+- `Operaattori` cross-cell nonlinear closure,
+- `ActiveVectorNN` sparse state synchronization,
+- `NewMachine` factorized repair/publication control,
+- `WorldModel`'s preserved RGB-only geometry failure,
+- `PhaseStigmergy`'s replicated morphology null,
+- `FusionMachine`'s readiness result retained as inconclusive because training quality confounds attribution.
+
+## Motif evidence
+
+An evidence record may name the specific survivor motif it bears on. The atlas validates that the repository actually belongs to that motif before accepting the link.
+
+This lets the Evidence view distinguish:
+
+```text
+motif appears in several repositories
+```
+
+from:
+
+```text
+motif has supporting controlled evidence in several repositories
+```
+
+and from:
+
+```text
+the same motif also accumulated nulls, mixed results or confounds
+```
+
+Two supporting experiments inside one repository do not count as cross-repository support. The aggregation counts distinct repositories, not just record count.
 
 ## Current archaeology passes
 
@@ -79,7 +109,7 @@ data/repos.json          complete census snapshot
 data/nodes.json          foundation curated nodes
 data/edges.json          foundation lineage/evidence-of-ancestry edges
 data/motifs.json         foundation recurring mechanisms
-data/evidence.json       structured empirical evidence records
+data/evidence.json       structured empirical evidence records + motif links
 data/passes/index.json   enabled archaeology passes
 data/passes/*.json       separable reviewed passes
 ```
