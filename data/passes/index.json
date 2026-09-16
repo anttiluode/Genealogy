@@ -74,5 +74,9 @@
   {
     "path": "another-odd-thing.json",
     "enabled": true
+  },
+  {
+    "path": "evox.json",
+    "enabled": true
   }
 ]
