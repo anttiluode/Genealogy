@@ -1,12 +1,15 @@
 'use strict';
 
 const EVIDENCE_PATH = 'data/evidence.json';
+const EVIDENCE_MOTIF_RELATION_PATH = 'data/evidence_motif_relations.json';
 let evidenceRecords = [];
+let evidenceMotifRelations = {};
 let evidenceLoadState = 'loading';
 let evidenceLoadError = '';
 
 function attachEvidenceToAtlas() {
   atlas.evidence = evidenceRecords;
+  atlas.evidence_motif_relations = evidenceMotifRelations;
 }
 
 function evidenceForNode(nodeId) {
@@ -20,6 +23,18 @@ function evidenceResultLabel(result) {
     mixed: 'mixed result',
     inconclusive: 'inconclusive',
   })[result] || result;
+}
+
+function motifRelation(item, motifId) {
+  return evidenceMotifRelations[item.id]?.[motifId] || 'documents';
+}
+
+function motifRelationLabel(relation) {
+  return ({
+    supports: 'supports motif',
+    limits: 'limits motif',
+    documents: 'documents motif',
+  })[relation] || relation;
 }
 
 function formatMetric(metric) {
@@ -45,10 +60,81 @@ function evidenceMatches(item, f = filters()) {
   if (!f.q) return true;
   const haystack = [
     item.id, item.node, item.claim, item.design, item.result, item.replication,
-    ...(item.controls || []), ...(item.limitations || []),
+    ...(item.motifs || []), ...(item.controls || []), ...(item.limitations || []),
     ...(item.metrics || []).flatMap(metric => [metric.name, metric.display, metric.comparison]),
   ].join(' ').toLowerCase();
   return haystack.includes(f.q);
+}
+
+function uniqueSorted(values) {
+  return [...new Set(values)].sort();
+}
+
+function buildMotifEvidenceSummary(records = evidenceRecords) {
+  const summaries = [];
+  for (const motif of atlas.motifs || []) {
+    const linked = records.filter(item => (item.motifs || []).includes(motif.id));
+    if (!linked.length) continue;
+    const representedNodes = uniqueSorted(linked.map(item => item.node));
+    const supportingNodes = uniqueSorted(linked.filter(item => motifRelation(item, motif.id) === 'supports').map(item => item.node));
+    const limitingNodes = uniqueSorted(linked.filter(item => motifRelation(item, motif.id) === 'limits').map(item => item.node));
+    const documentingNodes = uniqueSorted(linked.filter(item => motifRelation(item, motif.id) === 'documents').map(item => item.node));
+    summaries.push({
+      motif,
+      records: linked,
+      representedNodes,
+      supportingNodes,
+      limitingNodes,
+      documentingNodes,
+      crossRepoSupport: supportingNodes.length >= 2,
+      crossRepoTested: representedNodes.length >= 2,
+    });
+  }
+  return summaries.sort((a, b) =>
+    Number(b.crossRepoSupport) - Number(a.crossRepoSupport)
+    || Number(b.crossRepoTested) - Number(a.crossRepoTested)
+    || b.supportingNodes.length - a.supportingNodes.length
+    || b.representedNodes.length - a.representedNodes.length
+    || a.motif.title.localeCompare(b.motif.title));
+}
+
+function renderMotifEvidence(records = evidenceRecords) {
+  const summaries = buildMotifEvidenceSummary(records);
+  if (!summaries.length) return '';
+  return `
+    <section class="motif-evidence" aria-label="Motif evidence">
+      <div class="motif-evidence-head">
+        <div><div class="eyebrow">CROSS-REPO TEST HISTORY</div><h3>Motif evidence</h3></div>
+        <p>Claim outcome and motif relation are separate. A failed claim can document a useful negative-results motif, and two experiments inside one repository do not count as cross-repository support.</p>
+      </div>
+      <div class="motif-evidence-grid">
+        ${summaries.map(item => {
+          const label = item.crossRepoSupport
+            ? 'support in multiple repos'
+            : item.crossRepoTested
+              ? 'tested in multiple repos'
+              : 'evidence attached';
+          return `
+          <article class="motif-evidence-card ${item.crossRepoSupport ? 'cross-supported' : ''}">
+            <div class="motif-evidence-top">
+              <span class="motif-evidence-count">${item.records.length}</span>
+              <span>${label}</span>
+            </div>
+            <h4>${escapeHtml(item.motif.title)}</h4>
+            <p>${escapeHtml(item.motif.description || '')}</p>
+            <div class="motif-evidence-stats">
+              <b>${item.representedNodes.length}</b><span>repos with evidence</span>
+              <b>${item.supportingNodes.length}</b><span>repos supporting motif</span>
+              <b>${item.limitingNodes.length}</b><span>repos limiting motif</span>
+              <b>${item.documentingNodes.length}</b><span>repos documenting motif</span>
+            </div>
+            <div class="node-links">
+              ${item.representedNodes.map(id => `<button data-node="${escapeHtml(id)}">${escapeHtml(id)}</button>`).join('')}
+            </div>
+          </article>`;
+        }).join('')}
+      </div>
+    </section>`;
 }
 
 function evidenceCard(item) {
@@ -68,6 +154,11 @@ function evidenceCard(item) {
     </div>`).join('');
   const controls = (item.controls || []).map(control => `<li>${escapeHtml(control)}</li>`).join('');
   const limitations = (item.limitations || []).map(limit => `<li>${escapeHtml(limit)}</li>`).join('');
+  const motifTags = (item.motifs || []).map(id => {
+    const motif = (atlas.motifs || []).find(candidate => candidate.id === id);
+    const relation = motifRelation(item, id);
+    return `<span>${escapeHtml(motif?.title || id)} · ${escapeHtml(motifRelationLabel(relation))}</span>`;
+  }).join('');
 
   return `
     <article class="evidence-card ${escapeHtml(item.result)}">
@@ -77,6 +168,7 @@ function evidenceCard(item) {
       </div>
       <div class="eyebrow">${escapeHtml(item.design)} · ${sample}</div>
       <h3>${escapeHtml(item.claim)}</h3>
+      ${motifTags ? `<div class="evidence-motifs">${motifTags}</div>` : ''}
       ${metrics ? `<div class="evidence-metrics">${metrics}</div>` : ''}
       ${flags.length ? `<div class="evidence-flags">${flags.map(flag => `<span>${escapeHtml(flag)}</span>`).join('')}</div>` : ''}
       ${controls ? `<details><summary>Controls / nulls</summary><ul>${controls}</ul></details>` : ''}
@@ -112,9 +204,10 @@ function renderEvidence() {
     <div class="evidence-summary">
       <strong>${visible.length}</strong><span>evidence records</span>
       <strong>${represented.size}</strong><span>repositories represented</span>
-      <strong>${supports}</strong><span>supporting results</span>
-      <strong>${constrained}</strong><span>mixed, null, contradictory or inconclusive</span>
+      <strong>${supports}</strong><span>supporting claim results</span>
+      <strong>${constrained}</strong><span>mixed, null, contradictory or inconclusive claims</span>
     </div>
+    ${renderMotifEvidence(visible)}
     <div class="evidence-grid">${visible.map(evidenceCard).join('')}</div>`;
 
   if (!visible.length) {
@@ -181,13 +274,21 @@ renderCurrentView = function renderCurrentViewWithEvidence() {
 
 async function loadEvidenceLayer() {
   try {
-    const value = await loadJson(EVIDENCE_PATH);
+    const [value, relations] = await Promise.all([
+      loadJson(EVIDENCE_PATH),
+      loadJson(EVIDENCE_MOTIF_RELATION_PATH),
+    ]);
     if (!Array.isArray(value)) throw new Error(`${EVIDENCE_PATH} is not an array`);
+    if (!relations || Array.isArray(relations) || typeof relations !== 'object') {
+      throw new Error(`${EVIDENCE_MOTIF_RELATION_PATH} is not an object`);
+    }
     evidenceRecords = value;
+    evidenceMotifRelations = relations;
     evidenceLoadState = 'ready';
     evidenceLoadError = '';
   } catch (error) {
     evidenceRecords = [];
+    evidenceMotifRelations = {};
     evidenceLoadState = 'error';
     evidenceLoadError = error.message;
   }

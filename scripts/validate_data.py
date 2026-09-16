@@ -9,6 +9,7 @@ KNOWN_USEFULNESS = {"none", "conceptual", "scientific", "practical"}
 KNOWN_CONFIDENCE = {"low", "medium", "high"}
 KNOWN_EDGE_TYPES = {"inherits", "forks", "rediscovery", "corrects", "extracts", "converges"}
 KNOWN_EVIDENCE_RESULTS = {"supports", "contradicts", "mixed", "inconclusive"}
+KNOWN_MOTIF_RELATIONS = {"supports", "limits", "documents"}
 
 
 def _read_json(path: Path):
@@ -44,7 +45,7 @@ def _load_passes(data: Path) -> tuple[list[dict], list[dict], list[dict], list[d
     return passes, nodes, edges, motifs
 
 
-def load_atlas(root: Path) -> dict[str, list[dict]]:
+def load_atlas(root: Path) -> dict:
     data = root / "data"
     base_nodes = _read_json(data / "nodes.json")
     for node in base_nodes:
@@ -58,6 +59,7 @@ def load_atlas(root: Path) -> dict[str, list[dict]]:
         "edges": _read_json(data / "edges.json") + pass_edges,
         "motifs": _read_json(data / "motifs.json") + pass_motifs,
         "evidence": _read_json(data / "evidence.json"),
+        "evidence_motif_relations": _read_json(data / "evidence_motif_relations.json"),
         "passes": [
             {"id": "foundation", "title": "Foundation atlas", "summary": "The first cross-family curated slice.", "order": 0, "reviewed_at": "2026-09-15", "path": None}
         ] + passes,
@@ -74,12 +76,13 @@ def _dupes(values):
     return sorted(dupes)
 
 
-def validate_atlas(atlas: dict[str, list[dict]]) -> list[str]:
+def validate_atlas(atlas: dict) -> list[str]:
     errors: list[str] = []
     nodes = atlas.get("nodes", [])
     edges = atlas.get("edges", [])
     motifs = atlas.get("motifs", [])
     evidence = atlas.get("evidence", [])
+    evidence_motif_relations = atlas.get("evidence_motif_relations", {})
     repos = atlas.get("repos", [])
     passes = atlas.get("passes", [])
 
@@ -126,6 +129,7 @@ def validate_atlas(atlas: dict[str, list[dict]]) -> list[str]:
     motif_ids = [m.get("id") for m in motifs]
     for value in _dupes(motif_ids):
         errors.append(f"duplicate motif id: {value}")
+    motif_map = {motif.get("id"): motif for motif in motifs if motif.get("id")}
     for motif in motifs:
         for node_id in motif.get("nodes", []):
             if node_id not in ids:
@@ -134,6 +138,11 @@ def validate_atlas(atlas: dict[str, list[dict]]) -> list[str]:
     evidence_ids = [item.get("id") for item in evidence]
     for value in _dupes(evidence_ids):
         errors.append(f"duplicate evidence id: {value}")
+    known_evidence = set(evidence_ids)
+    if not isinstance(evidence_motif_relations, dict):
+        errors.append("evidence motif relations must be an object")
+        evidence_motif_relations = {}
+
     for item in evidence:
         evidence_id = item.get("id", "<missing>")
         if not isinstance(item.get("id"), str) or not item.get("id"):
@@ -145,9 +154,26 @@ def validate_atlas(atlas: dict[str, list[dict]]) -> list[str]:
         for field in ("claim", "design", "source"):
             if not isinstance(item.get(field), str) or not item.get(field).strip():
                 errors.append(f"evidence {evidence_id} missing {field}")
-        for field in ("metrics", "controls", "limitations"):
+        for field in ("metrics", "controls", "limitations", "motifs"):
             if not isinstance(item.get(field, []), list):
                 errors.append(f"evidence {evidence_id} has non-list {field}")
+        relations = evidence_motif_relations.get(evidence_id, {})
+        if not isinstance(relations, dict):
+            errors.append(f"evidence {evidence_id} motif relations must be an object")
+            relations = {}
+        if isinstance(item.get("motifs", []), list):
+            for motif_id in item.get("motifs", []):
+                motif = motif_map.get(motif_id)
+                if motif is None:
+                    errors.append(f"evidence {evidence_id} references unknown motif: {motif_id}")
+                elif item.get("node") not in motif.get("nodes", []):
+                    errors.append(f"evidence {evidence_id} links node {item.get('node')} to unrelated motif: {motif_id}")
+                relation = relations.get(motif_id)
+                if relation not in KNOWN_MOTIF_RELATIONS:
+                    errors.append(f"evidence {evidence_id} missing/unknown motif relation for {motif_id}: {relation}")
+            for motif_id in relations:
+                if motif_id not in item.get("motifs", []):
+                    errors.append(f"evidence {evidence_id} has relation for untagged motif: {motif_id}")
         sample = item.get("sample")
         if sample is not None:
             if not isinstance(sample, dict):
@@ -161,6 +187,10 @@ def validate_atlas(atlas: dict[str, list[dict]]) -> list[str]:
         for field in ("held_out", "external_data"):
             if field in item and not isinstance(item[field], bool):
                 errors.append(f"evidence {evidence_id} has non-boolean {field}")
+
+    for evidence_id in evidence_motif_relations:
+        if evidence_id not in known_evidence:
+            errors.append(f"motif relations reference unknown evidence: {evidence_id}")
 
     repo_names = [repo.get("name") for repo in repos]
     for value in _dupes(repo_names):

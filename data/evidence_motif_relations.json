@@ -1,0 +1,51 @@
+{
+  "growing-v0-topographic-control": {
+    "structure-as-computation": "supports"
+  },
+  "growing-v1-input-placement": {
+    "structure-as-computation": "limits"
+  },
+  "operaattori-cross-cell-nonlinear-closure": {
+    "structure-as-computation": "supports"
+  },
+  "phase-stigmergy-dimension-null": {
+    "negative-results": "documents"
+  },
+  "fusion-v3-readiness-confound": {
+    "late-relevance": "limits"
+  },
+  "v24-gate2-active-law-identification": {
+    "bounded-observation": "supports"
+  },
+  "v24-gate4-soma-observability": {
+    "bounded-observation": "supports",
+    "active-intervention": "supports",
+    "negative-results": "documents"
+  },
+  "readwrite-rw5-state-dependent-probe": {
+    "active-intervention": "supports"
+  },
+  "readwrite-rw2b-coprime-correction": {
+    "bounded-observation": "limits",
+    "negative-results": "documents"
+  },
+  "lentoorava-pulsetriage-digits": {
+    "scalar-causal-credit": "supports",
+    "active-intervention": "supports"
+  },
+  "lentoorava-pulse-repair": {
+    "scalar-causal-credit": "supports",
+    "active-intervention": "supports"
+  },
+  "worldmodel-rgb-geometry-failure": {
+    "provenance": "supports",
+    "negative-results": "documents"
+  },
+  "activevector-v1-sparse-sync": {
+    "persistent-state": "supports"
+  },
+  "newmachine-v3-factorized-overlap": {
+    "persistent-state": "supports",
+    "late-relevance": "supports"
+  }
+}
