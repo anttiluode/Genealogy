@@ -1,25 +1,10 @@
 {
   "id": "finished-creative-artifacts",
   "title": "Finished creative artifacts: mechanisms that became usable tools",
-  "summary": "A practical branch where research mechanisms crossed into complete runnable creative software. Arborverb and ArborBody package grown waveguide structures as audio plug-ins; AnttisDeepfake turns phase transport into a live generated-portrait puppet; AIvideoFX carries that mechanism into a layered video-effects studio and adds evidence-triggered refresh. The pass records finished artifact status without treating packaging or market plausibility as scientific validation.",
+  "summary": "A practical branch where research mechanisms crossed into complete runnable creative software. Arborverb was already curated in Practical Islands, so this pass adds only the missing peers: ArborBody, AnttisDeepfake and AIvideoFX. It records finished artifact status without treating packaging, market plausibility or a product-shaped interface as scientific validation.",
   "order": 200,
   "reviewed_at": "2026-09-16",
   "nodes": [
-    {
-      "id": "Arborverb",
-      "url": "https://github.com/anttiluode/Arborverb",
-      "family": "creative-dsp",
-      "status": "tool",
-      "claim": "Packages a grown scattering-junction waveguide mesh as VST3/standalone reverb: closed-form decay matching plus an exact adjoint fit for early-reflection and modal-colour structure, while keeping the resulting room body editable.",
-      "survived": "The repository contains a complete JUCE plug-in/standalone shell, structural stability tests, finite-difference verification of the adjoint gradient, an end-to-end fit test and measured realtime performance; the fitted object can be moved through, resized and morphed rather than remaining a fixed impulse response.",
-      "killed": "It explicitly does not beat convolution at exact static room reproduction, does not claim the underlying waveguide or differentiable-reverb algorithms are novel, and large meshes can become too expensive for live use.",
-      "usefulness": "practical",
-      "confidence": "high",
-      "evidence": "https://github.com/anttiluode/Arborverb/blob/main/README.md",
-      "tags": ["audio", "vst3", "waveguide", "adjoint", "grown-structure", "tool"],
-      "era": "Finished creative artifacts",
-      "era_order": 1
-    },
     {
       "id": "ArborBody",
       "url": "https://github.com/anttiluode/ArborBody",
@@ -84,5 +69,12 @@
       "evidence": "https://github.com/anttiluode/AIvideoFX/blob/main/README.md"
     }
   ],
-  "motifs": []
+  "motifs": [
+    {
+      "id": "finished-artifact-is-not-market-validation",
+      "title": "A finished artifact is evidence of usability, not evidence of a market",
+      "description": "Arborverb, ArborBody, AnttisDeepfake, AIvideoFX and TransientWaveCompiler all crossed beyond a paper-style mechanism demo into software a person can run, install or operate. That is a real threshold, but it does not establish willingness to pay, product-market fit or scientific novelty. The atlas keeps those questions separate.",
+      "nodes": ["Arborverb", "ArborBody", "AnttisDeepfake", "AIvideoFX", "TransientWaveCompiler"]
+    }
+  ]
 }
