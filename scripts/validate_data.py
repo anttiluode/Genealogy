@@ -126,6 +126,7 @@ def validate_atlas(atlas: dict[str, list[dict]]) -> list[str]:
     motif_ids = [m.get("id") for m in motifs]
     for value in _dupes(motif_ids):
         errors.append(f"duplicate motif id: {value}")
+    motif_map = {motif.get("id"): motif for motif in motifs if motif.get("id")}
     for motif in motifs:
         for node_id in motif.get("nodes", []):
             if node_id not in ids:
@@ -145,9 +146,16 @@ def validate_atlas(atlas: dict[str, list[dict]]) -> list[str]:
         for field in ("claim", "design", "source"):
             if not isinstance(item.get(field), str) or not item.get(field).strip():
                 errors.append(f"evidence {evidence_id} missing {field}")
-        for field in ("metrics", "controls", "limitations"):
+        for field in ("metrics", "controls", "limitations", "motifs"):
             if not isinstance(item.get(field, []), list):
                 errors.append(f"evidence {evidence_id} has non-list {field}")
+        if isinstance(item.get("motifs", []), list):
+            for motif_id in item.get("motifs", []):
+                motif = motif_map.get(motif_id)
+                if motif is None:
+                    errors.append(f"evidence {evidence_id} references unknown motif: {motif_id}")
+                elif item.get("node") not in motif.get("nodes", []):
+                    errors.append(f"evidence {evidence_id} links node {item.get('node')} to unrelated motif: {motif_id}")
         sample = item.get("sample")
         if sample is not None:
             if not isinstance(sample, dict):
