@@ -10,6 +10,8 @@ KNOWN_CONFIDENCE = {"low", "medium", "high"}
 KNOWN_EDGE_TYPES = {"inherits", "forks", "rediscovery", "corrects", "extracts", "converges"}
 KNOWN_EVIDENCE_RESULTS = {"supports", "contradicts", "mixed", "inconclusive"}
 KNOWN_MOTIF_RELATIONS = {"supports", "limits", "documents"}
+KNOWN_QUESTION_STATES = {"open", "partially-resolved", "resolved"}
+FORBIDDEN_QUESTION_KEYS = {"score", "probability", "winner", "ranking", "rank"}
 
 
 def _read_json(path: Path):
@@ -60,6 +62,7 @@ def load_atlas(root: Path) -> dict:
         "motifs": _read_json(data / "motifs.json") + pass_motifs,
         "evidence": _read_json(data / "evidence.json"),
         "evidence_motif_relations": _read_json(data / "evidence_motif_relations.json"),
+        "questions": _read_json(data / "questions.json"),
         "passes": [
             {"id": "foundation", "title": "Foundation atlas", "summary": "The first cross-family curated slice.", "order": 0, "reviewed_at": "2026-09-15", "path": None}
         ] + passes,
@@ -76,6 +79,21 @@ def _dupes(values):
     return sorted(dupes)
 
 
+def _find_forbidden_question_keys(value, prefix="") -> list[str]:
+    found: list[str] = []
+    if isinstance(value, dict):
+        for key, child in value.items():
+            path = f"{prefix}.{key}" if prefix else key
+            if key.lower() in FORBIDDEN_QUESTION_KEYS:
+                found.append(path)
+            found.extend(_find_forbidden_question_keys(child, path))
+    elif isinstance(value, list):
+        for index, child in enumerate(value):
+            path = f"{prefix}[{index}]"
+            found.extend(_find_forbidden_question_keys(child, path))
+    return found
+
+
 def validate_atlas(atlas: dict) -> list[str]:
     errors: list[str] = []
     nodes = atlas.get("nodes", [])
@@ -83,6 +101,7 @@ def validate_atlas(atlas: dict) -> list[str]:
     motifs = atlas.get("motifs", [])
     evidence = atlas.get("evidence", [])
     evidence_motif_relations = atlas.get("evidence_motif_relations", {})
+    questions = atlas.get("questions", [])
     repos = atlas.get("repos", [])
     passes = atlas.get("passes", [])
 
@@ -192,6 +211,89 @@ def validate_atlas(atlas: dict) -> list[str]:
         if evidence_id not in known_evidence:
             errors.append(f"motif relations reference unknown evidence: {evidence_id}")
 
+    if not isinstance(questions, list):
+        errors.append("questions ledger must be an array")
+        questions = []
+    question_ids = [item.get("id") for item in questions if isinstance(item, dict)]
+    for value in _dupes(question_ids):
+        errors.append(f"duplicate question id: {value}")
+
+    for item in questions:
+        if not isinstance(item, dict):
+            errors.append("question record must be an object")
+            continue
+        question_id = item.get("id", "<missing>")
+        if not isinstance(item.get("id"), str) or not item.get("id").strip():
+            errors.append("question record missing id")
+        if not isinstance(item.get("title"), str) or not item.get("title").strip():
+            errors.append(f"question {question_id} missing title")
+        if item.get("state") not in KNOWN_QUESTION_STATES:
+            errors.append(f"question {question_id} has unknown state: {item.get('state')}")
+
+        for key in _find_forbidden_question_keys(item):
+            errors.append(f"question {question_id} contains forbidden field: {key}")
+
+        question_motifs = item.get("motifs", [])
+        if not isinstance(question_motifs, list) or not question_motifs:
+            errors.append(f"question {question_id} must reference at least one motif")
+            question_motifs = []
+        for motif_id in question_motifs:
+            if motif_id not in motif_map:
+                errors.append(f"question {question_id} references unknown motif: {motif_id}")
+
+        question_evidence = item.get("evidence", [])
+        if not isinstance(question_evidence, list) or not question_evidence:
+            errors.append(f"question {question_id} must reference at least one evidence record")
+            question_evidence = []
+        for evidence_id in question_evidence:
+            if evidence_id not in known_evidence:
+                errors.append(f"question {question_id} references unknown evidence: {evidence_id}")
+
+        explanations = item.get("competing_explanations", [])
+        if not isinstance(explanations, list) or len(explanations) < 2 or any(not isinstance(value, str) or not value.strip() for value in explanations):
+            errors.append(f"question {question_id} needs at least two competing explanations")
+
+        known = item.get("known", [])
+        if not isinstance(known, list) or not known or any(not isinstance(value, str) or not value.strip() for value in known):
+            errors.append(f"question {question_id} needs non-empty known evidence statements")
+
+        if not isinstance(item.get("missing_discriminator"), str) or not item.get("missing_discriminator", "").strip():
+            errors.append(f"question {question_id} missing discriminator")
+
+        experiment = item.get("candidate_experiment")
+        if not isinstance(experiment, dict):
+            errors.append(f"question {question_id} missing candidate experiment")
+        else:
+            if not isinstance(experiment.get("design"), str) or not experiment.get("design", "").strip():
+                errors.append(f"question {question_id} candidate experiment missing design")
+            if not isinstance(experiment.get("cost"), str) or not experiment.get("cost", "").strip():
+                errors.append(f"question {question_id} candidate experiment missing cost")
+            outcomes = experiment.get("outcomes", [])
+            if not isinstance(outcomes, list) or len(outcomes) < 2:
+                errors.append(f"question {question_id} candidate experiment needs at least two outcomes")
+            else:
+                for outcome in outcomes:
+                    if not isinstance(outcome, dict) or not isinstance(outcome.get("if"), str) or not outcome.get("if", "").strip() or not isinstance(outcome.get("then"), str) or not outcome.get("then", "").strip():
+                        errors.append(f"question {question_id} has invalid candidate experiment outcome")
+
+        resolution_evidence = item.get("resolution_evidence", [])
+        if resolution_evidence is None:
+            resolution_evidence = []
+        if not isinstance(resolution_evidence, list):
+            errors.append(f"question {question_id} resolution evidence must be a list")
+            resolution_evidence = []
+        for evidence_id in resolution_evidence:
+            if evidence_id not in known_evidence:
+                errors.append(f"question {question_id} resolution evidence references unknown evidence: {evidence_id}")
+        if item.get("state") == "resolved" and not resolution_evidence:
+            errors.append(f"question {question_id} is resolved without resolution evidence")
+        if item.get("state") != "resolved" and resolution_evidence:
+            errors.append(f"question {question_id} has resolution evidence while state is not resolved")
+
+        notes = item.get("notes", [])
+        if not isinstance(notes, list) or any(not isinstance(value, str) for value in notes):
+            errors.append(f"question {question_id} has invalid notes")
+
     repo_names = [repo.get("name") for repo in repos]
     for value in _dupes(repo_names):
         errors.append(f"duplicate repository name: {value}")
@@ -209,7 +311,7 @@ def main() -> int:
         return 1
     print(
         f"atlas data: OK ({len(atlas['nodes'])} nodes across {len(atlas['passes'])} passes; "
-        f"{len(atlas['evidence'])} empirical evidence records)"
+        f"{len(atlas['evidence'])} empirical evidence records; {len(atlas['questions'])} unresolved questions)"
     )
     return 0
 
