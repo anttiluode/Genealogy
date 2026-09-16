@@ -26,4 +26,6 @@ jobs:
       - name: Check browser JavaScript
         run: |
           node --check assets/app.js
+          node --check assets/tools.js
+          node --check assets/evidence.js
           node --check assets/zoom.js

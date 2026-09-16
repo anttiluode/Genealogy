@@ -8,6 +8,7 @@ KNOWN_STATUSES = {"idea-mine", "experiment", "negative", "ledger", "tool", "surv
 KNOWN_USEFULNESS = {"none", "conceptual", "scientific", "practical"}
 KNOWN_CONFIDENCE = {"low", "medium", "high"}
 KNOWN_EDGE_TYPES = {"inherits", "forks", "rediscovery", "corrects", "extracts", "converges"}
+KNOWN_EVIDENCE_RESULTS = {"supports", "contradicts", "mixed", "inconclusive"}
 
 
 def _read_json(path: Path):
@@ -56,6 +57,7 @@ def load_atlas(root: Path) -> dict[str, list[dict]]:
         "nodes": base_nodes + pass_nodes,
         "edges": _read_json(data / "edges.json") + pass_edges,
         "motifs": _read_json(data / "motifs.json") + pass_motifs,
+        "evidence": _read_json(data / "evidence.json"),
         "passes": [
             {"id": "foundation", "title": "Foundation atlas", "summary": "The first cross-family curated slice.", "order": 0, "reviewed_at": "2026-09-15", "path": None}
         ] + passes,
@@ -77,6 +79,7 @@ def validate_atlas(atlas: dict[str, list[dict]]) -> list[str]:
     nodes = atlas.get("nodes", [])
     edges = atlas.get("edges", [])
     motifs = atlas.get("motifs", [])
+    evidence = atlas.get("evidence", [])
     repos = atlas.get("repos", [])
     passes = atlas.get("passes", [])
 
@@ -128,6 +131,37 @@ def validate_atlas(atlas: dict[str, list[dict]]) -> list[str]:
             if node_id not in ids:
                 errors.append(f"motif {motif.get('id')} references unknown node: {node_id}")
 
+    evidence_ids = [item.get("id") for item in evidence]
+    for value in _dupes(evidence_ids):
+        errors.append(f"duplicate evidence id: {value}")
+    for item in evidence:
+        evidence_id = item.get("id", "<missing>")
+        if not isinstance(item.get("id"), str) or not item.get("id"):
+            errors.append("evidence record missing id")
+        if item.get("node") not in ids:
+            errors.append(f"evidence {evidence_id} references unknown node: {item.get('node')}")
+        if item.get("result") not in KNOWN_EVIDENCE_RESULTS:
+            errors.append(f"unknown evidence result for {evidence_id}: {item.get('result')}")
+        for field in ("claim", "design", "source"):
+            if not isinstance(item.get(field), str) or not item.get(field).strip():
+                errors.append(f"evidence {evidence_id} missing {field}")
+        for field in ("metrics", "controls", "limitations"):
+            if not isinstance(item.get(field, []), list):
+                errors.append(f"evidence {evidence_id} has non-list {field}")
+        sample = item.get("sample")
+        if sample is not None:
+            if not isinstance(sample, dict):
+                errors.append(f"evidence {evidence_id} has invalid sample")
+            else:
+                if not isinstance(sample.get("unit"), str) or not sample.get("unit"):
+                    errors.append(f"evidence {evidence_id} sample missing unit")
+                count = sample.get("count")
+                if not isinstance(count, (int, float)) or isinstance(count, bool) or count <= 0:
+                    errors.append(f"evidence {evidence_id} sample has invalid count")
+        for field in ("held_out", "external_data"):
+            if field in item and not isinstance(item[field], bool):
+                errors.append(f"evidence {evidence_id} has non-boolean {field}")
+
     repo_names = [repo.get("name") for repo in repos]
     for value in _dupes(repo_names):
         errors.append(f"duplicate repository name: {value}")
@@ -143,7 +177,10 @@ def main() -> int:
         for error in errors:
             print(error)
         return 1
-    print(f"atlas data: OK ({len(atlas['nodes'])} nodes across {len(atlas['passes'])} passes)")
+    print(
+        f"atlas data: OK ({len(atlas['nodes'])} nodes across {len(atlas['passes'])} passes; "
+        f"{len(atlas['evidence'])} empirical evidence records)"
+    )
     return 0
 
 
