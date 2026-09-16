@@ -1,0 +1,35 @@
+{
+  "id": "splatpack-extraction",
+  "title": "SplatPack: shared field survives as a practical representation",
+  "summary": "SplatPack turns the useful residue of SplatWorld4 into an engineering object. After the stronger operator-specific story lost to capacity-matched controls, the shared smooth position/scene field survives together with sparse local residual exceptions and a practical rasterisation path.",
+  "order": 195,
+  "reviewed_at": "2026-09-16",
+  "nodes": [
+    {
+      "id": "SplatPack",
+      "url": "https://github.com/anttiluode/SplatPack",
+      "family": "splat-world",
+      "status": "tool",
+      "claim": "Packages a multi-scene splat representation in which a shared smooth position/scene field plus sparse local residual corrections predicts RGB and opacity for rendering.",
+      "survived": "The compact shared-field plus sparse-exception idea survives as an engineering representation even after the stronger operator-specific hypothesis lost to capacity-matched controls.",
+      "killed": "The package is not evidence for a Fourier, Gabor or wavebank operator mechanism and does not claim state-of-the-art 3-D reconstruction quality.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/SplatPack/blob/main/README.md",
+      "tags": ["splats", "shared-field", "residual", "compression", "tool"],
+      "era": "Practical splat field",
+      "era_order": 82
+    }
+  ],
+  "edges": [
+    {
+      "source": "SplatWorld4",
+      "target": "SplatPack",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "SplatPack explicitly follows SplatWorld4 after the stronger operator mechanism lost capacity-matched controls, retaining the useful shared smooth field while adding sparse local residual exceptions and a practical renderer.",
+      "evidence": "https://github.com/anttiluode/SplatPack/blob/main/README.md"
+    }
+  ],
+  "motifs": []
+}
