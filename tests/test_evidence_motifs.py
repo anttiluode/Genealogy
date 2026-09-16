@@ -13,6 +13,17 @@ class EvidenceMotifTests(unittest.TestCase):
             self.assertIn(node, nodes)
         self.assertGreaterEqual(len(evidence), 12)
 
+    def test_evidence_records_name_only_known_motifs(self):
+        evidence = json.loads((ROOT / "data/evidence.json").read_text(encoding="utf-8"))
+        motifs = json.loads((ROOT / "data/motifs.json").read_text(encoding="utf-8"))
+        known = {item["id"] for item in motifs}
+        tagged = 0
+        for item in evidence:
+            for motif_id in item.get("motifs", []):
+                self.assertIn(motif_id, known)
+                tagged += 1
+        self.assertGreaterEqual(tagged, len(evidence))
+
     def test_evidence_view_exposes_motif_aggregation(self):
         js = (ROOT / "assets/evidence.js").read_text(encoding="utf-8")
         self.assertIn("function buildMotifEvidenceSummary", js)
