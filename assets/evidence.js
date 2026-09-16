@@ -45,10 +45,65 @@ function evidenceMatches(item, f = filters()) {
   if (!f.q) return true;
   const haystack = [
     item.id, item.node, item.claim, item.design, item.result, item.replication,
-    ...(item.controls || []), ...(item.limitations || []),
+    ...(item.motifs || []), ...(item.controls || []), ...(item.limitations || []),
     ...(item.metrics || []).flatMap(metric => [metric.name, metric.display, metric.comparison]),
   ].join(' ').toLowerCase();
   return haystack.includes(f.q);
+}
+
+function buildMotifEvidenceSummary(records = evidenceRecords) {
+  const summaries = [];
+  for (const motif of atlas.motifs || []) {
+    const linked = records.filter(item => (item.motifs || []).includes(motif.id));
+    if (!linked.length) continue;
+    const representedNodes = [...new Set(linked.map(item => item.node))].sort();
+    const supportingNodes = [...new Set(linked.filter(item => item.result === 'supports').map(item => item.node))].sort();
+    const challengedNodes = [...new Set(linked.filter(item => item.result !== 'supports').map(item => item.node))].sort();
+    summaries.push({
+      motif,
+      records: linked,
+      representedNodes,
+      supportingNodes,
+      challengedNodes,
+      crossRepoSupport: supportingNodes.length >= 2,
+    });
+  }
+  return summaries.sort((a, b) =>
+    Number(b.crossRepoSupport) - Number(a.crossRepoSupport)
+    || b.supportingNodes.length - a.supportingNodes.length
+    || b.representedNodes.length - a.representedNodes.length
+    || a.motif.title.localeCompare(b.motif.title));
+}
+
+function renderMotifEvidence(records = evidenceRecords) {
+  const summaries = buildMotifEvidenceSummary(records);
+  if (!summaries.length) return '';
+  return `
+    <section class="motif-evidence" aria-label="Motif evidence">
+      <div class="motif-evidence-head">
+        <div><div class="eyebrow">CROSS-REPO TEST HISTORY</div><h3>Motif evidence</h3></div>
+        <p>A motif counts support only when an evidence record explicitly names that motif. Two supporting records from one repository do not masquerade as cross-repository replication.</p>
+      </div>
+      <div class="motif-evidence-grid">
+        ${summaries.map(item => `
+          <article class="motif-evidence-card ${item.crossRepoSupport ? 'cross-supported' : ''}">
+            <div class="motif-evidence-top">
+              <span class="motif-evidence-count">${item.records.length}</span>
+              <span>${item.crossRepoSupport ? 'support in multiple repos' : 'evidence attached'}</span>
+            </div>
+            <h4>${escapeHtml(item.motif.title)}</h4>
+            <p>${escapeHtml(item.motif.description || '')}</p>
+            <div class="motif-evidence-stats">
+              <b>${item.representedNodes.length}</b><span>repos tested</span>
+              <b>${item.supportingNodes.length}</b><span>repos with supporting records</span>
+              <b>${item.challengedNodes.length}</b><span>repos with mixed/null/inconclusive records</span>
+            </div>
+            <div class="node-links">
+              ${item.representedNodes.map(id => `<button data-node="${escapeHtml(id)}">${escapeHtml(id)}</button>`).join('')}
+            </div>
+          </article>`).join('')}
+      </div>
+    </section>`;
 }
 
 function evidenceCard(item) {
@@ -68,6 +123,10 @@ function evidenceCard(item) {
     </div>`).join('');
   const controls = (item.controls || []).map(control => `<li>${escapeHtml(control)}</li>`).join('');
   const limitations = (item.limitations || []).map(limit => `<li>${escapeHtml(limit)}</li>`).join('');
+  const motifTags = (item.motifs || []).map(id => {
+    const motif = (atlas.motifs || []).find(candidate => candidate.id === id);
+    return `<span>${escapeHtml(motif?.title || id)}</span>`;
+  }).join('');
 
   return `
     <article class="evidence-card ${escapeHtml(item.result)}">
@@ -77,6 +136,7 @@ function evidenceCard(item) {
       </div>
       <div class="eyebrow">${escapeHtml(item.design)} · ${sample}</div>
       <h3>${escapeHtml(item.claim)}</h3>
+      ${motifTags ? `<div class="evidence-motifs">${motifTags}</div>` : ''}
       ${metrics ? `<div class="evidence-metrics">${metrics}</div>` : ''}
       ${flags.length ? `<div class="evidence-flags">${flags.map(flag => `<span>${escapeHtml(flag)}</span>`).join('')}</div>` : ''}
       ${controls ? `<details><summary>Controls / nulls</summary><ul>${controls}</ul></details>` : ''}
@@ -115,6 +175,7 @@ function renderEvidence() {
       <strong>${supports}</strong><span>supporting results</span>
       <strong>${constrained}</strong><span>mixed, null, contradictory or inconclusive</span>
     </div>
+    ${renderMotifEvidence(visible)}
     <div class="evidence-grid">${visible.map(evidenceCard).join('')}</div>`;
 
   if (!visible.length) {
