@@ -82,5 +82,17 @@
   {
     "path": "story-reflection.json",
     "enabled": true
+  },
+  {
+    "path": "field-computing.json",
+    "enabled": true
+  },
+  {
+    "path": "algorithm-compilation-boundary.json",
+    "enabled": true
+  },
+  {
+    "path": "splatpack-extraction.json",
+    "enabled": true
   }
 ]
