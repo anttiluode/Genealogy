@@ -1,0 +1,88 @@
+{
+  "id": "finished-creative-artifacts",
+  "title": "Finished creative artifacts: mechanisms that became usable tools",
+  "summary": "A practical branch where research mechanisms crossed into complete runnable creative software. Arborverb and ArborBody package grown waveguide structures as audio plug-ins; AnttisDeepfake turns phase transport into a live generated-portrait puppet; AIvideoFX carries that mechanism into a layered video-effects studio and adds evidence-triggered refresh. The pass records finished artifact status without treating packaging or market plausibility as scientific validation.",
+  "order": 200,
+  "reviewed_at": "2026-09-16",
+  "nodes": [
+    {
+      "id": "Arborverb",
+      "url": "https://github.com/anttiluode/Arborverb",
+      "family": "creative-dsp",
+      "status": "tool",
+      "claim": "Packages a grown scattering-junction waveguide mesh as VST3/standalone reverb: closed-form decay matching plus an exact adjoint fit for early-reflection and modal-colour structure, while keeping the resulting room body editable.",
+      "survived": "The repository contains a complete JUCE plug-in/standalone shell, structural stability tests, finite-difference verification of the adjoint gradient, an end-to-end fit test and measured realtime performance; the fitted object can be moved through, resized and morphed rather than remaining a fixed impulse response.",
+      "killed": "It explicitly does not beat convolution at exact static room reproduction, does not claim the underlying waveguide or differentiable-reverb algorithms are novel, and large meshes can become too expensive for live use.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Arborverb/blob/main/README.md",
+      "tags": ["audio", "vst3", "waveguide", "adjoint", "grown-structure", "tool"],
+      "era": "Finished creative artifacts",
+      "era_order": 1
+    },
+    {
+      "id": "ArborBody",
+      "url": "https://github.com/anttiluode/ArborBody",
+      "family": "creative-dsp",
+      "status": "tool",
+      "claim": "Packages a grown scattering waveguide body as a VST3/AU/standalone physical-modelling instrument with nonlinear mallet excitation and independently movable strike and pickup positions.",
+      "survived": "Eight core verification sections pass, including passive stability, whole-spectrum pitch scaling, velocity-dependent spectral change with a linear negative control, tension nonlinearity, independent pickups, cost measurement and block-size independence; the complete plug-in build is present.",
+      "killed": "The waveguide family is not novel, the bodies are intentionally inharmonic, sampled velocity layers can approximate part of the strike behaviour, and continuous bowing is not implemented.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/ArborBody/blob/main/README.md",
+      "tags": ["audio", "vst3", "au", "physical-modeling", "waveguide", "instrument", "tool"],
+      "era": "Finished creative artifacts",
+      "era_order": 2
+    },
+    {
+      "id": "AnttisDeepfake",
+      "url": "https://github.com/anttiluode/AnttisDeepfake",
+      "family": "phase-transport",
+      "status": "experiment",
+      "claim": "Carries one generated portrait with live webcam motion using a dense complex Gabor PhaseRail, plus an affine-nullspace appearance constraint, without landmarks, a face mask, optical flow or per-user training.",
+      "survived": "The CUDA bank is checked against the numpy reference, a known sub-pixel translation is recovered, the affine projector annihilates an injected affine edit, and the complete interactive studio runs at roughly 17 fps at 128x128 on the development GPU.",
+      "killed": "Some visible tracking comes from live low/residual bands rather than proven oriented-phase transport alone; the decisive ablation remains open, large head motion leaves the local-translation regime, unseen anatomy cannot be transported, and correspondence between webcam face and generated portrait is assumed rather than enforced.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/AnttisDeepfake/blob/main/README.md",
+      "tags": ["phase-rail", "phase-transport", "gabor", "cuda", "video", "generated-portrait"],
+      "era": "Finished creative artifacts",
+      "era_order": 3
+    },
+    {
+      "id": "AIvideoFX",
+      "url": "https://github.com/anttiluode/AIvideoFX",
+      "family": "phase-transport",
+      "status": "tool",
+      "claim": "Turns the PhaseRail mechanism into a layered live video-effects studio: person segmentation owns the actor layer, separate prompts generate person and background plates, PhaseRail transports the person, and a causal-refresh controller requests a new keyframe only after persistent structural mismatch.",
+      "survived": "The application keeps depth, segmentation, recording and the existing effect chain while separating person/background generation; the causal-refresh controller is implemented as a sibling effect with cheap unit tests in CI and continues transporting the old keyframe while replacement diffusion is running.",
+      "killed": "The causal-refresh threshold is still a heuristic rather than a calibrated probability or validated optimum, its human-quality/diffusion-call benchmark remains to be run, and large turns or unseen anatomy still require regeneration or an external portrait-animation system.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/AIvideoFX/blob/main/README.md",
+      "tags": ["phase-rail", "video-effects", "layering", "causal-refresh", "diffusion", "tool"],
+      "era": "Finished creative artifacts",
+      "era_order": 4
+    }
+  ],
+  "edges": [
+    {
+      "source": "FunctionalArbors",
+      "target": "ArborBody",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "ArborBody explicitly states that it was made with the arbor line from FunctionalArbors / GeometricNeuronPlusField, turning that grown-structure line into a physical-modelling instrument.",
+      "evidence": "https://github.com/anttiluode/ArborBody/blob/main/README.md"
+    },
+    {
+      "source": "AnttisDeepfake",
+      "target": "AIvideoFX",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "AIvideoFX embeds the AnttisDeepfakeLayer / PhaseRail mechanism as the moving generated-person layer, then adds ownership segmentation, separate generated background and causal refresh around it.",
+      "evidence": "https://github.com/anttiluode/AIvideoFX/blob/main/README.md"
+    }
+  ],
+  "motifs": []
+}
