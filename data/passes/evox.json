@@ -1,0 +1,43 @@
+{
+  "id": "evox",
+  "title": "EvoX: active mechanism selection and reuse",
+  "summary": "EvoX joins the GAx search/mode line with AnotherOddThing's active-identification idea. Its early gates test whether evolution can retain distinct executable procedures and later identify/reuse the right one; V3 extracts the successful half into a domain-agnostic Bayesian intervention engine and tests the same core across regression faults, state machines, program transforms, noisy dynamics and a causal circuit. Four of five frozen canonical domains pass; the causal-circuit adapter improves over random but misses the predeclared identification-efficiency margin.",
+  "order": 200,
+  "reviewed_at": "2026-09-16",
+  "nodes": [
+    {
+      "id": "EvoX",
+      "url": "https://github.com/anttiluode/EvoX",
+      "family": "search-routing",
+      "status": "ledger",
+      "claim": "Given several executable explanations that fit current observations, choose interventions by expected information gain, update belief over mechanisms, and reuse the identified mechanism instead of restarting search.",
+      "survived": "The active-identification/reuse mechanism generalized beyond the original direct-versus-relational toy world. On frozen V3 canonical seeds, the same domain-agnostic engine passed 4/5 adapters: regression faults, state machines, program transforms and noisy dynamics; once the useful mechanism was identified, reuse was consistently cheaper than restart.",
+      "killed": "The broader story remains bounded. Earlier V0-V2 work did not make alternative procedures reliably abundant, and V3 is not a universal cross-domain PASS: the causal-circuit adapter still benefited from active probing but missed the frozen identification-efficiency threshold, so the overall 5/5 gate failed.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/EvoX/blob/main/README.md",
+      "tags": ["search", "active-probing", "mechanism-selection", "bayesian-identification", "reuse", "negative-result"],
+      "era": "Active mechanism selection",
+      "era_order": 20
+    }
+  ],
+  "edges": [
+    {
+      "source": "GAx",
+      "target": "EvoX",
+      "type": "converges",
+      "confidence": "high",
+      "why": "EvoX explicitly starts from GAx's question of retaining and separating alternative computational procedures, then tests whether those alternatives can be identified and reused under a new context.",
+      "evidence": "https://github.com/anttiluode/EvoX/blob/main/README.md"
+    },
+    {
+      "source": "AnotherOddThing",
+      "target": "EvoX",
+      "type": "converges",
+      "confidence": "high",
+      "why": "EvoX explicitly imports AnotherOddThing's active experimental-design mechanism: choose the intervention that maximally separates currently plausible hidden mechanisms under a bounded probe budget.",
+      "evidence": "https://github.com/anttiluode/EvoX/blob/main/README.md"
+    }
+  ],
+  "motifs": []
+}
