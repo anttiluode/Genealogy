@@ -106,5 +106,9 @@
   {
     "path": "finished-creative-artifacts.json",
     "enabled": true
+  },
+  {
+    "path": "synthetic-universe-epistemology.json",
+    "enabled": true
   }
 ]

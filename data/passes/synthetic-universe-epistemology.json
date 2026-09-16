@@ -1,0 +1,48 @@
+{
+  "id": "synthetic-universe-epistemology",
+  "title": "Synthetic universes: map, mechanism and the law-extractor trap",
+  "summary": "MatrixInMatrix and phi-world-theory use the same broad Buckyball / best.py synthetic-universe material for a useful epistemic question: what has actually been learned when a complicated world can be predicted or reconstructed compactly? MatrixInMatrix gives the cleanest version by contrasting the original nonlinear field with a harmonic reconstruction that can reproduce the stable shape while losing the source dynamics that heal and evolve it. phi-world-theory expands that workflow into predictors, harmonic probes, dimensional analyses and a master-vector story, but its own README explicitly warns that parts are AI slop, hallucinated concepts and short logical jumps. The atlas therefore keeps the workflow and the map-versus-territory question while refusing to treat predictive accuracy, compression or suggestive algebra as identification of the source physics.",
+  "order": 205,
+  "reviewed_at": "2026-09-16",
+  "nodes": [
+    {
+      "id": "MatrixInMatrix",
+      "url": "https://github.com/anttiluode/MatrixInMatrix",
+      "family": "synthetic-universe",
+      "status": "experiment",
+      "claim": "Builds a three-layer synthetic-world experiment: a nonlinear field produces a stable Buckyball, an observer extracts a compact harmonic fingerprint with a 3-D FFT, and a separate renderer reconstructs the shape from that compressed description.",
+      "survived": "The useful result is the compression-versus-mechanism distinction. The repo's reconstructed harmonic map can reproduce the recognizable Buckyball while deliberately abandoning the original field dynamics; the original object can heal and evolve after perturbation, whereas the clean reconstruction is a static descriptive copy.",
+      "killed": "A compact or visually convincing reconstruction does not establish that the extracted harmonics are the source mechanism that generated the original field dynamics. The map can be an excellent compression while still omitting the causal machinery responsible for evolution, repair and response to perturbation.",
+      "usefulness": "conceptual",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/MatrixInMatrix/blob/main/README.md",
+      "tags": ["synthetic-universe", "compression", "fft", "map-territory", "reconstruction", "epistemology"],
+      "era": "Synthetic universe / epistemology",
+      "era_order": 1
+    },
+    {
+      "id": "phi-world-theory",
+      "url": "https://github.com/anttiluode/phi-world-theory",
+      "family": "synthetic-universe",
+      "status": "idea-mine",
+      "claim": "Collects a larger synthetic-universe workflow around best.py: next-state prediction, harmonic extraction, perturbation tests, symmetry/dimensional probes and a high-dimensional-vector interpretation are used to ask how an observer might infer compact laws from an artificial world.",
+      "survived": "The reusable workflow is simulate -> predict/extract -> perturb -> analyze -> compare interpretations. Because the world is synthetic, each proposed law can in principle be checked against known generator code instead of being accepted merely because a predictor or harmonic description fits observations.",
+      "killed": "The README itself warns that there is AI slop, hallucinated material and logical jumps. Statements that high prediction accuracy proves the physics is captured, that later algebra proves gauge or holographic structure, or that a reported master-vector coherence figure establishes a fundamental source are not earned by the documented evidence.",
+      "usefulness": "conceptual",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/phi-world-theory/blob/main/README.md",
+      "tags": ["synthetic-universe", "law-extraction", "prediction", "harmonics", "idea-mine", "epistemology"],
+      "era": "Synthetic universe / epistemology",
+      "era_order": 2
+    }
+  ],
+  "edges": [],
+  "motifs": [
+    {
+      "id": "model-is-not-source-mechanism",
+      "title": "A model of a world is not necessarily the mechanism that made the world",
+      "description": "MatrixInMatrix makes the boundary visual: a compressed harmonic reconstruction can reproduce the observed object while dropping the field dynamics that heal and evolve it. phi-world-theory asks the same question with prediction and deeper mathematical probes. Good prediction, compact reconstruction and suggestive latent structure are evidence that observations admit a useful model; they do not by themselves identify the source mechanism that generated the world.",
+      "nodes": ["MatrixInMatrix", "phi-world-theory"]
+    }
+  ]
+}
