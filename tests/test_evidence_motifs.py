@@ -13,22 +13,24 @@ class EvidenceMotifTests(unittest.TestCase):
             self.assertIn(node, nodes)
         self.assertGreaterEqual(len(evidence), 12)
 
-    def test_evidence_records_name_only_known_motifs_and_define_relation(self):
+    def test_evidence_motif_relations_are_explicit_and_known(self):
         evidence = json.loads((ROOT / "data/evidence.json").read_text(encoding="utf-8"))
         motifs = json.loads((ROOT / "data/motifs.json").read_text(encoding="utf-8"))
+        relations = json.loads((ROOT / "data/evidence_motif_relations.json").read_text(encoding="utf-8"))
         known = {item["id"] for item in motifs}
         tagged = 0
         for item in evidence:
-            relations = item.get("motif_relations", {})
+            item_relations = relations.get(item["id"], {})
             for motif_id in item.get("motifs", []):
                 self.assertIn(motif_id, known)
-                self.assertIn(motif_id, relations)
-                self.assertIn(relations[motif_id], {"supports", "limits", "documents"})
+                self.assertIn(motif_id, item_relations)
+                self.assertIn(item_relations[motif_id], {"supports", "limits", "documents"})
                 tagged += 1
         self.assertGreaterEqual(tagged, len(evidence))
 
     def test_evidence_view_exposes_motif_aggregation(self):
         js = (ROOT / "assets/evidence.js").read_text(encoding="utf-8")
+        self.assertIn("data/evidence_motif_relations.json", js)
         self.assertIn("function buildMotifEvidenceSummary", js)
         self.assertIn("function renderMotifEvidence", js)
         self.assertIn("function motifRelation", js)
