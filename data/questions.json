@@ -1,0 +1,181 @@
+[
+  {
+    "id": "active-intervention-cost-density",
+    "title": "When does active intervention still pay after probe cost and dense hidden causes?",
+    "state": "open",
+    "motifs": ["active-intervention", "scalar-causal-credit"],
+    "evidence": [
+      "v24-gate4-soma-observability",
+      "readwrite-rw5-state-dependent-probe",
+      "lentoorava-pulsetriage-digits",
+      "lentoorava-pulse-repair"
+    ],
+    "competing_explanations": [
+      "The main advantage is causal: choosing interventions reveals hidden structure that passive observation cannot recover, so the benefit should persist after charging a realistic probe budget.",
+      "The observed advantage depends strongly on sparse causes and cheap interventions; as hidden causes become dense or probes become costly, passive or random strategies may catch up."
+    ],
+    "known": [
+      "GeometricNeuronV24 shows that addressed stimulation can remove an algebraic ambiguity left by a fixed soma observation, although practical identity remains noise-limited.",
+      "ReadWrite gives a deterministic existence proof that a state-dependent write can reveal measurement-nullspace information that passive reading and a constant write cannot.",
+      "LentoOrava shows large scalar-only localization gains over equal-budget random probing in sparse synthetic fault worlds."
+    ],
+    "missing_discriminator": "A matched-budget sweep that jointly varies intervention cost and hidden-cause density while keeping the observation channel and repair/action budget fixed.",
+    "candidate_experiment": {
+      "design": "Build one synthetic hidden-state benchmark with a tunable number of simultaneous causes. Compare adaptive intervention, random intervention, and passive observation at equal total cost, where each probe and each repair consumes explicit budget. Sweep cause density from sparse to dense and report recovery/identification quality against cost.",
+      "cost": "medium: one reusable synthetic benchmark, roughly 20-50 seeds per density/cost cell, CPU-friendly",
+      "outcomes": [
+        {
+          "if": "Adaptive intervention keeps a stable advantage over random/passive strategies across increasing cause density after equalizing total cost",
+          "then": "The cross-repo active-intervention motif gains evidence that is less dependent on sparse causes or free probing."
+        },
+        {
+          "if": "The advantage collapses as density or probe cost rises while random/passive strategies converge to the same quality-cost frontier",
+          "then": "The motif should be narrowed to sparse or inexpensive-intervention regimes rather than treated as a general advantage."
+        }
+      ]
+    },
+    "notes": [
+      "This question does not assume that active intervention is universally superior; it asks where the existing advantage stops."
+    ]
+  },
+  {
+    "id": "late-relevance-training-confound",
+    "title": "Is late relevance an architectural advantage once training fit is equalized?",
+    "state": "partially-resolved",
+    "motifs": ["late-relevance", "persistent-state"],
+    "evidence": [
+      "fusion-v3-readiness-confound",
+      "newmachine-v3-factorized-overlap"
+    ],
+    "competing_explanations": [
+      "Keeping richer state resident and applying relevance nearer publication creates a genuine switch/readiness advantage even when competing models fit the training distribution equally well.",
+      "The large FusionMachine readiness gap is mostly explained by unequal training fit, while the clean NewMachine result reflects a narrower factorization benefit rather than a broad architectural advantage."
+    ],
+    "known": [
+      "FusionMachine shows a large readiness/switch gap, but its generic recurrent baseline also fits the training queries substantially worse.",
+      "NewMachine isolates a smaller factorization benefit under overlapping reliability and publication constraints while keeping state repair decisions matched."
+    ],
+    "missing_discriminator": "A readiness comparison in which late-relevance and generic baselines are matched to the same training-query error before dormant/switch evaluation.",
+    "candidate_experiment": {
+      "design": "Train multiple late-relevance and generic recurrent baselines until each model enters the same narrow training-error band, using extra optimization or capacity only to equalize fit. Freeze parameters, then measure first-query-after-switch and post-dormancy error on held-out worlds.",
+      "cost": "medium: reuse FusionMachine task generator and add fit-matching/rejection logic across 16-32 seeds",
+      "outcomes": [
+        {
+          "if": "Late-relevance models retain a switch/dormancy advantage after training-query error is tightly matched",
+          "then": "The architectural interpretation gains direct support beyond the current training-quality confound."
+        },
+        {
+          "if": "The readiness gap largely disappears once training fit is matched",
+          "then": "The current FusionMachine effect should be attributed mainly to optimization/fit differences, leaving NewMachine's narrower factorization result as the cleaner survivor."
+        }
+      ]
+    },
+    "notes": [
+      "Partially resolved means one narrower construction is clean while the broader readiness claim remains confounded."
+    ]
+  },
+  {
+    "id": "bounded-observation-address-vs-grid",
+    "title": "What survives from bounded observation: active addressing or a particular grid code?",
+    "state": "partially-resolved",
+    "motifs": ["bounded-observation", "active-intervention"],
+    "evidence": [
+      "v24-gate2-active-law-identification",
+      "v24-gate4-soma-observability",
+      "readwrite-rw2b-coprime-correction",
+      "readwrite-rw5-state-dependent-probe"
+    ],
+    "competing_explanations": [
+      "Most of the robust gain comes from choosing informative addresses or interventions; the exact multiscale/coprime code is secondary.",
+      "Specific structured measurement families still provide an independent advantage, but the existing matched-budget attacker was not the right regime to expose it."
+    ],
+    "known": [
+      "GeometricNeuronV24 replicates active address selection while fixed-scale active sensing can match the multiscale variant, weakening a unique multiscale interpretation.",
+      "ReadWrite's coprime grid stack fails to beat the best single grid by its registered matched-budget threshold.",
+      "ReadWrite's state-dependent active write still reveals hidden-state distinctions that passive reading cannot."
+    ],
+    "missing_discriminator": "A factorial experiment separating adaptivity from measurement-family structure at the same number of probes, same spatial support, and same noise level.",
+    "candidate_experiment": {
+      "design": "Cross adaptive versus fixed address selection with structured versus unstructured probe families. Use identical probe counts and matched receptive-field area, then test both noiseless rank/reconstruction and noisy held-out identification.",
+      "cost": "small-to-medium: four probe-policy arms on existing V24/ReadWrite-style toy worlds, 20-40 seeds",
+      "outcomes": [
+        {
+          "if": "Adaptive policies win regardless of whether the probe family is structured or unstructured, while fixed structured grids do not",
+          "then": "The bounded-observation survivor should be described primarily as active address selection rather than as a special grid geometry."
+        },
+        {
+          "if": "Structured probe families retain an advantage within both adaptive and fixed policy classes",
+          "then": "There is evidence for a measurement-geometry contribution independent of adaptivity, motivating a narrower structural-code claim."
+        }
+      ]
+    }
+  },
+  {
+    "id": "structure-functional-consequence",
+    "title": "When does structural organization predict a downstream functional consequence?",
+    "state": "open",
+    "motifs": ["structure-as-computation"],
+    "evidence": [
+      "growing-v0-topographic-control",
+      "growing-v1-input-placement",
+      "operaattori-cross-cell-nonlinear-closure"
+    ],
+    "competing_explanations": [
+      "Fine structural organization changes the effective operator in ways that predict downstream responses beyond coarse connectivity, rank, or spectrum summaries.",
+      "Much of the apparent structure-to-computation relation can be captured by simpler coarse summaries; fine developmental placement matters only in sparse special cases."
+    ],
+    "known": [
+      "GrowingAnttisNeuron v0 changes developed topographic relation while holding connection count and effective rank fixed.",
+      "GrowingAnttisNeuron v1 finds only sparse downstream passive-transfer differences when the cable operator is held identical and input placement changes.",
+      "Operaattori compiles detailed morphology into a cable/nonlinear operator that closely reproduces a reference simulator across a morphology panel."
+    ],
+    "missing_discriminator": "A matched perturbation panel where fine structure varies while coarse graph/spectral summaries are preserved, followed by a downstream response or task readout that neither summary can trivially predict.",
+    "candidate_experiment": {
+      "design": "Generate or select paired structures with matched node/edge count, effective rank, spectral radius, and coarse path-length statistics but different fine placement/branch geometry. Compile each structure into the same forward operator and test whether fine structure predicts held-out transfer or nonlinear response differences beyond the coarse summaries.",
+      "cost": "medium: synthetic paired-structure generator plus existing Operaattori/GrowingAnttisNeuron forward machinery",
+      "outcomes": [
+        {
+          "if": "Matched coarse summaries still produce systematically different downstream responses that are predictable from fine structural descriptors",
+          "then": "The structure-as-computation motif gains a direct functional bridge between developmental relation and compiled operator behavior."
+        },
+        {
+          "if": "Downstream differences vanish once coarse graph/spectral summaries are matched",
+          "then": "The motif should be narrowed: fine structure may encode relation/topography without adding a distinct functional operator beyond coarse summaries in this regime."
+        }
+      ]
+    }
+  },
+  {
+    "id": "persistent-state-control-complexity",
+    "title": "Does richer state repair/publication control earn its complexity on vector tasks at matched communication cost?",
+    "state": "open",
+    "motifs": ["persistent-state", "late-relevance"],
+    "evidence": [
+      "activevector-v1-sparse-sync",
+      "newmachine-v3-factorized-overlap"
+    ],
+    "competing_explanations": [
+      "Separating resident-state repair from publication control provides a robust benefit beyond simple delta synchronization when vector state contains independently reliable and private/relevance-varying components.",
+      "Most practical benefit comes from maintaining state and sending sparse innovations; the extra control channels add complexity that disappears once communication budget and task error are matched."
+    ],
+    "known": [
+      "ActiveVectorNN preserves most held-out task quality while reducing full-vector communication with the sender state and readout held fixed.",
+      "NewMachine shows a clean benefit from factorized repair/publication control when reliability and publication constraints overlap in a scalar-state construction."
+    ],
+    "missing_discriminator": "A common vector-state sender/receiver benchmark comparing delta-only communication against factorized repair/publication control at the same message or bit budget.",
+    "candidate_experiment": {
+      "design": "Extend the ActiveVectorNN vector task with independently corrupted components and local-only/private intervals. Compare dense, delta-only, repair-plus-delta, and factorized repair-plus-publication policies along a matched communication-cost frontier using the same recurrent state and readout.",
+      "cost": "small-to-medium: extend existing vector simulation and run 16-32 held-out seeds over a threshold sweep",
+      "outcomes": [
+        {
+          "if": "Factorized control lowers receiver/task error at matched communication cost across multiple thresholds and seeds",
+          "then": "NewMachine's scalar factorization result generalizes into the persistent vector-state setting."
+        },
+        {
+          "if": "Delta-only or repair-plus-delta policies match the factorized frontier once cost is equalized",
+          "then": "The extra publication channel should remain a task-specific mechanism rather than a default persistent-state component."
+        }
+      ]
+    }
+  }
+]
