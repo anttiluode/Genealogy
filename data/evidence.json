@@ -5,6 +5,7 @@
     "claim": "Guided developmental labels preserve the sender-to-receiver topographic relation better than an exact receptor-label shuffle while keeping connection count and effective rank fixed.",
     "design": "matched-seed control",
     "result": "supports",
+    "motifs": ["structure-as-computation"],
     "sample": {"unit": "seed", "count": 16},
     "metrics": [
       {"name": "mean topographic error", "treatment": 0.0, "control": 0.359375, "comparison": "guided vs shuffled labels"},
@@ -32,6 +33,7 @@
     "claim": "With identical passive dendritic operators, development changes only where input enters the physical basis; the resulting modal and transfer effect is sparse rather than broad.",
     "design": "matched-seed physical control",
     "result": "mixed",
+    "motifs": ["structure-as-computation"],
     "sample": {"unit": "seed", "count": 16},
     "metrics": [
       {"name": "mean visible-mode effective count", "treatment": 4.914812, "control": 4.921359, "comparison": "guided vs shuffled labels"},
@@ -57,6 +59,7 @@
     "claim": "A morphology-only passive cable compiler plus a causal three-site nonlinear closure reproduces the standardized soma response across released morphologies without fitting the target cell.",
     "design": "cross-cell reference-model comparison",
     "result": "supports",
+    "motifs": ["structure-as-computation"],
     "sample": {"unit": "full NEURON comparison", "count": 288},
     "metrics": [
       {"name": "causal nonlinear soma NRMSE", "value": 0.0025, "display": "0.25%"},
@@ -85,6 +88,7 @@
     "claim": "The tested phase multiplier changes fractal morphology beyond ordinary seed variation.",
     "design": "matched-seed null test",
     "result": "contradicts",
+    "motifs": ["negative-results"],
     "sample": {"unit": "matched seed", "count": 5},
     "metrics": [
       {"name": "phase-related dimension shift", "display": "below between-seed variation"},
@@ -108,6 +112,7 @@
     "claim": "Keeping hidden world computation resident and applying relevance later causes the observed switch/readiness advantage over an equal-state generic recurrent baseline.",
     "design": "equal-state baseline comparison with destructive controls",
     "result": "inconclusive",
+    "motifs": ["late-relevance"],
     "sample": {"unit": "seed", "count": 8},
     "metrics": [
       {"name": "median first query after rapid switch MSE", "treatment": 0.000015198, "control": 0.016539331, "comparison": "FusionMachine vs generic RNN"},
@@ -129,5 +134,247 @@
       "Training quality therefore confounds attribution of the readiness gap to architecture alone"
     ],
     "source": "https://github.com/anttiluode/FusionMachine/blob/main/README.md"
+  },
+  {
+    "id": "v24-gate2-active-law-identification",
+    "node": "GeometricNeuronV24",
+    "claim": "Actively choosing measurement addresses can identify a hidden law from scalar observations more reliably than fixed or random addressing in the registered finite-law world.",
+    "design": "active-sensing identification with post-gate seed audit",
+    "result": "supports",
+    "motifs": ["bounded-observation"],
+    "sample": {"unit": "post-gate seed", "count": 10},
+    "metrics": [
+      {"name": "active exact accuracy", "display": "1.000 mean; 1.000 minimum"},
+      {"name": "random exact accuracy", "display": "0.796 mean; 0.760–0.828 range"},
+      {"name": "original locked >=0.20 active-minus-random margin", "value": 5, "denominator": 10}
+    ],
+    "controls": [
+      "Fixed-address observer",
+      "Random moving address observer",
+      "Fixed-scale active observer, which also reached 100% and therefore attacks the multiscale interpretation"
+    ],
+    "replication": "10-seed post-gate audit after the original 192/192 active trials",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "The law family and initial field are known",
+      "The active mechanism replicated, but the originally demanded >=0.20 margin over random passed only 5/10 seeds",
+      "The result supports active address selection, not a unique requirement for multiscale sensing"
+    ],
+    "source": "https://github.com/anttiluode/GeometricNeuronV24/blob/main/README.md"
+  },
+  {
+    "id": "v24-gate4-soma-observability",
+    "node": "GeometricNeuronV24",
+    "claim": "Addressed dendritic stimulation removes the algebraic ambiguity of fixed soma observation, but the resulting full-rank code is not fully identifiable at the locked 1 uV soma-noise level.",
+    "design": "real-morphology observability test with noise audit",
+    "result": "mixed",
+    "motifs": ["bounded-observation", "active-intervention", "negative-results"],
+    "sample": {"unit": "post-result noise seed", "count": 10},
+    "metrics": [
+      {"name": "fixed-address Jacobian rank", "value": 2, "denominator": 12},
+      {"name": "active multiscale Jacobian rank", "value": 12, "denominator": 12},
+      {"name": "active multiscale identity at 1 uV", "display": "~0.779"},
+      {"name": "noise-visible singular directions at 1 uV", "value": 7, "denominator": 12},
+      {"name": "registered >=0.90 identity target", "value": 0, "denominator": 10}
+    ],
+    "controls": [
+      "Fixed address with varying scale",
+      "Random multiscale probe sets",
+      "Point-only active probes",
+      "Flattened-radius morphology control"
+    ],
+    "replication": "10 post-result noise seeds plus a noise sweep",
+    "held_out": false,
+    "external_data": true,
+    "limitations": [
+      "Uses a passive graph model of one released human morphology rather than a population of cells",
+      "Full algebraic rank does not imply practical identifiability under realistic amplitude noise",
+      "Multiscale stimulation is not necessary because active point probes also reach full rank"
+    ],
+    "source": "https://github.com/anttiluode/GeometricNeuronV24/blob/main/README.md"
+  },
+  {
+    "id": "readwrite-rw5-state-dependent-probe",
+    "node": "ReadWrite",
+    "claim": "A known write can distinguish states that passive reading cannot when the write operator itself depends on the hidden state.",
+    "design": "constructed observability/controllability mechanism test",
+    "result": "supports",
+    "motifs": ["active-intervention"],
+    "metrics": [
+      {"name": "passive separation", "display": "5.4e-16"},
+      {"name": "constant-J write/read separation", "display": "0.0 exactly"},
+      {"name": "state-dependent J(x) write/read separation", "value": 1.263}
+    ],
+    "controls": [
+      "Two hidden states with the same row-space component and different measurement-nullspace components",
+      "Constant write Jacobian J negative control"
+    ],
+    "replication": "deterministic mechanism receipt",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "The state-dependent writer is a synthetic tanh-gated construction",
+      "The result establishes existence of the mechanism, not its prevalence or usefulness in real decoders"
+    ],
+    "source": "https://github.com/anttiluode/ReadWrite/blob/main/README.md"
+  },
+  {
+    "id": "readwrite-rw2b-coprime-correction",
+    "node": "ReadWrite",
+    "claim": "Coprime box-grid stacks beat the best single box grid by at least 0.02 capture at matched probe budget.",
+    "design": "registered matched-budget attacker",
+    "result": "contradicts",
+    "motifs": ["bounded-observation", "negative-results"],
+    "metrics": [
+      {"name": "median coprime minus best-single capture", "display": "+0.0013"},
+      {"name": "registered improvement threshold", "display": "+0.0200"}
+    ],
+    "controls": [
+      "Best single grid at each matched budget rather than only a redundant dyadic pyramid",
+      "Five probe budgets from 64 through 512"
+    ],
+    "replication": "deterministic budget sweep",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "The negative result narrows the earlier incommensurate-grid rank story; it does not erase the rank gain over stacked redundant dyadic sets"
+    ],
+    "source": "https://github.com/anttiluode/ReadWrite/blob/main/README.md"
+  },
+  {
+    "id": "lentoorava-pulsetriage-digits",
+    "node": "LentoOrava",
+    "claim": "Designed grouped rollback interventions plus one scalar KPI can localize a sparse set of harmful changes much more efficiently than equal-budget random individual rollback.",
+    "design": "frozen practical regression-localization benchmark",
+    "result": "supports",
+    "motifs": ["scalar-causal-credit", "active-intervention"],
+    "sample": {"unit": "deterministic fault set", "count": 64},
+    "metrics": [
+      {"name": "lost KPI recovered", "treatment": 0.9277, "control": 0.2081, "comparison": "PulseTriage vs equal-budget random rollback"},
+      {"name": "actual faults recalled", "treatment": 0.8711, "control": 0.1758, "comparison": "PulseTriage vs equal-budget random rollback"},
+      {"name": "scalar evaluations", "treatment": 57, "control": 57, "comparison": "PulseTriage vs equal-budget random rollback"},
+      {"name": "recovery relative to exhaustive ruler", "display": "94.29% with 22.18% of exhaustive calls"}
+    ],
+    "controls": [
+      "Equal-budget random individual rollback",
+      "Exhaustive individual rollback",
+      "Shuffled pulse address",
+      "Permutation-calibrated screen plus direct confirmations"
+    ],
+    "replication": "64 deterministic sparse fault sets",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Requires safe reversible candidate rollbacks",
+      "Assumes sparse faults and approximately additive grouped effects",
+      "Not a replacement for logs or exhaustive tests when those are cheap"
+    ],
+    "source": "https://github.com/anttiluode/LentoOrava/blob/main/README.md"
+  },
+  {
+    "id": "lentoorava-pulse-repair",
+    "node": "LentoOrava",
+    "claim": "Under a valid local repair primitive, adaptive scalar-only interventions can localize scarce useful writes substantially better than equal-budget random probing.",
+    "design": "paired scalar-only fault assay",
+    "result": "supports",
+    "motifs": ["scalar-causal-credit", "active-intervention"],
+    "sample": {"unit": "deterministic wound trial", "count": 512},
+    "metrics": [
+      {"name": "mean damage recovered", "treatment": 0.8109, "control": 0.2628, "comparison": "adaptive pulse search vs equal-budget random probing"},
+      {"name": "paired trials where adaptive beat random", "display": "95.90%"},
+      {"name": "recovery relative to exhaustive scan", "display": "93.15% at 26.74% of exhaustive calls"}
+    ],
+    "controls": [
+      "Equal-budget random probing",
+      "Exhaustive 128-tile scan",
+      "Known bilateral local repair primitive"
+    ],
+    "replication": "512 deterministic trials",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Sparse fault localization under a valid local repair rule",
+      "Does not establish general image restoration, learned regeneration, or biological credit assignment"
+    ],
+    "source": "https://github.com/anttiluode/LentoOrava/blob/main/README.md"
+  },
+  {
+    "id": "worldmodel-rgb-geometry-failure",
+    "node": "WorldModel",
+    "claim": "A coherent RGB-only rotatable WorldSplat scene is sufficient evidence that the learned scene geometry is correct.",
+    "design": "branch-preserved geometry stress test",
+    "result": "contradicts",
+    "motifs": ["provenance", "negative-results"],
+    "metrics": [
+      {"name": "RGB-only scene behavior", "display": "coherent rotatable face manifold"},
+      {"name": "geometry audit", "display": "wrong / unconstrained hollow-face-style geometry"}
+    ],
+    "controls": [
+      "Failed RGB-only branch retained instead of overwritten",
+      "Follow-up Virtual KITTI 2 branch adds metric depth supervision",
+      "Separate ray-fix A/B branch preserves the earlier control run"
+    ],
+    "replication": "branch-preserved experimental ledger",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "The main README records this as a qualitative branch-level failure rather than a single scalar benchmark",
+      "The result rejects visual coherence as proof of geometry; it does not show that RGB-only scene models are never useful"
+    ],
+    "source": "https://github.com/anttiluode/WorldModel/blob/main/README.md"
+  },
+  {
+    "id": "activevector-v1-sparse-sync",
+    "node": "ActiveVectorNN",
+    "claim": "A maintained recurrent state can be approximately synchronized with fewer full-vector transmissions while preserving most held-out task quality when sender state and readout are held fixed.",
+    "design": "pre-registered same-task communication tradeoff",
+    "result": "supports",
+    "motifs": ["persistent-state"],
+    "metrics": [
+      {"name": "event fraction at threshold 1.0", "display": "78.17%"},
+      {"name": "task RMSE increase at threshold 1.0", "display": "+1.92%"},
+      {"name": "event fraction at threshold 1.2", "display": "61.52%"},
+      {"name": "task RMSE increase at threshold 1.2", "display": "+4.21%"}
+    ],
+    "controls": [
+      "Dense sender and event receiver use exactly the same recurrent state and the same linear readout",
+      "Registered gate required <=80% of dense transmissions and <=5% relative task-RMSE increase"
+    ],
+    "replication": "held-out v1 task receipt",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Full 8-D correction is still transmitted whenever any component crosses threshold",
+      "Local RMS homeostasis is separately mixed and is not established as task-optimal"
+    ],
+    "source": "https://github.com/anttiluode/ActiveVectorNN/blob/main/README.md"
+  },
+  {
+    "id": "newmachine-v3-factorized-overlap",
+    "node": "NewMachine",
+    "claim": "When publication relevance and input reliability overlap independently, factorized state-repair and publication control can suppress private propagation in cases an exclusive signed router cannot reproduce in one step.",
+    "design": "held-out overlapping-constraint control",
+    "result": "supports",
+    "motifs": ["persistent-state", "late-relevance"],
+    "metrics": [
+      {"name": "state RMSE", "treatment": 0.084754, "control": 0.084754, "comparison": "factorized vs reset-priority signed"},
+      {"name": "private event fraction", "treatment": 0.055449, "control": 0.074726, "comparison": "factorized vs reset-priority signed"},
+      {"name": "overlap event fraction", "treatment": 0.033585, "control": 0.125606, "comparison": "factorized vs reset-priority signed"},
+      {"name": "overlap event reduction", "display": "73.3% with unchanged state RMSE and public-event mismatch"}
+    ],
+    "controls": [
+      "Same state-repair decisions in factorized and reset-priority signed policies",
+      "Reliability and publication relevance are independent factors that may overlap",
+      "Corruption detector threshold selected on training seeds before held-out evaluation"
+    ],
+    "replication": "held-out v3 receipt",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Synthetic scalar-state world",
+      "The result establishes a factorization benefit under overlapping constraints, not a biological interpretation of the intervention sites"
+    ],
+    "source": "https://github.com/anttiluode/NewMachine/blob/main/README.md"
   }
 ]
