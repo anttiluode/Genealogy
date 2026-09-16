@@ -1,0 +1,145 @@
+{
+  "id": "resonance-spine",
+  "title": "Resonance spine: from measured artifact to spectral address",
+  "summary": "Two branches share the word resonance but earn very different claims. HeadAsResonator measures a real acoustic/electrode transfer in simultaneous EEG and speech and HeadAsResonator2 rewrites that workflow as an explicit delayed linear filter. The Spectral Archipelago branch starts as a maximal biological story, then narrows: SpectralIslandsV3 recovers directed temporal structure from the skew half of lag covariance, while SpectralNeuron reduces the idea further to a controlled frequency-selective fire/reset unit and measures its multiplexing advantage. The pass intentionally records the conceptual rhyme without inventing ancestry between the physical-artifact branch and the neuron-computation branch.",
+  "order": 75,
+  "reviewed_at": "2026-09-16",
+  "nodes": [
+    {
+      "id": "HeadAsResonator",
+      "url": "https://github.com/anttiluode/HeadAsResonator",
+      "family": "resonance",
+      "status": "tool",
+      "claim": "Measures the linear acoustic transfer between simultaneously recorded overt speech and an EEG/ECoG channel, stores the frequency response, and applies its inverse as an artifact/recovered-audio probe.",
+      "survived": "On the documented OpenNeuro speech dataset the analyzer reports peak magnitude-squared coherence 0.954 at 440.6 Hz and produces an explicit transfer_function.npz used by the inverse-filter playback path. The useful object is a practical contamination/transfer-measurement instrument.",
+      "killed": "Strong speech coherence does not uniquely identify the skull as the resonator: tissue, electrode contacts, cables and recording hardware can all contribute. The later Takens triangle is not by itself evidence of a larynx model, and inverse-filtered voice-like audio is evidence of coupled speech energy, not neural speech decoding.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/HeadAsResonator/blob/main/README.md",
+      "tags": ["eeg", "speech", "microphonic-artifact", "transfer-function", "inverse-filter", "resonance"],
+      "era": "Measured physical resonance",
+      "era_order": 1
+    },
+    {
+      "id": "HeadAsResonator2",
+      "url": "https://github.com/anttiluode/HeadAsResonator2",
+      "family": "resonance",
+      "status": "ledger",
+      "claim": "Recasts the EEG-to-voice coupling problem in the time domain: delayed EEG samples form a Hankel/Takens design matrix, least squares fits an FIR map to speech, and STLSQ/SINDy can sparsify the resulting explicit filter.",
+      "survived": "The repository turns the earlier two-step frequency-domain workflow into one inspectable GUI pipeline and exposes the fitted delayed coefficients directly, while explicitly isolating a 50-300 Hz mechanical band before fitting.",
+      "killed": "A sparse or dense FIR fit is not an exact discovered law of skull physics, and STLSQ crushing zero terms is not proof of continuous unbroken energy transfer. Delay embedding here supplies regressors; without stronger interventions/controls it does not uniquely identify a hidden biological resonator or causal anatomy.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/HeadAsResonator2/blob/main/README.md",
+      "tags": ["takens", "sindy", "fir", "system-identification", "eeg", "artifact"],
+      "era": "Explicit transfer-law extraction",
+      "era_order": 2
+    },
+    {
+      "id": "SpectralArchipelagoModelOfBrain",
+      "url": "https://github.com/anttiluode/SpectralArchipelagoModelOfBrain",
+      "family": "spectral-islands",
+      "status": "idea-mine",
+      "claim": "Maximal Spectral Archipelago theory: neurons are treated as resonant phase-space systems with spectral islands, an AIS 'ferryman', moire mismatch addresses and geometry-written memory.",
+      "survived": "It created a reusable vocabulary and runnable simulation environment for asking narrower questions about resonance, directed modes, addressing and delayed-state geometry; it also explicitly positions itself as part of the Geometric Neuron ecosystem.",
+      "killed": "The repository does not establish that Johnson-Nyquist noise self-organizes into cortical memory islands, that the AIS is a holographic grating, that spikes encode moire mismatch addresses, or that memory is physically scorched into AIS/microtubule geometry. Those remain speculative biological stories.",
+      "usefulness": "conceptual",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/SpectralArchipelagoModelOfBrain/blob/main/README.md",
+      "tags": ["spectral-islands", "koopman", "ais", "moire", "maximal-theory", "idea-mine"],
+      "era": "Maximal spectral story",
+      "era_order": 3
+    },
+    {
+      "id": "SpectralIslandsV2",
+      "url": "https://github.com/anttiluode/SpectralIslandsV2",
+      "family": "spectral-islands",
+      "status": "idea-mine",
+      "claim": "Maps the Spectral Archipelago story onto an RC cable plus periodic AIS-like sampling/grating and adds masked-iFFT 'world reconstruction' demonstrations.",
+      "survived": "As a constructed simulator it makes several mechanisms inspectable: delayed cable state, periodic spatial sampling, resonant response, position-dependent thresholding and reconstruction from selected Fourier components can all be run and varied explicitly.",
+      "killed": "The simulator builds in the cable, grating, channel gradient and reconstruction rule, so their appearance is not evidence that real neurons implement the same computation. The masked-iFFT demo begins from the target image's own Fourier coefficients, so successful image reconstruction cannot establish holographic brain storage or ephaptic qualia.",
+      "usefulness": "conceptual",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/SpectralIslandsV2/blob/main/README.md",
+      "tags": ["cable", "ais", "spectral-islands", "ifft", "holographic-story", "constructed-demo"],
+      "era": "Maximal spectral story",
+      "era_order": 4
+    },
+    {
+      "id": "SpectralIslandsV3",
+      "url": "https://github.com/anttiluode/SpectralIslandsV3",
+      "family": "spectral-islands",
+      "status": "survivor",
+      "claim": "Diagnoses why symmetric lag covariance cannot recover temporal direction and extracts directed rotation modes from the skew/antisymmetric half instead.",
+      "survived": "The clean mathematical object survives: S=(C+C^T)/2 carries direction-blind power, while A=(C-C^T)/2 carries signed rotational/chiral structure; conjugate skew eigenpairs provide the directed planes that the earlier symmetric V8 objective could not recover.",
+      "killed": "The skew decomposition is linear algebra, not evidence that biological neurons literally contain Koopman islands or AIS ferrymen. It fixes a signal-processing/operator problem while leaving the larger biological interpretation unproven.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/SpectralIslandsV3/blob/main/README.md",
+      "tags": ["skew-operator", "lag-covariance", "chirality", "spectral-islands", "correction"],
+      "era": "Mechanism extraction",
+      "era_order": 5
+    },
+    {
+      "id": "SpectralNeuron",
+      "url": "https://github.com/anttiluode/SpectralNeuron",
+      "family": "spectral-islands",
+      "status": "survivor",
+      "claim": "Tests one narrow residue of the spectral-islands idea: whether a damped resonant fire/reset unit supplies a frequency address that a matched energy-integrating bucket does not.",
+      "survived": "At matched loud amplitude the documented fork fires 20 times on-band and 0 off-band while the bucket fires 21 and 20; on a three-carrier shared wire the resonant units reach mean self/crosstalk ratio 3.1x versus 1.0x for buckets. The repository therefore demonstrates finite frequency-selective addressing and demultiplexing in this toy.",
+      "killed": "The resonant fork is not amplitude-blind: quiet in-band drive can fail to cross threshold. The mechanism is ordinary band-pass/FDM signal processing, not new mathematics, and the experiment says nothing by itself about real-brain binding, theta/gamma coding, holography or AIS physiology.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/SpectralNeuron/blob/main/README.md",
+      "tags": ["resonance", "frequency-address", "fdm", "multiplexing", "reset", "negative-result"],
+      "era": "Mechanism extraction",
+      "era_order": 6
+    }
+  ],
+  "edges": [
+    {
+      "source": "HeadAsResonator",
+      "target": "HeadAsResonator2",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "HeadAsResonator2 explicitly links the first repository and describes itself as replacing its frequency-domain/two-step transfer workflow with a time-domain delayed-regression/SINDy pipeline.",
+      "evidence": "https://github.com/anttiluode/HeadAsResonator2/blob/main/README.md"
+    },
+    {
+      "source": "SpectralArchipelagoModelOfBrain",
+      "target": "SpectralIslandsV2",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "SpectralIslandsV2 explicitly says it maps the Spectral Archipelago theory onto the Geometric Neuron/AIS cable simulation.",
+      "evidence": "https://github.com/anttiluode/SpectralIslandsV2/blob/main/README.md"
+    },
+    {
+      "source": "GeometricNeuronV8",
+      "target": "SpectralIslandsV3",
+      "type": "corrects",
+      "confidence": "high",
+      "why": "SpectralIslandsV3 explicitly identifies the V8 symmetric/Ky-Fan lag-covariance objective as direction-blind and replaces it with the skew operator.",
+      "evidence": "https://github.com/anttiluode/SpectralIslandsV3/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "resonance-is-three-different-objects",
+      "title": "Resonance is three different objects here",
+      "description": "HeadAsResonator uses resonance as a measured physical transfer between simultaneous speech and recording hardware; SpectralIslandsV3 uses the skew lag operator to isolate directed temporal rotation; SpectralNeuron uses ordinary frequency-selective ring-up as a multiplexing address. The shared word is historically important, but transfer identification, skew-mode geometry and frequency gating are not interchangeable mechanisms.",
+      "nodes": ["HeadAsResonator", "HeadAsResonator2", "SpectralIslandsV3", "SpectralNeuron"]
+    },
+    {
+      "id": "spectral-story-narrows-to-mechanism",
+      "title": "The spectral story gets narrower as the controls improve",
+      "description": "The Spectral Archipelago begins with a maximal biological narrative; V2 instantiates much of that narrative by construction; V3 strips the key directionality question down to a skew-matrix result; SpectralNeuron strips the addressing question down again to a measured FDM toy with an explicit amplitude-floor correction. The later mechanisms can survive even when the original biological story does not.",
+      "nodes": ["SpectralArchipelagoModelOfBrain", "SpectralIslandsV2", "SpectralIslandsV3", "SpectralNeuron", "GeometricNeuronV8", "GeometricNeuronV9"]
+    },
+    {
+      "id": "speech-energy-before-speech-decoding",
+      "title": "Speech energy in EEG can be artifact before it is information",
+      "description": "HeadAsResonator is a useful warning for the broader EEG/audio line: strong voice-like structure in an electrophysiology channel can come from mechanical/electrode/cable coupling. Before interpreting sonified or reconstructed speech-like content as neural coding, the physical transfer path must be measured and attacked.",
+      "nodes": ["HeadAsResonator", "HeadAsResonator2", "EEG2AUDIO"]
+    }
+  ]
+}

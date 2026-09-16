@@ -32,6 +32,10 @@
     "enabled": true
   },
   {
+    "path": "resonance-spine.json",
+    "enabled": true
+  },
+  {
     "path": "spectral-routing.json",
     "enabled": true
   },
