@@ -8,6 +8,10 @@
     "enabled": true
   },
   {
+    "path": "splat-geometry-boundary.json",
+    "enabled": true
+  },
+  {
     "path": "clockfield-pruning.json",
     "enabled": true
   },

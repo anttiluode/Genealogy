@@ -1,0 +1,113 @@
+{
+  "id": "splat-geometry-boundary",
+  "title": "Splat geometry boundary: convincing motion is not a 3-D world",
+  "summary": "The Gabor-splat line repeatedly produced useful generative and avatar behaviour that looked spatial without recovering scene geometry. WorldRank calibrated a Tomasi-Kanade-style rank instrument against a true 3-D oracle and found that temporal prediction, action conditioning and a coefficient-motion penalty still left learned packet positions on a rank-2/affine shortcut. WorldPlus then changed the objective itself with navigable-room counterfactual prediction and exact perceptual aliasing, preserving the deeper boundary: a feed-forward image encoder has no observer/world state with which to separate distinct places that look identical. The same archive also contains two narrower residues: nonlinear saturation can create local ownership effects without proving viewpoint-consistent depth, and a supervised Splat3D design explicitly shares packet support between appearance and depth but therefore assigns depth rather than discovering it.",
+  "order": 25,
+  "reviewed_at": "2026-09-16",
+  "nodes": [
+    {
+      "id": "WorldRank",
+      "url": "https://github.com/anttiluode/SplatWorld4/blob/main/RandomSplat/worldrank.py",
+      "family": "splat",
+      "status": "negative",
+      "claim": "Tests whether temporal prediction, camera-action conditioning or forcing coefficient stability makes a compact Gabor-packet decoder put camera motion into packet geometry rather than appearance.",
+      "survived": "The geometry instrument is the useful result: an analytic rigid 3-D scene supplies an oracle rank 3 cliff, an affine-residual split isolates parallax beyond global image motion, and the experiment records that camera information can be present in the latent even when packet positions do not express it geometrically.",
+      "killed": "Across the documented room experiments, learned packet motion stayed effectively rank 2 / affine while the oracle showed rank 3. Temporal prediction, explicit action input and a coefficient-change penalty did not make the position channel recover depth; the decoder spent available camera information elsewhere, especially appearance coefficients.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/SplatWorld4/blob/main/RandomSplat/worldrank.py",
+      "tags": ["geometry", "rank-2", "rank-3", "tomasi-kanade", "parallax", "negative-result"],
+      "era": "Geometry audit",
+      "era_order": 1
+    },
+    {
+      "id": "WorldPlus",
+      "url": "https://github.com/anttiluode/SplatWorld4/blob/main/RandomSplat/worldplus.py",
+      "family": "splat",
+      "status": "negative",
+      "claim": "Escalates WorldRank by changing what the loss is about: a navigable occluding room, exact perceptual aliases and matched path-prediction versus counterfactual-neighbour prediction test whether surrounding-manifold supervision makes world geometry emerge.",
+      "survived": "The experiment constructs a stronger world-state discriminator: exact 180-degree perceptual aliases make two distinct places render identically, a lateral traverse supplies an oracle rank-3 parallax cliff, and the design cleanly separates along-path prediction from counterfactual nearby-state prediction without poisoning the control with false actions.",
+      "killed": "The documented counterfactual route did not establish recovered rank-3 packet geometry or parallax. More fundamentally, exact aliasing is registered as an expected architectural failure for a feed-forward encoder: two different world states with the same current image cannot be separated without additional observer/history state.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/SplatWorld4/blob/main/RandomSplat/worldplus.py",
+      "tags": ["counterfactual", "aliasing", "world-state", "parallax", "observer-state", "negative-result"],
+      "era": "Geometry audit",
+      "era_order": 2
+    },
+    {
+      "id": "FieldWorld",
+      "url": "https://github.com/anttiluode/SplatWorld4/blob/main/RandomSplat/fieldworld.py",
+      "family": "splat",
+      "status": "experiment",
+      "claim": "Separates local nonlinear ownership from literal depth by asking whether packet-overlap suppression can produce a non-transitive occlusion relation that no scalar z-order can represent.",
+      "survived": "The archive makes the mechanism testable instead of visual: sigmoid saturation suppresses weaker packet structure, scale hierarchy changes survival, and a cycle test distinguishes genuinely pair-local ownership from merely storing a depth order under another name.",
+      "killed": "A single static ownership relation is not a navigable 3-D world and does not establish viewpoint-consistent occlusion. If the measured relation remains transitive, the supposed depth-free ordering is only depth relocated into another scalar ordering.",
+      "usefulness": "scientific",
+      "confidence": "medium",
+      "evidence": "https://github.com/anttiluode/SplatWorld4/blob/main/RandomSplat/fieldworld.py",
+      "tags": ["occlusion", "saturation", "ownership", "nonlinearity", "depth-boundary"],
+      "era": "Mechanism residues",
+      "era_order": 3
+    },
+    {
+      "id": "Splat3DSharedSupport",
+      "url": "https://github.com/anttiluode/SplatWorld4/blob/main/RandomSplat/splat3d/splat3d.py",
+      "family": "splat",
+      "status": "experiment",
+      "claim": "Uses one packet support for two supervised readouts: the Gabor packet that explains an RGB region also emits that region's depth, coupling appearance and depth through shared position/envelope support.",
+      "survived": "The design is concrete and inspectable: every packet emits appearance parameters plus depth, and the same position/envelope support feeds both RGB synthesis and a differentiable soft-occlusion depth readout.",
+      "killed": "Depth is supplied by supervised 3-D-derived targets and a soft z-buffer objective, so this is not evidence that depth emerged from the 2-D generative splat model. No matched result here establishes an advantage over separate appearance/depth heads or over scene-specific 3-D reconstruction.",
+      "usefulness": "conceptual",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/SplatWorld4/blob/main/RandomSplat/splat3d/splat3d.py",
+      "tags": ["shared-support", "appearance", "depth", "supervision", "soft-z-buffer"],
+      "era": "Mechanism residues",
+      "era_order": 4
+    }
+  ],
+  "edges": [
+    {
+      "source": "TinyAvatar",
+      "target": "WorldRank",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "WorldRank explicitly describes itself as a proxy for TinyAvatar's architecture and isolates the question of whether the learned packet positions actually acquire 3-D geometry under temporal/action supervision.",
+      "evidence": "https://github.com/anttiluode/SplatWorld4/blob/main/RandomSplat/worldrank.py"
+    },
+    {
+      "source": "WorldRank",
+      "target": "WorldPlus",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "WorldPlus opens by summarizing WorldRank's controlled failures and says those arms changed inputs or regularizers but not what the objective was about; it therefore moves the next test to counterfactual world-state supervision.",
+      "evidence": "https://github.com/anttiluode/SplatWorld4/blob/main/RandomSplat/worldplus.py"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "generative-splats-are-not-3dgs",
+      "title": "Generative splats and scene-specific 3-D splats solve different problems",
+      "description": "SplatWorld and TinyAvatar learn a shared generative wave-packet manifold across many face observations; conventional 3-D Gaussian Splatting optimizes an explicit scene-specific 3-D representation from calibrated views of one captured scene. WorldRank and WorldPlus show why visual motion inside the learned manifold should not be promoted to recovered scene geometry, while WorldModel later makes the missing camera/world-state distinction explicit.",
+      "nodes": ["SplatWorld", "TinyAvatar", "WorldRank", "WorldPlus", "WorldModel"]
+    },
+    {
+      "id": "rank-two-is-not-depth",
+      "title": "A convincing head turn can still be a rank-2 morph",
+      "description": "The decoder can expose a strong, useful pose-like direction and make a head turn look spatial while its packet-position trajectories remain rank-2. WorldRank calibrates the same instrument on true rigid 3-D geometry, where the oracle shows a rank-3 cliff; WorldPlus then shows that stronger prediction objectives still need an observer/history state to escape exact image aliasing.",
+      "nodes": ["TinyAvatar", "TinyAvatar2", "WorldRank", "WorldPlus", "WorldModel"]
+    },
+    {
+      "id": "saturation-ownership-is-not-a-world",
+      "title": "Nonlinear ownership can hide structure without becoming a 3-D world",
+      "description": "FieldWorld isolates a real local mechanism: overlapping packets pass through a saturating nonlinearity, so dominant/coarse structure can suppress weaker structure. That can produce occlusion-like ownership, but a static suppression relation is not viewpoint-consistent geometry; if ownership is transitive it is simply a depth ordering represented elsewhere.",
+      "nodes": ["TinyAvatar", "FieldWorld", "WorldRank"]
+    },
+    {
+      "id": "shared-support-depth-is-assigned",
+      "title": "Shared appearance/depth support is a design, not emergent geometry",
+      "description": "Splat3DSharedSupport ties RGB and depth to the same packet position/envelope, so the primitive explaining an image region also declares its depth. That is an interesting factorization, but its depth target comes from supervised 3-D data: it assigns a labelled geometric prior rather than extracting hidden depth from the original 2-D feed-forward splat manifold.",
+      "nodes": ["Splat3DSharedSupport", "WorldRank", "WorldModel"]
+    }
+  ]
+}
