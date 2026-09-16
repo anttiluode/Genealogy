@@ -1,0 +1,99 @@
+{
+  "id": "exploration-tools",
+  "title": "Exploration tools: seeing structure is not explaining structure",
+  "summary": "Five practical viewers/studios where the durable contribution is an interface for looking, manipulating or learning rather than a validated explanatory theory. The pass keeps audio phase portraits, Wigner/PLV EEG inspection, a synthetic moire field, multimodal wave art and a small GPT training/weight studio while refusing to convert visual resemblance, dramatic labels or chronological similarity into causal or genealogical claims.",
+  "order": 180,
+  "reviewed_at": "2026-09-15",
+  "nodes": [
+    {
+      "id": "PhaseSpaceVisualizer",
+      "url": "https://github.com/anttiluode/PhaseSpaceVisualizer",
+      "family": "exploration-tools",
+      "status": "tool",
+      "claim": "A small Python/Pygame application that captures live audio and renders a moving phase portrait with configurable trails, colors, point size and fullscreen display.",
+      "survived": "The useful object is immediate and low-friction: microphone audio becomes a real-time geometric display that can distinguish visibly different waveform dynamics and can be tuned as a visual performance/learning tool with only NumPy, Pygame and PyAudio.",
+      "killed": "Plotting successive or delayed audio samples is a visualization of signal geometry, not by itself evidence of an attractor, autonomous low-dimensional dynamics or a special physical state. Although this repository predates PhaseSpaceVisualizerVST and shares its name/basic idea, no provenance evidence was found, so chronology and similarity are not promoted into an ancestry edge.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/PhaseSpaceVisualizer/blob/main/README.md",
+      "tags": ["audio", "phase-space", "pygame", "visualization", "education"],
+      "era": "Practical instruments",
+      "era_order": 6
+    },
+    {
+      "id": "WignerEEG",
+      "url": "https://github.com/anttiluode/WignerEEG",
+      "family": "exploration-tools",
+      "status": "experiment",
+      "claim": "A Tkinter EEG viewer that loads EDF recordings, navigates short windows, displays Wigner-Ville time-frequency structure, computes PLV and combines Wigner negativity with phase locking into a quantum-inspired coherence index.",
+      "survived": "As an exploratory EEG instrument it provides concrete operations: EDF loading through MNE, channel selection, time-window navigation/playback, single/cross Wigner-Ville displays, PLV-style phase comparison, metric dialogs and figure export. The README itself labels the tool experimental and proof-of-concept rather than definitive evidence.",
+      "killed": "Negative regions in the chosen Wigner representation are not shown here to uniquely diagnose non-classical or quantum brain dynamics, and averaging that negativity with PLV does not validate a physical coherence quantity. The repository contains no matched representation/null program establishing that its 'quantum-inspired' index distinguishes quantum dynamics from ordinary classical EEG structure, so the non-classical interpretation is not carried forward.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/WignerEEG/blob/main/README.md",
+      "tags": ["eeg", "wigner-ville", "plv", "time-frequency", "exploratory-tool"],
+      "era": "Practical instruments",
+      "era_order": 6
+    },
+    {
+      "id": "CircularEEGMoirePatternVisualizer",
+      "url": "https://github.com/anttiluode/CircularEEGMoirePatternVisualizer",
+      "family": "exploration-tools",
+      "status": "tool",
+      "claim": "A self-contained browser/WebGL demo that renders five named EEG frequency bands as layered three.js shader fields and exposes amplitude, moire, chaos, coupling and camera controls.",
+      "survived": "The shader is a useful interactive teaching/creative surface: users can manipulate five band-like layers, coupling intensity, moire strength and camera perspective in real time, switch modes, pause/reset and run the project locally without a build step.",
+      "killed": "The displayed coupling is synthetic and parameter-driven rather than measured from an EEG recording. White moire structure is therefore a visualization of the shader's constructed overlap/coupling rule, not evidence that real cross-frequency neural binding has been recovered; the 'Quantum Zoom' label likewise changes the presentation rather than establishing quantum-scale biology.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/CircularEEGMoirePatternVisualizer/blob/main/README.md",
+      "tags": ["threejs", "shader", "moire", "synthetic-eeg", "interactive-demo"],
+      "era": "Practical instruments",
+      "era_order": 6
+    },
+    {
+      "id": "WaveNeuronMusicVisualizer",
+      "url": "https://github.com/anttiluode/WaveNeuronMusicVisualizer",
+      "family": "exploration-tools",
+      "status": "tool",
+      "claim": "A GPU-accelerated multimedia visualizer that mixes real-time microphone input with webcam/image/video backgrounds and interactive ring/wave patterns using PyTorch, OpenCV and Pygame.",
+      "survived": "The practical residue is a configurable audiovisual art tool: microphone sensitivity, amplitude, speed, ripple size, visibility, palettes, zoom, draggable nodes, fullscreen, pause, webcam/static/video backgrounds and tray integration are all exposed to the user.",
+      "killed": "The 'WaveNeuron' name does not make the rendered rings a neuron model or neuroscience instrument. The README also records real engineering limits: an RTX 3060 barely runs the intended configuration and the settings menu is described as broken enough to crash the computer. It is preserved as experimental visual software, not as a stable neural simulation.",
+      "usefulness": "practical",
+      "confidence": "medium",
+      "evidence": "https://github.com/anttiluode/WaveNeuronMusicVisualizer/blob/main/README.md",
+      "tags": ["audio", "webcam", "pygame", "gpu", "creative-visualizer"],
+      "era": "Practical instruments",
+      "era_order": 6
+    },
+    {
+      "id": "LLM-Studio",
+      "url": "https://github.com/anttiluode/LLM-Studio",
+      "family": "exploration-tools",
+      "status": "tool",
+      "claim": "A small Tkinter educational environment for training a decoder-only GPT-style model on user text plus a companion matrix viewer for inspecting saved weights and biases.",
+      "survived": "It is a coherent learning tool: users can load text, select/tune model size and training parameters, train in a background thread, save/load checkpoints, run prompts, inspect any tensor as a heatmap, zoom into selected matrix regions and read basic tensor statistics. The README clearly frames the architecture as a standard transformer built for hands-on education.",
+      "killed": "A weight heatmap is an inspection view, not a causal explanation of what a transformer has learned; no circuit attribution or intervention method is claimed or implemented by the visualizer. The project is useful precisely without a novelty claim: it packages familiar decoder-only transformer mechanics into an approachable trainer/microscope.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/LLM-Studio/blob/main/README.md",
+      "tags": ["transformer", "education", "training-gui", "weights", "heatmap"],
+      "era": "Practical instruments",
+      "era_order": 6
+    }
+  ],
+  "edges": [],
+  "motifs": [
+    {
+      "id": "seeing-structure-is-not-explaining-structure",
+      "title": "Seeing structure is not the same as explaining its cause",
+      "description": "Phase portraits, Wigner maps, moire fields, recurrence plots and scalp fields can all expose patterns worth investigating while remaining many interpretive steps away from an attractor, quantum state, neural binding mechanism, chaos diagnosis or biological geometry. The visual instrument is useful; the picture alone is not a causal theory.",
+      "nodes": ["PhaseSpaceVisualizer", "WignerEEG", "CircularEEGMoirePatternVisualizer", "DynamicalMRIlol", "EEGTools"]
+    },
+    {
+      "id": "small-studios-make-machinery-legible",
+      "title": "Small interactive studios can make opaque machinery legible",
+      "description": "Several practical repositories earn their place by shortening the distance between an abstract mechanism and direct manipulation: live audio becomes phase geometry, transformer tensors become selectable heatmaps, synthetic frequency layers become movable shader fields, and multimodal input becomes a controllable wave display.",
+      "nodes": ["PhaseSpaceVisualizer", "LLM-Studio", "CircularEEGMoirePatternVisualizer", "WaveNeuronMusicVisualizer", "PhaseSpaceVisualizerVST"]
+    }
+  ]
+}
