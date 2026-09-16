@@ -1,0 +1,133 @@
+[
+  {
+    "id": "growing-v0-topographic-control",
+    "node": "GrowingAnttisNeuron",
+    "claim": "Guided developmental labels preserve the sender-to-receiver topographic relation better than an exact receptor-label shuffle while keeping connection count and effective rank fixed.",
+    "design": "matched-seed control",
+    "result": "supports",
+    "sample": {"unit": "seed", "count": 16},
+    "metrics": [
+      {"name": "mean topographic error", "treatment": 0.0, "control": 0.359375, "comparison": "guided vs shuffled labels"},
+      {"name": "mean wiring length", "treatment": 0.626367, "control": 0.692969, "comparison": "guided vs shuffled labels"},
+      {"name": "mean connections", "treatment": 8.0, "control": 8.0, "comparison": "guided vs shuffled labels"},
+      {"name": "effective rank", "treatment": 8.0, "control": 8.0, "comparison": "guided vs shuffled labels"}
+    ],
+    "controls": [
+      "Exact receptor-label shuffle with the same somata, dendrites, growth grammar, receptor/ligand multisets and seeded growth-noise generator",
+      "Chemoaffinity-disabled random walk",
+      "Zero-chemoaffinity regression proving label shuffling does not shift the growth-noise generator"
+    ],
+    "replication": "frozen internal 16-seed ensemble",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Synthetic developmental world rather than biological neurodevelopment",
+      "Shows a developed relation and wiring effect, not a general computational advantage"
+    ],
+    "source": "https://github.com/anttiluode/GrowingAnttisNeuron/blob/main/README.md"
+  },
+  {
+    "id": "growing-v1-input-placement",
+    "node": "GrowingAnttisNeuron",
+    "claim": "With identical passive dendritic operators, development changes only where input enters the physical basis; the resulting modal and transfer effect is sparse rather than broad.",
+    "design": "matched-seed physical control",
+    "result": "mixed",
+    "sample": {"unit": "seed", "count": 16},
+    "metrics": [
+      {"name": "mean visible-mode effective count", "treatment": 4.914812, "control": 4.921359, "comparison": "guided vs shuffled labels"},
+      {"name": "mean purification time to 95%", "treatment": 675.8571, "control": 679.522568, "comparison": "guided vs shuffled labels"},
+      {"name": "mean soma transfer resistance", "treatment": 0.005213, "control": 0.003968, "comparison": "guided vs shuffled labels"}
+    ],
+    "controls": [
+      "Guided and shuffled arms use identical cable geometry, capacitance, conductance, system matrices and generalized eigenvalues",
+      "Only the developed input address can differ"
+    ],
+    "replication": "frozen internal 16-seed ensemble",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Only 4 of 16 seeds place the guided input at a physically different relative dendritic port",
+      "Paired medians for visibility, purification time and soma transfer are essentially zero"
+    ],
+    "source": "https://github.com/anttiluode/GrowingAnttisNeuron/blob/main/README.md"
+  },
+  {
+    "id": "operaattori-cross-cell-nonlinear-closure",
+    "node": "Operaattori",
+    "claim": "A morphology-only passive cable compiler plus a causal three-site nonlinear closure reproduces the standardized soma response across released morphologies without fitting the target cell.",
+    "design": "cross-cell reference-model comparison",
+    "result": "supports",
+    "sample": {"unit": "full NEURON comparison", "count": 288},
+    "metrics": [
+      {"name": "causal nonlinear soma NRMSE", "value": 0.0025, "display": "0.25%"},
+      {"name": "causal local-voltage NRMSE", "value": 0.0008, "display": "0.08%"},
+      {"name": "median cell soma NRMSE", "value": 0.0021, "display": "0.21%"},
+      {"name": "cells at or below 10% soma NRMSE", "value": 23, "denominator": 24},
+      {"name": "Newton convergence", "value": 288, "denominator": 288}
+    ],
+    "controls": [
+      "24 cells × 3 deterministic apical branches × 4 timing programs",
+      "Graph-current oracle comparison",
+      "Failed global waveform Picard arm retained as a numerical-architecture negative control"
+    ],
+    "replication": "24-morphology cross-cell panel",
+    "held_out": false,
+    "external_data": true,
+    "limitations": [
+      "One retained rat L6 IPC outlier has 11.2% cell-median soma error",
+      "Accuracy validates this compiled numerical organization; it does not establish novelty of differentiable neuron simulation"
+    ],
+    "source": "https://github.com/anttiluode/Operaattori/blob/main/README.md"
+  },
+  {
+    "id": "phase-stigmergy-dimension-null",
+    "node": "PhaseStigmergy",
+    "claim": "The tested phase multiplier changes fractal morphology beyond ordinary seed variation.",
+    "design": "matched-seed null test",
+    "result": "contradicts",
+    "sample": {"unit": "matched seed", "count": 5},
+    "metrics": [
+      {"name": "phase-related dimension shift", "display": "below between-seed variation"},
+      {"name": "independent scale-free check", "display": "failed"}
+    ],
+    "controls": [
+      "Matched closed-loop versus no-write runs",
+      "Independent scale-free morphology check"
+    ],
+    "replication": "five matched seeds",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "The null narrows the morphology claim; it does not invalidate the field-generated interface or conservative operator machinery"
+    ],
+    "source": "https://github.com/anttiluode/PhaseStigmergy/blob/main/README.md"
+  },
+  {
+    "id": "fusion-v3-readiness-confound",
+    "node": "FusionMachine",
+    "claim": "Keeping hidden world computation resident and applying relevance later causes the observed switch/readiness advantage over an equal-state generic recurrent baseline.",
+    "design": "equal-state baseline comparison with destructive controls",
+    "result": "inconclusive",
+    "sample": {"unit": "seed", "count": 8},
+    "metrics": [
+      {"name": "median first query after rapid switch MSE", "treatment": 0.000015198, "control": 0.016539331, "comparison": "FusionMachine vs generic RNN"},
+      {"name": "median immediate error after 48-step dormancy", "treatment": 0.002981, "control": 0.101834, "comparison": "FusionMachine vs generic RNN"},
+      {"name": "median training-query MSE", "treatment": 0.000011991, "control": 0.000383249, "comparison": "FusionMachine vs generic RNN"},
+      {"name": "median hidden-world linear-probe R2", "treatment": 0.999822, "control": 0.888666, "comparison": "FusionMachine vs generic RNN"}
+    ],
+    "controls": [
+      "Four recurrent state scalars in both models",
+      "28 learned route parameters in both models",
+      "Matched training episodes, optimizer updates and publication opportunities",
+      "Destructive relevance-leak and dense-recurrence variants"
+    ],
+    "replication": "frozen internal eight-seed medians",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "The generic baseline also fits the sparse training queries substantially worse",
+      "Training quality therefore confounds attribution of the readiness gap to architecture alone"
+    ],
+    "source": "https://github.com/anttiluode/FusionMachine/blob/main/README.md"
+  }
+]
