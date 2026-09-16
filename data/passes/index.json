@@ -70,5 +70,9 @@
   {
     "path": "exploration-tools.json",
     "enabled": true
+  },
+  {
+    "path": "another-odd-thing.json",
+    "enabled": true
   }
 ]

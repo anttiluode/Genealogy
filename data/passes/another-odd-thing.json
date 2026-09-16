@@ -1,0 +1,72 @@
+{
+  "id": "another-odd-thing",
+  "title": "AnotherOddThing: resident computation, active probes and local learning regimes",
+  "summary": "A focused archaeology pass for AnotherOddThing. The repository explicitly says it was spun out of AnttisNeuron, GrowingAnttisNeuron, ActiveVectorNN and FusionMachine, then turns several recurring Genealogy themes into falsifiable toy mechanisms: computation resident at the destination, tiny addressed interventions that reveal hidden operators, compartment-shared state for expression/plasticity coordination, and destructive controls that progressively narrow which local state is actually required. Cross-links to GeometricNeuronV24 and ReadWrite are recorded as recurring mechanisms, not invented ancestry.",
+  "order": 190,
+  "reviewed_at": "2026-09-16",
+  "nodes": [
+    {
+      "id": "AnotherOddThing",
+      "url": "https://github.com/anttiluode/AnotherOddThing",
+      "family": "resident-machines",
+      "status": "ledger",
+      "claim": "A small addressed event can expose or perturb computation already resident at its destination, while compartment-local state constrains both present expression and future plasticity; the project then attacks each stronger interpretation with matched controls.",
+      "survived": "The durable core is resident computation plus addressed intervention plus local learning coordinates. v0 shows passive equality can hide different resident operators until a known hidden-site poke; v1 turns the poke into bounded active identification; v2-v3 show that coordinating expression and plasticity through local compartment state and thresholded update regimes can matter under routing/set-point mismatch.",
+      "killed": "Several richer stories are deliberately narrowed. A separate perfectly mirrored plasticity trace matches the shared trace, so object sharing itself buys nothing. The v4 matched attacker further shows that the 15/45 ms two-timescale plasticity trace is not necessary for the current level-only set-point knee: a calibrated single scalar preserves the same qualitative transition, leaving fast-minus-slow temporal contrast to earn its keep on a task that actually reads it.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/AnotherOddThing/blob/main/README.md",
+      "tags": ["resident-operator", "active-probing", "identifiability", "compartment-state", "plasticity", "negative-result", "threshold-regime"],
+      "era": "Mechanism isolation",
+      "era_order": 19
+    }
+  ],
+  "edges": [
+    {
+      "source": "AnttisNeuron",
+      "target": "AnotherOddThing",
+      "type": "converges",
+      "confidence": "high",
+      "why": "AnotherOddThing explicitly states that it was spun out of AnttisNeuron; the inherited question is how local neuron-like structure changes the meaning of a small event without making the event carry the whole computation.",
+      "evidence": "https://github.com/anttiluode/AnotherOddThing/blob/main/README.md"
+    },
+    {
+      "source": "GrowingAnttisNeuron",
+      "target": "AnotherOddThing",
+      "type": "converges",
+      "confidence": "high",
+      "why": "AnotherOddThing explicitly names GrowingAnttisNeuron as an origin. The shared residue is that developed/local structure can determine later response even when a message itself is small.",
+      "evidence": "https://github.com/anttiluode/AnotherOddThing/blob/main/README.md"
+    },
+    {
+      "source": "ActiveVectorNN",
+      "target": "AnotherOddThing",
+      "type": "converges",
+      "confidence": "high",
+      "why": "AnotherOddThing explicitly names ActiveVectorNN as an origin and keeps its separation between rich resident state/computation and sparse events, but turns the event into a controlled probe as well as an update.",
+      "evidence": "https://github.com/anttiluode/AnotherOddThing/blob/main/README.md"
+    },
+    {
+      "source": "FusionMachine",
+      "target": "AnotherOddThing",
+      "type": "converges",
+      "confidence": "high",
+      "why": "AnotherOddThing explicitly names FusionMachine as an origin. The later repo strips the machine question down to resident dynamics, addressed perturbation and local transduction so each mechanism can be attacked separately.",
+      "evidence": "https://github.com/anttiluode/AnotherOddThing/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "resident-operator-addressed-intervention",
+      "title": "The message can be smaller than the computation it selects",
+      "description": "ActiveVectorNN separates persistent state from sparse events; GeometricNeuronV24 and ReadWrite make bounded measurement/addressed intervention part of identifiability; AnotherOddThing closes the triangle by holding an operator resident and using a tiny known poke to reveal response structure that passive observation cannot see. These are recurring mechanisms, not a claim that V24 or ReadWrite are AnotherOddThing's parents.",
+      "nodes": ["ActiveVectorNN", "GeometricNeuronV24", "ReadWrite", "AnotherOddThing"]
+    },
+    {
+      "id": "local-state-selects-update-regime",
+      "title": "Local state can select how future transfer is allowed to change",
+      "description": "AnttisNeuron and GrowingAnttisNeuron keep computation tied to local physical/structural state. AnotherOddThing isolates a smaller version: compartment state feeds a thresholded no-change/LTD/LTP regime and branch-wide normalization. Its destructive controls then show that the categorical regime survives as a useful object while the particular 15/45 ms two-timescale implementation is not necessary for the present level-only task.",
+      "nodes": ["AnttisNeuron", "GrowingAnttisNeuron", "AnotherOddThing"]
+    }
+  ]
+}
