@@ -2,7 +2,7 @@
 
 Evidence-backed archaeology of Antti Luode's research repositories.
 
-The central premise is that hundreds of repositories are not hundreds of independent ideas. The project separates raw repository inventory from curated scientific interpretation, then records explicit inheritance, corrections, rediscoveries, convergences, extracted mechanisms, and the empirical evidence attached to individual claims.
+The central premise is that hundreds of repositories are not hundreds of independent ideas. The project separates raw repository inventory from curated scientific interpretation, then records explicit inheritance, corrections, rediscoveries, convergences, extracted mechanisms, empirical evidence, and the scientific questions that remain unresolved.
 
 ## Live atlas
 
@@ -16,15 +16,26 @@ The static atlas includes:
 - scientific-era Timeline and Corrections views,
 - a first-class Empirical Evidence view,
 - cross-repository motif-evidence summaries,
+- a first-class Unresolved Questions view,
 - per-repository evidence ledgers in the genealogy detail panel,
-- survivor motifs and archaeology queue,
+- survivor motifs and a separate archaeology queue,
 - family/status/pass/edge filters,
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
-## Two kinds of confidence
+## Four layers
 
-Genealogy keeps documentary and empirical questions separate.
+Genealogy now treats research memory as four distinct layers:
+
+```text
+inventory -> interpretation -> empirical evidence -> unresolved questions
+```
+
+**Inventory** says what repositories exist. **Interpretation** says how reviewed repositories relate and what mechanism survived. **Empirical evidence** says what experiment was actually run and what its result supports, contradicts, mixes, or leaves inconclusive. **Unresolved questions** say what competing explanations remain compatible with the audited evidence and what observation would separate them.
+
+These layers deliberately do not collapse into one score.
+
+## Documentary confidence and empirical evidence
 
 **Lineage / interpretation confidence** asks whether the corpus supports an ancestry edge or a curated reading of a repository. An explicit README statement can therefore justify a high-confidence inheritance edge even when the scientific claim itself is still weak, mixed, or untested.
 
@@ -32,18 +43,7 @@ Genealogy keeps documentary and empirical questions separate.
 
 `data/evidence.json` stores those evidence objects without collapsing them into a universal score. Evidence records may be `supports`, `contradicts`, `mixed`, or `inconclusive`. Missing evidence records mean only that the archaeology layer has not encoded the experiment yet; they do not imply that the source repository has no experiments.
 
-The ledger deliberately mixes positive, mixed, null and confounded results. Current audited examples include:
-
-- `GeometricNeuronV24` active sensing and the soma-noise observability boundary,
-- `ReadWrite` state-dependent probing plus the failed coprime-vs-best-single-grid claim,
-- `LentoOrava` PulseTriage and scalar-only repair localization,
-- `GrowingAnttisNeuron` matched developmental controls,
-- `Operaattori` cross-cell nonlinear closure,
-- `ActiveVectorNN` sparse state synchronization,
-- `NewMachine` factorized repair/publication control,
-- `WorldModel`'s preserved RGB-only geometry failure,
-- `PhaseStigmergy`'s replicated morphology null,
-- `FusionMachine`'s readiness result retained as inconclusive because training quality confounds attribution.
+The ledger deliberately mixes positive, mixed, null and confounded results. Current audited examples include `GeometricNeuronV24`, `ReadWrite`, `LentoOrava`, `GrowingAnttisNeuron`, `Operaattori`, `ActiveVectorNN`, `NewMachine`, `WorldModel`, `PhaseStigmergy`, and `FusionMachine`.
 
 ## Motif evidence
 
@@ -51,25 +51,34 @@ An evidence record may name the specific survivor motif it bears on. The atlas v
 
 Claim outcome and motif relation are intentionally separate. `data/evidence.json` says what happened to the tested claim. `data/evidence_motif_relations.json` says whether that result **supports**, **limits**, or merely **documents** the broader motif. This matters because a contradicted claim can positively document the `negative-results` motif instead of being misread as evidence against it.
 
-This lets the Evidence view distinguish:
-
-```text
-motif appears in several repositories
-```
-
-from:
-
-```text
-motif has supporting controlled evidence in several repositories
-```
-
-and from:
-
-```text
-the same motif has also been bounded, narrowed, or documented by failures
-```
-
 Two supporting experiments inside one repository do not count as cross-repository support. The aggregation counts distinct repositories, not just record count.
+
+## Unresolved questions
+
+`data/questions.json` turns the evidence ledger into explicit research-planning objects. Each question records:
+
+- the motifs and evidence records that motivate it,
+- at least two live competing explanations,
+- what is already known,
+- the missing discriminator,
+- a concrete candidate experiment,
+- at least two conditional outcomes describing how the interpretation would change.
+
+Question state is `open`, `partially-resolved`, or `resolved`. A question cannot become `resolved` merely because someone edits its label: the validator requires a real `resolution_evidence` record. Conversely, unresolved questions are forbidden from carrying resolution evidence.
+
+The initial questions cover active intervention under explicit probe cost/dense causes, late relevance after equalizing training fit, active addressing versus grid-specific measurement structure, structure-to-function beyond coarse graph summaries, and factorized persistent-state control at matched communication cost.
+
+Questions are intentionally **not** probabilities, rankings, or predictions. Candidate experiments describe observations that would discriminate between explanations; they are not presented as results that have already happened.
+
+## Questions versus archaeology queue
+
+These are different workflows.
+
+**Archaeology queue:** which existing, unreviewed repository should be inspected next?
+
+**Questions:** which scientific uncertainty exposed by already-audited evidence deserves a new discriminating experiment?
+
+The queue continues to prioritize old source material. The Questions layer plans future falsification work. Neither automatically ranks scientific importance.
 
 ## Current archaeology passes
 
@@ -87,14 +96,7 @@ Tracks layered Gabor tools, phase transport, persistent fields, sparse predictiv
 
 ### Clockfield pruning
 
-Separates four things that had become entangled in the Clockfield family:
-
-1. executable toy field dynamics,
-2. grand physical identifications,
-3. later falsifiers/autopsies,
-4. computational mechanisms that remain useful after the physics story is removed.
-
-The pass adds nine reviewed repositories, including `BirthOfClockfield`, `SimpsonsUniverse`, `HorizonNet`, `OutoSynapsi`, and `ClockfieldUnified`. The strongest survivors are not the cosmological claims: they are the Beurling-lattice mathematical object isolated by the SimpsonsUniverse audit, HorizonNet's idleness/observer-horizon result, traffic-shaped body geometry in OutoSynapsi, and the narrow Physics Router extraction in ClockfieldUnified.
+Separates executable toy dynamics, grand physical identifications, later falsifiers/autopsies, and computational mechanisms that remain useful after the physics story is removed. The strongest survivors are narrow mathematical/computational mechanisms rather than the discarded cosmological claims.
 
 ## Evidence rule
 
@@ -113,11 +115,10 @@ data/edges.json                     foundation lineage/evidence-of-ancestry edge
 data/motifs.json                    foundation recurring mechanisms
 data/evidence.json                  structured empirical evidence records + motif links
 data/evidence_motif_relations.json  supports / limits / documents relation to each tagged motif
+data/questions.json                 unresolved contrasts + candidate discriminating experiments
 data/passes/index.json              enabled archaeology passes
 data/passes/*.json                  separable reviewed passes
 ```
-
-Passes stay modular so later archaeology can correct one family without rewriting the whole atlas. Empirical evidence stays separate so the same claim can accumulate support, nulls, contradictions, stronger controls, or replication over time.
 
 ## Validation
 
@@ -127,6 +128,7 @@ python -m unittest discover -s tests -v
 node --check assets/app.js
 node --check assets/tools.js
 node --check assets/evidence.js
+node --check assets/questions.js
 node --check assets/zoom.js
 ```
 
@@ -134,4 +136,4 @@ GitHub Actions runs the same checks on pull requests and `main` pushes. The repo
 
 ## Rule
 
-**Names are hints, not evidence. Negative results stay in the family tree. Documentary confidence, claim outcome, and motif support are different axes.**
+**Names are hints, not evidence. Negative results stay in the family tree. Documentary confidence, claim outcome, motif relation, and unresolved question state are different axes.**

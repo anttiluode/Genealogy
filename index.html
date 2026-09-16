@@ -4,16 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Genealogy — 400 repos, fewer recurring machines</title>
-  <meta name="description" content="An evidence-backed archaeology of Antti Luode's research repositories: ancestry, corrections, empirical evidence, surviving mechanisms, and unresolved branches.">
+  <meta name="description" content="An evidence-backed archaeology of Antti Luode's research repositories: ancestry, corrections, empirical evidence, unresolved questions, surviving mechanisms, and open branches.">
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="assets/zoom.css">
   <link rel="stylesheet" href="assets/evidence.css">
+  <link rel="stylesheet" href="assets/questions.css">
 </head>
 <body>
   <header class="masthead">
     <div class="eyebrow">PERCEPTIONLAB / RESEARCH ARCHAEOLOGY</div>
     <h1>Genealogy</h1>
-    <p class="lede">Four hundred repositories are not four hundred ideas. This atlas tracks the smaller set of mechanisms that were inherited, rediscovered, corrected, killed, or extracted into something useful—and now separates documentary lineage confidence from the empirical evidence behind scientific claims.</p>
+    <p class="lede">Four hundred repositories are not four hundred ideas. This atlas tracks the smaller set of mechanisms that were inherited, rediscovered, corrected, killed, or extracted into something useful—and separates documentary lineage confidence, empirical evidence, and the scientific questions that remain unresolved.</p>
     <div class="stats" id="stats" aria-live="polite">
       <div><span id="stat-repos">—</span><small>repos in census</small></div>
       <div><span id="stat-nodes">—</span><small>reviewed nodes</small></div>
@@ -36,6 +37,7 @@
         <button class="tab" data-view="timeline">Timeline</button>
         <button class="tab" data-view="corrections">Corrections</button>
         <button class="tab" data-view="evidence">Evidence</button>
+        <button class="tab" data-view="questions">Questions</button>
         <button class="tab" data-view="tools">Tools</button>
         <button class="tab" data-view="census">Census</button>
         <button class="tab" data-view="survivors">Survivors</button>
@@ -102,6 +104,14 @@
       <div id="evidence-content"></div>
     </section>
 
+    <section class="view" id="view-questions" data-view="questions">
+      <div class="section-head">
+        <div><div class="eyebrow">WHAT WOULD CHANGE OUR MIND?</div><h2>Unresolved questions</h2></div>
+        <p>Evidence becomes useful for planning when it identifies what is still ambiguous. These records keep competing explanations alive, state the missing discriminator, and propose a concrete next experiment without pretending the outcome is already known.</p>
+      </div>
+      <div id="questions-content"></div>
+    </section>
+
     <section class="view" id="view-tools" data-view="tools">
       <div class="section-head">
         <div><div class="eyebrow">USEFUL EVEN IF THE THEORY VANISHES</div><h2>Tools & artifacts</h2></div>
@@ -136,12 +146,13 @@
   </main>
 
   <footer>
-    <p><strong>Rule:</strong> names are hints, not evidence. Negative results stay in the family tree. Lineage confidence describes documentary archaeology; empirical evidence records describe what experiments actually support, contradict, or leave unresolved.</p>
+    <p><strong>Rule:</strong> names are hints, not evidence. Negative results stay in the family tree. Lineage confidence, empirical claim outcomes, motif relations, and unresolved questions are separate objects.</p>
     <a href="https://github.com/anttiluode/Genealogy">source / evidence ledger ↗</a>
   </footer>
   <script src="assets/app.js"></script>
   <script src="assets/tools.js"></script>
   <script src="assets/evidence.js"></script>
+  <script src="assets/questions.js"></script>
   <script src="assets/zoom.js"></script>
 </body>
 </html>
