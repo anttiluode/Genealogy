@@ -1,0 +1,26 @@
+{
+  "id": "story-reflection",
+  "title": "Story / SAME SEED: narrative reflection",
+  "summary": "Story is a deliberately separate meta-narrative node: a feature screenplay built with AI around an ordinary hobbyist who follows improving AI into questions about brains, memory, computation and identity. It belongs on the wall because it reflects the research program back at the person conducting it, but it is intentionally not wired in as scientific ancestry: the screenplay's metaphysical ending is fiction, not evidence, and its prompt does not document named repository parents.",
+  "order": 210,
+  "reviewed_at": "2026-09-16",
+  "nodes": [
+    {
+      "id": "Story",
+      "url": "https://github.com/anttiluode/Story",
+      "family": "meta-narrative",
+      "status": "survivor",
+      "claim": "SAME SEED turns the recurring AI-and-brain research journey into fiction: an ordinary person uses increasingly capable AI, researches brains, neurons, engrams and computation, and gradually asks what the resemblance means for intelligence and identity.",
+      "survived": "The human-scale pattern is the useful artifact: AI-assisted making, repeated mechanism hunting, brain/AI analogy, accumulated project history and personal life can be compressed into one narrative that reflects the research program back at its observer.",
+      "killed": "The screenplay is not scientific evidence for simulation, an afterlife, equivalence between brains and AI, or any other metaphysical conclusion. Its ending is fiction, and Genealogy must not turn thematic resemblance into undocumented repository ancestry.",
+      "usefulness": "conceptual",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Story/blob/main/prompt.txt",
+      "tags": ["fiction", "screenplay", "ai", "brain", "identity", "meta-reflection"],
+      "era": "Narrative reflection",
+      "era_order": 100
+    }
+  ],
+  "edges": [],
+  "motifs": []
+}

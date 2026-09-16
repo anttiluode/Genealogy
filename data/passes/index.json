@@ -78,5 +78,9 @@
   {
     "path": "evox.json",
     "enabled": true
+  },
+  {
+    "path": "story-reflection.json",
+    "enabled": true
   }
 ]
