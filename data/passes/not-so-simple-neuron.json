@@ -1,0 +1,103 @@
+{
+  "id": "not-so-simple-neuron",
+  "title": "SimpleNeuron -> NotSoSimpleNeuron: from learned route vectors to state-conditioned operators",
+  "summary": "This pass records the immediate SimpleNeuron -> NotSoSimpleNeuron transition and the broader resident-computation lineage that fed SimpleNeuron. SimpleNeuron made a tiny routed event select a locally learned receiver direction B[:,k] while rich state stayed resident. NotSoSimpleNeuron then factorized that apparent vector into distributed scalar contacts, receiver geometry, temporal dynamics and local state. Its strongest correction is negative as well as positive: the linear/quasi-active branch bank is exactly equivalent to a same-dimensional modal realization, while the local active mechanism makes the effective Jacobian state-dependent and couples modes. The surviving claim is therefore not that dendritic geometry has unique linear expressivity, but that physical locality can make state-conditioned operator changes cheap and explicit.",
+  "order": 198,
+  "reviewed_at": "2026-09-17",
+  "nodes": [
+    {
+      "id": "SimpleNeuron",
+      "url": "https://github.com/anttiluode/SimpleNeuron",
+      "family": "resident-machines",
+      "status": "ledger",
+      "claim": "Keep rich receiver state resident while sparse routed events select locally learned steering directions; the route meaning is learned receiver-side rather than carried in a large event payload.",
+      "survived": "Route-conditioned local learning can assign meaning to receiving ports, and resident history changes the consequence of a later identical cue while publication remains separable from state.",
+      "killed": "SimpleNeuron does not establish that B[:,k] must literally be stored as a high-dimensional synaptic vector, nor that its synthetic Ca-like knee is biologically required.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/SimpleNeuron/blob/main/README.md",
+      "tags": ["resident-state", "routing", "oja", "receiver-coordinates", "publication", "sparse-events"],
+      "era": "Mechanism isolation",
+      "era_order": 20
+    },
+    {
+      "id": "NotSoSimpleNeuron",
+      "url": "https://github.com/anttiluode/NotSoSimpleNeuron",
+      "family": "resident-machines",
+      "status": "ledger",
+      "claim": "A route can access a structured, stateful operator through distributed scalar contacts: where pings land, when they arrive and what local state they encounter jointly determine the effective transformation.",
+      "survived": "Distributed scalar contacts beat a best single-site attacker on the v0 spatial witness; timing is decodable but a point resonator can match or beat the one-site resonance gate; local voltage-dependent interaction survives passive and gain-zero ablations; and the v3 modal-boundary receipt shows the effective local Jacobian rotates with resident state and develops cross-mode coupling.",
+      "killed": "Linear dendritic morphology does not have unique linear expressivity in the current machine: the full 48-state quasi-active branch bank collapses exactly to an orthogonal modal realization. Resonance alone also fails to earn morphology because a tuned point resonator wins that gate.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/NotSoSimpleNeuron/blob/main/README.md",
+      "tags": ["operator", "dendrite", "spatial-addressing", "temporal-addressing", "state-dependent-jacobian", "modal-boundary", "negative-result"],
+      "era": "Mechanism isolation",
+      "era_order": 21
+    }
+  ],
+  "edges": [
+    {
+      "source": "AnttisNeuron",
+      "target": "SimpleNeuron",
+      "type": "converges",
+      "confidence": "high",
+      "why": "SimpleNeuron explicitly names AnttisNeuron as part of the thread it was extracted from and inherits dendritic modes, local Oja specialization and soma/AIS separation.",
+      "evidence": "https://github.com/anttiluode/SimpleNeuron/blob/main/README.md"
+    },
+    {
+      "source": "GrowingAnttisNeuron",
+      "target": "SimpleNeuron",
+      "type": "converges",
+      "confidence": "high",
+      "why": "SimpleNeuron explicitly names GrowingAnttisNeuron as lineage for separating input address from the physical receiver operator.",
+      "evidence": "https://github.com/anttiluode/SimpleNeuron/blob/main/README.md"
+    },
+    {
+      "source": "NewMachine",
+      "target": "SimpleNeuron",
+      "type": "converges",
+      "confidence": "high",
+      "why": "SimpleNeuron explicitly names NewMachine as lineage for keeping resident state distinct from publication.",
+      "evidence": "https://github.com/anttiluode/SimpleNeuron/blob/main/README.md"
+    },
+    {
+      "source": "FusionMachine",
+      "target": "SimpleNeuron",
+      "type": "converges",
+      "confidence": "high",
+      "why": "SimpleNeuron explicitly names FusionMachine as lineage for tiny event payload plus route identity with computation resident at the destination.",
+      "evidence": "https://github.com/anttiluode/SimpleNeuron/blob/main/README.md"
+    },
+    {
+      "source": "AnotherOddThing",
+      "target": "SimpleNeuron",
+      "type": "converges",
+      "confidence": "high",
+      "why": "SimpleNeuron explicitly names AnotherOddThing as lineage for local traces, active perturbation and poking computation already resident at the receiver.",
+      "evidence": "https://github.com/anttiluode/SimpleNeuron/blob/main/README.md"
+    },
+    {
+      "source": "SimpleNeuron",
+      "target": "NotSoSimpleNeuron",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "NotSoSimpleNeuron explicitly says it starts from a question that fell out of SimpleNeuron: how a nearly binary axonal event could steer a receiver along a high-dimensional direction.",
+      "evidence": "https://github.com/anttiluode/NotSoSimpleNeuron/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "route-accesses-resident-operator",
+      "title": "A sparse route can select more computation than it carries",
+      "description": "ActiveVectorNN separates persistent state from sparse communication, AnotherOddThing makes small addressed events probe resident computation, SimpleNeuron lets a route select a learned receiver direction, and NotSoSimpleNeuron factorizes that effective direction into sparse spatial contacts plus receiver dynamics. The recurring object is access to resident computation rather than a large payload travelling through the route.",
+      "nodes": ["ActiveVectorNN", "AnotherOddThing", "SimpleNeuron", "NotSoSimpleNeuron"]
+    },
+    {
+      "id": "operator-realization-boundary",
+      "title": "Linear morphology can be a basis; local active state changes the operator",
+      "description": "Operaattori already separated transport from nonlinear feedback in compiled morphology. NotSoSimpleNeuron makes a smaller synthetic boundary explicit: its linear/quasi-active cable bank is exactly a modal state-space realization, while local voltage-dependent state creates cross-mode coupling and a resident-state-dependent Jacobian. This is a recurring mechanism comparison, not an ancestry claim from Operaattori to NotSoSimpleNeuron.",
+      "nodes": ["Operaattori", "OperaattoriJako", "NotSoSimpleNeuron"]
+    }
+  ]
+}
