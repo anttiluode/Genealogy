@@ -1,0 +1,38 @@
+{
+  "id": "transient-wave-compiler",
+  "title": "TransientWaveCompiler: structure as a compilable operator and realization ambiguity",
+  "summary": "TransientWaveCompiler already appears in the measurement-discipline pass, where its explicit ancestry from GeometricNeuronPlusField and its hardware negative result are recorded. This synthesis pass adds the cross-family connections that were still missing from the wall. TWC makes the structural-compilation abstraction unusually literal: geometry/topology becomes a sparse reciprocal operator, the operator produces a measurable response or transient, and exact sensitivities connect response back to physical parameters or hardware lowering. Its filter-diagnosis work also makes a broader epistemic boundary concrete: the same external response can admit multiple response-equivalent internal realizations, so a disciplined system must sometimes report non-identifiability and choose a perturbation rather than force a unique mechanism. Those two ideas recur later in Operaattori, GrowingAnttisNeuron, NotSoSimpleNeuron, active identification and algorithm decoding.",
+  "order": 204,
+  "reviewed_at": "2026-09-17",
+  "nodes": [],
+  "edges": [
+    {
+      "source": "TransientWaveCompiler",
+      "target": "Operaattori",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "The repositories independently instantiate the same structural-compilation abstraction on different substrates: TWC maps physical topology to a reciprocal operator and exact parameter sensitivity, while Operaattori maps morphology to a cable/nonlinear operator and exact geometry tangent. This records a mechanism rhyme rather than inventing a direct ancestry relation.",
+      "evidence": "https://github.com/anttiluode/TransientWaveCompiler/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "structure-is-a-compilation-target",
+      "title": "Structure can be compiled into an executable operator",
+      "description": "GeometricNeuronPlusField treats frozen anatomy as an operator that constrains a moving field. TransientWaveCompiler makes that idea literal in a physical compiler: declared geometry/topology becomes a sparse reciprocal operator, response and exact sensitivity. Operaattori later performs the analogous lowering from real morphology to cable transport plus local nonlinear closure, while GrowingAnttisNeuron asks how developmental rules can manufacture the structure being compiled. The shared object is not visual geometry but a reproducible map from structure to executable dynamics.",
+      "nodes": ["GeometricNeuronPlusField", "TransientWaveCompiler", "Operaattori", "GrowingAnttisNeuron"]
+    },
+    {
+      "id": "behavior-does-not-identify-realization",
+      "title": "The same behavior does not uniquely identify the internal realization",
+      "description": "TransientWaveCompiler encounters response-equivalent reciprocal topologies: identical static response can leave literal physical edges unidentifiable until an informative perturbation is applied. NotSoSimpleNeuron reaches a related realization boundary when a linear dendritic branch bank collapses exactly to an alternative modal state-space realization. NeuralAlgorithmDecoding reaches the same epistemic boundary at the algorithm level and explicitly returns NOT_IDENTIFIABLE when available interventions cannot distinguish hidden mechanisms. Across physical topology, dynamical realization and learned computation, matching output is weaker than identifying the mechanism that produced it.",
+      "nodes": ["TransientWaveCompiler", "NotSoSimpleNeuron", "NeuralAlgorithmDecoding", "MovingProblem", "AlgoSchalgo"]
+    },
+    {
+      "id": "nonidentifiability-should-trigger-an-experiment",
+      "title": "When observation cannot identify the mechanism, choose another experiment",
+      "description": "TransientWaveCompiler does not try to optimize through missing information: its capability audit exposes realization-gauge directions and names perturbation anchors that can break exact ambiguity. The later active-observation line generalizes that move into a policy: identify what the current view cannot resolve, then select an intervention or measurement that separates the remaining hypotheses. This is an early concrete physical instance of the later active-identification machinery.",
+      "nodes": ["TransientWaveCompiler", "AlgoSchalgo", "ReadWrite", "AnotherOddThing", "EvoX", "NeuralAlgorithmDecoding"]
+    }
+  ]
+}
