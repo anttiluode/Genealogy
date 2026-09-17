@@ -1,0 +1,50 @@
+{
+  "id": "field-memory-continuation",
+  "title": "Field memory becomes the operator",
+  "summary": "The existing field-computing pass ends at -mp-ri -> InformationFlow, where coherent carrier interactions write a slower routing field but the main implementation still uses an explicit coupling construction. SelectCarryBindWriteAskSelect continues that line by making the stored slow Navier-Stokes collision field itself alter the trajectory of a later cue under bounded local readout. The important inheritance is not a claim that fluid dynamics discovers semantics; it is the removal of the transducer between stored medium and later computation.",
+  "order": 192,
+  "reviewed_at": "2026-09-17",
+  "nodes": [
+    {
+      "id": "SelectCarryBindWriteAskSelect",
+      "url": "https://github.com/anttiluode/SelectCarryBindWriteAskSelect",
+      "family": "field-computing",
+      "status": "survivor",
+      "claim": "Assembles SELECT -> CARRY -> BIND -> WRITE -> ASK in a nonlinear fluid where a collision-specific slow vorticity field persists and directly changes the physical trajectory of a later carrier.",
+      "survived": "Matched phase/frequency/spatial carrier interactions leave a selective slow field after washout; direct recall uses that raw stored field with no learned-field amplification or DeltaOmega-to-modal transducer; the later cue produces a bounded local response whose magnitude and sign depend strongly on the stored relation.",
+      "killed": "The construction does not show that bare Navier-Stokes discovers carrier semantics, learning goals or an addressing code, and it does not establish a computational advantage over conventional learned or signal-processing systems.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/SelectCarryBindWriteAskSelect/blob/main/README.md",
+      "tags": ["field-computing", "fluid-memory", "carrier-addressing", "persistent-operator", "bounded-readout"],
+      "era": "Field memory continuation",
+      "era_order": 1
+    }
+  ],
+  "edges": [
+    {
+      "source": "InformationFlow",
+      "target": "SelectCarryBindWriteAskSelect",
+      "type": "converges",
+      "confidence": "high",
+      "why": "SelectCarryBindWriteAskSelect explicitly names InformationFlow as one of the lines it assembles and retains its spatial/frequency/phase carrier addressing while moving recall into the stored fluid itself.",
+      "evidence": "https://github.com/anttiluode/SelectCarryBindWriteAskSelect/blob/main/README.md"
+    },
+    {
+      "source": "-mp-ri",
+      "target": "SelectCarryBindWriteAskSelect",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The repo explicitly names -mp-ri as an input line and returns to its original ambition that the nonlinear medium itself should participate in later routing, while preserving the later carrier-addressing correction.",
+      "evidence": "https://github.com/anttiluode/SelectCarryBindWriteAskSelect/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "medium-is-the-operator",
+      "title": "The stored medium can be the later operator",
+      "description": "-mp-ri established persistent nonlinear fluid structure but needed an added plasticity rule. InformationFlow supplied explicit coherent addressing. SelectCarryBindWriteAskSelect removes the remaining projection in the default path: the slow stored collision field itself changes the later cue trajectory seen by a bounded receiver. The surviving claim is a proof-of-mechanism about persistent distributed media, not a claim of autonomous fluid learning.",
+      "nodes": ["-mp-ri", "InformationFlow", "SelectCarryBindWriteAskSelect", "SighImageSuper"]
+    }
+  ]
+}
