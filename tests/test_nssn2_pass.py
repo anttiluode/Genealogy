@@ -19,11 +19,11 @@ class NSSN2PassTests(unittest.TestCase):
         self.assertIn("prediction", node["claim"].lower())
         self.assertIn("frozen", node["killed"].lower())
 
-    def test_nssn2_extends_not_so_simple_neuron_into_development(self):
+    def test_nssn2_inherits_not_so_simple_neuron_into_development(self):
         atlas = load_atlas(ROOT)
         edges = {(edge["source"], edge["target"], edge["type"]): edge for edge in atlas["edges"]}
 
-        self.assertIn(("NotSoSimpleNeuron", "NSSN2", "extends"), edges)
+        self.assertIn(("NotSoSimpleNeuron", "NSSN2", "inherits"), edges)
 
     def test_nssn2_pass_is_first_class(self):
         atlas = load_atlas(ROOT)
