@@ -1,0 +1,42 @@
+{
+  "id": "nssn2-development",
+  "title": "NotSoSimpleNeuron -> NSSN2: from state-conditioned operators to a developing resident machine",
+  "summary": "This pass records the move from the single-receiver operator question in NotSoSimpleNeuron to a sparse recurrent developmental machine. NSSN2 keeps high-dimensional state resident, lets only small scalar events travel, and slowly changes receiver-side route access using local plasticity while repeated latent causes drive the network. The first two developmental rules are deliberately negative receipts: naive Hebbian/resource plasticity tightened same-cause trajectories but reduced held-out decoding, while route-local prediction-residual plasticity repaired part of that damage yet still lost to the untouched frozen birth machine. The surviving result is therefore not that NSSN2 has discovered a brain-like learning rule, but that the resident-machine abstraction now has an executable macro-scale developmental testbed in which local learning rules must beat matched frozen and naive controls before growth, pruning or richer anatomy is added.",
+  "order": 199,
+  "reviewed_at": "2026-09-17",
+  "nodes": [
+    {
+      "id": "NSSN2",
+      "url": "https://github.com/anttiluode/NSSN2",
+      "family": "resident-machines",
+      "status": "ledger",
+      "claim": "Extends the resident-machine line into development: repeated world causes drive sparse scalar events through stateful nonlinear nodes while strictly local Hebbian or prediction-residual plasticity slowly changes receiver-side route access without labels, global loss or backpropagation.",
+      "survived": "A runnable macro-scale resident-state/event-routing machine now cleanly separates fast state, travelling scalar events and slow receiver-side access plasticity. The v1 local prediction residual improves median held-out accuracy over the naive Hebbian learner (0.883333 versus 0.870833) under matched world tapes and sensory budgets, while the live microscope exposes predictive, Hebbian and frozen arms on the same stream.",
+      "killed": "Local adaptation has not yet earned useful development. v0 Hebbian/resource plasticity tightened same-cause trajectories but reduced held-out decoding relative to the frozen birth machine. v1 prediction-residual plasticity repaired part of that loss but still trailed frozen (0.883333 versus 0.900000 median accuracy), won only 3/12 seeds against frozen, and missed the preregistered surprise-decay criterion. Local co-activity or unconditional local surprise alone is therefore insufficient in this testbed.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/NSSN2/blob/main/README.md",
+      "tags": ["development", "resident-state", "sparse-events", "local-plasticity", "prediction", "world-stream", "negative-result"],
+      "era": "Developmental resident machines",
+      "era_order": 22
+    }
+  ],
+  "edges": [
+    {
+      "source": "NotSoSimpleNeuron",
+      "target": "NSSN2",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "NSSN2 explicitly calls itself the macro-scale continuation of NotSoSimpleNeuron: it retains resident high-dimensional state, sparse travelling events and state-conditioned receiver dynamics, then asks whether a network of those receivers can develop useful route access from repeated experience.",
+      "evidence": "https://github.com/anttiluode/NSSN2/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "development-must-beat-birth",
+      "title": "Changing the resident machine is not enough; development must beat the birth machine",
+      "description": "NotSoSimpleNeuron isolates a state-conditioned resident operator whose meaning depends on route, timing and history. NSSN2 moves that abstraction to a sparse recurrent network and tests whether local experience can slowly improve receiver-side access. Its first two rules are useful negative controls: Hebbian co-activity changes geometry but hurts held-out decoding, and unconditional route-local prediction residual partly repairs that damage without beating the frozen substrate. The recurring discipline is that visible self-organization does not count as useful development until it outperforms the untouched machine under matched experience.",
+      "nodes": ["NotSoSimpleNeuron", "NSSN2"]
+    }
+  ]
+}
