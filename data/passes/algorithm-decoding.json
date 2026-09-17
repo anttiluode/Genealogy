@@ -1,0 +1,33 @@
+{
+  "id": "algorithm-decoding",
+  "title": "NeuralAlgorithmDecoding: from distributed learner to executable causal surrogate",
+  "summary": "NeuralAlgorithmDecoding makes a missing inversion explicit: instead of designing an algorithm and asking a neural system to approximate it, train or observe the distributed computation first, then use interventions, counterfactual state tests, operator estimates and disagreement search to earn the smallest faithful executable abstraction. The pass belongs beside the search-to-program and active-identification lines because it preserves an important distinction: discovering that a machine behaves correctly is weaker than recovering a compact causal program that survives declared interventions, and some hidden cases are genuinely not identifiable under the available experiment family.",
+  "order": 201,
+  "reviewed_at": "2026-09-17",
+  "nodes": [
+    {
+      "id": "NeuralAlgorithmDecoding",
+      "url": "https://github.com/anttiluode/NeuralAlgorithmDecoding",
+      "family": "algorithm-extraction",
+      "status": "ledger",
+      "claim": "Treats a trained neural or distributed mechanism as a black box to be experimentally interrogated until a smaller executable causal abstraction can be recovered and attacked on behavior, interventions, out-of-distribution cases and description length.",
+      "survived": "Gate 5 recovers an exact 2-state decimal-carry transducer from a 16-D GRU using counterfactual response classes and hidden-state interventions. Later gates keep the abstract addition program fixed while realization geometry changes, recover unlabeled P-KAS transition families and intervention policy structure, and explicitly return NOT_IDENTIFIABLE when deliberately aliased hidden cases cannot be separated by the available downstream evidence.",
+      "killed": "The project does not establish that arbitrary large neural networks can be decompiled, that one unique true algorithm must exist inside a trained network, or that visually clean hidden-state geometry is itself the causal computation. Its own Aha experiment also kills the strongest version of the story that useful causal geometry suddenly appears only when complete-task behavior clicks.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/NeuralAlgorithmDecoding/blob/main/README.md",
+      "tags": ["algorithm-extraction", "causal-abstraction", "intervention", "state-machine", "identifiability", "negative-result"],
+      "era": "Executable mechanism extraction",
+      "era_order": 23
+    }
+  ],
+  "edges": [],
+  "motifs": [
+    {
+      "id": "extraction-reuse-spine",
+      "title": "Failed or opaque machinery can leave behind a smaller reusable object",
+      "description": "Across otherwise different lines, the recurring move is not ancestry but extraction: NeuralAlgorithmDecoding turns distributed behavior into an executable causal surrogate; ResonantCortex2 tests and exposes the boundary between compressible traces and autonomous programs; AnotherOddThing and EvoX turn hidden resident mechanisms into active identification and reuse; Operaattori/Jako compile morphology and decompose its response; SplatPack extracts shared field structure from enormous splat sets; WidePresent contributes temporal validity bookkeeping to AuditedEpistemicCache; Island-Memory-Field repurposes mathematics that survives a failed RH equivalence; the morphogenetic line keeps noncommuting developmental order after a stronger gauge story fails; AgainstTheGrain extracts a substrate-dependent reversal law from the older direction machinery. The motif records transformation and reuse, not a claim that these repositories descend from one another.",
+      "nodes": ["NeuralAlgorithmDecoding", "ResonantCortex2", "AnotherOddThing", "EvoX", "Operaattori", "OperaattoriJako", "SplatPack", "WidePresent", "AuditedEpistemicCache", "Island-Memory-Field", "MorphogeneticNeuronChatGPTSol", "MorphoGeneticneuronClaude50Opus", "AgainstTheGrain", "CausalHorizon"]
+    }
+  ]
+}

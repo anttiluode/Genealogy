@@ -1,0 +1,123 @@
+{
+  "id": "temporal-epistemic-lineage",
+  "title": "Temporal and epistemic state: what makes an old claim still current?",
+  "summary": "This pass restores source experiments that AuditedEpistemicCache already synthesizes but the wall did not show. WidePresent separates world time from knowledge/arrival time and evidence completeness; PresentMoment forks that question toward physical brain-body ringdown as a candidate control-present; PredictiveHKT exposes representation generation as another validity axis because an operator measured in a moving latent basis can become stale while the world is unchanged; Island-Memory-Field contributes soft archival after retracting a stronger mathematical equivalence. Together they explain why the later cache receipt needs more than one generic age field.",
+  "order": 203,
+  "reviewed_at": "2026-09-17",
+  "nodes": [
+    {
+      "id": "WidePresent",
+      "url": "https://github.com/anttiluode/WidePresent",
+      "family": "temporal-state",
+      "status": "ledger",
+      "claim": "Tests whether an online agent benefits from explicit continuously updated temporal state, then narrows the idea into deterministic temporal bookkeeping with separate event/valid time, knowledge/arrival time and evidence-completeness state.",
+      "survived": "The durable abstraction is bitemporal and epistemic rather than a special neural clock: when an event belongs in the world and when the agent learned it are different coordinates, and nothing happened is distinct from nothing has arrived yet when late evidence is possible. Watermark-style evidence completeness and runtime-derived elapsed durations therefore become explicit state rather than something a model must infer from event density.",
+      "killed": "Gate 0 gives zero evidence for a special WidePresent architecture: event count catastrophically impersonates time under a rate shift, while exact timestamp and fixed-tick conditions both solve the toy. The project explicitly pivots to the boring deterministic temporal kernel before claiming a learned wide-present mechanism is necessary.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/WidePresent/blob/main/README.md",
+      "tags": ["time", "bitemporal", "knowledge-time", "valid-time", "watermark", "negative-result"],
+      "era": "Validity has temporal coordinates",
+      "era_order": 11
+    },
+    {
+      "id": "PresentMoment",
+      "url": "https://github.com/anttiluode/PresentMoment",
+      "family": "temporal-state",
+      "status": "experiment",
+      "claim": "Forks the explicit-time question toward a physical one: whether heterogeneous closed-loop brain-body dynamics provide a multiscale online temporal basis whose current state carries behaviorally usable residues of recent events.",
+      "survived": "The repository makes a useful distinction between phenomenal present, control present and consolidation tail, and defines the initially testable object as causal influence on current control rather than a guessed subjective duration. Its proposed measurable state is a bank of neural, autonomic, respiratory, cardiovascular and endocrine ringdowns coupled back into later processing.",
+      "killed": "The repo does not establish that such body dynamics are necessary for cognition, uniquely superior to brain-only recurrence or timestamps, or that the control present explains phenomenal consciousness. Those stronger interpretations remain explicit experimental questions rather than results.",
+      "usefulness": "conceptual",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/PresentMoment/blob/main/README.md",
+      "tags": ["control-present", "brain-body-loop", "ringdown", "multiscale-state", "interoception", "hypothesis"],
+      "era": "Validity has temporal coordinates",
+      "era_order": 12
+    },
+    {
+      "id": "PredictiveHKT",
+      "url": "https://github.com/anttiluode/PredictiveHKT",
+      "family": "operator-response",
+      "status": "tool",
+      "claim": "Runs a live Takens/Koopman dynamics instrument on video while explicitly exposing the validity problem created when the representation in which an operator is estimated is itself still learning.",
+      "survived": "The important reusable warning is representational: a per-frame Koopman estimate can be a useful live dynamics instrument only if its coordinate system is treated as part of the measurement contract. Freezing the learned front end after warm-up separates world/operator drift from encoder drift and turns a moving visualization into a more defensible measurement.",
+      "killed": "While the encoder is still training, mode drift is confounded by movement of the latent basis itself; the 256-dimensional operator is also ridge-estimated from a shorter window and is therefore qualitative rather than calibrated modal analysis. The video shell does not establish a biological Koopman organ or a superior generative model.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/PredictiveHKT/blob/main/README.md",
+      "tags": ["koopman", "takens", "moving-representation", "measurement", "generation", "tool"],
+      "era": "Validity has temporal coordinates",
+      "era_order": 12
+    },
+    {
+      "id": "Island-Memory-Field",
+      "url": "https://github.com/anttiluode/Island-Memory-Field",
+      "family": "math-to-mechanism",
+      "status": "ledger",
+      "claim": "Retracts a failed local Riemann-Hypothesis characterization after exposing its blind zone, then reuses the surviving complex-pole influence kernel as a continual-memory primitive with geometric attenuation and soft archival.",
+      "survived": "The scientific correction and the engineering extraction both survive: pointwise local convexity has a shrinking detection radius and cannot characterize all off-line zeros, while the same complex-pole influence geometry provides a clean memory mechanism in which moving a slot deeper continuously suppresses its boundary influence instead of deleting it outright.",
+      "killed": "The local pointwise log-convexity condition is not an equivalence for the Riemann Hypothesis; an explicit high-T off-line-zero construction lies in its blind zone. The neural reuse therefore inherits a mathematical kernel, not the discarded RH characterization or evidence that number-theoretic structure is biologically privileged.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Island-Memory-Field/blob/main/README.md",
+      "tags": ["retraction", "blind-zone", "complex-poles", "continual-memory", "soft-archive", "repurposing"],
+      "era": "Validity has temporal coordinates",
+      "era_order": 12
+    }
+  ],
+  "edges": [
+    {
+      "source": "WidePresent",
+      "target": "PresentMoment",
+      "type": "forks",
+      "confidence": "high",
+      "why": "PresentMoment explicitly opens by saying WidePresent attacked one AI-agent interpretation of the intuition and that this repository asks a different physical brain-body question instead.",
+      "evidence": "https://github.com/anttiluode/PresentMoment/blob/main/README.md"
+    },
+    {
+      "source": "WidePresent",
+      "target": "AuditedEpistemicCache",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "AuditedEpistemicCache explicitly says its second-pass correction to one generic age field comes most sharply from WidePresent's separation of valid/world time, knowledge/arrival time and evidence completeness.",
+      "evidence": "https://github.com/anttiluode/AuditedEpistemicCache/blob/main/README.md"
+    },
+    {
+      "source": "PredictiveHKT",
+      "target": "AuditedEpistemicCache",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "AuditedEpistemicCache explicitly cites PredictiveHKT for the additional failure mode in which an operator claim becomes stale because the learned representation generation moved even if the external world did not.",
+      "evidence": "https://github.com/anttiluode/AuditedEpistemicCache/blob/main/README.md"
+    },
+    {
+      "source": "Island-Memory-Field",
+      "target": "AuditedEpistemicCache",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "AuditedEpistemicCache explicitly cites Island-Memory-Field as the source of soft archival/residency: influence can be suppressed continuously instead of reducing memory management to binary keep versus evict.",
+      "evidence": "https://github.com/anttiluode/AuditedEpistemicCache/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "time-has-multiple-epistemic-axes",
+      "title": "Current is not one number called age",
+      "description": "WidePresent distinguishes when an event belongs in the world, when the system learned it and whether late evidence can still arrive. PresentMoment asks whether some recent history is carried continuously in physical state rather than symbolic timestamps. AuditedEpistemicCache then records these distinctions on reusable evidence receipts so stale, incomplete and merely old claims are not collapsed into one state.",
+      "nodes": ["WidePresent", "PresentMoment", "AuditedEpistemicCache"]
+    },
+    {
+      "id": "representation-generation-is-validity",
+      "title": "A measurement can become stale because its coordinate system moved",
+      "description": "PredictiveHKT makes the failure visible in a live instrument: an operator fit in a changing learned latent basis mixes world dynamics with representation drift. AuditedEpistemicCache therefore tracks representation generation as part of provenance, while MovingProblem supplies the broader identifiability warning that useful computation can persist across changing coordinates only when the transformation itself is accounted for.",
+      "nodes": ["PredictiveHKT", "AuditedEpistemicCache", "MovingProblem"]
+    },
+    {
+      "id": "failed-claim-can-yield-a-reusable-kernel",
+      "title": "A failed theorem can still leave behind a useful mechanism",
+      "description": "Island-Memory-Field preserves the failed RH characterization rather than hiding it, computes the blind zone that kills the converse, then repurposes the surviving complex-pole influence kernel as soft memory residency. AuditedEpistemicCache later reuses that engineering distinction without importing the number-theory claim.",
+      "nodes": ["Island-Memory-Field", "AuditedEpistemicCache"]
+    }
+  ]
+}

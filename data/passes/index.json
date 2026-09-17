@@ -134,5 +134,21 @@
   {
     "path": "synthetic-universe-epistemology.json",
     "enabled": true
+  },
+  {
+    "path": "algorithm-decoding.json",
+    "enabled": true
+  },
+  {
+    "path": "developmental-order-memory.json",
+    "enabled": true
+  },
+  {
+    "path": "temporal-epistemic-lineage.json",
+    "enabled": true
+  },
+  {
+    "path": "geometric-reversal.json",
+    "enabled": true
   }
 ]

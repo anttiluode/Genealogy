@@ -1,0 +1,65 @@
+{
+  "id": "developmental-order-memory",
+  "title": "Developmental order memory: pulse history becomes geometry",
+  "summary": "Two August morphogenetic Geometric Neuron implementations sit between the older phase/morphology work and the later developmental machines. Both ask whether signal history can write the body that will process later signals. Their useful correction is stronger than the original gauge-field story: even a reciprocal instantaneous medium can finish with order-dependent geometry because successive plastic writes need not commute. The independent implementations also preserve the protocol failures that had to be removed before that statement was credible.",
+  "order": 202,
+  "reviewed_at": "2026-09-17",
+  "nodes": [
+    {
+      "id": "MorphoGeneticneuronClaude50Opus",
+      "url": "https://github.com/anttiluode/MorphoGeneticneuronClaude50Opus",
+      "family": "morphogenesis",
+      "status": "ledger",
+      "claim": "Lets a fast complex field write slow reciprocal structure and a candidate signed arrow memory from temporal correlations, freezes the developed body, then asks whether training order changes later response under matched forward/reverse probes.",
+      "survived": "After fixing unequal terminal dose and carrier-phase confounds, complete equal-dose training cycles still leave an order-selective reciprocal morphology: temporal order can fossilize globally because each structural write changes the substrate encountered by the next write. A later directed-link arrow channel also produces a measurable transplantable read effect when represented on oriented links rather than as an ineffective scalar field.",
+      "killed": "The original claim that a signed local gauge field was required for sequence preference was false: scalar reciprocal structure reproduced the dominant effect. Earlier impressive signals were additionally contaminated by half-pixel readout, unstable integration, wrong gauge sampling, non-independent seed disorder, an incorrect sensitivity ceiling and a mid-cycle dose confound. The local arrow channel therefore had to earn a contribution above the reciprocal-growth control rather than merely beat zero.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/MorphoGeneticneuronClaude50Opus/blob/main/README.md",
+      "tags": ["morphogenesis", "order-memory", "noncommuting-plasticity", "reciprocal-medium", "directed-links", "protocol-audit"],
+      "era": "Development writes the operator",
+      "era_order": 6
+    },
+    {
+      "id": "MorphogeneticNeuronChatGPTSol",
+      "url": "https://github.com/anttiluode/MorphogeneticNeuronChatGPTSol",
+      "family": "morphogenesis",
+      "status": "ledger",
+      "claim": "Rebuilds the morphogenetic pulse-field experiment with exact-cycle dosing, carrier reset, a reciprocal structural memory and a separate directed-link phase memory, then measures morphology and readout rather than inferring function from visual growth.",
+      "survived": "The cleanest current result is structural noncommutativity: A->B and B->A experience sequences produce different frozen morphologies, and some difference survives even when fast field state is reset between visits, showing that the first slow write changes what the second experience grows into. The implementation also cleanly separates reciprocal morphology from a directed-link read channel by enabling or deleting the same frozen link memory at probe time.",
+      "killed": "Order-dependent morphology is not yet a functional sequence-memory win in this implementation: the strict four-patch soma readout has not shown a useful preference beyond its present noise floor. The repository therefore does not claim that visible growth is enough, that its link field is biologically identified, or that the developed geometry already outperforms a matched simpler machine.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/MorphogeneticNeuronChatGPTSol/blob/main/README.md",
+      "tags": ["morphogenesis", "noncommuting-growth", "structural-memory", "directed-links", "functional-control", "negative-result"],
+      "era": "Development writes the operator",
+      "era_order": 6
+    }
+  ],
+  "edges": [
+    {
+      "source": "GeometricNeuronV5",
+      "target": "MorphoGeneticneuronClaude50Opus",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "The morphogenetic README explicitly identifies its signed lag observable as the V5 quantity L_k = Im(z_k(t) conj(z_k(t-lag))) and moves that verified cross-time component into a slow developmental write rule.",
+      "evidence": "https://github.com/anttiluode/MorphoGeneticneuronClaude50Opus/blob/main/README.md"
+    },
+    {
+      "source": "PhaseStigmergy",
+      "target": "MorphogeneticNeuronChatGPTSol",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The Sol implementation explicitly says v0.1 fused the Geometric Neuron with PhaseStigmergy, then rebuilds that fusion around stricter dose, phase and numerical controls.",
+      "evidence": "https://github.com/anttiluode/MorphogeneticNeuronChatGPTSol/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "noncommuting-growth-writes-order",
+      "title": "Order can live in the final body even when each instantaneous operator is reciprocal",
+      "description": "The morphogenetic pair isolates a developmental mechanism that is easy to miss in a fixed-operator view: if experience A changes the substrate on which experience B later acts, F_B(F_A(M)) need not equal F_A(F_B(M)). The surviving claim is global order fossilisation through path-dependent plasticity; a local directed field is a separate stronger mechanism that must be tested against that reciprocal baseline.",
+      "nodes": ["MorphoGeneticneuronClaude50Opus", "MorphogeneticNeuronChatGPTSol", "PhaseStigmergy", "GrowingAnttisNeuron", "NSSN2"]
+    }
+  ]
+}
