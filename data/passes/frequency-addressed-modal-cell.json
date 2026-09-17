@@ -1,0 +1,78 @@
+{
+  "id": "frequency-addressed-modal-cell",
+  "title": "Frequency-addressed modal cell: the field as compressed computational matter",
+  "summary": "This pass records a cross-family synthesis that only became explicit after the resonance, field-computing, computational-matter, NSSN and structural-compiler lines were viewed together. Earlier projects mostly chose a wave/field substrate and asked what it could compute. FrequencyAddressedNonlinearModalCell reverses that direction: start from an already-interesting resonant, state-dependent receiver and ask whether its useful computation can be compressed into a much smaller autonomous modal law. The first frozen result is a useful failure. A rank-8 POD captures 99.86% of sampled 36-state teacher variance and a quadratic reduced law improves one-step fit, yet the nonlinear surrogate generalizes far worse than the rank-8 linear model under unseen carrier, tone-pair and event-order rollouts. The wall therefore gains a sharper boundary: compact state geometry is not the same thing as a compact executable computational law.",
+  "order": 206,
+  "reviewed_at": "2026-09-17",
+  "nodes": [
+    {
+      "id": "FrequencyAddressedNonlinearModalCell",
+      "url": "https://github.com/anttiluode/FrequencyAddressedNonlinearModalCell",
+      "family": "reduced-computational-matter",
+      "status": "experiment",
+      "claim": "Tests whether a rich resonant and state-dependent receiving substrate can be reduced to a much smaller frequency/phase-addressable dynamical cell while preserving nonlinear interaction and history-dependent computation on held-out probes.",
+      "survived": "The reduction pipeline is executable and falsifiable. In v0, an 8-dimensional POD captures 0.998602 of the sampled state variance of a 36-state resonant-active cable teacher, and quadratic state/input features improve training one-step NRMSE from 0.19102 for the linear POD model to 0.10428. This establishes strong state compressibility and some locally learnable nonlinear transition structure.",
+      "killed": "The naive nonlinear closure does not survive autonomous held-out rollout. On unseen single carriers its NRMSE is 0.66566 versus 0.10545 for the rank-8 linear POD model; on unseen tone pairs 0.54811 versus 0.08203; on the A/B order-gap 0.66584 versus 0.13328. Low-dimensional state geometry therefore does not by itself provide a stable reduced computational law, and the v0 result does not establish a Lagrangian, a morphology advantage or a new AI primitive.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/FrequencyAddressedNonlinearModalCell/blob/main/README.md",
+      "tags": ["model-reduction", "frequency-address", "resident-state", "operator-inference", "nonlinear-closure", "negative-result"],
+      "era": "Compressed computational matter",
+      "era_order": 24
+    }
+  ],
+  "edges": [
+    {
+      "source": "NotSoSimpleNeuron",
+      "target": "FrequencyAddressedNonlinearModalCell",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "The new repository explicitly builds its teacher from the NotSoSimpleNeuron quasi-active frequency gate plus the later synthetic local voltage-dependent interaction, then asks whether those resident state-conditioned dynamics admit a much smaller autonomous modal surrogate.",
+      "evidence": "https://github.com/anttiluode/FrequencyAddressedNonlinearModalCell/blob/main/README.md"
+    },
+    {
+      "source": "Entrain",
+      "target": "FrequencyAddressedNonlinearModalCell",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Entrain already made frequency an executable routing coordinate and measured its Arnold-tongue resolution limit. FrequencyAddressedNonlinearModalCell keeps frequency/phase as the probe address but changes the scientific direction from constructing oscillator matter to reducing an existing richer receiver.",
+      "evidence": "https://github.com/anttiluode/FrequencyAddressedNonlinearModalCell/blob/main/README.md"
+    },
+    {
+      "source": "InformationFlow",
+      "target": "FrequencyAddressedNonlinearModalCell",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "InformationFlow demonstrated WHERE/WHICH/SIGN selection through spatial overlap, frequency and phase but supplied its useful nonlinear coupling explicitly. The new reduction experiment asks whether useful state-dependent coupling can instead be extracted from richer computational matter rather than written into the field law by hand.",
+      "evidence": "https://github.com/anttiluode/FrequencyAddressedNonlinearModalCell/blob/main/README.md"
+    },
+    {
+      "source": "Operaattori",
+      "target": "FrequencyAddressedNonlinearModalCell",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Operaattori shows the forward reduction idea on real morphology: complicated physical structure can compile to compact transport and nonlinear operator objects. FrequencyAddressedNonlinearModalCell applies the analogous compression question to a resonant state-dependent synthetic receiver, without claiming direct ancestry or that the v0 teacher is Operaattori's biological model.",
+      "evidence": "https://github.com/anttiluode/FrequencyAddressedNonlinearModalCell/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "field-is-compressed-matter",
+      "title": "The field is no longer the hypothesis; it is a reduced representation of computational matter",
+      "description": "Earlier field and oscillator projects usually started by choosing a field law and exploring the computation it could support. Operaattori, NotSoSimpleNeuron and FrequencyAddressedNonlinearModalCell point in the reverse direction: begin with a richer physical or synthetic receiver, identify what operator family it actually implements, and try to compress that family into a smaller executable object. The v0 failure sharpens the rule: a compact state manifold is not enough; the reduced law must remain causal and stable when run autonomously on interventions it did not fit.",
+      "nodes": ["Operaattori", "NotSoSimpleNeuron", "FrequencyAddressedNonlinearModalCell", "NeuralAlgorithmDecoding", "MatrixInMatrix"]
+    },
+    {
+      "id": "frequency-addressed-resident-operator",
+      "title": "Frequency can address a resident operator, but filtering alone is not enough",
+      "description": "SpectralNeuron establishes the boring floor: resonance supplies finite FDM-style addressing. Entrain adds measured entrainment routing and phase relations. InformationFlow uses frequency/phase/spatial overlap to select a nonlinear write. NotSoSimpleNeuron then shows the stronger receiver-side object: active resident state changes cross-mode coupling and the operator encountered by the next event. FrequencyAddressedNonlinearModalCell asks whether that stronger object can be compressed while keeping frequency/phase as the external address rather than confusing a band-pass filter with the computation itself.",
+      "nodes": ["SpectralNeuron", "Entrain", "InformationFlow", "NotSoSimpleNeuron", "FrequencyAddressedNonlinearModalCell"]
+    },
+    {
+      "id": "compression-must-survive-intervention",
+      "title": "A compressed representation earns mechanism status only when it survives new interventions",
+      "description": "MatrixInMatrix already separates a compact harmonic reconstruction from the source dynamics that heal and evolve. NeuralAlgorithmDecoding requires an executable causal surrogate rather than a pretty hidden geometry. FrequencyAddressedNonlinearModalCell makes the same boundary dynamical: rank-8 coordinates explain almost all sampled state variance, yet a locally better nonlinear transition fit fails when autonomously rolled through unseen frequencies, tone pairs and histories. Representation compression and mechanism compression are different gates.",
+      "nodes": ["MatrixInMatrix", "NeuralAlgorithmDecoding", "NotSoSimpleNeuron", "FrequencyAddressedNonlinearModalCell", "TransientWaveCompiler"]
+    }
+  ]
+}
