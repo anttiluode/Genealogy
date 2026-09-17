@@ -1,0 +1,48 @@
+{
+  "id": "math-and-learning-boundaries",
+  "title": "Useful failures and mathematical extraction",
+  "summary": "Two different kinds of residue belong on the wall. GAlinearPredictionNetwork is a clean negative control: cheap scalar trajectory nowcasting made the tested training run slower and exposed the distinction between predicting where weights move and preserving computations under a proposed update. CausalHorizon is already curated elsewhere as a standalone mathematical extraction from several mechanism lines; this pass links that existing node into the same meta-pattern without duplicating it: messy executable systems can leave behind either a killed route that sharpens the next question or a clean algebraic object that survives the original story.",
+  "order": 193,
+  "reviewed_at": "2026-09-17",
+  "nodes": [
+    {
+      "id": "GAlinearPredictionNetwork",
+      "url": "https://github.com/anttiluode/GAlinearPredictionNetwork",
+      "family": "learning-boundaries",
+      "status": "negative",
+      "claim": "Tests whether recent neural-network weight trajectories can be cheaply extrapolated to skip real training work, then separates trajectory prediction from compatibility/preservation after the scalar nowcaster loses.",
+      "survived": "The benchmark contracts remain useful and the negative result is concrete: in the frozen seed-0 CIFAR-10 run the scalar linear nowcaster used more epochs, more backpropagations and more wall time than plain training. The conceptual residue is that predicting a future parameter point and deciding whether an update is compatible with existing computation are different problems.",
+      "killed": "The tested scalar extrapolator is not a training accelerator. The repo does not reproduce or refute learned Weight Nowcaster Networks, and it claims no result for its unfinished joint-operator arms.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/GAlinearPredictionNetwork/blob/main/README.md",
+      "tags": ["negative-result", "training", "nowcasting", "compatibility", "thirdway"],
+      "era": "Learning boundaries",
+      "era_order": 1
+    }
+  ],
+  "edges": [
+    {
+      "source": "GAlinearPredictionNetwork",
+      "target": "ThirdWay",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "GAlinearPredictionNetwork explicitly says the stronger question exposed by ThirdWay is compatibility rather than forecasting and hands the lethal-average/structural-growth experiment to ThirdWay instead of continuing to optimize the nowcaster.",
+      "evidence": "https://github.com/anttiluode/GAlinearPredictionNetwork/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "prediction-is-not-preservation",
+      "title": "Prediction is not preservation",
+      "description": "GAlinearPredictionNetwork asks where the optimizer is likely to go and gets a useful negative result. ThirdWay asks a different question: which part of a proposed change can become structure without destroying computations that must remain viable? The distinction blocks a recurring shortcut in which smooth parameter trajectories are mistaken for safe computational trajectories.",
+      "nodes": ["GAlinearPredictionNetwork", "ThirdWay", "TransformerStudy"]
+    },
+    {
+      "id": "experiment-can-leave-clean-math",
+      "title": "A messy mechanism line can leave behind a clean mathematical object",
+      "description": "CausalHorizon is deliberately standalone mathematics even though it was motivated by AnttisBrain2, SighImageSuper, GeometricNeuronV24, Operaattori/Jako, Kompressori, JelloBrain and IttnasNoruen. The atlas should distinguish that kind of extraction from ancestry: experiments can motivate an exact finite-dimensional identity without proving that every motivating nonlinear or biological system literally obeys it.",
+      "nodes": ["CausalHorizon", "SighImageSuper", "Operaattori", "OperaattoriJako", "Kompressori", "JelloBrain", "IttnasNoruen"]
+    }
+  ]
+}

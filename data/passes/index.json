@@ -96,7 +96,23 @@
     "enabled": true
   },
   {
+    "path": "field-memory-continuation.json",
+    "enabled": true
+  },
+  {
     "path": "algorithm-compilation-boundary.json",
+    "enabled": true
+  },
+  {
+    "path": "math-and-learning-boundaries.json",
+    "enabled": true
+  },
+  {
+    "path": "operator-learning-bridge.json",
+    "enabled": true
+  },
+  {
+    "path": "epistemic-cache.json",
     "enabled": true
   },
   {

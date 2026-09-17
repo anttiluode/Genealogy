@@ -1,0 +1,88 @@
+{
+  "id": "operator-learning-bridge",
+  "title": "From mode purification to bounded evidence and operator learning",
+  "summary": "This pass fills the missing bridge between SighImageSuper-era mode selection and the later SimpleNeuron/NSSN line. DendriteAsIteratedFeedbackOperator turns the old purifier intuition into a frequency-dependent dendritic operator and then closes PURIFY -> COMMIT -> RETURN -> WRITE -> REPLAY. AlternativeNeuron explicitly synthesizes the bounded-observer, read/write, rollback-credit and compiled-operator lines into fast poking, medium memory and slow structure. RajoitustenHierarkia then attacks which constraints actually matter and narrows the machinery toward reusable expected consequences, static measurement covers and cache validity.",
+  "order": 191,
+  "reviewed_at": "2026-09-17",
+  "nodes": [
+    {
+      "id": "DendriteAsIteratedFeedbackOperator",
+      "url": "https://github.com/anttiluode/DendriteAsIteratedFeedbackOperator",
+      "family": "operator-learning",
+      "status": "ledger",
+      "claim": "Tests dendritic morphology plus membrane kinetics as a distributed temporal transfer operator, then asks whether local consequence can write that operator and whether geometry can settle at a task-relative structural fixed point.",
+      "survived": "The active branch produces non-zero pass bands and strong mixed-signal mode purification; the later AIS/receipt gate separates reciprocal transport from state-conditioned consequence and persistent write; with a bounded observer noise floor, local length updates can reach finite task-relative fixed points instead of growing without bound.",
+      "killed": "Purity alone is a misleading objective because near-isolation can make the target fraction rise while absolute target gain vanishes. The repo does not establish acoustic-cavity biology, a fitted HCN/AIS/STDP model, or one universal natural dendritic length.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/DendriteAsIteratedFeedbackOperator/blob/main/README.md",
+      "tags": ["dendrite", "operator", "mode-purification", "local-write", "structural-fixed-point", "negative-result"],
+      "era": "Operator-learning bridge",
+      "era_order": 1
+    },
+    {
+      "id": "AlternativeNeuron",
+      "url": "https://github.com/anttiluode/AlternativeNeuron",
+      "family": "operator-learning",
+      "status": "ledger",
+      "claim": "A bounded machine that learns by reversible intervention when passive observation is insufficient, keeps useful consequences in medium-timescale memory, and slowly changes routing so repeated questions become cheaper.",
+      "survived": "The three-clock decomposition is executable: active pokes resolve passive ambiguity, persistent memory avoids repeated rediscovery, and repeated useful traffic can reshape the slow operator. Later gates also cleanly separate blind source separation, temporal relation and causal ownership.",
+      "killed": "Intervention-equivalent hidden stories remain non-identifiable; ICA can separate generators without assigning ownership; several synthetic tasks are easy enough for simpler lag-correlation or cache controls, so the repo does not establish a special neuron architecture.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/AlternativeNeuron/blob/main/README.md",
+      "tags": ["active-intervention", "bounded-observer", "memory", "operator-learning", "causal-address", "negative-result"],
+      "era": "Operator-learning bridge",
+      "era_order": 2
+    },
+    {
+      "id": "RajoitustenHierarkia",
+      "url": "https://github.com/anttiluode/RajoitustenHierarkia",
+      "family": "operator-learning",
+      "status": "ledger",
+      "claim": "Tests a hierarchy from geometry through connectivity, delay and local nonlinear state to current intervention, then asks which distinctions survive under bounded paid measurements and changing substrates.",
+      "survived": "Known factorization buys transfer and data efficiency after structural change; current-world after-before deltas generalize across coordinate relabelings; stale baseline memory can reduce repeated measurement cost; simple static covers, TTL and recency controls repeatedly beat more elaborate adaptive policies in the tested worlds.",
+      "killed": "Several apparent wins for adaptivity disappear under stronger fixed-panel attackers. Residual-triggered cache refresh is useful but does not beat a boring age rule strongly enough to earn architectural privilege, and the synthetic hierarchy does not establish a universal ordering for biological systems.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/RajoitustenHierarkia/blob/main/README.md",
+      "tags": ["constraints", "diagnosis", "measurement-cost", "cache", "attackers", "negative-result"],
+      "era": "Operator-learning bridge",
+      "era_order": 3
+    }
+  ],
+  "edges": [
+    {
+      "source": "SighImageSuper",
+      "target": "DendriteAsIteratedFeedbackOperator",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "DendriteAsIteratedFeedbackOperator explicitly says it started as a cautious bridge from SighImageSuper and repeatedly uses the Sigh-style purifier/fixed-point failure as the object being made physical and testable.",
+      "evidence": "https://github.com/anttiluode/DendriteAsIteratedFeedbackOperator/blob/main/README.md"
+    },
+    {
+      "source": "OutoSynapsi",
+      "target": "AlternativeNeuron",
+      "type": "converges",
+      "confidence": "high",
+      "why": "AlternativeNeuron explicitly names OutoSynapsi as one of the recent lines it synthesizes, carrying traffic-dependent slow operator change into the three-timescale bounded machine.",
+      "evidence": "https://github.com/anttiluode/AlternativeNeuron/blob/main/README.md"
+    },
+    {
+      "source": "AlternativeNeuron",
+      "target": "RajoitustenHierarkia",
+      "type": "converges",
+      "confidence": "high",
+      "why": "RajoitustenHierarkia explicitly names AlternativeNeuron as a source of active poking and intervention-conditioned identity, then attacks when that machinery is actually needed under paid measurement budgets.",
+      "evidence": "https://github.com/anttiluode/RajoitustenHierarkia/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "mode-to-evidence-economy",
+      "title": "The mode story narrows into an evidence economy",
+      "description": "SighImageSuper and DendriteAsIteratedFeedbackOperator ask what temporal mode a physical operator preserves and how a consequence can write it. OutoSynapsi and AlternativeNeuron turn repeated consequence into slow operator change under resource limits. RajoitustenHierarkia then strips the same loop down to what must be measured, remembered and refreshed. The later SimpleNeuron/NSSN line inherits the resident-operator question without needing the earlier biological story to remain literally true.",
+      "nodes": ["SighImageSuper", "DendriteAsIteratedFeedbackOperator", "OutoSynapsi", "AlternativeNeuron", "RajoitustenHierarkia", "SimpleNeuron", "NotSoSimpleNeuron", "NSSN2"]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "epistemic-cache",
+  "title": "Audited epistemic cache: when evidence can be reused",
+  "summary": "AuditedEpistemicCache is a meta-audit of a mechanism that recurs across otherwise different projects: pay for an expensive consequence, reuse it while a cheap certificate says it is still valid, reserve budget for audits, diagnose staleness when the certificate fails, refresh the evidence, and let repeated confirmations change what becomes cheap next time. The point is not that planning, CI, perception, memory and operator learning are the same algorithm; it is that they repeatedly need the same bookkeeping contract. This pass also makes the missing statistics layer explicit as a cross-cutting discipline rather than inventing a repository called Statistics.",
+  "order": 194,
+  "reviewed_at": "2026-09-17",
+  "nodes": [
+    {
+      "id": "AuditedEpistemicCache",
+      "url": "https://github.com/anttiluode/AuditedEpistemicCache",
+      "family": "epistemic-infrastructure",
+      "status": "ledger",
+      "claim": "Audits the recurring BUY -> EXPECTATION -> REUSE -> AUDIT/REFRESH -> CONFIRM loop across cached control, active diagnosis, memory, operator identification and scientific claim ledgers, while tracking why previously purchased evidence may cease to be valid.",
+      "survived": "A reusable expectation needs a receipt: acquisition cost, context/address/receiver, tolerance, world time, knowledge time, evidence completeness, representation generation, age, reuse count, audit history and provenance. The strongest common abstraction is validity bookkeeping and evidence economics, not a single universal cache algorithm.",
+      "killed": "A cached plan is not the same object as a cached measurement or episodic memory; staleness can arise from world, demand, model, representation or evidence-arrival changes; persistence alone does not satisfy the contract. The repo explicitly rejects collapsing all of these systems into one mechanism.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/AuditedEpistemicCache/blob/main/README.md",
+      "tags": ["evidence", "cache", "audit", "staleness", "provenance", "meta-analysis"],
+      "era": "Epistemic infrastructure",
+      "era_order": 1
+    }
+  ],
+  "edges": [],
+  "motifs": [
+    {
+      "id": "paid-evidence-validity-loop",
+      "title": "Expensive evidence can be reused only while its validity claim survives",
+      "description": "TheClutch reuses plans, ReadWrite and LentoOrava buy intervention consequences, RajoitustenHierarkia caches expected healthy outcomes, OutoSynapsi changes a slow operator after repeated traffic, and AuditedEpistemicCache extracts the common bookkeeping contract. What is shared is not the payload but the need to price acquisition, reuse, audit, staleness and refresh separately.",
+      "nodes": ["TheClutch", "ReadWrite", "LentoOrava", "RajoitustenHierarkia", "OutoSynapsi", "AuditedEpistemicCache"]
+    },
+    {
+      "id": "statistical-evidence-is-a-separate-layer",
+      "title": "Statistical evidence is a separate layer between experiment and belief",
+      "description": "The atlas increasingly uses repeated seeds, held-out worlds, matched attackers, null controls, calibration, confidence intervals, effect sizes, stopping lines and replication logic. Those operations determine how much weight an experimental receipt deserves; they are not themselves the mechanism under test. RajoitustenHierarkia makes attacker selection and budgeted comparisons explicit, AnotherOddThing and NSSN2 retain multi-seed/held-out negative results, and AuditedEpistemicCache makes evidence validity and audit history first-class. The missing Statistics branch is therefore represented as a cross-cutting evidential discipline, not as a fictional repository node.",
+      "nodes": ["RajoitustenHierarkia", "AnotherOddThing", "NSSN2", "AuditedEpistemicCache"]
+    }
+  ]
+}
