@@ -1,7 +1,7 @@
 {
   "id": "not-so-simple-neuron",
   "title": "SimpleNeuron -> NotSoSimpleNeuron: from learned route vectors to state-conditioned operators",
-  "summary": "This pass records the immediate SimpleNeuron -> NotSoSimpleNeuron transition and the broader resident-computation lineage that fed SimpleNeuron. SimpleNeuron made a tiny routed event select a locally learned receiver direction B[:,k] while rich state stayed resident. NotSoSimpleNeuron then factorized that apparent vector into distributed scalar contacts, receiver geometry, temporal dynamics and local state. Its strongest correction is negative as well as positive: the linear/quasi-active branch bank is exactly equivalent to a same-dimensional modal realization, while the local active mechanism makes the effective Jacobian state-dependent and couples modes. The surviving claim is therefore not that dendritic geometry has unique linear expressivity, but that physical locality can make state-conditioned operator changes cheap and explicit.",
+  "summary": "This pass records the immediate SimpleNeuron -> NotSoSimpleNeuron transition and the broader resident-computation lineage that fed SimpleNeuron. SimpleNeuron made a tiny routed event select a locally learned receiver direction B[:,k] while rich state stayed resident. NotSoSimpleNeuron then factorized that apparent vector into distributed scalar contacts, receiver geometry, temporal dynamics and local state. Its strongest correction is negative as well as positive: the linear/quasi-active branch bank is exactly equivalent to a same-dimensional modal realization, while local active state changes the Jacobian, makes event order operator-dependent, and yields history-specific two-step operators that are reconstructed by composing the local Jacobians encountered along each trajectory. The surviving claim is therefore not that dendritic geometry has unique linear or nonlinear expressivity, but that sparse routes can access a resident, state-conditioned operator whose effective action is distributed across physical locality, dynamics and history.",
   "order": 198,
   "reviewed_at": "2026-09-17",
   "nodes": [
@@ -25,13 +25,13 @@
       "url": "https://github.com/anttiluode/NotSoSimpleNeuron",
       "family": "resident-machines",
       "status": "ledger",
-      "claim": "A route can access a structured, stateful operator through distributed scalar contacts: where pings land, when they arrive and what local state they encounter jointly determine the effective transformation.",
-      "survived": "Distributed scalar contacts beat a best single-site attacker on the v0 spatial witness; timing is decodable but a point resonator can match or beat the one-site resonance gate; local voltage-dependent interaction survives passive and gain-zero ablations; and the v3 modal-boundary receipt shows the effective local Jacobian rotates with resident state and develops cross-mode coupling.",
-      "killed": "Linear dendritic morphology does not have unique linear expressivity in the current machine: the full 48-state quasi-active branch bank collapses exactly to an orthogonal modal realization. Resonance alone also fails to earn morphology because a tuned point resonator wins that gate.",
+      "claim": "A route can access a structured, stateful operator through distributed scalar contacts: where pings land, when they arrive, what local state they encounter and what happened immediately before jointly determine the effective transformation.",
+      "survived": "Distributed scalar contacts beat a best single-site attacker on the v0 spatial witness; timing is decodable but a point resonator can match or beat the one-site resonance gate; local voltage-dependent interaction survives passive and gain-zero ablations; v3 shows the effective local Jacobian rotates with resident state and couples modes; v4 shows active first-event Jacobians differ and fail to commute while the gain-zero operator stays fixed; and v5 shows history-specific one-step Jacobians compose the two-event map while one fixed operator fails across A->B and B->A.",
+      "killed": "Linear dendritic morphology does not have unique linear expressivity in the current machine: the full 48-state quasi-active branch bank collapses exactly to an orthogonal modal realization. Resonance alone also fails to earn morphology because a tuned point resonator wins that gate. v4-v5 likewise do not establish unique nonlinear dendritic expressivity: a sufficiently general nonlinear state-space model can also have state-conditioned Jacobians.",
       "usefulness": "scientific",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/NotSoSimpleNeuron/blob/main/README.md",
-      "tags": ["operator", "dendrite", "spatial-addressing", "temporal-addressing", "state-dependent-jacobian", "modal-boundary", "negative-result"],
+      "tags": ["operator", "dendrite", "spatial-addressing", "temporal-addressing", "state-dependent-jacobian", "modal-boundary", "event-order", "operator-composition", "negative-result"],
       "era": "Mechanism isolation",
       "era_order": 21
     }
@@ -90,7 +90,7 @@
     {
       "id": "route-accesses-resident-operator",
       "title": "A sparse route can select more computation than it carries",
-      "description": "ActiveVectorNN separates persistent state from sparse communication, AnotherOddThing makes small addressed events probe resident computation, SimpleNeuron lets a route select a learned receiver direction, and NotSoSimpleNeuron factorizes that effective direction into sparse spatial contacts plus receiver dynamics. The recurring object is access to resident computation rather than a large payload travelling through the route.",
+      "description": "ActiveVectorNN separates persistent state from sparse communication, AnotherOddThing makes small addressed events probe resident computation, SimpleNeuron lets a route select a learned receiver direction, and NotSoSimpleNeuron factorizes that effective direction into sparse spatial contacts plus receiver dynamics and history. The recurring object is access to resident computation rather than a large payload travelling through the route.",
       "nodes": ["ActiveVectorNN", "AnotherOddThing", "SimpleNeuron", "NotSoSimpleNeuron"]
     },
     {
@@ -98,6 +98,12 @@
       "title": "Linear morphology can be a basis; local active state changes the operator",
       "description": "Operaattori already separated transport from nonlinear feedback in compiled morphology. NotSoSimpleNeuron makes a smaller synthetic boundary explicit: its linear/quasi-active cable bank is exactly a modal state-space realization, while local voltage-dependent state creates cross-mode coupling and a resident-state-dependent Jacobian. This is a recurring mechanism comparison, not an ancestry claim from Operaattori to NotSoSimpleNeuron.",
       "nodes": ["Operaattori", "OperaattoriJako", "NotSoSimpleNeuron"]
+    },
+    {
+      "id": "history-selects-operator-composition",
+      "title": "History changes the operator the next event encounters",
+      "description": "SimpleNeuron first showed that resident history changes the consequence of the same later cue. NotSoSimpleNeuron v4-v5 sharpens that into a local operator statement: the first event changes the next Jacobian, A->B and B->A generate different active two-step operators, and each is reconstructed by composing the context-specific local Jacobians along its trajectory. The gain-zero control retains ordinary sequence memory without this order-dependent operator family.",
+      "nodes": ["SimpleNeuron", "NotSoSimpleNeuron"]
     }
   ]
 }
