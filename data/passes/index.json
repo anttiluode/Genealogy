@@ -104,6 +104,10 @@
     "enabled": true
   },
   {
+    "path": "not-so-simple-neuron.json",
+    "enabled": true
+  },
+  {
     "path": "finished-creative-artifacts.json",
     "enabled": true
   },
