@@ -154,5 +154,9 @@
   {
     "path": "transient-wave-compiler.json",
     "enabled": true
+  },
+  {
+    "path": "frequency-addressed-modal-cell.json",
+    "enabled": true
   }
 ]
