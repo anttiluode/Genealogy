@@ -150,5 +150,9 @@
   {
     "path": "geometric-reversal.json",
     "enabled": true
+  },
+  {
+    "path": "transient-wave-compiler.json",
+    "enabled": true
   }
 ]
