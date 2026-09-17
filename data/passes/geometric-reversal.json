@@ -1,0 +1,50 @@
+{
+  "id": "geometric-reversal",
+  "title": "AgainstTheGrain: reversal depends on the substrate",
+  "summary": "AgainstTheGrain takes the Geometric Neuron direction machinery and asks a deliberately backward question: what changes when a computation learned in one temporal direction is driven in reverse? The strongest surviving result is not that reverse is universally expensive, but that reversal cost depends on the representation. A worn dissipative sequence can be ill-conditioned backward while a coordinate manifold can reverse nearly freely. The pass preserves that correction and the negative controls that prevent direction from being read out of passive geometry or a scalar level alone.",
+  "order": 204,
+  "reviewed_at": "2026-09-17",
+  "nodes": [
+    {
+      "id": "AgainstTheGrain",
+      "url": "https://github.com/anttiluode/AgainstTheGrain",
+      "family": "geometric-neuron",
+      "status": "ledger",
+      "claim": "Turns the skew-lag/direction line around and measures what happens when a forward-built sequence model, predictor and timing gate are driven against their learned arrow, then compares that reversal with a coordinate representation that has no preferred direction.",
+      "survived": "In the repo's seeded toy systems the skew half changes sign under reversal while the symmetric half is preserved; a smooth forward-trained predictor can become actively harmful on the reversed trajectory; and a dissipative worn sequence amplifies a small turnaround perturbation dramatically while a toroidal coordinate manifold keeps the same perturbation small. The durable abstraction is therefore substrate-dependent reversibility rather than reverse being intrinsically costly.",
+      "killed": "Passive cable geometry plus a simple sigmoid does not generate the direction preference; a level-keyed gate cannot read the sign of acceleration; and the claim that any forward predictor poisons any reversed stream fails on unrelated states, where the predictor is approximately neutral. The biological habit/grid interpretation remains a bet rather than an identified mechanism.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/AgainstTheGrain/blob/main/README.md",
+      "tags": ["reversal", "skew-operator", "conditioning", "predictor", "coordinate-manifold", "negative-result"],
+      "era": "Direction under reversal",
+      "era_order": 6
+    }
+  ],
+  "edges": [
+    {
+      "source": "GeometricNeuronV9",
+      "target": "AgainstTheGrain",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "AgainstTheGrain explicitly lists GeometricNeuron V9's skew lag operator as the source of the result that the arrow lives in the antisymmetric half, then tests what that object does under reversal.",
+      "evidence": "https://github.com/anttiluode/AgainstTheGrain/blob/main/README.md"
+    },
+    {
+      "source": "GeometricNeuron_V20",
+      "target": "AgainstTheGrain",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "The repository explicitly lists GeometricNeuron V20's arrow-cost/recomposition line among its direct sources and turns those retained direction mechanisms into a dedicated reversal audit.",
+      "evidence": "https://github.com/anttiluode/AgainstTheGrain/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "substrate-decides-reversal-cost",
+      "title": "Reversal cost belongs to the representation, not to the word backward",
+      "description": "AgainstTheGrain separates two substrates for the same nominal round trip: a dissipative learned sequence has a preferred arrow and can become unstable when inverted, while a coordinate manifold can represent the reverse direction without inverting the whole forward dynamics. The lesson complements MovingProblem's coordinate-history warning and the GeometricNeuron skew-operator line without claiming the toy substrates are identified biological circuits.",
+      "nodes": ["AgainstTheGrain", "GeometricNeuronV9", "GeometricNeuron_V20", "MovingProblem"]
+    }
+  ]
+}
