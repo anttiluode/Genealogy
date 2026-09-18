@@ -1510,7 +1510,7 @@
     "name": "FrequencyAddressedNonlinearModalCell",
     "url": "https://github.com/anttiluode/FrequencyAddressedNonlinearModalCell",
     "default_branch": "main",
-    "size": 144,
+    "size": 145,
     "visibility": "public",
     "description": "Sol thinking repo. ",
     "created_at": "2026-09-17T17:28:20Z",
@@ -1521,11 +1521,11 @@
     "name": "FrequencyAddressedState-dependentOperatorComposition.",
     "url": "https://github.com/anttiluode/FrequencyAddressedState-dependentOperatorComposition.",
     "default_branch": "main",
-    "size": 0,
+    "size": 28,
     "visibility": "public",
     "description": "Sol thinking repo. ",
     "created_at": "2026-09-18T06:38:47Z",
-    "updated_at": "2026-09-18T07:09:33Z",
+    "updated_at": "2026-09-18T08:11:11Z",
     "inventory_status": "unread"
   },
   {
@@ -1631,11 +1631,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 418,
+    "size": 464,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-09-18T07:10:47Z",
+    "updated_at": "2026-09-18T08:11:18Z",
     "inventory_status": "unread"
   },
   {
