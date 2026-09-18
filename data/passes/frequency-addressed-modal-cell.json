@@ -1,7 +1,7 @@
 {
   "id": "frequency-addressed-modal-cell",
   "title": "Frequency-addressed modal cell: the field as compressed computational matter",
-  "summary": "This pass records a cross-family synthesis that only became explicit after the resonance, field-computing, computational-matter, NSSN and structural-compiler lines were viewed together. Earlier projects mostly chose a wave/field substrate and asked what it could compute. FrequencyAddressedNonlinearModalCell reverses that direction: start from an already-interesting resonant, state-dependent receiver and ask what smaller operator description survives compression. v0 shows that state compression is not mechanism compression: rank-8 POD captures 99.86% of a 36-state teacher while naive nonlinear closure fails autonomous rollout. v1 extends the object through branching axonal matter with deliberately weak local ephaptic timing. v2 then supplies the boring attacker: frozen axonal branching collapses exactly to a nine-edge sparse graph with fixed delays; only the context-dependent timing perturbation remains outside that fixed-delay abstraction. The sharper wall lesson is therefore that spatial matter earns computational status only through runtime-dependent state/operator effects, not merely because its geometry is complicated.",
+  "summary": "This pass records a cross-family synthesis that only became explicit after the resonance, field-computing, computational-matter, NSSN and structural-compiler lines were viewed together. Earlier projects mostly chose a wave/field substrate and asked what it could compute. FrequencyAddressedNonlinearModalCell reverses that direction: start from an already-interesting resonant, state-dependent receiver and ask what smaller operator description survives compression. v0 shows that state compression is not mechanism compression: rank-8 POD captures 99.86% of a 36-state teacher while naive nonlinear closure fails autonomous rollout. v1 extends the object through branching axonal matter with deliberately weak local ephaptic timing. v2 shows frozen branching collapses exactly to a sparse fixed-delay graph; only runtime-dependent timing survives that attacker. v3 then imports one useful abstraction from wetware computing without importing organoid biology: hide the substrate internals and learn a stimulation language through sparse external ports. FANMC learns a robust four-symbol persistent code, but a linear state-space reservoir nearly matches it; space alone is perfect, frequency alone still carries a weaker one-port code, and phase alone falls near chance. The resulting wall lesson is narrower and stronger: computational matter should be judged by what externally controllable operator survives ordinary reduced, graph, reservoir and address-ablation attackers.",
   "order": 206,
   "reviewed_at": "2026-09-18",
   "nodes": [
@@ -10,9 +10,9 @@
       "url": "https://github.com/anttiluode/FrequencyAddressedNonlinearModalCell",
       "family": "reduced-computational-matter",
       "status": "experiment",
-      "claim": "Tests whether rich receiving and transmitting matter can be reduced to cheaper executable operators while preserving the runtime-dependent computation that survives boring graph, resonator and reduced-state attackers.",
-      "survived": "v0 establishes strong state compressibility (rank-8 POD energy 0.998602) and some locally learnable nonlinear transition structure. v1 adds grown branching axonal routes and a weak local coactivity-dependent timing perturbation: nearby synchronous bundles shift mean conduction delay by 1.473% (0.165 rad mean arrival-phase shift at omega=0.42), while spatial separation and temporal staggering suppress the effect by >98%. v2 then shows the fixed-delay graph attacker misses the near synchronous context by 0.40235 step RMS / 0.16899 rad RMS while matching the uncoupled arbor exactly.",
-      "killed": "The naive nonlinear modal closure from v0 fails autonomous held-out rollout, so low-dimensional state geometry does not itself yield a stable computational law. v2 additionally kills any stronger claim that branching axonal geometry alone is a new computational primitive: the frozen arbor is exactly reducible to a sparse graph with one fixed delay per terminal route. Even the surviving ephaptic timing residue is not irreducible; a conventional graph with activity-dependent delays could emulate it. The result is a decomposition boundary, not proof of a new neuron architecture.",
+      "claim": "Tests whether rich receiving/transmitting matter can be compressed and externally programmed through sparse stimulation ports, while preserving only the runtime-dependent computation that survives reduced-state, graph, reservoir and address-ablation attackers.",
+      "survived": "v0 establishes strong state compressibility (rank-8 POD energy 0.998602). v1 adds grown branching axonal routes and weak local coactivity-dependent timing. v2 isolates the static-graph boundary. v3 hides the population internals behind eight stimulation/recording ports and learns a four-symbol external write/read code: full FANMC reaches 1.000 held-out accuracy after a 96-step wait, while removing the slow material write falls to 0.1875. With one electrode fixed, frequency-only writes retain 0.8125 accuracy; frequency+phase reaches 0.9167.",
+      "killed": "v0's naive nonlinear modal closure fails autonomous held-out rollout. v2 kills any claim that branching geometry alone is a new primitive because the frozen arbor is exactly reducible to a sparse fixed-delay graph. v3 kills a first architecture-advantage claim: a 48-state linear state-space reservoir reaches 0.9792 through the identical black-box interface, and spatial-only FANMC reaches 1.000, so frequency is not necessary for the easiest four-symbol task. Phase-only addressing is 0.2708, near four-class chance. The result is a programming/interface mechanism, not superiority to conventional recurrent state.",
       "usefulness": "scientific",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/FrequencyAddressedNonlinearModalCell/blob/main/README.md",
@@ -27,7 +27,12 @@
         "developmental-routing",
         "delay-operator",
         "ephaptic",
-        "fixed-delay-attacker"
+        "fixed-delay-attacker",
+        "black-box-programming",
+        "stimulation-language",
+        "virtual-organoid",
+        "reservoir-attacker",
+        "address-ablation"
       ],
       "era": "Compressed computational matter",
       "era_order": 24
@@ -64,6 +69,22 @@
       "type": "converges",
       "confidence": "medium",
       "why": "Operaattori shows the forward reduction idea on real morphology: complicated physical structure can compile to compact transport and nonlinear operator objects. FrequencyAddressedNonlinearModalCell applies the analogous compression question to a resonant state-dependent synthetic receiver, without claiming direct ancestry or that the v0 teacher is Operaattori's biological model.",
+      "evidence": "https://github.com/anttiluode/FrequencyAddressedNonlinearModalCell/blob/main/README.md"
+    },
+    {
+      "source": "AnotherOddThing",
+      "target": "FrequencyAddressedNonlinearModalCell",
+      "type": "converges",
+      "confidence": "high",
+      "why": "v3 turns the substrate into a hidden machine that can only be programmed by choosing interventions and reading consequences. That is the same active-identification grammar AnotherOddThing isolates, now applied to discovering a reusable stimulation code rather than selecting among explicit hypotheses.",
+      "evidence": "https://github.com/anttiluode/FrequencyAddressedNonlinearModalCell/blob/main/README.md"
+    },
+    {
+      "source": "ReadWrite",
+      "target": "FrequencyAddressedNonlinearModalCell",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "ReadWrite studies what a bounded observer can reveal by applying known writes. v3 makes that constraint the programming interface itself: internal FANMC state is hidden, and only sparse port-level stimulation plus later readout is legal.",
       "evidence": "https://github.com/anttiluode/FrequencyAddressedNonlinearModalCell/blob/main/README.md"
     }
   ],
@@ -112,6 +133,18 @@
         "FrequencyAddressedNonlinearModalCell",
         "NotSoSimpleNeuron",
         "Operaattori"
+      ]
+    },
+    {
+      "id": "learn-language-for-matter",
+      "title": "Do not program hidden matter by writing its internals; learn an external intervention language",
+      "description": "The FinalSpark wetware-computing interface motivates a useful abstraction even after the biology is removed: internal parameters may be inaccessible while the substrate remains controllable through a small set of stimulation/recording ports. FANMC v3 implements that constraint synthetically. A controller learns a write/read code only from externally observed consequences. The slow-state ablation establishes that persistent FANMC writes need resident hidden state, but the linear-reservoir attacker shows the interface itself is not uniquely biological. Address ablations further separate coordinates: space is strongest here; frequency alone remains a usable one-port address; phase alone does not.",
+      "nodes": [
+        "FrequencyAddressedNonlinearModalCell",
+        "AnotherOddThing",
+        "ReadWrite",
+        "EvoX",
+        "AlgoSchalgo"
       ]
     }
   ]
