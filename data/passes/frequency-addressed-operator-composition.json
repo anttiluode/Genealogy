@@ -7,7 +7,7 @@
   "nodes": [
     {
       "id": "FrequencyAddressedState-dependentOperatorComposition",
-      "url": "https://github.com/anttiluode/FrequencyAddressedState-dependentOperatorComposition.",
+      "url": "https://github.com/anttiluode/FrequencyAddressedState-dependentOperatorComposition",
       "family": "reduced-computational-matter",
       "status": "experiment",
       "claim": "Tests whether frequency can select resident modal/cable structure whose local persistent state rewrites the operator encountered by later packets, making addressed operator composition noncommutative after fast state has decayed.",
@@ -15,7 +15,7 @@
       "killed": "Order dependence alone is insufficient; homogeneous or geometry-only systems can remain strongly path-dependent while address rank collapses. v2 kills the idea that cable length alone carries the address in the tested interface. v3 kills cable specificity more broadly under the current gate: a non-geometric modal state-space system reproduces the addressed persistent noncommuting operator family at an equal state budget, and a much smaller 12-state system already passes a weaker multi-address threshold. This does not show that arbitrary dense RNNs automatically discover the mechanism. The unresolved boundary is explicit spectral/modal structure versus unstructured recurrence, and possibly parameter/learning efficiency rather than substrate identity.",
       "usefulness": "scientific",
       "confidence": "high",
-      "evidence": "https://github.com/anttiluode/FrequencyAddressedState-dependentOperatorComposition./blob/main/README.md",
+      "evidence": "https://github.com/anttiluode/FrequencyAddressedState-dependentOperatorComposition/blob/main/README.md",
       "tags": [
         "frequency-address",
         "resident-operator",
@@ -42,7 +42,7 @@
       "type": "extracts",
       "confidence": "high",
       "why": "The new repository takes FANMC's frequency-as-external-address result and asks the stricter question FANMC left open: whether the addressed event changes a resident operator so that later operator composition becomes order-dependent, rather than merely writing a persistent code.",
-      "evidence": "https://github.com/anttiluode/FrequencyAddressedState-dependentOperatorComposition./blob/main/README.md"
+      "evidence": "https://github.com/anttiluode/FrequencyAddressedState-dependentOperatorComposition/blob/main/README.md"
     },
     {
       "source": "NotSoSimpleNeuron",
@@ -50,7 +50,7 @@
       "type": "extracts",
       "confidence": "high",
       "why": "NotSoSimpleNeuron established the receiver-side idea that resident active state changes what the next event encounters. This repository isolates that idea as an explicit noncommuting operator-composition gate and then re-embodies it in quasi-active cable branches.",
-      "evidence": "https://github.com/anttiluode/FrequencyAddressedState-dependentOperatorComposition./blob/main/README.md"
+      "evidence": "https://github.com/anttiluode/FrequencyAddressedState-dependentOperatorComposition/blob/main/README.md"
     },
     {
       "source": "InformationFlow",
@@ -58,7 +58,7 @@
       "type": "converges",
       "confidence": "medium",
       "why": "InformationFlow made frequency and phase external coordinates for selecting interactions that write persistent routing state. The new experiment keeps frequency as an address but moves the consequence into a resident operator whose later composition is explicitly tested for order.",
-      "evidence": "https://github.com/anttiluode/FrequencyAddressedState-dependentOperatorComposition./blob/main/README.md"
+      "evidence": "https://github.com/anttiluode/FrequencyAddressedState-dependentOperatorComposition/blob/main/README.md"
     },
     {
       "source": "Operaattori",
@@ -66,7 +66,7 @@
       "type": "converges",
       "confidence": "medium",
       "why": "Operaattori supplies the structural-compiler view in which morphology generates an executable transport/nonlinear operator. The new repository studies the complementary runtime question: whether addressed local state can rewrite such an operator between events.",
-      "evidence": "https://github.com/anttiluode/FrequencyAddressedState-dependentOperatorComposition./blob/main/README.md"
+      "evidence": "https://github.com/anttiluode/FrequencyAddressedState-dependentOperatorComposition/blob/main/README.md"
     },
     {
       "source": "ArtificialCortex",
@@ -74,7 +74,7 @@
       "type": "converges",
       "confidence": "medium",
       "why": "ArtificialCortex previously treated space, frequency and phase as coordinates of resident dynamical tissue. The new repository turns that broad architectural intuition into a much narrower controlled operator-composition experiment.",
-      "evidence": "https://github.com/anttiluode/FrequencyAddressedState-dependentOperatorComposition./blob/main/README.md"
+      "evidence": "https://github.com/anttiluode/FrequencyAddressedState-dependentOperatorComposition/blob/main/README.md"
     }
   ],
   "motifs": [
