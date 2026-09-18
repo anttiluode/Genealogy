@@ -156,6 +156,10 @@
     "enabled": true
   },
   {
+    "path": "mycelial-artificial-cortex-lineage.json",
+    "enabled": true
+  },
+  {
     "path": "frequency-addressed-modal-cell.json",
     "enabled": true
   }
