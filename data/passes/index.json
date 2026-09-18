@@ -162,5 +162,9 @@
   {
     "path": "frequency-addressed-modal-cell.json",
     "enabled": true
+  },
+  {
+    "path": "frequency-addressed-operator-composition.json",
+    "enabled": true
   }
 ]
