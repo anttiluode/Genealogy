@@ -1,0 +1,87 @@
+{
+  "id": "mycelial-artificial-cortex-lineage",
+  "title": "Mycelial / Artificial Cortex: distributed tokens, waves, and modal computational tissue",
+  "summary": "This pass restores a June side-branch that turns out to be an important ancestor of the current computational-matter line. TheMycelialCortex treated sparse spikes as tokens moving between independently organized resident substrates, while ArtificialCortex made the substrate explicitly spatial and spectral: coupled oscillatory fields, traveling waves, slow/fast bands, and a frequency axis as part of the computational state. Neither establishes a biological cortex. What survives into the later FANMC / operator-composition work is the architectural move away from 'a neuron as a weighted scalar unit' toward matter with resident dynamics that must be addressed through sparse external events.",
+  "order": 183,
+  "reviewed_at": "2026-09-18",
+  "nodes": [
+    {
+      "id": "TheMycelialCortex",
+      "url": "https://github.com/anttiluode/TheMycelialCortex",
+      "family": "distributed-computational-matter",
+      "status": "ledger",
+      "claim": "Builds a distributed geometric-neuron substrate whose local memories grow, consolidate and communicate across machines using sparse spike/token messages rather than shared weights.",
+      "survived": "The interface idea is durable: a small sparse event can communicate with a much richer resident machine, and two peers can organize the same token stream into different internal structures. The repo also makes growth, fatigue and order-sensitive traffic explicit state variables.",
+      "killed": "The live system fragmented memories into many redundant nodes, and temporal order did not federate in the demonstrated relay. Federation of sparse tokens is not evidence of distributed cognition or a biological mycelial mechanism.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/TheMycelialCortex/blob/main/README.md",
+      "tags": ["distributed-matter", "sparse-events", "tokens", "resident-state", "growth", "federation"],
+      "era": "Modal computational tissue",
+      "era_order": 1
+    },
+    {
+      "id": "ArtificialCortex",
+      "url": "https://github.com/anttiluode/ArtificialCortex",
+      "family": "distributed-computational-matter",
+      "status": "ledger",
+      "claim": "Couples time-holding / coincidence-sensitive units into spatial oscillatory fields with traveling waves, interference, slow-fast coupling and a stacked spatial-by-frequency representation.",
+      "survived": "A field can be treated as resident computational matter whose useful coordinates include space, frequency and phase; slow state can gate faster dynamics; and computation can be read from wave/interference structure rather than only from trained feedforward weights.",
+      "killed": "The mechanisms are established dynamical-systems ingredients assembled synthetically, not a derivation of cortex. The grid symmetry and several clocks are supplied by construction, the energy quantity is a proxy, and the repo does not establish advantage over ordinary learned systems.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/ArtificialCortex/blob/main/README.md",
+      "tags": ["field-computing", "oscillation", "frequency-axis", "phase", "slow-fast", "traveling-waves", "computational-matter"],
+      "era": "Modal computational tissue",
+      "era_order": 2
+    }
+  ],
+  "edges": [
+    {
+      "source": "Geometric-Neuron",
+      "target": "TheMycelialCortex",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "TheMycelialCortex explicitly states that it is built on the Geometric Neuron / GAIT / Ephaptic Spiking Field series.",
+      "evidence": "https://github.com/anttiluode/TheMycelialCortex/blob/main/README.md"
+    },
+    {
+      "source": "PerceptionLab",
+      "target": "TheMycelialCortex",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "TheMycelialCortex README explicitly says it uses PerceptionLab and is presented as a PerceptionLab substrate.",
+      "evidence": "https://github.com/anttiluode/TheMycelialCortex/blob/main/README.md"
+    },
+    {
+      "source": "TheMycelialCortex",
+      "target": "ArtificialCortex",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "ArtificialCortex explicitly names the Mycelial Cortex line in its lineage and reuses the same resident-dynamics / sparse-event framing at field scale.",
+      "evidence": "https://github.com/anttiluode/ArtificialCortex/blob/main/README.md"
+    },
+    {
+      "source": "Geometric-Neuron",
+      "target": "ArtificialCortex",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "ArtificialCortex explicitly states that it is built on the geometric-neuron / Mycelial Cortex line.",
+      "evidence": "https://github.com/anttiluode/ArtificialCortex/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "modal-computational-tissue",
+      "title": "Resident computational matter can be addressed in space, frequency and sparse events",
+      "description": "TheMycelialCortex makes sparse events/tokens the communication interface to independently organized resident machines. ArtificialCortex turns the resident machine into spatial oscillatory tissue with frequency and phase coordinates. InformationFlow later makes WHERE/WHICH/SIGN addressing explicit, and FrequencyAddressedNonlinearModalCell turns the same idea into a black-box stimulation language with strong attackers. The recurring object is not a biological cortex claim but a programmable substrate whose internal dynamics are richer than the event used to address them.",
+      "nodes": [
+        "TheMycelialCortex",
+        "ArtificialCortex",
+        "InformationFlow",
+        "NotSoSimpleNeuron",
+        "FrequencyAddressedNonlinearModalCell"
+      ]
+    }
+  ]
+}
