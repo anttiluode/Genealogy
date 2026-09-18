@@ -1518,8 +1518,8 @@
     "inventory_status": "unread"
   },
   {
-    "name": "FrequencyAddressedState-dependentOperatorComposition.",
-    "url": "https://github.com/anttiluode/FrequencyAddressedState-dependentOperatorComposition.",
+    "name": "FrequencyAddressedState-dependentOperatorComposition",
+    "url": "https://github.com/anttiluode/FrequencyAddressedState-dependentOperatorComposition",
     "default_branch": "main",
     "size": 28,
     "visibility": "public",
