@@ -1,0 +1,90 @@
+{
+  "id": "frequency-addressed-operator-composition",
+  "title": "Frequency-addressed state-dependent operator composition",
+  "summary": "This pass narrows the FANMC / NotSoSimpleNeuron thread to a stronger executable condition: an address must select resident structure, local persistent state must change the operator encountered by the next event, and A→B must differ from B→A after fast state has settled away. v0 isolates the mechanism in reduced resonators. v1 then re-embodies it in heterogeneous quasi-active cable branches without an explicit frequency-indexed slow memory. The key controls separate mere history dependence from address-specific operator rewrite: freezing state-to-operator coupling kills the commutator, collapsing state to one global scalar collapses the written operator family, and making branches homogeneous collapses the frequency address while order effects can still remain.",
+  "order": 207,
+  "reviewed_at": "2026-09-18",
+  "nodes": [
+    {
+      "id": "FrequencyAddressedState-dependentOperatorComposition",
+      "url": "https://github.com/anttiluode/FrequencyAddressedState-dependentOperatorComposition.",
+      "family": "reduced-computational-matter",
+      "status": "experiment",
+      "claim": "Tests whether frequency can select resident modal/cable structure whose local persistent state rewrites the operator encountered by later packets, making addressed operator composition noncommutative after fast state has decayed.",
+      "survived": "v0 passes a reduced-resonator gate with address effective rank 3.443, written-operator rank 3.078, commutator ratio 0.564 and paired order/jitter ratio 3.374x. v1 re-embodies the mechanism in four heterogeneous quasi-active cable branches with compartment-local slow state and no explicit frequency-slot memory: address rank 3.977, written-operator rank 2.581, local material-write rank 2.904, commutator ratio 0.0612 and paired order/jitter ratio 3.602x; the full fast-state residual after settling is below 4.8e-6.",
+      "killed": "Order dependence alone is insufficient. A homogeneous-branch attacker retains a sizable order commutator while frequency-address rank collapses to 1.0. A global-scalar state attacker retains history but collapses the written operator family to about 1.12 effective dimensions. A frozen-operator attacker can accumulate slow material but produces zero operator rewrite and zero commutator. The cable and active parameters are synthetic and do not establish a biological dendrite mechanism or architecture advantage.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/FrequencyAddressedState-dependentOperatorComposition./blob/main/README.md",
+      "tags": [
+        "frequency-address",
+        "resident-operator",
+        "noncommutativity",
+        "path-dependence",
+        "quasi-active-cable",
+        "local-state",
+        "operator-rewrite",
+        "attacker"
+      ],
+      "era": "Compressed computational matter",
+      "era_order": 25
+    }
+  ],
+  "edges": [
+    {
+      "source": "FrequencyAddressedNonlinearModalCell",
+      "target": "FrequencyAddressedState-dependentOperatorComposition",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "The new repository takes FANMC's frequency-as-external-address result and asks the stricter question FANMC left open: whether the addressed event changes a resident operator so that later operator composition becomes order-dependent, rather than merely writing a persistent code.",
+      "evidence": "https://github.com/anttiluode/FrequencyAddressedState-dependentOperatorComposition./blob/main/README.md"
+    },
+    {
+      "source": "NotSoSimpleNeuron",
+      "target": "FrequencyAddressedState-dependentOperatorComposition",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "NotSoSimpleNeuron established the receiver-side idea that resident active state changes what the next event encounters. This repository isolates that idea as an explicit noncommuting operator-composition gate and then re-embodies it in quasi-active cable branches.",
+      "evidence": "https://github.com/anttiluode/FrequencyAddressedState-dependentOperatorComposition./blob/main/README.md"
+    },
+    {
+      "source": "InformationFlow",
+      "target": "FrequencyAddressedState-dependentOperatorComposition",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "InformationFlow made frequency and phase external coordinates for selecting interactions that write persistent routing state. The new experiment keeps frequency as an address but moves the consequence into a resident operator whose later composition is explicitly tested for order.",
+      "evidence": "https://github.com/anttiluode/FrequencyAddressedState-dependentOperatorComposition./blob/main/README.md"
+    },
+    {
+      "source": "Operaattori",
+      "target": "FrequencyAddressedState-dependentOperatorComposition",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Operaattori supplies the structural-compiler view in which morphology generates an executable transport/nonlinear operator. The new repository studies the complementary runtime question: whether addressed local state can rewrite such an operator between events.",
+      "evidence": "https://github.com/anttiluode/FrequencyAddressedState-dependentOperatorComposition./blob/main/README.md"
+    },
+    {
+      "source": "ArtificialCortex",
+      "target": "FrequencyAddressedState-dependentOperatorComposition",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "ArtificialCortex previously treated space, frequency and phase as coordinates of resident dynamical tissue. The new repository turns that broad architectural intuition into a much narrower controlled operator-composition experiment.",
+      "evidence": "https://github.com/anttiluode/FrequencyAddressedState-dependentOperatorComposition./blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "addressed-noncommuting-operator-composition",
+      "title": "Addressing becomes computationally stronger when the first event rewrites the operator seen by the second",
+      "description": "Frequency filtering, persistent memory and order dependence are each weaker than the combined object. The surviving condition is: different addresses excite different resident structure; the resulting local state causally changes the later operator; and compositions do not commute after fast transients have vanished. The frozen/global/homogeneous attackers show why every clause matters. This links FANMC's external stimulation language to NotSoSimpleNeuron's state-conditioned receiver, InformationFlow's spectral addressing, and Operaattori's substrate-generated operators.",
+      "nodes": [
+        "FrequencyAddressedState-dependentOperatorComposition",
+        "FrequencyAddressedNonlinearModalCell",
+        "NotSoSimpleNeuron",
+        "InformationFlow",
+        "Operaattori",
+        "ArtificialCortex"
+      ]
+    }
+  ]
+}
