@@ -1,7 +1,7 @@
 {
   "id": "frequency-addressed-operator-composition",
   "title": "Frequency-addressed state-dependent operator composition",
-  "summary": "This pass narrows the FANMC / NotSoSimpleNeuron thread to a stronger executable condition: an address must select resident structure, local persistent state must change the operator encountered by the next event, and A→B must differ from B→A after fast state has settled away. v0 isolates the mechanism in reduced resonators. v1 then re-embodies it in heterogeneous quasi-active cable branches without an explicit frequency-indexed slow memory. The key controls separate mere history dependence from address-specific operator rewrite: freezing state-to-operator coupling kills the commutator, collapsing state to one global scalar collapses the written operator family, and making branches homogeneous collapses the frequency address while order effects can still remain.",
+  "summary": "This pass narrows the FANMC / NotSoSimpleNeuron thread to a stronger executable condition: an address must select resident structure, local persistent state must change the operator encountered by the next event, and A→B must differ from B→A after fast state has settled away. v0 isolates the mechanism in reduced resonators. v1 re-embodies it in heterogeneous quasi-active cable branches without an explicit frequency-indexed slow memory. v2 then factorizes morphology from quasi-active kinetics. The strong four-way frequency address does not survive geometry alone: median-shared kinetics gives address rank 1.084 (1.760 after static branch-gain normalization), and sweeping each of the four original kinetic tuples uniformly across the 5/7/9/11 branches never raises raw address rank above 1.205 or gain-normalized rank above 1.878. By contrast, kinetic heterogeneity alone at equal branch length retains rank 4.000. Morphology still enriches the written operator family when kinetic diversity is present.",
   "order": 207,
   "reviewed_at": "2026-09-18",
   "nodes": [
@@ -11,8 +11,8 @@
       "family": "reduced-computational-matter",
       "status": "experiment",
       "claim": "Tests whether frequency can select resident modal/cable structure whose local persistent state rewrites the operator encountered by later packets, making addressed operator composition noncommutative after fast state has decayed.",
-      "survived": "v0 passes a reduced-resonator gate with address effective rank 3.443, written-operator rank 3.078, commutator ratio 0.564 and paired order/jitter ratio 3.374x. v1 re-embodies the mechanism in four heterogeneous quasi-active cable branches with compartment-local slow state and no explicit frequency-slot memory: address rank 3.977, written-operator rank 2.581, local material-write rank 2.904, commutator ratio 0.0612 and paired order/jitter ratio 3.602x; the full fast-state residual after settling is below 4.8e-6.",
-      "killed": "Order dependence alone is insufficient. A homogeneous-branch attacker retains a sizable order commutator while frequency-address rank collapses to 1.0. A global-scalar state attacker retains history but collapses the written operator family to about 1.12 effective dimensions. A frozen-operator attacker can accumulate slow material but produces zero operator rewrite and zero commutator. The cable and active parameters are synthetic and do not establish a biological dendrite mechanism or architecture advantage.",
+      "survived": "v0 passes a reduced-resonator gate with address effective rank 3.443, written-operator rank 3.078, commutator ratio 0.564 and paired order/jitter ratio 3.374x. v1 re-embodies the mechanism in four heterogeneous quasi-active cable branches with compartment-local slow state and no explicit frequency-slot memory: address rank 3.977, written-operator rank 2.581, local material-write rank 2.904, commutator ratio 0.0612 and paired order/jitter ratio 3.602x. v2 finds a sharper decomposition: equal-length branches retaining the original heterogeneous quasi-active kinetics preserve essentially four independent frequency addresses (rank 3.9999) and about 2.905 dimensions of material write; restoring morphology raises written-operator rank from 1.821 to 2.581.",
+      "killed": "Order dependence alone is insufficient. A homogeneous-branch attacker retains a sizable order commutator while frequency-address rank collapses to 1.0. A global-scalar state attacker retains history but collapses the written operator family to about 1.12 effective dimensions. A frozen-operator attacker can accumulate slow material but produces zero operator rewrite and zero commutator. v2 kills the stronger 'cable geometry carries the spectral address' reading for the tested interface: geometry-only rank is 1.084 with median shared kinetics, and across all four original kinetic tuples imposed uniformly the maximum raw rank is 1.205 and the maximum gain-normalized rank is 1.878. The cable and active parameters remain synthetic and do not establish a biological dendrite mechanism or architecture advantage.",
       "usefulness": "scientific",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/FrequencyAddressedState-dependentOperatorComposition./blob/main/README.md",
@@ -24,7 +24,9 @@
         "quasi-active-cable",
         "local-state",
         "operator-rewrite",
-        "attacker"
+        "attacker",
+        "geometry-vs-kinetics",
+        "negative-result"
       ],
       "era": "Compressed computational matter",
       "era_order": 25
@@ -76,7 +78,7 @@
     {
       "id": "addressed-noncommuting-operator-composition",
       "title": "Addressing becomes computationally stronger when the first event rewrites the operator seen by the second",
-      "description": "Frequency filtering, persistent memory and order dependence are each weaker than the combined object. The surviving condition is: different addresses excite different resident structure; the resulting local state causally changes the later operator; and compositions do not commute after fast transients have vanished. The frozen/global/homogeneous attackers show why every clause matters. This links FANMC's external stimulation language to NotSoSimpleNeuron's state-conditioned receiver, InformationFlow's spectral addressing, and Operaattori's substrate-generated operators.",
+      "description": "Frequency filtering, persistent memory and order dependence are each weaker than the combined object. The surviving condition is: different addresses excite different resident structure; the resulting local state causally changes the later operator; and compositions do not commute after fast transients have vanished. v2 sharpens what carries those clauses in the synthetic cable: quasi-active kinetic diversity carries the strong spectral address, while morphology enriches the dimensionality of the operator family written through that address. Geometry alone can remain path-dependent without becoming a useful multi-address system. This links FANMC's external stimulation language to NotSoSimpleNeuron's state-conditioned receiver, InformationFlow's spectral addressing, and Operaattori's substrate-generated operators.",
       "nodes": [
         "FrequencyAddressedState-dependentOperatorComposition",
         "FrequencyAddressedNonlinearModalCell",
