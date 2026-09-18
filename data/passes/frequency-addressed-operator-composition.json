@@ -1,7 +1,7 @@
 {
   "id": "frequency-addressed-operator-composition",
   "title": "Frequency-addressed state-dependent operator composition",
-  "summary": "This pass narrows the FANMC / NotSoSimpleNeuron thread to a stronger executable condition: an address must select resident structure, local persistent state must change the operator encountered by the next event, and A→B must differ from B→A after fast state has settled away. v0 isolates the mechanism in reduced resonators. v1 re-embodies it in heterogeneous quasi-active cable branches. v2 kills the strong 'cable length carries the spectral address' reading. v3 removes cable geometry entirely and shows a matched modal SSM can reproduce the gate. v4 then removes the supplied modal privilege: matched untrained dense Gaussian and orthogonal recurrences with persistent adaptation written in arbitrary visible unit coordinates fail to form a high-rank written-operator family. A same-fast-matrix rescue succeeds when slow write and feedback are aligned to the hidden modal coordinates. The surviving object is therefore not cable substrate or recurrence alone, but alignment between resident dynamical coordinates and the persistent state that rewrites the future operator.",
+  "summary": "This pass narrows the FANMC / NotSoSimpleNeuron thread to a stronger executable condition: an address must select resident structure, local persistent state must change the operator encountered by the next event, and A→B must differ from B→A after fast state has settled away. v0 isolates the mechanism in reduced resonators. v1 re-embodies it in heterogeneous quasi-active cable branches. v2 kills the strong 'cable length carries the spectral address' reading. v3 removes cable geometry entirely and shows a matched modal SSM can reproduce the gate. v4 then removes the supplied modal privilege: matched untrained dense Gaussian and orthogonal recurrences with persistent adaptation written in arbitrary visible unit coordinates fail to form a high-rank written-operator family. A same-fast-matrix rescue succeeds when slow write and feedback are aligned to the hidden modal coordinates. The surviving object is therefore not cable substrate or recurrence alone, but alignment between resident dynamical coordinates and the persistent state that rewrites the future operator. Older convergence is now explicit as well: DendriteAsIteratedFeedbackOperator already coupled frequency-selective physical dynamics to persistent operator write/replay; SelectCarryBindWriteAskSelect made stored medium directly become the later operator; GAx and ThirdWay treated computational identity as modal/continuation structure that credit must follow; and AnttisNeuron found basis reorientation more important than eigenvalue change in its strongest synthetic adaptive result. The present v4 result ties those older threads together by making alignment between resident dynamical coordinates and persistent rewrite the load-bearing object.",
   "order": 207,
   "reviewed_at": "2026-09-18",
   "nodes": [
@@ -32,7 +32,10 @@
         "modal-structure",
         "unstructured-recurrence",
         "adaptation-alignment",
-        "inductive-bias"
+        "inductive-bias",
+        "basis-alignment",
+        "computational-identity",
+        "stored-medium-as-operator"
       ],
       "era": "Compressed computational matter",
       "era_order": 25
@@ -78,20 +81,86 @@
       "confidence": "medium",
       "why": "ArtificialCortex previously treated space, frequency and phase as coordinates of resident dynamical tissue. The new repository turns that broad architectural intuition into a much narrower controlled operator-composition experiment.",
       "evidence": "https://github.com/anttiluode/FrequencyAddressedState-dependentOperatorComposition/blob/main/README.md"
+    },
+    {
+      "source": "DendriteAsIteratedFeedbackOperator",
+      "target": "FrequencyAddressedState-dependentOperatorComposition",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "DendriteAsIteratedFeedbackOperator already closed a PURIFY -> COMMIT -> RETURN -> WRITE -> REPLAY loop in which frequency-dependent physical dynamics select a mode and local consequence persistently changes the operator encountered later. The current repository strips that older dendritic construction down to the coordinate-aligned operator-rewrite mechanism and tests noncommuting composition directly.",
+      "evidence": "https://github.com/anttiluode/DendriteAsIteratedFeedbackOperator/blob/main/README.md"
+    },
+    {
+      "source": "GAx",
+      "target": "FrequencyAddressedState-dependentOperatorComposition",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "GAx treats computation as persistent modal families whose relative gain changes with context rather than as one averaged mechanism. The current repository supplies a complementary dynamical result: those resident computational coordinates become useful writable addresses only when persistent state is aligned with the modes being selected and rewritten.",
+      "evidence": "https://github.com/anttiluode/GAx/blob/main/README.md"
+    },
+    {
+      "source": "ThirdWay",
+      "target": "FrequencyAddressedState-dependentOperatorComposition",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "ThirdWay makes computational identity a continuation that can move through coordinates and shows that delayed credit must be transported with that identity rather than left in stale coordinates. v4 reaches the same structural constraint from a different experiment: adaptation written in arbitrary visible coordinates fails, while adaptation aligned to resident modal coordinates restores the operator family.",
+      "evidence": "https://github.com/anttiluode/ThirdWay/blob/main/README.md"
+    },
+    {
+      "source": "AnttisNeuron",
+      "target": "FrequencyAddressedState-dependentOperatorComposition",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "AnttisNeuron Gate 5B found that most of its synthetic adaptive gain followed reorientation of the physical basis rather than eigenvalue/time-scale changes alone. The current repository sharpens that older clue by isolating basis alignment between resident dynamics and persistent rewrite as the causal difference in a same-fast-matrix control.",
+      "evidence": "https://github.com/anttiluode/AnttisNeuron/blob/main/README.md"
+    },
+    {
+      "source": "SelectCarryBindWriteAskSelect",
+      "target": "FrequencyAddressedState-dependentOperatorComposition",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "SelectCarryBindWriteAskSelect removes the transducer between stored field memory and later computation: the slow collision field itself changes a later cue trajectory. The current repository expresses the same abstract move without a fluid substrate, then adds explicit address rank, written-operator rank and noncommuting composition tests.",
+      "evidence": "https://github.com/anttiluode/SelectCarryBindWriteAskSelect/blob/main/README.md"
     }
   ],
   "motifs": [
     {
       "id": "addressed-noncommuting-operator-composition",
       "title": "Addressing becomes computationally stronger when the first event rewrites the operator seen by the second",
-      "description": "Frequency filtering, persistent memory and order dependence are each weaker than the combined object. The surviving condition is: different addresses excite different resident structure; the resulting persistent state causally changes the later operator; and compositions do not commute after fast transients vanish. v2 shows cable length is not enough; v3 shows cable substrate is not required; v4 shows generic dense recurrence is still not enough when persistent adaptation is written in arbitrary unit coordinates. A same-fast-matrix rescue recovers the operator family when slow write and feedback are aligned to resident modal coordinates. The current substrate-independent hypothesis is therefore coordinate alignment between useful resident dynamics and the state that rewrites them. The next boundary is whether learning can discover that alignment rather than having it supplied.",
+      "description": "Frequency filtering, persistent memory and order dependence are each weaker than the combined object. The surviving condition is: different addresses excite different resident structure; the resulting persistent state causally changes the later operator; and compositions do not commute after fast transients vanish. v2 shows cable length is not enough; v3 shows cable substrate is not required; v4 shows generic dense recurrence is still not enough when persistent adaptation is written in arbitrary unit coordinates. A same-fast-matrix rescue recovers the operator family when slow write and feedback are aligned to resident modal coordinates. The current substrate-independent hypothesis is therefore coordinate alignment between useful resident dynamics and the state that rewrites them. The next boundary is whether learning can discover that alignment rather than having it supplied. The older genealogy now makes two precursor patterns explicit: persistent material can itself become the later operator, and learning/credit is most useful when it follows identifiable computational coordinates rather than arbitrary storage coordinates.",
       "nodes": [
         "FrequencyAddressedState-dependentOperatorComposition",
         "FrequencyAddressedNonlinearModalCell",
         "NotSoSimpleNeuron",
         "InformationFlow",
         "Operaattori",
-        "ArtificialCortex"
+        "ArtificialCortex",
+        "DendriteAsIteratedFeedbackOperator",
+        "GAx",
+        "ThirdWay",
+        "AnttisNeuron",
+        "SelectCarryBindWriteAskSelect"
+      ]
+    },
+    {
+      "id": "write-must-follow-computational-coordinates",
+      "title": "Persistent write must follow the coordinates of the computation it is meant to preserve or change",
+      "description": "GAx keeps distinct computational families as modal structure instead of averaging them. ThirdWay then makes identity and delayed credit follow computational continuation rather than fixed coordinates. AnttisNeuron finds that basis reorientation carries most of its strongest adaptive synthetic effect. FrequencyAddressedState-dependentOperatorComposition v4 closes the loop with a same-fast-matrix control: visible-coordinate adaptation leaves a weak operator family, while modal-aligned adaptation restores high-rank addressed operator rewrite. These are different experiments, but together they isolate coordinate alignment as a recurring architectural object.",
+      "nodes": [
+        "GAx",
+        "ThirdWay",
+        "AnttisNeuron",
+        "FrequencyAddressedState-dependentOperatorComposition"
+      ]
+    },
+    {
+      "id": "stored-medium-becomes-later-operator",
+      "title": "A persistent trace becomes stronger when it is the later operator, not merely a stored label",
+      "description": "DendriteAsIteratedFeedbackOperator lets frequency-selected physical activity write the operator that will later be replayed. SelectCarryBindWriteAskSelect makes the stored slow fluid field directly alter a later cue trajectory. FrequencyAddressedState-dependentOperatorComposition removes the specific dendrite/fluid substrates and asks the common abstract question directly: does addressed persistent state causally rewrite the later operator, and do those rewritten operators compose in an order-dependent way after fast state has vanished?",
+      "nodes": [
+        "DendriteAsIteratedFeedbackOperator",
+        "SelectCarryBindWriteAskSelect",
+        "FrequencyAddressedState-dependentOperatorComposition"
       ]
     }
   ]
