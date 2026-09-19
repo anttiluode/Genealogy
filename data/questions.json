@@ -346,7 +346,8 @@
       "wtla-practical-p1-selection-survives-actuation-fails",
       "wtla-practical-p2-global-state-mask",
       "wtla-practical-p3-hard-tiling-fails",
-      "wtla-practical-p4-deepcache-frontier"
+      "wtla-practical-p4-deepcache-frontier",
+      "wtla-sdxl-stage-profile"
     ],
     "competing_explanations": [
       "The useful mechanism is genuinely local: cheap evidence identifies where the next denoising work matters, and the UNet can be evaluated only on those latent regions plus enough halo to preserve the full-frame update.",
@@ -357,20 +358,21 @@
       "P1 shows the selector itself survives: edge-selected 4/16 tiles contain 43.51% of correction energy versus 24.31% for random.",
       "P2 restores global-state semantics and passes: edge masks recover 30.87% versus 17.30% for random, win 9/9 cases, and full-mask parity is exact.",
       "P3 tests actual sparse spatial U-Net execution and fails on validation. Halo 0/4/8 edge recovery is -27.54%/-14.36%/-7.82%, and all three routes are slower than the ordinary full-frame teacher. Halo 8 already has 100% of the full-frame naive spatial-element count, so simply increasing crop context does not restore the P2 semantics.",
-      "P4 reproduces DeepCache on the short Turbo route. All tested cache branches are faster (~1.15–1.17× stage speedup), proving that the clock can see reused U-Net work, but the best-quality branch reaches only 72.20% mean recovery with 25.83 dB minimum PSNR and no branch meets the preregistered 80% / 28 dB frontier."
+      "P4 reproduces DeepCache on the short Turbo route. All tested cache branches are faster (~1.15–1.17× stage speedup), proving that the clock can see reused U-Net work, but the best-quality branch reaches only 72.20% mean recovery with 25.83 dB minimum PSNR and no branch meets the preregistered 80% / 28 dB frontier.",
+      "The final component profile shows VAE encode+decode is 445.39 ms / 58.36% of a 763.11 ms stage, while both U-Net calls together are 238.36 ms / 31.24%. This is the systems reason routing the U-Net could not dominate end-to-end speed at this scale."
     ],
-    "missing_discriminator": "At 512×512 with a four-step SDXL-Turbo continuation, both hard spatial sparsity and tested feature caching have failed the quality-preserving speed frontier. One final component profile will measure whether VAE encode/decode dominates enough to justify a trivial engineering substitution; otherwise the original routing idea should move to high-resolution tiled refinement, streaming/video, or physical sensing where omission removes whole expensive operations.",
+    "missing_discriminator": "Only one 512×512 engineering baseline remains: replace the measured VAE bottleneck with established SDXL-compatible alternatives and test whether the latency saving preserves the standard-VAE output frontier. This does not reopen the routing mechanism search.",
     "candidate_experiment": {
-      "design": "Profile the ordinary four-step stage with CUDA events around both text encoders, VAE encode, each U-Net forward and VAE decode. Record residual wall time. Do not tune another routing algorithm at 512×512.",
-      "cost": "one short RTX-3060 profiling run over the existing 3 prompts × 3 seeds",
+      "design": "Benchmark madebyollin/sdxl-vae-fp16-fix and madebyollin/taesdxl under fixed prompt/base/scheduler/noise/UNet conditions. Seeds 100/101 select the fastest candidate meeting recovery/layout/edge/speed thresholds; seed 102 is held out. Close the 512px Turbo branch regardless of outcome.",
+      "cost": "one RTX-3060 run over the same 3 prompts × 3 seeds and two VAE alternatives",
       "outcomes": [
         {
-          "if": "VAE encode+decode dominates the stage",
-          "then": "Benchmark a known SDXL-compatible tiny/fp16 VAE as an engineering baseline, then close the 512px route."
+          "if": "A VAE alternative passes the fixed quality/speed frontier on held-out seed 102",
+          "then": "Adopt it as an engineering default for this route, but do not attribute the gain to WhatToLookAt."
         },
         {
-          "if": "The U-Net remains the dominant cost",
-          "then": "Close the 512px Turbo speed branch without another cache/tile gate and move WhatToLookAt to a regime where skipping deletes entire expensive operations."
+          "if": "Neither alternative passes",
+          "then": "Keep the standard VAE for fidelity and close 512px Turbo speed work completely."
         }
       ]
     },
@@ -379,7 +381,8 @@
       "A speed claim is not attached to P2; it is reserved for P3 or later.",
       "P3 rules out the most literal spatial-compressed-compute implementation: sparse authority does not imply that the U-Net itself can be cut into independent spatial crops.",
       "P4 uses DeepCache as prior art/reproduction, not as a WhatToLookAt novelty claim.",
-      "P4 corrects a too-strong P3 timing interpretation: U-Net feature reuse does reduce measured stage time by roughly 0.10–0.11 s, but the savings come with too much output drift to pass the declared frontier."
+      "P4 corrects a too-strong P3 timing interpretation: U-Net feature reuse does reduce measured stage time by roughly 0.10–0.11 s, but the savings come with too much output drift to pass the declared frontier.",
+      "The profile confirms Claude's qualitative VAE-bottleneck hypothesis, but now with direct component timing rather than inference from warnings or route latency."
     ]
   }
 ]
