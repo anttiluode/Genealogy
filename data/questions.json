@@ -345,7 +345,8 @@
       "wtla-practical-p0-crop-routing-fails",
       "wtla-practical-p1-selection-survives-actuation-fails",
       "wtla-practical-p2-global-state-mask",
-      "wtla-practical-p3-hard-tiling-fails"
+      "wtla-practical-p3-hard-tiling-fails",
+      "wtla-practical-p4-deepcache-frontier"
     ],
     "competing_explanations": [
       "The useful mechanism is genuinely local: cheap evidence identifies where the next denoising work matters, and the UNet can be evaluated only on those latent regions plus enough halo to preserve the full-frame update.",
@@ -355,20 +356,21 @@
       "P0 kills independent crop diffusion as the actuator: edge routing is both farther from the full-frame teacher and slower.",
       "P1 shows the selector itself survives: edge-selected 4/16 tiles contain 43.51% of correction energy versus 24.31% for random.",
       "P2 restores global-state semantics and passes: edge masks recover 30.87% versus 17.30% for random, win 9/9 cases, and full-mask parity is exact.",
-      "P3 tests actual sparse spatial U-Net execution and fails on validation. Halo 0/4/8 edge recovery is -27.54%/-14.36%/-7.82%, and all three routes are slower than the ordinary full-frame teacher. Halo 8 already has 100% of the full-frame naive spatial-element count, so simply increasing crop context does not restore the P2 semantics."
+      "P3 tests actual sparse spatial U-Net execution and fails on validation. Halo 0/4/8 edge recovery is -27.54%/-14.36%/-7.82%, and all three routes are slower than the ordinary full-frame teacher. Halo 8 already has 100% of the full-frame naive spatial-element count, so simply increasing crop context does not restore the P2 semantics.",
+      "P4 reproduces DeepCache on the short Turbo route. All tested cache branches are faster (~1.15–1.17× stage speedup), proving that the clock can see reused U-Net work, but the best-quality branch reaches only 72.20% mean recovery with 25.83 dB minimum PSNR and no branch meets the preregistered 80% / 28 dB frontier."
     ],
-    "missing_discriminator": "Hard spatial splitting is now rejected for this route. The next discriminator is whether temporal/depth feature reuse can preserve the global frame and still reduce measured wall time on the short SDXL-Turbo continuation.",
+    "missing_discriminator": "At 512×512 with a four-step SDXL-Turbo continuation, both hard spatial sparsity and tested feature caching have failed the quality-preserving speed frontier. One final component profile will measure whether VAE encode/decode dominates enough to justify a trivial engineering substitution; otherwise the original routing idea should move to high-resolution tiled refinement, streaming/video, or physical sensing where omission removes whole expensive operations.",
     "candidate_experiment": {
-      "design": "P4 reproduces established DeepCache on the exact P2/P3 SDXL-Turbo img2img continuation. With cache_interval=2, test cache_branch_id 0/1/2. Seeds 100/101 select the fastest candidate satisfying mean recovery >=80%, minimum PSNR >=28 dB and mean stage speedup >=1.10x; seed 102 is held out.",
-      "cost": "one RTX-3060 run over the same 3 prompts × 3 seeds; three cache branches per case",
+      "design": "Profile the ordinary four-step stage with CUDA events around both text encoders, VAE encode, each U-Net forward and VAE decode. Record residual wall time. Do not tune another routing algorithm at 512×512.",
+      "cost": "one short RTX-3060 profiling run over the existing 3 prompts × 3 seeds",
       "outcomes": [
         {
-          "if": "A validation-selected cache branch preserves the quality frontier and remains >=1.10x faster on held-out seed 102",
-          "then": "Feature caching becomes the practical acceleration substrate; the next original WhatToLookAt test is whether cheap evidence can choose cache refresh aggressiveness dynamically."
+          "if": "VAE encode+decode dominates the stage",
+          "then": "Benchmark a known SDXL-compatible tiny/fp16 VAE as an engineering baseline, then close the 512px route."
         },
         {
-          "if": "No branch earns both quality and speed",
-          "then": "This short Turbo trajectory has too little exploitable temporal redundancy for the tested cache scheme; retain P2 as a compute-localization result without an acceleration claim."
+          "if": "The U-Net remains the dominant cost",
+          "then": "Close the 512px Turbo speed branch without another cache/tile gate and move WhatToLookAt to a regime where skipping deletes entire expensive operations."
         }
       ]
     },
@@ -376,7 +378,8 @@
       "This practical branch is deliberately separate from the synthetic Gate 0–8 measurement experiments.",
       "A speed claim is not attached to P2; it is reserved for P3 or later.",
       "P3 rules out the most literal spatial-compressed-compute implementation: sparse authority does not imply that the U-Net itself can be cut into independent spatial crops.",
-      "P4 uses DeepCache as prior art/reproduction, not as a WhatToLookAt novelty claim."
+      "P4 uses DeepCache as prior art/reproduction, not as a WhatToLookAt novelty claim.",
+      "P4 corrects a too-strong P3 timing interpretation: U-Net feature reuse does reduce measured stage time by roughly 0.10–0.11 s, but the savings come with too much output drift to pass the declared frontier."
     ]
   }
 ]
