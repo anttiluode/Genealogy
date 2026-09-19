@@ -281,13 +281,14 @@
   {
     "id": "sparse-measurement-price",
     "title": "How sparse can the cheap sensing operator become before compute savings are erased by the extra measurements required to detect relation failure?",
-    "state": "open",
+    "state": "partially-resolved",
     "motifs": [
       "bounded-observation",
       "information-needs-an-observable"
     ],
     "evidence": [
-      "wtla-gate4-residual-audited-relation"
+      "wtla-gate4-residual-audited-relation",
+      "wtla-gate5-price-of-sparse-measurements"
     ],
     "competing_explanations": [
       "Sparse measurement rows preserve enough random overlap with local innovations that modestly more guide samples retain the adaptive sensing advantage while greatly reducing multiply/add or sensor-mixing cost.",
@@ -295,9 +296,11 @@
     ],
     "known": [
       "Gate 4 uses eight dense random projections of all 192 high-resolution coordinates per patch and can localize sparse strong innovations almost perfectly.",
-      "The uploaded compressed-sensing literature explicitly identifies a price of measurement sparsity: sparse rows reduce storage/computation but can require additional samples for reliable sparse recovery."
+      "The uploaded compressed-sensing literature explicitly identifies a price of measurement sparsity: sparse rows reduce storage/computation but can require additional samples for reliable sparse recovery.",
+      "Gate 5 runs the proposed row-support × guide-row sweep. Support-1 rows reach only 60% minimum end-to-end validation success and support-2 reaches 92.5% even at 64 guide rows, showing a real price for extreme measurement sparsity.",
+      "A moderate support-64, four-row guide uses the same 64 guide scalar samples as the selected dense support-192 guide but 4096 versus 12288 coordinate touches, while retaining 98.75–100% held-out success across the tested innovation levels."
     ],
-    "missing_discriminator": "A matched sweep over measurement-row support d and guide sample count m, with sparse high-resolution innovations, reporting both detection/reconstruction quality and the physical/compute costs m and m*d.",
+    "missing_discriminator": "Gate 5 resolves the designed-sparse-sensor trade-off in the synthetic world. The remaining discriminator is whether similar savings survive post-hoc sparsification of an originally dense measurement operator, where the observation was generated densely but downstream estimation is forced to use a sparsified operator.",
     "candidate_experiment": {
       "design": "Replace Gate 4's dense guide projection with random rows that touch only d of 192 high-resolution coordinates. Use sparse local innovations so rows can genuinely miss the changed support. Sweep d and m, calibrate the residual threshold on training worlds, and measure held-out relation-failure detection plus end-to-end adaptive reconstruction. Report the smallest m that reaches a fixed quality target at each d and its row-touch cost m*d.",
       "cost": "small: synthetic linear sensing sweep over roughly 7-9 row sparsities, 5-7 guide sample counts, and 50-100 train/validation/test worlds",
@@ -313,7 +316,8 @@
       ]
     },
     "notes": [
-      "This is a cost-quality phase diagram, not a claim that the asymptotic thresholds of any one compressed-sensing paper apply directly to the synthetic image world."
+      "This is a cost-quality phase diagram, not a claim that the asymptotic thresholds of any one compressed-sensing paper apply directly to the synthetic image world.",
+      "Partially resolved: the designed sparse-measurement price curve is now measured; post-hoc sparsification and natural signals remain open."
     ]
   }
 ]
