@@ -106,7 +106,7 @@
     "information-needs-an-observable": "supports"
   },
   "wtla-practical-p0-crop-routing-fails": {
-    "bounded-observation": "contradicts",
+    "bounded-observation": "limits",
     "information-needs-an-observable": "supports"
   },
   "wtla-practical-p1-selection-survives-actuation-fails": {
