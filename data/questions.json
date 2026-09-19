@@ -410,30 +410,32 @@
     "known": [
       "At 512px, edge energy consistently localizes future refinement activity, but sparse execution inside a globally coupled U-Net does not convert that information into speed.",
       "The fp16-fix VAE is the earned engineering default for the tile calls, reducing per-call stage cost without changing the routing question.",
-      "An independent-tile workload removes the P0/P3 actuator problem: the all-tile teacher itself consists of independent calls, so skipping a tile deletes exactly one operation."
+      "An independent-tile workload removes the P0/P3 actuator problem: the all-tile teacher itself consists of independent calls, so skipping a tile deletes exactly one operation.",
+      "The first H0 implementation is invalidated before scoring: sixteen non-overlapping 512px refinements were pasted edge-to-edge, and the all-tile reference itself showed visible block seams. Agreement with that teacher would not establish coherent high-resolution quality."
     ],
-    "missing_discriminator": "Measure whether edge-selected 4/16 or 8/16 tile budgets retain at least 80% of all-tile correction, beat matched random selection by at least 10 percentage points, preserve layout/edge metrics, and yield at least 1.75× measured call-level speedup on held-out seed 102.",
+    "missing_discriminator": "Use an overlap-blended teacher rather than a hard-paste teacher. H0b uses 25 overlapping 512px calls (128px overlap, 384px stride) whose cosine feather windows form a partition of unity. A selective route starts from the smooth base and adds only selected feathered corrections.",
     "candidate_experiment": {
-      "design": "H0 generates reproducible photographic scenes, upscales them to 2048×2048, refines all sixteen 512px tiles independently, then evaluates edge-selected 4/16, 8/16 and diagnostic 12/16 budgets against 64 random matched-budget draws and an oracle correction-energy ceiling. Seeds 100/101 select the smallest eligible budget; seed 102 is held out.",
-      "cost": "16 four-step 512px tile calls per case × 9 cases, plus cheap CPU selection analysis",
+      "design": "H0b: 2048×2048 output, 5×5 independent 512px img2img calls with 128px overlap and cosine feathering. Test edge-selected 6/25 and 12/25 claim-eligible budgets plus diagnostic 18/25. Compare with 64 random matched-budget subsets and a teacher-aware greedy recovery reference. Add an explicit teacher-seam validity control; seeds 100/101 select, seed 102 is held out.",
+      "cost": "25 four-step 512px tile calls per case × 9 cases, plus CPU overlap assembly and exact Gram-matrix subset scoring",
       "outcomes": [
         {
-          "if": "4/16 or 8/16 passes validation and held-out",
-          "then": "Proceed to H1 on real natural photographs with the selected budget frozen."
+          "if": "6/25 or 12/25 passes validation and held-out recovery/layout/edge/random-margin/speed criteria and the teacher seam ratio remains <=2.0",
+          "then": "Proceed to H1 on real natural photographs with the selected overlap-blended budget frozen."
         },
         {
-          "if": "Only 12/16 looks acceptable",
-          "then": "Treat the branch as economically negative because skipping only 25% is below the practical target."
+          "if": "The overlap-blended teacher itself fails the seam validity control",
+          "then": "Invalidate the tiled-image route again; do not score routing performance against a visibly incoherent reference."
         },
         {
-          "if": "No budget preserves quality",
-          "then": "Stop high-resolution image routing and move to streaming/video or physical sensing."
+          "if": "Only 18/25 is acceptable or no eligible budget passes",
+          "then": "Stop the high-resolution image branch and move to streaming/video or physical sensing."
         }
       ]
     },
     "notes": [
       "H0 is intentionally generated-photo evidence only; it cannot establish performance on arbitrary real images.",
-      "Timing is measured per independent tile call; selective route time is the sum of the actual selected calls plus selector CPU time."
+      "Timing is measured per independent tile call; selective route time is the sum of the actual selected calls plus selector CPU time.",
+      "The hard-paste H0 screenshot was itself the attacker: visual inspection falsified the reference construction before any numeric result was allowed to count."
     ]
   }
 ]
