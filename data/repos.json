@@ -1521,7 +1521,7 @@
     "name": "FrequencyAddressedState-dependentOperatorComposition",
     "url": "https://github.com/anttiluode/FrequencyAddressedState-dependentOperatorComposition",
     "default_branch": "main",
-    "size": 78,
+    "size": 109,
     "visibility": "public",
     "description": "Sol thinking repo. ",
     "created_at": "2026-09-18T06:38:47Z",
@@ -1631,11 +1631,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 614,
+    "size": 655,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-09-18T09:14:40Z",
+    "updated_at": "2026-09-19T03:27:15Z",
     "inventory_status": "unread"
   },
   {
@@ -3366,6 +3366,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "SighImageFactorization",
+    "url": "https://github.com/anttiluode/SighImageFactorization",
+    "default_branch": "main",
+    "size": 328,
+    "visibility": "public",
+    "description": "Sol thinking of the sigh image lineage further. ",
+    "created_at": "2026-09-18T14:22:25Z",
+    "updated_at": "2026-09-19T02:59:52Z",
+    "inventory_status": "unread"
+  },
+  {
     "name": "SighImageSuper",
     "url": "https://github.com/anttiluode/SighImageSuper",
     "default_branch": "main",
@@ -3374,6 +3385,17 @@
     "description": "Le Sigh Image Super has arrived. Sol thinking repo. ",
     "created_at": "2026-09-07T13:40:55Z",
     "updated_at": "2026-09-08T04:12:57Z",
+    "inventory_status": "unread"
+  },
+  {
+    "name": "Sihti",
+    "url": "https://github.com/anttiluode/Sihti",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Take an image apart by purifying it, keep what bleeds out at each depth, sum it back exactly. Which operator purifies decides where the objects go: with the image's own edge-aware graph, the layout survives in the core and the texture bleeds into the residues. Live instrument + BSDS500 gates.",
+    "created_at": "2026-09-19T02:56:37Z",
+    "updated_at": "2026-09-19T02:59:08Z",
     "inventory_status": "unread"
   },
   {
@@ -3946,6 +3968,17 @@
     "description": "A perception lab native (other than the server) distributed holographic spiking substrate — geometric neurons that recall, grow, tire, read the arrow of time, and federate across machines with nothing but tokens",
     "created_at": "2026-06-13T05:50:54Z",
     "updated_at": "2026-06-16T05:15:02Z",
+    "inventory_status": "unread"
+  },
+  {
+    "name": "TheoryLab",
+    "url": "https://github.com/anttiluode/TheoryLab",
+    "default_branch": "main",
+    "size": 168,
+    "visibility": "public",
+    "description": "Sol thinking repo. ",
+    "created_at": "2026-09-18T09:33:04Z",
+    "updated_at": "2026-09-18T12:39:20Z",
     "inventory_status": "unread"
   },
   {
