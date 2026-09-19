@@ -6,28 +6,6 @@
   "reviewed_at": "2026-09-19",
   "nodes": [
     {
-      "id": "SighImageSuper",
-      "url": "https://github.com/anttiluode/SighImageSuper",
-      "family": "residue-operator",
-      "status": "ledger",
-      "claim": "Recursive image/operator laboratory where repeated application assigns forgetting times, exposes transient/travelling/structural memory, and makes observability depend on the available probe/readout geometry.",
-      "survived": "Persistence is operator-dependent; history may live in lingering state, travelling state or changed material; a distinction can exist yet remain invisible to the wrong question.",
-      "killed": "The endpoint/checkerboard is not the interesting memory by itself, and apparent late spectral re-expansion can be a float16 quantization artifact rather than new dynamics.",
-      "usefulness": "scientific",
-      "confidence": "high",
-      "evidence": "https://github.com/anttiluode/SighImageSuper/blob/main/README.md",
-      "tags": [
-        "residue",
-        "persistence",
-        "observability",
-        "recursive-operator",
-        "transient",
-        "structural-memory"
-      ],
-      "era": "Residue sieve / history-written operator",
-      "era_order": 26
-    },
-    {
       "id": "Sihti",
       "url": "https://github.com/anttiluode/Sihti",
       "family": "residue-operator",
