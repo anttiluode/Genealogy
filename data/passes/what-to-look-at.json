@@ -1,7 +1,7 @@
 {
   "id": "what-to-look-at",
   "title": "WhatToLookAt: learned relations become a sensing budget",
-  "summary": "WhatToLookAt takes the history-written relation machinery from SighImageFactorization and asks a compressed-sensing-style engineering question: if experience has already learned useful structure, how many future physical observations can be omitted? Gates 0–2 establish the relation-to-budget mechanism, Gate 3 derives local confidence from a charged low-resolution image channel, and Gate 4 weakens exact relation equality into a falsifiable compression hypothesis audited by a cheap current residual. The branch keeps the Sigh/Sihti operator framing but changes the currency from segmentation or relation authority to the minimum measurement cost required to maintain reconstruction quality.",
+  "summary": "WhatToLookAt takes the history-written relation machinery from SighImageFactorization and asks a compressed-sensing-style engineering question: if experience has already learned useful structure, how many future physical observations can be omitted? Gates 0–4 turn learned relations into an explicit adaptive sensing budget and then into a falsifiable compression hypothesis. Gate 5 attacks the sensing operator itself: sparse measurement rows reduce fan-in/mixing work but may require more rows because sparse innovations can fall entirely outside the observed support.",
   "order": 209,
   "reviewed_at": "2026-09-19",
   "nodes": [
@@ -11,8 +11,8 @@
       "family": "active-sensing",
       "status": "active",
       "claim": "Learns persistent relations from past temporal structure and uses them as a prior for future sparse sensing; local relation uncertainty withdraws sharing authority and purchases extra measurements only where confidence is low.",
-      "survived": "A correct relation partition can replace measurements; common-fate history can learn that partition before a rearranged future is undersampled; image-derived match confidence localizes where expensive sensing is needed; and a cheap residual projection can audit when an approximate relation has stopped predicting high-resolution content, keeping the adaptive cost curve close to an oracle residual policy.",
-      "killed": "Spatial, shuffled-relation, time-shuffled-history and coordinate-memory controls do not recover the same savings; blind trust collapses under wrong correspondence; matched-cost shuffled confidence fails; fixed one-per-relation sensing collapses under local content innovation; and equal-cost random extra reads do not substitute for residual-localized sensing.",
+      "survived": "Learned relations can replace future observations in controlled worlds; charged image-derived confidence and current residuals localize when extra sensing is needed; and Gate 5 measures a nontrivial sparse-measurement frontier where moderate row sparsity preserves held-out quality while reducing guide coordinate-touch cost relative to a dense guide.",
+      "killed": "Blind trust, shuffled confidence, coordinate memory and equal-cost random extra reads fail their matched controls. Gate 5 also kills the idea that arbitrarily sparse measurement rows are a free optimization: support-1 and support-2 rows do not meet the 95% end-to-end validation target even with 64 guide rows in the tested sparse-innovation world.",
       "usefulness": "scientific",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/WhatToLookAt/blob/main/README.md",
