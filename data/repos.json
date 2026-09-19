@@ -1631,11 +1631,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 787,
+    "size": 534,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-09-19T07:50:58Z",
+    "updated_at": "2026-09-19T13:02:14Z",
     "inventory_status": "unread"
   },
   {
@@ -4370,11 +4370,11 @@
     "name": "WhatToLookAt",
     "url": "https://github.com/anttiluode/WhatToLookAt",
     "default_branch": "main",
-    "size": 18828,
+    "size": 61733,
     "visibility": "public",
     "description": "Sol thinking repo. ",
     "created_at": "2026-09-19T03:51:31Z",
-    "updated_at": "2026-09-19T07:50:54Z",
+    "updated_at": "2026-09-19T13:02:11Z",
     "inventory_status": "unread"
   },
   {
