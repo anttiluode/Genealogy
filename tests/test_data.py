@@ -126,5 +126,25 @@ class AtlasDataTests(unittest.TestCase):
         self.assertIn("storage itself does nothing", memory["survived"].lower())
         self.assertIn("no recurrence", memory["killed"].lower())
 
+
+    def test_sigh_and_adaptive_sensing_line_is_on_the_wall(self):
+        atlas = load_atlas(ROOT)
+        ids = {node["id"] for node in atlas["nodes"]}
+        for node_id in ("SighImageSuper", "Sihti", "SighImageFactorization", "WhatToLookAt"):
+            self.assertIn(node_id, ids)
+        edges = {(edge["source"], edge["target"], edge["type"]): edge for edge in atlas["edges"]}
+        self.assertIn(("SighImageSuper", "Sihti", "inherits"), edges)
+        self.assertIn(("SighImageSuper", "SighImageFactorization", "forks"), edges)
+        self.assertIn(("SighImageFactorization", "WhatToLookAt", "inherits"), edges)
+        self.assertIn(("Sihti", "WhatToLookAt", "converges"), edges)
+        self.assertIn(("AnotherOddThing", "WhatToLookAt", "converges"), edges)
+        self.assertIn(("ReadWrite", "WhatToLookAt", "converges"), edges)
+        motifs = {motif["id"]: motif for motif in atlas["motifs"]}
+        self.assertIn("memory-guides-next-observation", motifs)
+        self.assertEqual(
+            set(motifs["memory-guides-next-observation"]["nodes"]),
+            {"SighImageFactorization", "ReadWrite", "AnotherOddThing", "WhatToLookAt"},
+        )
+
 if __name__ == "__main__":
     unittest.main()
