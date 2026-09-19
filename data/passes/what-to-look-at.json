@@ -1,0 +1,51 @@
+{
+  "id": "what-to-look-at",
+  "title": "WhatToLookAt: learned relations become a sensing budget",
+  "summary": "WhatToLookAt takes the history-written relation machinery from SighImageFactorization and asks a compressed-sensing-style engineering question: if experience has already learned useful structure, how many future physical observations can be omitted? Gate 0 establishes an oracle upper bound, Gate 1 earns the relation from ordered common-fate history and spends it on a spatially rearranged future, and Gate 2 turns local correspondence confidence into a local sensing budget. The branch keeps the Sigh/Sihti operator framing but changes the currency from segmentation or relation authority to the minimum measurement cost required to maintain reconstruction quality.",
+  "order": 209,
+  "reviewed_at": "2026-09-19",
+  "nodes": [
+    {
+      "id": "WhatToLookAt",
+      "url": "https://github.com/anttiluode/WhatToLookAt",
+      "family": "active-sensing",
+      "status": "active",
+      "claim": "Learns persistent relations from past temporal structure and uses them as a prior for future sparse sensing; local relation uncertainty withdraws sharing authority and purchases extra measurements only where confidence is low.",
+      "survived": "A correct relation partition can replace measurements in a piecewise-constant world; common-fate history can learn that partition before a rearranged future is undersampled; confidence-adaptive sensing stays near the oracle cost curve while blind trust and shuffled-confidence controls fail.",
+      "killed": "A spatial lattice, a size-matched shuffled relation graph, time-shuffled motion history, and absolute-coordinate memory do not recover the same measurement savings; spending the same number of extra measurements at the wrong uncertain locations does not rescue reconstruction.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/WhatToLookAt/blob/main/README.md",
+      "tags": [
+        "compressed-sensing",
+        "active-sensing",
+        "common-fate",
+        "relation-prior",
+        "measurement-budget",
+        "uncertainty",
+        "operator-update"
+      ],
+      "era": "Learned structure / adaptive observation",
+      "era_order": 27
+    }
+  ],
+  "edges": [
+    {
+      "source": "SighImageFactorization",
+      "target": "WhatToLookAt",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "WhatToLookAt explicitly states that it pushes the compressed-sensing question into the SighImageFactorization/Sihti lineage and operationalizes SighImageFactorization's learned relation state as a prior that can reduce future sensing.",
+      "evidence": "https://github.com/anttiluode/WhatToLookAt/blob/main/README.md"
+    },
+    {
+      "source": "Sihti",
+      "target": "WhatToLookAt",
+      "type": "converges",
+      "confidence": "high",
+      "why": "WhatToLookAt explicitly names Sihti in its lineage and carries forward the operator-dependent-structure framing, but does not claim Sihti code inheritance; the new currency is measurement cost rather than residue location.",
+      "evidence": "https://github.com/anttiluode/WhatToLookAt/blob/main/README.md"
+    }
+  ],
+  "motifs": []
+}

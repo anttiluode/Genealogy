@@ -231,5 +231,46 @@
     "notes": [
       "This asks when a previously valid interpretation should lose causal authority; it does not assume motion surprise is a universal predictor."
     ]
+  },
+  {
+    "id": "learned-relation-sensing-generalization",
+    "title": "Does learned relational structure still save measurements when correspondence confidence must come from image evidence rather than a synthetic tracker?",
+    "state": "open",
+    "motifs": [
+      "bounded-observation",
+      "operator-update"
+    ],
+    "evidence": [
+      "wtla-gate0-relation-budget",
+      "wtla-gate1-history-earned-budget",
+      "wtla-gate2-local-uncertainty-budget"
+    ],
+    "competing_explanations": [
+      "The Gate-0→2 savings reflect a reusable mechanism: image-derived correspondence confidence can localize uncertainty and selectively increase sensing while preserving low budget elsewhere.",
+      "The savings depend on privileged patch identity and synthetic confidence; once correspondence must be inferred from ambiguous images, the relation prior becomes too brittle or the sensing overhead erases the advantage."
+    ],
+    "known": [
+      "Gate 0 shows that a correct relation partition can replace measurements in a world simple on that partition.",
+      "Gate 1 learns the relation from ordered common-fate history and matches the oracle future measurement curve after spatial rearrangement.",
+      "Gate 2 turns local synthetic confidence into a near-oracle sensing budget while same-cost shuffled confidence fails."
+    ],
+    "missing_discriminator": "A future-frame task where correspondence and confidence are inferred from image matching under occlusion, appearance jumps and look-alike distractors, with the same local-budget policy and matched-cost shuffled-confidence attacker.",
+    "candidate_experiment": {
+      "design": "Render tracked patches with RGB/texture descriptors, inject occlusion and look-alike alternatives, derive best-match margin and forward/backward consistency from the images, calibrate confidence on training worlds, then test whether low-confidence locations trigger extra measurements that preserve reconstruction quality at lower mean cost than global caution.",
+      "cost": "small-to-medium: synthetic RGB patch renderer plus the existing Gate-2 budget machinery, 40-80 train worlds and 80 held-out worlds per ambiguity level",
+      "outcomes": [
+        {
+          "if": "Image-derived confidence retains most of Gate 2's success/cost advantage and the shuffled-cue attacker fails at matched measurement count",
+          "then": "The measurement-budget mechanism survives removal of the synthetic confidence oracle and becomes a plausible active-sensing primitive."
+        },
+        {
+          "if": "Confidence from image evidence is poorly calibrated or must oversample so broadly that global caution matches its cost-quality frontier",
+          "then": "The current result should remain a synthetic upper bound; useful compression would require a stronger observable or a different sensing policy."
+        }
+      ]
+    },
+    "notes": [
+      "The question is about whether learned structure can safely suppress sensing, not whether a generative prior can hallucinate plausible missing pixels."
+    ]
   }
 ]
