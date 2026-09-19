@@ -170,5 +170,9 @@
   {
     "path": "sigh-residue-fork.json",
     "enabled": true
+  },
+  {
+    "path": "what-to-look-at.json",
+    "enabled": true
   }
 ]
