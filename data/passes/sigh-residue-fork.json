@@ -71,44 +71,5 @@
       "evidence": "https://github.com/anttiluode/SighImageFactorization/blob/main/README.md"
     }
   ],
-  "motifs": [
-    {
-      "id": "telescoping-residue-conservation",
-      "title": "Keep what disappears: the transient can be conserved by telescoping residues",
-      "description": "Sigh supplies the iterative trajectory. Sihti and SighImageFactorization both save departures r_k=x_k-x_{k+1}, so the initial state is recovered by summing residues plus the terminal core even when the purifier changes. This makes residue time an exact bookkeeping coordinate without implying that the coordinate transform itself discovers objects.",
-      "nodes": [
-        "SighImageSuper",
-        "Sihti",
-        "SighImageFactorization"
-      ]
-    },
-    {
-      "id": "operator-defines-persistence",
-      "title": "The operator decides what persistence means",
-      "description": "A fixed Fourier operator sorts by spectral lifetime; an image-built affinity operator sorts by grouping/cohesion; a history-written operator can preserve relations learned from common fate. The recurring object is the operator that defines which distinctions die quickly, survive, or become visible to later dynamics.",
-      "nodes": [
-        "SighImageSuper",
-        "Sihti",
-        "SighImageFactorization"
-      ]
-    },
-    {
-      "id": "information-needs-an-observable",
-      "title": "Memory cannot manufacture information that was never observable",
-      "description": "SighImageSuper shows that a physically present distinction may be invisible to one probe. SighImageFactorization Gate 17 gives the sharper causal form: identical observed prefixes force identical deterministic causal state and chance future classification. Gate 18 only escapes by adding a genuinely informative pre-relapse observable.",
-      "nodes": [
-        "SighImageSuper",
-        "SighImageFactorization"
-      ]
-    },
-    {
-      "id": "measurement-versus-meaning",
-      "title": "Separate the reusable measurement from the world-specific meaning attached to it",
-      "description": "Sihti uses the same residue instrument under different purifiers and measures where objects go rather than treating one coordinate system as meaning itself. SighImageFactorization Gate 19 makes the separation explicit: RGB motion surprise can transfer across covariate shift while the surprise-to-relapse mapping weakens, disappears or reverses with the world contingency.",
-      "nodes": [
-        "Sihti",
-        "SighImageFactorization"
-      ]
-    }
-  ]
+  "motifs": []
 }
