@@ -81,5 +81,12 @@
   },
   "wtla-gate2-local-uncertainty-budget": {
     "bounded-observation": "supports"
+  },
+  "wtla-gate3-image-derived-confidence": {
+    "bounded-observation": "supports"
+  },
+  "wtla-gate4-residual-audited-relation": {
+    "bounded-observation": "supports",
+    "information-needs-an-observable": "supports"
   }
 }
