@@ -71,5 +71,15 @@
   "sif-gates18-19-predictive-portability": {
     "information-needs-an-observable": "supports",
     "measurement-versus-meaning": "supports"
+  },
+  "wtla-gate0-relation-budget": {
+    "bounded-observation": "supports"
+  },
+  "wtla-gate1-history-earned-budget": {
+    "bounded-observation": "supports",
+    "operator-update": "supports"
+  },
+  "wtla-gate2-local-uncertainty-budget": {
+    "bounded-observation": "supports"
   }
 }
