@@ -121,5 +121,9 @@
   "wtla-practical-p3-hard-tiling-fails": {
     "bounded-observation": "limits",
     "operator-update": "limits"
+  },
+  "wtla-practical-p4-deepcache-frontier": {
+    "bounded-observation": "limits",
+    "operator-update": "limits"
   }
 }

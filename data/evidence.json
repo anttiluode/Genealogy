@@ -1776,5 +1776,70 @@
       "Failure does not rule out caching, layer-wise reuse, token reuse, or architectures designed for sparse spatial execution"
     ],
     "source": "https://github.com/anttiluode/WhatToLookAt/blob/main/PRACTICAL_ROUTER_P3.md"
+  },
+  {
+    "id": "wtla-practical-p4-deepcache-frontier",
+    "node": "WhatToLookAt",
+    "claim": "Established feature caching exposes measurable U-Net redundancy on the tested four-step SDXL-Turbo route, but none of the tested cache branches simultaneously preserves the preregistered quality frontier and speed gain.",
+    "design": "DeepCache reproduction with cache_interval=2 and branch IDs 0/1/2; seeds 100/101 across three prompts are validation; a candidate must achieve mean recovery >=80%, minimum PSNR >=28 dB, mean stage speedup >=1.10x and be faster in at least two thirds of cases; seed 102 remains non-selective because no candidate passes validation",
+    "result": "supports",
+    "motifs": [
+      "bounded-observation",
+      "operator-update"
+    ],
+    "sample": {
+      "unit": "validation prompt-seed GPU case",
+      "count": 6
+    },
+    "metrics": [
+      {
+        "name": "branch-0 mean recovery",
+        "value": 0.38223245935550504
+      },
+      {
+        "name": "branch-0 mean speedup",
+        "value": 1.152014666445009
+      },
+      {
+        "name": "branch-1 mean recovery",
+        "value": 0.6411739101932311
+      },
+      {
+        "name": "branch-1 mean speedup",
+        "value": 1.1657713464268442
+      },
+      {
+        "name": "branch-2 mean recovery",
+        "value": 0.7219852471517635
+      },
+      {
+        "name": "branch-2 minimum PSNR dB",
+        "value": 25.83048992616697
+      },
+      {
+        "name": "branch-2 mean speedup",
+        "value": 1.157681130354489
+      },
+      {
+        "name": "selected candidate",
+        "value": null,
+        "display": "none"
+      }
+    ],
+    "controls": [
+      "Uses the ordinary full-frame four-step continuation as the timing and quality reference",
+      "All cache branches use the same cache interval and differ only in cache branch depth",
+      "Model selection uses seeds 100/101 only",
+      "Seed 102 is not used to rescue the failed validation frontier"
+    ],
+    "replication": "6 validation cases on NVIDIA GeForce RTX 3060",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Tests only cache_interval=2 and branch IDs 0/1/2",
+      "A four-step Turbo trajectory is unusually short compared with diffusion settings where feature caching is typically most useful",
+      "The quality target is defined relative to this repository's four-step teacher, not human preference"
+    ],
+    "source": "https://github.com/anttiluode/WhatToLookAt/blob/main/PRACTICAL_ROUTER_P4.md"
   }
 ]
