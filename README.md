@@ -43,7 +43,7 @@ These layers deliberately do not collapse into one score.
 
 `data/evidence.json` stores those evidence objects without collapsing them into a universal score. Evidence records may be `supports`, `contradicts`, `mixed`, or `inconclusive`. Missing evidence records mean only that the archaeology layer has not encoded the experiment yet; they do not imply that the source repository has no experiments.
 
-The ledger deliberately mixes positive, mixed, null and confounded results. Current audited examples include `GeometricNeuronV24`, `ReadWrite`, `LentoOrava`, `GrowingAnttisNeuron`, `Operaattori`, `ActiveVectorNN`, `NewMachine`, `WorldModel`, `PhaseStigmergy`, `FusionMachine`, `Sihti`, and `SighImageFactorization`.
+The ledger deliberately mixes positive, mixed, null and confounded results. Current audited examples include `GeometricNeuronV24`, `ReadWrite`, `LentoOrava`, `GrowingAnttisNeuron`, `Operaattori`, `ActiveVectorNN`, `NewMachine`, `WorldModel`, `PhaseStigmergy`, `FusionMachine`, `Sihti`, `SighImageFactorization`, and `WhatToLookAt`.
 
 ## Motif evidence
 
@@ -101,6 +101,10 @@ Separates executable toy dynamics, grand physical identifications, later falsifi
 ### Sigh residue fork — Sihti / SighImageFactorization
 
 Tracks the explicit `SighImageSuper` fork into two different uses of the same telescoping residue identity. `Sihti` becomes a live sieve/instrument and tests where objects land under different purifiers on BSDS500. `SighImageFactorization` kills residue-space factorization as the source of objects, then follows the input/history-written operator through common-fate binding, relation authority, recoverable uncertainty, an identical-prefix observability boundary, genuinely predictive new observables, and environment-dependent cue meaning. The pass deliberately draws both descendants from Sigh rather than inventing peer ancestry between work developed in parallel.
+
+### WhatToLookAt — learned relations become a sensing budget
+
+Tracks the step from history-written relation state to an explicit physical-observation currency. Gate 0 establishes the oracle upper bound, Gate 1 learns a persistent common-fate relation before a rearranged future is undersampled, and Gate 2 lets local relation confidence allocate extra sensing only where correspondence is uncertain. The key question is no longer only what the operator groups, but **how many measurements that learned structure lets the system stop taking**.
 
 ## Evidence rule
 
