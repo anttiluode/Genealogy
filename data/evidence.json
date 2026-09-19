@@ -5,13 +5,38 @@
     "claim": "Guided developmental labels preserve the sender-to-receiver topographic relation better than an exact receptor-label shuffle while keeping connection count and effective rank fixed.",
     "design": "matched-seed control",
     "result": "supports",
-    "motifs": ["structure-as-computation"],
-    "sample": {"unit": "seed", "count": 16},
+    "motifs": [
+      "structure-as-computation"
+    ],
+    "sample": {
+      "unit": "seed",
+      "count": 16
+    },
     "metrics": [
-      {"name": "mean topographic error", "treatment": 0.0, "control": 0.359375, "comparison": "guided vs shuffled labels"},
-      {"name": "mean wiring length", "treatment": 0.626367, "control": 0.692969, "comparison": "guided vs shuffled labels"},
-      {"name": "mean connections", "treatment": 8.0, "control": 8.0, "comparison": "guided vs shuffled labels"},
-      {"name": "effective rank", "treatment": 8.0, "control": 8.0, "comparison": "guided vs shuffled labels"}
+      {
+        "name": "mean topographic error",
+        "treatment": 0,
+        "control": 0.359375,
+        "comparison": "guided vs shuffled labels"
+      },
+      {
+        "name": "mean wiring length",
+        "treatment": 0.626367,
+        "control": 0.692969,
+        "comparison": "guided vs shuffled labels"
+      },
+      {
+        "name": "mean connections",
+        "treatment": 8,
+        "control": 8,
+        "comparison": "guided vs shuffled labels"
+      },
+      {
+        "name": "effective rank",
+        "treatment": 8,
+        "control": 8,
+        "comparison": "guided vs shuffled labels"
+      }
     ],
     "controls": [
       "Exact receptor-label shuffle with the same somata, dendrites, growth grammar, receptor/ligand multisets and seeded growth-noise generator",
@@ -33,12 +58,32 @@
     "claim": "With identical passive dendritic operators, development changes only where input enters the physical basis; the resulting modal and transfer effect is sparse rather than broad.",
     "design": "matched-seed physical control",
     "result": "mixed",
-    "motifs": ["structure-as-computation"],
-    "sample": {"unit": "seed", "count": 16},
+    "motifs": [
+      "structure-as-computation"
+    ],
+    "sample": {
+      "unit": "seed",
+      "count": 16
+    },
     "metrics": [
-      {"name": "mean visible-mode effective count", "treatment": 4.914812, "control": 4.921359, "comparison": "guided vs shuffled labels"},
-      {"name": "mean purification time to 95%", "treatment": 675.8571, "control": 679.522568, "comparison": "guided vs shuffled labels"},
-      {"name": "mean soma transfer resistance", "treatment": 0.005213, "control": 0.003968, "comparison": "guided vs shuffled labels"}
+      {
+        "name": "mean visible-mode effective count",
+        "treatment": 4.914812,
+        "control": 4.921359,
+        "comparison": "guided vs shuffled labels"
+      },
+      {
+        "name": "mean purification time to 95%",
+        "treatment": 675.8571,
+        "control": 679.522568,
+        "comparison": "guided vs shuffled labels"
+      },
+      {
+        "name": "mean soma transfer resistance",
+        "treatment": 0.005213,
+        "control": 0.003968,
+        "comparison": "guided vs shuffled labels"
+      }
     ],
     "controls": [
       "Guided and shuffled arms use identical cable geometry, capacitance, conductance, system matrices and generalized eigenvalues",
@@ -59,14 +104,39 @@
     "claim": "A morphology-only passive cable compiler plus a causal three-site nonlinear closure reproduces the standardized soma response across released morphologies without fitting the target cell.",
     "design": "cross-cell reference-model comparison",
     "result": "supports",
-    "motifs": ["structure-as-computation"],
-    "sample": {"unit": "full NEURON comparison", "count": 288},
+    "motifs": [
+      "structure-as-computation"
+    ],
+    "sample": {
+      "unit": "full NEURON comparison",
+      "count": 288
+    },
     "metrics": [
-      {"name": "causal nonlinear soma NRMSE", "value": 0.0025, "display": "0.25%"},
-      {"name": "causal local-voltage NRMSE", "value": 0.0008, "display": "0.08%"},
-      {"name": "median cell soma NRMSE", "value": 0.0021, "display": "0.21%"},
-      {"name": "cells at or below 10% soma NRMSE", "value": 23, "denominator": 24},
-      {"name": "Newton convergence", "value": 288, "denominator": 288}
+      {
+        "name": "causal nonlinear soma NRMSE",
+        "value": 0.0025,
+        "display": "0.25%"
+      },
+      {
+        "name": "causal local-voltage NRMSE",
+        "value": 0.0008,
+        "display": "0.08%"
+      },
+      {
+        "name": "median cell soma NRMSE",
+        "value": 0.0021,
+        "display": "0.21%"
+      },
+      {
+        "name": "cells at or below 10% soma NRMSE",
+        "value": 23,
+        "denominator": 24
+      },
+      {
+        "name": "Newton convergence",
+        "value": 288,
+        "denominator": 288
+      }
     ],
     "controls": [
       "24 cells × 3 deterministic apical branches × 4 timing programs",
@@ -88,11 +158,22 @@
     "claim": "The tested phase multiplier changes fractal morphology beyond ordinary seed variation.",
     "design": "matched-seed null test",
     "result": "contradicts",
-    "motifs": ["negative-results"],
-    "sample": {"unit": "matched seed", "count": 5},
+    "motifs": [
+      "negative-results"
+    ],
+    "sample": {
+      "unit": "matched seed",
+      "count": 5
+    },
     "metrics": [
-      {"name": "phase-related dimension shift", "display": "below between-seed variation"},
-      {"name": "independent scale-free check", "display": "failed"}
+      {
+        "name": "phase-related dimension shift",
+        "display": "below between-seed variation"
+      },
+      {
+        "name": "independent scale-free check",
+        "display": "failed"
+      }
     ],
     "controls": [
       "Matched closed-loop versus no-write runs",
@@ -112,13 +193,38 @@
     "claim": "Keeping hidden world computation resident and applying relevance later causes the observed switch/readiness advantage over an equal-state generic recurrent baseline.",
     "design": "equal-state baseline comparison with destructive controls",
     "result": "inconclusive",
-    "motifs": ["late-relevance"],
-    "sample": {"unit": "seed", "count": 8},
+    "motifs": [
+      "late-relevance"
+    ],
+    "sample": {
+      "unit": "seed",
+      "count": 8
+    },
     "metrics": [
-      {"name": "median first query after rapid switch MSE", "treatment": 0.000015198, "control": 0.016539331, "comparison": "FusionMachine vs generic RNN"},
-      {"name": "median immediate error after 48-step dormancy", "treatment": 0.002981, "control": 0.101834, "comparison": "FusionMachine vs generic RNN"},
-      {"name": "median training-query MSE", "treatment": 0.000011991, "control": 0.000383249, "comparison": "FusionMachine vs generic RNN"},
-      {"name": "median hidden-world linear-probe R2", "treatment": 0.999822, "control": 0.888666, "comparison": "FusionMachine vs generic RNN"}
+      {
+        "name": "median first query after rapid switch MSE",
+        "treatment": 0.000015198,
+        "control": 0.016539331,
+        "comparison": "FusionMachine vs generic RNN"
+      },
+      {
+        "name": "median immediate error after 48-step dormancy",
+        "treatment": 0.002981,
+        "control": 0.101834,
+        "comparison": "FusionMachine vs generic RNN"
+      },
+      {
+        "name": "median training-query MSE",
+        "treatment": 0.000011991,
+        "control": 0.000383249,
+        "comparison": "FusionMachine vs generic RNN"
+      },
+      {
+        "name": "median hidden-world linear-probe R2",
+        "treatment": 0.999822,
+        "control": 0.888666,
+        "comparison": "FusionMachine vs generic RNN"
+      }
     ],
     "controls": [
       "Four recurrent state scalars in both models",
@@ -141,12 +247,27 @@
     "claim": "Actively choosing measurement addresses can identify a hidden law from scalar observations more reliably than fixed or random addressing in the registered finite-law world.",
     "design": "active-sensing identification with post-gate seed audit",
     "result": "supports",
-    "motifs": ["bounded-observation"],
-    "sample": {"unit": "post-gate seed", "count": 10},
+    "motifs": [
+      "bounded-observation"
+    ],
+    "sample": {
+      "unit": "post-gate seed",
+      "count": 10
+    },
     "metrics": [
-      {"name": "active exact accuracy", "display": "1.000 mean; 1.000 minimum"},
-      {"name": "random exact accuracy", "display": "0.796 mean; 0.760–0.828 range"},
-      {"name": "original locked >=0.20 active-minus-random margin", "value": 5, "denominator": 10}
+      {
+        "name": "active exact accuracy",
+        "display": "1.000 mean; 1.000 minimum"
+      },
+      {
+        "name": "random exact accuracy",
+        "display": "0.796 mean; 0.760–0.828 range"
+      },
+      {
+        "name": "original locked >=0.20 active-minus-random margin",
+        "value": 5,
+        "denominator": 10
+      }
     ],
     "controls": [
       "Fixed-address observer",
@@ -169,14 +290,40 @@
     "claim": "Addressed dendritic stimulation removes the algebraic ambiguity of fixed soma observation, but the resulting full-rank code is not fully identifiable at the locked 1 uV soma-noise level.",
     "design": "real-morphology observability test with noise audit",
     "result": "mixed",
-    "motifs": ["bounded-observation", "active-intervention", "negative-results"],
-    "sample": {"unit": "post-result noise seed", "count": 10},
+    "motifs": [
+      "bounded-observation",
+      "active-intervention",
+      "negative-results"
+    ],
+    "sample": {
+      "unit": "post-result noise seed",
+      "count": 10
+    },
     "metrics": [
-      {"name": "fixed-address Jacobian rank", "value": 2, "denominator": 12},
-      {"name": "active multiscale Jacobian rank", "value": 12, "denominator": 12},
-      {"name": "active multiscale identity at 1 uV", "display": "~0.779"},
-      {"name": "noise-visible singular directions at 1 uV", "value": 7, "denominator": 12},
-      {"name": "registered >=0.90 identity target", "value": 0, "denominator": 10}
+      {
+        "name": "fixed-address Jacobian rank",
+        "value": 2,
+        "denominator": 12
+      },
+      {
+        "name": "active multiscale Jacobian rank",
+        "value": 12,
+        "denominator": 12
+      },
+      {
+        "name": "active multiscale identity at 1 uV",
+        "display": "~0.779"
+      },
+      {
+        "name": "noise-visible singular directions at 1 uV",
+        "value": 7,
+        "denominator": 12
+      },
+      {
+        "name": "registered >=0.90 identity target",
+        "value": 0,
+        "denominator": 10
+      }
     ],
     "controls": [
       "Fixed address with varying scale",
@@ -200,11 +347,22 @@
     "claim": "A known write can distinguish states that passive reading cannot when the write operator itself depends on the hidden state.",
     "design": "constructed observability/controllability mechanism test",
     "result": "supports",
-    "motifs": ["active-intervention"],
+    "motifs": [
+      "active-intervention"
+    ],
     "metrics": [
-      {"name": "passive separation", "display": "5.4e-16"},
-      {"name": "constant-J write/read separation", "display": "0.0 exactly"},
-      {"name": "state-dependent J(x) write/read separation", "value": 1.263}
+      {
+        "name": "passive separation",
+        "display": "5.4e-16"
+      },
+      {
+        "name": "constant-J write/read separation",
+        "display": "0.0 exactly"
+      },
+      {
+        "name": "state-dependent J(x) write/read separation",
+        "value": 1.263
+      }
     ],
     "controls": [
       "Two hidden states with the same row-space component and different measurement-nullspace components",
@@ -225,10 +383,19 @@
     "claim": "Coprime box-grid stacks beat the best single box grid by at least 0.02 capture at matched probe budget.",
     "design": "registered matched-budget attacker",
     "result": "contradicts",
-    "motifs": ["bounded-observation", "negative-results"],
+    "motifs": [
+      "bounded-observation",
+      "negative-results"
+    ],
     "metrics": [
-      {"name": "median coprime minus best-single capture", "display": "+0.0013"},
-      {"name": "registered improvement threshold", "display": "+0.0200"}
+      {
+        "name": "median coprime minus best-single capture",
+        "display": "+0.0013"
+      },
+      {
+        "name": "registered improvement threshold",
+        "display": "+0.0200"
+      }
     ],
     "controls": [
       "Best single grid at each matched budget rather than only a redundant dyadic pyramid",
@@ -248,13 +415,37 @@
     "claim": "Designed grouped rollback interventions plus one scalar KPI can localize a sparse set of harmful changes much more efficiently than equal-budget random individual rollback.",
     "design": "frozen practical regression-localization benchmark",
     "result": "supports",
-    "motifs": ["scalar-causal-credit", "active-intervention"],
-    "sample": {"unit": "deterministic fault set", "count": 64},
+    "motifs": [
+      "scalar-causal-credit",
+      "active-intervention"
+    ],
+    "sample": {
+      "unit": "deterministic fault set",
+      "count": 64
+    },
     "metrics": [
-      {"name": "lost KPI recovered", "treatment": 0.9277, "control": 0.2081, "comparison": "PulseTriage vs equal-budget random rollback"},
-      {"name": "actual faults recalled", "treatment": 0.8711, "control": 0.1758, "comparison": "PulseTriage vs equal-budget random rollback"},
-      {"name": "scalar evaluations", "treatment": 57, "control": 57, "comparison": "PulseTriage vs equal-budget random rollback"},
-      {"name": "recovery relative to exhaustive ruler", "display": "94.29% with 22.18% of exhaustive calls"}
+      {
+        "name": "lost KPI recovered",
+        "treatment": 0.9277,
+        "control": 0.2081,
+        "comparison": "PulseTriage vs equal-budget random rollback"
+      },
+      {
+        "name": "actual faults recalled",
+        "treatment": 0.8711,
+        "control": 0.1758,
+        "comparison": "PulseTriage vs equal-budget random rollback"
+      },
+      {
+        "name": "scalar evaluations",
+        "treatment": 57,
+        "control": 57,
+        "comparison": "PulseTriage vs equal-budget random rollback"
+      },
+      {
+        "name": "recovery relative to exhaustive ruler",
+        "display": "94.29% with 22.18% of exhaustive calls"
+      }
     ],
     "controls": [
       "Equal-budget random individual rollback",
@@ -278,12 +469,29 @@
     "claim": "Under a valid local repair primitive, adaptive scalar-only interventions can localize scarce useful writes substantially better than equal-budget random probing.",
     "design": "paired scalar-only fault assay",
     "result": "supports",
-    "motifs": ["scalar-causal-credit", "active-intervention"],
-    "sample": {"unit": "deterministic wound trial", "count": 512},
+    "motifs": [
+      "scalar-causal-credit",
+      "active-intervention"
+    ],
+    "sample": {
+      "unit": "deterministic wound trial",
+      "count": 512
+    },
     "metrics": [
-      {"name": "mean damage recovered", "treatment": 0.8109, "control": 0.2628, "comparison": "adaptive pulse search vs equal-budget random probing"},
-      {"name": "paired trials where adaptive beat random", "display": "95.90%"},
-      {"name": "recovery relative to exhaustive scan", "display": "93.15% at 26.74% of exhaustive calls"}
+      {
+        "name": "mean damage recovered",
+        "treatment": 0.8109,
+        "control": 0.2628,
+        "comparison": "adaptive pulse search vs equal-budget random probing"
+      },
+      {
+        "name": "paired trials where adaptive beat random",
+        "display": "95.90%"
+      },
+      {
+        "name": "recovery relative to exhaustive scan",
+        "display": "93.15% at 26.74% of exhaustive calls"
+      }
     ],
     "controls": [
       "Equal-budget random probing",
@@ -305,10 +513,19 @@
     "claim": "A coherent RGB-only rotatable WorldSplat scene is sufficient evidence that the learned scene geometry is correct.",
     "design": "branch-preserved geometry stress test",
     "result": "contradicts",
-    "motifs": ["provenance", "negative-results"],
+    "motifs": [
+      "provenance",
+      "negative-results"
+    ],
     "metrics": [
-      {"name": "RGB-only scene behavior", "display": "coherent rotatable face manifold"},
-      {"name": "geometry audit", "display": "wrong / unconstrained hollow-face-style geometry"}
+      {
+        "name": "RGB-only scene behavior",
+        "display": "coherent rotatable face manifold"
+      },
+      {
+        "name": "geometry audit",
+        "display": "wrong / unconstrained hollow-face-style geometry"
+      }
     ],
     "controls": [
       "Failed RGB-only branch retained instead of overwritten",
@@ -330,12 +547,26 @@
     "claim": "A maintained recurrent state can be approximately synchronized with fewer full-vector transmissions while preserving most held-out task quality when sender state and readout are held fixed.",
     "design": "pre-registered same-task communication tradeoff",
     "result": "supports",
-    "motifs": ["persistent-state"],
+    "motifs": [
+      "persistent-state"
+    ],
     "metrics": [
-      {"name": "event fraction at threshold 1.0", "display": "78.17%"},
-      {"name": "task RMSE increase at threshold 1.0", "display": "+1.92%"},
-      {"name": "event fraction at threshold 1.2", "display": "61.52%"},
-      {"name": "task RMSE increase at threshold 1.2", "display": "+4.21%"}
+      {
+        "name": "event fraction at threshold 1.0",
+        "display": "78.17%"
+      },
+      {
+        "name": "task RMSE increase at threshold 1.0",
+        "display": "+1.92%"
+      },
+      {
+        "name": "event fraction at threshold 1.2",
+        "display": "61.52%"
+      },
+      {
+        "name": "task RMSE increase at threshold 1.2",
+        "display": "+4.21%"
+      }
     ],
     "controls": [
       "Dense sender and event receiver use exactly the same recurrent state and the same linear readout",
@@ -356,12 +587,33 @@
     "claim": "When publication relevance and input reliability overlap independently, factorized state-repair and publication control can suppress private propagation in cases an exclusive signed router cannot reproduce in one step.",
     "design": "held-out overlapping-constraint control",
     "result": "supports",
-    "motifs": ["persistent-state", "late-relevance"],
+    "motifs": [
+      "persistent-state",
+      "late-relevance"
+    ],
     "metrics": [
-      {"name": "state RMSE", "treatment": 0.084754, "control": 0.084754, "comparison": "factorized vs reset-priority signed"},
-      {"name": "private event fraction", "treatment": 0.055449, "control": 0.074726, "comparison": "factorized vs reset-priority signed"},
-      {"name": "overlap event fraction", "treatment": 0.033585, "control": 0.125606, "comparison": "factorized vs reset-priority signed"},
-      {"name": "overlap event reduction", "display": "73.3% with unchanged state RMSE and public-event mismatch"}
+      {
+        "name": "state RMSE",
+        "treatment": 0.084754,
+        "control": 0.084754,
+        "comparison": "factorized vs reset-priority signed"
+      },
+      {
+        "name": "private event fraction",
+        "treatment": 0.055449,
+        "control": 0.074726,
+        "comparison": "factorized vs reset-priority signed"
+      },
+      {
+        "name": "overlap event fraction",
+        "treatment": 0.033585,
+        "control": 0.125606,
+        "comparison": "factorized vs reset-priority signed"
+      },
+      {
+        "name": "overlap event reduction",
+        "display": "73.3% with unchanged state RMSE and public-event mismatch"
+      }
     ],
     "controls": [
       "Same state-repair decisions in factorized and reset-priority signed policies",
@@ -376,5 +628,314 @@
       "The result establishes a factorization benefit under overlapping constraints, not a biological interpretation of the intervention sites"
     ],
     "source": "https://github.com/anttiluode/NewMachine/blob/main/README.md"
+  },
+  {
+    "id": "sihti-g0-exact-residue",
+    "node": "Sihti",
+    "claim": "Saving octave departures plus the terminal core reconstructs the input to floating-point precision across fixed, changing, nonlinear and noisy purifiers.",
+    "design": "deterministic purifier-family reconstruction audit",
+    "result": "supports",
+    "motifs": [
+      "telescoping-residue-conservation"
+    ],
+    "sample": {
+      "unit": "reconstruction case",
+      "count": 154
+    },
+    "metrics": [
+      {
+        "name": "worst relative reconstruction error",
+        "display": "1.1e-16"
+      },
+      {
+        "name": "purifier families",
+        "display": "own EQ, lattice, five Sigh presets, alternating EQs, rebuilt nonlinear, median and noisy"
+      }
+    ],
+    "controls": [
+      "Purifier trajectory is allowed to change; the identity is tested on the saved states rather than assuming one fixed linear operator",
+      "Multiple qualitatively different purifier families use the same additive reconstruction rule"
+    ],
+    "replication": "154 deterministic reconstruction cases",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Exact telescoping proves conservation/bookkeeping, not that the residue coordinates are semantically useful",
+      "Full residue stacks are redundant and can be expensive to store"
+    ],
+    "source": "https://github.com/anttiluode/Sihti/blob/main/README.md"
+  },
+  {
+    "id": "sihti-bsds-operator-location",
+    "node": "Sihti",
+    "claim": "Changing the purifier changes where object-aligned structure appears: the image-affinity operator keeps object layout in the surviving core while pushing interior detail into residues, but its segmentation is not state of the art.",
+    "design": "pre-registered BSDS500 validation/test benchmark with simple and established segmentation attackers",
+    "result": "mixed",
+    "motifs": [
+      "operator-defines-persistence",
+      "negative-results"
+    ],
+    "sample": {
+      "unit": "BSDS500 test image",
+      "count": 198
+    },
+    "metrics": [
+      {
+        "name": "primary Sihti covering",
+        "value": 0.446
+      },
+      {
+        "name": "Lab+position k-means covering",
+        "value": 0.404,
+        "comparison": "Sihti vs colour k-means"
+      },
+      {
+        "name": "Felzenszwalb-Huttenlocher covering",
+        "value": 0.524,
+        "comparison": "Sihti vs established graph segmentation"
+      },
+      {
+        "name": "core alignment",
+        "treatment": 0.325,
+        "control": 0.127,
+        "comparison": "own EQ vs plain lattice"
+      },
+      {
+        "name": "late-residue object alignment",
+        "treatment": 0.017,
+        "control": 0.226,
+        "comparison": "own EQ vs plain lattice; lower means object layout stayed out of late residues"
+      }
+    ],
+    "controls": [
+      "100-image validation split selects one setting before the 198-image test split",
+      "Lab+position k-means baseline",
+      "Felzenszwalb-Huttenlocher baseline",
+      "Plain lattice, Sigh low-pass and leaky-own-EQ purifier controls"
+    ],
+    "replication": "pre-registered held-out BSDS500 test split",
+    "held_out": true,
+    "external_data": true,
+    "limitations": [
+      "Low-resolution colour-only affinities do not represent semantic objects",
+      "Primary slow-mode segmentation loses to Felzenszwalb-Huttenlocher",
+      "The strongest result is where structure lands in core versus residues, not a novel segmentation algorithm"
+    ],
+    "source": "https://github.com/anttiluode/Sihti/blob/main/README.md"
+  },
+  {
+    "id": "sif-gate1-residue-factorization-null",
+    "node": "SighImageFactorization",
+    "claim": "The Sigh residue coordinate transform itself makes latent sources easier for PCA/ICA to recover than raw pixels or matched linear controls.",
+    "design": "matched three-dimensional PCA bottleneck and NumPy FastICA comparison",
+    "result": "contradicts",
+    "motifs": [
+      "telescoping-residue-conservation",
+      "negative-results",
+      "operator-defines-persistence"
+    ],
+    "sample": {
+      "unit": "random seed",
+      "count": 3
+    },
+    "metrics": [
+      {
+        "name": "raw-pixel latent recovery",
+        "value": 0.938
+      },
+      {
+        "name": "orthogonal redundant latent recovery",
+        "value": 0.938
+      },
+      {
+        "name": "matched-spectrum random latent recovery",
+        "value": 0.942
+      },
+      {
+        "name": "Sigh-residue latent recovery",
+        "value": 0.672
+      },
+      {
+        "name": "residue-frame condition number",
+        "value": 7.246
+      }
+    ],
+    "controls": [
+      "Same PCA dimension and same ICA implementation for every representation",
+      "Orthogonal redundant coordinates",
+      "Random encoder matched to the Sigh encoder singular values"
+    ],
+    "replication": "three-seed attacked comparison plus exact frame-geometry receipt",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Synthetic linear source-separation task",
+      "Rejects a coordinate-change explanation; it does not reject operator-based grouping"
+    ],
+    "source": "https://github.com/anttiluode/SighImageFactorization/blob/main/README.md"
+  },
+  {
+    "id": "sif-gate4-common-fate-write",
+    "node": "SighImageFactorization",
+    "claim": "Repeated common motion can write persistent feature-pair compatibility that later binds a stopped object at new coordinates rather than merely memorizing its old location.",
+    "design": "synthetic common-fate write with shuffled-motion and absolute-coordinate controls",
+    "result": "supports",
+    "motifs": [
+      "operator-update",
+      "operator-defines-persistence"
+    ],
+    "sample": {
+      "unit": "new object placement",
+      "count": 3
+    },
+    "metrics": [
+      {
+        "name": "static appearance median ARI",
+        "value": 0.755
+      },
+      {
+        "name": "common-fate feature-memory median ARI",
+        "value": 1
+      },
+      {
+        "name": "part-shuffled motion median ARI",
+        "value": 0.755
+      },
+      {
+        "name": "absolute-coordinate memory median ARI",
+        "value": 0.755
+      }
+    ],
+    "controls": [
+      "Objects are moved to new coordinates and stopped before readout",
+      "Part-shuffled motion attacker",
+      "Absolute-coordinate edge-memory attacker",
+      "Opposing-motion control collapses learned compatibilities to about 1e-14"
+    ],
+    "replication": "three deterministic unseen placements",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Gate 4 uses oracle motion and discrete appearance types",
+      "Establishes a mechanism in a synthetic scene, not natural-image object discovery"
+    ],
+    "source": "https://github.com/anttiluode/SighImageFactorization/blob/main/README.md"
+  },
+  {
+    "id": "sif-gate17-identical-prefix",
+    "node": "SighImageFactorization",
+    "claim": "Additional temporal memory can predict whether a clean-looking recovery prefix will persist when paired futures have exactly the same observed RGB-derived history.",
+    "design": "paired counterfactual identical-prefix observability attacker",
+    "result": "contradicts",
+    "motifs": [
+      "information-needs-an-observable",
+      "negative-results"
+    ],
+    "sample": {
+      "unit": "held-out paired world",
+      "count": 80
+    },
+    "metrics": [
+      {
+        "name": "maximum paired target-prefix difference",
+        "value": 0
+      },
+      {
+        "name": "raw-state best balanced accuracy",
+        "value": 0.5
+      },
+      {
+        "name": "cumulative-state best balanced accuracy",
+        "value": 0.5
+      },
+      {
+        "name": "symmetric-EMA best balanced accuracy",
+        "value": 0.5
+      },
+      {
+        "name": "asymmetric-memory best balanced accuracy",
+        "value": 0.5
+      },
+      {
+        "name": "first post-split RGB observation balanced accuracy",
+        "value": 0.99375
+      }
+    ],
+    "controls": [
+      "Stable-recovery and relapse futures share the exact same noisy RGB-derived prefix",
+      "Raw, cumulative, symmetric and asymmetric state families are all deterministic functions of that prefix"
+    ],
+    "replication": "80 held-out paired counterfactual worlds",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Synthetic tracking world",
+      "The result is an observability boundary for the supplied history, not a statement that relapse is intrinsically unpredictable"
+    ],
+    "source": "https://github.com/anttiluode/SighImageFactorization/blob/main/README.md"
+  },
+  {
+    "id": "sif-gates18-19-predictive-portability",
+    "node": "SighImageFactorization",
+    "claim": "A genuinely informative RGB-derived motion-surprise observable can predict pre-relapse risk before ordinary confidence diverges, while the causal meaning of that observable depends on the world's contingency.",
+    "design": "train/validation/test cue selection followed by frozen-rule contingency-shift panel and scalar recalibration control",
+    "result": "supports",
+    "motifs": [
+      "information-needs-an-observable",
+      "measurement-versus-meaning"
+    ],
+    "sample": {
+      "unit": "held-out paired world per Gate-19 scenario",
+      "count": 80
+    },
+    "metrics": [
+      {
+        "name": "Gate-18 held-out motion-surprise balanced accuracy",
+        "value": 0.90625
+      },
+      {
+        "name": "Gate-18 shuffled-surprise balanced accuracy",
+        "value": 0.51875
+      },
+      {
+        "name": "Gate-18 symmetric temporal-state balanced accuracy",
+        "value": 0.51875
+      },
+      {
+        "name": "Gate-19 preserved covariate-shift frozen accuracy",
+        "value": 0.88125
+      },
+      {
+        "name": "Gate-19 weakened-contingency frozen accuracy",
+        "value": 0.65
+      },
+      {
+        "name": "Gate-19 broken-contingency frozen accuracy",
+        "value": 0.5
+      },
+      {
+        "name": "Gate-19 reversed-contingency frozen accuracy",
+        "value": 0.1375
+      },
+      {
+        "name": "Gate-19 reversed-contingency recalibrated accuracy",
+        "value": 0.8375
+      }
+    ],
+    "controls": [
+      "Ordinary mean confidence is matched between stable and relapse-prone recovery histories",
+      "Shuffled selected-cue control",
+      "Oracle-motion control matches RGB prediction in Gate 19",
+      "Broken-contingency world tests whether recalibration can invent absent information",
+      "Reversed-contingency world tests whether a stale mapping becomes actively wrong"
+    ],
+    "replication": "40/30/80 train-validation-test Gate 18 plus five Gate-19 worlds with 80 untouched pairs each",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "The worlds deliberately define motion instability as predictive, non-predictive or reversed",
+      "Shows a measurement/meaning decomposition and calibration boundary, not universal natural-video causality"
+    ],
+    "source": "https://github.com/anttiluode/SighImageFactorization/blob/main/README.md"
   }
 ]

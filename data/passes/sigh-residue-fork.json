@@ -1,0 +1,75 @@
+{
+  "id": "sigh-residue-fork",
+  "title": "Sigh residue fork: Sihti and SighImageFactorization",
+  "summary": "SighImageSuper's recursive-image loop forked into two evidence-backed directions. Sihti turns the disappearing transient into an exact telescoping sieve and a live/benchmarked instrument for asking where object structure lands under different purifiers. SighImageFactorization starts from the same residue identity, kills the idea that the residue coordinate transform itself creates objects, then follows the input/history-written operator into common-fate binding, persistent relation authority, recoverable uncertainty, observability limits, predictive cues, and cue portability. Both descendants explicitly inherit SighImageSuper; no peer-to-peer ancestry edge is asserted. The useful convergence is conceptual: changing the purifier/operator changes what persistence means, while memory cannot predict distinctions for which the history contains no observable.",
+  "order": 208,
+  "reviewed_at": "2026-09-19",
+  "nodes": [
+    {
+      "id": "Sihti",
+      "url": "https://github.com/anttiluode/Sihti",
+      "family": "residue-operator",
+      "status": "tool",
+      "claim": "Turns Sigh's recursive loop into an exact telescoping sieve and compares fixed-EQ, lattice and image-affinity purifiers to measure where object structure goes: surviving core versus residues.",
+      "survived": "Exact reconstruction by addition for arbitrary purifier trajectories; a practical live instrument; held-out evidence that purifier choice changes whether object layout stays in the core or bleeds into residues.",
+      "killed": "Persistence under a fixed Fourier EQ is not a new axis; the own-EQ segmentation beats simple colour k-means but loses to Felzenszwalb-Huttenlocher on BSDS500; sharp-edge residues do not automatically form the predicted part-whole hierarchy.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Sihti/blob/main/README.md",
+      "tags": [
+        "residue",
+        "sieve",
+        "laplacian-pyramid",
+        "image-affinity",
+        "benchmark",
+        "tool",
+        "negative-result"
+      ],
+      "era": "Residue sieve / history-written operator",
+      "era_order": 26
+    },
+    {
+      "id": "SighImageFactorization",
+      "url": "https://github.com/anttiluode/SighImageFactorization",
+      "family": "residue-operator",
+      "status": "active",
+      "claim": "Follows the Sigh residue identity into self-written grouping operators: common fate writes persistent affinity, confidence controls relation authority, temporal memory manages uncertainty, and genuinely new observables are required to predict beyond identical histories.",
+      "survived": "Residue conservation; input/history-written grouping operators; RGB-derived common-fate memory; local confidence-gated relation authority; recoverable uncertainty; exact identical-prefix observability boundary; motion-surprise prediction when a real precursor exists; separation of reusable measurement from environment-dependent causal meaning.",
+      "killed": "PCA/ICA on the residue stack does not create object/source separation; synchronization adds nothing when the graph already contains the partition; extra temporal state cannot predict opposite futures behind an identical observed prefix; a frozen predictive cue becomes anti-predictive when its world contingency reverses.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/SighImageFactorization/blob/main/README.md",
+      "tags": [
+        "residue",
+        "operator-update",
+        "common-fate",
+        "relation-authority",
+        "observability",
+        "prediction",
+        "negative-result",
+        "world-contingency"
+      ],
+      "era": "Residue sieve / history-written operator",
+      "era_order": 26
+    }
+  ],
+  "edges": [
+    {
+      "source": "SighImageSuper",
+      "target": "Sihti",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Sihti's README explicitly says it runs the SighImageSuper loop, copies the Fourier-EQ machinery, and keeps what disappears as octave residues.",
+      "evidence": "https://github.com/anttiluode/Sihti/blob/main/README.md"
+    },
+    {
+      "source": "SighImageSuper",
+      "target": "SighImageFactorization",
+      "type": "forks",
+      "confidence": "high",
+      "why": "SighImageFactorization's README explicitly calls itself a direct branch of SighImageSuper and begins by saving every departure of the iterative Sigh trajectory.",
+      "evidence": "https://github.com/anttiluode/SighImageFactorization/blob/main/README.md"
+    }
+  ],
+  "motifs": []
+}

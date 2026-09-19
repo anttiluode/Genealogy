@@ -3,7 +3,10 @@
     "id": "active-intervention-cost-density",
     "title": "When does active intervention still pay after probe cost and dense hidden causes?",
     "state": "open",
-    "motifs": ["active-intervention", "scalar-causal-credit"],
+    "motifs": [
+      "active-intervention",
+      "scalar-causal-credit"
+    ],
     "evidence": [
       "v24-gate4-soma-observability",
       "readwrite-rw5-state-dependent-probe",
@@ -42,7 +45,10 @@
     "id": "late-relevance-training-confound",
     "title": "Is late relevance an architectural advantage once training fit is equalized?",
     "state": "partially-resolved",
-    "motifs": ["late-relevance", "persistent-state"],
+    "motifs": [
+      "late-relevance",
+      "persistent-state"
+    ],
     "evidence": [
       "fusion-v3-readiness-confound",
       "newmachine-v3-factorized-overlap"
@@ -78,7 +84,10 @@
     "id": "bounded-observation-address-vs-grid",
     "title": "What survives from bounded observation: active addressing or a particular grid code?",
     "state": "partially-resolved",
-    "motifs": ["bounded-observation", "active-intervention"],
+    "motifs": [
+      "bounded-observation",
+      "active-intervention"
+    ],
     "evidence": [
       "v24-gate2-active-law-identification",
       "v24-gate4-soma-observability",
@@ -114,7 +123,9 @@
     "id": "structure-functional-consequence",
     "title": "When does structural organization predict a downstream functional consequence?",
     "state": "open",
-    "motifs": ["structure-as-computation"],
+    "motifs": [
+      "structure-as-computation"
+    ],
     "evidence": [
       "growing-v0-topographic-control",
       "growing-v1-input-placement",
@@ -149,7 +160,10 @@
     "id": "persistent-state-control-complexity",
     "title": "Does richer state repair/publication control earn its complexity on vector tasks at matched communication cost?",
     "state": "open",
-    "motifs": ["persistent-state", "late-relevance"],
+    "motifs": [
+      "persistent-state",
+      "late-relevance"
+    ],
     "evidence": [
       "activevector-v1-sparse-sync",
       "newmachine-v3-factorized-overlap"
@@ -177,5 +191,45 @@
         }
       ]
     }
+  },
+  {
+    "id": "online-contingency-change-detection",
+    "title": "Can a relation learner detect that a previously useful predictive cue has changed meaning before stale authority causes repeated errors?",
+    "state": "open",
+    "motifs": [
+      "information-needs-an-observable",
+      "measurement-versus-meaning"
+    ],
+    "evidence": [
+      "sif-gate17-identical-prefix",
+      "sif-gates18-19-predictive-portability"
+    ],
+    "competing_explanations": [
+      "Prediction outcomes provide enough online evidence to detect a weakened or reversed cue-to-future contingency quickly, withdraw authority from the stale mapping, and recalibrate while keeping the reusable RGB observable.",
+      "Passive outcome monitoring reacts too late in abrupt or sparse-change regimes; reliable adaptation requires explicit uncertainty, change-point machinery, active probing, or an additional observable."
+    ],
+    "known": [
+      "Gate 17 shows that no amount of temporal state can predict opposite futures when the observed prefix contains no distinguishing information.",
+      "Gate 18 finds a real pre-relapse observable, motion surprise, that reaches 0.90625 held-out balanced accuracy while old confidence-memory states stay near chance.",
+      "Gate 19 shows the RGB observable transfers under preserved covariate shift, falls to chance when its contingency disappears, becomes anti-predictive when the contingency reverses, and can recover after small labeled scalar recalibration."
+    ],
+    "missing_discriminator": "A continuous nonstationary world where the surprise-to-relapse contingency changes online and the learner must decide when to distrust and relearn the mapping without being told the change point.",
+    "candidate_experiment": {
+      "design": "Run a piecewise world with preserved, weakened, broken and reversed contingencies in a hidden order. Compare a frozen Gate-18 mapping, periodic fixed-window recalibration, passive online change detection, and an active-probe variant. Measure stale-authority errors, detection delay, calibration samples, and recovery of relation decisions after each transition.",
+      "cost": "small-to-medium: reuse Gate-19 generator and add online state/change detection over 20-40 seeded world sequences",
+      "outcomes": [
+        {
+          "if": "Passive prediction-error/change-point state withdraws authority quickly and relearns the mapping with few stale false-fast decisions across abrupt and gradual transitions",
+          "then": "The measurement-versus-meaning decomposition gains an autonomous adaptation mechanism: keep the observable, monitor its predictive contract, and relearn only the interpretation."
+        },
+        {
+          "if": "Passive monitoring either reacts too late or oscillates under weak evidence while active probes or an extra observable materially improve detection at matched cost",
+          "then": "Online causal meaning cannot be treated as a free calibration layer; the architecture needs explicit information acquisition or a stronger uncertainty channel."
+        }
+      ]
+    },
+    "notes": [
+      "This asks when a previously valid interpretation should lose causal authority; it does not assume motion surprise is a universal predictor."
+    ]
   }
 ]

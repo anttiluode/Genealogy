@@ -47,5 +47,29 @@
   "newmachine-v3-factorized-overlap": {
     "persistent-state": "supports",
     "late-relevance": "supports"
+  },
+  "sihti-g0-exact-residue": {
+    "telescoping-residue-conservation": "supports"
+  },
+  "sihti-bsds-operator-location": {
+    "operator-defines-persistence": "supports",
+    "negative-results": "documents"
+  },
+  "sif-gate1-residue-factorization-null": {
+    "telescoping-residue-conservation": "supports",
+    "negative-results": "documents",
+    "operator-defines-persistence": "supports"
+  },
+  "sif-gate4-common-fate-write": {
+    "operator-update": "supports",
+    "operator-defines-persistence": "supports"
+  },
+  "sif-gate17-identical-prefix": {
+    "information-needs-an-observable": "supports",
+    "negative-results": "documents"
+  },
+  "sif-gates18-19-predictive-portability": {
+    "information-needs-an-observable": "supports",
+    "measurement-versus-meaning": "supports"
   }
 }
