@@ -937,5 +937,171 @@
       "Shows a measurement/meaning decomposition and calibration boundary, not universal natural-video causality"
     ],
     "source": "https://github.com/anttiluode/SighImageFactorization/blob/main/README.md"
+  },
+  {
+    "id": "wtla-gate0-relation-budget",
+    "node": "WhatToLookAt",
+    "claim": "A correct relation partition can replace a large fraction of pixel measurements in a world that is piecewise constant on that partition, while spatial and shuffled-relation controls cannot.",
+    "design": "matched-budget sparse-pixel reconstruction with oracle relation, spatial-lattice and shuffled-relation controls",
+    "result": "supports",
+    "motifs": [
+      "bounded-observation"
+    ],
+    "sample": {
+      "unit": "random measurement mask per budget",
+      "count": 48
+    },
+    "metrics": [
+      {
+        "name": "active true-relation measurement fraction",
+        "value": 0.015625,
+        "display": "4 / 256 = 1.5625%"
+      },
+      {
+        "name": "active true-relation PSNR",
+        "display": "120 dB (numerically exact)"
+      },
+      {
+        "name": "random true-relation first tested budget at >=90% success",
+        "display": "16 / 256 = 6.25%"
+      },
+      {
+        "name": "spatial-lattice success at 128 / 256 measurements",
+        "value": 0
+      },
+      {
+        "name": "shuffled-relation success at 128 / 256 measurements",
+        "value": 0
+      }
+    ],
+    "controls": [
+      "Same sparse pixel budget for relation, spatial-lattice and shuffled-relation reconstructions",
+      "Shuffled relation preserves group count/size while destroying alignment with the true object partition"
+    ],
+    "replication": "48 random masks per measurement count",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Gate 0 supplies an oracle relation graph",
+      "Piecewise-constant synthetic RGB world",
+      "Establishes an upper bound on the value of correct structure, not a learned sensing mechanism"
+    ],
+    "source": "https://github.com/anttiluode/WhatToLookAt/blob/main/README.md"
+  },
+  {
+    "id": "wtla-gate1-history-earned-budget",
+    "node": "WhatToLookAt",
+    "claim": "Ordered common-fate history can learn a persistent relation that survives spatial rearrangement and reduces the measurement budget of a future frame to the oracle relation curve.",
+    "design": "past-motion relation learning followed by future rearrangement and sparse sensing with time-shuffle, coordinate-memory and spatial controls",
+    "result": "supports",
+    "motifs": [
+      "bounded-observation",
+      "operator-update"
+    ],
+    "sample": {
+      "unit": "independent synthetic world",
+      "count": 48
+    },
+    "metrics": [
+      {
+        "name": "ordered common-fate relation median ARI",
+        "value": 1
+      },
+      {
+        "name": "independently time-shuffled history median ARI",
+        "value": 0
+      },
+      {
+        "name": "learned relation first tested budget at >=90% PSNR>=40 dB success",
+        "display": "12 / 256 = 4.6875%"
+      },
+      {
+        "name": "oracle relation first tested budget at >=90% success",
+        "display": "12 / 256 = 4.6875%"
+      },
+      {
+        "name": "active learned-relation measurement fraction",
+        "value": 0.015625,
+        "display": "4 / 256 = 1.5625%"
+      },
+      {
+        "name": "active learned-relation success",
+        "value": 1
+      }
+    ],
+    "controls": [
+      "All hidden objects use the same multiset of velocity vectors in different temporal orders",
+      "Independent temporal shuffle destroys common-fate order while preserving the motion vocabulary",
+      "Absolute-coordinate memory is attacked by rearranging parts before the future sensing task",
+      "Oracle relation retained as a ceiling"
+    ],
+    "replication": "48 independent worlds",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Patch correspondence across history and future is supplied",
+      "Synthetic piecewise-constant patches",
+      "Does not yet derive tracking confidence from image evidence"
+    ],
+    "source": "https://github.com/anttiluode/WhatToLookAt/blob/main/README.md"
+  },
+  {
+    "id": "wtla-gate2-local-uncertainty-budget",
+    "node": "WhatToLookAt",
+    "claim": "Local correspondence uncertainty can be converted into a local measurement budget that stays near the oracle cost curve, rather than forcing blind trust or global oversampling.",
+    "design": "train/freeze confidence threshold followed by held-out correspondence-swap panel and shuffled-confidence matched-cost attacker",
+    "result": "supports",
+    "motifs": [
+      "bounded-observation"
+    ],
+    "sample": {
+      "unit": "held-out world per ambiguity level",
+      "count": 80
+    },
+    "metrics": [
+      {
+        "name": "learned confidence threshold",
+        "value": 0.525
+      },
+      {
+        "name": "training balanced accuracy",
+        "value": 0.99375
+      },
+      {
+        "name": "adaptive success with 4 wrong matches",
+        "value": 0.95
+      },
+      {
+        "name": "adaptive mean measurements with 4 wrong matches",
+        "value": 7.95
+      },
+      {
+        "name": "global-caution mean measurements",
+        "value": 16
+      },
+      {
+        "name": "shuffled-confidence success with 4 wrong matches",
+        "value": 0
+      },
+      {
+        "name": "oracle mean measurements with 4 wrong matches",
+        "value": 8
+      }
+    ],
+    "controls": [
+      "Always-trust policy keeps the four-measurement budget and fails once correspondence is wrong",
+      "Global-caution policy measures all 16 patches",
+      "Shuffled-confidence attacker keeps essentially the same number of low-confidence flags/measurements but assigns them to the wrong patches",
+      "Oracle uncertainty provides the minimum-cost ceiling"
+    ],
+    "replication": "80 training worlds for threshold selection; 80 untouched test worlds per ambiguity level",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Confidence is synthetic rather than derived from RGB/matching evidence",
+      "Patch identity is still available to the synthetic tracker",
+      "The gate establishes the budgeting mechanism, not a real visual tracker"
+    ],
+    "source": "https://github.com/anttiluode/WhatToLookAt/blob/main/README.md"
   }
 ]
