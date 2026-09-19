@@ -166,5 +166,9 @@
   {
     "path": "frequency-addressed-operator-composition.json",
     "enabled": true
+  },
+  {
+    "path": "sigh-residue-fork.json",
+    "enabled": true
   }
 ]
