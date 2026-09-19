@@ -331,5 +331,48 @@
       "Gate 7 corrects the Gate-6 coverage interpretation: untouched coordinates are not necessary for failure; signed combinations can disappear by cancellation inside an observed row.",
       "Gate 8 partially resolves the minimum-cost diversity question: degree 3 is sufficient in the tested world and saves 25% of coordinate-touch work versus the robust 12-row ceiling; the remaining question is overlap combinatorics at fixed degree."
     ]
+  },
+  {
+    "id": "adaptive-diffusion-compute-routing",
+    "title": "Can a cheap spatial predictor reduce real diffusion wall time without breaking the globally coherent denoising trajectory?",
+    "state": "partially-resolved",
+    "motifs": [
+      "bounded-observation",
+      "information-needs-an-observable",
+      "operator-update"
+    ],
+    "evidence": [
+      "wtla-practical-p0-crop-routing-fails",
+      "wtla-practical-p1-selection-survives-actuation-fails",
+      "wtla-practical-p2-global-state-mask"
+    ],
+    "competing_explanations": [
+      "The useful mechanism is genuinely local: cheap evidence identifies where the next denoising work matters, and the UNet can be evaluated only on those latent regions plus enough halo to preserve the full-frame update.",
+      "The predictor is useful, but SDXL's convolutional/attention computation is too globally coupled or too GPU-inefficient at small crop sizes for spatial sparsity to produce a practical wall-time win."
+    ],
+    "known": [
+      "P0 kills independent crop diffusion as the actuator: edge routing is both farther from the full-frame teacher and slower.",
+      "P1 shows the selector itself survives: edge-selected 4/16 tiles contain 43.51% of correction energy versus 24.31% for random.",
+      "P2 restores global-state semantics and passes: edge masks recover 30.87% versus 17.30% for random, win 9/9 cases, and full-mask parity is exact."
+    ],
+    "missing_discriminator": "P2 still runs the full 64×64 latent UNet. The remaining question is whether the same globally coherent masked update can be approximated by evaluating the UNet only on selected latent tiles plus a finite halo, while producing a measured wall-clock speedup.",
+    "candidate_experiment": {
+      "design": "P3 keeps the global scheduler/noise/timestep state but batches only the selected 16×16 latent tiles through the UNet with 0/4/8 latent-pixel halos. Seeds 100/101 select the smallest halo meeting recovery, edge-vs-random and speed criteria; seed 102 is held out.",
+      "cost": "one RTX-3060 run across the same 3 prompts × 3 seeds and three halo sizes",
+      "outcomes": [
+        {
+          "if": "A validation-selected halo retains at least 70% of P2 edge recovery, keeps the edge-vs-random margin, and runs at least 1.10× faster than the ordinary full-frame stage on held-out seed 102",
+          "then": "WhatToLookAt earns a real sparse-compute mechanism: cheap local evidence can route a globally coherent diffusion update into fewer UNet spatial evaluations."
+        },
+        {
+          "if": "No halo preserves both recovery and speed",
+          "then": "Keep P2 as a positive localization/actuation result but abandon hard spatial UNet sparsity for this architecture; move to feature/token caching, layer-wise early exit, or another globally coherent acceleration mechanism."
+        }
+      ]
+    },
+    "notes": [
+      "This practical branch is deliberately separate from the synthetic Gate 0–8 measurement experiments.",
+      "A speed claim is not attached to P2; it is reserved for P3 or later."
+    ]
   }
 ]
