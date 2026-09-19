@@ -137,7 +137,8 @@
     "description": "SighImageSuper shows that a physically present distinction may be invisible to one probe. SighImageFactorization Gate 17 gives the sharper causal form: identical observed prefixes force identical deterministic causal state and chance future classification. Gate 18 only escapes by adding a genuinely informative pre-relapse observable.",
     "nodes": [
       "SighImageSuper",
-      "SighImageFactorization"
+      "SighImageFactorization",
+      "WhatToLookAt"
     ]
   },
   {
