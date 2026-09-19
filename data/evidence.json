@@ -1841,5 +1841,69 @@
       "The quality target is defined relative to this repository's four-step teacher, not human preference"
     ],
     "source": "https://github.com/anttiluode/WhatToLookAt/blob/main/PRACTICAL_ROUTER_P4.md"
+  },
+  {
+    "id": "wtla-sdxl-stage-profile",
+    "node": "WhatToLookAt",
+    "claim": "On the tested 512×512 four-step SDXL-Turbo img2img stage, VAE encode+decode is the majority wall-clock GPU cost, exceeding the combined cost of both U-Net calls.",
+    "design": "CUDA-event component profile on the ordinary full-frame continuation across the same 3 prompts × 3 seeds used by the practical routing branch; synchronized stage wall time measured separately",
+    "result": "supports",
+    "motifs": [
+      "bounded-observation",
+      "operator-update"
+    ],
+    "sample": {
+      "unit": "prompt-seed GPU case",
+      "count": 9
+    },
+    "metrics": [
+      {
+        "name": "mean stage wall ms",
+        "value": 763.1103999996817
+      },
+      {
+        "name": "mean VAE encode ms",
+        "value": 167.91153801812067
+      },
+      {
+        "name": "mean VAE decode ms",
+        "value": 277.4770338270399
+      },
+      {
+        "name": "VAE encode+decode wall fraction",
+        "value": 0.5836489344731068,
+        "display": "58.36%"
+      },
+      {
+        "name": "mean U-Net total ms",
+        "value": 238.35875532362195
+      },
+      {
+        "name": "U-Net wall fraction",
+        "value": 0.31235160118866334,
+        "display": "31.24%"
+      },
+      {
+        "name": "mean text encoder total ms",
+        "value": 35.9056495030721
+      },
+      {
+        "name": "mean residual wall ms",
+        "value": 43.457423327827
+      }
+    ],
+    "controls": [
+      "Profiles the ordinary non-routed four-step stage rather than a modified sparse pipeline",
+      "CUDA events are placed around both text encoders, VAE encode/decode and U-Net forward calls",
+      "Full synchronized wall time is measured separately and residual overhead is retained"
+    ],
+    "replication": "9 cases on NVIDIA GeForce RTX 3060",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Top-level CUDA-event attribution is not operator-level FLOP profiling",
+      "Result is specific to this 512×512 SDXL-Turbo img2img route and software/hardware stack"
+    ],
+    "source": "https://github.com/anttiluode/WhatToLookAt/blob/main/PROFILE_SDXL_STAGE.md"
   }
 ]

@@ -11,7 +11,7 @@
       "family": "active-sensing",
       "status": "active",
       "claim": "Learns persistent relations from past temporal structure and uses them as a prior for future sparse sensing; local relation uncertainty withdraws sharing authority and purchases extra measurements only where confidence is low.",
-      "survived": "Learned relations can replace future observations in controlled worlds; local evidence can buy measurements selectively; sparse measurement geometry and coded overlap matter; and the practical SDXL branch shows the same abstract rule survives outside the synthetic world: edge-selected 4/16 regions contain much more future refinement activity than random, and when one global diffusion trajectory is preserved those regions recover 30.87% of the full teacher correction versus 17.30% for matched random masks. The P2 lesson is therefore specifically about sparse causal authority inside a globally coherent computation, not about naively cutting the computation into independent spatial subgraphs. The practical survivor is now narrowly defined: cheap spatial evidence predicts where a globally coherent diffusion update matters, but that information has not yet been converted into a quality-preserving speedup at 512×512 SDXL-Turbo.",
+      "survived": "Learned relations can replace future observations in controlled worlds; local evidence can buy measurements selectively; sparse measurement geometry and coded overlap matter; and the practical SDXL branch shows the same abstract rule survives outside the synthetic world: edge-selected 4/16 regions contain much more future refinement activity than random, and when one global diffusion trajectory is preserved those regions recover 30.87% of the full teacher correction versus 17.30% for matched random masks. The P2 lesson is therefore specifically about sparse causal authority inside a globally coherent computation, not about naively cutting the computation into independent spatial subgraphs. The practical survivor is now narrowly defined: cheap spatial evidence predicts where a globally coherent diffusion update matters, but that information has not yet been converted into a quality-preserving speedup at 512×512 SDXL-Turbo. The final 512px profiler shows why: VAE encode+decode consumes 58.36% of the ordinary stage while both U-Net calls together consume 31.24%, so the dominant bottleneck is outside the routed operation.",
       "killed": "Blind trust, shuffled confidence, coordinate memory and equal-cost random extra reads fail matched controls. Extreme row sparsity, one-hit coverage, and degree-2 overlap are insufficient in the synthetic chain. In the practical branch, globally refining the Sihti core does not accelerate SDXL, Sihti residue is not the best compute router, and independent crop diffusion is actively harmful and slower; local routing only becomes valid when the actuator preserves the shared global denoising state. P3 additionally kills hard spatial U-Net execution on this SDXL-Turbo/RTX-3060 route: 25%, 56.25%, and even 100%-naive-spatial-work crop decompositions all have negative correction recovery and are slower than the full-frame teacher. P4 then shows that established DeepCache can shave about 0.10–0.11 s from the four-step 512px stage, but none of the tested cache branches preserves the preregistered quality frontier, so no adaptive-cache mechanism is earned at this scale.",
       "usefulness": "scientific",
       "confidence": "high",
@@ -32,7 +32,8 @@
         "global-state",
         "feature-caching",
         "temporal-reuse",
-        "quality-speed-frontier"
+        "quality-speed-frontier",
+        "vae-bottleneck"
       ],
       "era": "Learned structure / adaptive observation",
       "era_order": 27

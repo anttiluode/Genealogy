@@ -125,5 +125,9 @@
   "wtla-practical-p4-deepcache-frontier": {
     "bounded-observation": "limits",
     "operator-update": "limits"
+  },
+  "wtla-sdxl-stage-profile": {
+    "bounded-observation": "supports",
+    "operator-update": "limits"
   }
 }
