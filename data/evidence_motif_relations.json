@@ -129,5 +129,8 @@
   "wtla-sdxl-stage-profile": {
     "bounded-observation": "supports",
     "operator-update": "limits"
+  },
+  "wtla-sdxl-vae-closeout": {
+    "operator-update": "limits"
   }
 }
