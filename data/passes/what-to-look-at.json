@@ -1,7 +1,7 @@
 {
   "id": "what-to-look-at",
   "title": "WhatToLookAt: learned relations become a sensing budget",
-  "summary": "WhatToLookAt takes the history-written relation machinery from SighImageFactorization and asks a compressed-sensing-style engineering question: if experience has already learned useful structure, how many future physical observations can be omitted? Gate 0 establishes an oracle upper bound, Gate 1 earns the relation from ordered common-fate history and spends it on a spatially rearranged future, and Gate 2 turns local correspondence confidence into a local sensing budget. The branch keeps the Sigh/Sihti operator framing but changes the currency from segmentation or relation authority to the minimum measurement cost required to maintain reconstruction quality.",
+  "summary": "WhatToLookAt takes the history-written relation machinery from SighImageFactorization and asks a compressed-sensing-style engineering question: if experience has already learned useful structure, how many future physical observations can be omitted? Gates 0–2 establish the relation-to-budget mechanism, Gate 3 derives local confidence from a charged low-resolution image channel, and Gate 4 weakens exact relation equality into a falsifiable compression hypothesis audited by a cheap current residual. The branch keeps the Sigh/Sihti operator framing but changes the currency from segmentation or relation authority to the minimum measurement cost required to maintain reconstruction quality.",
   "order": 209,
   "reviewed_at": "2026-09-19",
   "nodes": [
@@ -11,8 +11,8 @@
       "family": "active-sensing",
       "status": "active",
       "claim": "Learns persistent relations from past temporal structure and uses them as a prior for future sparse sensing; local relation uncertainty withdraws sharing authority and purchases extra measurements only where confidence is low.",
-      "survived": "A correct relation partition can replace measurements in a piecewise-constant world; common-fate history can learn that partition before a rearranged future is undersampled; confidence-adaptive sensing stays near the oracle cost curve while blind trust and shuffled-confidence controls fail.",
-      "killed": "A spatial lattice, a size-matched shuffled relation graph, time-shuffled motion history, and absolute-coordinate memory do not recover the same measurement savings; spending the same number of extra measurements at the wrong uncertain locations does not rescue reconstruction.",
+      "survived": "A correct relation partition can replace measurements; common-fate history can learn that partition before a rearranged future is undersampled; image-derived match confidence localizes where expensive sensing is needed; and a cheap residual projection can audit when an approximate relation has stopped predicting high-resolution content, keeping the adaptive cost curve close to an oracle residual policy.",
+      "killed": "Spatial, shuffled-relation, time-shuffled-history and coordinate-memory controls do not recover the same savings; blind trust collapses under wrong correspondence; matched-cost shuffled confidence fails; fixed one-per-relation sensing collapses under local content innovation; and equal-cost random extra reads do not substitute for residual-localized sensing.",
       "usefulness": "scientific",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/WhatToLookAt/blob/main/README.md",
