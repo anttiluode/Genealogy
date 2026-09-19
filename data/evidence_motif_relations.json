@@ -96,5 +96,9 @@
   "wtla-gate6-designed-vs-pruned": {
     "bounded-observation": "supports",
     "information-needs-an-observable": "supports"
+  },
+  "wtla-gate7-coverage-not-enough": {
+    "bounded-observation": "supports",
+    "information-needs-an-observable": "supports"
   }
 }
