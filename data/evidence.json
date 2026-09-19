@@ -1296,5 +1296,93 @@
       "Designed sparse sensing is tested; post-hoc sparsification of an originally dense operator remains open"
     ],
     "source": "https://github.com/anttiluode/WhatToLookAt/blob/main/README.md"
+  },
+  {
+    "id": "wtla-gate6-designed-vs-pruned",
+    "node": "WhatToLookAt",
+    "claim": "When relation failures are extremely sparse, deliberately designing sparse measurement supports to cover the signal coordinates can preserve the target reconstruction frontier with much less guide mixing work than post-hoc pruning of dense measurement rows.",
+    "design": "matched sparse-row support budget with guide-row sweep comparing coverage-designed sparse, post-hoc top-weight pruning, independent random sparse and dense sensing; train/freeze thresholds and select smallest validation-passing row count before held-out evaluation",
+    "result": "supports",
+    "motifs": [
+      "bounded-observation",
+      "information-needs-an-observable"
+    ],
+    "sample": {
+      "unit": "held-out world per innovation level for each selected sensing family",
+      "count": 120
+    },
+    "metrics": [
+      {
+        "name": "coverage-designed selected guide rows",
+        "value": 3
+      },
+      {
+        "name": "coverage-designed signal-coordinate coverage",
+        "value": 192,
+        "denominator": 192
+      },
+      {
+        "name": "coverage-designed guide coordinate touches",
+        "value": 3072
+      },
+      {
+        "name": "coverage-designed held-out minimum success",
+        "value": 1
+      },
+      {
+        "name": "post-hoc-pruned selected guide rows",
+        "value": 12
+      },
+      {
+        "name": "post-hoc-pruned guide coordinate touches",
+        "value": 12288
+      },
+      {
+        "name": "post-hoc-pruned held-out minimum success",
+        "value": 1
+      },
+      {
+        "name": "random-sparse selected guide rows",
+        "value": 12
+      },
+      {
+        "name": "random-sparse signal-coordinate coverage",
+        "value": 190,
+        "denominator": 192
+      },
+      {
+        "name": "random-sparse held-out minimum success",
+        "value": 0.95
+      },
+      {
+        "name": "dense selected guide rows",
+        "value": 2
+      },
+      {
+        "name": "dense guide coordinate touches",
+        "value": 6144
+      },
+      {
+        "name": "dense held-out minimum success",
+        "value": 0.9333333333333333
+      }
+    ],
+    "controls": [
+      "All sparse methods use row support 64 on the same 192-coordinate signal and the same one-coordinate innovation world",
+      "Coverage-designed rows maximize union support before repeating coordinates",
+      "Post-hoc pruning starts from dense Gaussian rows and keeps only the 64 largest absolute coefficients in each row",
+      "Independent random sparse supports provide a same-sparsity no-design control",
+      "Dense Gaussian sensing provides a full-support comparison",
+      "Each family learns its own threshold and selects the smallest row count only from a separate validation panel"
+    ],
+    "replication": "150 training worlds, 80 validation worlds per innovation level, and 120 untouched test worlds per level",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Innovation support is intentionally one coordinate, making blind-coordinate coverage maximally important",
+      "Synthetic relation world and linear guide sensing",
+      "Does not imply coverage-designed sparsity will retain the same advantage for diffuse failures or natural signals"
+    ],
+    "source": "https://github.com/anttiluode/WhatToLookAt/blob/main/README.md"
   }
 ]

@@ -92,5 +92,9 @@
   "wtla-gate5-price-of-sparse-measurements": {
     "bounded-observation": "supports",
     "information-needs-an-observable": "supports"
+  },
+  "wtla-gate6-designed-vs-pruned": {
+    "bounded-observation": "supports",
+    "information-needs-an-observable": "supports"
   }
 }
