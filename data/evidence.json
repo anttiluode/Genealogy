@@ -1905,5 +1905,77 @@
       "Result is specific to this 512×512 SDXL-Turbo img2img route and software/hardware stack"
     ],
     "source": "https://github.com/anttiluode/WhatToLookAt/blob/main/PROFILE_SDXL_STAGE.md"
+  },
+  {
+    "id": "wtla-sdxl-vae-closeout",
+    "node": "WhatToLookAt",
+    "claim": "The measured 512px SDXL-Turbo bottleneck can be reduced with an established fp16-friendly full SDXL VAE while preserving the standard-VAE continuation, but this gain is an engineering substitution rather than a WhatToLookAt routing result.",
+    "design": "Compare the bundled SDXL-Turbo AutoencoderKL against madebyollin/sdxl-vae-fp16-fix and madebyollin/taesdxl with fixed prompt/base/scheduler/noise/UNet. Seeds 100/101 select the fastest candidate meeting fixed recovery/layout/edge/speed thresholds; seed 102 is held out.",
+    "result": "supports",
+    "motifs": [
+      "operator-update"
+    ],
+    "sample": {
+      "unit": "prompt-seed GPU case",
+      "count": 9
+    },
+    "metrics": [
+      {
+        "name": "fp16-fix validation mean recovery",
+        "value": 0.9950162205964682
+      },
+      {
+        "name": "fp16-fix validation min layout PSNR dB",
+        "value": 46.687788484703994
+      },
+      {
+        "name": "fp16-fix validation mean edge correlation",
+        "value": 0.9594117000026414
+      },
+      {
+        "name": "fp16-fix validation mean stage speedup",
+        "value": 1.3820765550289278
+      },
+      {
+        "name": "fp16-fix validation faster cases",
+        "value": 6,
+        "denominator": 6
+      },
+      {
+        "name": "fp16-fix held-out mean recovery",
+        "value": 0.9973844699627491
+      },
+      {
+        "name": "fp16-fix held-out mean stage speedup",
+        "value": 1.356251870069979
+      },
+      {
+        "name": "fp16-fix held-out faster cases",
+        "value": 3,
+        "denominator": 3
+      },
+      {
+        "name": "TAESDXL validation mean speedup",
+        "value": 2.3359995222187506
+      },
+      {
+        "name": "TAESDXL validation mean recovery",
+        "value": 0.20667883591708633
+      }
+    ],
+    "controls": [
+      "Prompt, base image, scheduler, stage seed, text encoders and U-Net are fixed; only the VAE changes",
+      "Seeds 100/101 select the candidate before seed 102 is evaluated",
+      "The benchmark profiles VAE encode/decode and U-Net time under each candidate"
+    ],
+    "replication": "6 validation and 3 held-out cases on NVIDIA GeForce RTX 3060",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "This is a systems baseline, not a new WhatToLookAt mechanism",
+      "Output fidelity is measured against the standard-VAE continuation rather than human preference",
+      "Result is specific to this SDXL-Turbo/RTX-3060 route"
+    ],
+    "source": "https://github.com/anttiluode/WhatToLookAt/blob/main/VAE_CLOSEOUT.md"
   }
 ]

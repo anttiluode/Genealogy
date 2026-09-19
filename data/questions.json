@@ -347,7 +347,8 @@
       "wtla-practical-p2-global-state-mask",
       "wtla-practical-p3-hard-tiling-fails",
       "wtla-practical-p4-deepcache-frontier",
-      "wtla-sdxl-stage-profile"
+      "wtla-sdxl-stage-profile",
+      "wtla-sdxl-vae-closeout"
     ],
     "competing_explanations": [
       "The useful mechanism is genuinely local: cheap evidence identifies where the next denoising work matters, and the UNet can be evaluated only on those latent regions plus enough halo to preserve the full-frame update.",
@@ -359,20 +360,21 @@
       "P2 restores global-state semantics and passes: edge masks recover 30.87% versus 17.30% for random, win 9/9 cases, and full-mask parity is exact.",
       "P3 tests actual sparse spatial U-Net execution and fails on validation. Halo 0/4/8 edge recovery is -27.54%/-14.36%/-7.82%, and all three routes are slower than the ordinary full-frame teacher. Halo 8 already has 100% of the full-frame naive spatial-element count, so simply increasing crop context does not restore the P2 semantics.",
       "P4 reproduces DeepCache on the short Turbo route. All tested cache branches are faster (~1.15–1.17× stage speedup), proving that the clock can see reused U-Net work, but the best-quality branch reaches only 72.20% mean recovery with 25.83 dB minimum PSNR and no branch meets the preregistered 80% / 28 dB frontier.",
-      "The final component profile shows VAE encode+decode is 445.39 ms / 58.36% of a 763.11 ms stage, while both U-Net calls together are 238.36 ms / 31.24%. This is the systems reason routing the U-Net could not dominate end-to-end speed at this scale."
+      "The final component profile shows VAE encode+decode is 445.39 ms / 58.36% of a 763.11 ms stage, while both U-Net calls together are 238.36 ms / 31.24%. This is the systems reason routing the U-Net could not dominate end-to-end speed at this scale.",
+      "The final VAE benchmark selects sdxl-vae-fp16-fix on validation and held-out: ~99.5–99.7% recovery with ~1.36–1.38× stage speedup. TAESDXL is ~2.34× faster but far outside the fidelity frontier. The passing 512px speed improvement is therefore conventional VAE engineering, not routing."
     ],
-    "missing_discriminator": "Only one 512×512 engineering baseline remains: replace the measured VAE bottleneck with established SDXL-compatible alternatives and test whether the latency saving preserves the standard-VAE output frontier. This does not reopen the routing mechanism search.",
+    "missing_discriminator": "No further 512×512 Turbo routing discriminator is justified. The tested route is closed: the selector/local-authority result survives scientifically, but no quality-preserving routing speedup was earned. The next compute question moves to independent high-resolution tile workloads where skipping a region deletes an entire diffusion call.",
     "candidate_experiment": {
-      "design": "Benchmark madebyollin/sdxl-vae-fp16-fix and madebyollin/taesdxl under fixed prompt/base/scheduler/noise/UNet conditions. Seeds 100/101 select the fastest candidate meeting recovery/layout/edge/speed thresholds; seed 102 is held out. Close the 512px Turbo branch regardless of outcome.",
-      "cost": "one RTX-3060 run over the same 3 prompts × 3 seeds and two VAE alternatives",
+      "design": "Move to a new high-resolution question rather than tuning 512px. At 2048×2048, define the all-tile teacher as sixteen independent 512px img2img calls using the fp16-fix VAE, then test whether cheap edge energy can skip 50–75% of those whole calls while preserving the declared quality frontier.",
+      "cost": "one RTX-3060 H0 run over 3 generated photographic prompts × 3 seeds; sixteen teacher tile calls per case",
       "outcomes": [
         {
-          "if": "A VAE alternative passes the fixed quality/speed frontier on held-out seed 102",
-          "then": "Adopt it as an engineering default for this route, but do not attribute the gain to WhatToLookAt."
+          "if": "A <=8/16 edge-selected budget passes validation and held-out recovery/layout/edge/random-margin/speed criteria",
+          "then": "Whole-call omission becomes the first practical WhatToLookAt compute-saving mechanism and must then be repeated on real natural photographs."
         },
         {
-          "if": "Neither alternative passes",
-          "then": "Keep the standard VAE for fidelity and close 512px Turbo speed work completely."
+          "if": "Neither 4/16 nor 8/16 passes",
+          "then": "Stop the high-resolution image branch; the remaining strong domains are streaming/video and physical sensing."
         }
       ]
     },
@@ -382,7 +384,56 @@
       "P3 rules out the most literal spatial-compressed-compute implementation: sparse authority does not imply that the U-Net itself can be cut into independent spatial crops.",
       "P4 uses DeepCache as prior art/reproduction, not as a WhatToLookAt novelty claim.",
       "P4 corrects a too-strong P3 timing interpretation: U-Net feature reuse does reduce measured stage time by roughly 0.10–0.11 s, but the savings come with too much output drift to pass the declared frontier.",
-      "The profile confirms Claude's qualitative VAE-bottleneck hypothesis, but now with direct component timing rather than inference from warnings or route latency."
+      "The profile confirms Claude's qualitative VAE-bottleneck hypothesis, but now with direct component timing rather than inference from warnings or route latency.",
+      "The 512px branch is closed after the VAE baseline; no adaptive-cache or additional sparse-UNet gate is earned."
+    ]
+  },
+  {
+    "id": "highres-whole-tile-omission",
+    "title": "Can cheap spatial evidence skip whole high-resolution diffusion tile calls while preserving the all-tile result?",
+    "state": "open",
+    "motifs": [
+      "bounded-observation",
+      "information-needs-an-observable",
+      "operator-update"
+    ],
+    "evidence": [
+      "wtla-practical-p1-selection-survives-actuation-fails",
+      "wtla-practical-p2-global-state-mask",
+      "wtla-sdxl-stage-profile",
+      "wtla-sdxl-vae-closeout"
+    ],
+    "competing_explanations": [
+      "At high resolution, correction energy is concentrated enough that cheap edge energy can identify tiles worth refining, so skipping 50–75% of independent tile calls preserves most of the all-tile result and directly saves wall time.",
+      "Correction energy is too spatially diffuse or too weakly predicted by edge energy; once at least two thirds of tiles must be refined, the selector is not economically useful."
+    ],
+    "known": [
+      "At 512px, edge energy consistently localizes future refinement activity, but sparse execution inside a globally coupled U-Net does not convert that information into speed.",
+      "The fp16-fix VAE is the earned engineering default for the tile calls, reducing per-call stage cost without changing the routing question.",
+      "An independent-tile workload removes the P0/P3 actuator problem: the all-tile teacher itself consists of independent calls, so skipping a tile deletes exactly one operation."
+    ],
+    "missing_discriminator": "Measure whether edge-selected 4/16 or 8/16 tile budgets retain at least 80% of all-tile correction, beat matched random selection by at least 10 percentage points, preserve layout/edge metrics, and yield at least 1.75× measured call-level speedup on held-out seed 102.",
+    "candidate_experiment": {
+      "design": "H0 generates reproducible photographic scenes, upscales them to 2048×2048, refines all sixteen 512px tiles independently, then evaluates edge-selected 4/16, 8/16 and diagnostic 12/16 budgets against 64 random matched-budget draws and an oracle correction-energy ceiling. Seeds 100/101 select the smallest eligible budget; seed 102 is held out.",
+      "cost": "16 four-step 512px tile calls per case × 9 cases, plus cheap CPU selection analysis",
+      "outcomes": [
+        {
+          "if": "4/16 or 8/16 passes validation and held-out",
+          "then": "Proceed to H1 on real natural photographs with the selected budget frozen."
+        },
+        {
+          "if": "Only 12/16 looks acceptable",
+          "then": "Treat the branch as economically negative because skipping only 25% is below the practical target."
+        },
+        {
+          "if": "No budget preserves quality",
+          "then": "Stop high-resolution image routing and move to streaming/video or physical sensing."
+        }
+      ]
+    },
+    "notes": [
+      "H0 is intentionally generated-photo evidence only; it cannot establish performance on arbitrary real images.",
+      "Timing is measured per independent tile call; selective route time is the sum of the actual selected calls plus selector CPU time."
     ]
   }
 ]
