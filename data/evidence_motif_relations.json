@@ -88,5 +88,9 @@
   "wtla-gate4-residual-audited-relation": {
     "bounded-observation": "supports",
     "information-needs-an-observable": "supports"
+  },
+  "wtla-gate5-price-of-sparse-measurements": {
+    "bounded-observation": "supports",
+    "information-needs-an-observable": "supports"
   }
 }

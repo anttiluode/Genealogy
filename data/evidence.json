@@ -1225,5 +1225,76 @@
       "Does not yet quantify the trade-off when the measurement operator itself is sparse"
     ],
     "source": "https://github.com/anttiluode/WhatToLookAt/blob/main/README.md"
+  },
+  {
+    "id": "wtla-gate5-price-of-sparse-measurements",
+    "node": "WhatToLookAt",
+    "claim": "Sparsifying each guide measurement reduces coordinate-touch/mixing cost but creates a measurable sample-complexity price because sparse relation failures can fall outside the measurement support; a moderate sparse regime can preserve sensing quality with substantially less mixing work than a dense guide.",
+    "design": "row-support × guide-row sweep with trained thresholds, separate detector and end-to-end policy validation, then frozen held-out evaluation",
+    "result": "supports",
+    "motifs": [
+      "bounded-observation",
+      "information-needs-an-observable"
+    ],
+    "sample": {
+      "unit": "held-out world per innovation level for each selected feasible row support",
+      "count": 80
+    },
+    "metrics": [
+      {
+        "name": "support-1 best tested minimum validation success",
+        "value": 0.6,
+        "comparison": "m <= 64"
+      },
+      {
+        "name": "support-2 best tested minimum validation success",
+        "value": 0.925,
+        "comparison": "m <= 64"
+      },
+      {
+        "name": "support-64 selected guide rows",
+        "value": 4
+      },
+      {
+        "name": "support-64 guide scalar samples",
+        "value": 64
+      },
+      {
+        "name": "support-64 guide coordinate touches",
+        "value": 4096
+      },
+      {
+        "name": "dense support-192 guide scalar samples",
+        "value": 64
+      },
+      {
+        "name": "dense support-192 guide coordinate touches",
+        "value": 12288
+      },
+      {
+        "name": "support-64 held-out minimum success",
+        "value": 0.9875
+      },
+      {
+        "name": "support-64 four-innovation total sensing cost",
+        "value": 0.5208333333333334,
+        "display": "52.08% of full scan"
+      }
+    ],
+    "controls": [
+      "Innovation modifies only 8 of 192 high-resolution coordinates, so sparse rows can genuinely miss the changed support",
+      "For each row support, guide-row count is selected only by a separate end-to-end validation panel before held-out testing",
+      "Scalar guide sample count and coordinate-touch/mixing cost are reported separately",
+      "Dense support-192 guide provides a same-sample-count comparison for moderate sparse support-64 sensing"
+    ],
+    "replication": "100 training worlds, 50 detector-validation worlds, 40 policy-validation worlds per innovation level, and 80 untouched test worlds per level",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Synthetic sparse innovations and random linear guide measurements",
+      "The experiment is an executable analogue of measurement-sparsity trade-offs, not a validation of an asymptotic theorem",
+      "Designed sparse sensing is tested; post-hoc sparsification of an originally dense operator remains open"
+    ],
+    "source": "https://github.com/anttiluode/WhatToLookAt/blob/main/README.md"
   }
 ]
