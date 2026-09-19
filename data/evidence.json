@@ -1530,5 +1530,174 @@
       "Does not yet isolate whether exact degree or lower overlap coincidence is the decisive combinatorial property"
     ],
     "source": "https://github.com/anttiluode/WhatToLookAt/blob/main/README.md"
+  },
+  {
+    "id": "wtla-practical-p0-crop-routing-fails",
+    "node": "WhatToLookAt",
+    "claim": "Independent image-space crop refinement is not a valid local substitute for the corresponding full-frame SDXL-Turbo update in the tested route; it moves farther from the teacher and is slower.",
+    "design": "3 prompts × 3 seeds on RTX 3060; cheap full-frame base followed by equal-budget four-tile crop refinement using edge, variance, Gaussian-residual, Sihti-residue, or random selectors; compared with a full-frame four-step teacher",
+    "result": "contradicts",
+    "motifs": [
+      "bounded-observation",
+      "information-needs-an-observable"
+    ],
+    "sample": {
+      "unit": "prompt-seed GPU case",
+      "count": 9
+    },
+    "metrics": [
+      {
+        "name": "edge mean correction recovery",
+        "value": -2.022310555924337
+      },
+      {
+        "name": "random mean correction recovery",
+        "value": -1.2886589187250346
+      },
+      {
+        "name": "edge mean route seconds",
+        "value": 1.3997132888864725
+      },
+      {
+        "name": "teacher mean route seconds",
+        "value": 1.0089676777732868
+      },
+      {
+        "name": "edge faster cases",
+        "value": 0,
+        "denominator": 9
+      }
+    ],
+    "controls": [
+      "Every selector refines exactly 4 of 16 tiles with the same crop geometry and diffusion-step budget",
+      "Random selection is the same-compute attacker",
+      "A full-frame four-step continuation is the compute reference"
+    ],
+    "replication": "3 prompts × 3 seeds on NVIDIA GeForce RTX 3060",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Teacher is a more expensive model trajectory, not semantic ground truth",
+      "Failure may be caused by crop actuation rather than tile selection"
+    ],
+    "source": "https://github.com/anttiluode/WhatToLookAt/blob/main/PRACTICAL_DIFFUSION_ROUTER.md"
+  },
+  {
+    "id": "wtla-practical-p1-selection-survives-actuation-fails",
+    "node": "WhatToLookAt",
+    "claim": "The practical crop-routing failure separates into a useful spatial selector and a bad local actuator: edge-selected tiles contain substantially more full-frame teacher correction energy than random, but independently generated crop updates are weakly aligned with the teacher correction.",
+    "design": "CPU analysis of all committed P0 outputs; measure selected correction-energy capture, crop-update/teacher-update cosine, per-case oracle scalar blend, and a scalar blend trained on seeds 100/101 then frozen on seed 102",
+    "result": "supports",
+    "motifs": [
+      "bounded-observation",
+      "information-needs-an-observable"
+    ],
+    "sample": {
+      "unit": "prompt-seed case",
+      "count": 9
+    },
+    "metrics": [
+      {
+        "name": "edge selected correction-energy capture",
+        "value": 0.435133557754624
+      },
+      {
+        "name": "random selected correction-energy capture",
+        "value": 0.24305399013221798
+      },
+      {
+        "name": "edge mean actuation cosine",
+        "value": 0.25695093442205674
+      },
+      {
+        "name": "edge oracle scalar-blend recovery",
+        "value": 0.035266796468316285
+      },
+      {
+        "name": "held-out edge fixed-alpha recovery",
+        "value": 0.03975667647148784
+      }
+    ],
+    "controls": [
+      "Same P0 selected tiles and outputs are analyzed without another GPU fit",
+      "Random selection separates spatial localization from generic four-tile coverage",
+      "Blend alpha is fit only on seeds 100/101 and evaluated on held-out seed 102"
+    ],
+    "replication": "9 cases total; seed 102 held out for scalar-strength transfer",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Pixel-space teacher correction is only one proxy for useful compute",
+      "Does not identify a successful sparse diffusion actuator by itself"
+    ],
+    "source": "https://github.com/anttiluode/WhatToLookAt/blob/main/PRACTICAL_ROUTER_P1.md"
+  },
+  {
+    "id": "wtla-practical-p2-global-state-mask",
+    "node": "WhatToLookAt",
+    "claim": "When the local intervention preserves one global SDXL latent/noise/timestep trajectory, cheap edge-selected masks causally recover substantially more of the full-frame continuation than same-budget random masks.",
+    "design": "3 prompts × 3 seeds on RTX 3060; full-frame masked SDXL continuation with edge/random/oracle 4-of-16 masks plus a full-mask trajectory-parity control",
+    "result": "supports",
+    "motifs": [
+      "bounded-observation",
+      "information-needs-an-observable",
+      "operator-update"
+    ],
+    "sample": {
+      "unit": "prompt-seed GPU case",
+      "count": 9
+    },
+    "metrics": [
+      {
+        "name": "full-mask minimum PSNR to ordinary teacher",
+        "value": 120,
+        "display": "120 dB exact parity"
+      },
+      {
+        "name": "edge mean recovery",
+        "value": 0.3086688355805913
+      },
+      {
+        "name": "random mean recovery",
+        "value": 0.17295844177748254
+      },
+      {
+        "name": "edge minus random recovery",
+        "value": 0.1357103938031088,
+        "display": "+13.57 percentage points"
+      },
+      {
+        "name": "edge wins versus random",
+        "value": 9,
+        "denominator": 9
+      },
+      {
+        "name": "oracle mean recovery",
+        "value": 0.4033415862377705
+      },
+      {
+        "name": "edge mean correction-energy capture",
+        "value": 0.39701164299585856
+      },
+      {
+        "name": "oracle mean correction-energy capture",
+        "value": 0.49898596811278384
+      }
+    ],
+    "controls": [
+      "Full-mask route must exactly reproduce the ordinary full-frame teacher before masked results receive credit",
+      "Edge and random masks both allow exactly 4 of 16 spatial tiles to continue",
+      "Oracle mask uses teacher correction only as a ceiling",
+      "Mask-background noise uses a separate RNG so it cannot perturb the main scheduler RNG"
+    ],
+    "replication": "3 prompts × 3 seeds on NVIDIA GeForce RTX 3060",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Masked P2 still executes the full-frame UNet and therefore earns no speed claim",
+      "Hard 4x4 spatial masks may not generalize to different diffusion architectures or budgets",
+      "Teacher continuation is a compute reference rather than ground truth"
+    ],
+    "source": "https://github.com/anttiluode/WhatToLookAt/blob/main/PRACTICAL_ROUTER_P2.md"
   }
 ]
