@@ -104,5 +104,18 @@
   "wtla-gate8-coded-overlap": {
     "bounded-observation": "supports",
     "information-needs-an-observable": "supports"
+  },
+  "wtla-practical-p0-crop-routing-fails": {
+    "bounded-observation": "contradicts",
+    "information-needs-an-observable": "supports"
+  },
+  "wtla-practical-p1-selection-survives-actuation-fails": {
+    "bounded-observation": "supports",
+    "information-needs-an-observable": "supports"
+  },
+  "wtla-practical-p2-global-state-mask": {
+    "bounded-observation": "supports",
+    "information-needs-an-observable": "supports",
+    "operator-update": "supports"
   }
 }
