@@ -1699,5 +1699,82 @@
       "Teacher continuation is a compute reference rather than ground truth"
     ],
     "source": "https://github.com/anttiluode/WhatToLookAt/blob/main/PRACTICAL_ROUTER_P2.md"
+  },
+  {
+    "id": "wtla-practical-p3-hard-tiling-fails",
+    "node": "WhatToLookAt",
+    "claim": "Hard spatially sparse U-Net execution does not preserve the useful P2 update and does not buy wall-clock speed on the tested SDXL-Turbo/RTX-3060 route, even when total crop spatial elements equal the full-frame latent size.",
+    "design": "validation on seeds 100/101 across three prompts; preserve the global scheduler/noise/timestep state but evaluate the U-Net only on four selected latent tiles with halos 0, 4, or 8; compare edge versus same-budget random selection and the ordinary full-frame teacher stage",
+    "result": "supports",
+    "motifs": [
+      "bounded-observation",
+      "operator-update"
+    ],
+    "sample": {
+      "unit": "validation prompt-seed GPU case",
+      "count": 6
+    },
+    "metrics": [
+      {
+        "name": "halo-0 naive spatial work fraction",
+        "value": 0.25
+      },
+      {
+        "name": "halo-0 edge mean recovery",
+        "value": -0.2754113024888301
+      },
+      {
+        "name": "halo-0 speedup vs teacher",
+        "value": 0.7799257714400554
+      },
+      {
+        "name": "halo-4 naive spatial work fraction",
+        "value": 0.5625
+      },
+      {
+        "name": "halo-4 edge mean recovery",
+        "value": -0.14360023319665546
+      },
+      {
+        "name": "halo-4 speedup vs teacher",
+        "value": 0.7816586118231292
+      },
+      {
+        "name": "halo-8 naive spatial work fraction",
+        "value": 1
+      },
+      {
+        "name": "halo-8 edge mean recovery",
+        "value": -0.07815889274211711
+      },
+      {
+        "name": "halo-8 edge minus random recovery",
+        "value": 0.16982797319541415
+      },
+      {
+        "name": "halo-8 speedup vs teacher",
+        "value": 0.7707110848735926
+      },
+      {
+        "name": "selected halo",
+        "value": null,
+        "display": "none"
+      }
+    ],
+    "controls": [
+      "Seeds 100/101 are validation; seed 102 is not used to rescue a failed model-selection gate",
+      "Every sparse arm keeps the same global scheduler, timestep, prompt and mask semantics as P2",
+      "Edge and random arms use the same four-tile budget",
+      "Halo 8 has 100% of the full-frame naive spatial-element count, ruling out simple lack of raw spatial work as the sole explanation"
+    ],
+    "replication": "6 validation cases on NVIDIA GeForce RTX 3060",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Naive spatial-element fraction is not exact FLOP accounting",
+      "Small crop batches may underutilize this GPU",
+      "Failure does not rule out caching, layer-wise reuse, token reuse, or architectures designed for sparse spatial execution"
+    ],
+    "source": "https://github.com/anttiluode/WhatToLookAt/blob/main/PRACTICAL_ROUTER_P3.md"
   }
 ]

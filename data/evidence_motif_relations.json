@@ -117,5 +117,9 @@
     "bounded-observation": "supports",
     "information-needs-an-observable": "supports",
     "operator-update": "supports"
+  },
+  "wtla-practical-p3-hard-tiling-fails": {
+    "bounded-observation": "limits",
+    "operator-update": "limits"
   }
 }

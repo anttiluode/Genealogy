@@ -11,8 +11,8 @@
       "family": "active-sensing",
       "status": "active",
       "claim": "Learns persistent relations from past temporal structure and uses them as a prior for future sparse sensing; local relation uncertainty withdraws sharing authority and purchases extra measurements only where confidence is low.",
-      "survived": "Learned relations can replace future observations in controlled worlds; local evidence can buy measurements selectively; sparse measurement geometry and coded overlap matter; and the practical SDXL branch shows the same abstract rule survives outside the synthetic world: edge-selected 4/16 regions contain much more future refinement activity than random, and when one global diffusion trajectory is preserved those regions recover 30.87% of the full teacher correction versus 17.30% for matched random masks.",
-      "killed": "Blind trust, shuffled confidence, coordinate memory and equal-cost random extra reads fail matched controls. Extreme row sparsity, one-hit coverage, and degree-2 overlap are insufficient in the synthetic chain. In the practical branch, globally refining the Sihti core does not accelerate SDXL, Sihti residue is not the best compute router, and independent crop diffusion is actively harmful and slower; local routing only becomes valid when the actuator preserves the shared global denoising state.",
+      "survived": "Learned relations can replace future observations in controlled worlds; local evidence can buy measurements selectively; sparse measurement geometry and coded overlap matter; and the practical SDXL branch shows the same abstract rule survives outside the synthetic world: edge-selected 4/16 regions contain much more future refinement activity than random, and when one global diffusion trajectory is preserved those regions recover 30.87% of the full teacher correction versus 17.30% for matched random masks. The P2 lesson is therefore specifically about sparse causal authority inside a globally coherent computation, not about naively cutting the computation into independent spatial subgraphs.",
+      "killed": "Blind trust, shuffled confidence, coordinate memory and equal-cost random extra reads fail matched controls. Extreme row sparsity, one-hit coverage, and degree-2 overlap are insufficient in the synthetic chain. In the practical branch, globally refining the Sihti core does not accelerate SDXL, Sihti residue is not the best compute router, and independent crop diffusion is actively harmful and slower; local routing only becomes valid when the actuator preserves the shared global denoising state. P3 additionally kills hard spatial U-Net execution on this SDXL-Turbo/RTX-3060 route: 25%, 56.25%, and even 100%-naive-spatial-work crop decompositions all have negative correction recovery and are slower than the full-frame teacher.",
       "usefulness": "scientific",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/WhatToLookAt/blob/main/README.md",
@@ -29,7 +29,9 @@
         "coded-overlap",
         "practical-diffusion",
         "compute-routing",
-        "global-state"
+        "global-state",
+        "feature-caching",
+        "temporal-reuse"
       ],
       "era": "Learned structure / adaptive observation",
       "era_order": 27
