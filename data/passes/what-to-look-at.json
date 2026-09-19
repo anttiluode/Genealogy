@@ -1,7 +1,7 @@
 {
   "id": "what-to-look-at",
   "title": "WhatToLookAt: learned relations become a sensing budget",
-  "summary": "WhatToLookAt takes the history-written relation machinery from SighImageFactorization and asks a compressed-sensing-style engineering question: if experience has already learned useful structure, how many future physical observations can be omitted? Gates 0–4 turn learned relations into an explicit adaptive sensing budget and then into a falsifiable compression hypothesis. Gate 5 attacks the sensing operator itself: sparse measurement rows reduce fan-in/mixing work but may require more rows because sparse innovations can fall entirely outside the observed support.",
+  "summary": "WhatToLookAt takes the history-written relation machinery from SighImageFactorization and asks a compressed-sensing-style engineering question: if experience has already learned useful structure, how many future physical observations can be omitted? Gates 0–4 turn learned relations into an explicit adaptive sensing budget and then into a falsifiable compression hypothesis. Gate 5 measures the price of sparse measurement rows. Gate 6 separates sparse sensing that is designed sparse from a dense operator that is pruned afterward, showing that support coverage itself can be part of the sensing algorithm.",
   "order": 209,
   "reviewed_at": "2026-09-19",
   "nodes": [
@@ -11,8 +11,8 @@
       "family": "active-sensing",
       "status": "active",
       "claim": "Learns persistent relations from past temporal structure and uses them as a prior for future sparse sensing; local relation uncertainty withdraws sharing authority and purchases extra measurements only where confidence is low.",
-      "survived": "Learned relations can replace future observations in controlled worlds; charged image-derived confidence and current residuals localize when extra sensing is needed; and Gate 5 measures a nontrivial sparse-measurement frontier where moderate row sparsity preserves held-out quality while reducing guide coordinate-touch cost relative to a dense guide.",
-      "killed": "Blind trust, shuffled confidence, coordinate memory and equal-cost random extra reads fail their matched controls. Gate 5 also kills the idea that arbitrarily sparse measurement rows are a free optimization: support-1 and support-2 rows do not meet the 95% end-to-end validation target even with 64 guide rows in the tested sparse-innovation world.",
+      "survived": "Learned relations can replace future observations in controlled worlds; charged image-derived confidence and current residuals localize when extra sensing is needed; Gate 5 measures a nontrivial sparse-measurement frontier; and Gate 6 shows that coverage-designed sparse sensing can match the post-hoc-pruned quality frontier with four times fewer guide coordinate touches in a one-coordinate innovation regime.",
+      "killed": "Blind trust, shuffled confidence, coordinate memory and equal-cost random extra reads fail their matched controls. Extreme row sparsity is not free, and Gate 6 also kills the assumption that pruning a previously dense measurement operator is equivalent to designing its sparse support before observation: post-hoc pruning needs substantially more rows to close support blind spots.",
       "usefulness": "scientific",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/WhatToLookAt/blob/main/README.md",
@@ -23,7 +23,8 @@
         "relation-prior",
         "measurement-budget",
         "uncertainty",
-        "operator-update"
+        "operator-update",
+        "measurement-geometry"
       ],
       "era": "Learned structure / adaptive observation",
       "era_order": 27
