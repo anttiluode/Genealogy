@@ -100,5 +100,9 @@
   "wtla-gate7-coverage-not-enough": {
     "bounded-observation": "supports",
     "information-needs-an-observable": "supports"
+  },
+  "wtla-gate8-coded-overlap": {
+    "bounded-observation": "supports",
+    "information-needs-an-observable": "supports"
   }
 }
