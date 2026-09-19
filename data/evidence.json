@@ -1384,5 +1384,75 @@
       "Does not imply coverage-designed sparsity will retain the same advantage for diffuse failures or natural signals"
     ],
     "source": "https://github.com/anttiluode/WhatToLookAt/blob/main/README.md"
+  },
+  {
+    "id": "wtla-gate7-coverage-not-enough",
+    "node": "WhatToLookAt",
+    "claim": "Full coordinate coverage is not sufficient for robust sparse relation-failure sensing once an innovation may contain multiple signed coordinates; overlapping measurement diversity is required to prevent cancellation from hiding changed combinations.",
+    "design": "freeze Gate-6-selected sensing geometries and support-1-trained thresholds, then sweep innovation support from 1 to 64 while approximately holding total innovation energy fixed",
+    "result": "supports",
+    "motifs": [
+      "bounded-observation",
+      "information-needs-an-observable"
+    ],
+    "sample": {
+      "unit": "held-out world per innovation-support × innovation-patch-count cell",
+      "count": 120
+    },
+    "metrics": [
+      {
+        "name": "coverage-designed coordinate coverage",
+        "value": 192,
+        "denominator": 192
+      },
+      {
+        "name": "coverage-designed minimum success at support 1",
+        "value": 1
+      },
+      {
+        "name": "coverage-designed minimum success at support 2",
+        "value": 0.44166666666666665
+      },
+      {
+        "name": "coverage-designed minimum success at support 4",
+        "value": 0.6333333333333333
+      },
+      {
+        "name": "coverage-designed minimum success at support 8",
+        "value": 0.8
+      },
+      {
+        "name": "post-hoc-pruned minimum success across support 1-64",
+        "value": 1
+      },
+      {
+        "name": "random-sparse minimum success at support 2",
+        "value": 0.9916666666666667
+      },
+      {
+        "name": "random-sparse minimum success for support >=4",
+        "value": 1
+      },
+      {
+        "name": "dense minimum success at support 4",
+        "value": 0.825
+      }
+    ],
+    "controls": [
+      "Gate-6 sensor geometries are frozen rather than reselected for each support size",
+      "Residual thresholds are trained only on support-1 worlds and frozen",
+      "Per-coordinate innovation amplitude scales as 0.65/sqrt(K), approximately holding total innovation energy constant",
+      "Coverage-designed sensor continues to touch all 192 signal coordinates, ruling out untouched coordinates as the cause of its support-2 failure",
+      "Post-hoc-pruned and random-sparse 12-row sensors provide high-redundancy overlapping-measurement controls"
+    ],
+    "replication": "150 support-1 training worlds and 120 untouched test worlds for each of 7 support sizes × 5 innovation-patch levels",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Synthetic signed innovations and linear sensing",
+      "The robust 12-row controls spend four times the coordinate-touch budget of the three-row coverage sensor",
+      "The experiment identifies a need for measurement diversity but does not yet find the minimum-cost coded sparse design"
+    ],
+    "source": "https://github.com/anttiluode/WhatToLookAt/blob/main/README.md"
   }
 ]

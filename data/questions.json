@@ -289,7 +289,8 @@
     "evidence": [
       "wtla-gate4-residual-audited-relation",
       "wtla-gate5-price-of-sparse-measurements",
-      "wtla-gate6-designed-vs-pruned"
+      "wtla-gate6-designed-vs-pruned",
+      "wtla-gate7-coverage-not-enough"
     ],
     "competing_explanations": [
       "Sparse measurement rows preserve enough random overlap with local innovations that modestly more guide samples retain the adaptive sensing advantage while greatly reducing multiply/add or sensor-mixing cost.",
@@ -301,27 +302,30 @@
       "Gate 5 runs the proposed row-support × guide-row sweep. Support-1 rows reach only 60% minimum end-to-end validation success and support-2 reaches 92.5% even at 64 guide rows, showing a real price for extreme measurement sparsity.",
       "A moderate support-64, four-row guide uses the same 64 guide scalar samples as the selected dense support-192 guide but 4096 versus 12288 coordinate touches, while retaining 98.75–100% held-out success across the tested innovation levels.",
       "Gate 6 tests the remaining post-hoc-sparsification discriminator. In a one-coordinate innovation regime, coverage-designed support reaches the validation target with 3 rows and 3072 guide coordinate touches, while post-hoc pruning needs 12 rows and 12288 touches to reach the same 100% held-out success frontier.",
-      "The dense selected guide uses only 2 scalar rows but 6144 coordinate touches and falls to 93.33% held-out success at the six-innovation level, so scalar sample count and fan-in/mixing work remain distinct currencies."
+      "The dense selected guide uses only 2 scalar rows but 6144 coordinate touches and falls to 93.33% held-out success at the six-innovation level, so scalar sample count and fan-in/mixing work remain distinct currencies.",
+      "Gate 7 freezes the Gate-6 sensors and approximately holds innovation energy fixed while increasing innovation support. The three-row coverage-designed sensor still touches 192/192 coordinates but its minimum held-out success collapses from 100% at support 1 to 44.17% at support 2 and 63.33% at support 4.",
+      "Twelve overlapping sparse rows remain essentially perfect across the same support sweep, so the missing property is not simple coverage but measurement diversity: multiple signed changed coordinates need independent signatures rather than a single shared row in which they can cancel."
     ],
-    "missing_discriminator": "Gate 6 resolves the post-hoc-pruning question for an ultra-sparse one-coordinate failure. The remaining discriminator is whether the advantage is truly support-coverage-driven: freeze the selected sensors and increase innovation support size. If failures become diffuse, random/post-hoc sparse supports should intersect them more reliably and the designed-coverage advantage should shrink.",
+    "missing_discriminator": "The remaining engineering question is the minimum-cost way to buy measurement diversity. Gate 7's robust controls use 12 rows and four times the coordinate-touch budget of the failed three-row coverage design. A deliberately overlapping sparse code must now be compared with same-touch random and post-hoc operators.",
     "candidate_experiment": {
-      "design": "Freeze Gate 6's selected coverage-designed, post-hoc-pruned, random-sparse and dense sensors. Sweep innovation support from 1 to 2, 4, 8, 16 and 32 changed coordinates while keeping innovation energy and patch counts controlled. Recalibrate no sensing geometry; measure relation-failure detection, reconstruction success, scalar guide cost and coordinate touches.",
-      "cost": "small: reuse Gate 6 generator and fixed sensors across roughly 5-6 innovation-support sizes and 80-120 held-out worlds per level",
+      "design": "Construct sparse sensing matrices with controlled coordinate degree: degree-1 coverage, degree-2 coded overlap and degree-3 overlap, keeping row width and total coordinate-touch cost explicit. Use signed support-2/4/8 innovations at approximately fixed energy. Compare structured overlap against random sparse and post-hoc-pruned matrices at the same total touches, calibrating thresholds on training worlds and freezing them for held-out reconstruction.",
+      "cost": "small-to-medium: reuse Gate 7 generator, roughly 3-4 structured degree designs × matched random/pruned controls × 80-120 held-out worlds per support/patch level",
       "outcomes": [
         {
-          "if": "The designed-vs-pruned/random gap is large at support 1 but closes monotonically as innovation support becomes diffuse",
-          "then": "Gate 6's mechanism is correctly identified as support coverage: sparse design matters mainly when failures themselves are sparse enough to hide in blind coordinates."
+          "if": "A degree-2 or similarly coded sparse design recovers near-12-row robustness with substantially fewer coordinate touches than random/post-hoc controls",
+          "then": "WhatToLookAt earns a genuine sensing-code mechanism: redundancy should be placed deliberately so sparse combinations remain distinguishable, not merely added as more random rows."
         },
         {
-          "if": "Coverage-designed sensing keeps a substantial advantage even when diffuse failures almost surely intersect every sparse operator",
-          "then": "Support coverage is not the full explanation; row geometry, cancellation, conditioning or another sensing-design mechanism deserves a separate gate."
+          "if": "Same-touch random or post-hoc sparse operators match every structured-overlap design once redundancy is equalized",
+          "then": "Gate 7's survivor should be narrowed to measurement count/redundancy rather than a special sparse code geometry."
         }
       ]
     },
     "notes": [
       "This is a cost-quality phase diagram, not a claim that the asymptotic thresholds of any one compressed-sensing paper apply directly to the synthetic image world.",
       "Partially resolved: the designed sparse-measurement price curve is now measured; post-hoc sparsification and natural signals remain open.",
-      "Gate 6 advances the question from whether post-hoc sparsification works at all to why the designed sparse operator wins in the ultra-sparse regime."
+      "Gate 6 advances the question from whether post-hoc sparsification works at all to why the designed sparse operator wins in the ultra-sparse regime.",
+      "Gate 7 corrects the Gate-6 coverage interpretation: untouched coordinates are not necessary for failure; signed combinations can disappear by cancellation inside an observed row."
     ]
   }
 ]
