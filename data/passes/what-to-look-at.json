@@ -58,7 +58,35 @@
       "confidence": "high",
       "why": "WhatToLookAt explicitly names Sihti in its lineage and carries forward the operator-dependent-structure framing, but does not claim Sihti code inheritance; the new currency is measurement cost rather than residue location.",
       "evidence": "https://github.com/anttiluode/WhatToLookAt/blob/main/README.md"
+    },
+    {
+      "source": "AnotherOddThing",
+      "target": "WhatToLookAt",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "AnotherOddThing turns addressed intervention into bounded active identification: choose the small probe that most separates resident candidate mechanisms. WhatToLookAt applies the same experiment-selection logic spatially, using learned relations and local uncertainty to decide where another observation or expensive computation is worth buying. This records recurring mechanism, not code ancestry.",
+      "evidence": "https://github.com/anttiluode/AnotherOddThing/blob/main/README.md"
+    },
+    {
+      "source": "ReadWrite",
+      "target": "WhatToLookAt",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "ReadWrite asks what a bounded measurement/intervention can distinguish through its measurement operator and write Jacobian. WhatToLookAt turns observability into a budgeted spatial policy: trusted relations permit omission, while uncertainty purchases additional measurements. The edge is conceptual convergence rather than direct inheritance.",
+      "evidence": "https://github.com/anttiluode/ReadWrite/blob/main/README.md"
     }
   ],
-  "motifs": []
+  "motifs": [
+    {
+      "id": "memory-guides-next-observation",
+      "title": "Stored structure changes what is worth sensing next",
+      "description": "SighImageFactorization stores relation evidence written by temporal history; ReadWrite and AnotherOddThing show that observability depends on which question or intervention is chosen; WhatToLookAt closes the loop by spending new measurements or computation where remembered structure is uncertain and omitting work where the relation remains trustworthy. The recurring mechanism is not passive memory but memory changing the next sensing policy.",
+      "nodes": [
+        "SighImageFactorization",
+        "ReadWrite",
+        "AnotherOddThing",
+        "WhatToLookAt"
+      ]
+    }
+  ]
 }
