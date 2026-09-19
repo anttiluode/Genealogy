@@ -1631,11 +1631,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 529,
+    "size": 787,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-09-19T05:06:53Z",
+    "updated_at": "2026-09-19T07:22:08Z",
     "inventory_status": "unread"
   },
   {
@@ -3391,11 +3391,11 @@
     "name": "Sihti",
     "url": "https://github.com/anttiluode/Sihti",
     "default_branch": "main",
-    "size": 3260,
+    "size": 25354,
     "visibility": "public",
     "description": "Take an image apart by purifying it, keep what bleeds out at each depth, sum it back exactly. Which operator purifies decides where the objects go: with the image's own edge-aware graph, the layout survives in the core and the texture bleeds into the residues. Live instrument + BSDS500 gates.",
     "created_at": "2026-09-19T02:56:37Z",
-    "updated_at": "2026-09-19T02:59:08Z",
+    "updated_at": "2026-09-19T05:44:54Z",
     "inventory_status": "unread"
   },
   {
@@ -4370,11 +4370,11 @@
     "name": "WhatToLookAt",
     "url": "https://github.com/anttiluode/WhatToLookAt",
     "default_branch": "main",
-    "size": 165,
+    "size": 18828,
     "visibility": "public",
     "description": "Sol thinking repo. ",
     "created_at": "2026-09-19T03:51:31Z",
-    "updated_at": "2026-09-19T05:05:30Z",
+    "updated_at": "2026-09-19T07:19:48Z",
     "inventory_status": "unread"
   },
   {
