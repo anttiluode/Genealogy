@@ -1705,7 +1705,7 @@
     "node": "WhatToLookAt",
     "claim": "Hard spatially sparse U-Net execution does not preserve the useful P2 update and does not buy wall-clock speed on the tested SDXL-Turbo/RTX-3060 route, even when total crop spatial elements equal the full-frame latent size.",
     "design": "validation on seeds 100/101 across three prompts; preserve the global scheduler/noise/timestep state but evaluate the U-Net only on four selected latent tiles with halos 0, 4, or 8; compare edge versus same-budget random selection and the ordinary full-frame teacher stage",
-    "result": "limits",
+    "result": "supports",
     "motifs": [
       "bounded-observation",
       "operator-update"
