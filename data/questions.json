@@ -235,7 +235,7 @@
   {
     "id": "learned-relation-sensing-generalization",
     "title": "Does learned relational structure still save measurements when correspondence confidence must come from image evidence rather than a synthetic tracker?",
-    "state": "open",
+    "state": "partially-resolved",
     "motifs": [
       "bounded-observation",
       "operator-update"
@@ -243,7 +243,9 @@
     "evidence": [
       "wtla-gate0-relation-budget",
       "wtla-gate1-history-earned-budget",
-      "wtla-gate2-local-uncertainty-budget"
+      "wtla-gate2-local-uncertainty-budget",
+      "wtla-gate3-image-derived-confidence",
+      "wtla-gate4-residual-audited-relation"
     ],
     "competing_explanations": [
       "The Gate-0→2 savings reflect a reusable mechanism: image-derived correspondence confidence can localize uncertainty and selectively increase sensing while preserving low budget elsewhere.",
@@ -252,9 +254,11 @@
     "known": [
       "Gate 0 shows that a correct relation partition can replace measurements in a world simple on that partition.",
       "Gate 1 learns the relation from ordered common-fate history and matches the oracle future measurement curve after spatial rearrangement.",
-      "Gate 2 turns local synthetic confidence into a near-oracle sensing budget while same-cost shuffled confidence fails."
+      "Gate 2 turns local synthetic confidence into a near-oracle sensing budget while same-cost shuffled confidence fails.",
+      "Gate 3 derives confidence from a charged low-resolution image guide: the selected template-margin cue reaches 0.9759 validation balanced accuracy, and adaptive sensing keeps 96.25% success at 55.18%/67.37% of full cost under 4/6 ambiguous guides while matched-cost shuffled confidence collapses.",
+      "Gate 4 removes exact relation equality: a cheap current residual projection identifies when local high-resolution content no longer follows the shared relation, and adaptive sensing matches the oracle residual cost curve while equal-cost random extra reads fail."
     ],
-    "missing_discriminator": "A future-frame task where correspondence and confidence are inferred from image matching under occlusion, appearance jumps and look-alike distractors, with the same local-budget policy and matched-cost shuffled-confidence attacker.",
+    "missing_discriminator": "The remaining gap is not synthetic confidence or exact relation equality; it is whether the advantage survives a more realistic sensor/measurement operator, especially when the cheap measurement rows themselves are sparse and may miss sparse innovations.",
     "candidate_experiment": {
       "design": "Render tracked patches with RGB/texture descriptors, inject occlusion and look-alike alternatives, derive best-match margin and forward/backward consistency from the images, calibrate confidence on training worlds, then test whether low-confidence locations trigger extra measurements that preserve reconstruction quality at lower mean cost than global caution.",
       "cost": "small-to-medium: synthetic RGB patch renderer plus the existing Gate-2 budget machinery, 40-80 train worlds and 80 held-out worlds per ambiguity level",
@@ -270,7 +274,46 @@
       ]
     },
     "notes": [
-      "The question is about whether learned structure can safely suppress sensing, not whether a generative prior can hallucinate plausible missing pixels."
+      "The question is about whether learned structure can safely suppress sensing, not whether a generative prior can hallucinate plausible missing pixels.",
+      "Partially resolved on synthetic image evidence: Gate 3 removes the confidence oracle and Gate 4 removes exact relation content, but neither yet establishes the trade-off for sparse physical measurement operators."
+    ]
+  },
+  {
+    "id": "sparse-measurement-price",
+    "title": "How sparse can the cheap sensing operator become before compute savings are erased by the extra measurements required to detect relation failure?",
+    "state": "open",
+    "motifs": [
+      "bounded-observation",
+      "information-needs-an-observable"
+    ],
+    "evidence": [
+      "wtla-gate4-residual-audited-relation"
+    ],
+    "competing_explanations": [
+      "Sparse measurement rows preserve enough random overlap with local innovations that modestly more guide samples retain the adaptive sensing advantage while greatly reducing multiply/add or sensor-mixing cost.",
+      "Once each guide measurement touches too few signal coordinates, sparse innovations frequently fall into the measurement nullspace; the required increase in sample count removes the computational advantage."
+    ],
+    "known": [
+      "Gate 4 uses eight dense random projections of all 192 high-resolution coordinates per patch and can localize sparse strong innovations almost perfectly.",
+      "The uploaded compressed-sensing literature explicitly identifies a price of measurement sparsity: sparse rows reduce storage/computation but can require additional samples for reliable sparse recovery."
+    ],
+    "missing_discriminator": "A matched sweep over measurement-row support d and guide sample count m, with sparse high-resolution innovations, reporting both detection/reconstruction quality and the physical/compute costs m and m*d.",
+    "candidate_experiment": {
+      "design": "Replace Gate 4's dense guide projection with random rows that touch only d of 192 high-resolution coordinates. Use sparse local innovations so rows can genuinely miss the changed support. Sweep d and m, calibrate the residual threshold on training worlds, and measure held-out relation-failure detection plus end-to-end adaptive reconstruction. Report the smallest m that reaches a fixed quality target at each d and its row-touch cost m*d.",
+      "cost": "small: synthetic linear sensing sweep over roughly 7-9 row sparsities, 5-7 guide sample counts, and 50-100 train/validation/test worlds",
+      "outcomes": [
+        {
+          "if": "Very sparse rows recover the quality target after only a modest increase in m and reduce m*d substantially below the dense guide",
+          "then": "WhatToLookAt gains an explicit computational price curve showing where sparse physical sensing is beneficial rather than merely plausible."
+        },
+        {
+          "if": "The required m grows fast enough that sample and row-touch costs match or exceed the dense guide",
+          "then": "The branch should keep dense or structured guide measurements in this regime; measurement sparsity is not a free hardware optimization."
+        }
+      ]
+    },
+    "notes": [
+      "This is a cost-quality phase diagram, not a claim that the asymptotic thresholds of any one compressed-sensing paper apply directly to the synthetic image world."
     ]
   }
 ]
