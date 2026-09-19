@@ -290,7 +290,8 @@
       "wtla-gate4-residual-audited-relation",
       "wtla-gate5-price-of-sparse-measurements",
       "wtla-gate6-designed-vs-pruned",
-      "wtla-gate7-coverage-not-enough"
+      "wtla-gate7-coverage-not-enough",
+      "wtla-gate8-coded-overlap"
     ],
     "competing_explanations": [
       "Sparse measurement rows preserve enough random overlap with local innovations that modestly more guide samples retain the adaptive sensing advantage while greatly reducing multiply/add or sensor-mixing cost.",
@@ -304,20 +305,22 @@
       "Gate 6 tests the remaining post-hoc-sparsification discriminator. In a one-coordinate innovation regime, coverage-designed support reaches the validation target with 3 rows and 3072 guide coordinate touches, while post-hoc pruning needs 12 rows and 12288 touches to reach the same 100% held-out success frontier.",
       "The dense selected guide uses only 2 scalar rows but 6144 coordinate touches and falls to 93.33% held-out success at the six-innovation level, so scalar sample count and fan-in/mixing work remain distinct currencies.",
       "Gate 7 freezes the Gate-6 sensors and approximately holds innovation energy fixed while increasing innovation support. The three-row coverage-designed sensor still touches 192/192 coordinates but its minimum held-out success collapses from 100% at support 1 to 44.17% at support 2 and 63.33% at support 4.",
-      "Twelve overlapping sparse rows remain essentially perfect across the same support sweep, so the missing property is not simple coverage but measurement diversity: multiple signed changed coordinates need independent signatures rather than a single shared row in which they can cancel."
+      "Twelve overlapping sparse rows remain essentially perfect across the same support sweep, so the missing property is not simple coverage but measurement diversity: multiple signed changed coordinates need independent signatures rather than a single shared row in which they can cancel.",
+      "Gate 8 implements the coded-overlap attacker. Degree 2 (six 64-wide sparse rows, 6144 touches) reaches only 87.5% worst validation success, while degree 3 (nine rows, 9216 touches) reaches 98.75% validation minimum and 96.67% held-out minimum across supports 1–64.",
+      "At the same 9216 coordinate-touch budget, random sparse 9-row, post-hoc-pruned 9-row and dense 3-row controls all miss the 95% validation target (93.75%, 91.25%, and 93.75% respectively). The older robust 12-row sparse ceiling costs 12288 touches, so regular degree-3 overlap buys the target with 25% fewer interactions."
     ],
-    "missing_discriminator": "The remaining engineering question is the minimum-cost way to buy measurement diversity. Gate 7's robust controls use 12 rows and four times the coordinate-touch budget of the failed three-row coverage design. A deliberately overlapping sparse code must now be compared with same-touch random and post-hoc operators.",
+    "missing_discriminator": "Gate 8 shows that deliberately placed overlap matters at fixed touch cost, but it does not yet distinguish exact coordinate degree from the detailed combinatorics of overlap. Hold degree 3, row width 64 and 9216 touches fixed, then vary coincidence structure between layers.",
     "candidate_experiment": {
-      "design": "Construct sparse sensing matrices with controlled coordinate degree: degree-1 coverage, degree-2 coded overlap and degree-3 overlap, keeping row width and total coordinate-touch cost explicit. Use signed support-2/4/8 innovations at approximately fixed energy. Compare structured overlap against random sparse and post-hoc-pruned matrices at the same total touches, calibrating thresholds on training worlds and freezing them for held-out reconstruction.",
-      "cost": "small-to-medium: reuse Gate 7 generator, roughly 3-4 structured degree designs × matched random/pruned controls × 80-120 held-out worlds per support/patch level",
+      "design": "Construct four degree-3, nine-row sparse operators with identical row width and total touches: independent partition layers (Gate 8), low-coincidence/expander-like layer pairings, random regular incidence, and an adversarial high-coincidence design that repeatedly groups the same coordinates together. Train matched residual thresholds on the same mixed-support worlds and select no geometry after validation; compare worst-cell validation and held-out reconstruction.",
+      "cost": "small-to-medium: reuse Gate 8 generator and evaluation, four fixed 9-row geometries × 80 validation and 120 held-out worlds per support/patch-count cell",
       "outcomes": [
         {
-          "if": "A degree-2 or similarly coded sparse design recovers near-12-row robustness with substantially fewer coordinate touches than random/post-hoc controls",
-          "then": "WhatToLookAt earns a genuine sensing-code mechanism: redundancy should be placed deliberately so sparse combinations remain distinguishable, not merely added as more random rows."
+          "if": "Low-coincidence or expander-like overlap beats independent/random regular designs while the repeated-grouping attacker degrades",
+          "then": "The next earned mechanism is code combinatorics: not only how many measurements see a coordinate, but which coordinates co-occur across measurements."
         },
         {
-          "if": "Same-touch random or post-hoc sparse operators match every structured-overlap design once redundancy is equalized",
-          "then": "Gate 7's survivor should be narrowed to measurement count/redundancy rather than a special sparse code geometry."
+          "if": "All degree-3 regular geometries are statistically indistinguishable once degree and row width are fixed",
+          "then": "Gate 8's survivor should remain simple coordinate degree/redundancy; extra graph-design machinery is not earned."
         }
       ]
     },
@@ -325,7 +328,8 @@
       "This is a cost-quality phase diagram, not a claim that the asymptotic thresholds of any one compressed-sensing paper apply directly to the synthetic image world.",
       "Partially resolved: the designed sparse-measurement price curve is now measured; post-hoc sparsification and natural signals remain open.",
       "Gate 6 advances the question from whether post-hoc sparsification works at all to why the designed sparse operator wins in the ultra-sparse regime.",
-      "Gate 7 corrects the Gate-6 coverage interpretation: untouched coordinates are not necessary for failure; signed combinations can disappear by cancellation inside an observed row."
+      "Gate 7 corrects the Gate-6 coverage interpretation: untouched coordinates are not necessary for failure; signed combinations can disappear by cancellation inside an observed row.",
+      "Gate 8 partially resolves the minimum-cost diversity question: degree 3 is sufficient in the tested world and saves 25% of coordinate-touch work versus the robust 12-row ceiling; the remaining question is overlap combinatorics at fixed degree."
     ]
   }
 ]

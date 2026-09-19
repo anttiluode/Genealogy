@@ -1,7 +1,7 @@
 {
   "id": "what-to-look-at",
   "title": "WhatToLookAt: learned relations become a sensing budget",
-  "summary": "WhatToLookAt takes the history-written relation machinery from SighImageFactorization and asks a compressed-sensing-style engineering question: if experience has already learned useful structure, how many future physical observations can be omitted? Gates 0–4 turn learned relations into an adaptive sensing budget. Gate 5 measures the price of sparse measurement rows. Gate 6 shows that sparse support geometry should be designed before observation rather than inherited from post-hoc pruning. Gate 7 then breaks the simplest coverage-only interpretation: full coordinate coverage can still fail under signed multi-coordinate innovations because distinct changes can cancel inside the same measurement.",
+  "summary": "WhatToLookAt takes the history-written relation machinery from SighImageFactorization and asks a compressed-sensing-style engineering question: if experience has already learned useful structure, how many future physical observations can be omitted? Gates 0–4 turn learned relations into an adaptive sensing budget. Gate 5 measures the price of sparse measurement rows. Gate 6 shows that sparse support geometry should be designed before observation. Gate 7 shows coverage alone is insufficient under signed multi-coordinate change. Gate 8 then deliberately buys measurement diversity with regular sparse overlap and reaches the robust 12-row frontier with a 9-row degree-3 code.",
   "order": 209,
   "reviewed_at": "2026-09-19",
   "nodes": [
@@ -11,8 +11,8 @@
       "family": "active-sensing",
       "status": "active",
       "claim": "Learns persistent relations from past temporal structure and uses them as a prior for future sparse sensing; local relation uncertainty withdraws sharing authority and purchases extra measurements only where confidence is low.",
-      "survived": "Learned relations can replace future observations in controlled worlds; charged image-derived confidence and current residuals localize when extra sensing is needed; moderate measurement sparsity can reduce fan-in work; support geometry matters; and Gate 7 refines the sensing mechanism further from mere coverage to measurement diversity, because overlapping independent signatures survive multi-coordinate signed change better than one-hit coverage.",
-      "killed": "Blind trust, shuffled confidence, coordinate memory and equal-cost random extra reads fail matched controls. Extreme row sparsity is not free. Post-hoc pruning is not equivalent to sparse-first design in the one-coordinate regime. Gate 7 also kills the stronger claim that touching every coordinate once is sufficient: the 192/192-covered three-row sensor collapses on two-coordinate signed innovations despite having no blind coordinates.",
+      "survived": "Learned relations can replace future observations in controlled worlds; charged image-derived confidence and current residuals localize when extra sensing is needed; moderate measurement sparsity can reduce fan-in work; support geometry matters; coverage alone is insufficient; and Gate 8 shows that deliberately overlapping sparse measurements can recover robust multi-coordinate sensing with fewer interactions than generic 12-row sparse controls.",
+      "killed": "Blind trust, shuffled confidence, coordinate memory and equal-cost random extra reads fail matched controls. Extreme row sparsity is not free. Post-hoc pruning is not equivalent to sparse-first design in the one-coordinate regime. Touching every coordinate once is insufficient. Gate 8 also kills the simplest degree-2-overlap hypothesis in this world: two measurement memberships per coordinate reach only 87.5% worst validation success, while degree 3 is the first structured design to clear the 95% target.",
       "usefulness": "scientific",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/WhatToLookAt/blob/main/README.md",
@@ -25,7 +25,8 @@
         "uncertainty",
         "operator-update",
         "measurement-geometry",
-        "measurement-diversity"
+        "measurement-diversity",
+        "coded-overlap"
       ],
       "era": "Learned structure / adaptive observation",
       "era_order": 27

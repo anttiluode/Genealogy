@@ -1454,5 +1454,81 @@
       "The experiment identifies a need for measurement diversity but does not yet find the minimum-cost coded sparse design"
     ],
     "source": "https://github.com/anttiluode/WhatToLookAt/blob/main/README.md"
+  },
+  {
+    "id": "wtla-gate8-coded-overlap",
+    "node": "WhatToLookAt",
+    "claim": "Deliberately regular sparse overlap can buy the measurement diversity needed for signed multi-coordinate relation failures with fewer coordinate-touch interactions than the robust 12-row sparse ceiling.",
+    "design": "controlled coordinate-degree sweep using independent 64-wide partition layers, trained mixed-support residual thresholds, separate worst-cell validation selection, same-touch random/post-hoc/dense controls, and frozen held-out evaluation",
+    "result": "supports",
+    "motifs": [
+      "bounded-observation",
+      "information-needs-an-observable"
+    ],
+    "sample": {
+      "unit": "held-out world per innovation-support × innovation-patch-count cell",
+      "count": 120
+    },
+    "metrics": [
+      {
+        "name": "degree-1 worst validation success",
+        "value": 0.4875
+      },
+      {
+        "name": "degree-2 worst validation success",
+        "value": 0.875
+      },
+      {
+        "name": "degree-3 worst validation success",
+        "value": 0.9875
+      },
+      {
+        "name": "degree-3 worst held-out success",
+        "value": 0.9666666666666667
+      },
+      {
+        "name": "degree-3 guide coordinate touches",
+        "value": 9216
+      },
+      {
+        "name": "same-touch random-9 worst validation success",
+        "value": 0.9375
+      },
+      {
+        "name": "same-touch posthoc-9 worst validation success",
+        "value": 0.9125
+      },
+      {
+        "name": "same-touch dense-3 worst validation success",
+        "value": 0.9375
+      },
+      {
+        "name": "robust posthoc-12 guide coordinate touches",
+        "value": 12288
+      },
+      {
+        "name": "degree-3 touch reduction versus 12-row ceiling",
+        "value": 0.25,
+        "display": "25% fewer guide coordinate touches"
+      }
+    ],
+    "controls": [
+      "Every structured degree layer independently partitions all 192 coordinates into three rows of width 64",
+      "Coordinate degree is exact: 1/2/3/4 corresponds to 3/6/9/12 sparse rows",
+      "Thresholds train on mixed innovation supports 1 through 64 rather than only one attacker",
+      "The smallest structured degree is selected from a separate validation panel before held-out evaluation",
+      "Random sparse 9-row, post-hoc-pruned 9-row and dense 3-row controls all use the same 9216 coordinate-touch budget as the selected degree-3 sparse code",
+      "Random/post-hoc 12-row controls retain the older robust 12288-touch ceiling"
+    ],
+    "replication": "210 mixed-support training worlds, 80 validation worlds per support/patch-count cell, and 120 untouched test worlds per cell",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Synthetic relation-failure world and linear sensing",
+      "The regular code uses random signs and independent partition layers rather than an optimized expander/RIP construction",
+      "The 25% touch saving is specific to the tested 192-coordinate signal, row width 64, and innovation family",
+      "Does not yet isolate whether exact degree or lower overlap coincidence is the decisive combinatorial property"
+    ],
+    "source": "https://github.com/anttiluode/WhatToLookAt/blob/main/README.md"
   }
 ]
