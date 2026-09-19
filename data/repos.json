@@ -1635,7 +1635,7 @@
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-09-19T03:27:15Z",
+    "updated_at": "2026-09-19T04:12:52Z",
     "inventory_status": "unread"
   },
   {
@@ -3369,7 +3369,7 @@
     "name": "SighImageFactorization",
     "url": "https://github.com/anttiluode/SighImageFactorization",
     "default_branch": "main",
-    "size": 328,
+    "size": 388,
     "visibility": "public",
     "description": "Sol thinking of the sigh image lineage further. ",
     "created_at": "2026-09-18T14:22:25Z",
@@ -3391,7 +3391,7 @@
     "name": "Sihti",
     "url": "https://github.com/anttiluode/Sihti",
     "default_branch": "main",
-    "size": 0,
+    "size": 3260,
     "visibility": "public",
     "description": "Take an image apart by purifying it, keep what bleeds out at each depth, sum it back exactly. Which operator purifies decides where the objects go: with the image's own edge-aware graph, the layout survives in the core and the texture bleeds into the residues. Live instrument + BSDS500 gates.",
     "created_at": "2026-09-19T02:56:37Z",
@@ -4364,6 +4364,17 @@
     "description": "GPT thinking repo. ",
     "created_at": "2026-08-23T12:23:20Z",
     "updated_at": "2026-08-25T20:31:58Z",
+    "inventory_status": "unread"
+  },
+  {
+    "name": "WhatToLookAt",
+    "url": "https://github.com/anttiluode/WhatToLookAt",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Sol thinking repo. ",
+    "created_at": "2026-09-19T03:51:31Z",
+    "updated_at": "2026-09-19T04:05:19Z",
     "inventory_status": "unread"
   },
   {
