@@ -1103,5 +1103,127 @@
       "The gate establishes the budgeting mechanism, not a real visual tracker"
     ],
     "source": "https://github.com/anttiluode/WhatToLookAt/blob/main/README.md"
+  },
+  {
+    "id": "wtla-gate3-image-derived-confidence",
+    "node": "WhatToLookAt",
+    "claim": "A charged low-resolution image guide can derive correspondence confidence that localizes where expensive sensing is needed, retaining most of the synthetic-confidence budget advantage under cross-object look-alike ambiguity.",
+    "design": "train/validation/test image-match cue selection with explicit guide sensing cost and matched-cost shuffled-confidence attacker",
+    "result": "supports",
+    "motifs": [
+      "bounded-observation"
+    ],
+    "sample": {
+      "unit": "held-out world per ambiguity level",
+      "count": 80
+    },
+    "metrics": [
+      {
+        "name": "selected template-margin validation balanced accuracy",
+        "value": 0.9759259259259259
+      },
+      {
+        "name": "adaptive success with 4 ambiguous guides",
+        "value": 0.9625
+      },
+      {
+        "name": "adaptive total cost with 4 ambiguous guides",
+        "value": 0.5518229166666667,
+        "display": "55.18% of full scan"
+      },
+      {
+        "name": "shuffled-confidence success with 4 ambiguous guides",
+        "value": 0.05
+      },
+      {
+        "name": "adaptive success with 6 ambiguous guides",
+        "value": 0.9625
+      },
+      {
+        "name": "adaptive total cost with 6 ambiguous guides",
+        "value": 0.6736979166666667,
+        "display": "67.37% of full scan"
+      }
+    ],
+    "controls": [
+      "Guide channel cost is included in every adaptive sensing budget",
+      "Three image-derived diagnostics are calibrated on training worlds and selected on a separate validation set",
+      "Cross-object look-alike blending creates genuine wrong nearest-template correspondences",
+      "Shuffled-confidence attacker preserves nearly the same total sensing cost while assigning caution to the wrong patches",
+      "Full high-resolution scan is the 100% sensing baseline"
+    ],
+    "replication": "80 train, 40 validation, and 80 untouched test worlds per ambiguity level",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Synthetic guide/content sensor split",
+      "Guide images are low-dimensional synthetic appearances rather than natural video",
+      "Expensive content is still exactly shared inside each hidden relation in Gate 3"
+    ],
+    "source": "https://github.com/anttiluode/WhatToLookAt/blob/main/README.md"
+  },
+  {
+    "id": "wtla-gate4-residual-audited-relation",
+    "node": "WhatToLookAt",
+    "claim": "When a learned relation is only approximately predictive, a cheap current residual observable can decide which local members need their own expensive measurement and achieve the same quality-cost curve as an oracle residual policy in the tested sparse-innovation regime.",
+    "design": "relation-model mismatch with charged low-dimensional projection, trained residual threshold, equal-cost random-extra attacker, and oracle residual ceiling",
+    "result": "supports",
+    "motifs": [
+      "bounded-observation",
+      "information-needs-an-observable"
+    ],
+    "sample": {
+      "unit": "held-out world per innovation level",
+      "count": 80
+    },
+    "metrics": [
+      {
+        "name": "validation residual-classifier balanced accuracy",
+        "value": 1
+      },
+      {
+        "name": "adaptive success with 4 innovation patches",
+        "value": 1
+      },
+      {
+        "name": "adaptive total cost with 4 innovations",
+        "value": 0.5424479166666667,
+        "display": "54.24% of full scan"
+      },
+      {
+        "name": "equal-cost random success with 4 innovations",
+        "value": 0
+      },
+      {
+        "name": "adaptive success with 8 innovation patches",
+        "value": 1
+      },
+      {
+        "name": "adaptive total cost with 8 innovations",
+        "value": 0.7861979166666668,
+        "display": "78.62% of full scan"
+      },
+      {
+        "name": "oracle total cost with 8 innovations",
+        "value": 0.7854166666666668,
+        "display": "78.54% of full scan"
+      }
+    ],
+    "controls": [
+      "Fixed one-expensive-read-per-relation baseline",
+      "Equal-cost random-extra policy buys exactly the same number of additional expensive reads as the adaptive policy but at random non-anchor locations",
+      "Oracle residual policy uses true anchor-copy error to identify exactly which patches require their own read",
+      "Full scan is the 100% sensing baseline",
+      "Guide projection cost is included in the adaptive and oracle budgets"
+    ],
+    "replication": "100 training, 50 validation, and 80 untouched test worlds per innovation level",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Innovations are sparse and deliberately strong",
+      "The cheap projection is synthetic and unusually clean in this regime",
+      "Does not yet quantify the trade-off when the measurement operator itself is sparse"
+    ],
+    "source": "https://github.com/anttiluode/WhatToLookAt/blob/main/README.md"
   }
 ]
