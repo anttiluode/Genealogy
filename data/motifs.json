@@ -1,11 +1,112 @@
 [
-{"id":"persistent-state","title":"Persistent state is not the event","description":"Separate what remains resident from what is communicated or selected now.","nodes":["ActiveVectorNN","NewMachine","FusionMachine","LentoOrava","WorldModel"]},
-{"id":"structure-as-computation","title":"Structure becomes an operator","description":"Geometry/material/connectivity compiles into future signal flow.","nodes":["PhaseStigmergy","FunctionalArbors","Operaattori","GrowingAnttisNeuron","BlackBoxLab"]},
-{"id":"bounded-observation","title":"Bounded observation can be active","description":"Choose where/how to measure instead of demanding global access.","nodes":["GeometricNeuronV24","ReadWrite","LentoOrava","Child"]},
-{"id":"active-intervention","title":"Intervene to reveal what passive reading hides","description":"Known writes, stimulation or rollback expose response structure and causal responsibility.","nodes":["GeometricNeuronV24","ReadWrite","LentoOrava","Kompressori","ThirdWay"]},
-{"id":"operator-update","title":"Experience changes future response geometry","description":"The recurring object is not only state but how the next perturbation will be transformed.","nodes":["Operaattori","OperaattoriJako","Kompressori","AnttisNeuron","FunctionalArbors"]},
-{"id":"scalar-causal-credit","title":"A global scalar can localize scarce action","description":"Designed interventions plus one consequence signal can beat blind search when faults/actions are sparse.","nodes":["FunctionalArbors","LentoOrava","ThirdWay"]},
-{"id":"late-relevance","title":"State is not current relevance","description":"Maintain richer state and apply current relevance nearer publication/readout.","nodes":["NewMachine","FusionMachine","WorldModel","ReadWrite"]},
-{"id":"provenance","title":"Keep belief separate from evidence","description":"Remember what was observed, inferred or externally supported.","nodes":["WorldModel","GeometricNeuronV24","ReadWrite"]},
-{"id":"negative-results","title":"Kills are part of the lineage","description":"Strong descendants often exist because an attractive predecessor claim failed under a sharper control.","nodes":["Clockfield","ClockfieldMeetsGeometricNeuron","PhaseStigmergy","FunctionalArbors","GeometricNeuronV24","ReadWrite","WorldModel","Kompressori","AnttisNeuron","GrowingAnttisNeuron"]}
+  {
+    "id": "persistent-state",
+    "title": "Persistent state is not the event",
+    "description": "Separate what remains resident from what is communicated or selected now.",
+    "nodes": [
+      "ActiveVectorNN",
+      "NewMachine",
+      "FusionMachine",
+      "LentoOrava",
+      "WorldModel"
+    ]
+  },
+  {
+    "id": "structure-as-computation",
+    "title": "Structure becomes an operator",
+    "description": "Geometry/material/connectivity compiles into future signal flow.",
+    "nodes": [
+      "PhaseStigmergy",
+      "FunctionalArbors",
+      "Operaattori",
+      "GrowingAnttisNeuron",
+      "BlackBoxLab"
+    ]
+  },
+  {
+    "id": "bounded-observation",
+    "title": "Bounded observation can be active",
+    "description": "Choose where/how to measure instead of demanding global access.",
+    "nodes": [
+      "GeometricNeuronV24",
+      "ReadWrite",
+      "LentoOrava",
+      "Child"
+    ]
+  },
+  {
+    "id": "active-intervention",
+    "title": "Intervene to reveal what passive reading hides",
+    "description": "Known writes, stimulation or rollback expose response structure and causal responsibility.",
+    "nodes": [
+      "GeometricNeuronV24",
+      "ReadWrite",
+      "LentoOrava",
+      "Kompressori",
+      "ThirdWay"
+    ]
+  },
+  {
+    "id": "operator-update",
+    "title": "Experience changes future response geometry",
+    "description": "The recurring object is not only state but how the next perturbation will be transformed.",
+    "nodes": [
+      "Operaattori",
+      "OperaattoriJako",
+      "Kompressori",
+      "AnttisNeuron",
+      "FunctionalArbors",
+      "SighImageFactorization"
+    ]
+  },
+  {
+    "id": "scalar-causal-credit",
+    "title": "A global scalar can localize scarce action",
+    "description": "Designed interventions plus one consequence signal can beat blind search when faults/actions are sparse.",
+    "nodes": [
+      "FunctionalArbors",
+      "LentoOrava",
+      "ThirdWay"
+    ]
+  },
+  {
+    "id": "late-relevance",
+    "title": "State is not current relevance",
+    "description": "Maintain richer state and apply current relevance nearer publication/readout.",
+    "nodes": [
+      "NewMachine",
+      "FusionMachine",
+      "WorldModel",
+      "ReadWrite"
+    ]
+  },
+  {
+    "id": "provenance",
+    "title": "Keep belief separate from evidence",
+    "description": "Remember what was observed, inferred or externally supported.",
+    "nodes": [
+      "WorldModel",
+      "GeometricNeuronV24",
+      "ReadWrite"
+    ]
+  },
+  {
+    "id": "negative-results",
+    "title": "Kills are part of the lineage",
+    "description": "Strong descendants often exist because an attractive predecessor claim failed under a sharper control.",
+    "nodes": [
+      "Clockfield",
+      "ClockfieldMeetsGeometricNeuron",
+      "PhaseStigmergy",
+      "FunctionalArbors",
+      "GeometricNeuronV24",
+      "ReadWrite",
+      "WorldModel",
+      "Kompressori",
+      "AnttisNeuron",
+      "GrowingAnttisNeuron",
+      "Sihti",
+      "SighImageFactorization"
+    ]
+  }
 ]
