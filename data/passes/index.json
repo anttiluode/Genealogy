@@ -186,5 +186,9 @@
   {
     "path": "ainstein.json",
     "enabled": true
+  },
+  {
+    "path": "sihti2-spectral-geometry.json",
+    "enabled": true
   }
 ]

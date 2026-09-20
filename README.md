@@ -102,6 +102,14 @@ Separates executable toy dynamics, grand physical identifications, later falsifi
 
 Tracks the explicit `SighImageSuper` fork into two different uses of the same telescoping residue identity. `Sihti` becomes a live sieve/instrument and tests where objects land under different purifiers on BSDS500. `SighImageFactorization` kills residue-space factorization as the source of objects, then follows the input/history-written operator through common-fate binding, relation authority, recoverable uncertainty, an identical-prefix observability boundary, genuinely predictive new observables, and environment-dependent cue meaning. The pass deliberately draws both descendants from Sigh rather than inventing peer ancestry between work developed in parallel.
 
+### Sihti2 — noise writes a diffusion geometry
+
+Adds **Sihti2** as the null-input / spectral-geometry continuation of Sihti. IID colour noise is no longer treated as merely something to denoise: it writes the local conductance graph through the same image-affinity rule, and the resulting lazy diffusion is measured as a reversible Markov process. The branch asks whether the boxy late states are metastable graph domains with reproducible scaling rather than "objects in noise."
+
+The first experiment compares four matched controls: the signal writing its own graph, an independent IID draw writing the graph, the same conductance histogram shuffled over edges, and the blank spatial lattice. The measured objects are the small normalized-Laplacian spectrum, relaxation time, stationary-measure variance, weighted edge disagreement, stochastic heat trace and local spectral-dimension slope.
+
+The correction is part of the node, not an afterthought: a visually coherent late state does **not** establish semantic objecthood, fractality, a renormalization-group fixed point or a Griffiths phase. Those stronger interpretations require finite-size and scaling evidence. The lineage edge is therefore narrow and explicit: `Sihti → Sihti2`, from "the operator decides what persists" to "what diffusion geometry did random data write?"
+
 ### WhatToLookAt — learned relations become a sensing budget
 
 Tracks the step from history-written relation state to an explicit physical-observation currency. Gate 0 establishes the oracle upper bound, Gate 1 learns a persistent common-fate relation before a rearranged future is undersampled, and Gate 2 lets local relation confidence allocate extra sensing only where correspondence is uncertain. The key question is no longer only what the operator groups, but **how many measurements that learned structure lets the system stop taking**.
