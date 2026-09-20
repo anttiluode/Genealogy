@@ -3242,7 +3242,7 @@
     "description": "EEG tool that compares standard MNE to RMS weighted signal. 90 degree turns and coordinated signal from occipital electrodes. ",
     "created_at": "2025-08-11T06:42:53Z",
     "updated_at": "2026-09-06T04:56:25Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Resonant-Cortex-Dynamic-Reservoir-Bridge",
