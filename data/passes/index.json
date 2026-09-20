@@ -190,5 +190,9 @@
   {
     "path": "sihti2-spectral-geometry.json",
     "enabled": true
+  },
+  {
+    "path": "cabbage-farm-sihti.json",
+    "enabled": true
   }
 ]
