@@ -182,5 +182,9 @@
   {
     "path": "operator-time.json",
     "enabled": true
+  },
+  {
+    "path": "ainstein.json",
+    "enabled": true
   }
 ]
