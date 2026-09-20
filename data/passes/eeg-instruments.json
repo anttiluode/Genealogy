@@ -3,7 +3,7 @@
   "title": "EEG instruments: keep the software, constrain the interpretation",
   "summary": "A practical cross-section of the EEG/perception software line. These repositories load, transform, visualize, reconstruct, compare or sonify real EEG recordings, but their scientific rhetoric ranges from carefully bounded to dramatically overclaimed. The genealogy therefore preserves the instruments and their explicit limits without inventing thematic ancestry or treating a visualization pipeline as biological ground truth. The already-curated foundation PerceptionLab node is reused in motifs rather than duplicated here.",
   "order": 160,
-  "reviewed_at": "2026-09-15",
+  "reviewed_at": "2026-09-20",
   "nodes": [
     {
       "id": "EEGTools",
@@ -16,7 +16,13 @@
       "usefulness": "practical",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/EEGTools/blob/main/README.md",
-      "tags": ["eeg", "visualization", "cross-correlation", "wavefield", "artifact-audit"],
+      "tags": [
+        "eeg",
+        "visualization",
+        "cross-correlation",
+        "wavefield",
+        "artifact-audit"
+      ],
       "era": "Practical instruments",
       "era_order": 6
     },
@@ -31,7 +37,13 @@
       "usefulness": "practical",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/EEGBrainSourceReconstructionTool/blob/main/README.md",
-      "tags": ["eeg", "mne", "source-localization", "gui", "template-brain"],
+      "tags": [
+        "eeg",
+        "mne",
+        "source-localization",
+        "gui",
+        "template-brain"
+      ],
       "era": "Practical instruments",
       "era_order": 6
     },
@@ -46,7 +58,13 @@
       "usefulness": "practical",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/EEGFlowchartPlus3DBrain/blob/main/README.md",
-      "tags": ["eeg", "state-space", "kmeans", "source-localization", "transition-graph"],
+      "tags": [
+        "eeg",
+        "state-space",
+        "kmeans",
+        "source-localization",
+        "transition-graph"
+      ],
       "era": "Practical instruments",
       "era_order": 6
     },
@@ -61,7 +79,14 @@
       "usefulness": "practical",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/KoopmanEEGExplorer/blob/main/readme.md",
-      "tags": ["eeg", "pca", "gabor", "channel-sweep", "negative-results", "replication"],
+      "tags": [
+        "eeg",
+        "pca",
+        "gabor",
+        "channel-sweep",
+        "negative-results",
+        "replication"
+      ],
       "era": "Practical instruments",
       "era_order": 6
     },
@@ -76,7 +101,13 @@
       "usefulness": "practical",
       "confidence": "medium",
       "evidence": "https://github.com/anttiluode/EEG2AUDIO/blob/main/README.md",
-      "tags": ["eeg", "sonification", "audio", "resonator-bank", "hypothesis-boundary"],
+      "tags": [
+        "eeg",
+        "sonification",
+        "audio",
+        "resonator-bank",
+        "hypothesis-boundary"
+      ],
       "era": "Practical instruments",
       "era_order": 6
     },
@@ -91,7 +122,37 @@
       "usefulness": "practical",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/RealtimeEEG3Dsystem/blob/main/README.md",
-      "tags": ["eeg", "3d-visualization", "simulation", "pac", "overclaim-audit"],
+      "tags": [
+        "eeg",
+        "3d-visualization",
+        "simulation",
+        "pac",
+        "overclaim-audit"
+      ],
+      "era": "Practical instruments",
+      "era_order": 6
+    },
+    {
+      "id": "RegionalAttractorExplorer",
+      "url": "https://github.com/anttiluode/RegionalAttractorExplorer",
+      "family": "eeg-instruments",
+      "status": "ledger",
+      "claim": "An EEG exploration workbench spanning regional/state-space visualization, MNE-family source reconstruction, repaired PAC tooling and later traveling-wave / predictive screens with explicit null controls.",
+      "survived": "The instrument lineage is substantial: regional trajectory/state-space views remain useful as visualization; the source-space branch wraps MNE/sLORETA/dSPM/eLORETA on a template brain; corrected code replaces the broken historical pointwise phase metric with conventional windowed PAC; and the later pilot-field pipeline adds synthetic known-answer checks, shift nulls, blocked-CV prediction and frozen cohort gates.",
+      "killed": "The old 'Universal Brain Coordination Model' is not supported. Its historical instantaneous PLV used |exp(iΔφ)|, which is identically 1, and the old orchestra filter could re-include the candidate conductor band. The later passive 8–12 Hz phase-flow → future 30–45 Hz amplitude-centroid mapping repeatedly failed on real EEG, the frozen healthy-vs-schizophrenia group gate found no predictive-gain difference, and the current P2 writeback score is marked unstable.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/RegionalAttractorExplorer/blob/main/README.md",
+      "tags": [
+        "eeg",
+        "mne",
+        "source-localization",
+        "state-space",
+        "pac",
+        "traveling-waves",
+        "negative-results",
+        "audit"
+      ],
       "era": "Practical instruments",
       "era_order": 6
     }
@@ -102,13 +163,28 @@
       "id": "instrument-survives-interpretation",
       "title": "The instrument can survive after the interpretation is narrowed",
       "description": "Across the EEG software line, useful operations remain after stronger stories are removed: PerceptionLab patches live signals and its known-answer wave-field timing demo predicts a 22.0-frame mean lag; other tools reconstruct under an explicit model, cluster features, measure group geometry, sonify a channel, or animate a chosen projection. The atlas separates what the program demonstrably computes from what its visualization is said to mean.",
-      "nodes": ["PerceptionLab", "EEGTools", "EEGBrainSourceReconstructionTool", "EEGFlowchartPlus3DBrain", "KoopmanEEGExplorer", "EEG2AUDIO", "RealtimeEEG3Dsystem"]
+      "nodes": [
+        "PerceptionLab",
+        "EEGTools",
+        "EEGBrainSourceReconstructionTool",
+        "EEGFlowchartPlus3DBrain",
+        "KoopmanEEGExplorer",
+        "EEG2AUDIO",
+        "RealtimeEEG3Dsystem",
+        "RegionalAttractorExplorer"
+      ]
     },
     {
       "id": "visualization-is-an-instrument-not-ground-truth",
       "title": "Visualization pipelines can manufacture persuasive structure",
       "description": "A scalp interpolation grid can look like a neural lattice, a template inverse can look like a measured cortex, K-Means states can look like thoughts, and a synthetic 3-D projection can look like recovered anatomy. EEGTools' grid autopsy makes the general lesson explicit: inspect the rendering and model pipeline before interpreting the picture.",
-      "nodes": ["EEGTools", "EEGBrainSourceReconstructionTool", "EEGFlowchartPlus3DBrain", "RealtimeEEG3Dsystem"]
+      "nodes": [
+        "EEGTools",
+        "EEGBrainSourceReconstructionTool",
+        "EEGFlowchartPlus3DBrain",
+        "RealtimeEEG3Dsystem",
+        "RegionalAttractorExplorer"
+      ]
     }
   ]
 }
