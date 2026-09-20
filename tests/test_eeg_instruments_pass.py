@@ -21,18 +21,19 @@ class EEGInstrumentsPassTests(unittest.TestCase):
             "KoopmanEEGExplorer",
             "EEG2AUDIO",
             "RealtimeEEG3Dsystem",
+            "RegionalAttractorExplorer",
         ):
             self.assertIn(node_id, ids)
 
         # PerceptionLab is intentionally reused from the foundation atlas rather
-        # than duplicated in this pass; the six nodes below are the new records.
+        # than duplicated in this pass; the seven nodes below are the new records.
         pass_node_ids = {
             node["id"]
             for node in atlas["nodes"]
             if node.get("pass_id") == "eeg-instruments"
         }
         self.assertNotIn("PerceptionLab", pass_node_ids)
-        self.assertEqual(len(pass_node_ids), 6)
+        self.assertEqual(len(pass_node_ids), 7)
 
         source = next(node for node in atlas["nodes"] if node["id"] == "EEGBrainSourceReconstructionTool")
         self.assertEqual(source["usefulness"], "practical")
@@ -60,6 +61,7 @@ class EEGInstrumentsPassTests(unittest.TestCase):
                 "KoopmanEEGExplorer",
                 "EEG2AUDIO",
                 "RealtimeEEG3Dsystem",
+                "RegionalAttractorExplorer",
             }.issubset(set(motif["nodes"]))
         )
         self.assertIn("22.0-frame", motif["description"])
