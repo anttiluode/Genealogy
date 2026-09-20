@@ -20,21 +20,21 @@ def test_operator_time_pass_is_enabled():
 def test_operator_time_node_and_edges_exist():
     payload = read("passes/operator-time.json")
     nodes = {node["id"] for node in payload["nodes"]}
-    assert "emaNYrotisopeR" in nodes
+    assert "OperatorTime" in nodes
 
     edges = {
         (edge["source"], edge["target"], edge["type"])
         for edge in payload["edges"]
     }
-    assert ("GAx", "emaNYrotisopeR", "converges") in edges
+    assert ("GAx", "OperatorTime", "converges") in edges
     assert (
         "FrequencyAddressedState-dependentOperatorComposition",
-        "emaNYrotisopeR",
+        "OperatorTime",
         "converges",
     ) in edges
-    assert ("SelfAndOtherObjectsInTime", "emaNYrotisopeR", "converges") in edges
+    assert ("SelfAndOtherObjectsInTime", "OperatorTime", "converges") in edges
 
 
 def test_operator_time_repo_is_in_census():
     repos = {row["name"] for row in read("repos.json")}
-    assert "emaNYrotisopeR" in repos
+    assert "OperatorTime" in repos
