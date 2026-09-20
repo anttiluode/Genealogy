@@ -1657,7 +1657,7 @@
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-09-20T14:59:51Z",
+    "updated_at": "2026-09-20T15:56:58Z",
     "inventory_status": "unread"
   },
   {
@@ -3435,7 +3435,7 @@
     "name": "Sihti",
     "url": "https://github.com/anttiluode/Sihti",
     "default_branch": "main",
-    "size": 25354,
+    "size": 25378,
     "visibility": "public",
     "description": "Take an image apart by purifying it, keep what bleeds out at each depth, sum it back exactly. Which operator purifies decides where the objects go: with the image's own edge-aware graph, the layout survives in the core and the texture bleeds into the residues. Live instrument + BSDS500 gates.",
     "created_at": "2026-09-19T02:56:37Z",
@@ -3446,7 +3446,7 @@
     "name": "Sihti2",
     "url": "https://github.com/anttiluode/Sihti2",
     "default_branch": "main",
-    "size": 0,
+    "size": 23,
     "visibility": "public",
     "description": "What happens when we 'purify' noise. Sol thinking repo. ",
     "created_at": "2026-09-20T14:50:11Z",
