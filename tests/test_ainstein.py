@@ -28,5 +28,16 @@ class AInsteinPassTests(unittest.TestCase):
         self.assertIn("AInstein", motif["nodes"])
         self.assertIn("OperatorTime", motif["nodes"])
 
+
+    def test_gate2_records_active_collision_budget_and_misbinding_boundary(self):
+        atlas = load_atlas(ROOT)
+        node = next(n for n in atlas["nodes"] if n["id"] == "AInstein")
+        self.assertIn("0.9531", node["survived"])
+        self.assertIn("4.6875%", node["survived"])
+        self.assertIn("0.4762", node["killed"])
+        self.assertIn("confidence alone", node["killed"].lower())
+        self.assertIn("active-collision-selection", node["tags"])
+        self.assertIn("address-misbinding", node["tags"])
+
 if __name__ == "__main__":
     unittest.main()
