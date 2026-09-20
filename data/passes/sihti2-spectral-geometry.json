@@ -1,0 +1,44 @@
+{
+  "id": "sihti2-spectral-geometry",
+  "title": "Sihti2: noise writes a diffusion geometry",
+  "summary": "Sihti2 takes Sihti's operator-defined persistence into a null-input regime. IID colour noise writes a heterogeneous local conductance graph and the same signal is then propagated through that graph. The branch reframes the boxy late states as candidate metastable / almost-invariant diffusion domains and turns the visual clue into measurable questions about graph bottlenecks, mixing time, heat trace and spectral dimension. The repo explicitly fences the interpretation: persistent domains are not semantic objects, and fractal / Griffiths language is not earned without finite-size and scaling evidence.",
+  "order": 240,
+  "reviewed_at": "2026-09-20",
+  "nodes": [
+    {
+      "id": "Sihti2",
+      "url": "https://github.com/anttiluode/Sihti2",
+      "family": "residue-operator",
+      "status": "active",
+      "claim": "Turns Sihti's noise observation into a random-conductance spectral-geometry program with matched self, independent-geometry, shuffled-conductance and blank-lattice controls.",
+      "survived": "The exact implemented object is a lazy reversible diffusion on a graph whose conductances are written by the input; the experiment now measures Laplacian gap/relaxation, stationary-measure variance, edge disagreement, heat trace and effective spectral-dimension slopes rather than reading objecthood from appearance.",
+      "killed": "No semantic-object, fractal, renormalization-group or Griffiths-phase claim is accepted from a compelling late image alone; those interpretations require stable scaling, finite-size controls and matched nulls.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Sihti2/blob/main/README.md",
+      "tags": [
+        "random-conductance",
+        "graph-laplacian",
+        "metastability",
+        "mixing-time",
+        "heat-kernel",
+        "spectral-dimension",
+        "null-model",
+        "negative-claim-boundary"
+      ],
+      "era": "Noise-written spectral geometry",
+      "era_order": 30
+    }
+  ],
+  "edges": [
+    {
+      "source": "Sihti",
+      "target": "Sihti2",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Sihti2 explicitly starts from Sihti's IID-noise own-EQ observation and keeps the same image-written conductance / lazy-diffusion mechanism while changing the research question from object placement to spectral geometry and metastability.",
+      "evidence": "https://github.com/anttiluode/Sihti2/blob/main/README.md"
+    }
+  ],
+  "motifs": []
+}
