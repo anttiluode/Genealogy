@@ -1,0 +1,83 @@
+{
+  "id": "cabbage-farm-sihti",
+  "title": "CabbageFarmSihti: from continuous world extrapolation to stochastic transfer law",
+  "summary": "CabbageFarmSihti recombines the old CabbageFarm ambition of coordinate-addressable, effectively unbounded 2-D worlds with the Sihti/Sihti2 view that an operator can be inferred from what survives and bleeds out across scales. The v0 implementation deliberately begins with a stationary Gaussian spectral baseline: fit a 2-D transfer law from a finite reference, then sample a globally coordinate-addressable random Fourier field from that law. Exact overlap consistency is tested. Sihti-style Gaussian residue signatures are recorded as diagnostics, but are not counted as extra information because linear second-order octave statistics are already implied by the power spectrum. Cross-octave spatial relations are only earned if the spectral attacker fails.",
+  "order": 250,
+  "reviewed_at": "2026-09-20",
+  "nodes": [
+    {
+      "id": "CabbageFarm",
+      "url": "https://github.com/anttiluode/CabbageFarm",
+      "family": "procedural-world",
+      "status": "experiment",
+      "claim": "Uses continuous implicit neural functions to represent a finite 2-D image as a coordinate-queryable field and extrapolate beyond the observed image.",
+      "survived": "The coordinate-field formulation makes pan/zoom and arbitrary-coordinate queries a concrete engineering target; the repo also explores dense complex-valued and fast Walsh-Hadamard spectral mixing.",
+      "killed": "Querying outside the fitted image does not by itself establish that the model learned a stochastic law of the texture or world; the README itself describes far extrapolation as hallucination.",
+      "usefulness": "conceptual",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/CabbageFarm/blob/main/README.md",
+      "tags": [
+        "implicit-field",
+        "continuous-coordinates",
+        "siren",
+        "spectral-mixing",
+        "extrapolation"
+      ],
+      "era": "Procedural law / infinite-field synthesis",
+      "era_order": 31
+    },
+    {
+      "id": "CabbageFarmSihti",
+      "url": "https://github.com/anttiluode/CabbageFarmSihti",
+      "family": "procedural-world",
+      "status": "active",
+      "claim": "Learns a stochastic transfer law from a finite texture and applies it to fresh coordinate-addressable noise, beginning with a 2-D spectral Gaussian-field attacker before adding Sihti cross-octave relations.",
+      "survived": "v0 implements reference-to-spectral-law fitting, fresh random Fourier synthesis, exact overlap-consistent coordinate crops, power/anistropy/colour diagnostics and Sihti-style Gaussian residue fingerprints under an explicit second-order claim boundary.",
+      "killed": "Matching power spectrum or linear octave-energy statistics is not treated as statistically indistinguishable natural texture synthesis; higher-order shape, phase organization and cross-octave relations remain unearned.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/CabbageFarmSihti/blob/main/README.md",
+      "tags": [
+        "procedural-texture",
+        "random-field",
+        "transfer-function",
+        "coordinate-noise",
+        "spectral-synthesis",
+        "residue",
+        "cross-scale"
+      ],
+      "era": "Procedural law / infinite-field synthesis",
+      "era_order": 31
+    }
+  ],
+  "edges": [
+    {
+      "source": "CabbageFarm",
+      "target": "CabbageFarmSihti",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "CabbageFarmSihti explicitly revisits CabbageFarm's continuous/infinite-query world goal but replaces one-world implicit extrapolation with a stochastic-law-plus-noise generator.",
+      "evidence": "https://github.com/anttiluode/CabbageFarmSihti/blob/main/README.md"
+    },
+    {
+      "source": "Sihti2",
+      "target": "CabbageFarmSihti",
+      "type": "converges",
+      "confidence": "high",
+      "why": "CabbageFarmSihti explicitly imports the Sihti2 transfer-law/noise perspective: noise supplies novelty, while the learned operator and residue hierarchy describe what structure survives across scales.",
+      "evidence": "https://github.com/anttiluode/CabbageFarmSihti/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "generative-law-not-instance",
+      "title": "Learn the law, not one stored world",
+      "description": "CabbageFarm made a continuous coordinate representation of one fitted image. Sihti2 reframed random input as a probe of an operator-written geometry. CabbageFarmSihti combines those lines by learning a stochastic transfer law from a finite example and applying it to fresh coordinate-addressable noise, so new territory comes from the law rather than from extrapolating one stored instance.",
+      "nodes": [
+        "CabbageFarm",
+        "Sihti2",
+        "CabbageFarmSihti"
+      ]
+    }
+  ]
+}
