@@ -1977,5 +1977,88 @@
       "Result is specific to this SDXL-Turbo/RTX-3060 route"
     ],
     "source": "https://github.com/anttiluode/WhatToLookAt/blob/main/VAE_CLOSEOUT.md"
+  },
+  {
+    "id": "regional-attractor-historical-plv-audit",
+    "node": "RegionalAttractorExplorer",
+    "claim": "The historical pointwise conductor/orchestra 'PLV' metric contains time-resolved phase-locking information.",
+    "design": "algebraic implementation audit with repaired known-answer control",
+    "result": "contradicts",
+    "motifs": [
+      "negative-results"
+    ],
+    "metrics": [
+      {
+        "name": "historical instantaneous PLV",
+        "display": "|exp(i Δφ)| = 1 identically"
+      },
+      {
+        "name": "historical phase-slip value",
+        "display": "1 - PLV = 0 identically"
+      },
+      {
+        "name": "repaired PAC instrument",
+        "display": "synthetic known-answer PASS"
+      }
+    ],
+    "controls": [
+      "Direct algebraic audit of the historical implementation",
+      "Replacement conductor_metrics.py / mnebrain_conductor_pac.py uses conventional windowed PAC",
+      "Synthetic known-answer test for the repaired meter"
+    ],
+    "replication": "deterministic code/algebra audit plus synthetic repaired-meter check",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "This kills the historical pointwise coordination metric, not all cross-frequency coupling measures",
+      "PAC is an association measure and does not establish causal conductor control"
+    ],
+    "source": "https://github.com/anttiluode/RegionalAttractorExplorer/blob/main/README.md"
+  },
+  {
+    "id": "regional-attractor-p1-group-null",
+    "node": "RegionalAttractorExplorer",
+    "claim": "The frozen P1 guidance predictive-gain endpoint differs between healthy and schizophrenia EEG cohorts.",
+    "design": "pre-frozen subject-level patient-control permutation gate",
+    "result": "contradicts",
+    "motifs": [
+      "negative-results"
+    ],
+    "sample": {
+      "unit": "subject",
+      "count": 28
+    },
+    "metrics": [
+      {
+        "name": "healthy median guidance predictive gain",
+        "value": -0.002371
+      },
+      {
+        "name": "schizophrenia median guidance predictive gain",
+        "value": -0.002856
+      },
+      {
+        "name": "SZ minus healthy",
+        "value": -0.000484
+      },
+      {
+        "name": "two-sided subject-label permutation p",
+        "value": 0.6884
+      }
+    ],
+    "controls": [
+      "14 healthy and 14 schizophrenia subjects",
+      "Primary endpoint frozen before the schizophrenia cohort was inspected",
+      "100,000 two-sided subject-label permutations",
+      "Bands, lag and mapping kept fixed rather than searched after null results"
+    ],
+    "replication": "28-subject frozen group gate after earlier whole-run null screens",
+    "held_out": true,
+    "external_data": true,
+    "limitations": [
+      "Rejects a group difference for this fixed P1 mapping; it does not show that cortical traveling waves are absent",
+      "Sensor-space results remain sensitive to reference, volume conduction, source mixing, spatial sampling, filters and EMG contamination"
+    ],
+    "source": "https://github.com/anttiluode/RegionalAttractorExplorer/blob/main/docs/PILOT_FIELD_SZ_GROUP_GATE.md"
   }
 ]
