@@ -1,7 +1,7 @@
 {
   "id": "ainstein",
-  "title": "AInstein: discovered constructive residue synthesis",
-  "summary": "AInstein turns OperatorTime's constructive-residue north star into a held-out mechanism-discovery gate. Two branch residues are individually insufficient; provenance-stamped composition is selected from a generic interaction grammar and tested on unseen A/B pairings. The pass also preserves the important transformer correction: a nonlinear post-attention control succeeds, so attention convexity is not treated as a transformer impossibility result.",
+  "title": "AInstein: constructive residue synthesis and active collision selection",
+  "summary": "AInstein turns OperatorTime's constructive-residue north star into executable gates. Gate 1 selects a reusable provenance-sensitive interaction on held-out residue pairings. Gate 2 freezes that interaction, exposes 64 legal collisions, and imports active experiment design from AnotherOddThing / WhatToLookAt so only three collisions are spent identifying which synthesized operator is useful now. The pass also preserves two corrections: nonlinear transformer-style postmix can solve the Gate-1 interaction, and low posterior entropy is not enough when pair provenance/address is misbound.",
   "order": 230,
   "reviewed_at": "2026-09-20",
   "nodes": [
@@ -10,9 +10,9 @@
       "url": "https://github.com/anttiluode/AInstein",
       "family": "operator-time",
       "status": "active",
-      "claim": "Tests whether provenance-stamped counterfactual residues can be composed by a discovered reusable interaction so that a useful effective operator appears on held-out residue pairings even though either branch alone, convex branch mixing and pair lookup fail.",
-      "survived": "Gate 1 selected the ordered outer interaction in 32/32 deterministic worlds. On pair identities never seen together during fitting, mean operator R² was 0.9781 and operator-application R² was 0.9789. Branch A, branch B, convex branch mixing and pair lookup remained at or below 0.0116 mean R²; erasing provenance reduced R² to 0.2651; the synthesized operator retained a 0.7457 relative residual outside the branch-only span. A transformer-style convex retrieval followed by a nonlinear post-mix stage also reached 0.9467 R², showing the constructive capacity is not unique to this mechanism.",
-      "killed": "Gate 1 rejects the idea that simple branch interpolation or memorized pair identity explains the held-out result, but it does not establish autonomous invention: the candidate grammar already contains the winning ordered interaction and the synthetic world is bilinear. It also explicitly rejects the stronger claim that attention convexity prevents transformers from constructing nonlinear cross-token interactions.",
+      "claim": "Tests whether provenance-stamped counterfactual residues can first yield a reusable held-out synthesis law and then be actively selected under a strict collision budget so the current hidden bottleneck determines which new operator is worth making available.",
+      "survived": "Gate 1 selected the ordered outer interaction in 32/32 deterministic worlds. On pair identities never seen together during fitting, mean operator R² was 0.9781 and operator-application R² was 0.9789. Branch A, branch B, convex branch mixing and pair lookup remained at or below 0.0116 mean R²; erasing provenance reduced R² to 0.2651; the synthesized operator retained a 0.7457 relative residual outside the branch-only span. A transformer-style convex retrieval followed by a nonlinear post-mix stage also reached 0.9467 R², showing the constructive capacity is not unique to this mechanism. Gate 2 then gives 64 legal A/B collisions but permits only 3 probes (4.6875% of the pair space). Across 32 worlds x 128 trials, expected-information-gain selection reaches 0.9531 mean selected utility and 0.8999 oracle-pair hit rate versus 0.8460 / 0.1990 for matched random distinct probes and 0.8041 / 0.0942 for greedy exploit-only probing. Active posterior entropy falls to 0.255 bits versus 1.330 for random.",
+      "killed": "Gate 1 rejects the idea that simple branch interpolation or memorized pair identity explains the held-out result, but it does not establish autonomous invention: the candidate grammar already contains the winning ordered interaction and the synthetic world is bilinear. It also explicitly rejects the stronger claim that attention convexity prevents transformers from constructing nonlinear cross-token interactions. Gate 2 also kills the idea that confidence alone certifies correct synthesis: when the correct response library is attached to the wrong residue-pair addresses, posterior entropy is still only 0.247 bits while selected utility collapses to 0.4762 and oracle-pair hits to 0.0225. The Gate-2 result assumes a finite known family of possible needs and a correct candidate-response model, so it is not yet open-ended creative search.",
       "usefulness": "scientific",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/AInstein/blob/main/README.md",
@@ -23,7 +23,12 @@
         "heldout-composition",
         "mechanism-discovery",
         "counterfactual-branch",
-        "transformer-control"
+        "transformer-control",
+        "active-collision-selection",
+        "information-gain",
+        "compute-budget",
+        "address-misbinding",
+        "confidence-vs-provenance"
       ],
       "era": "Constructive residue synthesis",
       "era_order": 30
@@ -67,7 +72,7 @@
       "target": "AInstein",
       "type": "converges",
       "confidence": "high",
-      "why": "The next gate asks which residue pair should be tested under a limited budget, directly reusing active experiment selection.",
+      "why": "Gate 2 directly imports posterior maintenance and expected-information-gain experiment selection: candidate residue collisions are the probes and the hidden current need is the hypothesis.",
       "evidence": "https://github.com/anttiluode/AInstein/blob/main/README.md"
     },
     {
@@ -75,7 +80,7 @@
       "target": "AInstein",
       "type": "converges",
       "confidence": "high",
-      "why": "The planned many-residue gate turns selection of candidate interactions into a compute-allocation problem: which possible collision deserves bandwidth.",
+      "why": "Gate 2 turns residue collision into a scarce sensing/compute currency: only 3 of 64 legal collisions are allowed, so uncertainty determines where computational bandwidth is spent.",
       "evidence": "https://github.com/anttiluode/AInstein/blob/main/README.md"
     },
     {
@@ -91,7 +96,7 @@
     {
       "id": "constructive-residue-synthesis",
       "title": "Constructive residue synthesis",
-      "description": "Counterfactual branches leave provenance-stamped state changes; useful cross-residue interactions are selected and tested on unseen combinations. The target is not recall or convex interpolation but a new effective operator component that changes what computation is available next.",
+      "description": "Counterfactual branches leave provenance-stamped state changes; useful cross-residue interactions are selected and tested on unseen combinations, then active experiment design allocates a tiny budget across many possible collisions. The target is not recall or convex interpolation but a new effective operator component whose usefulness is discovered without trying every pair. Gate 2 adds a sharp constraint: confidence is only meaningful if operator predictions remain bound to the correct residue addresses.",
       "nodes": [
         "GAx",
         "Sihti",

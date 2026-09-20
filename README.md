@@ -123,7 +123,11 @@ Adds **OperatorTime**. The pass makes explicit the synthesis that emerged from G
 
 Adds **AInstein** as the direct continuation of OperatorTime Gate 3. Instead of hand-writing one useful cross-term and merely proving that it can work, Gate 1 presents a small interaction grammar and selects the mechanism on validation pairs, then freezes it for A/B pairings never seen together. Across 32 worlds the ordered interaction is selected 32/32 times; held-out operator R² is 0.9781 and held-out operator-application R² is 0.9789, while branch-only, convex branch mixing and pair lookup remain near chance/zero. Erasing provenance drops operator R² to 0.2651, and the joint operator retains a 0.7457 relative component outside the branch-only span.
 
-The pass also records an important negative/correction rather than hiding it: a transformer-style convex retrieval followed by a nonlinear post-mix stage reaches 0.9467 R². So AInstein is **not** evidence that transformer attention is trapped in interpolation. The live research question is narrower and stronger: can explicit branch residue + provenance + mechanism discovery eventually escape a supplied interaction grammar and produce reusable operator structure that was not scripted in advance?
+The pass also records an important negative/correction rather than hiding it: a transformer-style convex retrieval followed by a nonlinear post-mix stage reaches 0.9467 R². So AInstein is **not** evidence that transformer attention is trapped in interpolation.
+
+Gate 2 then makes the AnotherOddThing / WhatToLookAt connection executable. Eight A residues and eight B residues create 64 legal collisions, but only three may be probed. Expected-information-gain selection reaches **0.9531** mean selected utility and **0.8999** oracle-pair hits versus **0.8460 / 0.1990** for matched random probing and **0.8041 / 0.0942** for greedy exploit-only probing. The most useful attacker is provenance misbinding: attaching the correct response library to the wrong pair addresses still produces a very sharp posterior (**0.247 bits**) while utility collapses to **0.4762**. The surviving rule is therefore stronger than "be confident": **confidence is not provenance**.
+
+The live research question is now whether this explicit branch residue + provenance + active collision machinery can escape both remaining crutches: Gate 1's supplied interaction grammar and Gate 2's finite known family of possible needs.
 
 ## Evidence rule
 
