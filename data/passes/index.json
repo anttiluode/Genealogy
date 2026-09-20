@@ -178,5 +178,9 @@
   {
     "path": "self-and-other-in-time.json",
     "enabled": true
+  },
+  {
+    "path": "operator-time.json",
+    "enabled": true
   }
 ]
