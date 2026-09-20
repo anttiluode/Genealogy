@@ -114,6 +114,10 @@ The V20 curation is already a reviewed node, but its source provenance is now ex
 
 Adds the current Gates 1–9 line: self/other role binding, event-relative phase, discovered boundaries, nested local clocks with writeback, consequence-based event admission, active causal probing, selective temporal precision, and online timing reallocation without resetting event identity. The pass deliberately connects back to FrequencyAddressedState-dependentOperatorComposition, FusionMachine, SighImageFactorization, AnotherOddThing, ReadWrite and the ArtificialCortex/whorl phase substrate while keeping the biological/consciousness claims out.
 
+### Operator Time — resident history changes the operator available now
+
+Adds `emaNYrotisopeR`, whose working title is **Operator Time**. The pass makes explicit the synthesis that emerged from GAx, FrequencyAddressedState-dependentOperatorComposition, Sihti, WhatToLookAt, SelfAndOtherObjectsInTime and the ArtificialCortex/whorl substrate line: learned/substrate parameters may stay fixed while resident history changes the effective operator acting now. Gate 1 keeps the current probe identical and parameter drift at zero, yet recent transient history remains decodable from the current operator response (0.9924 versus chance for fixed/reset controls). Transformer/KV, text-as-residue and biological-frequency discussions remain labeled as analogies or future tests rather than established equivalences.
+
 ## Evidence rule
 
 A genealogy edge means documentary evidence was found for that relationship. Similar names and version numbers are only discovery hints.

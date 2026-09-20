@@ -1,0 +1,100 @@
+{
+  "id": "operator-time",
+  "title": "Operator Time: resident history changes the operator available now",
+  "summary": "emaNYrotisopeR is the current synthesis notebook for a motif that first appeared across GAx, state-dependent operator composition, residue/purification, event-owned time and active sensing: fixed substrate parameters can coexist with a changing effective operator because resident history, route, perspective and event state change what is accessible now. Gate 1 isolates the minimum claim with zero parameter drift.",
+  "order": 220,
+  "reviewed_at": "2026-09-20",
+  "nodes": [
+    {
+      "id": "emaNYrotisopeR",
+      "url": "https://github.com/anttiluode/emaNYrotisopeR",
+      "family": "operator-time",
+      "status": "active",
+      "claim": "Treats cognition/computation as a trajectory through state-dependent effective operators: theta may stay fixed while resident history changes O_t. The working synthesis links transformer-style context dependence, persistent SELF/reference, transient objects, spectral/frequency accessibility and event-local time without claiming these implementations are equivalent.",
+      "survived": "Gate 1 shows the narrow mechanism cleanly: with a fixed synthetic substrate, identical current probe, permanent self anchor and zero parameter drift, recent transient-object class remains linearly accessible from the current operator response at 0.9924 mean accuracy across 64 worlds. Fixed-operator and erased-residue baselines are at chance (0.4956 and 0.4972). Reversing the same two-object history changes the effective operator by 0.0438 relative norm and the current output by 0.2196.",
+      "killed": "A fixed operator cannot recover the recent transient class from the identical present cue, and erasing resident history collapses performance to chance. The repo explicitly does not establish that transformer KV cache is biological short-term memory, that text literally stores operators, that SELF is one vector, that rhythms are operator addresses, or that eigenmodes explain thought.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/emaNYrotisopeR/blob/main/README.md",
+      "tags": [
+        "operator-time",
+        "resident-state",
+        "state-dependent-operator",
+        "self-anchor",
+        "transient-object",
+        "trajectory",
+        "transformer-analogy",
+        "frequency-address",
+        "residue",
+        "event-time"
+      ],
+      "era": "Operator time / resident operators",
+      "era_order": 29
+    }
+  ],
+  "edges": [
+    {
+      "source": "GAx",
+      "target": "emaNYrotisopeR",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The Operator Time README explicitly names GAx/ThirdWay as the earlier route-divergence and context-selected-mode line from which the current operator-time framing grew.",
+      "evidence": "https://github.com/anttiluode/emaNYrotisopeR/blob/main/README.md"
+    },
+    {
+      "source": "FrequencyAddressedState-dependentOperatorComposition",
+      "target": "emaNYrotisopeR",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The new repo explicitly identifies state-dependent operator composition as the direct mathematical ancestor of the question 'what determines the operator available at this instant?'",
+      "evidence": "https://github.com/anttiluode/emaNYrotisopeR/blob/main/README.md"
+    },
+    {
+      "source": "Sihti",
+      "target": "emaNYrotisopeR",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The synthesis reuses the residue/purification line as evidence for the recurring shape resident-state plus computed residue, while keeping the mathematical equivalence claim narrow.",
+      "evidence": "https://github.com/anttiluode/emaNYrotisopeR/blob/main/README.md"
+    },
+    {
+      "source": "WhatToLookAt",
+      "target": "emaNYrotisopeR",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Operator Time explicitly connects active selection of what to sense/probe with the broader idea that current state determines which operation becomes available next.",
+      "evidence": "https://github.com/anttiluode/emaNYrotisopeR/blob/main/README.md"
+    },
+    {
+      "source": "SelfAndOtherObjectsInTime",
+      "target": "emaNYrotisopeR",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The new repo imports the persistent-reference/transient-object and event-owned-time framing from SelfAndOtherObjectsInTime into the more general operator-time synthesis.",
+      "evidence": "https://github.com/anttiluode/emaNYrotisopeR/blob/main/README.md"
+    },
+    {
+      "source": "ArtificialCortex",
+      "target": "emaNYrotisopeR",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "The README identifies ArtificialCortex/the_whorl as a candidate substrate-level route for replacing software phase/address variables with locally generated field state; this remains a future implementation bridge rather than an established inheritance mechanism.",
+      "evidence": "https://github.com/anttiluode/emaNYrotisopeR/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "operator-available-now",
+      "title": "Resident history determines the operator available now",
+      "description": "The fixed substrate can expose different effective operations because recent route, object, perspective and event state remain resident. The motif unifies route divergence, state-dependent operator composition, residue, event-local time and selective sensing without asserting a single biological implementation.",
+      "nodes": [
+        "GAx",
+        "FrequencyAddressedState-dependentOperatorComposition",
+        "Sihti",
+        "WhatToLookAt",
+        "SelfAndOtherObjectsInTime",
+        "emaNYrotisopeR"
+      ]
+    }
+  ]
+}
