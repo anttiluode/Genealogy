@@ -110,6 +110,14 @@ The first experiment compares four matched controls: the signal writing its own 
 
 The correction is part of the node, not an afterthought: a visually coherent late state does **not** establish semantic objecthood, fractality, a renormalization-group fixed point or a Griffiths phase. Those stronger interpretations require finite-size and scaling evidence. The lineage edge is therefore narrow and explicit: `Sihti → Sihti2`, from "the operator decides what persists" to "what diffusion geometry did random data write?"
 
+### CabbageFarmSihti — learn the law, not one stored world
+
+Adds **CabbageFarmSihti** as a convergence between the old CabbageFarm coordinate-field ambition and the Sihti/Sihti2 operator/noise line. CabbageFarm asked whether a finite image could be encoded as a continuous coordinate-queryable world. The new branch changes the target: infer a stochastic transfer law from a finite reference, then apply that law to fresh coordinate-addressable noise so new territory comes from the law rather than from extrapolating one stored instance.
+
+The v0 implementation begins with the strongest simple attacker rather than with a neural generator. It fits a 2-D spectral measure in a PCA colour basis and samples a globally defined random Fourier field. Separate crop requests with the same model/seed must agree exactly on overlap, making "arbitrarily large" a coordinate-consistency property rather than a giant bitmap. A Sihti-style Gaussian residue signature is recorded, but matching those linear second-order octave statistics does **not** count as extra Sihti evidence because the power spectrum already determines them for a stationary Gaussian process.
+
+The live boundary is therefore sharp: phase-randomized / power-spectrum-matched synthesis must fail on measurable cross-octave spatial structure before a richer relation law such as `P(R_2d | R_d)` is earned. The genealogy records both inputs explicitly: `CabbageFarm → CabbageFarmSihti` for the continuous-world goal and `Sihti2 → CabbageFarmSihti` for the transfer-law/noise perspective.
+
 ### WhatToLookAt — learned relations become a sensing budget
 
 Tracks the step from history-written relation state to an explicit physical-observation currency. Gate 0 establishes the oracle upper bound, Gate 1 learns a persistent common-fate relation before a rearranged future is undersampled, and Gate 2 lets local relation confidence allocate extra sensing only where correspondence is uncertain. The key question is no longer only what the operator groups, but **how many measurements that learned structure lets the system stop taking**.
