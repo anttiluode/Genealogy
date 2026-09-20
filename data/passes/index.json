@@ -174,5 +174,9 @@
   {
     "path": "what-to-look-at.json",
     "enabled": true
+  },
+  {
+    "path": "self-and-other-in-time.json",
+    "enabled": true
   }
 ]

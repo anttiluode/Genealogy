@@ -16,7 +16,14 @@
       "usefulness": "scientific",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/TheMycelialCortex/blob/main/README.md",
-      "tags": ["distributed-matter", "sparse-events", "tokens", "resident-state", "growth", "federation"],
+      "tags": [
+        "distributed-matter",
+        "sparse-events",
+        "tokens",
+        "resident-state",
+        "growth",
+        "federation"
+      ],
       "era": "Modal computational tissue",
       "era_order": 1
     },
@@ -26,12 +33,23 @@
       "family": "distributed-computational-matter",
       "status": "ledger",
       "claim": "Couples time-holding / coincidence-sensitive units into spatial oscillatory fields with traveling waves, interference, slow-fast coupling and a stacked spatial-by-frequency representation.",
-      "survived": "A field can be treated as resident computational matter whose useful coordinates include space, frequency and phase; slow state can gate faster dynamics; and computation can be read from wave/interference structure rather than only from trained feedforward weights.",
+      "survived": "A field can be treated as resident computational matter whose useful coordinates include space, frequency and phase; slow state can gate faster dynamics; and computation can be read from wave/interference structure rather than only from trained feedforward weights. The archived `the_whorl/whorl_field.py` is the concrete spiral branch: circular/tangential coupling bias pins a spiral core, and that exact file is also preserved in the later GeometricNeuron_V20 curation.",
       "killed": "The mechanisms are established dynamical-systems ingredients assembled synthetically, not a derivation of cortex. The grid symmetry and several clocks are supplied by construction, the energy quantity is a proxy, and the repo does not establish advantage over ordinary learned systems.",
       "usefulness": "scientific",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/ArtificialCortex/blob/main/README.md",
-      "tags": ["field-computing", "oscillation", "frequency-axis", "phase", "slow-fast", "traveling-waves", "computational-matter"],
+      "tags": [
+        "field-computing",
+        "oscillation",
+        "frequency-axis",
+        "phase",
+        "slow-fast",
+        "traveling-waves",
+        "computational-matter",
+        "the-whorl",
+        "spiral-waves",
+        "circular-coupling"
+      ],
       "era": "Modal computational tissue",
       "era_order": 2
     }

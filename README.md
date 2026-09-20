@@ -106,6 +106,14 @@ Tracks the explicit `SighImageSuper` fork into two different uses of the same te
 
 Tracks the step from history-written relation state to an explicit physical-observation currency. Gate 0 establishes the oracle upper bound, Gate 1 learns a persistent common-fate relation before a rearranged future is undersampled, and Gate 2 lets local relation confidence allocate extra sensing only where correspondence is uncertain. The key question is no longer only what the operator groups, but **how many measurements that learned structure lets the system stop taking**.
 
+### GeometricNeuron_V20 — recomposition also preserves the whorl
+
+The V20 curation is already a reviewed node, but its source provenance is now explicit on the wall. In particular, `03_faces_of_A/generate/whorl_field.py` and `whorl_README.md` are preserved from `ArtificialCortex/the_whorl`. The atlas now draws that curation edge directly instead of leaving the spiral-field branch buried inside the larger ArtificialCortex node.
+
+### SelfAndOtherObjectsInTime — event-owned time and continuing reference
+
+Adds the current Gates 1–9 line: self/other role binding, event-relative phase, discovered boundaries, nested local clocks with writeback, consequence-based event admission, active causal probing, selective temporal precision, and online timing reallocation without resetting event identity. The pass deliberately connects back to FrequencyAddressedState-dependentOperatorComposition, FusionMachine, SighImageFactorization, AnotherOddThing, ReadWrite and the ArtificialCortex/whorl phase substrate while keeping the biological/consciousness claims out.
+
 ## Evidence rule
 
 A genealogy edge means documentary evidence was found for that relationship. Similar names and version numbers are only discovery hints.
