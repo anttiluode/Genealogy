@@ -1,7 +1,7 @@
 {
   "id": "ainstein",
-  "title": "AInstein: constructive residue synthesis and active collision selection",
-  "summary": "AInstein turns OperatorTime's constructive-residue north star into executable gates. Gate 1 selects a reusable provenance-sensitive interaction on held-out residue pairings. Gate 2 freezes that interaction, exposes 64 legal collisions, and imports active experiment design from AnotherOddThing / WhatToLookAt so only three collisions are spent identifying which synthesized operator is useful now. The pass also preserves two corrections: nonlinear transformer-style postmix can solve the Gate-1 interaction, and low posterior entropy is not enough when pair provenance/address is misbound.",
+  "title": "AInstein: constructive residue synthesis, active collision selection, and topology-grown programs",
+  "summary": "AInstein turns OperatorTime's constructive-residue north star into executable gates. Gate 1 selects a reusable provenance-sensitive interaction on held-out residue pairings. Gate 2 imports active experiment design so only three of 64 legal collisions are probed. Gate 3 removes the complete interaction menu: useful cross-residue programs are grown from elementary address/multiply/add primitives under a fixed structural budget, and equal-budget shallow or rewired attackers fail. The pass preserves the transformer correction, the confidence-is-not-provenance correction, and the new distinction between nonlinear unit count and interaction topology/depth.",
   "order": 230,
   "reviewed_at": "2026-09-20",
   "nodes": [
@@ -10,9 +10,9 @@
       "url": "https://github.com/anttiluode/AInstein",
       "family": "operator-time",
       "status": "active",
-      "claim": "Tests whether provenance-stamped counterfactual residues can first yield a reusable held-out synthesis law and then be actively selected under a strict collision budget so the current hidden bottleneck determines which new operator is worth making available.",
-      "survived": "Gate 1 selected the ordered outer interaction in 32/32 deterministic worlds. On pair identities never seen together during fitting, mean operator R² was 0.9781 and operator-application R² was 0.9789. Branch A, branch B, convex branch mixing and pair lookup remained at or below 0.0116 mean R²; erasing provenance reduced R² to 0.2651; the synthesized operator retained a 0.7457 relative residual outside the branch-only span. A transformer-style convex retrieval followed by a nonlinear post-mix stage also reached 0.9467 R², showing the constructive capacity is not unique to this mechanism. Gate 2 then gives 64 legal A/B collisions but permits only 3 probes (4.6875% of the pair space). Across 32 worlds x 128 trials, expected-information-gain selection reaches 0.9531 mean selected utility and 0.8999 oracle-pair hit rate versus 0.8460 / 0.1990 for matched random distinct probes and 0.8041 / 0.0942 for greedy exploit-only probing. Active posterior entropy falls to 0.255 bits versus 1.330 for random.",
-      "killed": "Gate 1 rejects the idea that simple branch interpolation or memorized pair identity explains the held-out result, but it does not establish autonomous invention: the candidate grammar already contains the winning ordered interaction and the synthetic world is bilinear. It also explicitly rejects the stronger claim that attention convexity prevents transformers from constructing nonlinear cross-token interactions. Gate 2 also kills the idea that confidence alone certifies correct synthesis: when the correct response library is attached to the wrong residue-pair addresses, posterior entropy is still only 0.247 bits while selected utility collapses to 0.4762 and oracle-pair hits to 0.0225. The Gate-2 result assumes a finite known family of possible needs and a correct candidate-response model, so it is not yet open-ended creative search.",
+      "claim": "Tests whether provenance-stamped counterfactual residues can yield reusable held-out synthesis, be actively selected under a strict collision budget, and then support useful operator programs that are assembled from elementary primitives rather than chosen as complete formulas.",
+      "survived": "Gate 1 selected the ordered outer interaction in 32/32 deterministic worlds. On pair identities never seen together during fitting, mean operator R² was 0.9781 and operator-application R² was 0.9789. Branch A, branch B, convex branch mixing and pair lookup remained at or below 0.0116 mean R²; erasing provenance reduced R² to 0.2651; the synthesized operator retained a 0.7457 relative residual outside the branch-only span. A transformer-style convex retrieval followed by a nonlinear post-mix stage also reached 0.9467 R², showing the constructive capacity is not unique to this mechanism. Gate 2 then gives 64 legal A/B collisions but permits only 3 probes (4.6875% of the pair space). Across 32 worlds x 128 trials, expected-information-gain selection reaches 0.9531 mean selected utility and 0.8999 oracle-pair hit rate versus 0.8460 / 0.1990 for matched random distinct probes and 0.8041 / 0.0942 for greedy exploit-only probing. Active posterior entropy falls to 0.255 bits versus 1.330 for random. Gate 3 removes the complete-formula tray and gives search only coordinate addressing, multiplication and additive operator readout. With the same 12 nonlinear-node budget in every condition, depth/order<=4 growth reaches 0.9986 held-out operator R² and 0.9986 application R², recovers all 6 hidden programs in every world, while depth/order<=3 reaches 0.6459 and depth/order<=2 reaches 0.3091. Preserving branch-order shape but randomizing wiring gives -0.0118 R²; shuffling discovered addresses gives -0.0030.",
+      "killed": "Gate 1 rejects the idea that simple branch interpolation or memorized pair identity explains the held-out result, but it does not establish autonomous invention: the candidate grammar already contains the winning ordered interaction and the synthetic world is bilinear. It also explicitly rejects the stronger claim that attention convexity prevents transformers from constructing nonlinear cross-token interactions. Gate 2 also kills the idea that confidence alone certifies correct synthesis: when the correct response library is attached to the wrong residue-pair addresses, posterior entropy is still only 0.247 bits while selected utility collapses to 0.4762 and oracle-pair hits to 0.0225. The Gate-2 result assumes a finite known family of possible needs and a correct candidate-response model, so it is not yet open-ended creative search. Gate 3 kills the weaker explanation that nonlinear unit count alone carries the result: twelve shallow pairwise nodes cannot represent the same family as twelve nodes arranged into deeper interaction programs. It also keeps a strict scope fence: multiplication/address/addition are supplied primitives, the hidden worlds are sparse polynomial programs, and the search rule is engineered, so this is not open-ended or grammar-free invention. The numerical similarity between Gate 1's 0.7457 relative span residual and Aizenbud et al.'s R²=0.74 dendritic-area correlation is explicitly treated as coincidence because they are different quantities.",
       "usefulness": "scientific",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/AInstein/blob/main/README.md",
@@ -28,7 +28,13 @@
         "information-gain",
         "compute-budget",
         "address-misbinding",
-        "confidence-vs-provenance"
+        "confidence-vs-provenance",
+        "topology-grown-synthesis",
+        "program-growth",
+        "structural-budget",
+        "interaction-depth",
+        "random-wiring-attacker",
+        "dendrite-analogy-fenced"
       ],
       "era": "Constructive residue synthesis",
       "era_order": 30
@@ -90,13 +96,29 @@
       "confidence": "medium",
       "why": "FusionMachine's resident-state and routed-write line is a natural writeback ancestor for the planned gate where a synthesized operator must alter future state and remain reusable.",
       "evidence": "https://github.com/anttiluode/AInstein/blob/main/README.md"
+    },
+    {
+      "source": "DendriteAsIteratedFeedbackOperator",
+      "target": "AInstein",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "The older dendrite line already treats morphology as an operator and tests structural growth under an explicit bounded consequence rule. AInstein Gate 3 removes the biological substrate but asks the parallel structural question: under a fixed nonlinear-node budget, does deeper/wired interaction topology unlock operator families that shallow structure cannot?",
+      "evidence": "https://github.com/anttiluode/AInstein/blob/main/GATE3_CONTRACT.md"
+    },
+    {
+      "source": "AnttisNeuron",
+      "target": "AInstein",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "AnttisNeuron's Growth-to-Purity line made computational depth a structural resource and preserved equal-persistence controls. AInstein Gate 3 reuses only that abstract lesson: structural depth is budgeted separately from raw unit count and must earn held-out capability under matched-cost attackers.",
+      "evidence": "https://github.com/anttiluode/AInstein/blob/main/GATE3_CONTRACT.md"
     }
   ],
   "motifs": [
     {
       "id": "constructive-residue-synthesis",
       "title": "Constructive residue synthesis",
-      "description": "Counterfactual branches leave provenance-stamped state changes; useful cross-residue interactions are selected and tested on unseen combinations, then active experiment design allocates a tiny budget across many possible collisions. The target is not recall or convex interpolation but a new effective operator component whose usefulness is discovered without trying every pair. Gate 2 adds a sharp constraint: confidence is only meaningful if operator predictions remain bound to the correct residue addresses.",
+      "description": "Counterfactual branches leave provenance-stamped state changes; useful cross-residue interactions are selected on held-out combinations, active experiment design allocates a tiny budget across many possible collisions, and Gate 3 then grows complete interaction programs from elementary primitives. The target is not recall or convex interpolation but a new effective operator component whose usefulness is discovered without trying every pair or listing every complete formula. The current constraints are explicit: confidence requires correct provenance, and nonlinear capacity depends on wiring/depth rather than unit count alone.",
       "nodes": [
         "GAx",
         "Sihti",
