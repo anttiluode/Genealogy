@@ -128,7 +128,8 @@
     "nodes": [
       "SighImageSuper",
       "Sihti",
-      "SighImageFactorization"
+      "SighImageFactorization",
+      "Sihti2"
     ]
   },
   {
