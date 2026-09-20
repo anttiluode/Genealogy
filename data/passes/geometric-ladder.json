@@ -374,14 +374,6 @@
       "evidence": "https://github.com/anttiluode/GeometricNeuron_V20/blob/main/README.md"
     },
     {
-      "source": "ResonantNeuron",
-      "target": "GeometricNeuron_V20",
-      "type": "extracts",
-      "confidence": "high",
-      "why": "V20 explicitly lists ResonantNeuron as a source and preserves the interference-soma / active-axon / capture-latch machine sequence in its curated spine.",
-      "evidence": "https://github.com/anttiluode/GeometricNeuron_V20/blob/main/README.md"
-    },
-    {
       "source": "deerskin-hypothesis",
       "target": "GeometricNeuron_V20",
       "type": "extracts",
