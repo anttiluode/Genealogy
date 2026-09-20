@@ -15,7 +15,7 @@ class RegionalAttractorExplorerTests(unittest.TestCase):
         self.assertEqual(node["family"], "eeg-instruments")
         self.assertEqual(node["status"], "ledger")
         self.assertIn("PLV", node["killed"])
-        self.assertIn("traveling", node["survived"].lower())
+        self.assertIn("pilot-field", node["survived"].lower())
 
         repos = {r["name"]: r for r in atlas["repos"]}
         self.assertEqual(repos["RegionalAttractorExplorer"]["inventory_status"], "reviewed")
