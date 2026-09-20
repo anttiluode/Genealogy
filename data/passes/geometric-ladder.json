@@ -16,7 +16,12 @@
       "usefulness": "scientific",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/GeometricNeuronOriginReview/blob/main/README.md",
-      "tags": ["origin", "ecg", "bounded-observation", "correction"],
+      "tags": [
+        "origin",
+        "ecg",
+        "bounded-observation",
+        "correction"
+      ],
       "era": "Origin accident & autopsy",
       "era_order": 1
     },
@@ -31,7 +36,12 @@
       "usefulness": "conceptual",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/GeometricNeuronV2/blob/main/README.md",
-      "tags": ["takens", "moire", "maximal-theory", "idea-mine"],
+      "tags": [
+        "takens",
+        "moire",
+        "maximal-theory",
+        "idea-mine"
+      ],
       "era": "Maximal geometry story",
       "era_order": 2
     },
@@ -46,7 +56,12 @@
       "usefulness": "conceptual",
       "confidence": "medium",
       "evidence": "https://github.com/anttiluode/GeometricNeuronV4/blob/main/README.md",
-      "tags": ["morphology", "ais", "resonance", "idea-mine"],
+      "tags": [
+        "morphology",
+        "ais",
+        "resonance",
+        "idea-mine"
+      ],
       "era": "Maximal geometry story",
       "era_order": 2
     },
@@ -61,7 +76,12 @@
       "usefulness": "scientific",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/GeometricNeuronV5/blob/main/README.md",
-      "tags": ["chirality", "bilinear", "wiener-khinchin", "delta-code"],
+      "tags": [
+        "chirality",
+        "bilinear",
+        "wiener-khinchin",
+        "delta-code"
+      ],
       "era": "Operator & signal-processing turn",
       "era_order": 3
     },
@@ -76,7 +96,12 @@
       "usefulness": "scientific",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/GeometricNeuronV8/blob/main/README.md",
-      "tags": ["oja", "stiefel", "coverage", "negative-result"],
+      "tags": [
+        "oja",
+        "stiefel",
+        "coverage",
+        "negative-result"
+      ],
       "era": "Operator & signal-processing turn",
       "era_order": 3
     },
@@ -91,7 +116,12 @@
       "usefulness": "scientific",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/GeometricNeuronV9/blob/main/README.md",
-      "tags": ["skew-operator", "lag-covariance", "chirality", "eigenplanes"],
+      "tags": [
+        "skew-operator",
+        "lag-covariance",
+        "chirality",
+        "eigenplanes"
+      ],
       "era": "Operator & signal-processing turn",
       "era_order": 3
     },
@@ -106,7 +136,12 @@
       "usefulness": "scientific",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/GeometricNeuron10/blob/main/README.md",
-      "tags": ["streaming", "prediction", "dead-reckoning", "skew-operator"],
+      "tags": [
+        "streaming",
+        "prediction",
+        "dead-reckoning",
+        "skew-operator"
+      ],
       "era": "Operator & signal-processing turn",
       "era_order": 3
     },
@@ -116,12 +151,21 @@
       "family": "geometric-neuron",
       "status": "ledger",
       "claim": "Curated recomposition of the load-bearing organs of the line, explicitly separating verified results, killed claims and bets.",
-      "survived": "V5 chirality, V9 skew operator, active directionality and explicit failure ledgers were treated as the reusable spine.",
+      "survived": "V5 chirality, V9 skew operator, active directionality and explicit failure ledgers were treated as the reusable spine. Crucially for the current temporal/field thread, the curation also preserves `03_faces_of_A/generate/whorl_field.py` and `whorl_README.md`, copied from `ArtificialCortex/the_whorl`, so the old spiral-field experiment is not lost inside the larger ArtificialCortex archive.",
       "killed": "The recomposition records multiple retired claims, including passive geometric directionality and geometry-replaces-weights.",
       "usefulness": "scientific",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/GeometricNeuron_V20/blob/main/README.md",
-      "tags": ["recomposition", "ledger", "skew-operator", "negative-results"],
+      "tags": [
+        "recomposition",
+        "ledger",
+        "skew-operator",
+        "negative-results",
+        "artificial-cortex",
+        "the-whorl",
+        "spiral-field",
+        "curation"
+      ],
       "era": "Operator & signal-processing turn",
       "era_order": 3
     },
@@ -136,7 +180,13 @@
       "usefulness": "scientific",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/GeometricNeuronV21/blob/main/README.md",
-      "tags": ["autopsy", "aliasing", "thermostat", "correction", "phase-memory-null"],
+      "tags": [
+        "autopsy",
+        "aliasing",
+        "thermostat",
+        "correction",
+        "phase-memory-null"
+      ],
       "era": "Autopsy & external reset",
       "era_order": 4
     },
@@ -151,7 +201,12 @@
       "usefulness": "scientific",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/GeometricNeuronV22/blob/main/README.md",
-      "tags": ["external-test", "morphology", "null", "provenance"],
+      "tags": [
+        "external-test",
+        "morphology",
+        "null",
+        "provenance"
+      ],
       "era": "Autopsy & external reset",
       "era_order": 4
     },
@@ -166,7 +221,12 @@
       "usefulness": "conceptual",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/GeometricNeuronV23/blob/main/README.md",
-      "tags": ["local-state", "receiver", "geometry", "obligation-graph"],
+      "tags": [
+        "local-state",
+        "receiver",
+        "geometry",
+        "obligation-graph"
+      ],
       "era": "Autopsy & external reset",
       "era_order": 4
     },
@@ -181,29 +241,178 @@
       "usefulness": "scientific",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/GeometricNeuronV25GeneticAlgoAndFanningNeuron/blob/main/README.md",
-      "tags": ["causal-address", "eligibility", "resonance", "search", "negative-results"],
+      "tags": [
+        "causal-address",
+        "eligibility",
+        "resonance",
+        "search",
+        "negative-results"
+      ],
       "era": "Route-local causal search",
       "era_order": 5
     }
   ],
   "edges": [
-    {"source":"PerceptionLab","target":"GeometricNeuronOriginReview","type":"corrects","confidence":"high","why":"OriginReview freezes the PerceptionLab ECG graph and corrects its later eigenmode interpretation.","evidence":"https://github.com/anttiluode/GeometricNeuronOriginReview/blob/main/README.md"},
-    {"source":"Geometric-Neuron","target":"GeometricNeuronV2","type":"forks","confidence":"high","why":"V2 explicitly presents itself as the Geometric Neuron v2 continuation.","evidence":"https://github.com/anttiluode/GeometricNeuronV2/blob/main/README.md"},
-    {"source":"GeometricNeuronV5","target":"GeometricNeuronV9","type":"inherits","confidence":"high","why":"V9 explicitly derives the V5 chirality headline from skew-operator eigenplanes.","evidence":"https://github.com/anttiluode/GeometricNeuronV9/blob/main/README.md"},
-    {"source":"GeometricNeuronV8","target":"GeometricNeuronV9","type":"corrects","confidence":"high","why":"V9 explicitly diagnoses V8's symmetric covariance read as direction-blind and swaps to the skew lag operator.","evidence":"https://github.com/anttiluode/GeometricNeuronV9/blob/main/README.md"},
-    {"source":"GeometricNeuronV9","target":"GeometricNeuron10","type":"inherits","confidence":"high","why":"V10 says v9 proved the skew eigenplanes offline and moves the same operator onto a live stream.","evidence":"https://github.com/anttiluode/GeometricNeuron10/blob/main/README.md"},
-    {"source":"GeometricNeuronV5","target":"GeometricNeuron_V20","type":"extracts","confidence":"high","why":"V20 explicitly calls V5 the keystone and copies its verified object into the recomposition.","evidence":"https://github.com/anttiluode/GeometricNeuron_V20/blob/main/README.md"},
-    {"source":"GeometricNeuronV9","target":"GeometricNeuron_V20","type":"extracts","confidence":"high","why":"V20 explicitly imports the V9 skew-operator machinery as the operator spine.","evidence":"https://github.com/anttiluode/GeometricNeuron_V20/blob/main/README.md"},
-    {"source":"Geometric-Neuron","target":"GeometricNeuronV21","type":"corrects","confidence":"high","why":"V21 calls itself the closing bookend to the Geometric-Neuron origin repo and retires repeated origin claims.","evidence":"https://github.com/anttiluode/GeometricNeuronV21/blob/main/README.md"},
-    {"source":"GeometricNeuronOriginReview","target":"GeometricNeuronV21","type":"converges","confidence":"high","why":"Both independently mechanize the founding ECG loop; V21 extends the autopsy with regime maps and null tests.","evidence":"https://github.com/anttiluode/GeometricNeuronV21/blob/main/README.md"},
-    {"source":"GeometricNeuron_V20","target":"GeometricNeuronV21","type":"corrects","confidence":"high","why":"V21 explicitly distinguishes the ECG loop from the V9–V20 operator object and prices what phase still earns.","evidence":"https://github.com/anttiluode/GeometricNeuronV21/blob/main/README.md"},
-    {"source":"Geometric-Neuron","target":"GeometricNeuronV22","type":"corrects","confidence":"high","why":"V22 explicitly resets the original concept after external controls and retains only a narrower spatial-state/readout hypothesis.","evidence":"https://github.com/anttiluode/GeometricNeuronV22/blob/main/README.md"},
-    {"source":"GeometricNeuronV22","target":"GeometricNeuronV23","type":"inherits","confidence":"medium","why":"V23 is the next explicitly narrowed GeometricNeuron program, replacing geometry-alone claims with geometry plus local state and receiver-relative readout.","evidence":"https://github.com/anttiluode/GeometricNeuronV23/blob/main/README.md"},
-    {"source":"GeometricNeuronV21","target":"GeometricNeuronV24","type":"corrects","confidence":"high","why":"V24 explicitly starts from V21's ECG autopsy, removes the thermostat, and asks the addressable-observation question directly.","evidence":"https://github.com/anttiluode/GeometricNeuronV24/blob/main/README.md"}
+    {
+      "source": "PerceptionLab",
+      "target": "GeometricNeuronOriginReview",
+      "type": "corrects",
+      "confidence": "high",
+      "why": "OriginReview freezes the PerceptionLab ECG graph and corrects its later eigenmode interpretation.",
+      "evidence": "https://github.com/anttiluode/GeometricNeuronOriginReview/blob/main/README.md"
+    },
+    {
+      "source": "Geometric-Neuron",
+      "target": "GeometricNeuronV2",
+      "type": "forks",
+      "confidence": "high",
+      "why": "V2 explicitly presents itself as the Geometric Neuron v2 continuation.",
+      "evidence": "https://github.com/anttiluode/GeometricNeuronV2/blob/main/README.md"
+    },
+    {
+      "source": "GeometricNeuronV5",
+      "target": "GeometricNeuronV9",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "V9 explicitly derives the V5 chirality headline from skew-operator eigenplanes.",
+      "evidence": "https://github.com/anttiluode/GeometricNeuronV9/blob/main/README.md"
+    },
+    {
+      "source": "GeometricNeuronV8",
+      "target": "GeometricNeuronV9",
+      "type": "corrects",
+      "confidence": "high",
+      "why": "V9 explicitly diagnoses V8's symmetric covariance read as direction-blind and swaps to the skew lag operator.",
+      "evidence": "https://github.com/anttiluode/GeometricNeuronV9/blob/main/README.md"
+    },
+    {
+      "source": "GeometricNeuronV9",
+      "target": "GeometricNeuron10",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "V10 says v9 proved the skew eigenplanes offline and moves the same operator onto a live stream.",
+      "evidence": "https://github.com/anttiluode/GeometricNeuron10/blob/main/README.md"
+    },
+    {
+      "source": "GeometricNeuronV5",
+      "target": "GeometricNeuron_V20",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "V20 explicitly calls V5 the keystone and copies its verified object into the recomposition.",
+      "evidence": "https://github.com/anttiluode/GeometricNeuron_V20/blob/main/README.md"
+    },
+    {
+      "source": "GeometricNeuronV9",
+      "target": "GeometricNeuron_V20",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "V20 explicitly imports the V9 skew-operator machinery as the operator spine.",
+      "evidence": "https://github.com/anttiluode/GeometricNeuron_V20/blob/main/README.md"
+    },
+    {
+      "source": "Geometric-Neuron",
+      "target": "GeometricNeuronV21",
+      "type": "corrects",
+      "confidence": "high",
+      "why": "V21 calls itself the closing bookend to the Geometric-Neuron origin repo and retires repeated origin claims.",
+      "evidence": "https://github.com/anttiluode/GeometricNeuronV21/blob/main/README.md"
+    },
+    {
+      "source": "GeometricNeuronOriginReview",
+      "target": "GeometricNeuronV21",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Both independently mechanize the founding ECG loop; V21 extends the autopsy with regime maps and null tests.",
+      "evidence": "https://github.com/anttiluode/GeometricNeuronV21/blob/main/README.md"
+    },
+    {
+      "source": "GeometricNeuron_V20",
+      "target": "GeometricNeuronV21",
+      "type": "corrects",
+      "confidence": "high",
+      "why": "V21 explicitly distinguishes the ECG loop from the V9–V20 operator object and prices what phase still earns.",
+      "evidence": "https://github.com/anttiluode/GeometricNeuronV21/blob/main/README.md"
+    },
+    {
+      "source": "Geometric-Neuron",
+      "target": "GeometricNeuronV22",
+      "type": "corrects",
+      "confidence": "high",
+      "why": "V22 explicitly resets the original concept after external controls and retains only a narrower spatial-state/readout hypothesis.",
+      "evidence": "https://github.com/anttiluode/GeometricNeuronV22/blob/main/README.md"
+    },
+    {
+      "source": "GeometricNeuronV22",
+      "target": "GeometricNeuronV23",
+      "type": "inherits",
+      "confidence": "medium",
+      "why": "V23 is the next explicitly narrowed GeometricNeuron program, replacing geometry-alone claims with geometry plus local state and receiver-relative readout.",
+      "evidence": "https://github.com/anttiluode/GeometricNeuronV23/blob/main/README.md"
+    },
+    {
+      "source": "GeometricNeuronV21",
+      "target": "GeometricNeuronV24",
+      "type": "corrects",
+      "confidence": "high",
+      "why": "V24 explicitly starts from V21's ECG autopsy, removes the thermostat, and asks the addressable-observation question directly.",
+      "evidence": "https://github.com/anttiluode/GeometricNeuronV24/blob/main/README.md"
+    },
+    {
+      "source": "ArtificialCortex",
+      "target": "GeometricNeuron_V20",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "V20 explicitly lists ArtificialCortex as a source repository and preserves the_whorl's whorl_field.py/README in 03_faces_of_A/generate; this edge records curation provenance, not a claim that V20 scientifically descends from the field model.",
+      "evidence": "https://github.com/anttiluode/GeometricNeuron_V20/blob/main/README.md"
+    },
+    {
+      "source": "TheMycelialCortex",
+      "target": "GeometricNeuron_V20",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "V20 explicitly lists TheMycelialCortex among its source repos and imports its skew/cost material into the recomposition.",
+      "evidence": "https://github.com/anttiluode/GeometricNeuron_V20/blob/main/README.md"
+    },
+    {
+      "source": "deerskin-hypothesis",
+      "target": "GeometricNeuron_V20",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "V20 explicitly lists deerskin-hypothesis as a source and places its speculative origin material in 00_origins while separating it from later verified mechanisms.",
+      "evidence": "https://github.com/anttiluode/GeometricNeuron_V20/blob/main/README.md"
+    }
   ],
   "motifs": [
-    {"id":"direction-needs-antisymmetry","title":"Direction needs an antisymmetric object","description":"V5 finds a bilinear direction readout; V9 locates directed structure in the skew lag operator; V21 keeps direction as the surviving reason phase-like structure is needed.","nodes":["GeometricNeuronV5","GeometricNeuronV9","GeometricNeuronV21"]},
-    {"id":"observation-changes-regime","title":"Observation can change the regime","description":"The founding ECG autopsy and V24 both show that address/readout choice is part of the dynamics or identifiability problem, not a passive logger.","nodes":["GeometricNeuronOriginReview","GeometricNeuronV21","GeometricNeuronV24"]},
-    {"id":"negative-results-prune-theory","title":"Negative results prune the theory","description":"V8, V21 and V22 remove attractive but unsupported mechanisms and force narrower descendants.","nodes":["GeometricNeuronV8","GeometricNeuronV21","GeometricNeuronV22","GeometricNeuronV23"]}
+    {
+      "id": "direction-needs-antisymmetry",
+      "title": "Direction needs an antisymmetric object",
+      "description": "V5 finds a bilinear direction readout; V9 locates directed structure in the skew lag operator; V21 keeps direction as the surviving reason phase-like structure is needed.",
+      "nodes": [
+        "GeometricNeuronV5",
+        "GeometricNeuronV9",
+        "GeometricNeuronV21"
+      ]
+    },
+    {
+      "id": "observation-changes-regime",
+      "title": "Observation can change the regime",
+      "description": "The founding ECG autopsy and V24 both show that address/readout choice is part of the dynamics or identifiability problem, not a passive logger.",
+      "nodes": [
+        "GeometricNeuronOriginReview",
+        "GeometricNeuronV21",
+        "GeometricNeuronV24"
+      ]
+    },
+    {
+      "id": "negative-results-prune-theory",
+      "title": "Negative results prune the theory",
+      "description": "V8, V21 and V22 remove attractive but unsupported mechanisms and force narrower descendants.",
+      "nodes": [
+        "GeometricNeuronV8",
+        "GeometricNeuronV21",
+        "GeometricNeuronV22",
+        "GeometricNeuronV23"
+      ]
+    }
   ]
 }

@@ -1,0 +1,100 @@
+{
+  "id": "self-and-other-in-time",
+  "title": "Self / other objects in time: event-owned clocks and consequential attention",
+  "summary": "SelfAndOtherObjectsInTime turns the recent self/other and temporal-address discussion into a falsifiable mechanism line. The executable gates separate stable reference origin from resident history, bind actor/patient/perspective roles, make time event-relative, nest child events with writeback, admit interruptions by downstream consequence, actively probe hidden causal maps, and allocate temporal precision according to relevance. It does not claim a theory of consciousness or a literal neural circuit.",
+  "order": 210,
+  "reviewed_at": "2026-09-20",
+  "nodes": [
+    {
+      "id": "SelfAndOtherObjectsInTime",
+      "url": "https://github.com/anttiluode/SelfAndOtherObjectsInTime",
+      "family": "temporal-self",
+      "status": "active",
+      "claim": "Tests whether a continuing reference process can preserve self/other role structure across detours while time is owned by events, interruptions write back into resident state, and temporal precision is allocated to downstream consequence rather than raw magnitude.",
+      "survived": "Across Gates 1–9, the narrow mechanisms that survive are: return changed-but-stable rather than reset or overwrite; distributed role binding; event-relative phase rather than a fixed wall clock; discovered event boundaries; nested parent/child local time with child writeback; consequence-based event admission; active causal probing under a matched budget; selective temporal precision; and online reallocation of timing bandwidth without resetting event identity.",
+      "killed": "Snapshot reset, leaky anchor overwrite, role-blind and SELF/OTHER-only binding, a fixed absolute clock, whole-stream/fixed-window timing, flat parent/child time, no-writeback parenting, raw-magnitude salience, admit-all/ignore-all policies, random/no causal probing, uniform timing, fixed timing slots, one-step-lagged reallocation, and reset-on-reallocation all fail their matched gates. The repo still supplies software phase/consequence scaffolds and does not establish biological implementation or consciousness.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/SelfAndOtherObjectsInTime/blob/main/README.md",
+      "tags": [
+        "self-other",
+        "reference-frame",
+        "event-boundary",
+        "local-time",
+        "nested-events",
+        "writeback",
+        "active-probing",
+        "consequence",
+        "temporal-resolution",
+        "time-warp",
+        "resident-state"
+      ],
+      "era": "Temporal self / event control",
+      "era_order": 28
+    }
+  ],
+  "edges": [
+    {
+      "source": "FrequencyAddressedState-dependentOperatorComposition",
+      "target": "SelfAndOtherObjectsInTime",
+      "type": "converges",
+      "confidence": "high",
+      "why": "SelfAndOtherObjectsInTime explicitly identifies the frequency-addressed operator-composition line as its address-plus-resident-state ancestor; the new gates add event-owned phase, event admission and dynamic timing bandwidth rather than claiming code inheritance.",
+      "evidence": "https://github.com/anttiluode/SelfAndOtherObjectsInTime/blob/main/README.md"
+    },
+    {
+      "source": "FusionMachine",
+      "target": "SelfAndOtherObjectsInTime",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The repo explicitly connects nested parent/child processing to FusionMachine's resident-computation idea: a parent remains present while a selected child runs and later writes back.",
+      "evidence": "https://github.com/anttiluode/SelfAndOtherObjectsInTime/blob/main/README.md"
+    },
+    {
+      "source": "SighImageFactorization",
+      "target": "SelfAndOtherObjectsInTime",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The repo explicitly connects perspective/event detours that leave residue to the Sigh residue line, while keeping the new claim narrower: residue becomes resident history that changes the resumed process.",
+      "evidence": "https://github.com/anttiluode/SelfAndOtherObjectsInTime/blob/main/README.md"
+    },
+    {
+      "source": "AnotherOddThing",
+      "target": "SelfAndOtherObjectsInTime",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Gate 7 explicitly reuses expected-information-gain experiment selection under an equal probe budget to discover which hidden causal map should govern future event admission.",
+      "evidence": "https://github.com/anttiluode/SelfAndOtherObjectsInTime/blob/main/README.md"
+    },
+    {
+      "source": "ReadWrite",
+      "target": "SelfAndOtherObjectsInTime",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The repo explicitly frames Gate 6/7 as the observability/write problem: which local perturbation survives transport into a downstream observable, then which intervention identifies that map.",
+      "evidence": "https://github.com/anttiluode/SelfAndOtherObjectsInTime/blob/main/README.md"
+    },
+    {
+      "source": "ArtificialCortex",
+      "target": "SelfAndOtherObjectsInTime",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "SelfAndOtherObjectsInTime names the_whorl / ArtificialCortex as the substrate-level precursor for replacing a supplied phase coordinate with locally generated oscillatory or propagating field phase. This is a future bridge, not an implemented inheritance claim.",
+      "evidence": "https://github.com/anttiluode/SelfAndOtherObjectsInTime/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "event-owned-time",
+      "title": "Time is owned by a continuing event, and its precision is a resource",
+      "description": "The frequency-addressed/operator line supplies resident state and address; FusionMachine supplies persistent parent computation; AnotherOddThing/ReadWrite supply active identification and observability; SelfAndOtherObjectsInTime combines those motifs into event-local clocks whose bandwidth can change without resetting event identity.",
+      "nodes": [
+        "FrequencyAddressedState-dependentOperatorComposition",
+        "FusionMachine",
+        "AnotherOddThing",
+        "ReadWrite",
+        "SelfAndOtherObjectsInTime"
+      ]
+    }
+  ]
+}
