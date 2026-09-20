@@ -39,5 +39,19 @@ class AInsteinPassTests(unittest.TestCase):
         self.assertIn("active-collision-selection", node["tags"])
         self.assertIn("address-misbinding", node["tags"])
 
+
+    def test_gate3_records_matched_budget_topology_and_wiring_attackers(self):
+        atlas = load_atlas(ROOT)
+        node = next(n for n in atlas["nodes"] if n["id"] == "AInstein")
+        self.assertIn("0.9986", node["survived"])
+        self.assertIn("0.3091", node["survived"])
+        self.assertIn("-0.0118", node["survived"])
+        self.assertIn("unit count alone", node["killed"].lower())
+        self.assertIn("coincidence", node["killed"].lower())
+        self.assertIn("topology-grown-synthesis", node["tags"])
+        edges = {(e["source"], e["target"], e["type"]) for e in atlas["edges"]}
+        self.assertIn(("DendriteAsIteratedFeedbackOperator", "AInstein", "converges"), edges)
+        self.assertIn(("AnttisNeuron", "AInstein", "converges"), edges)
+
 if __name__ == "__main__":
     unittest.main()
