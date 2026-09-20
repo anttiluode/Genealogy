@@ -1,0 +1,106 @@
+{
+  "id": "ainstein",
+  "title": "AInstein: discovered constructive residue synthesis",
+  "summary": "AInstein turns OperatorTime's constructive-residue north star into a held-out mechanism-discovery gate. Two branch residues are individually insufficient; provenance-stamped composition is selected from a generic interaction grammar and tested on unseen A/B pairings. The pass also preserves the important transformer correction: a nonlinear post-attention control succeeds, so attention convexity is not treated as a transformer impossibility result.",
+  "order": 230,
+  "reviewed_at": "2026-09-20",
+  "nodes": [
+    {
+      "id": "AInstein",
+      "url": "https://github.com/anttiluode/AInstein",
+      "family": "operator-time",
+      "status": "active",
+      "claim": "Tests whether provenance-stamped counterfactual residues can be composed by a discovered reusable interaction so that a useful effective operator appears on held-out residue pairings even though either branch alone, convex branch mixing and pair lookup fail.",
+      "survived": "Gate 1 selected the ordered outer interaction in 32/32 deterministic worlds. On pair identities never seen together during fitting, mean operator R² was 0.9781 and operator-application R² was 0.9789. Branch A, branch B, convex branch mixing and pair lookup remained at or below 0.0116 mean R²; erasing provenance reduced R² to 0.2651; the synthesized operator retained a 0.7457 relative residual outside the branch-only span. A transformer-style convex retrieval followed by a nonlinear post-mix stage also reached 0.9467 R², showing the constructive capacity is not unique to this mechanism.",
+      "killed": "Gate 1 rejects the idea that simple branch interpolation or memorized pair identity explains the held-out result, but it does not establish autonomous invention: the candidate grammar already contains the winning ordered interaction and the synthetic world is bilinear. It also explicitly rejects the stronger claim that attention convexity prevents transformers from constructing nonlinear cross-token interactions.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/AInstein/blob/main/README.md",
+      "tags": [
+        "residue-synthesis",
+        "provenance",
+        "operator-novelty",
+        "heldout-composition",
+        "mechanism-discovery",
+        "counterfactual-branch",
+        "transformer-control"
+      ],
+      "era": "Constructive residue synthesis",
+      "era_order": 30
+    }
+  ],
+  "edges": [
+    {
+      "source": "OperatorTime",
+      "target": "AInstein",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "AInstein is explicitly created to continue OperatorTime Gate 3 from a hand-designed possibility proof into held-out mechanism selection and stronger attackers.",
+      "evidence": "https://github.com/anttiluode/AInstein/blob/main/README.md"
+    },
+    {
+      "source": "GAx",
+      "target": "AInstein",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The branch/search line supplies the idea that alternative trajectories can leave different reusable residues and that candidate interaction families can be searched rather than fixed.",
+      "evidence": "https://github.com/anttiluode/AInstein/blob/main/README.md"
+    },
+    {
+      "source": "Sihti",
+      "target": "AInstein",
+      "type": "converges",
+      "confidence": "high",
+      "why": "AInstein reuses the residue-as-computational-object framing while treating provenance and constructive interaction as the new causal variables.",
+      "evidence": "https://github.com/anttiluode/AInstein/blob/main/README.md"
+    },
+    {
+      "source": "SelfAndOtherObjectsInTime",
+      "target": "AInstein",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The next provenance gate explicitly generalizes A/B role stamps toward event, time, perspective, branch and actual/simulated source identity.",
+      "evidence": "https://github.com/anttiluode/AInstein/blob/main/README.md"
+    },
+    {
+      "source": "AnotherOddThing",
+      "target": "AInstein",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The next gate asks which residue pair should be tested under a limited budget, directly reusing active experiment selection.",
+      "evidence": "https://github.com/anttiluode/AInstein/blob/main/README.md"
+    },
+    {
+      "source": "WhatToLookAt",
+      "target": "AInstein",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The planned many-residue gate turns selection of candidate interactions into a compute-allocation problem: which possible collision deserves bandwidth.",
+      "evidence": "https://github.com/anttiluode/AInstein/blob/main/README.md"
+    },
+    {
+      "source": "FusionMachine",
+      "target": "AInstein",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "FusionMachine's resident-state and routed-write line is a natural writeback ancestor for the planned gate where a synthesized operator must alter future state and remain reusable.",
+      "evidence": "https://github.com/anttiluode/AInstein/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "constructive-residue-synthesis",
+      "title": "Constructive residue synthesis",
+      "description": "Counterfactual branches leave provenance-stamped state changes; useful cross-residue interactions are selected and tested on unseen combinations. The target is not recall or convex interpolation but a new effective operator component that changes what computation is available next.",
+      "nodes": [
+        "GAx",
+        "Sihti",
+        "AnotherOddThing",
+        "WhatToLookAt",
+        "SelfAndOtherObjectsInTime",
+        "OperatorTime",
+        "AInstein"
+      ]
+    }
+  ]
+}
