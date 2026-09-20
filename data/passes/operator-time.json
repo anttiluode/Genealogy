@@ -1,7 +1,7 @@
 {
   "id": "operator-time",
   "title": "Operator Time: resident history changes the operator available now",
-  "summary": "OperatorTime is the current synthesis notebook for a motif that first appeared across GAx, state-dependent operator composition, residue/purification, event-owned time and active sensing: fixed substrate parameters can coexist with a changing effective operator because resident history, route, perspective and event state change what is accessible now. Gate 1 isolates the minimum claim with zero parameter drift; Gate 2 shows that frozen symbolic residue acts as serial input whose order induces a later operator trajectory.",
+  "summary": "OperatorTime is the current synthesis notebook for a motif that first appeared across GAx, state-dependent operator composition, residue/purification, event-owned time and active sensing: fixed substrate parameters can coexist with a changing effective operator because resident history, route, perspective and event state change what is accessible now. Gate 1 isolates the minimum claim with zero parameter drift; Gate 2 shows that frozen symbolic residue acts as serial input whose order induces a later operator trajectory. Gate 3 adds constructive residue synthesis: two individually insufficient provenance-stamped branch residues can jointly expose a useful effective operator outside the branch-only linear span.",
   "order": 220,
   "reviewed_at": "2026-09-20",
   "nodes": [
@@ -11,8 +11,8 @@
       "family": "operator-time",
       "status": "active",
       "claim": "Treats cognition/computation as a trajectory through state-dependent effective operators: theta may stay fixed while resident history changes O_t. The working synthesis links transformer-style context dependence, persistent SELF/reference, transient objects, spectral/frequency accessibility and event-local time without claiming these implementations are equivalent.",
-      "survived": "Gate 1 shows the narrow mechanism cleanly: with a fixed synthetic substrate, identical current probe, permanent self anchor and zero parameter drift, recent transient-object class remains linearly accessible from the current operator response at 0.9924 mean accuracy across 64 worlds. Fixed-operator and erased-residue baselines are at chance (0.4956 and 0.4972). Reversing the same two-object history changes the effective operator by 0.0438 relative norm and the current output by 0.2196. Gate 2 then uses matched sequences with the same five token vectors and the same final token: serial reading preserves order at 1.0000 accuracy, while bag-of-symbols, shuffled-order and endpoint-only attackers are at chance (~0.50). Replaying the same sequence into the same reader state is exactly reproducible, while changing prior reader state changes the final operator by 0.0250 relative norm.",
-      "killed": "A fixed operator cannot recover the recent transient class from the identical present cue, and erasing resident history collapses performance to chance. The repo explicitly does not establish that transformer KV cache is biological short-term memory, that text literally stores operators, that SELF is one vector, that rhythms are operator addresses, or that eigenmodes explain thought. Gate 2 also kills the stronger idea that the stored artifact alone fully specifies the operator: the same sequence can end in a different operator when the reader's prior resident state differs.",
+      "survived": "Gate 1 shows the narrow mechanism cleanly: with a fixed synthetic substrate, identical current probe, permanent self anchor and zero parameter drift, recent transient-object class remains linearly accessible from the current operator response at 0.9924 mean accuracy across 64 worlds. Fixed-operator and erased-residue baselines are at chance (0.4956 and 0.4972). Reversing the same two-object history changes the effective operator by 0.0438 relative norm and the current output by 0.2196. Gate 2 then uses matched sequences with the same five token vectors and the same final token: serial reading preserves order at 1.0000 accuracy, while bag-of-symbols, shuffled-order and endpoint-only attackers are at chance (~0.50). Replaying the same sequence into the same reader state is exactly reproducible, while changing prior reader state changes the final operator by 0.0250 relative norm. Gate 3 makes the 'invention' target explicit: branch A alone and branch B alone are exactly chance (0.5000 each), a linear average of their operators is 0.5039, and erasing branch provenance is 0.5000, while nonlinear joint residue synthesis reaches 1.0000. The joint operator sits about 0.0999 relative distance outside the best linear span of the base and branch-only operators, with zero parameter drift and self-anchor fidelity 1.0000.",
+      "killed": "A fixed operator cannot recover the recent transient class from the identical present cue, and erasing resident history collapses performance to chance. The repo explicitly does not establish that transformer KV cache is biological short-term memory, that text literally stores operators, that SELF is one vector, that rhythms are operator addresses, or that eigenmodes explain thought. Gate 2 also kills the stronger idea that the stored artifact alone fully specifies the operator: the same sequence can end in a different operator when the reader's prior resident state differs. Gate 3 kills the weaker idea that novelty here is just interpolation: averaging the branch operators remains at chance. It also shows provenance cannot simply be discarded before composition. But the useful bilinear interaction is hand-designed, so the result is a possibility proof, not autonomous invention.",
       "usefulness": "scientific",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/OperatorTime/blob/main/README.md",
@@ -29,7 +29,11 @@
         "event-time",
         "serialized-residue",
         "reader-state",
-        "sequence-order"
+        "sequence-order",
+        "residue-synthesis",
+        "provenance",
+        "operator-novelty",
+        "constructive-composition"
       ],
       "era": "Operator time / resident operators",
       "era_order": 29
@@ -89,7 +93,7 @@
     {
       "id": "operator-available-now",
       "title": "Resident history determines the operator available now",
-      "description": "The fixed substrate can expose different effective operations because recent route, object, perspective and event state remain resident. The motif unifies route divergence, state-dependent operator composition, residue, event-local time and selective sensing without asserting a single biological implementation. Gate 2 adds an externalized version: frozen sequences constrain the trajectory but do not determine it independently of reader state.",
+      "description": "The fixed substrate can expose different effective operations because recent route, object, perspective and event state remain resident. The motif unifies route divergence, state-dependent operator composition, residue, event-local time and selective sensing without asserting a single biological implementation. Gate 2 adds an externalized version: frozen sequences constrain the trajectory but do not determine it independently of reader state. Gate 3 adds constructive composition: separately insufficient branch residues can jointly activate an operator component outside the branch-only linear span when provenance is preserved.",
       "nodes": [
         "GAx",
         "FrequencyAddressedState-dependentOperatorComposition",
