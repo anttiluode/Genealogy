@@ -132,5 +132,11 @@
   },
   "wtla-sdxl-vae-closeout": {
     "operator-update": "limits"
+  },
+  "regional-attractor-historical-plv-audit": {
+    "negative-results": "documents"
+  },
+  "regional-attractor-p1-group-null": {
+    "negative-results": "documents"
   }
 }
