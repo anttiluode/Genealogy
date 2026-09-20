@@ -1,0 +1,32 @@
+from pathlib import Path
+import unittest
+
+from scripts.validate_data import load_atlas, validate_atlas
+
+ROOT = Path(__file__).resolve().parents[1]
+
+class AInsteinPassTests(unittest.TestCase):
+    def test_ainstein_is_on_the_wall_with_operator_time_lineage(self):
+        atlas = load_atlas(ROOT)
+        self.assertEqual(validate_atlas(atlas), [])
+        self.assertIn("ainstein", {p["id"] for p in atlas["passes"]})
+        ids = {n["id"] for n in atlas["nodes"]}
+        self.assertIn("AInstein", ids)
+        edges = {(e["source"], e["target"], e["type"]) for e in atlas["edges"]}
+        self.assertIn(("OperatorTime", "AInstein", "inherits"), edges)
+        self.assertIn(("GAx", "AInstein", "converges"), edges)
+        self.assertIn(("Sihti", "AInstein", "converges"), edges)
+        self.assertIn(("AnotherOddThing", "AInstein", "converges"), edges)
+        self.assertIn(("WhatToLookAt", "AInstein", "converges"), edges)
+
+    def test_ainstein_keeps_transformer_control_as_a_correction(self):
+        atlas = load_atlas(ROOT)
+        node = next(n for n in atlas["nodes"] if n["id"] == "AInstein")
+        self.assertIn("attention convexity", node["killed"].lower())
+        self.assertIn("0.9467", node["survived"])
+        motif = next(m for m in atlas["motifs"] if m["id"] == "constructive-residue-synthesis")
+        self.assertIn("AInstein", motif["nodes"])
+        self.assertIn("OperatorTime", motif["nodes"])
+
+if __name__ == "__main__":
+    unittest.main()
