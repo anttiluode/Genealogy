@@ -53,5 +53,21 @@ class AInsteinPassTests(unittest.TestCase):
         self.assertIn(("DendriteAsIteratedFeedbackOperator", "AInstein", "converges"), edges)
         self.assertIn(("AnttisNeuron", "AInstein", "converges"), edges)
 
+
+    def test_gate4_records_operator_memory_and_gax_bridge(self):
+        atlas = load_atlas(ROOT)
+        node = next(n for n in atlas["nodes"] if n["id"] == "AInstein")
+        self.assertIn("0.9893", node["survived"])
+        self.assertIn("0.9784", node["survived"])
+        self.assertIn("-0.4726", node["killed"])
+        self.assertIn("operator-memory", node["tags"])
+        self.assertIn("gax-bridge", node["tags"])
+        edge = next(
+            e for e in atlas["edges"]
+            if e["source"] == "GAx" and e["target"] == "AInstein"
+        )
+        self.assertIn("operator cache", edge["why"].lower())
+        self.assertIn("GATE4_CONTRACT.md", edge["evidence"])
+
 if __name__ == "__main__":
     unittest.main()
