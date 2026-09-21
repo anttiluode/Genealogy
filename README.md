@@ -35,6 +35,14 @@ inventory -> interpretation -> empirical evidence -> unresolved questions
 
 These layers deliberately do not collapse into one score.
 
+### AInstein inside the transformer — Temporal Sihti and peripheral latent futures
+
+Adds **AinsteinInsideTransformerResidualStream** as the point where the recent residue/operator line enters an actual frozen causal transformer. One current residual state is treated as a persistent present register; several bounded latent futures can fork from that common parent, leave provenance-stamped departure residues, and disappear. Selected residues may then interact nonlinearly and compile into a temporary residual/operator intervention before the main stream resumes.
+
+The pass is deliberately hostile to its own metaphor. A vector merely leaving the span of its two branches is not evidence of invention. The pre-registered attackers include branch-only and convex/linear composition, provenance erasure or swapping, matched nonlinear post-concatenation, matched serial chain-of-thought, and matched textual branch search. If ordinary extra-token reasoning wins repeatedly at equal or lower compute, the peripheral-field architecture is to be dropped.
+
+This also creates a strong new bridge to **CabbageFarmSihti**. Its shuffled-parent panel is the visual analogue of swapped provenance; its Gate-2 carrier swap is the cheap analogue of changing the transformer's composer family; and its Gaussian spectral null suggests a residual-stream null asking how much apparent collision structure is already predicted by low-order branch statistics. The image repo can therefore falsify control logic cheaply before the same mistake consumes an 8B-model GPU run.
+
 ## Documentary confidence and empirical evidence
 
 **Lineage / interpretation confidence** asks whether the corpus supports an ancestry edge or a curated reading of a repository. An explicit README statement can therefore justify a high-confidence inheritance edge even when the scientific claim itself is still weak, mixed, or untested.
@@ -116,7 +124,7 @@ Adds **CabbageFarmSihti** as a convergence between the old CabbageFarm coordinat
 
 The v0 implementation begins with the strongest simple attacker rather than with a neural generator. It fits a 2-D spectral measure in a PCA colour basis and samples a globally defined random Fourier field. Separate crop requests with the same model/seed must agree exactly on overlap, making "arbitrarily large" a coordinate-consistency property rather than a giant bitmap. A Sihti-style Gaussian residue signature is recorded, but matching those linear second-order octave statistics does **not** count as extra Sihti evidence because the power spectrum already determines them for a stationary Gaussian process.
 
-The live boundary is therefore sharp: phase-randomized / power-spectrum-matched synthesis must fail on measurable cross-octave spatial structure before a richer relation law such as `P(R_2d | R_d)` is earned. The genealogy records both inputs explicitly: `CabbageFarm → CabbageFarmSihti` for the continuous-world goal and `Sihti2 → CabbageFarmSihti` for the transfer-law/noise perspective.
+The later site gates turn that boundary into explicit causal controls. Gate 1 keeps a coarse parent, uses its local frame to organize fresh fine-scale noise, and compares correct-parent conditioning with a shuffled-parent / wrong-address panel. Gate 2 then exposes phase-warp banding as a carrier artifact and attacks the carrier separately by changing frame smoothing and sine / multi-sine / phase-noise families. The surviving question is no longer whether a striking image appears, but whether the **parent-conditioned relation survives wrong-address and carrier-family attacks**. The genealogy records `CabbageFarm → CabbageFarmSihti`, `Sihti2 → CabbageFarmSihti`, and now a direct `Sihti → CabbageFarmSihti` convergence for the residue-regrowth gates.
 
 ### WhatToLookAt — learned relations become a sensing budget
 
