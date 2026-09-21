@@ -1,0 +1,75 @@
+{
+  "id": "observer-in-the-loop",
+  "title": "Observer in the loop: the measuring apparatus participates in the dynamics",
+  "summary": "A cross-cutting archaeology pass that connects an old recurring intuition to the current transformer measurement failure. Across MoireBrain, GeometricNeuronV24, ReadWrite, SighImageSuper, PredictiveHKT, WhatToLookAt, SplatWorld4, AuditedEpistemicCache, OperatorTime, AInstein and AinsteinInsideTransformerResidualStream, the stable lesson is not merely that state changes: what can be seen depends on a stateful observer, query, viewpoint, coordinate system, provenance and computational instrument. The strongest formulation is therefore coupled dynamics: the current state determines how the system is interrogated, and interrogation changes later state. Gate 0.7d in the Qwen branch adds a methodological receipt: identical candidates and frozen interventions changed qualitative first-action conclusions when unrelated rows changed the BF16 batch geometry, while simple row reversal was exactly stable. The pass treats that as an instrument-validity failure, not as evidence about cognition.",
+  "order": 245,
+  "reviewed_at": "2026-09-21",
+  "nodes": [],
+  "edges": [
+    {
+      "source": "MoireBrain",
+      "target": "GeometricNeuronV24",
+      "type": "rediscovery",
+      "confidence": "medium",
+      "why": "MoireBrain already made observer scale part of the visible pattern, although its memory interpretation was not earned. GeometricNeuronV24 later turns the same broad issue into explicit bounded measurement, address, nullspace and active intervention. This edge records a rediscovered observer-dependence motif, not code ancestry.",
+      "evidence": "https://github.com/anttiluode/Genealogy/blob/main/data/passes/early-adaptive-fossils.json"
+    },
+    {
+      "source": "SplatWorld4",
+      "target": "WhatToLookAt",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "SplatWorld4 actively chooses camera measurements that expose hidden material directions; WhatToLookAt allocates a limited sensing/compute budget where remembered relations are uncertain. Both make the next observation a controlled variable rather than a passive stream.",
+      "evidence": "https://github.com/anttiluode/SplatWorld4/blob/main/README.md"
+    },
+    {
+      "source": "PredictiveHKT",
+      "target": "AinsteinInsideTransformerResidualStream",
+      "type": "rediscovery",
+      "confidence": "high",
+      "why": "PredictiveHKT warns that apparent operator drift can come from movement of the learned coordinate system rather than the external world. Gate 0.7d independently finds the measurement analogue inside Qwen: changing harmless batch geometry changes the low-precision scoring path enough to reverse tiny first-action route claims. In both cases the instrument/representation must be treated as part of the experiment.",
+      "evidence": "https://github.com/anttiluode/AinsteinInsideTransformerResidualStream/blob/main/results/gate07d_scoring_invariance.json"
+    },
+    {
+      "source": "AuditedEpistemicCache",
+      "target": "AinsteinInsideTransformerResidualStream",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "AuditedEpistemicCache treats representation generation, provenance and evidence completeness as part of a reusable claim's validity. Gate 0.7d shows why that bookkeeping matters in a live transformer microscope: an old numerical claim is not reusable merely because the candidate text and steering vector are unchanged if the execution/measurement context moved.",
+      "evidence": "https://github.com/anttiluode/AinsteinInsideTransformerResidualStream/blob/main/results/gate07d_scoring_invariance.json"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "observer-participates-in-dynamics",
+      "title": "The observer is part of the state",
+      "description": "Across the wall, observation repeatedly stops being a fixed readout. MoireBrain changes visible structure with observer scale; GeometricNeuronV24 and ReadWrite formalize bounded lenses and intervention; SighImageSuper makes recoverability query-dependent and studies back-action; PredictiveHKT shows a moving representation can impersonate world drift; SplatWorld4 and WhatToLookAt choose where to measure; AuditedEpistemicCache records whether an old measurement is still valid under the current representation generation; OperatorTime makes reader state part of the effective operator; AInstein makes provenance load-bearing; and the Qwen Gate 0.7d result shows that even numerical execution geometry can become part of the measuring apparatus. The survivor is a coupled system in which state affects how the world is interrogated and interrogation affects later state.",
+      "nodes": [
+        "MoireBrain",
+        "GeometricNeuronV24",
+        "ReadWrite",
+        "SighImageSuper",
+        "PredictiveHKT",
+        "SplatWorld4",
+        "WhatToLookAt",
+        "AuditedEpistemicCache",
+        "OperatorTime",
+        "AInstein",
+        "AinsteinInsideTransformerResidualStream"
+      ]
+    },
+    {
+      "id": "measurement-receipt-validity",
+      "title": "A reusable belief needs a receipt for how it was measured",
+      "description": "The practical corollary of a stateful observer is that a cached fact cannot be identified only by value and age. World/knowledge time, query or intervention, viewpoint, provenance, representation generation and measurement implementation can all determine whether the old result still means the same thing. When those coordinates change without a known translation, remeasurement is safer than blind reuse.",
+      "nodes": [
+        "WorldModel",
+        "ReadWrite",
+        "PredictiveHKT",
+        "AuditedEpistemicCache",
+        "AInstein",
+        "AinsteinInsideTransformerResidualStream"
+      ]
+    }
+  ]
+}
