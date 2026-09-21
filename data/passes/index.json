@@ -194,5 +194,9 @@
   {
     "path": "cabbage-farm-sihti.json",
     "enabled": true
+  },
+  {
+    "path": "ainstein-inside-transformer.json",
+    "enabled": true
   }
 ]
