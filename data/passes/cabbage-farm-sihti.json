@@ -1,9 +1,9 @@
 {
   "id": "cabbage-farm-sihti",
   "title": "CabbageFarmSihti: from continuous world extrapolation to stochastic transfer law",
-  "summary": "CabbageFarmSihti recombines the old CabbageFarm ambition of coordinate-addressable, effectively unbounded 2-D worlds with the Sihti/Sihti2 view that an operator can be inferred from what survives and bleeds out across scales. The v0 implementation deliberately begins with a stationary Gaussian spectral baseline: fit a 2-D transfer law from a finite reference, then sample a globally coordinate-addressable random Fourier field from that law. Exact overlap consistency is tested. Sihti-style Gaussian residue signatures are recorded as diagnostics, but are not counted as extra information because linear second-order octave statistics are already implied by the power spectrum. Cross-octave spatial relations are only earned if the spectral attacker fails.",
+  "summary": "CabbageFarmSihti recombines the old CabbageFarm ambition of coordinate-addressable, effectively unbounded 2-D worlds with the Sihti/Sihti2 view that an operator can be inferred from what survives and bleeds out across scales. v0 begins with a stationary Gaussian spectral attacker. Site Gate 1 then keeps a coarse parent and asks whether its local frame can causally organize fresh fine-scale noise, with a shuffled-parent/wrong-address control. Gate 2 exposes phase-warp banding as a carrier artifact and separates the parent-conditioned relation from the chosen sine/multi-sine/phase-noise carrier. The repo therefore becomes a cheap visual control laboratory for provenance binding, carrier-versus-relation separation, and low-order statistical nulls that now transfer directly to AInsteinInsideTransformerResidualStream.",
   "order": 250,
-  "reviewed_at": "2026-09-20",
+  "reviewed_at": "2026-09-21",
   "nodes": [
     {
       "id": "CabbageFarm",
@@ -31,9 +31,9 @@
       "url": "https://github.com/anttiluode/CabbageFarmSihti",
       "family": "procedural-world",
       "status": "active",
-      "claim": "Learns a stochastic transfer law from a finite texture and applies it to fresh coordinate-addressable noise, beginning with a 2-D spectral Gaussian-field attacker before adding Sihti cross-octave relations.",
-      "survived": "v0 implements reference-to-spectral-law fitting, fresh random Fourier synthesis, exact overlap-consistent coordinate crops, power/anistropy/colour diagnostics and Sihti-style Gaussian residue fingerprints under an explicit second-order claim boundary.",
-      "killed": "Matching power spectrum or linear octave-energy statistics is not treated as statistically indistinguishable natural texture synthesis; higher-order shape, phase organization and cross-octave relations remain unearned.",
+      "claim": "Learns and attacks multiscale transfer laws from finite textures: first a stationary spectral Gaussian law, then coarse-parent-conditioned fresh detail with explicit wrong-address and carrier-family controls.",
+      "survived": "v0 implements reference-to-spectral-law fitting, fresh random Fourier synthesis, exact overlap-consistent coordinate crops and explicit second-order claim boundaries. Site Gate 1 shows the mechanism-level distinction between correct-parent conditioning and shuffled-parent/wrong-address binding while holding fresh-noise supply comparable. Gate 2 makes the carrier visible as a separate causal component: changing frame smoothing and sine/multi-sine/phase-noise carriers tests whether parent-conditioned organization survives after the conspicuous phase-warp stripes are removed.",
+      "killed": "Matching power spectrum or linear octave-energy statistics is not treated as natural-texture equivalence. A recognizable reconstruction is not counted as object generation because the real coarse field is retained. Strong phase-warp banding is not evidence of a learned natural-image law: the carrier can dominate the visible result and must be attacked independently from the parent relation.",
       "usefulness": "practical",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/CabbageFarmSihti/blob/main/README.md",
@@ -44,7 +44,12 @@
         "coordinate-noise",
         "spectral-synthesis",
         "residue",
-        "cross-scale"
+        "cross-scale",
+        "wrong-address-control",
+        "provenance",
+        "parent-conditioned-detail",
+        "carrier-attacker",
+        "phase-warp-banding"
       ],
       "era": "Procedural law / infinite-field synthesis",
       "era_order": 31
@@ -65,6 +70,14 @@
       "type": "converges",
       "confidence": "high",
       "why": "CabbageFarmSihti explicitly imports the Sihti2 transfer-law/noise perspective: noise supplies novelty, while the learned operator and residue hierarchy describe what structure survives across scales.",
+      "evidence": "https://github.com/anttiluode/CabbageFarmSihti/blob/main/README.md"
+    },
+    {
+      "source": "Sihti",
+      "target": "CabbageFarmSihti",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The later site gates use Sihti's residue-as-departure view directly: keep the coarse survivor, regrow fresh residue conditionally, and attack whether the parent/residue relation survives wrong-address binding and carrier changes.",
       "evidence": "https://github.com/anttiluode/CabbageFarmSihti/blob/main/README.md"
     }
   ],
