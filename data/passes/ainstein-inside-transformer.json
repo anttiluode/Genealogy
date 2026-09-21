@@ -1,0 +1,109 @@
+{
+  "id": "ainstein-inside-transformer",
+  "title": "AInstein inside the transformer: temporal Sihti, latent futures, and temporary lenses",
+  "summary": "AInsteinInsideTransformerResidualStream moves constructive residue synthesis into a frozen causal transformer. A privileged present residual state forks into several cheap latent futures; each excursion is compressed into a provenance-stamped departure residue; selected residues are collided nonlinearly and compiled into a temporary residual/operator intervention before the main stream resumes. The pass explicitly treats ordinary extra-token chain-of-thought, textual tree search, linear/convex mixing, provenance swaps and matched nonlinear composers as attackers. CabbageFarmSihti becomes a cheap control laboratory for the same architecture: shuffled-parent binding mirrors swapped provenance, carrier swaps mirror composer-family attacks, and the Gaussian/power-spectrum null motivates a second-order residual null before claiming cross-residue invention.",
+  "order": 260,
+  "reviewed_at": "2026-09-21",
+  "nodes": [
+    {
+      "id": "AinsteinInsideTransformerResidualStream",
+      "url": "https://github.com/anttiluode/AinsteinInsideTransformerResidualStream",
+      "family": "transformer-residue",
+      "status": "active",
+      "claim": "Tests whether a frozen transformer can preserve alternative internal trajectories as provenance-stamped residues, synthesize cross-branch interactions into a temporary computational lens, and obtain a capability/compute benefit over matched ordinary test-time reasoning.",
+      "survived": "The repository now contains a pre-registered Gate 0, Qwen-family residual capture, temporary last-token residual injection, linear and ordered low-rank bilinear composers, held-out operator-pair composition scaffolding, explicit provenance attacks, and CPU unit tests for the plumbing. The design also separates a persistent present register from temporary peripheral branches rather than identifying attention itself with a self.",
+      "killed": "No invention or reasoning advantage has yet been demonstrated. A vector leaving span(R_A,R_B) is explicitly insufficient evidence; the latent mechanism must beat matched serial chain-of-thought, textual branch search, linear/convex controls, provenance swaps and a matched nonlinear post-concatenation attacker. If ordinary serialized reasoning repeatedly wins at equal or lower compute, the peripheral-field architecture is to be dropped rather than rescued by metaphor.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/AinsteinInsideTransformerResidualStream/blob/main/README.md",
+      "tags": [
+        "transformer",
+        "residual-stream",
+        "temporal-sihti",
+        "latent-branching",
+        "constructive-residue",
+        "temporary-operator",
+        "provenance",
+        "test-time-compute",
+        "matched-compute-attacker",
+        "peripheral-thought-field",
+        "present-register"
+      ],
+      "era": "Temporal residue / latent rumination",
+      "era_order": 32
+    }
+  ],
+  "edges": [
+    {
+      "source": "AInstein",
+      "target": "AinsteinInsideTransformerResidualStream",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "The new repository explicitly moves AInstein's provenance-stamped constructive-residue question inside a frozen transformer residual stream: separate branch departures become the inputs to a nonlinear collision whose output is written back as a temporary lens.",
+      "evidence": "https://github.com/anttiluode/AinsteinInsideTransformerResidualStream/blob/main/README.md"
+    },
+    {
+      "source": "Sihti",
+      "target": "AinsteinInsideTransformerResidualStream",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The Temporal Sihti framing treats a speculative trajectory by its departures rather than by a retained transcript. Sihti keeps what disappears across purification depth; the transformer branch keeps a compressed record of what an internal excursion changed before the detailed trajectory is discarded.",
+      "evidence": "https://github.com/anttiluode/AinsteinInsideTransformerResidualStream/blob/main/README.md"
+    },
+    {
+      "source": "GAx",
+      "target": "AinsteinInsideTransformerResidualStream",
+      "type": "converges",
+      "confidence": "high",
+      "why": "GAx's durable lesson is to preserve several viable computational modes instead of purifying immediately to one winner. The transformer design reuses that as several cheap latent futures from one parent residual state, with later selection or cross-branch composition.",
+      "evidence": "https://github.com/anttiluode/AinsteinInsideTransformerResidualStream/blob/main/DESIGN_NOTES.md"
+    },
+    {
+      "source": "WhatToLookAt",
+      "target": "AinsteinInsideTransformerResidualStream",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The peripheral field is budgeted: branch and collision compute must be allocated to the futures expected to reduce uncertainty or improve a verifier, rather than exhaustively evaluating every possible residue pair.",
+      "evidence": "https://github.com/anttiluode/AinsteinInsideTransformerResidualStream/blob/main/DESIGN_NOTES.md"
+    },
+    {
+      "source": "SelfAndOtherObjectsInTime",
+      "target": "AinsteinInsideTransformerResidualStream",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "The persistent-present design note turns the current residual register into a privileged reference state while hypothetical branches arrive and disappear as temporary computational objects. This is an engineering abstraction of the earlier self/other-in-time discussion, not a claim about consciousness.",
+      "evidence": "https://github.com/anttiluode/AinsteinInsideTransformerResidualStream/blob/main/DESIGN_NOTES.md"
+    },
+    {
+      "source": "SighImageFactorization",
+      "target": "AinsteinInsideTransformerResidualStream",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "SighImageFactorization moved from residue-as-data toward history-written operators. The transformer branch asks the analogous engineering question: can residue from past/internal computation be compiled into a temporary operator that changes how subsequent computation proceeds?",
+      "evidence": "https://github.com/anttiluode/AinsteinInsideTransformerResidualStream/blob/main/README.md"
+    },
+    {
+      "source": "CabbageFarmSihti",
+      "target": "AinsteinInsideTransformerResidualStream",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The two projects now share control logic across domains. CabbageFarmSihti's shuffled-parent panel is the image analogue of swapped provenance; its carrier-swap Gate 2 warns that a striking output may come from the composer/carrier rather than the relation; and its Gaussian spectral null motivates measuring how much transformer collision structure is already predicted by low-order residue statistics before claiming constructive novelty.",
+      "evidence": "https://github.com/anttiluode/CabbageFarmSihti/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "temporal-sihti-latent-futures",
+      "title": "Temporal Sihti / peripheral latent futures",
+      "description": "A persistent present state spawns several bounded trajectories, discards most trajectory detail, keeps compact provenance-bound departures, and spends scarce compute on selected survivors or collisions. The experimental question is whether those retained departures can alter a later operator more efficiently than serially verbalizing the same search.",
+      "nodes": [
+        "Sihti",
+        "GAx",
+        "WhatToLookAt",
+        "AInstein",
+        "CabbageFarmSihti",
+        "AinsteinInsideTransformerResidualStream"
+      ]
+    }
+  ]
+}
