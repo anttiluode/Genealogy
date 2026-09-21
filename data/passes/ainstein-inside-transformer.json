@@ -1,7 +1,7 @@
 {
   "id": "ainstein-inside-transformer",
   "title": "AInstein inside the transformer: temporal Sihti, latent futures, and temporary lenses",
-  "summary": "AInsteinInsideTransformerResidualStream moves constructive residue synthesis into a frozen causal transformer. A privileged present residual state forks into several cheap latent futures; each excursion is compressed into a provenance-stamped departure residue; selected residues are collided nonlinearly and compiled into a temporary residual/operator intervention before the main stream resumes. The pass explicitly treats ordinary extra-token chain-of-thought, textual tree search, linear/convex mixing, provenance swaps and matched nonlinear composers as attackers. CabbageFarmSihti becomes a cheap control laboratory for the same architecture: shuffled-parent binding mirrors swapped provenance, carrier swaps mirror composer-family attacks, and the Gaussian/power-spectrum null motivates a second-order residual null before claiming cross-residue invention.",
+  "summary": "AInsteinInsideTransformerResidualStream moves constructive residue synthesis into a frozen causal transformer. A privileged present residual state forks into several cheap latent futures; each excursion is compressed into a provenance-stamped departure residue; selected residues are collided nonlinearly and compiled into a temporary residual/operator intervention before the main stream resumes. The pass explicitly treats ordinary extra-token chain-of-thought, textual tree search, linear/convex mixing, provenance swaps and matched nonlinear composers as attackers. CabbageFarmSihti becomes a cheap control laboratory for the same architecture: shuffled-parent binding mirrors swapped provenance, carrier swaps mirror composer-family attacks, and the Gaussian/power-spectrum null motivates a second-order residual null before claiming cross-residue invention. The current Gate-0.7d audit also turns the observer itself into an explicit experimental variable: tiny route claims are not accepted when harmless BF16 batch-geometry changes alter their semantic conclusion.",
   "order": 260,
   "reviewed_at": "2026-09-21",
   "nodes": [
@@ -11,8 +11,8 @@
       "family": "transformer-residue",
       "status": "active",
       "claim": "Tests whether a frozen transformer can preserve alternative internal trajectories as provenance-stamped residues, synthesize cross-branch interactions into a temporary computational lens, and obtain a capability/compute benefit over matched ordinary test-time reasoning.",
-      "survived": "The repository now contains a pre-registered Gate 0, Qwen-family residual capture, temporary last-token residual injection, linear and ordered low-rank bilinear composers, held-out operator-pair composition scaffolding, explicit provenance attacks, and CPU unit tests for the plumbing. The design also separates a persistent present register from temporary peripheral branches rather than identifying attention itself with a self.",
-      "killed": "No invention or reasoning advantage has yet been demonstrated. A vector leaving span(R_A,R_B) is explicitly insufficient evidence; the latent mechanism must beat matched serial chain-of-thought, textual branch search, linear/convex controls, provenance swaps and a matched nonlinear post-concatenation attacker. If ordinary serialized reasoning repeatedly wins at equal or lower compute, the peripheral-field architecture is to be dropped rather than rescued by metaphor.",
+      "survived": "The repository now contains a pre-registered Gate 0, Qwen-family residual capture, temporary last-token residual injection, linear and ordered low-rank bilinear composers, held-out operator-pair composition scaffolding, explicit provenance attacks, and CPU unit tests for the plumbing. The design also separates a persistent present register from temporary peripheral branches rather than identifying attention itself with a self. Gate 0.7d then adds an instrument-validity receipt: reversing the legacy three-row first-action batch produces exactly zero raw-score/lift drift, but adding unrelated longer candidates to the padded BF16 batch changes maximum raw scores by 0.01645 and lifts by 0.02843, flipping A and B target-margin signs and winners. The longer short-trajectory readout remains semantically stable under the same batch-shape attacker. This supports keeping measurement/execution context explicit before interpreting very small causal effects.",
+      "killed": "No invention or reasoning advantage has yet been demonstrated. A vector leaving span(R_A,R_B) is explicitly insufficient evidence; the latent mechanism must beat matched serial chain-of-thought, textual branch search, linear/convex controls, provenance swaps and a matched nonlinear post-concatenation attacker. If ordinary serialized reasoning repeatedly wins at equal or lower compute, the peripheral-field architecture is to be dropped rather than rescued by metaphor. Gate 0.7d specifically kills the current scale-1 fine-grained first-action temporal interpretation: identical candidate strings and frozen interventions do not preserve qualitative meaning across harmless batch-geometry changes, so A-short/B-late style claims are suspended until the scorer is numerically stabilized.",
       "usefulness": "scientific",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/AinsteinInsideTransformerResidualStream/blob/main/README.md",
@@ -27,7 +27,11 @@
         "test-time-compute",
         "matched-compute-attacker",
         "peripheral-thought-field",
-        "present-register"
+        "present-register",
+        "measurement-invariance",
+        "instrument-validity",
+        "batch-shape",
+        "numerical-floor"
       ],
       "era": "Temporal residue / latent rumination",
       "era_order": 32

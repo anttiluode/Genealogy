@@ -198,5 +198,9 @@
   {
     "path": "ainstein-inside-transformer.json",
     "enabled": true
+  },
+  {
+    "path": "observer-in-the-loop.json",
+    "enabled": true
   }
 ]

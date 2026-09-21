@@ -43,6 +43,14 @@ The pass is deliberately hostile to its own metaphor. A vector merely leaving th
 
 This also creates a strong new bridge to **CabbageFarmSihti**. Its shuffled-parent panel is the visual analogue of swapped provenance; its Gate-2 carrier swap is the cheap analogue of changing the transformer's composer family; and its Gaussian spectral null suggests a residual-stream null asking how much apparent collision structure is already predicted by low-order branch statistics. The image repo can therefore falsify control logic cheaply before the same mistake consumes an 8B-model GPU run.
 
+### Observer in the loop — the measuring apparatus participates in the dynamics
+
+Adds a cross-cutting survivor motif that had previously been scattered across observability, world-model, memory, operator-time and active-sensing passes. The recurring object is no longer only a changing hidden state; **the observer/query/instrument is itself stateful**.
+
+The lineage is deliberately drawn as a motif rather than one invented ancestry chain. `MoireBrain` contributes scale-dependent visibility; `GeometricNeuronV24` and `ReadWrite` formalize bounded lenses and active intervention; `SighImageSuper` makes recoverability depend on the question; `PredictiveHKT` shows that a moving representation can impersonate world drift; `SplatWorld4` and `WhatToLookAt` actively choose observations; `AuditedEpistemicCache` records representation generation and provenance; `OperatorTime` makes reader state part of the effective operator; `AInstein` makes provenance load-bearing; and `AinsteinInsideTransformerResidualStream` now contributes a direct measurement failure.
+
+Gate 0.7d is encoded as empirical evidence rather than a metaphor. Reversing the legacy three-row batch gives exactly zero numerical drift, while adding unrelated longer candidates changes the padded BF16 execution geometry enough to flip A/B first-action route conclusions; the longer trajectory remains semantically stable under the same attacker. The current fine-grained temporal claim is therefore suspended. The practical survivor is stricter: **a reusable belief needs a receipt for the observer under which it was measured**—query/intervention, viewpoint, provenance, representation generation and instrument context can all affect validity.
+
 ## Documentary confidence and empirical evidence
 
 **Lineage / interpretation confidence** asks whether the corpus supports an ancestry edge or a curated reading of a repository. An explicit README statement can therefore justify a high-confidence inheritance edge even when the scientific claim itself is still weak, mixed, or untested.
