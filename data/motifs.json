@@ -32,7 +32,8 @@
       "ReadWrite",
       "LentoOrava",
       "Child",
-      "WhatToLookAt"
+      "WhatToLookAt",
+      "AdaptiveObserverCache"
     ]
   },
   {
@@ -89,7 +90,8 @@
     "nodes": [
       "WorldModel",
       "GeometricNeuronV24",
-      "ReadWrite"
+      "ReadWrite",
+      "AdaptiveObserverCache"
     ]
   },
   {
@@ -140,7 +142,8 @@
     "nodes": [
       "SighImageSuper",
       "SighImageFactorization",
-      "WhatToLookAt"
+      "WhatToLookAt",
+      "AdaptiveObserverCache"
     ]
   },
   {
@@ -155,7 +158,7 @@
   {
     "id": "observer-participates-in-dynamics",
     "title": "The observer is part of the state",
-    "description": "Across the wall, observation repeatedly stops being a fixed readout. MoireBrain changes visible structure with observer scale; GeometricNeuronV24 and ReadWrite formalize bounded lenses and intervention; SighImageSuper makes recoverability query-dependent and studies back-action; PredictiveHKT shows a moving representation can impersonate world drift; SplatWorld4 and WhatToLookAt choose where to measure; AuditedEpistemicCache records whether an old measurement is still valid under the current representation generation; OperatorTime makes reader state part of the effective operator; AInstein makes provenance load-bearing; and the Qwen Gate 0.7d result shows that even numerical execution geometry can become part of the measuring apparatus. The survivor is a coupled system in which state affects how the world is interrogated and interrogation affects later state.",
+    "description": "Across the wall, observation repeatedly stops being a fixed readout. MoireBrain changes visible structure with observer scale; GeometricNeuronV24 and ReadWrite formalize bounded lenses and intervention; SighImageSuper makes recoverability query-dependent and studies back-action; PredictiveHKT shows a moving representation can impersonate world drift; SplatWorld4 and WhatToLookAt choose where to measure; AuditedEpistemicCache records whether an old measurement is still valid under the current representation generation; OperatorTime makes reader state part of the effective operator; AInstein makes provenance load-bearing; and the Qwen Gate 0.7d result shows that even numerical execution geometry can become part of the measuring apparatus. The survivor is a coupled system in which state affects how the world is interrogated and interrogation affects later state. AdaptiveObserverCache makes the loop executable in frozen transformer attention: persistent observer history changes query geometry over byte-stable K/V, and later provenance/history determines which current source the same reader interrogates.",
     "nodes": [
       "MoireBrain",
       "GeometricNeuronV24",
@@ -167,20 +170,22 @@
       "AuditedEpistemicCache",
       "OperatorTime",
       "AInstein",
-      "AinsteinInsideTransformerResidualStream"
+      "AinsteinInsideTransformerResidualStream",
+      "AdaptiveObserverCache"
     ]
   },
   {
     "id": "measurement-receipt-validity",
     "title": "A reusable belief needs a receipt for how it was measured",
-    "description": "The practical corollary of a stateful observer is that a cached fact cannot be identified only by value and age. World/knowledge time, query or intervention, viewpoint, provenance, representation generation and measurement implementation can all determine whether the old result still means the same thing. When those coordinates change without a known translation, remeasurement is safer than blind reuse.",
+    "description": "The practical corollary of a stateful observer is that a cached fact cannot be identified only by value and age. World/knowledge time, query or intervention, viewpoint, provenance, representation generation and measurement implementation can all determine whether the old result still means the same thing. When those coordinates change without a known translation, remeasurement is safer than blind reuse. Its calibration and continuity gates make receipts operational: an old trust relation can remain useful only when current identity/address is rebound from explicit relation or historical evidence.",
     "nodes": [
       "WorldModel",
       "ReadWrite",
       "PredictiveHKT",
       "AuditedEpistemicCache",
       "AInstein",
-      "AinsteinInsideTransformerResidualStream"
+      "AinsteinInsideTransformerResidualStream",
+      "AdaptiveObserverCache"
     ]
   }
 ]

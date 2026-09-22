@@ -2129,5 +2129,134 @@
       "Stable short-trajectory semantics do not establish the proposed cognitive temporal-footprint interpretation"
     ],
     "source": "https://github.com/anttiluode/AinsteinInsideTransformerResidualStream/blob/main/results/gate07d_scoring_invariance.json"
+  },
+  {
+    "id": "aoc-gate2-pretrained-kv-observer",
+    "node": "AdaptiveObserverCache",
+    "claim": "A persistent scalar observer can carry a post-read calibration into later blind retrievals over real frozen DistilGPT2 K/V, changing which source is read without mutating the cache or model parameters.",
+    "design": "Pinned distilbert/distilgpt2 revision 2290a62; one selected real attention head; projected K/V cloned once and held fixed; four A/B trust blocks with one calibration read followed by three blind reads; compare persistent observer against best fixed and reset-observer controls.",
+    "result": "supports",
+    "motifs": [
+      "observer-participates-in-dynamics",
+      "measurement-receipt-validity"
+    ],
+    "sample": {
+      "unit": "blind retrieval",
+      "count": 12
+    },
+    "metrics": [
+      {
+        "name": "adaptive blind accuracy",
+        "value": 1
+      },
+      {
+        "name": "best fixed blind accuracy",
+        "value": 0.5
+      },
+      {
+        "name": "reset-observer blind accuracy",
+        "value": 0.5
+      },
+      {
+        "name": "adaptive advantage",
+        "value": 0.5
+      },
+      {
+        "name": "intended-source total attention in selected A mode",
+        "value": 1
+      },
+      {
+        "name": "intended-source total attention in selected B mode",
+        "value": 1
+      }
+    ],
+    "controls": [
+      "Same pretrained model revision, prompt, projected K/V and one-read budget across conditions",
+      "Trusted-source receipt arrives only after the calibration read",
+      "Blind reads receive no truth signal",
+      "Best fixed observer and reset-observer controls",
+      "Projected K/V digest checked before and after"
+    ],
+    "replication": "4 trust blocks × 3 blind reads on one pretrained cache after hardening the absolute-attention criterion",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Cache-specific observer geometry is derived on the same prompt later tested",
+      "The B mode lies at the allowed scalar-search boundary",
+      "This establishes retrieval control, not improved free-form language generation"
+    ],
+    "source": "https://github.com/anttiluode/AdaptiveObserverCache/blob/main/RESULTS_GATE2.md"
+  },
+  {
+    "id": "aoc-gate7-history-continuity",
+    "node": "AdaptiveObserverCache",
+    "claim": "When the terminal alias relation is removed, persistent trust plus historical behavioral fingerprints and current probe observations can infer which anonymous current source continues the trusted identity before frozen attention retrieval.",
+    "design": "Six source families in both record orders; twelve historical sources each have a five-probe fingerprint; current anonymous sources receive the same probes with one non-prefix corruption; a generic minimum-Hamming matcher binds the persistent trusted source to the current slot, then the unchanged frozen attention reader is invoked.",
+    "result": "supports",
+    "motifs": [
+      "observer-participates-in-dynamics",
+      "measurement-receipt-validity",
+      "bounded-observation",
+      "information-needs-an-observable",
+      "provenance"
+    ],
+    "sample": {
+      "unit": "identity-conditioned retrieval",
+      "count": 24
+    },
+    "metrics": [
+      {
+        "name": "history-bound accuracy",
+        "value": 1
+      },
+      {
+        "name": "dual-success rate",
+        "value": 1
+      },
+      {
+        "name": "reversed-order dual success",
+        "value": 1
+      },
+      {
+        "name": "mean intended-source total attention",
+        "value": 0.9619481
+      },
+      {
+        "name": "static-slot attacker",
+        "value": 0.5
+      },
+      {
+        "name": "one-probe attacker",
+        "value": 0.5
+      },
+      {
+        "name": "reset-history attacker",
+        "value": 0.5
+      },
+      {
+        "name": "shuffled-history attacker",
+        "value": 0
+      },
+      {
+        "name": "incomplete-relation-graph attacker",
+        "value": 0
+      }
+    ],
+    "controls": [
+      "Current observations remain available in the reset-history condition",
+      "A single deliberately ambiguous current probe is insufficient",
+      "Shuffling historical fingerprints breaks provenance while preserving the measurement budget",
+      "The old complete alias graph is unavailable because terminal identity edges are removed",
+      "Projected K/V remains unchanged"
+    ],
+    "replication": "6 families × 2 source orders = 12 caches and 24 identity-conditioned reads",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Behavioral fingerprints and probe space are synthetic and designed",
+      "Does not establish open-ended semantic re-identification",
+      "All five current probes are free; active probe cost is the next boundary"
+    ],
+    "source": "https://github.com/anttiluode/AdaptiveObserverCache/blob/main/RESULTS_GATE7.md"
   }
 ]

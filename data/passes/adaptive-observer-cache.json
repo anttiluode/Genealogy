@@ -1,0 +1,95 @@
+{
+  "id": "adaptive-observer-cache",
+  "title": "AdaptiveObserverCache: persistent observer state changes how frozen memory is read",
+  "summary": "AdaptiveObserverCache turns the observer-in-the-loop motif into an executable transformer mechanism. Instead of rewriting weights or old K/V, it keeps a slow persistent observer state outside the frozen memory and lets that state change the query/read geometry. Gate 2 demonstrates the mechanism on real DistilGPT2 K/V; Gate 3 shows the first reusable coordinate was positional rather than identity-based; Gates 4–6 factor persistent provenance from current address and surface alias; Gate 7 removes the terminal alias edge and uses historical behavioral evidence plus current measurements to infer continuity. The project therefore moves from 'steer one attention head' toward a persistent epistemic control layer: what was learned earlier changes how unchanged history is interrogated now. The Anthropic J-space/Jacobian-lens work is a close conceptual neighbor but not a lineage edge: J-space identifies and causally writes verbalizable residual-stream workspace directions within a forward pass, while AdaptiveObserverCache adds explicit state across reads and acts primarily on memory addressing/query policy.",
+  "order": 270,
+  "reviewed_at": "2026-09-22",
+  "nodes": [
+    {
+      "id": "AdaptiveObserverCache",
+      "url": "https://github.com/anttiluode/AdaptiveObserverCache",
+      "family": "transformer-observer",
+      "status": "active",
+      "claim": "Tests whether a frozen transformer can carry a persistent observer state outside the prompt/KV so that earlier calibration, provenance and historical evidence change how the same stored history is queried later, without rewriting weights or old K/V.",
+      "survived": "Gate 2 uses real DistilGPT2 projected K/V and gets 1.000 blind retrieval accuracy versus 0.500 for best-fixed and reset-observer controls while K/V remains byte-stable. Gate 3 shows the reusable coordinate transfers across content/wording but initially tracks source slot rather than identity. Gates 4–6 separate persistent provenance from current slot and alias continuity. Gate 7 removes the terminal alias relation: history + current measurements + persistent trust restores current identity at 1.000 accuracy across 24 identity-conditioned reads, while static slot and reset history are 0.500 and shuffled history is 0.000.",
+      "killed": "The first pretrained observer was cache-specific; Gate 3 killed the stronger identity interpretation by failing both order-swapped prompts. Later gates require explicit symbolic binding/alias structure, and Gate 7 still uses a designed probe/fingerprint space. The repository has not yet shown open-ended semantic re-identification, cheaper active sensing, robust long-chat Qwen/RoPE integration, or improved free-form generation.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/AdaptiveObserverCache/blob/main/README.md",
+      "tags": [
+        "transformer",
+        "attention",
+        "kv-cache",
+        "persistent-observer",
+        "stateful-reader",
+        "provenance",
+        "identity-binding",
+        "history",
+        "active-observability",
+        "frozen-model",
+        "dynamic-ai"
+      ],
+      "era": "Adaptive observer / dynamic memory",
+      "era_order": 33
+    }
+  ],
+  "edges": [
+    {
+      "source": "AinsteinInsideTransformerResidualStream",
+      "target": "AdaptiveObserverCache",
+      "type": "converges",
+      "confidence": "high",
+      "why": "AinsteinInside's Gate 0.7d made the measuring apparatus itself a live variable when harmless execution geometry changed tiny causal conclusions. AdaptiveObserverCache turns that methodological lesson into a mechanism: observer state is explicit and changes how frozen transformer memory is read.",
+      "evidence": "https://github.com/anttiluode/AdaptiveObserverCache/blob/main/README.md"
+    },
+    {
+      "source": "OperatorTime",
+      "target": "AdaptiveObserverCache",
+      "type": "converges",
+      "confidence": "high",
+      "why": "OperatorTime established the abstract form that resident history can change the effective operator available now even when parameters stay fixed. AdaptiveObserverCache instantiates that idea as a persistent reader state that changes the effective attention/query operator over unchanged memory.",
+      "evidence": "https://github.com/anttiluode/AdaptiveObserverCache/blob/main/README.md"
+    },
+    {
+      "source": "ReadWrite",
+      "target": "AdaptiveObserverCache",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "ReadWrite shows that what is knowable depends on the probe/intervention rather than on passive state alone. AdaptiveObserverCache moves that bounded-observer idea inside transformer memory: the current query geometry determines which distinction in frozen K/V becomes visible.",
+      "evidence": "https://github.com/anttiluode/AdaptiveObserverCache/blob/main/README.md"
+    },
+    {
+      "source": "WhatToLookAt",
+      "target": "AdaptiveObserverCache",
+      "type": "converges",
+      "confidence": "high",
+      "why": "WhatToLookAt makes remembered relations change which later measurement is worth buying. AdaptiveObserverCache Gate 7 reaches the same boundary from transformer memory: history constrains current identity, and the next planned gate explicitly prices which probe the observer should purchase.",
+      "evidence": "https://github.com/anttiluode/AdaptiveObserverCache/blob/main/RESULTS_GATE7.md"
+    },
+    {
+      "source": "PredictiveHKT",
+      "target": "AdaptiveObserverCache",
+      "type": "rediscovery",
+      "confidence": "medium",
+      "why": "PredictiveHKT warns that changing representation coordinates can impersonate world/operator change. AdaptiveObserverCache's identity/alias gates separate durable provenance from its current surface key/address, making coordinate translation an explicit part of memory reuse.",
+      "evidence": "https://github.com/anttiluode/AdaptiveObserverCache/blob/main/README.md"
+    },
+    {
+      "source": "AuditedEpistemicCache",
+      "target": "AdaptiveObserverCache",
+      "type": "converges",
+      "confidence": "high",
+      "why": "AuditedEpistemicCache records provenance and representation-generation receipts so old evidence is not blindly reused. AdaptiveObserverCache turns that bookkeeping principle into a read operation: old trust/history is rebound to the current representation before it may control retrieval.",
+      "evidence": "https://github.com/anttiluode/AdaptiveObserverCache/blob/main/README.md"
+    },
+    {
+      "source": "AInstein",
+      "target": "AdaptiveObserverCache",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "AInstein's provenance-misbinding controls show that having the right ingredients with the wrong addresses can yield confident failure. AdaptiveObserverCache makes source identity/address binding a first-class operation before attention is steered.",
+      "evidence": "https://github.com/anttiluode/AdaptiveObserverCache/blob/main/README.md"
+    }
+  ],
+  "motifs": []
+}
