@@ -437,5 +437,56 @@
       "Timing is measured per independent tile call; selective route time is the sum of the actual selected calls plus selector CPU time.",
       "The hard-paste H0 screenshot was itself the attacker: visual inspection falsified the reference construction before any numeric result was allowed to count."
     ]
+  },
+  {
+    "id": "aoc-live-distance-control",
+    "title": "Does the observer keep semantic control as a trusted source recedes inside one growing KV cache?",
+    "state": "open",
+    "motifs": [
+      "observer-participates-in-dynamics",
+      "measurement-receipt-validity",
+      "provenance",
+      "persistent-state"
+    ],
+    "evidence": [
+      "aoc-qwen-causal-language-switch",
+      "aoc-qwen-heldout-graded-transfer",
+      "aoc-qwen-order-identity-likelihood",
+      "aoc-qwen-live-growing-cache"
+    ],
+    "competing_explanations": [
+      "The locally reconstructed observer remains an identity-relative control surface at long temporal distances; the first live second-turn non-switch happened because m=-0.664 stayed below the already-observed decoding threshold.",
+      "The observer's causal leverage decays as the source recedes in a real growing RoPE cache, so attention can still be redirected locally while downstream language control fades with distance.",
+      "The effect is strongly content/head specific rather than distance limited; a fixed four-head plan gives graded movement but only some conflicts cross the final autoregressive commitment boundary."
+    ],
+    "known": [
+      "On the calibration conflict, causally selected frozen heads switch free generation at m=-1 while neutral remains on A.",
+      "Across four unrelated conflicts the same frozen plan moves full candidate-sequence likelihood in the intended A-relative direction in 4/4 cases, but only 2/4 fully switch generation.",
+      "Reversing physical source order leaves the observer slope almost unchanged (7.91 versus 8.18) even though the unmodified model has an approximately ±10.8 first-record prior.",
+      "The first successful live second turn grows one DynamicCache from 131 to 160 tokens, keeps source spans fixed at A=[45,62) and B=[72,87), preserves source-cache integrity, and moves selected-head attention toward B at m=-0.664, but the generated sentence remains on A."
+    ],
+    "missing_discriminator": "A matched distance-by-trust experiment on one continuously growing cache. Trust magnitude must be held fixed across distance so a missing generation switch cannot be attributed to weaker m.",
+    "candidate_experiment": {
+      "design": "Prefill one A/B conflict once, freeze the four selected heads, and grow the same live cache with semantically neutral filler turns to several distances such as 0, 128, 512, 1024 and 2048 added tokens. At every checkpoint, without rebuilding the cache, measure complete A-vs-B candidate-sequence likelihood and optionally greedy generation for m=-1,-0.75,-0.5,0,+0.5,+0.75,+1. Record source-key digest integrity, target/other attention mass, query-update ratio and capped fraction. Repeat with AB and BA physical source order if compute allows.",
+      "cost": "medium-to-high on the current 8B disk-offloaded setup; one model load, one continuously growing cache, roughly 5 distance checkpoints × 7 trust probes",
+      "outcomes": [
+        {
+          "if": "The A-minus-B dose-response curve remains similar across distance while source K rows stay byte-stable",
+          "then": "The persistent observer has earned a genuine long-context control claim; the live m=-0.664 non-switch was primarily a threshold-strength issue."
+        },
+        {
+          "if": "The curve systematically flattens or shifts toward the neutral/primacy prior as distance grows despite matched m and intact source K",
+          "then": "Temporal distance is a real failure mode of the current local-tangent controller and the next mechanism must compensate for long-range causal attenuation rather than merely increase trust."
+        },
+        {
+          "if": "Distance is stable on the calibration conflict but different held-out conflicts still vary sharply",
+          "then": "The dominant boundary is task/head specificity, not cache age; causal head selection or downstream actuation must generalize before adding long-context machinery."
+        }
+      ]
+    },
+    "notes": [
+      "Do not use attention mass alone as an epistemic success signal: the earlier Q28 scan showed a locally steerable head whose downstream causal sign inverted.",
+      "The evidence ledger may decide what to investigate, but self/model prediction must not certify its own trust update."
+    ]
   }
 ]
