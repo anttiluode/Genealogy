@@ -2,13 +2,14 @@
   {
     "id": "persistent-state",
     "title": "Persistent state is not the event",
-    "description": "Separate what remains resident from what is communicated or selected now.",
+    "description": "Separate what remains resident from what is communicated or selected now. AdaptiveObserverCache now makes the distinction literal at two timescales: a slow evidence-derived observer state persists outside the prompt while one fast Qwen KV cache grows token by token.",
     "nodes": [
       "ActiveVectorNN",
       "NewMachine",
       "FusionMachine",
       "LentoOrava",
-      "WorldModel"
+      "WorldModel",
+      "AdaptiveObserverCache"
     ]
   },
   {
@@ -158,7 +159,7 @@
   {
     "id": "observer-participates-in-dynamics",
     "title": "The observer is part of the state",
-    "description": "Across the wall, observation repeatedly stops being a fixed readout. MoireBrain changes visible structure with observer scale; GeometricNeuronV24 and ReadWrite formalize bounded lenses and intervention; SighImageSuper makes recoverability query-dependent and studies back-action; PredictiveHKT shows a moving representation can impersonate world drift; SplatWorld4 and WhatToLookAt choose where to measure; AuditedEpistemicCache records whether an old measurement is still valid under the current representation generation; OperatorTime makes reader state part of the effective operator; AInstein makes provenance load-bearing; and the Qwen Gate 0.7d result shows that even numerical execution geometry can become part of the measuring apparatus. The survivor is a coupled system in which state affects how the world is interrogated and interrogation affects later state. AdaptiveObserverCache makes the loop executable in frozen transformer attention: persistent observer history changes query geometry over byte-stable K/V, and later provenance/history determines which current source the same reader interrogates.",
+    "description": "Across the wall, observation repeatedly stops being a fixed readout. MoireBrain changes visible structure with observer scale; GeometricNeuronV24 and ReadWrite formalize bounded lenses and intervention; SighImageSuper makes recoverability query-dependent; PredictiveHKT shows a moving representation can impersonate world drift; SplatWorld4 and WhatToLookAt choose where to measure; AuditedEpistemicCache records representation/provenance validity; OperatorTime makes reader state part of the effective operator; AInstein makes provenance load-bearing. AdaptiveObserverCache now makes the loop executable in a frozen Qwen: a persistent external observer changes current query geometry over byte-stable historical K/V while one live cache continues to grow. The first live second turn preserved the old source addresses and cache integrity as evidence changed the observer, although the generated answer did not yet cross the language boundary.",
     "nodes": [
       "MoireBrain",
       "GeometricNeuronV24",
@@ -177,7 +178,7 @@
   {
     "id": "measurement-receipt-validity",
     "title": "A reusable belief needs a receipt for how it was measured",
-    "description": "The practical corollary of a stateful observer is that a cached fact cannot be identified only by value and age. World/knowledge time, query or intervention, viewpoint, provenance, representation generation and measurement implementation can all determine whether the old result still means the same thing. When those coordinates change without a known translation, remeasurement is safer than blind reuse. Its calibration and continuity gates make receipts operational: an old trust relation can remain useful only when current identity/address is rebound from explicit relation or historical evidence.",
+    "description": "A cached belief cannot be identified only by value and age. Query/intervention, viewpoint, provenance, representation generation and measurement implementation can determine whether it still means the same thing. AdaptiveObserverCache now operationalizes both halves: external sensor/tool/independent-model/user-verification receipts may update slow trust, while self/model-prediction receipts are logged but cannot anchor it; the resulting state then changes how unchanged historical K/V is read.",
     "nodes": [
       "WorldModel",
       "ReadWrite",

@@ -153,5 +153,29 @@
     "bounded-observation": "supports",
     "information-needs-an-observable": "supports",
     "provenance": "supports"
+  },
+  "aoc-qwen-causal-language-switch": {
+    "observer-participates-in-dynamics": "supports",
+    "measurement-receipt-validity": "supports",
+    "provenance": "supports"
+  },
+  "aoc-qwen-heldout-graded-transfer": {
+    "observer-participates-in-dynamics": "supports",
+    "measurement-receipt-validity": "limits",
+    "provenance": "supports",
+    "negative-results": "documents"
+  },
+  "aoc-qwen-order-identity-likelihood": {
+    "observer-participates-in-dynamics": "supports",
+    "provenance": "supports",
+    "measurement-receipt-validity": "limits",
+    "negative-results": "documents"
+  },
+  "aoc-qwen-live-growing-cache": {
+    "observer-participates-in-dynamics": "supports",
+    "measurement-receipt-validity": "supports",
+    "provenance": "supports",
+    "persistent-state": "supports",
+    "negative-results": "documents"
   }
 }

@@ -2258,5 +2258,277 @@
       "All five current probes are free; active probe cost is the next boundary"
     ],
     "source": "https://github.com/anttiluode/AdaptiveObserverCache/blob/main/RESULTS_GATE7.md"
+  },
+  {
+    "id": "aoc-qwen-causal-language-switch",
+    "node": "AdaptiveObserverCache",
+    "claim": "A tiny persistent observer state outside the prompt can, through locally reconstructed query updates on a frozen Qwen3-8B, change a natural-language conclusion when the controlled heads are selected by downstream causal effect rather than attention geometry alone.",
+    "design": "Build a geometry-qualified pool at Qwen layers 18, 24 and 30, serially compare A-trust versus B-trust downstream answer preference for each candidate, freeze the positive-swing head set, then rerun the same free-generation conflict at A, neutral and B observer states without changing model weights or historical source K/V.",
+    "result": "supports",
+    "motifs": [
+      "observer-participates-in-dynamics",
+      "measurement-receipt-validity",
+      "provenance"
+    ],
+    "sample": {
+      "unit": "constructed conflict",
+      "count": 1
+    },
+    "metrics": [
+      {
+        "name": "selected observer heads",
+        "value": 4
+      },
+      {
+        "name": "A-trust generated A",
+        "value": 1
+      },
+      {
+        "name": "neutral generated A",
+        "value": 1
+      },
+      {
+        "name": "B-trust generated B",
+        "value": 1
+      },
+      {
+        "name": "B mean target-source attention mass",
+        "value": 0.4193791124
+      },
+      {
+        "name": "B mean other-source attention mass",
+        "value": 0.0160452542
+      },
+      {
+        "name": "B mean query-update ratio",
+        "value": 0.3372094164
+      },
+      {
+        "name": "B max query-update ratio",
+        "value": 0.6244045417
+      },
+      {
+        "name": "capped fraction",
+        "value": 0
+      }
+    ],
+    "controls": [
+      "Same frozen Qwen3-8B weights, prompt and historical source cache across observer states",
+      "Selected layer/head identities frozen before the final generation comparison",
+      "Historical source K rows checked for byte-level integrity",
+      "No query update hit the configured norm cap"
+    ],
+    "replication": "One valve-versus-sensor conflict after causal head selection on that same conflict",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "The selector and success conflict are the same task, so this is an existence result rather than transfer evidence",
+      "The original causal profiler compared the first tokenizer token of each answer label; valve was represented by its opening token while sensor was one token",
+      "Later held-out evaluation shows the frozen plan does not guarantee a full generation switch"
+    ],
+    "source": "https://github.com/anttiluode/AdaptiveObserverCache/blob/main/results/qwen_observer_causal_compare.json"
+  },
+  {
+    "id": "aoc-qwen-heldout-graded-transfer",
+    "node": "AdaptiveObserverCache",
+    "claim": "The frozen Qwen observer transfers more reliably as a graded A-relative likelihood control than as a binary answer switch on unrelated conflicts.",
+    "design": "Freeze the four heads selected on the valve/sensor calibration conflict. Without reselection, evaluate telescope, database, reactor and compiler conflicts, including two BA physical source-order cases. For each, generate at A/neutral/B trust and sweep full candidate-sequence likelihood over m=-1,-0.5,0,0.5,1. Keep source-cache integrity and perturbation-cap checks active.",
+    "result": "mixed",
+    "motifs": [
+      "observer-participates-in-dynamics",
+      "provenance",
+      "measurement-receipt-validity"
+    ],
+    "sample": {
+      "unit": "held-out conflict",
+      "count": 4
+    },
+    "metrics": [
+      {
+        "name": "full A/B generation switch cases",
+        "value": 2
+      },
+      {
+        "name": "held-out cases",
+        "value": 4
+      },
+      {
+        "name": "reversed-order full switch cases",
+        "value": 2
+      },
+      {
+        "name": "reversed-order cases",
+        "value": 2
+      },
+      {
+        "name": "ordered dose-response endpoint cases",
+        "value": 4
+      },
+      {
+        "name": "cache integrity all cases",
+        "value": 1
+      },
+      {
+        "name": "capped updates",
+        "value": 0
+      }
+    ],
+    "controls": [
+      "No causal head reselection on held-out conflicts",
+      "Two physical source-order reversals",
+      "Complete candidate-sequence teacher-forced likelihood rather than first-token proxy",
+      "A/neutral/B free generation plus a five-point trust sweep",
+      "Leave-one-head-out diagnostic on the original conflict"
+    ],
+    "replication": "Four unrelated constructed conflict domains with one frozen head plan",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "The preregistered strong-transfer criterion failed: 2/4 full generation switches, below the required 3/4",
+      "The graded likelihood direction passed 4/4, so the result supports directional control but not reliable binary publication",
+      "All conflicts are synthetic two-source disputes rather than open-ended natural evidence"
+    ],
+    "source": "https://github.com/anttiluode/AdaptiveObserverCache/blob/main/results/qwen_observer_transfer_eval.json"
+  },
+  {
+    "id": "aoc-qwen-order-identity-likelihood",
+    "node": "AdaptiveObserverCache",
+    "claim": "On the original Qwen conflict, the frozen observer's likelihood effect follows source identity rather than physical first/second slot, even though the unmodified model has a very large first-record prior.",
+    "design": "Hold source content, wording, labels, frozen heads and trust sweep fixed; reverse only the physical order of SOURCE A and SOURCE B. Measure full candidate-sequence log likelihood under stepped KV-cache decoding and fit delta(A-B) versus observer trust separately for AB and BA arms. Also measure the unmodified model with no controller installed.",
+    "result": "mixed",
+    "motifs": [
+      "observer-participates-in-dynamics",
+      "provenance",
+      "measurement-receipt-validity"
+    ],
+    "sample": {
+      "unit": "physical source order",
+      "count": 2
+    },
+    "metrics": [
+      {
+        "name": "unpatched AB delta A-minus-B",
+        "value": 10.8754259205
+      },
+      {
+        "name": "unpatched BA delta A-minus-B",
+        "value": -10.7571020741
+      },
+      {
+        "name": "observer slope AB",
+        "value": 7.9095342824
+      },
+      {
+        "name": "observer slope BA",
+        "value": 8.1760728671
+      },
+      {
+        "name": "absolute slope ratio BA/AB",
+        "value": 1.0336983917
+      },
+      {
+        "name": "neutral delta AB",
+        "value": 11.1999114358
+      },
+      {
+        "name": "neutral delta BA",
+        "value": -10.5031150579
+      }
+    ],
+    "controls": [
+      "Physical source order is the only manipulated prompt variable",
+      "Head plan frozen and not reselected",
+      "Unmodified-model control distinguishes the large primacy prior from the observer effect",
+      "Full candidate-sequence likelihood measured at nine trust values from -1 to +1"
+    ],
+    "replication": "Two matched order arms on the same conflict",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Likelihood moved in the same semantic direction under both orders, but the BA greedy sentence did not switch to A at m=+1",
+      "The first receipt printed IDENTITY_COORDINATE even though the preregistered rule also required generation crossing in both arms; that verdict-code bug was later fixed to distinguish likelihood-only identity behavior",
+      "One conflict is insufficient to establish a general semantic identity coordinate"
+    ],
+    "source": "https://github.com/anttiluode/AdaptiveObserverCache/blob/main/results/attack_order.json"
+  },
+  {
+    "id": "aoc-qwen-live-growing-cache",
+    "node": "AdaptiveObserverCache",
+    "claim": "A persistent external observer state and one genuinely growing Qwen KV cache can coexist across a real second conversational turn while the original historical source K rows remain at fixed addresses and byte-stable.",
+    "design": "Prefill Qwen3-8B once with the two conflicting source records and initial question, then keep one DynamicCache alive. After the first answer, add an external B sensor evidence receipt of weight 0.8, map the evidence score through tanh to anchored trust m=-0.664, append only the next user-turn suffix and generated tokens, and verify cache/history length equality plus the original source-key digests across the session.",
+    "result": "supports",
+    "motifs": [
+      "observer-participates-in-dynamics",
+      "measurement-receipt-validity",
+      "provenance",
+      "persistent-state"
+    ],
+    "sample": {
+      "unit": "live second conversational turn",
+      "count": 1
+    },
+    "metrics": [
+      {
+        "name": "cache tokens before second turn",
+        "value": 131
+      },
+      {
+        "name": "cache tokens after user suffix",
+        "value": 149
+      },
+      {
+        "name": "cache tokens after second answer",
+        "value": 160
+      },
+      {
+        "name": "history tokens after second answer",
+        "value": 160
+      },
+      {
+        "name": "anchored trust after external B receipt",
+        "value": -0.6640367703
+      },
+      {
+        "name": "second-turn B target attention mass",
+        "value": 0.2531620636
+      },
+      {
+        "name": "second-turn A other attention mass",
+        "value": 0.0362337512
+      },
+      {
+        "name": "mean query-update ratio",
+        "value": 0.28389214
+      },
+      {
+        "name": "max query-update ratio",
+        "value": 0.6243266525
+      },
+      {
+        "name": "capped fraction",
+        "value": 0
+      },
+      {
+        "name": "source-cache integrity",
+        "value": 1
+      }
+    ],
+    "controls": [
+      "Exactly one full prefill; later turn appends only incremental chat-template suffix and generated tokens",
+      "Source spans remain fixed at A=[45,62) and B=[72,87)",
+      "Cache token count must equal committed history token count",
+      "Session-level source-key digest baseline is preserved across turns",
+      "Evidence state lives outside prompt text and model weights"
+    ],
+    "replication": "One successful live second-turn run after two chat-template compatibility bugs were exposed and fixed",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "The second generated answer remained valve/A despite B-relative attention control, so this does not establish language-level control across temporal distance",
+      "Trust magnitude and temporal distance are confounded in this run; m=-0.664 is weaker than the earlier m=-1 language-switch intervention",
+      "Only one additional turn and 160 total tokens were tested",
+      "The next discriminator is a matched distance-by-trust sweep on the same growing cache"
+    ],
+    "source": "https://github.com/anttiluode/AdaptiveObserverCache/blob/main/RESULTS_QWEN_LIVE_CACHE.md"
   }
 ]

@@ -1,7 +1,7 @@
 {
   "id": "adaptive-observer-cache",
   "title": "AdaptiveObserverCache: persistent observer state changes how frozen memory is read",
-  "summary": "AdaptiveObserverCache turns the observer-in-the-loop motif into an executable transformer mechanism. Instead of rewriting weights or old K/V, it keeps a slow persistent observer state outside the frozen memory and lets that state change the query/read geometry. Gate 2 demonstrates the mechanism on real DistilGPT2 K/V; Gate 3 shows the first reusable coordinate was positional rather than identity-based; Gates 4–6 factor persistent provenance from current address and surface alias; Gate 7 removes the terminal alias edge and uses historical behavioral evidence plus current measurements to infer continuity. The project therefore moves from 'steer one attention head' toward a persistent epistemic control layer: what was learned earlier changes how unchanged history is interrogated now. The Anthropic J-space/Jacobian-lens work is a close conceptual neighbor but not a lineage edge: J-space identifies and causally writes verbalizable residual-stream workspace directions within a forward pass, while AdaptiveObserverCache adds explicit state across reads and acts primarily on memory addressing/query policy.",
+  "summary": "AdaptiveObserverCache now reaches a real two-timescale Qwen system. The earlier gates established that persistent observer state can change frozen-memory retrieval, while Gate 3 exposed slot/order confounding and Gates 4–7 rebuilt durable provenance/current-address binding. The Qwen branch then found a second boundary: geometry-steerable heads need not be downstream-causal. Causally selected frozen heads produced a real valve/sensor language switch, but held-out transfer passed the graded likelihood direction on 4/4 conflicts while only 2/4 generated answers fully switched. An order-only attacker isolated a very large first-record prior yet found nearly identical A-relative observer slopes under AB and BA order (7.91 versus 8.18), so the frozen effect is not merely a slot coordinate. The live harness now keeps one DynamicCache growing across turns and a separate evidence-derived observer state outside the prompt; the first successful second turn grew 131→160 tokens with old source rows fixed and byte-stable while an external B receipt changed m to -0.664. Attention moved strongly toward B, but generation stayed on A, leaving temporal-distance versus control-strength as the next clean discriminator.",
   "order": 270,
   "reviewed_at": "2026-09-22",
   "nodes": [
@@ -10,9 +10,9 @@
       "url": "https://github.com/anttiluode/AdaptiveObserverCache",
       "family": "transformer-observer",
       "status": "active",
-      "claim": "Tests whether a frozen transformer can carry a persistent observer state outside the prompt/KV so that earlier calibration, provenance and historical evidence change how the same stored history is queried later, without rewriting weights or old K/V.",
-      "survived": "Gate 2 uses real DistilGPT2 projected K/V and gets 1.000 blind retrieval accuracy versus 0.500 for best-fixed and reset-observer controls while K/V remains byte-stable. Gate 3 shows the reusable coordinate transfers across content/wording but initially tracks source slot rather than identity. Gates 4–6 separate persistent provenance from current slot and alias continuity. Gate 7 removes the terminal alias relation: history + current measurements + persistent trust restores current identity at 1.000 accuracy across 24 identity-conditioned reads, while static slot and reset history are 0.500 and shuffled history is 0.000.",
-      "killed": "The first pretrained observer was cache-specific; Gate 3 killed the stronger identity interpretation by failing both order-swapped prompts. Later gates require explicit symbolic binding/alias structure, and Gate 7 still uses a designed probe/fingerprint space. The repository has not yet shown open-ended semantic re-identification, cheaper active sensing, robust long-chat Qwen/RoPE integration, or improved free-form generation.",
+      "claim": "Tests whether a frozen transformer can carry a persistent observer/evidence state outside the prompt and a genuinely growing KV cache, so external receipts alter how unchanged historical sources are read later without rewriting model weights or old source K/V.",
+      "survived": "DistilGPT2 Gates 2–7 establish persistent retrieval control, expose and then factor slot/order from provenance identity, and infer current identity from history. On Qwen3-8B, causally selected frozen heads produced a natural-language valve/sensor switch. Held-out transfer then moved complete A-vs-B sequence likelihood in the intended direction on 4/4 unrelated conflicts, with 2/4 full generation switches and 2/2 reversed-order switches. The order-only attacker found nearly identical observer slopes under AB and BA physical order (7.9095 vs 8.1761; ratio 1.034) despite the unmodified model's ±10.8 first-record prior. The live cache harness then completed a real second turn: cache/history grew 131→160 tokens, original source spans remained A=[45,62), B=[72,87), cache integrity stayed true, and external B evidence changed anchored trust to -0.664 while selected-head target mass became 0.2532 vs 0.0362 for A.",
+      "killed": "Several stronger stories failed. Geometry steering alone did not reliably change Qwen language; causal head selection was required. The frozen Qwen plan did not meet the preregistered strong-transfer gate (2/4 held-out generation switches, not >=3/4), so the current result is a graded directional control rather than a guaranteed binary switch. The first order-attacker verdict code also overstated the result because BA likelihood crossed at m=+1 while greedy generation did not; the code now reports that case as likelihood-only identity behavior. In the first successful live second turn, m=-0.664 moved attention strongly toward B but the answer remained valve/A, so robust language-level control across increasing cache distance is not established.",
       "usefulness": "scientific",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/AdaptiveObserverCache/blob/main/README.md",
@@ -27,7 +27,11 @@
         "history",
         "active-observability",
         "frozen-model",
-        "dynamic-ai"
+        "dynamic-ai",
+        "growing-kv-cache",
+        "evidence-ledger",
+        "causal-head-selection",
+        "dose-response"
       ],
       "era": "Adaptive observer / dynamic memory",
       "era_order": 33
