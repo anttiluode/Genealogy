@@ -51,6 +51,14 @@ The lineage is deliberately drawn as a motif rather than one invented ancestry c
 
 Gate 0.7d is encoded as empirical evidence rather than a metaphor. Reversing the legacy three-row batch gives exactly zero numerical drift, while adding unrelated longer candidates changes the padded BF16 execution geometry enough to flip A/B first-action route conclusions; the longer trajectory remains semantically stable under the same attacker. The current fine-grained temporal claim is therefore suspended. The practical survivor is stricter: **a reusable belief needs a receipt for the observer under which it was measured**—query/intervention, viewpoint, provenance, representation generation and instrument context can all affect validity.
 
+### AdaptiveObserverCache — persistent observer state becomes a transformer control loop
+
+Adds **AdaptiveObserverCache** as the executable continuation of the observer-in-the-loop motif. The project deliberately keeps pretrained weights and historical K/V fixed while a smaller persistent state changes the query/read geometry. Gate 2 demonstrates this on real DistilGPT2 K/V (1.000 blind retrieval accuracy versus 0.500 best-fixed/reset controls); Gate 3 then kills the stronger identity interpretation by showing that the first reusable coordinate tracks source slot/order. Gates 4–7 progressively factor durable provenance from current address, alias and behavioral continuity, culminating in a history-bound current-source inference that succeeds across 24 identity-conditioned reads while reset history is at 0.500 and shuffled history at 0.000.
+
+The strongest connections are therefore to `OperatorTime` (resident history changes the operator available now), `ReadWrite` (the probe determines which hidden distinction is observable), `WhatToLookAt` (history should eventually reduce sensing cost), `PredictiveHKT` (representation coordinates can move), `AuditedEpistemicCache` (old evidence needs provenance/representation receipts), `AInstein` (confidence is not provenance), and `AinsteinInsideTransformerResidualStream` (the measuring apparatus itself became an experimental variable).
+
+The Anthropic **J-space / Jacobian-lens** result is recorded as an external comparison, not a genealogy edge. J-space asks which residual-stream directions are verbalizable, broadcast and causally load-bearing inside a forward pass, and it can write/swap those workspace coordinates. AdaptiveObserverCache asks a different question: what small state should persist **between reads** so that the same frozen historical field is interrogated differently later? In shorthand: J-space is a candidate *workspace content/control surface*; AdaptiveObserverCache is a *persistent policy for how memory is observed*. The two could eventually compose, but the current repository has not tested that bridge.
+
 ## Documentary confidence and empirical evidence
 
 **Lineage / interpretation confidence** asks whether the corpus supports an ancestry edge or a curated reading of a repository. An explicit README statement can therefore justify a high-confidence inheritance edge even when the scientific claim itself is still weak, mixed, or untested.
@@ -59,7 +67,7 @@ Gate 0.7d is encoded as empirical evidence rather than a metaphor. Reversing the
 
 `data/evidence.json` stores those evidence objects without collapsing them into a universal score. Evidence records may be `supports`, `contradicts`, `mixed`, or `inconclusive`. Missing evidence records mean only that the archaeology layer has not encoded the experiment yet; they do not imply that the source repository has no experiments.
 
-The ledger deliberately mixes positive, mixed, null and confounded results. Current audited examples include `GeometricNeuronV24`, `ReadWrite`, `LentoOrava`, `GrowingAnttisNeuron`, `Operaattori`, `ActiveVectorNN`, `NewMachine`, `WorldModel`, `PhaseStigmergy`, `FusionMachine`, `Sihti`, `SighImageFactorization`, and `WhatToLookAt`.
+The ledger deliberately mixes positive, mixed, null and confounded results. Current audited examples include `GeometricNeuronV24`, `ReadWrite`, `LentoOrava`, `GrowingAnttisNeuron`, `Operaattori`, `ActiveVectorNN`, `NewMachine`, `WorldModel`, `PhaseStigmergy`, `FusionMachine`, `Sihti`, `SighImageFactorization`, `WhatToLookAt`, and `AdaptiveObserverCache`.
 
 ## Motif evidence
 

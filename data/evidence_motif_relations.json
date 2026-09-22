@@ -142,5 +142,16 @@
   "ainstein-transformer-gate07d-instrument-invariance": {
     "observer-participates-in-dynamics": "supports",
     "measurement-receipt-validity": "supports"
+  },
+  "aoc-gate2-pretrained-kv-observer": {
+    "observer-participates-in-dynamics": "supports",
+    "measurement-receipt-validity": "supports"
+  },
+  "aoc-gate7-history-continuity": {
+    "observer-participates-in-dynamics": "supports",
+    "measurement-receipt-validity": "supports",
+    "bounded-observation": "supports",
+    "information-needs-an-observable": "supports",
+    "provenance": "supports"
   }
 }

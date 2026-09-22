@@ -202,5 +202,9 @@
   {
     "path": "observer-in-the-loop.json",
     "enabled": true
+  },
+  {
+    "path": "adaptive-observer-cache.json",
+    "enabled": true
   }
 ]
