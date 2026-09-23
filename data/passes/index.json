@@ -206,5 +206,9 @@
   {
     "path": "adaptive-observer-cache.json",
     "enabled": true
+  },
+  {
+    "path": "eaton.json",
+    "enabled": true
   }
 ]
