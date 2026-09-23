@@ -58,11 +58,11 @@
     "name": "AdaptiveObserverCache",
     "url": "https://github.com/anttiluode/AdaptiveObserverCache",
     "default_branch": "main",
-    "size": 312,
+    "size": 385,
     "visibility": "public",
     "description": "KV cache that adapts. Sol thinking repo. ",
     "created_at": "2026-09-21T17:20:21Z",
-    "updated_at": "2026-09-23T03:03:11Z",
+    "updated_at": "2026-09-23T06:24:26Z",
     "inventory_status": "reviewed"
   },
   {
@@ -1246,11 +1246,11 @@
     "name": "EATON",
     "url": "https://github.com/anttiluode/EATON",
     "default_branch": "main",
-    "size": 85,
+    "size": 102,
     "visibility": "public",
     "description": "Event-Addressed Transient Operator Networks. Sol thinking repo. ",
     "created_at": "2026-09-23T03:39:13Z",
-    "updated_at": "2026-09-23T04:17:57Z",
+    "updated_at": "2026-09-23T10:56:06Z",
     "inventory_status": "reviewed"
   },
   {
@@ -1686,11 +1686,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 961,
+    "size": 1034,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-09-23T04:40:48Z",
+    "updated_at": "2026-09-23T13:03:29Z",
     "inventory_status": "unread"
   },
   {
@@ -3083,7 +3083,7 @@
     "name": "PingToWord",
     "url": "https://github.com/anttiluode/PingToWord",
     "default_branch": "main",
-    "size": 0,
+    "size": 285,
     "visibility": "public",
     "description": "A ping becomes a word; then take it apart again. Opus 5.5 repo",
     "created_at": "2026-09-23T11:55:43Z",
