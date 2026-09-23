@@ -210,5 +210,9 @@
   {
     "path": "eaton.json",
     "enabled": true
+  },
+  {
+    "path": "probe-operator-tomography.json",
+    "enabled": true
   }
 ]

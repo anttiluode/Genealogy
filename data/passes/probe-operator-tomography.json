@@ -1,0 +1,145 @@
+{
+  "id": "probe-operator-tomography",
+  "title": "Probe-defined operator coordinates: from hidden state to gauge-aware tomography",
+  "summary": "This pass joins an older system-identification thread to three September 23 experiments. HeadAsResonator supplied a measured known-input/observed-output transfer-function precedent; ReadWrite later made state-dependent response to a known intervention an explicit observability tool. SilentPing asks whether a fixed neutral probe can expose resident information that is weak or invisible at rest. PingToWord uses classical source-filter speech as a known-answer calibration showing that identity can live in an ordered operator trajectory rather than in the source. ResidentOperatorTomography then adds the missing identifiability constraint: a computation coordinate is meaningful only relative to a declared gauge group, so a valid grammar must ignore internal reparameterizations that preserve the computation while remaining sensitive to genuinely different factorizations.",
+  "order": 290,
+  "reviewed_at": "2026-09-23",
+  "nodes": [
+    {
+      "id": "SilentPing",
+      "url": "https://github.com/anttiluode/SilentPing",
+      "family": "operator-response",
+      "status": "ledger",
+      "claim": "Tests whether a fixed neutral probe can read resident state that is poorly decodable from spontaneous output, using a short-term facilitation/depression calibration substrate and a cable neuron with a silent resident gain tag.",
+      "survived": "The frozen 600-trial, four-item runs show the intended probe/read mechanism in both constructed substrates. STF rises from rest 0.265 to ping 0.805 and returns to 0.270 after state reset; the cable rises from rest 0.250 to ping 0.835 and returns to 0.260 after reset. The stronger transplant control moves only the resident state and makes the ping report the donor label at 0.733 (STF) and 0.840 (cable), separating state readout from the trial's visible history.",
+      "killed": "This is a known-answer reproduction, not evidence that cortex uses either constructed substrate. Parameters were tuned, and 'silent' is observer- and drive-dependent: cable state leaks to a variance decoder around 0.35 and background activity acts as many weak incoherent pings; in STF the ping reads the combined facilitation/depression state rather than facilitation alone.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/SilentPing/blob/main/README.md",
+      "tags": [
+        "active-probing",
+        "resident-state",
+        "activity-silent",
+        "state-transplant",
+        "impulse-response",
+        "observability",
+        "claim-boundary"
+      ],
+      "era": "Probe-defined hidden state",
+      "era_order": 35
+    },
+    {
+      "id": "PingToWord",
+      "url": "https://github.com/anttiluode/PingToWord",
+      "family": "operator-response",
+      "status": "ledger",
+      "claim": "Uses a time-varying source-filter speech model as a known-answer calibration for the idea that an ordered transfer/operator trajectory can carry identity while the driving source changes, then asks what endpoint-only versus residual-logged observation can identify.",
+      "survived": "Across four vowel-glide words, the recovered filter trajectory decodes the word at 1.00 when trained on pinged speech and tested on held-out pings, whisper noise, or doubled pitch; source pitch alone stays near chance. Destroying frame order drops the we-versus-you reverse-trajectory contrast to 0.50. LPC recovers formants within roughly 4-26 Hz and every source ping with F1 1.00. When per-stage residuals are logged, telescoping reconstructs each intermediate to about 2e-16 and exposes known resonator/tanh stages hidden from output-only analysis.",
+      "killed": "The source-filter, LPC and inverse-filter pieces are classical calibration rather than a novel speech result. Output-only source/filter separation retains a gain gauge: residual energy still decodes the word at about 0.92-0.97. Stage identification also relies on known candidate model classes, and telescoping reconstruction is an identity rather than evidence that arbitrary hidden operators are uniquely recoverable.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/PingToWord/blob/main/README.md",
+      "tags": [
+        "source-filter",
+        "operator-trajectory",
+        "temporal-order",
+        "residuals",
+        "system-identification",
+        "gauge-ambiguity",
+        "known-answer"
+      ],
+      "era": "Operator trajectory as coordinate",
+      "era_order": 36
+    },
+    {
+      "id": "ResidentOperatorTomography",
+      "url": "https://github.com/anttiluode/ResidentOperatorTomography",
+      "family": "operator-response",
+      "status": "ledger",
+      "claim": "Combines logged residual trajectories with local Jacobian probes and asks for a computation grammar that is invariant under internal reparameterizations which preserve the computation, yet sensitive to genuinely different factorizations.",
+      "survived": "The gauge test separates representation from computation in the d=8 toy. Raw Jacobians, stage eigenvalues and singular values fail under gauges larger than their allowed symmetry, while the general-gauge invariant descriptor (rank plus a Jacobian-pair nonlinearity index) stays within about 1e-8 to 4e-8 across random invertible reparameterizations. A distilled same-endpoint chain with a genuinely different nonlinear factorization has invariant grammar distance 1.50 while a gauged copy of the original is only 3.7e-8 away. Held-out probe directions are predicted, and a residual/shared-state architecture shrinks the gauge so per-stage eigenvalues become invariant again.",
+      "killed": "This is still a toy d=8 known-stage-boundary experiment with stage families known to the experimenter. The fully general gauge leaves a deliberately coarse grammar, the nonlinearity coordinate depends on the traffic distribution and amplitude, rank-deficient pencil assumptions need care, and full-rank probing would be expensive at transformer residual-stream scale. It does not yet show that a learned network yields a stable human-readable algorithm.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/ResidentOperatorTomography/blob/main/README.md",
+      "tags": [
+        "jacobian",
+        "jvp",
+        "operator-tomography",
+        "computation-coordinate",
+        "gauge-invariance",
+        "residual-stream",
+        "factorization",
+        "held-out-probes"
+      ],
+      "era": "Gauge-aware operator tomography",
+      "era_order": 37
+    }
+  ],
+  "edges": [
+    {
+      "source": "HeadAsResonator",
+      "target": "PingToWord",
+      "type": "converges",
+      "confidence": "high",
+      "why": "HeadAsResonator is an older concrete system-identification case: known speech and observed electrode voltage identify a transfer function that can be inverted. PingToWord uses a deliberately known source-filter system to ask the same input/operator/output question with a moving transfer trajectory and explicit source swaps.",
+      "evidence": "https://github.com/anttiluode/PingToWord/blob/main/README.md"
+    },
+    {
+      "source": "ReadWrite",
+      "target": "SilentPing",
+      "type": "converges",
+      "confidence": "high",
+      "why": "ReadWrite established the synthetic observability principle that a known state-dependent intervention can separate states a passive read cannot. SilentPing isolates the same question as a fixed neutral impulse and adds reset, variance and resident-state transplant controls.",
+      "evidence": "https://github.com/anttiluode/SilentPing/blob/main/README.md"
+    },
+    {
+      "source": "OperatorTime",
+      "target": "SilentPing",
+      "type": "converges",
+      "confidence": "high",
+      "why": "OperatorTime makes resident history part of the effective operator available now. SilentPing measures that idea operationally: the same probe is transformed differently because a different resident state is present.",
+      "evidence": "https://github.com/anttiluode/SilentPing/blob/main/README.md"
+    },
+    {
+      "source": "SilentPing",
+      "target": "ResidentOperatorTomography",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "SilentPing shows that a matched response can reveal resident state but only under a chosen observer/probe. ResidentOperatorTomography generalizes the readout from one probe response to a local operator sampled by multiple held-out perturbation directions.",
+      "evidence": "https://github.com/anttiluode/ResidentOperatorTomography/blob/main/README.md"
+    },
+    {
+      "source": "PingToWord",
+      "target": "ResidentOperatorTomography",
+      "type": "converges",
+      "confidence": "high",
+      "why": "PingToWord exposes both sides of the tomography problem: ordered operator trajectories can survive source swaps, while endpoint-only chains have factorization/gain ambiguity and residual logs reveal intermediate actions. ResidentOperatorTomography adds the missing invariance rule for deciding which differences count as computation rather than basis choice.",
+      "evidence": "https://github.com/anttiluode/ResidentOperatorTomography/blob/main/README.md"
+    },
+    {
+      "source": "EATON",
+      "target": "ResidentOperatorTomography",
+      "type": "converges",
+      "confidence": "high",
+      "why": "EATON reframed computation as transient state-conditioned operators and then began clustering local response behavior rather than raw activation. ResidentOperatorTomography attacks the identifiability problem that follows: a computation coordinate must ignore representation gauges that leave the computation unchanged.",
+      "evidence": "https://github.com/anttiluode/ResidentOperatorTomography/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "probe-defined-operator-coordinate",
+      "title": "A computation coordinate is a response equivalence class, modulo the allowed gauge",
+      "description": "Across measured transfer functions, active read/write probes, resident-state pings, source-filter trajectories and Jacobian tomography, the recurring object is not merely where an activation vector sits. A known perturbation asks what transformation is available here; several probes estimate a local response operator. States may be grouped when their relevant transfer behavior agrees, but only after declaring the gauge group: representation changes the observer is allowed not to know must not create a new computational label.",
+      "nodes": [
+        "HeadAsResonator",
+        "ReadWrite",
+        "OperatorTime",
+        "EATON",
+        "SilentPing",
+        "PingToWord",
+        "ResidentOperatorTomography"
+      ]
+    }
+  ]
+}

@@ -187,5 +187,14 @@
   },
   "eaton-v0-gating-demo": {
     "transient-operator-handoff": "supports"
+  },
+  "silent-ping-v0": {
+    "probe-defined-operator-coordinate": "supports"
+  },
+  "ping-to-word-v0": {
+    "probe-defined-operator-coordinate": "supports"
+  },
+  "resident-operator-tomography-v0": {
+    "probe-defined-operator-coordinate": "supports"
   }
 }
