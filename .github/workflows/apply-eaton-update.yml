@@ -1,0 +1,38 @@
+name: Apply EATON genealogy update
+
+on:
+  push:
+    branches: ["add-eaton-handoff-demo"]
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: add-eaton-handoff-demo
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Apply one-shot curated update
+        run: python scripts/apply_eaton_genealogy_update.py
+      - name: Validate generated atlas
+        run: python scripts/validate_data.py
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+      - name: Commit generated update
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md index.html data/evidence.json data/evidence_motif_relations.json data/questions.json data/repos.json data/passes/adaptive-observer-cache.json
+          if git diff --cached --quiet; then
+            echo "No generated changes."
+            exit 0
+          fi
+          git commit -m "Update Genealogy for EATON and AOC first-ask result"
+          git push origin HEAD:add-eaton-handoff-demo
