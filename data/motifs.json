@@ -112,7 +112,8 @@
       "GrowingAnttisNeuron",
       "Sihti",
       "SighImageFactorization",
-      "RegionalAttractorExplorer"
+      "RegionalAttractorExplorer",
+      "AdaptiveObserverCache"
     ]
   },
   {
@@ -187,6 +188,20 @@
       "AInstein",
       "AinsteinInsideTransformerResidualStream",
       "AdaptiveObserverCache"
+    ]
+  },
+  {
+    "id": "transient-operator-handoff",
+    "title": "An event can invoke an operator whose residue outlives its expression",
+    "description": "Across the resident-machine line, small addressed events act on richer state already present at the destination. EATON isolates a scheduling version of that motif: invoke a local operator, let it write resident state, cross the useful boundary, then release it before a different operator consumes the residue. v0 is only a constructed gating demonstration because its coefficients force the tonic overwrite; AdaptiveObserverCache supplies the harder open case in a frozen pretrained transformer, where local decision control survives but continuation control can still fail.",
+    "nodes": [
+      "ActiveVectorNN",
+      "SimpleNeuron",
+      "NSSN2",
+      "FrequencyAddressedNonlinearModalCell",
+      "OperatorTime",
+      "AdaptiveObserverCache",
+      "EATON"
     ]
   }
 ]

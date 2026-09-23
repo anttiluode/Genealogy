@@ -1,9 +1,9 @@
 {
   "id": "adaptive-observer-cache",
   "title": "AdaptiveObserverCache: persistent observer state changes how frozen memory is read",
-  "summary": "AdaptiveObserverCache now reaches a real two-timescale Qwen system. The earlier gates established that persistent observer state can change frozen-memory retrieval, while Gate 3 exposed slot/order confounding and Gates 4–7 rebuilt durable provenance/current-address binding. The Qwen branch then found a second boundary: geometry-steerable heads need not be downstream-causal. Causally selected frozen heads produced a real valve/sensor language switch, but held-out transfer passed the graded likelihood direction on 4/4 conflicts while only 2/4 generated answers fully switched. An order-only attacker isolated a very large first-record prior yet found nearly identical A-relative observer slopes under AB and BA order (7.91 versus 8.18), so the frozen effect is not merely a slot coordinate. The live harness now keeps one DynamicCache growing across turns and a separate evidence-derived observer state outside the prompt; the first successful second turn grew 131→160 tokens with old source rows fixed and byte-stable while an external B receipt changed m to -0.664. Attention moved strongly toward B, but generation stayed on A, leaving temporal-distance versus control-strength as the next clean discriminator.",
+  "summary": "AdaptiveObserverCache now has a corrected first-ask distance result. The earlier visible-filler sweep is retained as a confounded re-ask/trajectory control: its anchor already contained Qwen's first valve answer and the same question was asked again. The new harness anchors system+sources only, withholds the first question, and advances cache position using unreadable masked spacers. At distance 0, m=-1 genuinely flips the complete valve/sensor candidate winner to sensor (A-minus-B margin -0.28697) and the matched decision token to -0.75. At +256, neutral remains essentially unchanged (+11.549 versus +11.449), closing the earlier filler-landscape confound, and the matched decision token still flips more strongly toward sensor (-1.75); however the complete sensor sentence loses by +0.521 A-minus-B. The current boundary is therefore local decision control versus continuation control, not simple positional fade. The next discriminator is a tonic-versus-phasic tail test: steer through the sensor choice, then release the observer and compare the tail with tonic and neutral forced-B scoring.",
   "order": 270,
-  "reviewed_at": "2026-09-22",
+  "reviewed_at": "2026-09-23",
   "nodes": [
     {
       "id": "AdaptiveObserverCache",
@@ -11,8 +11,8 @@
       "family": "transformer-observer",
       "status": "active",
       "claim": "Tests whether a frozen transformer can carry a persistent observer/evidence state outside the prompt and a genuinely growing KV cache, so external receipts alter how unchanged historical sources are read later without rewriting model weights or old source K/V.",
-      "survived": "DistilGPT2 Gates 2–7 establish persistent retrieval control, expose and then factor slot/order from provenance identity, and infer current identity from history. On Qwen3-8B, causally selected frozen heads produced a natural-language valve/sensor switch. Held-out transfer then moved complete A-vs-B sequence likelihood in the intended direction on 4/4 unrelated conflicts, with 2/4 full generation switches and 2/2 reversed-order switches. The order-only attacker found nearly identical observer slopes under AB and BA physical order (7.9095 vs 8.1761; ratio 1.034) despite the unmodified model's ±10.8 first-record prior. The live cache harness then completed a real second turn: cache/history grew 131→160 tokens, original source spans remained A=[45,62), B=[72,87), cache integrity stayed true, and external B evidence changed anchored trust to -0.664 while selected-head target mass became 0.2532 vs 0.0362 for A.",
-      "killed": "Several stronger stories failed. Geometry steering alone did not reliably change Qwen language; causal head selection was required. The frozen Qwen plan did not meet the preregistered strong-transfer gate (2/4 held-out generation switches, not >=3/4), so the current result is a graded directional control rather than a guaranteed binary switch. The first order-attacker verdict code also overstated the result because BA likelihood crossed at m=+1 while greedy generation did not; the code now reports that case as likelihood-only identity behavior. In the first successful live second turn, m=-0.664 moved attention strongly toward B but the answer remained valve/A, so robust language-level control across increasing cache distance is not established.",
+      "survived": "The DistilGPT2 Gates 2–7 still establish persistent retrieval control and explicit provenance/current-address rebinding. On Qwen3-8B, causally selected frozen heads produce a real first-ask valve/sensor switch. The corrected first-ask distance harness removes the prior-answer/re-ask confound: with a 93-token source-only anchor, distance 0 at m=-1 flips the full summed sequence to B (-0.28697 A-minus-B) and the matched decision token to -0.75. After exactly 256 masked unreadable positions, source-cache integrity remains true, neutral full-sequence preference barely changes (+11.4495 to +11.5491), and the matched valve/sensor token still flips toward B even more strongly (-1.75). Thus local causal control survives the tested masked positional age.",
+      "killed": "Several stronger stories remain dead. Geometry steering alone is not enough; causal head selection is required. The held-out strong generation-transfer gate failed. The earlier visible-filler distance sweep did not isolate distance because it re-asked a question after Qwen's closed first answer and changed readable conversational state. The corrected first-ask run also kills a simple 'local control implies whole continuation control' story: at +256, m=-1 selects sensor at the matched decision token but the complete B sentence still loses by +0.52131 A-minus-B. Whether that tail loss comes from positional copying difficulty or from leaving the observer active too long is not yet known.",
       "usefulness": "scientific",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/AdaptiveObserverCache/blob/main/README.md",
@@ -31,7 +31,11 @@
         "growing-kv-cache",
         "evidence-ledger",
         "causal-head-selection",
-        "dose-response"
+        "dose-response",
+        "first-ask",
+        "masked-distance",
+        "local-vs-sequence-control",
+        "phasic-control-open"
       ],
       "era": "Adaptive observer / dynamic memory",
       "era_order": 33
