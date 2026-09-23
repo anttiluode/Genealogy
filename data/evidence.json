@@ -203,7 +203,7 @@
     "metrics": [
       {
         "name": "median first query after rapid switch MSE",
-        "treatment": 0.000015198,
+        "treatment": 1.5198e-05,
         "control": 0.016539331,
         "comparison": "FusionMachine vs generic RNN"
       },
@@ -215,7 +215,7 @@
       },
       {
         "name": "median training-query MSE",
-        "treatment": 0.000011991,
+        "treatment": 1.1991e-05,
         "control": 0.000383249,
         "comparison": "FusionMachine vs generic RNN"
       },
@@ -2337,7 +2337,8 @@
     "motifs": [
       "observer-participates-in-dynamics",
       "provenance",
-      "measurement-receipt-validity"
+      "measurement-receipt-validity",
+      "negative-results"
     ],
     "sample": {
       "unit": "held-out conflict",
@@ -2399,7 +2400,8 @@
     "motifs": [
       "observer-participates-in-dynamics",
       "provenance",
-      "measurement-receipt-validity"
+      "measurement-receipt-validity",
+      "negative-results"
     ],
     "sample": {
       "unit": "physical source order",
@@ -2461,7 +2463,8 @@
       "observer-participates-in-dynamics",
       "measurement-receipt-validity",
       "provenance",
-      "persistent-state"
+      "persistent-state",
+      "negative-results"
     ],
     "sample": {
       "unit": "live second conversational turn",
@@ -2530,5 +2533,145 @@
       "The next discriminator is a matched distance-by-trust sweep on the same growing cache"
     ],
     "source": "https://github.com/anttiluode/AdaptiveObserverCache/blob/main/RESULTS_QWEN_LIVE_CACHE.md"
+  },
+  {
+    "id": "aoc-qwen-first-ask-masked-distance",
+    "node": "AdaptiveObserverCache",
+    "claim": "The corrected first-ask Qwen experiment isolates a split boundary: masked positional age leaves the neutral first-ask landscape almost unchanged and the observer still flips the matched valve-versus-sensor decision token at +256 positions, but maximum B trust no longer flips the complete candidate-sequence winner.",
+    "design": "Build a source-only Qwen3-8B cache with no prior question or assistant answer, freeze the four previously selected causal heads, fork the cache at distance 0 and after exactly 256 unreadable masked spacer rows, then ask the question for the first time. At m=-1,0,+1 score complete candidate-sequence summed log probability and a matched first divergent token (valve versus sensor). Stop distance interpretation unless the full-sequence winner flip passes at distance 0.",
+    "result": "mixed",
+    "motifs": [
+      "observer-participates-in-dynamics",
+      "measurement-receipt-validity",
+      "persistent-state",
+      "transient-operator-handoff",
+      "negative-results"
+    ],
+    "sample": {
+      "unit": "masked first-ask distance checkpoint",
+      "count": 2
+    },
+    "metrics": [
+      {
+        "name": "distance-0 neutral summed margin A-minus-B",
+        "value": 11.44948466937052
+      },
+      {
+        "name": "distance-0 m=-1 summed margin A-minus-B",
+        "value": -0.2869706675410342
+      },
+      {
+        "name": "distance-0 m=-1 matched token gap A-minus-B",
+        "value": -0.7500000298023224
+      },
+      {
+        "name": "distance-256 neutral summed margin A-minus-B",
+        "value": 11.549099114722253
+      },
+      {
+        "name": "distance-256 m=-1 summed margin A-minus-B",
+        "value": 0.5213137194512569
+      },
+      {
+        "name": "distance-256 m=-1 matched token gap A-minus-B",
+        "value": -1.75
+      },
+      {
+        "name": "distance-0 full sequence winner flip",
+        "value": 1
+      },
+      {
+        "name": "distance-256 full sequence winner flip",
+        "value": 0
+      },
+      {
+        "name": "distance-256 matched-token winner flip",
+        "value": 1
+      },
+      {
+        "name": "source-cache integrity",
+        "value": 1
+      }
+    ],
+    "controls": [
+      "The canonical anchor contains system plus sources only: question_was_in_anchor=false and prior_assistant_answer_in_anchor=false",
+      "Exactly 256 masked spacer rows advance cache/RoPE position while remaining unreadable to later queries",
+      "Same frozen Qwen weights, source spans and four-head observer plan at both distances",
+      "Complete summed candidate likelihood is reported alongside a matched decision-token diagnostic",
+      "Source K integrity remains true and no prior assistant answer can create a re-ask policy"
+    ],
+    "replication": "One valve-versus-sensor calibration conflict at two masked positional distances with three trust states each",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "This is one synthetic conflict with a saturated neutral preference, not a general long-context benchmark",
+      "The matched local decision moves farther toward sensor at +256 while the complete sensor sentence loses; that does not by itself identify whether the tail failure is source-detail copying or continued observer interference",
+      "A phasic tail control has not yet been run: observer through the sensor decision then m=0 for the tail versus tonic observer and neutral forced-B"
+    ],
+    "source": "https://github.com/anttiluode/AdaptiveObserverCache/blob/main/results/qwen_observer_first_ask_distance.json"
+  },
+  {
+    "id": "eaton-v0-gating-demo",
+    "node": "EATON",
+    "claim": "The frozen EATON v0 harness correctly implements a constructed gating demonstration: releasing a context-writing operator before the payload stage preserves resident context, while keeping that same writer active overwrites the state needed by the later operator.",
+    "design": "Freeze a three-tick resident-state machine before running it. All arms receive the same context and payload events and are identical through the early decision. Transient releases operator A after the context write; tonic leaves A active during the payload tick; reset restores resident memory to the episode's initial value at handoff. Run 64 seeds with 256 balanced episodes each and fixed pass thresholds.",
+    "result": "supports",
+    "motifs": [
+      "transient-operator-handoff"
+    ],
+    "sample": {
+      "unit": "seed",
+      "count": 64
+    },
+    "metrics": [
+      {
+        "name": "median early accuracy transient",
+        "value": 1.0
+      },
+      {
+        "name": "median early accuracy tonic",
+        "value": 1.0
+      },
+      {
+        "name": "median early accuracy reset",
+        "value": 1.0
+      },
+      {
+        "name": "median final accuracy transient",
+        "value": 1.0
+      },
+      {
+        "name": "median final accuracy tonic",
+        "value": 0.5
+      },
+      {
+        "name": "median final accuracy reset",
+        "value": 0.501953125
+      },
+      {
+        "name": "transient seed wins versus tonic",
+        "value": 64
+      },
+      {
+        "name": "transient seed wins versus reset",
+        "value": 64
+      }
+    ],
+    "controls": [
+      "Pass rule, coefficients, noise, seed count and event schedule were frozen before the canonical result",
+      "All arms replay the same sampled world tape and have identical early-stage states and event budgets",
+      "Tonic A and payload operator B write disjoint coordinates on the simultaneous payload tick, so Python update order is not the witness",
+      "Reset differs from transient only at resident memory handoff"
+    ],
+    "replication": "64 canonical seeds; committed receipt is regression-checked against a fresh recomputation on Python 3.11 and 3.12",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "The v0 outcome is analytically implied by the frozen coefficients: tonic A gives the new payload a larger contribution than retained context, so memory takes payload sign and the balanced final task collapses to chance",
+      "This is a constructed demonstration of gating, not evidence that transient operator lifetime is a newly discovered or generally superior principle",
+      "The overwrite problem has a classical antecedent in LSTM-style input gating; EATON v0 should be read as a harness validation and explicit resident-operator formulation",
+      "The non-hand-designed Qwen question remains open: whether phasic observer control can recover the tail after the local sensor decision at +256 masked positions"
+    ],
+    "source": "https://github.com/anttiluode/EATON/blob/main/results/v0_handoff.json"
   }
 ]

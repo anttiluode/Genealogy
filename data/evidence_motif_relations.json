@@ -177,5 +177,15 @@
     "provenance": "supports",
     "persistent-state": "supports",
     "negative-results": "documents"
+  },
+  "aoc-qwen-first-ask-masked-distance": {
+    "observer-participates-in-dynamics": "supports",
+    "measurement-receipt-validity": "supports",
+    "persistent-state": "supports",
+    "transient-operator-handoff": "documents",
+    "negative-results": "documents"
+  },
+  "eaton-v0-gating-demo": {
+    "transient-operator-handoff": "supports"
   }
 }

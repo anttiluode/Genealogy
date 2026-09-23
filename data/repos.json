@@ -1243,6 +1243,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "EATON",
+    "url": "https://github.com/anttiluode/EATON",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Event-Addressed Transient Operator Networks. Sol thinking repo. ",
+    "created_at": "2026-09-23T03:39:13Z",
+    "updated_at": "2026-09-23T04:17:57Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "EEG2AUDIO",
     "url": "https://github.com/anttiluode/EEG2AUDIO",
     "default_branch": "main",

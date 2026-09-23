@@ -440,53 +440,56 @@
   },
   {
     "id": "aoc-live-distance-control",
-    "title": "Does the observer keep semantic control as a trusted source recedes inside one growing KV cache?",
-    "state": "open",
+    "title": "Why does first-ask observer control survive at the local decision but fail across the +256-token continuation?",
+    "state": "partially-resolved",
     "motifs": [
       "observer-participates-in-dynamics",
       "measurement-receipt-validity",
       "provenance",
-      "persistent-state"
+      "persistent-state",
+      "transient-operator-handoff"
     ],
     "evidence": [
       "aoc-qwen-causal-language-switch",
       "aoc-qwen-heldout-graded-transfer",
       "aoc-qwen-order-identity-likelihood",
-      "aoc-qwen-live-growing-cache"
+      "aoc-qwen-live-growing-cache",
+      "aoc-qwen-first-ask-masked-distance"
     ],
     "competing_explanations": [
-      "The locally reconstructed observer remains an identity-relative control surface at long temporal distances; the first live second-turn non-switch happened because m=-0.664 stayed below the already-observed decoding threshold.",
-      "The observer's causal leverage decays as the source recedes in a real growing RoPE cache, so attention can still be redirected locally while downstream language control fades with distance.",
-      "The effect is strongly content/head specific rather than distance limited; a fixed four-head plan gives graded movement but only some conflicts cross the final autoregressive commitment boundary."
+      "The observer is useful mainly at a local commitment boundary: it can select sensor over valve, but keeping the same query intervention active through later tokens perturbs a different copying/follow-through computation and erases the sequence-level win.",
+      "The observer is not the main tail problem; copying older source-B details such as K and drifted becomes harder with positional age, so the same locally correct sensor choice still yields a weaker full B continuation even if the intervention is released.",
+      "Both effects contribute: positional age changes the downstream basin while tonic observer expression adds a second token-specific disturbance, so phasic release will help but will not fully restore the distance-0 sequence margin."
     ],
     "known": [
-      "On the calibration conflict, causally selected frozen heads switch free generation at m=-1 while neutral remains on A.",
-      "Across four unrelated conflicts the same frozen plan moves full candidate-sequence likelihood in the intended A-relative direction in 4/4 cases, but only 2/4 fully switch generation.",
-      "Reversing physical source order leaves the observer slope almost unchanged (7.91 versus 8.18) even though the unmodified model has an approximately ±10.8 first-record prior.",
-      "The first successful live second turn grows one DynamicCache from 131 to 160 tokens, keeps source spans fixed at A=[45,62) and B=[72,87), preserves source-cache integrity, and moves selected-head attention toward B at m=-0.664, but the generated sentence remains on A."
+      "The corrected source-only first-ask anchor is 93 tokens and contains neither the question nor a prior assistant answer; the withheld first-question suffix is 27 tokens.",
+      "At distance 0, m=-1 flips the complete sequence to B with A-minus-B summed margin -0.28697 and flips the matched valve/sensor token gap to -0.75; m=+1 favors A, so both first-ask gates pass.",
+      "After exactly 256 unreadable masked spacer positions, neutral remains almost unchanged (+11.5491 versus +11.4495 A-minus-B), so the large neutral flip in the earlier visible-filler sweep came from readable intervening conversation rather than masked positional age.",
+      "At +256, m=-1 still moves the matched valve/sensor decision farther toward B (token gap -1.75), but the full B sentence loses to A by +0.52131, so local control survives while complete-sequence control fails on this prompt."
     ],
-    "missing_discriminator": "A matched distance-by-trust experiment on one continuously growing cache. Trust magnitude must be held fixed across distance so a missing generation switch cannot be attributed to weaker m.",
+    "missing_discriminator": "A matched tonic-versus-phasic tail test at +256: keep the observer on throughout, turn it off immediately after the sensor decision token, and compare both with neutral scoring of the forced-B continuation. This separates observer-induced tail damage from distance/source-copy difficulty.",
     "candidate_experiment": {
-      "design": "Prefill one A/B conflict once, freeze the four selected heads, and grow the same live cache with semantically neutral filler turns to several distances such as 0, 128, 512, 1024 and 2048 added tokens. At every checkpoint, without rebuilding the cache, measure complete A-vs-B candidate-sequence likelihood and optionally greedy generation for m=-1,-0.75,-0.5,0,+0.5,+0.75,+1. Record source-key digest integrity, target/other attention mass, query-update ratio and capped fraction. Repeat with AB and BA physical source order if compute allows.",
-      "cost": "medium-to-high on the current 8B disk-offloaded setup; one model load, one continuously growing cache, roughly 5 distance checkpoints × 7 trust probes",
+      "design": "Reuse the corrected source-only first-ask +256 masked checkpoint and frozen four-head plan. Score the sensor-B candidate under three matched arms: (1) tonic m=-1 for every candidate token, (2) phasic m=-1 only through the first divergent sensor token and m=0 for the remaining tail, and (3) neutral m=0 throughout while the same B tokens are teacher-forced. Report summed B log-probability, tokenwise tail deltas, source-cache integrity and the A/B sequence margin; do not change the cache, prompt, head plan or candidate text across arms.",
+      "cost": "low-to-medium relative to the completed 8B sweep: one +256 checkpoint and three forced-scoring arms on the already-defined valve/sensor conflict",
       "outcomes": [
         {
-          "if": "The A-minus-B dose-response curve remains similar across distance while source K rows stay byte-stable",
-          "then": "The persistent observer has earned a genuine long-context control claim; the live m=-0.664 non-switch was primarily a threshold-strength issue."
+          "if": "Phasic release materially improves the B tail and restores or strongly narrows the full sequence margin relative to tonic, while neutral forced-B is also stronger than tonic",
+          "then": "The current observer should be treated as a boundary-local intervention: persist the intention, recompute the tangent, and pulse its expression rather than steering every downstream token."
         },
         {
-          "if": "The curve systematically flattens or shifts toward the neutral/primacy prior as distance grows despite matched m and intact source K",
-          "then": "Temporal distance is a real failure mode of the current local-tangent controller and the next mechanism must compensate for long-range causal attenuation rather than merely increase trust."
+          "if": "Phasic and tonic tails remain similarly weak while neutral forced-B is also weak at +256",
+          "then": "The dominant failure is ordinary long-distance continuation/copying or downstream basin geometry, not overlong observer expression; EATON remains only a toy gating analogy."
         },
         {
-          "if": "Distance is stable on the calibration conflict but different held-out conflicts still vary sharply",
-          "then": "The dominant boundary is task/head specificity, not cache age; causal head selection or downstream actuation must generalize before adding long-context machinery."
+          "if": "Phasic helps some tail tokens but not the complete sequence",
+          "then": "The boundary is token/head specific and the next mechanism needs an explicit release policy rather than one global on/off lifetime."
         }
       ]
     },
     "notes": [
-      "Do not use attention mass alone as an epistemic success signal: the earlier Q28 scan showed a locally steerable head whose downstream causal sign inverted.",
-      "The evidence ledger may decide what to investigate, but self/model prediction must not certify its own trust update."
+      "The visible-filler distance run is retained as a re-ask/trajectory confound control, not as evidence for positional decay or amplification.",
+      "Neutral is saturated on this prompt, so matched decision-token control and full summed sequence control must remain separate readouts.",
+      "EATON v0 does not resolve this question because its tonic failure is analytically built into the synthetic coefficients."
     ]
   }
 ]

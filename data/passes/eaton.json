@@ -1,0 +1,85 @@
+{
+  "id": "eaton",
+  "title": "EATON: event-addressed transient operator handoff",
+  "summary": "EATON isolates one narrow scheduling/gating construction from the recent resident-state line: a context-addressed operator writes useful resident state, crosses an early decision boundary, then releases before a different payload-stage operator uses that state. v0 is deliberately recorded as a constructed demonstration rather than a discovery. Under a frozen three-tick matched design, transient release gives 1.000 median final accuracy while keeping the first decision at 1.000; leaving the writer tonically active overwrites the context with the payload and gives exactly 0.500 final accuracy, while resetting resident memory gives 0.501953125. The 64/64 seed wins and matched-arm invariants validate the harness, but the outcome is analytically implied by the chosen coefficients and is closely related to ordinary input-gating logic. The open scientific value therefore moves to harder systems where coefficients were not chosen to force the result—most immediately the AdaptiveObserverCache Qwen tail test: steer the decision, then release the intervention and ask whether ordinary frozen-model dynamics recover the continuation.",
+  "order": 280,
+  "reviewed_at": "2026-09-23",
+  "nodes": [
+    {
+      "id": "EATON",
+      "url": "https://github.com/anttiluode/EATON",
+      "family": "transient-operators",
+      "status": "ledger",
+      "claim": "Builds an explicit event-addressed resident-state machine in which operator expression has a lifetime: a small event activates a local write, the result becomes resident state, and control can be released before a different downstream operator consumes that state.",
+      "survived": "The preregistered v0 harness is mechanically clean: early accuracy is 1.000 in transient, tonic and reset arms; median final accuracy is 1.000 transient, 0.500 tonic and 0.501953125 reset; transient beats each attacker on 64/64 seeds; matched event budgets and stage-1 states remain equal; and the frozen receipt reproduces on Python 3.11/3.12. This validates the intended handoff/gating construction and the test infrastructure.",
+      "killed": "v0 does not earn a general claim that transient operator lifetime is a newly discovered computational principle. Its outcome is analytically derivable from the frozen coefficients: tonic A rewrites memory with the payload strongly enough that payload sign dominates, forcing the balanced final task to chance. The construction is also conceptually close to classical input gating, including the LSTM motivation of preventing irrelevant later inputs from overwriting stored state. EATON v1 is only worth promoting if its outcome is not fixed by the task definition beforehand; the strongest immediate discriminator currently lives in frozen Qwen rather than this toy.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/EATON/blob/main/results/v0_handoff.json",
+      "tags": [
+        "gating",
+        "transient-operator",
+        "operator-lifetime",
+        "resident-state",
+        "handoff",
+        "sparse-events",
+        "phasic-control",
+        "constructed-witness",
+        "claim-boundary"
+      ],
+      "era": "Transient operator handoff",
+      "era_order": 34
+    }
+  ],
+  "edges": [
+    {
+      "source": "SimpleNeuron",
+      "target": "EATON",
+      "type": "converges",
+      "confidence": "high",
+      "why": "SimpleNeuron made the destination carry rich resident computation while a tiny routed event selects how that state is perturbed. EATON keeps that receiver-side view and adds an explicit lifetime/handoff boundary between successive operators.",
+      "evidence": "https://github.com/anttiluode/EATON/blob/main/README.md"
+    },
+    {
+      "source": "NSSN2",
+      "target": "EATON",
+      "type": "converges",
+      "confidence": "high",
+      "why": "NSSN2 already separates resident high-dimensional state from sparse travelling events in a recurrent machine. EATON extracts the timing question: when should one addressed operator stop acting so the resulting resident state can be consumed by another operator?",
+      "evidence": "https://github.com/anttiluode/EATON/blob/main/README.md"
+    },
+    {
+      "source": "FrequencyAddressedNonlinearModalCell",
+      "target": "EATON",
+      "type": "converges",
+      "confidence": "high",
+      "why": "FrequencyAddressedNonlinearModalCell turns sparse stimulation coordinates into access to a richer resident operator. EATON strips away frequency and matter details and isolates temporary expression plus handoff as the variable under test.",
+      "evidence": "https://github.com/anttiluode/EATON/blob/main/README.md"
+    },
+    {
+      "source": "OperatorTime",
+      "target": "EATON",
+      "type": "converges",
+      "confidence": "high",
+      "why": "OperatorTime frames computation as a trajectory through effective operators selected by resident history. EATON makes one temporal scheduling component explicit: operator activation can be episodic and its residue can outlive the operator that wrote it.",
+      "evidence": "https://github.com/anttiluode/EATON/blob/main/README.md"
+    },
+    {
+      "source": "AdaptiveObserverCache",
+      "target": "EATON",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The corrected first-ask Qwen distance experiment motivated EATON: local valve/sensor control survived at +256 masked positions while whole-sentence control failed. EATON turns the resulting 'steer the boundary, then release' idea into a toy gating witness; Qwen remains the non-hand-designed discriminator.",
+      "evidence": "https://github.com/anttiluode/AdaptiveObserverCache/blob/main/results/qwen_observer_first_ask_distance.json"
+    },
+    {
+      "source": "ActiveVectorNN",
+      "target": "EATON",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "ActiveVectorNN explicitly separates maintained resident state from sparse innovation events. EATON reuses that separation while asking about the duration of the operator invoked by an event rather than the communication budget itself.",
+      "evidence": "https://github.com/anttiluode/EATON/blob/main/README.md"
+    }
+  ],
+  "motifs": []
+}
