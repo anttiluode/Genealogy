@@ -1,0 +1,33 @@
+name: Apply probe/operator tomography wall update
+
+on:
+  push:
+    branches: ["add-probe-operator-tomography-line"]
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: add-probe-operator-tomography-line
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Apply curated wall update
+        run: python scripts/apply_probe_operator_tomography_update.py
+      - name: Commit generated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md index.html data
+          if git diff --cached --quiet; then
+            echo "No generated changes"
+            exit 0
+          fi
+          git commit -m "data: add probe-defined operator tomography line"
+          git push origin HEAD:add-probe-operator-tomography-line
