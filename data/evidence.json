@@ -2673,5 +2673,209 @@
       "The non-hand-designed Qwen question remains open: whether phasic observer control can recover the tail after the local sensor decision at +256 masked positions"
     ],
     "source": "https://github.com/anttiluode/EATON/blob/main/results/v0_handoff.json"
+  },
+  {
+    "id": "silent-ping-v0",
+    "node": "SilentPing",
+    "claim": "In the two constructed substrates, a fixed neutral ping reads resident item state that is weak or absent in the matched resting linear readout, and transplanting only that state transfers the decoded item.",
+    "design": "Four-item known-answer assay on two substrates (short-term facilitation/depression and a cable with a slow resident gain tag). Compare late-delay/rest readout, second-order variance attacker, neutral ping, state reset before ping, and cross-label resident-state transplant using the same ping-trained decoder.",
+    "result": "supports",
+    "motifs": [
+      "probe-defined-operator-coordinate"
+    ],
+    "sample": {
+      "unit": "trial per substrate",
+      "count": 600
+    },
+    "metrics": [
+      {
+        "name": "STF rest accuracy",
+        "value": 0.265
+      },
+      {
+        "name": "STF ping accuracy",
+        "value": 0.805
+      },
+      {
+        "name": "STF reset then ping accuracy",
+        "value": 0.27
+      },
+      {
+        "name": "STF transplant donor-label accuracy",
+        "value": 0.733
+      },
+      {
+        "name": "cable rest accuracy",
+        "value": 0.25
+      },
+      {
+        "name": "cable ping accuracy",
+        "value": 0.835
+      },
+      {
+        "name": "cable reset then ping accuracy",
+        "value": 0.26
+      },
+      {
+        "name": "cable transplant donor-label accuracy",
+        "value": 0.84
+      },
+      {
+        "name": "cable rest variance-attacker accuracy",
+        "value": 0.348
+      }
+    ],
+    "controls": [
+      "Reset the resident state immediately before the otherwise identical neutral ping",
+      "Transplant only the resident state from a different-label donor trial and score the donor label rather than the visible trial history",
+      "Rest and late-delay linear decoding test whether the item is already published without a coherent probe",
+      "Binned-variance rest/delay attacker tests whether 'silent' is only a failure of the linear decoder",
+      "Background-drive sweeps test whether ordinary traffic becomes a stream of weak incoherent probes"
+    ],
+    "replication": "600 trials per substrate with four balanced items; committed frozen results",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Known-answer reproduction: both substrates were built so resident state changes how a later input is transformed, and parameters were tuned before the frozen run",
+      "The cable is not fully silent to a second-order observer: the variance attacker reaches about 0.35",
+      "Background traffic leaks the same state progressively, so ping advantage depends on a low-drive regime",
+      "The STF ping reads the combined facilitation/depression state rather than facilitation alone",
+      "This is a synthetic mechanism/control demonstration, not evidence that human working memory uses either implementation"
+    ],
+    "source": "https://github.com/anttiluode/SilentPing/blob/main/README.md"
+  },
+  {
+    "id": "ping-to-word-v0",
+    "node": "PingToWord",
+    "claim": "In the known source-filter calibration, ordered transfer-function trajectory carries word identity across large source changes, while endpoint-only chain observation leaves factorization/gain ambiguities that intermediate residual logs remove for the tested known stage families.",
+    "design": "Generate four vowel-glide words from identical source families through a moving F1-F4 resonator cascade, recover source/filter with frame-wise LPC, train a trajectory decoder on pinged speech and test source swaps, destroy temporal order, then compare output-only versus residual-logged identification of a resonator/tanh chain.",
+    "result": "supports",
+    "motifs": [
+      "probe-defined-operator-coordinate"
+    ],
+    "sample": {
+      "unit": "word trajectory",
+      "count": 4
+    },
+    "metrics": [
+      {
+        "name": "filter-trajectory word accuracy, held-out ping source",
+        "value": 1.0
+      },
+      {
+        "name": "filter-trajectory word accuracy, whisper source",
+        "value": 1.0
+      },
+      {
+        "name": "filter-trajectory word accuracy, high-pitch source",
+        "value": 1.0
+      },
+      {
+        "name": "bag-of-frames we-vs-you accuracy",
+        "value": 0.5
+      },
+      {
+        "name": "ping recovery F1",
+        "value": 1.0
+      },
+      {
+        "name": "maximum residual-telescoping reconstruction error",
+        "value": 2e-16
+      },
+      {
+        "name": "same-endpoint linear-stage permutation relative output change",
+        "display": "~6e-15"
+      },
+      {
+        "name": "residual pitch+energy word accuracy",
+        "display": "0.92-0.97"
+      }
+    ],
+    "controls": [
+      "Replace the ping source with whisper noise and with a much higher-pitch pulse train while keeping the operator trajectory",
+      "Destroy frame order; the we/you reverse-trajectory pair then becomes chance while visiting the same state set",
+      "Use source pitch alone as a negative word decoder",
+      "Permute commuting linear stages and trade reciprocal gain between stages to expose endpoint gauge freedom",
+      "Insert a tanh between resonators to hide an upstream 500 Hz stage from output-only LPC, then log per-stage residuals"
+    ],
+    "replication": "240 training utterances plus held-out source families for four synthetic vowel-glide words; deterministic chain-identification calibration",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Parts A-C reproduce classical source-filter speech, LPC and inverse filtering rather than establishing a new speech result",
+      "The four words are deliberately easy; the informative control is trajectory order and source swap rather than ceiling accuracy",
+      "Output-only source/filter separation retains a gain gauge: residual energy still carries substantial word information",
+      "Residual logging guarantees intermediate reconstruction by telescoping; it does not uniquely identify arbitrary unknown operator families",
+      "Stage identification succeeds within known candidate classes (two-pole resonator versus memoryless tanh)"
+    ],
+    "source": "https://github.com/anttiluode/PingToWord/blob/main/README.md"
+  },
+  {
+    "id": "resident-operator-tomography-v0",
+    "node": "ResidentOperatorTomography",
+    "claim": "A local computation grammar is only meaningful relative to a declared gauge: in the tested chain, a gauge-invariant response descriptor ignores invertible internal reparameterizations while distinguishing a genuinely different nonlinear factorization with nearly the same endpoint behavior.",
+    "design": "Log residuals to recover intermediate states, estimate local Jacobian actions from probes, compare naive/Jacobian-eigenvalue/singular-value/general-gauge descriptors, then jointly test held-out probe directions, held-out source families, same-endpoint different factorization, random interface gauges, amplitude-dependent nonlinearity, and residual/shared-state gauges.",
+    "result": "supports",
+    "motifs": [
+      "probe-defined-operator-coordinate"
+    ],
+    "sample": {
+      "unit": "state point",
+      "count": 40
+    },
+    "metrics": [
+      {
+        "name": "held-out tanh probe prediction error",
+        "value": 5e-08
+      },
+      {
+        "name": "general-gauge invariant grammar distance",
+        "value": 3.5e-08
+      },
+      {
+        "name": "orthogonal-gauge invariant grammar distance",
+        "value": 1.2e-08
+      },
+      {
+        "name": "same-endpoint A-vs-B held-out R2",
+        "value": 0.9999
+      },
+      {
+        "name": "invariant grammar distance A vs different factorization B",
+        "value": 1.5
+      },
+      {
+        "name": "invariant grammar distance A vs gauged A",
+        "value": 3.7e-08
+      },
+      {
+        "name": "residual/shared-gauge eigenvalue grammar distance",
+        "value": 5.1e-08
+      },
+      {
+        "name": "per-interface gauge eigenvalue grammar distance",
+        "value": 3.79
+      }
+    ],
+    "controls": [
+      "Fit local Jacobian action on probe set P_A and predict an independent probe set P_B",
+      "Repeat on RMS-matched Gaussian, uniform and sparse heavy-tailed source families",
+      "Distill a different L-S-L-S-L factorization to the same endpoint behavior as L-L-S-L-L",
+      "Apply random orthogonal and general invertible interface gauges while fixing the endpoint",
+      "Sweep traffic amplitude through the tanh stage to test whether its local operator changes only when saturation is exercised",
+      "Compare one shared residual-stream gauge with illegal per-interface gauges that destroy residual-form structure"
+    ],
+    "replication": "d=8 toy chains, 40 sampled state points and 10 random gauges in the invariance panel",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Toy d=8 chains with stage boundaries supplied and stage families known to the experimenter",
+      "The fully general invariant grammar is deliberately coarse: full-rank linear rotations/scalings are pure gauge and collapse together",
+      "The nonlinearity index is source- and amplitude-dependent, so grammars require matched traffic for comparison",
+      "The rank-deficient generalized-eigenvalue construction assumes compatible null spaces/ranges in the tested projection case",
+      "Full-rank probing scales poorly to a 4096-dimensional transformer residual stream; JVP subspaces would be required",
+      "No learned network has yet shown a stable cross-seed computational grammar under this criterion"
+    ],
+    "source": "https://github.com/anttiluode/ResidentOperatorTomography/blob/main/README.md"
   }
 ]

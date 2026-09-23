@@ -3080,6 +3080,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "PingToWord",
+    "url": "https://github.com/anttiluode/PingToWord",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "A ping becomes a word; then take it apart again. Opus 5.5 repo",
+    "created_at": "2026-09-23T11:55:43Z",
+    "updated_at": "2026-09-23T11:56:14Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "PivotPoint",
     "url": "https://github.com/anttiluode/PivotPoint",
     "default_branch": "main",
@@ -3275,6 +3286,17 @@
     "description": "EEG tool that compares standard MNE to RMS weighted signal. 90 degree turns and coordinated signal from occipital electrodes. ",
     "created_at": "2025-08-11T06:42:53Z",
     "updated_at": "2026-09-06T04:56:25Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "ResidentOperatorTomography",
+    "url": "https://github.com/anttiluode/ResidentOperatorTomography",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Can we read how a chain computes, and not only what it outputs? Opus 5.5 repo",
+    "created_at": "2026-09-23T12:27:01Z",
+    "updated_at": "2026-09-23T12:28:22Z",
     "inventory_status": "reviewed"
   },
   {
@@ -3484,6 +3506,17 @@
     "description": "What happens when we 'purify' noise. Sol thinking repo. ",
     "created_at": "2026-09-20T14:50:11Z",
     "updated_at": "2026-09-20T14:59:27Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "SilentPing",
+    "url": "https://github.com/anttiluode/SilentPing",
+    "default_branch": "main",
+    "size": 220,
+    "visibility": "public",
+    "description": "Can a neutral ping read an item out of state that is invisible at rest? Claude 5.5 Opus. ",
+    "created_at": "2026-09-23T11:22:57Z",
+    "updated_at": "2026-09-23T11:23:20Z",
     "inventory_status": "reviewed"
   },
   {
