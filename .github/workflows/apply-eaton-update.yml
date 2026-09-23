@@ -23,6 +23,16 @@ jobs:
         run: |
           sed -i 's/"held_out": false/"held_out": False/g; s/"external_data": false/"external_data": False/g' scripts/apply_eaton_genealogy_update.py
           python scripts/apply_eaton_genealogy_update.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          path = Path('data/motifs.json')
+          motifs = json.loads(path.read_text(encoding='utf-8'))
+          motif = next(item for item in motifs if item['id'] == 'negative-results')
+          if 'AdaptiveObserverCache' not in motif['nodes']:
+              motif['nodes'].append('AdaptiveObserverCache')
+          path.write_text(json.dumps(motifs, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+          PY
       - name: Validate generated atlas
         run: python scripts/validate_data.py
       - name: Run tests
@@ -31,7 +41,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md index.html data/evidence.json data/evidence_motif_relations.json data/questions.json data/repos.json data/passes/adaptive-observer-cache.json
+          git add README.md index.html data/evidence.json data/evidence_motif_relations.json data/motifs.json data/questions.json data/repos.json data/passes/adaptive-observer-cache.json
           if git diff --cached --quiet; then
             echo "No generated changes."
             exit 0
