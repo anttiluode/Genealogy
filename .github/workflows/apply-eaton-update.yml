@@ -20,7 +20,9 @@ jobs:
         with:
           python-version: "3.12"
       - name: Apply one-shot curated update
-        run: python scripts/apply_eaton_genealogy_update.py
+        run: |
+          sed -i 's/"held_out": false/"held_out": False/g; s/"external_data": false/"external_data": False/g' scripts/apply_eaton_genealogy_update.py
+          python scripts/apply_eaton_genealogy_update.py
       - name: Validate generated atlas
         run: python scripts/validate_data.py
       - name: Run tests
