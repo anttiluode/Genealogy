@@ -1,7 +1,7 @@
 {
   "id": "temporal-control-neurobiology",
   "title": "Temporal control surfaces: anatomy, clock physics, and learned computation",
-  "summary": "September 24 brings the neuron-inspired line closer to explicit neurobiological constraints without treating the toy mechanisms as cortical identity claims. KolmeOvea puts three physically distinct control surfaces into one pyramidal-cell abstraction—apical/context, basket/timing, and chandelier/AIS publication—and its trained subfolder asks which jobs gradient descent actually assigns to them. FrequencyAndNeurons follows the basket branch upstream by removing the imposed pacemaker and testing what sets an emergent PING gamma period. GATGRILS follows the learned/instrument branch: its gauge-aware probes and causal interventions ask whether task learning discovers clean operator/admission/publication roles. TATWATASW then moves the weak apical-inference result into a learning-side test: an imposed BTSP-style plateau window writes an anticipatory predictive field, but plateau plasticity alone does not robustly write directional sequence order; imposed theta phase compression plus fast plasticity does, provided a silent dead-time interval prevents cross-cycle wrap-around from cancelling the arrow. The genealogy therefore records a fork, not a collapse: clock physics, circuit control surfaces, learning windows, and external computation tomography are adjacent questions that constrain one another but are not the same mechanism.",
+  "summary": "September 24 brings the neuron-inspired line closer to explicit neurobiological constraints without treating the toy mechanisms as cortical identity claims. KolmeOvea puts three physically distinct control surfaces into one pyramidal-cell abstraction—apical/context, basket/timing, and chandelier/AIS publication—and its trained subfolder asks which jobs gradient descent actually assigns to them. FrequencyAndNeurons follows the basket branch upstream by removing the imposed pacemaker and testing what sets an emergent PING gamma period. GATGRILS follows the learned/instrument branch: its gauge-aware probes and causal interventions ask whether task learning discovers clean operator/admission/publication roles. TATWATASW moves the weak apical-inference result into a learning-side test: a BTSP-style plateau writes an anticipatory predictive field, while rhythmic phase compression plus fast plasticity writes directional order only when dead time protects the arrow. Rytmi then closes those pieces into one measured sequence machine: plateau-shaped asymmetric fields drive emergent precession against rhythmic inhibition, STDP writes the ordered chain, and replay shows that dead time also suppresses spurious second waves under noise. TransformerToX opens a parallel engineering branch from transformers back toward resident temporal computation: Gate 0 exactly rewrites one frozen causal attention head as address and write geometry, while fixed-state temporal memories are implemented but their matched-budget Gate 1 comparison remains deliberately unfinished. The genealogy therefore records a fork, not a collapse: clock physics, circuit control surfaces, learning windows, replay dynamics, operator translation, and external computation tomography are adjacent questions that constrain one another but are not the same mechanism.",
   "order": 300,
   "reviewed_at": "2026-09-24",
   "nodes": [
@@ -101,6 +101,55 @@
       ],
       "era": "Learning through temporal windows",
       "era_order": 41
+    },
+    {
+      "id": "Rytmi",
+      "url": "https://github.com/anttiluode/Rytmi",
+      "family": "neuron-machine",
+      "status": "ledger",
+      "claim": "Combines plateau-written asymmetric fields, rhythmic inhibition, emergent phase precession, local STDP, and forward replay into one brain-inspired sequence machine, then tests how long chains survive and what rhythmic dead time contributes during recall.",
+      "survived": "R1 makes phase precession emerge from plateau-written drive against rhythmic inhibition rather than imposing a phase variable; plain STDP then reaches 0.95 forward-only in-order replay in the main condition, while phase shuffling collapses ordered replay. G0 shows that one cue can carry an 80-item lap with median in-order reach 79 in the noiseless grid. Under stronger replay noise, rhythmic dead time plus re-cueing suppresses spurious second waves and improves long-chain order, giving dead time a second measured job in addition to protecting the learning arrow.",
+      "killed": "One-shot capacity has not been shown: R1 learns over 20 laps, and G1 remains future work. Plateau locations, upstream place inputs, and the shared theta rhythm are still imposed, so self-chosen surprise-triggered plateaus are also not demonstrated. Precession is partial at about 0.2 cycle, and re-cueing is not a free improvement: on noiseless 80-item replay it performs worse than one cue. The repo therefore does not yet establish a general sequence learner or an AI replacement for attention/SSMs.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Rytmi/blob/main/README.md",
+      "tags": [
+        "sequence-memory",
+        "btsp",
+        "theta",
+        "phase-precession",
+        "stdp",
+        "dead-time",
+        "replay",
+        "noise-suppression",
+        "negative-result"
+      ],
+      "era": "Integrated rhythmic sequence machine",
+      "era_order": 42
+    },
+    {
+      "id": "TransformerToX",
+      "url": "https://github.com/anttiluode/TransformerToX",
+      "family": "operator-response",
+      "status": "active",
+      "claim": "Compiles one frozen causal transformer head into explicit address geometry M=W_Q W_K^T and write geometry N=W_V W_O, then prepares matched-budget fixed-state memories for asking whether token history can become resident temporal state.",
+      "survived": "Gate 0 is an exact zero-fit algebraic compiler on the frozen deterministic head: 32 cases use zero learned parameters, with maximum logit error 1.78e-15, maximum output error 1.33e-15, and aggregate output relative RMSE 3.43e-16. The v0 also implements bounded static, decay, and resonant memory primitives with explicit scalar-budget accounting and no raw-history cache.",
+      "killed": "Gate 1 is not a result yet: the held-out matched-budget evaluator and frozen Gate 1 receipt are intentionally absent, so the repo has not shown that temporal resident memory beats the matched static attacker. Gate 0 does not compress KV history, remove softmax, establish an efficiency advantage, validate a pretrained-model adapter, or make a biological identity claim.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/TransformerToX/blob/main/README.md",
+      "tags": [
+        "transformer",
+        "address-geometry",
+        "write-geometry",
+        "resident-state",
+        "fixed-state-memory",
+        "temporal-memory",
+        "compiler",
+        "negative-boundary"
+      ],
+      "era": "Transformer-to-resident-state translation",
+      "era_order": 43
     }
   ],
   "edges": [
@@ -175,6 +224,38 @@
       "confidence": "high",
       "why": "GATGRILS found silent resident state readable by ping but no clean three-way inference specialization. TATWATASW attacks the complementary learning-side question: plateau plasticity writes anticipatory field structure while temporal order comes from rhythmic compression plus dead time, separating what a resident state can reveal from what the learning rule writes.",
       "evidence": "https://github.com/anttiluode/TATWATASW/blob/main/README.md"
+    },
+    {
+      "source": "TATWATASW",
+      "target": "Rytmi",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Rytmi explicitly continues TATWATASW's E1-E4 chain: its R1 makes phase precession emerge from plateau-written drive against rhythmic inhibition, then reuses the same STDP/replay machinery; G0 extends the line into long-chain and noisy recall.",
+      "evidence": "https://github.com/anttiluode/Rytmi/blob/main/README.md"
+    },
+    {
+      "source": "AnotherOddThing",
+      "target": "Rytmi",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Rytmi's own lineage keeps AnotherOddThing v5's fast-minus-slow temporal-direction result as the local-phase precursor: two local leaky traces can distinguish temporal direction without being handed a symbolic phase coordinate, even though R1 ultimately finds that rhythmic inhibition itself can provide the needed dead interval in its working regime.",
+      "evidence": "https://github.com/anttiluode/Rytmi/blob/main/README.md"
+    },
+    {
+      "source": "TATWATASW",
+      "target": "TransformerToX",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "The repositories attack the same broader translation from explicit event history toward local temporal machinery from opposite sides. TATWATASW asks how windows, phase and local plasticity turn event timing into resident sequence structure; TransformerToX starts from an exact attention-head compiler and asks whether explicit KV history can later be replaced by bounded resident temporal state. This records conceptual convergence, not direct implementation ancestry.",
+      "evidence": "https://github.com/anttiluode/TransformerToX/blob/main/README.md"
+    },
+    {
+      "source": "AnotherOddThing",
+      "target": "TransformerToX",
+      "type": "converges",
+      "confidence": "high",
+      "why": "TransformerToX explicitly reserves Gate 2 for the AnotherOddThing v5 question: can two histories with matched present amplitude be separated by locally accumulated temporal direction or phase without an externally supplied symbolic position variable?",
+      "evidence": "https://github.com/anttiluode/TransformerToX/blob/main/README.md"
     }
   ],
   "motifs": []
