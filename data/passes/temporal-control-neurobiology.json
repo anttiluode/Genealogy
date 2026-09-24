@@ -1,0 +1,132 @@
+{
+  "id": "temporal-control-neurobiology",
+  "title": "Temporal control surfaces: anatomy, clock physics, and learned computation",
+  "summary": "September 24 brings the neuron-inspired line closer to explicit neurobiological constraints without treating the toy mechanisms as cortical identity claims. KolmeOvea puts three physically distinct control surfaces into one pyramidal-cell abstraction—apical/context, basket/timing, and chandelier/AIS publication—and its trained subfolder asks which jobs gradient descent actually assigns to them. FrequencyAndNeurons follows the basket branch upstream by removing the imposed pacemaker and testing what sets an emergent PING gamma period. GATGRILS follows the learned/instrument branch: its gauge-aware probes and causal interventions ask whether task learning discovers clean operator/admission/publication roles. The result is deliberately mixed: clean three-way specialization does not emerge, rhythmic admission survives, and a neutral ping robustly reveals silent resident state. The genealogy therefore records a fork, not a collapse: clock physics, circuit control surfaces, and external computation tomography are adjacent questions that constrain one another but are not the same mechanism.",
+  "order": 300,
+  "reviewed_at": "2026-09-24",
+  "nodes": [
+    {
+      "id": "KolmeOvea",
+      "url": "https://github.com/anttiluode/KolmeOvea",
+      "family": "neuron-machine",
+      "status": "ledger",
+      "claim": "Places apical/context control, basket/perisomatic timing, and chandelier/AIS publication on three distinct control surfaces of one pyramidal-cell-inspired circuit, then asks in KolmeOveav1 whether training assigns those surfaces distinct jobs.",
+      "survived": "The hand-built v0 cleanly separates the three intervention locations under matched replacement controls. In the trained follow-up, the AIS/output gate specializes robustly in all reported conditions and seeds; the basket gate becomes necessary when it alone has access to phase, and top-down basket modulation matters when cue/context has no direct soma route. This supports access and physical intervention location as important determinants of learned control use.",
+      "killed": "Architecture alone did not make all three doors spontaneously specialize. The apical gain remained marginal, basket specialization depended on access constraints, and the preregistered survival rule did not correctly account for downstream functions. V0 is a known-answer construction and v1 is a small trained toy; neither establishes these abstract roles as the biological functions of apical tuft, basket cells, or chandelier cells.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/KolmeOvea/blob/main/KolmeOveav1/README.md",
+      "tags": [
+        "apical-tuft",
+        "basket-cell",
+        "chandelier-cell",
+        "axon-initial-segment",
+        "temporal-control",
+        "publication",
+        "access-constraints",
+        "known-answer"
+      ],
+      "era": "Neurobiology-constrained control surfaces",
+      "era_order": 38
+    },
+    {
+      "id": "FrequencyAndNeurons",
+      "url": "https://github.com/anttiluode/FrequencyAndNeurons",
+      "family": "neuron-machine",
+      "status": "ledger",
+      "claim": "Tests whether an emergent PING gamma rhythm is set by local E-I biophysics or by the number of phase slots a computation would like to multiplex.",
+      "survived": "Across the frozen sweeps, slowing GABA_A decay slows the rhythm strongly, stronger excitatory drive speeds it, and splitting fixed total drive across 1 to 16 input streams leaves frequency essentially flat. The firing window stays only about 1.9-3.4 ms while the period expands about 3.6-fold, so slower inhibition mainly buys silent recovery time rather than proportionally wider admission slots.",
+      "killed": "The tested local PING loop does not sense slot demand and does not retune its gamma frequency to accommodate more streams. The result is limited to the mean-field PING model used here: it does not establish a universal cortical gamma law and does not address ING, mixed regimes, theta generation, spatial circuitry, or load-sensing mechanisms outside the loop.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/FrequencyAndNeurons/blob/main/README.md",
+      "tags": [
+        "gamma",
+        "PING",
+        "basket-cell",
+        "GABA-A",
+        "phase-window",
+        "timescale",
+        "oscillation",
+        "negative-result"
+      ],
+      "era": "Clock physics beneath temporal gating",
+      "era_order": 39
+    },
+    {
+      "id": "GATGRILS",
+      "url": "https://github.com/anttiluode/GATGRILS",
+      "family": "operator-response",
+      "status": "ledger",
+      "claim": "Uses gauge-aware local response descriptors, temporal grammar, neutral pings, and causal transplants to ask what computation a learned recurrent system carries through time and whether operator, admission, and publication become distinct learned jobs.",
+      "survived": "V0 preserves exact behavior and temporal grammar under invertible hidden-state basis changes, establishing a usable gauge-control harness even though its stronger forecasting claim failed. In corrected v1, cycle-mean replacement damages the learned rhythmic admission profile just beyond the frozen threshold (median 0.151), and the strongest secondary result is a silent-ping assay: resident operator, phase, and route factors decode at 1.0/1.0/1.0 from the neutral-ping response and fall to 0.5/0.5/0.5 after resident-state reset.",
+      "killed": "V0 did not meet its preregistered predictive superiority gate. V1 did not demonstrate the proposed three-way operator/admission/publication specialization: only 4/12 canonical seeds were task-valid, transplant specificity was weak, publication was not a clean independent route controller, and the overall frozen verdict remained FAIL. This is evidence about the tested learned system, not a negative claim about biological cortex.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/GATGRILS/blob/main/README.md",
+      "tags": [
+        "gauge-invariance",
+        "operator-tomography",
+        "activity-silent",
+        "neutral-ping",
+        "admission",
+        "publication",
+        "causal-transplant",
+        "learned-system"
+      ],
+      "era": "Learned temporal-control tomography",
+      "era_order": 40
+    }
+  ],
+  "edges": [
+    {
+      "source": "NewMachine",
+      "target": "KolmeOvea",
+      "type": "converges",
+      "confidence": "high",
+      "why": "KolmeOvea explicitly starts from NewMachine's result that control channels collapse in a static scalar setting, then adds compartments, time/phase, and output-route structure to make the three intervention surfaces physically non-equivalent.",
+      "evidence": "https://github.com/anttiluode/KolmeOvea/blob/main/README.md"
+    },
+    {
+      "source": "OperatorTime",
+      "target": "KolmeOvea",
+      "type": "converges",
+      "confidence": "high",
+      "why": "OperatorTime supplied the resident-history/effective-operator language that KolmeOvea places on the apical/context side of the circuit-level three-door picture.",
+      "evidence": "https://github.com/anttiluode/KolmeOvea/blob/main/README.md"
+    },
+    {
+      "source": "KolmeOvea",
+      "target": "FrequencyAndNeurons",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "FrequencyAndNeurons is explicitly a closed side question raised by KolmeOvea's imposed basket rhythm: it replaces the pacemaker with an emergent E-I PING loop and asks what actually sets the period and admission window.",
+      "evidence": "https://github.com/anttiluode/FrequencyAndNeurons/blob/main/README.md"
+    },
+    {
+      "source": "SilentPing",
+      "target": "GATGRILS",
+      "type": "converges",
+      "confidence": "high",
+      "why": "GATGRILS v1 carries the SilentPing question into a task-trained recurrent system: a fixed neutral ping reads resident information that disappears to chance after state reset, without making the ping itself item-specific.",
+      "evidence": "https://github.com/anttiluode/GATGRILS/blob/main/README.md"
+    },
+    {
+      "source": "ResidentOperatorTomography",
+      "target": "GATGRILS",
+      "type": "converges",
+      "confidence": "high",
+      "why": "GATGRILS operationalizes the gauge-aware computation-coordinate problem in a learned recurrent system, retaining explicit invertible hidden-state basis attacks and local response grammar rather than treating raw hidden coordinates as the computation.",
+      "evidence": "https://github.com/anttiluode/GATGRILS/blob/main/README.md"
+    },
+    {
+      "source": "KolmeOvea",
+      "target": "GATGRILS",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The two repositories independently test the same operator/admission/publication decomposition from opposite directions: KolmeOvea begins with physically separated control surfaces and then trains them, while GATGRILS begins with a learned recurrent system and asks whether causal interventions recover a clean three-way organization. Both caution against assuming the decomposition emerges automatically, while timing remains the strongest shared survivor.",
+      "evidence": "https://github.com/anttiluode/GATGRILS/blob/main/README.md"
+    }
+  ],
+  "motifs": []
+}
