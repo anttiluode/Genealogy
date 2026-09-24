@@ -214,5 +214,9 @@
   {
     "path": "probe-operator-tomography.json",
     "enabled": true
+  },
+  {
+    "path": "temporal-control-neurobiology.json",
+    "enabled": true
   }
 ]
