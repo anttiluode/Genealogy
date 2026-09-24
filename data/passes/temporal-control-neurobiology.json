@@ -1,7 +1,7 @@
 {
   "id": "temporal-control-neurobiology",
   "title": "Temporal control surfaces: anatomy, clock physics, and learned computation",
-  "summary": "September 24 brings the neuron-inspired line closer to explicit neurobiological constraints without treating the toy mechanisms as cortical identity claims. KolmeOvea puts three physically distinct control surfaces into one pyramidal-cell abstraction—apical/context, basket/timing, and chandelier/AIS publication—and its trained subfolder asks which jobs gradient descent actually assigns to them. FrequencyAndNeurons follows the basket branch upstream by removing the imposed pacemaker and testing what sets an emergent PING gamma period. GATGRILS follows the learned/instrument branch: its gauge-aware probes and causal interventions ask whether task learning discovers clean operator/admission/publication roles. The result is deliberately mixed: clean three-way specialization does not emerge, rhythmic admission survives, and a neutral ping robustly reveals silent resident state. The genealogy therefore records a fork, not a collapse: clock physics, circuit control surfaces, and external computation tomography are adjacent questions that constrain one another but are not the same mechanism.",
+  "summary": "September 24 brings the neuron-inspired line closer to explicit neurobiological constraints without treating the toy mechanisms as cortical identity claims. KolmeOvea puts three physically distinct control surfaces into one pyramidal-cell abstraction—apical/context, basket/timing, and chandelier/AIS publication—and its trained subfolder asks which jobs gradient descent actually assigns to them. FrequencyAndNeurons follows the basket branch upstream by removing the imposed pacemaker and testing what sets an emergent PING gamma period. GATGRILS follows the learned/instrument branch: its gauge-aware probes and causal interventions ask whether task learning discovers clean operator/admission/publication roles. TATWATASW then moves the weak apical-inference result into a learning-side test: an imposed BTSP-style plateau window writes an anticipatory predictive field, but plateau plasticity alone does not robustly write directional sequence order; imposed theta phase compression plus fast plasticity does, provided a silent dead-time interval prevents cross-cycle wrap-around from cancelling the arrow. The genealogy therefore records a fork, not a collapse: clock physics, circuit control surfaces, learning windows, and external computation tomography are adjacent questions that constrain one another but are not the same mechanism.",
   "order": 300,
   "reviewed_at": "2026-09-24",
   "nodes": [
@@ -76,6 +76,31 @@
       ],
       "era": "Learned temporal-control tomography",
       "era_order": 40
+    },
+    {
+      "id": "TATWATASW",
+      "url": "https://github.com/anttiluode/TATWATASW",
+      "family": "neuron-machine",
+      "status": "ledger",
+      "claim": "Separates two candidate learning roles for temporal cortical machinery: a BTSP-style plateau writes a predictive field around an instructive event, while phase-compressed rhythmic windows plus fast plasticity write directional order.",
+      "survived": "E1 gives the imposed asymmetric plateau rule a predictive field shifted before the plateau, while symmetric-window and plain-Hebbian controls stay centered. E3 then shows that imposed theta phase precession can compress a slow series into an STDP-writable order, with much stronger forward drive and predominantly forward replay across the frozen gain/threshold grid. FrequencyAndNeurons' dead time becomes load-bearing here: reserving a silent part of each cycle prevents cross-cycle wrap-around pairs from cancelling the learned arrow.",
+      "killed": "A single plateau per cell does not, on its own, write a robust directional sequence: in E2 recurrent replay is overwhelmingly bidirectional and forward-only replay is rare. Slower theta also does not increase the tested sequence reach, and the fields, plateau times, phase precession and theta rhythm are imposed rather than emergent. The repo therefore does not establish a cortical sequence-writing mechanism or that apical tuft alone carries order.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/TATWATASW/blob/main/README.md",
+      "tags": [
+        "apical-tuft",
+        "btsp",
+        "predictive-field",
+        "theta",
+        "phase-precession",
+        "stdp",
+        "dead-time",
+        "sequence-order",
+        "negative-result"
+      ],
+      "era": "Learning through temporal windows",
+      "era_order": 41
     }
   ],
   "edges": [
@@ -126,6 +151,30 @@
       "confidence": "high",
       "why": "The two repositories independently test the same operator/admission/publication decomposition from opposite directions: KolmeOvea begins with physically separated control surfaces and then trains them, while GATGRILS begins with a learned recurrent system and asks whether causal interventions recover a clean three-way organization. Both caution against assuming the decomposition emerges automatically, while timing remains the strongest shared survivor.",
       "evidence": "https://github.com/anttiluode/GATGRILS/blob/main/README.md"
+    },
+    {
+      "source": "FrequencyAndNeurons",
+      "target": "TATWATASW",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "TATWATASW explicitly reuses FrequencyAndNeurons' dead-time result as a learning constraint: when phase-compressed spikes fill the whole theta cycle, cross-cycle wrap-around pairs write backward links and erase the directional bias; reserving an inhibitory silent interval protects directional STDP.",
+      "evidence": "https://github.com/anttiluode/TATWATASW/blob/main/README.md"
+    },
+    {
+      "source": "KolmeOvea",
+      "target": "TATWATASW",
+      "type": "converges",
+      "confidence": "high",
+      "why": "KolmeOvea's trained follow-up found the apical door weak when tested as an inference-time gain. TATWATASW moves that control surface to learning, using a plateau-gated BTSP-style window to write predictive fields; its failure to write a directional chain by itself keeps the correction bounded rather than declaring apical control unimportant.",
+      "evidence": "https://github.com/anttiluode/TATWATASW/blob/main/README.md"
+    },
+    {
+      "source": "GATGRILS",
+      "target": "TATWATASW",
+      "type": "converges",
+      "confidence": "high",
+      "why": "GATGRILS found silent resident state readable by ping but no clean three-way inference specialization. TATWATASW attacks the complementary learning-side question: plateau plasticity writes anticipatory field structure while temporal order comes from rhythmic compression plus dead time, separating what a resident state can reveal from what the learning rule writes.",
+      "evidence": "https://github.com/anttiluode/TATWATASW/blob/main/README.md"
     }
   ],
   "motifs": []
