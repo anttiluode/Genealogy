@@ -212,11 +212,11 @@
     "name": "AnotherOddThing",
     "url": "https://github.com/anttiluode/AnotherOddThing",
     "default_branch": "main",
-    "size": 101,
+    "size": 126,
     "visibility": "public",
     "description": "Yes. Sol repo. ",
     "created_at": "2026-09-16T02:44:02Z",
-    "updated_at": "2026-09-16T05:16:44Z",
+    "updated_at": "2026-09-24T12:17:54Z",
     "inventory_status": "unread"
   },
   {
@@ -1708,11 +1708,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 620,
+    "size": 664,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-09-24T11:29:43Z",
+    "updated_at": "2026-09-24T14:05:36Z",
     "inventory_status": "unread"
   },
   {
@@ -3443,6 +3443,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "Rytmi",
+    "url": "https://github.com/anttiluode/Rytmi",
+    "default_branch": "main",
+    "size": 498,
+    "visibility": "public",
+    "description": "Brain-inspired sequence learner that works in time windows and phases. Opus 5.5 repo",
+    "created_at": "2026-09-24T12:53:08Z",
+    "updated_at": "2026-09-24T13:13:32Z",
+    "inventory_status": "unread"
+  },
+  {
     "name": "Saturday",
     "url": "https://github.com/anttiluode/Saturday",
     "default_branch": "main",
@@ -4029,7 +4040,7 @@
     "name": "TATWATASW",
     "url": "https://github.com/anttiluode/TATWATASW",
     "default_branch": "main",
-    "size": 0,
+    "size": 149,
     "visibility": "public",
     "description": "Tokens As Time Windows And Tuft As Sequence Writer. Claude Opus 5.5 repo ",
     "created_at": "2026-09-24T11:10:08Z",
@@ -4320,6 +4331,17 @@
     "description": "Algorithms inside transformer. What do they do. Sol repo. ",
     "created_at": "2026-09-13T01:11:00Z",
     "updated_at": "2026-09-13T04:27:44Z",
+    "inventory_status": "unread"
+  },
+  {
+    "name": "TransformerToX",
+    "url": "https://github.com/anttiluode/TransformerToX",
+    "default_branch": "main",
+    "size": 39,
+    "visibility": "public",
+    "description": "Sol thinking repo. Can we turn transformer into brain inspired windows looping system. ",
+    "created_at": "2026-09-24T12:36:10Z",
+    "updated_at": "2026-09-24T13:53:34Z",
     "inventory_status": "unread"
   },
   {
