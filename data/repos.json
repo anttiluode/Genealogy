@@ -1587,7 +1587,7 @@
     "name": "FrequencyAndNeurons",
     "url": "https://github.com/anttiluode/FrequencyAndNeurons",
     "default_branch": "main",
-    "size": 0,
+    "size": 103,
     "visibility": "public",
     "description": "Claude Opus 5.5 thinks about what sets frequencies for neurons. ",
     "created_at": "2026-09-24T07:29:49Z",
@@ -1664,7 +1664,7 @@
     "name": "GATGRILS",
     "url": "https://github.com/anttiluode/GATGRILS",
     "default_branch": "main",
-    "size": 132,
+    "size": 152,
     "visibility": "public",
     "description": "Gauge-aware temporal grammar recovery in a learned system. ChatGPT luna repo. ",
     "created_at": "2026-09-23T13:37:48Z",
@@ -1708,11 +1708,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 572,
+    "size": 620,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-09-24T08:27:07Z",
+    "updated_at": "2026-09-24T11:29:43Z",
     "inventory_status": "unread"
   },
   {
@@ -4023,6 +4023,17 @@
     "description": "A bit different from others i have made. Add notch EQ and look at high delay turn the attractor as 3d",
     "created_at": "2026-05-04T17:07:44Z",
     "updated_at": "2026-05-08T05:43:08Z",
+    "inventory_status": "unread"
+  },
+  {
+    "name": "TATWATASW",
+    "url": "https://github.com/anttiluode/TATWATASW",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Tokens As Time Windows And Tuft As Sequence Writer. Claude Opus 5.5 repo ",
+    "created_at": "2026-09-24T11:10:08Z",
+    "updated_at": "2026-09-24T11:20:47Z",
     "inventory_status": "unread"
   },
   {
