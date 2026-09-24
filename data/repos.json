@@ -1584,6 +1584,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "FrequencyAndNeurons",
+    "url": "https://github.com/anttiluode/FrequencyAndNeurons",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Claude Opus 5.5 thinks about what sets frequencies for neurons. ",
+    "created_at": "2026-09-24T07:29:49Z",
+    "updated_at": "2026-09-24T07:36:15Z",
+    "inventory_status": "unread"
+  },
+  {
     "name": "FrozenTime",
     "url": "https://github.com/anttiluode/FrozenTime",
     "default_branch": "main",
@@ -1650,6 +1661,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "GATGRILS",
+    "url": "https://github.com/anttiluode/GATGRILS",
+    "default_branch": "main",
+    "size": 132,
+    "visibility": "public",
+    "description": "Gauge-aware temporal grammar recovery in a learned system. ChatGPT luna repo. ",
+    "created_at": "2026-09-23T13:37:48Z",
+    "updated_at": "2026-09-24T08:18:58Z",
+    "inventory_status": "unread"
+  },
+  {
     "name": "GaugeRopeTheory",
     "url": "https://github.com/anttiluode/GaugeRopeTheory",
     "default_branch": "main",
@@ -1686,11 +1708,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 1034,
+    "size": 572,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-09-23T13:03:29Z",
+    "updated_at": "2026-09-24T08:27:07Z",
     "inventory_status": "unread"
   },
   {
@@ -2230,6 +2252,17 @@
     "description": "Sol thinking repo",
     "created_at": "2026-09-04T04:14:37Z",
     "updated_at": "2026-09-10T00:31:27Z",
+    "inventory_status": "unread"
+  },
+  {
+    "name": "KolmeOvea",
+    "url": "https://github.com/anttiluode/KolmeOvea",
+    "default_branch": "main",
+    "size": 248,
+    "visibility": "public",
+    "description": "Claude thinking on the circuit of apical tuft and pyramid neuron plus basket cells and chandelier cells. Opus 5.5",
+    "created_at": "2026-09-24T05:47:58Z",
+    "updated_at": "2026-09-24T07:18:24Z",
     "inventory_status": "unread"
   },
   {
@@ -3292,7 +3325,7 @@
     "name": "ResidentOperatorTomography",
     "url": "https://github.com/anttiluode/ResidentOperatorTomography",
     "default_branch": "main",
-    "size": 0,
+    "size": 125,
     "visibility": "public",
     "description": "Can we read how a chain computes, and not only what it outputs? Opus 5.5 repo",
     "created_at": "2026-09-23T12:27:01Z",
