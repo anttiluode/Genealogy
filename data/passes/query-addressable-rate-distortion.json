@@ -1,0 +1,43 @@
+{
+  "id": "query-addressable-rate-distortion",
+  "title": "Query-addressable rate-distortion memory",
+  "summary": "QARDM extracts a common question from TransformerToX and SihtiMuisti: under a fixed state budget, should memory preserve what best reconstructs the past, or the distinctions that future computation is most likely to use? The synthetic Gate 1 holds episodes, legal compression moves, scalar accounting and reader fixed while changing only the distortion used by the allocator. Query-aware allocation beat reconstruction-aware allocation on held-out query MSE in 12/12 seeds at both 60% and 50% storage, with shuffled-address and isotropic-query controls removing the advantage. The stress rows are equally important: the methods were nearly tied at 40%, and at 30% reconstruction won all 12 seeds. The repo therefore contributes a bounded mechanism result, not a universal compression rule: future-useful distinctions can be worth preserving even when they are low-energy, but under severe compression the cost of protecting them can outweigh the benefit.",
+  "order": 320,
+  "reviewed_at": "2026-09-25",
+  "nodes": [
+    {
+      "id": "Query-Addressable-Rate-Distortion-Memory",
+      "url": "https://github.com/anttiluode/Query-Addressable-Rate-Distortion-Memory",
+      "family": "bounded-memory",
+      "status": "ledger",
+      "claim": "Tests whether a fixed-budget memory can do better by pricing compression according to expected future query error rather than reconstruction error, while keeping the same resident state budget and legal compression operations.",
+      "survived": "In the frozen synthetic Gate 1, query-aware allocation beat reconstruction-aware allocation on held-out query MSE in 12/12 seeds at both 60% storage (0.2056 vs 0.3573) and 50% storage (0.3726 vs 0.4753). It retained substantially more fine detail in query-hot families, aligned calibration beat shuffled addresses 12/12 at both primary budgets, and the advantage disappeared under isotropic queries.",
+      "killed": "The advantage is not universal: at 40% storage the mean methods were essentially tied and query-aware won only 8/12 seeds; at 30% it lost to reconstruction in all 12 seeds (0.7530 vs 0.6712). The experiment is synthetic, receives a calibration sample from the future query distribution, establishes no transformer, visual-memory, or biological result, and its scored seeds were outcome-blind but not strictly seed-unseen because earlier invariant tests instantiated worlds 0-5.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Query-Addressable-Rate-Distortion-Memory/blob/main/README.md",
+      "tags": ["bounded-memory", "rate-distortion", "query-addressing", "compression", "future-use", "held-out-queries", "stress-boundary", "synthetic-mechanism"],
+      "era": "Memory priced by future computation",
+      "era_order": 45
+    }
+  ],
+  "edges": [
+    {
+      "source": "TransformerToX",
+      "target": "Query-Addressable-Rate-Distortion-Memory",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "QARDM explicitly abstracts TransformerToX's fixed-budget history problem: instead of asking only how to retain old token state, it asks which lost distinctions actually change future query-conditioned computation.",
+      "evidence": "https://github.com/anttiluode/Query-Addressable-Rate-Distortion-Memory/blob/main/README.md"
+    },
+    {
+      "source": "SihtiMuisti",
+      "target": "Query-Addressable-Rate-Distortion-Memory",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "SihtiMuisti exposed the trade-off between preserving temporal coverage and preserving question-relevant visual detail under an exact budget; QARDM turns that observation into a domain-independent query-distortion test.",
+      "evidence": "https://github.com/anttiluode/Query-Addressable-Rate-Distortion-Memory/blob/main/README.md"
+    }
+  ],
+  "motifs": []
+}
