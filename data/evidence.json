@@ -2877,5 +2877,59 @@
       "No learned network has yet shown a stable cross-seed computational grammar under this criterion"
     ],
     "source": "https://github.com/anttiluode/ResidentOperatorTomography/blob/main/README.md"
+  },
+  {
+    "id": "sihtimuisti-gate2-rd-confirmation",
+    "node": "SihtiMuisti",
+    "claim": "A rate-distortion policy that chooses between dropping one Haar octave and merging adjacent frames was tested against the best fixed-resolution thumbnail on pooled moment/object questions at two storage budgets.",
+    "design": "pre-registered fresh-world confirmation of a Gate 1 selected secondary policy",
+    "result": "mixed",
+    "motifs": [],
+    "sample": {
+      "unit": "synthetic world",
+      "count": 10
+    },
+    "metrics": [
+      {
+        "name": "pooled accuracy at 5.3% of full storage",
+        "treatment": 97.2,
+        "control": 92.8,
+        "comparison": "rd vs best thumbnail; percent"
+      },
+      {
+        "name": "pooled accuracy at 1.3% of full storage",
+        "treatment": 85.2,
+        "control": 88.9,
+        "comparison": "rd vs best thumbnail; percent"
+      },
+      {
+        "name": "object question accuracy at 1.3% of full storage",
+        "treatment": 87.5,
+        "control": 56.2,
+        "comparison": "rd vs best thumbnail; percent"
+      },
+      {
+        "name": "moment question accuracy at 1.3% of full storage",
+        "treatment": 84.4,
+        "control": 99.8,
+        "comparison": "rd vs best thumbnail; percent"
+      }
+    ],
+    "controls": [
+      "Same charged scalar storage for every policy, with 8- and 32-frame-equivalent budgets",
+      "Best thumbnail resolution chosen after scoring, strengthening that comparison",
+      "Full unbounded memory validity check at least 95% on both question types before scoring",
+      "Ten fresh worlds (6-15) reserved after rd emerged as the secondary Gate 1 winner"
+    ],
+    "replication": "10 fresh synthetic worlds; 640 final questions per policy row",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Synthetic 64×64 grayscale scenes with stripe-twin objects; live camera behavior has not been benchmarked",
+      "The shared per-octave background model sits outside the charged policy budgets",
+      "Moment correctness tests scene configuration rather than exact time",
+      "The original Gate 1 run was invalid because of an object-scoring bug; the amendment, fix, and rerun are documented"
+    ],
+    "source": "https://github.com/anttiluode/SihtiMuisti/blob/main/README.md"
   }
 ]
