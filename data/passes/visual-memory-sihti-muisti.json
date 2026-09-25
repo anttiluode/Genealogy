@@ -1,0 +1,66 @@
+{
+  "id": "visual-memory-sihti-muisti",
+  "title": "Visual memory: merge slots and question-sensitive octaves",
+  "summary": "Two September 25 camera-memory branches turn TransformerToX's bounded token-history question into visual retrieval. VisualMemoryDemo makes similarity-merged patch slots inspectable beside an equal-slot recent-only buffer on live or recorded video; its README describes a demo and a proposed labelled retrieval test, not measured superiority. SihtiMuisti combines TransformerToX-style temporal merging with critically sampled Sihti/Haar octaves and compares policies at equal scalar storage on synthetic streams. Its pre-registered age-plus-recall policy did not win the primary race, while a selected rate-distortion merge/drop policy was tested again on fresh worlds: at 5.3% storage it led the tested pooled scores, but at 1.3% it traded moment recognition for twin-object discrimination and lost the pooled score to thumbnails. The two repos expose a useful distinction: a visual memory's best compression depends on the question it must later answer.",
+  "order": 310,
+  "reviewed_at": "2026-09-25",
+  "nodes": [
+    {
+      "id": "VisualMemoryDemo",
+      "url": "https://github.com/anttiluode/VisualMemoryDemo",
+      "family": "visual-memory",
+      "status": "tool",
+      "claim": "A camera/video demo compares fixed-size similarity-merged patch memory with an equal-slot recent-only buffer and lets the user click a patch to inspect a match from before the current frame.",
+      "survived": "An inspectable retrieval instrument: both policies use the same number of slots, and the pre-frame snapshot prevents a click from retrieving its own current-frame observation. It supports a webcam or local video file, with a frozen DINOv2 encoder and an RGB-only control.",
+      "killed": "Coloured patch families are not object segmentation masks; a nearest feature match is not verified object identity. The README gives no scored moved-object retrieval result, speed advantage, or measured memory-saving claim for the video demo.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/VisualMemoryDemo/blob/main/README.md",
+      "tags": ["visual-memory", "similarity-merge", "bounded-memory", "patch-retrieval", "camera", "demo", "unscored"],
+      "era": "Visual memory under a fixed storage budget",
+      "era_order": 44
+    },
+    {
+      "id": "SihtiMuisti",
+      "url": "https://github.com/anttiluode/SihtiMuisti",
+      "family": "visual-memory",
+      "status": "ledger",
+      "claim": "Tests how a fixed-budget visual memory should allocate detail and time coverage when later queries ask either whether a moment was seen or when an object was present.",
+      "survived": "Exact-cost Haar octaves allow sharpness to be traded against coverage, while rate-distortion selection chooses between dropping one item's octave and merging adjacent moments. On 10 fresh synthetic worlds, the selected rd policy scored 97.2% pooled at 5.3% storage versus 92.8% for the best thumbnail, and resolved twin-object questions better at 1.3% storage (87.5% versus 56.2%). An invalid first run and its scorer correction remain documented.",
+      "killed": "The pre-registered fade_recall primary did not win both budgets. At 1.3% storage, rd lost pooled accuracy to thumbnails (85.2% versus 88.9%) and moment accuracy was 84.4% versus 99.8%. Full-resolution merging alone performed poorly for moment questions; age-based fading alone did not beat thumbnails. The benchmarks are synthetic 64×64 grayscale worlds, not validated live-video results or novel wavelet coding.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/SihtiMuisti/blob/main/README.md",
+      "tags": ["visual-memory", "rate-distortion", "haar-octaves", "temporal-merge", "object-retrieval", "moment-recognition", "mixed-result", "pre-registration"],
+      "era": "Visual memory under a fixed storage budget",
+      "era_order": 44
+    }
+  ],
+  "edges": [
+    {
+      "source": "TransformerToX",
+      "target": "VisualMemoryDemo",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "VisualMemoryDemo explicitly says it is a new visual experiment built from TransformerToX's similarity-merge idea; the predecessor's language-model perplexity results do not transfer to this demo.",
+      "evidence": "https://github.com/anttiluode/VisualMemoryDemo/blob/main/README.md"
+    },
+    {
+      "source": "TransformerToX",
+      "target": "SihtiMuisti",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "SihtiMuisti explicitly came out of TransformerToX and tests its merge-versus-time-band retention question in visual memory under exact storage accounting.",
+      "evidence": "https://github.com/anttiluode/SihtiMuisti/blob/main/README.md"
+    },
+    {
+      "source": "Sihti",
+      "target": "SihtiMuisti",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "SihtiMuisti explicitly takes Sihti's octave-residue idea into a critically sampled Haar representation so that dropping an octave has an exact storage cost and reconstruction loss.",
+      "evidence": "https://github.com/anttiluode/SihtiMuisti/blob/main/README.md"
+    }
+  ],
+  "motifs": []
+}
