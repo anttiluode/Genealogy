@@ -222,5 +222,9 @@
   {
     "path": "visual-memory-sihti-muisti.json",
     "enabled": true
+  },
+  {
+    "path": "query-addressable-rate-distortion.json",
+    "enabled": true
   }
 ]
