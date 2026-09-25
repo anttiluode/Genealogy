@@ -1708,11 +1708,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 664,
+    "size": 712,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-09-24T14:05:36Z",
+    "updated_at": "2026-09-25T08:00:30Z",
     "inventory_status": "unread"
   },
   {
@@ -4348,11 +4348,11 @@
     "name": "TransformerToX",
     "url": "https://github.com/anttiluode/TransformerToX",
     "default_branch": "main",
-    "size": 39,
+    "size": 226,
     "visibility": "public",
-    "description": "Sol thinking repo. Can we turn transformer into brain inspired windows looping system. ",
-    "created_at": "2026-09-24T12:36:10Z",
-    "updated_at": "2026-09-24T13:53:34Z",
+    "description": "Odd one. Neural windows applied to transformer? Claude Opus 5.5",
+    "created_at": "2026-09-24T18:18:35Z",
+    "updated_at": "2026-09-25T06:54:00Z",
     "inventory_status": "unread"
   },
   {
