@@ -69,14 +69,40 @@ def _existing_status(path: Path) -> dict[str, str]:
     }
 
 
-def refresh_file(path: Path, user: str, opener=urlopen) -> list[dict]:
+def curated_repo_names(root: Path) -> set[str]:
+    names: set[str] = set()
+    data = root / "data"
+
+    nodes_path = data / "nodes.json"
+    if nodes_path.exists():
+        nodes = json.loads(nodes_path.read_text(encoding="utf-8"))
+        names.update(node.get("id", "") for node in nodes if node.get("id"))
+
+    pass_root = data / "passes"
+    index_path = pass_root / "index.json"
+    if index_path.exists():
+        index = json.loads(index_path.read_text(encoding="utf-8"))
+        for entry in index:
+            if not entry.get("enabled", True):
+                continue
+            pass_path = pass_root / entry["path"]
+            payload = json.loads(pass_path.read_text(encoding="utf-8"))
+            names.update(node.get("id", "") for node in payload.get("nodes", []) if node.get("id"))
+
+    return names
+
+
+def refresh_file(path: Path, user: str, opener=urlopen, reviewed_names: set[str] | None = None) -> list[dict]:
     statuses = _existing_status(path)
+    reviewed_names = set(reviewed_names or ())
     rows = fetch_public_repos(user, opener=opener)
     if not rows:
         raise RuntimeError("GitHub returned an empty repository census; existing data was left untouched")
     for row in rows:
         if row["name"] in statuses:
             row["inventory_status"] = statuses[row["name"]]
+        if row["name"] in reviewed_names:
+            row["inventory_status"] = "reviewed"
     rows.sort(key=lambda row: row["name"].casefold())
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(path.suffix + ".tmp")
@@ -91,7 +117,7 @@ def main(argv: list[str] | None = None) -> int:
     root = Path(__file__).resolve().parents[1]
     path = root / "data" / "repos.json"
     try:
-        rows = refresh_file(path, user)
+        rows = refresh_file(path, user, reviewed_names=curated_repo_names(root))
     except Exception as exc:
         print(f"repository census refresh failed: {exc}", file=sys.stderr)
         return 1
