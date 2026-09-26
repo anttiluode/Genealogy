@@ -1,0 +1,62 @@
+{
+  "id": "linked-sequence-learners",
+  "title": "Linked sequence learners: when predicting another makes an inner state worth representing",
+  "summary": "September 26 extends the dyadic sequence-learning line into a controlled self-state experiment. LinkitetytSekvenssiOppijat first freezes a mirror-as-input v0 and gets a clean negative result: faithful mirroring does not improve self-knowledge because the infant's own prediction task already requires the hidden drive. A post-hoc v0.1 then changes the computational demand: the infant must predict an elder's reactions while the drive's effect on its own sensations is swept. When the drive matters only through interoception and the elder's face (alpha 0), a faithful elder raises retained self-state decoding from 0.476 alone to 0.680, essentially the ideal observer's 0.682; when the infant's own sensory prediction already requires the drive (alpha 0.7), the benefit shrinks to +0.006. Yoked replay gives an intermediate 0.576 at alpha 0, so contingency matters but is not the whole effect. The inherited-blind-spot prediction fails. The useful result is therefore narrow: in this toy, an internal variable becomes strongly represented when it is needed to predict another system's response, and that representation survives removal of the partner.",
+  "order": 360,
+  "reviewed_at": "2026-09-26",
+  "nodes": [
+    {
+      "id": "LinkitetytSekvenssiOppijat",
+      "url": "https://github.com/anttiluode/LinkitetytSekvenssiOppijat",
+      "family": "communication",
+      "status": "ledger",
+      "claim": "Tests whether a learner comes to encode and retain knowledge of a hidden internal drive because that drive is needed to predict how another learner reacts, separating contingent social prediction from mere mirrored input and from self-state learning already demanded by the learner's own sensory prediction task.",
+      "survived": "Frozen v0 cleanly showed that mirroring as extra input was insufficient: ALONE scored 0.774 self-knowledge and FAITHFUL 0.771 because the learner's own task already forced drive representation. In preregistered post-hoc v0.1, when the drive did not shape the learner's ordinary sensory stream (alpha 0), FAITHFUL reached 0.680 versus 0.476 ALONE and 0.682 for the ideal self-knower, positive in all 8 seeds. The benefit collapsed as self-prediction made the drive useful on its own: faithful-minus-alone was +0.204 at alpha 0, +0.014 at 0.35, and +0.006 at 0.7. The probe is run with the elder gone, so the learned representation persists after coupling is removed.",
+      "killed": "The original v0 hypotheses all failed, including mirror-becomes-inner, inherited blind spot, co-learning elder, and faster development. In v0.1 the strict contingency prediction also failed because yoked replay itself improved alpha-0 self-knowledge to 0.576 instead of staying near ALONE. The elder's 2-vs-3 blind spot was not inherited at alpha 0, so the current world does not support a claim that partner categories become the learner's categories. v0.1 is post-hoc rather than confirmatory, uses an ideal elder in its main arms, a tiny synthetic world, and a linear probe that measures readability rather than demonstrated causal use.",
+      "usefulness": "scientific",
+      "confidence": "medium",
+      "evidence": "https://github.com/anttiluode/LinkitetytSekvenssiOppijat/blob/main/README.md",
+      "tags": [
+        "sequence-learning",
+        "social-prediction",
+        "self-model",
+        "interoception",
+        "yoked-replay",
+        "contingency",
+        "predictive-susceptibility",
+        "negative-result",
+        "post-hoc",
+        "partner-removal"
+      ],
+      "era": "Dyadic predictive coupling",
+      "era_order": 49
+    }
+  ],
+  "edges": [
+    {
+      "source": "CoupledSequenceLearners",
+      "target": "LinkitetytSekvenssiOppijat",
+      "type": "corrects",
+      "confidence": "high",
+      "why": "LinkitetytSekvenssiOppijat was designed after the CoupledSequenceLearners v0 critique. It scores only the infant's own hidden state, replaces the elder's whole signal in the yoked arm, and prevents gradients from crossing between learners, while changing the question from joint branch recovery to whether coupling leaves a persistent self-state representation.",
+      "evidence": "https://github.com/anttiluode/LinkitetytSekvenssiOppijat/blob/main/README.md"
+    },
+    {
+      "source": "The_Ping_And_The_Listener",
+      "target": "LinkitetytSekvenssiOppijat",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "The repo isolates the paper's listener/coupling question at a developmental scale: not whether a message itself carries the answer, but whether predicting another system's reactions makes an otherwise weakly useful internal state become represented and remain readable after the partner disappears.",
+      "evidence": "https://github.com/anttiluode/LinkitetytSekvenssiOppijat/blob/main/README.md"
+    },
+    {
+      "source": "PredictiveSusceptibility",
+      "target": "LinkitetytSekvenssiOppijat",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "The alpha sweep gives a toy instance of the susceptibility idea: an internal variable becomes strongly represented when it changes the future responses the learner must predict, while partner benefit largely vanishes once the learner's own sensory future already depends on that variable.",
+      "evidence": "https://github.com/anttiluode/LinkitetytSekvenssiOppijat/blob/main/README.md"
+    }
+  ],
+  "motifs": []
+}
