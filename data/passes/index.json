@@ -230,5 +230,9 @@
   {
     "path": "state-dependent-coupling-channel.json",
     "enabled": true
+  },
+  {
+    "path": "predictive-susceptibility-synthesis.json",
+    "enabled": true
   }
 ]
