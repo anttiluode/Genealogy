@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
-from scripts.refresh_repos import fetch_public_repos, normalize_repo, refresh_file
+from scripts.refresh_repos import curated_repo_names, fetch_public_repos, normalize_repo, refresh_file
 
 
 class FakeResponse(io.BytesIO):
@@ -81,6 +81,39 @@ class RefreshReposTests(unittest.TestCase):
             self.assertEqual(rows[1]["inventory_status"], "unread")
             saved = json.loads(path.read_text(encoding="utf-8"))
             self.assertEqual(saved, rows)
+
+    def test_refresh_marks_curated_names_reviewed(self):
+        with TemporaryDirectory() as td:
+            path = Path(td) / "repos.json"
+            path.write_text("[]", encoding="utf-8")
+            opener = RecordingOpener([[self.sample("Fresh"), self.sample("Other")]])
+            rows = refresh_file(path, "anttiluode", opener=opener, reviewed_names={"Fresh"})
+            by_name = {row["name"]: row for row in rows}
+            self.assertEqual(by_name["Fresh"]["inventory_status"], "reviewed")
+            self.assertEqual(by_name["Other"]["inventory_status"], "unread")
+
+    def test_curated_repo_names_reads_base_and_enabled_passes(self):
+        with TemporaryDirectory() as td:
+            root = Path(td)
+            data = root / "data"
+            passes = data / "passes"
+            passes.mkdir(parents=True)
+            (data / "nodes.json").write_text(json.dumps([
+                {"id": "BaseRepo"},
+                {"id": "ConceptOnly"},
+            ]), encoding="utf-8")
+            (passes / "index.json").write_text(json.dumps([
+                {"path": "enabled.json", "enabled": True},
+                {"path": "disabled.json", "enabled": False},
+            ]), encoding="utf-8")
+            (passes / "enabled.json").write_text(json.dumps({
+                "nodes": [{"id": "PassRepo"}],
+            }), encoding="utf-8")
+            (passes / "disabled.json").write_text(json.dumps({
+                "nodes": [{"id": "DisabledRepo"}],
+            }), encoding="utf-8")
+            names = curated_repo_names(root)
+            self.assertEqual(names, {"BaseRepo", "ConceptOnly", "PassRepo"})
 
     def test_refresh_refuses_to_replace_existing_file_with_empty_result(self):
         with TemporaryDirectory() as td:
