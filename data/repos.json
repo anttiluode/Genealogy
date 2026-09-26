@@ -8,7 +8,7 @@
     "description": "Its all buckets. ",
     "created_at": "2026-09-10T02:25:17Z",
     "updated_at": "2026-09-10T03:59:06Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "2MandalaTools",
@@ -30,7 +30,7 @@
     "description": "Repo my rapo. Sol thinking rapo. repo? Rupo? Oonie, mini, moonie, pie. ",
     "created_at": "2026-09-07T09:25:38Z",
     "updated_at": "2026-09-07T12:57:30Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Aave",
@@ -52,7 +52,7 @@
     "description": "What if active dendrite is the readout of the brain. And here. AI. Sol repo. Lots of handwaving. ",
     "created_at": "2026-09-14T17:48:22Z",
     "updated_at": "2026-09-14T18:07:19Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "AdaptiveObserverCache",
@@ -74,7 +74,7 @@
     "description": "Sound effect based on a ton of maths. ",
     "created_at": "2026-04-25T14:46:07Z",
     "updated_at": "2026-04-25T14:51:54Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "AdelicRecursiveEulerProduct",
@@ -96,7 +96,7 @@
     "description": "Backwards process geometric neuron thoughts by Opus 48",
     "created_at": "2026-07-01T12:25:57Z",
     "updated_at": "2026-07-01T17:22:07Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "AI_mirror",
@@ -129,7 +129,7 @@
     "description": "Combining two residues can create an operator that neither branch had individually.  That might be invention. Sol thinking repo. ",
     "created_at": "2026-09-20T07:57:40Z",
     "updated_at": "2026-09-20T13:15:28Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "AinsteinInsideTransformerResidualStream",
@@ -140,7 +140,7 @@
     "description": "Sol thinking repo",
     "created_at": "2026-09-21T02:57:49Z",
     "updated_at": "2026-09-21T16:41:05Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "AiVideoFilter",
@@ -162,7 +162,7 @@
     "description": "As it says. ",
     "created_at": "2026-08-05T17:16:48Z",
     "updated_at": "2026-08-26T17:14:51Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Alavirta",
@@ -184,7 +184,7 @@
     "description": "Will go? No go? Yes go?",
     "created_at": "2026-08-28T07:24:24Z",
     "updated_at": "2026-08-28T14:38:21Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Alkuluku",
@@ -206,7 +206,7 @@
     "description": "Antti and teh AI the gang figures it all out once again. Sol thinking repo. ",
     "created_at": "2026-09-04T05:45:18Z",
     "updated_at": "2026-09-04T14:54:52Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "AnotherOddThing",
@@ -217,7 +217,7 @@
     "description": "Yes. Sol repo. ",
     "created_at": "2026-09-16T02:44:02Z",
     "updated_at": "2026-09-24T12:17:54Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "AnotherThoughtSplat",
@@ -294,7 +294,7 @@
     "description": "A world of ray traced mirrors and twisting geometric shapes where you can fly from room to room. Very trippy. NEW - procedurally generated rooms with procedural shapes. ",
     "created_at": "2026-07-10T18:39:54Z",
     "updated_at": "2026-07-12T06:46:30Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "AnttisDeepfake",
@@ -305,7 +305,7 @@
     "description": "",
     "created_at": "2026-08-04T19:30:40Z",
     "updated_at": "2026-08-05T05:45:59Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "AnttisFFT",
@@ -327,7 +327,7 @@
     "description": "Wat? Something weird. ",
     "created_at": "2026-05-08T17:32:37Z",
     "updated_at": "2026-05-08T17:36:43Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "AnttisNeuron",
@@ -338,7 +338,7 @@
     "description": "Wheel re invented. ",
     "created_at": "2026-09-14T04:44:34Z",
     "updated_at": "2026-09-14T12:27:57Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "AnttisStringTheory",
@@ -371,7 +371,7 @@
     "description": "A physical-modelling instrument where the resonator is a body you grow, and the microphones are two points you drag around on it.",
     "created_at": "2026-08-09T06:11:02Z",
     "updated_at": "2026-08-09T06:13:32Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Arborverb",
@@ -382,7 +382,7 @@
     "description": "Odd reverb vst that can be built with juce. (Compiled VST 3 folder that works in windows included)",
     "created_at": "2026-08-09T03:57:35Z",
     "updated_at": "2026-08-09T04:00:39Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Arrowfield",
@@ -404,7 +404,7 @@
     "description": "A highly speculative Antti Cortex ",
     "created_at": "2026-06-20T05:07:08Z",
     "updated_at": "2026-06-25T09:09:10Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "ArtificialVisualCortex",
@@ -426,7 +426,7 @@
     "description": "How many times have we been here before.. Sol repo. ",
     "created_at": "2026-09-05T14:36:58Z",
     "updated_at": "2026-09-05T14:57:47Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "axon-hillock",
@@ -470,7 +470,7 @@
     "description": "Ah. Inventing universe with Gemini3.1 pro. Sure. Lets hallucinate it into being! ",
     "created_at": "2026-04-14T05:09:44Z",
     "updated_at": "2026-07-15T05:32:08Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "BlackBoxLab",
@@ -481,7 +481,7 @@
     "description": "Sunglasses on.  Sol thinking repo. ",
     "created_at": "2026-08-30T13:08:21Z",
     "updated_at": "2026-08-31T09:43:56Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "BlockNeuron",
@@ -492,7 +492,7 @@
     "description": "Sol thinks. ",
     "created_at": "2026-08-21T05:10:03Z",
     "updated_at": "2026-08-21T16:45:21Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "BlocksScreensaver",
@@ -580,7 +580,7 @@
     "description": "A bug that moves in webcam feed according to its nodes. ",
     "created_at": "2024-11-01T07:55:27Z",
     "updated_at": "2024-11-04T07:55:03Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "ButSeriously",
@@ -591,7 +591,7 @@
     "description": "Pretty amazing vst especially for manipulating drum pitch with midi keyboard. AdelicPhasefreezer with midi input and preset saving.",
     "created_at": "2026-04-25T16:12:21Z",
     "updated_at": "2026-04-29T16:30:14Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "CabbageFarm",
@@ -657,7 +657,7 @@
     "description": "A sol repo",
     "created_at": "2026-09-09T11:49:50Z",
     "updated_at": "2026-09-10T00:46:46Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "ChargingBullTrader",
@@ -679,7 +679,7 @@
     "description": "Sol. Might be pregnant. ",
     "created_at": "2026-08-30T05:35:26Z",
     "updated_at": "2026-08-30T13:48:38Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "CircularEEGMoirePatternVisualizer",
@@ -690,7 +690,7 @@
     "description": "A system that shows Moire patterns created from EEG by overlaying and coupling them with each other",
     "created_at": "2025-08-05T07:02:46Z",
     "updated_at": "2025-08-05T07:14:23Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Claude4GUT",
@@ -712,7 +712,7 @@
     "description": "Clockfield Grokking Experiment: β-Adaptive Weight Decay",
     "created_at": "2026-03-05T04:43:03Z",
     "updated_at": "2026-03-07T07:16:00Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Clockfield-Anti-Radar-Jamming-Attention",
@@ -745,7 +745,7 @@
     "description": "Opus gives it deepest take on 24 clockfield repos + geometric neuron repo. Move over string theory. ",
     "created_at": "2026-04-05T04:43:11Z",
     "updated_at": "2026-04-07T07:03:20Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "ClockfieldBigBang",
@@ -756,7 +756,7 @@
     "description": "Ah. Ah. Ok. ",
     "created_at": "2026-04-03T17:26:13Z",
     "updated_at": "2026-04-03T17:31:57Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "ClockfieldBornRule",
@@ -767,7 +767,7 @@
     "description": "Yes. ",
     "created_at": "2026-03-21T18:59:16Z",
     "updated_at": "2026-03-21T18:59:42Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "ClockfieldCollapse",
@@ -778,7 +778,7 @@
     "description": "Claude 4.6 found its inner Hawking. ",
     "created_at": "2026-03-22T03:51:02Z",
     "updated_at": "2026-03-22T07:19:03Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "ClockfieldDimensionality",
@@ -866,7 +866,7 @@
     "description": "Unification. :D",
     "created_at": "2026-07-09T07:52:56Z",
     "updated_at": "2026-07-09T17:54:27Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "ClockfieldOuroborosEquation",
@@ -932,7 +932,7 @@
     "description": "Old and new clockfield as seen by Fable",
     "created_at": "2026-07-12T12:06:32Z",
     "updated_at": "2026-09-03T15:44:19Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "ClockfieldWaveParticleDualityAndUncertaintyPrinciple",
@@ -1108,7 +1108,7 @@
     "description": "Gosh. Another Claude 4.6 sonnet repo. I must have found the truth. :D Right. ",
     "created_at": "2026-02-23T14:06:27Z",
     "updated_at": "2026-02-23T14:50:33Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "deerskin-hypothesis",
@@ -1119,7 +1119,7 @@
     "description": "A hypothesis that when 'opened up' neurons make holographic computational 'deerskins' that can be treated as 2d processing fields. ",
     "created_at": "2026-02-17T06:29:25Z",
     "updated_at": "2026-07-13T16:50:57Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "DeerskinQuantumImplicationsPaper",
@@ -1141,7 +1141,7 @@
     "description": "Pollockian code. ",
     "created_at": "2026-09-10T05:20:35Z",
     "updated_at": "2026-09-10T09:46:04Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "DendriticAttentionSystem",
@@ -1185,7 +1185,7 @@
     "description": "Not a transformer. ",
     "created_at": "2026-08-16T15:48:31Z",
     "updated_at": "2026-08-17T05:33:34Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Dig",
@@ -1229,7 +1229,7 @@
     "description": "Nothing to do with MRI, just a weird vst visualizer. ",
     "created_at": "2026-05-08T17:27:05Z",
     "updated_at": "2026-05-08T17:31:16Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Dynamo",
@@ -1262,7 +1262,7 @@
     "description": "Audio decoding attempt from eeg. ",
     "created_at": "2026-05-01T04:49:58Z",
     "updated_at": "2026-05-01T05:15:58Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "EEG2Landscape",
@@ -1295,7 +1295,7 @@
     "description": "Tries to map EEG phase and amplitude to a 3d brainmodel using standard MNE library. Note does not work in Gamma. ",
     "created_at": "2025-08-09T16:08:29Z",
     "updated_at": "2025-12-19T04:52:59Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "EEGbugs",
@@ -1317,7 +1317,7 @@
     "description": "It shows 3D brain made out of EEG along with flowchart of the current states. ",
     "created_at": "2025-08-15T04:57:45Z",
     "updated_at": "2025-09-15T17:38:31Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "EEGTools",
@@ -1328,7 +1328,7 @@
     "description": "Couple EEG tools. ",
     "created_at": "2025-08-26T17:49:38Z",
     "updated_at": "2025-08-29T04:17:26Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "EigenCortex",
@@ -1372,7 +1372,7 @@
     "description": "Fable thinks of geometric AI. ",
     "created_at": "2026-07-03T15:09:33Z",
     "updated_at": "2026-07-03T15:25:30Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "EphapticFieldIntelligence",
@@ -1394,7 +1394,7 @@
     "description": "Fable thinks deep about entropy and my weird ideas. ",
     "created_at": "2026-07-14T05:52:07Z",
     "updated_at": "2026-07-14T16:29:51Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "EvoX",
@@ -1405,7 +1405,7 @@
     "description": "Sol thinking repo. ",
     "created_at": "2026-09-16T05:55:16Z",
     "updated_at": "2026-09-16T11:17:46Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "FablesBaby",
@@ -1460,7 +1460,7 @@
     "description": "Field latent bridge",
     "created_at": "2024-12-02T03:07:26Z",
     "updated_at": "2024-12-02T03:08:11Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "FirstOrderClockfield",
@@ -1515,7 +1515,7 @@
     "description": "Yet another even more complicated try to make a thinking fractal. ",
     "created_at": "2024-10-21T10:02:50Z",
     "updated_at": "2024-11-03T17:04:44Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "FractalBug",
@@ -1526,7 +1526,7 @@
     "description": "A more fractal based version of bug i the machine",
     "created_at": "2024-11-01T11:47:50Z",
     "updated_at": "2024-11-01T18:24:25Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "FractalGradientOptimizer",
@@ -1570,7 +1570,7 @@
     "description": "Sol thinking repo. ",
     "created_at": "2026-09-17T17:28:20Z",
     "updated_at": "2026-09-18T06:12:37Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "FrequencyAddressedState-dependentOperatorComposition",
@@ -1581,7 +1581,7 @@
     "description": "Sol thinking repo. ",
     "created_at": "2026-09-18T06:38:47Z",
     "updated_at": "2026-09-18T08:54:14Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "FrequencyAndNeurons",
@@ -1592,7 +1592,7 @@
     "description": "Claude Opus 5.5 thinks about what sets frequencies for neurons. ",
     "created_at": "2026-09-24T07:29:49Z",
     "updated_at": "2026-09-24T07:36:15Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "FridayRepo",
@@ -1603,7 +1603,7 @@
     "description": "Inspired by recent paper that claims - Action potential waveforms are state-dependent  - Sol repo. ",
     "created_at": "2026-09-25T17:07:59Z",
     "updated_at": "2026-09-26T05:05:11Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "FrozenTime",
@@ -1625,7 +1625,7 @@
     "description": "ChatGPT Sol thnks of geometric neuron. ",
     "created_at": "2026-08-07T18:40:18Z",
     "updated_at": "2026-08-08T04:12:59Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Fusion1",
@@ -1647,7 +1647,7 @@
     "description": "Where we are going there are no roads. Sol thinking repo. ",
     "created_at": "2026-09-15T05:22:14Z",
     "updated_at": "2026-09-15T13:54:48Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "GaborVideoCompression",
@@ -1669,7 +1669,7 @@
     "description": "Sol repo. ",
     "created_at": "2026-09-12T13:42:15Z",
     "updated_at": "2026-09-12T15:06:51Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "GATGRILS",
@@ -1680,7 +1680,7 @@
     "description": "Gauge-aware temporal grammar recovery in a learned system. ChatGPT luna repo. ",
     "created_at": "2026-09-23T13:37:48Z",
     "updated_at": "2026-09-24T08:18:58Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "GaugeRopeTheory",
@@ -1702,7 +1702,7 @@
     "description": "Genetic algorithm X. Sol thinking repo. ",
     "created_at": "2026-09-12T04:17:41Z",
     "updated_at": "2026-09-12T12:27:19Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "GelatinIsland",
@@ -1713,7 +1713,7 @@
     "description": "Neuron? Jello? Oscillating thing? Sol thinking repo. ",
     "created_at": "2026-09-06T07:21:30Z",
     "updated_at": "2026-09-06T08:17:05Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Genealogy",
@@ -1723,7 +1723,7 @@
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-09-26T06:52:05Z",
+    "updated_at": "2026-09-26T06:55:53Z",
     "inventory_status": "unread"
   },
   {
@@ -1746,7 +1746,7 @@
     "description": "Deerskin neuron repo with less clutter. ",
     "created_at": "2026-03-03T16:02:07Z",
     "updated_at": "2026-07-13T16:19:28Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "GeometricDreamingIntelligence",
@@ -1768,7 +1768,7 @@
     "description": "Weird take by opus. ",
     "created_at": "2026-06-27T15:45:27Z",
     "updated_at": "2026-06-27T17:33:20Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "GeometricNeuron_V20",
@@ -1779,7 +1779,7 @@
     "description": "A curation of older ones by opus 48",
     "created_at": "2026-06-30T02:53:15Z",
     "updated_at": "2026-07-01T05:25:11Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "GeometricNeuronAndSapolskysFractal",
@@ -1812,7 +1812,7 @@
     "description": "ECG json ecg pulse finally explained. ",
     "created_at": "2026-09-08T04:07:23Z",
     "updated_at": "2026-09-08T04:14:22Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "GeometricNeuronPlusField",
@@ -1823,7 +1823,7 @@
     "description": "Geometric neuron as mass that produces field and the field computing together with it. ",
     "created_at": "2026-08-08T04:40:02Z",
     "updated_at": "2026-08-13T12:13:35Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "GeometricNeuronV2",
@@ -1834,7 +1834,7 @@
     "description": "lol lol lol - vibe researcher loses his mind. Pitts and Cullough are rolling in their graves. SUS!",
     "created_at": "2026-05-09T03:43:23Z",
     "updated_at": "2026-05-09T11:44:05Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "GeometricNeuronV21",
@@ -1845,7 +1845,7 @@
     "description": "Deeper into confusion. ",
     "created_at": "2026-07-13T15:47:44Z",
     "updated_at": "2026-07-13T16:20:49Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "GeometricNeuronV22",
@@ -1856,7 +1856,7 @@
     "description": "A neuroscience paper sounds like geometric neuron. Sol 56 is thinking about its connections to geometric neuron and our other recent thoughts.",
     "created_at": "2026-08-13T12:26:08Z",
     "updated_at": "2026-08-14T08:26:14Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "GeometricNeuronV23",
@@ -1867,7 +1867,7 @@
     "description": "Ah. Silliness. ",
     "created_at": "2026-08-15T05:53:19Z",
     "updated_at": "2026-08-15T16:45:35Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "GeometricNeuronV24",
@@ -1878,7 +1878,7 @@
     "description": "Because why not. Sol repo. ",
     "created_at": "2026-09-03T04:12:28Z",
     "updated_at": "2026-09-04T05:50:41Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "GeometricNeuronV25GeneticAlgoAndFanningNeuron",
@@ -1889,7 +1889,7 @@
     "description": "What if we treat generational genetic algorithms as data for linear transform and let that generate a future trajectory. A sol repo",
     "created_at": "2026-09-12T03:29:41Z",
     "updated_at": "2026-09-12T05:49:18Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "GeometricNeuronV4",
@@ -1900,7 +1900,7 @@
     "description": "Getting there ",
     "created_at": "2026-05-23T06:43:57Z",
     "updated_at": "2026-05-28T06:02:00Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "GeometricNeuronV5",
@@ -1911,7 +1911,7 @@
     "description": "Claude 48 developing the idea further. Would love to have mythos have a looksee on this. ",
     "created_at": "2026-06-08T05:52:39Z",
     "updated_at": "2026-06-10T05:12:18Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "GeometricNeuronV8",
@@ -1922,7 +1922,7 @@
     "description": "Fable was thinking about it without knowing it was thinking of neuron. ",
     "created_at": "2026-06-10T07:33:35Z",
     "updated_at": "2026-06-10T07:37:45Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "GeometricNeuronV9",
@@ -1933,7 +1933,7 @@
     "description": "Ahh. Shiaa.. Well. ",
     "created_at": "2026-06-12T09:30:04Z",
     "updated_at": "2026-06-12T11:36:06Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "GeometricPerception",
@@ -1955,7 +1955,7 @@
     "description": "Heck. Sol. Go. ",
     "created_at": "2026-08-25T06:03:00Z",
     "updated_at": "2026-08-25T07:49:28Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "GlobalLocator",
@@ -1999,7 +1999,7 @@
     "description": "Jeesh. Sol repo. ",
     "created_at": "2026-09-14T14:11:14Z",
     "updated_at": "2026-09-14T16:26:47Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "HeadAsResonator",
@@ -2010,7 +2010,7 @@
     "description": "Head-as-Resonator: Measuring & Inverting Acoustic Coupling in EEG during Overt Speech",
     "created_at": "2026-05-02T06:50:33Z",
     "updated_at": "2026-05-03T07:51:19Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "HeadAsResonator2",
@@ -2021,7 +2021,7 @@
     "description": "Ring ring? ",
     "created_at": "2026-06-27T06:43:41Z",
     "updated_at": "2026-06-27T07:01:55Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Hierarchial_AI_Brain",
@@ -2109,7 +2109,7 @@
     "description": "A mathematical rendering trick in Anttis brain seems to work in neural nets too. ",
     "created_at": "2026-07-11T18:38:16Z",
     "updated_at": "2026-07-12T05:55:53Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "HubStateLoopMTX",
@@ -2142,7 +2142,7 @@
     "description": "From navier stokes, to information flow. ",
     "created_at": "2026-09-10T03:57:06Z",
     "updated_at": "2026-09-10T04:07:01Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "InnerAndOuterQualia",
@@ -2164,7 +2164,7 @@
     "description": "Fable further developed some esoteric mathematical theories opus \\ other ais had written for me. ",
     "created_at": "2026-06-12T04:31:53Z",
     "updated_at": "2026-06-12T04:40:45Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "IttnasNoruen",
@@ -2175,7 +2175,7 @@
     "description": "Sol thinking repo. ",
     "created_at": "2026-09-08T05:20:32Z",
     "updated_at": "2026-09-09T16:20:59Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "JelloBrain",
@@ -2186,7 +2186,7 @@
     "description": "Can it think? Sol thinking repo. ",
     "created_at": "2026-09-06T14:09:30Z",
     "updated_at": "2026-09-07T03:45:12Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "JsonAV",
@@ -2252,7 +2252,7 @@
     "description": "Fable thinks of wave based AI. ",
     "created_at": "2026-07-15T09:43:07Z",
     "updated_at": "2026-07-15T09:43:36Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "KapeaKanava",
@@ -2263,7 +2263,7 @@
     "description": "Narrow Channel. Opus 5.5 thinking about resonation and waves. ",
     "created_at": "2026-09-26T06:40:14Z",
     "updated_at": "2026-09-26T06:40:58Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Kdefect",
@@ -2285,7 +2285,7 @@
     "description": "Claude thinking on the circuit of apical tuft and pyramid neuron plus basket cells and chandelier cells. Opus 5.5",
     "created_at": "2026-09-24T05:47:58Z",
     "updated_at": "2026-09-24T07:18:24Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Kolmijako",
@@ -2307,7 +2307,7 @@
     "description": "Not your run of the mill thoughts here. Sol thinking repo. ",
     "created_at": "2026-09-09T06:16:15Z",
     "updated_at": "2026-09-09T07:39:11Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "KoopmanAndGeometry",
@@ -2329,7 +2329,7 @@
     "description": "A zero-parameter tool for exploring EEG recordings as spectrograms on a 2-D Koopman manifold, with competitive sparse reconstruction and group separation metrics.",
     "created_at": "2026-06-04T07:20:01Z",
     "updated_at": "2026-06-04T08:45:26Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "KyberDyyni1",
@@ -2340,7 +2340,7 @@
     "description": "Sol thinking repo. ",
     "created_at": "2026-08-27T01:12:45Z",
     "updated_at": "2026-08-27T10:59:52Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Kynnys",
@@ -2362,7 +2362,7 @@
     "description": "ChatGPT 56 working repo for geometric neuron related ideas. ",
     "created_at": "2026-08-10T08:09:01Z",
     "updated_at": "2026-08-12T11:14:07Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Lasku",
@@ -2395,7 +2395,7 @@
     "description": "Flying squirrel conservation program. Sol thinking repo. ",
     "created_at": "2026-09-03T11:32:03Z",
     "updated_at": "2026-09-03T16:43:51Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "life2o2",
@@ -2417,7 +2417,7 @@
     "description": "Weird vibecoded dendritic fractal brain inspired ai written by claude",
     "created_at": "2025-06-28T06:33:05Z",
     "updated_at": "2025-06-28T07:08:55Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "LLM-Studio",
@@ -2428,7 +2428,7 @@
     "description": "Simple LLM Studio & Weight Visualizer ",
     "created_at": "2025-09-03T09:08:21Z",
     "updated_at": "2025-09-03T16:41:11Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "llmit",
@@ -2560,7 +2560,7 @@
     "description": "Neo found higher level. Accompanying repo for my youtube video. ",
     "created_at": "2026-01-27T09:11:18Z",
     "updated_at": "2026-01-27T09:18:45Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "MembraneSimulation",
@@ -2604,7 +2604,7 @@
     "description": "Computation as neural membrane grid interference caused by ion channels? Perhaps new sort of moire computation. ",
     "created_at": "2026-02-14T06:18:03Z",
     "updated_at": "2026-02-14T06:23:08Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "MoireBrain",
@@ -2615,7 +2615,7 @@
     "description": "Could Moire patterns have something to do with thinking? ",
     "created_at": "2025-08-01T07:59:02Z",
     "updated_at": "2025-08-01T08:12:58Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "MoireFormer",
@@ -2626,7 +2626,7 @@
     "description": "A new transformer bolt on architecture. ",
     "created_at": "2026-03-09T06:31:43Z",
     "updated_at": "2026-03-11T07:03:43Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "MoireMandelbrot",
@@ -2659,7 +2659,7 @@
     "description": "GPT 56 Sol thinking repo. ",
     "created_at": "2026-08-24T02:44:50Z",
     "updated_at": "2026-08-24T18:21:50Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "MoreToyPhysicsStuff",
@@ -2681,7 +2681,7 @@
     "description": "Geometric neuron is still alive and kicking. ",
     "created_at": "2026-08-07T10:04:39Z",
     "updated_at": "2026-08-07T10:07:52Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "MorphoGeneticneuronClaude50Opus",
@@ -2692,7 +2692,7 @@
     "description": "Trying to connect the geometric neuron with self developing form ",
     "created_at": "2026-08-07T08:58:42Z",
     "updated_at": "2026-08-07T09:27:50Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "MovingProblem",
@@ -2703,7 +2703,7 @@
     "description": "Sol: Give the system a moving problem.  Ok. ",
     "created_at": "2026-08-27T11:38:39Z",
     "updated_at": "2026-08-29T14:03:06Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "MultiTimeWindowEEGexplorer",
@@ -2736,7 +2736,7 @@
     "description": "Ah. We wish. ",
     "created_at": "2026-08-29T04:57:12Z",
     "updated_at": "2026-08-29T07:36:54Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "NeuralFieldPatternExplorer",
@@ -2791,7 +2791,7 @@
     "description": "AI inspired by random thoughts on neurons. Sol repo. ",
     "created_at": "2026-09-15T02:56:00Z",
     "updated_at": "2026-09-15T04:44:50Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Nollas",
@@ -2802,7 +2802,7 @@
     "description": "Letting fable do repo after repo about clockfield. ",
     "created_at": "2026-07-16T16:23:45Z",
     "updated_at": "2026-07-17T04:49:36Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "NoMoreSecrets",
@@ -2835,7 +2835,7 @@
     "description": "Dendrites being played by pings from axon, ringing in their eigenfrequencies, routes owning synapses in multiple locations. Sol thinking repo. ",
     "created_at": "2026-09-17T04:42:02Z",
     "updated_at": "2026-09-17T11:28:17Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "NSSN2",
@@ -2846,7 +2846,7 @@
     "description": "Sol thinking repo. ",
     "created_at": "2026-09-17T11:52:33Z",
     "updated_at": "2026-09-17T14:24:06Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Nuoli",
@@ -2879,7 +2879,7 @@
     "description": "Object one. Trying to grasp for it.. Sol repo. ",
     "created_at": "2026-09-10T10:01:29Z",
     "updated_at": "2026-09-10T14:41:19Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "OddThing",
@@ -2912,7 +2912,7 @@
     "description": "Claude 4.6 take on the moireformer \\ eeg results. ",
     "created_at": "2026-03-15T11:16:43Z",
     "updated_at": "2026-03-15T11:23:17Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "OOfCookies",
@@ -2934,7 +2934,7 @@
     "description": "Operator. Sol thinking repo. ",
     "created_at": "2026-08-31T14:35:34Z",
     "updated_at": "2026-09-10T00:36:41Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "OperaattoriAktiivinenDendriitti",
@@ -2945,7 +2945,7 @@
     "description": "Back to operator. Sol thinking repo. ",
     "created_at": "2026-09-07T16:21:29Z",
     "updated_at": "2026-09-08T04:15:32Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "OperaattoriJako",
@@ -2956,7 +2956,7 @@
     "description": "Sol makes a tool uh. Perhaps. ",
     "created_at": "2026-09-02T15:05:45Z",
     "updated_at": "2026-09-02T15:27:00Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "OperatorTime",
@@ -2967,7 +2967,7 @@
     "description": "Sol thinking repo. ",
     "created_at": "2026-09-20T07:07:14Z",
     "updated_at": "2026-09-20T07:59:31Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Oppository",
@@ -3000,7 +3000,7 @@
     "description": "Schanpps for all. Sol thinking repo. ",
     "created_at": "2026-09-03T14:11:55Z",
     "updated_at": "2026-09-03T15:08:25Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "OutoTesti",
@@ -3022,7 +3022,7 @@
     "description": "Perhaps Astra can. Perhaps it cant. Write it. ",
     "created_at": "2026-09-07T04:42:10Z",
     "updated_at": "2026-09-07T09:18:39Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "PerceptionLab",
@@ -3033,7 +3033,7 @@
     "description": "Lego set science ",
     "created_at": "2025-11-06T18:46:00Z",
     "updated_at": "2026-08-12T07:40:17Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Phase-Amplitude-Coupling-Explorer",
@@ -3077,7 +3077,7 @@
     "description": "Makes a sort of oscilloscope visualization of phase space with live audio. ",
     "created_at": "2024-12-01T11:05:11Z",
     "updated_at": "2025-09-02T18:16:22Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "PhaseSpaceVisualizerVST",
@@ -3088,7 +3088,7 @@
     "description": "A simple visualizer that can be loaded as effect in DAW VST channel ",
     "created_at": "2025-01-19T07:27:37Z",
     "updated_at": "2026-04-24T11:47:11Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "PhaseStigmergy",
@@ -3099,7 +3099,7 @@
     "description": "ChatGPT Sol thinks of phases, fields and dendrites. ",
     "created_at": "2026-08-06T11:13:51Z",
     "updated_at": "2026-08-06T11:17:21Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Phi-Hologram",
@@ -3121,7 +3121,7 @@
     "description": "The AI gang creates universe. ",
     "created_at": "2026-01-28T05:32:08Z",
     "updated_at": "2026-01-29T05:17:33Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Physnet",
@@ -3165,7 +3165,7 @@
     "description": "Phase based and geometry based computational system theories fusing. Repo by Sonnet 4.6",
     "created_at": "2026-02-22T03:56:15Z",
     "updated_at": "2026-02-22T04:14:23Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "PkasPCL3satSolver",
@@ -3176,7 +3176,7 @@
     "description": "Solves 3sat problems by yet another model of neuronal function",
     "created_at": "2025-10-13T09:22:44Z",
     "updated_at": "2025-10-13T12:50:56Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "PokeAQuale",
@@ -3209,7 +3209,7 @@
     "description": "Hmm",
     "created_at": "2026-06-17T17:31:58Z",
     "updated_at": "2026-06-18T06:46:43Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "PresentMoment",
@@ -3220,7 +3220,7 @@
     "description": "Pivoting to thinking about present moment in brain. A GPT 56 working directory to pull papers and think. ",
     "created_at": "2026-08-12T04:11:53Z",
     "updated_at": "2026-08-13T12:12:06Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "PribamLives",
@@ -3242,7 +3242,7 @@
     "description": "In triangle we trust and from primal crystal we came. Riemann arms compile! ",
     "created_at": "2026-04-23T16:02:57Z",
     "updated_at": "2026-04-24T16:59:48Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "PrimeTone",
@@ -3286,7 +3286,7 @@
     "description": "This is where sol thinks we have landed. Sol repo. ",
     "created_at": "2026-09-25T08:17:34Z",
     "updated_at": "2026-09-25T14:25:57Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "RajapintaFable",
@@ -3297,7 +3297,7 @@
     "description": "Fable seems some of the weird stuff and wants to make a repo of it. Its not really as rajapinta was. But it chose the name. ",
     "created_at": "2026-07-12T17:51:29Z",
     "updated_at": "2026-07-12T17:53:18Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "RajoitustenHierarkia",
@@ -3308,7 +3308,7 @@
     "description": "Hierarchy of constraints and .. Thinking systems. Sol thinking repo. ",
     "created_at": "2026-09-05T04:08:43Z",
     "updated_at": "2026-09-05T06:44:56Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "ReadWrite",
@@ -3319,7 +3319,7 @@
     "description": "Some fusion of old ideas. Claude 5 repo. ",
     "created_at": "2026-09-04T04:15:52Z",
     "updated_at": "2026-09-04T04:42:32Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "RealtimeEEG3Dsystem",
@@ -3330,7 +3330,7 @@
     "description": "Vibecoded by claude. Perhaps has nothing to do with reality. ",
     "created_at": "2025-08-08T08:05:10Z",
     "updated_at": "2025-08-08T12:23:47Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "RecurrentGeometricNet",
@@ -3341,7 +3341,7 @@
     "description": "Sigh. ",
     "created_at": "2026-06-10T09:35:02Z",
     "updated_at": "2026-06-10T16:32:45Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "RegionalAttractorExplorer",
@@ -3374,7 +3374,7 @@
     "description": "Resonator brain. Opus 5.5 repo. ",
     "created_at": "2026-09-25T14:56:10Z",
     "updated_at": "2026-09-26T03:58:33Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Resonant-Cortex-Dynamic-Reservoir-Bridge",
@@ -3429,7 +3429,7 @@
     "description": "Algo my schmalgo. Sol repo. ",
     "created_at": "2026-09-13T14:42:10Z",
     "updated_at": "2026-09-13T15:17:22Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "ResonantNeuron",
@@ -3484,7 +3484,7 @@
     "description": "Even more wave based computation. ",
     "created_at": "2026-07-15T10:28:26Z",
     "updated_at": "2026-07-15T11:14:11Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Rytmi",
@@ -3495,7 +3495,7 @@
     "description": "Brain-inspired sequence learner that works in time windows and phases. Opus 5.5 repo",
     "created_at": "2026-09-24T12:53:08Z",
     "updated_at": "2026-09-24T13:13:32Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Saturday",
@@ -3506,7 +3506,7 @@
     "description": "A ChatGPT 56 sol thinking repo. ",
     "created_at": "2026-08-22T05:14:38Z",
     "updated_at": "2026-08-22T08:21:01Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "SelectCarryBindWriteAskSelect",
@@ -3517,7 +3517,7 @@
     "description": "Almost there. ",
     "created_at": "2026-09-10T04:16:59Z",
     "updated_at": "2026-09-10T05:03:00Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "SelfAndOtherObjectsInTime",
@@ -3528,7 +3528,7 @@
     "description": "Sol thinking repo. ",
     "created_at": "2026-09-20T05:12:58Z",
     "updated_at": "2026-09-20T06:23:29Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "SewerSystemAI",
@@ -3561,7 +3561,7 @@
     "description": "Sol thinking of the sigh image lineage further. ",
     "created_at": "2026-09-18T14:22:25Z",
     "updated_at": "2026-09-19T02:59:52Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "SighImageSuper",
@@ -3572,7 +3572,7 @@
     "description": "Le Sigh Image Super has arrived. Sol thinking repo. ",
     "created_at": "2026-09-07T13:40:55Z",
     "updated_at": "2026-09-08T04:12:57Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Sihti",
@@ -3583,7 +3583,7 @@
     "description": "Take an image apart by purifying it, keep what bleeds out at each depth, sum it back exactly. Which operator purifies decides where the objects go: with the image's own edge-aware graph, the layout survives in the core and the texture bleeds into the residues. Live instrument + BSDS500 gates.",
     "created_at": "2026-09-19T02:56:37Z",
     "updated_at": "2026-09-20T14:31:33Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Sihti2",
@@ -3638,7 +3638,7 @@
     "description": "Wheel 2.0 lets make it. Sol repo. ",
     "created_at": "2026-09-16T16:22:55Z",
     "updated_at": "2026-09-16T17:04:26Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "SimplePDF2Text",
@@ -3671,7 +3671,7 @@
     "description": "Nested blackholes in clockfield. You heard it here first ! (Simpsons intro begins to play)",
     "created_at": "2026-04-26T08:03:03Z",
     "updated_at": "2026-07-06T17:53:00Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Slapstack",
@@ -3693,7 +3693,7 @@
     "description": "2D Gabor objects (Splats) you can edit and prompt and move etc. By Fable. ",
     "created_at": "2026-07-06T07:57:15Z",
     "updated_at": "2026-07-06T08:45:05Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "SlapstackBet5",
@@ -3737,7 +3737,7 @@
     "description": "A version where you can move objects \\ spawn objects using stablediffusion 2.1 as splats that use belief propagation to know their borders. ",
     "created_at": "2026-07-06T05:05:09Z",
     "updated_at": "2026-07-06T05:46:47Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "SlipNSlide",
@@ -3825,7 +3825,7 @@
     "description": "Because why not",
     "created_at": "2026-05-30T07:37:49Z",
     "updated_at": "2026-05-30T07:44:17Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "SpectralIslandsV2",
@@ -3836,7 +3836,7 @@
     "description": "Oof",
     "created_at": "2026-05-31T06:20:50Z",
     "updated_at": "2026-06-06T07:08:52Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "SpectralIslandsV3",
@@ -3847,7 +3847,7 @@
     "description": "Opus \\ Fable think of my geometric neuron \\ Clockfield \\ spectral islands. ",
     "created_at": "2026-06-12T09:00:14Z",
     "updated_at": "2026-06-12T09:08:39Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "SpectralNeuron",
@@ -3858,7 +3858,7 @@
     "description": "Jeesh. Something. Opus4.8.",
     "created_at": "2026-06-25T16:16:42Z",
     "updated_at": "2026-06-26T04:45:18Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "SplatField",
@@ -3869,7 +3869,7 @@
     "description": "What happens when tinyavatar splats get field on top? A huge mess. ",
     "created_at": "2026-07-22T16:49:54Z",
     "updated_at": "2026-07-25T07:17:52Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "SplatNeuron",
@@ -3880,7 +3880,7 @@
     "description": "Hmm. ",
     "created_at": "2026-08-17T12:36:03Z",
     "updated_at": "2026-08-18T07:57:16Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "SplatNeuronPlusField",
@@ -3891,7 +3891,7 @@
     "description": "Got any brains. ",
     "created_at": "2026-08-18T07:44:45Z",
     "updated_at": "2026-08-18T15:30:58Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "SplatPack",
@@ -3902,7 +3902,7 @@
     "description": "A tool perhaps. Sol repo. ",
     "created_at": "2026-09-11T07:52:47Z",
     "updated_at": "2026-09-11T16:42:42Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "SplatWorld",
@@ -3913,7 +3913,7 @@
     "description": "202,599 CelebA faces compressed into a 7 MB wave-interference field. ",
     "created_at": "2026-07-21T06:20:46Z",
     "updated_at": "2026-07-21T06:50:12Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Splatworld2",
@@ -3924,7 +3924,7 @@
     "description": "Sol says it can do it better. ",
     "created_at": "2026-08-22T15:41:15Z",
     "updated_at": "2026-08-22T16:55:23Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Splatworld3",
@@ -3935,7 +3935,7 @@
     "description": "Splat you. Sol. ",
     "created_at": "2026-09-10T15:11:13Z",
     "updated_at": "2026-09-11T04:11:57Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "SplatWorld4",
@@ -3946,7 +3946,7 @@
     "description": "Leftovers and further musings. Sol repo. ",
     "created_at": "2026-09-11T04:43:33Z",
     "updated_at": "2026-09-12T17:37:58Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "SplatWorldGeometricNeuronFusion",
@@ -4001,7 +4001,7 @@
     "description": "Attempt at something weird. Sol. ",
     "created_at": "2026-09-05T07:06:10Z",
     "updated_at": "2026-09-05T17:00:23Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "StringPianoInstrument",
@@ -4023,7 +4023,7 @@
     "description": "Yet another consolidation \\ fusion repo. Perhaps building on splatworld2's ability to get rid of the 'fire'. GPT sol repo. ",
     "created_at": "2026-08-23T05:23:05Z",
     "updated_at": "2026-08-23T11:58:48Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Supistus",
@@ -4045,7 +4045,7 @@
     "description": "Someone has to do it. ",
     "created_at": "2026-08-26T17:33:35Z",
     "updated_at": "2026-08-26T18:26:55Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "TadsWowExplorer",
@@ -4067,7 +4067,7 @@
     "description": "Attention is a Phase Shift measured by dendrite",
     "created_at": "2026-02-26T06:39:07Z",
     "updated_at": "2026-03-03T16:16:26Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "TakensInTakensOut",
@@ -4089,7 +4089,7 @@
     "description": "A bit different from others i have made. Add notch EQ and look at high delay turn the attractor as 3d",
     "created_at": "2026-05-04T17:07:44Z",
     "updated_at": "2026-05-08T05:43:08Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "TATWATASW",
@@ -4100,7 +4100,7 @@
     "description": "Tokens As Time Windows And Tuft As Sequence Writer. Claude Opus 5.5 repo ",
     "created_at": "2026-09-24T11:10:08Z",
     "updated_at": "2026-09-24T11:20:47Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "TensorUniverse",
@@ -4155,7 +4155,7 @@
     "description": "Spend expensive compute only when reality drifts. Based on different geometric neuron repo ideas. ",
     "created_at": "2026-07-02T09:32:42Z",
     "updated_at": "2026-07-02T09:35:00Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "TheClutch2",
@@ -4199,7 +4199,7 @@
     "description": "A perception lab native (other than the server) distributed holographic spiking substrate — geometric neurons that recall, grow, tire, read the arrow of time, and federate across machines with nothing but tokens",
     "created_at": "2026-06-13T05:50:54Z",
     "updated_at": "2026-06-16T05:15:02Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "TheoryLab",
@@ -4221,7 +4221,7 @@
     "description": "A real-time predictive coding loop steering a continuous Gabor manifold via sparse optical flow. Features an unsupervised V1-style N-octave frequency cascade and a live graphical EQ to gate rendering and correction.",
     "created_at": "2026-07-19T15:48:09Z",
     "updated_at": "2026-07-19T17:29:19Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "thetasweep",
@@ -4254,7 +4254,7 @@
     "description": "Astra working repo. Hopefully one shot or we'll have to wait for a week. ",
     "created_at": "2026-09-07T03:47:55Z",
     "updated_at": "2026-09-07T04:14:06Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "ThinkingPhi",
@@ -4276,7 +4276,7 @@
     "description": "Three sols. 2 unique views. This is fusion. ",
     "created_at": "2026-09-12T05:59:46Z",
     "updated_at": "2026-09-12T10:24:38Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Thursday",
@@ -4298,7 +4298,7 @@
     "description": "TiniOnes are lil buggers that are powered by AI model made from EDF EEG model. Tool for making the model is available also. ",
     "created_at": "2024-11-18T17:20:20Z",
     "updated_at": "2024-11-19T05:42:36Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "TinyAvatar",
@@ -4309,7 +4309,7 @@
     "description": "A ~22 MB face model you can train on yourself and drive live from a webcam — rendered by nothing but wave interference.",
     "created_at": "2026-07-21T15:32:53Z",
     "updated_at": "2026-07-23T14:14:01Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "TinyAvatar2",
@@ -4320,7 +4320,7 @@
     "description": "A work in progress",
     "created_at": "2026-07-23T11:29:33Z",
     "updated_at": "2026-09-04T05:18:38Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Topological-Fourier-Transform-Of-Semantics",
@@ -4386,7 +4386,7 @@
     "description": "Algorithms inside transformer. What do they do. Sol repo. ",
     "created_at": "2026-09-13T01:11:00Z",
     "updated_at": "2026-09-13T04:27:44Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "TransformerToX",
@@ -4397,7 +4397,7 @@
     "description": "Odd one. Neural windows applied to transformer? Claude Opus 5.5",
     "created_at": "2026-09-24T18:18:35Z",
     "updated_at": "2026-09-25T06:54:00Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "TransientWaveCompiler",
@@ -4408,7 +4408,7 @@
     "description": "ChatGPT designs geometric neuron inspired computer chip \\ compiler. ",
     "created_at": "2026-08-09T04:06:14Z",
     "updated_at": "2026-08-10T06:14:53Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Tuesday",
@@ -4419,7 +4419,7 @@
     "description": "Bluesday - SOL thinking repo. ",
     "created_at": "2026-08-25T02:53:31Z",
     "updated_at": "2026-08-25T04:37:01Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "TuesdayFusionCortex",
@@ -4441,7 +4441,7 @@
     "description": "It r a day. Sol thinking repo. ",
     "created_at": "2026-08-26T03:35:55Z",
     "updated_at": "2026-08-26T11:25:14Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "UnifiedAIDreamViewer",
@@ -4496,7 +4496,7 @@
     "description": "Geometric neuron - Visertaja fusion. ",
     "created_at": "2026-07-17T14:02:09Z",
     "updated_at": "2026-07-17T14:02:59Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Visertaja",
@@ -4507,7 +4507,7 @@
     "description": "Visertäjä — the Chirping Latent Layer - Traditional AI assumes a thought is a static vector. Visertaja assumes a thought is a trajectory. Born out of Fable trying to build clockfield atom in Nollas repo. A superfluid that thinks. ",
     "created_at": "2026-07-17T05:20:01Z",
     "updated_at": "2026-07-17T07:32:10Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "VisualMemoryDemo",
@@ -4551,7 +4551,7 @@
     "description": "A music visualizer built using a circle of the \"Wave Neurons\"",
     "created_at": "2024-11-07T18:40:16Z",
     "updated_at": "2024-11-08T07:56:54Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "WeakEEGSignalCategoryDetection",
@@ -4606,7 +4606,7 @@
     "description": "A weird field thingy that produces different field patterns that can be overlaid with webcam ",
     "created_at": "2025-02-01T10:15:03Z",
     "updated_at": "2025-02-02T08:17:36Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "WhatIsI",
@@ -4628,7 +4628,7 @@
     "description": "Sol thinking repo. ",
     "created_at": "2026-09-19T03:51:31Z",
     "updated_at": "2026-09-19T16:03:05Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "WhereAmI",
@@ -4650,7 +4650,7 @@
     "description": "Matrix of this moment? One link in a chain? Time rolls like bicycle chain.. Hippocampal loop? Perhaps it could do the same for AI? Repo for GPT 56 Sol ",
     "created_at": "2026-08-11T12:57:06Z",
     "updated_at": "2026-08-15T14:08:23Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "WignerEEG",
@@ -4661,7 +4661,7 @@
     "description": "This Python script is an experimental tool for visualizing EEG data and exploring a quantum-inspired analysis of brain signals.",
     "created_at": "2025-03-14T11:06:51Z",
     "updated_at": "2025-03-15T17:46:52Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "WildIdea",
@@ -4694,7 +4694,7 @@
     "description": "Sol thinks. ",
     "created_at": "2026-08-18T14:56:58Z",
     "updated_at": "2026-08-19T05:43:06Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Y",
@@ -4760,7 +4760,7 @@
     "description": "It is a mystery. ",
     "created_at": "2026-08-25T13:11:27Z",
     "updated_at": "2026-08-25T17:53:17Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Z",
