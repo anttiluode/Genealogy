@@ -1,0 +1,61 @@
+{
+  "id": "coupled-sequence-learners",
+  "title": "Coupled sequence learners: reciprocal recovery, pair specificity, and a failed primary gate",
+  "summary": "September 26 turns the listener/predictive-susceptibility line into a preregistered two-agent causal test. CoupledSequenceLearners compares live reciprocal continuation against a causally stale yoked replay from the exact same saved junction state and matched communication budget. The primary preregistered effect-size gate fails: live exceeds yoked by +0.0662 mean branch accuracy, positive in 6/8 seeds but below the required +0.10. Several narrower structures survive: live is best on mean held-out accuracy, prediction disagreement is lower than stale controls, and swapping trained partners causes a large immediate accuracy drop. The listener-first secondary prediction goes the other way: fresh initialization starts more seeds than state-dependent or state-independent pretraining. The useful descendant is therefore not a proof of a shared social dynamical system, but a falsifiable assay for causal reactivity, stale replay, partner-specific learned interfaces, and counterfactual recovery.",
+  "order": 350,
+  "reviewed_at": "2026-09-26",
+  "nodes": [
+    {
+      "id": "CoupledSequenceLearners",
+      "url": "https://github.com/anttiluode/CoupledSequenceLearners",
+      "family": "communication",
+      "status": "ledger",
+      "claim": "Tests whether two independently stateful sequence learners acquire pair-specific predictive interfaces such that a live partner can recover from a post-prefix counterfactual better than a causally stale replay that begins from the same saved state and uses the same communication budget.",
+      "survived": "The centralized ceiling reached 1.0000 and live held-out branch accuracy averaged 0.7954 versus 0.7292 for yoked replay. The live-minus-yoked difference was positive in 6/8 frozen seeds, live had much lower final predictive disagreement than yoked (JS 0.0323 vs 0.1935), and immediate partner swap caused a 0.2388 mean accuracy drop, supporting pair-specific learned interfaces in this synthetic task. The diagnostic coordinate gauge changed displayed coordinates without changing behavior, so raw latent synchrony was not required by the assay.",
+      "killed": "The preregistered primary gate required live minus yoked >= +0.10 mean; observed improvement was only +0.0662, so the strong reciprocal interaction-state claim was not supported by v0. A one-way A-to-B arm remained fairly close to live (0.7703 vs 0.7954), so reciprocity was not shown to be generally necessary. The listener-first secondary prediction also failed: fresh listeners started 8/8 seeds, state-dependent-pretrained 6/8, and state-independent 3/8, the opposite of the expected ordering. Nothing here establishes interpersonal neural synchrony, mirror-neuron implementation, distributed consciousness, or a biological communication mechanism.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/CoupledSequenceLearners/blob/main/README.md",
+      "tags": [
+        "predictive-susceptibility",
+        "reciprocal-coupling",
+        "yoked-replay",
+        "counterfactual",
+        "partner-specificity",
+        "emergent-communication",
+        "preregistration",
+        "negative-result",
+        "listener-first"
+      ],
+      "era": "Dyadic predictive coupling",
+      "era_order": 48
+    }
+  ],
+  "edges": [
+    {
+      "source": "PredictiveSusceptibility",
+      "target": "CoupledSequenceLearners",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "CoupledSequenceLearners operationalizes the PredictiveSusceptibility idea that history may persist as future-response geometry by asking whether a partner's live reaction after an identical saved prefix changes counterfactual recovery relative to stale replay.",
+      "evidence": "https://github.com/anttiluode/CoupledSequenceLearners/blob/main/README.md"
+    },
+    {
+      "source": "The_Ping_And_The_Listener",
+      "target": "CoupledSequenceLearners",
+      "type": "corrects",
+      "confidence": "high",
+      "why": "The repo directly carries the listener-first proposal into a controlled initialization comparison. Its preregistered secondary result cuts against that hypothesis: fresh listeners start more reliably than state-dependent-pretrained listeners in this architecture.",
+      "evidence": "https://github.com/anttiluode/CoupledSequenceLearners/blob/main/README.md"
+    },
+    {
+      "source": "KapeaKanava",
+      "target": "CoupledSequenceLearners",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "KapeaKanava establishes the paired narrow-channel communication/startup problem. CoupledSequenceLearners keeps two independent learners and a narrow message channel but adds exact state restoration, live-versus-yoked causal replay, one-way attackers, partner swap, and a preregistered recovery criterion.",
+      "evidence": "https://github.com/anttiluode/CoupledSequenceLearners/blob/main/README.md"
+    }
+  ],
+  "motifs": []
+}
