@@ -242,5 +242,9 @@
   {
     "path": "linked-sequence-learners.json",
     "enabled": true
+  },
+  {
+    "path": "limitys.json",
+    "enabled": true
   }
 ]
