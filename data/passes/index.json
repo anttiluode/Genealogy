@@ -234,5 +234,9 @@
   {
     "path": "predictive-susceptibility-synthesis.json",
     "enabled": true
+  },
+  {
+    "path": "coupled-sequence-learners.json",
+    "enabled": true
   }
 ]
