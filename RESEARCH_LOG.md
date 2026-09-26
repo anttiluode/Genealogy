@@ -27,3 +27,9 @@ The pass therefore keeps a strong distinction between executable toy dynamics, g
 ## 2026-09-15 — Graph navigation
 
 The static atlas now carries its own SVG camera. Mouse wheel zooms around the pointer, dragging empty graph space pans, and `− / + / Fit` controls expose the same behavior without a mouse wheel. Zoom state survives ordinary graph rerenders such as selection and filtering, while a genuine change in graph world bounds re-fits automatically. The zoom code is dependency-free and receives the same CI syntax check as the main browser script.
+
+## 2026-09-26 — Marked events and cultural inheritance
+
+`LittleWorld` runs a frozen, matched-event-budget test of state-coupled marks entering a confidence-dependent receiver. Its 12-seed synthetic gate passes against binary, yoked, scrambled and receiver-reset arms. The transform is supplied, so the result says nothing yet about learned communication or biological spike codes.
+
+`Perinto` tests what a narrow teaching channel can retain across generations. Frozen v1 fails H1-H4 with evolving trust. After that failure, v1.1 fixes trust to one and precommits a revised test on six fresh worlds; laws plus random facts beat facts alone and a wider fact-only channel, while proposed curated-exception advantages fail. The conceptual edge to `LittleWorld` records the generational question explicitly left open there, not reused marks or code.

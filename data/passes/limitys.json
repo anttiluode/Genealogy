@@ -44,7 +44,7 @@
     {
       "source": "Rytmi",
       "target": "Limitys",
-      "type": "extends",
+      "type": "converges",
       "confidence": "medium",
       "why": "Rytmi asks how ordered sequence trajectories can be written and replayed. Limitys moves to the next failure mode: many conflicting trajectories are learned one after another, and the question becomes whether old branch structure survives later learning.",
       "evidence": "https://github.com/anttiluode/Limitys/blob/main/README.md"

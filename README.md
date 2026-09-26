@@ -195,6 +195,12 @@ Gate 4 then makes the older GAx connection executable. Eight historical operator
 
 This is the closest AInstein has come to GAx's spectral-router idea: GAx preserves multiple computational modes so context can amplify the appropriate one; Gate 4 stores those modes explicitly as context-stamped operators that can be reused or compared. The live boundary now moves to trajectory-sensitive memory: can identical endpoints remain distinguishable because their histories, event roles or simulated/actual provenance differ?
 
+### LittleWorld and Perinto — what a small message can carry
+
+The [marked-events-cultural-inheritance pass](data/passes/marked-events-cultural-inheritance.json) connects two separate experiments without treating them as one implementation. [LittleWorld](https://github.com/anttiluode/LittleWorld) supplies a three-coordinate sender mark and matching receiver transform, then holds the event budget fixed while removing marks, yoking them to another world, scrambling their timing, or resetting receiver memory. Its frozen 12-seed gate passes all four comparisons on blind hidden-world prediction. The supplied encoder and decoder limit the result to a constructed communication mechanism.
+
+[Perinto](https://github.com/anttiluode/Perinto) moves the question across generations: what happens when elders can pass laws or isolated facts through only twelve sentences? Its frozen v1 with evolving trust fails all four predictions. A later post-hoc v1.1, precommitted on six fresh worlds with trust fixed at one, finds a law-based ratchet: twelve law-bearing sentences yield 21.0 fitness versus 13.8 for twelve fact-only sentences and 16.3 for forty fact-only sentences. The advantage for selected exceptions remains unsupported. These two repositories meet at a question about receiver state and compressed transmission; neither establishes learned spike coding, spontaneous language, or direct code ancestry.
+
 ## Evidence rule
 
 A genealogy edge means documentary evidence was found for that relationship. Similar names and version numbers are only discovery hints.

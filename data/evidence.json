@@ -2931,5 +2931,171 @@
       "The original Gate 1 run was invalid because of an object-scoring bug; the amendment, fix, and rerun are documented"
     ],
     "source": "https://github.com/anttiluode/SihtiMuisti/blob/main/README.md"
+  },
+  {
+    "id": "little-world-v0-marked-events",
+    "node": "LittleWorld",
+    "claim": "Under a fixed event schedule, live sender-state marks and persistent receiver state improve blind hidden-world prediction over binary, yoked, temporally scrambled and receiver-reset controls in a synthetic population.",
+    "design": "Freeze 12 unseen seeds (200-211), 12 agents and 1,200 ticks per seed. Reuse the same sender/private-state tape across five communication arms, sending three-coordinate marks every four ticks; measure receiver MSE only on ticks without a direct observation.",
+    "result": "supports",
+    "motifs": [],
+    "sample": {
+      "unit": "synthetic world seed",
+      "count": 12
+    },
+    "metrics": [
+      {
+        "name": "live marked stateful median blind MSE",
+        "value": 0.309976
+      },
+      {
+        "name": "binary median blind MSE",
+        "value": 0.443183
+      },
+      {
+        "name": "yoked median blind MSE",
+        "value": 0.469056
+      },
+      {
+        "name": "scrambled median blind MSE",
+        "value": 0.438238
+      },
+      {
+        "name": "receiver-reset median blind MSE",
+        "value": 0.425063
+      },
+      {
+        "name": "live paired wins against each of four controls",
+        "value": 12
+      },
+      {
+        "name": "events per communicating arm per seed",
+        "value": 3600
+      }
+    ],
+    "controls": [
+      "Same sender and private-state tape before assigning a communication arm",
+      "Binary arm preserves event timing but removes marks",
+      "Yoked arm uses marks from an independent hidden-world trajectory",
+      "Scrambled arm preserves the exact live marked-packet multiset but permutes timing",
+      "Receiver-reset arm uses live marks but erases its social state on every tick",
+      "All communicating arms send 3,600 events per seed"
+    ],
+    "replication": "12 frozen seeds, 200-211; all four improvements and paired-win gates pass",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Synthetic two-dimensional world and fixed mark encoder/receiver inverse; the interface is supplied, not learned",
+      "The no-current-observation metric does not prove language or biological spike coding",
+      "The browser ecology is illustrative and is not the experiment scored here"
+    ],
+    "source": "https://github.com/anttiluode/LittleWorld/blob/main/results/v0.json"
+  },
+  {
+    "id": "perinto-v1-trust-bootstrap",
+    "node": "Perinto",
+    "claim": "At a twelve-sentence channel width, evolving trust and a language of laws plus exceptions bootstrap a cumulative cultural advantage over facts alone.",
+    "design": "Precommit G0 and H1-H4 before the v1 engine and runs. Compare no teaching, facts, laws plus random facts and laws plus exceptions over 60 generations of 40 learners in six synthetic worlds (seeds 1-6).",
+    "result": "contradicts",
+    "motifs": [],
+    "sample": {
+      "unit": "synthetic world seed",
+      "count": 6
+    },
+    "metrics": [
+      {
+        "name": "G0 true-laws versus no-laws fitness",
+        "treatment": 27.4569,
+        "control": 13.7347,
+        "comparison": "pre-run setup check; wrong laws scored 10.6403"
+      },
+      {
+        "name": "H1 laws plus exceptions minus facts fitness",
+        "value": 0.4582
+      },
+      {
+        "name": "H2 laws plus exceptions gain over generation one",
+        "value": 0.5288
+      },
+      {
+        "name": "H3 laws plus exceptions minus laws plus random facts",
+        "value": -0.2282
+      },
+      {
+        "name": "H4 trust difference, laws plus exceptions minus facts",
+        "value": 0.0351
+      }
+    ],
+    "controls": [
+      "G0 verifies that true laws improve fitness and wrong laws hurt before interpreting culture",
+      "Facts-only and no-teaching arms isolate law transmission from ordinary individual learning",
+      "Random-fact and selected-exception law arms separate teaching policy from concept compression",
+      "W=12 is primary; W=40 is exploratory"
+    ],
+    "replication": "six worlds, 60 generations each; precommitted H1-H4 all failed",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Tiny synthetic world with one hand-coded kind of law and fixed speaking policies",
+      "Failure under evolving trust does not imply law messages are useless when trusted",
+      "The evolving trust gene did not reliably bootstrap from its low initial setting"
+    ],
+    "source": "https://github.com/anttiluode/Perinto/blob/main/results/summary_v1.json"
+  },
+  {
+    "id": "perinto-v11-fixed-trust-laws",
+    "node": "Perinto",
+    "claim": "With children programmed to trust elders, a narrow law-bearing channel accumulates deeper world structure across generations more efficiently than a channel of isolated facts.",
+    "design": "After the frozen v1 failure and a trust=1 diagnostic, precommit revised Q1-Q4 in POSTHOC.md, then evaluate fixed-trust law/fact and exception-aware teaching arms on fresh worlds 7-12, with W=12 primary and W=40 secondary.",
+    "result": "mixed",
+    "motifs": [],
+    "sample": {
+      "unit": "fresh synthetic world seed",
+      "count": 6
+    },
+    "metrics": [
+      {
+        "name": "generation 51-60 fitness at W=12",
+        "treatment": 20.9655,
+        "control": 13.7761,
+        "comparison": "law plus random facts versus facts only; Q1 passes 6/6"
+      },
+      {
+        "name": "fitness law channel W=12 versus fact channel W=40",
+        "treatment": 20.9655,
+        "control": 16.2731,
+        "comparison": "Q2 passes"
+      },
+      {
+        "name": "correct laws held in last ten generations at W=12",
+        "treatment": 4.8642,
+        "control": 1.9775,
+        "comparison": "law plus random facts versus facts only; seven possible laws"
+      },
+      {
+        "name": "Q3 aware listener minus unaware listener on exceptions",
+        "value": 1.3156
+      },
+      {
+        "name": "Q4 aware exceptions minus random facts fitness",
+        "value": -0.7145
+      }
+    ],
+    "controls": [
+      "Trust fixed at one in every arm, removing the bootstrap barrier that sank frozen v1",
+      "Fresh worlds 7-12 reserved after the earlier diagnostic",
+      "No-teaching and fact-only populations, plus W=40 fact-only compression comparator",
+      "Same exception messages sent to aware and unaware listeners; awareness changes their use as evidence, not message content"
+    ],
+    "replication": "six fresh worlds, 60 generations each; Q1 and Q2 pass, Q3 and Q4 fail",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Post-hoc redesign informed by the failed v1 and diagnostic despite fresh-world precommitment",
+      "Trust is fixed at one rather than evolving, so the frozen gene-culture bootstrap failure remains",
+      "Teaching language, law induction and exception-awareness are hand-coded; curated exceptions do not outperform random facts",
+      "Small synthetic panel and one type of law, not evidence of spontaneous natural-language or cultural evolution"
+    ],
+    "source": "https://github.com/anttiluode/Perinto/blob/main/results/summary_v11.json"
   }
 ]
