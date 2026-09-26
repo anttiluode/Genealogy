@@ -1,0 +1,84 @@
+{
+  "id": "marked-events-cultural-inheritance",
+  "title": "Marked events and cultural inheritance: two boundaries of state transfer",
+  "summary": "September 26 adds two distinct synthetic communication experiments. LittleWorld tests a supplied, low-dimensional marked-event interface between stateful agents in one hidden world. Its frozen 12-seed panel passes against binary, yoked, scrambled and receiver-reset controls at the same event budget, but the mark encoder and decoder are given, so it does not demonstrate a learned language or biological spike code. Perinto instead asks what crosses generations when a parent has only a few sentences to teach a child. The frozen v1 with evolving trust fails all four predictions at a 12-sentence budget; a later, explicitly post-hoc v1.1 with trust fixed at one finds a law-based concept ratchet on six fresh worlds, while the proposed advantage of curated exceptions fails. The relationship is conceptual convergence around state-dependent reception and narrow-channel transfer, not shared code or proven direct ancestry.",
+  "order": 380,
+  "reviewed_at": "2026-09-26",
+  "nodes": [
+    {
+      "id": "LittleWorld",
+      "url": "https://github.com/anttiluode/LittleWorld",
+      "family": "communication",
+      "status": "ledger",
+      "claim": "Tests whether three-coordinate marks coupled to sender state and integrated through a receiver's confidence-dependent susceptibility improve blind-tick prediction of a shared hidden world over matched communication controls.",
+      "survived": "In the frozen seeds 200-211, marked live events plus persistent receiver state achieve median blind MSE 0.3100 versus 0.4432 binary, 0.4691 yoked, 0.4382 scrambled and 0.4251 with receiver state reset. Relative improvements are 29.7%, 33.7%, 29.2% and 26.8% respectively, with 12/12 paired wins against each control and 3,600 events per arm per seed. This isolates useful contingency, mark/time correspondence and receiver memory in the constructed system.",
+      "killed": "This gate does not establish a learned sender/receiver code, emergent language, inherited learning, neural spike-waveform communication or biological implementation. The sender's mark transform and the receiver's inverse are fixed in advance; the browser ecology illustrates the idea but is not the measured gate.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/LittleWorld/blob/main/README.md",
+      "tags": [
+        "marked-events",
+        "state-dependent-susceptibility",
+        "receiver-memory",
+        "hidden-world-prediction",
+        "yoked-control",
+        "scrambled-control",
+        "preregistered-gate",
+        "synthetic-ecology"
+      ],
+      "era": "Event marks and generational transfer",
+      "era_order": 51
+    },
+    {
+      "id": "Perinto",
+      "url": "https://github.com/anttiluode/Perinto",
+      "family": "communication",
+      "status": "ledger",
+      "claim": "Tests whether small learners can transmit useful compressed world structure across generations through a narrow teaching channel, and whether inherited trust and knowledge can bootstrap each other.",
+      "survived": "With trust fixed at one in a post-hoc v1.1 designed after the frozen failure, twelve law-plus-random-fact sentences yield generation-51-to-60 fitness 21.0 versus 13.8 for twelve fact-only sentences and 16.3 for forty fact-only sentences on six fresh worlds. True laws held rise to about 4.9 of 7 versus about 2 for fact-only learners. The concept ratchet and the narrow-channel compression result pass Q1 and Q2 under this supplied-trust setting.",
+      "killed": "Frozen v1 with an evolving trust gene failed H1-H4: at twelve sentences, laws plus exceptions beat facts by only 0.46 fitness, the generational gain was 0.53, exceptions underperformed random facts, and trust differed by only 0.035. In v1.1 the curated-exception listener benefits Q3 and Q4 also fail; exception examples can mislead law induction when their selection is not handled adequately. The language and law-induction rule are hand-coded, trust is fixed in the successful follow-up, and these toy runs do not demonstrate spontaneous language or general cultural evolution.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Perinto/blob/main/README.md",
+      "tags": [
+        "cumulative-culture",
+        "generational-learning",
+        "narrow-channel",
+        "law-compression",
+        "trust-bootstrap",
+        "pedagogical-sampling",
+        "negative-result",
+        "post-hoc"
+      ],
+      "era": "Event marks and generational transfer",
+      "era_order": 51
+    }
+  ],
+  "edges": [
+    {
+      "source": "PredictiveSusceptibility",
+      "target": "LittleWorld",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "LittleWorld puts the response-geometry idea into a fixed marked-event channel: a receiver with lower private confidence weights the same incoming mark more strongly. This is a documented conceptual overlap with predictive susceptibility, not an asserted code inheritance.",
+      "evidence": "https://github.com/anttiluode/LittleWorld/blob/main/README.md"
+    },
+    {
+      "source": "KapeaKanava",
+      "target": "Perinto",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both repositories expose a narrow-channel bootstrap problem: KapeaKanava's generic pair struggles to discover a useful signal, while Perinto's evolving trust cannot make a twelve-sentence law culture start. The tasks and interfaces differ; the edge records a shared bottleneck, not implementation ancestry.",
+      "evidence": "https://github.com/anttiluode/Perinto/blob/main/README.md"
+    },
+    {
+      "source": "LittleWorld",
+      "target": "Perinto",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "LittleWorld explicitly places learning and cross-generation inheritance beyond its v0 marked-event gate; Perinto independently examines generational transfer through law and fact sentences. Perinto does not reuse LittleWorld's marks, decoder or hidden-world experiment, so this is a program-level convergence only.",
+      "evidence": "https://github.com/anttiluode/LittleWorld/blob/main/README.md"
+    }
+  ],
+  "motifs": []
+}

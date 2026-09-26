@@ -246,5 +246,9 @@
   {
     "path": "limitys.json",
     "enabled": true
+  },
+  {
+    "path": "marked-events-cultural-inheritance.json",
+    "enabled": true
   }
 ]
