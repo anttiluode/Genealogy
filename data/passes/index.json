@@ -238,5 +238,9 @@
   {
     "path": "coupled-sequence-learners.json",
     "enabled": true
+  },
+  {
+    "path": "linked-sequence-learners.json",
+    "enabled": true
   }
 ]
