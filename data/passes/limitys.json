@@ -1,0 +1,54 @@
+{
+  "id": "limitys",
+  "title": "Limitys: overlapping sequences, continual forgetting, and protected routing",
+  "summary": "September 26 turns the sequence-overlap intuition into a matched continual-learning comparison. Limitys trains five phases of mutually conflicting sequence endings with no replay and compares a plain GRU, a learned context gate, an anatomy-shaped microcircuit, and a fixed random context mask. All learned-routing arms learn the newest phase perfectly but collapse to the same 0.233 all-phase junction retention; the fixed mask retains 0.793. The preregistered anatomy-beats-generic-gate claim fails in 0/5 seeds. The useful survivor is narrower: gating alone is not memory protection. Stable context-to-subspace assignments can prevent later learning from overwriting earlier sequence distinctions, separating runtime admission from slower protected routing.",
+  "order": 370,
+  "reviewed_at": "2026-09-26",
+  "nodes": [
+    {
+      "id": "Limitys",
+      "url": "https://github.com/anttiluode/Limitys",
+      "family": "neuron-machine",
+      "status": "ledger",
+      "claim": "Tests whether an anatomy-shaped apical/SST/PV/AIS-like control circuit preserves overlapping sequences learned sequentially better than a plain GRU or a generic learned context gate, under matched parameter counts and no replay.",
+      "survived": "Every arm learned the newest phase at 1.00 accuracy, but only the fixed random context mask protected old endings: all-phase junction retention was 0.793 for the fixed mask versus 0.233 for the plain GRU, learned gate, and anatomical microcircuit. The result isolates stable context-to-subspace assignment as the useful ingredient in this task: later phases cannot freely take over units reserved for earlier contexts.",
+      "killed": "The anatomical microcircuit did not beat the learned generic gate or the plain GRU; MICRO minus GATE was 0.000 in 0/5 seeds, and all three learned-routing systems overwrote old endings completely. The experiment therefore does not support apical gating, slow SST-like inhibition, PV-like normalization, or AIS-like release as sufficient mechanisms for continual sequence retention. A fixed anatomical mapping was not tested, and if it works the credit belongs to the protected mapping rather than the biological labels.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Limitys/blob/main/README.md",
+      "tags": [
+        "sequence-overlap",
+        "continual-learning",
+        "catastrophic-forgetting",
+        "context-gating",
+        "protected-routing",
+        "apical-tuft",
+        "SST",
+        "PV",
+        "AIS",
+        "negative-result"
+      ],
+      "era": "Protected routing for overlapping sequences",
+      "era_order": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "KolmeOvea",
+      "target": "Limitys",
+      "type": "corrects",
+      "confidence": "high",
+      "why": "KolmeOvea separates apical/context, basket/perisomatic timing, and chandelier/AIS publication surfaces. Limitys asks whether an anatomy-shaped version of that control decomposition actually protects sequentially learned overlapping memories; in this task it does not, shifting the useful requirement from fast control surfaces to stable protected routing.",
+      "evidence": "https://github.com/anttiluode/Limitys/blob/main/README.md"
+    },
+    {
+      "source": "Rytmi",
+      "target": "Limitys",
+      "type": "extends",
+      "confidence": "medium",
+      "why": "Rytmi asks how ordered sequence trajectories can be written and replayed. Limitys moves to the next failure mode: many conflicting trajectories are learned one after another, and the question becomes whether old branch structure survives later learning.",
+      "evidence": "https://github.com/anttiluode/Limitys/blob/main/README.md"
+    }
+  ],
+  "motifs": []
+}
