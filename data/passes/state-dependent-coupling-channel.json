@@ -1,0 +1,108 @@
+{
+  "id": "state-dependent-coupling-channel",
+  "title": "State-dependent coupling: resonant memory to narrow-channel learning",
+  "summary": "September 25-26 turns the resonant-brain note into three progressively harsher tests. ResonaattoriAivo shows that a clock-slaved resonator memory can transfer melodies across tempo from one training tempo and that plastic response geometry can rescue noisy memory, while its state-dependent event-shape stage fails to show transfer of old history. FridayRepo isolates the two-sided interaction—sender history changes an emitted temporal shape while receiver history changes susceptibility—and shows that the supplied factorization is learnable, then corrects the literal query-time story when a generic RNN often compiles the joint answer before the common query. KapeaKanava removes the comfortable single-system setting: two learners must communicate old history through a small noisy message. Generic pairs mostly fail to bootstrap communication; a multiplicative interface helps learning start and reaches the task rank bound when it does, while a cheap shortcut captures the channel and history is carried in 0 of 36 shortcut runs. The surviving object is therefore narrower than 'resonant brain': state-dependent coupling is a useful inductive bias and response geometry matters, but communication startup and shortcut competition are the current bottlenecks.",
+  "order": 330,
+  "reviewed_at": "2026-09-26",
+  "nodes": [
+    {
+      "id": "ResonaattoriAivo",
+      "url": "https://github.com/anttiluode/ResonaattoriAivo",
+      "family": "temporal-memory",
+      "status": "ledger",
+      "claim": "Tests a beat-coordinate resonator sequence memory, then asks whether prediction residue can retune the response geometry under noise and whether state-dependent event shape can carry history between modules.",
+      "survived": "Trained at one tempo, the clock-slaved model averaged 94.8% next-beat accuracy across 0.6x-1.6x tempo, while freezing the clock cost about 48 points; free-run recall averaged 97.3% across tempos. Under state noise 0.01, retuning only 16 resonator decay/frequency parameters raised whole-song accuracy from 58.7% fixed to 88.3% across three fresh seeds. This supports tempo-normalized temporal coordinates and plastic response geometry as useful mechanisms in the toy.",
+      "killed": "The primary slow-band context gate failed, and slow modes were fragile under noise. Once the much larger mode-to-pyramid coupling was trainable, retuning resonator frequencies/decays added no measurable gain, so the useful plasticity is not uniquely a resonance-frequency effect. Stage 3 also failed to show old history crossing in event shape: a short-memory sender gave the same gain and sender-history transplants rarely redirected continuation. The event shape is abstract, not a biological action-potential model.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/ResonaattoriAivo/blob/main/README.md",
+      "tags": [
+        "temporal-memory",
+        "resonator",
+        "tempo-transfer",
+        "clock",
+        "response-geometry",
+        "plasticity",
+        "state-dependent-event",
+        "negative-result"
+      ],
+      "era": "State-dependent coupling and communication startup",
+      "era_order": 46
+    },
+    {
+      "id": "FridayRepo",
+      "url": "https://github.com/anttiluode/FridayRepo",
+      "family": "operator-response",
+      "status": "ledger",
+      "claim": "Isolates whether hidden sender history can alter an emitted temporal shape while hidden receiver history alters susceptibility, so identical event times can lead to different continuations; then removes supplied state labels and finally the explicit factorization.",
+      "survived": "The known-answer waveform-times-susceptibility construction reached 97.84% while timestamp, clamped/shuffled waveform, fixed-receiver and additive attackers stayed at about chance. A learned state-conditioned susceptibility reached 96.05% +/- 0.62%, and the learned-history factorized model reached 95.00% +/- 0.96% using only continuation error. In the generic 12-unit RNN falsifier, 4 of 8 initializations solved and those solved runs reached 97.34% +/- 1.57% held out, showing that ordinary nonlinear recurrent dynamics can also compile the history interaction.",
+      "killed": "The first construction is a known-answer bilinear mechanism, and the learned-history version still supplies the sender-shape x receiver-susceptibility factorization. In the generic-dynamics falsifier, every solved run already had the joint answer linearly decodable before the identical query (97.27% +/- 1.62%), so the result does not show that a generic learner invented a waveform/susceptibility interface or that the query created the interaction. It does not establish a biological resonance or action-potential communication code.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/FridayRepo/blob/main/README.md",
+      "tags": [
+        "state-dependent-coupling",
+        "waveform",
+        "susceptibility",
+        "history",
+        "bilinear-interaction",
+        "generic-rnn",
+        "history-compiler",
+        "biological-boundary"
+      ],
+      "era": "State-dependent coupling and communication startup",
+      "era_order": 46
+    },
+    {
+      "id": "KapeaKanava",
+      "url": "https://github.com/anttiluode/KapeaKanava",
+      "family": "communication",
+      "status": "ledger",
+      "claim": "Tests whether two separately learned systems connected only by a small noisy message can bootstrap history-dependent interaction, reach the known low-rank channel bound, use the channel minimally, and keep carrying history when a cheap shortcut competes for capacity.",
+      "survived": "The direct ceiling solved all target ranks at R^2 0.995-0.998. Generic receivers could compute the interaction when handed an oracle message, but sender-receiver co-learning rarely started; a bilinear interface started much more reliably. Whenever a bilinear run did start, its best seed closely tracked the k/r rank bound, including 0.499/0.5, 0.328/0.333 and 0.655/0.667. At high noise, active message dimensions collapsed to the target rank without an explicit sparsity cost, and spare channel dimensions could materially improve startup.",
+      "killed": "Generic sender-receiver pairs mostly failed to bootstrap communication, especially as rank and noise increased. An explicit message-energy penalty often made the startup deadlock worse rather than enforcing a useful minimal code. Most sharply, when a cheap recent-context shortcut was present, old history was carried in 0 of 36 runs: the shortcut reached about 0.91-0.97 uptake and the history interaction stayed near zero even with spare dimensions. The study uses three seeds per main cell, small GRUs and abstract vectors rather than biological waveforms.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/KapeaKanava/blob/main/README.md",
+      "tags": [
+        "emergent-communication",
+        "narrow-channel",
+        "rank-bound",
+        "startup-deadlock",
+        "multiplicative-interface",
+        "shortcut",
+        "history-transfer",
+        "negative-result"
+      ],
+      "era": "State-dependent coupling and communication startup",
+      "era_order": 46
+    }
+  ],
+  "edges": [
+    {
+      "source": "ResonaattoriAivo",
+      "target": "FridayRepo",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "FridayRepo takes the unresolved interface exposed by ResonaattoriAivo Stage 3—state-dependent event shape helped, but did not demonstrably carry old history—and isolates the stronger two-sided question: sender history controls temporal publication while receiver history controls how that publication is read.",
+      "evidence": "https://github.com/anttiluode/FridayRepo/blob/main/README.md"
+    },
+    {
+      "source": "FridayRepo",
+      "target": "KapeaKanava",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "KapeaKanava explicitly grows out of FridayRepo and removes the comfortable supplied single-system factorization: two learners must discover a useful message through a narrow noisy channel, exposing communication startup as a separate problem from interaction computability.",
+      "evidence": "https://github.com/anttiluode/KapeaKanava/blob/main/README.md"
+    },
+    {
+      "source": "ResonaattoriAivo",
+      "target": "KapeaKanava",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "KapeaKanava explicitly names ResonaattoriAivo Stage 3 as a parent. It turns that stage's failure to demonstrate old-history transfer through event shape into a controlled communication test with exact-rank tasks, channel-width sweeps and a cheap shortcut attacker.",
+      "evidence": "https://github.com/anttiluode/KapeaKanava/blob/main/README.md"
+    }
+  ],
+  "motifs": []
+}
