@@ -1,0 +1,92 @@
+{
+  "id": "predictive-susceptibility-synthesis",
+  "title": "Predictive susceptibility: from ping/listener coupling to a future-response geometry",
+  "summary": "September 26 adds two synthesis repositories above the ResonaattoriAivo -> FridayRepo -> KapeaKanava experimental line. The_Ping_And_The_Listener compares those experiments and proposes a listener-first learning hypothesis: historical communication becomes learnable when the receiver is first shaped to interpret incoming signals jointly with its own state, while state-independent shortcuts can leave that interaction channel unopened. PredictiveSusceptibility then broadens the surviving abstraction from neural resonance to learned response geometry: history can persist as how a dynamical system responds to future perturbations, with sequence memory treated as trajectories through possible responses. Its susceptibility_probe.py is a practical measurement tool for replaying different histories while holding the present and probe fixed; the included constructed example is explicitly not new biological evidence.",
+  "order": 340,
+  "reviewed_at": "2026-09-26",
+  "nodes": [
+    {
+      "id": "The_Ping_And_The_Listener",
+      "url": "https://github.com/anttiluode/The_Ping_And_The_Listener",
+      "family": "predictive-memory",
+      "status": "ledger",
+      "claim": "Synthesizes ResonaattoriAivo, FridayRepo and KapeaKanava into a listener-first hypothesis: state-dependent emission becomes useful historical communication only when the receiver has already acquired a state-dependent susceptibility that gives the sender a learnable interface.",
+      "survived": "The paper keeps the experimental boundaries visible while extracting a specific cross-repository proposal. ResonaattoriAivo supplies tempo-normalized recall and plastic response geometry but fails to show old history in event shape; FridayRepo shows a supplied sender-shape x receiver-susceptibility interaction and late-query compressed history transfer; KapeaKanava exposes communication startup failure and the advantage of a multiplicative listener. Reading them together motivates a concrete listener-first curriculum test rather than another broad resonance claim.",
+      "killed": "This is a synthesis and hypothesis, not a new experiment. The listener-first claim comes from comparing different architectures and cue placements rather than from the controlled 2 x 2 experiment the paper itself proposes. It does not show that brains use waveform-borne history, that a neuron literally stores sequences as frozen waves, or that the 2026 action-potential preprint demonstrates a downstream waveform reader.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/The_Ping_And_The_Listener/blob/main/README.md",
+      "tags": [
+        "synthesis",
+        "state-dependent-coupling",
+        "listener-first",
+        "susceptibility",
+        "sequence-memory",
+        "emergent-communication",
+        "prediction",
+        "hypothesis"
+      ],
+      "era": "Predictive susceptibility synthesis",
+      "era_order": 47
+    },
+    {
+      "id": "PredictiveSusceptibility",
+      "url": "https://github.com/anttiluode/PredictiveSusceptibility",
+      "family": "predictive-memory",
+      "status": "tool",
+      "claim": "Generalizes the ping/listener line into predictive susceptibility: learning can compile history into a state-dependent geometry of future response, with biological resonance, recurrence, attention and state-space dynamics treated as possible implementations rather than as identical mechanisms.",
+      "survived": "The repository now includes susceptibility_probe.py, a standard-library measurement tool that replays different histories from the same initial condition, holds the present input and test event fixed, pairs sham and probe trials by seed, and reports a difference-in-differences contrast plus descriptive uncertainty. That probe is useful independently of the larger theory because it operationalizes the narrow question 'did history change the effect of this controlled perturbation?' without requiring training or a model framework.",
+      "killed": "The included probe example is constructed to exercise the measurement and is not additional evidence for a neural mechanism. A nonzero contrast establishes only changed response in the tested setup; it does not identify a unique mechanism, prove consciousness, establish waveform-borne sequence memory, or show that modern AI and biological resonance are physically the same process. The broader paper remains a synthesis whose value depends on distinctive future tests.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/PredictiveSusceptibility/blob/main/README.md",
+      "tags": [
+        "predictive-susceptibility",
+        "response-geometry",
+        "sequence-memory",
+        "prediction",
+        "measurement-tool",
+        "susceptibility-probe",
+        "state-dependent-response",
+        "theory-boundary"
+      ],
+      "era": "Predictive susceptibility synthesis",
+      "era_order": 47
+    }
+  ],
+  "edges": [
+    {
+      "source": "ResonaattoriAivo",
+      "target": "The_Ping_And_The_Listener",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "The Ping and the Listener explicitly uses ResonaattoriAivo as one of its three measured source projects, retaining its tempo-transfer/plastic-response result and its failure to demonstrate old-history transfer through event shape.",
+      "evidence": "https://github.com/anttiluode/The_Ping_And_The_Listener/blob/main/README.md"
+    },
+    {
+      "source": "FridayRepo",
+      "target": "The_Ping_And_The_Listener",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "The synthesis directly imports FridayRepo's sender-emission x receiver-susceptibility result, its generic-RNN precomputation correction, and its late-query result that a narrow message can carry the historical coordinate the receiver still lacks.",
+      "evidence": "https://github.com/anttiluode/The_Ping_And_The_Listener/blob/main/README.md"
+    },
+    {
+      "source": "KapeaKanava",
+      "target": "The_Ping_And_The_Listener",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "The listener-first proposal is motivated directly by KapeaKanava's startup deadlock, the improvement from a multiplicative listener, and the finding that a cheap state-independent shortcut can occupy the channel while old history remains absent.",
+      "evidence": "https://github.com/anttiluode/The_Ping_And_The_Listener/blob/main/README.md"
+    },
+    {
+      "source": "The_Ping_And_The_Listener",
+      "target": "PredictiveSusceptibility",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "PredictiveSusceptibility explicitly carries forward the ping/listener framing, then generalizes it from a proposed neural communication interface into the broader abstraction that history can persist as learned susceptibility to future perturbations; the repository additionally turns one narrow claim into a reusable susceptibility probe.",
+      "evidence": "https://github.com/anttiluode/PredictiveSusceptibility/blob/main/README.md"
+    }
+  ],
+  "motifs": []
+}
