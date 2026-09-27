@@ -1,0 +1,86 @@
+{
+  "id": "return-to-time-window",
+  "title": "Return to the time window: two parallel builds of physical temporal control",
+  "summary": "September 27 returns the sequence line to the physically structured question that had been flattened into generic hidden-state learning: can time, compartment, route and publication remain causally distinct while an internal sequence keeps running? PaluuAikaIkkunaan is Claude/Opus's branch: a tiny story machine keeps basal content, apical/context gain, SST-like route closure, rhythmic dead time and AIS publication separate, then adds a clockless propagating ring and an episode-versus-schema composite. ReturnToTimeWindow is Sol's parallel falsifier-first branch: G0 confirms self-running replay, G4 separates silent computation from stopped computation, G1-G3 reject stronger claims for rhythmic dead time, multiplicative context and phase-local veto under matched replacements, and G6 shows that constructed temporal alignment can act as an address. A later unmerged wake spike finds that correctly timed activity-recruited apical suppression can arbitrate occupied positions versus gaps, while its first assay works equally well with zero lateral spread; the stronger Martinotti/vortex bridge therefore remains an open mechanism, not a result. The two repositories are kept as parallel builds of one research question rather than collapsed into one architecture.",
+  "order": 390,
+  "reviewed_at": "2026-09-27",
+  "nodes": [
+    {
+      "id": "PaluuAikaIkkunaan",
+      "url": "https://github.com/anttiluode/PaluuAikaIkkunaan",
+      "family": "neuron-machine",
+      "status": "ledger",
+      "claim": "Builds a tiny self-running sequence machine in which rhythmic admission, apical/context modulation, SST-like route closure and AIS-style publication are separate control surfaces, then explores route-based episode memory beside a learned schema chain.",
+      "survived": "The main Stage 0 machine can continue stories after input stops; removing dead time degrades one-word-per-window sequencing; blocking publication leaves the internal sequence running while freezing the rhythm loses its place; SST-like route closure protects the tested garden path as framing grows stronger. Stage 0.5 shows that symmetric ring wiring plus local refractory history can support a direction that is state rather than weight, including forward or reverse traversal. Stage 0.6 then exposes a useful conflict: exact/reversible episode memory and habitual learned completion can complement one another at gaps yet interfere when both drive the same position.",
+      "killed": "The repo explicitly retains several boundaries: a narrow additive-context band works as well as multiplicative context in Stage 0; spurious ignitions still derail replay; several timing and gain parameters were hand-tuned; the ring topology, one-sided kick and one-shot binding are constructed; and the proposed tuft/SST arbitration cannot by itself remove a wrong continuation that already crosses threshold from basal drive alone. These are engineering probes, not identified cortical mechanisms.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/PaluuAikaIkkunaan/blob/main/README.md",
+      "tags": [
+        "time-window",
+        "self-running-sequence",
+        "apical-tuft",
+        "SST",
+        "AIS",
+        "dead-time",
+        "route-memory",
+        "episode-schema",
+        "negative-result"
+      ],
+      "era": "Return to physical neural windows",
+      "era_order": 52
+    },
+    {
+      "id": "ReturnToTimeWindow",
+      "url": "https://github.com/anttiluode/ReturnToTimeWindow",
+      "family": "neuron-machine",
+      "status": "ledger",
+      "claim": "Returns to the factorized neural-time-window question with replacement controls: which aspects of a running trajectory genuinely require timing, contextual susceptibility, veto, or publication rather than collapsing to simpler recurrent-state operations?",
+      "survived": "On the unmerged v0 branch, G0 gives self-running replay after the cue ends, G4 cleanly separates continuing internal computation from suppressed publication, and G5 verifies technical independence of the authored control channels. G6 then shows an existence proof for phase as an address: with candidate energy and mean inhibition matched, changing only temporal alignment selects a different continuation, while matched tonic cannot encode both requests and random phase is near chance. The later wake spike reports a finite useful delay band for activity-recruited apical suppression and preserves the negative control that the first one-lane result does not require lateral spread.",
+      "killed": "The frozen v0 rejects three stronger stories in its first assay: rhythmic dead time does not beat matched tonic inhibition on the preregistered replay gate, multiplicative context is matched by a small additive bias, and a phase-local veto is matched by equal-integral tonic suppression. G6 supplies its candidate phases by construction, and the wake spike's initial zero-spread success means it does not establish Martinotti-like lateral topology. The connected self-running wave plus wake experiment remains open.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/ReturnToTimeWindow/tree/plan/return-to-time-window-v0",
+      "tags": [
+        "time-window",
+        "replacement-controls",
+        "self-running-sequence",
+        "phase-address",
+        "publication",
+        "apical-susceptibility",
+        "wake",
+        "falsifier",
+        "mixed-result"
+      ],
+      "era": "Return to physical neural windows",
+      "era_order": 52
+    }
+  ],
+  "edges": [
+    {
+      "source": "KolmeOvea",
+      "target": "PaluuAikaIkkunaan",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "PaluuAikaIkkunaan takes the physically separated-control-surface question into a running sequence: apical/context, rhythmic inhibition and publication remain distinct, with an SST-like route-closure mechanism added to arbitrate contextual continuation.",
+      "evidence": "https://github.com/anttiluode/PaluuAikaIkkunaan/blob/main/README.md"
+    },
+    {
+      "source": "Rytmi",
+      "target": "ReturnToTimeWindow",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "ReturnToTimeWindow explicitly reuses the TATWATASW/Rytmi travelling-wave replay line as its sequence substrate, then asks which timing/context/veto/publication distinctions survive matched replacement controls rather than importing a generic recurrent learner.",
+      "evidence": "https://github.com/anttiluode/ReturnToTimeWindow/tree/plan/return-to-time-window-v0"
+    },
+    {
+      "source": "PaluuAikaIkkunaan",
+      "target": "ReturnToTimeWindow",
+      "type": "converges",
+      "confidence": "high",
+      "why": "These are parallel September 27 builds of the same return-to-the-time-window question, not code ancestry. PaluuAikaIkkunaan moves upward into a language-like running sequence and episode/schema conflict; ReturnToTimeWindow moves downward into replacement-control falsifiers for timing, phase addressing and activity-recruited susceptibility. The wake ledger deliberately keeps their results separate while using each to sharpen the other's next failure condition.",
+      "evidence": "https://github.com/anttiluode/ReturnToTimeWindow/tree/spike/wake-behind-wave"
+    }
+  ],
+  "motifs": []
+}
