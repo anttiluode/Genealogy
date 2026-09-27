@@ -1730,11 +1730,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 770,
+    "size": 866,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-09-26T18:00:35Z",
+    "updated_at": "2026-09-27T09:12:13Z",
     "inventory_status": "unread"
   },
   {
@@ -2456,7 +2456,7 @@
     "name": "LittleWorld",
     "url": "https://github.com/anttiluode/LittleWorld",
     "default_branch": "main",
-    "size": 0,
+    "size": 504,
     "visibility": "public",
     "description": "Sol repo",
     "created_at": "2026-09-26T17:15:32Z",
@@ -3058,6 +3058,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "PaluuAikaIkkunaan",
+    "url": "https://github.com/anttiluode/PaluuAikaIkkunaan",
+    "default_branch": "main",
+    "size": 1746,
+    "visibility": "public",
+    "description": "Return to time window, version by opus 5.5",
+    "created_at": "2026-09-27T05:44:11Z",
+    "updated_at": "2026-09-27T09:04:21Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "Paper",
     "url": "https://github.com/anttiluode/Paper",
     "default_branch": "main",
@@ -3083,7 +3094,7 @@
     "name": "Perinto",
     "url": "https://github.com/anttiluode/Perinto",
     "default_branch": "main",
-    "size": 0,
+    "size": 442,
     "visibility": "public",
     "description": "Sol repo. ",
     "created_at": "2026-09-26T17:34:43Z",
@@ -3529,6 +3540,17 @@
     "created_at": "2026-01-13T18:22:01Z",
     "updated_at": "2026-01-13T18:24:48Z",
     "inventory_status": "unread"
+  },
+  {
+    "name": "ReturnToTimeWindow",
+    "url": "https://github.com/anttiluode/ReturnToTimeWindow",
+    "default_branch": "main",
+    "size": 121,
+    "visibility": "public",
+    "description": "Course correction. Sol repo. ",
+    "created_at": "2026-09-27T04:34:42Z",
+    "updated_at": "2026-09-27T04:55:04Z",
+    "inventory_status": "reviewed"
   },
   {
     "name": "Riemannet",
