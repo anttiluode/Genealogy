@@ -1,0 +1,104 @@
+{
+  "id": "structure-arrow-consequence-learned-mechanism",
+  "title": "Structure, arrow, consequence: when history becomes an executable mechanism",
+  "summary": "StructureArrowConsequenceIsLearnedMechanism turns a cross-repo intuition into a small falsifier. It separates reversal-even support S from reversal-odd temporal flux A, keeps short-lived eligibility E distinct from delayed consequence C, then freezes the learned object and asks whether it executes fresh route probes. In the committed 32-seed v0, reversing history leaves S unchanged and flips A exactly; reward reassignment leaves S and A unchanged while changing C; structure alone is chance on direction, S+A is perfect on direction but chance on value, shuffled consequence returns the fork to chance, and the frozen full mechanism scores 1.00 on held-out probes. The important correction is that these are transformation classes, not three literal boxes: C is symmetric yet can create a policy gradient, and S remains a hard topology mask even when its score term is ablated.",
+  "order": 430,
+  "reviewed_at": "2026-09-28",
+  "nodes": [
+    {
+      "id": "StructureArrowConsequenceIsLearnedMechanism",
+      "url": "https://github.com/anttiluode/StructureArrowConsequenceIsLearnedMechanism",
+      "family": "operator",
+      "status": "ledger",
+      "claim": "Builds the smallest executable separation of reciprocal structure, time-reversal-odd history, local eligibility and delayed consequence, then freezes the result and tests whether those residues support held-out action.",
+      "survived": "All three predeclared v0 gates pass in the constructed fork world: reversal gives S difference 0 and A sign-flip error 0; S-only direction is 0.50 while S+A is 1.00; reward reassignment leaves S and A unchanged; full rewarded-fork and full held-out accuracy are 1.00; shuffled consequence gives 0.46875 fork accuracy across 32 seeds; S+C retains value but scores 0.50 on interior direction; no illegal-edge choice or probe-time mutation was detected.",
+      "killed": "The neat three-box story does not survive intact. A+C is numerically identical to S+A+C because S still supplies the hard legal-edge mask, and symmetric C can itself induce a behavioral arrow through a delayed-eligibility value gradient. The toy therefore does not establish a universal learning law, a unique S/A/C basis, general credit assignment, a biological mechanism or discovered algorithm.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/StructureArrowConsequenceIsLearnedMechanism/blob/main/README.md",
+      "tags": [
+        "structure",
+        "temporal-arrow",
+        "consequence",
+        "eligibility",
+        "operator",
+        "symmetry",
+        "time-reversal",
+        "credit-assignment",
+        "frozen-execution",
+        "causal-abstraction",
+        "negative-boundary"
+      ],
+      "era": "History becomes executable mechanism",
+      "era_order": 56
+    }
+  ],
+  "edges": [
+    {
+      "source": "GeometricNeuronAndSapolskysFractal",
+      "target": "StructureArrowConsequenceIsLearnedMechanism",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "The new repository explicitly inherits the earlier split between reciprocal structure and skew/direction, but recasts it as a transformation test: S is reversal-even and A is reversal-odd rather than treating direction as something passive geometry already contains.",
+      "evidence": "https://github.com/anttiluode/StructureArrowConsequenceIsLearnedMechanism/blob/main/docs/LINEAGE.md"
+    },
+    {
+      "source": "Rytmi",
+      "target": "StructureArrowConsequenceIsLearnedMechanism",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Rytmi supplies a measured example where preserving activity while scrambling within-cycle temporal order destroys ordered replay, motivating a distinct variable for temporal asymmetry rather than generic activation strength.",
+      "evidence": "https://github.com/anttiluode/StructureArrowConsequenceIsLearnedMechanism/blob/main/docs/LINEAGE.md"
+    },
+    {
+      "source": "FunctionalArbors",
+      "target": "StructureArrowConsequenceIsLearnedMechanism",
+      "type": "converges",
+      "confidence": "high",
+      "why": "FunctionalArbors separates recent local eligibility from delayed soma consequence and shows that transporting reward is easier than assigning it causally; SAC keeps E and C separate for exactly that reason.",
+      "evidence": "https://github.com/anttiluode/StructureArrowConsequenceIsLearnedMechanism/blob/main/docs/LINEAGE.md"
+    },
+    {
+      "source": "FlyBench",
+      "target": "StructureArrowConsequenceIsLearnedMechanism",
+      "type": "converges",
+      "confidence": "high",
+      "why": "FlyBench's clicker-neuron branch gives the visible local example: temporal filters leave eligibility, sparse delayed clicks change survival/growth, and the same later test reads a different substrate after a different teaching history.",
+      "evidence": "https://github.com/anttiluode/StructureArrowConsequenceIsLearnedMechanism/blob/main/docs/LINEAGE.md"
+    },
+    {
+      "source": "DevelopmentalSpectralNeuron",
+      "target": "StructureArrowConsequenceIsLearnedMechanism",
+      "type": "corrects",
+      "confidence": "high",
+      "why": "The negative developmental-spectral result is the direct warning against assuming that temporal history automatically becomes useful anatomy: its local resonator/resource/stigmergy rules failed to preserve alternating-versus-blocked order above seed variation, motivating an explicit signed and credited decomposition.",
+      "evidence": "https://github.com/anttiluode/StructureArrowConsequenceIsLearnedMechanism/blob/main/docs/LINEAGE.md"
+    },
+    {
+      "source": "OperatorTime",
+      "target": "StructureArrowConsequenceIsLearnedMechanism",
+      "type": "converges",
+      "confidence": "high",
+      "why": "OperatorTime asks which operation is available now given resident history; SAC supplies one minimal way for past structure, direction and consequence to remain frozen enough to change the operation available at a later probe.",
+      "evidence": "https://github.com/anttiluode/StructureArrowConsequenceIsLearnedMechanism/blob/main/docs/LINEAGE.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "history-equivalence-to-executable-mechanism",
+      "title": "Learning can break different equivalences in history before the residue becomes executable",
+      "description": "The synthesis separates three questions that older repositories often mixed: which interactions remain possible, which temporal histories differ under reversal, and which otherwise similar directed histories differ under later consequence. SAC's v0 shows these transformation classes can be isolated in a tiny frozen executor, while its own ablations also show the basis is not unique. The broader research question is whether richer systems expose comparable reversal-even, reversal-odd and consequence-sensitive coordinates under intervention, or whether an outside decoder should return NOT_IDENTIFIABLE.",
+      "nodes": [
+        "StructureArrowConsequenceIsLearnedMechanism",
+        "GeometricNeuronAndSapolskysFractal",
+        "Rytmi",
+        "FunctionalArbors",
+        "FlyBench",
+        "DevelopmentalSpectralNeuron",
+        "OperatorTime",
+        "ResonantCortex2",
+        "NeuralAlgorithmDecoding"
+      ]
+    }
+  ]
+}
