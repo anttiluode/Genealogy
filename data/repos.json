@@ -1499,11 +1499,11 @@
     "name": "FlyBench",
     "url": "https://github.com/anttiluode/FlyBench",
     "default_branch": "main",
-    "size": 13884,
+    "size": 14736,
     "visibility": "public",
     "description": "Opus 5.5",
     "created_at": "2026-09-27T17:05:48Z",
-    "updated_at": "2026-09-28T08:13:50Z",
+    "updated_at": "2026-09-28T09:08:36Z",
     "inventory_status": "reviewed"
   },
   {
@@ -1752,11 +1752,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 1079,
+    "size": 1127,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-09-28T08:19:57Z",
+    "updated_at": "2026-09-28T08:20:11Z",
     "inventory_status": "unread"
   },
   {
@@ -4139,7 +4139,7 @@
     "name": "StructureArrowConsequenceIsLearnedMechanism",
     "url": "https://github.com/anttiluode/StructureArrowConsequenceIsLearnedMechanism",
     "default_branch": "main",
-    "size": 0,
+    "size": 53,
     "visibility": "public",
     "description": "Sol repo",
     "created_at": "2026-09-28T07:28:00Z",
