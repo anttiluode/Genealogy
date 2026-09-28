@@ -270,5 +270,9 @@
   {
     "path": "structure-arrow-consequence-learned-mechanism.json",
     "enabled": true
+  },
+  {
+    "path": "biomorphic-swarm.json",
+    "enabled": true
   }
 ]
