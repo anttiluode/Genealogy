@@ -266,5 +266,9 @@
   {
     "path": "geometric-neuron-sapolsky-fractal.json",
     "enabled": true
+  },
+  {
+    "path": "structure-arrow-consequence-learned-mechanism.json",
+    "enabled": true
   }
 ]
