@@ -1,10 +1,34 @@
 {
   "id": "artificial-ethology-flybench",
   "title": "Artificial ethology: the fly as answer key, the observer as machine",
-  "summary": "September 27-28 turns the old webcam-fly line into two complementary research objects. Smarfly2 deliberately simplifies the organism and moves the difficult computation into an outside observer that must infer hidden temporal state from visible world evidence and behavior; its sequencing-observer branch then tests selective event deposits, rhythmic continuation windows, tuft-like susceptibility, route closure and publication separation against simpler controls. FlyBench goes the other direction and preserves the old dumbflies as a black box with a hidden answer key: it audits what the original code actually does, separates inertia from history and camera evidence, then swaps in a real egocentric eye plus inherited resonator/window brains to test whether temporal tuning changes where flies spend their lives. Together they make artificial ethology a scored system-identification problem rather than a narrative about what the flies seem to be doing.",
+  "summary": "The webcam-fly line now has an explicit three-stage history. Smartfly is the earlier embodied controller: a live-video creature whose brightness/texture measurements perturb coupled rhythms and a homeostatic control index, which then drives speed and turning. Smarfly2 deliberately reverses the emphasis by keeping the organism small and moving the difficult computation into an outside observer that must infer hidden temporal state from visible evidence and behavior; its sequencing-observer branch tests selective event deposits, rhythmic continuation windows, contextual susceptibility, route closure and publication separation against simpler controls. FlyBench then treats the old fly behavior as a black box with a hidden answer key, auditing which apparent stories survive and which collapse under controlled scenes and explicit ground truth. Together the line moves from building an evocative closed-loop creature to using artificial ethology as a scored system-identification problem.",
   "order": 400,
   "reviewed_at": "2026-09-28",
   "nodes": [
+    {
+      "id": "Smartfly",
+      "url": "https://github.com/anttiluode/Smartfly",
+      "family": "resonance",
+      "status": "experiment",
+      "claim": "Embeds a small coupled-oscillator/homeostatic controller in a webcam-driven fly so local brightness and texture perturb internal rhythmic state and the resulting control variables continuously shape speed and turning.",
+      "survived": "As an historical ancestor, Smartfly supplies the closed-loop embodiment idea that later fly work makes testable: visual evidence changes resident rhythmic state, state changes action, and action changes what is sensed next. The implementation is compact enough to expose its oscillatory variables and intervention knobs directly.",
+      "killed": "Later audits do not support taking the apparent behavior stories at face value. FlyBench shows that several intuitive interpretations of the old fly line fail under hidden ground truth and matched controls, while Smarfly2 explicitly abandons the idea that the fly itself should carry the difficult inference. Smartfly's consciousness-style framing therefore remains motivation, not evidence.",
+      "usefulness": "conceptual",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Smartfly/blob/main/README.md",
+      "tags": [
+        "artificial-ethology",
+        "embodiment",
+        "closed-loop",
+        "oscillation",
+        "homeostasis",
+        "webcam",
+        "active-sensing",
+        "historical-ancestor"
+      ],
+      "era": "Artificial ethology and observer minds",
+      "era_order": 53
+    },
     {
       "id": "Smarfly2",
       "url": "https://github.com/anttiluode/Smarfly2",
@@ -59,6 +83,14 @@
     }
   ],
   "edges": [
+    {
+      "source": "Smartfly",
+      "target": "Smarfly2",
+      "type": "corrects",
+      "confidence": "high",
+      "why": "Smarfly2 explicitly describes itself as the continuation of the old Dumbflies / SmartFly line after reversing the emphasis: the organism becomes deliberately simple and the external observer becomes the difficult computational object.",
+      "evidence": "https://github.com/anttiluode/Smarfly2/blob/main/README.md"
+    },
     {
       "source": "ReturnToTimeWindow",
       "target": "Smarfly2",

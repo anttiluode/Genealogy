@@ -258,5 +258,9 @@
   {
     "path": "artificial-ethology-flybench.json",
     "enabled": true
+  },
+  {
+    "path": "developmental-spectral-neuron.json",
+    "enabled": true
   }
 ]
