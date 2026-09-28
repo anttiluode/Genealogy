@@ -262,5 +262,9 @@
   {
     "path": "developmental-spectral-neuron.json",
     "enabled": true
+  },
+  {
+    "path": "geometric-neuron-sapolsky-fractal.json",
+    "enabled": true
   }
 ]
