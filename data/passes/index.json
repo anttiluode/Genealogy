@@ -274,5 +274,9 @@
   {
     "path": "biomorphic-swarm.json",
     "enabled": true
+  },
+  {
+    "path": "solswarm.json",
+    "enabled": true
   }
 ]
