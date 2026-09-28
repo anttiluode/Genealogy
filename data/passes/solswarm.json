@@ -1,0 +1,74 @@
+{
+  "id": "solswarm",
+  "title": "SolSwarm: world-written operators, corrected scouts, and a failed speedup",
+  "summary": "SolSwarm distills the BiomorphicSwarm sampling failure into three small synthetic gates that connect stigmergy, positive-operator dynamics, importance sampling and Oja-style online mode extraction. Gate A asks whether persistent history written at different structural addresses can change a future operator before the visible population separates. Gate B asks whether deliberately biased scouts can still recover the world rather than their own visitation distribution when their observations are importance-corrected. Gate C then closes the loop and preserves the negative result: correction removes much of the bias, but the adaptive stigmergic proposal still loses to uniform sampling at the same observation budget. The result is not a new swarm optimizer; it is a clean separation between structural leverage, statistical correction and actual sampling efficiency.",
+  "order": 441,
+  "reviewed_at": "2026-09-28",
+  "nodes": [
+    {
+      "id": "SolSwarm",
+      "url": "https://github.com/anttiluode/SolSwarm",
+      "family": "operator-learning",
+      "status": "ledger",
+      "claim": "Tests whether persistent addressed world traces can alter the spectral ordering of a positive future-search operator before population state visibly diverges, and whether nonuniform scouts can recover the underlying world mode through p/q importance-weighted Oja updates.",
+      "survived": "Gate A starts matched counterfactual worlds from B mass 0.5 and applies the same 0.15 total trace to different B addresses: the hub write moves the B/A spectral-growth ratio to 1.0723 while the leaf write leaves it at 0.9749, and after 20 steps B mass separates to 0.6558 versus 0.4346. Gate B deliberately sends 83.2% of scout visits to two misleading high-error sites; naive Oja ends 74.37 degrees from the uniform-world principal direction, while p/q importance-weighted Oja reaches a 2.25 degree median error across 32 seeds with a 5.97 degree worst run. Nonuniform looking can therefore be corrected back to the intended world statistic, and operator spectrum can expose an address-dependent future tendency before the visible state catches up.",
+      "killed": "Importance correction is not an optimizer by itself. In Gate C, update-magnitude stigmergy biases later scout visits and the corrected adaptive learner improves strongly over the uncorrected one (7.49 versus 17.44 degrees median error), but it does not beat uniform sampling at equal budget: uniform reaches 3.25 degrees and corrected adaptive wins only 29.7% of seeds. SolSwarm also explicitly does not establish new physics, biological equivalence, optimal active sensing, universal swarm superiority or a new PCA algorithm.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/SolSwarm/blob/main/README.md",
+      "tags": [
+        "stigmergy",
+        "positive-operator",
+        "spectral-susceptibility",
+        "importance-sampling",
+        "oja",
+        "online-pca",
+        "active-sensing",
+        "sampling-policy",
+        "external-memory",
+        "negative-result"
+      ],
+      "era": "Stigmergic operators / online modes",
+      "era_order": 57
+    }
+  ],
+  "edges": [
+    {
+      "source": "BiomorphicSwarm",
+      "target": "SolSwarm",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "SolSwarm explicitly carries forward BiomorphicSwarm's warning that looking where error is high is not the same as looking where another observation is useful. It turns that failed scout story into controlled biased-sampling and importance-correction gates while keeping the equal-budget adaptive loss to uniform sampling visible. This is conceptual extraction from a measured negative result, not code ancestry.",
+      "evidence": "https://github.com/anttiluode/SolSwarm/blob/main/README.md"
+    },
+    {
+      "source": "GAx",
+      "target": "SolSwarm",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "SolSwarm's Gate A returns to the positive-operator population picture: q is repeatedly transformed by a positive L, but now persistent world trace s parameterizes L(s). That makes the old operator/search geometry explicitly history-dependent through the environment. The relationship is mathematical continuation rather than claimed code inheritance.",
+      "evidence": "https://github.com/anttiluode/SolSwarm/blob/main/README.md"
+    },
+    {
+      "source": "OperatorTime",
+      "target": "SolSwarm",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "OperatorTime asks how resident history changes the effective operator available now. SolSwarm instantiates a complementary externalized version in which local history persists as stigmergic trace and changes a positive operator L(s), then measures the resulting spectral ordering. The shared mechanism is history-conditioned operator availability, not implementation identity.",
+      "evidence": "https://github.com/anttiluode/SolSwarm/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "history-writes-next-operator",
+      "title": "History becomes structure that changes the next operator",
+      "description": "GAx provides the population-through-operator geometry, OperatorTime makes operator availability depend on resident history, BiomorphicSwarm supplies the negative evidence that naive error-directed sampling is not enough, and SolSwarm externalizes history into a persistent stigmergic trace that changes spectral growth while separately testing whether biased observations can be statistically corrected. The motif is strongest when structural leverage and sampling efficiency are kept distinct.",
+      "nodes": [
+        "GAx",
+        "OperatorTime",
+        "BiomorphicSwarm",
+        "SolSwarm"
+      ]
+    }
+  ]
+}
