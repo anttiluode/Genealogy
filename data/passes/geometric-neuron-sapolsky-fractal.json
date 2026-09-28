@@ -1,0 +1,53 @@
+{
+  "id": "geometric-neuron-sapolsky-fractal",
+  "title": "A fracture that grows its own arrow: local skew becomes global chirality",
+  "summary": "GeometricNeuronAndSapolskysFractal turns the Geometric Neuron skew-operator idea into a visible local-growth assay. A space-colonization tree grows from local resource gradients; the symmetric growth rule fills space without a stable handedness, while a small per-tip chiral skew is repeatedly compounded by branching. Across 12 independent regrows per setting, zero skew stays near zero chirality with broad chance variation, whereas nonzero skew produces a larger and much tighter global arrow. The useful claim is therefore narrow: a small systematic local asymmetry can dominate larger local noise when a growth process repeatedly magnifies it. The page does not establish that biological dendrites, ferns or galaxies share this mechanism, nor that Sapolsky's emergence framing is mathematically identical to the Geometric Neuron operator.",
+  "order": 420,
+  "reviewed_at": "2026-09-28",
+  "nodes": [
+    {
+      "id": "GeometricNeuronAndSapolskysFractal",
+      "url": "https://github.com/anttiluode/GeometricNeuronAndSapolskysFractal",
+      "family": "geometric-neuron",
+      "status": "experiment",
+      "claim": "Tests whether a tiny local antisymmetric/chiral bias, repeated inside an otherwise local symmetric growth process, becomes a reproducible global arrow rather than chance handedness.",
+      "survived": "The measured 12-regrow panels separate random chirality from systematic chirality: local skew 0.00 gives mean chirality 0.015 with spread ±0.056; skew 0.20 gives 0.081 ±0.012; skew 0.30 gives 0.124 ±0.013. The strong effect is not only a rising mean but collapsing spread, consistent with repeated local bias overpowering random branch noise in this constructed growth system.",
+      "killed": "The first chirality readout used a running-average metric that tracked noise rather than skew and was replaced before the result was kept. The demo does not show that real dendrites implement this rule, that resource equals a biological metabolic variable, that all fractal growth shares one mechanism, or that the broad Sapolsky-emergence and Geometric-Neuron stories are literally the same theory.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/GeometricNeuronAndSapolskysFractal/blob/main/README.md",
+      "tags": [
+        "geometric-neuron",
+        "skew-operator",
+        "chirality",
+        "local-rule",
+        "space-colonization",
+        "fractal-growth",
+        "emergence",
+        "directionality",
+        "metric-correction"
+      ],
+      "era": "Local asymmetry becomes global structure",
+      "era_order": 55
+    }
+  ],
+  "edges": [
+    {
+      "source": "GeometricNeuronV9",
+      "target": "GeometricNeuronAndSapolskysFractal",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "The repository explicitly identifies the Geometric Neuron skew decomposition as its mathematical parent: the symmetric component builds reciprocal structure while the antisymmetric component carries direction, here translated into a local growth bias whose global chirality can be measured.",
+      "evidence": "https://github.com/anttiluode/GeometricNeuronAndSapolskysFractal/blob/main/README.md"
+    },
+    {
+      "source": "AgainstTheGrain",
+      "target": "GeometricNeuronAndSapolskysFractal",
+      "type": "converges",
+      "confidence": "high",
+      "why": "AgainstTheGrain asks how an established arrow behaves under reversal and shows that reversibility depends on substrate; this repository asks the complementary construction question of how an arrow can arise from repeated local asymmetry in a growing substrate. The source README explicitly lists AgainstTheGrain in its lineage.",
+      "evidence": "https://github.com/anttiluode/GeometricNeuronAndSapolskysFractal/blob/main/README.md"
+    }
+  ],
+  "motifs": []
+}
