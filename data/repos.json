@@ -1180,7 +1180,7 @@
     "name": "DevelopmentalSpectralNeuron",
     "url": "https://github.com/anttiluode/DevelopmentalSpectralNeuron",
     "default_branch": "main",
-    "size": 30,
+    "size": 325,
     "visibility": "public",
     "description": "Smartflies turning into neuron. Sol repo. ",
     "created_at": "2026-09-28T05:21:08Z",
@@ -1499,11 +1499,11 @@
     "name": "FlyBench",
     "url": "https://github.com/anttiluode/FlyBench",
     "default_branch": "main",
-    "size": 5085,
+    "size": 13884,
     "visibility": "public",
     "description": "Opus 5.5",
     "created_at": "2026-09-27T17:05:48Z",
-    "updated_at": "2026-09-28T06:49:35Z",
+    "updated_at": "2026-09-28T08:13:50Z",
     "inventory_status": "reviewed"
   },
   {
@@ -1752,11 +1752,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 964,
+    "size": 1079,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-09-28T07:17:42Z",
+    "updated_at": "2026-09-28T08:19:57Z",
     "inventory_status": "unread"
   },
   {
@@ -4134,6 +4134,17 @@
     "created_at": "2025-07-27T16:52:22Z",
     "updated_at": "2025-10-15T15:00:45Z",
     "inventory_status": "unread"
+  },
+  {
+    "name": "StructureArrowConsequenceIsLearnedMechanism",
+    "url": "https://github.com/anttiluode/StructureArrowConsequenceIsLearnedMechanism",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Sol repo",
+    "created_at": "2026-09-28T07:28:00Z",
+    "updated_at": "2026-09-28T08:13:51Z",
+    "inventory_status": "reviewed"
   },
   {
     "name": "Sunday",
