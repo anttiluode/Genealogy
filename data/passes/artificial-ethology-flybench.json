@@ -1,0 +1,72 @@
+{
+  "id": "artificial-ethology-flybench",
+  "title": "Artificial ethology: the fly as answer key, the observer as machine",
+  "summary": "September 27-28 turns the old webcam-fly line into two complementary research objects. Smarfly2 deliberately simplifies the organism and moves the difficult computation into an outside observer that must infer hidden temporal state from visible world evidence and behavior; its sequencing-observer branch then tests selective event deposits, rhythmic continuation windows, tuft-like susceptibility, route closure and publication separation against simpler controls. FlyBench goes the other direction and preserves the old dumbflies as a black box with a hidden answer key: it audits what the original code actually does, separates inertia from history and camera evidence, then swaps in a real egocentric eye plus inherited resonator/window brains to test whether temporal tuning changes where flies spend their lives. Together they make artificial ethology a scored system-identification problem rather than a narrative about what the flies seem to be doing.",
+  "order": 400,
+  "reviewed_at": "2026-09-28",
+  "nodes": [
+    {
+      "id": "Smarfly2",
+      "url": "https://github.com/anttiluode/Smarfly2",
+      "family": "bounded-observer",
+      "status": "active",
+      "claim": "Reverses the old fly-simulation emphasis: keep the fly intentionally small and partially observed, then ask an external temporal observer to recover predictive hidden history from visible world evidence and behavior without access to the fly's hidden state.",
+      "survived": "The v0 boundary cleanly separates public observations from hidden audit state and supports matched-present tests. On the sequencing-observer-v1 branch, memory writes are restricted to six visible innovations, four continuation channels advance through active windows separated by dead intervals, slow context modulates susceptibility, route closure is local, and publication is read-only. On the 4,432-frame webcam session, destroying event order or removing context modulation substantially worsens endpoint prediction, so ordered history and contextual susceptibility carry signal even though the complete circuit is not the best predictor.",
+      "killed": "The original generic resident observer that low-passed the full visible vector is not supported: it performs badly on the real session. The complete SequencingObserver v1 also does not beat present-only or the 12-frame window on endpoint RMSE, and removing route closure changes little, so the extra circuit has not earned superiority. Tuft/SST/AIS labels remain computational analogies, not biological identification claims.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Smarfly2/blob/feature/sequencing-observer-v1/docs/V1_STATUS.md",
+      "tags": [
+        "artificial-ethology",
+        "bounded-observer",
+        "hidden-history",
+        "time-window",
+        "event-residue",
+        "apical-susceptibility",
+        "route-closure",
+        "publication",
+        "matched-present",
+        "negative-result"
+      ],
+      "era": "Artificial ethology and observer minds",
+      "era_order": 53
+    },
+    {
+      "id": "FlyBench",
+      "url": "https://github.com/anttiluode/FlyBench",
+      "family": "bounded-observer",
+      "status": "tool",
+      "claim": "Turns the original dumbflies into a reproducible black-box bench with complete hidden ground truth, then asks what outside observers can infer from behavior and controlled scenes before swapping in a real egocentric eye and inherited resonator/window brains.",
+      "survived": "The audit shows why a ground-truth bench matters: the original camera contributes almost no predictive information, momentum dominates observable prediction, and where the fly has been explains much more speed than where it is now. The hidden decision-field centroid improves turning prediction further, leaving a concrete recovery gap. After fixing the eye, resonator flies spend more life near the flicker rate matching their inherited tuning, while an untuned window control finds flicker without the same frequency selectivity; the no-breeding test separates tuning from lineage placement.",
+      "killed": "Several intuitive stories fail under the answer key: a walking person does not attract the original flies, apparent feeding is not driven by their motion, and darkness does not make them stop. The population-evolution claim is also not established because tuning-frequency enrichment rises in a no-rhythm room as well, consistent with drift in small bottlenecked populations; breeding runs additionally confound spatial sorting through local birth and inherited tuning.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/FlyBench/blob/main/README.md",
+      "tags": [
+        "artificial-ethology",
+        "black-box",
+        "ground-truth",
+        "system-identification",
+        "history",
+        "observer",
+        "resonance",
+        "inherited-tuning",
+        "control",
+        "tool"
+      ],
+      "era": "Artificial ethology and observer minds",
+      "era_order": 53
+    }
+  ],
+  "edges": [
+    {
+      "source": "ReturnToTimeWindow",
+      "target": "Smarfly2",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Smarfly2's sequencing-observer branch carries the September 27 time-window decomposition into an external observer: selective event deposits feed phase-gated continuation channels, contextual susceptibility changes which continuation is favored, route failure can be locally suppressed, and internal prediction is separated from publication.",
+      "evidence": "https://github.com/anttiluode/Smarfly2/blob/feature/sequencing-observer-v1/docs/V1_STATUS.md"
+    }
+  ],
+  "motifs": []
+}
