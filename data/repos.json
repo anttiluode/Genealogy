@@ -462,6 +462,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "BiomorphicSwarm",
+    "url": "https://github.com/anttiluode/BiomorphicSwarm",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Smashing repos together. Opus 5.5 ",
+    "created_at": "2026-09-28T13:52:56Z",
+    "updated_at": "2026-09-28T13:53:53Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "BirthOfClockfield",
     "url": "https://github.com/anttiluode/BirthOfClockfield",
     "default_branch": "main",
@@ -1499,11 +1510,11 @@
     "name": "FlyBench",
     "url": "https://github.com/anttiluode/FlyBench",
     "default_branch": "main",
-    "size": 14736,
+    "size": 15397,
     "visibility": "public",
     "description": "Opus 5.5",
     "created_at": "2026-09-27T17:05:48Z",
-    "updated_at": "2026-09-28T09:08:36Z",
+    "updated_at": "2026-09-28T11:22:35Z",
     "inventory_status": "reviewed"
   },
   {
@@ -1752,11 +1763,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 1127,
+    "size": 1163,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-09-28T08:20:11Z",
+    "updated_at": "2026-09-28T14:04:51Z",
     "inventory_status": "unread"
   },
   {
