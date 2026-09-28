@@ -1,0 +1,54 @@
+{
+  "id": "biomorphic-swarm",
+  "title": "BiomorphicSwarm: the living cortex keeps the field and kills the scout story",
+  "summary": "BiomorphicSwarm reopens a January 2026 line that fused a coordinate neural field with moving error-seeking scouts, then turns the old visual intuition into an unusually explicit lineage audit. The repository preserves five ancestor programs as runnable fossils, measures why the field comes into focus coarse-to-fine, fixes inherited sampling and display bugs, and points the system at a live webcam. The strongest result is corrective rather than triumphant: with the same 50-patch budget, random placement beats both error-climbing and pinned scouts on learning and surprise recovery. The neural field remains useful; the inherited claim that scouts should climb toward what is wrong does not survive in a globally coupled memory where every local update perturbs the whole image.",
+  "order": 440,
+  "reviewed_at": "2026-09-28",
+  "nodes": [
+    {
+      "id": "BiomorphicSwarm",
+      "url": "https://github.com/anttiluode/BiomorphicSwarm",
+      "family": "active-sensing",
+      "status": "ledger",
+      "claim": "Runs a small continuously refitted coordinate neural field as a live image memory and directly compares error-seeking, pinned and random patch-sampling policies under the same update budget.",
+      "survived": "The live 17,414-weight coordinate field forms a compressed, continuously updated image and exhibits measured coarse-to-fine learning: normalized coarse error falls from 0.38 at step 25 to 0.03 at step 4,000 while normalized detail error falls much later, from 1.00 to 0.38. The repository also preserves and reruns its ancestor programs so the mechanism's history is inspectable rather than reconstructed from names.",
+      "killed": "The inherited error-climbing scout policy does not improve this global neural-field memory. With 50 equal-budget patches per step over three benchmark seeds, random placement reaches 0.008 error on the letter-A task versus 0.053 for Swarm and 0.021 for Pinned, and 0.009 after surprise recovery versus 0.046 and 0.025. The older instanton 'tunnelling' interpretation is also reclassified as a centre-of-mass readout artifact, and the inherited y-sign/display/plasticity mistakes are kept as corrections rather than hidden.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/BiomorphicSwarm/blob/main/README.md",
+      "tags": [
+        "implicit-neural-representation",
+        "neural-field",
+        "active-sensing",
+        "sampling-policy",
+        "spectral-bias",
+        "webcam",
+        "compressed-memory",
+        "negative-result",
+        "lineage-fossils",
+        "write-locality"
+      ],
+      "era": "Biomorphic perception / sampling correction",
+      "era_order": 56
+    }
+  ],
+  "edges": [
+    {
+      "source": "CabbageFarm",
+      "target": "BiomorphicSwarm",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "This is direct code ancestry, not similarity by name: BiomorphicSwarm preserves CabbageFarm's cabbage3.py as lineage/3_cabbage3.py, and the two files have the same Git blob SHA (0deb48524f14e1487b4a262c060dbbab4c44a4f7). BiomorphicSwarm explicitly identifies that Cabbage 3 neural field as the cortex inherited by the later scout fusion.",
+      "evidence": "https://github.com/anttiluode/BiomorphicSwarm/blob/main/README.md"
+    },
+    {
+      "source": "WhatToLookAt",
+      "target": "BiomorphicSwarm",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both repositories make sensing or compute placement an experimental variable rather than assuming more attention is better. WhatToLookAt found that selective authority only worked when the shared global computation was preserved; BiomorphicSwarm supplies a complementary negative case in which concentrating equal-budget samples on high-error regions harms a globally coupled neural field and random coverage wins. This is recurring mechanism and boundary evidence, not code inheritance.",
+      "evidence": "https://github.com/anttiluode/BiomorphicSwarm/blob/main/README.md"
+    }
+  ],
+  "motifs": []
+}
