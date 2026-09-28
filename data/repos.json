@@ -1485,6 +1485,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "FlyBench",
+    "url": "https://github.com/anttiluode/FlyBench",
+    "default_branch": "main",
+    "size": 4469,
+    "visibility": "public",
+    "description": "Opus 5.5",
+    "created_at": "2026-09-27T17:05:48Z",
+    "updated_at": "2026-09-28T04:29:13Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "fractal_forest",
     "url": "https://github.com/anttiluode/fractal_forest",
     "default_branch": "main",
@@ -1730,11 +1741,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 866,
+    "size": 909,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-09-27T09:12:13Z",
+    "updated_at": "2026-09-28T04:43:25Z",
     "inventory_status": "unread"
   },
   {
@@ -3061,7 +3072,7 @@
     "name": "PaluuAikaIkkunaan",
     "url": "https://github.com/anttiluode/PaluuAikaIkkunaan",
     "default_branch": "main",
-    "size": 1746,
+    "size": 1755,
     "visibility": "public",
     "description": "Return to time window, version by opus 5.5",
     "created_at": "2026-09-27T05:44:11Z",
@@ -3545,7 +3556,7 @@
     "name": "ReturnToTimeWindow",
     "url": "https://github.com/anttiluode/ReturnToTimeWindow",
     "default_branch": "main",
-    "size": 121,
+    "size": 130,
     "visibility": "public",
     "description": "Course correction. Sol repo. ",
     "created_at": "2026-09-27T04:34:42Z",
@@ -3837,6 +3848,17 @@
     "created_at": "2026-09-12T15:11:03Z",
     "updated_at": "2026-09-12T16:34:06Z",
     "inventory_status": "unread"
+  },
+  {
+    "name": "Smarfly2",
+    "url": "https://github.com/anttiluode/Smarfly2",
+    "default_branch": "main",
+    "size": 135,
+    "visibility": "public",
+    "description": "Sol repo",
+    "created_at": "2026-09-27T14:32:47Z",
+    "updated_at": "2026-09-27T16:10:59Z",
+    "inventory_status": "reviewed"
   },
   {
     "name": "Smartfly",
