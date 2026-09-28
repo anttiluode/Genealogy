@@ -1,0 +1,54 @@
+{
+  "id": "developmental-spectral-neuron",
+  "title": "Developmental spectral neuron: history tries to become anatomy",
+  "summary": "DevelopmentalSpectralNeuron pushes the old morphogenesis/stigmergy line into a stricter operator test: local resonant activity, resource limits, reinforcement and pruning first grow an explicit sparse graph; only after development ends is that graph converted into a Laplacian, low-order modes and a matched diffusion probe. The important result is negative. After code review invalidated an initially encouraging receipt, the frozen rerun found that alternating versus blocked developmental order changed structure and probe response less than random seed, blind history readback stayed at chance, and low modes did not beat geometry-matched nulls. The useful survivor is therefore the assay itself and the sharper requirement that developmental history must beat seed/topology controls before anatomy can be called memory.",
+  "order": 410,
+  "reviewed_at": "2026-09-28",
+  "nodes": [
+    {
+      "id": "DevelopmentalSpectralNeuron",
+      "url": "https://github.com/anttiluode/DevelopmentalSpectralNeuron",
+      "family": "morphogenesis",
+      "status": "negative",
+      "claim": "Tests whether local nonlinear development can compile temporal environmental history into a persistent sparse graph whose Laplacian modes causally change the response to the same later probe.",
+      "survived": "The project establishes a clean development-to-operator assay: frozen histories differ only in temporal order, growth is local and resource-limited, the final anatomy is converted into an explicit weighted graph, and structural, spectral, matched-probe, null, readback and lesion/regrowth checks are all recorded in a reproducible receipt. The review also preserved the initially positive but invalidated result as part of the scientific ledger rather than hiding it.",
+      "killed": "Frozen v0 does not show temporal developmental order becoming anatomy. Across eight seeds, history effects are smaller than seed effects, blind final-anatomy history readback is exactly chance (0.50), low-order modes fail the geometry-matched alignment criterion, and the predeclared lesion band hits no edges. A provisional positive receipt was discarded after far-field gradient normalization, branch-resource conservation and local-merge bugs were found and regression-tested.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/DevelopmentalSpectralNeuron/blob/main/docs/V0_STATUS.md",
+      "tags": [
+        "development",
+        "morphogenesis",
+        "stigmergy",
+        "structural-memory",
+        "graph-laplacian",
+        "spectral-geometry",
+        "operator-compilation",
+        "matched-probe",
+        "negative-result",
+        "frozen-receipt"
+      ],
+      "era": "Developmental structure as operator",
+      "era_order": 54
+    }
+  ],
+  "edges": [
+    {
+      "source": "GrowingAnttisNeuron",
+      "target": "DevelopmentalSpectralNeuron",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both lines ask whether local development can manufacture later computation from anatomy. GrowingAnttisNeuron separates developmental address, wiring and compiled operator identity; DevelopmentalSpectralNeuron turns that question into a frozen order-vs-seed test on an explicit grown graph and its Laplacian.",
+      "evidence": "https://github.com/anttiluode/DevelopmentalSpectralNeuron/blob/main/docs/superpowers/specs/2026-09-28-developmental-spectral-neuron-v0-design.md"
+    },
+    {
+      "source": "PhaseStigmergy",
+      "target": "DevelopmentalSpectralNeuron",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "PhaseStigmergy already tested persistent deposited structure that redirects later dynamics; DevelopmentalSpectralNeuron reuses the narrower stigmergic-growth idea but demands that temporal history survive into anatomy strongly enough to beat seed variation and geometry-matched spectral nulls.",
+      "evidence": "https://github.com/anttiluode/DevelopmentalSpectralNeuron/blob/main/docs/superpowers/specs/2026-09-28-developmental-spectral-neuron-v0-design.md"
+    }
+  ],
+  "motifs": []
+}
