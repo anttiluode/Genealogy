@@ -254,5 +254,9 @@
   {
     "path": "return-to-time-window.json",
     "enabled": true
+  },
+  {
+    "path": "artificial-ethology-flybench.json",
+    "enabled": true
   }
 ]
