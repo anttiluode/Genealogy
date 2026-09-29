@@ -1,0 +1,120 @@
+{
+  "id": "breathing-luotain",
+  "title": "Breathing-Qwen + Luotain: residue chooses the next computation",
+  "summary": "Three same-day projects expose the same narrower pattern from different domains: contradictory or incomplete evidence should not be forced into the current answer; keep the mismatch or residue explicit and let it decide which computation to try next. The two Qwen repositories independently find that simple counterfactual re-query or leave-one-clue-out search survives while the more elaborate breathing and trust mechanisms tested so far do not beat simpler controls. Luotain applies a parallel probe-first discipline to equational theories: cheap finite tables eliminate almost all false implications, and only the unresolved residue is handed to a theorem prover. This pass records convergence, not code ancestry.",
+  "order": 450,
+  "reviewed_at": "2026-09-29",
+  "nodes": [
+    {
+      "id": "Breathing-Qwen",
+      "url": "https://github.com/anttiluode/Breathing-Qwen",
+      "family": "transformer-retrieval",
+      "status": "ledger",
+      "claim": "Tests whether a frozen Qwen3-8B can recover from one contradictory clue by diagnosing cue-specific residue and then re-querying the intact joint model without retraining, stochastic decoding, or rewriting the prompt history.",
+      "survived": "On the frozen 32-item Gate 1B development set, residue-guided intact re-query reaches 93.75% corrupt accuracy versus 75.0% for native Qwen and 59.375% for random cue removal, with 6 native-error recoveries, 0 new native errors, and 30/32 suspicious-cue localization accuracy (93.75%). Clean accuracy remains 90.625%. The surviving recipe is narrower than the original breathing story: decompose to diagnose, identify one suspicious cue, then ask the intact joint model again without that cue dominating the decision.",
+      "killed": "Gate 0 and Gate 1-Q4 failed their frozen criteria; external candidate-score temperature/beta breathing did no useful selection work in Gate 1-Q4, and true internal attention-temperature breathing remains untested. Gate 1C is frozen on a new 128-item holdout but is not run, so the Gate 1B development result is not independent confirmation and must not be promoted to a held-out claim yet.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Breathing-Qwen/blob/main/README.md",
+      "tags": [
+        "transformer",
+        "qwen3-8b",
+        "frozen-model",
+        "contradictory-cues",
+        "residue",
+        "counterfactual-requery",
+        "cue-localization",
+        "holdout-frozen",
+        "negative-result"
+      ],
+      "era": "Residual routing / counterfactual retrieval",
+      "era_order": 58
+    },
+    {
+      "id": "Breathing-QwenClaude",
+      "url": "https://github.com/anttiluode/Breathing-QwenClaude",
+      "family": "transformer-retrieval",
+      "status": "ledger",
+      "claim": "Independently tests corrupted-clue retrieval with text-level breathing, attention-trust variants, leave-one-clue-out search and residue-guided search, using predeclared comparisons against simpler controls.",
+      "survived": "Across the 60-item benchmark, plain one-shot corrupted retrieval is 52%, while the simple leave-one-clue-out dropout control with checking reaches 75%. More elaborate runs keep returning to that same robust boundary: remove one clue, compare the counterfactual answers, and use checking to find which clue is poisoning the joint answer. That simple counterfactual search is the strongest surviving result.",
+      "killed": "The attention trust loop did not beat the simple dropout control under the predeclared rule, so the mechanistic breathing claim was killed. A later residue_search arm reached 72% on the false-clue condition versus 75% for dropout; it was substantially cheaper but did not beat the accuracy control. The repository name is historical: these experiments do not establish globally oscillating internal attention temperature.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Breathing-QwenClaude/blob/main/README.md",
+      "tags": [
+        "transformer",
+        "corrupted-cues",
+        "leave-one-out",
+        "counterfactual-search",
+        "residue-search",
+        "ablation",
+        "negative-result"
+      ],
+      "era": "Residual routing / counterfactual retrieval",
+      "era_order": 59
+    },
+    {
+      "id": "Luotain",
+      "url": "https://github.com/anttiluode/Luotain",
+      "family": "probe-inference",
+      "status": "tool",
+      "claim": "Maps equational theories by using small multiplication tables as explicit probes, treating a counterexample table as a certificate of non-implication and escalating only the undecided residue to Vampire and sampled Lean checking.",
+      "survived": "On the published four-multiplication map, ten two-element tables alone kill 90.66% of false implications; all probe families together kill 99.53% (13,789,681 false edges) while killing zero of 8,173,585 true implications. On the 57,882 five-multiplication laws, the placement finds at least 9,086 new equivalence classes. For 150 sampled new laws against all 1,415 old classes, probes decide 98.6% of 424,500 edges and probes plus Vampire settle 99.75%.",
+      "killed": "The five-multiplication layer is not fully settled: 1,278 laws remain in the placement residue, and 1,054 cross-layer edges remain open in the sampled exhaustive edge experiment. The full implication graph among all five-multiplication laws was not computed. Lean re-checks a random sample rather than every claim; the remainder rests on the tested evaluator and Vampire, so Luotain does not claim a fully Lean-certified new map.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Luotain/blob/main/README.md",
+      "tags": [
+        "equational-theory",
+        "active-probing",
+        "counterexample",
+        "residue",
+        "theorem-proving",
+        "vampire",
+        "lean",
+        "certificates",
+        "formal-math"
+      ],
+      "era": "Probe-first formal discovery",
+      "era_order": 60
+    }
+  ],
+  "edges": [
+    {
+      "source": "AdaptiveObserverCache",
+      "target": "Breathing-Qwen",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Both freeze Qwen3-8B and ask how contradictory evidence can change retrieval without changing model weights. AdaptiveObserverCache intervenes on a persistent reader/attention state over fixed memory; Breathing-Qwen tested a different route and narrowed the surviving mechanism to residue-guided diagnosis plus intact counterfactual re-query. This is conceptual and experimental convergence, not code ancestry.",
+      "evidence": "https://github.com/anttiluode/Breathing-Qwen/blob/main/README.md"
+    },
+    {
+      "source": "Breathing-Qwen",
+      "target": "Breathing-QwenClaude",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The two independently implemented corrupted-cue studies land on the same measured boundary: simple counterfactual cue removal or re-query survives, while the tested breathing and trust-loop mechanisms do not beat simpler controls. The edge records convergence of results and does not assert a fork or code inheritance.",
+      "evidence": "https://github.com/anttiluode/Breathing-QwenClaude/blob/main/README.md"
+    },
+    {
+      "source": "ReadWrite",
+      "target": "Luotain",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "ReadWrite treats designed interventions as what makes otherwise hidden structure observable. Luotain turns finite magmas into explicit probes of law space, uses counterexamples as certificates, and spends theorem-prover compute only on what those probes cannot separate. The relationship is methodological convergence, not implementation ancestry.",
+      "evidence": "https://github.com/anttiluode/Luotain/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "residue-routes-next-computation-2026-09-29",
+      "title": "Residue routes the next computation",
+      "description": "Across contradictory-cue retrieval and law-space probing, the useful repeat is not to overwrite the object when a candidate fails. Preserve what remains unexplained, then spend the next computation where that residue points: re-query without a suspicious clue, or invoke a theorem prover only on finite-probe residue. The same-day measurements also impose a boundary: residue-directed routing survived, while the tested breathing and trust mechanisms did not establish an additional advantage.",
+      "nodes": [
+        "Breathing-Qwen",
+        "Breathing-QwenClaude",
+        "Luotain"
+      ]
+    }
+  ]
+}

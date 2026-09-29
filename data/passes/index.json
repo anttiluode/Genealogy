@@ -278,5 +278,9 @@
   {
     "path": "solswarm.json",
     "enabled": true
+  },
+  {
+    "path": "breathing-luotain.json",
+    "enabled": true
   }
 ]
