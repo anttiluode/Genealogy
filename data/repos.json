@@ -583,6 +583,28 @@
     "inventory_status": "unread"
   },
   {
+    "name": "Breathing-Qwen",
+    "url": "https://github.com/anttiluode/Breathing-Qwen",
+    "default_branch": "main",
+    "size": 102,
+    "visibility": "public",
+    "description": "Pulsing temp. Sol repo. ",
+    "created_at": "2026-09-29T05:01:45Z",
+    "updated_at": "2026-09-29T16:19:13Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "Breathing-QwenClaude",
+    "url": "https://github.com/anttiluode/Breathing-QwenClaude",
+    "default_branch": "main",
+    "size": 159,
+    "visibility": "public",
+    "description": "Claude version. ",
+    "created_at": "2026-09-29T06:02:33Z",
+    "updated_at": "2026-09-29T14:10:07Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "buginthemachine",
     "url": "https://github.com/anttiluode/buginthemachine",
     "default_branch": "main",
@@ -1763,11 +1785,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 1216,
+    "size": 810,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-09-28T17:25:05Z",
+    "updated_at": "2026-09-29T18:20:41Z",
     "inventory_status": "unread"
   },
   {
@@ -2550,6 +2572,17 @@
     "created_at": "2024-10-10T18:10:21Z",
     "updated_at": "2024-10-12T06:42:33Z",
     "inventory_status": "unread"
+  },
+  {
+    "name": "Luotain",
+    "url": "https://github.com/anttiluode/Luotain",
+    "default_branch": "main",
+    "size": 3,
+    "visibility": "public",
+    "description": "Claude Opus 55 repo. ",
+    "created_at": "2026-09-29T16:00:21Z",
+    "updated_at": "2026-09-29T18:20:31Z",
+    "inventory_status": "reviewed"
   },
   {
     "name": "MagicBox",
@@ -3908,11 +3941,11 @@
     "name": "SolSwarm",
     "url": "https://github.com/anttiluode/SolSwarm",
     "default_branch": "main",
-    "size": 41,
+    "size": 371,
     "visibility": "public",
     "description": "Sol repo. ",
     "created_at": "2026-09-28T15:19:12Z",
-    "updated_at": "2026-09-28T15:54:28Z",
+    "updated_at": "2026-09-28T17:54:08Z",
     "inventory_status": "reviewed"
   },
   {
