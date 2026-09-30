@@ -282,5 +282,9 @@
   {
     "path": "breathing-luotain.json",
     "enabled": true
+  },
+  {
+    "path": "varjoluotain-inverse-modeler.json",
+    "enabled": true
   }
 ]

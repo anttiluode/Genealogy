@@ -1,0 +1,84 @@
+{
+  "id": "varjoluotain-inverse-modeler",
+  "title": "Varjoluotain + BrainAsInverseModeler: from structured shadows to hidden-state reconstruction",
+  "summary": "Varjoluotain turns Luotain's probe-and-residue discipline into a concrete inverse problem: an occluder structures an otherwise ambiguous wall measurement so hidden screen patterns become recoverable, while unresolved directions are kept explicit. BrainAsInverseModeler carries that lesson back into the neuron line and asks a narrower biological question: can history-dependent dendritic state reconstruct useful hidden dynamics, can somatic/axonal output preserve some of that state, and can a receiver recover it through its own state-dependent dynamics? The first repository contains measured optical results and an explicit real-data failure boundary; the second is a synthesis and experiment agenda, not a new neuronal result.",
+  "order": 460,
+  "reviewed_at": "2026-09-30",
+  "nodes": [
+    {
+      "id": "Varjoluotain",
+      "url": "https://github.com/anttiluode/Varjoluotain",
+      "family": "probe-inference",
+      "status": "tool",
+      "claim": "Ports ordinary-camera computational periscopy into a probe-and-residue framework: the occluder changes the measurement operator so hidden screen states become distinguishable, and the remaining null directions are tracked instead of being silently filled in by the prior.",
+      "survived": "The port reconstructs the source paper's real wall photos with the published constants, with reported scene correlations from 0.38 to 0.67. In matched simulations, the paper-style plate raises observable screen patterns from 8 without an occluder to roughly 750 and strongly improves image recovery; changing occluder geometry shows that the probe itself controls observability, with the tested random mask outperforming the square plate on the simulated image set.",
+      "killed": "The plate-localization funnel succeeds on the calibrated simulated rooms but fails on the tested real photos, placing the occluder at the wrong location and degrading reconstruction. The repository identifies room-light-model structure and weak left-right identifiability as concrete failure modes. Simulated reconstructions are also optimistic because the same forward model generates and inverts them.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Varjoluotain/blob/main/README.md",
+      "tags": [
+        "inverse-problem",
+        "computational-periscopy",
+        "active-probe",
+        "observability",
+        "residue",
+        "occluder",
+        "null-space",
+        "real-data-boundary"
+      ],
+      "era": "Structured probes expose hidden state",
+      "era_order": 61
+    },
+    {
+      "id": "BrainAsInverseModeler",
+      "url": "https://github.com/anttiluode/BrainAsInverseModeler",
+      "family": "geometric-neuron",
+      "status": "idea-mine",
+      "claim": "Synthesizes the Deerskin/Geometric-Neuron history-coordinate idea, Takens-style reconstruction, dendritic temporal dynamics, state-dependent spike waveforms and Varjoluotain's inverse-problem lesson into a falsifiable question: what hidden-state information can a neuron retain, emit and make recoverable downstream?",
+      "survived": "The repository sharpens the hypothesis into separable stages rather than treating 'inverse model' as one claim: hidden-state reconstruction inside the neuron, preservation through somatic/axonal output, and downstream recovery by a receiver. Its proposed experiments explicitly require same-present/different-history tests, withheld-variable decoding, transmission controls and ambiguity accounting.",
+      "killed": "No new neuronal simulation or biological replication is reported. The repository does not establish that dendrites implement Takens coordinates, that action-potential waveform variation encodes a world model, or that downstream neurons decode such a representation. Those remain proposed experiments rather than results.",
+      "usefulness": "conceptual",
+      "confidence": "medium",
+      "evidence": "https://github.com/anttiluode/BrainAsInverseModeler/blob/main/README.md",
+      "tags": [
+        "inverse-model",
+        "dendrite",
+        "temporal-state",
+        "takens",
+        "state-reconstruction",
+        "waveform",
+        "distributed-model",
+        "observability"
+      ],
+      "era": "Neuron as inverse modeler",
+      "era_order": 62
+    }
+  ],
+  "edges": [
+    {
+      "source": "Luotain",
+      "target": "Varjoluotain",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Varjoluotain explicitly places Luotain's bookkeeping on top of the computational-periscopy problem: probe cheaply, keep the residue, and spend expensive computation only on hypotheses the cheap probes cannot settle.",
+      "evidence": "https://github.com/anttiluode/Varjoluotain/blob/main/README.md"
+    },
+    {
+      "source": "Varjoluotain",
+      "target": "BrainAsInverseModeler",
+      "type": "converges",
+      "confidence": "high",
+      "why": "BrainAsInverseModeler explicitly uses Varjoluotain as the concrete inverse-problem analogue: a structured measurement can expose hidden causes while an observability ledger records what remains ambiguous. It transfers that discipline to history-dependent neuronal state without claiming optical and neural mechanisms are the same.",
+      "evidence": "https://github.com/anttiluode/BrainAsInverseModeler/blob/main/README.md"
+    },
+    {
+      "source": "GeometricNeuronV24",
+      "target": "BrainAsInverseModeler",
+      "type": "inherits",
+      "confidence": "medium",
+      "why": "The repository explicitly develops the question from the earlier Deerskin / Geometric-Neuron history-coordinate line and reframes that machinery around hidden-state reconstruction and downstream recoverability rather than a literal claim that dendrites execute Takens' algorithm.",
+      "evidence": "https://github.com/anttiluode/BrainAsInverseModeler/blob/main/README.md"
+    }
+  ],
+  "motifs": []
+}
