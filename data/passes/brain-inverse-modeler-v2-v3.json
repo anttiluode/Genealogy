@@ -1,0 +1,76 @@
+{
+  "id": "brain-inverse-modeler-v2-v3",
+  "title": "BrainAsInverseModeler V2 → V3: retained state, output bottlenecks, and state-bearing spikes",
+  "summary": "Continues the existing BrainAsInverseModeler design node into two measured stages. V2 turns the inverse-modeler question into a passive dendritic-lens benchmark: heterogeneous cable dynamics preserve useful history and hidden-state information, while symmetry, restricted readout and model mismatch expose observability limits and ordinary delay coordinates remain stronger. V3 asks the stricter downstream question. Gate A separates internal retention from scalar-output readability; Gate C0 then shows that, for the same spike events and timings, active waveform shape carries additional predictive information, while preserving the negative boundary that explicit raw history still wins and biological synaptic decoding remains untested.",
+  "order": 470,
+  "reviewed_at": "2026-10-01",
+  "nodes": [
+    {
+      "id": "BrainAsInverseModelerV2",
+      "url": "https://github.com/anttiluode/BrainAsInverseModelerV2",
+      "family": "geometric-neuron",
+      "status": "ledger",
+      "claim": "Turns the inverse-modeler proposal into a runnable dendritic-lens experiment: a heterogeneous passive cable acts as a physical history transform whose internal voltages can retain source and hidden-state information that a restricted observation does not contain instantaneously.",
+      "survived": "Temporal tomography is exact in the noiseless diverse-cable calibration (six source amplitudes recovered with RMSE about 2.87e-15 and 6/6 observable modes), while symmetry collapses the same task to one observable mode. In the Lorenz benchmark, diverse internal cable state recovers withheld y,z on held-out trajectories at 0.1774 NRMSE / 0.9665 R² versus 0.6216 / 0.5904 for current x alone; resetting the cable each sample collapses performance back to the current-x baseline, establishing that retained history is causal to the gain.",
+      "killed": "The cable is not established as a literal Takens implementation or an optimal memory representation. Raw delay coordinates remain substantially better than the cable on the hidden-state benchmark (0.0777 versus 0.1774 NRMSE), soma alone is weak, symmetry destroys source identity, and a 20% cable time-constant mismatch can fit the waveform closely while recovering the wrong hidden causes.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/BrainAsInverseModelerV2/blob/main/README.md",
+      "tags": [
+        "inverse-model",
+        "dendrite",
+        "history",
+        "observability",
+        "tomography",
+        "hidden-state",
+        "model-mismatch",
+        "negative-result"
+      ],
+      "era": "Dendritic lens: retained state becomes measurable",
+      "era_order": 63
+    },
+    {
+      "id": "BrainAsInverseModelerV3",
+      "url": "https://github.com/anttiluode/BrainAsInverseModelerV3",
+      "family": "geometric-neuron",
+      "status": "active",
+      "claim": "Separates state retained inside a history-bearing neuron from state made useful at its output, then tests whether an active spike can carry a small event-specific waveform payload beyond the timing of the same spike events.",
+      "survived": "Gate A preserves the distinction between retention and output readability: at zero noise and horizon 20, internal cable state predicts better than present input (0.7441 versus 0.8160 NRMSE), but soma history does not (0.8314), so the declared scalar-output criterion fails. Gate C0 then passes both predeclared waveform tests on the exact same spike events: timing-only gives 0.7641 NRMSE, timing plus real waveform 0.6873, and timing plus timing-residualized waveform 0.6554; real and residual waveform improvements hold on 4/4 held-out trajectories and the independent-label negative control remains chance-like.",
+      "killed": "The positive Gate C0 result is not evidence for a general biological waveform code or for synaptic decoding. The emitter is a synthetic one-compartment Hodgkin-Huxley stage with an artificial soma-to-current map, no axonal or synaptic transmission is modeled, and raw observed-input delays still outperform every spike-derived representation at the primary horizon (0.6301 versus 0.6554 NRMSE for the best waveform arm).",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/BrainAsInverseModelerV3/blob/main/docs/gate_c0_findings.md",
+      "tags": [
+        "inverse-model",
+        "output-bottleneck",
+        "observability",
+        "spike-waveform",
+        "state-bearing-event",
+        "same-event-control",
+        "reader-dependence",
+        "negative-result"
+      ],
+      "era": "State-bearing output: from retained state to readable emission",
+      "era_order": 64
+    }
+  ],
+  "edges": [
+    {
+      "source": "BrainAsInverseModeler",
+      "target": "BrainAsInverseModelerV2",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "V2 is the direct measured continuation of the original design repository: it replaces the broad inverse-modeler agenda with a concrete passive-cable tomography and hidden-state benchmark while preserving the original observability and ambiguity questions.",
+      "evidence": "https://github.com/anttiluode/BrainAsInverseModelerV2/blob/main/README.md"
+    },
+    {
+      "source": "BrainAsInverseModelerV2",
+      "target": "BrainAsInverseModelerV3",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "V3 explicitly starts from V2's result that useful history-dependent information can remain inside the cable and asks the stricter next-stage question: what survives the sender's output bottleneck and becomes useful to a downstream receiver?",
+      "evidence": "https://github.com/anttiluode/BrainAsInverseModelerV3/blob/main/README.md"
+    }
+  ],
+  "motifs": []
+}

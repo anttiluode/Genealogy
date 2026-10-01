@@ -286,5 +286,9 @@
   {
     "path": "varjoluotain-inverse-modeler.json",
     "enabled": true
+  },
+  {
+    "path": "brain-inverse-modeler-v2-v3.json",
+    "enabled": true
   }
 ]
