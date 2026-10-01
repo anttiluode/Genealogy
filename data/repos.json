@@ -737,6 +737,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "ChessFlyStatePings",
+    "url": "https://github.com/anttiluode/ChessFlyStatePings",
+    "default_branch": "main",
+    "size": 140,
+    "visibility": "public",
+    "description": "ChatGPT Sol tries to change the original ChessFly brain. ",
+    "created_at": "2026-10-01T14:21:53Z",
+    "updated_at": "2026-10-01T17:27:40Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "Child",
     "url": "https://github.com/anttiluode/Child",
     "default_branch": "main",
@@ -1818,11 +1829,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 872,
+    "size": 927,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-10-01T13:49:11Z",
+    "updated_at": "2026-10-01T17:33:39Z",
     "inventory_status": "unread"
   },
   {
