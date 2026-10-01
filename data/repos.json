@@ -561,6 +561,28 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "BrainAsInverseModelerV2",
+    "url": "https://github.com/anttiluode/BrainAsInverseModelerV2",
+    "default_branch": "main",
+    "size": 101,
+    "visibility": "public",
+    "description": "Sol repo. ",
+    "created_at": "2026-10-01T02:00:35Z",
+    "updated_at": "2026-10-01T03:49:21Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "BrainAsInverseModelerV3",
+    "url": "https://github.com/anttiluode/BrainAsInverseModelerV3",
+    "default_branch": "main",
+    "size": 229,
+    "visibility": "public",
+    "description": "Sol repo. ",
+    "created_at": "2026-10-01T04:02:12Z",
+    "updated_at": "2026-10-01T13:35:46Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "BrainInspiredVisualProcessing",
     "url": "https://github.com/anttiluode/BrainInspiredVisualProcessing",
     "default_branch": "main",
@@ -1796,11 +1818,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 829,
+    "size": 872,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-09-30T16:19:25Z",
+    "updated_at": "2026-10-01T13:49:11Z",
     "inventory_status": "unread"
   },
   {
@@ -4605,7 +4627,7 @@
     "visibility": "public",
     "description": "Odd one. Neural windows applied to transformer? Claude Opus 5.5",
     "created_at": "2026-09-24T18:18:35Z",
-    "updated_at": "2026-09-25T06:54:00Z",
+    "updated_at": "2026-09-30T23:09:09Z",
     "inventory_status": "reviewed"
   },
   {
