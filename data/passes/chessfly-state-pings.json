@@ -1,0 +1,45 @@
+{
+  "id": "chessfly-state-pings",
+  "title": "ChessFlyStatePings: state-bearing history meets a frozen connectome chess network",
+  "summary": "Takes BrainAsInverseModelerV3's narrow state-bearing-event / receiver-readout idea into a real pretrained artificial network built on ChessFly's connectome-derived recurrent graph. The first recurrent StatePing intervention mostly collapsed to a gain change because fast-minus-slow residue was almost collinear with present activity and did not establish stronger play. The follow-up orthogonal-history gate explicitly removed the present-state direction and compared the remaining temporal direction with shuffled, re-orthogonalized, norm-matched controls. In the post-fix CUDA smoke run, only about 3.03% of residue norm survived orthogonalization, yet the real temporal direction ranked around the 94.4th percentile for value-logit sensitivity and 86.4th percentile at the shared association layer, while policy-logit sensitivity was much less unusual at about the 68.2nd percentile. This is preliminary receiver-dependent readability evidence, not a chess-strength or biological-code result.",
+  "order": 480,
+  "reviewed_at": "2026-10-01",
+  "nodes": [
+    {
+      "id": "ChessFlyStatePings",
+      "url": "https://github.com/anttiluode/ChessFlyStatePings",
+      "family": "neuron-machine",
+      "status": "experiment",
+      "claim": "Tests whether a tiny history-dependent direction, separated from present activation, is read differently by frozen downstream heads in ChessFly's connectome-derived recurrent chess network.",
+      "survived": "The naive recurrent StatePing perturbation was stable but mostly acted like gain because fast-minus-slow residue was nearly parallel to current activity. After projecting that present-state component away, the post-fix CUDA Gate 1b run used 3 positions and 32 shuffled, re-orthogonalized, norm-matched controls per position with zero instabilities. Only about 3.03% of residue norm survived (about 0.0929% squared energy), yet the real history direction reached mean value-logit percentiles of 94.4%, 94.4%, and 93.4% at magnitudes 1, 2, and 4, with 86.4% association-layer percentile and 68.2% policy-logit percentile. At magnitude 2, value-logit RMS sensitivity was about 1.88x the matched-control mean, association change about 1.32x, and policy-logit RMS about 1.12x. A float32 Jensen-Shannon underflow found by the first run was fixed with float64 log-space evaluation and the rerun remained finite.",
+      "killed": "The first StatePing mechanism did not establish stronger chess and should not be described as adding new information; in this five-step regime its residue mostly duplicated the current-state direction. The orthogonal-history result is still only a three-position smoke test, does not show improved playing strength, and does not establish a biological spike-waveform or synaptic-readout mechanism.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/ChessFlyStatePings/blob/main/results/receipts/specificity-smoke-20261001-summary.json",
+      "tags": [
+        "state-bearing-event",
+        "history",
+        "readout-head",
+        "receiver-dependence",
+        "orthogonal-state",
+        "connectome",
+        "chess",
+        "matched-control",
+        "negative-result"
+      ],
+      "era": "Receiver-dependent history readout in a pretrained connectome network",
+      "era_order": 65
+    }
+  ],
+  "edges": [
+    {
+      "source": "BrainAsInverseModelerV3",
+      "target": "ChessFlyStatePings",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "ChessFlyStatePings explicitly takes V3's narrow distinction between state present at an event and state readable by a downstream receiver, then tests that distinction in a frozen pretrained artificial network with separate association, policy, and value readouts.",
+      "evidence": "https://github.com/anttiluode/ChessFlyStatePings/blob/main/README.md"
+    }
+  ],
+  "motifs": []
+}

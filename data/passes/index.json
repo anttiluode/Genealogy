@@ -290,5 +290,9 @@
   {
     "path": "brain-inverse-modeler-v2-v3.json",
     "enabled": true
+  },
+  {
+    "path": "chessfly-state-pings.json",
+    "enabled": true
   }
 ]
