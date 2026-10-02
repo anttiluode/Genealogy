@@ -217,5 +217,15 @@
       "PingToWord",
       "ResidentOperatorTomography"
     ]
+  },
+  {
+    "id": "state-message-receiver-boundary",
+    "title": "History-dependent responses and useful queries require separate tests",
+    "description": "State can survive in a message or receiver and affect a later response without making that response a useful address or correctly targeted continuation. ChessFly tests the distinction directly under a common present and fixed ping; InsideTheWave carries the same separation into delayed observer models while retaining an explicit classical counterexample and physical claim boundaries.",
+    "nodes": [
+      "ChessFlyStatePings",
+      "InsideTheWave",
+      "BrainAsInverseModelerV3"
+    ]
   }
 ]

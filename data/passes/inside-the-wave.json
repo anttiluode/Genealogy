@@ -1,0 +1,53 @@
+{
+  "id": "inside-the-wave",
+  "title": "InsideTheWave: delayed observer geometry and the message–receiver boundary",
+  "summary": "A speculative mathematical working paper develops delayed state-carrying interactions into explicit phase, interference and query-order models. Its classical delayed-observation counterexample shows that delay alone does not force quantum probabilities; a Born-shaped channel rule requires a specified quadratic detector and Poisson race. The paper uses earlier ChessFly results to distinguish carrying, recovering and using history. The subsequent same-present assay supplies a computational limit: receiver responses vary with retained history, but continuation targeting fails. Mathematical constructions, proposed tests, biological hypotheses and fundamental-physics conjectures keep separate statuses.",
+  "order": 490,
+  "reviewed_at": "2026-10-02",
+  "nodes": [
+    {
+      "id": "InsideTheWave",
+      "url": "https://github.com/anttiluode/InsideTheWave",
+      "family": "neuron-machine",
+      "status": "idea-mine",
+      "claim": "Asks how delayed, state-dependent querying constrains an observer's accessible present and the geometry of its responses, then separates that operational model from conjectures about consciousness and physical quantum mechanics.",
+      "survived": "The uploaded working paper v0.1 derives delay-as-phase for monochromatic components and an interference cross term for a specified coherent mixer and quadratic readout. It gives gauge-invariant loop phases, a projective response metric under normalized coherent comparison, and classical and amplitude examples of query-order effects. A quadratic-rate Poisson race conditionally produces Born-shaped internal channel selection. Section 11 explicitly connects to ChessFly's frozen-model experiments and distinguishes carrying state, recovering it and using it. These are mathematical constructions and existing cited results, not new empirical runs.",
+      "killed": "An explicit classical counterexample rejects the claim that delayed observation necessarily forces quantum probabilities. The universal Born rule, Planck constant, physical quantization, consciousness and Everettian neural worlds are not established. Local classical delay and memory do not violate Bell inequalities under the stated Bell assumptions. The biological preprint motivates preserving waveform information but does not prove receiver decoding. Five proposed tests are not implemented here; arithmetic or algebra checks are not biological or quantum experiments. The repository currently supplies the PDF without editable manuscript or calculation-check sources.",
+      "usefulness": "conceptual",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/InsideTheWave/blob/main/InsideTheWave-paper.pdf",
+      "tags": [
+        "state-bearing-event",
+        "delay",
+        "phase",
+        "receiver-geometry",
+        "query-order",
+        "classical-counterexample",
+        "conditional-born-rule",
+        "observer",
+        "speculation"
+      ],
+      "era": "Delayed observer models with explicit physical claim boundaries",
+      "era_order": 66
+    }
+  ],
+  "edges": [
+    {
+      "source": "ChessFlyStatePings",
+      "target": "InsideTheWave",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "Section 11 of the uploaded paper explicitly inspects ChessFlyStatePings at main commit 49385519e55cb7e3b2a06bf3f512ba6b3967bebc and uses its sensitivity and failed cosine-retrieval results to separate carrying, recovering and using state. The edge records this documented conceptual extraction, not reused experiment code or a derivation of physics.",
+      "evidence": "https://github.com/anttiluode/InsideTheWave/blob/6ae14a096b185c3e2356a2ec15ead242ea43e84b/InsideTheWave-paper.pdf"
+    },
+    {
+      "source": "InsideTheWave",
+      "target": "ChessFlyStatePings",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The Gate 4 pull request explicitly identifies InsideTheWave's observer-replacement idea as motivation for holding a temporal signature fixed while replacing the frozen listener. This is a documented feedback between the conceptual and experimental tracks; it does not claim that the speculative paper's physics was tested.",
+      "evidence": "https://github.com/anttiluode/ChessFlyStatePings/pull/7"
+    }
+  ],
+  "motifs": []
+}

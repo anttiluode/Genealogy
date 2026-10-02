@@ -196,5 +196,8 @@
   },
   "resident-operator-tomography-v0": {
     "probe-defined-operator-coordinate": "supports"
+  },
+  "chessfly-same-present-history-v2": {
+    "state-message-receiver-boundary": "supports"
   }
 }

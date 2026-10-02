@@ -2266,6 +2266,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "InsideTheWave",
+    "url": "https://github.com/anttiluode/InsideTheWave",
+    "default_branch": "main",
+    "size": 517,
+    "visibility": "public",
+    "description": "Luna 6.1 repo. Neuron pings that carry state as consciousnes. What would it mean for QM. ",
+    "created_at": "2026-10-02T04:57:34Z",
+    "updated_at": "2026-10-02T08:46:15Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "Island-Memory-Field",
     "url": "https://github.com/anttiluode/Island-Memory-Field",
     "default_branch": "main",

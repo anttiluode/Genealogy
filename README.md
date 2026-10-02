@@ -23,6 +23,12 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
+## 2026-10-02 — ChessFlyStatePings and InsideTheWave
+
+The updated [ChessFly pass](data/passes/chessfly-state-pings.json) records the same-present history assay: opposite cue histories receive identical present inputs and one identical delayed ping. Responses differ, but continuation targeting fails its declared gate: 13/24 policy pairings (54.2%), 68.2% matched-control percentile and negative average native alignment. The first zero-ping receipt and the separately recorded source-timing correction remain visible. A structured record in the Evidence view keeps this mixed result distinct from lineage confidence.
+
+The new [InsideTheWave pass](data/passes/inside-the-wave.json) adds the uploaded speculative working paper and its documented connection to ChessFly. Delay-as-phase, coherent interference and query-order examples are conditional mathematical models. The classical delayed-observation counterexample, extra assumptions behind a Born-shaped channel rule, and absence of a biological, consciousness or fundamental-physics result are part of the entry. The graph records the paper's use of earlier ChessFly results and Gate 4's explicit observer-replacement inspiration.
+
 ## Four layers
 
 Genealogy now treats research memory as four distinct layers:
