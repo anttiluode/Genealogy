@@ -3097,5 +3097,65 @@
       "Small synthetic panel and one type of law, not evidence of spontaneous natural-language or cultural evolution"
     ],
     "source": "https://github.com/anttiluode/Perinto/blob/main/results/summary_v11.json"
+  },
+  {
+    "id": "chessfly-same-present-history-v2",
+    "node": "ChessFlyStatePings",
+    "claim": "Different retained histories under the same present input make an identical delayed ping produce distinct responses that correctly target each history's own next unmodified continuation.",
+    "design": "Freeze ChessFly's weights and graph. Present A,B versus B,A cue prefixes followed by the same present from step 3. Construct one orthogonal fast-minus-slow ping from a separate present-only prefix through step 3, deliver it at step 4, and compare balanced decoder responses against both untouched step-4→step-5 target directions. Primary: centered legal-policy logits, delay 2, magnitude 1; 32 matched pings, seed 0, rho 0.75.",
+    "result": "mixed",
+    "motifs": [
+      "state-message-receiver-boundary"
+    ],
+    "sample": {
+      "unit": "declared cue pair across four shared present positions",
+      "count": 12
+    },
+    "metrics": [
+      {
+        "name": "native policy pairing accuracy",
+        "value": 0.5416666666666666,
+        "comparison": "13/24 correlated queries; declared threshold 0.75"
+      },
+      {
+        "name": "matched-control margin percentile",
+        "value": 0.6818181818181818,
+        "comparison": "declared threshold 0.95"
+      },
+      {
+        "name": "mean native continuation cosine",
+        "value": -0.010662943960157734,
+        "comparison": "must be positive"
+      },
+      {
+        "name": "mean native minus crossed cosine",
+        "value": 9.612507710260859e-05,
+        "comparison": "small positive margin; insufficient for all-criteria gate"
+      },
+      {
+        "name": "mean relative policy-response separation",
+        "value": 0.233065,
+        "comparison": "history-dependent difference; not a correctness score"
+      }
+    ],
+    "controls": [
+      "Erase cue prefix while keeping shared present and ping",
+      "Swap retained response rows while keeping continuation labels",
+      "State-blind affine decoder Wp",
+      "32 shuffled, re-orthogonalized, norm-matched pings shared across each history pair",
+      "Source-only causal prefix; future targets excluded from ping construction"
+    ],
+    "replication": "CPU PyTorch 2.7.1, zero instabilities; independent review exactly reproduced all version 2 measurements and version 1 run results.",
+    "held_out": true,
+    "external_data": true,
+    "limitations": [
+      "History-dependent response survives, but the continuation-targeting gate fails.",
+      "The first two-step source was structurally zero and remains inconclusive; version 2 timing was amended before its run after that source-only diagnosis.",
+      "Held out means the next internal settling step; cases are not an independent generalization benchmark. Twelve pairs share four common positions and their 24 queries are correlated.",
+      "Probes do not feed back into recurrence; no beneficial intervention or chess-strength improvement was tested.",
+      "Small margins are float32-sensitive; a decoder-only float64 diagnostic kept accuracy at 13/24 and native alignment negative.",
+      "Artificial recurrent network; no biological receiver decoding, consciousness or physical quantum claim."
+    ],
+    "source": "https://github.com/anttiluode/ChessFlyStatePings/blob/main/results/receipts/history-lens-v2-20261002-summary.json"
   }
 ]

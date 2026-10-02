@@ -294,5 +294,9 @@
   {
     "path": "chessfly-state-pings.json",
     "enabled": true
+  },
+  {
+    "path": "inside-the-wave.json",
+    "enabled": true
   }
 ]
