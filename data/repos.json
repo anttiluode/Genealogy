@@ -740,7 +740,7 @@
     "name": "ChessFlyStatePings",
     "url": "https://github.com/anttiluode/ChessFlyStatePings",
     "default_branch": "main",
-    "size": 1963,
+    "size": 1981,
     "visibility": "public",
     "description": "ChatGPT Sol tries to change the original ChessFly brain. ",
     "created_at": "2026-10-01T14:21:53Z",
@@ -1829,11 +1829,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 974,
+    "size": 1083,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-10-02T11:58:13Z",
+    "updated_at": "2026-10-04T05:26:56Z",
     "inventory_status": "unread"
   },
   {
@@ -2269,7 +2269,7 @@
     "name": "InsideTheWave",
     "url": "https://github.com/anttiluode/InsideTheWave",
     "default_branch": "main",
-    "size": 517,
+    "size": 522,
     "visibility": "public",
     "description": "Luna 6.1 repo. Neuron pings that carry state as consciousnes. What would it mean for QM. ",
     "created_at": "2026-10-02T04:57:34Z",
@@ -2868,6 +2868,17 @@
     "description": "Sol: Give the system a moving problem.  Ok. ",
     "created_at": "2026-08-27T11:38:39Z",
     "updated_at": "2026-08-29T14:03:06Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "MultipleTemporalLenses",
+    "url": "https://github.com/anttiluode/MultipleTemporalLenses",
+    "default_branch": "main",
+    "size": 91,
+    "visibility": "public",
+    "description": "Sol exploring hypothetical ideas of cortical loops. ",
+    "created_at": "2026-10-03T14:04:59Z",
+    "updated_at": "2026-10-04T05:19:04Z",
     "inventory_status": "reviewed"
   },
   {
@@ -3762,6 +3773,28 @@
     "inventory_status": "unread"
   },
   {
+    "name": "SighExtraImage",
+    "url": "https://github.com/anttiluode/SighExtraImage",
+    "default_branch": "main",
+    "size": 865,
+    "visibility": "public",
+    "description": "Somethign weird. Sol repo. ",
+    "created_at": "2026-10-02T13:22:07Z",
+    "updated_at": "2026-10-03T17:15:38Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "SighExtraImageClaude",
+    "url": "https://github.com/anttiluode/SighExtraImageClaude",
+    "default_branch": "main",
+    "size": 1306,
+    "visibility": "public",
+    "description": "Opus 5.5 version",
+    "created_at": "2026-10-03T16:09:29Z",
+    "updated_at": "2026-10-04T04:55:26Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "SighImageFactorization",
     "url": "https://github.com/anttiluode/SighImageFactorization",
     "default_branch": "main",
@@ -4034,6 +4067,17 @@
     "description": "A weird screensaver that was born from my weird universal theories. ",
     "created_at": "2024-12-13T17:19:20Z",
     "updated_at": "2025-02-13T18:09:33Z",
+    "inventory_status": "unread"
+  },
+  {
+    "name": "SpacetimeLenses",
+    "url": "https://github.com/anttiluode/SpacetimeLenses",
+    "default_branch": "main",
+    "size": 1,
+    "visibility": "public",
+    "description": "Sol wanted to do this. ",
+    "created_at": "2026-10-03T17:01:24Z",
+    "updated_at": "2026-10-03T17:01:39Z",
     "inventory_status": "unread"
   },
   {
@@ -4744,11 +4788,11 @@
     "name": "Varjoluotain",
     "url": "https://github.com/anttiluode/Varjoluotain",
     "default_branch": "main",
-    "size": 1220,
+    "size": 1258,
     "visibility": "public",
     "description": "Opus 5.5 repo",
     "created_at": "2026-09-30T06:58:42Z",
-    "updated_at": "2026-09-30T12:44:14Z",
+    "updated_at": "2026-10-03T06:07:01Z",
     "inventory_status": "reviewed"
   },
   {
