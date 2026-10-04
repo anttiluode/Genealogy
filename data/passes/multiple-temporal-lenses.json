@@ -1,0 +1,54 @@
+{
+  "id": "multiple-temporal-lenses",
+  "title": "MultipleTemporalLenses: compact temporal state survives, softmax lens routing does not",
+  "summary": "Tests whether a fixed-size bank of heterogeneous temporal states can substitute for explicit history when the present query determines which age of the past matters. A residual-coordinate amendment corrects the original low-pass interpretation before the frozen gates. The main result is deliberately narrower than the motivating idea: compact multiscale state carries causally useful history, but query-softmax routing does not beat a generic query-conditioned reader, fails the same-present absolute-accuracy gate, and fails later-context reinterpretation. An explicit-history transformer solves the exact-anchor long stress while the 36-scalar compact models degrade sharply with age.",
+  "order": 500,
+  "reviewed_at": "2026-10-04",
+  "nodes": [
+    {
+      "id": "MultipleTemporalLenses",
+      "url": "https://github.com/anttiluode/MultipleTemporalLenses",
+      "family": "operator-response",
+      "status": "ledger",
+      "claim": "Asks whether several fixed-size temporal summaries, exposed through query-conditioned readout, can provide useful age-selective access to history without storing an explicit token-by-token cache.",
+      "survived": "Gate 2 shows that the compact state really carries usable history: raw+concat scores 0.5250 on same-present/different-history pairs versus 0.1207 after matched history shuffling, and residual-gated scores 0.4213 versus 0.1252. On the main held-out lag-shift task, raw+concat is the strongest compact reader at 0.5258 and beats the matched-state GRU and the repository's minimal selective-state control. Reader geometry matters: a generic query-conditioned concat reader is stronger than the tested softmax routing. The residual transform remains exactly invertible and exposes signed differences of overlapping low-pass states rather than pretending that slow filters are lag bins.",
+      "killed": "The original 'query chooses a temporal lens' claim does not survive the frozen controls. Residual coordinates do not retain their development advantage on held-out lags; residual-gated is 0.4211 versus raw-gated 0.4430. The primary same-present criterion fails because residual-gated paired accuracy is only 0.4213, far below 0.75 despite a large shuffle effect. Later-context reinterpretation also fails: residual-gated reaches 0.4359 final accuracy with only +0.0018 context-consistent probability shift. On exact anchors (2,20,200), the tiny explicit-history transformer reaches 1.000 while the best compact model reaches 0.5461 overall and 0.2287 at lag 200. No cortical, dendritic, PAC, consciousness, or architecture-level superiority claim is established.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/MultipleTemporalLenses/blob/main/README.md",
+      "tags": [
+        "temporal-memory",
+        "fixed-state",
+        "query-routing",
+        "residual-coordinates",
+        "history-shuffle",
+        "same-present",
+        "reinterpretation",
+        "explicit-history-control",
+        "compression",
+        "negative-result"
+      ],
+      "era": "Compact temporal memory under adversarial controls",
+      "era_order": 67
+    }
+  ],
+  "edges": [
+    {
+      "source": "TransformerToX",
+      "target": "MultipleTemporalLenses",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "MultipleTemporalLenses explicitly says it directly follows the TransformerToX / Rytmi line. It keeps TransformerToX's fixed-resident-state versus explicit-history comparison, then makes temporal coordinate basis and query/read geometry the object of frozen factorial and stress tests.",
+      "evidence": "https://github.com/anttiluode/MultipleTemporalLenses/blob/main/README.md"
+    },
+    {
+      "source": "Rytmi",
+      "target": "MultipleTemporalLenses",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "The repository explicitly carries forward the Rytmi/TransformerToX lesson that history being present in state is not enough: an invertibly related fast-minus-slow coordinate system can change what a current reader can use. MultipleTemporalLenses turns that observation into direct raw-versus-residual and gated-versus-concat tests.",
+      "evidence": "https://github.com/anttiluode/MultipleTemporalLenses/blob/main/README.md"
+    }
+  ],
+  "motifs": []
+}

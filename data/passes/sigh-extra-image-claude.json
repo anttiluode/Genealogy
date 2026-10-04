@@ -1,0 +1,77 @@
+{
+  "id": "sigh-extra-image-claude",
+  "title": "SighExtraImage → SighExtraImageClaude: boundary-light outpainting meets a geometry-certification funnel",
+  "summary": "SighExtraImage asks whether weak light near an image boundary can constrain what lies outside the field of view while keeping physical evidence separate from generative plausibility. Its synthetic transport and local-gradient gates are useful, but extracted-photo posterior calibration collapses and the outpainting remains speculative. Claude's fork starts from that code at commit 099d605 and adds a Varjoluotain-style question first: does the photo determine the corner geometry at all? The fork diagnoses a unit bug and an unidentifiable mirrored control, moves from a 1-D boundary strip to a 2-D fan-of-rays geometry, and adds certification before calling a corner 'located'. Multi-edge scenes become substantially more reliable, while single-edge geometry remains underdetermined and one catastrophic held-out failure is retained.",
+  "order": 510,
+  "reviewed_at": "2026-10-04",
+  "nodes": [
+    {
+      "id": "SighExtraImage",
+      "url": "https://github.com/anttiluode/SighExtraImage",
+      "family": "probe-inference",
+      "status": "tool",
+      "claim": "Tests whether structured corner/penumbra light measured at a visible image boundary contains recoverable information about an unseen region, and exposes that physical evidence separately from diffusion-based outpainting.",
+      "survived": "In the frozen synthetic Gates 0–1, the declared corner transport reduces median theta error from a 0.3628-rad prior to 0.06655 rad, the physics-only TV baseline reaches 0.08834-rad median angular-centroid error, and one equal-size correct-physics likelihood-gradient step improves the theta probe on 8/8 seeds. The visible-pixel extractor preserves the oracle boundary-profile shape with median correlation 0.9946. The repository also provides a practical GUI and headless outpainting path that preserves the original image pixels and labels generated extensions as hypotheses rather than measurements.",
+      "killed": "The extracted-photo posterior is not calibrated in v0: the preregistered affine likelihood collapses correct and mirrored structured models to median ESS 1/2500, so apparently sharp pixel-derived posteriors are rejected rather than promoted. The synthetic wins do not show that an arbitrary photograph uniquely reveals the scene outside its frame, and diffusion outpainting does not turn plausible generated detail into ground truth.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/SighExtraImage/blob/main/README.md",
+      "tags": [
+        "inverse-problem",
+        "boundary-light",
+        "corner-transport",
+        "outpainting",
+        "diffusion",
+        "uncertainty",
+        "calibration",
+        "negative-result"
+      ],
+      "era": "Boundary evidence before generative completion",
+      "era_order": 68
+    },
+    {
+      "id": "SighExtraImageClaude",
+      "url": "https://github.com/anttiluode/SighExtraImageClaude",
+      "family": "probe-inference",
+      "status": "ledger",
+      "claim": "Adds a geometry-identifiability funnel before boundary-light inference: test what corner geometries the photo can actually rule out, move to 2-D fan geometry when 1-D strips are insufficient, and certify a located corner before using it to constrain the unseen scene.",
+      "survived": "Gate 2 identifies two important measurement failures before adding complexity: the original ESS collapse was a units/temperature bug, and the mirrored transport control is exactly a relabeling of theta, so data cannot prefer it. After independent noise/temperature calibration, held-out median ESS rises from 1 to 48. Gate 3's 2-D floor-light fan localizes two-or-more-edge scenes within 8 px in 6/7 held-out scenes, with the hidden side correct in 8/8 located verdicts. Gate 4 adds a certification probe: two-edge scenes are 6/6 within 8 px, low-signal sweeps have 0 confident errors in 32 scenes, and empty scenes have 0/16 false alarms. The fork preserves undecidable geometry as an explicit line/valley rather than forcing a point estimate.",
+      "killed": "The 1-D boundary strip cannot identify corner geometry: remapping angle can be absorbed by hidden radiance, and the reversed edge is never refuted in Gate 2. Single-edge scenes remain line-valued rather than point-located. Gate 3 fails two of five preregistered criteria, and Gate 4 retains one catastrophic seed-179 failure: a single-edge fit chooses the far end of its own line with the side flipped, 348 px away. The repository therefore does not establish unique hidden-scene recovery from arbitrary photos; geometry certification is a guardrail, not a proof that the remaining inverse problem is solved.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/SighExtraImageClaude/blob/main/README.md",
+      "tags": [
+        "inverse-problem",
+        "geometry-funnel",
+        "corner-camera",
+        "fan-of-rays",
+        "identifiability",
+        "certification",
+        "outpainting",
+        "negative-result",
+        "varjoluotain"
+      ],
+      "era": "Geometry-certified boundary inference",
+      "era_order": 69
+    }
+  ],
+  "edges": [
+    {
+      "source": "SighExtraImage",
+      "target": "SighExtraImageClaude",
+      "type": "forks",
+      "confidence": "high",
+      "why": "SighExtraImageClaude explicitly identifies itself as a fork of SighExtraImage imported at commit 099d605, retains the original README below its own results, and changes the scientific question by inserting geometry identifiability and certification before light-guided inference.",
+      "evidence": "https://github.com/anttiluode/SighExtraImageClaude/blob/main/README.md"
+    },
+    {
+      "source": "Varjoluotain",
+      "target": "SighExtraImageClaude",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "The Claude fork explicitly says its geometry funnel comes from Varjoluotain's occluder-funnel discipline: treat geometry as a hypothesis, refute what the measurement rules out, and pay for detail only where the photo cannot decide.",
+      "evidence": "https://github.com/anttiluode/SighExtraImageClaude/blob/main/README.md"
+    }
+  ],
+  "motifs": []
+}

@@ -298,5 +298,13 @@
   {
     "path": "inside-the-wave.json",
     "enabled": true
+  },
+  {
+    "path": "multiple-temporal-lenses.json",
+    "enabled": true
+  },
+  {
+    "path": "sigh-extra-image-claude.json",
+    "enabled": true
   }
 ]
