@@ -601,8 +601,8 @@
     "visibility": "public",
     "description": "Ok high hypothesis. Sol Repo. ",
     "created_at": "2026-10-04T06:36:43Z",
-    "updated_at": "2026-10-05T08:21:17Z",
-    "inventory_status": "unread"
+    "updated_at": "2026-10-05T13:54:56Z",
+    "inventory_status": "reviewed"
   },
   {
     "name": "BrainMetastabilityAnalyzerTool",
@@ -1840,11 +1840,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 1129,
+    "size": 1166,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-10-04T05:27:08Z",
+    "updated_at": "2026-10-05T14:28:13Z",
     "inventory_status": "unread"
   },
   {
@@ -4081,17 +4081,6 @@
     "inventory_status": "unread"
   },
   {
-    "name": "SpacetimeLenses",
-    "url": "https://github.com/anttiluode/SpacetimeLenses",
-    "default_branch": "main",
-    "size": 1,
-    "visibility": "public",
-    "description": "Sol wanted to do this. ",
-    "created_at": "2026-10-03T17:01:24Z",
-    "updated_at": "2026-10-03T17:01:39Z",
-    "inventory_status": "unread"
-  },
-  {
     "name": "SparseLogHarmonicCodec",
     "url": "https://github.com/anttiluode/SparseLogHarmonicCodec",
     "default_branch": "main",
@@ -4749,7 +4738,7 @@
     "description": "A Opus 5.5 repo. ",
     "created_at": "2026-10-05T02:50:36Z",
     "updated_at": "2026-10-05T07:55:25Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Twensday",
