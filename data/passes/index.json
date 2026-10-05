@@ -308,6 +308,10 @@
     "enabled": true
   },
   {
+    "path": "note-language-codebook.json",
+    "enabled": true
+  },
+  {
     "path": "sigh-extra-image-claude.json",
     "enabled": true
   }
