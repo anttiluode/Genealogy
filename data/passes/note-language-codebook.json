@@ -1,0 +1,58 @@
+{
+  "id": "note-language-codebook",
+  "title": "Note: from readable codebooks to growing them",
+  "summary": "A one-day synthesis of J-space, read/write duality, recurrent transport, control theory and the older residue/probe line. The note sharpens the target from using a fixed language codebook to asking how a system can grow one: fast provisional bindings, reusable conceptual operators, slow consolidation, and external tests that decide which candidate concepts deserve to become stable primitives. Its only executable receipt is toy linear algebra; no real-model or human-neuroscience result is claimed.",
+  "order": 520,
+  "reviewed_at": "2026-10-05",
+  "nodes": [
+    {
+      "id": "Note",
+      "url": "https://github.com/anttiluode/Note",
+      "family": "conceptual-synthesis",
+      "status": "ledger",
+      "claim": "Asks what properties let language become a reusable computational codebook, then pushes one step further: how can a language-using dynamical system create, test and consolidate new conceptual primitives rather than only address a fixed codebook?",
+      "survived": "The note separates reading from writing and records the exact idealized transport relation T = S^{-T}: J-CoT's pulled-back read-coordinate transport and an effect-preserving write transport are dual rather than generally identical. It also turns 'codebook growth' into a falsifiable program: distinguish temporary in-context bindings from stable reusable concepts, compare language-aligned sparse selection against matched non-language bases, and require candidate concepts to survive prediction/intervention/world checks before consolidation.",
+      "killed": "The toy random-matrix receipt says nothing about the magnitude of T-versus-S disagreement in Qwen or any production model. The note does not establish that human concepts are literal vector directions, that J-space is phenomenal consciousness, that J-CoT's reported gains replicate, or that an elastic codebook has been built. Its developmental, Vygotskian, resonance and human-language parallels remain hypotheses or analogies until measured.",
+      "usefulness": "scientific",
+      "confidence": "medium",
+      "evidence": "https://github.com/anttiluode/Note/blob/main/README.md",
+      "tags": ["language", "codebook", "j-space", "read-write-duality", "causal-inner-product", "transport", "control-theory", "concept-learning", "consolidation", "sihti", "luotain", "open-gates"],
+      "era": "Language-native computation and codebook growth",
+      "era_order": 70
+    }
+  ],
+  "edges": [
+    {
+      "source": "ReadWrite",
+      "target": "Note",
+      "type": "converges",
+      "confidence": "high",
+      "why": "ReadWrite made measurement and intervention separate operators and asked what a bounded read can recover only after a designed write. Note returns to that seam through J-space and Park-style probe/steer duality, now asking whether language-defined read coordinates are also good write and recurrent-state coordinates.",
+      "evidence": "https://github.com/anttiluode/Note/blob/main/README.md"
+    },
+    {
+      "source": "AdaptiveObserverCache",
+      "target": "Note",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Note explicitly reuses the AdaptiveObserverCache lesson that a direction can be a strong sensor yet a poor control point. That earlier frozen-Qwen result becomes a concrete antecedent for the note's distinction between readable concepts, writable concepts and useful recurrent state.",
+      "evidence": "https://github.com/anttiluode/Note/blob/main/README.md"
+    },
+    {
+      "source": "Luotain",
+      "target": "Note",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Luotain already treated candidate structure as provisional until counterexamples or a theorem prover answer back. Note generalizes that discipline to codebook growth: language may propose a new primitive, but external proof, measurement or intervention must decide whether it earns consolidation.",
+      "evidence": "https://github.com/anttiluode/Note/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "language-codebook-growth",
+      "title": "A codebook is useful only if it can be read, written, reused and revised",
+      "description": "ReadWrite separates observation from intervention; AdaptiveObserverCache shows that sensing and causal control can diverge inside a frozen transformer; Luotain routes unresolved residue to an external discriminator; Note joins those lines into an open question about concept acquisition. A mature language-native primitive should be addressable, causally usable, transportable across computation and revisable when the world or a proof checker says no. The human-like step still missing from ordinary frozen inference is consolidation: turning a provisional binding into a new stable operator-compatible entry.",
+      "nodes": ["ReadWrite", "AdaptiveObserverCache", "Luotain", "Note"]
+    }
+  ]
+}
