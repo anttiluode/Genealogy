@@ -1,0 +1,65 @@
+{
+  "id": "temporal-lenses-brainloops-tupsu",
+  "title": "Temporal lenses, BrainLoops and Tupsu: memory, EEG recurrence and burst-driven cuts",
+  "summary": "Three distinct tests of the temporal-control intuition. MultipleTemporalLenses is already curated in its own pass: compact state carries some history but the proposed query-softmax routing fails its controls. BrainLoops measures EEG recurrence: its independent resting-data follow-up passes the order null for transitions but not the phase null, while state returns pass both. Tupsu tests burst-dependent memory boundaries and loses to matched regular chunks even when it keeps bindings intact better. The resonance-valve and anti-seizure interpretation remains an untested cross-project hypothesis, not a result shared by the three experiments.",
+  "order": 510,
+  "reviewed_at": "2026-10-05",
+  "nodes": [
+    {
+      "id": "BrainLoops",
+      "url": "https://github.com/anttiluode/BrainLoops",
+      "family": "eeg-instruments",
+      "status": "ledger",
+      "claim": "Asks which temporal recurrence statistics survive frozen controls in EEG-derived state trajectories, separating task-clock sensitivity, same-state return, repeated transition direction and spontaneous resting recurrence.",
+      "survived": "Gate 1A is a limited timescale positive control. Gate 1C, designed after Gate 1B and tested on the same EEGMMIDB subjects, finds event-aligned transition direction above circularly shifted event times (88 held out, p=0.01). The separate canonical LEMON R1 run has 22 usable held-out people in EC and the same 22 in EO, with 99 nulls: transition recurrence exceeds the order-destroying null (p=0.01 in both) and reaches the linear-lag tier; matched state return exceeds both order and phase controls (p=0.01), yielding STATE_RECURRENCE_DOMINANT.",
+      "killed": "Gate 1B fails: the true T0 phase is not a privileged return to the identical coarse state (p=1.0). The original Gate-1B-to-LEMON advancement rule remains unsatisfied; R1 is a separately approved follow-up. R1 transitions do not beat the phase-preserving null (EC p=0.36; EO p=0.37), and the stronger transformation-without-state-return dissociation is not the population result. Phase-null state rejection is conditional on that surrogate's distributional and nonstationarity limits; the scalp EEG does not identify a physical loop, inhibitory reset, resonance valve or seizure protection. EO reuses the EC people.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/BrainLoops/blob/main/docs/analysis/2026-10-05-r1-lemon.md",
+      "tags": ["eeg", "recurrence", "state-space", "null-controls", "task-clock", "resting-eeg", "linear-lag", "state-return", "negative-result"],
+      "era": "Temporal-control hypotheses under empirical controls",
+      "era_order": 68
+    },
+    {
+      "id": "Tupsu",
+      "url": "https://github.com/anttiluode/Tupsu",
+      "family": "operator-response",
+      "status": "negative",
+      "claim": "Tests whether burst-driven, facilitation/inhibition-inspired decisions about when to close a compressed memory episode improve distant event recall over regular chunks with approximately matched memory slots.",
+      "survived": "The mechanism runs and its boundaries retain name-marker bindings: in the boundary-only run, Tupsu splits 5.3% of pairs versus 10.0% for fixed chunks. An enwik8 seam check shows a small learned shift from markup toward spaces and punctuation, though 72.5% of closes remain within words. These are narrow observations about the tested artificial model and task.",
+      "killed": "The primary memory advantage fails on its designed synthetic event-recall task. In the three-seed plain-pooling boundary-only comparison, Tupsu's far recall is 0.912 ± 0.012 versus 0.962 ± 0.010 for matched fixed chunks, losing on every seed despite splitting fewer pairs. Earlier pooling differences explain only a small part of the gap; why regular cuts help remains untested. Tupsu has no recurrent excitatory population to stabilize and provides no anti-seizure or Martinotti-cell evidence.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Tupsu/blob/main/RESULTS.md",
+      "tags": ["temporal-memory", "episode-commitment", "burst-gating", "inhibition-inspired", "matched-slots", "boundary-control", "negative-result"],
+      "era": "Temporal-control hypotheses under empirical controls",
+      "era_order": 68
+    }
+  ],
+  "edges": [
+    {
+      "source": "MultipleTemporalLenses",
+      "target": "Tupsu",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Tupsu explicitly cites the cortical figure in MultipleTemporalLenses as motivation for its burst gate and memory-commitment rule. It tests a different mechanism, so this is a documented conceptual connection rather than inherited code or a replication of lens routing.",
+      "evidence": "https://github.com/anttiluode/Tupsu/blob/main/README.md"
+    },
+    {
+      "source": "BrainLoops",
+      "target": "MultipleTemporalLenses",
+      "type": "corrects",
+      "confidence": "high",
+      "why": "BrainLoops' interpretation audit identifies a role-discarding mixture in the temporal-lenses Gate 3 task: 60 latent pair/context cases collapse to 30 observable inputs with two equally likely labels, placing expected Bayes accuracy at 50%, below the declared 80% gate. The observed miss cannot establish a failure of later-context reinterpretation in the architecture. Other temporal-lens gates retain their own verdicts.",
+      "evidence": "https://github.com/anttiluode/BrainLoops/blob/main/docs/interpretation/2026-10-05-resonance-valves.md#related-memory-test-correction"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "temporal-control-measurements-diverge",
+      "title": "A temporal-control metaphor becomes three different measurements",
+      "description": "MultipleTemporalLenses tests access to compact past summaries, Tupsu tests where to commit compressed episodes, and BrainLoops tests recurrence in EEG feature trajectories. The failures and narrower positives are informative precisely because they do not substitute for one another. The shared resonance-valve idea remains a proposed intervention on gain, memory and stability; none of these results identifies an inhibitory controller or seizure-prevention function.",
+      "nodes": ["MultipleTemporalLenses", "BrainLoops", "Tupsu"]
+    }
+  ]
+}
