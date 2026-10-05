@@ -3157,5 +3157,137 @@
       "Artificial recurrent network; no biological receiver decoding, consciousness or physical quantum claim."
     ],
     "source": "https://github.com/anttiluode/ChessFlyStatePings/blob/main/results/receipts/history-lens-v2-20261002-summary.json"
+  },
+  {
+    "id": "multiple-temporal-lenses-frozen-gates",
+    "node": "MultipleTemporalLenses",
+    "claim": "A fixed-size bank with query-softmax routing provides a clear held-out temporal-addressing advantage and reliably uses changed history under the same present.",
+    "design": "Frozen held-out lag shift, matched-state GRU and minimal selective-state comparators, plus same-present/different-history pairs with matched history shuffling. Gate 3 is recorded separately as an invalid task test after the BrainLoops role-collapse audit.",
+    "result": "mixed",
+    "motifs": [
+      "temporal-control-measurements-diverge"
+    ],
+    "metrics": [
+      {
+        "name": "raw+concat held-out lag-shift accuracy",
+        "value": 0.5258,
+        "comparison": "strongest compact reader on the primary short benchmark"
+      },
+      {
+        "name": "residual+gated held-out lag-shift accuracy",
+        "value": 0.4211,
+        "comparison": "raw+gated 0.4430; routing claim has NO_CLEAR_PRIMARY_ADVANTAGE"
+      },
+      {
+        "name": "residual+gated same-present accuracy",
+        "value": 0.4213,
+        "comparison": "0.1252 after matched shuffle, but below 0.75 absolute criterion"
+      }
+    ],
+    "controls": [
+      "Held-out lag set disjoint from development lags",
+      "Matched history shuffle preserves present, query and labels",
+      "GRU, minimal selective-state and generic concat readers at the same 36-scalar resident-state budget"
+    ],
+    "replication": "Frozen internal synthetic gates 1–4, not a second dataset.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Positive history-shuffle effect does not establish successful query routing.",
+      "Gate 3 mixes candidate roles and under the declared uniform task has a 50% Bayes accuracy ceiling below its 80% required threshold; it cannot diagnose architectural reinterpretation failure.",
+      "Explicit-history transformer uses a larger sequence-growing memory and solves the exact-anchor long stress test; no cortical mechanism is tested."
+    ],
+    "source": "https://github.com/anttiluode/MultipleTemporalLenses/blob/main/README.md"
+  },
+  {
+    "id": "tupsu-run6-boundary-only",
+    "node": "Tupsu",
+    "claim": "Burst-driven placement of compressed-memory episode boundaries improves far recall over regular fixed chunks at an approximately matched memory-slot budget.",
+    "design": "Run 6: three synthetic event-recall seeds, gate off, plain memory pooling identical for Tupsu and fixed, fixed length matched to Tupsu’s measured mean episode length. Compare far recall and direct name–marker pair splitting.",
+    "result": "contradicts",
+    "motifs": [
+      "temporal-control-measurements-diverge"
+    ],
+    "sample": {
+      "unit": "synthetic training seed",
+      "count": 3
+    },
+    "metrics": [
+      {
+        "name": "Tupsu far recall",
+        "value": 0.912,
+        "comparison": "fixed 0.962 mean across three seeds; Tupsu loses on every seed"
+      },
+      {
+        "name": "name–marker pairs split by Tupsu",
+        "value": 0.053,
+        "comparison": "fixed 0.100; keeping pairs together did not rescue recall"
+      }
+    ],
+    "controls": [
+      "Same plain episode pooling in both arms verified by a test",
+      "Gate off; fixed chunks get the rounded measured Tupsu episode length",
+      "Three-seed per-seed far recall and direct split-pair metric"
+    ],
+    "replication": "Three internal synthetic seeds; no independent task replication.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Memory-slot match is approximate rather than per-sequence exact.",
+      "Cause of the regular-boundary advantage is not isolated by a random-irregular boundary control.",
+      "The artificial memory loop contains no recurrent excitatory population; it cannot test a biological safety valve or epilepsy mechanism."
+    ],
+    "source": "https://github.com/anttiluode/Tupsu/blob/main/RESULTS.md"
+  },
+  {
+    "id": "brainloops-r1-lemon-canonical",
+    "node": "BrainLoops",
+    "claim": "In resting EEG, repeated transition geometry survives temporal-order and phase-preserving controls and outranks matched state return at the same null tier.",
+    "design": "Frozen EC-primary/EO-replication R1 on raw LEMON BrainVision physical rest blocks, 0.5-second band-power features, 2–20-second lag search repeated inside each null, deterministic split and 99 order/phase null replicates per subject-condition.",
+    "result": "mixed",
+    "motifs": [
+      "temporal-control-measurements-diverge"
+    ],
+    "sample": {
+      "unit": "usable held-out LEMON subject",
+      "count": 22
+    },
+    "metrics": [
+      {
+        "name": "EC transition versus order null p",
+        "value": 0.01,
+        "comparison": "22/22 positive; passes"
+      },
+      {
+        "name": "EC transition versus phase null p",
+        "value": 0.36,
+        "comparison": "14/22 positive; fails"
+      },
+      {
+        "name": "EC state versus phase null p",
+        "value": 0.01,
+        "comparison": "22/22 positive; passes; stronger ordinal null tier"
+      },
+      {
+        "name": "EO transition versus phase null p",
+        "value": 0.37,
+        "comparison": "9/22 positive; fails in the same people"
+      }
+    ],
+    "controls": [
+      "Order-destroying vector and state nulls inside physical blocks",
+      "Multivariate phase surrogate preserving block auto/cross-spectra",
+      "Frozen EC primary, EO within-dataset replication; each null repeats the maximum-over-lags search"
+    ],
+    "replication": "EO uses the same 22 held-out people as EC; LEMON is a separate dataset from earlier EEGMMIDB task gates.",
+    "held_out": true,
+    "external_data": true,
+    "limitations": [
+      "Canonical PASS_LINEAR describes the transition tier. Matched state return beats both controls and is STATE_RECURRENCE_DOMINANT under ordinal tiers.",
+      "The phase surrogate does not preserve original marginal distributions or nonstationarity; phase-null state rejection is not proof of nonlinear circuitry.",
+      "One subject was excluded for fewer than four physical blocks; the public metadata reproduce the 313-annotation warning but the local EEG files were not reprocessed in the published audit.",
+      "Gate 1B remains FAIL and Gate 1C is a same-dataset post-failure follow-up; no anatomical, inhibitory or anti-seizure causal mechanism was measured."
+    ],
+    "source": "https://github.com/anttiluode/BrainLoops/blob/main/results/receipts/r1-lemon-full-summary.json"
   }
 ]

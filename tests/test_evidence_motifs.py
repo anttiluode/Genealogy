@@ -1,6 +1,7 @@
 from pathlib import Path
 import json
 import unittest
+from scripts.validate_data import load_atlas
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -15,7 +16,7 @@ class EvidenceMotifTests(unittest.TestCase):
 
     def test_evidence_motif_relations_are_explicit_and_known(self):
         evidence = json.loads((ROOT / "data/evidence.json").read_text(encoding="utf-8"))
-        motifs = json.loads((ROOT / "data/motifs.json").read_text(encoding="utf-8"))
+        motifs = load_atlas(ROOT)["motifs"]
         relations = json.loads((ROOT / "data/evidence_motif_relations.json").read_text(encoding="utf-8"))
         known = {item["id"] for item in motifs}
         tagged = 0

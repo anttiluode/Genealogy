@@ -23,6 +23,31 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
+## 2026-10-05 — temporal lenses, BrainLoops and Tupsu
+
+The [temporal-control pass](data/passes/temporal-lenses-brainloops-tupsu.json)
+adds [BrainLoops](https://github.com/anttiluode/BrainLoops) and
+[Tupsu](https://github.com/anttiluode/Tupsu) to the curated wall and links them
+to the existing [MultipleTemporalLenses pass](data/passes/multiple-temporal-lenses.json).
+All three were already present in the raw repository census; MultipleTemporalLenses
+already had a reviewed node, so it is reused rather than duplicated.
+
+The comparison keeps their tests distinct. MultipleTemporalLenses stores useful
+history, but its proposed query-softmax lens routing misses the frozen controls.
+Tupsu's burst-driven cuts keep more bindings together yet lose far recall to
+matched fixed chunks on all three seeds of the boundary-only run. BrainLoops'
+canonical LEMON receipt reaches `PASS_LINEAR` for transitions in 22 held-out
+people; state return passes the stronger phase control in both EC and EO. That
+result neither measures inhibitory feedback nor establishes a seizure-prevention
+function. The [Evidence view](data/evidence.json) retains each measured contrast.
+
+A cross-repository correction narrows the MultipleTemporalLenses Gate 3 story:
+the [BrainLoops task audit](https://github.com/anttiluode/BrainLoops/blob/main/docs/interpretation/2026-10-05-resonance-valves.md#related-memory-test-correction)
+finds that Gate 3 discards candidate roles, collapsing opposite-label cases
+onto the same observable input. Its expected 50% ceiling makes that gate
+incapable of testing the intended later-context reinterpretation claim. The
+other lens gates keep their recorded verdicts.
+
 ## 2026-10-02 — ChessFlyStatePings and InsideTheWave
 
 The updated [ChessFly pass](data/passes/chessfly-state-pings.json) records the same-present history assay: opposite cue histories receive identical present inputs and one identical delayed ping. Responses differ, but continuation targeting fails its declared gate: 13/24 policy pairings (54.2%), 68.2% matched-control percentile and negative average native alignment. The first zero-ping receipt and the separately recorded source-timing correction remain visible. A structured record in the Evidence view keeps this mixed result distinct from lineage confidence.

@@ -199,5 +199,14 @@
   },
   "chessfly-same-present-history-v2": {
     "state-message-receiver-boundary": "supports"
+  },
+  "multiple-temporal-lenses-frozen-gates": {
+    "temporal-control-measurements-diverge": "supports"
+  },
+  "tupsu-run6-boundary-only": {
+    "temporal-control-measurements-diverge": "supports"
+  },
+  "brainloops-r1-lemon-canonical": {
+    "temporal-control-measurements-diverge": "supports"
   }
 }
