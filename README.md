@@ -23,6 +23,29 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
+## 2026-10-06 — Jalanjälki and Thingy: readable state, causal writes
+
+The [language-workspace pass](data/passes/language-workspace-control.json) adds
+[Jalanjälki](https://github.com/anttiluode/Jalanjalki) and
+[Thingy](https://github.com/anttiluode/Thingy) to the wall and Evidence view.
+[Note](https://github.com/anttiluode/Note) was already curated in the
+[codebook-growth pass](data/passes/note-language-codebook.json); its existing
+entry is reused and connected to the two new instruments.
+
+Jalanjälki compares identical-token Qwen3-0.6B base/instruct states, then tests
+a post-training direction at the assistant boundary. Run 3's policy-score
+dose slope is 1.726 per sigma versus 0.519 for a norm-matched random direction.
+The earlier regex-based refusal AUC headline is withdrawn, exact J-lens words
+remain unstable, and blind full-answer labels are still open.
+
+Thingy's trained 1,813-parameter controller solves 1,260 fresh relation tasks.
+Deleting a ping leaves 51/900 multi-hop answers correct; replay and
+codebook-plus-residue restoration each recover 900/900. Text and latent
+recurrence match its intact accuracy. The grammar, memory split and write rule
+are engineered, so the result establishes editable causal computation in this
+small task family. The new edges record conceptual convergence with Note and
+ReadWrite; they do not assert code inheritance or tested concept consolidation.
+
 ## 2026-10-05 — temporal lenses, BrainLoops and Tupsu
 
 The [temporal-control pass](data/passes/temporal-lenses-brainloops-tupsu.json)

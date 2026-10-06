@@ -314,5 +314,9 @@
   {
     "path": "sigh-extra-image-claude.json",
     "enabled": true
+  },
+  {
+    "path": "language-workspace-control.json",
+    "enabled": true
   }
 ]

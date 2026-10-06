@@ -208,5 +208,11 @@
   },
   "brainloops-r1-lemon-canonical": {
     "temporal-control-measurements-diverge": "supports"
+  },
+  "jalanjalki-run3-boundary-control": {
+    "language-addressed-state-control": "supports"
+  },
+  "thingy-self-ping-causal-recovery": {
+    "language-addressed-state-control": "supports"
   }
 }

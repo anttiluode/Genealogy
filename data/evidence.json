@@ -3289,5 +3289,107 @@
       "Gate 1B remains FAIL and Gate 1C is a same-dataset post-failure follow-up; no anatomical, inhibitory or anti-seizure causal mechanism was measured."
     ],
     "source": "https://github.com/anttiluode/BrainLoops/blob/main/results/receipts/r1-lemon-full-summary.json"
+  },
+  {
+    "id": "jalanjalki-run3-boundary-control",
+    "node": "Jalanjalki",
+    "claim": "A fitted post-training-sensitive direction can causally shift the opening-based policy disposition of Qwen3-0.6B with one intervention at the assistant boundary.",
+    "design": "Fit the instruct-minus-base sensitive-minus-neutral direction on the 84 main prompts, test on 24 held-out benign/loaded twins, compare user-end/turn-end/assistant-start states, and add seven signed doses at L17. Separate boundary-only and persistent interventions, random/task direction controls and early/late layer checks.",
+    "result": "supports",
+    "motifs": [
+      "language-addressed-state-control"
+    ],
+    "sample": {
+      "unit": "held-out matched prompt pair",
+      "count": 24
+    },
+    "metrics": [
+      {
+        "name": "assistant-start band Spearman with policy score",
+        "value": 0.633195831524099,
+        "comparison": "user-end 0.15293457808655375; L15–20 average"
+      },
+      {
+        "name": "boundary policy-score slope per sigma",
+        "value": 1.72640348143767,
+        "comparison": "norm-matched random 0.518731801072033; task direction -0.2060044571544494"
+      },
+      {
+        "name": "neutral-answer log-probability change at minus two sigma",
+        "value": -0.005364679472819489,
+        "comparison": "loaded policy score changes from +2.8983 to -2.6649; side-effect meter on the model's own neutral answers"
+      }
+    ],
+    "controls": [
+      "Identical token IDs supplied to base and instruct models",
+      "Direction fitting and matched-pair evaluation use different prompts",
+      "Norm-matched random and request-minus-neutral task directions",
+      "Boundary-only versus persistent writes and early/late layer controls"
+    ],
+    "replication": "One published Qwen3-0.6B model pair and one prompt family; repository receipts inspected, heavy-model run not independently repeated for this wall update.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Policy score is teacher-forced log odds of caution/refusal versus compliance openings, not a blind judgement of complete answers; full-answer labels remain unfilled.",
+      "Negative steering mostly changes first-person refusal wording while retaining moral judgement in the reported examples.",
+      "One random control direction, one principal intervention layer and greedy generation; large or persistent pushes damage the neutral-answer probability meter.",
+      "The earlier regex-based refusal AUC 0.89 was withdrawn; unstable exact J-lens vocabulary and matching logit-lens results limit a lens-specific interpretation.",
+      "Difference-of-means refusal steering has prior art; this result does not establish emotion, a unique agenda vector or cross-model generality."
+    ],
+    "source": "https://github.com/anttiluode/Jalanjalki/blob/58b159fd05d0deb9c4c8cc01bcd91b844811deb6/results/run3/report_run3.json"
+  },
+  {
+    "id": "thingy-self-ping-causal-recovery",
+    "node": "Thingy",
+    "claim": "Sparse self-pings causally control relation-chain computation, and the temporary codebook plus unfinished residue supports continuation after interruption in the constructed machine.",
+    "design": "Freeze the shipped controller after 1,000 training batches of 64 at seed 7, then evaluate fresh permutation worlds from seeds 101/202/303 with 420 episodes per stream and 0–6 query steps. Pair interventions from identical original snapshots; compare deletion, wrong relation, frozen write, replay, placebo and component-wise restoration with shared-controller recurrence ablations.",
+    "result": "supports",
+    "motifs": [
+      "language-addressed-state-control"
+    ],
+    "sample": {
+      "unit": "fresh synthetic relation-chain episode",
+      "count": 1260
+    },
+    "metrics": [
+      {
+        "name": "sparse self-ping exact accuracy",
+        "value": 1,
+        "comparison": "1,260/1,260; textual feedback and latent recurrence also 1,260/1,260; one-read 435/1,260"
+      },
+      {
+        "name": "delete-first-ping multi-hop exact accuracy",
+        "value": 0.056666666666666664,
+        "comparison": "51/900 versus intact 900/900; wrong relation 50/900; frozen write 51/900"
+      },
+      {
+        "name": "correct-packet replay exact accuracy",
+        "value": 1,
+        "comparison": "900/900 on the multi-hop subset; diagnostic placebo also 900/900"
+      },
+      {
+        "name": "codebook-plus-residue restore exact accuracy",
+        "value": 1,
+        "comparison": "900/900; workspace-plus-residue without episodic facts 0/900"
+      }
+    ],
+    "controls": [
+      "Frozen permanent weights and independent evaluation streams",
+      "Same original snapshots for all paired interventions",
+      "Packet display without its write and a diagnostic placebo",
+      "Shared-controller one-read, text-feedback and continuous latent baselines",
+      "Selective state restoration after clearing facts and working state"
+    ],
+    "replication": "Three internal evaluation streams using one trained checkpoint and one small synthetic grammar.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Learned relation/HALT selection and a learned public decoder operate inside an engineered grammar, address basis, fact store, query cursor and rank-one update.",
+      "Codebook stores all episodic facts; restoration reconstructs private state by design and does not demonstrate learned compression.",
+      "Recurrent text and latent baselines match accuracy, so the supported benefit is inspection, intervention and selective restoration.",
+      "These are small shared-controller ablations, not separately trained matched-budget transformer systems.",
+      "Primary validation covers 0–6 steps; the 32-step diagnostic is separate extrapolation and does not test spontaneous language, learned residue promotion or consolidation."
+    ],
+    "source": "https://github.com/anttiluode/Thingy/blob/25964e1962145bba2722b1c3d8a387537043d720/README.md"
   }
 ]

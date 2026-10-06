@@ -1,0 +1,102 @@
+{
+  "id": "language-workspace-control",
+  "title": "Jalanjälki and Thingy: reading installed preferences, writing temporary computation",
+  "summary": "Two October 6 instruments meet the existing Note codebook program at different scales. Jalanjälki compares same-token Qwen3-0.6B base/instruct states and tests a post-training direction with held-out prompt pairs and boundary-only steering. Thingy trains a tiny NumPy controller to emit editable self-pings into an engineered temporary codebook, then tests deletion, substitution and selective restoration. The shared question is when an addressable internal channel causally changes later computation; neither experiment establishes codebook consolidation, conscious inner speech or an advantage for language-aligned recurrence over matched alternatives.",
+  "order": 530,
+  "reviewed_at": "2026-10-06",
+  "nodes": [
+    {
+      "id": "Jalanjalki",
+      "url": "https://github.com/anttiluode/Jalanjalki",
+      "family": "transformer-observer",
+      "status": "ledger",
+      "claim": "Tests where post-training changes same-token internal responses in Qwen3 Base versus instruct, whether those changes are readable as a context-dependent policy disposition, and whether a fitted direction can causally alter the answer.",
+      "survived": "In Qwen3-0.6B, the sensitive-minus-neutral instruct-minus-base state contrast survives prompt-shuffle controls and concentrates interpretable policy words around L15–20. Run 3 fits on the main prompts and tests 24 held-out matched pairs: the assistant-start band score correlates 0.633 with an opening-based policy score, versus 0.153 at the user's last word. A single L17 assistant-boundary intervention has a monotonic policy-score slope of 1.726 per sigma, versus 0.519 for a norm-matched random direction; examples induce refusals of harmless requests. Negative steering mostly removes first-person refusal wording while retaining moral judgement.",
+      "killed": "The original AUC 0.89 refusal headline was withdrawn because two of five regex-labelled refusals were compliance. Exact top-25 words are unstable across independent lenses and matched-pair vocabulary did not pass its gate; the logit lens finds the broad semantic family too. Sensitivity already exists while reading, so a zero-to-policy switch at the assistant token is false. Run 3 measures opening proxies and a few generated examples, with blind full-answer labels still unfilled; it does not establish a unique agenda vector, private emotion, a novel general steering method or transfer beyond one 0.6B model pair.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Jalanjalki/blob/main/README.md",
+      "tags": [
+        "post-training",
+        "base-vs-instruct",
+        "same-token-control",
+        "jacobian-lens",
+        "logit-lens",
+        "policy-direction",
+        "boundary-intervention",
+        "dose-response",
+        "held-out-pairs",
+        "label-correction",
+        "read-write"
+      ],
+      "era": "Language-addressed state under causal intervention",
+      "era_order": 71
+    },
+    {
+      "id": "Thingy",
+      "url": "https://github.com/anttiluode/Thingy",
+      "family": "operator-response",
+      "status": "tool",
+      "claim": "Builds a trainable, inspectable machine in which sparse self-address packets write a temporary operator that determines the next private state, with a separate public decoder and selective interruption/restoration.",
+      "survived": "A shipped 1,813-parameter NumPy controller trained through continuous recurrent feedback solves all 1,260 fresh relation-chain episodes across three evaluation streams. In the 900 multi-hop cases, deleting the first ping leaves 51 correct and substituting a wrong relation leaves 50; correct replay and codebook-plus-residue restoration each recover 900/900. The live explorer exposes actual packets, arrays, edits and snapshot state rather than a narrated trace.",
+      "killed": "Textual feedback and continuous latent recurrence also solve 1,260/1,260; no accuracy advantage for the explicit workspace is demonstrated. The grammar, address basis, episodic fact matrices, residue cursor and write rule are engineered, and reconstructing private state from codebook plus residue is built into the state split. This does not establish learned transcript compression, unstructured residue promotion, slow concept consolidation, general conversational language, spontaneous inner speech or consciousness. Primary validation is 0–6 query steps; the separate 100-world 32-step diagnostic is extrapolation after capping the controller length feature.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Thingy/blob/main/README.md",
+      "tags": [
+        "self-ping",
+        "temporary-codebook",
+        "sparse-workspace",
+        "fast-operator",
+        "learned-controller",
+        "causal-intervention",
+        "interrupt-restore",
+        "numpy",
+        "live-explorer",
+        "baseline-parity",
+        "engineered-memory"
+      ],
+      "era": "Language-addressed state under causal intervention",
+      "era_order": 71
+    }
+  ],
+  "edges": [
+    {
+      "source": "Note",
+      "target": "Jalanjalki",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Note distinguishes readable concepts from causal write directions and calls for real-model tests. Jalanjälki measures same-token post-training state differences and then checks a fitted direction with an actual residual-stream intervention. This connects the scientific questions; the repository does not document code inheritance from Note or a test of Note's transport algebra.",
+      "evidence": "https://github.com/anttiluode/Jalanjalki/blob/main/README.md"
+    },
+    {
+      "source": "Note",
+      "target": "Thingy",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Note separates fast provisional bindings from slow consolidated concepts. Thingy makes the fast half executable through mutable episodic facts and a self-ping-written operator, with explicit interruption and restoration tests. The connection is conceptual: it does not demonstrate slow codebook growth, a J-space implementation or code inheritance from Note.",
+      "evidence": "https://github.com/anttiluode/Thingy/blob/main/docs/ARCHITECTURE.md"
+    },
+    {
+      "source": "ReadWrite",
+      "target": "Jalanjalki",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "ReadWrite separates measurement from intervention and tests what a designed write changes in a later read. Jalanjälki crosses that same seam from lens readouts to a dose-controlled boundary intervention in a real language model. This is a recurring measurement/control distinction, with no asserted code ancestry.",
+      "evidence": "https://github.com/anttiluode/Jalanjalki/blob/main/README.md#run-3-from-predicts-to-causes-jalanjalki_run3py"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "language-addressed-state-control",
+      "title": "Readable internal state earns causal meaning through intervention",
+      "description": "ReadWrite separates observation from intervention; Note asks whether language-addressable read coordinates can also support writing and recurrent computation. Jalanjälki tests an installed post-training direction in Qwen, while Thingy builds an editable temporary address channel in a small trained machine. Their useful common discipline is to distinguish legible state, behavioural prediction and causal control. They remain different instruments, and neither result establishes conscious language, slow concept consolidation or superior recurrence accuracy.",
+      "nodes": [
+        "ReadWrite",
+        "Note",
+        "Jalanjalki",
+        "Thingy"
+      ]
+    }
+  ]
+}
