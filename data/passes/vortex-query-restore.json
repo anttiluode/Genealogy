@@ -1,0 +1,144 @@
+{
+  "id": "vortex-query-restore",
+  "title": "VMN, VMNClaude and Vision: state-dependent response, query cost and restoration",
+  "summary": "The October 7 vortex–matrix–neuron line starts from Kompressori's response-operator question and splits into two oscillator/vortex implementations plus a dendrite-inspired follow-up. VMN shows that a small nonlinear state can regenerate a much larger response change and that sign-reversed counterpulses can preserve repeated useful reads, while several stronger memory/interface claims fail. VMNClaude independently develops the vortex/oscillator mathematics, path integration and ping-query interface; vortex coupling often loses, the proposed left/right theta-cancellation story fails, and exact undo requires pre-query state. Vision carries the read/write trade-off into an apical-tuft abstraction: input-locked, rhythm-timed inhibition erases most query damage, but output-driven Martinotti-style inhibition fails. The pass records these as designed dynamical-system results and falsifiers, not as established neuroscience or hardware advantage.",
+  "order": 540,
+  "reviewed_at": "2026-10-07",
+  "nodes": [
+    {
+      "id": "VMN",
+      "url": "https://github.com/anttiluode/VMN",
+      "family": "operator-response",
+      "status": "ledger",
+      "claim": "Tests whether nonlinear vortex/oscillator state can compactly control a larger future-response operator, whether that state supports useful ping queries, and whether counterpulses can reduce the cumulative disturbance caused by reading it.",
+      "survived": "A six-number retained state reconstructs later response updates at unseen event locations with about 5.3% median error in the moving-geometry-plus-shear model, versus about 96.5% for the tested fixed matrix dictionary; this requires the shared model and numerical integration. A single noisy oscillator bank answers a goal ping at 0.039 error versus 0.236 for a zero answer. In the restore follow-up, sign-reversed counterpulses keep the eighth-query error at 0.043 and added position error at 0.00376, far below repeated or spatially mirrored pulses.",
+      "killed": "Moving vortex geometry and shear miss the predeclared nonlinear-memory advantage gates, and the quadratic-reader follow-up also fails its primary gate. The four-channel restricted listener does not improve the query, direct phase access is cheaper and more accurate, query-time vortex coupling does not help, and the successful decoder is much larger than the 512-byte oscillator state. No storage, speed, energy or hardware advantage is established.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/VMN/blob/main/README.md",
+      "tags": [
+        "vortex",
+        "oscillator",
+        "state-dependent-jacobian",
+        "operator-code",
+        "phase-memory",
+        "ping-query",
+        "counterpulse",
+        "restore",
+        "negative-results",
+        "matched-controls"
+      ],
+      "era": "Queryable dynamical state and restoration",
+      "era_order": 72
+    },
+    {
+      "id": "VMNClaude",
+      "url": "https://github.com/anttiluode/VMNClaude",
+      "family": "operator-response",
+      "status": "ledger",
+      "claim": "Develops exact vortex–matrix–oscillator mathematics and tests vortex coupling, noisy path integration, ping-and-listen goal queries, sweep-cancellation and query restoration under explicit kill conditions.",
+      "survived": "The uncoupled 40-oscillator path integrator reaches 0.18 end-position error versus 0.36 for the tested echo-state network, and a goal ping reads a useful vector at 0.027 error versus 0.235 for a zero answer. Mixed rotation senses make conjugate vortex coupling active in the reservoir follow-up, and a sign-flipped post-query pulse reduces phase damage by several-fold at post-hoc matched accuracy. The doubled (z, z-bar) representation makes the conjugate coupling an ordinary linear lift and reproduces the onset spectrum to numerical precision.",
+      "killed": "Vortex coupling is not needed for path integration or goal querying and repeatedly fails to earn a practical role; the echo-state network still wins the reservoir gate. The proposed biological left/right theta-sweep cancellation story fails: left/right is not antipodal, random directions can damage less, and shear breaks ideal cancellation. Gate 6's matched-damage ratios are post hoc because the preregistered comparison point sat on the memory error floor. Exact undo needs a copy of the pre-query state. No neuroscience or hardware claim is established.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/VMNClaude/blob/main/README.md",
+      "tags": [
+        "vortex-matrix",
+        "shear",
+        "hopf",
+        "path-integration",
+        "goal-vector",
+        "query-cost",
+        "undo",
+        "doubled-coordinates",
+        "entorhinal",
+        "falsifiers"
+      ],
+      "era": "Queryable dynamical state and restoration",
+      "era_order": 72
+    },
+    {
+      "id": "Vision",
+      "url": "https://github.com/anttiluode/Vision",
+      "family": "temporal-neurobiology",
+      "status": "experiment",
+      "claim": "Takes the oscillator read/write result into an apical-tuft abstraction and asks whether delayed inhibition can erase the lasting phase write caused by a top-down query while preserving the answer.",
+      "survived": "In the oscillator-tuft gate, an input-locked inhibitory copy at a two-cycle delay reduces lasting phase damage from 0.141 to 0.021 while leaving answer error unchanged at about 0.021; half-cycle delays increase damage to 0.278. The result yields a sharp timing-dependent prediction for the toy system: whole-cycle opposite input can restore phase, while half-cycle timing makes the disturbance worse.",
+      "killed": "The literal Martinotti-as-eraser story fails in this model: inhibition driven by the neuron's own rate leaves 0.134 damage versus 0.141 without an eraser. The working eraser must carry a copy of the input, not merely the output. The BAC-firing and KV-cache interpretations remain labelled visions, and the phase-oscillator tuft is not a compartmental neuron; biological delays and circuitry were not tested.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Vision/blob/main/README.md",
+      "tags": [
+        "apical-tuft",
+        "inhibition",
+        "query",
+        "eraser",
+        "phase-memory",
+        "feedforward-inhibition",
+        "martinotti-correction",
+        "timing",
+        "read-write",
+        "toy-neuron"
+      ],
+      "era": "Queryable dynamical state and restoration",
+      "era_order": 72
+    }
+  ],
+  "edges": [
+    {
+      "source": "Kompressori",
+      "target": "VMN",
+      "type": "converges",
+      "confidence": "high",
+      "why": "VMN explicitly takes up Kompressori's question of what an event changes about the response to the next perturbation, but moves from a nonlinear field to vortices and oscillators. The shared object is the state-dependent tangent/response operator; the mechanisms and experiments are different.",
+      "evidence": "https://github.com/anttiluode/VMN/blob/main/README.md"
+    },
+    {
+      "source": "Kompressori",
+      "target": "VMNClaude",
+      "type": "converges",
+      "confidence": "high",
+      "why": "VMNClaude explicitly links its shear/oscillator analysis to Kompressori's amplitude-dependent response geometry. It is a mathematical and conceptual continuation, not code inheritance.",
+      "evidence": "https://github.com/anttiluode/VMNClaude/blob/main/README.md"
+    },
+    {
+      "source": "VMNClaude",
+      "target": "VMN",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The two repositories work the same vortex–matrix–neuron question independently and cross-correct each other. VMN carries several Claude ideas into matched geometry/shear and query/restore experiments while retaining different implementations and controls.",
+      "evidence": "https://github.com/anttiluode/VMN/blob/main/README.md"
+    },
+    {
+      "source": "VMNClaude",
+      "target": "Vision",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "Vision explicitly starts from VMNClaude Gates 4–6: a phase-memory query is also a write, a sign-flipped pulse approximately undoes it, and exact undo needs pre-query state. Vision extracts that mechanism into a tuft/inhibition toy gate and then falsifies the output-driven Martinotti version.",
+      "evidence": "https://github.com/anttiluode/Vision/blob/main/README.md"
+    },
+    {
+      "source": "Tupsu",
+      "target": "Vision",
+      "type": "corrects",
+      "confidence": "medium",
+      "why": "Vision explicitly challenges Tupsu's Martinotti-inspired commitment interpretation. Its own gate does not rerun Tupsu's memory benchmark; instead it shows that output/rate-driven inhibition fails as an eraser in the oscillator-tuft abstraction, narrowing the biological story while leaving Tupsu's recorded negative memory result unchanged.",
+      "evidence": "https://github.com/anttiluode/Vision/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "query-cost-and-restore",
+      "title": "A physical read can be a write, so useful memory needs a restoration contract",
+      "description": "Kompressori motivates state-dependent response geometry; VMN and VMNClaude make that geometry queryable in nonlinear oscillator banks and show that the query itself can perturb stored phase. Approximate restoration can come from an opposite pulse, while exact restoration requires information about the pre-query state. Vision transfers the rule into a tuft-inspired toy model and kills the simple output-driven inhibition story. The motif is a dynamical-systems design principle, not evidence that cortex implements the same mechanism.",
+      "nodes": [
+        "Kompressori",
+        "ReadWrite",
+        "Tupsu",
+        "VMN",
+        "VMNClaude",
+        "Vision"
+      ]
+    }
+  ]
+}
