@@ -1840,11 +1840,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 1331,
+    "size": 1438,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-10-06T12:53:23Z",
+    "updated_at": "2026-10-07T14:38:44Z",
     "inventory_status": "unread"
   },
   {
@@ -2313,11 +2313,11 @@
     "name": "Jalanjalki",
     "url": "https://github.com/anttiluode/Jalanjalki",
     "default_branch": "main",
-    "size": 535,
+    "size": 544,
     "visibility": "public",
     "description": "Opus 55 repo",
     "created_at": "2026-10-06T06:07:02Z",
-    "updated_at": "2026-10-06T07:23:21Z",
+    "updated_at": "2026-10-06T12:58:49Z",
     "inventory_status": "reviewed"
   },
   {
@@ -2445,11 +2445,11 @@
     "name": "Kompressori",
     "url": "https://github.com/anttiluode/Kompressori",
     "default_branch": "main",
-    "size": 609,
+    "size": 656,
     "visibility": "public",
     "description": "Not your run of the mill thoughts here. Sol thinking repo. ",
     "created_at": "2026-09-09T06:16:15Z",
-    "updated_at": "2026-09-09T07:39:11Z",
+    "updated_at": "2026-10-07T04:41:58Z",
     "inventory_status": "reviewed"
   },
   {
@@ -4862,6 +4862,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "Vision",
+    "url": "https://github.com/anttiluode/Vision",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Most likely not 100% . Opus 55 repo. ",
+    "created_at": "2026-10-07T14:18:24Z",
+    "updated_at": "2026-10-07T14:23:35Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "VisualMemoryDemo",
     "url": "https://github.com/anttiluode/VisualMemoryDemo",
     "default_branch": "main",
@@ -4870,6 +4881,28 @@
     "description": "TransformerX inspired image segmenting demo perhaps. Sol 6.",
     "created_at": "2026-09-25T07:12:36Z",
     "updated_at": "2026-09-25T07:32:47Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "VMN",
+    "url": "https://github.com/anttiluode/VMN",
+    "default_branch": "main",
+    "size": 1038,
+    "visibility": "public",
+    "description": "Vortex- Matrix - Neuron. Sol repo. ",
+    "created_at": "2026-10-07T04:55:09Z",
+    "updated_at": "2026-10-07T13:38:10Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "VMNClaude",
+    "url": "https://github.com/anttiluode/VMNClaude",
+    "default_branch": "main",
+    "size": 1108,
+    "visibility": "public",
+    "description": "Vortex - Matrix - Neuron. Claude 55 repo. ",
+    "created_at": "2026-10-07T04:57:25Z",
+    "updated_at": "2026-10-07T13:24:18Z",
     "inventory_status": "reviewed"
   },
   {
