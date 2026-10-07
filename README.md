@@ -23,6 +23,35 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
+## 2026-10-07 — VMN, VMNClaude and Vision: query, damage, restore
+
+The [vortex/query/restore pass](data/passes/vortex-query-restore.json) adds
+[VMN](https://github.com/anttiluode/VMN),
+[VMNClaude](https://github.com/anttiluode/VMNClaude) and
+[Vision](https://github.com/anttiluode/Vision) to the curated wall.
+[Kompressori](https://github.com/anttiluode/Kompressori) was already present;
+the new pass reuses that node as the upstream response-operator bridge rather
+than duplicating it.
+
+The useful common object is a **state-dependent response operator**. VMN's
+geometry gate shows that a six-number state code can regenerate unseen
+response changes far better than the tested fixed matrix dictionary, while the
+stronger nonlinear-memory advantage fails. Its single-bank ping experiment
+then makes the interface concrete: a useful read perturbs the phase memory, and
+a sign-reversed counterpulse can preserve repeated reads. The restricted
+four-channel listener still fails, and the trained listener is much larger than
+the oscillator state.
+
+VMNClaude independently develops the vortex/oscillator mathematics, noisy path
+integration and ping-query interface. The uncoupled oscillator bank is the
+important survivor; vortex coupling repeatedly fails to earn a role, the
+proposed left/right theta-sweep cancellation story is killed, and exact undo
+requires pre-query state. Vision carries the surviving read/write trade-off
+into a tuft-inspired toy model. Input-locked inhibition at a whole-cycle delay
+cuts lasting query damage 6.7× without hurting the answer, but the literal
+output-driven Martinotti-erases-the-read story fails. BAC firing and the
+KV-cache comparison remain explicitly labelled visions.
+
 ## 2026-10-06 — Jalanjälki and Thingy: readable state, causal writes
 
 The [language-workspace pass](data/passes/language-workspace-control.json) adds
