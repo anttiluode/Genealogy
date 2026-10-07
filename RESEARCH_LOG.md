@@ -46,6 +46,37 @@ Added BrainLoops and Tupsu to a new curated pass while reusing the existing Mult
 
 Three structured evidence records keep the experiments separate. Tupsu's boundary-only plain-pooling comparison loses far recall 0.912 versus 0.962 fixed over three seeds despite splitting fewer name–marker pairs. BrainLoops' canonical LEMON R1 uses the same 22 held-out people for EC and EO: transitions pass the order null but not the phase null; state return passes both. Gate 1B remains FAIL, Gate 1C remains a post-failure same-dataset follow-up, and no circuit-resolved valve or anti-seizure test occurred. The shared motif describes a question across different instruments rather than treating their results as one mechanism.
 
+## 2026-10-07 — Queryable oscillator state, read cost and restoration
+
+Added VMN, VMNClaude and Vision in one pass while reusing the existing
+Kompressori node. The lineage is deliberately mechanism-first rather than a
+claim that the repositories are one implementation: Kompressori measures
+compact changes in response geometry; VMN and VMNClaude turn related
+state-dependent response questions into vortex/oscillator models; Vision
+extracts the query/restore mechanism into an apical-tuft abstraction.
+
+VMN contributes two distinct results that are kept separate in the Evidence
+view. A small retained state can regenerate later response updates at unseen
+locations, but moving geometry and shear do not win the declared nonlinear
+memory gate. Separately, a one-bank goal ping works and repeated reads are far
+less destructive when followed by a sign-reversed counterpulse; the restricted
+four-channel interface fails and the decoder cost remains large.
+
+VMNClaude supplies the parallel mathematical and interface line. Its uncoupled
+oscillator bank performs the path-integration and goal-query tasks; vortex
+coupling often loses, the left/right sweep-cancellation hypothesis is
+contradicted, and the strongest Gate-6 matched-damage ratio is explicitly post
+hoc after the preregistered comparison point failed. Exact restoration needs
+information about the pre-query state.
+
+Vision then turns the surviving rule into a falsifiable tuft gate. An
+input-locked inhibitory copy at a whole-cycle delay erases most of the phase
+write without reducing answer quality, while half-cycle timing worsens damage.
+Rate-driven inhibition barely helps, so the literal Martinotti-as-output-driven
+eraser story is recorded as a failed vision rather than promoted into a cortex
+claim. Tupsu's earlier memory result is unchanged; the new correction concerns
+the biological interpretation, not a rerun of its benchmark.
+
 ## 2026-10-06 — Installed preferences and temporary self-address
 
 Added Jalanjälki and Thingy after reading their current READMEs and inspecting Jalanjälki's run-3 JSON receipt. Note already had a curated codebook-growth entry, so that node is reused. The three new edges connect Note to both instruments and ReadWrite to Jalanjälki as conceptual convergences; no code ancestry is inferred from the common vocabulary. The shared motif asks which readable internal channels earn causal meaning through intervention.
