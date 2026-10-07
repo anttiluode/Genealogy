@@ -84,3 +84,27 @@ Added Jalanjälki and Thingy after reading their current READMEs and inspecting 
 Jalanjälki's run-3 record uses 24 held-out matched prompt pairs. Its one-position L17 policy direction has slope 1.726 per sigma against random 0.519, and assistant-start correlation with the opening-based policy score is 0.633 versus 0.153 at user-end. The record preserves the withdrawn regex-based refusal AUC, unstable exact lens vocabulary, unfilled blind labels and refusal-act versus moral-judgement distinction. The GPU experiment was not independently rerun for this wall update.
 
 Thingy's evidence keeps the 1,260 fresh episodes separate from the 900-case multi-hop intervention subset. Deletion leaves 51 correct, wrong substitution 50, and replay or codebook-plus-residue restoration each recover 900. Its text and latent recurrence baselines match intact accuracy. The engineered fact store, cursor and reconstruction rule remain explicit; no slow consolidation, learned transcript compression or broader language-model advantage is earned by this small instrument.
+
+## 2026-10-07 — OpusPing: conditional synaptic writing
+
+Added OpusPing as one curated node with a dedicated pass, two evidence records
+and an unresolved-controls question. The README explicitly places it beside
+VMNClaude and Vision; separate convergence edges connect the supplied
+release-times-receiver interaction to FridayRepo and The_Ping_And_The_Listener.
+These edges record a conceptual comparison, not code inheritance.
+
+The audited source is commit 9c88224e2bdc549fbdf00e3caae1c3ca4c16ef7c. Its broad-spike label is
+only a 1.3x release factor. Five spike times/counts are fixed; receiver
+voltage/shunt conditions influence NMDA calcium and a threshold weight rule.
+A common delayed probe changes at five of six H1 grid points, while the H2
+lasting/immediate ratio is compromised by its denominator and plasticity
+during the induction burst.
+
+The +56.6% depolarized broad-minus-narrow probe contrast at theta_p=2x does
+not establish net potentiation: final weights 0.121659 and 0.691986 both
+remain below the initial weight 1. Preserve the relative sign reversal, but
+name it as reduced depression in that condition. Actual waveform propagation,
+presynaptic release biophysics, biological prevalence and a post-read
+inhibitory undo were not tested. The full OpusPing simulation was not rerun
+for this entry; metrics were recalculated from the committed receipt and
+checked against the equations. The proposed model controls remain future work.

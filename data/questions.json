@@ -491,5 +491,52 @@
       "Neutral is saturated on this prompt, so matched decision-token control and full summed sequence control must remain separate readouts.",
       "EATON v0 does not resolve this question because its tonic failure is analytically built into the synthetic coefficients."
     ]
+  },
+  {
+    "id": "sender-feature-persistent-write-controls",
+    "title": "How much receiver-conditioned writing survives release-gain and plasticity-calibration controls?",
+    "state": "open",
+    "motifs": [
+      "sender-feature-receiver-write"
+    ],
+    "evidence": [
+      "opusping-state-conditioned-probe",
+      "opusping-relative-sign-and-ratio-boundary"
+    ],
+    "competing_explanations": [
+      "A modest release gain crosses receiver-dependent calcium thresholds over a physiologically credible range, giving a robust conditional write at fixed spike timing.",
+      "The effect is sensitive to the chosen plasticity rates, strong within-burst depression and noisy peak readout; the narrow relative sign reversal disappears under better-calibrated controls.",
+      "Receiver-state dependence survives, but a common release-amplitude change explains it fully; no special waveform decoder or transfer of the sender's hidden history is required."
+    ],
+    "known": [
+      "OpusPing represents width only as release factors 1 and 1.3 and implements a voltage-gated calcium-threshold write.",
+      "H1 passes at 5/6 thresholds; at theta_p=6x, the relative delayed-probe contrast is -10.4% depolarized and -26.2% hyperpolarized.",
+      "At theta_p=2x the depolarized broad-minus-narrow probe contrast is +56.6%, while both final weights remain below their initial value.",
+      "The L/I ratio is contaminated by plasticity during the burst and small immediate-effect denominators."
+    ],
+    "missing_discriminator": "A calibrated comparison that freezes or disables plasticity, measures the first-spike response before any weight change, and separates final weight from the noisy probe peak while sweeping independently chosen plasticity rates.",
+    "candidate_experiment": {
+      "design": "At fixed sender times/count, compare baseline and 1.3x release in each receiver state with plasticity on/off. Record the first-spike EPSP and NMDA calcium trajectory, freeze the final weight for a noiseless standard probe, and repeat a preregistered rate/threshold sweep. Add a control that matches the early EPSP by changing input gain, reporting whether later differences follow the calcium trajectory. An actual sender-waveform-to-release measurement and paired-neuron experiment would be a separate biological step.",
+      "cost": "low for the model controls; a paired-neuron waveform/plasticity experiment is a separate higher-cost follow-up",
+      "outcomes": [
+        {
+          "if": "A delayed difference remains when plasticity is disabled",
+          "then": "Residual conductance, membrane state or the probe statistic is contributing; the delayed difference cannot all be attributed to a stored synaptic write."
+        },
+        {
+          "if": "State-dependent final-weight and noiseless-probe contrasts survive the calibrated rate/threshold sweep",
+          "then": "Keep receiver-conditioned release-to-weight writing as a robust mechanism of this model; biological prevalence and usefulness remain unmeasured."
+        },
+        {
+          "if": "The relative sign reversal disappears or a matched calcium/release trajectory explains every difference",
+          "then": "Retain the conditional gain/plasticity result, and narrow any claim of waveform-specific interpretation or receiver-selected net potentiation."
+        }
+      ]
+    },
+    "notes": [
+      "OpusPing cannot distinguish spike width from generic release gain because width has no additional representation in its equations.",
+      "A physiological waveform-to-release-to-plasticity demonstration need not encode a complete sender state to be scientifically useful.",
+      "This ledger entry records a discriminating follow-up; no new experiment is being added to OpusPing."
+    ]
   }
 ]

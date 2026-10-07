@@ -322,5 +322,9 @@
   {
     "path": "vortex-query-restore.json",
     "enabled": true
+  },
+  {
+    "path": "state-conditioned-synaptic-write.json",
+    "enabled": true
   }
 ]

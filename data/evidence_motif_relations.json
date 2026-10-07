@@ -226,5 +226,11 @@
   },
   "vision-eraser-gate": {
     "query-cost-and-restore": "supports"
+  },
+  "opusping-state-conditioned-probe": {
+    "sender-feature-receiver-write": "supports"
+  },
+  "opusping-relative-sign-and-ratio-boundary": {
+    "sender-feature-receiver-write": "limits"
   }
 }

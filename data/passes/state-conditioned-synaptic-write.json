@@ -1,0 +1,83 @@
+{
+  "id": "state-conditioned-synaptic-write",
+  "title": "OpusPing: a temporary sender feature becomes a receiver-conditioned synaptic write",
+  "summary": "OpusPing takes the fixed-timing, state-carrying ping question into a two-compartment AMPA/NMDA receiver with calcium-threshold plasticity. A supplied 30% release increase changes a standard delayed probe, and receiver state changes the magnitude. The positive broad-minus-narrow effect at one threshold is reduced depression: both final weights remain below their initial value. The registered lasting/immediate ratio overstates the evidence, and no actual spike waveform, presynaptic calcium-to-release process or ephaptic field is simulated. The pass connects the documented VMNClaude/Vision context to the earlier sender-shape/receiver-susceptibility line without asserting code ancestry or a new biological mechanism.",
+  "order": 550,
+  "reviewed_at": "2026-10-07",
+  "nodes": [
+    {
+      "id": "OpusPing",
+      "url": "https://github.com/anttiluode/OpusPing",
+      "family": "temporal-neurobiology",
+      "status": "ledger",
+      "claim": "At fixed sender spike times and count, tests whether a supplied release change leaves a delayed synaptic response change and whether the receiver's prior voltage or shunting state conditions that write.",
+      "survived": "In the calibrated two-compartment model, broad labels multiply release by 1.3, and a standard probe 800 ms after the burst window changes by more than 5% and 3 standard errors at 5/6 threshold settings. Receiver state changes effect size; at theta_p=6x, the broad-minus-narrow probe difference is -10.4% when depolarized and -26.2% when hyperpolarized. At theta_p=2x the contrast changes sign across states, with a +56.6% probe contrast in the depolarized condition.",
+      "killed": "The positive contrast is not net potentiation: the depolarized final weights are 0.122 narrow and 0.692 broad, both below the initial 1. The nominal H2 ratio passes at all six thresholds but divides by a small, plasticity-contaminated immediate effect. Width is only a release-gain label, and persistence is implemented by the plasticity rule. Physiological plasticity rates, waveform transmission, learned message decoding and an inhibitory undo were not established.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/OpusPing/blob/9c88224e2bdc549fbdf00e3caae1c3ca4c16ef7c/handshake.py",
+      "tags": [
+        "state-dependent-ping",
+        "release-gain",
+        "ampa",
+        "nmda",
+        "calcium-threshold",
+        "synaptic-plasticity",
+        "receiver-state",
+        "delayed-probe",
+        "relative-contrast",
+        "metric-correction"
+      ],
+      "era": "State-conditioned synaptic writes",
+      "era_order": 73
+    }
+  ],
+  "edges": [
+    {
+      "source": "VMNClaude",
+      "target": "OpusPing",
+      "type": "converges",
+      "confidence": "high",
+      "why": "OpusPing's README explicitly names VMNClaude's read-as-weak-write and counterpulse work as its surrounding context. It changes the substrate to a supplied release gain, NMDA-dependent calcium and a persistent synaptic weight; no implementation inheritance or successful synaptic counterpulse is claimed.",
+      "evidence": "https://github.com/anttiluode/OpusPing/blob/9c88224e2bdc549fbdf00e3caae1c3ca4c16ef7c/README.md"
+    },
+    {
+      "source": "Vision",
+      "target": "OpusPing",
+      "type": "converges",
+      "confidence": "high",
+      "why": "OpusPing explicitly names Vision's timing-dependent eraser work as context for asking what an input leaves behind in a receiver. Its tonic shunt acts during induction and is removed before the probe; that is distinct from Vision's post-query restoration pulse.",
+      "evidence": "https://github.com/anttiluode/OpusPing/blob/9c88224e2bdc549fbdf00e3caae1c3ca4c16ef7c/README.md"
+    },
+    {
+      "source": "FridayRepo",
+      "target": "OpusPing",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "The audited models meet at a two-sided interaction: a sender-side feature enters a receiver whose present state determines the consequence. FridayRepo supplies an abstract sender-shape x susceptibility computation; OpusPing supplies release scaling and voltage-dependent NMDA plasticity. This is a comparison of documented mechanisms, not a claim that OpusPing cites or inherits FridayRepo code.",
+      "evidence": "https://github.com/anttiluode/OpusPing/blob/9c88224e2bdc549fbdf00e3caae1c3ca4c16ef7c/handshake.py"
+    },
+    {
+      "source": "The_Ping_And_The_Listener",
+      "target": "OpusPing",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "The earlier synthesis asks what sender state can publish and what a state-dependent listener can do with it. OpusPing narrows that question to an imposed release feature and a delayed synaptic probe. The comparison does not show learned communication, downstream decoding of a waveform or preservation of the sender's full history.",
+      "evidence": "https://github.com/anttiluode/OpusPing/blob/9c88224e2bdc549fbdf00e3caae1c3ca4c16ef7c/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "sender-feature-receiver-write",
+      "title": "A temporary sender feature can condition a persistent receiver update",
+      "description": "FridayRepo and The_Ping_And_The_Listener isolate sender-side publication meeting receiver-side susceptibility. VMNClaude and Vision expose lasting query disturbance and possible compensation. OpusPing realizes a narrower route through release gain, voltage-gated NMDA current, calcium thresholds and a stored synaptic weight. These are different implementations of an input-conditioned state update; immediate response, persistent write, useful communication and restoration require separate measurements.",
+      "nodes": [
+        "FridayRepo",
+        "The_Ping_And_The_Listener",
+        "VMNClaude",
+        "Vision",
+        "OpusPing"
+      ]
+    }
+  ]
+}

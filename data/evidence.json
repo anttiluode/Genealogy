@@ -3572,5 +3572,92 @@
     "BAC firing and the KV-cache comparison remain labelled visions, not evidence."
   ],
   "source": "https://github.com/anttiluode/Vision/blob/main/README.md"
-}
+},
+  {
+    "id": "opusping-state-conditioned-probe",
+    "node": "OpusPing",
+    "claim": "A supplied 30% release change at identical spike times and count changes a later standardized synaptic probe, with an effect size that depends on receiver state in the calibrated model.",
+    "design": "Five spikes at 20 Hz; narrow release=1 and broad release=1.3 with paired membrane noise. A two-compartment AMPA/NMDA receiver is resting, depolarized, hyperpolarized or shunted during the burst and returns to rest before a standard probe. Calibrate a noiseless single-input dendritic EPSP to 2 mV; sweep six calcium thresholds with 200 paired trials per seed and three seeds per state/threshold.",
+    "result": "supports",
+    "motifs": [
+      "sender-feature-receiver-write"
+    ],
+    "sample": {
+      "unit": "paired broad/narrow noisy trial per receiver state and threshold",
+      "count": 600
+    },
+    "metrics": [
+      {
+        "name": "threshold settings passing H1",
+        "value": 5,
+        "comparison": "5/6 settings have at least one state with an absolute probe contrast >5% and >3 standard errors; theta_p=3x fails"
+      },
+      {
+        "name": "depolarized delayed-probe contrast at theta_p=6x",
+        "value": -0.1039878784844123,
+        "comparison": "broad minus narrow, divided by narrow-condition probe peak; hyperpolarized contrast -0.26199370316122785"
+      },
+      {
+        "name": "depolarized delayed-probe contrast at theta_p=2x",
+        "value": 0.5655421146863329,
+        "comparison": "positive relative to narrow; other states have small negative relative contrasts"
+      }
+    ],
+    "controls": [
+      "Identical presynaptic spike timing and count",
+      "Paired noise across broad/narrow conditions",
+      "A common standard probe after tonic receiver manipulations end",
+      "Noiseless 2 mV synapse calibration and six-threshold grid; the failed strong-synapse first run is retained"
+    ],
+    "replication": "Three internal seeds, 200 paired noise trials per state/threshold; thresholds reuse the same paired streams and plasticity rates are fixed.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Spike width is represented only by an assigned release factor; actual waveforms and presynaptic calcium-dependent release are not simulated.",
+      "The supplied NMDA/calcium-threshold rule provides the route to persistence and state dependence; this is an existence/regime calculation rather than new biological evidence.",
+      "Only one burst pattern, one synapse, one delayed probe and one set of plasticity rates are tested.",
+      "The probe score is a peak over a noisy 150 ms window, so it includes a positive noise-extreme contribution even when the weight is small."
+    ],
+    "source": "https://github.com/anttiluode/OpusPing/blob/9c88224e2bdc549fbdf00e3caae1c3ca4c16ef7c/results/handshake_receipt.json"
+  },
+  {
+    "id": "opusping-relative-sign-and-ratio-boundary",
+    "node": "OpusPing",
+    "claim": "Receiver state reverses the broad-minus-narrow probe contrast at one threshold, but the receipt does not show a switch from net depression to net potentiation; the registered H2 ratio is an unreliable standalone discriminator.",
+    "design": "Audit the six committed threshold receipts against the code's initial weight w=1 and the exact definition L=broad-minus-narrow delayed probe, I=broad-minus-narrow burst depolarization integral. Separate relative contrasts from changes against the initial weight and inspect the H2 ratio's denominator.",
+    "result": "mixed",
+    "motifs": [
+      "sender-feature-receiver-write"
+    ],
+    "metrics": [
+      {
+        "name": "threshold settings with opposite-sign probe contrasts",
+        "value": 1,
+        "comparison": "1/6: theta_p=2x; this is a relative broad-versus-narrow contrast"
+      },
+      {
+        "name": "depolarized final narrow weight at theta_p=2x",
+        "value": 0.12165909951866745,
+        "comparison": "initial weight 1; broad final weight 0.6919862302101326, so both conditions end depressed"
+      },
+      {
+        "name": "nominal H2-pass threshold settings",
+        "value": 6,
+        "comparison": "6/6, but L/I depends on small immediate differences and plasticity already operating during the burst"
+      }
+    ],
+    "controls": [
+      "Check the initial weight and both final weights rather than interpreting a relative percentage as net potentiation",
+      "Keep the calibration failure and amended run separate",
+      "Use the source's own acknowledgement that the immediate integral contains plasticity"
+    ],
+    "replication": "Independent arithmetic/code audit of the committed receipt; the full simulation was not independently rerun for this atlas addition.",
+    "external_data": false,
+    "limitations": [
+      "The relative sign reversal remains a real result within the supplied model, but does not establish a physiological LTP/LTD boundary.",
+      "No plasticity-off, matched-early-PSP or plasticity-rate sweep accompanies the published main gate.",
+      "Tonic inhibition during the induction burst is not a tested post-read undo or eraser of an existing weight."
+    ],
+    "source": "https://github.com/anttiluode/OpusPing/blob/9c88224e2bdc549fbdf00e3caae1c3ca4c16ef7c/handshake.py"
+  }
 ]

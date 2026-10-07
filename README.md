@@ -23,6 +23,44 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
+## 2026-10-07 — OpusPing: sender feature, receiver state, persistent write
+
+The [synaptic-write pass](data/passes/state-conditioned-synaptic-write.json) adds
+[OpusPing](https://github.com/anttiluode/OpusPing) to the wall, repository census
+and Evidence view. It connects the explicitly named VMNClaude/Vision context to
+the earlier FridayRepo and The_Ping_And_The_Listener mechanism by conceptual
+convergence, without asserting code inheritance.
+
+Five sender spikes keep their timing and count. The model represents the
+sender feature as a **1.3x release factor**, then routes it through AMPA/NMDA
+current, receiver voltage, calcium and a stored synaptic weight. A standard
+probe 800 ms after the burst window changes by more than 5% and three standard
+errors in at least one receiver state at five of six thresholds. Receiver state
+conditions the size: at the 6x threshold the broad-minus-narrow probe contrast
+is -10.4% when depolarized and -26.2% when hyperpolarized. This makes the
+temporary-feature-to-persistent-write question concrete.
+
+**A receipt correction matters.** The +56.6% depolarized contrast at the 2x
+threshold is relative to the narrow condition. Final weights are 0.122 narrow
+and 0.692 broad, both below the initial 1. Broad input therefore leaves less
+depression; the run does not demonstrate net potentiation in that state. The
+relative contrast does reverse sign across receiver states at one of six
+thresholds. The registered lasting/immediate ratio is a weaker result because
+its denominator can be small and already includes plasticity.
+
+The [evidence ledger](data/evidence.json) separates the conditional delayed
+response from those interpretation limits. The [open question](data/questions.json)
+records plasticity-off, first-spike and calibrated-rate controls. Actual spike
+waveforms, presynaptic calcium-to-release dynamics and ephaptic coupling are
+outside this model; inhibition acts during induction, rather than restoring a
+previous weight after a read.
+
+The established ingredients are consistent with
+[Shu et al.'s presynaptic voltage/spike-shape effect](https://www.nature.com/articles/nature04720)
+and [calcium-threshold plasticity](https://pmc.ncbi.nlm.nih.gov/articles/PMC3309784/).
+OpusPing supplies a specific toy composition of these ingredients, not a
+replication of either paper or evidence for a waveform-borne world model.
+
 ## 2026-10-07 — VMN, VMNClaude and Vision: query, damage, restore
 
 The [vortex/query/restore pass](data/passes/vortex-query-restore.json) adds
