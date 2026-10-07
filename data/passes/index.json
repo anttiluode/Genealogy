@@ -318,5 +318,9 @@
   {
     "path": "language-workspace-control.json",
     "enabled": true
+  },
+  {
+    "path": "vortex-query-restore.json",
+    "enabled": true
   }
 ]
