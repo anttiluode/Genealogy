@@ -214,5 +214,17 @@
   },
   "thingy-self-ping-causal-recovery": {
     "language-addressed-state-control": "supports"
+  },
+  "vmn-state-code-and-memory-gate": {
+    "query-cost-and-restore": "documents"
+  },
+  "vmn-query-restore": {
+    "query-cost-and-restore": "supports"
+  },
+  "vmnclaude-query-line": {
+    "query-cost-and-restore": "supports"
+  },
+  "vision-eraser-gate": {
+    "query-cost-and-restore": "supports"
   }
 }
