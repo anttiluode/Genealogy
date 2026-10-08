@@ -803,17 +803,6 @@
     "inventory_status": "reviewed"
   },
   {
-    "name": "Clockfield-Anti-Radar-Jamming-Attention",
-    "url": "https://github.com/anttiluode/Clockfield-Anti-Radar-Jamming-Attention",
-    "default_branch": "main",
-    "size": 7,
-    "visibility": "public",
-    "description": "Perhaps is jamming resistant. ",
-    "created_at": "2026-03-31T04:35:35Z",
-    "updated_at": "2026-03-31T04:38:20Z",
-    "inventory_status": "unread"
-  },
-  {
     "name": "Clockfield_Gemini",
     "url": "https://github.com/anttiluode/Clockfield_Gemini",
     "default_branch": "main",
@@ -822,6 +811,17 @@
     "description": "Sonnet compares our clockfield theory to scientists growing crystals inside neurons.",
     "created_at": "2026-04-08T17:00:55Z",
     "updated_at": "2026-04-08T17:01:36Z",
+    "inventory_status": "unread"
+  },
+  {
+    "name": "Clockfield-Anti-Radar-Jamming-Attention",
+    "url": "https://github.com/anttiluode/Clockfield-Anti-Radar-Jamming-Attention",
+    "default_branch": "main",
+    "size": 7,
+    "visibility": "public",
+    "description": "Perhaps is jamming resistant. ",
+    "created_at": "2026-03-31T04:35:35Z",
+    "updated_at": "2026-03-31T04:38:20Z",
     "inventory_status": "unread"
   },
   {
@@ -1881,17 +1881,6 @@
     "inventory_status": "unread"
   },
   {
-    "name": "GeometricNeuron10",
-    "url": "https://github.com/anttiluode/GeometricNeuron10",
-    "default_branch": "main",
-    "size": 1391,
-    "visibility": "public",
-    "description": "Weird take by opus. ",
-    "created_at": "2026-06-27T15:45:27Z",
-    "updated_at": "2026-06-27T17:33:20Z",
-    "inventory_status": "reviewed"
-  },
-  {
     "name": "GeometricNeuron_V20",
     "url": "https://github.com/anttiluode/GeometricNeuron_V20",
     "default_branch": "main",
@@ -1900,6 +1889,17 @@
     "description": "A curation of older ones by opus 48",
     "created_at": "2026-06-30T02:53:15Z",
     "updated_at": "2026-07-01T05:25:11Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "GeometricNeuron10",
+    "url": "https://github.com/anttiluode/GeometricNeuron10",
+    "default_branch": "main",
+    "size": 1391,
+    "visibility": "public",
+    "description": "Weird take by opus. ",
+    "created_at": "2026-06-27T15:45:27Z",
+    "updated_at": "2026-06-27T17:33:20Z",
     "inventory_status": "reviewed"
   },
   {
@@ -3520,6 +3520,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "Q-word",
+    "url": "https://github.com/anttiluode/Q-word",
+    "default_branch": "main",
+    "size": 50,
+    "visibility": "public",
+    "description": "Sol repo. ",
+    "created_at": "2026-10-08T12:54:28Z",
+    "updated_at": "2026-10-08T15:01:49Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "QualiaSchmualia",
     "url": "https://github.com/anttiluode/QualiaSchmualia",
     "default_branch": "main",
@@ -4444,6 +4455,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "The_Ping_And_The_Listener",
+    "url": "https://github.com/anttiluode/The_Ping_And_The_Listener",
+    "default_branch": "main",
+    "size": 200,
+    "visibility": "public",
+    "description": "A paper that fell out of recent papers inspired by some past thoughts and paper 'Action potential waveforms are state dependent' by Burgos & al. Opus 5.5 repo. ",
+    "created_at": "2026-09-26T07:06:34Z",
+    "updated_at": "2026-09-26T07:10:59Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "The-Aether-Of-Time",
     "url": "https://github.com/anttiluode/The-Aether-Of-Time",
     "default_branch": "main",
@@ -4475,17 +4497,6 @@
     "created_at": "2026-02-12T06:59:37Z",
     "updated_at": "2026-02-12T09:18:42Z",
     "inventory_status": "unread"
-  },
-  {
-    "name": "The_Ping_And_The_Listener",
-    "url": "https://github.com/anttiluode/The_Ping_And_The_Listener",
-    "default_branch": "main",
-    "size": 200,
-    "visibility": "public",
-    "description": "A paper that fell out of recent papers inspired by some past thoughts and paper 'Action potential waveforms are state dependent' by Burgos & al. Opus 5.5 repo. ",
-    "created_at": "2026-09-26T07:06:34Z",
-    "updated_at": "2026-09-26T07:10:59Z",
-    "inventory_status": "reviewed"
   },
   {
     "name": "TheClutch",

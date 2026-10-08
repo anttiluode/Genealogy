@@ -23,6 +23,26 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
+## 2026-10-08 — Q-word: Möbius actions versus predictive belief
+
+The [Möbius/Q-word transfer pass](data/passes/mobius-qword-transfer.json) adds
+[Q-word](https://github.com/anttiluode/Q-word) to the wall and connects it to
+[MovingTarget2's Möbius addendum](https://github.com/anttiluode/MovingTarget2/blob/main/MOBIUS.md). The exact first-harmonic
+read family composes into a three-parameter group element per oscillator group;
+in MovingTarget2's controlled twenty-seed protocol an 18-number action odometer
+undoes 32 reads to near numerical precision without reading oscillator phases.
+Cross-ratios are left invariant, but higher harmonic forcing changes them and
+unknown interleaved drift defeats one-shot inversion.
+
+Q-word independently tests **classical** oscillator worlds with a fixed binary
+observation port and held-out hidden constellations. Its correct-law classical
+particle filter (same observations, more prior dynamics knowledge) beats the
+qubit-inspired recurrence on exact Möbius / shape-changing harmonic / hidden-drift
+worlds: respectively **0.6751 / 0.6740 / 0.6809 versus 0.6824 / 0.6816 /
+0.6892** NLL. Three seeds and short, unequal-compute training make this an
+exploratory limit, not an architecture win. The Evidence and Questions views
+retain the negative result and the next observability/learned-model tests.
+
 ## 2026-10-08 — MovingTarget2 and AnttisBrain2: memory across changing representations
 
 The [memory-worlds pass](data/passes/moving-target-memory-worlds.json) adds

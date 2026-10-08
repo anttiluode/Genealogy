@@ -1,0 +1,56 @@
+{
+  "id": "mobius-qword-transfer",
+  "title": "Q-word and MovingTarget2: reversible actions versus predictive belief",
+  "summary": "MovingTarget2's Möbius follow-up turns read history into an exactly composable SU(1,1) odometer while keeping hidden constellation cross-ratios invariant under ideal first-harmonic reads. Q-word independently tests learned prediction on exact Möbius, second-harmonic and unobserved-drift worlds. The strongest matched-access baseline is a classical particle filter that knows the correct dynamics and beats the learned quantum-inspired instrument in all three worlds. The compact reversible odometer is not by itself sufficient to infer unknown initial shape or unseen drift; no quantum advantage or biological mechanism is established.",
+  "order": 565,
+  "reviewed_at": "2026-10-08",
+  "nodes": [
+    {
+      "id": "Q-word",
+      "url": "https://github.com/anttiluode/Q-word",
+      "family": "operator-response",
+      "status": "ledger",
+      "claim": "Builds a classical numerical laboratory for qubit predictive-state instruments, oscillator probes and learned sequence memory; v3 transfers the same learned models to independently constructed Möbius, second-harmonic and hidden-drift oscillator worlds.",
+      "survived": "A trine measure-and-prepare qubit instrument exactly realizes a three-symbol no-repeat chain in a two-dimensional Hilbert space, without a physical-computation advantage claim. A 32-read Möbius known-action odometer reconstructs and inverts a 16-phase constellation to ~1e-14 rad. On v3 test data the observation-only, correct-law 48-particle filter has NLL 0.6751 / 0.6740 / 0.6809, beating the learned qubit-inspired model's 0.6824 / 0.6816 / 0.6892 across Möbius / harmonic / hidden drift.",
+      "killed": "No quantum hardware or advantage was tested; Bloch vectors and quantum instruments are simulated on a classical CPU. Three synthetic v3 seeds, a short training budget and unequal parameter/compute costs do not establish general superiority. The physics filter knows the world law and prior whereas learned models only see training data. Exact odometer inversion fails when hidden drift is interleaved, and no initial constellation is given to learners.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Q-word/blob/09b190983ed6988c9217e9fa3e0ceb9ce2d2a8a1/docs/MOBIUS_TRANSFER.md",
+      "tags": [
+        "predictive-state",
+        "quantum-inspired",
+        "SU11",
+        "SU2",
+        "mobius",
+        "hidden-shape",
+        "noncommuting-actions",
+        "particle-filter",
+        "negative-result",
+        "short-training"
+      ],
+      "era": "Reversible operations and predictive-state filtering",
+      "era_order": 75
+    }
+  ],
+  "edges": [
+    {
+      "source": "MovingTarget2",
+      "target": "Q-word",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "Q-word v3 explicitly builds its independent three-world transfer benchmark from MovingTarget2's Möbius exact-read, cross-ratio and drift distinction. It reuses the scientific question, not MovingTarget2's implementation or twenty-seed protocol; the quantum-inspired model uses different SU(2) constraints.",
+      "evidence": "https://github.com/anttiluode/Q-word/blob/09b190983ed6988c9217e9fa3e0ceb9ce2d2a8a1/docs/MOBIUS_TRANSFER.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "reversible-operations-vs-predictive-state",
+      "title": "Knowing the operations is not knowing the hidden state",
+      "description": "Exact first-harmonic oscillator reads admit an SU(1,1) odometer that reverses known actions with only three group coordinates, while cross-ratios retain shape that the odometer does not supply. Higher harmonics rewrite shape and hidden drift makes known-action inversion insufficient. Q-word v3 tests observation-only predictive states with a model-informed particle filter: it wins all three worlds against the quantum-inspired learner. This is a classical observability-and-modeling comparison, not an equivalence with SU(2) or evidence for quantum neurons.",
+      "nodes": [
+        "MovingTarget2",
+        "Q-word"
+      ]
+    }
+  ]
+}

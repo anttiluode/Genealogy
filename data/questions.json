@@ -538,5 +538,49 @@
       "A physiological waveform-to-release-to-plasticity demonstration need not encode a complete sender state to be scientifically useful.",
       "This ledger entry records a discriminating follow-up; no new experiment is being added to OpusPing."
     ]
+  },
+  {
+    "id": "mobius-known-actions-versus-hidden-shape",
+    "title": "What predictive information survives when known actions are reversible but the hidden constellation or drift is not observed?",
+    "state": "open",
+    "motifs": [
+      "reversible-operations-vs-predictive-state"
+    ],
+    "evidence": [
+      "movingtarget2-mobius-odometer-and-shape",
+      "qword-mobius-out-of-family-transfer"
+    ],
+    "competing_explanations": [
+      "Learned dynamics-aware low-dimensional predictive states can maintain a calibrated posterior over hidden shapes and infer unobserved changes from appropriately chosen pings, approaching model-informed particle filtering with substantially lower runtime state cost.",
+      "Hidden shape and noise are not identifiable under the sparse binary port, so a compact learned state appears successful only because test distributions and ports stay narrow; richer initial probes or a more informative sensor are necessary."
+    ],
+    "known": [
+      "MovingTarget2's known-action odometer reverses exact reads without phase access but cannot reverse unknown intervening drift.",
+      "Q-word's v3 particle filter sees the same noisy binary observations as learned models and beats the tested qubit-inspired recurrence on three synthetic worlds; it has an advantageous true-law prior.",
+      "Two constellations with the same first phase moment can differ under later stronger pings, so present weak-answer agreement alone does not imply predictive-state sufficiency."
+    ],
+    "missing_discriminator": "A matched observation-budget test with initial calibration and delayed strong probes; tune learned recurrent and filtering baselines to validation convergence and equal compute while withholding the true transition law from some filters.",
+    "candidate_experiment": {
+      "design": "Train on oscillator configurations with randomized read ports, hidden shape and drift strengths. Give each observer the same number of initial calibration pings and real-time causal bits, then evaluate held-out delayed response families, inverse correction error, uncertainty calibration and CPU latency; compare learned-transition filtering, nonlinear PSRs, exact-action tracker plus learned belief, GRU, qubit-inspired instrument and transformer.",
+      "cost": "CPU-scale simulated oscillator generation; medium retraining/tuning budget and multiple held-out seeds; real physical sensor costs would require separate hardware.",
+      "outcomes": [
+        {
+          "if": "A compact learned action-odometer-plus-belief model matches calibrated known-law filtering across new ports and unseen drift at matched compute",
+          "then": "Treat the factorization as a useful predictive-memory architecture on this controlled problem, not quantum hardware advantage."
+        },
+        {
+          "if": "All observation-only models fail paired hidden-shape delayed probes despite adequate training but succeed with explicit initial calibration",
+          "then": "Record an observability limit: no memory mechanism recovers distinctions not supplied by measurements."
+        },
+        {
+          "if": "Quantum-inspired model consistently loses to real-state and learned-filter baselines after equalized tuning and held-out geometries",
+          "then": "Retain exact quantum-instrument demonstrations but reject geometry constraints as an earned general AI memory upgrade."
+        }
+      ]
+    },
+    "notes": [
+      "Current Q-word runs are post hoc exploratory, not preregistered.",
+      "MovingTarget2's exact 20-seed result and Q-word's independent 3-seed model-transfer study are distinct experiments."
+    ]
   }
 ]
