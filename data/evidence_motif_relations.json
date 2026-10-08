@@ -238,5 +238,12 @@
   },
   "movingtarget2-response-and-update-boundary": {
     "response-memory-under-drift": "limits"
+  },
+  "movingtarget2-mobius-odometer-and-shape": {
+    "reversible-operations-vs-predictive-state": "supports",
+    "response-memory-under-drift": "supports"
+  },
+  "qword-mobius-out-of-family-transfer": {
+    "reversible-operations-vs-predictive-state": "limits"
   }
 }

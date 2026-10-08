@@ -203,7 +203,7 @@
     "metrics": [
       {
         "name": "median first query after rapid switch MSE",
-        "treatment": 1.5198e-05,
+        "treatment": 0.000015198,
         "control": 0.016539331,
         "comparison": "FusionMachine vs generic RNN"
       },
@@ -215,7 +215,7 @@
       },
       {
         "name": "median training-query MSE",
-        "treatment": 1.1991e-05,
+        "treatment": 0.000011991,
         "control": 0.000383249,
         "comparison": "FusionMachine vs generic RNN"
       },
@@ -2626,19 +2626,19 @@
     "metrics": [
       {
         "name": "median early accuracy transient",
-        "value": 1.0
+        "value": 1
       },
       {
         "name": "median early accuracy tonic",
-        "value": 1.0
+        "value": 1
       },
       {
         "name": "median early accuracy reset",
-        "value": 1.0
+        "value": 1
       },
       {
         "name": "median final accuracy transient",
-        "value": 1.0
+        "value": 1
       },
       {
         "name": "median final accuracy tonic",
@@ -2760,15 +2760,15 @@
     "metrics": [
       {
         "name": "filter-trajectory word accuracy, held-out ping source",
-        "value": 1.0
+        "value": 1
       },
       {
         "name": "filter-trajectory word accuracy, whisper source",
-        "value": 1.0
+        "value": 1
       },
       {
         "name": "filter-trajectory word accuracy, high-pitch source",
-        "value": 1.0
+        "value": 1
       },
       {
         "name": "bag-of-frames we-vs-you accuracy",
@@ -2776,7 +2776,7 @@
       },
       {
         "name": "ping recovery F1",
-        "value": 1.0
+        "value": 1
       },
       {
         "name": "maximum residual-telescoping reconstruction error",
@@ -2826,15 +2826,15 @@
     "metrics": [
       {
         "name": "held-out tanh probe prediction error",
-        "value": 5e-08
+        "value": 5e-8
       },
       {
         "name": "general-gauge invariant grammar distance",
-        "value": 3.5e-08
+        "value": 3.5e-8
       },
       {
         "name": "orthogonal-gauge invariant grammar distance",
-        "value": 1.2e-08
+        "value": 1.2e-8
       },
       {
         "name": "same-endpoint A-vs-B held-out R2",
@@ -2846,11 +2846,11 @@
       },
       {
         "name": "invariant grammar distance A vs gauged A",
-        "value": 3.7e-08
+        "value": 3.7e-8
       },
       {
         "name": "residual/shared-gauge eigenvalue grammar distance",
-        "value": 5.1e-08
+        "value": 5.1e-8
       },
       {
         "name": "per-interface gauge eigenvalue grammar distance",
@@ -3129,7 +3129,7 @@
       },
       {
         "name": "mean native minus crossed cosine",
-        "value": 9.612507710260859e-05,
+        "value": 0.00009612507710260859,
         "comparison": "small positive margin; insufficient for all-criteria gate"
       },
       {
@@ -3392,187 +3392,187 @@
     ],
     "source": "https://github.com/anttiluode/Thingy/blob/25964e1962145bba2722b1c3d8a387537043d720/README.md"
   },
-{
-  "id": "vmn-state-code-and-memory-gate",
-  "node": "VMN",
-  "claim": "A small retained nonlinear state can reconstruct a much larger later response change at unseen event locations, while the same designed vortex geometry and shear do not establish a nonlinear-memory advantage.",
-  "design": "Matched eight-oscillator fixed-versus-moving geometry models with shear on/off, independent delayed-input readout evaluation, plus a separate unseen-event response-transfer test comparing a fixed response dictionary with a state code that regenerates dynamics from the shared model.",
-  "result": "mixed",
-  "motifs": [
-    "query-cost-and-restore"
-  ],
-  "metrics": [
-    {
-      "name": "state-code response-update error",
-      "value": 0.053,
-      "comparison": "moving geometry + shear, horizon 2; fixed POD oracle about 0.965 relative error at unseen sites"
-    },
-    {
-      "name": "independent probe-response update error",
-      "value": 0.096,
-      "comparison": "median with the same six-number state code"
-    },
-    {
-      "name": "moving-geometry nonlinear-memory R2 gain",
-      "value": 0.0005,
-      "comparison": "misses predeclared improvement gate; wins 2/4 paired seeds"
-    }
-  ],
-  "controls": [
-    "Fixed and moving models use matched state size, inputs and rest linearization",
-    "Event locations used for response reconstruction are excluded from dictionary training",
-    "Delayed-input memory and response reconstruction are reported as separate questions"
-  ],
-  "replication": "Four paired internal seeds for the memory gate; separate designed response-transfer experiment.",
-  "held_out": true,
-  "external_data": false,
-  "limitations": [
-    "The state code requires a shared baseline, known equations and a full variational ODE integration to decode.",
-    "Encoding reads the full state; no total storage, speed or energy advantage is established.",
-    "All selected models have mean nonlinear-memory test R2 below zero in the reported gate."
-  ],
-  "source": "https://github.com/anttiluode/VMN/blob/main/GEOMETRY.md"
-},
-{
-  "id": "vmn-query-restore",
-  "node": "VMN",
-  "claim": "A noisy oscillator bank can answer a goal ping, and a sign-reversed counterpulse can preserve useful repeated reads far better than repeating or spatially mirroring the query.",
-  "design": "Freeze the trained listener, query one noisy bank repeatedly, and compare same-pulse repetition, spatially mirrored targets and an electrically sign-reversed counterpulse at matched pulse energy and elapsed time. Score query error and added position drift against an unqueried control.",
-  "result": "supports",
-  "motifs": [
-    "query-cost-and-restore"
-  ],
-  "sample": {
-    "unit": "held-out oscillator bank",
-    "count": 4
+  {
+    "id": "vmn-state-code-and-memory-gate",
+    "node": "VMN",
+    "claim": "A small retained nonlinear state can reconstruct a much larger later response change at unseen event locations, while the same designed vortex geometry and shear do not establish a nonlinear-memory advantage.",
+    "design": "Matched eight-oscillator fixed-versus-moving geometry models with shear on/off, independent delayed-input readout evaluation, plus a separate unseen-event response-transfer test comparing a fixed response dictionary with a state code that regenerates dynamics from the shared model.",
+    "result": "mixed",
+    "motifs": [
+      "query-cost-and-restore"
+    ],
+    "metrics": [
+      {
+        "name": "state-code response-update error",
+        "value": 0.053,
+        "comparison": "moving geometry + shear, horizon 2; fixed POD oracle about 0.965 relative error at unseen sites"
+      },
+      {
+        "name": "independent probe-response update error",
+        "value": 0.096,
+        "comparison": "median with the same six-number state code"
+      },
+      {
+        "name": "moving-geometry nonlinear-memory R2 gain",
+        "value": 0.0005,
+        "comparison": "misses predeclared improvement gate; wins 2/4 paired seeds"
+      }
+    ],
+    "controls": [
+      "Fixed and moving models use matched state size, inputs and rest linearization",
+      "Event locations used for response reconstruction are excluded from dictionary training",
+      "Delayed-input memory and response reconstruction are reported as separate questions"
+    ],
+    "replication": "Four paired internal seeds for the memory gate; separate designed response-transfer experiment.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "The state code requires a shared baseline, known equations and a full variational ODE integration to decode.",
+      "Encoding reads the full state; no total storage, speed or energy advantage is established.",
+      "All selected models have mean nonlinear-memory test R2 below zero in the reported gate."
+    ],
+    "source": "https://github.com/anttiluode/VMN/blob/main/GEOMETRY.md"
   },
-  "metrics": [
-    {
-      "name": "eighth-query error with sign-reversed counterpulse",
-      "value": 0.0434,
-      "comparison": "repeated pulse 0.2283; spatial mirror 0.2360"
+  {
+    "id": "vmn-query-restore",
+    "node": "VMN",
+    "claim": "A noisy oscillator bank can answer a goal ping, and a sign-reversed counterpulse can preserve useful repeated reads far better than repeating or spatially mirroring the query.",
+    "design": "Freeze the trained listener, query one noisy bank repeatedly, and compare same-pulse repetition, spatially mirrored targets and an electrically sign-reversed counterpulse at matched pulse energy and elapsed time. Score query error and added position drift against an unqueried control.",
+    "result": "supports",
+    "motifs": [
+      "query-cost-and-restore"
+    ],
+    "sample": {
+      "unit": "held-out oscillator bank",
+      "count": 4
     },
-    {
-      "name": "added position error after repeated restored reads",
-      "value": 0.00376,
-      "comparison": "repeated pulse 0.2623; spatial mirror 0.2998"
-    },
-    {
-      "name": "four-channel restricted listener error",
-      "value": 0.1931,
-      "comparison": "goal-only 0.1922; restricted interface gate fails"
-    }
-  ],
-  "controls": [
-    "One physical noisy bank rather than a perfect noise-cancelling twin",
-    "Frozen readers and matched elapsed listening time",
-    "Equal pulse energy for the two-pulse comparisons",
-    "Damage measured against an unqueried control"
-  ],
-  "replication": "Four held-out banks in the published restore receipt; all reported numerical checks and unit tests pass.",
-  "held_out": true,
-  "external_data": false,
-  "limitations": [
-    "Compensation costs an extra pulse.",
-    "The working listener still measures every unit and its decoder is about 804 kB while the oscillator state is 512 bytes.",
-    "The restricted four-channel interface fails, so no compact physical I/O advantage is established.",
-    "This does not explain biological theta sweeps."
-  ],
-  "source": "https://github.com/anttiluode/VMN/blob/main/RESTORE.md"
-},
-{
-  "id": "vmnclaude-query-line",
-  "node": "VMNClaude",
-  "claim": "Oscillator phase can support noisy path integration and a ping-and-listen goal query without vortex coupling, while several proposed coupling and sweep-cancellation mechanisms fail.",
-  "design": "A sequence of predeclared gates compares vortex, ordinary and no coupling on reservoir tasks; then tests velocity-controlled oscillator path integration, goal-pattern ping queries, left/right sweep cancellation and sign-flipped query restoration.",
-  "result": "mixed",
-  "motifs": [
-    "query-cost-and-restore"
-  ],
-  "metrics": [
-    {
-      "name": "uncoupled path-integration end error",
-      "value": 0.18,
-      "comparison": "tested echo-state network 0.36; guessing centre about 0.38"
-    },
-    {
-      "name": "goal-ping vector error",
-      "value": 0.027,
-      "comparison": "zero answer 0.235; direct phase read 0.018"
-    },
-    {
-      "name": "left-right sweep cancellation",
-      "value": 0.99,
-      "comparison": "approximately 0.87–0.99 times same-direction damage at a=0.3; misses 2x improvement bar"
-    },
-    {
-      "name": "post-hoc matched sign-flip restoration",
-      "value": 3,
-      "comparison": "reported 3–7x less phase damage; preregistered matching point yielded no valid comparison"
-    }
-  ],
-  "controls": [
-    "Reservoir gate includes ordinary coupling, no coupling and same-state-size echo-state control",
-    "Path integration receives velocity only after a start landmark with noise on every unit",
-    "Sweep patterns are compared at equal ping counts and strengths",
-    "Gate 6 counts query, listening time and restore pulse and compares damage to an unqueried control"
-  ],
-  "replication": "Internal multi-seed simulation receipts; no external hardware or biological replication.",
-  "external_data": false,
-  "limitations": [
-    "Vortex coupling repeatedly fails to earn a role in path integration and goal querying; the echo-state network wins the reservoir kill condition.",
-    "The left/right biological cancellation hypothesis is contradicted by the toy model; only antipodal pairs cancel ideally.",
-    "The Gate 6 matched-damage headline is explicitly post hoc because the preregistered comparison point sat on the memory error floor.",
-    "Exact undo requires pre-query state and is spoiled by noise and amplitude scatter."
-  ],
-  "source": "https://github.com/anttiluode/VMNClaude/blob/main/README.md"
-},
-{
-  "id": "vision-eraser-gate",
-  "node": "Vision",
-  "claim": "In an oscillating tuft abstraction, delayed inhibition can erase a query-induced phase write only if it carries a copy of the input and arrives at the right rhythmic phase; output/rate-driven inhibition is insufficient.",
-  "design": "Forty phase oscillators store a path-integrated position. A top-down goal query is read over two cycles, then either input-locked or rate-driven inhibition is applied at swept delays. Three kill conditions were fixed before running and answer error is measured alongside lasting phase damage.",
-  "result": "mixed",
-  "motifs": [
-    "query-cost-and-restore"
-  ],
-  "sample": {
-    "unit": "synthetic seed",
-    "count": 3
+    "metrics": [
+      {
+        "name": "eighth-query error with sign-reversed counterpulse",
+        "value": 0.0434,
+        "comparison": "repeated pulse 0.2283; spatial mirror 0.2360"
+      },
+      {
+        "name": "added position error after repeated restored reads",
+        "value": 0.00376,
+        "comparison": "repeated pulse 0.2623; spatial mirror 0.2998"
+      },
+      {
+        "name": "four-channel restricted listener error",
+        "value": 0.1931,
+        "comparison": "goal-only 0.1922; restricted interface gate fails"
+      }
+    ],
+    "controls": [
+      "One physical noisy bank rather than a perfect noise-cancelling twin",
+      "Frozen readers and matched elapsed listening time",
+      "Equal pulse energy for the two-pulse comparisons",
+      "Damage measured against an unqueried control"
+    ],
+    "replication": "Four held-out banks in the published restore receipt; all reported numerical checks and unit tests pass.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Compensation costs an extra pulse.",
+      "The working listener still measures every unit and its decoder is about 804 kB while the oscillator state is 512 bytes.",
+      "The restricted four-channel interface fails, so no compact physical I/O advantage is established.",
+      "This does not explain biological theta sweeps."
+    ],
+    "source": "https://github.com/anttiluode/VMN/blob/main/RESTORE.md"
   },
-  "metrics": [
-    {
-      "name": "input-locked damage at two-cycle delay",
-      "value": 0.021,
-      "comparison": "no eraser 0.141; 6.7x reduction with answer error unchanged at about 0.021"
+  {
+    "id": "vmnclaude-query-line",
+    "node": "VMNClaude",
+    "claim": "Oscillator phase can support noisy path integration and a ping-and-listen goal query without vortex coupling, while several proposed coupling and sweep-cancellation mechanisms fail.",
+    "design": "A sequence of predeclared gates compares vortex, ordinary and no coupling on reservoir tasks; then tests velocity-controlled oscillator path integration, goal-pattern ping queries, left/right sweep cancellation and sign-flipped query restoration.",
+    "result": "mixed",
+    "motifs": [
+      "query-cost-and-restore"
+    ],
+    "metrics": [
+      {
+        "name": "uncoupled path-integration end error",
+        "value": 0.18,
+        "comparison": "tested echo-state network 0.36; guessing centre about 0.38"
+      },
+      {
+        "name": "goal-ping vector error",
+        "value": 0.027,
+        "comparison": "zero answer 0.235; direct phase read 0.018"
+      },
+      {
+        "name": "left-right sweep cancellation",
+        "value": 0.99,
+        "comparison": "approximately 0.87–0.99 times same-direction damage at a=0.3; misses 2x improvement bar"
+      },
+      {
+        "name": "post-hoc matched sign-flip restoration",
+        "value": 3,
+        "comparison": "reported 3–7x less phase damage; preregistered matching point yielded no valid comparison"
+      }
+    ],
+    "controls": [
+      "Reservoir gate includes ordinary coupling, no coupling and same-state-size echo-state control",
+      "Path integration receives velocity only after a start landmark with noise on every unit",
+      "Sweep patterns are compared at equal ping counts and strengths",
+      "Gate 6 counts query, listening time and restore pulse and compares damage to an unqueried control"
+    ],
+    "replication": "Internal multi-seed simulation receipts; no external hardware or biological replication.",
+    "external_data": false,
+    "limitations": [
+      "Vortex coupling repeatedly fails to earn a role in path integration and goal querying; the echo-state network wins the reservoir kill condition.",
+      "The left/right biological cancellation hypothesis is contradicted by the toy model; only antipodal pairs cancel ideally.",
+      "The Gate 6 matched-damage headline is explicitly post hoc because the preregistered comparison point sat on the memory error floor.",
+      "Exact undo requires pre-query state and is spoiled by noise and amplitude scatter."
+    ],
+    "source": "https://github.com/anttiluode/VMNClaude/blob/main/README.md"
+  },
+  {
+    "id": "vision-eraser-gate",
+    "node": "Vision",
+    "claim": "In an oscillating tuft abstraction, delayed inhibition can erase a query-induced phase write only if it carries a copy of the input and arrives at the right rhythmic phase; output/rate-driven inhibition is insufficient.",
+    "design": "Forty phase oscillators store a path-integrated position. A top-down goal query is read over two cycles, then either input-locked or rate-driven inhibition is applied at swept delays. Three kill conditions were fixed before running and answer error is measured alongside lasting phase damage.",
+    "result": "mixed",
+    "motifs": [
+      "query-cost-and-restore"
+    ],
+    "sample": {
+      "unit": "synthetic seed",
+      "count": 3
     },
-    {
-      "name": "half-cycle input-locked damage",
-      "value": 0.278,
-      "comparison": "about 2x no-eraser damage; timing prediction passes"
-    },
-    {
-      "name": "best reported rate-driven damage",
-      "value": 0.134,
-      "comparison": "no eraser 0.141; output-driven eraser gate fails"
-    }
-  ],
-  "controls": [
-    "Input-locked versus rate-driven inhibitory copies",
-    "Delay sweep includes whole-, half- and quarter-cycle offsets",
-    "Answer quality and lasting phase damage scored separately",
-    "Kill conditions V1–V3 written before the run"
-  ],
-  "replication": "Three internal synthetic seeds with separate training/selection/evaluation episode streams reported in the repository.",
-  "external_data": false,
-  "limitations": [
-    "This is a phase-oscillator tuft abstraction, not a compartmental pyramidal neuron.",
-    "Perfectly matched eraser strength, one ping strength and one rhythm-to-relaxation ratio are tested.",
-    "Biological delays and candidate layer-1 feedforward inhibitory circuitry are not measured.",
-    "BAC firing and the KV-cache comparison remain labelled visions, not evidence."
-  ],
-  "source": "https://github.com/anttiluode/Vision/blob/main/README.md"
-},
+    "metrics": [
+      {
+        "name": "input-locked damage at two-cycle delay",
+        "value": 0.021,
+        "comparison": "no eraser 0.141; 6.7x reduction with answer error unchanged at about 0.021"
+      },
+      {
+        "name": "half-cycle input-locked damage",
+        "value": 0.278,
+        "comparison": "about 2x no-eraser damage; timing prediction passes"
+      },
+      {
+        "name": "best reported rate-driven damage",
+        "value": 0.134,
+        "comparison": "no eraser 0.141; output-driven eraser gate fails"
+      }
+    ],
+    "controls": [
+      "Input-locked versus rate-driven inhibitory copies",
+      "Delay sweep includes whole-, half- and quarter-cycle offsets",
+      "Answer quality and lasting phase damage scored separately",
+      "Kill conditions V1–V3 written before the run"
+    ],
+    "replication": "Three internal synthetic seeds with separate training/selection/evaluation episode streams reported in the repository.",
+    "external_data": false,
+    "limitations": [
+      "This is a phase-oscillator tuft abstraction, not a compartmental pyramidal neuron.",
+      "Perfectly matched eraser strength, one ping strength and one rhythm-to-relaxation ratio are tested.",
+      "Biological delays and candidate layer-1 feedforward inhibitory circuitry are not measured.",
+      "BAC firing and the KV-cache comparison remain labelled visions, not evidence."
+    ],
+    "source": "https://github.com/anttiluode/Vision/blob/main/README.md"
+  },
   {
     "id": "opusping-state-conditioned-probe",
     "node": "OpusPing",
@@ -3759,5 +3759,103 @@
       "The proposed brain and multilingual memory architecture remains untested."
     ],
     "source": "https://github.com/anttiluode/MovingTarget2/blob/60f91c6e5c803eca21fe93016a199419abc64780/README.md"
+  },
+  {
+    "id": "movingtarget2-mobius-odometer-and-shape",
+    "node": "MovingTarget2",
+    "claim": "In identical-oscillator first-harmonic dynamics, known read operations compose as exact Möbius maps and preserve constellation cross-ratios; an action-only odometer with stronger per-group correction access reverses a burst without individual phase observations.",
+    "design": "Precommitted MovingTarget2 MOBIUS_PROTOCOL six gates across twenty frozen seeds, six groups of sixteen oscillators, thirty-two reads. Swap the original approximate read for exact Möbius flow; compare to frozen-law compensation and higher-harmonic perturbation, with drift and per-group correction-access caveats.",
+    "result": "supports",
+    "motifs": [
+      "reversible-operations-vs-predictive-state",
+      "response-memory-under-drift"
+    ],
+    "sample": {
+      "unit": "frozen synthetic seed",
+      "count": 20
+    },
+    "metrics": [
+      {
+        "name": "worst RMS phase undo error after 32 reads (rad)",
+        "value": 6.9e-15,
+        "comparison": "18-number action-only odometer, two per-group correction pulses; no drift between reads"
+      },
+      {
+        "name": "max cross-ratio shape change after weak exact reads",
+        "value": 4.9e-14,
+        "comparison": "arctan cross-ratio scale at a=0.05"
+      },
+      {
+        "name": "median weak-answer error with hidden drift interleaved",
+        "value": 0.174,
+        "comparison": "17.4% after one late correction versus 0.83% drift-only"
+      }
+    ],
+    "controls": [
+      "Precommitted gates and frozen 20 seeds; frozen read-law receipt reproduced",
+      "Track full phase RMS and projective cross-ratios, not only weak responses",
+      "Add 2nd harmonic and phase drift to challenge group invariance; stronger control port disclosed"
+    ],
+    "replication": "Reported twenty-seed MovingTarget2 internal gates; Q-word independently reimplements simplified single-group numerical identities but not the exact original protocol.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Identical oscillators and exact common first-harmonic forcing are engineered idealizations.",
+      "Odometer assumes known reads, known read law and stronger per-group correction port.",
+      "A late action-only correction fails under unobserved interleaved drift; physiological claims are untested."
+    ],
+    "source": "https://github.com/anttiluode/MovingTarget2/blob/main/MOBIUS.md"
+  },
+  {
+    "id": "qword-mobius-out-of-family-transfer",
+    "node": "Q-word",
+    "claim": "The quantum-inspired learned recurrence beats a correct-law classical observation-only particle filter across independent Möbius, harmonic and hidden-drift worlds.",
+    "design": "Three disjoint seeded test splits of 80 trajectories of length 24 for each of three independently built classical oscillator worlds. All learned models see current/past actions and only past binary outcomes; correct-law particle filter receives the same observation stream plus true dynamics and initial-state prior. Compare NLL against privileged full-state oracle, GRU, real-operator and 8-token transformer.",
+    "result": "contradicts",
+    "motifs": [
+      "reversible-operations-vs-predictive-state"
+    ],
+    "sample": {
+      "unit": "root training/test seed",
+      "count": 3
+    },
+    "metrics": [
+      {
+        "name": "Mobius: particle-filter vs qubit-inspired NLL",
+        "value": 0.67511,
+        "comparison": "qubit-inspired 0.68242; 48 particles; lower better"
+      },
+      {
+        "name": "Harmonic: particle-filter vs qubit-inspired NLL",
+        "value": 0.67396,
+        "comparison": "qubit-inspired 0.68158"
+      },
+      {
+        "name": "Drift: particle-filter vs qubit-inspired NLL",
+        "value": 0.68093,
+        "comparison": "qubit-inspired 0.68920"
+      },
+      {
+        "name": "max 32-read inverse error in Q-word geometry check (rad)",
+        "value": 7.11e-15,
+        "comparison": "single 16-oscillator group, known initial phases, no unseen drift"
+      }
+    ],
+    "controls": [
+      "Independent train/validation/test initial shapes and observation noise per seed",
+      "Same action and binary observation interface, with causal no-target-leak tests",
+      "Physics particle filter has correct law and initial-shape prior; teacher full-phase oracle separately identified",
+      "All 26 Q-word tests pass; source, protocol, raw receipts and offline viewer are committed"
+    ],
+    "replication": "Exploratory 3-seed synthetic run of Q-word's independent implementation; no separate hardware or laboratory replication.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Three seeds and only 65 optimization steps per model; parameter counts and FLOPs not matched.",
+      "Physics filter knows the true equations and prior, unlike learned predictors.",
+      "Recurrent models see only binary samples; full-state oracle's information is unavailable to them.",
+      "The model is classically simulated and the eight-token transformer is not a production language model."
+    ],
+    "source": "https://github.com/anttiluode/Q-word/blob/09b190983ed6988c9217e9fa3e0ceb9ce2d2a8a1/results/mobius-v3.json"
   }
 ]
