@@ -1,0 +1,85 @@
+{
+  "id": "moving-target-memory-worlds",
+  "title": "MovingTarget2 and AnttisBrain2: memory across changing representations",
+  "summary": "MovingTarget2 defines a remembered object by the responses that must survive changes of its underlying coordinates. Its controlled oscillator experiment preserves weak responses through substantial phase motion, then exposes the limits with stronger pings, port reassignment and repeated reads. The later memory-worlds guide explicitly credits AnttisBrain2's moving moons and reflections as the geometric origin of a proposed retrieval architecture. Human pattern completion and partially shared multilingual LLM computation motivate new tests; neither has been replicated here, and shared answers or closed transport loops do not establish truth.",
+  "order": 560,
+  "reviewed_at": "2026-10-08",
+  "nodes": [
+    {
+      "id": "MovingTarget2",
+      "url": "https://github.com/anttiluode/MovingTarget2",
+      "family": "operator-response",
+      "status": "experiment",
+      "claim": "Tests whether a compact response code remains useful while individual oscillator phases move, and where a code for current answers stops being sufficient for future interactions. A sourced follow-up maps AnttisBrain2's geometry to proposed event retrieval and memory transport.",
+      "survived": "Across 20 fixed seeds, 96 phase coordinates move by a median 0.630 radians RMS while actual weak answers change by 0.86%. A frozen 12-number code fitted from noisy calibration pings predicts unseen weak responses after drift at 1.83% normalized error. Its per-object payload is 96 bytes versus 768 bytes for the phase state, with shared-model, observer and controller costs disclosed.",
+      "killed": "First-moment preservation is imposed by a full-state controller. Strong queries, reassigned query ports and repeated reads expose changes omitted by the small code; the next first-moment update depends on a higher moment. The brain, multilingual transport, fading-reflection memory and source-provenance architecture are proposals, not results of the oscillator experiment. No universal invariant tensor, infinite recoverable history or practical LLM-memory advantage is established.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/MovingTarget2/blob/ee2b8c9f7f9a1495d38eca86fca2332aace92e27/README.md",
+      "tags": [
+        "moving-representation",
+        "response-memory",
+        "oscillator-moments",
+        "weak-pings",
+        "query-resolution",
+        "read-write",
+        "moons",
+        "reflection-memory",
+        "pattern-completion",
+        "multilingual-access",
+        "memory-provenance",
+        "proposed-architecture"
+      ],
+      "era": "Response-preserving memory and geometric retrieval",
+      "era_order": 74
+    }
+  ],
+  "edges": [
+    {
+      "source": "MovingProblem",
+      "target": "MovingTarget2",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "MovingTarget2 explicitly continues MovingProblem's question of what must survive moving representations. It changes the target from recovering statistical and semantic frames to preserving a specified family of query responses. This is documented question inheritance, not a claim of shared implementation.",
+      "evidence": "https://github.com/anttiluode/MovingTarget2/blob/ee2b8c9f7f9a1495d38eca86fca2332aace92e27/README.md"
+    },
+    {
+      "source": "VMN",
+      "target": "MovingTarget2",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "MovingTarget2 names VMN's query-and-restore work as the source of its idealized read/compensation test. Unit-radius phases and instantaneous radial normalization make opposite-pulse cancellation analyzable; the new result does not reproduce VMN's noisy finite-time physical interface.",
+      "evidence": "https://github.com/anttiluode/MovingTarget2/blob/ee2b8c9f7f9a1495d38eca86fca2332aace92e27/README.md"
+    },
+    {
+      "source": "VMNClaude",
+      "target": "MovingTarget2",
+      "type": "converges",
+      "confidence": "high",
+      "why": "MovingTarget2 explicitly connects its moment-closure counterexample to VMNClaude's compressed-answer undo failure. Both separate information sufficient for a present response from information needed to predict or reverse a later interaction.",
+      "evidence": "https://github.com/anttiluode/MovingTarget2/blob/ee2b8c9f7f9a1495d38eca86fca2332aace92e27/MATH.md"
+    },
+    {
+      "source": "AnttisBrain2",
+      "target": "MovingTarget2",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The memory-worlds guide explicitly credits exploring AnttisBrain2's moving moons, reflections and incoming image with the later frame/retrieval picture. The renderer supplies geometric inspiration for the extension; it is not an ancestor of the oscillator experiment's implementation or evidence that recursive optics stores temporal memories.",
+      "evidence": "https://github.com/anttiluode/MovingTarget2/blob/ee2b8c9f7f9a1495d38eca86fca2332aace92e27/docs/memory-worlds-and-languages.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "response-memory-under-drift",
+      "title": "Memory is defined by the responses that must survive",
+      "description": "MovingProblem separates relational invariants from grounded semantic orientation. VMN and VMNClaude expose response-state compression, read disturbance and restoration costs. MovingTarget2 supplies a controlled example in which a weak-answer code survives internal motion but does not close future dynamics. AnttisBrain2 contributes the geometric picture for proposed cue-driven retrieval. The motif asks which distinctions a later interaction can make relevant; the graphics, brain and language connections remain distinct evidence domains.",
+      "nodes": [
+        "MovingProblem",
+        "VMN",
+        "VMNClaude",
+        "AnttisBrain2",
+        "MovingTarget2"
+      ]
+    }
+  ]
+}

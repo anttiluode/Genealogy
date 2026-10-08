@@ -326,5 +326,9 @@
   {
     "path": "state-conditioned-synaptic-write.json",
     "enabled": true
+  },
+  {
+    "path": "moving-target-memory-worlds.json",
+    "enabled": true
   }
 ]

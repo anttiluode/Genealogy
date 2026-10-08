@@ -3659,5 +3659,105 @@
       "Tonic inhibition during the induction burst is not a tested post-read undo or eraser of an existing weight."
     ],
     "source": "https://github.com/anttiluode/OpusPing/blob/9c88224e2bdc549fbdf00e3caae1c3ca4c16ef7c/handshake.py"
+  },
+  {
+    "id": "movingtarget2-weak-response-code",
+    "node": "MovingTarget2",
+    "claim": "In a controlled oscillator population whose first moments are preserved, a compact code fitted once from noisy calibration pings continues predicting unseen weak responses after substantial individual phase motion.",
+    "design": "Twenty fixed seeds, six groups of sixteen phases, 128 constrained drift steps, 64 noisy reset calibration pings and 512 independent held-out query points per seed. Compare a frozen twelve-coefficient moment code with a nearest-query table on the same calibration data and with actual weak responses.",
+    "result": "supports",
+    "motifs": [
+      "response-memory-under-drift"
+    ],
+    "sample": {
+      "unit": "fixed synthetic seed",
+      "count": 20
+    },
+    "metrics": [
+      {
+        "name": "median individual phase motion (radians RMS)",
+        "value": 0.63,
+        "comparison": "After 128 constrained drift steps; first-moment preservation is imposed."
+      },
+      {
+        "name": "median actual weak-answer change (NRMSE)",
+        "value": 0.0086,
+        "comparison": "0.86% at pulse amplitude 0.05."
+      },
+      {
+        "name": "median frozen-code prediction error after drift (NRMSE)",
+        "value": 0.0183,
+        "comparison": "1.83%; nearest-query lookup on the same calibration data is 49.71%."
+      },
+      {
+        "name": "per-object code payload (float64 bytes)",
+        "value": 96,
+        "comparison": "768 bytes for 96 physical angles; shared query modes and observer/controller costs are additional."
+      }
+    ],
+    "controls": [
+      "Separate calibration and held-out queries with split random streams",
+      "Frozen code fitted before drift; all twenty seeds retained",
+      "Nearest-query table uses the same calibration answers",
+      "Strong-ping, cross-group shuffle and repeated-read controls expose the preserved code's limits"
+    ],
+    "replication": "Twenty internal synthetic seeds. The committed full receipt was independently reproduced during the October 8 documentation update using the same source implementation; this checks reproducibility rather than independent-method replication.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "The drift controller uses full state to preserve first moments; no biological maintenance mechanism is learned.",
+      "Software observation reads individual phase advances, calibration uses reset copies and evaluation targets are noiseless analytic responses.",
+      "Fixed group-to-query ports and a known response law are supplied.",
+      "The code-versus-table advantage uses the correct moment response family; it is not a comparison against general learned compression.",
+      "No neuroscience, multilingual LLM transport, hardware or total system storage advantage was tested."
+    ],
+    "source": "https://github.com/anttiluode/MovingTarget2/blob/60f91c6e5c803eca21fe93016a199419abc64780/results/receipt.json"
+  },
+  {
+    "id": "movingtarget2-response-and-update-boundary",
+    "node": "MovingTarget2",
+    "claim": "The twelve-number first-moment code is sufficient for every query strength and completely determines the memory after subsequent reads.",
+    "design": "Compare weak and strong queries before and after constrained drift; shuffle phases across fixed query groups; apply thirty-two actual weak reads with and without opposite-pulse compensation. Audit the analytic pair of phase states with equal first moments but different second moments, whose first-moment updates differ under the same read.",
+    "result": "contradicts",
+    "motifs": [
+      "response-memory-under-drift"
+    ],
+    "sample": {
+      "unit": "fixed synthetic seed for reported median controls",
+      "count": 20
+    },
+    "metrics": [
+      {
+        "name": "median strong-answer change (NRMSE)",
+        "value": 0.1218,
+        "comparison": "12.18% at amplitude 0.6 versus 0.86% for weak pings at amplitude 0.05."
+      },
+      {
+        "name": "median weak-answer change after cross-group shuffle (NRMSE)",
+        "value": 0.9531,
+        "comparison": "95.31%; query-port identity matters even when the overall phase multiset is unchanged."
+      },
+      {
+        "name": "median weak-answer change after thirty-two reads (NRMSE)",
+        "value": 0.9372,
+        "comparison": "93.72%; sign-reversed compensation reduces this to 1.51% under the idealized pulse/normalization assumptions."
+      }
+    ],
+    "controls": [
+      "Identical starting states and query families across read/compensation comparisons",
+      "Constrained drift without reads",
+      "Same phase multiset with different group-to-query assignments",
+      "Equal-first-moment analytic counterexample and higher-moment expansion"
+    ],
+    "replication": "The twenty-seed receipt and all twenty equation/access/accounting tests were reproduced. The analytic dynamic-closure counterexample is separately checked by an existing unit test.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "The failure concerns this first-moment code and query/update law; it is not a general impossibility of compact memory.",
+      "Compensation assumes unit radii, matched pulse phases and instantaneous radial normalization.",
+      "A larger code can improve current-response reconstruction without restoring information already changed by earlier reads.",
+      "The proposed brain and multilingual memory architecture remains untested."
+    ],
+    "source": "https://github.com/anttiluode/MovingTarget2/blob/60f91c6e5c803eca21fe93016a199419abc64780/README.md"
   }
 ]

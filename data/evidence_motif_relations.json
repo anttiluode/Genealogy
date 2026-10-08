@@ -232,5 +232,11 @@
   },
   "opusping-relative-sign-and-ratio-boundary": {
     "sender-feature-receiver-write": "limits"
+  },
+  "movingtarget2-weak-response-code": {
+    "response-memory-under-drift": "supports"
+  },
+  "movingtarget2-response-and-update-boundary": {
+    "response-memory-under-drift": "limits"
   }
 }

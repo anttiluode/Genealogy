@@ -2893,6 +2893,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "MovingTarget2",
+    "url": "https://github.com/anttiluode/MovingTarget2",
+    "default_branch": "main",
+    "size": 589,
+    "visibility": "public",
+    "description": "Sol repo",
+    "created_at": "2026-10-08T04:37:56Z",
+    "updated_at": "2026-10-08T08:21:24Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "MultipleTemporalLenses",
     "url": "https://github.com/anttiluode/MultipleTemporalLenses",
     "default_branch": "main",

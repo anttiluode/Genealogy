@@ -23,6 +23,26 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
+## 2026-10-08 — MovingTarget2 and AnttisBrain2: memory across changing representations
+
+The [memory-worlds pass](data/passes/moving-target-memory-worlds.json) adds
+[MovingTarget2](https://github.com/anttiluode/MovingTarget2) and connects it to the
+existing MovingProblem, VMN, VMNClaude and
+[AnttisBrain2](https://github.com/anttiluode/AnttisBrain2) entries.
+AnttisBrain2 is explicitly credited as the geometric origin of the later
+[rooms, reflections and moons memory map](https://github.com/anttiluode/MovingTarget2/blob/main/docs/memory-worlds-and-languages.md).
+
+The measured result is bounded: 96 oscillator phases move by a median 0.630
+radians RMS while a frozen 12-number code predicts unseen weak responses at
+1.83% normalized error. Stronger pings and later interactions expose information
+that the small code omits. The Evidence view records both the successful
+weak-response code and its stronger-query/read-update boundary.
+
+Human pattern completion and partially shared multilingual LLM computation
+motivate new retrieval tests. The proposed brain/LLM architecture is documented
+as a research direction; the renderer and oscillator experiment do not establish
+one universal tensor, an infinite recoverable past or an implemented LLM memory.
+
 ## 2026-10-07 — OpusPing: sender feature, receiver state, persistent write
 
 The [synaptic-write pass](data/passes/state-conditioned-synaptic-write.json) adds
