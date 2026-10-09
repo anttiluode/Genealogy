@@ -342,5 +342,9 @@
   {
     "path": "kuulustelu-threshold-context.json",
     "enabled": true
+  },
+  {
+    "path": "descending-predictive-loop.json",
+    "enabled": true
   }
 ]

@@ -677,5 +677,47 @@
       "Adaptive coding and decoder context have established prior art, including Fairhall et al., Nature 2001, https://doi.org/10.1038/35090500.",
       "Activity-dependent AIS homeostasis does not by itself establish per-read median thresholding or a universal 50/50 biological firing rule."
     ]
+  },
+  {
+    "id": "learned-shared-space-predictive-loop",
+    "title": "Can a learned descending renderer close a robust low-resolution visual prediction loop?",
+    "state": "open",
+    "motifs": [
+      "prediction-residual-in-shared-sensory-space"
+    ],
+    "evidence": [
+      "cortical-loop-blackout-and-direction",
+      "cortical-loop-linear-grid-discovery",
+      "alavirta-shared-space-correction"
+    ],
+    "competing_explanations": [
+      "A compact learned world state rendered into the sensor's feature space allows predictions to be corrected across occlusion and changing motion with lower compute than a comparable recurrent video model.",
+      "The previous demos are effective because dynamics, phase state and rendering form are engineered; a learned variant may lose to standard optical-flow, Kalman or recurrent baselines."
+    ],
+    "known": [
+      "CorticalLoop's fixed 1-D grid loop dead-reckons through a synthetic blackout and fails without signed direction.",
+      "Grid discovery via DMD finds linear oscillations from an engineered periodic texture and uses known calibration velocity.",
+      "Alavirta corrects an analytic oscillator prediction in Takens delay space and down-weights noisy observations.",
+      "Neither repo has an end-to-end learned image renderer or unfamiliar-scene test."
+    ],
+    "missing_discriminator": "Train and freeze a renderer+state filter on low-resolution video, then evaluate on unseen camera scenes and motions, occlusions and corrupted input with matched latency, compute, memory and update budget.",
+    "candidate_experiment": {
+      "design": "Use held-out 32–64px camera clips, variable movement and imposed blackouts; freeze training/test split. Compare last-frame copy, optical flow, compact ConvGRU/state-space predictor, and descending-renderer models with/without reliability-gated correction. Score prediction accuracy, blackout drift, relock, uncertainty calibration, fps and GPU memory. Treat choosing where to look as a separate active-sensing ablation.",
+      "cost": "Prototype-scale CPU/GPU; feasibility on a single RTX 3060 is a hypothesis to measure, not an achieved frame rate.",
+      "outcomes": [
+        {
+          "if": "Renderer-based correction wins under equal budgets on novel scenes and runs continuously",
+          "then": "Support a practical predictive component for a new live AnttisBrain."
+        },
+        {
+          "if": "Benefits disappear on unfamiliar motion or the standard baselines match it",
+          "then": "Retain the closed-loop demonstration but reject the new visual architecture advantage."
+        }
+      ]
+    },
+    "notes": [
+      "Present state, next predicted observation and next observation policy must be separately measured.",
+      "Functional neuron analogies and analytic phase-tracking results are not evidence of cortical implementation or consciousness."
+    ]
   }
 ]

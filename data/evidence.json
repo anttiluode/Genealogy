@@ -4204,7 +4204,7 @@
       },
       {
         "name": "absolute main adaptive-versus-threshold-only MSE difference",
-        "value": 1.91455e-06,
+        "value": 0.00000191455,
         "display": "95% paired interval [-0.0000128747, 0.0000159265]"
       },
       {
@@ -4231,5 +4231,163 @@
       "The 36.2% and Kuulustelu gains have different datasets, losses, write laws, action access and controls, so their magnitudes are not directly comparable."
     ],
     "source": "https://github.com/anttiluode/LensLuotainTarget/blob/53446ebab80c4363aaceea13844a1639ee7d928a/SPIKE_RESULTS.md"
+  },
+  {
+    "id": "cortical-loop-blackout-and-direction",
+    "node": "CorticalLoop",
+    "claim": "A signed arrow feeding back into grid state reduces blackout tracking error versus a readout-only stack in a fixed synthetic navigation scenario.",
+    "design": "Pure NumPy 1-D circular track with forward/reverse/fast segments and 350-step blackout; compare closed/open feedback, one-channel directional ablation, one vs four grid modules.",
+    "result": "supports",
+    "sample": {
+      "unit": "published synthetic trajectory",
+      "count": 1
+    },
+    "metrics": [
+      {
+        "name": "overall error closed vs open",
+        "value": [
+          0.0085,
+          0.0619
+        ]
+      },
+      {
+        "name": "blackout error closed vs open",
+        "value": [
+          0.024,
+          0.247
+        ]
+      },
+      {
+        "name": "backward error direction-blind vs signed",
+        "value": [
+          0.29,
+          0.002
+        ]
+      },
+      {
+        "name": "single-grid aliased candidates",
+        "value": 287
+      }
+    ],
+    "controls": [
+      "feedback off",
+      "direction-blind single-channel arrow",
+      "single-scale grid"
+    ],
+    "replication": "Published demo reviewed; not independently rerun for this atlas update.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Single engineered 1-D environment; no independent held-out worlds.",
+      "Theta gate, grid scales and correction law supplied rather than learned.",
+      "Neuroanatomical labels are functional analogies, not validated biology."
+    ],
+    "source": "https://github.com/anttiluode/CorticalLoop/blob/ad74073e18530fb8425a2bc42d3abb1ed37950d9/README.md",
+    "motifs": [
+      "prediction-residual-in-shared-sensory-space"
+    ]
+  },
+  {
+    "id": "cortical-loop-linear-grid-discovery",
+    "node": "CorticalLoop",
+    "claim": "A companion test estimates dominant synthetic grid scales by Takens embedding and dynamic mode decomposition, with an explicitly provided self-motion speed.",
+    "design": "Six synthetic sensors view periodic spatial texture along a constant-speed calibration walk; DMD eigenfrequencies divided by supplied velocity are used as grid module scales.",
+    "result": "mixed",
+    "sample": {
+      "unit": "synthetic calibration walk",
+      "count": 1
+    },
+    "metrics": [
+      {
+        "name": "number of world frequency components",
+        "value": 4
+      },
+      {
+        "name": "sensor channels",
+        "value": 6
+      }
+    ],
+    "controls": [
+      "discovered versus hard-coded grid basis",
+      "blackout navigation comparison"
+    ],
+    "replication": "Source code inspected; not independently executed for this atlas pass.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "World is built from four sinusoids: discovering linear Koopman frequencies does not learn nonlinear receptive fields.",
+      "Temporal-to-spatial conversion requires externally provided velocity.",
+      "Not a real-world or distribution-shift test."
+    ],
+    "source": "https://github.com/anttiluode/CorticalLoop/blob/ad74073e18530fb8425a2bc42d3abb1ed37950d9/grid_discovery.py",
+    "motifs": [
+      "prediction-residual-in-shared-sensory-space"
+    ]
+  },
+  {
+    "id": "alavirta-shared-space-correction",
+    "node": "Alavirta",
+    "claim": "Rendering an oscillator's latent state into recognizer delay-space permits closed-loop correction, and signal-derived precision plus frequency adaptation protect tracking through fog and rate changes.",
+    "design": "Published 2600-tick 1-D oscillator with rate step at 700, noise fog 1100–1450 and blackout 1800–2150; compare correction on/off, precision gain, frequency learning, and minimal action on/off.",
+    "result": "supports",
+    "sample": {
+      "unit": "published synthetic world",
+      "count": 1
+    },
+    "metrics": [
+      {
+        "name": "settled phase error corrected vs open",
+        "value": [
+          0.013,
+          1.566
+        ]
+      },
+      {
+        "name": "blackout error closed and after relock",
+        "value": [
+          0.349,
+          0.122
+        ]
+      },
+      {
+        "name": "fog error dynamic versus fixed-high precision",
+        "value": [
+          0.067,
+          0.248
+        ]
+      },
+      {
+        "name": "omega error adaptive versus frozen",
+        "value": [
+          0.0008,
+          0.13
+        ]
+      },
+      {
+        "name": "action surprise on vs off",
+        "value": [
+          0.083,
+          0.75
+        ]
+      }
+    ],
+    "controls": [
+      "residual disabled",
+      "dynamic versus fixed sensory gain",
+      "frequency adaptation disabled",
+      "one-parameter action disabled"
+    ],
+    "replication": "README and implementation inspected; published simulation not independently rerun.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Renderer is analytic cosine, not a learned h-to-observation network.",
+      "Reliability proxy uses signal roughness; no generative noise calibration.",
+      "One scalar rhythm and single-parameter motor; no learned video architecture."
+    ],
+    "source": "https://github.com/anttiluode/Alavirta/blob/994802077f9d683efaef6e5b6252e406a1e3fe61/README.md",
+    "motifs": [
+      "prediction-residual-in-shared-sensory-space"
+    ]
   }
 ]
