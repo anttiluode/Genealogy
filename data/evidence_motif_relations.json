@@ -272,5 +272,11 @@
   },
   "alavirta-shared-space-correction": {
     "prediction-residual-in-shared-sensory-space": "supports"
+  },
+  "perjantai-linear-prediction-and-dream": {
+    "prediction-residual-needs-optical-identifiability": "documents"
+  },
+  "perjantai-precision-phase-and-occlusion": {
+    "prediction-residual-needs-optical-identifiability": "limits"
   }
 }

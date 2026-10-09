@@ -180,3 +180,37 @@ neuronal/AI architecture is claimed by this entry.
 ## 2026-10-09 — Recovered CorticalLoop and Alavirta
 
 Added the June CorticalLoop and its explicitly stated July child Alavirta to the curated atlas; both had been census-only/unread. Three documentary/convergence links (including the V9 direction lineage and V21's Takens-coordinate stand-in), a new shared-coordinates motif, three sourced evidence entries and a learned-renderer open question. Recorded the published 1-D blackout (0.024 vs 0.247) and analytic-oscillator phase-lock (0.013 vs 1.566), dynamic precision fog (0.067 vs 0.248), without inventing independent replication. CorticalLoop's additional grid_discovery.py detects synthetic linear DMD modes with known calibration speed; the nonlinear feature-growth gap remains. Alavirta has an analytic cosine renderer and single-scalar action, not learned video perception or a literal layer-6 cortex. No source repo changed or simulation rerun.
+
+## 2026-10-09 — Perjantai and the proposed KulmanTakaa corner camera
+
+Added Perjantai as the explicitly named AnttisBrain2 child, and KulmanTakaa as
+an active development proposal. The new pass records five inheritance,
+comparison or intended-extraction edges, a residual/optical-identifiability
+motif, two Perjantai evidence records and one open real-camera discriminator.
+The repository census now marks both entries as reviewed.
+
+Independently reran Perjantai commit 464bf3c: all twelve core checks pass.
+The frozen round-2 evaluator reproduces a precision belief/camera MSE ratio
+of 0.1332, moving-scene skill gain of 3.764 percentage points and sudden-object
+relative error of 0.07969. The smooth-motion phase gain is only 0.04545 points,
+so its +5-point gate stays failed. Re-emergence phase/linear error is 0.9405:
+the supplied pixel-local phase extension does not earn object permanence.
+Duplicate-frame skill falls from 0.3956 to 0.2355 but fails the predicted
+collapse below 0.10. Faster-motion phase gains remain post-failure exploration.
+These are synthetic sequences, not independently recorded camera evidence.
+
+Perjantai's error-energy gaze is explicitly distinguished from Kuulustelu's
+answer-dependent questions. Alavirta is a functional correction comparison,
+not asserted code ancestry. The owner's assessment that the visible follow-up
+did not match AnttisBrain2's appeal is recorded separately from its numerical
+prediction results.
+
+At the reviewed initial KulmanTakaa commit 4eeff14 only LICENSE exists. Its
+browser instrument, simulated bench and separate hidden-actor page are plans;
+there is no empirical success entry. The review note defines an independent
+optical test: frozen calibration, genuinely blocked actor, camera-region-only
+decoder input, separately recorded ground truth, unseen motion, nuisance
+brightness/exposure controls and an altered optical path. An emitting-screen
+tabletop result must not be promoted into an ambient-light hidden-person result.
+The ICCV 2017 corner-camera principle and Varjoluotain's different calibrated
+plate transport remain explicit prior art. Neither upstream repo was changed.

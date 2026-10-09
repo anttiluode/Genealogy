@@ -719,5 +719,48 @@
       "Present state, next predicted observation and next observation policy must be separately measured.",
       "Functional neuron analogies and analytic phase-tracking results are not evidence of cortical implementation or consciousness."
     ]
+  },
+  {
+    "id": "browser-corner-camera-independent-optics",
+    "title": "Can a browser recover independently recorded hidden motion through a blocked corner?",
+    "state": "open",
+    "motifs": [
+      "prediction-residual-needs-optical-identifiability"
+    ],
+    "evidence": [
+      "perjantai-linear-prediction-and-dream",
+      "perjantai-precision-phase-and-occlusion"
+    ],
+    "competing_explanations": [
+      "A calibrated edge maps hidden angular motion into a weak spatial camera signal that survives consumer-camera noise and supports direction or trajectory recovery.",
+      "The display follows global brightness, exposure, visible motion, calibration leakage or an ideal shared simulation; it does not identify an independently hidden scene."
+    ],
+    "known": [
+      "Perjantai has independently reproduced synthetic prediction and precision results, but no measured corner-camera signal.",
+      "Varjoluotain uses a calibrated screen/plate/wall operator and its own-forward-model simulations; its real-photo occluder localization fails.",
+      "Published ICCV 2017 corner-camera work establishes the physical principle with standard RGB recordings, not this browser implementation.",
+      "KulmanTakaa contains only a licence at the reviewed initial commit; its bench and hidden-actor page are planned."
+    ],
+    "missing_discriminator": "Freeze calibration and decoding before independent, genuinely occluded camera recordings; recover hidden direction or different trajectories while rejecting empty-scene, nuisance-brightness and altered-path controls, with no actor metadata entering the decoder.",
+    "candidate_experiment": {
+      "design": "First calibrate a luminous phone actor behind a deliberate book/cardboard edge, with a stationary camera viewing only the light surface. Use separately recorded ground truth and shuffled held-out trajectories; keep actor position, animation phase and labels out of the decoder. Compare angular reconstruction with total brightness and generic motion. Include empty hidden scene, visible-side motion, exposure/gain drift, an uninformative ROI and a blocked or altered optical path. Test natural reflected light from a hidden person separately after the emitter bench. Same-model simulations remain implementation checks.",
+      "cost": "Prototype-scale consumer camera, light surface, book/cardboard occluder and a separate phone or screen; camera controls and usable signal strength must be measured.",
+      "outcomes": [
+        {
+          "if": "Hidden direction or trajectory is recovered on independent recordings and the optical-path/null controls reject the effect",
+          "then": "Support the demonstrated geometry and camera setup; distinguish emitter-bench success from any later ambient hidden-person result."
+        },
+        {
+          "if": "Recovery follows nuisance brightness, uses actor metadata, leaks direct views or succeeds only in the shared forward-model simulation",
+          "then": "Reject the real corner-camera claim while retaining any useful implementation or change-detection result."
+        }
+      ]
+    },
+    "notes": [
+      "The development plan is documented in docs/reviews/2026-10-09-perjantai-kulmantakaa.md; it is not an empirical KulmanTakaa outcome.",
+      "An edge camera, deliberate pinhole and known plate have different measurement operators.",
+      "A fixed prediction residual is not automatically useful for a very weak optical signal; background adaptation can absorb the signal and differentiation can amplify noise.",
+      "No universal 0.1% signal amplitude, zero-install novelty or guaranteed phone compatibility is assumed."
+    ]
   }
 ]
