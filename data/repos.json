@@ -1840,11 +1840,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 836,
+    "size": 1009,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-10-08T15:28:27Z",
+    "updated_at": "2026-10-09T03:55:15Z",
     "inventory_status": "unread"
   },
   {
@@ -2907,7 +2907,7 @@
     "name": "MovingTarget2",
     "url": "https://github.com/anttiluode/MovingTarget2",
     "default_branch": "main",
-    "size": 615,
+    "size": 798,
     "visibility": "public",
     "description": "Sol repo",
     "created_at": "2026-10-08T04:37:56Z",
@@ -3534,11 +3534,11 @@
     "name": "Q-word",
     "url": "https://github.com/anttiluode/Q-word",
     "default_branch": "main",
-    "size": 50,
+    "size": 98,
     "visibility": "public",
     "description": "Sol repo. ",
     "created_at": "2026-10-08T12:54:28Z",
-    "updated_at": "2026-10-08T15:28:39Z",
+    "updated_at": "2026-10-09T02:56:21Z",
     "inventory_status": "reviewed"
   },
   {
