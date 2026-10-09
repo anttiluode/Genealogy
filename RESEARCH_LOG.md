@@ -176,3 +176,7 @@ explained variance; carrying over the Gaussian-tag error curve would need an
 additional channel-equivalence test. Adaptive coding/context prior art is
 linked explicitly, and no biological median-threshold optimization or new
 neuronal/AI architecture is claimed by this entry.
+
+## 2026-10-09 — Recovered CorticalLoop and Alavirta
+
+Added the June CorticalLoop and its explicitly stated July child Alavirta to the curated atlas; both had been census-only/unread. Three documentary/convergence links (including the V9 direction lineage and V21's Takens-coordinate stand-in), a new shared-coordinates motif, three sourced evidence entries and a learned-renderer open question. Recorded the published 1-D blackout (0.024 vs 0.247) and analytic-oscillator phase-lock (0.013 vs 1.566), dynamic precision fog (0.067 vs 0.248), without inventing independent replication. CorticalLoop's additional grid_discovery.py detects synthetic linear DMD modes with known calibration speed; the nonlinear feature-growth gap remains. Alavirta has an analytic cosine renderer and single-scalar action, not learned video perception or a literal layer-6 cortex. No source repo changed or simulation rerun.

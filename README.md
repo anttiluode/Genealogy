@@ -23,6 +23,39 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
+## 2026-10-09 — CorticalLoop → Alavirta: recover the missing predictive seam
+
+The [predictive-loop pass](data/passes/descending-predictive-loop.json) restores two
+previously *unread* repos to curated status: June's
+[CorticalLoop](https://github.com/anttiluode/CorticalLoop) and its explicitly
+named July child [Alavirta](https://github.com/anttiluode/Alavirta). The pass
+adds a shared-coordinate motif, three sourced lineage links, three distinct
+evidence records and an unresolved learned visual-renderer test.
+
+**CorticalLoop** turns a signed direction readout into feedback velocity that
+advances the grid state. On its engineered 1-D track, blackout error is
+**0.024 closed versus 0.247 open**, and backward tracking fails with a
+direction-blind one-channel arrow (**0.29 vs 0.002**). The original grid
+scales and theta correction are fixed. The companion `grid_discovery.py`
+uses Takens+DMD to estimate linear sinusoidal modes with supplied calibration
+velocity, not to discover nonlinear cortical features.
+
+**Alavirta** resolves a representation mismatch: a latent oscillator cannot
+be subtracted from a sensory delay vector. Its analytic descending renderer
+puts prediction into the recognizer's coordinates before computing the
+residual. With correction, settled phase error is **0.013 rad versus 1.566**
+open; dynamic sensory reliability gives **0.067 versus 0.248** in fog, and
+a 350-tick blackout drifts **0.349** before re-locking to **0.122**. The
+renderer is a *hand-written cosine*, not a learned image decoder. Its
+one-parameter action arm is not a learned policy.
+
+These are documented synthetic results, **not independently rerun** for
+this atlas pass. The next falsifier is a learned shared-space renderer on
+held-out low-resolution video, matched against ordinary recurrent/flow
+baselines for drift, prediction error, cost and recovery after occlusion.
+This makes a credible bridge toward a live AnttisBrain without claiming
+either June/July repo already implements it.
+
 ## 2026-10-09 — Kuulustelu: the reader needs the question's context
 
 The [threshold/context pass](data/passes/kuulustelu-threshold-context.json) adds

@@ -263,5 +263,14 @@
   },
   "lens-luotain-target-learned-spikes": {
     "adaptive-question-and-reader-context": "supports"
+  },
+  "cortical-loop-blackout-and-direction": {
+    "prediction-residual-in-shared-sensory-space": "supports"
+  },
+  "cortical-loop-linear-grid-discovery": {
+    "prediction-residual-in-shared-sensory-space": "limits"
+  },
+  "alavirta-shared-space-correction": {
+    "prediction-residual-in-shared-sensory-space": "supports"
   }
 }

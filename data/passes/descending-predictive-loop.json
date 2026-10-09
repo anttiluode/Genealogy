@@ -1,0 +1,95 @@
+{
+  "id": "descending-predictive-loop",
+  "title": "CorticalLoop → Alavirta: make the predictive residual computable",
+  "reviewed_at": "2026-10-09",
+  "order": 595,
+  "summary": "CorticalLoop (June 2026) adds signed-velocity feedback from a geometric-neuron-style arrow to a multiscale grid, maintaining a 1-D position during sensory blackout. Alavirta (July 2026) explicitly calls itself the child that supplies the missing descending renderer: an abstract internal model can now predict a signal in the recognizer's delay-space coordinates, enabling a reliability-weighted sensory residual, phase/rate correction and a simple action arm. These are engineered synthetic demonstrations, not learned cortex or video prediction.",
+  "nodes": [
+    {
+      "id": "CorticalLoop",
+      "url": "https://github.com/anttiluode/CorticalLoop",
+      "family": "neuron-machine",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Closes a geometric-neuron-derived feedforward readout stack into a recurrent one-dimensional position estimator: a signed arrow/velocity advances a grid and a theta-gated comparator corrects against visible input.",
+      "survived": "On the published 1-D circular synthetic track, mean error is 0.0085 with feedback versus 0.0619 without; during a 350-step blackout the errors are 0.024 and 0.247. A direction-blind single channel fails backward travel (0.29 versus 0.002); four incommensurate grid modules disambiguate what one module maps to 287 aliases. Companion grid_discovery.py extracts four dominant linear oscillatory scales from multichannel Takens+DMD with supplied calibration speed.",
+      "killed": "The original basis frequencies, quadrature sensors, theta window and CA1-like proportional correction are fixed by design. The DMD companion only discovers dominant linear modes in a synthetic sinusoidal scene, needs known calibration velocity and does not learn nonlinear receptive fields. There is no reported held-out real-world navigation, biological grid network or live-video model.",
+      "evidence": "https://github.com/anttiluode/CorticalLoop/blob/ad74073e18530fb8425a2bc42d3abb1ed37950d9/README.md",
+      "tags": [
+        "path-integration",
+        "grid",
+        "theta",
+        "velocity",
+        "blackout",
+        "synthetic",
+        "linear-dmd"
+      ],
+      "era": "Recursive prediction from signed motion",
+      "era_order": 23
+    },
+    {
+      "id": "Alavirta",
+      "url": "https://github.com/anttiluode/Alavirta",
+      "family": "neuron-machine",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Adds a descending renderer from internal oscillator latent state to a predicted Takens delay vector so prediction and reality can be compared in the same sensory coordinates, and uses the residual for precision-weighted phase/rate correction.",
+      "survived": "In its reported 2600-step synthetic scalar-oscillator suite, settled phase error is 0.013 rad closed versus 1.566 without residual. The 350-step blackout drifts 0.349 rad and re-locks at 0.122; dynamic signal-roughness precision cuts fog error to 0.067 versus 0.248 fixed-high. Adaptive frequency error after a step is 0.0008 versus 0.130 without frequency adaptation. A minimal action arm reduces amplitude surprise to 0.083 versus 0.750 with action disabled.",
+      "killed": "One scalar sinusoid with an analytic cosine renderer, engineered state and correction; the renderer form is not learned. Sensory reliability is a roughness proxy, and motor action changes one amplitude parameter. No unfamiliar visual data, learned appearance decoder, realistic biological neuron, calibrated model uncertainty, or end-to-end video world model is established.",
+      "evidence": "https://github.com/anttiluode/Alavirta/blob/994802077f9d683efaef6e5b6252e406a1e3fe61/README.md",
+      "tags": [
+        "predictive-processing",
+        "descending-renderer",
+        "takens",
+        "shared-space",
+        "precision",
+        "frequency",
+        "active-inference",
+        "synthetic"
+      ],
+      "era": "Shared coordinates close sensory correction",
+      "era_order": 24
+    }
+  ],
+  "edges": [
+    {
+      "source": "GeometricNeuronV9",
+      "target": "CorticalLoop",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "The CorticalLoop lineage explicitly names the geometric-neuron / skew-island arrow as a source of signed direction. V9 is a documented antecedent to this operator theme, but the README does not prove direct V9 code inheritance.",
+      "evidence": "https://github.com/anttiluode/CorticalLoop/blob/ad74073e18530fb8425a2bc42d3abb1ed37950d9/README.md"
+    },
+    {
+      "source": "CorticalLoop",
+      "target": "Alavirta",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Alavirta explicitly calls CorticalLoop its parent and adds the missing top-down renderer that expresses internal predictions in recognizer delay-space coordinates. Its simplified oscillator is a stand-in, not an integration of the complete grid circuit.",
+      "evidence": "https://github.com/anttiluode/Alavirta/blob/994802077f9d683efaef6e5b6252e406a1e3fe61/README.md"
+    },
+    {
+      "source": "GeometricNeuronV21",
+      "target": "Alavirta",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Alavirta explicitly names GeometricNeuronV21 as the recognizer it hopes to integrate, while its demonstration uses a bare Takens delay embedding. No V21 controller or original ecg.json pulse is reproduced.",
+      "evidence": "https://github.com/anttiluode/Alavirta/blob/994802077f9d683efaef6e5b6252e406a1e3fe61/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "prediction-residual-in-shared-sensory-space",
+      "title": "An internal prediction only corrects perception in a shared measurement basis",
+      "description": "CorticalLoop shows continued internal state motion through absent input. Alavirta adds the map from that state to predicted sensory coordinates so a measured residual can correct phase and rate, with sensor reliability controlling the gain. The existing results rely on specified state, oscillator and observation structure; learning the basis and renderer on unseen multichannel input is unresolved.",
+      "nodes": [
+        "GeometricNeuronV9",
+        "GeometricNeuronV21",
+        "CorticalLoop",
+        "Alavirta"
+      ]
+    }
+  ]
+}
