@@ -245,5 +245,8 @@
   },
   "qword-mobius-out-of-family-transfer": {
     "reversible-operations-vs-predictive-state": "limits"
+  },
+  "lens-luotain-target-corrected-active-sensing": {
+    "measurement-before-the-bottleneck": "supports"
   }
 }

@@ -1,0 +1,101 @@
+{
+  "id": "lens-luotain-target",
+  "title": "LensLuotainTarget: choose the measurement before the bottleneck",
+  "summary": "LensLuotainTarget joins Varjoluotain's structured shadows, MovingTarget2's response-defined memory, Luotain's discriminating probes and AnttisBrain2's moon/lens intuition in a controlled active-sensing test. Its observer chooses coded occluders without knowing the true hidden image. The corrected 64-seed gate supports a bounded advantage over random masks, with known finite candidates and exact synthetic transport. The founding PerceptionLab ecg.json accident supplies a separate historical comparison: changing readout geometry inside feedback changes the trajectory. That shared question does not make the optical test, the ECG-like aliasing loop and a biological neuron the same mechanism.",
+  "order": 580,
+  "reviewed_at": "2026-10-09",
+  "nodes": [
+    {
+      "id": "LensLuotainTarget",
+      "url": "https://github.com/anttiluode/LensLuotainTarget",
+      "family": "probe-inference",
+      "status": "experiment",
+      "claim": "Tests whether an observer can choose a new measurement that separates hidden images which the initial unmasked wall signal cannot distinguish. A movable coded mask changes the measurement operator before light is combined at the sensor.",
+      "survived": "On corrected held-out seeds 6100–6163, after one shared no-mask view and two additional views, active masks identify 54/64 candidates (84.375%), random masks 48/64 (75%), and no-mask repeats 7/64 (10.9375%). True-label log loss is 0.293596 / 0.641515 / 2.079442 nats. The selector uses posterior-weighted predicted disagreement across 30 available masks and never receives the true label. The 64-seed receipt was independently reproduced for this atlas update.",
+      "killed": "This is a constructed 1-D eight-candidate ambiguity task with known correct transport, fixed Gaussian noise and no learned encoder. Active selection evaluates all 30 masks, so the comparison matches measurements but not computation. An earlier positive run reused effectively one candidate family and is retained only as a pilot. No unknown-scene reconstruction, real-camera robustness, neural gating mechanism, optimal mutual-information policy or new inverse-optics theorem is established.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/LensLuotainTarget/blob/2704f1c5ed8b9d398740bd5a3bda25d7dad4fa27/RESULTS.md",
+      "tags": [
+        "active-sensing",
+        "coded-mask",
+        "observability",
+        "measurement-operator",
+        "null-space",
+        "response-memory",
+        "moons",
+        "held-out",
+        "model-mismatch"
+      ],
+      "era": "Choosing observations that expose hidden distinctions",
+      "era_order": 76
+    }
+  ],
+  "edges": [
+    {
+      "source": "Varjoluotain",
+      "target": "LensLuotainTarget",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "The README explicitly takes the ordinary-camera periscopy question from Varjoluotain into an original 1-D ray-occlusion analogue. The new test chooses measurement operators online; it does not reproduce Varjoluotain's validated 2-D transport or real photographs.",
+      "evidence": "https://github.com/anttiluode/LensLuotainTarget/blob/2704f1c5ed8b9d398740bd5a3bda25d7dad4fa27/README.md"
+    },
+    {
+      "source": "MovingTarget2",
+      "target": "LensLuotainTarget",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The README explicitly transfers the response-equivalence question: hidden states can share a present answer yet become distinguishable under another allowed query. The optical mask changes a static scene's measurement; the oscillator ping can also change the state being queried.",
+      "evidence": "https://github.com/anttiluode/LensLuotainTarget/blob/2704f1c5ed8b9d398740bd5a3bda25d7dad4fa27/README.md"
+    },
+    {
+      "source": "Luotain",
+      "target": "LensLuotainTarget",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The README names Luotain's cheap discriminating-test discipline. LensLuotainTarget supplies a finite synthetic instance in which a posterior over rival explanations selects the next coded shadow, rather than assuming the true scene is known.",
+      "evidence": "https://github.com/anttiluode/LensLuotainTarget/blob/2704f1c5ed8b9d398740bd5a3bda25d7dad4fa27/README.md"
+    },
+    {
+      "source": "AnttisBrain2",
+      "target": "LensLuotainTarget",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The README explicitly credits AnttisBrain2's changing moon/lens geometry as intuition. Its new masks are actual measurement operators; the rendered moons are not implemented attention heads, compressed temporal memories or evidence for biological retrieval.",
+      "evidence": "https://github.com/anttiluode/LensLuotainTarget/blob/2704f1c5ed8b9d398740bd5a3bda25d7dad4fa27/README.md"
+    },
+    {
+      "source": "GeometricNeuronOriginReview",
+      "target": "LensLuotainTarget",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Curatorial comparison, not code ancestry: the origin review shows that ecg.json's resize grid and first-value taps change the observation operator inside a finite-memory feedback loop. LensLuotainTarget changes which static scene differences reach a wall sensor. The surviving common question concerns chosen observation; the old ECG-like pulse is an aliasing/controller phenomenon, not proof of a neuron or of periscopy.",
+      "evidence": "https://github.com/anttiluode/GeometricNeuronOriginReview/blob/main/README.md"
+    },
+    {
+      "source": "BrainAsInverseModeler",
+      "target": "LensLuotainTarget",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Curatorial comparison: BrainAsInverseModeler explicitly uses Varjoluotain to separate hidden state retained inside a neuron from information recoverable through its output. LensLuotainTarget supplies a measured optical instance of changing access before a bottleneck. Context-dependent branch gates that expose retained distinctions at the soma remain a proposed neural experiment.",
+      "evidence": "https://github.com/anttiluode/BrainAsInverseModeler/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "measurement-before-the-bottleneck",
+      "title": "Choose what becomes observable before it is mixed away",
+      "description": "The founding ECG loop changes future dynamics when its spatial readout is changed inside feedback. Varjoluotain and LensLuotainTarget change what hidden light sources can be distinguished through a coded shadow. MovingTarget2 separates current response agreement from future-query equivalence, while AnttisBrain2 supplies geometric intuition for partial memory lenses. A gate before a lossy mixture can preserve a distinction that no later transformation of an identical mixed output can restore. The neural extension asks whether branch state remains accessible through selectable somatic responses; it is a hypothesis, not an optical result or a common biological mechanism.",
+      "nodes": [
+        "GeometricNeuronOriginReview",
+        "GeometricNeuronV21",
+        "Luotain",
+        "Varjoluotain",
+        "BrainAsInverseModeler",
+        "AnttisBrain2",
+        "MovingTarget2",
+        "LensLuotainTarget"
+      ]
+    }
+  ]
+}

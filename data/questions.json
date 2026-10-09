@@ -582,5 +582,49 @@
       "Current Q-word runs are post hoc exploratory, not preregistered.",
       "MovingTarget2's exact 20-seed result and Q-word's independent 3-seed model-transfer study are distinct experiments."
     ]
+  },
+  {
+    "id": "active-shadow-probes-under-model-mismatch",
+    "title": "Can active probes recognize an incomplete model instead of confidently choosing a wrong hidden scene?",
+    "state": "open",
+    "motifs": [
+      "measurement-before-the-bottleneck"
+    ],
+    "evidence": [
+      "lens-luotain-target-corrected-active-sensing"
+    ],
+    "competing_explanations": [
+      "Adaptive masks expose useful distinctions even with imperfect transport or an incomplete candidate set, while calibrated absolute predictive fit detects when no available explanation is adequate.",
+      "The measured advantage depends on a privileged dictionary and exact transport; adaptive disagreement among wrong candidates can produce confident mistakes."
+    ],
+    "known": [
+      "The corrected known-model gate yields 54/64 active, 48/64 random and 7/64 repeat identifications after two additional views.",
+      "The selector has the entire candidate dictionary and exact transport, but not the true label.",
+      "Varjoluotain's real-photo plate-localization failures show that successful ideal-model simulation does not establish robustness to actual geometry and background light.",
+      "Relative posterior confidence over a fixed dictionary does not itself test whether any candidate adequately explains the measured world."
+    ],
+    "missing_discriminator": "Held-out unknown-scene and transport-mismatch trials with a frozen absolute-fit/abstention criterion, equal sensing budgets and disclosed selector computation.",
+    "candidate_experiment": {
+      "design": "Omit the true image from some dictionaries, perturb mask position and background transport, and hold out both scenes and mismatch settings. Freeze an absolute predictive-fit threshold on separate calibration data. Compare active, random and repeated views under the same noise and measurement count; include a compute-budgeted active variant. Score identification/log loss for supported scenes, false acceptance and false rejection for omitted scenes, abstention, residual size and cost.",
+      "cost": "Small CPU-scale extension of the NumPy simulator, then a separately calibrated camera/occluder experiment; no large-model training is needed for the synthetic gate.",
+      "outcomes": [
+        {
+          "if": "Active selection retains a useful sensing advantage and detects omitted scenes at a controlled false-alarm rate on held-out mismatch",
+          "then": "Support a robust active-observer extension and proceed to calibrated physical measurements."
+        },
+        {
+          "if": "Active selection becomes confident in incorrect candidates when the true scene is absent or transport is wrong",
+          "then": "Keep the current closed-dictionary result but reject reliable open-world inference until model adequacy and hypothesis expansion are demonstrated."
+        },
+        {
+          "if": "The advantage vanishes after matching selector compute or at realistic photon noise",
+          "then": "Retain the observability demonstration while narrowing practical efficiency claims."
+        }
+      ]
+    },
+    "notes": [
+      "The ECG-loop, optical and proposed neural comparisons concern observation choice; they are separate mechanisms and evidence domains.",
+      "Dendritic gate learning, retained-state budgets, receiver decoding and read disturbance need separate experiments."
+    ]
   }
 ]

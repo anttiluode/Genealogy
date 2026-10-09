@@ -334,5 +334,9 @@
   {
     "path": "mobius-qword-transfer.json",
     "enabled": true
+  },
+  {
+    "path": "lens-luotain-target.json",
+    "enabled": true
   }
 ]

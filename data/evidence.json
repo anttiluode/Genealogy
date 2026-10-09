@@ -3857,5 +3857,75 @@
       "The model is classically simulated and the eight-token transformer is not a production language model."
     ],
     "source": "https://github.com/anttiluode/Q-word/blob/09b190983ed6988c9217e9fa3e0ceb9ce2d2a8a1/results/mobius-v3.json"
+  },
+  {
+    "id": "lens-luotain-target-corrected-active-sensing",
+    "node": "LensLuotainTarget",
+    "claim": "In the corrected finite-candidate periscopy gate, posterior-disagreement mask selection identifies hidden images better than random masks at the same measurement budget.",
+    "design": "Frozen corrected held-out synthetic 1-D periscopy; eight seed-varying hypotheses and 30 fixed mask/position probes; one common initial no-mask measurement plus two new measurements; exact Gaussian categorical posterior.",
+    "result": "supports",
+    "motifs": [
+      "measurement-before-the-bottleneck"
+    ],
+    "sample": {
+      "unit": "independent corrected truth/noise/candidate seed",
+      "count": 64
+    },
+    "metrics": [
+      {
+        "name": "correct identifications / 64",
+        "treatment": 54,
+        "control": 48,
+        "comparison": "active versus random coded masks"
+      },
+      {
+        "name": "correct identifications / 64",
+        "treatment": 54,
+        "control": 7,
+        "comparison": "active coded masks versus repeated no-mask views"
+      },
+      {
+        "name": "accuracy",
+        "treatment": 0.84375,
+        "control": 0.75,
+        "comparison": "active versus random; +9.375 percentage points"
+      },
+      {
+        "name": "mean true-label negative log probability (nats)",
+        "treatment": 0.2935963463375472,
+        "control": 0.6415154363144009,
+        "comparison": "active versus random; lower is better"
+      },
+      {
+        "name": "mean final posterior entropy (bits)",
+        "treatment": 0.6269401087168601,
+        "control": 1.018179045219877,
+        "comparison": "active versus random"
+      },
+      {
+        "name": "median maximum no-mask candidate separation / noise norm",
+        "value": 3.08e-15
+      }
+    ],
+    "controls": [
+      "Same initial noisy photograph, candidate dictionary, hidden label and number of measurements for all strategies",
+      "Per-step/mask potential Gaussian noise shared across policies; true label and future noise hidden from selector",
+      "Uniform random ordering of the same 30-mask catalogue and repeated no-mask views",
+      "Candidate generator uses seed-varying sign subsets and rotations; held-out seeds 6100–6163 follow the disclosed generator correction",
+      "Frozen accuracy/log-loss gates set before the corrected held-out run"
+    ],
+    "replication": "Independent atlas-update rerun of all 64 corrected seeds reproduced accuracy, log loss and entropy; all seven original core tests passed.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Known eight-image dictionary and correct forward transport; initial ambiguity deliberately constructed from weak singular-vector directions",
+      "Six additional correct trials over random is a small-sample result; no statistical-significance claim was predeclared",
+      "Active selection evaluates 30 masks per step; measurement count is matched but computation is not",
+      "Fixed brightness-independent Gaussian noise, no geometry/background mismatch, no natural images or real-camera measurements",
+      "The 5100-series run reused effectively one candidate family and is a pilot, not corrected scene-generalization evidence",
+      "Choosing a mask by predicted variance is not a proof of globally optimal information gain",
+      "Does not demonstrate dendritic gating, waveform decoding, a working moon-memory architecture or new inverse-optics mathematics"
+    ],
+    "source": "https://github.com/anttiluode/LensLuotainTarget/blob/2704f1c5ed8b9d398740bd5a3bda25d7dad4fa27/RESULTS.md"
   }
 ]

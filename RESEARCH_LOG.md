@@ -108,3 +108,32 @@ presynaptic release biophysics, biological prevalence and a post-read
 inhibitory undo were not tested. The full OpusPing simulation was not rerun
 for this entry; metrics were recalculated from the committed receipt and
 checked against the equations. The proposed model controls remain future work.
+
+## 2026-10-09 — Chosen shadows and the founding observation loop
+
+Added LensLuotainTarget as one curated experiment with six sourced links, a
+measurement-before-mixing motif, a corrected held-out evidence record and an
+open model-mismatch question. The source snapshot is 2704f1c5ed8b9d398740bd5a3bda25d7dad4fa27.
+Varjoluotain, MovingTarget2, Luotain and AnttisBrain2 are explicitly named by the
+new repository. The ECG-origin and BrainAsInverseModeler links are marked as
+medium-confidence curatorial comparisons, not asserted implementation ancestry.
+
+The original `ecg.json` refers to the PerceptionLab accident preserved by
+GeometricNeuronOriginReview. Its resolution-dependent spatial samples feed a
+finite-history homeostatic controller. V21 mechanizes the pulse as quantized
+aliasing plus a variance thermostat and retains the tap-position intervention.
+This update preserves that finding without equating it to optical periscopy,
+the later Geometric Neuron operator, or a biological action potential.
+
+Independently reran the 64 corrected optical seeds 6100–6163: 54/64 active,
+48/64 random, 7/64 unmasked repeat, with the published log losses and final
+entropies reproduced. All seven upstream core tests passed. The active policy
+uses 30 candidate-mask evaluations per step and receives a known eight-scene
+dictionary with exact transport. The earlier reused-family pilot is excluded
+from corrected evidence. No new optics or neuron experiment was implemented.
+
+The next discriminator tests missing true candidates, geometry/background
+mismatch, absolute predictive fit and abstention. A normalized posterior over
+wrong explanations is not evidence that any of them adequately fits the world.
+Neural pre-soma gating and dynamic read disturbance remain separate proposed
+tests rather than results imported from the shadow experiment.

@@ -23,6 +23,37 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
+## 2026-10-09 — LensLuotainTarget: choose what becomes observable
+
+The [active-shadow pass](data/passes/lens-luotain-target.json) adds
+[LensLuotainTarget](https://github.com/anttiluode/LensLuotainTarget) to the wall,
+census, Evidence and Questions views. It records the documented Varjoluotain,
+MovingTarget2, Luotain and AnttisBrain2 connections, with the moons credited as
+geometric intuition rather than implemented neural memory.
+
+The corrected held-out gate uses eight supplied hidden-image candidates and
+two additional wall views: selected masks identify **54/64**, random masks
+**48/64**, and unmasked repeats **7/64**. Log loss is **0.293596 / 0.641515 /
+2.079442 nats**. An independent rerun for this atlas update reproduces the
+committed accuracy, log loss and entropy. The result matches sensing budget,
+not computation; correct transport and synthetic brightness-independent
+Gaussian noise remain explicit assumptions. The defective earlier candidate
+generator's positive run remains a pilot.
+
+The historical pulse is the original PerceptionLab **`ecg.json` accident**,
+audited in [GeometricNeuronOriginReview](https://github.com/anttiluode/GeometricNeuronOriginReview)
+and [V21](https://github.com/anttiluode/GeometricNeuronV21): spatial sampling
+inside finite-memory feedback can change the dynamical regime. It is a
+quantized aliasing/controller loop, not a biological ECG or the later skew
+operator neuron. The optical mask changes measurement of a static scene;
+feedback and oscillator reads can also change the state being observed.
+
+[BrainAsInverseModeler](https://github.com/anttiluode/BrainAsInverseModeler)
+supplies a related, still proposed neural question: can branch gates expose
+retained hidden distinctions through a limited somatic output? The new open
+question first tests whether active optical probes can detect an omitted true
+scene or wrong transport instead of confidently selecting a wrong candidate.
+
 ## 2026-10-08 — Q-word: Möbius actions versus predictive belief
 
 The [Möbius/Q-word transfer pass](data/passes/mobius-qword-transfer.json) adds
