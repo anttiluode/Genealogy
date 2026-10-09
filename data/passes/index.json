@@ -346,5 +346,9 @@
   {
     "path": "descending-predictive-loop.json",
     "enabled": true
+  },
+  {
+    "path": "live-prediction-corner-camera.json",
+    "enabled": true
   }
 ]

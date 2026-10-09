@@ -4389,5 +4389,125 @@
     "motifs": [
       "prediction-residual-in-shared-sensory-space"
     ]
+  },
+  {
+    "id": "perjantai-linear-prediction-and-dream",
+    "node": "Perjantai",
+    "claim": "A small online shared linear predictor and running image memory beat copy-last-frame on engineered visible scenes, while closed-loop rollout loses detail and drifts.",
+    "design": "Independently rerun twelve upstream core checks and the frozen round-2 evaluator at 64×64: fixed synthetic rooms and seeds, online learning, last-frame copy baseline, visible-blob gaze, dream/wake and rollout controls.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "still-noisy one-step skill without precision, 1 minus model/copy MSE",
+        "value": 0.4672
+      },
+      {
+        "name": "moving-noisy one-step skill without precision, 1 minus model/copy MSE",
+        "value": 0.3956
+      },
+      {
+        "name": "visible-blob gaze distance versus random point, rounded",
+        "value": [
+          0.111,
+          0.417
+        ]
+      },
+      {
+        "name": "mean absolute Laplacian detail, camera versus dream, rounded",
+        "value": [
+          0.1112,
+          0.0005
+        ]
+      },
+      {
+        "name": "rollout detail at horizons 1 and 20, rounded",
+        "value": [
+          0.0234,
+          0.0031
+        ]
+      }
+    ],
+    "controls": [
+      "copy-last-frame initialization and comparator",
+      "still versus moving synthetic scene",
+      "visible-blob gaze versus random point",
+      "closed-loop learning disabled and camera restoration",
+      "short versus long rollout"
+    ],
+    "replication": "Independently rerun node tests/core.test.cjs (12 passed) and node tests/round2.eval.cjs at 464bf3c on 2026-10-09; listed values are the printed rounded outputs. No real-camera recording or browser-frame-rate test was rerun.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Scenes and predictor are engineered; online updates occur on the same sequence being observed.",
+      "The gaze policy maximizes error energy and is not a learned or posterior-based informative-query selector.",
+      "Dream detail loss and re-lock do not establish object memory, episodic recall or hidden-scene reconstruction."
+    ],
+    "source": "https://github.com/anttiluode/Perjantai/blob/464bf3c3120b0a790fc1a58271e4bcedd03a49ee/README.md",
+    "motifs": [
+      "prediction-residual-needs-optical-identifiability"
+    ]
+  },
+  {
+    "id": "perjantai-precision-phase-and-occlusion",
+    "node": "Perjantai",
+    "claim": "Image-residual precision denoises the present without suppressing a sudden object, but the frozen phase improvement and duplicate-collapse hypotheses fail; phase adds no declared occlusion advantage.",
+    "design": "Frozen round-2 P1–P7 evaluator: duplicate versus unique frames; precision on/off; new-blob onset; phase on/off on 1.5 px/frame translation and moving noise; first five frames after a blob leaves a fixed bar.",
+    "result": "mixed",
+    "sample": {
+      "unit": "primary deterministic synthetic test seed",
+      "count": 1
+    },
+    "metrics": [
+      {
+        "name": "duplicate-frame skill, unique versus duplicated",
+        "value": [
+          0.3956,
+          0.2355
+        ]
+      },
+      {
+        "name": "precision belief MSE divided by raw-camera MSE",
+        "value": 0.1332
+      },
+      {
+        "name": "precision skill change, still and moving, percentage points",
+        "value": [
+          0.4686,
+          3.764
+        ]
+      },
+      {
+        "name": "new-object first-frame relative error",
+        "value": 0.07969
+      },
+      {
+        "name": "smooth-motion phase gain, percentage points",
+        "value": 0.04545
+      },
+      {
+        "name": "phase/linear re-emergence error ratio",
+        "value": 0.9405
+      }
+    ],
+    "controls": [
+      "precision enabled versus disabled",
+      "phase enabled versus disabled",
+      "copy-last-frame comparator",
+      "duplicate-frame feed",
+      "synthetic occluder and new-object onset"
+    ],
+    "replication": "Independently rerun node tests/round2.eval.cjs at 464bf3c; P2, P3, P4 and the no-occlusion-advantage P7 prediction pass, P1 does not pass, and P5 reaches its kill condition. P6 is descriptive. Post-failure fast-motion exploration was not rerun.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Primary conditions use one deterministic seed and supplied scene generators, not held-out real video.",
+      "The failed smooth-motion gain remains failed; faster-motion phase gains are exploratory.",
+      "The occlusion test compares this pixel-local phase addition with this linear predictor, not every possible object-memory model.",
+      "A corrected duplicate-frame guard does not explain all reported real-camera variation."
+    ],
+    "source": "https://github.com/anttiluode/Perjantai/blob/464bf3c3120b0a790fc1a58271e4bcedd03a49ee/tests/round2.eval.cjs",
+    "motifs": [
+      "prediction-residual-needs-optical-identifiability"
+    ]
   }
 ]

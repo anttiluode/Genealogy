@@ -23,6 +23,33 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
+## 2026-10-09 — Perjantai → KulmanTakaa: prediction display and a proposed corner camera
+
+The [live-prediction/corner-camera pass](data/passes/live-prediction-corner-camera.json)
+adds [Perjantai](https://github.com/anttiluode/Perjantai) as the explicitly named
+child of [AnttisBrain2](https://github.com/anttiluode/AnttisBrain2), and
+[KulmanTakaa](https://github.com/anttiluode/KulmanTakaa) as an **active proposal**.
+It records five lineage/comparison links, two Perjantai evidence records and a
+separate open physical-camera test.
+
+Perjantai's three moons expose a small 64×64 online linear predictor, memory,
+precision-corrected present and changing residual. Its twelve upstream core
+checks and frozen round-2 evaluation were independently rerun. Precision helps
+on its engineered noisy scenes; the smooth-motion phase gate **fails**, and
+pixel-local phase does **not** earn object permanence behind a bar. Its gaze
+follows error energy rather than expected information gain. The real-camera
+and entertainment goals remain distinct from the synthetic predictor results.
+
+KulmanTakaa's reviewed initial commit contains only a licence. The supplied
+plan is a browser instrument observing a surface beside a blocked edge, with
+a simulated bench and separate phone hidden-actor page. The intended
+Perjantai/Varjoluotain connection is recorded as a plan, not transferred proof.
+The [review note](docs/reviews/2026-10-09-perjantai-kulmantakaa.md) requires
+camera-only decoder input, genuine occlusion, independent recorded ground
+truth, frozen calibration and brightness/exposure/null controls. An emitting
+screen behind a book and an ambient-light hidden-person test are separate
+claims. There is **no KulmanTakaa empirical success record** at this snapshot.
+
 ## 2026-10-09 — CorticalLoop → Alavirta: recover the missing predictive seam
 
 The [predictive-loop pass](data/passes/descending-predictive-loop.json) restores two

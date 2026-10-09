@@ -1,0 +1,89 @@
+{
+  "id": "live-prediction-corner-camera",
+  "title": "Perjantai → KulmanTakaa: a visible prediction loop and a proposed hidden-scene instrument",
+  "reviewed_at": "2026-10-09",
+  "order": 600,
+  "summary": "Perjantai is the explicitly named AnttisBrain2 child: three refracting moons display a running memory, a precision-corrected present and a small online linear prediction. Its synthetic prediction and denoising results survive, while its smooth-motion phase gate fails and no object permanence is demonstrated. KulmanTakaa is being started as a browser corner-camera instrument with a simulated bench and a separate hidden-actor page. At the reviewed initial commit it contains only a licence. The proposed move from visible prediction residuals to an optically hidden scene remains an experiment, not an achieved camera result.",
+  "nodes": [
+    {
+      "id": "Perjantai",
+      "url": "https://github.com/anttiluode/Perjantai",
+      "family": "neuron-machine",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "An AnttisBrain2-derived browser room makes a 64×64 online prediction loop visible through past, present and future moons, prediction-residual walls, and programmed gaze. A shared 20-weight least-squares filter learns image and motion taps; optional phase features add two coefficients.",
+      "survived": "The twelve upstream core checks were independently rerun. On the engineered scenes the linear predictor beats copy-last-frame, a running memory denoises a still scene, gaze follows a visible moving blob, and returning camera input corrects closed-loop drift. The independent round-2 evaluation reproduces precision benefits, immediate response to a new object, the failed smooth-motion phase gate and the absence of an occlusion advantage.",
+      "killed": "The phase gain on the frozen smooth-translation test is effectively zero, below the +5-point target; small gains on faster motion are post-failure exploration. Phase traces belong to pixel locations and do not carry an object behind a bar. The duplicate-frame collapse diagnosis fails its original threshold. Gaze maximizes running prediction-error energy, not expected information gain. Synthetic results do not establish general real-camera performance, learned object memory, a deep video model or an entertaining successor to AnttisBrain2.",
+      "evidence": "https://github.com/anttiluode/Perjantai/blob/464bf3c3120b0a790fc1a58271e4bcedd03a49ee/README.md",
+      "tags": ["live-camera", "three-moons", "online-linear-prediction", "precision", "prediction-residual", "phase-gate-failed", "no-object-permanence", "synthetic"],
+      "era": "A visible camera loop with a limited predictor",
+      "era_order": 78
+    },
+    {
+      "id": "KulmanTakaa",
+      "url": "https://github.com/anttiluode/KulmanTakaa",
+      "family": "probe-inference",
+      "status": "active",
+      "usefulness": "conceptual",
+      "confidence": "low",
+      "claim": "Proposed single-page browser corner camera: observe a light surface beside a blocking edge, extract its weak changing optical signal and attempt to recover a one-dimensional hidden-motion trace. Planned companions are a simulated bench and a separate phone hidden-actor page for a deliberate tabletop occluder.",
+      "survived": "The repository exists and the development plan was supplied by the owner. The reviewed initial snapshot 4eeff14 contains only LICENSE. The physical corner-camera principle has prior demonstrations; this project has not yet earned a browser implementation or camera result.",
+      "killed": "No implementation, tests, committed outcome receipt or independently recorded hidden-scene video exists at the reviewed snapshot. A simulation using the decoder's own forward model would only validate that model. Visible motion, global brightness drift, camera adaptation or actor coordinates fed into the decoder must not count as seeing around a corner. A luminous-screen bench and ambient reflected light from a hidden person are different tests.",
+      "evidence": "https://github.com/anttiluode/Genealogy/blob/main/docs/reviews/2026-10-09-perjantai-kulmantakaa.md",
+      "tags": ["corner-camera", "non-line-of-sight", "blocked-edge", "planned-browser-instrument", "tabletop-bench", "awaiting-real-measurement"],
+      "era": "A proposed residual instrument needs an independent optical test",
+      "era_order": 79
+    }
+  ],
+  "edges": [
+    {
+      "source": "AnttisBrain2",
+      "target": "Perjantai",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "The owner explicitly identifies Perjantai as the child of AnttisBrain2, and its repository description names that parent. The refracting-room display is inherited as the visual setting; the online linear predictor is a new mechanism, not an attention or cortical equivalence.",
+      "evidence": "https://github.com/anttiluode/Genealogy/blob/main/docs/reviews/2026-10-09-perjantai-kulmantakaa.md"
+    },
+    {
+      "source": "Alavirta",
+      "target": "Perjantai",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both compare a predicted observation with incoming evidence and adjust the present using a reliability gain. Alavirta tracks an analytic oscillator in delay space; Perjantai learns shared image taps and estimates gain from image residuals. This is a curatorial functional comparison, not documented code inheritance.",
+      "evidence": "https://github.com/anttiluode/Genealogy/blob/main/docs/reviews/2026-10-09-perjantai-kulmantakaa.md"
+    },
+    {
+      "source": "Kuulustelu",
+      "target": "Perjantai",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Perjantai's README credits Kuulustelu as the gaze motivation. The implementations differ: the browser gaze follows error energy, whereas the interrogation experiments adapt questions or thresholds using earlier answers. No learned or information-optimal gaze transfers here.",
+      "evidence": "https://github.com/anttiluode/Perjantai/blob/464bf3c3120b0a790fc1a58271e4bcedd03a49ee/README.md"
+    },
+    {
+      "source": "Perjantai",
+      "target": "KulmanTakaa",
+      "type": "extracts",
+      "confidence": "medium",
+      "why": "The supplied development plan proposes extracting background memory and changing residuals from the moon display into a corner-camera instrument. This records intended reuse only; the reviewed KulmanTakaa snapshot has no code.",
+      "evidence": "https://github.com/anttiluode/Genealogy/blob/main/docs/reviews/2026-10-09-perjantai-kulmantakaa.md"
+    },
+    {
+      "source": "Varjoluotain",
+      "target": "KulmanTakaa",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "The plan connects Varjoluotain's known-occluder inverse problem to a moving hidden scene observed beside an edge. The earlier calibrated screen/plate/wall transport is not automatically the corner-floor operator, and its static reconstruction is not a demonstrated live corner camera.",
+      "evidence": "https://github.com/anttiluode/Genealogy/blob/main/docs/reviews/2026-10-09-perjantai-kulmantakaa.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "prediction-residual-needs-optical-identifiability",
+      "title": "A changing residual becomes a hidden-scene sensor only through calibrated geometry",
+      "description": "Perjantai extracts visible changes from a learned prediction; Varjoluotain recovers hidden image components through a known optical operator. KulmanTakaa proposes connecting these roles in a browser. A glowing residual alone does not identify hidden motion: the operator, camera behaviour, signal-to-noise and independent ground truth must distinguish hidden angular structure from ordinary brightness changes.",
+      "nodes": ["Perjantai", "Varjoluotain", "KulmanTakaa"]
+    }
+  ]
+}
