@@ -137,3 +137,42 @@ mismatch, absolute predictive fit and abstention. A normalized posterior over
 wrong explanations is not evidence that any of them adequately fits the world.
 Neural pre-soma gating and dynamic read disturbance remain separate proposed
 tests rather than results imported from the shadow experiment.
+
+## 2026-10-09 — Adaptive thresholds and downstream question context
+
+Added Kuulustelu as one curated experiment, five sourced edges, one
+question-context motif, four Kuulustelu evidence records and one separately
+pinned LensLuotainTarget binary-learning record. The census now includes
+Kuulustelu, and a partially resolved question connects self-driven replay,
+hidden neighbour context and future population/rhythm decoding.
+
+The Kuulustelu snapshot is c8745f5a5fcbd5d9ba3d58a204e5774f1b23f4c3. Read the
+protocols, outcome ledgers, committed numerical receipts and round-4 decoder
+equations. Recalculated the threshold, hidden-context and field-sharing
+comparisons from those receipts. No Kuulustelu source was changed and no new
+training or full experiment rerun was performed for this atlas addition.
+These rounds reuse the 2000-series evaluation worlds and are not independent
+fresh-world replications of one another.
+
+Preserved the learned graded-control failure and both round-4 field gates.
+The field's 8.2% improvement is below the 10% magnitude gate despite a small
+paired p-value. Logical link counts and performance relative to the tested
+broadcast policy do not establish physical energy savings or a universal
+information ceiling. The hidden-sequence likelihood is exact, while its
+posterior means use finite importance particles; the wall does not promote
+that estimate to a proven optimal decoder bound.
+
+The original PerceptionLab ecg.json and BrainAsInverseModeler links are
+curatorial convergence edges, not implementation ancestry. Varjoluotain,
+LensLuotainTarget and Sihti are explicitly named in Kuulustelu's README.
+Lens's pinned binary result at 53446ebab80c4363aaceea13844a1639ee7d928a supports
+learned threshold adaptation and retains its failed extra branch-selection
+criterion. Its histories, write law and objective differ from Kuulustelu's;
+the Gaussian covariance-only argument is not a contradictory prediction for it.
+
+At the reviewed snapshot round 5 contains a population-reader protocol and
+code but no outcome receipt. Its sinusoidal PLV-squared identity describes
+explained variance; carrying over the Gaussian-tag error curve would need an
+additional channel-equivalence test. Adaptive coding/context prior art is
+linked explicitly, and no biological median-threshold optimization or new
+neuronal/AI architecture is claimed by this entry.

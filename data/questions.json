@@ -626,5 +626,56 @@
       "The ECG-loop, optical and proposed neural comparisons concern observation choice; they are separate mechanisms and evidence domains.",
       "Dendritic gate learning, retained-state budgets, receiver decoding and read disturbance need separate experiments."
     ]
+  },
+  {
+    "id": "adaptive-spike-context-recovery",
+    "title": "Can a downstream reader infer the adaptive question from its available population or rhythm context?",
+    "state": "partially-resolved",
+    "motifs": [
+      "adaptive-question-and-reader-context"
+    ],
+    "evidence": [
+      "kuulustelu-threshold-and-coupling",
+      "kuulustelu-learned-thresholds",
+      "kuulustelu-question-label",
+      "kuulustelu-shared-field-limit",
+      "lens-luotain-target-learned-spikes"
+    ],
+    "competing_explanations": [
+      "Self-driven replay, observed neighbouring cells or genuinely shared context can reveal enough of the adaptive threshold to retain its local prediction benefit at a limited communication budget.",
+      "Hidden threshold context remains confounded with the signal, so additional spikes mostly supply redundant answers and do not recover the advantage once population size and communication cost are matched."
+    ],
+    "known": [
+      "Programmed and learned threshold adaptation reduce prediction error; adaptive branch selection supplies little additional gain in the current learned tests.",
+      "Kuulustelu round 4 replays self-driven thresholds exactly under a known rule and common initial belief.",
+      "With unseen neighbour-driven context, the sequence-marginalized finite-particle reader has error 0.541 versus the fixed sender's 0.109 using the same estimator family.",
+      "Lossless neighbourhood sharing yields 8.2%, below its predeclared 10% benefit; this is a failed magnitude claim, not evidence against all physical fields.",
+      "At snapshot c8745f5, round 5 has a population-reader protocol and implementation but no committed outcome receipt."
+    ],
+    "missing_discriminator": "A fresh-world test of population context recovery at matched total bit/compute cost, plus explicit likelihood tests for a rhythmic threshold shift rather than replacing its channel by a Gaussian tag with the same R².",
+    "candidate_experiment": {
+      "design": "Keep memory, soma noise, initial receiver information and total communication budget explicit. Compare hidden common-context populations of 1/2/4/8 senders with same-size self-driven and fixed populations and threshold-aware references. Marginalize unknown context, report effective particle counts and confirm on fresh seeds. For a shared rhythm, simulate phase-error distributions and compare direct decoding with the proposed PLV² tag approximation at equal explained variance.",
+      "cost": "Small CPU-scale extension and posterior estimation; larger populations require more bits and decoder work, which must be charged separately from each sender's read count.",
+      "outcomes": [
+        {
+          "if": "Matched-budget population or shared-rhythm decoding retains a stable advantage on new worlds while posterior estimates converge",
+          "then": "Support a decodable adaptive interface and identify which shared context makes it work."
+        },
+        {
+          "if": "Recovery improves only by supplying more redundant bits or the same-R² tag approximation predicts the wrong error",
+          "then": "Keep the self-driven threshold result and narrow claims about population rescue or rhythm acting as an interchangeable label."
+        },
+        {
+          "if": "A distant reader remains worse than a fixed sender despite enough observed context and verified inference",
+          "then": "Record a practical communication limit for that adaptive channel rather than declaring local information absent."
+        }
+      ]
+    },
+    "notes": [
+      "Round 5 is Claude's ongoing work; this atlas entry does not modify Kuulustelu or present its preregistered predictions as outcomes.",
+      "R²=PLV² for a purely sinusoidal shift under the stated phase-noise assumptions is an explained-variance identity, not proof that its full channel is equivalent to round 4's additive Gaussian tag.",
+      "Adaptive coding and decoder context have established prior art, including Fairhall et al., Nature 2001, https://doi.org/10.1038/35090500.",
+      "Activity-dependent AIS homeostasis does not by itself establish per-read median thresholding or a universal 50/50 biological firing rule."
+    ]
   }
 ]

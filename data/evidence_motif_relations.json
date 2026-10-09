@@ -248,5 +248,20 @@
   },
   "lens-luotain-target-corrected-active-sensing": {
     "measurement-before-the-bottleneck": "supports"
+  },
+  "kuulustelu-threshold-and-coupling": {
+    "adaptive-question-and-reader-context": "supports"
+  },
+  "kuulustelu-learned-thresholds": {
+    "adaptive-question-and-reader-context": "supports"
+  },
+  "kuulustelu-question-label": {
+    "adaptive-question-and-reader-context": "supports"
+  },
+  "kuulustelu-shared-field-limit": {
+    "adaptive-question-and-reader-context": "limits"
+  },
+  "lens-luotain-target-learned-spikes": {
+    "adaptive-question-and-reader-context": "supports"
   }
 }

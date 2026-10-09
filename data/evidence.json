@@ -3927,5 +3927,309 @@
       "Does not demonstrate dendritic gating, waveform decoding, a working moon-memory architecture or new inverse-optics mathematics"
     ],
     "source": "https://github.com/anttiluode/LensLuotainTarget/blob/2704f1c5ed8b9d398740bd5a3bda25d7dad4fa27/RESULTS.md"
+  },
+  {
+    "id": "kuulustelu-threshold-and-coupling",
+    "node": "Kuulustelu",
+    "claim": "For correlated Gaussian leaky-trace memory, threshold adaptation makes previous answers useful for query selection, while exact graded covariance-only selection does not depend on those answers.",
+    "design": "Twelve leaky traces of 32-step Gaussian histories; eight probit spike reads, noise sigma=0.03, eta=0. Match the gate catalogue and read budget for adaptive, optimized fixed and random policies; compare graded reads and a zero-threshold adaptive gate. Round 2 varies coupling and extends isotropic reads beyond twelve directions.",
+    "result": "supports",
+    "motifs": [
+      "adaptive-question-and-reader-context"
+    ],
+    "sample": {
+      "unit": "synthetic held-out history/noise world",
+      "count": 512
+    },
+    "metrics": [
+      {
+        "name": "normalized prediction error after 8 spike reads",
+        "treatment": 0.03808561762485059,
+        "control": 0.12157627599606705,
+        "comparison": "adaptive versus programmed fixed schedule; lower is better"
+      },
+      {
+        "name": "relative error reduction",
+        "value": 0.6867347900499712,
+        "display": "68.7%; reported paired interval 64–74%"
+      },
+      {
+        "name": "adaptive gate with threshold fixed at zero",
+        "value": 0.33077873957319276,
+        "comparison": "worse than fixed schedule 0.1216"
+      },
+      {
+        "name": "graded configurations with identical adaptive/fixed gate sequences",
+        "value": 18
+      },
+      {
+        "name": "isotropic read at which an adaptive gap starts",
+        "value": 13,
+        "comparison": "first required revisit after twelve fresh axes"
+      }
+    ],
+    "controls": [
+      "Gaussian graded covariance recursion and graded-versus-binary soma swap",
+      "Same allowed gate catalogue, read count and potential noise",
+      "Zero-threshold adaptive gate, isotropic prior and controlled coupling/revisiting studies",
+      "Read disturbance varied independently, including eta=1"
+    ],
+    "replication": "Reported frozen rounds 1–2 and numerical receipts audited for this atlas entry; the experiments were not independently rerun for this update.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "The trace prior has effective dimension about 1.1; the headline gain is strongly helped by its correlations.",
+      "Programmed greedy policies know the prior and forward model; measurements, not computation or bit capacity, are matched.",
+      "A graded scalar carries more information than a bit and remains more accurate per read.",
+      "The no-adaptive-choice theorem needs a Gaussian prior, linear reads and a covariance-only objective; it does not forbid adaptive mean estimates or general control benefits.",
+      "Round 2 reuses the evaluation seed family; it is a discriminator, not an independent fresh-world replication."
+    ],
+    "source": "https://github.com/anttiluode/Kuulustelu/blob/c8745f5a5fcbd5d9ba3d58a204e5774f1b23f4c3/RESULTS.md"
+  },
+  {
+    "id": "kuulustelu-learned-thresholds",
+    "node": "Kuulustelu",
+    "claim": "Small trained receivers learn useful answer-dependent spike thresholds, but their learned graded control does not pass its declared near-zero-gain band.",
+    "design": "Three independent initializations per adaptive/fixed and binary/graded arm; 4000 training updates per run. Recurrent networks receive actual hard binary answers and continuous command access; training uses a straight-through surrogate. Eight reads, Gaussian trace histories, sigma=0.03, eta=0; 512 held-out worlds.",
+    "result": "mixed",
+    "motifs": [
+      "adaptive-question-and-reader-context"
+    ],
+    "sample": {
+      "unit": "independent training initialization per arm",
+      "count": 3
+    },
+    "metrics": [
+      {
+        "name": "spiking adaptive versus trained fixed relative error reductions",
+        "value": [
+          0.527451079683334,
+          0.7840148084898165,
+          0.7656470729493104
+        ],
+        "display": "52.7%, 78.4%, 76.6%"
+      },
+      {
+        "name": "graded adaptive versus trained fixed relative error reductions",
+        "value": [
+          -0.11093511819549162,
+          0.16553769941123897,
+          0.160902950746997
+        ],
+        "comparison": "declared ±15% band fails in two initializations"
+      },
+      {
+        "name": "graded control gate L4",
+        "value": false,
+        "display": "FAIL; retained after post-hoc diagnosis"
+      }
+    ],
+    "controls": [
+      "Paired identical adaptive and learned fixed receivers",
+      "Actual hard-bit inference and separate graded reference arms",
+      "Bayesian rescoring of learned command sequences and post-hoc best fixed graded design",
+      "Three training initializations with held-out error reported separately"
+    ],
+    "replication": "Committed protocol-3 receipt and outcome ledger audited; no independent retraining in this atlas update.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Three initializations, one Gaussian history family and the same 2000-series worlds as earlier rounds.",
+      "The trained prior is supplied through examples; absence of an explicit Bayesian engine is not absence of prior knowledge.",
+      "Straight-through training is a surrogate for hard-bit derivatives.",
+      "The better-than-programmed adaptive result is confounded by continuous gates and whole-sequence training versus a finite catalogue and greedy design.",
+      "Nearly fixed gate directions and suboptimal trained graded schedules explain the diagnosis; the graded gate still fails."
+    ],
+    "source": "https://github.com/anttiluode/Kuulustelu/blob/c8745f5a5fcbd5d9ba3d58a204e5774f1b23f4c3/RESULTS_3.md"
+  },
+  {
+    "id": "kuulustelu-question-label",
+    "node": "Kuulustelu",
+    "claim": "A known self-driven threshold rule is replayable from visible answers, while hidden neighbour-driven thresholds can make a distant reader's binary sequence less useful than a fixed sender's.",
+    "design": "Two senders read the same original Gaussian branch memory. One threshold uses its own earlier bits plus current/past neighbour bits; a distant reader sees only that sender's bits. K=8, sigma=0.03, eta=0, 512 worlds. Marginalize all 256 neighbour sequences and estimate posterior means with 8192 importance particles; compare self replay, threshold-aware readers and Gaussian threshold tags.",
+    "result": "supports",
+    "motifs": [
+      "adaptive-question-and-reader-context"
+    ],
+    "sample": {
+      "unit": "synthetic held-out sender/reader world",
+      "count": 512
+    },
+    "metrics": [
+      {
+        "name": "maximum self-driven replay threshold error",
+        "value": 0
+      },
+      {
+        "name": "self-driven versus fixed error, ADF decoding",
+        "treatment": 0.042629085019487534,
+        "control": 0.121576275996067
+      },
+      {
+        "name": "hidden-context versus fixed error, importance-sampled decoding",
+        "treatment": 0.5412742825612793,
+        "control": 0.10892981406137558,
+        "comparison": "same estimator family; about 5× the error"
+      },
+      {
+        "name": "threshold-aware hidden-context sender error, ADF",
+        "value": 0.03769007329896139
+      },
+      {
+        "name": "fraction of tag(0)-to-oracle improvement recovered at synthetic tag R²=0.05",
+        "value": 0.07636858777367853,
+        "display": "7.6%"
+      },
+      {
+        "name": "median/minimum effective particle count, unlabeled reader",
+        "value": [
+          101.33530324772373,
+          14.01310202006584
+        ]
+      }
+    ],
+    "controls": [
+      "Exact enumeration of the hidden neighbour's 256 bit sequences",
+      "Self-driven replay uses a known rule, common initial belief and already-visible sender bits",
+      "Fixed sender rescored with the same importance-sampling estimator family",
+      "Gaussian tag-strength sweep and separate threshold-aware likelihood decoding",
+      "Correctness tests compare tree likelihood to brute-force enumeration"
+    ],
+    "replication": "Protocol-4 receipt, decoder equations and recorded replay identity audited; no full Monte Carlo rerun for this update.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Exact sequence marginalization still uses a finite-particle posterior estimate; 'Bayes-optimal' is not a proven numerical bound.",
+      "The replay result needs known rules and initial context; it is not automatically free for an unknown biological receiver.",
+      "Threshold-aware readers treat the threshold as a likelihood parameter rather than exploiting its value as an additional neighbour message.",
+      "The Gaussian threshold tag is synthetic. Waveform-to-LFP R² is not a measured ability to reveal this threshold.",
+      "Same held-out worlds as earlier rounds; no spike waveform, anatomical field or physical transmission noise is modeled.",
+      "A mislabeled round-1 reference value in gate A2 was corrected; recorded per-world outputs stayed identical."
+    ],
+    "source": "https://github.com/anttiluode/Kuulustelu/blob/c8745f5a5fcbd5d9ba3d58a204e5774f1b23f4c3/RESULTS_4.md"
+  },
+  {
+    "id": "kuulustelu-shared-field-limit",
+    "node": "Kuulustelu",
+    "claim": "Lossless neighbourhood answer-sharing supplies at least the predeclared 10% error improvement beyond each cell's private threshold adaptation.",
+    "design": "Eight cells on a line with distance-correlated Gaussian branch memories and eight spike reads each. Compare private centring, nearest-neighbour sharing, wider sharing, shuffled partners, correlation-addressed coupling and full broadcast under one joint population decoder; repeat with correlations shuffled away from position.",
+    "result": "contradicts",
+    "motifs": [
+      "adaptive-question-and-reader-context"
+    ],
+    "sample": {
+      "unit": "synthetic held-out population world",
+      "count": 512
+    },
+    "metrics": [
+      {
+        "name": "nearest-neighbour versus private normalized prediction error",
+        "treatment": 0.030055730177303775,
+        "control": 0.032753238567423515
+      },
+      {
+        "name": "relative improvement and paired interval",
+        "value": 0.08235852416752132,
+        "display": "8.2%; 95% interval 3.7–12.3%; below the frozen 10% criterion"
+      },
+      {
+        "name": "field-sharing kill criterion B2",
+        "value": false,
+        "display": "FAIL"
+      },
+      {
+        "name": "addressed versus metric sharing gain in shuffled-map world",
+        "value": 0.052516168086937265,
+        "display": "5.3%; 10% criterion B5 also FAIL"
+      },
+      {
+        "name": "nearest-neighbour / broadcast directed links",
+        "value": [
+          14,
+          56
+        ]
+      },
+      {
+        "name": "fraction of tested broadcast gain recovered",
+        "value": 0.9665616074946053,
+        "display": "96.7%; descriptive comparison, not an optimality bound"
+      }
+    ],
+    "controls": [
+      "One joint decoder sees the population answers in every arm",
+      "Same cell count, read budget, prior and potential noise",
+      "Shuffled coupling, metric and nonmetric correlation worlds, addressed and broadcast comparisons",
+      "Graded controls agree to floating-point precision"
+    ],
+    "replication": "Frozen B2/B5 failures and per-arm receipt audited without rerunning the experiment.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "The positive 8.2% point estimate is statistically significant but does not pass the predeclared magnitude gate.",
+      "The 'field' is lossless bit sharing, not slow ion, pump, ephaptic or extracellular-potential dynamics.",
+      "Counts are logical communication links, not measured energy or physical wiring costs.",
+      "Broadcast under the tested policy is a comparator, not a proof of a universal sharing ceiling.",
+      "Results do not reject all field computation; they reject the declared large benefit in this synthetic task."
+    ],
+    "source": "https://github.com/anttiluode/Kuulustelu/blob/c8745f5a5fcbd5d9ba3d58a204e5774f1b23f4c3/RESULTS_4.md"
+  },
+  {
+    "id": "lens-luotain-target-learned-spikes",
+    "node": "LensLuotainTarget",
+    "claim": "A dictionary-free learned binary interface beats a trained fixed schedule, but extra adaptive branch selection beyond adaptive thresholds is not earned.",
+    "design": "Eight matched-computation controls, three initializations each, eight hard-bit reads, sigma=0.03 and eta=0.25. Known plant and supervised training targets; learned receivers have no candidate dictionary or branch-state access. Validate-select and seal 24 checkpoints before 512 fresh histories per condition with eight noise trajectories each; evaluate familiar/new linear questions and withheld switching histories.",
+    "result": "mixed",
+    "motifs": [
+      "adaptive-question-and-reader-context"
+    ],
+    "sample": {
+      "unit": "independent held-out history per condition",
+      "count": 512
+    },
+    "metrics": [
+      {
+        "name": "main adaptive versus trained fixed answer-MSE reduction",
+        "value": 0.3623,
+        "display": "36.2%; all three initializations improve"
+      },
+      {
+        "name": "withheld-history adaptive versus fixed answer-MSE reduction",
+        "value": 0.3646,
+        "display": "36.5%"
+      },
+      {
+        "name": "adaptive branch benefit beyond fixed gates and adaptive thresholds",
+        "value": 0.004446,
+        "display": "0.44%; below 5% gate, absolute-difference interval crosses zero"
+      },
+      {
+        "name": "absolute main adaptive-versus-threshold-only MSE difference",
+        "value": 1.91455e-06,
+        "display": "95% paired interval [-0.0000128747, 0.0000159265]"
+      },
+      {
+        "name": "joint gate-and-threshold criterion S4",
+        "value": false,
+        "display": "FAIL"
+      }
+    ],
+    "controls": [
+      "Same internal context-head computation in adaptive and fixed receivers",
+      "Adaptive-threshold-only and adaptive-gate-only ablations",
+      "Random and zero-threshold controls; graded references explicitly transmit more than one bit",
+      "Exact probit likelihood-score training gradients checked against enumerated answer trees",
+      "Erasure/common-sum controls lose recoverability; trained browser inference checked against Python"
+    ],
+    "replication": "Previously completed LensLuotainTarget experiment, code, weights and inference checks; pinned outcome ledger audited again for this comparison. No additional experiment was run in this atlas update.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Synthetic normalized, non-Gaussian histories and known plant during supervised training; no biological validation.",
+      "Intervals are conditional on three trained models, not many independent training repetitions.",
+      "Disturbance displacement enters the objective; the pure Gaussian covariance-only no-adaptation argument does not apply.",
+      "Protocol/checkpoints were locally frozen before testing; no earlier public preregistration is claimed.",
+      "The 36.2% and Kuulustelu gains have different datasets, losses, write laws, action access and controls, so their magnitudes are not directly comparable."
+    ],
+    "source": "https://github.com/anttiluode/LensLuotainTarget/blob/53446ebab80c4363aaceea13844a1639ee7d928a/SPIKE_RESULTS.md"
   }
 ]

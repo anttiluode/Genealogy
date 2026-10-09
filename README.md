@@ -23,6 +23,58 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
+## 2026-10-09 — Kuulustelu: the reader needs the question's context
+
+The [threshold/context pass](data/passes/kuulustelu-threshold-context.json) adds
+[Kuulustelu](https://github.com/anttiluode/Kuulustelu) to the wall, census,
+Evidence and Questions views. It records five sourced links to
+LensLuotainTarget, Varjoluotain, Sihti, the original PerceptionLab `ecg.json`
+accident and BrainAsInverseModeler. The reviewed snapshot is
+[`c8745f5`](https://github.com/anttiluode/Kuulustelu/tree/c8745f5a5fcbd5d9ba3d58a204e5774f1b23f4c3);
+Claude's ongoing work there is left unchanged.
+
+The first two rounds isolate why answer-memory helps ask the next question.
+With Gaussian history, linear graded reads and a covariance-only objective,
+query uncertainty depends on the gates rather than the observed answers.
+Threshold reads change that: adaptive spike questions reduce normalized
+prediction error from **0.1216 to 0.0381** at eight reads. Correlation between
+directions or revisiting an already-read direction gives earlier answers a
+way to move the useful next threshold. The headline prior is nearly
+one-dimensional; the result is not a universal 68.7% advantage.
+
+Round 3's learned receivers beat trained fixed schedules by **52.7%, 78.4% and
+76.6%**, chiefly by moving thresholds. The learned graded control **fails**
+its frozen ±15% band and stays failed after diagnosis. Separately,
+[LensLuotainTarget's binary experiment](https://github.com/anttiluode/LensLuotainTarget/blob/53446ebab80c4363aaceea13844a1639ee7d928a/SPIKE_RESULTS.md)
+earns **36.2%** lower answer MSE than trained fixed queries, but its extra
+adaptive branch-selection criterion fails at **0.44%**. Different histories,
+losses, read disturbance and training methods make the gain magnitudes
+incomparable; the threshold finding is the convergence.
+
+Round 4 adds a receiver boundary. A known self-driven threshold rule replays
+exactly from the answers the reader already sees. When thresholds also use
+unseen neighbour answers, the importance-sampled marginal decoder has error
+**0.541**, versus **0.109** for the fixed sender using the same estimator
+family. Sequence likelihoods are enumerated exactly, but posterior estimates
+use finite particles. The synthetic Gaussian tag does not measure how well a
+biological spike waveform reveals its threshold.
+
+The field-sharing claim also has a recorded failure: lossless nearest-neighbour
+answer sharing improves private centring by **8.2%**, below its predeclared
+**10%** kill criterion. The model shares bits rather than extracellular
+voltage, ions or pump state. This limits a large benefit in the tested task;
+it does not rule out field computation. Adaptive coding and decoder context
+already have biological prior art, including
+[Fairhall et al., Nature 2001](https://doi.org/10.1038/35090500).
+
+The new partially resolved question asks whether a downstream reader can
+recover the adaptive question from population or shared-rhythm context.
+Round 5 has a committed protocol and implementation at the reviewed snapshot,
+but **no committed outcome receipt**. A sinusoidal phase-tag variance identity
+alone does not make its channel equivalent to a Gaussian tag with the same R².
+The original ECG-like loop, optical masks and synthetic spike questions meet
+at controlled observation and feedback; they remain different mechanisms.
+
 ## 2026-10-09 — LensLuotainTarget: choose what becomes observable
 
 The [active-shadow pass](data/passes/lens-luotain-target.json) adds
@@ -49,8 +101,9 @@ operator neuron. The optical mask changes measurement of a static scene;
 feedback and oscillator reads can also change the state being observed.
 
 [BrainAsInverseModeler](https://github.com/anttiluode/BrainAsInverseModeler)
-supplies a related, still proposed neural question: can branch gates expose
-retained hidden distinctions through a limited somatic output? The new open
+supplies a related neural question: can branch gates expose retained hidden
+distinctions through a limited somatic output? The later controlled neural
+analogues are audited separately in the Kuulustelu pass above. The optical open
 question first tests whether active optical probes can detect an omitted true
 scene or wrong transport instead of confidently selecting a wrong candidate.
 

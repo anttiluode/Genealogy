@@ -1,0 +1,89 @@
+{
+  "id": "kuulustelu-threshold-context",
+  "title": "Kuulustelu: adaptive thresholds and the reader's question context",
+  "summary": "Kuulustelu separates two questions in the memory-to-gate-to-soma line: when previous answers help select the next threshold, and whether a downstream reader can reconstruct that threshold. Programmed and learned synthetic receivers support threshold adaptation; the learned graded control fails, and lossless neighbourhood sharing misses its declared 10% benefit. LensLuotainTarget independently earns learned binary querying while failing the additional branch-selection claim. The original PerceptionLab ecg.json feedback accident and Varjoluotain's occluder remain documentary and conceptual connections, not the same mechanism. Round 5 is in progress at the pinned snapshot; no population-reader result is imported.",
+  "order": 590,
+  "reviewed_at": "2026-10-09",
+  "nodes": [
+    {
+      "id": "Kuulustelu",
+      "url": "https://github.com/anttiluode/Kuulustelu",
+      "family": "probe-inference",
+      "status": "experiment",
+      "claim": "Tests which nonlinear read makes receiver answer-memory useful, then tests whether a reader can decode adaptive spikes when the threshold also depends on unseen neighbour answers.",
+      "survived": "Round 1: eight noisy threshold reads reduce normalized prediction error from 0.1216 to 0.0381 (68.7%) for Gaussian leaky branch traces; graded covariance-only query choice is answer-independent. Round 2 isolates correlated directions and revisiting as routes to threshold gains. Round 3: learned adaptive receivers beat trained fixed schedules in all three initializations (52.7%, 78.4%, 76.6%), chiefly by changing thresholds. Round 4: self-driven thresholds replay exactly from known rules and visible bits; with unseen neighbour input, an importance-sampled marginal decoder has error 0.541 versus 0.109 for the fixed sender scored by the same estimator.",
+      "killed": "The 68.7% headline uses a nearly one-dimensional prior, and graded scalar answers remain more accurate per read. The learned graded ±15% control fails. Lossless nearest-neighbour sharing improves private centring by 8.2%, below its frozen 10% kill criterion; the addressed-vs-metric comparison also fails its 10% gate. The field shares bits, not ions or extracellular voltage; the waveform tag is synthetic. Reused evaluation worlds, finite-particle decoding, per-read threshold control and three training initializations limit the result. No new theorem, biological neuron, broad AI architecture advantage or completed round-5 population result is established.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Kuulustelu/blob/c8745f5a5fcbd5d9ba3d58a204e5774f1b23f4c3/RESULTS_4.md",
+      "tags": [
+        "adaptive-threshold",
+        "one-bit-read",
+        "active-sensing",
+        "receiver-context",
+        "branch-memory",
+        "graded-control",
+        "shared-field-limit",
+        "held-out",
+        "learned-policy"
+      ],
+      "era": "Adaptive questions need decodable context",
+      "era_order": 77
+    }
+  ],
+  "edges": [
+    {
+      "source": "LensLuotainTarget",
+      "target": "Kuulustelu",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "The README explicitly starts from LensLuotainTarget's receiver-guided branch-memory gate and isolates nonlinear thresholding as a separate route to adaptive gains. The Gaussian covariance argument does not refute Lens's non-Gaussian histories, state-displacement objective or finite learned receivers. Lens's later binary ablations converge on threshold adaptation, with no earned extra benefit from adaptive branch selection.",
+      "evidence": "https://github.com/anttiluode/Kuulustelu/blob/c8745f5a5fcbd5d9ba3d58a204e5774f1b23f4c3/README.md"
+    },
+    {
+      "source": "Varjoluotain",
+      "target": "Kuulustelu",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The README names Varjoluotain's known occluder as the observation-operator analogy. Kuulustelu changes a gate and threshold before a binary answer is emitted, and tests whether the reader knows that operator; it does not reproduce optical transport or real images.",
+      "evidence": "https://github.com/anttiluode/Kuulustelu/blob/c8745f5a5fcbd5d9ba3d58a204e5774f1b23f4c3/README.md"
+    },
+    {
+      "source": "Sihti",
+      "target": "Kuulustelu",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The README explicitly connects command-dependent read/write updates to Sihti's asked-residue plus unasked-core decomposition. This is a documented mathematical comparison; code inheritance, biological erasure and efficiency over standard recurrent memory are not inferred.",
+      "evidence": "https://github.com/anttiluode/Kuulustelu/blob/c8745f5a5fcbd5d9ba3d58a204e5774f1b23f4c3/README.md"
+    },
+    {
+      "source": "GeometricNeuronOriginReview",
+      "target": "Kuulustelu",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Curatorial connection to the original PerceptionLab ecg.json accident named in Kuulustelu's README. The common question is how changing a nonlinear observation inside feedback changes the subsequent trajectory. Kuulustelu does not simulate the resize/aliasing/controller loop, and the old ECG-like pulse is not evidence for biological spikes.",
+      "evidence": "https://github.com/anttiluode/Kuulustelu/blob/c8745f5a5fcbd5d9ba3d58a204e5774f1b23f4c3/README.md"
+    },
+    {
+      "source": "BrainAsInverseModeler",
+      "target": "Kuulustelu",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Curatorial comparison, not asserted code ancestry: BrainAsInverseModeler asks separately what hidden state is retained, what reaches the output and what a receiver can recover. Kuulustelu supplies a synthetic discriminator for the last stage: known adaptive thresholds can decode well, while hidden neighbour-driven threshold context can make the same binary channel difficult to interpret.",
+      "evidence": "https://github.com/anttiluode/Kuulustelu/blob/c8745f5a5fcbd5d9ba3d58a204e5774f1b23f4c3/RESULTS_4.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "adaptive-question-and-reader-context",
+      "title": "An adaptive answer needs a question the reader can reconstruct",
+      "description": "Changing a mask, branch gate or threshold can expose retained distinctions through a limited channel. When the question depends only on a known rule and answers the reader has already seen, its context can be replayed. Unseen external inputs can move the question in ways the reader must separately infer. LensLuotainTarget and Kuulustelu support learned threshold adaptation under different synthetic conditions; Kuulustelu's hidden-context and failed field-sharing gates limit a broad neuronal interpretation. These comparisons do not establish one physical mechanism or a new theory of neural coding.",
+      "nodes": [
+        "Varjoluotain",
+        "BrainAsInverseModeler",
+        "LensLuotainTarget",
+        "Kuulustelu"
+      ]
+    }
+  ]
+}

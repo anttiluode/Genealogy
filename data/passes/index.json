@@ -338,5 +338,9 @@
   {
     "path": "lens-luotain-target.json",
     "enabled": true
+  },
+  {
+    "path": "kuulustelu-threshold-context.json",
+    "enabled": true
   }
 ]
