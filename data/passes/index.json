@@ -350,5 +350,9 @@
   {
     "path": "live-prediction-corner-camera.json",
     "enabled": true
+  },
+  {
+    "path": "crystal-moon.json",
+    "enabled": true
   }
 ]

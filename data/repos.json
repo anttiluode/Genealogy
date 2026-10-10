@@ -1155,6 +1155,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "CrystalMoon",
+    "url": "https://github.com/anttiluode/CrystalMoon",
+    "default_branch": "main",
+    "size": 26,
+    "visibility": "public",
+    "description": "Opus 55",
+    "created_at": "2026-10-09T16:48:19Z",
+    "updated_at": "2026-10-10T05:00:39Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "cubetrix",
     "url": "https://github.com/anttiluode/cubetrix",
     "default_branch": "main",
