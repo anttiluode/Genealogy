@@ -1158,7 +1158,7 @@
     "name": "CrystalMoon",
     "url": "https://github.com/anttiluode/CrystalMoon",
     "default_branch": "main",
-    "size": 1248,
+    "size": 1249,
     "visibility": "public",
     "description": "Opus 55",
     "created_at": "2026-10-09T16:48:19Z",
@@ -1851,11 +1851,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 1630,
+    "size": 1820,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-10-10T05:14:35Z",
+    "updated_at": "2026-10-10T07:16:53Z",
     "inventory_status": "unread"
   },
   {
