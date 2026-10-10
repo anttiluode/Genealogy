@@ -762,5 +762,83 @@
       "A fixed prediction residual is not automatically useful for a very weak optical signal; background adaptation can absorb the signal and differentiation can amplify noise.",
       "No universal 0.1% signal amplitude, zero-install novelty or guaranteed phone compatibility is assumed."
     ]
+  },
+  {
+    "id": "moonformer-inversion-vs-ordinary-receivers",
+    "title": "Does the moon receiver geometry improve memory reading at an equal probe budget?",
+    "state": "open",
+    "motifs": [
+      "retained-structure-read-through-consequences"
+    ],
+    "evidence": [
+      "moonformer-retained-state-response-controls",
+      "moonformer-local-jacobian-and-read-only-probes"
+    ],
+    "competing_explanations": [
+      "Inversion places receiver support at useful locations and makes retained histories easier to distinguish with a limited noisy readout.",
+      "Any comparable receiver geometry exposes the same material-dependent wave information; the moon mainly provides an interesting coordinate interface."
+    ],
+    "known": [
+      "The wave readout identifies 25/32 held-out variants after 6,000 input-free field steps, tying a 64-feature direct-density reader.",
+      "Erasure and disabled coupling reduce the frozen wave readout to 8/32 chance; donor substitution reproduces donor responses.",
+      "The inversion map and exact transpose participate in the measured reader, but no equal-budget ordinary-receiver comparison exists."
+    ],
+    "missing_discriminator": "An ordinary-versus-inversion receiver comparison with matched sources, receiver count, time bins, training examples, model selection and noise, evaluated on fresh held-out seeds.",
+    "candidate_experiment": {
+      "design": "Freeze the material/writing protocol and compare inversion-mapped receivers with ordinary spatial receivers at the same 96-feature and four-source budget. Select receiver and ridge settings using training/validation data only, then precommit fresh test seeds and delays. Include a noise sweep and the same erasure, coupling-off and donor controls; report errors and response separation across several splits.",
+      "cost": "small-to-medium: reuse the dependency-free CPU simulator and add one receiver family, matched fitting and fresh-seed evaluation",
+      "outcomes": [
+        {
+          "if": "Inversion retains a consistent held-out accuracy or noise-tolerance advantage at equal budgets",
+          "then": "The moon gains evidence as a useful receiver geometry beyond its current role as a working interface."
+        },
+        {
+          "if": "Ordinary receivers match or exceed inversion across fresh splits and noise levels",
+          "then": "Retained-state reading remains supported, while inversion should be described as a display/interface choice without a demonstrated retrieval advantage."
+        }
+      ]
+    },
+    "notes": [
+      "This comparison does not settle partial-cue reconstruction, multiple-memory interference or adaptive association; those require separate experiments."
+    ]
+  },
+  {
+    "id": "temporal-consequence-state-identification",
+    "title": "Can a blind reader distinguish equal present views through their future consequences?",
+    "state": "open",
+    "motifs": [
+      "hidden-state-lens-and-temporal-observability"
+    ],
+    "evidence": [
+      "phi-master-vector-fixed-lens-nullspace",
+      "moonformer-sign-pair-temporal-observability"
+    ],
+    "competing_explanations": [
+      "Several physically specified probes or delays expose hidden-state distinctions that a single present view cannot reveal, allowing a trained reader to predict held-out consequences.",
+      "The apparent distinction is limited to deliberately constructed pairs or queries chosen with hidden-state knowledge; a blind reader gains little at a matched measurement cost."
+    ],
+    "known": [
+      "The fixed phi master lens has a 988-dimensional complex nullspace; a designed common rotation distinguishes an initially identical-view pair.",
+      "MoonFormer m/-m has identical current density and wave responses, then diverges under g=1.2; g=0 preserves equality across the four measured times.",
+      "Neither audit trains a blind query policy or tests unseen state-pair retrieval."
+    ],
+    "missing_discriminator": "A precommitted fresh-state experiment in which the reader sees only measured responses and chooses or receives queries/delays without access to the hidden state, with matched-cost static and temporal controls.",
+    "candidate_experiment": {
+      "design": "Generate a panel of state pairs matched on their permitted initial readings. Supply a known forward simulator and independent ground truth outside the reader. Fit readers or query policies on separate training pairs, then freeze and evaluate fresh pairs for state discrimination and prediction of withheld future responses. Compare fixed, random and adaptive queries at the same probe, delay and noise costs; retain symmetry/no-mixing null controls.",
+      "cost": "medium: reuse the CPU simulators, add matched-pair generation, observation-only policies and fresh-seed evaluation",
+      "outcomes": [
+        {
+          "if": "A blind temporal reader predicts withheld responses and distinguishes fresh equal-view states while static and symmetry controls remain ambiguous",
+          "then": "Temporal consequences earn an observable-state identification result beyond the current constructed examples."
+        },
+        {
+          "if": "Performance requires access to hidden states, hand-picked separating queries or substantially larger observation budgets",
+          "then": "Keep the current result as an engineered observability example and narrow the adaptive retrieval claim."
+        }
+      ]
+    },
+    "notes": [
+      "This question concerns computational observability; it does not identify a unique source of the physical universe or establish a cognitive experience."
+    ]
   }
 ]

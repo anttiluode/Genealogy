@@ -1,0 +1,57 @@
+{
+  "id": "moonformer-memory-consequences",
+  "title": "CrystalMoon → MoonFormer: read retained structure through its consequences",
+  "reviewed_at": "2026-10-10",
+  "order": 620,
+  "summary": "MoonFormer turns the original CrystalMoon's pattern field, local clock, density lens and inversion into a two-timescale memory experiment. A geometric teaching input is withdrawn for 6,000 field steps; fixed waves then probe the retained material through moon receivers. A learned readout identifies 25/32 held-out variants, tying direct density access. Erasure and disabled material coupling give 8/32 chance performance; substituted states reproduce their donors' responses. An actual reverse Jacobian traces receiver sensitivity back to the material. This demonstrates a small synthetic state-dependent reader, not semantic recall, a transformer, adaptive association or a brain model.",
+  "nodes": [
+    {
+      "id": "MoonFormer",
+      "url": "https://github.com/anttiluode/MoonFormer",
+      "family": "field-memory",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A slow 2-D scalar Swift–Hohenberg field retains a history-dependent crystalline state after teaching input is removed. Fast, read-only wave probes turn its density into receiver responses through a bounded antipodal inversion map. A supervised ridge readout uses the responses alone; a numerically checked local Jacobian shows which material perturbations would change a selected reading. The browser instrument exposes erasure, state substitution, coupling-off and numerical memory export/import.",
+      "survived": "At the pinned v0 source, 64 training episodes and 32 separate-seed test variants of four known geometric families give 25/32 wave classifications after 6,000 unforced retention steps. Direct density access also gives 25/32; mean density alone gives 10/32. Erased, fixed and uncoupled media each give 8/32, while donor substitution exactly reproduces donor responses in 32/32 cases. All 12 Node checks were rerun for this atlas pass, including wave/density adjoints, finite-difference Jacobian checks, read-only probing, state controls and import safeguards. The original supplied CrystalMoon files are preserved separately.",
+      "killed": "The wave reader has not beaten direct field access, and inversion's benefit over ordinary receivers is untested. This is a small supervised four-family experiment on synthetic variants, not general or semantic memory, a transformer, attention or a language model. Retained patterns often grow beyond the teaching trail; amplitude survival alone does not establish faithful or indefinite recall. Probes are fixed and do not reconstruct an episode from a partial cue or choose a next association. The Jacobian is local sensitivity of a simulator response, not a meaning attribution or Anthropic's language-model J-space. No biological or conscious-experience claim follows.",
+      "evidence": "https://github.com/anttiluode/MoonFormer/blob/ef26aeff37a70ad5142e2b26b0eda333a83708a2/README.md",
+      "tags": [
+        "swift-hohenberg",
+        "structural-memory",
+        "two-timescales",
+        "wave-probes",
+        "density-lens",
+        "sphere-inversion",
+        "local-jacobian",
+        "learned-readout",
+        "erase-and-swap-controls",
+        "held-out-variants",
+        "no-direct-readout-advantage"
+      ],
+      "era": "Reading retained structure through downstream effects",
+      "era_order": 81
+    }
+  ],
+  "edges": [
+    {
+      "source": "CrystalMoon",
+      "target": "MoonFormer",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "MoonFormer's README explicitly names the supplied original, pre-webcam CrystalMoon as its source and preserves its core.js and walkable index.html byte-for-byte under reference/crystalmoon. The new 2-D implementation adapts the scalar Swift–Hohenberg flow, density-dependent clock, density lens and antipodal inversion into retained material plus fast probes. This is documented source/mechanism inheritance, not a claim that the original 3-D trail already passed the new memory experiment or that the current webcam version is the source.",
+      "evidence": "https://github.com/anttiluode/MoonFormer/blob/ef26aeff37a70ad5142e2b26b0eda333a83708a2/reference/crystalmoon/PROVENANCE.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "retained-structure-read-through-consequences",
+      "title": "Read retained structure through what it changes",
+      "description": "CrystalMoon makes a field affect its local dynamics and rendered optical paths. MoonFormer separates a slow, history-dependent structural medium from a fast read-only signal: past input changes material, material changes wave propagation, and receivers expose those consequences. Erasure, state substitution and coupling-off test that the response follows the medium; a local derivative connects a chosen response back to material sensitivity. The measured reader ties direct density access, and neither adaptive associative retrieval nor a special inversion advantage has been shown.",
+      "nodes": [
+        "CrystalMoon",
+        "MoonFormer"
+      ]
+    }
+  ]
+}

@@ -26,12 +26,12 @@
       "family": "synthetic-universe",
       "status": "idea-mine",
       "claim": "Collects a larger synthetic-universe workflow around best.py: next-state prediction, harmonic extraction, perturbation tests, symmetry/dimensional probes and a high-dimensional-vector interpretation are used to ask how an observer might infer compact laws from an artificial world.",
-      "survived": "The reusable workflow is simulate -> predict/extract -> perturb -> analyze -> compare interpretations. Because the world is synthetic, each proposed law can in principle be checked against known generator code instead of being accepted merely because a predictor or harmonic description fits observations.",
-      "killed": "The README itself warns that there is AI slop, hallucinated material and logical jumps. Statements that high prediction accuracy proves the physics is captured, that later algebra proves gauge or holographic structure, or that a reported master-vector coherence figure establishes a fundamental source are not earned by the documented evidence.",
+      "survived": "The reusable workflow is simulate -> predict/extract -> perturb -> analyze -> compare interpretations. The README explicitly credits the older SpaceScreensaver scenario, whose implementation is archived here. Another durable origin is state -> lens -> appearance: a hidden vector can admit several observationally identical sources, making the reader and its interventions part of the question. The October code/algebra revisit measures a rank-12 master lens with 988 invisible complex directions and connects this observability problem to MoonFormer's actual consequence probes. The synthetic generator remains available for checking proposed laws.",
+      "killed": "The README itself warns that there is AI slop, hallucinated material and logical jumps. Prediction or supplied harmonic reconstruction does not identify the source physics. The 131.47% figure is a sum over overlapping readout directions, not a captured-energy fraction or proof of holography: the specified frame permits 139.96% raw response for a unit state, while correct orthogonal projection is bounded by 100%. The fixed twelve-row lens cannot identify a unique 1000D source. Direct algebra controls also find an almost-identical supposed alien memory, phase steering erased by magnitude readout, and rank-two three-phase mixing. The origin of the ideas survives; cosmology, general recall and unique physics do not follow from these demos.",
       "usefulness": "conceptual",
       "confidence": "high",
-      "evidence": "https://github.com/anttiluode/phi-world-theory/blob/main/README.md",
-      "tags": ["synthetic-universe", "law-extraction", "prediction", "harmonics", "idea-mine", "epistemology"],
+      "evidence": "https://github.com/anttiluode/phi-world-theory/blob/4ce6f58c586993b5627cbeea6e6662780e1fadb9/README.md",
+      "tags": ["synthetic-universe", "law-extraction", "prediction", "harmonics", "idea-mine", "epistemology", "early-origin", "master-vector", "fixed-lens", "overlapping-frame", "observability", "independent-algebra-audit"],
       "era": "Synthetic universe / epistemology",
       "era_order": 2
     }

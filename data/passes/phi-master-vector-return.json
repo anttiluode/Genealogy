@@ -1,0 +1,62 @@
+{
+  "id": "phi-master-vector-return",
+  "title": "SpaceScreensaver → phi-world-theory: hidden state, lens and observable world",
+  "order": 615,
+  "reviewed_at": "2026-10-10",
+  "summary": "Revisits January's phi-world-theory as an origin of the hidden-state/lens question, rather than only a warning about speculative physics. Its archived SpaceScreensaver implementation matches the older repository apart from a leading blank line. An independent algebra audit finds a rank-12 fixed lens with 988 invisible complex directions; overlapping rows permit 139.96% raw summed response for a unit state, while the correctly weighted projection fraction is 100%. The speculation supplied useful questions about state, observation, dimensional lifting and memory. A source-inspected comparison connects those questions to MoonFormer without asserting undocumented direct code ancestry. A new controlled sign-pair experiment in MoonFormer shows identical present wave readings can conceal different future responses.",
+  "nodes": [
+    {
+      "id": "SpaceScreensaver",
+      "url": "https://github.com/anttiluode/SpaceScreensaver",
+      "family": "synthetic-universe",
+      "status": "idea-mine",
+      "usefulness": "conceptual",
+      "confidence": "high",
+      "claim": "An early interactive tensor-universe screensaver gives moving singularities random vector-valued cores, uses vector similarity to modulate a supplied force calculation, and displays a spatial field assembled from their positions and core summaries. It is an explicit conceptual and source ancestor of phi-world-theory.",
+      "survived": "The concrete origin is high-dimensional hidden state expressed through a low-dimensional spatial view. phi-world-theory's README explicitly credits the earlier fictional screensaver scenario, and its archived SpaceScreensaver.py matches this repository's Space_Screensaver.py apart from a leading blank line after newline normalization. The public repository dates to December 2024; the author's earlier idea date is not established by that creation timestamp.",
+      "killed": "The inspected screensaver has many per-particle vectors plus positions, velocities and a voxel field, rather than one demonstrated fundamental vector of the universe. Its forces, vector similarity and field display are supplied toy rules. No learned physical law, cosmological result, useful cognitive task or performance advantage is demonstrated. GUI behavior was source-inspected rather than rerun during this audit.",
+      "evidence": "https://github.com/anttiluode/SpaceScreensaver/blob/0024b592d24f1b1880c9b444de7fcc21b0142141/Space_Screensaver.py",
+      "tags": [
+        "early-origin",
+        "tensor-state",
+        "procedural-world",
+        "hidden-state",
+        "supplied-decoder",
+        "documented-source-ancestry"
+      ],
+      "era": "Vector-state universe and the observer's lens",
+      "era_order": 0
+    }
+  ],
+  "edges": [
+    {
+      "source": "SpaceScreensaver",
+      "target": "phi-world-theory",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "phi-world-theory explicitly identifies the older fictional SpaceScreensaver vector-universe scenario as an origin of best.py and its field ideas, and includes the older implementation as SpaceScreensaver.py. Comparing the two inspected files finds only one added leading blank line after newline normalization. This documents source and conceptual ancestry without validating the later cosmological interpretation.",
+      "evidence": "https://github.com/anttiluode/phi-world-theory/blob/4ce6f58c586993b5627cbeea6e6662780e1fadb9/README.md"
+    },
+    {
+      "source": "phi-world-theory",
+      "target": "MoonFormer",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "A source-inspected historical comparison: phi-world-theory asks how a high-dimensional state appears through a limited lens and how an observer could infer or recall it. MoonFormer reads a retained structural state through downstream wave responses and differentiates that actual response. The old lens is a supplied fixed linear map; the new transport depends on the material. Antti identifies the older repository as an origin of many of these ideas, but MoonFormer's README documents CrystalMoon as its direct implementation parent. This is conceptual convergence, not an asserted phi-to-MoonFormer file lineage.",
+      "evidence": "https://github.com/anttiluode/phi-world-theory/blob/4ce6f58c586993b5627cbeea6e6662780e1fadb9/1dspacescreensavervectorbecomesbestuniverse.py"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "hidden-state-lens-and-temporal-observability",
+      "title": "A hidden state is known through its views and consequences",
+      "description": "SpaceScreensaver supplies vector-valued hidden objects and a spatial display; phi-world-theory makes state → lens → appearance explicit. CrystalMoon makes material change its evolution and its optical view. MoonFormer separates retained material from fast probes. The shared question is what observations actually identify: a fixed rank-12 lens leaves a large nullspace, while time-dependent consequences can distinguish states that agree today. This is a computational comparison with documented early ancestry, not a claim that all equations, brains or physical universes are the same system.",
+      "nodes": [
+        "SpaceScreensaver",
+        "phi-world-theory",
+        "CrystalMoon",
+        "MoonFormer"
+      ]
+    }
+  ]
+}

@@ -82,3 +82,13 @@ Upstream reports a 25-step GPU/CPU difference of 1.5e-8 under headless SwiftShad
 There is a more specific timing boundary in `enterMoon()`: after promotion, the new child is seeded from the world just entered, not the departed outer world. That copy happens before exploring the promoted level. Its later flight trail therefore does not enter the already running child. The README's phrase “memory of the one you left” does not precisely describe the handoff. Current lineage carries a field at child creation, not the player's accumulated journey through its parent.
 
 The strongest continuation would preserve the present interaction and investigate a real consequence: does inherited field structure carry recoverable information about an earlier world beyond what its new level law and noise already predict? A comparison with zero inheritance and spectrum-matched scrambled inheritance could distinguish retained spatial information from a transient warm start. That is a proposed experiment, not a feature or result of this update.
+
+## Follow-on: MoonFormer
+
+[MoonFormer](https://github.com/anttiluode/MoonFormer) now makes the
+retained-material question into a separate 2-D experiment using the original
+pre-webcam CrystalMoon attachments. Its [review](2026-10-10-moonformer.md)
+records wave readout, erasure/substitution controls and a verified local
+Jacobian. The explicit CrystalMoon → MoonFormer edge is source/mechanism
+inheritance; the new 2-D result is not retroactive proof of semantic memory
+or persistent trails in the original 3-D world.

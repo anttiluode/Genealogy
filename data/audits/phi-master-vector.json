@@ -1,0 +1,48 @@
+{
+  "protocol": "phi-master-vector-algebra-v1",
+  "source_commit": "4ce6f58c586993b5627cbeea6e6662780e1fadb9",
+  "arithmetic": "independent NumPy Float64 reconstruction of the specified lens",
+  "frame": {
+    "ambient_complex_dimensions": 1000,
+    "readout_complex_rank": 12,
+    "complex_null_dimensions": 988,
+    "gram_eigenvalues": [
+      0.6504193687433372,
+      0.7064441651899911,
+      0.7720817646282142,
+      0.8114645912252978,
+      0.883021199064584,
+      0.9653553889989034,
+      1.0140608004977587,
+      1.0918883786941673,
+      1.1498320898572105,
+      1.2473240824055538,
+      1.308474633239299,
+      1.3996335374556854
+    ],
+    "largest_off_diagonal_overlap": 0.14607756937930844,
+    "normalized_state_raw_power_maximum": 1.3996335374556854,
+    "correct_orthogonal_projection_fraction_at_maximum": 1.0000000000000002,
+    "expected_raw_power_for_isotropic_unit_state": 0.012,
+    "three_dimensional_direction_frame_error": 4.499926279817525e-16
+  },
+  "indistinguishable_unit_states": {
+    "state_distance": 1.9878198899788118,
+    "initial_response_difference": 1.7031239098138055e-16,
+    "null_direction_response_norm": 1.7080628006865076e-16,
+    "engineered_common_rotation_radians": 0.12,
+    "response_difference_after_common_rotation": 0.24407818814715157
+  },
+  "example_controls": {
+    "supposed_alien_memory_overlap": 0.9939743364783579,
+    "navigator_phase_rotation_magnitude_error": 2.7755575615628914e-17,
+    "three_phase_tags_real_rank": 2,
+    "three_phase_tags_common_signal_null_residual": 4.002966042486721e-16
+  },
+  "limitations": [
+    "Does not reproduce the unseeded PyTorch optimization or authenticate the reported 131.47% run.",
+    "The upstream Float32 construction has rounding differences; this independently checks the stated formula in Float64.",
+    "The paired-state rotation is constructed using a known null direction, not learned or selected without access to the states.",
+    "Code/algebra controls do not benchmark learned recall, full field physics, GUI rendering or biological mechanisms."
+  ]
+}
