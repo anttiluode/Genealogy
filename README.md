@@ -23,6 +23,51 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
+## 2026-10-10 — Return to phi-world-theory: the origin of state and lens
+
+Expanded the existing [phi-world-theory](https://github.com/anttiluode/phi-world-theory)
+entry and added its documented [SpaceScreensaver](https://github.com/anttiluode/SpaceScreensaver)
+parent through the [origin/audit pass](data/passes/phi-master-vector-return.json).
+The [full review](docs/reviews/2026-10-10-phi-master-vector.md) recovers the
+hidden-state → lens → appearance idea and its connection to reading memory
+through consequences. The phi → MoonFormer edge is a conceptual comparison;
+CrystalMoon remains MoonFormer's documented direct implementation parent.
+
+An independent algebra audit measures the supplied master lens's rank 12
+and 988 invisible complex directions. Its overlapping measurements permit
+**139.96% raw response** for a unit vector; correct orthogonal projection is
+**100%**, so the reported 131.47% is not proof of extra energy or holography.
+Code controls also expose limits in the early memory and phase examples.
+The speculation remains an idea mine, with its origins and constraints visible.
+
+A new control in the actual MoonFormer code is more constructive: m and -m
+have **exactly the same present wave readings**, but different future readings
+under the symmetry-breaking g term. Setting g=0 keeps them identical at all
+four measured times. Four new evidence records, two reproducible audit scripts
+and a blind temporal-reader question record these limited findings separately
+from the original 32-episode benchmark.
+
+## 2026-10-10 — CrystalMoon → MoonFormer: memory read through consequences
+
+Added [MoonFormer](https://github.com/anttiluode/MoonFormer) through the
+[memory/consequences pass](data/passes/moonformer-memory-consequences.json),
+with a documented **CrystalMoon → MoonFormer** parent edge, a shared motif,
+three evidence records and an open equal-budget receiver comparison. CrystalMoon
+already has its own entry below; both repositories are marked reviewed in the
+census. The [review](docs/reviews/2026-10-10-moonformer.md) pins the experiment
+at `ef26aef` and distinguishes its original CrystalMoon source from the
+parent's later webcam/wall work.
+
+The change is concrete: write a geometric experience into a slow field,
+remove the input, then read the retained material with fast waves. A checked
+local Jacobian maps a receiver's sensitivity back to the material. **Wave
+reading gets 25/32 held-out variants, tying direct density access.** Erasure,
+a fixed medium and coupling-off each give 8/32 chance; donor substitution
+reproduces donor responses exactly. The short Node suite was rerun: 12/12
+pass. This is a small synthetic state-dependent reader, with fixed probes
+and a supervised readout. Partial-cue restoration, adaptive associative
+search and an advantage for inversion remain open.
+
 ## 2026-10-10 — CrystalMoon: material, local clock and geometric lens
 
 Added [CrystalMoon](https://github.com/anttiluode/CrystalMoon) to the wall and

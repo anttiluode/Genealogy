@@ -1,0 +1,87 @@
+{
+  "protocol": "moonformer-sign-pair-v1",
+  "source_commit": "ef26aeff37a70ad5142e2b26b0eda333a83708a2",
+  "source_sha256": {
+    "src/field.js": "8f13f879c6f0a103b0b911491762f74f748b85fe297cfb37fd5be83666471af2",
+    "src/probe.js": "7cbae7e0669e051206710bdab4afb26870608cfe41163004e8286161e037edb0",
+    "src/moon.js": "9afeebc3670e8ad45e58c9cb5043c5cdc4f3f34971e9d72395480bd9a6486b51",
+    "src/write.js": "3267d206072bb2cc2c4a8ed7c152210d2cbcb59fbffcc08748882447b59a439f"
+  },
+  "teaching": {
+    "shape": "arc",
+    "seed": 3001,
+    "writeSteps": 1500,
+    "retainSteps": 6000
+  },
+  "field": {
+    "n": 32,
+    "lambda": 6,
+    "g": 1.2,
+    "T": 1.5,
+    "epsilon": -0.1
+  },
+  "readings": [
+    {
+      "g": 1.2,
+      "steps": 0,
+      "densityDifferenceRms": 0,
+      "responseDifferenceRms": 0,
+      "mirrorFieldResidualRms": 0
+    },
+    {
+      "g": 1.2,
+      "steps": 1,
+      "densityDifferenceRms": 0.006872391768515359,
+      "responseDifferenceRms": 0.00047744725369096676,
+      "mirrorFieldResidualRms": 0.007834544490439563
+    },
+    {
+      "g": 1.2,
+      "steps": 100,
+      "densityDifferenceRms": 0.1380313055223913,
+      "responseDifferenceRms": 0.011859276397591689,
+      "mirrorFieldResidualRms": 0.21892559771681985
+    },
+    {
+      "g": 1.2,
+      "steps": 500,
+      "densityDifferenceRms": 0.16195409219773085,
+      "responseDifferenceRms": 0.01519795790049959,
+      "mirrorFieldResidualRms": 0.3259197440814385
+    },
+    {
+      "g": 0,
+      "steps": 0,
+      "densityDifferenceRms": 0,
+      "responseDifferenceRms": 0,
+      "mirrorFieldResidualRms": 0
+    },
+    {
+      "g": 0,
+      "steps": 1,
+      "densityDifferenceRms": 0,
+      "responseDifferenceRms": 0,
+      "mirrorFieldResidualRms": 0
+    },
+    {
+      "g": 0,
+      "steps": 100,
+      "densityDifferenceRms": 0,
+      "responseDifferenceRms": 0,
+      "mirrorFieldResidualRms": 0
+    },
+    {
+      "g": 0,
+      "steps": 500,
+      "densityDifferenceRms": 0,
+      "responseDifferenceRms": 0,
+      "mirrorFieldResidualRms": 0
+    }
+  ],
+  "limitations": [
+    "One deliberately engineered sign pair, not two independently learned histories or a general retrieval benchmark.",
+    "Identical initial density and wave responses; the signed material display itself need not look identical.",
+    "The g=0 control changes the evolution law while starting from the same constructed material.",
+    "No classifier, query-selection policy, partial-cue completion or semantic memory is evaluated."
+  ]
+}

@@ -4636,5 +4636,364 @@
     "motifs": [
       "field-state-changes-growth-and-view"
     ]
+  },
+  {
+    "id": "moonformer-retained-state-response-controls",
+    "node": "MoonFormer",
+    "claim": "After teaching input is withdrawn, wave responses distinguish some retained geometric histories and follow the numerical medium under erasure, state substitution and coupling-off. The wave reader ties direct density access rather than establishing an advantage over it.",
+    "design": "Audit moonformer-geometric-memory-v1: 64 training episodes, 32 separate-seed variants of four familiar shape families, 1,500 writing steps followed by 6,000 unforced field steps. Freeze a training-only normalized ridge readout of 96 wave features; compare a separately trained 64-feature direct-density reader and a mean-density reader. Apply erasure, one fixed medium, disabled coupling, shuffled training labels and donor substitution.",
+    "result": "supports",
+    "sample": {
+      "unit": "held-out synthetic variants of four known geometric families",
+      "count": 32
+    },
+    "metrics": [
+      {
+        "name": "training episodes",
+        "value": 64
+      },
+      {
+        "name": "input-free retention steps before reading",
+        "value": 6000
+      },
+      {
+        "name": "correct / total, wave responses",
+        "value": [
+          25,
+          32
+        ]
+      },
+      {
+        "name": "correct / total, direct density",
+        "value": [
+          25,
+          32
+        ]
+      },
+      {
+        "name": "correct / total, mean density",
+        "value": [
+          10,
+          32
+        ]
+      },
+      {
+        "name": "correct / total, erased material",
+        "value": [
+          8,
+          32
+        ]
+      },
+      {
+        "name": "correct / total, one fixed material",
+        "value": [
+          8,
+          32
+        ]
+      },
+      {
+        "name": "correct / total, coupling disabled",
+        "value": [
+          8,
+          32
+        ]
+      },
+      {
+        "name": "correct / total, shuffled training labels",
+        "value": [
+          7,
+          32
+        ]
+      },
+      {
+        "name": "correct / total, donor scored against original history",
+        "value": [
+          2,
+          32
+        ]
+      },
+      {
+        "name": "exact donor response agreement",
+        "value": 1
+      },
+      {
+        "name": "maximum feature difference with coupling disabled",
+        "value": 0
+      }
+    ],
+    "controls": [
+      "teaching trail and both writing drives absent before reading",
+      "direct density and scalar density baselines",
+      "erased and fixed numerical material",
+      "material-to-wave coupling disabled",
+      "training labels shuffled before fitting",
+      "donor numerical state substituted while original history labels remain"
+    ],
+    "replication": "Reviewed source and committed receipt at ef26aef; reran the 12/12 Node suite for this atlas addition. Receipt/model reproduction and an independent whole-branch reproduction are recorded in the implementation review. This pass does not claim a separate new dataset or independent full benchmark rerun.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Only 32 test variants of four known families, not unseen shapes, images or semantic episodes.",
+      "Wave and direct readers use different feature budgets (96 versus 64); they tie on this test.",
+      "Physical parameters, wave sources and moon receiver geometry are supplied; only the readout is learned.",
+      "Inversion has not been compared with ordinary receivers at equal budgets.",
+      "Field patterns often expand beyond the teaching trail; longer amplitude retention is not evidence of longer decoder accuracy.",
+      "No multi-memory interference, partial-cue reconstruction, adaptive query selection or recurrent associative retrieval is demonstrated."
+    ],
+    "source": "https://github.com/anttiluode/MoonFormer/blob/ef26aeff37a70ad5142e2b26b0eda333a83708a2/results/experiment.json",
+    "motifs": [
+      "retained-structure-read-through-consequences"
+    ]
+  },
+  {
+    "id": "moonformer-local-jacobian-and-read-only-probes",
+    "node": "MoonFormer",
+    "claim": "The implemented local receiver Jacobian agrees with actual small material perturbations, and the clipped inversion sampler has the discrete transpose used by reverse differentiation. Reading does not mutate the retained medium.",
+    "design": "Rerun the complete 12-check Node suite at ef26aef, including central directional differences in early and late bins, the inversion interpolation dot-product identity, density-blur and wave-operator symmetry, read-only probing, coupling-off and substituted-state responses. Review the reverse recurrence and density chain rule.",
+    "result": "supports",
+    "sample": {
+      "unit": "published Node checks, including derivative and state-control checks",
+      "count": 12
+    },
+    "metrics": [
+      {
+        "name": "Node checks passed / total",
+        "value": [
+          12,
+          12
+        ]
+      },
+      {
+        "name": "central-difference perturbation size",
+        "value": 0.0001
+      }
+    ],
+    "controls": [
+      "reverse derivative versus independently recomputed central finite differences",
+      "early and late receiver time bins",
+      "forward inversion sampling versus exact interpolation-weight transpose",
+      "retained field values before and after reading",
+      "independent numerical donor substituted without changing the fixture label"
+    ],
+    "replication": "All 12 Node checks rerun for this atlas pass at the pinned source; inspected tests/physics.test.cjs, tests/readout.test.cjs and docs/architecture.md. The repository also records a separate whole-branch derivative review, which is reported rather than newly repeated here.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Engineered numerical checks, not validation on biological or external data.",
+      "A local signed-field derivative is sensitivity, not semantic attribution or a guarantee for finite erasure.",
+      "The wave reads a frozen structural snapshot; no read/write feedback loop is tested.",
+      "A coordinate involution does not make the clipped interpolation map its own adjoint.",
+      "This is not Anthropic language-model J-space, a transformer implementation or evidence of conscious recall."
+    ],
+    "source": "https://github.com/anttiluode/MoonFormer/blob/ef26aeff37a70ad5142e2b26b0eda333a83708a2/tests/physics.test.cjs",
+    "motifs": [
+      "retained-structure-read-through-consequences"
+    ]
+  },
+  {
+    "id": "phi-master-vector-overlapping-frame-power",
+    "node": "phi-world-theory",
+    "claim": "The master-vector raw squared-response sum is a captured-energy fraction, and a value of 131.47% establishes holographic resonance.",
+    "design": "Independently reconstruct the specified findmastervector2.py twelve-row lens in NumPy Float64, normalize rows, compute its Gram spectrum, and evaluate a unit vector from the leading singular direction. Compare raw response sum with the correctly Gram-weighted orthogonal projection fraction.",
+    "result": "contradicts",
+    "sample": {
+      "unit": "specified normalized complex lens rows",
+      "count": 12
+    },
+    "metrics": [
+      {
+        "name": "maximum raw summed response for unit state",
+        "value": 1.3996335374556854
+      },
+      {
+        "name": "orthogonal projection fraction for that state",
+        "value": 1.0
+      },
+      {
+        "name": "smallest / largest Gram eigenvalue",
+        "value": [
+          0.6504193687433372,
+          1.3996335374556854
+        ]
+      },
+      {
+        "name": "largest row overlap magnitude",
+        "value": 0.14607756937930844
+      },
+      {
+        "name": "expected raw response for isotropic unit state",
+        "value": 0.012
+      }
+    ],
+    "controls": [
+      "unit state norm",
+      "row-normalized lens",
+      "raw response versus Gram-corrected projection",
+      "3D tight-frame identity versus the distinct 1000D extension"
+    ],
+    "replication": "Ran the committed scripts/audit_phi_master_vector.py and saved data/audits/phi-master-vector.json. This independently checks the stated formula; the unseeded upstream PyTorch training and its exact 131.47% run were not repeated.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Float64 reconstruction differs from upstream Float32 rounding.",
+      "This is an algebraic counterexample to the energy interpretation, not a rerun of the original optimizer or world simulation.",
+      "Nonorthogonal analysis responses can exceed unit norm without violating conservation; their sum is not an entropy or semantic-information measure."
+    ],
+    "source": "https://github.com/anttiluode/phi-world-theory/blob/4ce6f58c586993b5627cbeea6e6662780e1fadb9/findmastervector2.py",
+    "motifs": [
+      "model-is-not-source-mechanism",
+      "hidden-state-lens-and-temporal-observability"
+    ]
+  },
+  {
+    "id": "phi-master-vector-fixed-lens-nullspace",
+    "node": "phi-world-theory",
+    "claim": "The supplied fixed master lens leaves 988 complex directions unobserved; different normalized source vectors can produce exactly the same complete twelve-coefficient view. An additional operator that mixes hidden and visible directions can distinguish a constructed pair.",
+    "design": "Measure rank of the specified 12x1000 complex matrix. Split one seeded unit state into its orthogonal observed and null components, reverse only the null component to create a second unit state, and compare full complex readouts. Apply the same deliberately constructed 0.12-radian unitary rotation in one visible/null plane to both states.",
+    "result": "supports",
+    "sample": {
+      "unit": "constructed unit source states",
+      "count": 2
+    },
+    "metrics": [
+      {
+        "name": "complex lens rank",
+        "value": 12
+      },
+      {
+        "name": "complex nullspace dimensions",
+        "value": 988
+      },
+      {
+        "name": "paired unit-state distance",
+        "value": 1.9878198899788118
+      },
+      {
+        "name": "initial complete-readout difference norm",
+        "value": 1.7031239098138055e-16
+      },
+      {
+        "name": "readout difference after common designed rotation",
+        "value": 0.24407818814715157
+      }
+    ],
+    "controls": [
+      "both source states normalized to one",
+      "all complex coefficients agree, not merely rendered appearance",
+      "same additional rotation applied to both states"
+    ],
+    "replication": "Independently ran scripts/audit_phi_master_vector.py; receipt includes the lens spectrum and controlled unit-state pair. Reviewed the downstream renderer: it uses these twelve amplitudes, so added spatial samples cannot reveal their fixed-lens nullspace.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "The additional rotation uses knowledge of the constructed null direction; no blind adaptive policy discovers it.",
+      "This does not measure all possible readers or infer actual cosmological dimensions.",
+      "The vector renderer is a supplied harmonic construction, not the causal nonlinear best.py simulator."
+    ],
+    "source": "https://github.com/anttiluode/Genealogy/blob/main/data/audits/phi-master-vector.json",
+    "motifs": [
+      "model-is-not-source-mechanism",
+      "hidden-state-lens-and-temporal-observability"
+    ]
+  },
+  {
+    "id": "phi-memory-phase-and-mixing-controls",
+    "node": "phi-world-theory",
+    "claim": "The supplied resonance examples establish associative recall, phase-driven target navigation and general independent selection of three signals from one complex phase mixture.",
+    "design": "Inspect harmonicmemory.py, multiversenavigator.py and resonant_attention.py; independently calculate the unchanged-template/memory overlap, invariance of component magnitudes under phase rotation, and real rank/null vector of the three phase tags. No PyTorch training or GUI is executed.",
+    "result": "contradicts",
+    "sample": {
+      "unit": "source-inspected examples with independent algebra controls",
+      "count": 3
+    },
+    "metrics": [
+      {
+        "name": "supposed alien / stored-memory overlap",
+        "value": 0.9939743364783579
+      },
+      {
+        "name": "magnitude change under navigator phase rotation",
+        "value": 2.7755575615628914e-17
+      },
+      {
+        "name": "real rank of three phase tags",
+        "value": 2
+      },
+      {
+        "name": "common-signal mixture null residual",
+        "value": 4.002966042486721e-16
+      }
+    ],
+    "controls": [
+      "unmodified template as the purported alien input",
+      "same vector magnitudes before and after random component phases",
+      "adding the same arbitrary signal to all three phase-tagged channels"
+    ],
+    "replication": "Independent NumPy calculations are recorded in scripts/audit_phi_master_vector.py and its committed receipt; source interpretation is documented in the linked review.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Algebra controls rather than a learned retrieval benchmark.",
+      "Restricted signal priors or additional observations could support narrower tasks; these scripts do not demonstrate general invertibility.",
+      "The useful phase/interference and state/lens ideas are not disproved by these implementation mismatches."
+    ],
+    "source": "https://github.com/anttiluode/Genealogy/blob/main/docs/reviews/2026-10-10-phi-master-vector.md",
+    "motifs": [
+      "model-is-not-source-mechanism",
+      "hidden-state-lens-and-temporal-observability"
+    ]
+  },
+  {
+    "id": "moonformer-sign-pair-temporal-observability",
+    "node": "MoonFormer",
+    "claim": "Two signed structural states can yield exactly the same current wave responses but different future responses under the same evolution; removing the quadratic symmetry-breaking coefficient preserves the ambiguity.",
+    "design": "Use unchanged, hash-checked ef26aef source. Write and retain arc seed 3001 using the published 1500/6000-step protocol. Compare its state m with a deliberate -m copy. Read all 96 wave features at 0,1,100,500 further unforced steps with g=1.2. Repeat from the same pair with g=0, keeping other parameters and probes fixed.",
+    "result": "supports",
+    "sample": {
+      "unit": "constructed sign pair under original and symmetry-restored dynamics",
+      "count": 2
+    },
+    "metrics": [
+      {
+        "name": "initial density and response difference RMS",
+        "value": 0
+      },
+      {
+        "name": "response difference RMS after 1 / 100 / 500 steps, g=1.2",
+        "value": [
+          0.00047744725369096676,
+          0.011859276397591689,
+          0.01519795790049959
+        ]
+      },
+      {
+        "name": "response difference RMS at all four measured times, g=0",
+        "value": 0
+      },
+      {
+        "name": "density difference RMS after 500 steps, g=1.2",
+        "value": 0.16195409219773085
+      }
+    ],
+    "controls": [
+      "reader factors through blurred m squared, so initial sign reversal preserves every wave response",
+      "same evolution law and probes for both members of each pair",
+      "g=0 restores odd structural dynamics and keeps the signed mirror relation",
+      "no classifier, teaching label or generated image enters the comparison"
+    ],
+    "replication": "Ran scripts/audit_moonformer_sign_control.cjs against the pinned MoonFormer checkout; it verifies source SHA-256 and asserts both the exact-equality controls and positive divergence. Receipt: data/audits/moonformer-sign-control.json.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "One engineered sign pair, not two independently learned histories or a general retrieval benchmark.",
+      "The initial density and receiver views agree; the signed material display need not look identical.",
+      "The g=0 comparison changes the evolution law and is a mechanism control, not an equal-task trained baseline.",
+      "No adaptive query policy, semantic memory or partial-cue recall is evaluated."
+    ],
+    "source": "https://github.com/anttiluode/Genealogy/blob/main/data/audits/moonformer-sign-control.json",
+    "motifs": [
+      "retained-structure-read-through-consequences",
+      "hidden-state-lens-and-temporal-observability"
+    ]
   }
 ]

@@ -354,5 +354,13 @@
   {
     "path": "crystal-moon.json",
     "enabled": true
+  },
+  {
+    "path": "moonformer-memory-consequences.json",
+    "enabled": true
+  },
+  {
+    "path": "phi-master-vector-return.json",
+    "enabled": true
   }
 ]

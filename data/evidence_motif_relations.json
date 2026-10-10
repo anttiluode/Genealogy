@@ -284,5 +284,27 @@
   },
   "crystalmoon-inversion-and-kelvin-boundary": {
     "field-state-changes-growth-and-view": "supports"
+  },
+  "moonformer-retained-state-response-controls": {
+    "retained-structure-read-through-consequences": "supports"
+  },
+  "moonformer-local-jacobian-and-read-only-probes": {
+    "retained-structure-read-through-consequences": "supports"
+  },
+  "phi-master-vector-overlapping-frame-power": {
+    "model-is-not-source-mechanism": "supports",
+    "hidden-state-lens-and-temporal-observability": "supports"
+  },
+  "phi-master-vector-fixed-lens-nullspace": {
+    "model-is-not-source-mechanism": "supports",
+    "hidden-state-lens-and-temporal-observability": "supports"
+  },
+  "phi-memory-phase-and-mixing-controls": {
+    "model-is-not-source-mechanism": "supports",
+    "hidden-state-lens-and-temporal-observability": "supports"
+  },
+  "moonformer-sign-pair-temporal-observability": {
+    "retained-structure-read-through-consequences": "supports",
+    "hidden-state-lens-and-temporal-observability": "supports"
   }
 }

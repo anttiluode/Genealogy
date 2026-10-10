@@ -240,3 +240,58 @@ remains readable after the new level's law settles, beyond its parameters
 and a spectrum-matched scrambled seed.
 
 Review: [CrystalMoon](docs/reviews/2026-10-10-crystalmoon.md).
+
+## 2026-10-10 — MoonFormer: read the retained medium through effects
+
+Added MoonFormer as the documented child of CrystalMoon, with one node,
+one parent edge, one retained-structure/consequence motif, two evidence
+records and one open ordinary-versus-inversion receiver question. Confirmed
+CrystalMoon's existing entry and refreshed both selected census records.
+
+The experiment is pinned at `ef26aeff37a70ad5142e2b26b0eda333a83708a2`.
+Remote main's additional `457f03e` change only adds Pages deployment.
+MoonFormer preserves the original pre-webcam CrystalMoon attachments and
+adapts their scalar pattern field, local clock, lens and inversion into a
+2-D structural medium with read-only fast wave probes.
+
+Reviewed the 64-train/32-test receipt: wave and direct-density readouts both
+get 25/32 known-family variants after 6,000 input-free steps. Erased, fixed
+and uncoupled media give 8/32; donor response agreement is exact. Reran all
+12 Node checks, including finite differences and adjoints. Full receipt
+reproduction belongs to the implementation and recorded whole-branch
+review; this pass does not claim another independent benchmark dataset.
+
+Kept the limits explicit: supplied physical rules, supervised geometric
+readout, finite retention, growing patterns rather than faithful stored
+bitmaps, no adaptive/partial-cue recall, no established inversion advantage,
+and no transfer of the Jacobian Lens analogy into a brain or J-space claim.
+
+Review: [MoonFormer](docs/reviews/2026-10-10-moonformer.md).
+
+## 2026-10-10 — Recover the phi-world / SpaceScreensaver origin
+
+phi-world-theory already existed in the synthetic-universe pass. Expanded
+that entry, added SpaceScreensaver as its explicitly documented source parent,
+and added a medium-confidence conceptual comparison from phi to MoonFormer.
+The archived screensaver differs from the older source only by a leading
+blank line after newline normalization. No direct phi-to-MoonFormer file
+inheritance is asserted; CrystalMoon remains the implementation parent.
+
+Pinned phi at 4ce6f58 and SpaceScreensaver at 0024b59. Independently audited
+the specified 12x1000 complex lens: rank 12, null dimension 988, largest Gram
+eigenvalue 1.39963353746. Raw response overcounts overlapping directions;
+correct orthogonal projection is bounded by one. This explains why the
+131.47% report is not an energy/holography proof without claiming to reproduce
+the exact unseeded optimizer run. Memory, phase-steering and three-phase
+mixing controls also constrain the old demo captions.
+
+Tested a new engineered m/-m pair in unchanged MoonFormer source: current
+wave responses agree exactly, then diverge after evolution with g=1.2.
+The g=0 control preserves exact equality at 0/1/100/500 additional steps.
+This is temporal observability, not a new learned retrieval benchmark.
+Added four evidence records, one cross-era motif, one blind temporal-reader
+question, two audit scripts and their numerical receipts. The review develops
+a query-to-consequence memory architecture as a proposal, with source and
+measured constraints kept distinct.
+
+Review: [phi master vector and consequences](docs/reviews/2026-10-10-phi-master-vector.md).
