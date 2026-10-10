@@ -1,0 +1,65 @@
+{
+  "id": "crystal-moon",
+  "title": "CrystalMoon: a growing field becomes material, clock and lens",
+  "reviewed_at": "2026-10-10",
+  "order": 610,
+  "summary": "CrystalMoon combines a three-dimensional Swift–Hohenberg pattern field, Clockfield-inspired density-dependent mobility, density-gradient ray bending and an antipodal sphere-inversion portal. Flight writes a fading local growth condition, so the observer changes the field that later changes the view. All eight CPU checks were independently reproduced. This is a working procedural world with causal traces; its rules are supplied, its two-world descent discards old levels, and the Kelvin theorem is not a law transporting the crystal simulation.",
+  "nodes": [
+    {
+      "id": "CrystalMoon",
+      "url": "https://github.com/anttiluode/CrystalMoon",
+      "family": "procedural-world",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "A dependency-free WebGL2 world evolves a periodic 64³ scalar field into crystal-like structures. The field sets local evolution speed and a blurred-density optical lens. A sphere-inversion moon displays a second independently evolving world; entering it swaps the worlds and starts a new level from one-quarter of the promoted field plus noise. Flight adds a fading growth trail.",
+      "survived": "Independently rerun core.test.cjs: 8/8 pass. Engineered CPU tests reproduce bounded evolution, a selected wavelength, crystallization confined to islands, slower dense growth, trail-triggered growth and melting, conformal involution/antipode geometry, and harmonic Kelvin-transform behavior. Source inspection confirms the live shader connects the growth field to density-driven ray bending and writes flight into the growth condition. The committed screenshot shows an actual rendered crystal world.",
+      "killed": "No learned image/material rule, AI observer, semantic memory or useful task advantage is demonstrated. The roughly 150-second live trail is a decaying growth bias, not an archive; two simulation buffers overwrite departed worlds. The equations are nonconserved Swift–Hohenberg relaxation, related to but not identical with conserved phase-field-crystal dynamics. A radial wavelength peak does not certify BCC crystallography. Local mobility is not relativistic time, and clock and optics are not derived from one physical action. Kelvin's harmonic-field check does not apply to the nonlinear crystal PDE or to the displayed independent inner world. GPU parity is reported upstream for software rendering and was not independently rerun here; no hardware performance benchmark was made.",
+      "evidence": "https://github.com/anttiluode/CrystalMoon/blob/4adc6a319bf9a84b6447a10e54b848d748808968/README.md",
+      "tags": [
+        "swift-hohenberg",
+        "crystal-field",
+        "local-mobility",
+        "density-lens",
+        "sphere-inversion",
+        "flight-trail",
+        "one-way-descent",
+        "procedural-world",
+        "independent-cpu-checks",
+        "no-learned-rule"
+      ],
+      "era": "A simulated material changes its evolution and the observer's view",
+      "era_order": 80
+    }
+  ],
+  "edges": [
+    {
+      "source": "AnttisBrain2",
+      "target": "CrystalMoon",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "CrystalMoon's README explicitly credits AnttisBrain2 and the moon as a lens between outer and inner. This documents geometric/demo inspiration: walkable viewing becomes an instrument. CrystalMoon implements a sphere-inversion portal and two evolving fields, not the parent's four-bounce contracting mirror recursion, and does not inherit a neural-memory result.",
+      "evidence": "https://github.com/anttiluode/CrystalMoon/blob/4adc6a319bf9a84b6447a10e54b848d748808968/README.md"
+    },
+    {
+      "source": "Clockfield",
+      "target": "CrystalMoon",
+      "type": "extracts",
+      "confidence": "medium",
+      "why": "CrystalMoon explicitly credits the Clockfield local-clock idea and the c² = 1/(1+Tφ²) coefficient from an earlier crystal_kingdom.py. Its positive mobility 1/(1+Tψ²) slows the scalar field where amplitude is high. This is conceptual extraction from the Clockfield family, not verified file ancestry from the current grokking repository or evidence for its discarded gravity/learning claims.",
+      "evidence": "https://github.com/anttiluode/CrystalMoon/blob/4adc6a319bf9a84b6447a10e54b848d748808968/core.js"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "field-state-changes-growth-and-view",
+      "title": "The same field changes how the world evolves and how it is seen",
+      "description": "CrystalMoon makes a supplied dynamical rule into a walkable material: flight changes a local growth condition; the resulting field changes its own mobility and, through blurred squared amplitude, the rendered ray paths. Clockfield supplies the local-timescale idea and AnttisBrain2 the geometric viewing inspiration. CPU checks support growth, slowing and portal geometry separately; the full interactive optical loop is source-inspected, not a calibrated physical or AI result.",
+      "nodes": [
+        "CrystalMoon",
+        "Clockfield",
+        "AnttisBrain2"
+      ]
+    }
+  ]
+}

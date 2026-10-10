@@ -4509,5 +4509,132 @@
     "motifs": [
       "prediction-residual-needs-optical-identifiability"
     ]
+  },
+  {
+    "id": "crystalmoon-growth-clock-and-trace",
+    "node": "CrystalMoon",
+    "claim": "In the engineered CPU simulator a preferred wavelength forms bounded crystal-like patterns, local mobility slows growth, and a supplied spatial trail enables growth that melts after the trail is removed.",
+    "design": "Independently rerun the published deterministic T1–T6 checks: level law and linear step bound; strong-growth boundedness; island versus far-sea field; radial Fourier spectrum; T=0 versus T=6; held trail followed by zero trail.",
+    "result": "supports",
+    "sample": {
+      "unit": "published deterministic CPU checks T1–T6",
+      "count": 6
+    },
+    "metrics": [
+      {
+        "name": "CPU suite passed / total",
+        "value": [
+          8,
+          8
+        ]
+      },
+      {
+        "name": "worst tested linear step product",
+        "value": 1.5
+      },
+      {
+        "name": "tested maximum absolute field",
+        "value": 1.83
+      },
+      {
+        "name": "island fraction above crystal threshold",
+        "value": 0.68
+      },
+      {
+        "name": "far-sea maximum absolute field",
+        "value": 0.012
+      },
+      {
+        "name": "radial spectral peak / expected shell",
+        "value": [
+          4,
+          4
+        ]
+      },
+      {
+        "name": "steps to amplitude threshold, T=0 / T=6",
+        "value": [
+          1550,
+          1750
+        ]
+      },
+      {
+        "name": "maximum field with trail / after removal",
+        "value": [
+          1.38,
+          0.002
+        ]
+      }
+    ],
+    "controls": [
+      "spatial island versus far-sea mask",
+      "zero versus positive clock tension",
+      "same field with a held trail then its removal",
+      "selected versus observed radial wavelength"
+    ],
+    "replication": "Independently ran node tests/core.test.cjs at 4adc6a3; all eight upstream CPU checks passed. Rounded metrics reproduce the published ledger. Source inspection confirms live wake writing and density-derived optics, which were not independently exercised by these CPU checks.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Engineered conditions and deterministic seeds, not an independent distribution of worlds.",
+      "CPU T6 removes a held bias abruptly; it does not reproduce the live wake's full 150-second decay path.",
+      "The linear step bound and finite runs do not establish global nonlinear stability or discrete energy monotonicity.",
+      "A radial wavelength peak does not certify a BCC lattice.",
+      "These tests do not measure learned memory, live optics, interactive handoff or hardware speed."
+    ],
+    "source": "https://github.com/anttiluode/CrystalMoon/blob/4adc6a319bf9a84b6447a10e54b848d748808968/tests/core.test.cjs",
+    "motifs": [
+      "field-state-changes-growth-and-view"
+    ]
+  },
+  {
+    "id": "crystalmoon-inversion-and-kelvin-boundary",
+    "node": "CrystalMoon",
+    "claim": "The antipodal inversion has the stated geometric identities, and its correctly weighted Kelvin transform preserves a supplied harmonic field away from singularities; this does not transport the nonlinear crystal law across levels.",
+    "design": "Independently rerun T7 on 200 deterministic points and T8's finite-difference Laplacian on 40 supplied points; compare the weighted harmonic pullback with naive unweighted composition.",
+    "result": "supports",
+    "sample": {
+      "unit": "portal points plus harmonic-field points",
+      "count": 240
+    },
+    "metrics": [
+      {
+        "name": "maximum involution error",
+        "value": 4.1e-14
+      },
+      {
+        "name": "maximum radius-product error",
+        "value": 9.9e-14
+      },
+      {
+        "name": "maximum relative conformality error",
+        "value": 1.7e-15
+      },
+      {
+        "name": "maximum harmonic Laplacian, weighted / unweighted",
+        "value": [
+          1e-06,
+          0.87
+        ]
+      }
+    ],
+    "controls": [
+      "apply inversion twice",
+      "Jacobian conformality and boundary determinant checks",
+      "harmonic Kelvin weight versus unweighted pullback"
+    ],
+    "replication": "Independently reran the complete upstream CPU suite at 4adc6a3; T7 and T8 pass with the printed residuals. Reviewed the live portal shader and two-buffer handoff without claiming a GPU interaction test.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "The map is singular at its centre and is not a uniform contracting operator.",
+      "Kelvin's result concerns harmonic functions, not the crystal PDE.",
+      "The shader views a separately evolved field without Kelvin amplitude weighting.",
+      "The camera handoff and rendering approximations are not validated by pure-map CPU identities."
+    ],
+    "source": "https://github.com/anttiluode/CrystalMoon/blob/4adc6a319bf9a84b6447a10e54b848d748808968/tests/core.test.cjs",
+    "motifs": [
+      "field-state-changes-growth-and-view"
+    ]
   }
 ]

@@ -214,3 +214,29 @@ brightness/exposure controls and an altered optical path. An emitting-screen
 tabletop result must not be promoted into an ambient-light hidden-person result.
 The ICCV 2017 corner-camera principle and Varjoluotain's different calibrated
 plate transport remain explicit prior art. Neither upstream repo was changed.
+
+## 2026-10-10 — CrystalMoon: causal material and a changing frame
+
+Reviewed CrystalMoon at `4adc6a319bf9a84b6447a10e54b848d748808968`, including
+the CPU reference, GPU shaders, portal handoff and committed screenshot.
+Independently reran its complete CPU ledger: 8/8 pass. Added one atlas node,
+two lineage/concept links, one motif and two evidence records.
+
+The convergence is concrete: a flight-written growth condition changes the
+field, the field changes its local mobility, and its blurred squared amplitude
+changes rendered ray paths. AnttisBrain2 is explicitly credited as geometric
+inspiration; Clockfield's local-clock coefficient is a conceptual extraction.
+No direct file ancestry from the current Clockfield repository is asserted.
+Cabbage/Janus, CabbageFarmSihti and response-memory are related questions
+discussed in the review, not extra ancestry edges.
+
+The review separates nonconserved Swift–Hohenberg relaxation from conserved
+phase-field-crystal dynamics, wavelength selection from BCC identification,
+and the harmonic Kelvin result from the nonlinear crystal law. Old worlds
+are overwritten; a quarter-field seed and fading trail do not establish
+semantic memory. Upstream software GPU parity remains reported, not rerun.
+The unresolved scientific question is whether inherited spatial structure
+remains readable after the new level's law settles, beyond its parameters
+and a spectrum-matched scrambled seed.
+
+Review: [CrystalMoon](docs/reviews/2026-10-10-crystalmoon.md).

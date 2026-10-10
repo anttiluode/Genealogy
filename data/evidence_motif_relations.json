@@ -278,5 +278,11 @@
   },
   "perjantai-precision-phase-and-occlusion": {
     "prediction-residual-needs-optical-identifiability": "limits"
+  },
+  "crystalmoon-growth-clock-and-trace": {
+    "field-state-changes-growth-and-view": "supports"
+  },
+  "crystalmoon-inversion-and-kelvin-boundary": {
+    "field-state-changes-growth-and-view": "supports"
   }
 }

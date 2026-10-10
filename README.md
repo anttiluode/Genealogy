@@ -23,6 +23,29 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
+## 2026-10-10 — CrystalMoon: material, local clock and geometric lens
+
+Added [CrystalMoon](https://github.com/anttiluode/CrystalMoon) to the wall and
+census through the [new pass](data/passes/crystal-moon.json), with two sourced
+connections, a field/view motif and two independently reproduced evidence
+records. The [full review](docs/reviews/2026-10-10-crystalmoon.md) pins the source
+at `4adc6a3`.
+
+Its most useful connection is causal: flight writes a fading growth condition;
+the resulting Swift–Hohenberg field changes its own evolution speed and the
+rendered optical paths. The moon displays a second world through an antipodal
+sphere inversion, then promotes that world when entered. This carries
+AnttisBrain2's geometric inspiration and the Clockfield local-timescale idea
+into a working procedural environment.
+
+**CrystalMoon's CPU checks: 8/8 independently pass.** They reproduce selected
+wavelength, localized growth, slowing, trail-triggered growth/melting and
+portal identities. The atlas keeps the boundaries visible: supplied rather
+than learned laws; a periodic 64³ field; a fading trail and quarter-field seed
+rather than semantic recall; two buffers rather than recoverable old worlds;
+and a harmonic Kelvin check that does not transform the crystal PDE. GPU
+parity is an upstream software-renderer result, not independently rerun here.
+
 ## 2026-10-09 — Perjantai → KulmanTakaa: prediction display and a proposed corner camera
 
 The [live-prediction/corner-camera pass](data/passes/live-prediction-corner-camera.json)
