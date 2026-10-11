@@ -362,5 +362,13 @@
   {
     "path": "phi-master-vector-return.json",
     "enabled": true
+  },
+  {
+    "path": "sihtisort-temporal-identity.json",
+    "enabled": true
+  },
+  {
+    "path": "twcx-budgeted-eis.json",
+    "enabled": true
   }
 ]
