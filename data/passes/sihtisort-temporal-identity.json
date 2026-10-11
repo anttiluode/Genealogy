@@ -1,0 +1,56 @@
+{
+  "id": "sihtisort-temporal-identity",
+  "title": "SihtiSort: changing spike waveforms, stable source identities, and refutable merges",
+  "summary": "SihtiSort turns the question of recognizing one changing sender into a synthetic spike-sorting benchmark. Clusters that alternate in time and share a spatial footprint may be assigned one neuron address with multiple waveform states. The preregistered crowded-recording gate failed; post-hoc sparse controls exposed a useful temporal-merge signal, while a later commit/refute/revise pull request failed to revise mistaken merges. This is source identification, not a proof of stable neural memory, cognitive character, or an online exploratory observer.",
+  "order": 625,
+  "reviewed_at": "2026-10-11",
+  "nodes": [
+    {
+      "id": "SihtiSort",
+      "url": "https://github.com/anttiluode/SihtiSort",
+      "family": "probe-inference",
+      "status": "ledger",
+      "claim": "Tests whether one physical neuron's identity can be retained when its extracellular spike waveform changes abruptly, using temporal cluster alternation, spatial footprint, refractory constraints, matching-pursuit residue subtraction, and a hypothesis ledger.",
+      "survived": "After correcting the evaluator to one-to-one spike matching, the frozen five-recording test still recovered 7/20 mood neurons versus 6/20 for snapshot plus standard merge; the main +25-point gate failed. In the explicitly post-hoc spatially separated recordings, temporal merging recovered 20/20 versus 14/20, with 10/10 strong-mood neurons versus 4/10. Corrected overlap recall on the original test was 0.78 versus 0.25 for the no-sieve control, but matching pursuit is established prior art.",
+      "killed": "The preregistered G0/G1 gates failed; the explicit five-second state prior added almost nothing, and the main results are synthetic, not real spike-sorting evidence. In follow-on PR #3 the firing-rate refuter never revised a merge, missed the two large-rate-gap pairs before a testable two-state hypothesis existed, and wrongly marked five of 34 'survived' merges; sub-channel position discrimination was post hoc. Distinct neurons taking turns can be observationally equivalent to one switching neuron when the available signals lack a separating cue.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/SihtiSort/blob/main/README.md",
+      "tags": [
+        "spike-sorting",
+        "waveform-state",
+        "temporal-identity",
+        "source-address",
+        "hypothesis-ledger",
+        "matching-pursuit",
+        "failed-preregistered-gate",
+        "post-hoc-control",
+        "identifiability"
+      ],
+      "era": "Identity under changing observables",
+      "era_order": 83
+    }
+  ],
+  "edges": [
+    {
+      "source": "Sihti",
+      "target": "SihtiSort",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "SihtiSort explicitly borrows the sieve/residue and re-examination vocabulary, but its residual is ordinary waveform-template matching pursuit rather than Sihti's image-operator residue decomposition. This is a conceptual echo, not a code fork or evidence that the same mechanism operates.",
+      "evidence": "https://github.com/anttiluode/SihtiSort/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "source-identity-versus-changing-observable",
+      "title": "Keeping an address while appearances move is not the same as preserving meaning or behavior",
+      "description": "SihtiSort tests continued physical source identity across different waveform states; MovingProblem tracks grounded semantic orientation under drifting representations; MovingTarget2 asks which query responses survive hidden phase motion. Their methods differ. SihtiSort's failed refuter makes a further boundary visible: temporal continuity can support a plausible address without making that identity identifiable, and untested alternatives may be lost in an upstream clustering stage.",
+      "nodes": [
+        "SihtiSort",
+        "MovingProblem",
+        "MovingTarget2"
+      ]
+    }
+  ]
+}

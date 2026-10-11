@@ -3982,6 +3982,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "SihtiSort",
+    "url": "https://github.com/anttiluode/SihtiSort",
+    "default_branch": "main",
+    "size": 123,
+    "visibility": "public",
+    "description": "Opus 55 repo. ",
+    "created_at": "2026-10-11T12:07:57Z",
+    "updated_at": "2026-10-11T13:28:21Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "SilentPing",
     "url": "https://github.com/anttiluode/SilentPing",
     "default_branch": "main",
@@ -4870,6 +4881,17 @@
     "description": "A Opus 5.5 repo. ",
     "created_at": "2026-10-05T02:50:36Z",
     "updated_at": "2026-10-05T07:55:25Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "TWCX-",
+    "url": "https://github.com/anttiluode/TWCX-",
+    "default_branch": "main",
+    "size": 97,
+    "visibility": "public",
+    "description": "Opus 55 repo ",
+    "created_at": "2026-10-11T03:31:11Z",
+    "updated_at": "2026-10-11T05:26:09Z",
     "inventory_status": "reviewed"
   },
   {

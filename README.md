@@ -23,6 +23,14 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
+## 2026-10-11 — SihtiSort and TWCX-: identities and measurements under ambiguity
+
+Two new reviewed projects are recorded as separate passes, not presented as one algorithm.
+
+**[SihtiSort](https://github.com/anttiluode/SihtiSort)** tests whether temporal evidence can preserve one neuron's source address through changing extracellular waveforms. The original preregistered recovery gate **failed** (7/20 versus 6/20 for the standard merge), while a **post-hoc** spatially separated setting recovered 20/20 versus 14/20. After correcting spike scoring to one-to-one matches, the sieve's overlap recall was 0.78 versus 0.25 without it; template subtraction is prior art. A later [commit/refute/revise addendum](https://github.com/anttiluode/SihtiSort/pull/3) (open PR at review time) failed to revise any merge: a rate-based refuter missed competing hypotheses discarded by initial clustering, while a sub-channel-position signal was informative only in a small **post-hoc** check. This does not yet establish real-neuron performance or online belief revision. [Reviewed pass](data/passes/sihtisort-temporal-identity.json).
+
+**[TWCX-](https://github.com/anttiluode/TWCX-)** turns TransientWaveCompiler's question about informative measurements into a practical battery-EIS test planner. Nested leave-one-cell-out benchmarking on seven coin cells found a 2-second-budget plan at **2.65 percentage-point** reference-relative SOH error for an estimated **0.87-second** test. The literature's fixed 17.8 Hz point already gets **3.03 pp** in **0.37 s**, and ARD selection essentially ties the longer plan at **2.64 pp**; an ARD full-spectrum control gets **3.52 pp**, correcting a weaker original baseline. The contribution is an auditable short mid-frequency measurement benchmark and tool, **not** a novel selector, absolute battery grading or measured instrument throughput. [Reviewed pass](data/passes/twcx-budgeted-eis.json).
+
 ## 2026-10-10 — Return to phi-world-theory: the origin of state and lens
 
 Expanded the existing [phi-world-theory](https://github.com/anttiluode/phi-world-theory)

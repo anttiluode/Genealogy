@@ -1,0 +1,57 @@
+{
+  "id": "twcx-budgeted-eis",
+  "title": "TWCX-: a short battery-impedance measurement plan, not a new selector",
+  "summary": "TWCX- applies TransientWaveCompiler's identifiability and perturbation-selection question to battery electrochemical impedance spectroscopy. It packages a time-cost model, nested leave-one-cell-out selection, a user-facing planner and a fairer set of published/fixed/ARD baselines. The practical signal is that informative mid-frequency measurements can track reference-relative capacity fade cheaply on seven specific coin cells, not that its greedy selector is new or superior to established alternatives.",
+  "order": 626,
+  "reviewed_at": "2026-10-11",
+  "nodes": [
+    {
+      "id": "TWCX-",
+      "url": "https://github.com/anttiluode/TWCX-",
+      "family": "measurement-discipline",
+      "status": "tool",
+      "claim": "A cost-aware electrochemical impedance spectroscopy frequency planner to estimate capacity fade relative to each battery's commissioning reference, evaluated with nested held-out cells and an explicit estimated measurement-time budget.",
+      "survived": "On seven Zhang et al. LR2032 cells, the nested leave-one-cell-out 2-second-budget greedy plan used an estimated 0.87 s and obtained 2.65 percentage-point SOH MAE. A 0.5-second-budget plan used 0.34 s and obtained 3.05 pp. The published fixed 17.8 Hz single point reached 3.03 pp in 0.37 s; the published 17.8+2.16 Hz pair reached 3.46 pp, and an ARD-kernel full 60-frequency sweep reached 3.52 pp at an estimated 731 s. The repository provides a CLI, reproducible protocol and browser workbench.",
+      "killed": "The 0.5-second planner offered no advantage over the published single 17.8 Hz point; the 2-second greedy choice essentially tied an established ARD ranking (2.65 versus 2.64 pp). The original full-spectrum 4.14 pp result used a weaker kernel, corrected by an ARD 3.52 pp control. This is seven cells, one chemistry and one laboratory; time costs are modeled, not measured; it tracks relative fade, not absolute new-cell grading. It does not reuse the TransientWaveCompiler wave compiler or establish a novel selection algorithm.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/TWCX-/blob/main/README.md",
+      "tags": [
+        "battery",
+        "eis",
+        "impedance",
+        "test-budget",
+        "nested-held-out",
+        "soh",
+        "frequency-selection",
+        "baseline-correction",
+        "practical-tool"
+      ],
+      "era": "Cost-aware real-data measurement",
+      "era_order": 84
+    }
+  ],
+  "edges": [
+    {
+      "source": "TransientWaveCompiler",
+      "target": "TWCX-",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "TWCX- explicitly identifies itself as a practical residue of TransientWaveCompiler's measurement-identifiability question: choose observations that resolve uncertainty. This is inheritance of the measurement-design question, not of its reciprocal wave solver.",
+      "evidence": "https://github.com/anttiluode/TWCX-/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "measurement-value-per-unit-time",
+      "title": "A useful measurement is one that earns its cost against simple alternatives",
+      "description": "TransientWaveCompiler exposes when passive response data cannot determine a physical realization. TWCX- translates measurement selection into a bounded EIS test-time budget, but strong fixed-frequency and ARD baselines remove the novelty claim for greedy selection. WhatToLookAt and AnotherOddThing pursue related observation-budget questions in different experimental substrates; no shared solver or hardware is implied.",
+      "nodes": [
+        "TransientWaveCompiler",
+        "TWCX-",
+        "WhatToLookAt",
+        "AnotherOddThing"
+      ]
+    }
+  ]
+}
