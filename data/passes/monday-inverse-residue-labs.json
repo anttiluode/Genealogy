@@ -1,0 +1,101 @@
+{
+  "id": "monday-inverse-residue-labs",
+  "title": "MondayRepo and MondaySihti: what an observer can identify, predict and compress",
+  "summary": "Two independent October 12 synthetic instruments ask what an observer can infer when it cannot inspect the system's full internal state. MondayRepo separates distinguishable response operators from exactly gauge-equivalent implementations, measures blind query policies against fixed schedules, and learns held-out neuronal soma traces from known stimulation histories. MondaySihti compares multiscale observation residues to equally compact raw and PCA memories in image diffusion and passive cable models. Exact algebra and narrow history-prediction gains survive; the compressed-residue superiority gate fails. Neither experiment recovers a unique anatomical circuit, demonstrates real EEG decoding, or gives an information gain merely by changing coordinates.",
+  "order": 630,
+  "reviewed_at": "2026-10-12",
+  "nodes": [
+    {
+      "id": "MondayRepo",
+      "url": "https://github.com/anttiluode/MondayRepo",
+      "family": "probe-inference",
+      "status": "experiment",
+      "claim": "An interactive inverse-modeling instrument with a known-candidate response experiment (3 outputs, 4 input ports, variable context), blind Bayesian recovery of a response operator from selected pulses, and temporal prediction of full synthetic soma traces from known stimulus histories using an Operaattori forward simulator.",
+      "survived": "An exact invertible change of latent coordinates leaves H(c)=VG(c)K^T identical for every permitted query, while a pair differing only in context dependence can be distinguished by an informative pulse. The blind affine estimator predicts held-out responses, but a matched balanced fixed schedule beats its variance-maximizing selector: factorized RMSE 0.096612 versus 0.103856, cable fixture 0.012233 versus 0.012889 mV. On eight fresh held-out temporal splits, fixed nonlinear history features reduce mean whole-soma-trace RMSE from 9.7250 mV (current input only) through 5.2276 mV (linear history) to 3.2892 mV (quadratic history), each improvement winning 8/8 splits. The pinned Operaattori check exactly reproduces the fixture's 72 forward outputs.",
+      "killed": "Identifying the effective response operator is not uniquely identifying the hidden K, V or G factors: the gauge twins are exactly indistinguishable to this instrument. Active blind measurement does not beat the balanced schedule here; the known-candidate selector is privileged with both hypotheses. Temporal training has access to the full programmed stimulus conductances, employs fixed causal filters and ridge regression, and neither measures real neurons nor demonstrates an anatomical QKV decomposition, autonomous adaptive probing, or recovery of hidden dendritic coordinates.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/MondayRepo/blob/main/README.md",
+      "tags": [
+        "inverse-modeling",
+        "identifiability",
+        "gauge-equivalence",
+        "response-operator",
+        "active-probing",
+        "blind-baseline",
+        "soma-prediction",
+        "causal-history",
+        "operaattori",
+        "synthetic"
+      ],
+      "era": "Observer-conditioned inversion and latent history",
+      "era_order": 84
+    },
+    {
+      "id": "MondaySihti",
+      "url": "https://github.com/anttiluode/MondaySihti",
+      "family": "residue-observation",
+      "status": "negative",
+      "claim": "A controlled bridge from Sihti-style multiscale differences to hidden-state inversion in two fixed passive linear systems: 64-pixel synthetic image diffusion with sparse pixels observed and a seven-compartment Operaattori cable with only soma voltage observed. Compares selected raw checkpoints, adjacent-difference residues, fitted PCA and full observations using matched storage and linear ridge decoders.",
+      "survived": "The seven residual bands (six adjacent differences plus terminal core) sum exactly to the initial full state, and an invertible difference transform preserves the rank of the complete observation operator. On five independent train/validation/test seeds with three stored bands, cable initial-state RMSE is 1.45399 mV for residues versus 1.45125 raw and 1.45315 PCA; image RMSE is 0.83569 for residues versus 0.80056 raw and 0.79853 PCA. The rank/conditioning checks distinguish full-rank formal observability (cable 7/7, condition span about 82,000) from stable inversion, while image observability remains deficient (56/64).",
+      "killed": "The predeclared G2 gate for a compact residue advantage fails in both systems. Changing observed coordinates does not add information: when full bands are retained, raw and residue observations are invertibly related. Differencing also correlates noise, compressed bands discard information, and access to only one soma trace remains ill-conditioned. Hidden initial-state training labels are oracle synthetic supervision, not blind neuronal-source identification. Passive cable dynamics exclude state-dependent AMPA/NMDA responses; no real EEG, semantic image, or general neural advantage has been tested.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/MondaySihti/blob/main/README.md",
+      "tags": [
+        "sihti",
+        "operator-residues",
+        "multiscale",
+        "linear-system",
+        "passive-cable",
+        "inverse-problem",
+        "observability",
+        "rank-invariance",
+        "matched-storage",
+        "failed-gate",
+        "operaattori"
+      ],
+      "era": "Observer-conditioned inversion and latent history",
+      "era_order": 84
+    }
+  ],
+  "edges": [
+    {
+      "source": "Operaattori",
+      "target": "MondayRepo",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "MondayRepo's temporal gate calls the original pinned Operaattori CausalGraphCircuit in a separate checkout for synthetic ground-truth soma trajectories; its forward fixture was also checked against 72 outputs of that pinned implementation. This reuses a simulator and physiological-shaped forward operators, not a learned mapping of dendrites to transformer attention.",
+      "evidence": "https://github.com/anttiluode/MondayRepo/blob/main/README.md"
+    },
+    {
+      "source": "Operaattori",
+      "target": "MondaySihti",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "MondaySihti compiles the passive seven-compartment cable step from pinned Operaattori code and explicitly verifies this original passive operator in CI, but excludes the nonlinear AMPA/NMDA behavior. Its image diffusion branch is a separate control, not neuron code.",
+      "evidence": "https://github.com/anttiluode/MondaySihti/blob/main/README.md"
+    },
+    {
+      "source": "Sihti",
+      "target": "MondaySihti",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The README explicitly names Sihti's multiscale residue representation as the question under test and applies adjacent time differences plus terminal core to both image and passive cable state trajectories. This tests a common representational intuition with different operators; it is not proof of code ancestry, nor of the image and neural operators being physically equivalent.",
+      "evidence": "https://github.com/anttiluode/MondaySihti/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "monday-observer-equivalence-and-history",
+      "title": "A new coordinate system cannot reveal an unobservable cause, but past inputs can help predict consequences",
+      "description": "MondayRepo's gauge twins have different latent implementations but identical responses to every allowed query: implementation is not identifiable from that lens. Its temporal cable experiment shows that known input history makes future outputs easier to predict than a current-input-only view, without recovering anatomy. MondaySihti gives the complementary exact bound: invertible full-history residue transforms preserve observation rank, and compressed differences lose the tested RMSE contest. The projects share an inversion/observability question, not a single inherited or proven universal algorithm.",
+      "nodes": [
+        "MondayRepo",
+        "MondaySihti",
+        "Operaattori",
+        "Sihti"
+      ]
+    }
+  ]
+}
