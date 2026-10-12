@@ -2,6 +2,10 @@
 
 This file records interpretation work rather than raw repository inventory. The rule is simple: names are discovery hints, not ancestry evidence. Corrections and failed claims remain visible because they are selection events in the genealogy.
 
+## 2026-10-12 — Monday inverse lenses and Sihti's failed passive compression transfer
+
+Two new reviewed atlas entries and a shared motif: MondayRepo tests exact response-gauge nonidentifiability, privileged versus blind active selection, and known-input temporal prediction against the original Operaattori cable. Its balanced fixed design beats blind variance selection at equal cost; its quadratic history features outperform current-only and linear history in eight exploratory held-out splits, without identifying hidden anatomy. MondaySihti explicitly transfers the multiscale-difference question from Sihti to two fixed linear simulators, using Operaattori's passive cable as one source operator. Complete differences preserve observation rank but the three-band residue method loses the predeclared hidden-state recovery gate to raw and/or PCA in both domains. Evidence records distinguish exact identity, failed comparative benefit and narrow synthetic predictive gain. A pending controlled nonlinear-state test is not counted as a result.
+
 ## 2026-09-15 — Foundation atlas
 
 The initial atlas separated the complete repository census from a small curated cross-family slice. Early recurring mechanisms included bounded observation, transport versus nonlinear response, persistent state, structural memory, active probing, sparse publication, and search/routing.
