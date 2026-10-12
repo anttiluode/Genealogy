@@ -5452,5 +5452,57 @@
       "Not independently preregistered"
     ],
     "source": "https://github.com/anttiluode/VineComputer/blob/main/data/benchmark.json"
+  },
+  {
+    "id": "phi-hologram-common-phase-null",
+    "node": "Phi-Hologram",
+    "claim": "The phase-only EEG display has an exact global U(1) null: rotating every phase by the same theta cannot change the pixelwise intensity, while rotating one channel can change interference.",
+    "design": "Analytically factor exp(i theta) from the source code's pixelwise sum of unit-amplitude waves and compare squared magnitudes. A separate numerical audit samples five seeded 20-electrode phase configurations on a 24x24 grid at k=1, 10 and 50, each with three common offsets (-pi/2, 0.7, pi/2), plus a single-channel +0.7 rad control; a small stdlib unittest records the same identity at four fixed synthetic sites.",
+    "result": "supports",
+    "motifs": [
+      "phase-hologram-observer-null"
+    ],
+    "sample": {
+      "unit": "synthetic channel-phase configuration",
+      "count": 5
+    },
+    "metrics": [
+      {
+        "name": "global phase intensity difference, exact formula",
+        "value": 0
+      },
+      {
+        "name": "largest global shift numerical pixel difference, 5 phase draws x 3 k x 3 shifts",
+        "value": 1.4495071809506044e-12
+      },
+      {
+        "name": "minimum maximum-pixel response to single-channel +0.7 rad change across 15 seed/k configurations",
+        "value": 2.4010221264184723
+      },
+      {
+        "name": "maximum independent phase differences at M=20",
+        "value": 19
+      },
+      {
+        "name": "displayed sample pixels",
+        "value": 10000
+      }
+    ],
+    "controls": [
+      "Common phase offsets cancel through the absolute-square receiver for every pixel and every k (exact algebraic identity).",
+      "Change only one channel phase while holding all other channels, geometry and k fixed; pattern changes.",
+      "Repeat several spatial k settings and phase draws, rather than relying on the screenshot alone."
+    ],
+    "replication": "Exact identity follows from the inspected Python expression; independent numerical check on synthetic phases during the review, plus a repository-local standard-library unittest verifying the same algebra. No EEG recording was used for this mathematical null.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "The experiment establishes a source-code invariant, not an empirical EEG or neuroscience result.",
+      "Changing the display model, reading complex amplitude instead of squared magnitude or changing only a subset of channels can break the null.",
+      "The flat electrode layout and equal-strength radial kernels are supplied by the viewer, not obtained from a calibrated head model.",
+      "The 19 relative-phase maximum is a bound on its phase-only input family, not proof that all 19 degrees are independently visible at every configuration.",
+      "Synthetic demonstrations cannot validate the README's brainstem, phase-delay-correction, ephaptic or clinical interpretations."
+    ],
+    "source": "https://github.com/anttiluode/Phi-Hologram/blob/main/Phi-Hologram.py"
   }
 ]

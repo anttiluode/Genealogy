@@ -1,0 +1,47 @@
+{
+  "id": "phi-hologram-phase-gauge",
+  "title": "Phi-Hologram: a beautiful EEG phase lens with an exact invisible rotation",
+  "summary": "Phi-Hologram is an archived February 2026 EEG phase-visualization instrument, not a validated inverse solution for neural fields. It bandpasses available named channels, extracts Hilbert instantaneous phase, and constructs a 100x100 synthetic intensity picture by summing unit-amplitude circular wave kernels from approximate 2-D electrode positions. The display genuinely depends on relative phase and chosen spatial wave number, but the global Phase Rotation slider adds the same offset to every channel: it multiplies the complex field by one U(1) factor and leaves the plotted squared magnitude exactly unchanged. With M phases there are at most M-1 independent phase differences, despite 10,000 displayed pixels. This is an especially direct illustration of an observer nullspace, not evidence of recovered brainstem geometry, ephaptic binding, phase-delay correction or new dimensions of measured EEG. Cross-repository motifs connect its known visualization operator to EEGTools, phi-world-theory and ResidentOperatorTomography without claiming code inheritance.",
+  "order": 650,
+  "reviewed_at": "2026-10-12",
+  "nodes": [
+    {
+      "id": "Phi-Hologram",
+      "url": "https://github.com/anttiluode/Phi-Hologram",
+      "family": "eeg-instruments",
+      "status": "tool",
+      "claim": "Interactive EEG phase interferometer: take named scalp channels, select Delta/Theta/Alpha/Beta/Gamma with Butterworth bandpass plus Hilbert phase, and display a 100x100 squared-magnitude complex sum of unit-amplitude radial wavelets at approximate planar electrode locations with adjustable spatial frequency and common phase rotation.",
+      "survived": "Executable Python/Tkinter+MNE visualization: time-stepped EDF data, twenty hard-coded standard electrode positions, band-dependent instantaneous phases, synthetic radial interference and an image rendered at 100x100 resolution. The displayed field is exactly I(r)=|sum_j exp(i[phi_j-k|r-r_j|+theta])|^2. Source inspection establishes an exact global U(1) null: one common phase offset theta cancels from intensity. At M included channels the phase-only rendered image depends on at most M-1 relative phases (with k and geometry held fixed), despite 10,000 pixels. The local operator is a useful known-answer instrument for separating representation dimension from observational dimension.",
+      "killed": "The image is not an EEG source-localization solution or a measurement of a physical 2-D brain wavefield: the radial wave propagation kernel and flat electrode positions are assumed, not inverted from a measured head-forward model, and Hilbert magnitudes are discarded so every sensor has unit amplitude. The global phase slider cannot refocus or physiologically realign relative delays as claimed in the README because it rotates all channels together. The GUI lists SET/FIF selection but always calls read_raw_edf. Bright fringes, symmetry, 'brainstem screen', phase-offset 'snap', and band-specific psychological meanings were not established with controls or ground truth. No real-EEG predictive benefit is measured.",
+      "usefulness": "practical",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Phi-Hologram/blob/main/Phi-Hologram.py",
+      "tags": [
+        "eeg",
+        "visualization",
+        "phase",
+        "interference",
+        "u1-gauge",
+        "observer-nullspace",
+        "synthetic-spatial-kernel",
+        "inverse-problem-boundary"
+      ],
+      "era": "Early phase-interference visualization",
+      "era_order": 1
+    }
+  ],
+  "edges": [],
+  "motifs": [
+    {
+      "id": "phase-hologram-observer-null",
+      "title": "A high-resolution phase image can hide an exact U(1) null direction",
+      "description": "Phi-Hologram maps M EEG phases through a supplied 2-D wave kernel to 10,000 intensity samples, yet a common phase rotation is exactly invisible to its magnitude-only receiver; relative phases and wavelength can change the picture. phi-world-theory likewise distinguishes hidden complex coordinates from a lower-dimensional supplied lens; ResidentOperatorTomography formalizes when changes of computational coordinates are only gauge, while EEGTools warns that a visualization grid can create impressive structure. These are connected mathematical/instrument lessons, not code ancestry, brain source reconstruction, an EEG test of ephaptic fields or a shared physical mechanism.",
+      "nodes": [
+        "Phi-Hologram",
+        "phi-world-theory",
+        "ResidentOperatorTomography",
+        "EEGTools"
+      ]
+    }
+  ]
+}
