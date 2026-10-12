@@ -5193,5 +5193,75 @@
     "motifs": [
       "monday-observer-equivalence-and-history"
     ]
+  },
+  {
+    "id": "mondaysihti-nonlinear-history-g3",
+    "node": "MondaySihti",
+    "claim": "A frozen, state-dependent AMPA/NMDA synthetic cable test asks whether three Sihti temporal residue channels outperform equal-scalar raw and PCA representations at predicting future soma responses to a fixed probe when earlier dendritic input histories are hidden.",
+    "design": "Five prespecified new seeds; per seed 96 train, 48 validation, 64 held-out stimulus histories. Entire ordered early/late stimulus-port combinations are withheld by split. Observer receives eight noisy pre-probe soma readings, compresses to three scalars selected on validation, and predicts four probe-minus-no-probe soma response features with identical quadratic ridge decoding and alpha grid for each three-scalar method. Input locations, amplitudes, dendritic states and counterfactual no-probe future are hidden. Full eight-feature comparison is not capacity matched.",
+    "result": "contradicts",
+    "sample": {
+      "unit": "independent frozen synthetic train/validation/test seed",
+      "count": 5
+    },
+    "metrics": [
+      {
+        "name": "mean held-out response RMSE raw-three (mV)",
+        "value": 0.4035691
+      },
+      {
+        "name": "mean held-out response RMSE residue-three (mV)",
+        "value": 0.4802332
+      },
+      {
+        "name": "mean held-out response RMSE PCA-three (mV)",
+        "value": 0.4576528
+      },
+      {
+        "name": "mean held-out response RMSE snapshot-one (mV)",
+        "value": 0.4499376
+      },
+      {
+        "name": "mean held-out response RMSE eight-full unmatched (mV)",
+        "value": 0.6136621
+      },
+      {
+        "name": "original-upstream G3 source check",
+        "value": "PASS"
+      },
+      {
+        "name": "G3-1 exact residue inverse",
+        "value": "PASS"
+      },
+      {
+        "name": "G3-2 5% residue advantage",
+        "value": "FAIL"
+      },
+      {
+        "name": "G3-3 both histories beat soma snapshot",
+        "value": "FAIL"
+      }
+    ],
+    "controls": [
+      "Original unmodified Operaattori CausalGraphCircuit at pinned commit and verified source hash, rerun of every baseline and probe program",
+      "Every original soma trace checked against independent reference within 1e-8 mV; frozen mean metrics reproduce",
+      "Disjoint held-out ordered stimulus-port pairs with fixed training and validation budgets",
+      "Same quadratic polynomial regression map, stored feature count and alpha grid across raw, Sihti and PCA",
+      "Exact eight-channel difference-to-original reconstruction check; snapshot and full-eight mismatched-capacity references"
+    ],
+    "replication": "Source-reported frozen benchmark, checked independently by GitHub Actions running original pinned Operaattori on every forward program; successful upstream run 38226873814 and 17 passing unit tests. This is not independent biological replication.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Main G3-2 superiority gate fails: fixed three-residue features are approximately 19% worse than three selected raw soma readings.",
+      "Observer is supervised on synthetic future-response labels; no biological input history, synapse location or QKV coordinates are recovered.",
+      "The result is only one illustrative seven-compartment nonlinear cable stimulus family, not a universal failure of residue-coded neural computation.",
+      "Full eight-feature nonlinear polynomial reference has a different feature count and can overfit on novel port-pair histories; do not interpret as an oracle.",
+      "Resampling, model capacity and sensor access differ from real electrophysiological recordings."
+    ],
+    "source": "https://github.com/anttiluode/MondaySihti/blob/main/docs/G3_UPSTREAM_VALIDATION_2026-10-12.md",
+    "motifs": [
+      "monday-observer-equivalence-and-history"
+    ]
   }
 ]
