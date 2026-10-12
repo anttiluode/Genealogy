@@ -321,5 +321,16 @@
   },
   "mondaysihti-nonlinear-history-g3": {
     "monday-observer-equivalence-and-history": "limits"
+  },
+  "fieldcomputer-nonlinear-pulse-and-probe-memory": {
+    "field-memory-versus-developed-computation": "supports"
+  },
+  "fieldcomputer-no-spatial-or-scout-advantage": {
+    "field-memory-versus-developed-computation": "limits",
+    "negative-results": "documents"
+  },
+  "vinecomputer-selection-versus-drift": {
+    "field-memory-versus-developed-computation": "limits",
+    "negative-results": "documents"
   }
 }

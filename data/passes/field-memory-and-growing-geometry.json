@@ -1,0 +1,102 @@
+{
+  "id": "field-memory-and-growing-geometry",
+  "title": "FieldComputer and VineComputer: readable field memory versus the evolution of useful growth rules",
+  "summary": "October 12 revisits the May 2025 scout–field archive and the question of geometry that develops through interaction. FieldComputer preserves the original scout source, builds a 24×24 externally driven nonlinear field, and shows that hidden pulse history can be read both passively (99.5% parity) and in a common probe's incremental response (88.0% parity, linear readers). Strong controls eliminate the claimed advantage of spatial transport and scout feedback: uncoupled nonlinear cells match the full field, and a much smaller 16-state leaky bank with a quadratic reader reaches perfect passive scores. VineComputer independently evolves toy branching rules and beats a matched neutral-drift population in most exploratory environments, but the reported +14 to +19 fitness-unit gaps partly reflect decaying neutral drift. The first- versus final-champion comparisons change unseen worlds and are not paired, and no optimized fixed-genome or equal-budget search baselines were tested. Neither repo establishes developmental neuronal computation or an efficient field-computing advantage. Together they motivate a missing experiment: grow morphology, compile a physical state-dependent operator onto it, and measure tasks requiring cross-branch transport with cost-matched controls.",
+  "order": 645,
+  "reviewed_at": "2026-10-12",
+  "nodes": [
+    {
+      "id": "FieldComputer",
+      "url": "https://github.com/anttiluode/FieldComputer",
+      "family": "field-computation",
+      "status": "experiment",
+      "claim": "Replays an archived 2025 reciprocal scout–wave-field system with external signed pulses; tests temporal memory, delayed nonlinear parity and paired-counterfactual history-conditioned probe responses using sparse spatial sensors and fixed linear/quadratic ridge readers.",
+      "survived": "Across five deterministic environments (256 training, 128 validation, 256 test episodes each), the reciprocal field's 16 passive observations with a linear readout recover first-pulse sign at 100.0% and delayed parity at 99.5%. The incremental response to a shared probe, isolated by cloned runs with and without the probe, yields 88.0% parity accuracy with a linear reader. Archive-adapter numerical fidelity max error 9.44e-16; 10 tests and main-branch CI passed. The result demonstrates readable short-term state and nonlinear response in a synthetic computer.",
+      "killed": "G4 comparative advantage fails: disabling reciprocal scout feedback (driven field) or spatial Laplacian coupling (uncoupled nonlinear cells) preserves 99.5% passive linear parity and approximately 88% probe parity. A 16-state leaky bank with a quadratic reader achieves 100% passive sign and parity; the reciprocal field provides +0.00 percentage points versus its best quadratic control. A linear field with a quadratic reader also attains 96.8% passive parity. The fractal attractor is fixed, the task has only four known sign combinations and cannot establish cross-site transport, learnability, hardware efficiency or general AI. The paired probe requires a simulation-only cloned counterfactual; calibration amended a clipped linear baseline during development.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/FieldComputer/blob/main/REPORT.md",
+      "tags": [
+        "scout",
+        "2025-archive",
+        "state-dependent-wave",
+        "nonlinear-memory",
+        "delayed-parity",
+        "incremental-probe",
+        "counterfactual",
+        "uncoupled-null",
+        "leaky-bank",
+        "failed-comparative-advantage",
+        "no-transport-advantage"
+      ],
+      "era": "Field memory and growing physical geometry",
+      "era_order": 86
+    },
+    {
+      "id": "VineComputer",
+      "url": "https://github.com/anttiluode/VineComputer",
+      "family": "developmental-computation",
+      "status": "experiment",
+      "claim": "Interactive browser sandbox with six candidate local branching rules, seven mutable inheritable growth traits and selection over 24 generations versus resource-matched neutral genetic drift on synthetic resource/obstacle worlds. Tracks unseen-world champions and a replayable lineage.",
+      "survived": "Across eight exploratory seeds, 24 individuals and 24 generations per scenario, selected lineages exceeded neutral drift in 6/8 patchy, 8/8 corridor and 7/8 seasonal worlds, with final unpaired holdout differences +13.94, +18.85 and +13.53 fitness units. Relative to generation-one champions, final selected mean scores changed from 34.74 to 41.41 in patches (+6.67), 12.54 to 18.46 in corridors (+5.92), and 28.91 to 37.45 in seasonal worlds (+8.54). The static-site program supports reproduction, mutations, history replay and export.",
+      "killed": "The headline selection-versus-drift gap overstates evidence for beneficial evolution: neutral drift deteriorates (in corridor mean final -0.39), and generation-one and generation-24 holdouts are distinct random worlds, so the apparent improvements over starting genomes are not paired. No frozen first-generation champion tested throughout, equal-evaluation-budget random search, or direct optimizer over the seven genes. Growth choices are fixed during a vine's lifetime, resources are hand-defined, and the toy has no biological morphogenesis, neuron dynamics or demonstrated useful computing task.",
+      "usefulness": "conceptual",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/VineComputer/blob/main/data/benchmark.json",
+      "tags": [
+        "growth-rules",
+        "artificial-evolution",
+        "seven-genes",
+        "six-strategies",
+        "selection-vs-drift",
+        "lineage",
+        "branching",
+        "synthetic-fitness",
+        "weak-baseline",
+        "nonpaired-holdouts",
+        "no-neuron-simulation"
+      ],
+      "era": "Field memory and growing physical geometry",
+      "era_order": 86
+    }
+  ],
+  "edges": [
+    {
+      "source": "MondayRepo",
+      "target": "FieldComputer",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both test hidden-history dependence by giving a controlled probe and examining its future response. FieldComputer's cloned with/without-probe subtraction is not a unique inverse reconstruction and uses a different (synthetic wave) substrate from MondayRepo's Operaattori cable. This records convergence of an experimental question, not code inheritance.",
+      "evidence": "https://github.com/anttiluode/FieldComputer/blob/main/PROTOCOL.md"
+    },
+    {
+      "source": "GrowingAnttisNeuron",
+      "target": "VineComputer",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both vary developmental routing or branching and test it against controls; GrowingAnttisNeuron asks how developed anatomical input placement affects cable operators, while VineComputer optimizes abstract resource-gathering vines without neuron physiology. This is thematic convergence, not an inherited implementation or demonstration that growing vines compute.",
+      "evidence": "https://github.com/anttiluode/VineComputer/blob/main/README.md"
+    },
+    {
+      "source": "FieldComputer",
+      "target": "VineComputer",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "The same October 12 inquiry split into two independent instruments: FieldComputer tests computational consequences of fixed nonlinear field state and VineComputer tests population selection of growing geometry without a neural response task. A combined field-plus-grown-morphology computation is an unperformed experiment, not an achieved result.",
+      "evidence": "https://github.com/anttiluode/FieldComputer/blob/main/REPORT.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "field-memory-versus-developed-computation",
+      "title": "Memory in a nonlinear medium is not evidence that its geometry or growth improves computation",
+      "description": "FieldComputer shows observable delayed memory and a history-dependent response but discovers that spatial Laplacian coupling and reciprocal scouts are dispensable on the tested parity tasks. VineComputer selects branches that capture artificial resources, but selection over a declining neutral baseline is not proof that grown branches compute. The shared open bridge is a morphology whose locally developed spatial coupling is necessary for a task requiring information transfer between locations, confirmed against passive twins, equal-wiring random shapes and resource-matched fixed alternatives. The two repositories are independent negative/partial controls, not a demonstrated universal evolutionary field learner.",
+      "nodes": [
+        "FieldComputer",
+        "VineComputer",
+        "GrowingAnttisNeuron",
+        "MondayRepo"
+      ]
+    }
+  ]
+}
