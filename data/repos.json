@@ -1562,6 +1562,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "FieldComputer",
+    "url": "https://github.com/anttiluode/FieldComputer",
+    "default_branch": "main",
+    "size": 62,
+    "visibility": "public",
+    "description": "Sol repo. ",
+    "created_at": "2026-10-12T12:38:16Z",
+    "updated_at": "2026-10-12T13:13:28Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "FieldEffect",
     "url": "https://github.com/anttiluode/FieldEffect",
     "default_branch": "main",
@@ -1851,11 +1862,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 2476,
+    "size": 2515,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-10-12T09:25:06Z",
+    "updated_at": "2026-10-12T14:08:00Z",
     "inventory_status": "unread"
   },
   {
@@ -4007,7 +4018,7 @@
     "name": "SihtiSort",
     "url": "https://github.com/anttiluode/SihtiSort",
     "default_branch": "main",
-    "size": 466,
+    "size": 797,
     "visibility": "public",
     "description": "Opus 55 repo. ",
     "created_at": "2026-10-11T12:07:57Z",
@@ -4983,6 +4994,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "VineComputer",
+    "url": "https://github.com/anttiluode/VineComputer",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Sol repo",
+    "created_at": "2026-10-12T13:29:11Z",
+    "updated_at": "2026-10-12T13:52:42Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "Vino",
     "url": "https://github.com/anttiluode/Vino",
     "default_branch": "main",
@@ -5300,27 +5322,5 @@
     "created_at": "2026-08-16T14:37:59Z",
     "updated_at": "2026-08-16T15:41:54Z",
     "inventory_status": "unread"
-  },
-  {
-    "name": "FieldComputer",
-    "url": "https://github.com/anttiluode/FieldComputer",
-    "default_branch": "main",
-    "size": 62,
-    "visibility": "public",
-    "description": "Sol repo. ",
-    "created_at": "2026-10-12T12:38:16Z",
-    "updated_at": "2026-10-12T13:13:28Z",
-    "inventory_status": "reviewed"
-  },
-  {
-    "name": "VineComputer",
-    "url": "https://github.com/anttiluode/VineComputer",
-    "default_branch": "main",
-    "size": 0,
-    "visibility": "public",
-    "description": "Sol repo",
-    "created_at": "2026-10-12T13:29:11Z",
-    "updated_at": "2026-10-12T13:52:42Z",
-    "inventory_status": "reviewed"
   }
 ]
