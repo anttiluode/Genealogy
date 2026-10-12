@@ -597,11 +597,11 @@
     "name": "BrainLoops",
     "url": "https://github.com/anttiluode/BrainLoops",
     "default_branch": "main",
-    "size": 3939,
+    "size": 3960,
     "visibility": "public",
     "description": "Ok high hypothesis. Sol Repo. ",
     "created_at": "2026-10-04T06:36:43Z",
-    "updated_at": "2026-10-05T13:54:56Z",
+    "updated_at": "2026-10-12T04:36:21Z",
     "inventory_status": "reviewed"
   },
   {
@@ -1851,11 +1851,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 2020,
+    "size": 2095,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-10-11T14:50:34Z",
+    "updated_at": "2026-10-12T08:28:36Z",
     "inventory_status": "unread"
   },
   {
@@ -4007,11 +4007,11 @@
     "name": "SihtiSort",
     "url": "https://github.com/anttiluode/SihtiSort",
     "default_branch": "main",
-    "size": 123,
+    "size": 465,
     "visibility": "public",
     "description": "Opus 55 repo. ",
     "created_at": "2026-10-11T12:07:57Z",
-    "updated_at": "2026-10-11T13:28:21Z",
+    "updated_at": "2026-10-12T07:19:29Z",
     "inventory_status": "reviewed"
   },
   {
