@@ -23,6 +23,16 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
+## 2026-10-12 — Monday inverse labs: the reader is not the hidden source
+
+Two new projects join the atlas as **different synthetic inverse-modeling instruments**, with [their reviewed pass](data/passes/monday-inverse-residue-labs.json) and separate evidence records.
+
+**[MondayRepo](https://github.com/anttiluode/MondayRepo)** demonstrates both the value and the limit of active observation. Different latent factor matrices can produce exactly the same context-dependent response operator (an unidentifiable gauge), while suitable interventions distinguish candidates with genuinely different response operators. Its **blind** uncertainty selector was modestly worse than a balanced fixed schedule on held-out factorized (0.103856 vs 0.096612 RMSE) and passive-cable (0.012889 vs 0.012233 mV) fixtures. Its separate temporal test uses the pinned **Operaattori** forward model and known stimulus histories: over eight held-out splits, whole-soma-trace RMSE fell from **9.7250** mV (current input) to **5.2276** (linear history) to **3.2892** (quadratic history), winning each paired comparison 8/8. These fixed features do **not** identify anatomical QKV, recover a unique internal circuit, or establish real-neuron performance.
+
+**[MondaySihti](https://github.com/anttiluode/MondaySihti)** applies adjacent-time residues plus terminal core to synthetic image diffusion and a pinned **passive** Operaattori cable. Its telescoping reconstruction and full-observation rank equivalence are exact algebra, but its preregistered **G2 compressed-residue advantage failed** at matched three-band storage. Five-seed image hidden-state RMSE: residue **0.83569**, raw **0.80056**, PCA **0.79853**; cable (mV): residue **1.45399**, raw **1.45125**, PCA **1.45315**. Complete sensor data were measured before storage compression, and training used oracle synthetic hidden-state labels. The bridge does not recover information absent from the observations or cover nonlinear synapses.
+
+The shared conclusion is narrower than a universal residue/neuronal isomorphism: **representation changes do not eliminate observational ambiguity; known histories can improve predictions of future responses.** An [open controlled nonlinear experiment](data/questions.json) distinguishes a task-specific compressed-residue advantage from what matched raw/learned representations already provide.
+
 ## 2026-10-11 — SihtiSort and TWCX-: identities and measurements under ambiguity
 
 Two new reviewed projects are recorded as separate passes, not presented as one algorithm.
