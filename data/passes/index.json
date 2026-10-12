@@ -370,5 +370,9 @@
   {
     "path": "twcx-budgeted-eis.json",
     "enabled": true
+  },
+  {
+    "path": "monday-inverse-residue-labs.json",
+    "enabled": true
   }
 ]
