@@ -1,7 +1,7 @@
 {
   "id": "monday-inverse-residue-labs",
   "title": "MondayRepo and MondaySihti: what an observer can identify, predict and compress",
-  "summary": "Two independent October 12 synthetic instruments ask what an observer can infer when it cannot inspect the system's full internal state. MondayRepo separates distinguishable response operators from exactly gauge-equivalent implementations, measures blind query policies against fixed schedules, and learns held-out neuronal soma traces from known stimulation histories. MondaySihti compares multiscale observation residues to equally compact raw and PCA memories in image diffusion and passive cable models. Exact algebra and narrow history-prediction gains survive; the compressed-residue superiority gate fails. Neither experiment recovers a unique anatomical circuit, demonstrates real EEG decoding, or gives an information gain merely by changing coordinates.",
+  "summary": "Two independent October 12 synthetic instruments ask what an observer can infer when it cannot inspect the system's full internal state. MondayRepo separates distinguishable response operators from exactly gauge-equivalent implementations, measures blind query policies against fixed schedules, and learns held-out neuronal soma traces from known stimulation histories. MondaySihti compares multiscale observation residues to equally compact raw and PCA memories in image diffusion and passive cable models. Exact algebra and narrow history-prediction gains survive; the compressed-residue superiority gate fails. Neither experiment recovers a unique anatomical circuit, demonstrates real EEG decoding, or gives an information gain merely by changing coordinates. A separate frozen nonlinear Operaattori gate (G3), verified against the pinned original runtime on all held-out stimulus histories, also fails a compressed residue-prediction advantage: raw 0.40357 versus residues 0.48023 mV RMSE at three stored scalars.",
   "order": 630,
   "reviewed_at": "2026-10-12",
   "nodes": [
@@ -36,9 +36,9 @@
       "url": "https://github.com/anttiluode/MondaySihti",
       "family": "residue-observation",
       "status": "negative",
-      "claim": "A controlled bridge from Sihti-style multiscale differences to hidden-state inversion in two fixed passive linear systems: 64-pixel synthetic image diffusion with sparse pixels observed and a seven-compartment Operaattori cable with only soma voltage observed. Compares selected raw checkpoints, adjacent-difference residues, fitted PCA and full observations using matched storage and linear ridge decoders.",
-      "survived": "The seven residual bands (six adjacent differences plus terminal core) sum exactly to the initial full state, and an invertible difference transform preserves the rank of the complete observation operator. On five independent train/validation/test seeds with three stored bands, cable initial-state RMSE is 1.45399 mV for residues versus 1.45125 raw and 1.45315 PCA; image RMSE is 0.83569 for residues versus 0.80056 raw and 0.79853 PCA. The rank/conditioning checks distinguish full-rank formal observability (cable 7/7, condition span about 82,000) from stable inversion, while image observability remains deficient (56/64).",
-      "killed": "The predeclared G2 gate for a compact residue advantage fails in both systems. Changing observed coordinates does not add information: when full bands are retained, raw and residue observations are invertibly related. Differencing also correlates noise, compressed bands discard information, and access to only one soma trace remains ill-conditioned. Hidden initial-state training labels are oracle synthetic supervision, not blind neuronal-source identification. Passive cable dynamics exclude state-dependent AMPA/NMDA responses; no real EEG, semantic image, or general neural advantage has been tested.",
+      "claim": "A controlled bridge from Sihti-style multiscale differences to hidden-state inversion in two fixed passive linear systems: 64-pixel synthetic image diffusion with sparse pixels observed and a seven-compartment Operaattori cable with only soma voltage observed. Compares selected raw checkpoints, adjacent-difference residues, fitted PCA and full observations using matched storage and linear ridge decoders. A second frozen gate uses the actual pinned nonlinear AMPA/NMDA CausalGraphCircuit to predict four future soma probe-response features from eight noisy soma readings, with hidden prior dendritic stimulations and disjoint held-out port-pair histories; compares three raw, residue or PCA features using equal-capacity polynomial ridge models.",
+      "survived": "The seven residual bands (six adjacent differences plus terminal core) sum exactly to the initial full state, and an invertible difference transform preserves the rank of the complete observation operator. On five independent train/validation/test seeds with three stored bands, cable initial-state RMSE is 1.45399 mV for residues versus 1.45125 raw and 1.45315 PCA; image RMSE is 0.83569 for residues versus 0.80056 raw and 0.79853 PCA. The rank/conditioning checks distinguish full-rank formal observability (cable 7/7, condition span about 82,000) from stable inversion, while image observability remains deficient (56/64). In G3 (five new seeds, 96/48/64 histories per seed), original upstream Operaattori regenerated every hidden-history program and passed full solver-level equivalence and frozen-metric tests. Raw-three future probe-response RMSE was 0.40357 mV, versus 0.48023 for compressed residues, 0.45765 for PCA-three and 0.44994 for a one-reading snapshot. The full eight-channel temporal residual ledger remains exactly reconstructible.",
+      "killed": "The predeclared G2 gate for a compact residue advantage fails in both systems. Changing observed coordinates does not add information: when full bands are retained, raw and residue observations are invertibly related. Differencing also correlates noise, compressed bands discard information, and access to only one soma trace remains ill-conditioned. Hidden initial-state training labels are oracle synthetic supervision, not blind neuronal-source identification. The G2 passive gate excluded state-dependent AMPA/NMDA; G3 added the original nonlinear cable and **still failed** the prespecified 5% residue advantage (about 19% worse than matched raw history). The G3 secondary gate requiring both raw and residues to beat a soma snapshot also failed. The 8-channel full-history polynomial reference was worse (0.61366 mV) but has unmatched capacity and can overfit; it is not an oracle bound. No real EEG, semantic image, actual synaptic reconstruction, or general neural advantage has been tested.",
       "usefulness": "scientific",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/MondaySihti/blob/main/README.md",
@@ -53,7 +53,12 @@
         "rank-invariance",
         "matched-storage",
         "failed-gate",
-        "operaattori"
+        "operaattori",
+        "voltage-dependent-nmda",
+        "hidden-input-history",
+        "nonlinear-cable",
+        "held-out-probe-response",
+        "failed-g3"
       ],
       "era": "Observer-conditioned inversion and latent history",
       "era_order": 84
@@ -73,7 +78,7 @@
       "target": "MondaySihti",
       "type": "extracts",
       "confidence": "high",
-      "why": "MondaySihti compiles the passive seven-compartment cable step from pinned Operaattori code and explicitly verifies this original passive operator in CI, but excludes the nonlinear AMPA/NMDA behavior. Its image diffusion branch is a separate control, not neuron code.",
+      "why": "MondaySihti compiles the passive seven-compartment cable step from pinned Operaattori code and explicitly verifies this original passive operator in CI, and subsequently tests the original pinned nonlinear AMPA/NMDA solver in a separate G3 future-response benchmark. G2 remains passive; G3 is nonlinear and fails the matched compressed-residue advantage. Its image diffusion branch is a separate control, not neuron code.",
       "evidence": "https://github.com/anttiluode/MondaySihti/blob/main/README.md"
     },
     {
@@ -89,7 +94,7 @@
     {
       "id": "monday-observer-equivalence-and-history",
       "title": "A new coordinate system cannot reveal an unobservable cause, but past inputs can help predict consequences",
-      "description": "MondayRepo's gauge twins have different latent implementations but identical responses to every allowed query: implementation is not identifiable from that lens. Its temporal cable experiment shows that known input history makes future outputs easier to predict than a current-input-only view, without recovering anatomy. MondaySihti gives the complementary exact bound: invertible full-history residue transforms preserve observation rank, and compressed differences lose the tested RMSE contest. The projects share an inversion/observability question, not a single inherited or proven universal algorithm.",
+      "description": "MondayRepo's gauge twins have different latent implementations but identical responses to every allowed query: implementation is not identifiable from that lens. Its temporal cable experiment shows that known input history makes future outputs easier to predict than a current-input-only view, without recovering anatomy. MondaySihti gives the complementary exact bound: invertible full-history residue transforms preserve observation rank, and compressed differences lose the tested RMSE contest. The projects share an inversion/observability question, not a single inherited or proven universal algorithm. G3 tests hidden input histories in a nonlinear cable: original upstream responses are reproduced exactly within the declared tolerance, yet fixed compressed Sihti residues lose to matched raw-history prediction (0.48023 vs 0.40357 mV), keeping computational and biological claims narrow.",
       "nodes": [
         "MondayRepo",
         "MondaySihti",

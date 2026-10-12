@@ -843,14 +843,15 @@
   },
   {
     "id": "nonlinear-residue-versus-matched-history",
-    "title": "Can state-dependent dynamics make a compressed residue representation useful without creating information?",
-    "state": "open",
+    "title": "Can adaptive state-dependent residue operators outperform matched raw history after fixed residues fail?",
+    "state": "partially-resolved",
     "motifs": [
       "monday-observer-equivalence-and-history"
     ],
     "evidence": [
       "mondaysihti-residue-bridge-gate",
-      "mondayrepo-temporal-soma-history"
+      "mondayrepo-temporal-soma-history",
+      "mondaysihti-nonlinear-history-g3"
     ],
     "competing_explanations": [
       "A state-dependent nonlinear cable law gives short residue-like event summaries a useful inductive bias or superior prediction per stored scalar at fixed sensors, training size and compute.",
@@ -859,11 +860,12 @@
     "known": [
       "MondaySihti's full residual transform preserves observation rank exactly, and its three-band compression loses the preregistered hidden-state RMSE comparison in both passive domains.",
       "MondayRepo's fixed causal history and quadratic interactions lower held-out soma-trace prediction RMSE in a known-input seven-compartment model, but do not recover a unique hidden circuit.",
-      "The passive MondaySihti operator excludes state-dependent synaptic nonlinearities and uses synthetic hidden-state training labels."
+      "MondaySihti G2 was passive; G3 added voltage-dependent nonlinear AMPA/NMDA conductances with hidden stimulation histories and verified future-probe labels. It did not recover unique hidden anatomical sources.",
+      "MondaySihti G3 now completed five frozen held-out seeds with nonlinear AMPA/NMDA cable responses and hidden prior input port pairs, verified against the pinned original Operaattori runtime. The three-residue model lost: 0.48023 mV vs raw 0.40357 mV, PCA 0.45765 mV; G3-2 and G3-3 failed."
     ],
-    "missing_discriminator": "A frozen, held-out state-dependent cable protocol with matched observation count, retained scalars, computational cost and model-selection budget, scored on prediction of unseen interventions rather than only reconstruction of labeled initial state.",
+    "missing_discriminator": "A genuinely operator-adaptive residual learner, compared against capacity- and compute-matched raw-history, recurrent state and learned temporal-feature controls on previously unseen interventions. It must show benefit beyond changing coordinates, track uncertainty in hidden inputs, and report whether any gain survives additional simulator families.",
     "candidate_experiment": {
-      "design": "Introduce controlled local NMDA-dependent state changes in pinned Operaattori; present the same partially hidden stimulation histories to matched raw, difference, PCA and learned nonlinear observers. Fix sensor/sample/storage/training budgets before fresh-seed evaluation; measure withheld probe-response prediction and state discrimination. Include passive/linear limit, equivalent full-coordinate and shuffled-history controls.",
+      "design": "Freeze a small train/validation/test protocol on original Operaattori with new unseen stimulation families. Learn an update rule that changes a measured-residue operator from training data only, then compare future-probe prediction against raw-history quadratic ridge, matched recurrent predictors, ordinary learned filters, shuffled input histories and full-information oracle. Use identical stored state, optimizer steps, data count and selection budget. Retain a full-coordinate invariance control and an exact nonidentifiable case.",
       "cost": "medium: extend existing small simulation and frozen benchmark suite, no biological recordings required",
       "outcomes": [
         {
@@ -877,7 +879,8 @@
       ]
     },
     "notes": [
-      "Improvement in one constrained simulator would not demonstrate a general brain architecture or real EEG decoding."
+      "Improvement in one constrained simulator would not demonstrate a general brain architecture or real EEG decoding.",
+      "The older prespecified nonlinear-but-fixed-residue test was completed in MondaySihti G3 and failed. This question now concerns operator adaptation and stronger baselines, not rerunning G3 with more seeds."
     ]
   }
 ]
