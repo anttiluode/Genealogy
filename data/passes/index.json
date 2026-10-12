@@ -378,5 +378,9 @@
   {
     "path": "field-memory-and-growing-geometry.json",
     "enabled": true
+  },
+  {
+    "path": "phi-hologram-phase-gauge.json",
+    "enabled": true
   }
 ]
