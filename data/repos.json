@@ -1851,11 +1851,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 2095,
+    "size": 2476,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-10-12T09:07:36Z",
+    "updated_at": "2026-10-12T09:25:06Z",
     "inventory_status": "unread"
   },
   {
@@ -2907,7 +2907,7 @@
     "name": "MondaySihti",
     "url": "https://github.com/anttiluode/MondaySihti",
     "default_branch": "main",
-    "size": 0,
+    "size": 387,
     "visibility": "public",
     "description": "Sol repo. ",
     "created_at": "2026-10-12T07:56:28Z",
