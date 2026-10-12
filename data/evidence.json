@@ -4613,7 +4613,7 @@
       {
         "name": "maximum harmonic Laplacian, weighted / unweighted",
         "value": [
-          1e-06,
+          0.000001,
           0.87
         ]
       }
@@ -4807,7 +4807,7 @@
       },
       {
         "name": "orthogonal projection fraction for that state",
-        "value": 1.0
+        "value": 1
       },
       {
         "name": "smallest / largest Gram eigenvalue",
@@ -4994,6 +4994,204 @@
     "motifs": [
       "retained-structure-read-through-consequences",
       "hidden-state-lens-and-temporal-observability"
+    ]
+  },
+  {
+    "id": "mondayrepo-gauge-response-identifiability",
+    "node": "MondayRepo",
+    "claim": "Context interventions can distinguish preselected response-operator hypotheses, whereas exactly gauge-transformed latent factors remain indistinguishable under all allowed probes.",
+    "design": "Use the published 3-output/4-port H(c)=VG(c)K^T synthetic operator, compare a pair with equal c=0 response but unequal context term and an exact invertible coordinate-transformed pair, with known-noise Bayesian updates and seeded query tests.",
+    "result": "supports",
+    "sample": {
+      "unit": "synthetic hypothesis pair family",
+      "count": 2
+    },
+    "metrics": [
+      {
+        "name": "observed response difference for exact gauge twins across all allowed contexts and ports",
+        "value": 0
+      },
+      {
+        "name": "latent coordinate gauge transformation",
+        "value": "V'=VR; K'=KR^-T; G'=R^-1GR"
+      }
+    ],
+    "controls": [
+      "pair with same c=0 response but different nonzero-context response",
+      "gauge-equivalent pair tested over multiple contexts and noise levels",
+      "finite-noise Bayesian posterior after repeated nondiscriminating gauge-twin observations"
+    ],
+    "replication": "Source-described exact algebra plus automated tests in MondayRepo; no separate independent re-run for this genealogy addition.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Known-candidate discrimination is privileged with the candidate models; this is not blind tomography.",
+      "Exact gauge equivalence demonstrates nonidentifiability, not identical physical implementations.",
+      "The three outputs and four ports are synthetic response channels, not observed QKV or neuron counts."
+    ],
+    "source": "https://github.com/anttiluode/MondayRepo/blob/main/README.md",
+    "motifs": [
+      "monday-observer-equivalence-and-history"
+    ]
+  },
+  {
+    "id": "mondayrepo-blind-selector-matched-budget",
+    "node": "MondayRepo",
+    "claim": "Blind response-operator estimation works in the small synthetic affine family, but its uncertainty selector fails to improve held-out error relative to a balanced fixed sampling plan at equal sample budgets.",
+    "design": "Twenty deterministic seeds, four initial c=0 observations and 12 additional measurements per policy with identical noise and validation/scoring: contrast variance-driven query choice, balanced fixed schedule and random schedule for factorized and passive-cable fixture response grids.",
+    "result": "mixed",
+    "sample": {
+      "unit": "seed per substrate/policy",
+      "count": 20
+    },
+    "metrics": [
+      {
+        "name": "factorized held-out RMSE, uncertainty selector",
+        "value": 0.103856
+      },
+      {
+        "name": "factorized held-out RMSE, balanced fixed",
+        "value": 0.096612
+      },
+      {
+        "name": "cable fixture held-out RMSE, uncertainty selector (mV)",
+        "value": 0.012889
+      },
+      {
+        "name": "cable fixture held-out RMSE, balanced fixed (mV)",
+        "value": 0.012233
+      }
+    ],
+    "controls": [
+      "balanced fixed schedule with equal measurements",
+      "random schedule with equal measurements",
+      "ground truth used only by scoring rather than by blind estimator"
+    ],
+    "replication": "Reported in MondayRepo README and saved benchmark.json; not rerun independently here.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Affine family with known noise and four input locations, not general nonlinear inverse recovery.",
+      "The balanced fixed comparator modestly outperforms the proposed selector.",
+      "Sealed software scoring is not cryptographic blindness or real electrophysiology."
+    ],
+    "source": "https://github.com/anttiluode/MondayRepo/blob/main/data/benchmark.json",
+    "motifs": [
+      "monday-observer-equivalence-and-history"
+    ]
+  },
+  {
+    "id": "mondayrepo-temporal-soma-history",
+    "node": "MondayRepo",
+    "claim": "Known temporal stimulation history predicts withheld complete soma voltage traces better than current conductances alone in one synthetic seven-compartment Operaattori model.",
+    "design": "Eight seeded splits, each with 70 training and 24 held-out stimulus programs (560 train/192 test); preserve full known stimulus program but hide internal dendritic state. Compare fixed current-only, linear exponential-history and quadratic-history ridge feature banks on withheld ordered three-event patterns and shifted final probe.",
+    "result": "supports",
+    "sample": {
+      "unit": "held-out program across eight splits",
+      "count": 192
+    },
+    "metrics": [
+      {
+        "name": "mean whole-trace holdout RMSE current only (mV)",
+        "value": 9.725
+      },
+      {
+        "name": "mean whole-trace holdout RMSE linear history (mV)",
+        "value": 5.2276
+      },
+      {
+        "name": "mean whole-trace holdout RMSE quadratic history (mV)",
+        "value": 3.2892
+      },
+      {
+        "name": "seed splits where linear history beat instantaneous",
+        "value": 8
+      },
+      {
+        "name": "seed splits where quadratic beat linear history",
+        "value": 8
+      }
+    ],
+    "controls": [
+      "same forward simulator and held-out programs across three feature capacities",
+      "withheld temporal event-order patterns",
+      "forward ground truth from pinned original Operaattori CausalGraphCircuit"
+    ],
+    "replication": "Pinned workflow and reproducible saved reference in MondayRepo; source-reported, not independently rerun for this pass.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Ridge model uses explicit known stimulus history and predetermined causal filters, not learned recurrent memory.",
+      "Synthetic seven-compartment model and exploratory split, not biological validation or generalization to different morphologies.",
+      "A single matching soma time sample does not establish entire-history observational equivalence or unique hidden-state inference."
+    ],
+    "source": "https://github.com/anttiluode/MondayRepo/blob/main/data/temporal_reference.json",
+    "motifs": [
+      "monday-observer-equivalence-and-history"
+    ]
+  },
+  {
+    "id": "mondaysihti-residue-bridge-gate",
+    "node": "MondaySihti",
+    "claim": "Full temporal residue coordinates preserve reconstruction identity and observation rank, but three-band residue compression does not beat matched raw-history and PCA memory at hidden-state inversion on either tested synthetic domain.",
+    "design": "Two passive linear simulators, 5 fixed seeds (400 train/140 validation/180 test examples per seed), seven sampled times with equal 3-band retained scalar capacity; select raw and residue bands from the same 35 candidate triples on validation; compare learned PCA and fixed-capacity ridge decoders.",
+    "result": "mixed",
+    "sample": {
+      "unit": "independent seed per synthetic domain",
+      "count": 5
+    },
+    "metrics": [
+      {
+        "name": "image observed rank / hidden dimension",
+        "value": "56/64"
+      },
+      {
+        "name": "cable observed rank / hidden dimension",
+        "value": "7/7"
+      },
+      {
+        "name": "image initial-state RMSE residue",
+        "value": 0.83569
+      },
+      {
+        "name": "image RMSE raw",
+        "value": 0.80056
+      },
+      {
+        "name": "image RMSE PCA",
+        "value": 0.79853
+      },
+      {
+        "name": "cable initial-state RMSE residue (mV)",
+        "value": 1.45399
+      },
+      {
+        "name": "cable RMSE raw (mV)",
+        "value": 1.45125
+      },
+      {
+        "name": "cable RMSE PCA (mV)",
+        "value": 1.45315
+      }
+    ],
+    "controls": [
+      "exact telescoping decomposition and invertible transform rank check",
+      "matched stored scalar budget and the same validation-selected candidate time triplets",
+      "separate train, validation and test splits",
+      "passive cable exact source check against pinned Operaattori"
+    ],
+    "replication": "MondaySihti has generated saved results, test suite and original passive-compiler CI check; source-reported, not independently rerun for this atlas update.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "G2 preregistered compact-residue superiority gate fails in both domains.",
+      "All seven noisy sensor readings are collected before three-band storage compression; this is not a measurement-budget win.",
+      "Training labels contain oracle synthetic hidden state; real neuronal identification and nonlinear AMPA/NMDA are not tested.",
+      "Noise covariance changes under differences and full formal rank need not imply numerically stable inversion."
+    ],
+    "source": "https://github.com/anttiluode/MondaySihti/blob/main/data/results.json",
+    "motifs": [
+      "monday-observer-equivalence-and-history"
     ]
   }
 ]

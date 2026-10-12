@@ -306,5 +306,17 @@
   "moonformer-sign-pair-temporal-observability": {
     "retained-structure-read-through-consequences": "supports",
     "hidden-state-lens-and-temporal-observability": "supports"
+  },
+  "mondayrepo-gauge-response-identifiability": {
+    "monday-observer-equivalence-and-history": "supports"
+  },
+  "mondayrepo-blind-selector-matched-budget": {
+    "monday-observer-equivalence-and-history": "limits"
+  },
+  "mondayrepo-temporal-soma-history": {
+    "monday-observer-equivalence-and-history": "supports"
+  },
+  "mondaysihti-residue-bridge-gate": {
+    "monday-observer-equivalence-and-history": "limits"
   }
 }
