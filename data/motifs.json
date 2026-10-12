@@ -113,7 +113,9 @@
       "Sihti",
       "SighImageFactorization",
       "RegionalAttractorExplorer",
-      "AdaptiveObserverCache"
+      "AdaptiveObserverCache",
+      "FieldComputer",
+      "VineComputer"
     ]
   },
   {

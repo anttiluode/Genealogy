@@ -882,5 +882,48 @@
       "Improvement in one constrained simulator would not demonstrate a general brain architecture or real EEG decoding.",
       "The older prespecified nonlinear-but-fixed-residue test was completed in MondaySihti G3 and failed. This question now concerns operator adaptation and stronger baselines, not rerunning G3 with more seeds."
     ]
+  },
+  {
+    "id": "grown-geometry-necessary-for-transport-computation",
+    "title": "Can locally developed geometry improve computation when information must cross branches?",
+    "state": "open",
+    "motifs": [
+      "field-memory-versus-developed-computation"
+    ],
+    "evidence": [
+      "fieldcomputer-nonlinear-pulse-and-probe-memory",
+      "fieldcomputer-no-spatial-or-scout-advantage",
+      "vinecomputer-selection-versus-drift",
+      "growing-v0-topographic-control",
+      "growing-v1-input-placement"
+    ],
+    "competing_explanations": [
+      "Development driven by local activity and environment constructs a spatially coupled medium whose nonlinear response to signals at distinct locations improves held-out tasks at equal wiring and readout resources.",
+      "A fixed graph, unstructured random tree, or simple uncoupled nonlinear memory computes just as effectively; growth and spatial field coupling add morphology and complexity without measurable task benefit."
+    ],
+    "known": [
+      "FieldComputer recovers delayed parity from synthetic nonlinear field activity and from a shared probe, but the uncoupled nonlinear-cell control matches the reciprocal scout-field on both.",
+      "VineComputer's 24-generation growth-rule selection usually beats neutral drift on artificial resource collection, but the fixed-start, random-search and direct-optimizer attackers are missing.",
+      "GrowingAnttisNeuron demonstrates guided topographic placement relative to shuffled labels while later cable-operator effects are sparse, not a broad morphology-computation advantage."
+    ],
+    "missing_discriminator": "A spatial task provably requiring transfer between at least two locations, where learned growth changes physical interaction geometry; evaluate growth against equal-cost fixed/random/optimized shapes, same-tree passive linearization, no-NMDA, no-transport and no-growth controls on fresh paired environments.",
+    "candidate_experiment": {
+      "design": "First publish frozen benchmark worlds, input and output ports, growth budget, trial seeds and behavioral gates. Grow branching cable structures under local rules and compare selection-only, lifetime plasticity, fixed and optimized random/topographic architectures. Compile each morphology into the same independently verified cable or finite-volume forward model, include a state-dependent NMDA or equivalent nonlinearity and separate sites of conditioning and interrogation. Test held-out cross-branch conjunction/location tasks and energy/wiring cost with the same number of measured soma outputs, equal-state readouts, paired worlds and a 16-state local-memory baseline. Evaluate fixed-genome champion, random-search and seven-gene optimizer controls using equal evaluation budgets; report counterexamples and zero-transport limits.",
+      "cost": "medium-to-high: morphology-to-cable compiler plus strict paired generations, frozen new landscapes and simulation controls; can begin on CPU in small graphs",
+      "outcomes": [
+        {
+          "if": "Growth-generated spatial circuits consistently outperform strong fixed/optimized trees and uncoupled or passive twins on fresh cross-location input tasks at matched wiring, training and readout budgets",
+          "then": "Record a task-specific advantage of developmental geometry as a physical computational resource; do not infer broad biological realism."
+        },
+        {
+          "if": "Equal-budget fixed graphs, optimized genomes, local leaky memories or passive twins match the grown structures",
+          "then": "Keep field memory and resource-seeking growth as separate established toy mechanisms; do not call their combination a new neural computer."
+        }
+      ]
+    },
+    "notes": [
+      "This is a proposed future bridge experiment, not an experiment already run in FieldComputer or VineComputer.",
+      "Distinct synthetic worlds need paired evaluation for valid first-to-last improvement estimates."
+    ]
   }
 ]

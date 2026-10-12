@@ -5263,5 +5263,194 @@
     "motifs": [
       "monday-observer-equivalence-and-history"
     ]
+  },
+  {
+    "id": "fieldcomputer-nonlinear-pulse-and-probe-memory",
+    "node": "FieldComputer",
+    "claim": "The archived nonlinear field holds accessible two-pulse history, and the common positive probe has history-dependent incremental effects in a simulation-only paired counterfactual.",
+    "design": "5 synthetic environments; 256/128/256 train/validation/test episodes each; balanced signed pulses, four spatial sensors, two times, linear ridge with frozen reader family",
+    "result": "supports",
+    "motifs": [
+      "field-memory-versus-developed-computation"
+    ],
+    "sample": {
+      "unit": "held-out synthetic episode",
+      "count": 1280
+    },
+    "metrics": [
+      {
+        "name": "passive first-pulse sign accuracy",
+        "value": 100,
+        "unit": "percent"
+      },
+      {
+        "name": "passive delayed parity, linear readout",
+        "value": 99.5,
+        "unit": "percent"
+      },
+      {
+        "name": "incremental-probe parity, linear readout",
+        "value": 88,
+        "unit": "percent"
+      },
+      {
+        "name": "archive fidelity max absolute error",
+        "display": "9.44e-16"
+      }
+    ],
+    "controls": [
+      "Train/validation/test held-out per environment; no test labels in ridge selection",
+      "Common positive probe compared with a cloned continuation absent the probe; incremental output isolates a measured intervention effect",
+      "Erased-history probe control near 50% (linear parity 50.4%)",
+      "Known linear wave control near chance on incremental parity (51.5%)"
+    ],
+    "replication": "5 deterministic synthetic environment seeds; one full measured developmental-protocol run plus independent reproduction of reader fits",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "The four pulse sign combinations all occur in training; only amplitudes/timings and episode noise are held out",
+      "A counterfactual incremental probe needs two otherwise identical cloned simulations, not one physical experiment",
+      "Each environment trains its own reader; no held-out-environment transfer is measured",
+      "A reproduced archived numerical toy is not biophysical evidence"
+    ],
+    "source": "https://github.com/anttiluode/FieldComputer/blob/main/REPORT.md"
+  },
+  {
+    "id": "fieldcomputer-no-spatial-or-scout-advantage",
+    "node": "FieldComputer",
+    "claim": "Removing spatial Laplacian coupling and/or scout feedback does not impair the reported synthetic pulse tasks; a very small leaky-bank control with quadratic readout performs as well.",
+    "design": "ablations of shared 24x24 field update and matched reader families, plus a 16-state leaky bank and a state-matched delay/PCA control",
+    "result": "contradicts",
+    "motifs": [
+      "field-memory-versus-developed-computation",
+      "negative-results"
+    ],
+    "sample": {
+      "unit": "environment seed",
+      "count": 5
+    },
+    "metrics": [
+      {
+        "name": "reciprocal passive parity linear",
+        "value": 99.5,
+        "unit": "percent"
+      },
+      {
+        "name": "uncoupled nonlinear passive parity linear",
+        "value": 99.5,
+        "unit": "percent"
+      },
+      {
+        "name": "reciprocal probe parity linear",
+        "value": 88,
+        "unit": "percent"
+      },
+      {
+        "name": "uncoupled nonlinear probe parity linear",
+        "value": 88.3,
+        "unit": "percent"
+      },
+      {
+        "name": "16-state leaky bank parity quadratic",
+        "value": 100,
+        "unit": "percent"
+      },
+      {
+        "name": "reciprocal quadratic advantage vs strongest control",
+        "value": 0,
+        "unit": "percentage points"
+      }
+    ],
+    "controls": [
+      "Disable scout-to-wave feedback while retaining driven field",
+      "Disable spatial Laplacian as well to make uncoupled nonlinear cells",
+      "Linear wave with quadratic output decoder (96.8% passive parity)",
+      "16-state leaky bank and 2318-state input delay/PCA control",
+      "Equal 16-feature linear and quadratic reader families; fixed datasets and regularization search"
+    ],
+    "replication": "5 environment seeds in one development benchmark; numerical archive fidelity 9.44e-16",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Matched decoder size is not matched total simulation storage, sensor noise, physical costs or learned parameters",
+      "Leaky bank and delay controls access exact external inputs and noiseless states, advantaging the controls",
+      "The source's fixed fractal attractor and spatial transport may matter on other tasks but were not separately shown necessary",
+      "Linear control was repaired after an aborted run; transparent developmental correction, not fully independent preregistration"
+    ],
+    "source": "https://github.com/anttiluode/FieldComputer/blob/main/REPORT.md"
+  },
+  {
+    "id": "vinecomputer-selection-versus-drift",
+    "node": "VineComputer",
+    "claim": "On three synthetic growth worlds, fitness-selected growth rules usually outperform neutral drift, but the size of the advantage partly reflects deterioration of the neutral pool and is insufficient to establish improved neuronal computation.",
+    "design": "8 seeds × 24 individuals × 24 generations × 3 scenarios; unseen holdout world resampled every generation; fitness selected against same-budget neutral random-parent drift",
+    "result": "mixed",
+    "motifs": [
+      "field-memory-versus-developed-computation",
+      "negative-results"
+    ],
+    "sample": {
+      "unit": "seed-scenario combination",
+      "count": 24
+    },
+    "metrics": [
+      {
+        "name": "patches gen1 holdout mean",
+        "value": 34.7403
+      },
+      {
+        "name": "patches gen24 selected holdout mean",
+        "value": 41.4115
+      },
+      {
+        "name": "patches gen24 drift holdout mean",
+        "value": 27.4733
+      },
+      {
+        "name": "corridor gen1 holdout mean",
+        "value": 12.538
+      },
+      {
+        "name": "corridor gen24 selected holdout mean",
+        "value": 18.4565
+      },
+      {
+        "name": "corridor gen24 drift holdout mean",
+        "value": -0.3898
+      },
+      {
+        "name": "seasonal gen1 holdout mean",
+        "value": 28.9147
+      },
+      {
+        "name": "seasonal gen24 selected holdout mean",
+        "value": 37.4531
+      },
+      {
+        "name": "seasonal gen24 drift holdout mean",
+        "value": 23.9244
+      },
+      {
+        "name": "final selected minus neutral mean, patches / corridor / seasonal",
+        "display": "+13.94 / +18.85 / +13.53 fitness units"
+      }
+    ],
+    "controls": [
+      "Both selection and drift begin with identical genomes and receive the same mutations and evaluation budget",
+      "Unseen separate holdout worlds are scored but not used for selection",
+      "Manual six-rule seven-trait task parameterization",
+      "No same-budget optimizer, random search, or frozen first-generation champion baseline"
+    ],
+    "replication": "8 exploratory deterministic seeds per each of 3 scenarios; browser and Node share sim.mjs",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "First and final evaluation worlds differ: the +6.67 patch, +5.92 corridor, +8.54 seasonal mean differences are not paired improvements",
+      "Selected pool is hand-tuned by an explicit resource-reward objective; neutral pool can decay below initial defaults",
+      "No biological plant development, neuronal dendrite, time-dependent field or lifetime plasticity modeled",
+      "No new-scenario transfer or a computation requiring a propagated signal is established",
+      "Not independently preregistered"
+    ],
+    "source": "https://github.com/anttiluode/VineComputer/blob/main/data/benchmark.json"
   }
 ]

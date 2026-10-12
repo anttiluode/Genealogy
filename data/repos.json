@@ -5300,5 +5300,27 @@
     "created_at": "2026-08-16T14:37:59Z",
     "updated_at": "2026-08-16T15:41:54Z",
     "inventory_status": "unread"
+  },
+  {
+    "name": "FieldComputer",
+    "url": "https://github.com/anttiluode/FieldComputer",
+    "default_branch": "main",
+    "size": 62,
+    "visibility": "public",
+    "description": "Sol repo. ",
+    "created_at": "2026-10-12T12:38:16Z",
+    "updated_at": "2026-10-12T13:13:28Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "VineComputer",
+    "url": "https://github.com/anttiluode/VineComputer",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Sol repo",
+    "created_at": "2026-10-12T13:29:11Z",
+    "updated_at": "2026-10-12T13:52:42Z",
+    "inventory_status": "reviewed"
   }
 ]

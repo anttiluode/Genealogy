@@ -374,5 +374,9 @@
   {
     "path": "monday-inverse-residue-labs.json",
     "enabled": true
+  },
+  {
+    "path": "field-memory-and-growing-geometry.json",
+    "enabled": true
   }
 ]
