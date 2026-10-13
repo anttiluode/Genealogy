@@ -23,6 +23,12 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
+## 2026-10-13 — 2MandalaTools: January frequency mandalas join the wall
+
+Added [2MandalaTools](https://github.com/anttiluode/2MandalaTools) to the curated atlas via its [frequency-lens pass](data/passes/two-mandala-tools-frequency-lens.json) (repo created **4 January 2026**). Its two Python tools, `polar sigh true.py` and `frequency_mandalas3.py`, isolate image frequencies with radial FFT masks and reshape them into mandalas through rotations, reflections and pixelwise-max symmetry. The second includes a draggable φ-spaced radial EQ and a separate synthetic cymatics/wave view. **Source-inspected image processing is real; the vivid mandalas do not establish hidden holographic physics or independent information created by symmetry.**
+
+**Origin:** a January 4 phone screenshot and the user's recollection link the exploratory idea to a TikTok clip labelled **“Jan/3/2026 Language of Reality: Holographic Vibration.”** This is historical inspiration, not scientific evidence or an independently verified source URL. The entry cross-links SighImageSuper and Sihti as **conceptual convergences**, without claiming source-code inheritance. The cymatics helper's symmetric cosine sum cancels algebraically, and the wave boundary mask suppresses the center rather than absorbing its outer edge. No empirical result was entered without a controlled run. Further Sihti connections are intentionally left for subsequent investigation.
+
 ## 2026-10-13 — CrystalHunt: an early world watching itself
 
 Added [CrystalHunt](https://github.com/anttiluode/CrystalHunt) (July 2025) to the reviewed atlas through the [procedural-world observer pass](data/passes/crystal-hunt-world-mind.json). The single-file Three.js game includes noise-based streaming terrain, civilizations and collectibles, MediaPipe gesture flight, keyboard input, procedural audio, and an embedded `CognitiveBellSystem`. The noteworthy source-inspected loop renders the current scene to a 64×64 grayscale view approximately every 61 frames; 200 scouts sample it, update a nonlinear wave field, and field-peak thresholds trigger artifacts or a weather rule. This is an actual programmed scene → observer → world-event connection, **not** validated visual learning, an autoencoder, or a computationally advantageous field model.

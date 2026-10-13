@@ -1,0 +1,69 @@
+{
+  "id": "two-mandala-tools-frequency-lens",
+  "title": "2MandalaTools: January radial-frequency lenses and symmetry-created structure",
+  "reviewed_at": "2026-10-13",
+  "order": 112,
+  "summary": "The two Tkinter applications in 2MandalaTools, created on GitHub on 4 January 2026, transform images through radial Fourier-band filters and then make mandalas by rotating, reflecting and taking a pixelwise maximum of transformed images. 'polar sigh true.py' intentionally downsamples before FFT to accentuate coarse interference aesthetics; 'frequency_mandalas3.py' adds a draggable phi-spaced radial equalizer and a separate synthetic wave/cymatics display. The user recalls encountering a TikTok video labeled 'Jan/3/2026 Language of Reality: Holographic Vibration' immediately before this experiment; the supplied January 4 phone screenshot supports the date and wording, but not any scientific claim made in the video. It is an early executable frequency-viewing instrument. The connections to SighImageSuper and Sihti are conceptual: repeated frequency filtering and the later question of where information survives. Neither source inspection nor a common 'Sigh' label establishes direct code descent.",
+  "nodes": [
+    {
+      "id": "2MandalaTools",
+      "url": "https://github.com/anttiluode/2MandalaTools",
+      "family": "image-frequency",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "medium",
+      "claim": "Two Python/Tkinter programs apply radial masks to the 2D FFT of a cropped/rescaled grayscale image, reconstruct filtered spatial images by inverse FFT, and build colorful rotationally/reflection-symmetrized mandalas by pixelwise maximum. One provides ten smoothly windowed bands with an intentionally low-resolution FFT; the other provides an interactive phi-spaced radial frequency equalizer, eight bands, and a separately defined cymatics simulation.",
+      "survived": "The committed 'polar sigh true.py' computes a low-grid FFT, windowed radial-band inverse transforms, gain presets and a symmetry-max mandala. The committed 'frequency_mandalas3.py' implements draggable rings, frequency-response interpolation, FFT filtering, individual band displays and source/cymatics blending. Those mechanisms account for the user's screenshot of the kaleidoscopic image and circular equalizer. The repo provides a real image-filtering and visual-art instrument, established by source inspection, without claiming an independent benchmark or scientific recovery.",
+      "killed": "No physical hologram, recovered hidden neural structure, universal phi pattern or cymatic resonance of the input photograph is demonstrated. Repeating rotated/mirrored material increases visible regularity without independently measuring new source information. Display per-band normalization destroys absolute band-energy comparisons. In 'frequency_mandalas3.py', the analytic standing-wave helper adds N equally phase-offset cosines with symmetry N, which cancel algebraically for integer N>1; its normalization can amplify numerical roundoff. The purported boundary-absorption window exp(-25(1-r)^2) strongly damps the center (r=0) instead of the nominal boundary (r=1). No measured superiority over standard frequency processing is presented. The accompanying TikTok is a remembered creative prompt, not evidence for its 'language of reality' assertion.",
+      "evidence": "https://github.com/anttiluode/2MandalaTools/blob/4b647a0a8779d886d87c8c7b181cf061c368a6/frequency_mandalas3.py",
+      "tags": [
+        "2026-01-04",
+        "tkinter",
+        "fft",
+        "radial-frequency-bands",
+        "frequency-equalizer",
+        "symmetry",
+        "max-compositing",
+        "mandala",
+        "cymatics-display",
+        "phi-spacing",
+        "sigh-aesthetic",
+        "tiktok-origin",
+        "visual-instrument",
+        "unbenchmarked"
+      ],
+      "era": "Early frequency lenses / visual crystallography",
+      "era_order": 3
+    }
+  ],
+  "edges": [
+    {
+      "source": "2MandalaTools",
+      "target": "SighImageSuper",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both use recursive/structured image-frequency filtering as visually inspectable transformations, with the shared Sigh vocabulary. 2MandalaTools isolates radial FFT bands and applies symmetry; SighImageSuper iterates a fixed equalizer and studies surviving structures. Similar intent does not establish copied code or direct ancestry.",
+      "evidence": "https://github.com/anttiluode/2MandalaTools/blob/4b647a0a8779d886d87c8c7b181cf061c368a6/polar%20sigh%20true.py"
+    },
+    {
+      "source": "2MandalaTools",
+      "target": "Sihti",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "2MandalaTools is an earlier visual instrument for asking which patterns survive radial frequency selection, whereas Sihti later records exact disappearing residues and tests how changing the purifier moves object structure between core and residue. The relationship is conceptual and historically ordered, not an asserted implementation inheritance or a transferable benchmark result.",
+      "evidence": "https://github.com/anttiluode/2MandalaTools/blob/4b647a0a8779d886d87c8c7b181cf061c368a6/frequency_mandalas3.py"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "radial-frequency-lens-versus-operator-created-structure",
+      "title": "What the observer's frequency operator reveals is different from structure manufactured by symmetry",
+      "description": "2MandalaTools makes radial spatial-frequency bands directly inspectable but deliberately enforces image symmetries through nonlinear rotation/flip/max aggregation. SighImageSuper later iterates an image EQ, and Sihti keeps each discarded residue and tests dependence on the purifier. The shared, testable idea is that operator choice controls visible and retained distinctions. Decorative multiplicity, spectral selectivity, reversible residue bookkeeping and independent source information must not be equated. This is a conceptual cross-project comparison, not confirmed code lineage.",
+      "nodes": [
+        "2MandalaTools",
+        "SighImageSuper",
+        "Sihti"
+      ]
+    }
+  ]
+}
