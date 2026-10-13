@@ -1,0 +1,200 @@
+{
+  "id": "october-13-predictive-image-inverse-material",
+  "title": "October 13: future-sufficient memory, trainable response graphs, inverse mandalas and material fossils",
+  "reviewed_at": "2026-10-13",
+  "order": 113,
+  "summary": "Four distinct 13 October repositories enter the wall. ResearchQuestion isolates the exact future-sufficiency condition and benchmarks learned codes against switched ERA/linear PEM; SihtiResponseGraph trains an image-conditioned response operator for planar glyph rotation, with a small one-seed graph-versus-vector pilot; InverseMandala proves nonlinear max-symmetry ambiguity and compares complementary versus coded views; Kerrostuma makes a simulated toroidal crust that retains formation history and tests approximate predictive closure under wait/melt interventions. The connections are documented mechanism reuse or conceptual comparisons, not one discovered AI architecture. Small synthetic tests and their negative results remain visible.",
+  "nodes": [
+    {
+      "id": "Kerrostuma",
+      "url": "https://github.com/anttiluode/Kerrostuma",
+      "family": "procedural-world",
+      "status": "tool",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A browser-rendered seeded toroidal material world: quench a curved-surface Swift–Hohenberg crust under an initially hidden cooling/spin law; grow GelatinIsland-style carriers and conductive gel on defects; probe the present crust for information about past formation and future wait/melt responses.",
+      "survived": "Headless WebGL-to-CPU fixture matches the specified crust evolution; 8/8 fresh synthetic worlds classified fast versus slow cooling using a frozen calibration. On 5/18 worlds whose spin exceeded a no-wind null threshold, inferred direction was correct 5/5 (selective cases only). Grown conductive gel transmits identical pulses to 4005–6705 cells versus 176–243 after shuffling. For 36 distinct world/age histories, the compact crust census predicts held-out next census under an 80-step wait (R² defects 0.94; coherence 0.92), but this is a finite-sample predictive fit rather than a proof of exact state closure.",
+      "killed": "The field is a toy with supplied physics, artistic optics, fixed known age in the principal calibration and limited test worlds—not a planetary model. Spin is mostly unreadable outside fast-cooled worlds; the proposed re-melt probe heals from rim templating and fails as an independent clock, and predicting scar-minus-surrounding response fails (R² -0.14 from the basic census). No unique age/cooling-rate inversion or exact closed quotient is established.",
+      "evidence": "https://github.com/anttiluode/Kerrostuma/blob/main/README.md",
+      "tags": [
+        "2026-10-13",
+        "swift-hohenberg",
+        "torus",
+        "crust-fossil",
+        "hidden-history",
+        "intervention",
+        "predictive-closure",
+        "gel-network",
+        "synthetic"
+      ],
+      "era": "Temporal fossils in physical-shaped procedural worlds",
+      "era_order": 114
+    },
+    {
+      "id": "ResearchQuestion",
+      "url": "https://github.com/anttiluode/ResearchQuestion",
+      "family": "probe-inference",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "When does an encoder retain enough state to answer and update future queries? An exact 32D nonlinear mechanism isolates a four-coordinate future-sufficient quotient, and a bridge-feedback world where five coordinates are necessary. A second learned experiment hides the latent basis and trains small prediction memories; a switched-system ERA and post-hoc prediction-error refinement test classical competitors.",
+      "survived": "In the constructed v1 world, all eight fixed gates pass: future readout Jacobian rank is 4 without bridge feedback and 5 with it; predictive four-state NRMSE rises to 0.274 only in the bridge world while exact five-state future error is about 4.5e-16. On 2 independent synthetic apparatus seeds v2 learned 5D prediction scores 0.179/0.157 six-step NRMSE (closed/bridge). Post-hoc linear ERA+PEM beats learned 5D on closed (0.156 vs 0.179) while learned tanh wins on bridge (0.157 vs 0.180); pure switched ERA loses both.",
+      "killed": "The v1 exact quotient was engineered using privileged hidden coordinates, not learned. V2 is a new synthetic apparatus with supervised query labels and only two seeds; the learned fifth coordinate also helps in the closed world, so bridge identification is not proved. Pure ERA's poorer long rollout is not a refutation of classical realization theory; the linear PEM upgrade was explicitly post-hoc. No images, neurons, or general-purpose pretrained AI were evaluated.",
+      "evidence": "https://github.com/anttiluode/ResearchQuestion/blob/main/README.md",
+      "tags": [
+        "2026-10-13",
+        "hankel",
+        "future-sufficient-state",
+        "controlled-quotient",
+        "bridge-residue",
+        "switching",
+        "era",
+        "prediction-error",
+        "learned-memory",
+        "synthetic"
+      ],
+      "era": "Queryable future-sufficient state and observability",
+      "era_order": 115
+    },
+    {
+      "id": "SihtiResponseGraph",
+      "url": "https://github.com/anttiluode/SihtiResponseGraph",
+      "family": "residue-operator",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A compact trainable image-response graph: a synthetic 32×32 coloured glyph writes 896 quantized image-specific edge conductances on an 8×8 lattice. The observed image activity is cleared; a new spatial ping propagates through those conductances and a decoder answers one of four planar quarter-turn queries. Comparison stores an equal-byte vector rather than edge conductances.",
+      "survived": "One seeded pilot (seed 7, 1200 training steps; 1024 training and 128 held-out glyphs) measured held-out MSE 0.023825 (16.23 dB) for the uint8 response graph versus 0.025985 (15.85 dB) for the 896-byte vector and 0.033369 (14.77 dB) for a fixed-graph control. The graph wins on three rotated views but not the unrotated one; tests cover cleared-state repeated queries, swapped memories, masked writes and gradients. The operator stores information that a fresh probe can read.",
+      "killed": "The experiment learns only deterministic planar quarter-turns, not previously unseen 3D geometry, real-world video or faithful identity after occlusion. Both methods produce blurred results and lose the tiny distinguishing mark. One seed, unequal shared parameter/compute overhead and a graph consisting of 896 stored bytes do not establish a reliable model advantage, an efficient codec or biologically faithful dendrites.",
+      "evidence": "https://github.com/anttiluode/SihtiResponseGraph/blob/main/README.md",
+      "tags": [
+        "2026-10-13",
+        "sihti",
+        "fast-weights",
+        "image-conditioned-graph",
+        "conductances",
+        "cleared-activity",
+        "spatial-ping",
+        "image-generation",
+        "equal-bytes",
+        "one-seed-pilot"
+      ],
+      "era": "History-written image response operators",
+      "era_order": 116
+    },
+    {
+      "id": "InverseMandala",
+      "url": "https://github.com/anttiluode/InverseMandala",
+      "family": "image-frequency",
+      "status": "tool",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Extracts the nonlinear image-mixing step of January's 2MandalaTools: rotated copies, odd-copy reflections, and per-pixel maximum. Tests inverse ambiguity with an exact pair of different source images producing identical N=3,7,16 mandalas; implements blind inverse reconstruction, winning-layer provenance diagnostics, a browser lab and fixed pre-max digital mask/contrast/center interventions.",
+      "survived": "The exact collision proves the single and multiple high-symmetry observations do not uniquely identify every source. A blind solver can almost perfectly re-render the N=16 face mandala (45.33 dB) yet recover the source poorly (10.31 dB). Three symmetry views improve the synthetic face to 18.33 dB. V2 equal three-view comparison across three synthetic scenes: mean source PSNR 15.45 dB for N=3,7,16 versus 13.73 for fixed coded masks. Digital pre-max masks expose the otherwise invisible one-pixel collision (0.1625 largest 0–1 output difference).",
+      "killed": "An argmax map only identifies the winning copy, not the suppressed pixel values. Coded masks break this particular ambiguity but do not beat extra symmetry views for overall reconstruction; contrast inversion also exposes the collision. Results concern three noise-free 64×64 drawings with known forward law, solver approximate OpenCV interpolation and no trainable image prior. Independent masks for each virtual layer cannot be treated as a realizable Varjoluotain shadow plate, and neither visual fit nor very high forward PSNR proves unique source recovery.",
+      "evidence": "https://github.com/anttiluode/InverseMandala/blob/main/README.md",
+      "tags": [
+        "2026-10-13",
+        "mandala",
+        "max-compositing",
+        "inverse-rendering",
+        "exact-collision",
+        "argmax-provenance",
+        "coded-measurement",
+        "identifiability",
+        "synthetic"
+      ],
+      "era": "Inverting the January symmetry machine",
+      "era_order": 117
+    }
+  ],
+  "edges": [
+    {
+      "source": "2MandalaTools",
+      "target": "InverseMandala",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "InverseMandala explicitly extracts and reproduces frequency_mandalas3.py's rotation, alternating mirror and pixelwise-max compositing stage. It isolates the inverse problem instead of repeating the original FFT equalizer or false-colour display.",
+      "evidence": "https://github.com/anttiluode/InverseMandala/blob/main/README.md"
+    },
+    {
+      "source": "Varjoluotain",
+      "target": "InverseMandala",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The inverse mandala's v2 experiment explicitly contrasts coded pre-max digital measurements with Varjoluotain's occluder-defined light transport. Both test whether modifying a measurement exposes distinctions, but the independently addressable virtual masks here are not physical periscopy.",
+      "evidence": "https://github.com/anttiluode/InverseMandala/blob/main/CODED_PROTOCOL.md"
+    },
+    {
+      "source": "Sihti",
+      "target": "SihtiResponseGraph",
+      "type": "converges",
+      "confidence": "high",
+      "why": "SihtiResponseGraph names Sihti's image-conditioned neighbor weights as inspiration, then trains a new image-specific graph whose read starts from cleared input-independent activity; the source does not claim direct inheritance of Sihti's purifier code.",
+      "evidence": "https://github.com/anttiluode/SihtiResponseGraph/blob/main/README.md"
+    },
+    {
+      "source": "SighImageFactorization",
+      "target": "SihtiResponseGraph",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both study a propagation geometry that retains information from past input instead of solely from instantaneous pixels, but this is a conceptual comparison rather than a documented copied implementation.",
+      "evidence": "https://github.com/anttiluode/SihtiResponseGraph/blob/main/README.md"
+    },
+    {
+      "source": "Sihti",
+      "target": "ResearchQuestion",
+      "type": "converges",
+      "confidence": "high",
+      "why": "ResearchQuestion explicitly calls its telescoping full-state decomposition Sihti-like bookkeeping and distinguishes this construction from Sihti's original dyadic diffusion. The experiment asks which discarded residue affects future queries, not how to reconstruct an image.",
+      "evidence": "https://github.com/anttiluode/ResearchQuestion/blob/main/README.md"
+    },
+    {
+      "source": "CrystalMoon",
+      "target": "Kerrostuma",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Kerrostuma explicitly credits CrystalMoon for its Swift–Hohenberg material/visual idea, then simulates quench-written patterns on a curved torus. This is a documented conceptual/mathematical descent, not asserted file-level code inheritance.",
+      "evidence": "https://github.com/anttiluode/Kerrostuma/blob/main/README.md"
+    },
+    {
+      "source": "GelatinIsland",
+      "target": "Kerrostuma",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Kerrostuma's 20,480 carriers lay gel veins, and the project explicitly credits GelatinIsland for carrier-to-conducting-network dynamics. A shuffled-gel control tests the resulting conduction.",
+      "evidence": "https://github.com/anttiluode/Kerrostuma/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "image-graph-experience-writes-operator",
+      "title": "A seen image can store information in a future response operator",
+      "description": "Sihti fixes graph topology but writes per-edge conductances from local pixel similarity; SighImageFactorization explores learning history-conditioned relations; SihtiResponseGraph trains an equal-byte stored conductance field so that a fresh spatial ping can recover a planar glyph rotation. This is demonstrated on a small seeded 2D glyph task, not unseen 3D structure, pretrained vision or a general compression advantage.",
+      "nodes": [
+        "Sihti",
+        "SighImageFactorization",
+        "SihtiResponseGraph"
+      ]
+    },
+    {
+      "id": "predictive-closure-versus-history-fossil",
+      "title": "A good present readout may not be a sufficient state for the next intervention",
+      "description": "ResearchQuestion constructs a causal feedback bridge whose influence appears only after subsequent actions and compares finite learned and classical predictors. Kerrostuma separately measures how formation history survives in an evolving crust: a small census predicts waiting responses on a 36-world pilot but not remelt-scar residuals, and hidden law labels need not outperform present-state observations. This is a shared conditional sufficiency test, not proof that a planet and a network implement one memory mechanism.",
+      "nodes": [
+        "ResearchQuestion",
+        "Kerrostuma"
+      ]
+    },
+    {
+      "id": "mandala-max-intervention-observability",
+      "title": "Nonlinear symmetry can conceal information; independent measurements can reveal it",
+      "description": "2MandalaTools manufactures repeated image structure by max-mixing rotated and mirrored copies. InverseMandala proves a source collision and tests how multiple views, per-branch coded masks and contrast change recoverability. Varjoluotain uses a distinct physical light-transport operator with an occluding plate. The connection is intervention-dependent observability, explicitly not an equivalence between digital per-layer masks and a real shadow plate.",
+      "nodes": [
+        "2MandalaTools",
+        "InverseMandala",
+        "Varjoluotain"
+      ]
+    }
+  ]
+}
