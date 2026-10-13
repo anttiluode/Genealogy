@@ -382,5 +382,9 @@
   {
     "path": "phi-hologram-phase-gauge.json",
     "enabled": true
+  },
+  {
+    "path": "crystal-hunt-world-mind.json",
+    "enabled": true
   }
 ]

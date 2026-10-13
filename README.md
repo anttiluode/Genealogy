@@ -23,6 +23,12 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
+## 2026-10-13 — CrystalHunt: an early world watching itself
+
+Added [CrystalHunt](https://github.com/anttiluode/CrystalHunt) (July 2025) to the reviewed atlas through the [procedural-world observer pass](data/passes/crystal-hunt-world-mind.json). The single-file Three.js game includes noise-based streaming terrain, civilizations and collectibles, MediaPipe gesture flight, keyboard input, procedural audio, and an embedded `CognitiveBellSystem`. The noteworthy source-inspected loop renders the current scene to a 64×64 grayscale view approximately every 61 frames; 200 scouts sample it, update a nonlinear wave field, and field-peak thresholds trigger artifacts or a weather rule. This is an actual programmed scene → observer → world-event connection, **not** validated visual learning, an autoencoder, or a computationally advantageous field model.
+
+The new **comparison** links to FieldComputer and CrystalMoon explicitly avoid claiming shared code ancestry: CrystalHunt's procedural terrain is not CrystalMoon's evolving material field. There is no new empirical evidence record because no independent runtime/ablation experiment was run. Source limitations include camera-dependent initialization even for keyboard play and chunk cleanup that leaves placed objects resident.
+
 ## 2026-10-12 — Monday inverse labs: the reader is not the hidden source
 
 Two new projects join the atlas as **different synthetic inverse-modeling instruments**, with [their reviewed pass](data/passes/monday-inverse-residue-labs.json) and separate evidence records.

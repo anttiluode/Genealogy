@@ -1,0 +1,69 @@
+{
+  "id": "crystal-hunt-world-mind",
+  "title": "CrystalHunt: camera-driven procedural exploration and a scout-wave world feedback loop",
+  "reviewed_at": "2026-10-13",
+  "order": 608,
+  "summary": "This July 2025 Three.js browser game combines simplex-noise streamed terrain, biome-conditioned procedural civilizations and collectibles, pose-driven flight, Web Audio synthesis, and a second simulation called CognitiveBellSystem. Approximately every 61 animation frames, a dedicated 64x64 renderer captures the current scene's grayscale pixels; 200 scouts sample those pixels, deposit strikes in a nonlinear wave field, and detected local maxima trigger simple rule-based artifact spawning (or a random weather action). It is an early executable idea for an observer linked back to a world, not demonstrated learning, world-model reconstruction, or computational superiority. CrystalMoon later makes a growing material field alter its own optical representation; FieldComputer later measures a scout-field memory system and finds coupling unnecessary for its tested tasks. These are conceptual comparisons, not established code lineage.",
+  "nodes": [
+    {
+      "id": "CrystalHunt",
+      "url": "https://github.com/anttiluode/CrystalHunt",
+      "family": "procedural-world",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "medium",
+      "claim": "Browser-based 3D exploration game with camera/MediaPipe steering or keyboard inputs, generated terrain chunks, cities, artifacts, rainbow attractors, synthesized sound and seasonal/day-night changes. Its embedded CognitiveBellSystem consumes 64x64 grayscale camera renderings and uses a 200-scout nonlinear wave state to drive fixed spawn/weather rules.",
+      "survived": "Source inspection of the committed single-file index.html identifies concrete Three.js world/chunk construction, simplex-noise biomes, webcam pose controls and keyboard listeners, Web Audio oscillator sound, artifact collection/energy, and a periodically executed perception-feedback path. The game creates a separate WebGL render target, reads 64x64 grayscale pixels into world_data, applies scout sensing/weighted strikes and a damped nonlinear Laplacian/biharmonic wave update, then counts local peaks and conditionally creates artifacts or changes fog. The update is invoked from the animation loop rather than merely described in the README. This is source inspection, not a completed live browser replay or evidence that the system reliably changes outcomes.",
+      "killed": "The README's 'world mind' and infinite world descriptions do not establish intelligence, learned dynamics, an autoencoder, or stable persistence. CognitiveBellSystem has manually set coefficients, random scout exploration and fixed thresholds; the reconstruction is a decaying scout-mark map, not a trained or tested image reconstructor. No comparative game, perception-feedback ablation, memory benchmark, or camera/pose reliability measurements are committed. MediaPipe/webcam initialization is awaited before keyboard play is available, so the advertised keyboard fallback is not independently resilient to denied camera permission. updateChunks removes old terrain meshes but explicitly leaves other chunk-created objects behind; terrain/world content is not shown to be losslessly regenerated on return. Procedural terrain is coordinate-based rather than a self-evolving crystal material. External browser libraries/CDNs and webcam permissions are required; runtime performance was not independently retested.",
+      "evidence": "https://github.com/anttiluode/CrystalHunt/blob/1975dea99eaeaac78a344591ebd3f978a7f4af6e/index.html",
+      "tags": [
+        "2025",
+        "browser-game",
+        "threejs",
+        "mediapipe",
+        "pose-control",
+        "procedural-terrain",
+        "simplex-noise",
+        "artifacts",
+        "web-audio",
+        "scout-wave",
+        "scene-to-state-to-action",
+        "fixed-rule-feedback",
+        "no-learned-world-model",
+        "chunk-cleanup-limit"
+      ],
+      "era": "Early procedural world / observer-feedback play",
+      "era_order": 34
+    }
+  ],
+  "edges": [
+    {
+      "source": "CrystalHunt",
+      "target": "CrystalMoon",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both are flyable procedural worlds with a feedback intuition, but the 2025 CrystalHunt uses coordinate-based terrain and a separate rendered-image-to-scout field whose peaks affect spawns, whereas 2026 CrystalMoon uses a slowly evolving material field whose amplitude alters local growth and ray paths. Comparison of two distinct implementations; CrystalMoon does not cite CrystalHunt as a source and no implementation inheritance is claimed.",
+      "evidence": "https://github.com/anttiluode/CrystalHunt/blob/1975dea99eaeaac78a344591ebd3f978a7f4af6e/index.html"
+    },
+    {
+      "source": "CrystalHunt",
+      "target": "FieldComputer",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "CrystalHunt contains a programmed scout/strike/nonlinear-wave loop coupled to its rendered scene and occasional game events. FieldComputer later re-examines an archived scout/field system and tests response memory against uncoupled/driven controls. Neither result transfers: CrystalHunt has no matched feedback ablation, and common scout/wave concepts alone do not prove shared code ancestry.",
+      "evidence": "https://github.com/anttiluode/CrystalHunt/blob/1975dea99eaeaac78a344591ebd3f978a7f4af6e/index.html"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "procedural-world-observer-feedback-boundary",
+      "title": "Seeing a procedural world and writing back into it is a loop, not automatically learned world intelligence",
+      "description": "CrystalHunt routes a camera rendering to a small weighted-scout nonlinear wave state and uses a simple peak-count rule to alter artifact/weather events. FieldComputer shows why nonlinear memory in a scout-field loop does not by itself prove the benefit of coupling, while CrystalMoon later directly couples a field's dynamics to its visual optics. The useful boundary is to distinguish programmed perception-to-action, causal growing material, and measured comparative value; no common engine, learning law, or physical realization is established.",
+      "nodes": [
+        "CrystalHunt",
+        "CrystalMoon",
+        "FieldComputer"
+      ]
+    }
+  ]
+}
