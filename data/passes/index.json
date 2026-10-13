@@ -386,5 +386,9 @@
   {
     "path": "crystal-hunt-world-mind.json",
     "enabled": true
+  },
+  {
+    "path": "two-mandala-tools-frequency-lens.json",
+    "enabled": true
   }
 ]
