@@ -30,7 +30,7 @@ class OctoberThirteenFourProjectsTests(unittest.TestCase):
             self.assertTrue(nodes[project]["evidence"].startswith("https://github.com/"))
         self.assertIn("one seed", nodes["SihtiResponseGraph"]["killed"].lower())
         self.assertIn("post-hoc", nodes["ResearchQuestion"]["killed"].lower())
-        self.assertIn("physic", nodes["InverseMandala"]["killed"].lower())
+        self.assertIn("shadow plate", nodes["InverseMandala"]["killed"].lower())
         self.assertIn("rim", nodes["Kerrostuma"]["killed"].lower())
 
     def test_links_are_mechanism_based_not_invented_code_ancestry(self):
