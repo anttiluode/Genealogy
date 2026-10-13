@@ -390,5 +390,9 @@
   {
     "path": "two-mandala-tools-frequency-lens.json",
     "enabled": true
+  },
+  {
+    "path": "october-13-predictive-image-inverse-material.json",
+    "enabled": true
   }
 ]
