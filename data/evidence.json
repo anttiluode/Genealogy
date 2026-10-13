@@ -5504,5 +5504,378 @@
       "Synthetic demonstrations cannot validate the README's brainstem, phase-delay-correction, ephaptic or clinical interpretations."
     ],
     "source": "https://github.com/anttiluode/Phi-Hologram/blob/main/Phi-Hologram.py"
+  },
+  {
+    "id": "sihti-response-graph-quantized-pilot",
+    "node": "SihtiResponseGraph",
+    "claim": "After image-specific conductances have been written and the original pixels cleared, a fresh query ping can elicit a planar rotated glyph image; a small one-seed pilot scores slightly better than an equal-byte vector, while both lose tiny marks.",
+    "design": "Synthetic asymmetric 32x32 coloured glyphs; train 1024, held-out 128, seed 7, 1200 training steps; independent graph and vector writers trained with shared example batches and objective. Compare 896 uint8 graph conductances versus 896 uint8 vector activations and a fixed image-independent graph control. Four planar quarter-turn queries; held-out quantized readout.",
+    "result": "mixed",
+    "motifs": [
+      "image-graph-experience-writes-operator"
+    ],
+    "sample": {
+      "unit": "held-out synthetic glyph",
+      "count": 128
+    },
+    "metrics": [
+      {
+        "name": "graph MSE",
+        "value": 0.023825
+      },
+      {
+        "name": "vector MSE",
+        "value": 0.025985
+      },
+      {
+        "name": "fixed graph MSE",
+        "value": 0.033369
+      },
+      {
+        "name": "per-image stored state each",
+        "value": 896,
+        "unit": "bytes"
+      },
+      {
+        "name": "graph PSNR",
+        "value": 16.23,
+        "unit": "dB"
+      },
+      {
+        "name": "vector PSNR",
+        "value": 15.85,
+        "unit": "dB"
+      }
+    ],
+    "controls": [
+      "Equal per-image uint8 state and synchronized training batches for vector and graph",
+      "Fixed graph estimated from training images and used across held-out glyphs",
+      "Fresh ping after clearing input activity; writer-gradients and memory-swapping unit tests"
+    ],
+    "replication": "One seed pilot; repository CI runs unit/smoke checks. Not a multi-seed independent performance validation.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Only deterministic rotations of a planar glyph; there is no hidden 3D backside, uncertain geometry or motion.",
+      "Both methods blur the small identity mark; graph does not win the unrotated view.",
+      "Shared parameter sizes, compute and training time are not fully equalized. One seed cannot establish a general win.",
+      "Trained on complete views; partial-view write quality is unmeasured."
+    ],
+    "source": "https://github.com/anttiluode/SihtiResponseGraph/blob/main/results/pilot_1200.json"
+  },
+  {
+    "id": "researchquestion-exact-future-quotient",
+    "node": "ResearchQuestion",
+    "claim": "For a deliberately engineered 32D nonlinear synthetic system, a current-query-visible 4D code is future sufficient when bridge feedback is absent, but is not future sufficient when one hidden bridge coordinate feeds the next observable answers.",
+    "design": "Frozen 8-seed engineered closed/bridge dynamics with four core, one bridge, 27 nuisance coordinates under an arbitrary orthogonal basis; exact Jacobians, future-response comparisons, counterfactual perturbations and fixed eight gates.",
+    "result": "supports",
+    "motifs": [
+      "predictive-closure-versus-history-fossil"
+    ],
+    "sample": {
+      "unit": "frozen simulator seed",
+      "count": 8
+    },
+    "metrics": [
+      {
+        "name": "closed readout Jacobian rank",
+        "value": 4
+      },
+      {
+        "name": "bridge readout Jacobian rank",
+        "value": 5
+      },
+      {
+        "name": "closed 4-state future NRMSE",
+        "display": "3.91e-16"
+      },
+      {
+        "name": "bridge 4-state future NRMSE",
+        "value": 0.2737
+      },
+      {
+        "name": "bridge 5-state future NRMSE",
+        "display": "4.53e-16"
+      }
+    ],
+    "controls": [
+      "Keep current six query answers identical while altering hidden bridge state",
+      "Toggle bridge-to-core coupling",
+      "Perturb 27 nuisance coordinates without observable future effects",
+      "Full update Jacobian remains rank 32"
+    ],
+    "replication": "Eight fixed simulator seeds and CI-run gates; exact result depends on the constructed coupling law.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Full basis and exact quotient are known to designer, not inferred by an agent.",
+      "No natural images, biological measurements or general-model advantage.",
+      "This is an exact construction, not proof every 32D system has a 4/5 state quotient."
+    ],
+    "source": "https://github.com/anttiluode/ResearchQuestion/blob/main/results/summary.json"
+  },
+  {
+    "id": "researchquestion-learned-hankel-comparison",
+    "node": "ResearchQuestion",
+    "claim": "When hidden coordinates are inaccessible, learned nonlinear predictive memory and classical switched-system realization differ by dynamics: post-hoc linear PEM wins on closed world and the nonlinear model narrowly wins on bridge world; unrefined switched ERA loses against learned code.",
+    "design": "Two synthetic apparatus seeds 41 and 97; 12 mixed observation channels, action history and supervised future query labels; 1200 train, 240 validation, 400 held-out episodes per world/seed. Open-loop six-step NRMSE. Switched Ho-Kalman/ERA estimates action shifts; classical linear 6-step prediction-error least squares is a labeled post-hoc diagnostic.",
+    "result": "mixed",
+    "motifs": [
+      "predictive-closure-versus-history-fossil"
+    ],
+    "sample": {
+      "unit": "held-out episode per world",
+      "count": 800
+    },
+    "metrics": [
+      {
+        "name": "learned five-state closed NRMSE",
+        "value": 0.179
+      },
+      {
+        "name": "learned five-state bridge NRMSE",
+        "value": 0.157
+      },
+      {
+        "name": "ERA5+PEM closed NRMSE (post-hoc)",
+        "value": 0.156
+      },
+      {
+        "name": "ERA5+PEM bridge NRMSE (post-hoc)",
+        "value": 0.18
+      },
+      {
+        "name": "unrefined ERA5 closed NRMSE",
+        "value": 0.414
+      },
+      {
+        "name": "unrefined ERA5 bridge NRMSE",
+        "value": 0.421
+      }
+    ],
+    "controls": [
+      "Frozen learned training split and identical synthetic test episodes",
+      "Switched ERA with one shift operator per action rather than invalid single LTI assumption",
+      "Exact switched-linear synthetic system checks the classical identification machinery",
+      "PEM uses the same 381 parameter count as learned five-state (but post-hoc)"
+    ],
+    "replication": "GitHub Actions independently reproduced learned/ERA test receipts; only two apparatus seeds, PEM was not part of original frozen comparison.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Post-hoc PEM comparison cannot be retroactively called preregistered.",
+      "Learned fifth coordinate also helps when true system closes in four; it does not prove precise bridge recovery.",
+      "Small synthetic model, supervised targets, untuned recurrent baselines and mismatched full computation/storage budgets.",
+      "Classical methods have model-class constraints, not blanket inferiority."
+    ],
+    "source": "https://github.com/anttiluode/ResearchQuestion/blob/main/results/era_v2b_summary.json"
+  },
+  {
+    "id": "inverse-mandala-exact-collision",
+    "node": "InverseMandala",
+    "claim": "Distinct original images can give exactly identical outputs under the original nonlinear symmetry-max operator at N=3,7,16; matching the observed mandala almost perfectly need not reconstruct its source.",
+    "design": "Faithful OpenCV rotation and odd-index reflection followed by per-pixel maximum; witness sources differ at one interior dark pixel of a white field. Blind inverse fixed optimizer trained on output only; score source PSNR and exact re-render agreement independently on three synthetic 64x64 scenes.",
+    "result": "supports",
+    "motifs": [
+      "mandala-max-intervention-observability"
+    ],
+    "sample": {
+      "unit": "exact source collision pair",
+      "count": 1
+    },
+    "metrics": [
+      {
+        "name": "collision max output difference N=3,7,16",
+        "value": 0
+      },
+      {
+        "name": "symmetry 16 face blind source PSNR",
+        "value": 10.31,
+        "unit": "dB"
+      },
+      {
+        "name": "same candidate forward fit PSNR",
+        "value": 45.33,
+        "unit": "dB"
+      },
+      {
+        "name": "face source PSNR with N=3,7,16",
+        "value": 18.33,
+        "unit": "dB"
+      }
+    ],
+    "controls": [
+      "Symmetry N=1 distinguishes the witness",
+      "Blind solver receives no source or winning-copy provenance",
+      "Oracle winning-copy linear least squares is reported separately as privileged diagnostic",
+      "Exact OpenCV forward renders of every inverse candidate"
+    ],
+    "replication": "Fixed deterministic synthetic fixtures; CI runs collision proof and benchmark.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Three synthetic drawings are not representative natural photos.",
+      "Perfect fit to max-composite cannot uniquely determine suppressed values.",
+      "Browser uses continuous bilinear versus OpenCV's quantized bilinear interpolation.",
+      "This is the mandala fusion stage, not reversal of earlier grayscale/EQ/colour conversions."
+    ],
+    "source": "https://github.com/anttiluode/InverseMandala/blob/main/results/summary.json"
+  },
+  {
+    "id": "inverse-mandala-coded-observation-v2",
+    "node": "InverseMandala",
+    "claim": "Pre-maximum coded transmission and contrast can expose a source difference that three conventional symmetry views leave exactly invisible, but ordinary complementary symmetry views yield better source recovery than tested masks on the three pilot scenes.",
+    "design": "Frozen protocol with identical fixed 90-iteration L-BFGS-B inverse across three-view arms: N=3,7,16, shifted centers, and N=16 + two independent 8x8 per-branch masks. Contrast and duplication controls. Three synthetic 64x64 scenes, exact one-pixel collision witness and local winner-selected sensitivity coverage.",
+    "result": "mixed",
+    "motifs": [
+      "mandala-max-intervention-observability"
+    ],
+    "sample": {
+      "unit": "synthetic source scene",
+      "count": 3
+    },
+    "metrics": [
+      {
+        "name": "three symmetry views mean source PSNR",
+        "value": 15.451,
+        "unit": "dB"
+      },
+      {
+        "name": "two coded masks plus baseline mean source PSNR",
+        "value": 13.735,
+        "unit": "dB"
+      },
+      {
+        "name": "shifted centers mean source PSNR",
+        "value": 10.869,
+        "unit": "dB"
+      },
+      {
+        "name": "three-view mixed contrast mean source PSNR",
+        "value": 9.365,
+        "unit": "dB"
+      },
+      {
+        "name": "largest coded collision witness difference",
+        "value": 0.162497,
+        "unit": "0–1 intensity"
+      },
+      {
+        "name": "ordinary symmetries witness difference",
+        "value": 0
+      }
+    ],
+    "controls": [
+      "Three same N=16 views control duplicates and matches single-view source score 7.372",
+      "Inverted contrast also reveals the dark-pixel witness",
+      "Frozen mask seeds 11 and 29, independent of source",
+      "Read out source PSNR, forward fit and first-order coverage separately"
+    ],
+    "replication": "Pre-result protocol; an independent Github Actions run regenerates all scenes and checks the committed receipt.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "The coded masks address virtual rotated layers independently; this is not physically equivalent to an occluder in Varjoluotain.",
+      "Breaking one exact collision does not establish unique image inversion or best average reconstruction.",
+      "Noise-free synthetic data, known forward model, fixed local optimizer, no matched natural-image prior or full sensing cost.",
+      "Contrast inversion assumes an actively modified source rather than a passive camera snapshot."
+    ],
+    "source": "https://github.com/anttiluode/InverseMandala/blob/main/results/coded_v2.json"
+  },
+  {
+    "id": "kerrostuma-quench-fossils-and-network",
+    "node": "Kerrostuma",
+    "claim": "In a simulated quenched torus crust, present structure carries some information about past cooling and directional spin, while an emergent gel network conducts farther than a shuffled shape-control.",
+    "design": "Swift–Hohenberg metric torus, quenched hidden rate/spin, 10 calibration worlds, 8 held-out cooling-class worlds, 18 eligible spin checks, direct CPU/WebGL correspondence and grown versus shuffled gel-conduction controls.",
+    "result": "mixed",
+    "motifs": [
+      "predictive-closure-versus-history-fossil"
+    ],
+    "sample": {
+      "unit": "fresh synthetic cooling-class world",
+      "count": 8
+    },
+    "metrics": [
+      {
+        "name": "held-out fast/slow cooling class correct",
+        "display": "8/8"
+      },
+      {
+        "name": "selectively asserted spin predictions correct",
+        "display": "5/5 among 18 considered"
+      },
+      {
+        "name": "conduction on grown gel",
+        "display": "4005–6705 activated cells"
+      },
+      {
+        "name": "conduction on shuffled gel",
+        "display": "176–243 activated cells"
+      }
+    ],
+    "controls": [
+      "WebGL crust checks against CPU step reference and headless browser",
+      "No-wind spin null band; no claim on worlds below confidence threshold",
+      "Same gel values shuffled spatially, protected pulse source unchanged",
+      "Some field rates/time constants fixed or known; calibration and held-out worlds separated"
+    ],
+    "replication": "Repository supplies source/receipts; calibration and blind synthetic worlds reported. Not independent natural scientific data.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "The model is not a real planet, neuron or biological growth observation.",
+      "Spin direction is asserted only in selected fast-cooled cases.",
+      "Cooling rate recovered as category, not a calibrated continuous value.",
+      "Re-melt probe heals via rim templating; it does not break the age/cooling-rate ambiguity."
+    ],
+    "source": "https://github.com/anttiluode/Kerrostuma/blob/main/results/receipt.json"
+  },
+  {
+    "id": "kerrostuma-wait-vs-melt-predictive-closure",
+    "node": "Kerrostuma",
+    "claim": "The compact present-crust census predicts waiting outcomes much better than it predicts local re-melt scar responses in a small synthetic state-closure experiment.",
+    "design": "36 crusts, 4 cooling rates by 3 ages by 3 seeds; compare census, added coherence/length/energy, added local observations, and privileged hidden-law/age/rate features. Predict next code after an 80-step wait or fixed-site re-melt with leave-one-trajectory-out kNN.",
+    "result": "mixed",
+    "motifs": [
+      "predictive-closure-versus-history-fossil"
+    ],
+    "sample": {
+      "unit": "synthetic crust trajectory",
+      "count": 36
+    },
+    "metrics": [
+      {
+        "name": "wait next defect census R²",
+        "value": 0.94
+      },
+      {
+        "name": "wait next coherence R²",
+        "value": 0.92
+      },
+      {
+        "name": "melt scar-minus-surroundings R²",
+        "value": -0.14
+      },
+      {
+        "name": "melt broken-rock scar R²",
+        "value": 0.25
+      }
+    ],
+    "controls": [
+      "Disjoint held-out trajectory via leave-one-trajectory-out evaluation",
+      "Compare coded census against privileged history-law information",
+      "Same two explicit interactions wait and melt across all craters",
+      "Local feature enhancements do not improve scar prediction in this pilot"
+    ],
+    "replication": "Single deterministic 36-world toy suite with reported receipt and scripted reproducibility.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Predictive R² on finite data is not exact behavioral closure or a proof of Markov sufficiency.",
+      "Small dataset with potentially poor kNN performance in higher dimensions; one melt site and wait duration.",
+      "Melt outcomes depend on unobserved rim microstructure and noise.",
+      "Hidden age and cooling rate remain nonidentifiable under measured queries."
+    ],
+    "source": "https://github.com/anttiluode/Kerrostuma/blob/main/results/closure.json"
   }
 ]
