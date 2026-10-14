@@ -1,0 +1,227 @@
+{
+  "id": "october-14-phase-graph-memory-falsifications",
+  "title": "October 14: remote phase probes, true phase-only rewriting, gauge loops and gradient fast weights",
+  "reviewed_at": "2026-10-14",
+  "order": 122,
+  "summary": "Five missing October 14 repositories enter Genealogy, extending the already-reviewed SihtiResponseGraph from October 13. SihtiGrapImageModel proves ideal common-path cancellation but fails strong local-access controls on some learned writers; NextLevel's trained phase router loses to frozen routing and exact indexed bits; GraphNN finds a real 896-byte phase-only advantage on one frozen A→B→A′ synthetic task while falsifying loop-compensation claims; Wednesday isolates exact gauge-loop identities and collateral write costs against a smaller bit-table baseline; PhaseGraphFastWeightCell improves 64-rewrite recall through horizon training yet shows unstable reader-through-Jacobian meta-learning. Connections are separately labeled provenance or mechanism comparisons rather than one Transformer replacement.",
+  "nodes": [
+    {
+      "url": "https://github.com/anttiluode/SihtiGrapImageModel",
+      "id": "SihtiGrapImageModel",
+      "family": "probe-inference",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "An image-conditioned 64-byte, 8×8 phase map is interrogated remotely through constrained unitary paths and fixed ports. Independent held-out controls compare conditional wave probes, paired noncommuting orders, conjugate ratios and privileged source-addressed phase reads.",
+      "survived": "Across two frozen learned writers, four complex question-directed wave readings averaged 93.58% quadrant-mark accuracy versus 65.31% for question-independent paths. Common-path phase cancels to roughly 1e-6 in the ideal two-shot model. But cancellation is not synonymous with preserving every useful cue: on seed 41, two raw order readings classify 78.37%, and the explicit ratio only 59.23%; seed 97 scores 98.73% versus 98.58%.",
+      "killed": "Addressable local phase reads score 99.02% at four samples, beating the active wave readout; question-directed paths use 12 internal propagation steps per probe whereas direct addressing has different access costs. The ratio is relative source-minus-port phase, not guaranteed absolute source phase or newly created information. It is a synthetic quadrant experiment, not a wave-physics image generator, moving-scene model or general-purpose reader.",
+      "evidence": "https://github.com/anttiluode/SihtiGrapImageModel/blob/main/README.md",
+      "tags": [
+        "2026-10-14",
+        "sihti",
+        "image-phase",
+        "fixed-ports",
+        "interferometry",
+        "common-path",
+        "query-conditioned-probes",
+        "negative-control",
+        "uint8",
+        "synthetic"
+      ],
+      "era": "October 14: constrained phase interrogation",
+      "era_order": 117
+    },
+    {
+      "url": "https://github.com/anttiluode/NextLevel",
+      "id": "NextLevel",
+      "family": "probe-inference",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A bounded phase-graph memory gate compares exact common-path interferometry and a trained 64-byte writer/reader with frozen-router, GRU, fast-weight, window-attention and exact indexed-bit controls across long synthetic key-rewrite histories.",
+      "survived": "The paired ideal path measurement cancels shared nuisance algebraically and survives changes to intermediate phase. At 1200 training steps on 64 independent writes, learned phase ratio accuracy averages 84.11% across seeds 41/97/127; the same-initialization frozen-route control averages 86.26%. Quantized phase state and held-out rewrite checks are real and reproducible, even when the original architecture hypothesis fails.",
+      "killed": "Learned routing loses to the frozen router on average, and the ratio equals a direct addressed phase readout to numerical precision. The 16-byte exact 128-key bit table reaches 100% accuracy in every seed. Neither a memory-capacity advantage, adaptive feedback interrogation, compute-matched Transformer comparison nor a Transformer replacement is demonstrated. The apparent phase benefit depends on given key/geometry assumptions.",
+      "evidence": "https://github.com/anttiluode/NextLevel/blob/main/results/gate1/long1200/summary.json",
+      "tags": [
+        "2026-10-14",
+        "finite-capacity",
+        "phase-graph",
+        "quantization",
+        "frozen-route-control",
+        "interferometry",
+        "indexed-baseline",
+        "negative-result",
+        "long-horizon"
+      ],
+      "era": "October 14: exact memory budget meets learned geometry",
+      "era_order": 118
+    },
+    {
+      "url": "https://github.com/anttiluode/GraphNN",
+      "id": "GraphNN",
+      "family": "residue-operator",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A runnable Janus Cabbage descendant writes two synthetic images into a shared complex-edge graph and reads them through spatially conditioned transport. Frozen A→B→A′ rewrites, matched random perturbations and genuinely scratch-trained 896-byte phase-only memory test whether B can survive updates to A.",
+      "survived": "At 500 steps across seeds 41/97/127, the true 896-byte phase-only graph recovers both A′ and B marks in 384/384 held-out pairs (B RGB MSE 0.01989), versus 337/384 for an equal-byte positive-gain graph, 376/384 for an equal-byte vector and 349/384 for a wider 1792-byte gain-only graph. The original 1792-byte complex graph also gets 384/384. Matched random-state changes produce about 13.6× more B output drift than the actual graph A rewrite; local B Jacobian sensitivity is about 7.5× larger along random directions.",
+      "killed": "This is one targeted synthetic A/B detail rewrite, not unlimited retention, natural-image competence, loop-holonomy compensation or unitary physics. A sham write of unchanged A already changes 85.46% of graph bytes, so widespread byte changes are not evidence of intentional corrections for the changed mark. Inference-only phase removal is a distribution shift; the still-missing trained signed-real graph could explain much of the phase-versus-positive-gain contrast. The basic static RGB vector slightly beat the graph on the original one-seed reconstruction pilot.",
+      "evidence": "https://github.com/anttiluode/GraphNN/blob/main/results/phase_gate/REPORT.md",
+      "tags": [
+        "2026-10-14",
+        "janus-cabbage",
+        "graph-memory",
+        "phase-only",
+        "subspace-selectivity",
+        "jacobian",
+        "sham-write",
+        "rewrite",
+        "896-bytes",
+        "synthetic"
+      ],
+      "era": "October 14: learned phase rewrites and controls",
+      "era_order": 119
+    },
+    {
+      "url": "https://github.com/anttiluode/Wednesday",
+      "id": "Wednesday",
+      "family": "probe-inference",
+      "status": "tool",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "An interactive 8-bit lattice gauge-loop laboratory explicitly distinguishes open-path phase readings from closed-plaquette flux, showing exact invariance to vertex rephasing and the cost of compensating writes when neighboring faces share edges.",
+      "survived": "Closed-loop flux and paired path measurements read all stored synthetic bits correctly under arbitrary vertex rephasing in the exact model, while single open-path readings with shared disturbance classify at 49.5%. A compensated writer keeps neighboring face fluxes unchanged at a cost of 1–7 edge writes; a naive one-edge update corrupts adjacent loops. With 196 noisy paired shots, an engineered confidence-directed policy gets 90.4% versus 87.1% for uniform allocation on one synthetic noise model.",
+      "killed": "The 13-byte exact 98-bit indexed table remains smaller and scores 100%. Gauge identities are standard U(1) algebra; this is a hand-coded, direct-address model with no learned image writer or learned adaptive probing. It cannot be transplanted automatically into GraphNN, which has not demonstrated storing information in loop holonomy, exact gauge invariance or a compensation policy.",
+      "evidence": "https://github.com/anttiluode/Wednesday/blob/main/README.md",
+      "tags": [
+        "2026-10-14",
+        "gauge",
+        "plaquette",
+        "holonomy",
+        "phase-loop",
+        "compensated-write",
+        "interactive",
+        "intervention",
+        "strong-indexed-baseline"
+      ],
+      "era": "October 14: closed-loop gauge memory as exact control",
+      "era_order": 120
+    },
+    {
+      "url": "https://github.com/anttiluode/PhaseGraphFastWeightCell",
+      "id": "PhaseGraphFastWeightCell",
+      "family": "state-memory",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A 48-byte uint8 edge-phase recurrent cell compared with equal-byte signed and vector variants, a privileged exact indexed-delta rule, then extended to long-horizon training, sparse prediction-error writes and meta-training a reader through its own state-gradient update.",
+      "survived": "User's three-seed 600-episode curriculum reaching 64 rewrites reduced phase 64-rewrite MSE from the original 0.303904 to 0.119708, versus 0.129821 signed and 0.293230 vector. An exact addressed phase-plaquette delta control achieves 0.0000202 MSE across 64 rewrites (8-bit quantization noise). In the separate trained reader-through-gradient study, higher-order meta-learning beats its same-size first-order control at 64 rewrites by 0.185918 versus 0.192249 and lowers a normalized cross-key Jacobian overlap.",
+      "killed": "The indexed-loop result is not learned graph memory and loses to the 48-byte orthogonal float delta rule (zero MSE). The 600-episode global-writer training increases optimizer-update count, so the original training-horizon effect is confounded by compute. The fully trained 48-byte higher-order gradient writer scores 0.851117 after one rewrite (first-order 0.091192), trails the original global phase writer at 64 rewrites, modifies all eight allowed bytes on repeat and increases actual cross-key drift despite lower normalized Jacobian overlap. No speed/SSM/Transformer advantage or guaranteed orthogonal readout geometry.",
+      "evidence": "https://github.com/anttiluode/PhaseGraphFastWeightCell/blob/main/results/meta_ttt/REPORT.md",
+      "tags": [
+        "2026-10-14",
+        "phase-graph",
+        "fast-weight",
+        "quantized",
+        "horizon-curriculum",
+        "delta-rule",
+        "jacobian",
+        "meta-training",
+        "negative-result",
+        "explicit-indexed-control"
+      ],
+      "era": "October 14: recurrent phase memory and meta-gradient limits",
+      "era_order": 121
+    }
+  ],
+  "edges": [
+    {
+      "source": "SihtiResponseGraph",
+      "target": "NextLevel",
+      "type": "converges",
+      "confidence": "high",
+      "why": "NextLevel explicitly credits SihtiResponseGraph's image-written conductance field as motivation, then tests whether fixed-byte phase queries really add value against exact memory baselines.",
+      "evidence": "https://github.com/anttiluode/NextLevel/blob/main/README.md"
+    },
+    {
+      "source": "SihtiGrapImageModel",
+      "target": "NextLevel",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "NextLevel explicitly cites SihtiGrapImageModel's finite-path common-phase cancellation and imports its measurement question into controlled bit-memory budgets; no model-weight inheritance is claimed.",
+      "evidence": "https://github.com/anttiluode/NextLevel/blob/main/README.md"
+    },
+    {
+      "source": "SihtiResponseGraph",
+      "target": "GraphNN",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both experiments encode images into query-conditioned graph responses using fixed quantized state. GraphNN independently derives from Janus Cabbage and adds frozen rewrite controls, so this is a conceptual comparison rather than copied implementation.",
+      "evidence": "https://github.com/anttiluode/GraphNN/blob/main/README.md"
+    },
+    {
+      "source": "NextLevel",
+      "target": "Wednesday",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Wednesday explicitly calls itself a falsifiable bridge with NextLevel and tests exact closed-loop flux instead of assuming paired open paths guarantee storage capacity.",
+      "evidence": "https://github.com/anttiluode/Wednesday/blob/main/README.md"
+    },
+    {
+      "source": "SihtiGrapImageModel",
+      "target": "Wednesday",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Wednesday explicitly names the restricted probe and paired-path experiments as motivation while substituting face-loop gauge invariance; exact shared-phase algebra does not mean the learned image writer encodes loop flux.",
+      "evidence": "https://github.com/anttiluode/Wednesday/blob/main/README.md"
+    },
+    {
+      "source": "GraphNN",
+      "target": "Wednesday",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Wednesday explicitly connects GraphNN's mutable spatial graph to exact plaquette-holonomy and compensated-write controls; GraphNN has not been shown to implement those controls.",
+      "evidence": "https://github.com/anttiluode/Wednesday/blob/main/README.md"
+    },
+    {
+      "source": "GraphNN",
+      "target": "PhaseGraphFastWeightCell",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "PhaseGraphFastWeightCell explicitly says its byte-phase graph mechanism is inspired by GraphNN's half-memory gate, then tests recurrent long streams and Jacobian error writes that GraphNN's one-rewrite image gate did not test.",
+      "evidence": "https://github.com/anttiluode/PhaseGraphFastWeightCell/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "oct14-phase-query-versus-direct-access",
+      "title": "A correct phase probe need not beat direct addressing",
+      "description": "SihtiGrapImageModel verifies common-path cancellation but raw paired readings can preserve cues lost by a ratio; NextLevel finds remote ratios no more accurate than direct addressed phase and inferior to exact indexed bits. Wednesday supplies exact gauge-loop invariance, then still loses to a smaller direct indexed table. The shared result is a hierarchy of measurements and access costs, not information created by interference.",
+      "nodes": [
+        "SihtiGrapImageModel",
+        "NextLevel",
+        "Wednesday"
+      ]
+    },
+    {
+      "id": "oct14-phase-written-memory-versus-signed-control",
+      "title": "Learned phase-only state can work for one targeted rewrite, but not prove general retention",
+      "description": "SihtiResponseGraph shows stored image-conditioned response operators on a planar glyph; GraphNN's true 896-byte phase-only reader beats gain-only and vector on a narrow A→B→A′ synthetic mark gate; PhaseGraphFastWeightCell improves long-horizon scores through training yet its meta-gradient writer loses short-history calibration. The task, writer law, shared weights and compute differ, so these are related experiments, not a shared proven neural architecture.",
+      "nodes": [
+        "SihtiResponseGraph",
+        "GraphNN",
+        "PhaseGraphFastWeightCell"
+      ]
+    },
+    {
+      "id": "oct14-loop-gauge-vs-learned-readout-nullspace",
+      "title": "Exact loop gauge invariance is not a learned readout nullspace",
+      "description": "Wednesday has exact algebraic gauge invariance and a hand-coded compensating writer. GraphNN instead measures a learned small B-response along actual writer displacements and falsifies the inference that changing many bytes means loop compensation. PhaseGraphFastWeightCell's reader-through-Jacobian approach lowers normalized cross-key overlap but can increase finite-write drift. Each notion of invariance has a different operational definition.",
+      "nodes": [
+        "Wednesday",
+        "GraphNN",
+        "PhaseGraphFastWeightCell"
+      ]
+    }
+  ]
+}
