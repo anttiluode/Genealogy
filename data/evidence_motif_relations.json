@@ -356,5 +356,39 @@
   },
   "kerrostuma-wait-vs-melt-predictive-closure": {
     "predictive-closure-versus-history-fossil": "documents"
+  },
+  "sihti-grap-fixed-port-conditional-probes": {
+    "oct14-phase-query-versus-direct-access": "limits"
+  },
+  "sihti-grap-v3b-ratio-vs-raw": {
+    "oct14-phase-query-versus-direct-access": "limits"
+  },
+  "nextlevel-learned-vs-frozen-router-1200": {
+    "oct14-phase-query-versus-direct-access": "limits"
+  },
+  "graphnn-phase-only-896B-three-seeds": {
+    "oct14-phase-written-memory-versus-signed-control": "supports",
+    "oct14-loop-gauge-vs-learned-readout-nullspace": "documents"
+  },
+  "graphnn-jacobian-sham-and-matched-random": {
+    "oct14-loop-gauge-vs-learned-readout-nullspace": "limits"
+  },
+  "wednesday-gauge-loop-compensated-write": {
+    "oct14-phase-query-versus-direct-access": "documents",
+    "oct14-loop-gauge-vs-learned-readout-nullspace": "documents"
+  },
+  "phasegraph-64rewrite-horizon-trained": {
+    "oct14-phase-written-memory-versus-signed-control": "limits"
+  },
+  "phasegraph-meta-delta-fails-short-horizon": {
+    "oct14-phase-written-memory-versus-signed-control": "limits",
+    "oct14-loop-gauge-vs-learned-readout-nullspace": "limits"
+  },
+  "phasegraph-indexed-loop-delta-positive-control": {
+    "oct14-loop-gauge-vs-learned-readout-nullspace": "documents"
+  },
+  "sihti-response-mark-probe-reader-followup": {
+    "image-graph-experience-writes-operator": "supports",
+    "oct14-phase-written-memory-versus-signed-control": "documents"
   }
 }
