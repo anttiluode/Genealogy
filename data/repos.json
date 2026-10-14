@@ -2123,6 +2123,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "GraphNN",
+    "url": "https://github.com/anttiluode/GraphNN",
+    "default_branch": "main",
+    "size": 1669,
+    "visibility": "public",
+    "description": "Sol repo",
+    "created_at": "2026-10-14T10:33:45Z",
+    "updated_at": "2026-10-14T15:09:14Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "grokking-viscosity",
     "url": "https://github.com/anttiluode/grokking-viscosity",
     "default_branch": "main",
@@ -3113,6 +3124,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "NextLevel",
+    "url": "https://github.com/anttiluode/NextLevel",
+    "default_branch": "main",
+    "size": 2121,
+    "visibility": "public",
+    "description": "Sol repo. ",
+    "created_at": "2026-10-14T09:57:22Z",
+    "updated_at": "2026-10-14T10:59:48Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "Nollas",
     "url": "https://github.com/anttiluode/Nollas",
     "default_branch": "main",
@@ -3430,6 +3452,17 @@
     "created_at": "2026-07-26T15:05:58Z",
     "updated_at": "2026-07-26T15:06:35Z",
     "inventory_status": "unread"
+  },
+  {
+    "name": "PhaseGraphFastWeightCell",
+    "url": "https://github.com/anttiluode/PhaseGraphFastWeightCell",
+    "default_branch": "main",
+    "size": 1183,
+    "visibility": "public",
+    "description": "Sol repo",
+    "created_at": "2026-10-14T15:21:13Z",
+    "updated_at": "2026-10-14T16:48:42Z",
+    "inventory_status": "reviewed"
   },
   {
     "name": "PhaseKeyedAssociativeStorage",
@@ -4034,6 +4067,17 @@
     "description": "What happens when we 'purify' noise. Sol thinking repo. ",
     "created_at": "2026-09-20T14:50:11Z",
     "updated_at": "2026-09-20T14:59:27Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "SihtiGrapImageModel",
+    "url": "https://github.com/anttiluode/SihtiGrapImageModel",
+    "default_branch": "main",
+    "size": 482,
+    "visibility": "public",
+    "description": "Sol repo",
+    "created_at": "2026-10-14T05:52:53Z",
+    "updated_at": "2026-10-14T09:56:42Z",
     "inventory_status": "reviewed"
   },
   {
@@ -5190,6 +5234,17 @@
     "created_at": "2026-03-26T11:12:47Z",
     "updated_at": "2026-03-26T11:20:24Z",
     "inventory_status": "unread"
+  },
+  {
+    "name": "Wednesday",
+    "url": "https://github.com/anttiluode/Wednesday",
+    "default_branch": "main",
+    "size": 29,
+    "visibility": "public",
+    "description": "Sol repo. ",
+    "created_at": "2026-10-14T11:53:00Z",
+    "updated_at": "2026-10-14T12:07:19Z",
+    "inventory_status": "reviewed"
   },
   {
     "name": "weirdfieldthingy",
