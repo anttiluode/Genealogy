@@ -925,5 +925,55 @@
       "This is a proposed future bridge experiment, not an experiment already run in FieldComputer or VineComputer.",
       "Distinct synthetic worlds need paired evaluation for valid first-to-last improvement estimates."
     ]
+  },
+  {
+    "id": "phase-graph-selective-rewrite-vs-signed-delta",
+    "title": "Do learned phase transport and error-driven writes protect changing memories beyond signed-real or indexed storage?",
+    "state": "open",
+    "motifs": [
+      "oct14-phase-written-memory-versus-signed-control",
+      "oct14-loop-gauge-vs-learned-readout-nullspace",
+      "oct14-phase-query-versus-direct-access"
+    ],
+    "evidence": [
+      "graphnn-phase-only-896B-three-seeds",
+      "graphnn-jacobian-sham-and-matched-random",
+      "phasegraph-64rewrite-horizon-trained",
+      "phasegraph-meta-delta-fails-short-horizon",
+      "wednesday-gauge-loop-compensated-write",
+      "nextlevel-learned-vs-frozen-router-1200"
+    ],
+    "competing_explanations": [
+      "The continuous U(1) edge phase, paths and trained readout afford query-selective update directions that remain useful under longer histories, even when positive and negative signed-real transport, direct vector state, keys and computational work are matched.",
+      "Signed-real mixtures, increased writer supervision, a better update acceptance rule or known-key indexing reproduce all observed benefits without complex interference or loop-phase storage; phase-specific advantage disappears outside the two-mark synthetic gate.",
+      "Phase advantage depends on short-horizon synthetic image structure; on general histories, quantization/gradient geometry induces drift and stable retention requires stronger addressed storage or retrieval, not more phases."
+    ],
+    "known": [
+      "GraphNN's scratch-trained 896-byte phase-only reader recovers 384/384 synthetic A′ and B marks, while the equal-byte gain-only reader recovers 337/384; the missing signed-real *graph* control prevents a phase-specific conclusion.",
+      "GraphNN actual A updates have low B sensitivity compared with norm-matched random perturbations, but writing unchanged A already modifies about 85.5% of its bytes; this does not show Wednesday-like compensating gauge writes.",
+      "Wednesday's plaquette holonomy and compensated writer are exact constructions with public loop addresses. The 13-byte exact indexed memory stores the random bits perfectly with fewer bytes.",
+      "On the 48-byte recurrent test, horizon training through 64 rewrites improves phase mean MSE to 0.1197 versus signed 0.1298, but reader-through-Jacobian higher-order training collapses after one rewrite (MSE 0.851 vs 0.091 for first-order) and does not beat the earlier global writer.",
+      "NextLevel's learned remote phase ratio matches direct addressed phase but loses to the 16-byte exact bitset, making retrieval interfaces and budget decisive."
+    ],
+    "missing_discriminator": "A trained 896-byte signed-real transport graph and a trained 896-byte phase-only graph must share the same byte, parameter, write/update and readout budgets; both must face multi-object, many-rewrite histories, incorrect structure, sham writes, genuine query feedback and equal-cost direct addressing. Separately isolate phase-loop flux and finite-write cross-key drift with causal interventions.",
+    "candidate_experiment": {
+      "design": "Freeze a common many-object sequential rewrite benchmark (1,4,16,64 updates) and a small held-out visual/relational version. Compare phase-only GraphNN transport, a matched signed-real graph with edge values [-1,1], positive gain-only, direct vector, a quantized loss-monotone delta writer, original global writer and exact known-key tables. Match 8-bit state and readout parameter counts and report FLOPs/autograd calls independently. For every write, record target-key improvement, old-key drift, unchanged-input byte changes, and exact per-horizon Jacobian cross terms. In a separate gauge test, apply integer vertex rephasings and loop-flux-preserving versus loop-breaking perturbations at equal byte-change and output-disturbance budgets to test whether loop invariants actually mediate retained information.",
+      "cost": "medium to high: reuse GraphNN and PhaseGraphFastWeightCell trainers, three pilot seeds then 10-20 confirmatory seeds; large 8×8 graph/higher-order runs may require GPU.",
+      "outcomes": [
+        {
+          "if": "The phase-only graph consistently beats parameter/byte-matched signed-real and strong direct baselines across held-out histories while maintaining low finite-write drift and phase-specific gauge/loop perturbation sensitivity",
+          "then": "Promote a narrow measured phase-transport advantage with the known workload and cost; record phase-specific causal mechanism only if loop controls succeed."
+        },
+        {
+          "if": "Signed-real or indexed/delta alternatives match phase at equal update/read cost, or the phase model fails on long histories or novel query structure",
+          "then": "Keep GraphNN's synthetic one-rewrite phase success as a task-specific result, not evidence of a distinct general memory architecture."
+        }
+      ]
+    },
+    "notes": [
+      "The matched signed-real graph is not the same control as positive gain-only edges; phase can express negative edge transport even if no specifically complex interference is needed.",
+      "Cross-Jacobian products certify first-order local sensitivity only and do not guarantee finite quantized or 64-step retention.",
+      "This question is not a prediction that phase graphs replace Transformers or that closed-loop holonomy is already learned."
+    ]
   }
 ]

@@ -64,8 +64,8 @@
       "usefulness": "scientific",
       "confidence": "high",
       "claim": "A compact trainable image-response graph: a synthetic 32×32 coloured glyph writes 896 quantized image-specific edge conductances on an 8×8 lattice. The observed image activity is cleared; a new spatial ping propagates through those conductances and a decoder answers one of four planar quarter-turn queries. Comparison stores an equal-byte vector rather than edge conductances.",
-      "survived": "One seeded pilot (seed 7, 1200 training steps; 1024 training and 128 held-out glyphs) measured held-out MSE 0.023825 (16.23 dB) for the uint8 response graph versus 0.025985 (15.85 dB) for the 896-byte vector and 0.033369 (14.77 dB) for a fixed-graph control. The graph wins on three rotated views but not the unrotated one; tests cover cleared-state repeated queries, swapped memories, masked writes and gradients. The operator stores information that a fresh probe can read.",
-      "killed": "The experiment learns only deterministic planar quarter-turns, not previously unseen 3D geometry, real-world video or faithful identity after occlusion. Both methods produce blurred results and lose the tiny distinguishing mark. One seed, unequal shared parameter/compute overhead and a graph consisting of 896 stored bytes do not establish a reliable model advantage, an efficient codec or biologically faithful dendrites.",
+      "survived": "One seeded pilot (seed 7, 1200 training steps; 1024 training and 128 held-out glyphs) measured held-out MSE 0.023825 (16.23 dB) for the uint8 response graph versus 0.025985 (15.85 dB) for the 896-byte vector and 0.033369 (14.77 dB) for a fixed-graph control. The graph wins on three rotated views but not the unrotated one; tests cover cleared-state repeated queries, swapped memories, masked writes and gradients. The operator stores information that a fresh probe can read. Follow-up frozen-writer tests probe a previously missed tiny mark: a separately trained mark-aware reader reduces graph mark-pixel RGB MSE from 0.04652 to 0.02644 on 256 new synthetic objects, versus 0.03308 for an erased-mark-trained graph and 0.02832 for an equal-byte vector with its own mark-aware head. Shuffling or erasing the mark before writing hurts mark recovery, indicating part of the distinction survives in stored bytes even when the initial renderer blurs it.",
+      "killed": "The experiment learns only deterministic planar quarter-turns, not previously unseen 3D geometry, real-world video or faithful identity after occlusion. The original RGB renderer blurs the tiny distinguishing mark; a separately trained reader can partially recover it, but mark geometry and colour remain imperfect. One seed, unequal shared parameter/compute overhead and a graph consisting of 896 stored bytes do not establish a reliable model advantage, an efficient codec or biologically faithful dendrites.",
       "evidence": "https://github.com/anttiluode/SihtiResponseGraph/blob/main/README.md",
       "tags": [
         "2026-10-13",
@@ -77,7 +77,8 @@
         "spatial-ping",
         "image-generation",
         "equal-bytes",
-        "one-seed-pilot"
+        "one-seed-pilot",
+        "mark-reader-followup"
       ],
       "era": "History-written image response operators",
       "era_order": 116

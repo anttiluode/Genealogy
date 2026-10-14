@@ -5877,5 +5877,519 @@
       "Hidden age and cooling rate remain nonidentifiable under measured queries."
     ],
     "source": "https://github.com/anttiluode/Kerrostuma/blob/main/results/closure.json"
+  },
+  {
+    "id": "sihti-grap-fixed-port-conditional-probes",
+    "node": "SihtiGrapImageModel",
+    "claim": "Question-directed distant wave probes improve on question-independent probes in a frozen learned 64-byte phase image state, but are inferior to privileged direct local phase reads.",
+    "design": "Two frozen seed 41/97 32×32 synthetic quadrant writers, 2048 held-out queries per checkpoint; four complex readings, each 12 unitary shifts to two fixed ports; distinct reader heads for conditional/reversed/paired/fixed-route and direct-local controls.",
+    "result": "mixed",
+    "motifs": [
+      "oct14-phase-query-versus-direct-access"
+    ],
+    "sample": {
+      "unit": "held-out question per writer checkpoint",
+      "count": 2048
+    },
+    "metrics": [
+      {
+        "name": "conditional wave four-shot accuracy",
+        "value": 0.9358
+      },
+      {
+        "name": "question-independent four-shot accuracy",
+        "value": 0.6531
+      },
+      {
+        "name": "direct-local phase four-shot accuracy",
+        "value": 0.9902
+      },
+      {
+        "name": "stored phase-state bytes",
+        "value": 64,
+        "unit": "bytes"
+      }
+    ],
+    "controls": [
+      "Frozen two writer checkpoints; held-out questions",
+      "Fixed-port passive and query-independent routes",
+      "Addressed local phase/amplitude stronger-access controls"
+    ],
+    "replication": "Two trained writer seeds; matched protocols and test sets; question samples not independent writer replications.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Only two independently trained writers; multiple questions per scene are correlated",
+      "Active path reads 12 internal sites, while direct samples one site: reader compute/access not matched",
+      "Path selection uses known target quadrant without prior-response feedback; not an adaptive policy"
+    ],
+    "source": "https://github.com/anttiluode/SihtiGrapImageModel/blob/main/results/restricted_ports/seed41.json"
+  },
+  {
+    "id": "sihti-grap-v3b-ratio-vs-raw",
+    "node": "SihtiGrapImageModel",
+    "claim": "The exact two-path relative-phase ratio cancels shared path nuisance but can discard useful signal relative to a learned raw paired reader.",
+    "design": "Frozen checkpoint two-shot interrogation K=2 across two separately trained writers; compare z1conj(z2), raw ordered complex pair, plain subtraction and addressed source phase.",
+    "result": "mixed",
+    "motifs": [
+      "oct14-phase-query-versus-direct-access"
+    ],
+    "sample": {
+      "unit": "held-out questions per checkpoint",
+      "count": 2048
+    },
+    "metrics": [
+      {
+        "name": "max complex ratio identity error",
+        "value": 0.0000011
+      },
+      {
+        "name": "seed 41 raw paired classification",
+        "value": 0.7837
+      },
+      {
+        "name": "seed 41 explicit ratio classification",
+        "value": 0.5923
+      },
+      {
+        "name": "seed 97 raw paired classification",
+        "value": 0.9873
+      },
+      {
+        "name": "seed 97 explicit ratio classification",
+        "value": 0.9858
+      }
+    ],
+    "controls": [
+      "Two frozen learned phase writers, seed 41 and seed 97",
+      "Question-matched source coordinate and two direct-address source positions reported separately",
+      "Intermediate phase changes confirm analytic common-path identity"
+    ],
+    "replication": "Two independent writer checkpoints; precision identity exact in defined unitary simulator, task result variable.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Relative phase source-minus-port is not absolute local source phase",
+      "One ratio is a deterministic transformation of the raw pair, so cannot contain more information",
+      "The two writers represent different learned spatial maps and do not generalize to natural image completion"
+    ],
+    "source": "https://github.com/anttiluode/SihtiGrapImageModel/blob/main/results/interferometry/seed41.json"
+  },
+  {
+    "id": "nextlevel-learned-vs-frozen-router-1200",
+    "node": "NextLevel",
+    "claim": "After 1200 training steps, the learned 64-byte phase router does not improve over its same-initialization frozen router or exact indexed memory on 64 independent writes.",
+    "design": "Seeds 41,97,127; phase ratio, paired probes and direct-addressed head compared with frozen routing, 64B GRU, 64B fast weight, learned window attention, exact 64B window and a 16B 128-key indexed bitset.",
+    "result": "mixed",
+    "motifs": [
+      "oct14-phase-query-versus-direct-access"
+    ],
+    "sample": {
+      "unit": "independently trained seed",
+      "count": 3
+    },
+    "metrics": [
+      {
+        "name": "learned phase ratio mean accuracy at 64 writes",
+        "value": 0.841146
+      },
+      {
+        "name": "same-init frozen-router ratio mean accuracy",
+        "value": 0.86263
+      },
+      {
+        "name": "exact indexed 16-byte bitset mean accuracy",
+        "value": 1
+      },
+      {
+        "name": "learned route versus direct phase ratio accuracy delta",
+        "value": 0
+      }
+    ],
+    "controls": [
+      "Frozen route begins at same neural initialization",
+      "Strong exact indexed baseline with known keys",
+      "Multiple sequence lengths and forced rewrites; held-out 512 test streams per scenario per seed"
+    ],
+    "replication": "Three model seeds, full 1200 training steps and held-out per-case evaluation; preliminary architectural gate fails.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Router writer-reader alignment and STE optimization can affect training",
+      "Paired remote path read requires more computations than direct addressing",
+      "No complete Transformer/SSM comparison or feedback-adaptive probing",
+      "Exact indexed 128-key bit memory solves this particular question using only 16B"
+    ],
+    "source": "https://github.com/anttiluode/NextLevel/blob/main/results/gate1/long1200/summary.json"
+  },
+  {
+    "id": "graphnn-phase-only-896B-three-seeds",
+    "node": "GraphNN",
+    "claim": "A newly trained 896-byte phase-only transport graph matches the original 1792-byte complex graph's two-mark retention and beats gain-only/vector variants on a frozen synthetic A→B→A′ rewrite gate.",
+    "design": "Three independent 500-step trained seeds, 128 held-out pairs each; A′ written while B pixels absent, weights frozen at evaluation, actual uint8 after writes. Compare 896B phase-only, 896B gain-only, 896B direct vector, 1792B original complex/vector, 1792B/16ch wider gain-only graph.",
+    "result": "supports",
+    "motifs": [
+      "oct14-phase-written-memory-versus-signed-control",
+      "oct14-loop-gauge-vs-learned-readout-nullspace"
+    ],
+    "sample": {
+      "unit": "held-out image pair across three independently trained seeds",
+      "count": 384
+    },
+    "metrics": [
+      {
+        "name": "phase-only joint detail correct",
+        "value": 384,
+        "unit": "of 384"
+      },
+      {
+        "name": "896B positive gain-only joint detail correct",
+        "value": 337,
+        "unit": "of 384"
+      },
+      {
+        "name": "896B vector joint detail correct",
+        "value": 376,
+        "unit": "of 384"
+      },
+      {
+        "name": "1792B wide-gain joint detail correct",
+        "value": 349,
+        "unit": "of 384"
+      },
+      {
+        "name": "phase-only B reconstruction RGB MSE",
+        "value": 0.019891
+      },
+      {
+        "name": "phase-only B prediction drift MSE",
+        "value": 0.000681
+      }
+    ],
+    "controls": [
+      "Same-size half-memory phase/gain/vector share 43211 trainable parameters",
+      "True uint8 edge planes and fixed missing gain/phase factors",
+      "Wider 1792B gain-only 16-channel comparison",
+      "Previously trained PR2 original 1792B models"
+    ],
+    "replication": "Three seeds 41/97/127 and separate 1792B wide-gain workflow, all measured.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Only synthetic 32×32 coloured marks and one A rewrite",
+      "Phase versus positive-gain cannot isolate complex phase from sign changes; trained signed-real graph missing",
+      "Different compute between graph transport and direct vector reader; wider gain uses more parameters",
+      "Three independently trained seeds, not 384 independent training runs; no natural-image proof"
+    ],
+    "source": "https://github.com/anttiluode/GraphNN/blob/main/results/phase_gate/pilot500/summary.json"
+  },
+  {
+    "id": "graphnn-jacobian-sham-and-matched-random",
+    "node": "GraphNN",
+    "claim": "Along GraphNN's actual frozen A rewrite, the B reader is much less sensitive than along same-norm random state perturbations; however writing unchanged A modifies almost the same fraction of state bytes.",
+    "design": "Frozen PR2 seeds 41/97/127 × 128 held-out pairs; four quantized norm-matched random memory perturbations per example, unchanged-A sham, 16 true local JVP examples per seed, and inference-only phase/gain/topology ablations.",
+    "result": "mixed",
+    "motifs": [
+      "oct14-loop-gauge-vs-learned-readout-nullspace"
+    ],
+    "sample": {
+      "unit": "held-out paired image examples",
+      "count": 384
+    },
+    "metrics": [
+      {
+        "name": "graph B drift actual A rewrite MSE",
+        "value": 0.000847196
+      },
+      {
+        "name": "graph B drift norm-matched random MSE",
+        "value": 0.011544513
+      },
+      {
+        "name": "graph local B JVP square actual",
+        "value": 0.001460538
+      },
+      {
+        "name": "graph local B JVP square random",
+        "value": 0.010923701
+      },
+      {
+        "name": "unchanged A sham changed graph bytes",
+        "value": 0.8546
+      },
+      {
+        "name": "actual A rewrite changed graph bytes",
+        "value": 0.8588
+      }
+    ],
+    "controls": [
+      "8-bit-rounded state perturbations norm matched before reader",
+      "Same-A sham rewrite and A′ actual rewrite",
+      "Autograd JVP at original memory and reader ablations"
+    ],
+    "replication": "Three frozen checkpoints, 384 held-out pairs; reproducible Actions job and saved JSON.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Local JVP result does not prove global exact nullspace",
+      "Large sham-write changes contradict a compensating loop-write inference",
+      "Ablation without retraining causes out-of-distribution readers",
+      "B retention supervised during training; not spontaneous discovery"
+    ],
+    "source": "https://github.com/anttiluode/GraphNN/blob/main/results/diagnostics/pr2_checkpoint_probe.json"
+  },
+  {
+    "id": "wednesday-gauge-loop-compensated-write",
+    "node": "Wednesday",
+    "claim": "An 8-bit oriented closed-loop phase is exactly invariant under vertex rephasing, while open-path observables can become uninformative; compensating face writes have a nonzero graph-wide update cost.",
+    "design": "One engineered two-channel 8×8 phase-graph world: 98 independent bits (49 A,49 B), 100 trials/condition, gauge perturbations, a compensated and naive writer, noisy paired paths with 196 total shots and a 13-byte bit table.",
+    "result": "supports",
+    "motifs": [
+      "oct14-phase-query-versus-direct-access",
+      "oct14-loop-gauge-vs-learned-readout-nullspace"
+    ],
+    "sample": {
+      "unit": "synthetic trial per condition",
+      "count": 100
+    },
+    "metrics": [
+      {
+        "name": "loop bit accuracy under random gauge",
+        "value": 1
+      },
+      {
+        "name": "open-path bit accuracy under shared gauge noise",
+        "value": 0.495
+      },
+      {
+        "name": "paired 196-shot uniform allocation accuracy",
+        "value": 0.871
+      },
+      {
+        "name": "paired 196-shot heuristic allocation accuracy",
+        "value": 0.904
+      },
+      {
+        "name": "indexed 13-byte bit table accuracy",
+        "value": 1
+      }
+    ],
+    "controls": [
+      "Gauge rephase and exact closed-loop operator identity",
+      "Compensated 1–7-edge write versus naive neighbor-corrupting edge write",
+      "Uniform equal-shot and confidence-directed probes",
+      "Tiny exact-indexed byte table"
+    ],
+    "replication": "100 toy trials/condition, seed 41, exact algebra and noise simulation.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "No trained writer, learned reader or new mathematical identity",
+      "Adaptive shot advantage depends on selected engineered noise distribution and hand-coded heuristic",
+      "Lattice is larger than exact index table; no memory-compression win"
+    ],
+    "source": "https://github.com/anttiluode/Wednesday/blob/main/results/pilot.json"
+  },
+  {
+    "id": "phasegraph-64rewrite-horizon-trained",
+    "node": "PhaseGraphFastWeightCell",
+    "claim": "Training through 64 rewrites reduces the 48-byte learned phase recurrent cell's 64-step error substantially, but signed-real remains competitive and direct indexing stays exact.",
+    "design": "CUDA 600 episodes per seed 41/97/127, horizons 1/4/16/64, TBPTT segment 8; evaluate phase, signed-real and vector on held-out keyed 4×3 scalar streams; compare to earlier writer trained through 16 and exact keyed delta.",
+    "result": "mixed",
+    "motifs": [
+      "oct14-phase-written-memory-versus-signed-control"
+    ],
+    "sample": {
+      "unit": "independently trained seed",
+      "count": 3
+    },
+    "metrics": [
+      {
+        "name": "phase 64-rewrite mean MSE",
+        "value": 0.119708
+      },
+      {
+        "name": "signed-real 64-rewrite mean MSE",
+        "value": 0.129821
+      },
+      {
+        "name": "vector 64-rewrite mean MSE",
+        "value": 0.29323
+      },
+      {
+        "name": "previous phase 64-rewrite MSE",
+        "value": 0.303904
+      },
+      {
+        "name": "stream-state bytes",
+        "value": 48,
+        "unit": "bytes"
+      }
+    ],
+    "controls": [
+      "Identical 48B state across phase/signed/vector and same curriculum",
+      "Strong privileged 48B exact delta-rule control",
+      "Independent 41/97/127 seeds and held-out runs"
+    ],
+    "replication": "User CUDA run across 3 seeds, full 600 episodes each; true 64-rewrite measured benchmark.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "New training executes ~2120–2190 optimizer updates/seed rather than 600, so compute and horizon are confounded",
+      "Learned phase still has large residual MSE vs exact slot baseline; 3 seeds insufficient for a broad win",
+      "Benchmark consists of independently indexed scalar values, not spatial image memory"
+    ],
+    "source": "https://github.com/anttiluode/PhaseGraphFastWeightCell/blob/main/results/horizon_matched/summary.json"
+  },
+  {
+    "id": "phasegraph-meta-delta-fails-short-horizon",
+    "node": "PhaseGraphFastWeightCell",
+    "claim": "Training reader parameters through their own quantized state-gradient writer gives a modest long-history gain over first order but severe early-history failure and no beat of the earlier global writer.",
+    "design": "Three-seed 600-episode higher-order versus first-order same-forward-write comparison, each 12867 parameters and 48B graph state. Each state-gradient write updates up to eight phase bytes and needs autograd; measure cross-Jacobian overlap, repeated-input byte changes and other-key drift.",
+    "result": "mixed",
+    "motifs": [
+      "oct14-phase-written-memory-versus-signed-control",
+      "oct14-loop-gauge-vs-learned-readout-nullspace"
+    ],
+    "sample": {
+      "unit": "independently trained seed",
+      "count": 3
+    },
+    "metrics": [
+      {
+        "name": "second-order meta 64-rewrite MSE",
+        "value": 0.185918
+      },
+      {
+        "name": "first-order 64-rewrite MSE",
+        "value": 0.192249
+      },
+      {
+        "name": "previous global-writer phase 64-rewrite MSE",
+        "value": 0.119708
+      },
+      {
+        "name": "second-order meta one-rewrite MSE",
+        "value": 0.851117
+      },
+      {
+        "name": "first-order one-rewrite MSE",
+        "value": 0.091192
+      },
+      {
+        "name": "meta other-key drift at 64",
+        "value": 0.012198
+      },
+      {
+        "name": "first-order other-key drift at 64",
+        "value": 0.007378
+      }
+    ],
+    "controls": [
+      "Same initialized reader/forward gradient writer for first-/second-order variants",
+      "True uint8 test states; per-write eight-byte bound",
+      "Measured normalized state Jacobian Gram and finite other-key drift",
+      "Earlier separately trained global phase writer"
+    ],
+    "replication": "Three 600-episode trained seeds and full CI training; unsuccessful gate.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "The higher-order model badly fails one-write recall even while normalized Jacobian overlap decreases",
+      "All eight bytes change on immediately repeated input; proposed idempotence not learned",
+      "Full 600-episode signed/vector meta variants not measured",
+      "Earlier global writer had larger batch, twice as many shared parameters and more optimizer steps"
+    ],
+    "source": "https://github.com/anttiluode/PhaseGraphFastWeightCell/blob/main/results/meta_ttt/full600.json"
+  },
+  {
+    "id": "phasegraph-indexed-loop-delta-positive-control",
+    "node": "PhaseGraphFastWeightCell",
+    "claim": "An exactly indexed phase-loop delta writer reaches the 8-bit quantization error floor with untouched-key invariance over 64 rewrites, without learning any graph addresses.",
+    "design": "Four known one-hot keys and 3D uniform values, fixed non-adjacent plaquette per key and scalar; repeat after quantization yields no state change. Compare 4×4 72-byte graph, 8×8 896-byte graph and exact 48B float orthogonal-key delta.",
+    "result": "supports",
+    "motifs": [
+      "oct14-loop-gauge-vs-learned-readout-nullspace"
+    ],
+    "sample": {
+      "unit": "held-out 64-rewrite stream across seeds",
+      "count": 384
+    },
+    "metrics": [
+      {
+        "name": "72B and 896B phase-indexed 64-rewrite MSE",
+        "value": 0.00002016
+      },
+      {
+        "name": "48B float exact keyed delta MSE",
+        "value": 0
+      },
+      {
+        "name": "identical-write changed bytes",
+        "value": 0
+      }
+    ],
+    "controls": [
+      "Exact known one-hot keys and predetermined face assignments",
+      "Smaller 72-byte loop variant vs 896-byte loop variant",
+      "Float exact keyed control and gauge-rephase invariance"
+    ],
+    "replication": "Three seeds × 128 streams, 64 rewrites each.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "This is a deliberately privileged indexed table in gauge-loop coordinates, not learned fast weights",
+      "Only 12 of the many phase bytes encode independent scalar values, so no storage efficiency gain",
+      "The 8-bit loss is ordinary quantization noise floor"
+    ],
+    "source": "https://github.com/anttiluode/PhaseGraphFastWeightCell/blob/main/results/local_delta_v2/pilot.json"
+  },
+  {
+    "id": "sihti-response-mark-probe-reader-followup",
+    "node": "SihtiResponseGraph",
+    "claim": "The source glyph's tiny distinguishing mark survives partly in frozen per-image graph bytes, despite being poorly expressed by its original RGB decoder; a trained queried mark reader can recover some colour and position information.",
+    "design": "Fresh synthetic glyphs with distinguishing patches; freeze 896B graph writer, evaluate disjoint mark probes and add reader/head training. Compare erased-mark images, shuffled memories, and equal-byte vector control.",
+    "result": "mixed",
+    "motifs": [
+      "image-graph-experience-writes-operator",
+      "oct14-phase-written-memory-versus-signed-control"
+    ],
+    "sample": {
+      "unit": "held-out synthetic test glyph",
+      "count": 256
+    },
+    "metrics": [
+      {
+        "name": "mark-aware graph RGB mark-pixel MSE",
+        "value": 0.02644
+      },
+      {
+        "name": "original graph RGB mark-pixel MSE",
+        "value": 0.04652
+      },
+      {
+        "name": "graph erased-trained mark-pixel MSE",
+        "value": 0.03308
+      },
+      {
+        "name": "vector mark-aware pixel MSE",
+        "value": 0.02832
+      }
+    ],
+    "controls": [
+      "Frozen original image writers; matched vector comparison",
+      "Source mark erased before encoding and separate erased-trained readouts",
+      "Shuffle held-out memory to break correspondence",
+      "Held-out mark-pixel render comparisons"
+    ],
+    "replication": "Fresh 256-object test and an earlier larger held-out probe test; extrapolation outside synthetic glyphs unsupported.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Reader retraining and a separate trained mark head are not the original image decoder",
+      "Tiny marks remain imperfect; data synthetic with deterministic planar transformations",
+      "Cannot infer off-screen geometry or actual natural image appearance"
+    ],
+    "source": "https://github.com/anttiluode/SihtiResponseGraph/blob/main/results/mark_reader_first/metrics.json"
   }
 ]
