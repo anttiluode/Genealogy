@@ -398,5 +398,9 @@
   {
     "path": "october-14-phase-graph-memory-falsifications.json",
     "enabled": true
+  },
+  {
+    "path": "october-15-grown-operators-symmetry-and-writer-controls.json",
+    "enabled": true
   }
 ]

@@ -390,5 +390,29 @@
   "sihti-response-mark-probe-reader-followup": {
     "image-graph-experience-writes-operator": "supports",
     "oct14-phase-written-memory-versus-signed-control": "documents"
+  },
+  "oct15-silli-frozen-reader-writer-ablation": {
+    "oct15-writer-calibration-and-budget": "limits"
+  },
+  "oct15-noether-discrete-gauge-identity": {
+    "oct15-symmetry-conserved-ledgers": "supports"
+  },
+  "oct15-symmetry-sihti-projectors-and-currents": {
+    "oct15-symmetry-conserved-ledgers": "supports"
+  },
+  "oct15-unruh-driven-slow-closure": {
+    "oct15-grown-causal-operators": "supports"
+  },
+  "oct15-growingmatrix-routing-and-material": {
+    "oct15-grown-causal-operators": "limits"
+  },
+  "oct15-growingmatrix-planar-attention-limit": {
+    "oct15-input-output-geometry": "limits"
+  },
+  "oct15-limasieni-two-port-expressivity": {
+    "oct15-input-output-geometry": "supports"
+  },
+  "oct15-limasieni-content-biased-recall": {
+    "oct15-grown-causal-operators": "limits"
   }
 }

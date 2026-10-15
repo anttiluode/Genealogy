@@ -6391,5 +6391,345 @@
       "Cannot infer off-screen geometry or actual natural image appearance"
     ],
     "source": "https://github.com/anttiluode/SihtiResponseGraph/blob/main/results/mark_reader_first/metrics.json"
+  },
+  {
+    "id": "oct15-silli-frozen-reader-writer-ablation",
+    "node": "SilliSalaatti",
+    "claim": "Removing RMS normalization changes rewrite stability, but no writer passes the full multi-seed gate.",
+    "design": "Six frozen reader checkpoints, five writer policies, four schedules, 128 held-out streams per arm; 48B uint8 memory, calibrated development seeds and exact addressed baselines.",
+    "result": "mixed",
+    "motifs": [
+      "oct15-writer-calibration-and-budget"
+    ],
+    "sample": {
+      "unit": "held-out checkpoint × policy × schedule arm",
+      "count": 120
+    },
+    "metrics": [
+      {
+        "name": "first-order mean 64-rewrite MSE",
+        "treatment": 0.1774,
+        "control": 0.203014,
+        "comparison": "raw calibrated vs RMS reference"
+      },
+      {
+        "name": "first-order repeat-16 drift",
+        "treatment": 0.0000010145873,
+        "control": 0.0080028639,
+        "comparison": "raw calibrated vs RMS reference"
+      },
+      {
+        "name": "full-rule first-order seed passes",
+        "value": 2,
+        "comparison": "out of three"
+      }
+    ],
+    "controls": [
+      "Frozen upstream checkpoint weights, byte-identical initial RMS prefix",
+      "No-write, raw-same-step and quantized accepted-write controls",
+      "Development seeds 11/23/37 disjoint from tested reader seeds 41/97/127",
+      "Exact one-hot indexed float and 12-byte uint8 table"
+    ],
+    "replication": "See linked fixed-seed repository artifacts; current atlas addition summarizes recorded results without rerunning the upstream experiments.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "No writer passes 3/3 complete rule in either reader family",
+      "Higher-order raw same-step one-rewrite MSE gets much worse",
+      "Known one-hot key task, not text or learned indexing"
+    ],
+    "source": "https://github.com/anttiluode/SilliSalaatti/blob/main/results/frozen_meta/REPORT.md"
+  },
+  {
+    "id": "oct15-noether-discrete-gauge-identity",
+    "node": "Noether-Ledger",
+    "claim": "Continuous weight gauges conserve charge under gradient flow, while finite SGD steps drift at second order.",
+    "design": "From-scratch 1-layer modular Fibonacci transformer with hand-coded gradients, SGD identities, optimizer comparisons and gauge-equivalent initializations.",
+    "result": "supports",
+    "motifs": [
+      "oct15-symmetry-conserved-ledgers"
+    ],
+    "sample": {
+      "unit": "modular Fibonacci start-pair combinations",
+      "count": 289
+    },
+    "metrics": [
+      {
+        "name": "SGD Q/K charge identity residual",
+        "value": 5e-8
+      },
+      {
+        "name": "first-order cancellation residual",
+        "value": 2e-15
+      }
+    ],
+    "controls": [
+      "Hand-derived SGD lr² residual identity",
+      "Q/K, V/O and ReLU-rescaling charges compared",
+      "Same-function gauge initialization across learning runs"
+    ],
+    "replication": "See linked fixed-seed repository artifacts; current atlas addition summarizes recorded results without rerunning the upstream experiments.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Replication of known results (2018–2022), not a new theorem",
+      "Single synthetic task and one seed per setting",
+      "Forward token symmetry differs from optimization-flow conservation"
+    ],
+    "source": "https://github.com/anttiluode/Noether-Ledger/blob/main/README.md"
+  },
+  {
+    "id": "oct15-symmetry-sihti-projectors-and-currents",
+    "node": "SymmetrySihti",
+    "claim": "Nested image symmetry projectors yield an exact orthogonal decomposition, and each Sihti diffusion residue equals accumulated graph-current divergence.",
+    "design": "Lossless multiband image sieves with group average projectors; exact symmetry-centre tests and lattice versus own-colour graph-diffusion current accounts.",
+    "result": "supports",
+    "motifs": [
+      "oct15-symmetry-conserved-ledgers"
+    ],
+    "metrics": [
+      {
+        "name": "projector algebra residual",
+        "value": 1e-12,
+        "comparison": "P²=P and Pᵀ=P tested to this scale"
+      },
+      {
+        "name": "current-divergence residue residual",
+        "value": 1e-12
+      }
+    ],
+    "controls": [
+      "Integer and half-integer symmetry centers",
+      "Lattice versus color-aware purifier",
+      "Nested groups D4, C4, C2, identity",
+      "Exact disconnected-region conservation tests"
+    ],
+    "replication": "See linked fixed-seed repository artifacts; current atlas addition summarizes recorded results without rerunning the upstream experiments.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Known mathematical identities; not new physics",
+      "Synthetic defect's symmetry orbit repeats signal at many positions",
+      "Illumination confounds naive defect energy thresholds"
+    ],
+    "source": "https://github.com/anttiluode/SymmetrySihti/blob/main/README.md"
+  },
+  {
+    "id": "oct15-unruh-driven-slow-closure",
+    "node": "Unruh",
+    "claim": "Fast-medium-mediated off-diagonal slow responses enable a local approximate h-only forecast near one driven equilibrium.",
+    "design": "Linearized measured Jacobian from equilibrated fast ring, tested on 12 new slow and fast initial states; zero-feedback impulse intervention.",
+    "result": "supports",
+    "motifs": [
+      "oct15-grown-causal-operators"
+    ],
+    "sample": {
+      "unit": "held-out independent full-system trajectory",
+      "count": 12
+    },
+    "metrics": [
+      {
+        "name": "held-out slow forecast RMSE",
+        "treatment": 0.001387,
+        "control": 0.002917,
+        "comparison": "full Jacobian vs independent-edge model"
+      },
+      {
+        "name": "largest offsite slow-pulse response",
+        "value": 0.010397
+      },
+      {
+        "name": "zero-feedback offsite response",
+        "value": 0
+      }
+    ],
+    "controls": [
+      "Nearest-neighbor, diagonal, decay and persistence slow-only forecasts",
+      "Zero-feedback paired slow-edge impulse",
+      "12 fully simulated trajectories with randomized microscopic starts"
+    ],
+    "replication": "See linked fixed-seed repository artifacts; current atlas addition summarizes recorded results without rerunning the upstream experiments.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Needs externally maintained DC pump",
+      "Linearization around one equilibrium and greater model capacity",
+      "Induced relaxation, not autonomous propagating slow excitations"
+    ],
+    "source": "https://github.com/anttiluode/Unruh/blob/main/results/slow_world_summary.json"
+  },
+  {
+    "id": "oct15-growingmatrix-routing-and-material",
+    "node": "GrowingMatrix",
+    "claim": "Task-demand gradients redistribute finite material on a fixed passive candidate lattice.",
+    "design": "Deterministic bridge/fork/detour experiments at 240 growth steps and equal-material uniform controls, plus transfer task with adjoint learning.",
+    "result": "mixed",
+    "motifs": [
+      "oct15-grown-causal-operators"
+    ],
+    "metrics": [
+      {
+        "name": "bridge training resistance at step 240",
+        "value": 1.65248
+      },
+      {
+        "name": "detour held-out resistance at step 240",
+        "value": 2.35937
+      }
+    ],
+    "controls": [
+      "Uniform material-matched passive lattice",
+      "Held-out shifted terminal demands in routing",
+      "Budget projection with nonnegative conductance"
+    ],
+    "replication": "See linked fixed-seed repository artifacts; current atlas addition summarizes recorded results without rerunning the upstream experiments.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Uniform baseline is weak versus optimized routing",
+      "No new node or independent edge births",
+      "Linear transfer holdouts lie in the span of training inputs",
+      "Extended specialization can degrade shifted-terminal detour performance"
+    ],
+    "source": "https://github.com/anttiluode/GrowingMatrix/blob/main/README.md"
+  },
+  {
+    "id": "oct15-growingmatrix-planar-attention-limit",
+    "node": "GrowingMatrix",
+    "claim": "Planar two-port current-split routing improves over a separately trained single-port layout but remains far from an unrestricted bipartite attention operator.",
+    "design": "17×11 local lattice, eight query/key terminals, three fixed near-permutation or mixed teacher matrices; 240 steps, equal budget cap, separate layout optimization.",
+    "result": "mixed",
+    "motifs": [
+      "oct15-input-output-geometry"
+    ],
+    "metrics": [
+      {
+        "name": "mirror planar KL",
+        "treatment": 1.9322,
+        "control": 2.95,
+        "comparison": "two-port vs single-port"
+      },
+      {
+        "name": "shift planar KL",
+        "treatment": 1.7909,
+        "control": 1.8883,
+        "comparison": "two-port vs single-port"
+      },
+      {
+        "name": "duplicate planar KL",
+        "treatment": 0.5726,
+        "control": 0.9972,
+        "comparison": "two-port vs single-port"
+      }
+    ],
+    "controls": [
+      "Separately optimized single-port",
+      "Unrestricted direct bipartite expressive limit",
+      "Current split vs symmetric voltage-response comparison"
+    ],
+    "replication": "See linked fixed-seed repository artifacts; current atlas addition summarizes recorded results without rerunning the upstream experiments.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Unrestricted zero-KL limit is not cost-matched",
+      "Same budget cap not necessarily same used material",
+      "Fixed synthetic target, no transformer/end-to-end inference",
+      "No guarantee 240 steps reaches optimum"
+    ],
+    "source": "https://github.com/anttiluode/GrowingMatrix/blob/main/README.md"
+  },
+  {
+    "id": "oct15-limasieni-two-port-expressivity",
+    "node": "Limasieni",
+    "claim": "Separate query/key ports remove the one-node reciprocal operator obstruction for approximating small trained attention matrices.",
+    "design": "G2 24 inputs for mirror, shift, duplicate with L-BFGS layout fits; G4 per-input tube growth with exact-gradient versus local free/nudged check.",
+    "result": "supports",
+    "motifs": [
+      "oct15-input-output-geometry"
+    ],
+    "sample": {
+      "unit": "teacher attention matrix per task",
+      "count": 24
+    },
+    "metrics": [
+      {
+        "name": "mirror KL single vs two-port",
+        "treatment": 0.0002116,
+        "control": 0.6065368
+      },
+      {
+        "name": "shift KL single vs two-port",
+        "treatment": 0.0001238,
+        "control": 1.2008332
+      },
+      {
+        "name": "local-rule versus exact-gradient cosine",
+        "value": 0.999993
+      }
+    ],
+    "controls": [
+      "Single-graph reciprocal and directional-valve controls",
+      "One matrix per input, direct teacher targets",
+      "Exact-gradient and local free/nudge growth comparison"
+    ],
+    "replication": "See linked fixed-seed repository artifacts; current atlas addition summarizes recorded results without rerunning the upstream experiments.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "64 independent two-port conductances can directly encode an 8×8 matrix",
+      "Copying teacher attention is not required for end-to-end task success",
+      "G4 regrows for each input; G5 still computes QK logits"
+    ],
+    "source": "https://github.com/anttiluode/Limasieni/blob/main/results/g2_layouts.json"
+  },
+  {
+    "id": "oct15-limasieni-content-biased-recall",
+    "node": "Limasieni",
+    "claim": "A shared input-biased nonlinear window4 network solves toy key/value recall without separately computing Q/K dot products, under favorable initialization.",
+    "design": "G7 frozen fixed grown attention over input variation; G8 end-to-end learned static, window and four-pin series window current-split operators on a narrow 16D recall task.",
+    "result": "mixed",
+    "motifs": [
+      "oct15-grown-causal-operators"
+    ],
+    "sample": {
+      "unit": "held-out 8-token recall sequence per reported run",
+      "count": 512
+    },
+    "metrics": [
+      {
+        "name": "window4 broad-init recall accuracy seed 1",
+        "value": 1
+      },
+      {
+        "name": "window4 broad-init recall accuracy seed 2",
+        "value": 1
+      },
+      {
+        "name": "static recall accuracy seeds",
+        "values": [
+          0.428,
+          0.396
+        ]
+      },
+      {
+        "name": "window4 narrow-init recall accuracy",
+        "value": 0.549
+      }
+    ],
+    "controls": [
+      "Static position-only tubes",
+      "Single bias-window conductance",
+      "Conventional QK softmax baseline",
+      "Narrow initialization"
+    ],
+    "replication": "See linked fixed-seed repository artifacts; current atlas addition summarizes recorded results without rerunning the upstream experiments.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Only two seeds and toy 512-sequence held-out check",
+      "Nonlinear window model uses end-to-end backprop, not local Physarum growth",
+      "Sensitive to window initialization; distance-based attention is known"
+    ],
+    "source": "https://github.com/anttiluode/Limasieni/blob/main/README.md"
   }
 ]

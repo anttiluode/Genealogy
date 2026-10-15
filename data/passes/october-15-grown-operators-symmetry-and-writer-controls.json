@@ -1,0 +1,246 @@
+{
+  "id": "october-15-grown-operators-symmetry-and-writer-controls",
+  "title": "October 15: grown effective operators, symmetry ledgers and quantized writer controls",
+  "reviewed_at": "2026-10-15",
+  "order": 123,
+  "summary": "Six October 15 repos form three bounded lines rather than one unified architecture. Unruh tests fast-to-slow operator feedback and approximate driven slow closure; GrowingMatrix grows material-constrained planar passive networks, including a hard negative two-port attention geometry gate; Limasieni isolates single-port reversibility versus two-port current division and tests both locally grown and content-dependent tiny-transformer attention. Noether-Ledger replicates optimizer-flow gauge charges; SymmetrySihti combines exact per-band symmetry projectors with Sihti diffusion-current ledgers. SilliSalaatti tests 48-byte phase writer updates against frozen readers and exact addressed baselines: churn drops, but no writer passes its full three-seed gate. Chronological relations denote explicit code/provenance or separately labelled conceptual convergence.",
+  "nodes": [
+    {
+      "id": "SilliSalaatti",
+      "url": "https://github.com/anttiluode/SilliSalaatti",
+      "family": "quantized-memory",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Quantized 48-byte streaming fast-weight benchmark of normalization, calibrated raw updates, backtracking and no-write against frozen first-/higher-order PhaseGraphFastWeightCell readers; checks long rewrite, repeat churn and delayed corrections.",
+      "survived": "Across 120 frozen-reader held-out arms (six checkpoints × five policies × four schedules), first-order raw calibrated writer lowers mean independent 64-rewrite MSE 0.203014 to 0.177400 and repeat-16 drift 0.008003 to ~0.000001015. The code tracks actual changed uint8 bytes, reader calls and separate development seeds.",
+      "killed": "No replacement passes the entire predeclared three-seed rule in either reader family (first-order calibrated/backtracked 2/3; higher-order best backtracked 1/3). One-rewrite higher-order raw same-step MSE worsens 0.507 to 2.994. The 12-byte addressed uint8 table and 48-byte float delta are stronger controls on the known-one-hot-key task; no phase-specific or general language-memory advantage is established.",
+      "evidence": "https://github.com/anttiluode/SilliSalaatti/blob/main/results/frozen_meta/REPORT.md",
+      "tags": [
+        "2026-10-15",
+        "phasegraph",
+        "rms-normalization",
+        "frozen-reader",
+        "quantized-memory",
+        "negative-gate",
+        "controls"
+      ],
+      "era": "October 15: constraints on emergent operators and records",
+      "era_order": 124
+    },
+    {
+      "id": "Noether-Ledger",
+      "url": "https://github.com/anttiluode/Noether-Ledger",
+      "family": "symmetry-and-conservation",
+      "status": "ledger",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A from-scratch single-head modular-Fibonacci transformer measures weight-space gauge balance charges for Q/K, V/O and ReLU rescaling, optimizer-dependent breaking, and token-space equivariance.",
+      "survived": "Finite SGD steps cancel the first-order gauge-charge drift algebraically; recorded tests verify the remaining learning-rate-squared identity (Q/K to about 5e-8). SGD/Adam comparisons and fixed-function gauge rescalings show how optimizer and starting gauge change learning dynamics.",
+      "killed": "An explicit replication of established neural-mechanics and balancedness results, not a new conservation law. Gauge charges concern optimization flow, not the transformer's forward pass; one synthetic task and one seed per setting limit generalization, and drift is a gradient-norm proxy rather than a novel causal learning detector.",
+      "evidence": "https://github.com/anttiluode/Noether-Ledger/blob/main/README.md",
+      "tags": [
+        "2026-10-15",
+        "noether",
+        "gauge",
+        "optimizer",
+        "discrete-sgd",
+        "replication"
+      ],
+      "era": "October 15: constraints on emergent operators and records",
+      "era_order": 125
+    },
+    {
+      "id": "SymmetrySihti",
+      "url": "https://github.com/anttiluode/SymmetrySihti",
+      "family": "residue-operator",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "An interactive per-scale Sihti image symmetry instrument with exact group-average projectors, nested orthogonal symmetry sieve, and heat-flow current/energy accounting for lattice and colour-aware diffusion.",
+      "survived": "Tests check lossless scale reconstruction, projectors P²=P and Pᵀ=P to about 1e-12 and exact component-mass conservation. A nested symmetry-group sieve decomposes energy orthogonally; Sihti residue windows equal divergences of accumulated graph currents, making the flow history observable.",
+      "killed": "Mirror/kaleidoscope transformations, diffusion pyramids, representation-theoretic projectors and Noether-style continuity equations are known. A synthetic defect appears throughout its symmetry orbit; a lighting gradient can dominate the asymmetry energy. It is an instrument, not a validated general defect detector or new theorem.",
+      "evidence": "https://github.com/anttiluode/SymmetrySihti/blob/main/README.md",
+      "tags": [
+        "2026-10-15",
+        "sihti",
+        "symmetry",
+        "noether",
+        "image-residue",
+        "current-ledger",
+        "visual-tool"
+      ],
+      "era": "October 15: constraints on emergent operators and records",
+      "era_order": 126
+    },
+    {
+      "id": "Unruh",
+      "url": "https://github.com/anttiluode/Unruh",
+      "family": "field-computation",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Classical ring of damped fast oscillators writes plastic slow edge stiffness; the resulting state-dependent operator feeds back into wave motion. A driven V2 experiment measures an effective slow-to-slow response Jacobian through equilibrated fast dynamics.",
+      "survived": "After fast-state erasure a paired probe recovers write location in the coupled case (98.3% across three seeds, versus paired 50% controls). In V2, full slow-only Jacobian forecasts average RMSE 0.001387 on 12 held-out full-system trajectories versus 0.002917 for independent edges; a slow-edge perturbation has 0.010397 off-site effect, disappearing at zero feedback.",
+      "killed": "A deliberately driven, dissipative spring toy, not QFT, gravity, consciousness or a self-sustaining slow universe. V2 is locally linearized near one driven equilibrium, has more model capacity than diagonal controls and demonstrates mediated relaxation rather than a propagating new slow wave.",
+      "evidence": "https://github.com/anttiluode/Unruh/blob/main/README.md",
+      "tags": [
+        "2026-10-15",
+        "slow-fast",
+        "induced-operator",
+        "held-out-forecast",
+        "fast-state-erasure",
+        "feedback-ablation"
+      ],
+      "era": "October 15: constraints on emergent operators and records",
+      "era_order": 127
+    },
+    {
+      "id": "GrowingMatrix",
+      "url": "https://github.com/anttiluode/GrowingMatrix",
+      "family": "developmental-computation",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Browser-based 17×11 passive network with material-budgeted conductance growth guided by exact routing and adjoint learning gradients; later Gate 5 grows planar current-split attention from separate query/key terminals.",
+      "survived": "Original deterministic 240-step routing tasks improve effective resistance relative to equal-material uniform networks. Gate 5 separately optimizes two-port and single-port planar attention and reports KL mirror 1.9322 vs 2.9500, shift 1.7909 vs 1.8883, duplicate 0.5726 vs 0.9972. An external response matrix is measurable while the internal material changes.",
+      "killed": "The candidate geometry and nodes are fixed: recruitment is conductance allocation, not neurite/node birth. Uniform routing baseline is weak, transfer holdout is in the linear training span, longer detour specialization can worsen moved-terminal performance, and planar two-port results remain far from zero-KL unrestricted wiring. Gate 5 fits fixed synthetic matrices, not unseen transformer contexts.",
+      "evidence": "https://github.com/anttiluode/GrowingMatrix/blob/main/README.md",
+      "tags": [
+        "2026-10-15",
+        "physarum",
+        "local-adjoint",
+        "material-budget",
+        "two-port",
+        "planar-obstruction",
+        "negative-control"
+      ],
+      "era": "October 15: constraints on emergent operators and records",
+      "era_order": 128
+    },
+    {
+      "id": "Limasieni",
+      "url": "https://github.com/anttiluode/Limasieni",
+      "family": "physical-learning",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Compares transformer attention to Kirchhoff current division, reciprocal single-port and separate query/key two-port flow layouts; grows per-input tubes via local free/nudged pressure updates and tests fixed or content-sensitive attention inside tiny transformers.",
+      "survived": "Unrestricted two-port G2 fits trained mirror/shift/duplicate heads at KL about 0.0002/0.0001/0.00003 versus single-port 0.607/1.201/0.158. G4 local gradient cosine is 0.999993 and teacher accuracy survives 12 per-input grown replacements. G7 frozen one-network retains mirror/shift 1.0 but duplicate 0.403; G8 content-biased window4 recall reaches 1.0 on two small seeds versus static ~0.4.",
+      "killed": "The single-port obstruction is to copying a given attention matrix, not to end-to-end task success. Unrestricted layout has 64 independent conductances; G4 regrows for each input, G5 still computes QK logits, and G8's bias-window model uses end-to-end backprop (not physical local growth), needs broad initialization and is evaluated only on small toy recall.",
+      "evidence": "https://github.com/anttiluode/Limasieni/blob/main/README.md",
+      "tags": [
+        "2026-10-15",
+        "physarum",
+        "port-geometry",
+        "reversibility",
+        "current-division",
+        "learned-attention",
+        "content-recall"
+      ],
+      "era": "October 15: constraints on emergent operators and records",
+      "era_order": 129
+    }
+  ],
+  "edges": [
+    {
+      "source": "PhaseGraphFastWeightCell",
+      "target": "SilliSalaatti",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "SilliSalaatti vendors pinned PhaseGraphFastWeightCell reader code and directly evaluates six upstream checkpoints with frozen-reader writer ablations.",
+      "evidence": "https://github.com/anttiluode/SilliSalaatti/blob/main/checkpoints/meta/PROVENANCE.json"
+    },
+    {
+      "source": "GraphNN",
+      "target": "SilliSalaatti",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "SilliSalaatti names GraphNN's phase-graph update investigation as a precursor, but evaluates its own streaming quantized writer on frozen reader checkpoints rather than GraphNN's spatial image gate.",
+      "evidence": "https://github.com/anttiluode/SilliSalaatti/blob/main/README.md"
+    },
+    {
+      "source": "Sihti",
+      "target": "SymmetrySihti",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "SymmetrySihti explicitly builds the lossless residue stack and alternative colour-aware purifiers from Sihti before adding exact symmetry projections and current accounting.",
+      "evidence": "https://github.com/anttiluode/SymmetrySihti/blob/main/README.md"
+    },
+    {
+      "source": "Noether-Ledger",
+      "target": "SymmetrySihti",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "SymmetrySihti explicitly credits Noether-Ledger and reuses the conservation-law question in graph-diffusion current/energy bookkeeping; this is not an assertion that weight-gauge and pixel-mass charges are the same.",
+      "evidence": "https://github.com/anttiluode/SymmetrySihti/blob/main/README.md"
+    },
+    {
+      "source": "Unruh",
+      "target": "GrowingMatrix",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "GrowingMatrix explicitly names Unruh as its precursor; it changes the fast substrate from a driven spring ring to a passive Kirchhoff flow and turns the need into a material-budgeted growth objective.",
+      "evidence": "https://github.com/anttiluode/GrowingMatrix/blob/main/README.md"
+    },
+    {
+      "source": "Limasieni",
+      "target": "GrowingMatrix",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "GrowingMatrix Gate 5 explicitly follows Limasieni's two-port versus single-port attention obstruction and adds a planar shared-lattice material-budget test; it does not import a transformer teacher or the full per-input Physarum growth pipeline.",
+      "evidence": "https://github.com/anttiluode/GrowingMatrix/blob/main/README.md"
+    },
+    {
+      "source": "GrowingAnttisNeuron",
+      "target": "GrowingMatrix",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both examine spatial growth and wiring allocation, but GrowingMatrix reweights a pre-existing passive conductive lattice while GrowingAnttisNeuron used chemoaffinity-guided developmental wiring; this is an analogy, not source-code inheritance.",
+      "evidence": "https://github.com/anttiluode/GrowingMatrix/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "oct15-grown-causal-operators",
+      "title": "Local physical rules generate a task-dependent operator",
+      "description": "Unruh's slow stiffness records and feeds back through fast waves; GrowingMatrix gives budget-limited passive material different needs; Limasieni shows port placement changes which current-distribution operators a reciprocal substrate can realize. Distinct media and objectives: no autonomous universe or general Transformer replacement is inferred.",
+      "nodes": [
+        "Unruh",
+        "GrowingMatrix",
+        "Limasieni",
+        "GrowingAnttisNeuron"
+      ]
+    },
+    {
+      "id": "oct15-input-output-geometry",
+      "title": "The observer's ports constrain what a reciprocal network can compute",
+      "description": "Limasieni's co-located one-node-per-token readout is limited by reversibility and maximum principles, while separate query/key terminals can route asymmetrically. GrowingMatrix adds a 2D spatial wiring cap that prevents the planar two-port construction from matching unrestricted teacher operators at the tested horizon.",
+      "nodes": [
+        "Limasieni",
+        "GrowingMatrix",
+        "Unruh"
+      ]
+    },
+    {
+      "id": "oct15-symmetry-conserved-ledgers",
+      "title": "Symmetry identifies what remains, but the meaning of charge depends on dynamics",
+      "description": "Noether-Ledger measures optimizer-flow gauge balances and token equivariances; SymmetrySihti exactly splits image symmetries and tracks pixel-graph diffusion currents and mass. Both are established symmetry mathematics in different systems; their conserved quantities are not interchangeable.",
+      "nodes": [
+        "Noether-Ledger",
+        "SymmetrySihti",
+        "Sihti"
+      ]
+    },
+    {
+      "id": "oct15-writer-calibration-and-budget",
+      "title": "Lower write churn is not proof of useful long-memory retention",
+      "description": "PhaseGraphFastWeightCell supplies phase-state reader checkpoints; SilliSalaatti finds raw-update normalization changes can suppress repeated-write drift while failing the full multi-seed gate, with exact addressed tables as essential baselines. GraphNN's earlier phase-specific claims remain bounded by signed-real control gaps.",
+      "nodes": [
+        "PhaseGraphFastWeightCell",
+        "SilliSalaatti",
+        "GraphNN"
+      ]
+    }
+  ]
+}

@@ -23,6 +23,16 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
+## 2026-10-15 — Operators grown from needs, symmetry ledgers, and writer controls
+
+The [October 15 archaeology pass](data/passes/october-15-grown-operators-symmetry-and-writer-controls.json) places **six missing repositories** on the wall, in three intentionally distinct lines.
+
+- **[Unruh](https://github.com/anttiluode/Unruh) → [GrowingMatrix](https://github.com/anttiluode/GrowingMatrix), with [Limasieni](https://github.com/anttiluode/Limasieni)**: induced slow coupling in a driven wave medium, budgeted passive network growth and the role of query/key port geometry in expressible current-split attention. Limasieni's unrestricted two-port fit can nearly reproduce teacher matrices; GrowingMatrix's planar two-port gate retains large KL. Limasieni's nonlinear window4 toy recall uses end-to-end backprop, not local growth.
+- **[Noether-Ledger](https://github.com/anttiluode/Noether-Ledger) → [SymmetrySihti](https://github.com/anttiluode/SymmetrySihti)**: known optimizer gauge-charge identities versus exact image symmetry projections and conserved diffusion-current accounting. This is a mechanism extension and demonstration, not one shared physical charge.
+- **[SilliSalaatti](https://github.com/anttiluode/SilliSalaatti)**, descending directly from PhaseGraphFastWeightCell's frozen readers: calibration improves a first-order 64-rewrite metric (0.203014 → 0.177400), but no writer passes the full three-seed gate and exact indexed storage remains a stronger control on known-key tasks.
+
+The pass includes linked measured evidence, explicit positive/negative limits, and a new falsifiable question about input-dependent routing in a *single* material-budgeted planar medium.
+
 ## 2026-10-14 — Phase-graph read/write tests: five new repos and one follow-up
 
 The [October 14 phase-graph archaeology pass](data/passes/october-14-phase-graph-memory-falsifications.json) adds **[SihtiGrapImageModel](https://github.com/anttiluode/SihtiGrapImageModel)**, **[NextLevel](https://github.com/anttiluode/NextLevel)**, **[GraphNN](https://github.com/anttiluode/GraphNN)**, **[Wednesday](https://github.com/anttiluode/Wednesday)** and **[PhaseGraphFastWeightCell](https://github.com/anttiluode/PhaseGraphFastWeightCell)**, while preserving the already-reviewed **[SihtiResponseGraph](https://github.com/anttiluode/SihtiResponseGraph)** card and adding its new tiny-mark reader evidence. All six are present in the repository census, with **five** new graph nodes, **seven** carefully qualified edges, **three** separate motifs, **ten** empirical receipts and **one** new unresolved discriminator question. This is a chronological set of intersecting experiments, **not** one new universal AI architecture.

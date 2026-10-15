@@ -975,5 +975,47 @@
       "Cross-Jacobian products certify first-order local sensitivity only and do not guarantee finite quantized or 64-step retention.",
       "This question is not a prediction that phase graphs replace Transformers or that closed-loop holonomy is already learned."
     ]
+  },
+  {
+    "id": "oct15-spatial-growth-to-content-conditioned-operator",
+    "title": "Can one finite-budget grown planar medium implement changing, content-dependent routing without direct QK computation?",
+    "state": "open",
+    "motifs": [
+      "oct15-grown-causal-operators",
+      "oct15-input-output-geometry"
+    ],
+    "evidence": [
+      "oct15-growingmatrix-planar-attention-limit",
+      "oct15-limasieni-two-port-expressivity",
+      "oct15-limasieni-content-biased-recall"
+    ],
+    "competing_explanations": [
+      "State-dependent nonlinear local conductances or additional wiring layers permit a reusable spatial circuit to produce useful input-dependent attention at matched cost, as suggested by Limasieni window4 toy recall.",
+      "Observed success in unrestricted two-port layouts depends on direct all-pairs wiring, privileged learned bias codes or equal-sized QK-equivalent calculations; restricting to a planar material budget loses the computational advantage."
+    ],
+    "known": [
+      "GrowingMatrix's separately optimized planar two-port layout improves over single-port but retains KL 1.93/1.79 on fixed mirror/shift targets after 240 steps.",
+      "Limasieni unrestricted two-port layout copies fixed teacher operators nearly exactly; G4 regrows one conductance matrix for each input.",
+      "Limasieni G8 broad-initialized nonlinear window4 solves two-seed tiny recall by end-to-end backprop, whereas static attention scores near 0.4 and narrow-init window4 drops to 0.549."
+    ],
+    "missing_discriminator": "One fixed grown spatial network must be evaluated across genuinely unseen content inputs, fixed material and solver budgets, and independent crossing-layer or active-element ablations versus QK softmax and simpler learned input kernels.",
+    "candidate_experiment": {
+      "design": "Place eight query ports and eight grounded key sinks on a fixed planar substrate; allow explicitly priced crossover layers or nonlinear local window conductances. Learn one shared circuit on diverse paired key-value retrieval tasks, freeze topology, and score held-out keys/combinations and attention KL plus end-to-end accuracy. Compare static, QK softmax, unrestricted bipartite, a trained planar two-port with no dynamics, and a parameter/compute-matched kernel router; sweep seeds, initialization width, material cost, geometry and query perturbations.",
+      "cost": "medium: browser lattice and tiny 8-token numerical tasks, then multiple seeds with measured node/edge growth and compute accounting.",
+      "outcomes": [
+        {
+          "if": "One shared spatially constrained, cost-matched grown medium dynamically routes unseen content accurately and beats fixed and kernel baselines",
+          "then": "Promote a bounded conditional-operator architecture claim with clearly specified cost and generalization regime."
+        },
+        {
+          "if": "Performance requires unrestricted crossings, privileged QK-equivalent bias features, separate per-input regrowth or excessive material/solver cost",
+          "then": "Retain the port-expressivity and narrow input-window demos but reject a competitive reusable grown attention mechanism at this budget."
+        }
+      ]
+    },
+    "notes": [
+      "The source of an input-dependent matrix must be counted as computation; moving QK into an external conductance generator is not removal.",
+      "A visually asymmetric current split can arise from a reciprocal underlying network simply by observing different input/output ports."
+    ]
   }
 ]
