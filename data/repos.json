@@ -2167,6 +2167,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "Growth-Microscope",
+    "url": "https://github.com/anttiluode/Growth-Microscope",
+    "default_branch": "main",
+    "size": 30,
+    "visibility": "public",
+    "description": "Sol repo",
+    "created_at": "2026-10-16T04:36:36Z",
+    "updated_at": "2026-10-16T07:03:46Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "HeadAsResonator",
     "url": "https://github.com/anttiluode/HeadAsResonator",
     "default_branch": "main",
@@ -4111,6 +4122,17 @@
     "description": "Sol repo",
     "created_at": "2026-10-14T05:52:53Z",
     "updated_at": "2026-10-14T09:56:42Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "SihtiImageModel",
+    "url": "https://github.com/anttiluode/SihtiImageModel",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "A fixed sieve plus a residue memory, used as an image model. No backpropagation anywhere in the model.",
+    "created_at": "2026-10-16T07:07:31Z",
+    "updated_at": "2026-10-16T07:13:04Z",
     "inventory_status": "reviewed"
   },
   {

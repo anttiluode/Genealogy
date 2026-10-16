@@ -1,0 +1,136 @@
+{
+  "id": "october-16-sihti-image-and-growth-microscope",
+  "title": "October 16: conditional residue reconstruction and causal explanation of grown networks",
+  "reviewed_at": "2026-10-16",
+  "order": 124,
+  "summary": "Two deliberately separate lines. SihtiImageModel combines Sihti's exact heat-diffusion bands with offline PCA, ridge, example retrieval and fixed-size locally conditioned patch regression: patch addressing beats whole-image lookup on shifted digits and gives a small real-photo completion win, not a new semantic image generator. Growth-Microscope extends GrowingMatrix's physical routing question with prospective held-out conductance ablations, then discovers balanced groups from training causal signatures. Gate 3 functional groups predict damage but lose the strongest held-out RMSE comparison to simpler controls; the model is deterministic and linear. Video restoration through online retained detail is recorded only as an untested cross-repository application hypothesis.",
+  "nodes": [
+    {
+      "id": "SihtiImageModel",
+      "url": "https://github.com/anttiluode/SihtiImageModel",
+      "family": "residue-operator",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Builds a class-conditional no-backprop image generator and completion bench from exact Sihti diffusion bands; compares global PCA/residue retrieval with a 512-rule-per-band local coarse-to-fine patch predictor.",
+      "survived": "Plain lattice sieve reconstructs at ~1e-16 without training. Global memory yields recognisable MNIST/Fashion samples but is example-dependent. Local patch P3 stores 903,168 values independent of training-count; shifted-digit PSNR is 20.38 vs global-memory 14.05 dB, and 300 held-out BSDS photos reach 25.12 vs 24.87 dB for an ordinary linear filter given core+r3.",
+      "killed": "Sieve does not add 10-shot classification information: MNIST 68.8% vs raw 70.1%, Fashion 67.9% vs 69.2%. Fashion translation drops 0.53 dB and misses the 0.5-dB gate; core-only photo completion does not beat linear; defect image AUROC is 0.58. The photos are detail completion, not bird generation from scratch, and the model has no demonstrated online memory or temporal consistency.",
+      "evidence": "https://github.com/anttiluode/SihtiImageModel/blob/ba03673db7b7a69e31419bd7c4bc6dcd93a5ee2b/README.md",
+      "tags": [
+        "2026-10-16",
+        "sihti",
+        "heat-diffusion",
+        "residue",
+        "patch-codebook",
+        "image-completion",
+        "no-backprop",
+        "shift-invariance",
+        "natural-photos",
+        "mixed-gates"
+      ],
+      "era": "October 16: reconstruction and causal roles",
+      "era_order": 130
+    },
+    {
+      "id": "Growth-Microscope",
+      "url": "https://github.com/anttiluode/Growth-Microscope",
+      "family": "developmental-computation",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Deterministic causal interpretation lab for a budget-limited 11x9 passive Kirchhoff medium: preregistered training/validation/test routing, frozen intervention harm forecasts, and balanced edge groups learned from training finite-cut signatures without spatial coordinates.",
+      "survived": "Offers a runnable three-gate browser and controlled source/sink experiments. Gate 1 causal fingerprints transfer across closely related endpoint shifts (Bridge r=0.987, Fork 0.951, Cross 0.825). Gate 2 freezes validation-selected growth before held-out 24-pair transport tests. Gate 3 groups 178 edges from three training causal signatures and prospectively measures ~49-51 selected-edge cuts over 12 held-out pairs.",
+      "killed": "The specialized fingerprint does not outperform all simpler controls (Cross material-only r=0.849 > fingerprint 0.825; adjoint nearly perfect with privileged test-field access). Gate 2 diverse routing and early stopping do not consistently outperform an equal-material uniform baseline. Gate 3 functional groups are never the best held-out RMSE in six task/arm cases; 110/120 shuffled-partition comparisons beat their RMSE. Groups are hand-budgeted to 12 and induced from measured interventions, not discovered semantic neurons or proof of Goodfire-style interpretability.",
+      "evidence": "https://github.com/anttiluode/Growth-Microscope/blob/3e24714586a7f483090d7fd423ad2f33c278ec2a/README.md",
+      "tags": [
+        "2026-10-16",
+        "growth",
+        "kirchhoff",
+        "causal-attribution",
+        "finite-ablation",
+        "held-out",
+        "negative-baselines",
+        "functional-clustering",
+        "model-interpretability"
+      ],
+      "era": "October 16: reconstruction and causal roles",
+      "era_order": 131
+    }
+  ],
+  "edges": [
+    {
+      "source": "Sihti",
+      "target": "SihtiImageModel",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "SihtiImageModel explicitly uses the Sihti lattice heat-diffusion sieve as its lossless multiscale input decomposition; the generation/readout components are new downstream tests.",
+      "evidence": "https://github.com/anttiluode/SihtiImageModel/blob/ba03673db7b7a69e31419bd7c4bc6dcd93a5ee2b/README.md"
+    },
+    {
+      "source": "SighImageFactorization",
+      "target": "SihtiImageModel",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both test the limits of merely changing image/residue coordinates for downstream discrimination; the new repo references the earlier negative classification result without claiming code inheritance.",
+      "evidence": "https://github.com/anttiluode/SihtiImageModel/blob/ba03673db7b7a69e31419bd7c4bc6dcd93a5ee2b/README.md"
+    },
+    {
+      "source": "ResearchQuestion",
+      "target": "SihtiImageModel",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "A conceptual comparison between future-sufficient memory and reconstruction-sufficient stored image detail; no future-prediction experiment transfers across these projects.",
+      "evidence": "https://github.com/anttiluode/SihtiImageModel/blob/ba03673db7b7a69e31419bd7c4bc6dcd93a5ee2b/README.md"
+    },
+    {
+      "source": "GrowingMatrix",
+      "target": "Growth-Microscope",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "Growth-Microscope explicitly reconstructs a smaller, separate passive conductive growth fixture inspired by GrowingMatrix, to evaluate intervention-based explanations rather than importing its numerical results.",
+      "evidence": "https://github.com/anttiluode/Growth-Microscope/blob/3e24714586a7f483090d7fd423ad2f33c278ec2a/README.md"
+    },
+    {
+      "source": "Limasieni",
+      "target": "Growth-Microscope",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both isolate how source/sink/question ports condition the apparent operator in a physical medium. Growth-Microscope does not train attention or duplicate Limasieni's equations.",
+      "evidence": "https://github.com/anttiluode/Growth-Microscope/blob/3e24714586a7f483090d7fd423ad2f33c278ec2a/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "oct16-conditional-residue-reconstruction",
+      "title": "A coarse state can address reusable missing detail",
+      "description": "SihtiImageModel turns exact diffusion residues into an offline learned conditional patch rule. It beats global whole-image retrieval under translations but fails when the retained coarse address lacks enough structure. This is a reconstruction result, not temporal visual memory or a new semantic model.",
+      "nodes": [
+        "SihtiImageModel",
+        "Sihti",
+        "SighImageFactorization"
+      ]
+    },
+    {
+      "id": "oct16-causal-explanations-vs-simple-controls",
+      "title": "Causal group discovery is only useful if it beats material and dynamics",
+      "description": "Growth-Microscope clusters measured training intervention responses into groups and predicts unseen cuts, but simpler weight/flow/spatial/shuffled explanations often predict as well or better. Growth and query-port geometry matter; semantic neuron interpretation has not been demonstrated.",
+      "nodes": [
+        "Growth-Microscope",
+        "GrowingMatrix",
+        "Limasieni"
+      ]
+    },
+    {
+      "id": "oct16-future-sufficient-visual-restoration",
+      "title": "Retain observed visual details only when they help future predictions (open)",
+      "description": "Unproven engineering direction connecting SihtiImageModel's coarse-to-fine local restoration with ResearchQuestion's future-sufficient state, Alavirta/Perjantai's sensory prediction loops and GraphNN's selective rewrites. No tested online video memory or restoration win exists yet.",
+      "nodes": [
+        "SihtiImageModel",
+        "ResearchQuestion",
+        "Perjantai",
+        "Alavirta",
+        "GraphNN"
+      ]
+    }
+  ]
+}

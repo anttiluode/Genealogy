@@ -414,5 +414,26 @@
   },
   "oct15-limasieni-content-biased-recall": {
     "oct15-grown-causal-operators": "limits"
+  },
+  "oct16-sihti-representation-classification": {
+    "oct16-conditional-residue-reconstruction": "limits"
+  },
+  "oct16-sihti-whole-memory-generator": {
+    "oct16-conditional-residue-reconstruction": "limits"
+  },
+  "oct16-sihti-patch-translation": {
+    "oct16-conditional-residue-reconstruction": "supports"
+  },
+  "oct16-sihti-natural-photo-and-defect-limits": {
+    "oct16-conditional-residue-reconstruction": "limits"
+  },
+  "oct16-growth-gate1-explanation-controls": {
+    "oct16-causal-explanations-vs-simple-controls": "limits"
+  },
+  "oct16-growth-gate2-prospective-selection": {
+    "oct16-causal-explanations-vs-simple-controls": "limits"
+  },
+  "oct16-growth-gate3-discovered-groups-null": {
+    "oct16-causal-explanations-vs-simple-controls": "limits"
   }
 }
