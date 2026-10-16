@@ -1017,5 +1017,92 @@
       "The source of an input-dependent matrix must be counted as computation; moving QK into an external conductance generator is not removal.",
       "A visually asymmetric current split can arise from a reciprocal underlying network simply by observing different input/output ports."
     ]
+  },
+  {
+    "id": "oct16-online-temporal-residue-restoration",
+    "title": "Can small online residue memory restore observed details consistently across future video frames?",
+    "state": "open",
+    "motifs": [
+      "oct16-future-sufficient-visual-restoration",
+      "oct16-conditional-residue-reconstruction"
+    ],
+    "evidence": [
+      "oct16-sihti-patch-translation",
+      "oct16-sihti-natural-photo-and-defect-limits",
+      "oct16-sihti-whole-memory-generator",
+      "cortical-loop-blackout-and-direction",
+      "alavirta-shared-space-correction",
+      "graphnn-phase-only-896B-three-seeds"
+    ],
+    "competing_explanations": [
+      "A small updatable memory of actually observed local detail, motion-aligned and addressed by coarse future structure, yields temporal consistency and restoration beyond frame-independent patch regression at the same byte and compute budget.",
+      "Apparent gains are already captured by conventional optical-flow-warped previous-frame caching, recurrent CNN baselines, or simply larger spatial priors; Sihti's fixed invertible bands provide no unique memory benefit.",
+      "At motion, occlusion, viewpoint or lighting change, the old fine residue is misaddressed or overwritten; temporal reuse creates ghosts and flicker unless uncertainty and occlusion confidence are modeled."
+    ],
+    "known": [
+      "SihtiImageModel P3 is translation-tolerant when core+r3 is given; its core-only natural-photo completion is essentially tied with the linear filter and is not online.",
+      "SihtiImageModel's photo completion is 25.12 vs 24.87 dB for a linear window filter across 300 held-out photos, not a video result.",
+      "Alavirta and CorticalLoop test prediction/correction and direction/blackout only in synthetic oscillator/grid worlds; GraphNN's selective rewrite mark task is not photo or video memory."
+    ],
+    "missing_discriminator": "A held-out short-video restoration study where the memory is written strictly from earlier *observed* frames, with novel occlusion and motion, equal persistent bytes/FLOPs, no target-frame leakage and strong optical-flow cache and learned recurrent baselines.",
+    "candidate_experiment": {
+      "design": "Freeze low-resolution sequences with repeated moving objects, edits, motion, scene cuts and occlusion; restore deliberately degraded target frames from their permitted coarse target plus preceding seen frames. Compare independent Sihti P3, flow-warped detail cache, patch P3 with online bounded memory, ordinary indexed patch buffer, tiny CNN/GRU and optional graph writer. Match bytes, compute and initial supervision; log per-frame PSNR/SSIM, LPIPS where feasible, temporal warp error, ghosting under occlusion, update speed, bytes and hard new-object adaptation. Add random-frame and shuffled-history controls.",
+      "cost": "medium: begin with CPU synthetic sequences and an RTX 3060-scale real-video pilot; 3–10 frozen splits, explicit inference timing.",
+      "outcomes": [
+        {
+          "if": "Online Sihti residue addressing improves temporal error and reconstruction quality over optical-flow caches and matched recurrent/patch baselines on untouched sequences without severe ghosting",
+          "then": "Record a practical niche for small temporally consistent restoration, with exact dataset, budget and failure boundaries."
+        },
+        {
+          "if": "Simple flow-warped cache or recurrent baseline matches/beats it, or useful gains require storing near-full frames or target-derived fine structure",
+          "then": "Retain SihtiImageModel as a bounded spatial completion tool; do not claim a novel temporal memory method."
+        }
+      ]
+    },
+    "notes": [
+      "This is an application hypothesis, not an implemented result. Do not conflate image-internal residue R_k with temporal innovation error between consecutive frames.",
+      "When testing own-colour-graph Sihti as a purifier, construct its graph only from the allowed coarse inputs, not from hidden target fine pixels."
+    ]
+  },
+  {
+    "id": "oct16-causal-groups-transfer-versus-physics",
+    "title": "Do discovered causal groups predict failures beyond simple material or physical sensitivities?",
+    "state": "open",
+    "motifs": [
+      "oct16-causal-explanations-vs-simple-controls"
+    ],
+    "evidence": [
+      "oct16-growth-gate1-explanation-controls",
+      "oct16-growth-gate2-prospective-selection",
+      "oct16-growth-gate3-discovered-groups-null"
+    ],
+    "competing_explanations": [
+      "Causal clustering becomes useful in a nonlinear history-dependent medium where the same edge plays distinct roles by context, improving prospective damage forecasts on genuinely new task families.",
+      "Functional groups' performance reflects basic conductance/current structure and labels supplied by chosen interventions; physically informed region or gradient models remain as good, and shuffled controls also succeed."
+    ],
+    "known": [
+      "In deterministic Gate 3, balanced groups trained from finite causal edge cuts never have lowest prospective RMSE across six task/arm cases; 110/120 shuffled groupings have lower RMSE.",
+      "Gate 1's fingerprint transfers within related terminal shifts but Cross material-only correlation exceeds it.",
+      "Gate 2 validation-selected checkpoints limit cherry-picking but uniform material remains competitive on broad held-out terminals."
+    ],
+    "missing_discriminator": "Independent topology seeds and nonlinearly state-dependent routing, plus truly unseen demand families, with causal-group discovery using equal permitted training probes; evaluate prospective held-out finite cuts versus material, flow, sensitivity, spatial and shuffled explanations.",
+    "candidate_experiment": {
+      "design": "Build or reuse nonlinear evolving graphs with context-dependent source/sink relations; vary material patterns and independently randomize lattice topology. Fix equal training intervention counts, learn latent edge groups without test family labels, then freeze and evaluate prospective large finite cuts under unseen tasks and context switches. Compare group-based explanations to gradient/Jacobian, material, activity, spatial and randomized group controls at equal access and cost.",
+      "cost": "medium to high: several seeded nonlinear worlds, 10-20 independent topologies plus ablation-sweep costs.",
+      "outcomes": [
+        {
+          "if": "Learned causal groups consistently outperform equal-access material/current/gradient and shuffled controls on unseen task families and identify damaged components",
+          "then": "Promote a narrow evidence-backed causal-functional grouping result beyond easy linear Kirchhoff structure."
+        },
+        {
+          "if": "Simple physical predictors remain as strong or groups fail under unseen contexts",
+          "then": "Keep Growth-Microscope as an excellent falsification/teaching instrument rather than evidence for emergent semantic circuits."
+        }
+      ]
+    },
+    "notes": [
+      "Goodfire's contemporary neural interpretability claims are outside this code's measured domain.",
+      "Every group uses three observed training-ablation responses; not unsupervised semantics."
+    ]
   }
 ]

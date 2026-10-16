@@ -6731,5 +6731,394 @@
       "Sensitive to window initialization; distance-based attention is known"
     ],
     "source": "https://github.com/anttiluode/Limasieni/blob/main/README.md"
+  },
+  {
+    "id": "oct16-sihti-representation-classification",
+    "node": "SihtiImageModel",
+    "claim": "Exact multiscale heat-diffusion coordinates alone do not improve few-shot linear classification over raw pixels.",
+    "design": "Pre-registered 10-shot readout gate on MNIST and Fashion; compare ridge on raw pixels against ridge on Sihti bands plus random ReLU features and a separately trained reference judge.",
+    "result": "contradicts",
+    "motifs": [
+      "oct16-conditional-residue-reconstruction"
+    ],
+    "sample": {
+      "unit": "dataset",
+      "count": 2
+    },
+    "metrics": [
+      {
+        "name": "MNIST 10-shot raw accuracy",
+        "value": 0.701
+      },
+      {
+        "name": "MNIST 10-shot Sihti accuracy",
+        "value": 0.688
+      },
+      {
+        "name": "Fashion 10-shot raw accuracy",
+        "value": 0.692
+      },
+      {
+        "name": "Fashion 10-shot Sihti accuracy",
+        "value": 0.679
+      },
+      {
+        "name": "MNIST random ReLU+ridgetop",
+        "treatment": 0.96,
+        "control": 0.959,
+        "comparison": "Sihti vs raw with same random feature approach"
+      }
+    ],
+    "controls": [
+      "Raw pixel ridge and raw random-ReLU ridge",
+      "Backprop-trained MLP judge not part of generative model"
+    ],
+    "replication": "Committed one-protocol result from original repository; not independently rerun in Genealogy.",
+    "held_out": true,
+    "external_data": true,
+    "limitations": [
+      "MNIST/Fashion only, fixed dataset and few-shot split",
+      "A lossless transform cannot produce new information by itself; differing regularization makes near-equal accuracy not an exact equality"
+    ],
+    "source": "https://github.com/anttiluode/SihtiImageModel/blob/ba03673db7b7a69e31419bd7c4bc6dcd93a5ee2b/README.md"
+  },
+  {
+    "id": "oct16-sihti-whole-memory-generator",
+    "node": "SihtiImageModel",
+    "claim": "Global stored-residue retrieval supports limited recognizable digit/clothing synthesis without backprop through the generator, but samples remain close to the training set and detail-completion quality grows with the example bank.",
+    "design": "Offline per-band PCA; Gaussian-mixture core; conditional global top-8 memory lookup. Evaluate recognition by independently trained MLP judge and nearest-training-image distance, with bank-size sweep.",
+    "result": "mixed",
+    "motifs": [
+      "oct16-conditional-residue-reconstruction"
+    ],
+    "sample": {
+      "unit": "benchmark dataset",
+      "count": 2
+    },
+    "metrics": [
+      {
+        "name": "MNIST memory sample judge accuracy",
+        "value": 1
+      },
+      {
+        "name": "Fashion memory sample judge accuracy",
+        "value": 0.977
+      },
+      {
+        "name": "MNIST median nearest-training ratio",
+        "value": 0.69
+      },
+      {
+        "name": "Fashion median nearest-training ratio",
+        "value": 0.67
+      },
+      {
+        "name": "MNIST completion at 2 per class dB",
+        "value": 13.4
+      },
+      {
+        "name": "MNIST completion at 2000 per class dB",
+        "value": 16.7
+      }
+    ],
+    "controls": [
+      "Gaussian linear-plus-noise generator",
+      "Nearest-training-image distance and copy rate",
+      "Memory-bank size sweep"
+    ],
+    "replication": "Frozen upstream gates and bank_size.py; not independently rerun in Genealogy.",
+    "held_out": true,
+    "external_data": true,
+    "limitations": [
+      "Sample recognition by trained judge does not measure generative diversity or novelty beyond nearest-neighbor checks",
+      "No unconditional natural-photo generator",
+      "Global bank retains a compressed per-training-image code and grows with exemplars"
+    ],
+    "source": "https://github.com/anttiluode/SihtiImageModel/blob/ba03673db7b7a69e31419bd7c4bc6dcd93a5ee2b/README.md"
+  },
+  {
+    "id": "oct16-sihti-patch-translation",
+    "node": "SihtiImageModel",
+    "claim": "A fixed-size local coarse-conditioned residue predictor substantially beats whole-image retrieval after 2D shifts, but one shift-tolerance gate fails.",
+    "design": "Pre-registered patch gate PG2: train a 512-cluster conditional local linear patch dictionary per band; evaluate 2000 images with up to 4-pixel held-out translation, given core+r3.",
+    "result": "mixed",
+    "motifs": [
+      "oct16-conditional-residue-reconstruction"
+    ],
+    "sample": {
+      "unit": "test image per dataset",
+      "count": 2000
+    },
+    "metrics": [
+      {
+        "name": "shifted MNIST P3 PSNR dB",
+        "value": 20.3828678
+      },
+      {
+        "name": "shifted MNIST global memory PSNR dB",
+        "value": 14.0537224
+      },
+      {
+        "name": "MNIST P3 PSNR translation loss dB",
+        "value": 0.269762
+      },
+      {
+        "name": "shifted Fashion P3 PSNR dB",
+        "value": 19.8762093
+      },
+      {
+        "name": "shifted Fashion global memory PSNR dB",
+        "value": 15.7157068
+      },
+      {
+        "name": "Fashion P3 translation loss dB",
+        "value": 0.5307655
+      }
+    ],
+    "controls": [
+      "Whole-image memory and whole-image linear fill",
+      "Global raw/core-only baselines",
+      "Same transformations applied to test data and compared by PSNR"
+    ],
+    "replication": "Committed patch_results_mnist.json and patch_results_fashion.json; not independently rerun in atlas.",
+    "held_out": true,
+    "external_data": true,
+    "limitations": [
+      "Fashion 0.5308 dB drop fails predeclared under-0.5 dB line",
+      "Shifted judge accuracy unreliable because judge itself is not translation invariant",
+      "Learned patch rules were fitted offline; no online persistent detail memory"
+    ],
+    "source": "https://github.com/anttiluode/SihtiImageModel/blob/ba03673db7b7a69e31419bd7c4bc6dcd93a5ee2b/results/patch_results_mnist.json"
+  },
+  {
+    "id": "oct16-sihti-natural-photo-and-defect-limits",
+    "node": "SihtiImageModel",
+    "claim": "Fixed-size patch rules weakly but consistently improve given-coarse natural-photo completion over linear filters, while image-level scratch detection remains barely above chance.",
+    "design": "BSDS500: 200 grayscale half-resolution train photos and 300 held-out val/test; pre-registered keep=2 coarse+band3 completion. Independent Fashion synthetic scratch localization and image detection test.",
+    "result": "mixed",
+    "motifs": [
+      "oct16-conditional-residue-reconstruction"
+    ],
+    "sample": {
+      "unit": "held-out BSDS500 photo",
+      "count": 300
+    },
+    "metrics": [
+      {
+        "name": "BSDS P3 PSNR dB given core+r3",
+        "value": 25.1224346
+      },
+      {
+        "name": "BSDS P0 PSNR dB given core+r3",
+        "value": 24.8667603
+      },
+      {
+        "name": "fraction of BSDS test images P3 beats P0",
+        "value": 1
+      },
+      {
+        "name": "BSDS P3 PSNR dB from core only",
+        "value": 22.2632999
+      },
+      {
+        "name": "BSDS P0 PSNR dB from core only",
+        "value": 22.2679768
+      },
+      {
+        "name": "stored P3 float values",
+        "value": 903168
+      },
+      {
+        "name": "Fashion image-level scratch AUROC",
+        "value": 0.5826488
+      },
+      {
+        "name": "Fashion pixel scratch AUROC",
+        "value": 0.9368482
+      }
+    ],
+    "controls": [
+      "P0 learned linear window-to-patch filter",
+      "P1 example retrieval and P2 code means",
+      "Core-only completion and high-pass scratch baseline",
+      "Held-out real photos"
+    ],
+    "replication": "Committed patch_results_bsds.json and patch_results_fashion.json; not independently rerun in atlas.",
+    "held_out": true,
+    "external_data": true,
+    "limitations": [
+      "Small photo gain (0.256 dB); no feather detail recovered when coarse evidence absent",
+      "No novel photo generation, no time series or video",
+      "Image scratch detection AUROC ~0.58, not a usable detector",
+      "903,168 stored float values are not 903,168 bytes; model parameter and runtime costs matter"
+    ],
+    "source": "https://github.com/anttiluode/SihtiImageModel/blob/ba03673db7b7a69e31419bd7c4bc6dcd93a5ee2b/results/patch_results_bsds.json"
+  },
+  {
+    "id": "oct16-growth-gate1-explanation-controls",
+    "node": "Growth-Microscope",
+    "claim": "Exact train-cut causal fingerprints can transfer to related terminal shifts, but material and privileged adjoint measurements sometimes match or exceed them.",
+    "design": "One deterministic 11x9 lattice with 178 candidate edges, 12 hand-chosen rectangular regions, 3 task families; freeze grown material and predict held-out region damage after 50% recruited-conductance cuts.",
+    "result": "mixed",
+    "motifs": [
+      "oct16-causal-explanations-vs-simple-controls"
+    ],
+    "sample": {
+      "unit": "engineered routing need",
+      "count": 3
+    },
+    "metrics": [
+      {
+        "name": "Bridge causal fingerprint held-out Pearson",
+        "value": 0.987
+      },
+      {
+        "name": "Fork fingerprint held-out Pearson",
+        "value": 0.951
+      },
+      {
+        "name": "Cross fingerprint held-out Pearson",
+        "value": 0.825
+      },
+      {
+        "name": "Cross material-only held-out Pearson",
+        "value": 0.849
+      },
+      {
+        "name": "Cross adjoint held-out Pearson",
+        "value": 0.999
+      }
+    ],
+    "controls": [
+      "Material mass by region",
+      "Activity current magnitudes",
+      "Held-out uncut adjoint sensitivity with extra test-field information"
+    ],
+    "replication": "Frozen deterministic repo reference, not independently rerun for this atlas pass.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "One deterministic topology and manually named regions",
+      "Task-related held-out terminals rather than new families",
+      "Adjoint has access to uncut held-out dynamics and is not information-matched to a blind train fingerprint"
+    ],
+    "source": "https://github.com/anttiluode/Growth-Microscope/blob/3e24714586a7f483090d7fd423ad2f33c278ec2a/README.md"
+  },
+  {
+    "id": "oct16-growth-gate2-prospective-selection",
+    "node": "Growth-Microscope",
+    "claim": "Preselected validation checkpoints and prospective held-out routing reveal substantial late specialization; neither extra task variety nor early stopping reliably dominates an equally budgeted uniform-material control.",
+    "design": "Specialist vs diverse growth; 24-unit material cap, equal 3 solver calls per step; validation-only checkpoint selection then 24 unused terminal configurations and separate frozen damage forecasts.",
+    "result": "mixed",
+    "motifs": [
+      "oct16-causal-explanations-vs-simple-controls"
+    ],
+    "sample": {
+      "unit": "deterministic task family",
+      "count": 3
+    },
+    "metrics": [
+      {
+        "name": "Bridge specialist 24-case test resistance",
+        "value": 11.062
+      },
+      {
+        "name": "Bridge diverse 24-case test resistance",
+        "value": 10.298
+      },
+      {
+        "name": "Bridge equal-material uniform resistance",
+        "value": 9.937
+      },
+      {
+        "name": "Cross diverse 24-case test resistance",
+        "value": 12.391
+      },
+      {
+        "name": "Cross equal-material uniform resistance",
+        "value": 11.715
+      },
+      {
+        "name": "Fork specialist 24-case test resistance",
+        "value": 9.238
+      },
+      {
+        "name": "Fork uniform 24-case test resistance",
+        "value": 10.022
+      }
+    ],
+    "controls": [
+      "Validation-only checkpoint selection",
+      "Equal actual-material uniform scaffold",
+      "Frozen before-reveal predictions from training configurations only"
+    ],
+    "replication": "Deterministic frozen upstream benchmark; not independently rerun in atlas.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Only three fixed task families and one lattice; no independent topology seeds",
+      "Uniform baseline is weak as optimizer but strong enough to expose overfitting",
+      "Public deterministic splits are procedurally frozen rather than cryptographically blinded"
+    ],
+    "source": "https://github.com/anttiluode/Growth-Microscope/blob/3e24714586a7f483090d7fd423ad2f33c278ec2a/README.md"
+  },
+  {
+    "id": "oct16-growth-gate3-discovered-groups-null",
+    "node": "Growth-Microscope",
+    "claim": "Causally clustered non-spatial edge groups are predictive, but show no best-in-class prospective held-out finite-cut RMSE against physically informed or randomized controls.",
+    "design": "After growing six fixed task-by-arm configurations, cluster 178 edge training-cut signatures (3 train demands) into 12 equally sized groups; freeze predictions; reveal ~49-51 material-biased edge cuts scored on 12 excluded test terminal pairs; compare 20 shuffled partitions per configuration.",
+    "result": "contradicts",
+    "motifs": [
+      "oct16-causal-explanations-vs-simple-controls"
+    ],
+    "sample": {
+      "unit": "deterministic task-by-growth-arm case",
+      "count": 6
+    },
+    "metrics": [
+      {
+        "name": "cases where functional groups best held-out RMSE",
+        "value": 0
+      },
+      {
+        "name": "shuffled group partitions with lower RMSE than functional, pooled across 6 cases",
+        "value": 110
+      },
+      {
+        "name": "shuffled group partitions evaluated total across 6 cases",
+        "value": 120
+      },
+      {
+        "name": "Bridge specialist functional-group RMSE",
+        "value": 0.0268057646
+      },
+      {
+        "name": "Bridge specialist shuffled-group RMSE",
+        "value": 0.0240355767
+      },
+      {
+        "name": "Cross diverse functional-group RMSE",
+        "value": 0.0233297627
+      },
+      {
+        "name": "Cross diverse shuffled-group RMSE",
+        "value": 0.0179295291
+      }
+    ],
+    "controls": [
+      "Material only, flow and train derivative",
+      "Material bins, flow bins and fixed rectangle groups",
+      "20 precommitted shuffled groupings per configuration"
+    ],
+    "replication": "Committed deterministic upstream results/gate3-reference.json; not independently rerun in Genealogy.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "120 partitions are not statistically independent evidence; six cases reuse one deterministic lattice",
+      "Edge probes biased toward largest grown conductance",
+      "Groups use supervised training ablation signatures; not spontaneous neural concepts",
+      "Input routing remains linear passive Kirchhoff; no new task family or nonlinear state-dependent causal groups"
+    ],
+    "source": "https://github.com/anttiluode/Growth-Microscope/blob/3e24714586a7f483090d7fd423ad2f33c278ec2a/results/gate3-reference.json"
   }
 ]

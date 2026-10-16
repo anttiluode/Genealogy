@@ -402,5 +402,9 @@
   {
     "path": "october-15-grown-operators-symmetry-and-writer-controls.json",
     "enabled": true
+  },
+  {
+    "path": "october-16-sihti-image-and-growth-microscope.json",
+    "enabled": true
   }
 ]
