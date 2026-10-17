@@ -7326,5 +7326,168 @@
       "No trained stochastic conditional image model or official FID comparisons"
     ],
     "source": "https://github.com/anttiluode/SihtiImageModel2/blob/363b1dda2073868f93d9687818c2cf1c0337031e/results/posthoc_results.json"
+  },
+  {
+    "id": "oct17-solsbaby-frozen-writer",
+    "node": "SolsBaby",
+    "claim": "A slow learned shunt preserves which one of four familiar histories occurred even after fast voltage has been cleared; the same later somatic probe makes histories distinguishable.",
+    "design": "Registered protocols/v1.json before held-out run: four morphology seeds; 32 train and 32 test episodes per class per seed, 512 held-out episodes total; identical probe, writing frozen while probing, observation noise, reader fitted only on training examples. Compare learned conductance against frozen writer, erasure, shuffled labels and full-state oracle.",
+    "result": "supports",
+    "motifs": [
+      "oct17-slow-operator-usable-memory"
+    ],
+    "sample": {
+      "unit": "held-out four-context episodes across four morphology seeds",
+      "count": 512
+    },
+    "metrics": [
+      {
+        "name": "Mean learned-soma accuracy",
+        "value": 1
+      },
+      {
+        "name": "Frozen writer accuracy",
+        "value": 0.25
+      },
+      {
+        "name": "Slow memory erased accuracy",
+        "value": 0.2109375
+      },
+      {
+        "name": "Labels shuffled once per seed",
+        "value": 0.294921875
+      },
+      {
+        "name": "Chance (four contexts)",
+        "value": 0.25
+      },
+      {
+        "name": "Slow-state size",
+        "value": 168,
+        "unit": "bytes"
+      }
+    ],
+    "controls": [
+      "Identical current probe and somatic read port for all histories",
+      "Frozen-writer and erased-memory negative controls",
+      "Training and held-out episode split within each of four fixed contexts",
+      "Reader fits only on training episodes, active voltage boost off"
+    ],
+    "replication": "Upstream preregistered code and results read; not rerun as part of this Genealogy pass.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Only four engineered experience contexts; held-out examples vary timing, amplitudes and noise, not context identity",
+      "21 float64 slow tags cost 168 bytes for a four-class/two-bit task; no compact-storage or baseline-transformer advantage shown",
+      "An oracle has noiseless full-state access and is not a fair matched sensor",
+      "One randomized label shuffle is a noisy null, not a significance test",
+      "All quantities are dimensionless and the recipe is not literal DNA"
+    ],
+    "source": "https://github.com/anttiluode/SolsBaby/blob/f299b91b17c4278b66fd16677d89bbe764c23eaa/results/v1/results.json"
+  },
+  {
+    "id": "oct17-claudesbaby-map-grid",
+    "node": "ClaudesBaby",
+    "claim": "The engineered successor map uses unrewarded experience for latent learning, while a rule-generated grid supports the first traversal of a newly opened shortcut that the map alone does not know.",
+    "design": "PREREG.md gates G1 and G4 across ten seeds; compare successor-representation navigation after exploration to model-free Q on matched experience, and grid-guided navigation through an unknown opened door to the previously learned map-only policy.",
+    "result": "supports",
+    "motifs": [
+      "oct17-developmental-rules-and-experienced-maps"
+    ],
+    "sample": {
+      "unit": "random seed per preregistered navigation gate",
+      "count": 10
+    },
+    "metrics": [
+      {
+        "name": "G1 successor-map steps / shortest",
+        "value": 1.1357466063
+      },
+      {
+        "name": "G1 model-free Q steps / shortest",
+        "value": 8.3333333333
+      },
+      {
+        "name": "G4 new-shortcut grid steps / shortest",
+        "value": 1
+      },
+      {
+        "name": "G4 map-only steps / shortest",
+        "value": 18.75
+      }
+    ],
+    "controls": [
+      "Same pre-shortcut exploration experience",
+      "Model-free Q comparator for latent learning",
+      "Map-only navigation comparator for novel door",
+      "Initial G4 failure and later correction to registered collision rule preserved in gate log"
+    ],
+    "replication": "Upstream results and corrections inspected via README and results.json; not independently rerun for Genealogy.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Deterministic grid-rule path integration is a constructed exact mechanism, not proof of biological grid computation",
+      "G4 was initially implemented with stale remembered wall blocking; pass came after fixing to the frozen rule",
+      "The benchmark world is a small two-room simulation, not an unseen real environment",
+      "The G4b auxiliary pass is vacuous when both systems reach their 150-step caps in seven of ten seeds"
+    ],
+    "source": "https://github.com/anttiluode/ClaudesBaby/blob/45f2d73a855f6bbd31f0e9eae34067028912f7d5/results/results.json"
+  },
+  {
+    "id": "oct17-claudesbaby-gate-failures",
+    "node": "ClaudesBaby",
+    "claim": "The preregistered need-switch and medial-septum interventions do not meet their behavioral or map-accuracy criteria; long-range value propagation limits navigation.",
+    "design": "PREREG.md gates G2, G3 and G4b with on/off component ablations, ten seeds; post-hoc analysis separately increases map discount horizon and exploration length to diagnose far-target failures.",
+    "result": "contradicts",
+    "motifs": [
+      "oct17-developmental-rules-and-experienced-maps"
+    ],
+    "sample": {
+      "unit": "seed per preregistered ablation gate",
+      "count": 10
+    },
+    "metrics": [
+      {
+        "name": "G2 correct need with gate on",
+        "value": 0.69035533
+      },
+      {
+        "name": "G2 correct need with gate off",
+        "value": 0.49238579
+      },
+      {
+        "name": "G3 map accuracy theta on",
+        "value": 0.90645899
+      },
+      {
+        "name": "G3 map accuracy theta off",
+        "value": 0.88942671
+      },
+      {
+        "name": "G3 successful seeds",
+        "value": 0
+      },
+      {
+        "name": "G4b cap-hit seeds for both agents",
+        "value": 7
+      }
+    ],
+    "controls": [
+      "Need-selection gate on versus off with unchanged map",
+      "Theta/septum on versus off after same door change",
+      "Grid cost when there is no new shortcut",
+      "Horizon-only versus horizon-plus-experience post-hoc comparisons"
+    ],
+    "replication": "Preregistered upstream gates and diagnostic read, not rerun. Post-hoc analysis not elevated to frozen-gate evidence.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "G2 required >=90% correct with gate enabled and fails at 69%; far resource correctness is 19%",
+      "G3 required 0.05 map-accuracy advantage in 8 of 10 seeds, found none: kill condition fires",
+      "G4b ratio 1.00 arises in most seeds because both agents time out, not successful equal navigation",
+      "Doubling exploration improves far selection post-hoc; it is not a preregistered replay success",
+      "Septum implemented here is ineffectual; the result does not disprove biological septal functions"
+    ],
+    "source": "https://github.com/anttiluode/ClaudesBaby/blob/45f2d73a855f6bbd31f0e9eae34067028912f7d5/results/results.json"
   }
 ]
