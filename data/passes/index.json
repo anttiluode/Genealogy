@@ -410,5 +410,9 @@
   {
     "path": "october-17-sihti-image-model2.json",
     "enabled": true
+  },
+  {
+    "path": "october-17-two-babies-state-and-navigation.json",
+    "enabled": true
   }
 ]
