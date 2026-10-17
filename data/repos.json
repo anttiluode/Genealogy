@@ -4136,6 +4136,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "SihtiImageModel2",
+    "url": "https://github.com/anttiluode/SihtiImageModel2",
+    "default_branch": "main",
+    "size": 6638,
+    "visibility": "public",
+    "description": "Opus 55 continuation of the first one. ",
+    "created_at": "2026-10-17T05:53:14Z",
+    "updated_at": "2026-10-17T10:48:26Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "SihtiMuisti",
     "url": "https://github.com/anttiluode/SihtiMuisti",
     "default_branch": "main",

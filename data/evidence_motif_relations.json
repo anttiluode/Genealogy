@@ -435,5 +435,14 @@
   },
   "oct16-growth-gate3-discovered-groups-null": {
     "oct16-causal-explanations-vs-simple-controls": "limits"
+  },
+  "oct17-sim2-real-layout-ridge-fill": {
+    "oct17-global-layout-conditional-detail": "supports"
+  },
+  "oct17-sim2-global-layout-frozen-gates": {
+    "oct17-global-layout-conditional-detail": "limits"
+  },
+  "oct17-sim2-stochastic-texture-followup": {
+    "oct17-global-layout-conditional-detail": "limits"
   }
 }

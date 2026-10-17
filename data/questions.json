@@ -1104,5 +1104,47 @@
       "Goodfire's contemporary neural interpretability claims are outside this code's measured domain.",
       "Every group uses three observed training-ablation responses; not unsupervised semantics."
     ]
+  },
+  {
+    "id": "oct17-learned-layout-vs-coherent-detail",
+    "title": "Can an inexpensive layout-conditioned detail model recover coherent texture rather than mean blur or independent grain?",
+    "state": "open",
+    "motifs": [
+      "oct17-global-layout-conditional-detail"
+    ],
+    "evidence": [
+      "oct17-sim2-real-layout-ridge-fill",
+      "oct17-sim2-global-layout-frozen-gates",
+      "oct17-sim2-stochastic-texture-followup"
+    ],
+    "competing_explanations": [
+      "The global layout already carries enough context; a spatially correlated, luminance-aware conditional residue sampler could restore realistic detail without distorting silhouettes, using a small CPU-friendly learned/local prior.",
+      "The 8x8 layout discards essential geometry and texture dependencies; without a stronger 16x16 or hierarchical global generative prior, swapping local residual samplers only trades averaged blur for stochastic grain.",
+      "The apparent advantage is a mismatch between training/evaluation observers (sharp vs blurry small CNN) or a dataset-format effect, and ordinary upsampling or modern image priors provide the same outcome at lower complexity."
+    ],
+    "known": [
+      "On JPEG-mirror CIFAR-10 real 8x8 layouts, P3 beats P0 by +0.107 dB PSNR and misses a +2-point readout criterion.",
+      "The frozen learned-layout G1 recognition gate fails (22.7% learned vs 24.1% Gaussian; threshold >=35% and +10 points).",
+      "Local conditional mean residues carry only 0.115x real fine-band energy, while sampled code-covariance residues carry 1.59x and reduce judge-feature FD from 110.2 to 97.7 at a ~3.93 dB pixel PSNR cost."
+    ],
+    "missing_discriminator": "A new held-out official-lossless CIFAR-10 test comparing deterministic mean, spatially correlated texture sampling, patch-copy texture, stronger 16x16 layout, and matched ordinary upsampling, with class/layout scoring calibrated to resolution, realistic texture metrics, fixed byte/compute budgets, and cross-seed consistency.",
+    "candidate_experiment": {
+      "design": "Freeze original and lossless training/testing splits before model selection. Match layout capacity, patch-memory parameter count and runtime where feasible. Evaluate real-layout and generated-layout tasks separately: pixel PSNR/SSIM; high-frequency energy and spatial correlation; feature distance calibrated across sharp/blurred domains; blinded sample quality; class conditionality versus Gaussian baselines. Include a zero-texture and independent-colour-noise control to detect reward hacking; keep predeclared stop gates.",
+      "cost": "medium (one RTX 3060-class machine; begin with small CPU-fixed sampler controls)",
+      "outcomes": [
+        {
+          "if": "A coherent local sampler improves texture correlations and held-out distributional distance at matched cost without large structural or class-control regressions",
+          "then": "Record a bounded benefit for conditional texture given layout, not a general generator breakthrough."
+        },
+        {
+          "if": "Simple patch copy or a stronger coarse layout matches/exceeds it, or realistic texture requires much heavier learned modeling",
+          "then": "Close SihtiImageModel2 as an informative decomposition and negative-control experiment; do not add complexity for its own sake."
+        }
+      ]
+    },
+    "notes": [
+      "Distinguish source-supported G1 failure from later post-hoc interpretations; official CIFAR files were not used for recorded scores.",
+      "No promise to build the proposed experiment; this is an unresolved question archived with the source."
+    ]
   }
 ]

@@ -7120,5 +7120,211 @@
       "Input routing remains linear passive Kirchhoff; no new task family or nonlinear state-dependent causal groups"
     ],
     "source": "https://github.com/anttiluode/Growth-Microscope/blob/3e24714586a7f483090d7fd423ad2f33c278ec2a/results/gate3-reference.json"
+  },
+  {
+    "id": "oct17-sim2-real-layout-ridge-fill",
+    "node": "SihtiImageModel2",
+    "claim": "Given ground-truth 8x8 layout, the unchanged Sihti P3 per-code local ridge fill only narrowly beats a single linear filter on real-layout fidelity and does not pass the preregistered classifier-lift gate.",
+    "design": "Predeclared O1 and O2, 2,000 held-out CIFAR-10 JPEG-mirror images, oracle 8x8 layout supplied, fixed ridge lift into core+r3; compare bicubic, P0 single linear filter, P3 512 local per-band experts. Judge independently trained on sharp image train split.",
+    "result": "mixed",
+    "motifs": [
+      "oct17-global-layout-conditional-detail"
+    ],
+    "sample": {
+      "unit": "held-out CIFAR-10 JPEG-mirror test image",
+      "count": 2000
+    },
+    "metrics": [
+      {
+        "name": "P3 PSNR given real layout",
+        "value": 21.4747181,
+        "unit": "dB"
+      },
+      {
+        "name": "P0 PSNR given real layout",
+        "value": 21.367672,
+        "unit": "dB"
+      },
+      {
+        "name": "bicubic PSNR given real layout",
+        "value": 21.347403,
+        "unit": "dB"
+      },
+      {
+        "name": "P3 judge accuracy",
+        "value": 0.264
+      },
+      {
+        "name": "bicubic judge accuracy",
+        "value": 0.251
+      },
+      {
+        "name": "O1 pass",
+        "display": "yes, +0.107 dB >= +0.1"
+      },
+      {
+        "name": "O2 pass",
+        "display": "no, +1.3 percentage points < +2"
+      }
+    ],
+    "controls": [
+      "P0 matched linear filter and bicubic upsampling",
+      "R0 lift only; P3 from actual x16 as diagnostic",
+      "Same test layouts and fixed train/validation/test images"
+    ],
+    "replication": "Upstream results/results.json and PREREG.md source-inspected; not independently rerun in Genealogy.",
+    "held_out": true,
+    "external_data": true,
+    "limitations": [
+      "Ground-truth coarse 8x8 layout is provided, not generated; this is not unconditional synthesis",
+      "Difference above P0 is only 0.107 dB, just beyond registered 0.1 threshold",
+      "CIFAR-10 was downloaded from a JPEG quality-~75 4:2:0 mirror, altering high bands; not directly interchangeable with official CIFAR data",
+      "Judge trained on sharp images undercounts information in blurry reconstructions"
+    ],
+    "source": "https://github.com/anttiluode/SihtiImageModel2/blob/363b1dda2073868f93d9687818c2cf1c0337031e/results/results.json"
+  },
+  {
+    "id": "oct17-sim2-global-layout-frozen-gates",
+    "node": "SihtiImageModel2",
+    "claim": "The class-conditional learned 8x8 layout transformer provides a recognizable visual scaffold but fails the registered class-readability advantage over a per-class Gaussian; the local mean-residue fill is severely lacking natural fine detail.",
+    "design": "Predeclared generated-layout G1/G2/G2b/G3: train four-layer 128-wide autoregressive layout transformer on 45,000 JPEG-mirror CIFAR-10 training images with 5,000 layout validation; 100 generated samples per class per layout model. Compare learned transformer with class-conditional Gaussian baseline, fixed P0/P3 detail, sharp-image judge, class-specific nearest-neighbour and judge-feature Frechet distance.",
+    "result": "mixed",
+    "motifs": [
+      "oct17-global-layout-conditional-detail"
+    ],
+    "sample": {
+      "unit": "class-conditional generated image per layout arm",
+      "count": 1000
+    },
+    "metrics": [
+      {
+        "name": "Learned layout plus P3 sharp-judge class accuracy",
+        "value": 0.227
+      },
+      {
+        "name": "Gaussian layout plus P3 class accuracy",
+        "value": 0.241
+      },
+      {
+        "name": "G1 registered pass",
+        "display": "FAIL — minimum 35%, and >=10 points above Gaussian"
+      },
+      {
+        "name": "Learned layout plus P3 judge-feature Frechet distance",
+        "value": 110.18658
+      },
+      {
+        "name": "Learned layout plus P0 judge-feature Frechet distance",
+        "value": 111.58024
+      },
+      {
+        "name": "Learned layout plus bicubic judge-feature Frechet distance",
+        "value": 118.52962
+      },
+      {
+        "name": "Fine-band energy ratio to real photographs",
+        "value": 0.115494
+      },
+      {
+        "name": "Near copies (registered novelty threshold)",
+        "value": 0
+      },
+      {
+        "name": "Median nearest-layout novelty ratio",
+        "value": 1.02955
+      }
+    ],
+    "controls": [
+      "Gaussian conditional layout prior vs autoregressive transformer at same class request",
+      "P3 vs P0 vs bicubic and lift-only with fixed layout samples",
+      "Novelty test against nearest training layouts and held-out real layouts",
+      "Sharp judge real-image test accuracy 76.49%; blurry-layout judge trained only later, reported separately"
+    ],
+    "replication": "Committed upstream prereg and frozen results; not independently rerun in Genealogy.",
+    "held_out": true,
+    "external_data": true,
+    "limitations": [
+      "G1 failed its explicit kill criterion regardless of plausible-looking layout panels",
+      "Frechet distance uses a small trained judge's features, NOT standard Inception FID",
+      "A trained judge can prefer blurry class-mean stereotypes, and the sharp-image judge is biased against blurry generated images",
+      "0.115x high-band energy is a severe texture deficit; the pipeline can generate recognizable silhouettes without realistic 32x32 photos",
+      "JPEG-mirror test source modifies the finest bands"
+    ],
+    "source": "https://github.com/anttiluode/SihtiImageModel2/blob/363b1dda2073868f93d9687818c2cf1c0337031e/results/results.json"
+  },
+  {
+    "id": "oct17-sim2-stochastic-texture-followup",
+    "node": "SihtiImageModel2",
+    "claim": "Adding code-conditional Gaussian residual variance helps one distributional metric but overfills fine-band energy and damages pixel-fidelity; it does not recover natural coherent texture.",
+    "design": "Additional preregistration committed after the original gates but before R4 implementation: sample Gaussian patches from local 16x16 residual covariance per code, sum overlapping draws with sqrt(count) correction. Compare R3 deterministic mean versus R4 stochastic detail without tuning on the tested samples; add an exploratory judge trained on bicubic 8x8 layouts (not gated).",
+    "result": "mixed",
+    "motifs": [
+      "oct17-global-layout-conditional-detail"
+    ],
+    "sample": {
+      "unit": "learned-layout generated image",
+      "count": 1000
+    },
+    "metrics": [
+      {
+        "name": "R3 fine-detail energy ratio to real",
+        "value": 0.1154939
+      },
+      {
+        "name": "R4 fine-detail energy ratio to real",
+        "value": 1.59256
+      },
+      {
+        "name": "R3 judge-feature Frechet distance",
+        "value": 110.18658
+      },
+      {
+        "name": "R4 judge-feature Frechet distance",
+        "value": 97.72817
+      },
+      {
+        "name": "R3 real-layout PSNR",
+        "value": 21.474718,
+        "unit": "dB"
+      },
+      {
+        "name": "R4 real-layout PSNR",
+        "value": 17.546955,
+        "unit": "dB"
+      },
+      {
+        "name": "Blurry-layout judge accuracy learned-layout bicubic",
+        "value": 0.477
+      },
+      {
+        "name": "Blurry-layout judge accuracy learned-layout P3",
+        "value": 0.466
+      },
+      {
+        "name": "Blurry-layout judge accuracy Gaussian-layout bicubic",
+        "value": 0.55
+      },
+      {
+        "name": "Blurry-layout judge accuracy Gaussian-layout P3",
+        "value": 0.532
+      }
+    ],
+    "controls": [
+      "Same learned layouts, same patch-code means and sampled fixed random generator seed",
+      "Real-layout PSNR quantifies distortion cost independent of feature-space distance",
+      "R3 no-sampling and LG Gaussian layout arms",
+      "Separate blurry-domain classifier is explicitly post-hoc, with no altered G1 threshold"
+    ],
+    "replication": "Frozen upstream PREREG_STOCHASTIC.md and posthoc_results.json; not independently rerun in Genealogy.",
+    "held_out": true,
+    "external_data": true,
+    "limitations": [
+      "R4 passes registered distribution-distance S2 but fails registered energy-range S1 (0.6–1.4)",
+      "Sampling occurs independently by colour and overlapping patches, yielding coloured speckle rather than spatially coherent texture",
+      "Pixel PSNR falls about 3.93 dB; not free restoration of true details",
+      "Post-hoc blurry judge cannot overturn preregistered class-recovery kill condition",
+      "No trained stochastic conditional image model or official FID comparisons"
+    ],
+    "source": "https://github.com/anttiluode/SihtiImageModel2/blob/363b1dda2073868f93d9687818c2cf1c0337031e/results/posthoc_results.json"
   }
 ]
