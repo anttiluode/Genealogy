@@ -1,0 +1,115 @@
+{
+  "id": "october-17-two-babies-state-and-navigation",
+  "title": "October 17: SolsBaby and ClaudesBaby — state-dependent response and spatial learning",
+  "reviewed_at": "2026-10-17",
+  "order": 126,
+  "summary": "Two intentionally separate operator-based explorations from the October 17 Sihti, dendrite, VMN and developmental-rule discussions. SolsBaby writes a slow shunting conductance through activity and reads context from a fixed single-soma probe after fast voltage is cleared: the preregistered four-class task passes (100% of 512 held-out episodes; frozen writer 25%, erase 21.1%), but this is not generalization to novel histories or storage efficiency. ClaudesBaby makes a browser two-room creature combining gene-rule-generated grid coupling, learned successor map, drive/reward maps and optional theta; latent learning G1 and first-try grid shortcut G4 pass, but need selection G2 and theta G3 fail, and a G4b pass is vacuous because most trials timed out. These are source-reported results, not independent atlas reruns or a literal biological model.",
+  "nodes": [
+    {
+      "id": "SolsBaby",
+      "url": "https://github.com/anttiluode/SolsBaby",
+      "family": "neuron-machine",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A compact developmental recipe creates a conductance-based dendritic tree. Local experience writes bounded slow shunts; after fast voltages are cleared, the same branch-sweep probe is read at one soma to identify one of four familiar history contexts.",
+      "survived": "Preregistered v1: four morphology seeds × 128 held-out episodes = 512; 100% mean somatic readout, versus 25% frozen-writer and 21.1% erased-memory controls. GUI separates clearing voltage from erasing learned EQ; Python math/CLI tests and a desktop smoke test are documented.",
+      "killed": "The task covers only four designed contexts, despite amplitude/timing/noise variation across episodes. It does not establish a memory capacity or storage advantage: 21 float64 slow tags (168 bytes) encode a two-bit label. The active boost was disabled in the registered gate; dimensional units and DNA analogy are illustrative.",
+      "evidence": "https://github.com/anttiluode/SolsBaby/blob/f299b91b17c4278b66fd16677d89bbe764c23eaa/results/v1/results.json",
+      "tags": [
+        "2026-10-17",
+        "dendrite",
+        "slow-conductance",
+        "memory-as-response",
+        "soma-readout",
+        "fixed-probe",
+        "voltage-cleared",
+        "preregistered-controls"
+      ],
+      "era": "October 17: state-dependent response and spatial learning",
+      "era_order": 133
+    },
+    {
+      "id": "ClaudesBaby",
+      "url": "https://github.com/anttiluode/ClaudesBaby",
+      "family": "neuron-machine",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Dependency-free browser creature using compact gene-feature-generated grid-ring connectivity, learned hippocampal successor representation, dopamine-like reward maps, hunger/thirst drive gating and an optional septal read/write schedule; each is switchable and tested by preregistered gates.",
+      "survived": "G1 latent learning: successor-map navigation 1.14× shortest path vs model-free Q 8.33×; G4 new-door shortcut: grid 1.00× shortest path vs map-only 18.75× (10 seeds each). Gene-rule ring path integration reaches numerical precision on its deterministic test.",
+      "killed": "G2 need-switch criterion fails (69.0% correct with gate on vs 49.2% off); far-resource performance drops to 19%. G3 theta separation fails its preregistered criterion (map accuracy 0.906 vs 0.889, 0/10 required wins; kill condition). G4b's apparent pass is vacuous because seven of ten seeds hit the step cap for both agents. A first G4 implementation failed until corrected to the preregistered rule. This is a constructed agent, not evidence that specific brain regions use these implementations.",
+      "evidence": "https://github.com/anttiluode/ClaudesBaby/blob/45f2d73a855f6bbd31f0e9eae34067028912f7d5/results/results.json",
+      "tags": [
+        "2026-10-17",
+        "gene-generated-connectivity",
+        "successor-map",
+        "grid-cells",
+        "latent-learning",
+        "goal-routing",
+        "theta-failure",
+        "negative-controls",
+        "browser-demo"
+      ],
+      "era": "October 17: state-dependent response and spatial learning",
+      "era_order": 133
+    }
+  ],
+  "edges": [
+    {
+      "source": "Sihti",
+      "target": "SolsBaby",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Sihti's image-conditioned transport and SolsBaby's experience-modified electrical coupling express an operator shaped by state, but no code inheritance or biological identity is claimed.",
+      "evidence": "https://github.com/anttiluode/SolsBaby/blob/f299b91b17c4278b66fd16677d89bbe764c23eaa/README.md"
+    },
+    {
+      "source": "Operaattori",
+      "target": "SolsBaby",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Both explicitly model dendritic cable transport and compartmental response. SolsBaby focuses on writable slow shunts and single-soma history readout rather than morphology compilation and NMDA tangents.",
+      "evidence": "https://github.com/anttiluode/SolsBaby/blob/f299b91b17c4278b66fd16677d89bbe764c23eaa/README.md"
+    },
+    {
+      "source": "VMN",
+      "target": "SolsBaby",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both interrogate a fixed later probe through dynamics affected by prior state; VMN uses vortex/oscillator state, while SolsBaby writes conductances surviving fast-voltage clearing.",
+      "evidence": "https://github.com/anttiluode/SolsBaby/blob/f299b91b17c4278b66fd16677d89bbe764c23eaa/README.md"
+    },
+    {
+      "source": "GrowingAnttisNeuron",
+      "target": "ClaudesBaby",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Compact developmental rules determining an operator recur, but ClaudesBaby's grid-ring bilinear gene features are a different engineered model, not inherited wiring or measured biology.",
+      "evidence": "https://github.com/anttiluode/ClaudesBaby/blob/45f2d73a855f6bbd31f0e9eae34067028912f7d5/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "oct17-slow-operator-usable-memory",
+      "title": "A history can persist as a changed response operator",
+      "description": "For SolsBaby, earlier activity alters slow electrical couplings, fast voltage is cleared and an identical probe reveals different histories at a one-port readout. Sihti, VMN and Operaattori motivate distinct state-to-operator views; only the four-context controlled test is demonstrated here, not efficient or biologically accurate generalized memory.",
+      "nodes": [
+        "Sihti",
+        "VMN",
+        "Operaattori",
+        "SolsBaby"
+      ]
+    },
+    {
+      "id": "oct17-developmental-rules-and-experienced-maps",
+      "title": "Compact generated connectivity and learned navigation maps have different roles",
+      "description": "ClaudesBaby combines compact rule-generated grid couplings with an experience-learned successor map and need-dependent reward values. Fast shortcut and latent-learning gates work; weak distant map propagation and a null septum intervention prevent claiming the whole creature is validated.",
+      "nodes": [
+        "GrowingAnttisNeuron",
+        "ClaudesBaby",
+        "SolsBaby"
+      ]
+    }
+  ]
+}
