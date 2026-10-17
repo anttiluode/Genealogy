@@ -406,5 +406,9 @@
   {
     "path": "october-16-sihti-image-and-growth-microscope.json",
     "enabled": true
+  },
+  {
+    "path": "october-17-sihti-image-model2.json",
+    "enabled": true
   }
 ]

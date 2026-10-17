@@ -23,6 +23,18 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
+## 2026-10-17 — SihtiImageModel2: global layout meets the missing texture problem
+
+The [October 17 reviewed pass](data/passes/october-17-sihti-image-model2.json) adds **[SihtiImageModel2](https://github.com/anttiluode/SihtiImageModel2)** as an explicit successor to [SihtiImageModel](https://github.com/anttiluode/SihtiImageModel), with one curated node, an evidence-backed inheritance edge, three experimental receipts, one bounded motif and a new unresolved question. The implementation runs as a [browser demo](https://anttiluode.github.io/SihtiImageModel2/web/index.html). This pass inspected the source and committed upstream results at `363b1dda2073`; it did not independently rerun CIFAR gates.
+
+**Architecture:** a small **backprop-trained class-conditioned autoregressive transformer** draws an 8×8×3 layout; ridge regression lifts that layout to Sihti's coarse image state; v1's closed-form P3 patch rules then fill progressively finer residues. Unlike v1's no-backprop generator, this successor **does** train the layout model with backprop; the detail predictor remains local and ridge-fitted.
+
+**What survived:** on **2,000 real CIFAR-10 layouts**, local P3 gives **21.475 dB** PSNR, versus P0 linear **21.368** and bicubic **21.347** (O1 passes by only **0.107 dB**). Generated learned layouts filled by P3 rank ahead of linear/bicubic under the repository's *judge-feature* Fréchet metric (110.2 vs 111.6 / 118.5); this metric is **not official Inception FID**.
+
+**What failed:** the **preregistered G1 kill condition**: a sharp-image judge reads the requested class only **22.7%** of the time, versus **24.1%** for Gaussian layouts (threshold ≥35% and +10 points). The P3 O2 recognition gate also fails (26.4% vs bicubic 25.1%; needs +2 points). Conditional-mean reconstruction retains only **0.115×** natural fine-band energy. Sampling code-specific Gaussian residuals moves feature distance **110.2 → 97.7**, but **overshoots energy to 1.59×** and reduces real-layout PSNR **21.47 → 17.55 dB**, mostly adding coloured grain rather than coherent texture.
+
+**Measurement boundary:** the reported CIFAR images come from a **JPEG quality-~75 4:2:0 mirror**, not the original lossless CIFAR data. A later blurry-layout judge was designed post hoc and must not overturn the original G1 failure. The new [unresolved question](data/questions.json) asks whether a coherent conditional detail model earns its place over simple patch-copy/upsampling and stronger coarse layouts at matched cost—not whether Sihti magically creates missing information. [Original results](https://github.com/anttiluode/SihtiImageModel2/blob/363b1dda2073868f93d9687818c2cf1c0337031e/results/results.json) · [stochastic follow-up](https://github.com/anttiluode/SihtiImageModel2/blob/363b1dda2073868f93d9687818c2cf1c0337031e/results/posthoc_results.json).
+
 ## 2026-10-16 — SihtiImageModel and Growth-Microscope: restored detail versus causal explanations
 
 The [October 16 reviewed pass](data/passes/october-16-sihti-image-and-growth-microscope.json) adds **[SihtiImageModel](https://github.com/anttiluode/SihtiImageModel)** and **[Growth-Microscope](https://github.com/anttiluode/Growth-Microscope)** as separate branches, with **two curated nodes**, **five qualified lineage/comparison edges**, **three motifs**, **seven evidence records** and **two open research questions**. Both projects were source-inspected at their pinned October 16 revisions; upstream numerical gates were not independently rerun for this atlas update.

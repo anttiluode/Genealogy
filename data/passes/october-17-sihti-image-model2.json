@@ -1,0 +1,57 @@
+{
+  "id": "october-17-sihti-image-model2",
+  "title": "October 17: SihtiImageModel2, learned layout against missing texture",
+  "reviewed_at": "2026-10-17",
+  "order": 125,
+  "summary": "SihtiImageModel2 is an explicit successor to SihtiImageModel: a class-conditional autoregressive 8x8 colour layout transformer (learned with backprop) feeds a ridge lift and the predecessor's locally conditioned Sihti P3 residue-memory. The pipeline runs in the browser, but the frozen G1 class-recognition kill condition fails (22.7% learned layout versus 24.1% Gaussian), and least-squares detail predicts only 0.115 of real fine-band energy. P3 wins real-layout PSNR by only 0.107 dB over a linear P0 and fails its recognition improvement. A predeclared stochastic residual follow-up reduces judge-feature Frechet distance (110.2 to 97.7) but overshoots fine energy to 1.59x and worsens PSNR (21.47 to 17.55 dB), generating grain rather than natural texture. CIFAR-10 data are a lossy JPEG mirror; the feature distance is not official FID. The source results are recorded, not independently rerun by this atlas.",
+  "nodes": [
+    {
+      "id": "SihtiImageModel2",
+      "url": "https://github.com/anttiluode/SihtiImageModel2",
+      "family": "residue-operator",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Successor to SihtiImageModel: a small backprop-trained class-conditioned autoregressive 8x8 colour-layout transformer, closed-form ridge lift to a Sihti coarse state, and unchanged P3 codebook/ridge patch predictors reconstruct three finer residues; adds a frozen stochastic per-code residue sampler and browser model.",
+      "survived": "Runs the 32x32 CIFAR-like layout-to-detail cascade live in the browser (~5.2 MB float16 export). Given real 8x8 layouts, P3 reaches 21.475 dB PSNR versus ordinary P0 21.368 and bicubic 21.347; G2 judge-feature distance orders P3 110.2 < P0 111.6 < bicubic 118.5 < lift-only 148.0. Post-gate covariance sampling improves this distance from 110.2 to 97.7, illustrating the missing variance of conditional-mean reconstruction.",
+      "killed": "Precommitted G1 kill condition fires: sharp-image judge recognizes 22.7% of requested classes from learned layouts versus 24.1% from Gaussian layouts (threshold >=35% and +10 points). O2 judge lift is only 26.4% P3 versus 25.1% bicubic (needs +2 points). P3 generates only 0.115x natural high-frequency energy even with true layouts; sampled detail overshoots to 1.59x, costs ~3.93 dB PSNR and looks like coloured grain. The class judge is biased toward sharp-image statistics, but a separately trained blurry-layout judge is post-hoc and does not reverse G1. Data are JPEG-compressed CIFAR-10 mirror, not original lossless images; FD is not published Inception FID.",
+      "evidence": "https://github.com/anttiluode/SihtiImageModel2/blob/363b1dda2073868f93d9687818c2cf1c0337031e/README.md",
+      "tags": [
+        "2026-10-17",
+        "sihti",
+        "image-generation",
+        "global-layout",
+        "autoregressive-transformer",
+        "ridge-lift",
+        "patch-codebook",
+        "stochastic-residues",
+        "jpeg-mirror",
+        "failure-gates",
+        "regression-to-mean"
+      ],
+      "era": "October 17: layout and detail boundaries",
+      "era_order": 132
+    }
+  ],
+  "edges": [
+    {
+      "source": "SihtiImageModel",
+      "target": "SihtiImageModel2",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Explicit v1 successor: reuses the P3 local residual predictors / Sihti lattice sieve and adds a backprop-trained global layout generator plus a stochastic covariance-sampling diagnostic. Backprop belongs to the layout model, not the closed-form local patch fit.",
+      "evidence": "https://github.com/anttiluode/SihtiImageModel2/blob/363b1dda2073868f93d9687818c2cf1c0337031e/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "oct17-global-layout-conditional-detail",
+      "title": "Global layouts are not enough when local detail has no conditional variation",
+      "description": "SihtiImageModel's local P3 predictor needs an informative coarse address. SihtiImageModel2 supplies a learned class-conditioned layout but shows why predicting mean local residues destroys unaligned texture; independent per-code Gaussian sampling restores energy and some feature-distribution match but sacrifices pixel fidelity and spatial coherence. This measures two bottlenecks, not a new universal generator or demonstrated superiority over established multiscale image models.",
+      "nodes": [
+        "SihtiImageModel",
+        "SihtiImageModel2"
+      ]
+    }
+  ]
+}
