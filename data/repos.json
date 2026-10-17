@@ -792,6 +792,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "ClaudesBaby",
+    "url": "https://github.com/anttiluode/ClaudesBaby",
+    "default_branch": "main",
+    "size": 28,
+    "visibility": "public",
+    "description": "Opus 55",
+    "created_at": "2026-10-17T13:12:48Z",
+    "updated_at": "2026-10-17T13:26:32Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "Clockfield",
     "url": "https://github.com/anttiluode/Clockfield",
     "default_branch": "main",
@@ -4365,6 +4376,17 @@
     "created_at": "2026-08-11T05:30:13Z",
     "updated_at": "2026-08-11T05:30:21Z",
     "inventory_status": "unread"
+  },
+  {
+    "name": "SolsBaby",
+    "url": "https://github.com/anttiluode/SolsBaby",
+    "default_branch": "main",
+    "size": 504,
+    "visibility": "public",
+    "description": "Sol 61 ",
+    "created_at": "2026-10-17T13:16:37Z",
+    "updated_at": "2026-10-17T14:25:50Z",
+    "inventory_status": "reviewed"
   },
   {
     "name": "SolSwarm",
