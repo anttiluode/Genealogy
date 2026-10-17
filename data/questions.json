@@ -1146,5 +1146,81 @@
       "Distinguish source-supported G1 failure from later post-hoc interpretations; official CIFAR files were not used for recorded scores.",
       "No promise to build the proposed experiment; this is an unresolved question archived with the source."
     ]
+  },
+  {
+    "id": "oct17-somatic-history-capacity",
+    "title": "Can a learned dendritic operator preserve useful new histories at competitive memory cost?",
+    "state": "open",
+    "motifs": [
+      "oct17-slow-operator-usable-memory"
+    ],
+    "evidence": [
+      "oct17-solsbaby-frozen-writer"
+    ],
+    "competing_explanations": [
+      "History-dependent conductance enables selective, interference-resistant readout from few somatic probes, even across new history families.",
+      "The four familiar contexts merely allocate an overparameterized slow tag to an easy supervised readout; a two-bit table or compact recurrent baseline suffices."
+    ],
+    "known": [
+      "A 512-episode held-out four-context somatic readout passes 100%; frozen and erased controls approach chance.",
+      "The current system has 21 floating slow states (168 bytes) to distinguish just four contexts, and uses one fixed designed probe."
+    ],
+    "missing_discriminator": "Freeze writer/reader rules and test unseen histories, orders, delays and probe families with equal-information baselines, exact table/codebook and matched-state recurrent learners; count full state and computation.",
+    "candidate_experiment": {
+      "design": "Register novel combinations and delayed competing writes, randomized morphology, variable probes, and forget-and-relearn challenges. Compare learned shunt with fixed-state RNN, direct-address table and immutable tree under equal bytes and energy; compute interference, latency and accuracy across independent seeds.",
+      "cost": "low to medium CPU experiment",
+      "outcomes": [
+        {
+          "if": "New histories transfer while avoiding interference and beating byte-matched direct and recurrent controls",
+          "then": "Promote a bounded advantage for history-shaped one-port response memory."
+        },
+        {
+          "if": "Only preassigned four labels remain separable or cheap explicit storage dominates",
+          "then": "Retain SolsBaby as a useful causal visualization, not efficient general memory."
+        }
+      ]
+    },
+    "notes": [
+      "All present values are engineered and dimensionless; no biological validity follows from this gate."
+    ]
+  },
+  {
+    "id": "oct17-claudesbaby-replay-vs-distance",
+    "title": "Will genuine offline successor-map replay rescue long-range decisions without cosmetic theta gates?",
+    "state": "open",
+    "motifs": [
+      "oct17-developmental-rules-and-experienced-maps"
+    ],
+    "evidence": [
+      "oct17-claudesbaby-map-grid",
+      "oct17-claudesbaby-gate-failures"
+    ],
+    "competing_explanations": [
+      "A bounded replay process propagates sparse experience to distant states and improves need-dependent decisions under fixed exploration budgets.",
+      "More experience, altered discounting or direct graph planning explain the benefit; adding a theta flag is unnecessary."
+    ],
+    "known": [
+      "G1 latent learning and G4 shortcut pass under preregistered controls.",
+      "G2 misses its need-switch threshold, G3 septal ablation fails its kill rule; seven of ten G4b trials have matching step-cap failures.",
+      "Post-hoc doubling exploration with a longer horizon improves far correctness to 76.5%, while increasing discount horizon alone does not."
+    ],
+    "missing_discriminator": "Preregister offline replay separate from additional exploration; compare equal-transition replay, matched extra walks, direct shortest-path planning and no-replay under held-out distance changes with visible map propagation.",
+    "candidate_experiment": {
+      "design": "Freeze the same experience history, hold map/agent capacity constant, then allocate controlled offline transition backups versus no rest, matched new experience, and planning baselines. Test distant goals and newly opened doors over many worlds while requiring an actual septum ablation effect if claimed.",
+      "cost": "low; browser/Node experiments across seeded maps",
+      "outcomes": [
+        {
+          "if": "Replay consistently improves distant need choice under fixed external experience and matched computation",
+          "then": "Add replay as a causally supported module with an explicit operating regime."
+        },
+        {
+          "if": "Only more walks or direct planning work, or theta remains immaterial",
+          "then": "Retain the failure gates and avoid assigning a computational role by biological name alone."
+        }
+      ]
+    },
+    "notes": [
+      "Replay is a proposed next component, not a demonstrated part of ClaudesBaby."
+    ]
   }
 ]
