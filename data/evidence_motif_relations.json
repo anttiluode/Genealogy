@@ -444,5 +444,14 @@
   },
   "oct17-sim2-stochastic-texture-followup": {
     "oct17-global-layout-conditional-detail": "limits"
+  },
+  "oct17-solsbaby-frozen-writer": {
+    "oct17-slow-operator-usable-memory": "supports"
+  },
+  "oct17-claudesbaby-map-grid": {
+    "oct17-developmental-rules-and-experienced-maps": "supports"
+  },
+  "oct17-claudesbaby-gate-failures": {
+    "oct17-developmental-rules-and-experienced-maps": "limits"
   }
 }
