@@ -23,6 +23,23 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
+## 2026-10-18 — Live memory, informational spectra and the middleman
+
+The [October 17–18 pass](data/passes/october-18-memory-spectra-and-middleman.json) adds **six missing repositories**. **SolsBaby, ClaudesBaby and SihtiImageModel2 were already reviewed** in the October 17 passes below and remain separate, without duplicate nodes.
+
+| Repository | What it adds | What the current evidence permits |
+|---|---|---|
+| [LiveMode](https://github.com/anttiluode/LiveMode) | A supplied-address delta memory and trained lift into frozen Qwen. | Its committed JSON reports supersede stale “pending” README text: Gate 2 is **400/400 strict answers**; Gate 3 at 16 slots gives **92.5% / 67.5%** after 100 / 500 interfering writes. At 32 slots / 500 writes it falls to **37.5% strict**, despite **60% four-colour choice**. Gate 4 reader-alignment results remain pending. |
+| [RealTimeReadWrite](https://github.com/anttiluode/RealTimeReadWrite) | Parallel toy and native J-space attempts to learn or reuse the memory address. | Toy recall gates fail. Native Qwen answer steering reaches **100% four-colour choice**, but eight-name live memory gives **23.1%**. Steering a supplied value is different from storing and finding it. |
+| [Naula](https://github.com/anttiluode/Naula) | Six verify/kill audits of the J-space claims. | **Two VERIFIED, two KILLED, two OPEN.** Names are readable through the J-lens; the reasoning headline and **slow J-core / fast remainder** claim fail. The subject-site interpretation remains open. |
+| [WhereToWrite](https://github.com/anttiluode/WhereToWrite) | A GUI/CLI comparison of subject, unrelated-token and answer injection sites. | At logit-lens gain 2, subject **42.25%** versus unrelated word **45.25%** does **not** support subject privilege. The 400 evaluations contain **95 distinct cases**, so the original independence-based interval is invalid. Answer-site **100% four-choice** is only **64% strict next-token**. |
+| [InformationalSpectra](https://github.com/anttiluode/InformationalSpectra) | A concept paper separating information loss, readability and selective writability across operator scales. | An **untested framework**, drawing on earlier Sihti, Naula and graph-memory evidence. It adds no experimental result and rejects a universal “slow = meaning” law. |
+| [Valikasi / Välikäsi](https://github.com/anttiluode/Valikasi) | B → A → C: can B's hidden colour survive A's unrelated note and affect C? | **Initial instrument, no real-model result.** Text, hidden-state and behavioural readouts are separate; topic grouping, filtering and a no-B control constrain future conclusions. Separate conversations share no KV cache. |
+
+The links distinguish documented extraction and imports from conceptual convergence. The common question is now more precise: **what survives in a medium, what can a reader expose, and what can a controlled intervention make the system use?** The [two new unresolved questions](data/questions.json) ask whether LiveMode loses information or misreads it under interference, and whether any early subject advantage survives fresh cases and causal routing controls.
+
+Nine source-linked evidence records preserve successes, failed gates and sampling limits. **InformationalSpectra and Valikasi receive no new empirical success record**: one is a proposed synthesis and the other is awaiting its first real-model run. Upstream experiment results were inspected, not independently rerun for the atlas.
+
 ## 2026-10-17 — Two babies: the learned response and the navigating creature
 
 The [October 17 two-babies pass](data/passes/october-17-two-babies-state-and-navigation.json) adds **[SolsBaby](https://github.com/anttiluode/SolsBaby)** and **[ClaudesBaby](https://github.com/anttiluode/ClaudesBaby)** as **separate reviewed nodes**, with qualified links to Sihti, Operaattori, VMN and GrowingAnttisNeuron. Both have source-linked registered evidence, explicit failed/limited tests and unresolved questions. **[SihtiImageModel2](data/passes/october-17-sihti-image-model2.json) was already reviewed** earlier on October 17 and was not duplicated.

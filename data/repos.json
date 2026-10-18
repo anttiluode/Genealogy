@@ -2321,6 +2321,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "InformationalSpectra",
+    "url": "https://github.com/anttiluode/InformationalSpectra",
+    "default_branch": "main",
+    "size": 301,
+    "visibility": "public",
+    "description": "Sol 61 max just a AI 'paper'",
+    "created_at": "2026-10-18T14:12:43Z",
+    "updated_at": "2026-10-18T14:31:14Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "InformationFlow",
     "url": "https://github.com/anttiluode/InformationFlow",
     "default_branch": "main",
@@ -2728,6 +2739,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "LiveMode",
+    "url": "https://github.com/anttiluode/LiveMode",
+    "default_branch": "main",
+    "size": 100,
+    "visibility": "public",
+    "description": "Sol 55",
+    "created_at": "2026-10-17T15:21:20Z",
+    "updated_at": "2026-10-18T05:25:26Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "LLM-Studio",
     "url": "https://github.com/anttiluode/LLM-Studio",
     "default_branch": "main",
@@ -3089,6 +3111,17 @@
     "created_at": "2025-10-05T14:15:42Z",
     "updated_at": "2025-10-19T09:56:13Z",
     "inventory_status": "unread"
+  },
+  {
+    "name": "Naula",
+    "url": "https://github.com/anttiluode/Naula",
+    "default_branch": "main",
+    "size": 32,
+    "visibility": "public",
+    "description": "Opus 55 repo",
+    "created_at": "2026-10-18T08:26:56Z",
+    "updated_at": "2026-10-18T09:27:02Z",
+    "inventory_status": "reviewed"
   },
   {
     "name": "neural-phase-fields",
@@ -3814,6 +3847,17 @@
     "description": "Vibecoded by claude. Perhaps has nothing to do with reality. ",
     "created_at": "2025-08-08T08:05:10Z",
     "updated_at": "2025-08-08T12:23:47Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "RealTimeReadWrite",
+    "url": "https://github.com/anttiluode/RealTimeReadWrite",
+    "default_branch": "main",
+    "size": 62,
+    "visibility": "public",
+    "description": "Opus 55",
+    "created_at": "2026-10-17T15:16:52Z",
+    "updated_at": "2026-10-18T08:10:36Z",
     "inventory_status": "reviewed"
   },
   {
@@ -5192,6 +5236,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "Valikasi",
+    "url": "https://github.com/anttiluode/Valikasi",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Opus 55",
+    "created_at": "2026-10-18T15:15:29Z",
+    "updated_at": "2026-10-18T15:30:46Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "Varjoluotain",
     "url": "https://github.com/anttiluode/Varjoluotain",
     "default_branch": "main",
@@ -5421,6 +5476,17 @@
     "created_at": "2026-08-29T12:26:57Z",
     "updated_at": "2026-08-29T17:07:01Z",
     "inventory_status": "unread"
+  },
+  {
+    "name": "WhereToWrite",
+    "url": "https://github.com/anttiluode/WhereToWrite",
+    "default_branch": "main",
+    "size": 58,
+    "visibility": "public",
+    "description": "Sol repo",
+    "created_at": "2026-10-18T08:23:31Z",
+    "updated_at": "2026-10-18T14:31:14Z",
+    "inventory_status": "reviewed"
   },
   {
     "name": "WidePresent",

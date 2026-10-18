@@ -1,0 +1,298 @@
+{
+  "id": "october-18-memory-spectra-and-middleman",
+  "title": "October 17–18: live memory, falsified shortcuts, informational spectra and Välikäsi",
+  "reviewed_at": "2026-10-18",
+  "order": 127,
+  "summary": "Adds six distinct repositories while preserving the already reviewed SolsBaby, ClaudesBaby and SihtiImageModel2. LiveMode's committed Qwen receipts supersede its stale pending-result README: the supplied-address, trained-reader Gate 2 succeeds on 400 evaluations, while unpredictable late queries expose interference limits in Gate 3. RealTimeReadWrite's native J-space memory fails despite successful direct answer steering. Naula verifies reader-dependent name decodability and nonmonotonic steering but kills the reasoning headline and the proposed slow-J-core/fast-residue split; subject-specific routing stays open. WhereToWrite's logit-lens site comparison finds no subject advantage at gain 2, with 400 evaluations covering only 95 unique cases. InformationalSpectra is an untested operator-, question- and reader-relative concept paper, not a new experiment. Valikasi is the initial instrument for third-party text-mediated leakage, with no real-model outcome. This pass inspects source and committed receipts; it does not independently rerun model experiments.",
+  "nodes": [
+    {
+      "id": "LiveMode",
+      "url": "https://github.com/anttiluode/LiveMode",
+      "family": "state-memory",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Read-before-write normalized delta memory with a constant resident matrix; a separately trained 3,584-parameter lift lets a frozen Qwen2.5-0.5B-Instruct read four supplied colour codes at explicitly bound hashed name addresses. Only the 1,024-byte memory updates during Qwen test episodes.",
+      "survived": "Committed Gate 2 report: 400/400 strict next-token answers after rewrites; erased 5.25%, stale and wrong-address 0%. Gate 3 chooses the query only after multiple overwrites and interference: at 16 slots, strict accuracy is 92.5% after 100 writes and 67.5% after 500, versus 27.5%/30.0% for last-event-only. Both declared engineering gates pass. These JSON receipts are newer than the README's pending-result text.",
+      "killed": "Gate 2 always queries the latest write; Gate 3 removes that shortcut and exposes degradation: 32 slots/500 interfering writes gives 37.5% strict accuracy (60% four-colour) versus a perfect oracle code. The binder, four-value vocabulary and supervised offline reader are supplied; no autonomous fact extraction, compression advantage or improved general reasoning is shown. Episodes reset memory. Gate 4 reader-alignment code and design have no committed real-Qwen outcome.",
+      "evidence": "https://github.com/anttiluode/LiveMode/blob/9b526729eace67f009cf5755efe2749163320819/runs/hf_gate3_result.json",
+      "tags": [
+        "2026-10-17",
+        "2026-10-18",
+        "online-delta-memory",
+        "read-before-write",
+        "frozen-qwen",
+        "supplied-addresses",
+        "trained-reader",
+        "interference",
+        "strict-versus-restricted"
+      ],
+      "era": "October 17–18: memory addresses, readers and causal writes",
+      "era_order": 134
+    },
+    {
+      "id": "RealTimeReadWrite",
+      "url": "https://github.com/anttiluode/RealTimeReadWrite",
+      "family": "state-memory",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A parallel frozen-transformer delta-memory retrofit: toy learned interfaces and a parameter-free Qwen J-lens route test whether keys, stored values and residual interventions compose into recall beyond the context window.",
+      "survived": "Direct answer-position colour steering passes G4.2 at layer 16: both J-lens and ordinary logit-lens directions reach 100% four-colour choice, versus 30.1% random-direction control. Diagnostics distinguish address availability, key/query alignment, stored value content and successful output steering rather than equating them.",
+      "killed": "All toy recall/overwrite gates fail, including the three-token-window follow-up (R1 22.125%, below the 80% gate; in-window recall falls from 85.325% baseline to 78.853%). Native Qwen G4.1 gives 82.6% at its dev-selected layer, below 90%; G4.4 gives 23.1% at eight names, near four-way chance, despite oracle keys reaching 35.6%. G4.3 is uninformative because the in-context reasoning ceiling is 50%. The J-space memory uses about 3.2 MB, not LiveMode's 1 KB. Naula later rejects the literal punctuation-value explanation and leaves subject-specific routing open.",
+      "evidence": "https://github.com/anttiluode/RealTimeReadWrite/blob/f8211689098ecab3ac3f4bb9bb24f5b7c8efeffb/README.md",
+      "tags": [
+        "2026-10-17",
+        "2026-10-18",
+        "delta-rule",
+        "j-lens",
+        "native-address-failure",
+        "value-reader-alignment",
+        "negative-results",
+        "steering-is-not-recall"
+      ],
+      "era": "October 17–18: memory addresses, readers and causal writes",
+      "era_order": 134
+    },
+    {
+      "id": "Naula",
+      "url": "https://github.com/anttiluode/Naula",
+      "family": "transformer-observer",
+      "status": "ledger",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A six-claim verify/kill ledger auditing RealTimeReadWrite Gate 4 with the same Qwen model and cached J-lens. Its scripts import the original J-space definitions and distinguish VERIFIED, KILLED and OPEN interpretations.",
+      "survived": "N5 verifies name-token decodability: J-lens 97–100% versus ordinary logit lens 0–4% at layers 0–15. N3 verifies a nonmonotonic steering shape, not its mechanism. N1 finds no punctuation top tokens and a stored-colour four-choice signal of 83.9%; replacing captured values improves answer accuracy from 36.25% to 76.25%, leaving the broader value-alignment question open.",
+      "killed": "N6 kills the proposed slow J-core / fast remainder split: the residue has greater excess adjacent-token persistence at all measured layers (layer 16: 0.263 residue versus 0.203 J-core). N4 kills the earlier reasoning headline: on 384 items the in-context ceiling is 50.5%, logit steering 55.2%. N2 stays OPEN: gain-8 J-lens name-site 56.7% versus 48.4% on the unrelated colour token; a large perturbation and shared model/cache do not identify attention-head routing or an independent replication.",
+      "evidence": "https://github.com/anttiluode/Naula/blob/9b3288b5bf33be87ea972c6723f584989593f4a4/README.md",
+      "tags": [
+        "2026-10-18",
+        "verify-or-kill",
+        "j-lens",
+        "reader-relativity",
+        "slow-core-falsified",
+        "subject-site-open",
+        "reasoning-ceiling",
+        "negative-results"
+      ],
+      "era": "October 17–18: memory addresses, readers and causal writes",
+      "era_order": 134
+    },
+    {
+      "id": "WhereToWrite",
+      "url": "https://github.com/anttiluode/WhereToWrite",
+      "family": "transformer-observer",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A GUI/CLI microscope comparing where an externally supplied remembered colour enters frozen Qwen: subject name, unrelated colour word or final answer position, with same-site random- and wrong-colour controls. Default directions are logit-lens vectors; a matching J-lens cache is optional.",
+      "survived": "At layer 16/gain 2 the final-answer pulse yields 100% four-colour choice and 64% unrestricted exact-token accuracy. The subject pulse improves four-choice accuracy over random/wrong-colour directions (42.25% versus 30.5%/22.5%), demonstrating a content-dependent intervention under a fully supplied dictionary/address/value scaffold.",
+      "killed": "The proposed subject privilege is unsupported at this setting: name 42.25% versus unrelated word 45.25%, paired difference −3 points. The 400 evaluations contain only 95 unique name/prompt/colour cases and 305 repeats; the historical independence-based interval is invalid, and full per-case predictions were not saved. New balanced-96 support is not a fresh holdout. Gain 2 is twice the local activation norm; no head attribution, autonomous memory or native semantic binding is demonstrated. This logit-lens result does not substitute for Naula's gain-8 J-lens comparison.",
+      "evidence": "https://github.com/anttiluode/WhereToWrite/blob/44536bc36d27faf6304dfd6993bc9376c73fec8f/README.md",
+      "tags": [
+        "2026-10-18",
+        "causal-injection-site",
+        "logit-lens",
+        "dictionary-oracle",
+        "sampling-audit",
+        "95-unique-cases",
+        "subject-privilege-not-supported",
+        "gui"
+      ],
+      "era": "October 17–18: memory addresses, readers and causal writes",
+      "era_order": 134
+    },
+    {
+      "id": "InformationalSpectra",
+      "url": "https://github.com/anttiluode/InformationalSpectra",
+      "family": "residue-operator",
+      "status": "idea-mine",
+      "usefulness": "conceptual",
+      "confidence": "high",
+      "claim": "A concept paper defining task-information loss across deterministic coarsening steps, alongside separate readability and selective-writability profiles. Its scales are relative to the transformation, target question and reader rather than a universal slow-meaning/fast-detail law.",
+      "survived": "Synthesizes Sihti's operator-dependent bands and eye-identity interval, Naula's reader-dependent visibility and failed slow-core interpretation, and SihtiResponseGraph/GraphNN's storage-versus-exposure and rewrite distinctions. Under the stated deterministic-chain assumptions, conditional-information bands are nonnegative and telescope; the paper explicitly separates that bookkeeping identity from untested empirical usefulness.",
+      "killed": "There is no new experiment or implementation in this repository. The framework and proposed gates remain untested; prior repository numbers are inherited evidence, not independent confirmation. A geometric complement is not automatically a dynamical high-frequency band, decoder failure is not proof of absent information, and no universal semantic spectrum or compression advantage is established.",
+      "evidence": "https://github.com/anttiluode/InformationalSpectra/blob/02346fd96564e6fa527a7e0efad4806e02524769/README.md",
+      "tags": [
+        "2026-10-18",
+        "concept-paper",
+        "operator-relative",
+        "question-relative",
+        "reader-relative",
+        "information-loss",
+        "readability",
+        "writability",
+        "untested-framework"
+      ],
+      "era": "October 18: informational spectra and third-party transfer",
+      "era_order": 135
+    },
+    {
+      "id": "Valikasi",
+      "url": "https://github.com/anttiluode/Valikasi",
+      "family": "transformer-observer",
+      "status": "active",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Välikäsi, the middleman: scripted B carries a hidden colour, A reads B and writes an unrelated note, then C reads only that note. The initial lab measures text decodability, C hidden-state decodability and C's four-colour probability shift, with explicit and implicit B conditions.",
+      "survived": "Initial implementation and predeclared V0–V6 protocol are present. The repository reports offline instrument/synthetic smoke checks, lexicon filtering, balanced classes, topic-grouped validation with nested hidden-layer selection, a no-B control, cached/resumable generation and a reported-only leave-script-out check. The linear probe is the lens-free initial version; no shared KV cache is used between conversations.",
+      "killed": "No real Qwen run or experimental leakage result is committed; every model gate remains not run. A finite cue lexicon can miss semantic associations, and same-script leakage may fail leave-script-out transfer. Decodable hidden state does not establish behavioural use; V3 tests use separately. V4 sanity failure voids V1–V3; V5 failure invalidates leakage conclusions. No human-to-human effect, covert KV transmission or subliminal-learning result has been demonstrated here.",
+      "evidence": "https://github.com/anttiluode/Valikasi/blob/1f2767943aa6de7a814b736f65c84e01676a19db/README.md",
+      "tags": [
+        "2026-10-18",
+        "initial-instrument",
+        "third-party-transfer",
+        "text-mediated",
+        "counterfactual",
+        "decodability-versus-use",
+        "topic-grouped-validation",
+        "no-real-model-result"
+      ],
+      "era": "October 18: informational spectra and third-party transfer",
+      "era_order": 135
+    }
+  ],
+  "edges": [
+    {
+      "source": "SolsBaby",
+      "target": "LiveMode",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "LiveMode explicitly names SolsBaby's activity-written conductance and later probe as a related question. The matrix delta rule and dendritic shunts are different mechanisms; no code inheritance is asserted.",
+      "evidence": "https://github.com/anttiluode/LiveMode/blob/9b526729eace67f009cf5755efe2749163320819/README.md"
+    },
+    {
+      "source": "AdaptiveObserverCache",
+      "target": "LiveMode",
+      "type": "converges",
+      "confidence": "high",
+      "why": "LiveMode explicitly cites AdaptiveObserverCache's distinction between a changed internal read and changed final behavior; the trained lift and strict-token controls make that boundary measurable in a different mechanism.",
+      "evidence": "https://github.com/anttiluode/LiveMode/blob/9b526729eace67f009cf5755efe2749163320819/README.md"
+    },
+    {
+      "source": "PhaseGraphFastWeightCell",
+      "target": "LiveMode",
+      "type": "converges",
+      "confidence": "high",
+      "why": "LiveMode explicitly carries forward selective overwrite/interference as a question; its real-valued delta matrix is not inherited phase-graph state.",
+      "evidence": "https://github.com/anttiluode/LiveMode/blob/9b526729eace67f009cf5755efe2749163320819/README.md"
+    },
+    {
+      "source": "LiveMode",
+      "target": "RealTimeReadWrite",
+      "type": "converges",
+      "confidence": "high",
+      "why": "RealTimeReadWrite explicitly compares its failed learned/native keys with LiveMode's successful supplied hash address and trained lift. These are parallel implementations, not an established shared-code lineage.",
+      "evidence": "https://github.com/anttiluode/RealTimeReadWrite/blob/f8211689098ecab3ac3f4bb9bb24f5b7c8efeffb/README.md"
+    },
+    {
+      "source": "RealTimeReadWrite",
+      "target": "Naula",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Naula imports RealTimeReadWrite/qwen/jspace.py and reuses the cached J-lens to audit six Gate 4 claims with verify/kill rules.",
+      "evidence": "https://github.com/anttiluode/Naula/blob/9b3288b5bf33be87ea972c6723f584989593f4a4/README.md"
+    },
+    {
+      "source": "LiveMode",
+      "target": "WhereToWrite",
+      "type": "converges",
+      "confidence": "high",
+      "why": "WhereToWrite explicitly takes the supplied-memory versus native-routing question from LiveMode, while deliberately using a simpler exact dictionary to isolate injection location.",
+      "evidence": "https://github.com/anttiluode/WhereToWrite/blob/44536bc36d27faf6304dfd6993bc9376c73fec8f/README.md"
+    },
+    {
+      "source": "RealTimeReadWrite",
+      "target": "WhereToWrite",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "WhereToWrite isolates Gate 4's subject-versus-answer injection observation into six matched arms; its default uses logit-lens vectors and can optionally reuse the matching J-lens cache.",
+      "evidence": "https://github.com/anttiluode/WhereToWrite/blob/44536bc36d27faf6304dfd6993bc9376c73fec8f/README.md"
+    },
+    {
+      "source": "Naula",
+      "target": "WhereToWrite",
+      "type": "corrects",
+      "confidence": "high",
+      "why": "WhereToWrite's post-Naula note keeps the subject-site hypothesis OPEN, distinguishes J- from logit-lens interventions and makes the unrelated-position control central. Its later gain-2 result does not support subject privilege.",
+      "evidence": "https://github.com/anttiluode/WhereToWrite/blob/44536bc36d27faf6304dfd6993bc9376c73fec8f/docs/W1_GAIN2_400.md"
+    },
+    {
+      "source": "Sihti",
+      "target": "InformationalSpectra",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "The paper explicitly develops Sihti's transformation/residue bookkeeping into task-relative information bands, while retaining its operator-dependent and task-specific limits.",
+      "evidence": "https://github.com/anttiluode/InformationalSpectra/blob/02346fd96564e6fa527a7e0efad4806e02524769/README.md"
+    },
+    {
+      "source": "Naula",
+      "target": "InformationalSpectra",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "The paper explicitly uses N5 reader relativity and N6's reversed persistence ordering to reject a universal slow-meaning/fast-detail interpretation.",
+      "evidence": "https://github.com/anttiluode/InformationalSpectra/blob/02346fd96564e6fa527a7e0efad4806e02524769/README.md"
+    },
+    {
+      "source": "SihtiResponseGraph",
+      "target": "InformationalSpectra",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "The paper explicitly uses response-graph evidence to separate information retained in an operator from information exposed by one reader; no new graph result is claimed.",
+      "evidence": "https://github.com/anttiluode/InformationalSpectra/blob/02346fd96564e6fa527a7e0efad4806e02524769/README.md"
+    },
+    {
+      "source": "GraphNN",
+      "target": "InformationalSpectra",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "The paper explicitly uses selective rewrite and retained-memory drift results as motivation for a distinct writability spectrum, not a universal graph-memory advantage.",
+      "evidence": "https://github.com/anttiluode/InformationalSpectra/blob/02346fd96564e6fa527a7e0efad4806e02524769/README.md"
+    },
+    {
+      "source": "RealTimeReadWrite",
+      "target": "Valikasi",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Valikasi explicitly identifies RealTimeReadWrite's cached J-lens as a proposed next reader. Its implemented initial version instead uses a linear hidden-state probe, and tests transmission through text rather than a shared memory matrix.",
+      "evidence": "https://github.com/anttiluode/Valikasi/blob/1f2767943aa6de7a814b736f65c84e01676a19db/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "oct18-memory-address-storage-reader",
+      "title": "Storing a value, finding its address and making a model use it are separate tests",
+      "description": "SolsBaby demonstrates a history-dependent response in a constructed medium. LiveMode supplies keys and trains the read interface; RealTimeReadWrite tries learned/native keys and fails live recall. Naula and WhereToWrite separate content visibility, value alignment, direct output steering and site specificity. None alone establishes autonomous semantic memory or dictionary-beating efficiency.",
+      "nodes": [
+        "SolsBaby",
+        "AdaptiveObserverCache",
+        "PhaseGraphFastWeightCell",
+        "LiveMode",
+        "RealTimeReadWrite",
+        "Naula",
+        "WhereToWrite"
+      ]
+    },
+    {
+      "id": "oct18-operator-question-reader-spectra",
+      "title": "Persistence, readability and selective writability depend on what is transformed and asked",
+      "description": "Sihti and graph memories motivate distinct information-loss, reader-access and edit-selectivity profiles. Naula's successful name reader and failed slow-core prediction constrain their interpretation. InformationalSpectra formalizes a proposed synthesis; the synthesis is not an additional empirical result or a universal location for meaning.",
+      "nodes": [
+        "Sihti",
+        "SihtiResponseGraph",
+        "GraphNN",
+        "Naula",
+        "InformationalSpectra"
+      ]
+    },
+    {
+      "id": "oct18-middleman-text-state-behaviour",
+      "title": "Third-party influence must survive text, representation and use checks",
+      "description": "Valikasi is a pending instrument: Z changes only B's scripted conversation, A writes the sole message C receives, and text, hidden-state and behavioural readouts test different depths. No conversation-to-conversation KV cache is shared. Topic grouping, a no-B control and reported leave-script-out transfer bound possible future interpretations; no real-model transfer has been measured.",
+      "nodes": [
+        "Valikasi",
+        "RealTimeReadWrite"
+      ]
+    }
+  ]
+}

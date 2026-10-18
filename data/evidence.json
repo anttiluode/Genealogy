@@ -7489,5 +7489,435 @@
       "Septum implemented here is ineffectual; the result does not disprove biological septal functions"
     ],
     "source": "https://github.com/anttiluode/ClaudesBaby/blob/45f2d73a855f6bbd31f0e9eae34067028912f7d5/results/results.json"
+  },
+  {
+    "id": "oct18-livemode-gate2-trained-interface",
+    "node": "LiveMode",
+    "claim": "A trained residual lift reads the latest rewritten four-colour fact from an explicitly addressed 1,024-byte online matrix with frozen Qwen weights.",
+    "design": "source-reported 400-evaluation name-held-out rewrite test; latest-write query",
+    "result": "supports",
+    "motifs": [
+      "oct18-memory-address-storage-reader"
+    ],
+    "sample": {
+      "unit": "evaluation",
+      "count": 400
+    },
+    "metrics": [
+      {
+        "name": "strict next-token accuracy",
+        "treatment": 1,
+        "control": 0.0525,
+        "comparison": "live versus erased memory"
+      },
+      {
+        "name": "strict stale / wrong-address accuracy",
+        "treatment": 0,
+        "control": 0,
+        "comparison": "two negative controls"
+      },
+      {
+        "name": "strict dictionary-context accuracy",
+        "treatment": 0.7275,
+        "control": 1,
+        "comparison": "dictionary context versus exact oracle code; both have 100% four-colour choice"
+      },
+      {
+        "name": "mutable memory bytes",
+        "treatment": 1024
+      },
+      {
+        "name": "offline trained adapter parameters",
+        "treatment": 3584
+      }
+    ],
+    "controls": [
+      "Erased, stale and wrong-address memory",
+      "Exact true-colour code injected through the same lift",
+      "A single exact dictionary fact supplied in the prompt"
+    ],
+    "replication": "committed upstream report; inspected but not independently rerun by the atlas",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "The queried item is always the most recent write, a shortcut addressed only in Gate 3.",
+      "Explicit hashed-name binding and supplied four-colour codes; only the lift was supervised offline.",
+      "400 evaluations are not claimed to be 400 independent entities or an independent replication.",
+      "The 1,024 mutable bytes exclude fixed backbone, adapter and address machinery; no efficiency win over a dictionary."
+    ],
+    "source": "https://github.com/anttiluode/LiveMode/blob/9b526729eace67f009cf5755efe2749163320819/runs/hf_gate2_eval400.json"
+  },
+  {
+    "id": "oct18-livemode-gate3-late-interference",
+    "node": "LiveMode",
+    "claim": "The frozen trained interface can answer an unpredictable late query after interference, but accuracy degrades with address load and interfering writes.",
+    "design": "3 slot counts × 4 delays × 2 seeds × 20 episodes; query selected after all observations",
+    "result": "mixed",
+    "motifs": [
+      "oct18-memory-address-storage-reader"
+    ],
+    "sample": {
+      "unit": "episode",
+      "count": 480
+    },
+    "metrics": [
+      {
+        "name": "strict accuracy, 16 slots / 100 writes",
+        "treatment": 0.925,
+        "control": 0.275,
+        "comparison": "live versus last-event-only"
+      },
+      {
+        "name": "strict accuracy, 16 slots / 500 writes",
+        "treatment": 0.675,
+        "control": 0.3,
+        "comparison": "live versus last-event-only"
+      },
+      {
+        "name": "strict accuracy, 32 slots / 500 writes",
+        "treatment": 0.375,
+        "control": 0.225,
+        "comparison": "live versus last-event-only"
+      },
+      {
+        "name": "four-colour accuracy, 32 slots / 500 writes",
+        "treatment": 0.6,
+        "control": 1,
+        "comparison": "live versus exact oracle code"
+      }
+    ],
+    "controls": [
+      "Frozen Gate 2 adapter and Qwen backbone; same 1,024-byte matrix; per-episode reset",
+      "Erased, stale replay, wrong-address and last-event-only arms on the same episodes",
+      "Oracle code and single-fact dictionary context; query unavailable until the stream ends"
+    ],
+    "replication": "two upstream evaluation seeds, 40 episodes per cell; source receipt inspected, not rerun",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Only supplied addresses and four manually coded colours; held-out episodes do not establish autonomous binding.",
+      "Strict unrestricted next-token and restricted four-colour accuracy differ, especially under load.",
+      "The existing receipt does not separate direct-memory information loss from a misaligned Qwen reader.",
+      "Gate 4 is implemented but has no committed real-Qwen outcome; it is not an independent preregistered replication.",
+      "No comparison establishes better bytes or compute than exact retrieval."
+    ],
+    "source": "https://github.com/anttiluode/LiveMode/blob/9b526729eace67f009cf5755efe2749163320819/runs/hf_gate3_result.json"
+  },
+  {
+    "id": "oct18-rtrw-window3-recall-failure",
+    "node": "RealTimeReadWrite",
+    "claim": "Giving the frozen toy memory a three-token key window does not make delta memory solve late recall or overwrite and still harms in-window recall.",
+    "design": "PREREG_2 toy follow-up with frozen base, additive memory and delta memory",
+    "result": "contradicts",
+    "motifs": [
+      "oct18-memory-address-storage-reader"
+    ],
+    "sample": {
+      "unit": "R1 question",
+      "count": 8000
+    },
+    "metrics": [
+      {
+        "name": "R1 across-chunk recall",
+        "treatment": 0.22125,
+        "control": 0.205125,
+        "comparison": "delta versus additive memory; 80% gate failed"
+      },
+      {
+        "name": "R3 latest-value recall",
+        "treatment": 0.174375,
+        "control": 0.170625,
+        "comparison": "delta versus additive; overwrite gate failed"
+      },
+      {
+        "name": "R4 in-window recall",
+        "treatment": 0.7885338345864662,
+        "control": 0.853249194414608,
+        "comparison": "delta memory versus no memory"
+      }
+    ],
+    "controls": [
+      "Same frozen toy backbone with no memory",
+      "Additive memory baseline",
+      "Original one-token version and diagnostic entity/key probes retained upstream"
+    ],
+    "replication": "committed deterministic follow-up; not independently trained or rerun for this atlas",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Engineered toy language, 32 possible values and a 64-token base window.",
+      "The reported sample count is R1 only; the other tasks use their own question counts.",
+      "The failure concerns this frozen retrofit and learned addressing, not a proof that delta-rule storage cannot work."
+    ],
+    "source": "https://github.com/anttiluode/RealTimeReadWrite/blob/f8211689098ecab3ac3f4bb9bb24f5b7c8efeffb/results/results_w3.json"
+  },
+  {
+    "id": "oct18-rtrw-native-steering-not-memory",
+    "node": "RealTimeReadWrite",
+    "claim": "Successful direct J-lens colour steering does not compose into successful native-addressed live memory on Qwen2.5-0.5B-Instruct.",
+    "design": "upstream PREREG_3 Gate 4 summary; dev-selected read layer 21, write layer 16 and gain 0.5",
+    "result": "mixed",
+    "motifs": [
+      "oct18-memory-address-storage-reader"
+    ],
+    "metrics": [
+      {
+        "name": "G4.1 question-token address accuracy",
+        "treatment": 0.826,
+        "control": 0.9,
+        "comparison": "measured versus gate threshold"
+      },
+      {
+        "name": "G4.2 four-colour steering",
+        "treatment": 1,
+        "control": 0.301,
+        "comparison": "J-lens versus random direction; ordinary logit lens also 100%"
+      },
+      {
+        "name": "G4.4 live recall at eight names",
+        "treatment": 0.231,
+        "control": 0.2,
+        "comparison": "live versus no memory; chance 25%"
+      },
+      {
+        "name": "G4.4 oracle-key recall at eight names",
+        "treatment": 0.356
+      },
+      {
+        "name": "G4.3 in-context reasoning ceiling",
+        "treatment": 0.5
+      }
+    ],
+    "controls": [
+      "Random steering, ordinary logit-lens steering and no intervention",
+      "Stale memory, raw uncentred keys, oracle name key, wrong address and all facts in prompt",
+      "Read/write layers and gain chosen on dev names, with test threshold failures retained"
+    ],
+    "replication": "source-reported README result; Gate 4 raw GPU receipt is not committed in this snapshot and was not independently reproduced",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Primary steering headline is restricted four-colour choice; it is not a strict full-vocabulary accuracy claim.",
+      "A roughly 3.2-MB memory is not a matched-byte comparison to LiveMode's 1 KB.",
+      "G4.3 cannot establish reasoning because the in-context ceiling fails; the N=32 live-memory cell was not completed.",
+      "Naula's later audits reject the literal punctuation explanation and do not establish subject-specific routing."
+    ],
+    "source": "https://github.com/anttiluode/RealTimeReadWrite/blob/f8211689098ecab3ac3f4bb9bb24f5b7c8efeffb/README.md"
+  },
+  {
+    "id": "oct18-naula-name-reader-relativity",
+    "node": "Naula",
+    "claim": "The J-lens exposes name-token identity in early/middle Qwen layers where an ordinary logit lens largely fails.",
+    "design": "N5 paired-reader audit over 384 name/template cases, retaining the original cached J-lens",
+    "result": "supports",
+    "motifs": [
+      "oct18-memory-address-storage-reader",
+      "oct18-operator-question-reader-spectra"
+    ],
+    "sample": {
+      "unit": "name/template case",
+      "count": 384
+    },
+    "metrics": [
+      {
+        "name": "layer-12 name accuracy",
+        "treatment": 0.9869791865348816,
+        "control": 0.015625,
+        "comparison": "J-lens versus ordinary logit lens"
+      },
+      {
+        "name": "layer-15 name accuracy",
+        "treatment": 0.9739583730697632,
+        "control": 0,
+        "comparison": "J-lens versus ordinary logit lens"
+      }
+    ],
+    "controls": [
+      "Same frozen activations and candidate names for both readers",
+      "Full layer profile, including late layers where the advantage decays"
+    ],
+    "replication": "upstream N5 VERIFIED; same model and cached lens as the parent experiment",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Decoding the name at its own token does not prove that identity is available at the question/answer position.",
+      "Reader visibility is distinct from live recall, causal use or subject-specific routing.",
+      "Matched prompts reuse names and the original lens; this is not a new-model replication."
+    ],
+    "source": "https://github.com/anttiluode/Naula/blob/9b3288b5bf33be87ea972c6723f584989593f4a4/results/n5_name_token.json"
+  },
+  {
+    "id": "oct18-naula-slow-core-falsified",
+    "node": "Naula",
+    "claim": "The proposed J-space slow core and fast geometric remainder ordering is reversed for local token persistence in this audit.",
+    "design": "N6 fixed J-space decomposition across six layers, token lags and a within-prompt shuffled null",
+    "result": "contradicts",
+    "motifs": [
+      "oct18-operator-question-reader-spectra"
+    ],
+    "sample": {
+      "unit": "prompt",
+      "count": 32
+    },
+    "metrics": [
+      {
+        "name": "layer-16 excess one-token persistence",
+        "treatment": 0.20324942469596863,
+        "control": 0.26256800442934036,
+        "comparison": "J-core versus residue; values already corrected against shuffled null"
+      }
+    ],
+    "controls": [
+      "Within-prompt shuffled-token null",
+      "Matched random-core decomposition",
+      "Lags 1, 4 and 16 and layers 4, 8, 12, 16, 20 and 23"
+    ],
+    "replication": "upstream N6 KILLED; inspected source receipt, not rerun",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "This is adjacent-token similarity under one decomposition, not a measured dynamical eigen-spectrum or universal claim about all semantic representations.",
+      "The J-core has a larger prompt-wide component; local persistence and broad prompt similarity are different.",
+      "A geometric complement need not be a fast dynamical band."
+    ],
+    "source": "https://github.com/anttiluode/Naula/blob/9b3288b5bf33be87ea972c6723f584989593f4a4/results/n6_slow_core.json"
+  },
+  {
+    "id": "oct18-naula-subject-routing-open",
+    "node": "Naula",
+    "claim": "A J-lens colour pulse on a name has not yet been shown to route through a subject-specific mechanism rather than generic large-perturbation leakage.",
+    "design": "N2 gain selected on dev; gain-8 paired position comparison over 432 test cases per site",
+    "result": "inconclusive",
+    "motifs": [
+      "oct18-memory-address-storage-reader"
+    ],
+    "sample": {
+      "unit": "case per site",
+      "count": 432
+    },
+    "metrics": [
+      {
+        "name": "four-colour accuracy",
+        "treatment": 0.5671296296296297,
+        "control": 0.4837962962962963,
+        "comparison": "name versus unrelated colour token"
+      },
+      {
+        "name": "first-token control accuracy",
+        "treatment": 0.4583333333333333
+      },
+      {
+        "name": "final-answer injection accuracy",
+        "treatment": 1
+      }
+    ],
+    "controls": [
+      "Same direction/gain on name, unrelated colour word, first token and question end",
+      "Dev gain selection separated from test cases"
+    ],
+    "replication": "upstream N2 OPEN; shared model/J-lens with RealTimeReadWrite",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Gain 8 injects eight times the local activation norm; the 8.33-point name advantage does not identify its mechanism.",
+      "No attention-head intervention or native key extraction is demonstrated.",
+      "This J-lens/gain-8 result differs from WhereToWrite's logit-lens/gain-2 experiment."
+    ],
+    "source": "https://github.com/anttiluode/Naula/blob/9b3288b5bf33be87ea972c6723f584989593f4a4/results/n2_subject_site.json"
+  },
+  {
+    "id": "oct18-naula-reasoning-ceiling-killed",
+    "node": "Naula",
+    "claim": "The earlier 66.7% logit-steering reasoning headline is unsupported when the 0.5B model cannot solve the same task reliably even with the fact supplied.",
+    "design": "N4 expanded balanced same-colour/banana comparison on 384 items",
+    "result": "contradicts",
+    "motifs": [
+      "oct18-memory-address-storage-reader"
+    ],
+    "sample": {
+      "unit": "item",
+      "count": 384
+    },
+    "metrics": [
+      {
+        "name": "balanced reasoning accuracy",
+        "treatment": 0.5520833333333333,
+        "control": 0.5052083333333333,
+        "comparison": "logit steering versus in-context ceiling"
+      },
+      {
+        "name": "no-intervention / J-lens accuracy",
+        "treatment": 0.5026041666666666,
+        "control": 0.46354166666666663,
+        "comparison": "same expanded task"
+      }
+    ],
+    "controls": [
+      "Explicit fact in context as a capability ceiling",
+      "No intervention and J-lens direction"
+    ],
+    "replication": "upstream N4 KILLED / reasoning gate VOID due to failed capability ceiling",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "A small above-chance shift in this task is not evidence of general reasoning through the injected value.",
+      "The expanded audit shares the model/task lineage; it is not a new task or external replication."
+    ],
+    "source": "https://github.com/anttiluode/Naula/blob/9b3288b5bf33be87ea972c6723f584989593f4a4/results/n4_banana.json"
+  },
+  {
+    "id": "oct18-wheretowrite-gain2-site-null",
+    "node": "WhereToWrite",
+    "claim": "At layer 16/gain 2 with logit-lens directions, writing the supplied colour on the subject does not outperform the same pulse on an unrelated earlier word.",
+    "design": "exploratory six-arm matched comparison; sampling audit of the 400-evaluation deterministic schedule",
+    "result": "contradicts",
+    "motifs": [
+      "oct18-memory-address-storage-reader"
+    ],
+    "sample": {
+      "unit": "unique name/prompt/colour case in 400 evaluations",
+      "count": 95
+    },
+    "metrics": [
+      {
+        "name": "four-colour accuracy",
+        "treatment": 0.4225,
+        "control": 0.4525,
+        "comparison": "subject versus unrelated colour word"
+      },
+      {
+        "name": "paired subject-minus-unrelated accuracy",
+        "treatment": -0.03,
+        "comparison": "31 subject-only wins, 43 unrelated-only wins, 326 ties"
+      },
+      {
+        "name": "answer-site four-colour accuracy",
+        "treatment": 1,
+        "control": 0.3125,
+        "comparison": "answer pulse versus no intervention"
+      },
+      {
+        "name": "answer-site strict next-token accuracy",
+        "treatment": 0.64,
+        "control": 0.0925,
+        "comparison": "answer pulse versus no intervention"
+      }
+    ],
+    "controls": [
+      "Same vector/gain on subject, unrelated colour word and answer position",
+      "Same-site random and wrong-colour directions",
+      "No intervention; exact dictionary supplies address and value"
+    ],
+    "replication": "one exploratory fixed-seed report; only 95 distinct cases and 305 repeated evaluations",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "The original normal 95% interval assumes independent trials and is invalid for the repeated schedule; it is not used as inferential evidence.",
+      "Only 24 example rows and aggregate paired counts were retained, so a grouped interval cannot be reconstructed from the report.",
+      "The balanced-96 mode is not a new holdout; the eight names and three prompts were already examined.",
+      "No attention-head attribution, native fact binding or autonomous memory; gains are large norm-scaled interventions.",
+      "Different direction and gain from Naula N2; their point estimates are not contradictory replications."
+    ],
+    "source": "https://github.com/anttiluode/WhereToWrite/blob/44536bc36d27faf6304dfd6993bc9376c73fec8f/docs/W1_GAIN2_400.md"
   }
 ]

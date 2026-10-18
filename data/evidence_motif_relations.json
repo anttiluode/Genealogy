@@ -453,5 +453,33 @@
   },
   "oct17-claudesbaby-gate-failures": {
     "oct17-developmental-rules-and-experienced-maps": "limits"
+  },
+  "oct18-livemode-gate2-trained-interface": {
+    "oct18-memory-address-storage-reader": "supports"
+  },
+  "oct18-livemode-gate3-late-interference": {
+    "oct18-memory-address-storage-reader": "limits"
+  },
+  "oct18-rtrw-window3-recall-failure": {
+    "oct18-memory-address-storage-reader": "limits"
+  },
+  "oct18-rtrw-native-steering-not-memory": {
+    "oct18-memory-address-storage-reader": "limits"
+  },
+  "oct18-naula-name-reader-relativity": {
+    "oct18-memory-address-storage-reader": "supports",
+    "oct18-operator-question-reader-spectra": "supports"
+  },
+  "oct18-naula-slow-core-falsified": {
+    "oct18-operator-question-reader-spectra": "limits"
+  },
+  "oct18-naula-subject-routing-open": {
+    "oct18-memory-address-storage-reader": "documents"
+  },
+  "oct18-naula-reasoning-ceiling-killed": {
+    "oct18-memory-address-storage-reader": "limits"
+  },
+  "oct18-wheretowrite-gain2-site-null": {
+    "oct18-memory-address-storage-reader": "limits"
   }
 }

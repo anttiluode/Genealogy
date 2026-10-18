@@ -2,6 +2,20 @@
 
 This file records interpretation work rather than raw repository inventory. The rule is simple: names are discovery hints, not ancestry evidence. Corrections and failed claims remain visible because they are selection events in the genealogy.
 
+## 2026-10-18 — Memory interfaces, informational spectra and initial Välikäsi
+
+Added LiveMode, RealTimeReadWrite, WhereToWrite, Naula, InformationalSpectra and Valikasi as six reviewed nodes in one dated pass, with thirteen qualified lineage/convergence links and three motifs. Confirmed that SolsBaby, ClaudesBaby and SihtiImageModel2 already have October 17 reviewed nodes; preserved them without duplication. Added the six missing census records.
+
+Pinned reviewed sources: LiveMode `9b526729eace67f009cf5755efe2749163320819`; RealTimeReadWrite `f8211689098ecab3ac3f4bb9bb24f5b7c8efeffb`; WhereToWrite `44536bc36d27faf6304dfd6993bc9376c73fec8f`; Naula `9b3288b5bf33be87ea972c6723f584989593f4a4`; InformationalSpectra `02346fd96564e6fa527a7e0efad4806e02524769`; Valikasi `1f2767943aa6de7a814b736f65c84e01676a19db`.
+
+The committed LiveMode Gate 2/3 JSON files are newer than the README's pending-result wording. Gate 2 gives 400/400 strict answers with supplied addresses and a trained lift; Gate 3 removes the latest-write shortcut and exposes an interference boundary (16 slots/500 writes 67.5% strict; 32 slots/500 writes 37.5%). Its Gate 4 reader-alignment design remains unrun in the committed receipts. RealTimeReadWrite's three-token-window toy follow-up still fails all gates, and the native Qwen README reports strong direct colour steering but failed live recall; the raw Gate 4 GPU receipt is absent in this snapshot, so that evidence is explicitly source-reported.
+
+Nine evidence records retain those limits, Naula's successful name decoding, the reversed local-persistence ordering, the inconclusive subject-site result, the failed reasoning ceiling, and WhereToWrite's negative site contrast. Naula uses J-lens/gain 8 for its site audit; WhereToWrite uses logit-lens/gain 2. They are not matched replications. WhereToWrite's 400-evaluation schedule covers only 95 distinct cases with 305 repeats, so its original independence-based interval is not used for inference.
+
+InformationalSpectra is recorded as a concept paper with no new experiment, and initial Valikasi as a built instrument with no real-model outcome. Valikasi's three depths are text decodability, C-state decodability and behaviour through the only shared channel, A's text; no KV cache passes between conversations. A finite filter and topic-grouped evaluation do not by themselves establish transfer across B scripts, so the reported-only leave-script-out check stays visible. No empirical record is created for either pending framework/instrument.
+
+Two open questions capture direct-memory loss versus reader misalignment and subject-specific routing versus a generic large push. Source and committed result inspection supports this curation; no upstream experiment repository was changed and no model training or GPU benchmark was rerun.
+
 ## 2026-10-13 — Four branches added after the inverse-mandala / future-memory day
 
 Curated **ResearchQuestion**, **SihtiResponseGraph**, **InverseMandala** and **Kerrostuma** as new genealogy nodes in the October 13 pass; added three missing census entries and updated Kerrostuma's stale unread inventory state. The chronological wall keeps their distinct origins: January 2MandalaTools → October inverse max-composite test; Sihti's image-written neighbor weights → separately learned stored graph; a synthetic bridge-feedback quotient → learned memory and switched system-identification baseline; CrystalMoon/GelatinIsland material mechanisms → a new torus-crust fossil world.

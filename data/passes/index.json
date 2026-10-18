@@ -414,5 +414,9 @@
   {
     "path": "october-17-two-babies-state-and-navigation.json",
     "enabled": true
+  },
+  {
+    "path": "october-18-memory-spectra-and-middleman.json",
+    "enabled": true
   }
 ]

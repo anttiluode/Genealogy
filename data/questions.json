@@ -1222,5 +1222,88 @@
     "notes": [
       "Replay is a proposed next component, not a demonstrated part of ClaudesBaby."
     ]
+  },
+  {
+    "id": "oct18-memory-loss-versus-reader-alignment",
+    "title": "Does interference destroy LiveMode's stored colour or make its frozen Qwen reader misread it?",
+    "state": "open",
+    "motifs": [
+      "oct18-memory-address-storage-reader"
+    ],
+    "evidence": [
+      "oct18-livemode-gate2-trained-interface",
+      "oct18-livemode-gate3-late-interference",
+      "oct18-rtrw-native-steering-not-memory"
+    ],
+    "competing_explanations": [
+      "The matrix still retains the target colour, but a lift trained on clean short episodes is misaligned with the noisy memory vectors encountered after interference.",
+      "Interfering writes destroy the target distinction in the matrix itself; changing only the reader cannot restore information that is no longer there."
+    ],
+    "known": [
+      "Gate 2 records 100% strict accuracy on 400 latest-rewrite evaluations using supplied addresses, colour codes and a trained lift.",
+      "Gate 3 removes the latest-write shortcut: at 32 slots/500 writes, strict accuracy falls to 37.5% while oracle-code injection stays at 100%.",
+      "The existing Gate 4 design and source compare an equally trained clean reader and interference-trained reader and report direct-matrix colour accuracy, but no real-Qwen Gate 4 result is committed."
+    ],
+    "missing_discriminator": "Paired direct-memory recall and Qwen-answer measurements on fresh interference episodes, with equal offline training budgets for the clean and robust readers.",
+    "candidate_experiment": {
+      "design": "Run the existing Gate 4 controlled comparison with Qwen and the 1,024-byte writer fixed: original lift, equal-budget extra clean training and interference training. On untouched names/seeds report direct-memory four-colour accuracy alongside strict Qwen answers, erased/stale/wrong-address controls, oracle code and dictionary context.",
+      "cost": "medium: existing implementation; one local GPU calibration/evaluation run, with supervised adapter training counted separately",
+      "outcomes": [
+        {
+          "if": "The direct matrix retains the colour and the robust reader improves over the equal-budget clean reader",
+          "then": "Reader alignment explains part of the loss; the result remains a supplied-address four-colour interface, not autonomous memory."
+        },
+        {
+          "if": "Direct-matrix accuracy collapses with load and a robust reader cannot recover the target",
+          "then": "The bottleneck is at least partly destructive storage interference; a reader-only remedy is insufficient."
+        }
+      ]
+    },
+    "notes": [
+      "The Gate 4 design follows Gate 3 and is labelled a hypothesis, not independent preregistration.",
+      "No byte or compute advantage over exact dictionary retrieval is presumed."
+    ]
+  },
+  {
+    "id": "oct18-subject-specific-routing-versus-generic-push",
+    "title": "Can an early subject-specific intervention carry a remembered property beyond a generic same-size push?",
+    "state": "open",
+    "motifs": [
+      "oct18-memory-address-storage-reader"
+    ],
+    "evidence": [
+      "oct18-naula-subject-routing-open",
+      "oct18-wheretowrite-gain2-site-null",
+      "oct18-naula-name-reader-relativity"
+    ],
+    "competing_explanations": [
+      "A name's representation gives a property intervention privileged access to downstream subject-related computation, but the useful direction/layer/gain is restricted.",
+      "Earlier-token interventions mainly leak a large colour bias forward; apparent subject advantages depend on gain, direction and the small reused prompt set."
+    ],
+    "known": [
+      "Naula N2 remains OPEN: J-lens/gain 8 gives 56.7% name-site versus 48.4% unrelated-word four-choice accuracy.",
+      "WhereToWrite's logit-lens/gain-2 result gives 42.25% name-site versus 45.25% unrelated-word accuracy across 400 evaluations but only 95 distinct cases.",
+      "N5 verifies name-token decodability for a particular reader; it does not establish subject-specific causal routing.",
+      "Answer-site steering is easy and must be separated from native associative retrieval and downstream reasoning."
+    ],
+    "missing_discriminator": "A frozen protocol on unseen names and prompt families, with same-direction/same-norm position controls and causal attention-head interventions that selectively remove any subject advantage.",
+    "candidate_experiment": {
+      "design": "Choose direction, layer, gain and candidate transport heads on development data only, keeping J- and logit-lens experiments separate. Freeze them, then evaluate each new name/prompt/colour case once with subject, unrelated-token, answer, random and wrong-colour arms; record every prediction and ablate the nominated heads.",
+      "cost": "medium: frozen 0.5B Qwen GPU inference plus development-only head attribution; no backbone training",
+      "outcomes": [
+        {
+          "if": "A subject advantage transfers to unseen cases and is selectively removed by the nominated head ablation",
+          "then": "The specific routing hypothesis gains causal support, bounded to the tested sites, direction and model."
+        },
+        {
+          "if": "The advantage disappears on unseen prompts or unrelated-position pulses match it",
+          "then": "Retain generic perturbation as the simpler account; name decodability alone did not provide a usable memory route."
+        }
+      ]
+    },
+    "notes": [
+      "Do not pool Naula J-lens/gain-8 and WhereToWrite logit-lens/gain-2 results as matched replications.",
+      "The historical 400-evaluation independence-based confidence interval is invalid and does not enter this question's evidence."
+    ]
   }
 ]
