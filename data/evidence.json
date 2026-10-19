@@ -7961,7 +7961,7 @@
       "Nonlinear threshold was chosen from the observed somatic responses, not a held-out classifier.",
       "Invisible modes concern this symmetric observation port, not all circuit measurements."
     ],
-    "source": "https://github.com/anttiluode/SihtiBrain/blob/b44b9f0b66f867958692e2cb1caff962d71a6bec/README.md"
+    "source": "https://github.com/anttiluode/SihtiBrain/blob/main/README.md"
   },
   {
     "id": "oct19-sihtibrain-real-time-credit-baseline",
@@ -7997,11 +7997,11 @@
       "Simple three-factor control matched the result with less variance.",
       "Sign of per-synapse credit cannot vary across active synapses in this model's positive transfer-impedance regime."
     ],
-    "source": "https://github.com/anttiluode/SihtiBrain/blob/b44b9f0b66f867958692e2cb1caff962d71a6bec/docs/REALTIME_CREDIT.md"
+    "source": "https://github.com/anttiluode/SihtiBrain/blob/main/docs/REALTIME_CREDIT.md"
   },
   {
     "id": "oct19-v2-echo-and-persistent-wire",
-    "node": "SihtiBrainV2",
+    "node": "SihtiBrain",
     "claim": "Matched-soma input structure becomes visible in a state-gated pulse response, and a slow cable-conductance change remains readable after erasing voltage.",
     "design": "Constructed seven-compartment bilateral cable, independent delayed apical port, cluster/split paired probe and no-write/erased-trace controls",
     "result": "supports",
@@ -8045,11 +8045,11 @@
       "Operator memory demonstrated on two constructed inputs, not scalable association storage.",
       "No image segmentation or cortical activity measured."
     ],
-    "source": "https://github.com/anttiluode/SihtiBrainV2/blob/4a7fa7509c14a0f7941aec992e1652a03d5c7ca3/README.md"
+    "source": "https://github.com/anttiluode/SihtiBrain/blob/main/studies/sihtibrain_v2/README.md"
   },
   {
     "id": "oct19-v2-preregistered-calcium-advantage-fail",
-    "node": "SihtiBrainV2",
+    "node": "SihtiBrain",
     "claim": "The log calcium-ratio rule fails its predeclared 2-point and BCE improvement condition against a simpler event-based three-factor rule under held-out distribution shifts.",
     "design": "Six training seeds, equal nine-compartment basal features, independent train/validation/test, three shifted input domains, rates selected only on validation, 3% calcium detector noise",
     "result": "contradicts",
@@ -8093,11 +8093,11 @@
       "Calcium proxy factors into voltage times pulse response, so the local-voltage term cancels in the ratio.",
       "Graded event enjoys a different sensor/noise budget; same-detector fractional control also nearly matches the log rule."
     ],
-    "source": "https://github.com/anttiluode/SihtiBrainV2/blob/4a7fa7509c14a0f7941aec992e1652a03d5c7ca3/docs/GATE5_RESULT.md"
+    "source": "https://github.com/anttiluode/SihtiBrain/blob/main/studies/sihtibrain_v2/docs/GATE5_RESULT.md"
   },
   {
     "id": "oct19-v3-complementary-probe-vs-static",
-    "node": "SihtibrainV3",
+    "node": "SihtiBrain",
     "claim": "Complementary state-dependent gate probes distinguish three soma-matched patterns; adaptation creates a schedule but does not add information beyond an externally preset identical two-phase schedule.",
     "design": "Seven-node cable, tiny seeded asymmetry and steep adaptation; four noisy test seeds with 300 matched-soma cases each; nearest-prototype read",
     "result": "mixed",
@@ -8142,11 +8142,11 @@
       "Prototype calibration uses noiseless examples; no general decoder learned.",
       "Readout advance comes from complementary gates and state-dependent operator, not proof of biological ping train."
     ],
-    "source": "https://github.com/anttiluode/SihtibrainV3/blob/1b5affd88889afc5902dbefe6eb759b967064931/README.md"
+    "source": "https://github.com/anttiluode/SihtiBrain/blob/main/studies/sihtibrain_v3/README.md"
   },
   {
     "id": "oct19-v3-phase-averaged-tracking-cancel",
-    "node": "SihtibrainV3",
+    "node": "SihtiBrain",
     "claim": "Two complementary neighbor ping phases exactly cancel directional information when a receiver averages them, and the 16-column tracker fails a simple causal velocity predictor.",
     "design": "Thirty-two fixed noisy 20-frame width-three-bar movies, causal one-frame delayed neighbor messages, top-three next-frame cell recall",
     "result": "contradicts",
@@ -8184,11 +8184,11 @@
       "The tracker cannot establish learning, operator memory or real-world object grouping.",
       "Phase-blind aggregation is specifically responsible for directional cancellation."
     ],
-    "source": "https://github.com/anttiluode/SihtibrainV3/blob/1b5affd88889afc5902dbefe6eb759b967064931/README.md"
+    "source": "https://github.com/anttiluode/SihtiBrain/blob/main/studies/sihtibrain_v3/README.md"
   },
   {
     "id": "oct19-aibrain-connection-memory-interference",
-    "node": "AIBrain",
+    "node": "SihtiBrain",
     "claim": "Paired value writes make connection responses queryable, but the 2,048-byte graph memory loses to equal-size Hebbian fast weights at high loads and suffers cross-association rewrite interference.",
     "design": "Five seeds × twenty independent episodes; balanced eight labels; 64-bit keys with eight active bits, held-out corrupted one-bit-swap queries; rewrite 8/32 associations",
     "result": "mixed",
@@ -8235,11 +8235,11 @@
       "Full-history attention stores more bytes than the matrix models.",
       "This graph is exactly a normalized linear matrix read; relaxation adds no independent retrieval capability."
     ],
-    "source": "https://github.com/anttiluode/AIBrain/blob/65a2db33d6a9ad98471a55f26fdbc63553a8235f/README.md"
+    "source": "https://github.com/anttiluode/SihtiBrain/blob/main/studies/operator_memory/aibrain/README.md"
   },
   {
     "id": "oct19-aibrainv2-matched-graph-retention",
-    "node": "AIbrainV2",
+    "node": "SihtiBrain",
     "claim": "Using a grounded graph equilibrium reader improves noisy untouched-association retention over direct matrix reading when both retain the same 512-byte W and identical write sequences.",
     "design": "12 seeds, 8/16/32/64 random four-hot cues and eight labels, three write presentations, 25% rewritten bindings, one-active-bit-swap queries",
     "result": "supports",
@@ -8283,11 +8283,11 @@
       "Positive primary gate compares to raw unnormalized fast-weight read only.",
       "A better baseline is included in a separate post-result diagnostic."
     ],
-    "source": "https://github.com/anttiluode/AIbrainV2/blob/81a449be89f2f15809d5d23d889c1151cf27e94d/docs/GATE1_RESULT.md"
+    "source": "https://github.com/anttiluode/SihtiBrain/blob/main/studies/operator_memory/aibrain_v2/docs/GATE1_RESULT.md"
   },
   {
     "id": "oct19-aibrainv2-normalization-and-indexed-ceiling",
-    "node": "AIbrainV2",
+    "node": "SihtiBrain",
     "claim": "Most of the graph retrieval improvement is recovered by simple degree normalization, and a much smaller indexed memory retains more random bindings.",
     "design": "Post-result degree-normalized matrix read with the exact same stored W plus packed 3-byte/binding indexed nearest-key lookup",
     "result": "mixed",
@@ -8329,6 +8329,6 @@
       "The source reports only a small residual gain over familiar normalization, not a new general memory type.",
       "Indexed retrieval has a different operation and capacity budget but decisively wins on these random labels."
     ],
-    "source": "https://github.com/anttiluode/AIbrainV2/blob/81a449be89f2f15809d5d23d889c1151cf27e94d/docs/GATE1_RESULT.md"
+    "source": "https://github.com/anttiluode/SihtiBrain/blob/main/studies/operator_memory/aibrain_v2/docs/GATE1_RESULT.md"
   }
 ]

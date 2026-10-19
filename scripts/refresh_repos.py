@@ -96,6 +96,10 @@ def refresh_file(path: Path, user: str, opener=urlopen, reviewed_names: set[str]
     statuses = _existing_status(path)
     reviewed_names = set(reviewed_names or ())
     rows = fetch_public_repos(user, opener=opener)
+    retired_path = path.parent / "retired_repos.json"
+    if retired_path.exists():
+        retired = set(json.loads(retired_path.read_text(encoding="utf-8")))
+        rows = [row for row in rows if row["name"] not in retired]
     if not rows:
         raise RuntimeError("GitHub returned an empty repository census; existing data was left untouched")
     for row in rows:

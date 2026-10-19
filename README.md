@@ -23,19 +23,13 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
-## 2026-10-19 — SihtiBrain to queryable AI memory
+## 2026-10-19 — SihtiBrain, consolidated gradient and ping research
 
-The [October 19 pass](data/passes/october-19-sihtibrain-to-ai-query-memory.json) adds **five related but distinct repositories**, with nine source-traceable evidence records and two open discriminating questions. This is a branch about what a limited observer can read from a distributed state, and how changing the response operator affects future retrieval; it is not one confirmed brain architecture.
+October 19's related experiments now have **one curated repository card**, [SihtiBrain](https://github.com/anttiluode/SihtiBrain), rather than five independent cards. See its [consolidated research map](https://github.com/anttiluode/SihtiBrain/blob/main/docs/RESEARCH_MAP_2026-10-19.md) and [preserved source studies](https://github.com/anttiluode/SihtiBrain/tree/main/studies).
 
-| Repository | What it tests | What survived / what failed |
-|---|---|---|
-| [SihtiBrain](https://github.com/anttiluode/SihtiBrain) | Seven-compartment dendritic nullspace, pings, tuft feedback and local credit. | Four of seven cable modes are soma-invisible; a nonlinear branch can reveal a hidden distinction. A live ping-local learner is matched by a simpler three-factor event rule. |
-| [SihtiBrainV2](https://github.com/anttiluode/SihtiBrainV2) | Delayed apical return, conductance write after voltage reset, and a preregistered learning stopping test. | Operator-dependent echoes and stored cable response work in the toy. Two-ping log-calcium **fails** to outperform a graded three-factor event on shifted data: **62.13% vs 62.21%** balanced accuracy. |
-| [SihtibrainV3](https://github.com/anttiluode/SihtibrainV3) | Alternating phase-sensitive probes and 16-column causal tracking. | Adaptive and externally preset two-phase probes tie at **100%** on a synthetic matched-soma discrimination; phase-blind averaging cancels direction, and next-frame tracking **0.615** loses to a velocity forecast **0.781**. |
-| [AIBrain](https://github.com/anttiluode/AIBrain) | Queryable associative connections and rewrite interference. | Associations remain after clearing activity, but at 32 stored pairs the graph recalls **71.9%** versus matched-size Hebbian fast weights **95.4%**; rewrites interfere with unrelated bindings. |
-| [AIbrainV2](https://github.com/anttiluode/AIbrainV2) | Equal 512-byte graph-vs-matrix read on identical writes. | Graph improves untouched noisy retention **55.6% vs 45.4%**, but a no-relaxation degree-normalized read already reaches **53.4%**, and a smaller indexed store reaches **73.9%**. |
+The central result is conditional observability: a compressed somatic readout can hide local dendritic distinctions, while a state-dependent returning probe can reveal a difference (V2 echo −0.11495) and a persistent conductance modification can preserve some distinction after reset (−0.04817). **Controls matter:** a fixed linear ping cannot recover such detail; calcium-ratio credit failed to beat a simpler three-factor event (62.13% vs 62.21%); phase-blind moving-object tracking failed against simple velocity extrapolation (0.615 vs 0.781). Operator-memory studies found normalization and compact indexing to be strong baselines. The Qwen activation-return test was also negative (2/12). None of this proves automatic image segmentation or biological gradient learning.
 
-The original SihtiBrain, its V2/V3 variants, and their evidence are separate cards. V1/V2/V3 experimental documents are on PR branches at the time of review; AI memory reports are on merged main branches. Findings are reported from inspected source receipts, not rerun by Genealogy. **The useful common question is observability and selective memory, not automatic segmentation, a new cortical law, or a demonstrated improvement over optimized AI baselines.**
+Genealogy retains nine original source-traceable evidence records, their methods and limits, and two open questions. Their evidence URLs now point to source files archived **inside SihtiBrain** rather than to repositories scheduled for deletion.
 
 ## 2026-10-18 — Live memory, informational spectra and the middleman
 
