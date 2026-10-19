@@ -23,6 +23,20 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
+## 2026-10-19 — SihtiBrain to queryable AI memory
+
+The [October 19 pass](data/passes/october-19-sihtibrain-to-ai-query-memory.json) adds **five related but distinct repositories**, with nine source-traceable evidence records and two open discriminating questions. This is a branch about what a limited observer can read from a distributed state, and how changing the response operator affects future retrieval; it is not one confirmed brain architecture.
+
+| Repository | What it tests | What survived / what failed |
+|---|---|---|
+| [SihtiBrain](https://github.com/anttiluode/SihtiBrain) | Seven-compartment dendritic nullspace, pings, tuft feedback and local credit. | Four of seven cable modes are soma-invisible; a nonlinear branch can reveal a hidden distinction. A live ping-local learner is matched by a simpler three-factor event rule. |
+| [SihtiBrainV2](https://github.com/anttiluode/SihtiBrainV2) | Delayed apical return, conductance write after voltage reset, and a preregistered learning stopping test. | Operator-dependent echoes and stored cable response work in the toy. Two-ping log-calcium **fails** to outperform a graded three-factor event on shifted data: **62.13% vs 62.21%** balanced accuracy. |
+| [SihtibrainV3](https://github.com/anttiluode/SihtibrainV3) | Alternating phase-sensitive probes and 16-column causal tracking. | Adaptive and externally preset two-phase probes tie at **100%** on a synthetic matched-soma discrimination; phase-blind averaging cancels direction, and next-frame tracking **0.615** loses to a velocity forecast **0.781**. |
+| [AIBrain](https://github.com/anttiluode/AIBrain) | Queryable associative connections and rewrite interference. | Associations remain after clearing activity, but at 32 stored pairs the graph recalls **71.9%** versus matched-size Hebbian fast weights **95.4%**; rewrites interfere with unrelated bindings. |
+| [AIbrainV2](https://github.com/anttiluode/AIbrainV2) | Equal 512-byte graph-vs-matrix read on identical writes. | Graph improves untouched noisy retention **55.6% vs 45.4%**, but a no-relaxation degree-normalized read already reaches **53.4%**, and a smaller indexed store reaches **73.9%**. |
+
+The original SihtiBrain, its V2/V3 variants, and their evidence are separate cards. V1/V2/V3 experimental documents are on PR branches at the time of review; AI memory reports are on merged main branches. Findings are reported from inspected source receipts, not rerun by Genealogy. **The useful common question is observability and selective memory, not automatic segmentation, a new cortical law, or a demonstrated improvement over optimized AI baselines.**
+
 ## 2026-10-18 — Live memory, informational spectra and the middleman
 
 The [October 17–18 pass](data/passes/october-18-memory-spectra-and-middleman.json) adds **six missing repositories**. **SolsBaby, ClaudesBaby and SihtiImageModel2 were already reviewed** in the October 17 passes below and remain separate, without duplicate nodes.
