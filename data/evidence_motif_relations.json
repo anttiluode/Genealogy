@@ -509,5 +509,17 @@
   },
   "oct19-aibrainv2-normalization-and-indexed-ceiling": {
     "oct19-queryable-operator-memory-interference": "limits"
+  },
+  "oct19-mad-monday-model3-r3-coarse-oracle": {
+    "oct19-directional-message-must-be-decodable": "documents"
+  },
+  "oct19-mad-monday-model3-r4-signed-flux": {
+    "oct19-directional-message-must-be-decodable": "limits"
+  },
+  "oct19-mad-monday-model4-tensor-orientation": {
+    "oct19-directional-message-must-be-decodable": "documents"
+  },
+  "oct19-mad-monday-inverse-v3-temporal-readout": {
+    "oct19-directional-message-must-be-decodable": "supports"
   }
 }
