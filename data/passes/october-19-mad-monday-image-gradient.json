@@ -1,0 +1,89 @@
+{
+  "id": "october-19-mad-monday-image-gradient",
+  "title": "Mad Monday — October 19: gradients, orientation and the return path",
+  "reviewed_at": "2026-10-19",
+  "order": 129,
+  "summary": "A 3 a.m. Sihti/dendrite gradient intuition fanned into multiple experimental branches. The image branch separates compression from directional structure: R3's privileged coarse oracle changed choices but ordinary inference failed; R4's learned signed flux improved missing-pixel MSE but worsened edge error; Model4's true structure-tensor orientation beat scalar brightness, while predicting missing orientation and its ping benefit remain open. BrainAsInverseModelerV3's separate open PR #3 shows temporal voltage differences can improve a fixed reader without improving pulse response. The combined evidence does not establish a single shared mathematical bug or a biological learning law. Earlier same-day SihtiBrain, AI memory and Qwen experiments remain consolidated on the SihtiBrain card.",
+  "nodes": [
+    {
+      "id": "SihtiImageModel3",
+      "url": "https://github.com/anttiluode/SihtiImageModel3",
+      "family": "residue-operator",
+      "status": "ledger",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Tests whether locally learned patch constraints and returning coarse messages improve masked image completion; R4 replaces a discrete patch reader with a continuous pixel field receiving conditioned mean brightness and signed block gradients.",
+      "survived": "R3's true-coarse diagnostic changes patch choices on 24/32 synthetic contours and outperforms equally strengthened learned coarse messages (0.08408 versus 0.10151 MSE). R4 learned brightness+signed flux lowers masked-pixel MSE from 0.08480 to 0.08020; spatially shuffled gradient vectors degrade it to 0.15482. A privileged true brightness+gradient oracle reaches 0.01906, showing conditional capacity if the hidden message were known.",
+      "killed": "R1 and R2 ordinary feedback did not beat simple fill controls. R4's predeclared combined gate fails because masked gradient MSE worsens 0.05337 to 0.05632 and edge cosine drops 0.6552 to 0.6168. A block's signed net flux can cancel different contours and omit their within-block locations; true-coarse oracles cannot be treated as ordinary inference.",
+      "evidence": "https://github.com/anttiluode/SihtiImageModel3/blob/main/docs/GATE_R4_RESULT.md",
+      "tags": [
+        "2026-10-19",
+        "mad-monday-2026-10-19",
+        "sihti",
+        "gradient",
+        "signed-flux",
+        "oracle-vs-prediction",
+        "image-completion",
+        "negative-result",
+        "return-path"
+      ],
+      "era": "Mad Monday: can missing structure speak back?",
+      "era_order": 137
+    },
+    {
+      "id": "Sihtiimagemodel4",
+      "url": "https://github.com/anttiluode/Sihtiimagemodel4",
+      "family": "residue-operator",
+      "status": "ledger",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A local Gaussian patch-state medium coupled to coarse layout through one energy, with a controlled uncertainty-directed ping; a follow-up directly tests scalar brightness versus signed gradient sums versus nonlinear orientation tensors.",
+      "survived": "On synthetic contours, having the true 4×4 structure-tensor orientation lowers masked MSE to 0.0272 versus 0.0451 for true brightness; on natural crops true orientation gives 0.00344 versus 0.00401. True brightness plus gradients beats true brightness alone in both sets. For ordinary natural image crops, 20 local states improve on the one-state model in the frozen test, though results vary by photo.",
+      "killed": "Summed first derivatives alone underperform true brightness on both synthetic and natural benchmarks (0.0567 versus 0.0451; 0.00489 versus 0.00401). A predicted gradient message does not yield a natural-crop gain; the ping does not beat a sham by the predeclared threshold. True hidden orientation is a privileged oracle, not a generated or learned instruction. Natural tests cover 64 crops from only three unseen photos.",
+      "evidence": "https://github.com/anttiluode/Sihtiimagemodel4/blob/main/README.md",
+      "tags": [
+        "2026-10-19",
+        "mad-monday-2026-10-19",
+        "sihti",
+        "structure-tensor",
+        "orientation",
+        "coarse-to-fine",
+        "patch-medium",
+        "oracle-vs-prediction",
+        "failed-ping-gate"
+      ],
+      "era": "Mad Monday: orientation rather than net flux",
+      "era_order": 138
+    }
+  ],
+  "edges": [
+    {
+      "source": "SihtiImageModel",
+      "target": "SihtiImageModel3",
+      "type": "forks",
+      "confidence": "medium",
+      "why": "Resumes the Sihti image core/residue and patch-completion problem as an up-and-down masked-image inference test, not a demonstrated improvement of the predecessor.",
+      "evidence": "https://github.com/anttiluode/SihtiImageModel3/blob/main/README.md"
+    },
+    {
+      "source": "SihtiImageModel3",
+      "target": "Sihtiimagemodel4",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Model4 explicitly rebuilds Model3's R1 joint energy and tests alternatives to its coarse layout and ping; its gradient/orientation follow-up also responds to the same October 19 diagnosis.",
+      "evidence": "https://github.com/anttiluode/Sihtiimagemodel4/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "oct19-directional-message-must-be-decodable",
+      "title": "A top-down message needs preserved geometry and a compatible local decoder",
+      "description": "Model3 shows why scalar summaries and even a predicted signed block flux may not recover missing contour orientation; Model4's privileged structure tensor supplies useful local directional energy while ordinary prediction remains unresolved. This is an observer/decoder-coordinate constraint, not proof that dendrites calculate image gradients or that all three Monday negative gates had one mathematical cause.",
+      "nodes": [
+        "SihtiImageModel3",
+        "Sihtiimagemodel4",
+        "BrainAsInverseModelerV3"
+      ]
+    }
+  ]
+}
