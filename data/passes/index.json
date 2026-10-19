@@ -422,5 +422,9 @@
   {
     "path": "october-19-sihtibrain-to-ai-query-memory.json",
     "enabled": true
+  },
+  {
+    "path": "october-19-mad-monday-image-gradient.json",
+    "enabled": true
   }
 ]

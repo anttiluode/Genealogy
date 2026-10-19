@@ -2,6 +2,12 @@
 
 This file records interpretation work rather than raw repository inventory. The rule is simple: names are discovery hints, not ancestry evidence. Corrections and failed claims remain visible because they are selection events in the genealogy.
 
+## 2026-10-19 — Mad Monday: from Sihti gradients to the question of readable state
+
+The day began with a Sihti purification/dendritic gradient idea, then split among the SihtiBrain cable return, two AI response-memory controls, transformer-address/activation probes, two image reconstruction solvers, BrainAsInverseModelerV3's forecast readout and a Local Lens Lab visualization. This pass preserves the detailed [field note](docs/reviews/2026-10-19-mad-monday.md) on the landing wall rather than promoting each fork to an independent survivor.
+
+Two new image repository cards and five evidence records were added, with genuine gates and oracle limitations. Model3 R4 loses its preregistered joint edge gate; Model4's true orientation-tensor oracle beats scalar brightness, but its learned top-down message and ping remain unproven; InverseModelerV3's open PR #3 reduces fixed-reader error by temporal differencing without pulse benefit. The existing SihtiBrain consolidation is unchanged; no evidence or source is erased. The shared idea is observation/decoder compatibility across different physical and artificial media, not an established universal law equating electrical, image and learning gradients. Underlying experiment results were reviewed, not independently rerun.
+
 ## 2026-10-18 — Memory interfaces, informational spectra and initial Välikäsi
 
 Added LiveMode, RealTimeReadWrite, WhereToWrite, Naula, InformationalSpectra and Valikasi as six reviewed nodes in one dated pass, with thirteen qualified lineage/convergence links and three motifs. Confirmed that SolsBaby, ClaudesBaby and SihtiImageModel2 already have October 17 reviewed nodes; preserved them without duplication. Added the six missing census records.

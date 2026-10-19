@@ -23,6 +23,16 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
+## 2026-10-19 — Mad Monday: one gradient intuition, many controlled detours
+
+**[Explore the Mad Monday trail on the wall](https://anttiluode.github.io/Genealogy/#mad-monday)** · **[Read the full field note](docs/reviews/2026-10-19-mad-monday.md)** · [Image gradient pass](data/passes/october-19-mad-monday-image-gradient.json)
+
+The 3 a.m. question was whether dendrites might *preserve* rather than lose signal distinctions through local gradients, a limited soma readout and a returning perturbation. It branched into SihtiBrain cable echoes, AI/memory addressing, image core-to-patch feedback, an inverse-modeler forecast and the offline Local Lens Lab. Gemini's discussion supplied the ignition; multiple AI collaborators developed and tested divergent interpretations.
+
+The wall **does not** turn that day into ten independent breakthroughs. The consolidated SihtiBrain card and its nine earlier receipts remain intact. The two distinct image-model experiments become reviewed nodes with their own negative limits; BrainAsInverseModelerV3 retains its existing card and an explicitly **open PR #3** readout-only result.
+
+**The correction worth recording:** a box average is blind to orientation, but simply summing signed first derivatives did **not** solve the problem. Model3 R4 gained pixel MSE while worsening edge error; Model4's privileged structure-tensor orientation helped where a scalar or signed sum failed, without demonstrating that orientation can be inferred from the visible surround. InverseModelerV3's temporal differences reduced the fixed-reader NRMSE from 0.6745 to 0.3935; pulse 0.3951 brought no primary benefit. These are distinct tested mechanisms, **not one proven shared bug**. The surviving question is which representation a limited reader can use and where a return must enter the actual local medium.
+
 ## 2026-10-19 — SihtiBrain, consolidated gradient and ping research
 
 October 19's related experiments now have **one curated repository card**, [SihtiBrain](https://github.com/anttiluode/SihtiBrain), rather than five independent cards. See its [consolidated research map](https://github.com/anttiluode/SihtiBrain/blob/main/docs/RESEARCH_MAP_2026-10-19.md) and [preserved source studies](https://github.com/anttiluode/SihtiBrain/tree/main/studies).
