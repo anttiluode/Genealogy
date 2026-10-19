@@ -110,6 +110,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "AIBrain",
+    "url": "https://github.com/anttiluode/AIBrain",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Sol repo",
+    "created_at": "2026-10-19T03:44:06Z",
+    "updated_at": "2026-10-19T04:05:16Z",
+    "inventory_status": "unread"
+  },
+  {
     "name": "AIbrainExlporer",
     "url": "https://github.com/anttiluode/AIbrainExlporer",
     "default_branch": "main",
@@ -118,6 +129,17 @@
     "description": "🧠 AI Brain Explorer: Does Learning Order Matter?",
     "created_at": "2025-08-31T03:55:19Z",
     "updated_at": "2025-08-31T05:45:16Z",
+    "inventory_status": "unread"
+  },
+  {
+    "name": "AIbrainV2",
+    "url": "https://github.com/anttiluode/AIbrainV2",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Sol repo",
+    "created_at": "2026-10-19T03:58:13Z",
+    "updated_at": "2026-10-19T04:16:29Z",
     "inventory_status": "unread"
   },
   {
@@ -1873,11 +1895,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 1064,
+    "size": 1316,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-10-18T15:45:03Z",
+    "updated_at": "2026-10-19T04:22:27Z",
     "inventory_status": "unread"
   },
   {
@@ -4169,6 +4191,39 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "SihtiBrain",
+    "url": "https://github.com/anttiluode/SihtiBrain",
+    "default_branch": "main",
+    "size": 1359,
+    "visibility": "public",
+    "description": "Sol 61 Max",
+    "created_at": "2026-10-19T00:53:43Z",
+    "updated_at": "2026-10-19T00:53:48Z",
+    "inventory_status": "unread"
+  },
+  {
+    "name": "SihtiBrainV2",
+    "url": "https://github.com/anttiluode/SihtiBrainV2",
+    "default_branch": "main",
+    "size": 54,
+    "visibility": "public",
+    "description": "Sol. Me and Gemini had the idea. ",
+    "created_at": "2026-10-19T02:28:24Z",
+    "updated_at": "2026-10-19T02:28:29Z",
+    "inventory_status": "unread"
+  },
+  {
+    "name": "SihtibrainV3",
+    "url": "https://github.com/anttiluode/SihtibrainV3",
+    "default_branch": "main",
+    "size": 79,
+    "visibility": "public",
+    "description": "Sol repo",
+    "created_at": "2026-10-19T03:06:18Z",
+    "updated_at": "2026-10-19T03:06:24Z",
+    "inventory_status": "unread"
+  },
+  {
     "name": "SihtiGrapImageModel",
     "url": "https://github.com/anttiluode/SihtiGrapImageModel",
     "default_branch": "main",
@@ -4807,6 +4862,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "TestNumberFive",
+    "url": "https://github.com/anttiluode/TestNumberFive",
+    "default_branch": "main",
+    "size": 383,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-10-18T15:59:21Z",
+    "updated_at": "2026-10-18T16:21:41Z",
+    "inventory_status": "unread"
+  },
+  {
     "name": "The-Aether-Of-Time",
     "url": "https://github.com/anttiluode/The-Aether-Of-Time",
     "default_branch": "main",
@@ -5239,11 +5305,11 @@
     "name": "Valikasi",
     "url": "https://github.com/anttiluode/Valikasi",
     "default_branch": "main",
-    "size": 0,
+    "size": 6354,
     "visibility": "public",
     "description": "Opus 55",
     "created_at": "2026-10-18T15:15:29Z",
-    "updated_at": "2026-10-18T15:30:46Z",
+    "updated_at": "2026-10-18T18:06:03Z",
     "inventory_status": "reviewed"
   },
   {
