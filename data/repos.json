@@ -5641,5 +5641,27 @@
     "created_at": "2026-08-16T14:37:59Z",
     "updated_at": "2026-08-16T15:41:54Z",
     "inventory_status": "unread"
+  },
+  {
+    "name": "SihtiImageModel3",
+    "url": "https://github.com/anttiluode/SihtiImageModel3",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "October 19 joint coarse/local masked-image recovery and signed-gradient tests",
+    "created_at": "2026-10-19T00:00:00Z",
+    "updated_at": "2026-10-19T00:00:00Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "Sihtiimagemodel4",
+    "url": "https://github.com/anttiluode/Sihtiimagemodel4",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "October 19 coarse/fine settling, ping controls and structure-tensor orientation tests",
+    "created_at": "2026-10-19T00:00:00Z",
+    "updated_at": "2026-10-19T00:00:00Z",
+    "inventory_status": "reviewed"
   }
 ]
