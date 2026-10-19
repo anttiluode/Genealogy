@@ -8330,5 +8330,224 @@
       "Indexed retrieval has a different operation and capacity budget but decisively wins on these random labels."
     ],
     "source": "https://github.com/anttiluode/SihtiBrain/blob/main/studies/operator_memory/aibrain_v2/docs/GATE1_RESULT.md"
+  },
+  {
+    "id": "oct19-mad-monday-model3-r3-coarse-oracle",
+    "node": "SihtiImageModel3",
+    "claim": "True coarse context can change local patch choices, but a real learned coarse message remains inadequate.",
+    "design": "32 new synthetic contour images; R2 unchanged patch reader; true target-derived coarse message evaluated as a privileged oracle against an equally strengthened learned message.",
+    "result": "mixed",
+    "sample": {
+      "unit": "synthetic contour",
+      "count": 32
+    },
+    "metrics": [
+      {
+        "name": "oracle-coarse MSE",
+        "treatment": 0.08408,
+        "control": 0.10151
+      },
+      {
+        "name": "images with changed patch choice",
+        "treatment": 24,
+        "comparison": "out of 32"
+      }
+    ],
+    "controls": [
+      "Unchanged R2 reader and fixed predeclared coupling",
+      "Equal-strength learned-message comparison",
+      "Exact target-selected fine-code ceiling"
+    ],
+    "replication": "Source project fixed synthetic test; atlas did not independently rerun",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "True withheld coarse structure was supplied only to an oracle.",
+      "Changing a patch choice does not prove improved ordinary inference.",
+      "The Image 8 anecdote cannot establish a universal inability to encode diagonal structure."
+    ],
+    "source": "https://github.com/anttiluode/SihtiImageModel3/blob/main/docs/GATE_R3_RESULT.md",
+    "motifs": [
+      "oct19-directional-message-must-be-decodable"
+    ]
+  },
+  {
+    "id": "oct19-mad-monday-model3-r4-signed-flux",
+    "node": "SihtiImageModel3",
+    "claim": "Predicted signed block gradients can improve masked pixel MSE but fail a joint edge-preservation criterion.",
+    "design": "320 training synthetic contours and 32 fresh held-out contours; same continuous solver with brightness alone, learned signed flux, combined features, shuffled flux, and privileged truth oracles.",
+    "result": "mixed",
+    "sample": {
+      "unit": "fresh synthetic contour",
+      "count": 32
+    },
+    "metrics": [
+      {
+        "name": "missing-pixel MSE predicted scalar only",
+        "treatment": 0.084797
+      },
+      {
+        "name": "missing-pixel MSE predicted scalar+flux",
+        "treatment": 0.080203
+      },
+      {
+        "name": "masked gradient error scalar only",
+        "treatment": 0.053369
+      },
+      {
+        "name": "masked gradient error scalar+flux",
+        "treatment": 0.056317
+      },
+      {
+        "name": "shuffled flux missing MSE",
+        "treatment": 0.154817
+      }
+    ],
+    "controls": [
+      "Same observations and regularization across ordinary arms",
+      "Shuffled-gradient matched solver",
+      "Privileged target-gradient oracle separate from inference"
+    ],
+    "replication": "CI 34 unit tests and source results; atlas did not independently rerun",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "R4 joint precommitted gate failed despite a pixel-MSE gain.",
+      "Net signed block gradients cancel opposing contours and omit sub-block position.",
+      "Oracle true gradients can demonstrate capacity, not the model's ability to infer withheld truth."
+    ],
+    "source": "https://github.com/anttiluode/SihtiImageModel3/blob/main/docs/GATE_R4_RESULT.md",
+    "motifs": [
+      "oct19-directional-message-must-be-decodable"
+    ]
+  },
+  {
+    "id": "oct19-mad-monday-model4-tensor-orientation",
+    "node": "Sihtiimagemodel4",
+    "claim": "True structure-tensor orientation improves the coarse-to-fine oracle ceiling over true brightness, but prediction of missing orientation has not been established.",
+    "design": "Predeclared Model4 gradient follow-up on synthetic contours and natural crops; compare true or predicted brightness, sum of gx/gy, combined message and a privileged nonlinear structure tensor.",
+    "result": "mixed",
+    "sample": {
+      "unit": "synthetic contour",
+      "count": 32
+    },
+    "metrics": [
+      {
+        "name": "synthetic true brightness MSE",
+        "treatment": 0.0451
+      },
+      {
+        "name": "synthetic true orientation MSE",
+        "treatment": 0.0272
+      },
+      {
+        "name": "natural true brightness MSE",
+        "treatment": 0.00401
+      },
+      {
+        "name": "natural true orientation MSE",
+        "treatment": 0.00344
+      }
+    ],
+    "controls": [
+      "True withheld top-down messages explicitly labeled oracle",
+      "Predicted gradients separately measured",
+      "One-state linear local medium kept fixed"
+    ],
+    "replication": "Committed project tests and README; atlas did not independently rerun",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Ground-truth orientation comes from masked pixels and is not available at inference.",
+      "Natural benchmarks sample only three held-out photographs.",
+      "A structure-tensor message summarizes unsigned directional energy, not exact edge phase or polarity."
+    ],
+    "source": "https://github.com/anttiluode/Sihtiimagemodel4/blob/main/README.md",
+    "motifs": [
+      "oct19-directional-message-must-be-decodable"
+    ]
+  },
+  {
+    "id": "oct19-mad-monday-model4-ping-sham",
+    "node": "Sihtiimagemodel4",
+    "claim": "A deeper energy minimum from a top-down ping does not imply a more accurate image reconstruction.",
+    "design": "Frozen predeclared G3 compare posterior-uncertainty pings against a matched-norm sham on synthetic contours and natural crops.",
+    "result": "contradicts",
+    "sample": {
+      "unit": "synthetic contour",
+      "count": 32
+    },
+    "metrics": [
+      {
+        "name": "synthetic ping MSE",
+        "treatment": 0.0883
+      },
+      {
+        "name": "synthetic sham MSE",
+        "control": 0.0886
+      }
+    ],
+    "controls": [
+      "Matched pixel-norm sham perturbation",
+      "Shared post-ping settling optimizer and objective",
+      "Preregistered minimum improvement and distinct-state counts"
+    ],
+    "replication": "Source repo reports tests; atlas did not independently rerun",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Synthetic test ping lowers energy substantially without meaningful image gain.",
+      "Natural test pings do not beat sham under the stated gate.",
+      "Says nothing conclusive about biological spikes or learning."
+    ],
+    "source": "https://github.com/anttiluode/Sihtiimagemodel4/blob/main/README.md",
+    "motifs": []
+  },
+  {
+    "id": "oct19-mad-monday-inverse-v3-temporal-readout",
+    "node": "BrainAsInverseModelerV3",
+    "claim": "A temporal-difference coordinate transform substantially improves a fixed soma-history reader, while a somatic pulse does not help the preregistered primary target.",
+    "design": "Open PR #3, same 19-sample observation blackout and same four fresh held-out trajectories; compare raw soma values, invertible voltage-change coordinates, with/without return pulse, plus raw input delays.",
+    "result": "mixed",
+    "sample": {
+      "unit": "fresh held-out trajectory",
+      "count": 4
+    },
+    "metrics": [
+      {
+        "name": "raw soma NRMSE",
+        "treatment": 0.674525
+      },
+      {
+        "name": "voltage-change no-pulse NRMSE",
+        "treatment": 0.393459
+      },
+      {
+        "name": "voltage-change with-pulse NRMSE",
+        "treatment": 0.395142
+      },
+      {
+        "name": "raw input delays NRMSE",
+        "treatment": 0.635349
+      }
+    ],
+    "controls": [
+      "Same soma samples and target across coordinate representations",
+      "Pulse and no-pulse paired comparison",
+      "Resting pulse subtraction and privileged exact-pair echo controls"
+    ],
+    "replication": "Open PR #3 reports 60 passing tests and GitHub CI; results not independently rerun by atlas and not merged into main at review time",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Temporal differencing is invertible and creates no new information.",
+      "Observed gain is specific to the fixed regularized quadratic reader, not a theorem about optimal readers.",
+      "The pulse slightly worsens the primary error; the combined pulse/readout gate fails.",
+      "This is a PR-branch result, not a new main-branch outcome."
+    ],
+    "source": "https://github.com/anttiluode/BrainAsInverseModelerV3/pull/3",
+    "motifs": [
+      "oct19-directional-message-must-be-decodable"
+    ]
   }
 ]
