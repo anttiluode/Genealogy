@@ -110,17 +110,6 @@
     "inventory_status": "unread"
   },
   {
-    "name": "AIBrain",
-    "url": "https://github.com/anttiluode/AIBrain",
-    "default_branch": "main",
-    "size": 0,
-    "visibility": "public",
-    "description": "Sol repo",
-    "created_at": "2026-10-19T03:44:06Z",
-    "updated_at": "2026-10-19T04:05:16Z",
-    "inventory_status": "reviewed"
-  },
-  {
     "name": "AIbrainExlporer",
     "url": "https://github.com/anttiluode/AIbrainExlporer",
     "default_branch": "main",
@@ -130,17 +119,6 @@
     "created_at": "2025-08-31T03:55:19Z",
     "updated_at": "2025-08-31T05:45:16Z",
     "inventory_status": "unread"
-  },
-  {
-    "name": "AIbrainV2",
-    "url": "https://github.com/anttiluode/AIbrainV2",
-    "default_branch": "main",
-    "size": 0,
-    "visibility": "public",
-    "description": "Sol repo",
-    "created_at": "2026-10-19T03:58:13Z",
-    "updated_at": "2026-10-19T04:16:29Z",
-    "inventory_status": "reviewed"
   },
   {
     "name": "AInstein",
@@ -4199,28 +4177,6 @@
     "description": "Sol 61 Max",
     "created_at": "2026-10-19T00:53:43Z",
     "updated_at": "2026-10-19T00:53:48Z",
-    "inventory_status": "reviewed"
-  },
-  {
-    "name": "SihtiBrainV2",
-    "url": "https://github.com/anttiluode/SihtiBrainV2",
-    "default_branch": "main",
-    "size": 54,
-    "visibility": "public",
-    "description": "Sol. Me and Gemini had the idea. ",
-    "created_at": "2026-10-19T02:28:24Z",
-    "updated_at": "2026-10-19T02:28:29Z",
-    "inventory_status": "reviewed"
-  },
-  {
-    "name": "SihtibrainV3",
-    "url": "https://github.com/anttiluode/SihtibrainV3",
-    "default_branch": "main",
-    "size": 79,
-    "visibility": "public",
-    "description": "Sol repo",
-    "created_at": "2026-10-19T03:06:18Z",
-    "updated_at": "2026-10-19T03:06:24Z",
     "inventory_status": "reviewed"
   },
   {

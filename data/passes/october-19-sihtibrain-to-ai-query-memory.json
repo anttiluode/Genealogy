@@ -1,9 +1,9 @@
 {
   "id": "october-19-sihtibrain-to-ai-query-memory",
-  "title": "October 19: SihtiBrain forks into cortical return paths, active probes and AI operator memory",
+  "title": "October 19: SihtiBrain consolidated gradient-return and operator-memory controls",
   "reviewed_at": "2026-10-19",
   "order": 128,
-  "summary": "Five new repositories share a narrow computational question—what hidden distributed state can a limited output read, and how do feedback and changed operators affect future responses? SihtiBrain establishes exact somatic blind modes, context/credit constraints, and a real-time local learning rule that a simpler three-factor control matches. SihtiBrainV2 produces operator-dependent echo and persistent cable-state memory but a preregistered two-ping learning advantage fails. SihtibrainV3 recovers matched-soma patterns with phase-varying probes but preset scheduling ties adaptation; phase-averaged moving-bar routing cancels direction and loses to a velocity forecast. AIBrain stores associative bindings in 2,048-byte connection memory but loses to fast weights and suffers interference. AIbrainV2 tests equal 512-byte matrices and finds a positive graph-vs-raw reader contrast, largely explained by degree normalization and beaten by a smaller indexed lookup. All are small synthetic investigations; branch-only SihtiBrain/V2/V3 results are not yet merged to main, and these source reports were reviewed rather than independently rerun by Genealogy.",
+  "summary": "Originally five closely related repository cards (plus two Qwen side projects), now consolidated into one surviving SihtiBrain repository. A hidden cable gradient may become observable on return through a state-dependent operator. V2's state-dependent and post-reset echoes survive, V3's adapted-vs-preset distinction and moving tracker fail their added-value controls, and memory/Qwen tests remain separately labelled archived negative or mixed results. Original protocols, code, figures and tests are kept under SihtiBrain/studies/. The repo consolidation is organizational; the source experiments are not newly verified by Genealogy.",
   "nodes": [
     {
       "id": "SihtiBrain",
@@ -12,10 +12,10 @@
       "status": "ledger",
       "usefulness": "scientific",
       "confidence": "high",
-      "claim": "A seven-compartment cable separates distributed dendritic voltage gradients from the compressed somatic read, then tests nonlinear branch kicks, two-ping calcium credit, and apical feedback through a trunk.",
-      "survived": "On a symmetric tree, four of seven modes are soma-invisible and matched cluster/split patterns have equal passive somatic voltage. Nonlinear branch gating makes a difference readable. Tuft-to-basal response factors through a scalar somatic channel; staged local credit can learn a synthetic task.",
-      "killed": "A fixed linear soma ping does not reveal matched-soma structure. Weak graded tuft context attenuates with trunk length and becomes sensitive to calcium noise. Real-time ping-local learning did not beat a simpler burst-count three-factor rule (both 4/4 on held-out test); XOR-like dendrites, segmentation and spontaneous brain-wide gradient descent remain analogies.",
-      "evidence": "https://github.com/anttiluode/SihtiBrain/blob/b44b9f0b66f867958692e2cb1caff962d71a6bec/README.md",
+      "claim": "One consolidated gradient-and-ping laboratory: a limited soma misses dendritic state; state-dependent probe echoes and slow conductance changes can expose hidden distinctions in constructed circuits. V2/V3 and independent memory and Qwen side studies are preserved under studies/.",
+      "survived": "Passive soma traces are identical for matched distributed inputs even when local cable modes differ. A state-dependent return echo in V2 separates such inputs (−0.11495), with an after-reset conductance echo (−0.04817). V3 complementary probes distinguish hidden states in a controlled toy. Source and tests now live in the SihtiBrain main repository.",
+      "killed": "Fixed linear pulses are blind. V2 calcium-ratio learning did not beat the simpler three-factor baseline (62.13% versus 62.21% balanced accuracy), and V3 phase-blind tracking lost to velocity extrapolation (0.615 versus 0.781). AIBrain association memory lost to equal-size Hebbian storage (71.9% versus 95.4% at load 32); AIbrainV2 normalization explained most graph gain (53.4% versus 55.6%), while compact indexed storage scored 73.9%. Transformer activation injection did not restore the intended Qwen fact (2/12). No automatic segmentation or novel credit advantage has been established.",
+      "evidence": "https://github.com/anttiluode/SihtiBrain/blob/main/docs/RESEARCH_MAP_2026-10-19.md",
       "tags": [
         "2026-10-19",
         "sihti",
@@ -26,111 +26,15 @@
         "ping",
         "equilibrium-propagation",
         "three-factor-learning",
-        "negative-baseline"
+        "negative-baseline",
+        "consolidated",
+        "feedback",
+        "operator-memory-controls",
+        "temporal-probes",
+        "failed-qwen-return"
       ],
       "era": "October 19: hidden state and queryable operators",
       "era_order": 136
-    },
-    {
-      "id": "SihtiBrainV2",
-      "url": "https://github.com/anttiluode/SihtiBrainV2",
-      "family": "neuron-machine",
-      "status": "ledger",
-      "usefulness": "scientific",
-      "confidence": "high",
-      "claim": "Separates unsupervised operator-dependent ping echo/conductance memory from later supervised apical-credit experiments; explicitly benchmarks the two-ping log-calcium learning rule against matched simpler three-factor baselines.",
-      "survived": "Matched-soma patterns become distinguishable by the same somatic probe after branch-local state changes its cable operator; a slow conductance write remains readable after voltage reset. A later signed tuft context can train fixed nonlinear branch readout weights through pulse-shaped local calcium on held-out jittered examples (4/4 seeds).",
-      "killed": "Gate 5's preregistered rule fails: at 3% calcium read noise, shifted balanced accuracy is 62.13% for log-calcium versus 62.21% for a graded event, with worse BCE 3.028 versus 2.664. A same-detector fractional calcium control nearly ties at 62.04%. In the separable calcium proxy, the local voltage term cancels in the ratio; this establishes neither label-free credit nor generalization advantage.",
-      "evidence": "https://github.com/anttiluode/SihtiBrainV2/blob/4a7fa7509c14a0f7941aec992e1652a03d5c7ca3/docs/GATE5_RESULT.md",
-      "tags": [
-        "2026-10-19",
-        "sihti",
-        "dendritic-echo",
-        "conductance-memory",
-        "apical-context",
-        "local-eligibility",
-        "calcium-ratio",
-        "preregistered-negative",
-        "noise",
-        "distribution-shift"
-      ],
-      "era": "October 19: hidden state and queryable operators",
-      "era_order": 137
-    },
-    {
-      "id": "SihtibrainV3",
-      "url": "https://github.com/anttiluode/SihtibrainV3",
-      "family": "probe-inference",
-      "status": "experiment",
-      "usefulness": "scientific",
-      "confidence": "high",
-      "claim": "Tests adaptation-driven alternating branch probes and whether phase-conditioned soma echoes unlock hidden structure, followed by a 16-column delayed moving-bar tracker.",
-      "survived": "Gate 1's three matched-soma patterns are identified at 100% across four 300-case noise seeds with two adaptive phases; a preset two-phase schedule also scores 100%. A fixed linear alternating probe stays near chance, locating the useful distinction in local state-dependent conductance plus complementary observations.",
-      "killed": "The left/right sweep requires steep adaptation and a small seed imbalance; it is not essential for reading because preset probing ties it. Gate 2 averages complementary phases at the receiver, cancelling direction to ~3.3e-16: adaptive/preset/symmetric next-frame bar recall all 0.615 versus 0.781 for a two-frame velocity baseline. No tracking advantage or new biology established.",
-      "evidence": "https://github.com/anttiluode/SihtibrainV3/blob/1b5affd88889afc5902dbefe6eb759b967064931/README.md",
-      "tags": [
-        "2026-10-19",
-        "sihti",
-        "alternating-probe",
-        "active-observability",
-        "state-dependent-cable",
-        "phase-cancellation",
-        "causal-tracking",
-        "failed-tracker"
-      ],
-      "era": "October 19: hidden state and queryable operators",
-      "era_order": 138
-    },
-    {
-      "id": "AIBrain",
-      "url": "https://github.com/anttiluode/AIBrain",
-      "family": "state-memory",
-      "status": "experiment",
-      "usefulness": "scientific",
-      "confidence": "high",
-      "claim": "AI-only associative-memory block: a partial cue queries bounded feature-to-value connections; temporary activity can be erased while stored associations change future answers.",
-      "survived": "Random 64-feature eight-on cues with eight supplied labels are retrievable in a browser/CPU model. Corrupted-cue recall of the 2,048-byte connection memory is 100% at eight bindings and 71.9% at 32; clearing activity preserves recall. Exact normalized-matrix read reproduces the settled graph response.",
-      "killed": "At 32 bindings, equal-size Hebbian fast weights reach 95.4% versus graph 71.9%, and full-history attention reaches 100% using more storage. Rewriting eight of 32 bindings reaches 99.4% changed-label recall but only 42.5% unchanged-binding retention. The paired labels are supplied during writing; no semantic discovery, retrieval superiority or advantage from relaxation itself.",
-      "evidence": "https://github.com/anttiluode/AIBrain/blob/65a2db33d6a9ad98471a55f26fdbc63553a8235f/README.md",
-      "tags": [
-        "2026-10-19",
-        "ai",
-        "associative-memory",
-        "queryable-state",
-        "normalized-read",
-        "fast-weights",
-        "interference",
-        "browser-demo",
-        "negative-baseline"
-      ],
-      "era": "October 19: hidden state and queryable operators",
-      "era_order": 139
-    },
-    {
-      "id": "AIbrainV2",
-      "url": "https://github.com/anttiluode/AIbrainV2",
-      "family": "state-memory",
-      "status": "ledger",
-      "usefulness": "scientific",
-      "confidence": "high",
-      "claim": "Head-to-head retrieval from identical 16×8 float32 connection matrices: passive grounded-graph equilibrium response versus ordinary direct fast-weight read, with equal writes and a separately reported compact indexed control.",
-      "survived": "After 25% association rewrites across 8/16/32/64 loads and 12 seeds, one-swap noisy untouched recall averages 55.6% for the 512-byte grounded graph versus 45.4% direct (a +10.17-point preregistered win), with new-label recall 39.97% versus 40.67% satisfying the no-regression bound; voltage reset preserves W.",
-      "killed": "A post-result, no-relaxation degree-normalized read already scores 53.4%; full graph adds only ~2.2 points over this familiar normalization. Compact indexed lookup reaches 73.9% mean retention using 24–192 bytes instead of 512. This is a random-key benchmark, not proven scaling, autonomous semantics or a new memory class.",
-      "evidence": "https://github.com/anttiluode/AIbrainV2/blob/81a449be89f2f15809d5d23d889c1151cf27e94d/docs/GATE1_RESULT.md",
-      "tags": [
-        "2026-10-19",
-        "ai",
-        "operator-memory",
-        "green-function",
-        "schur-complement",
-        "matched-512-bytes",
-        "normalized-baseline",
-        "indexed-control",
-        "interference",
-        "post-result-ablation"
-      ],
-      "era": "October 19: hidden state and queryable operators",
-      "era_order": 140
     }
   ],
   "edges": [
@@ -140,63 +44,23 @@
       "type": "converges",
       "confidence": "medium",
       "why": "Translates the Sihti purification/residue intuition into a distributed cable observability question; no direct code inheritance or lossless residue reconstruction is claimed.",
-      "evidence": "https://github.com/anttiluode/SihtiBrain/blob/b44b9f0b66f867958692e2cb1caff962d71a6bec/README.md"
-    },
-    {
-      "source": "SihtiBrain",
-      "target": "SihtiBrainV2",
-      "type": "forks",
-      "confidence": "high",
-      "why": "V2 deliberately retains the basal/somatic blind-spot problem but isolates a delayed apical return and operator-memory write in a different toy implementation.",
-      "evidence": "https://github.com/anttiluode/SihtiBrainV2/blob/4a7fa7509c14a0f7941aec992e1652a03d5c7ca3/README.md"
-    },
-    {
-      "source": "SihtiBrain",
-      "target": "SihtibrainV3",
-      "type": "forks",
-      "confidence": "high",
-      "why": "V3 takes matched-soma hidden patterns into complementary time-varying probe experiments, not a continuation of V1's biological credit learner.",
-      "evidence": "https://github.com/anttiluode/SihtibrainV3/blob/1b5affd88889afc5902dbefe6eb759b967064931/README.md"
-    },
-    {
-      "source": "SihtiBrainV2",
-      "target": "SihtibrainV3",
-      "type": "forks",
-      "confidence": "high",
-      "why": "V3 focuses on active observability rather than V2's local write/credit; preset phase and tracking controls test whether adaptive scheduling is necessary.",
-      "evidence": "https://github.com/anttiluode/SihtibrainV3/blob/1b5affd88889afc5902dbefe6eb759b967064931/README.md"
-    },
-    {
-      "source": "SihtiBrainV2",
-      "target": "AIBrain",
-      "type": "extracts",
-      "confidence": "medium",
-      "why": "AIBrain explicitly extracts queryable connection state and forgets the compartment-level biological model; it is a different 64-dimensional associative memory design.",
-      "evidence": "https://github.com/anttiluode/AIBrain/blob/65a2db33d6a9ad98471a55f26fdbc63553a8235f/README.md"
-    },
-    {
-      "source": "AIBrain",
-      "target": "AIbrainV2",
-      "type": "forks",
-      "confidence": "medium",
-      "why": "A separate equal-matrix test of the AI-side connection-memory hypothesis using smaller 16-hot input geometry and a different passive graph; no source-code inheritance is asserted.",
-      "evidence": "https://github.com/anttiluode/AIbrainV2/blob/81a449be89f2f15809d5d23d889c1151cf27e94d/docs/GATE1_RESULT.md"
+      "evidence": "https://github.com/anttiluode/SihtiBrain/blob/main/docs/RESEARCH_MAP_2026-10-19.md"
     },
     {
       "source": "GraphNN",
-      "target": "AIbrainV2",
+      "target": "SihtiBrain",
       "type": "converges",
       "confidence": "medium",
       "why": "Both ask whether operator/graph rewrites preserve unrelated information, with substantially different synthetic writers, matrices and baseline controls.",
-      "evidence": "https://github.com/anttiluode/AIbrainV2/blob/81a449be89f2f15809d5d23d889c1151cf27e94d/docs/GATE1_RESULT.md"
+      "evidence": "https://github.com/anttiluode/SihtiBrain/blob/main/docs/RESEARCH_MAP_2026-10-19.md"
     },
     {
       "source": "InformationalSpectra",
-      "target": "SihtiBrainV2",
+      "target": "SihtiBrain",
       "type": "converges",
       "confidence": "medium",
       "why": "A perturbation response depends on the cable operator and observation port; this is a concrete toy example of question/reader-relative response geometry, not proof of a universal spectrum.",
-      "evidence": "https://github.com/anttiluode/SihtiBrainV2/blob/4a7fa7509c14a0f7941aec992e1652a03d5c7ca3/README.md"
+      "evidence": "https://github.com/anttiluode/SihtiBrain/blob/main/docs/RESEARCH_MAP_2026-10-19.md"
     }
   ],
   "motifs": [
@@ -207,8 +71,6 @@
       "nodes": [
         "Sihti",
         "SihtiBrain",
-        "SihtiBrainV2",
-        "SihtibrainV3",
         "InformationalSpectra"
       ]
     },
@@ -217,8 +79,7 @@
       "title": "A measured feedback route is not an algorithmic credit-assignment advantage",
       "description": "Original SihtiBrain tests calcium read noise, tuft attenuation, ternary and live burst events; V2 isolates a teacher-driven apical path but its preregistered calcium-ratio algorithm fails against simpler three-factor controls. Distinguish possible pathways from superior learning and count externally supplied teaching information.",
       "nodes": [
-        "SihtiBrain",
-        "SihtiBrainV2"
+        "SihtiBrain"
       ]
     },
     {
@@ -227,9 +88,7 @@
       "description": "AIBrain stores associations in a local matrix but loses to matched-size fast weights and suffers rewrite interference. AIbrainV2's fixed-W Schur-response read beats raw matrix multiplication but most of the gain is degree normalization, and compact indexed addressing wins at random keys. This connects conceptually to GraphNN without transferring its empirical conclusions.",
       "nodes": [
         "GraphNN",
-        "AIBrain",
-        "AIbrainV2",
-        "SihtiBrainV2"
+        "SihtiBrain"
       ]
     }
   ]
