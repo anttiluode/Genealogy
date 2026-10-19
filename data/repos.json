@@ -575,7 +575,7 @@
     "name": "BrainAsInverseModelerV3",
     "url": "https://github.com/anttiluode/BrainAsInverseModelerV3",
     "default_branch": "main",
-    "size": 229,
+    "size": 231,
     "visibility": "public",
     "description": "Sol repo. ",
     "created_at": "2026-10-01T04:02:12Z",
@@ -1873,11 +1873,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 1770,
+    "size": 2011,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-10-19T08:52:49Z",
+    "updated_at": "2026-10-19T16:25:42Z",
     "inventory_status": "unread"
   },
   {
@@ -4172,7 +4172,7 @@
     "name": "SihtiBrain",
     "url": "https://github.com/anttiluode/SihtiBrain",
     "default_branch": "main",
-    "size": 1566,
+    "size": 1930,
     "visibility": "public",
     "description": "Sol 61 Max",
     "created_at": "2026-10-19T00:53:43Z",
@@ -4210,6 +4210,28 @@
     "description": "Opus 55 continuation of the first one. ",
     "created_at": "2026-10-17T05:53:14Z",
     "updated_at": "2026-10-17T10:48:26Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "SihtiImageModel3",
+    "url": "https://github.com/anttiluode/SihtiImageModel3",
+    "default_branch": "main",
+    "size": 989,
+    "visibility": "public",
+    "description": "sol repo",
+    "created_at": "2026-10-19T09:27:31Z",
+    "updated_at": "2026-10-19T15:11:19Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "Sihtiimagemodel4",
+    "url": "https://github.com/anttiluode/Sihtiimagemodel4",
+    "default_branch": "main",
+    "size": 616,
+    "visibility": "public",
+    "description": "Opus",
+    "created_at": "2026-10-19T13:01:08Z",
+    "updated_at": "2026-10-19T15:39:22Z",
     "inventory_status": "reviewed"
   },
   {
@@ -5641,27 +5663,5 @@
     "created_at": "2026-08-16T14:37:59Z",
     "updated_at": "2026-08-16T15:41:54Z",
     "inventory_status": "unread"
-  },
-  {
-    "name": "SihtiImageModel3",
-    "url": "https://github.com/anttiluode/SihtiImageModel3",
-    "default_branch": "main",
-    "size": 701,
-    "visibility": "public",
-    "description": "sol repo",
-    "created_at": "2026-10-19T09:27:31Z",
-    "updated_at": "2026-10-19T15:11:19Z",
-    "inventory_status": "reviewed"
-  },
-  {
-    "name": "Sihtiimagemodel4",
-    "url": "https://github.com/anttiluode/Sihtiimagemodel4",
-    "default_branch": "main",
-    "size": 523,
-    "visibility": "public",
-    "description": "Opus",
-    "created_at": "2026-10-19T13:01:08Z",
-    "updated_at": "2026-10-19T15:39:22Z",
-    "inventory_status": "reviewed"
   }
 ]
