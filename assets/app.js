@@ -519,6 +519,16 @@ async function init() {
   renderQueue();
 
   document.querySelectorAll('.tab').forEach(button => button.addEventListener('click', () => switchView(button.dataset.view)));
+  // Mad Monday shortcuts lead to the existing curated node, not a duplicate card.
+  document.querySelectorAll('[data-mad-node]').forEach(button => button.addEventListener('click', () => {
+    for (const selector of ['#search', '#family-filter', '#status-filter', '#pass-filter', '#edge-filter']) {
+      document.querySelector(selector).value = '';
+    }
+    focusSelected = false;
+    switchView('genealogy');
+    selectNode(button.dataset.madNode);
+    document.querySelector('#view-genealogy').scrollIntoView({behavior: 'smooth', block: 'start'});
+  }));
   document.querySelector('#reset-detail').addEventListener('click', () => {
     selectedNode = null;
     focusSelected = false;
