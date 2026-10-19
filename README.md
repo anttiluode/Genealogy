@@ -25,6 +25,8 @@ The static atlas includes:
 
 ## 2026-10-19 — Mad Monday: one gradient intuition, many controlled detours
 
+**[Open Local Lens Lab](https://anttiluode.github.io/Genealogy/demos/local-lens-lab.html)** · [Offline HTML source](demos/local-lens-lab.html)
+
 **[Explore the Mad Monday trail on the wall](https://anttiluode.github.io/Genealogy/#mad-monday)** · **[Read the full field note](docs/reviews/2026-10-19-mad-monday.md)** · [Image gradient pass](data/passes/october-19-mad-monday-image-gradient.json)
 
 The 3 a.m. question was whether dendrites might *preserve* rather than lose signal distinctions through local gradients, a limited soma readout and a returning perturbation. It branched into SihtiBrain cable echoes, AI/memory addressing, image core-to-patch feedback, an inverse-modeler forecast and the offline Local Lens Lab. Gemini's discussion supplied the ignition; multiple AI collaborators developed and tested divergent interpretations.
