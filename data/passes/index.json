@@ -418,5 +418,9 @@
   {
     "path": "october-18-memory-spectra-and-middleman.json",
     "enabled": true
+  },
+  {
+    "path": "october-19-sihtibrain-to-ai-query-memory.json",
+    "enabled": true
   }
 ]
