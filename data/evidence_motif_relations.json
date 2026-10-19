@@ -481,5 +481,33 @@
   },
   "oct18-wheretowrite-gain2-site-null": {
     "oct18-memory-address-storage-reader": "limits"
+  },
+  "oct19-sihtibrain-soma-hidden-modes": {
+    "oct19-distributed-visibility-and-active-probing": "supports"
+  },
+  "oct19-sihtibrain-real-time-credit-baseline": {
+    "oct19-local-credit-vs-simpler-event": "limits"
+  },
+  "oct19-v2-echo-and-persistent-wire": {
+    "oct19-distributed-visibility-and-active-probing": "supports",
+    "oct19-queryable-operator-memory-interference": "supports"
+  },
+  "oct19-v2-preregistered-calcium-advantage-fail": {
+    "oct19-local-credit-vs-simpler-event": "limits"
+  },
+  "oct19-v3-complementary-probe-vs-static": {
+    "oct19-distributed-visibility-and-active-probing": "supports"
+  },
+  "oct19-v3-phase-averaged-tracking-cancel": {
+    "oct19-distributed-visibility-and-active-probing": "limits"
+  },
+  "oct19-aibrain-connection-memory-interference": {
+    "oct19-queryable-operator-memory-interference": "limits"
+  },
+  "oct19-aibrainv2-matched-graph-retention": {
+    "oct19-queryable-operator-memory-interference": "supports"
+  },
+  "oct19-aibrainv2-normalization-and-indexed-ceiling": {
+    "oct19-queryable-operator-memory-interference": "limits"
   }
 }
