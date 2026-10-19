@@ -1305,5 +1305,88 @@
       "Do not pool Naula J-lens/gain-8 and WhereToWrite logit-lens/gain-2 results as matched replications.",
       "The historical 400-evaluation independence-based confidence interval is invalid and does not enter this question's evidence."
     ]
+  },
+  {
+    "id": "oct19-operator-read-beyond-normalization-and-index",
+    "title": "Can a changed response operator protect selectively rewritten memories beyond normalized fast weights and explicit addressing?",
+    "state": "open",
+    "motifs": [
+      "oct19-queryable-operator-memory-interference"
+    ],
+    "evidence": [
+      "oct19-v2-echo-and-persistent-wire",
+      "oct19-aibrain-connection-memory-interference",
+      "oct19-aibrainv2-matched-graph-retention",
+      "oct19-aibrainv2-normalization-and-indexed-ceiling"
+    ],
+    "competing_explanations": [
+      "A nonlinear coupled response operator can use global graph structure to reduce interference between nearby bindings beyond a degree-normalized matrix reader at matched storage and compute.",
+      "The observed gains are mostly elementary normalization; exact indexed addressing and conventional fast-weight correction remain better for arbitrary keys."
+    ],
+    "known": [
+      "V2 stores a small response difference in conductance after voltage reset, but does not test scalable associative rewriting.",
+      "AIBrain's 2,048-byte graph loses at load 32 (71.9%) to equal-size Hebbian fast weights (95.4%) and shows 42.5% untouched retention after rewrites.",
+      "AIbrainV2's preregistered 512-byte comparison beats raw fast weights by 10.17 percentage points, but a post-result degree-normalized read captures most of that gain.",
+      "At AIbrainV2's tested 8–64 random bindings, an indexed lookup stores just 3 bytes each and beats the graph."
+    ],
+    "missing_discriminator": "A genuinely independent, preregistered longer-horizon selective-rewrite test with identical storage and read/write compute, normalized matrix and properly budgeted index/hash baselines, and unseen association sequences.",
+    "candidate_experiment": {
+      "design": "Freeze writer/read hyperparameters on development seeds; run A→B→A′ and multi-interference sequences under fixed byte, query and energy budgets. Compare graph Schur reader, degree-normalized/optimized fast weights and packed indexed maps; separately track changed-binding quality, untouched retention, normalization and exact lookup cost.",
+      "cost": "low: NumPy CPU matched-seed associative-memory task, with careful storage/time accounting",
+      "outcomes": [
+        {
+          "if": "Operator response consistently preserves untouched associations while matching new-binding accuracy beyond the best normalized and indexed controls at equal budget",
+          "then": "Keep operator-memory selective rewriting as a distinct engineering mechanism within the demonstrated regime."
+        },
+        {
+          "if": "Normalized direct reads or indexed stores match or beat the graph after fair tuning",
+          "then": "Attribute the observed gain to standard normalization/addressing rather than a special response-geometry memory."
+        }
+      ]
+    },
+    "notes": [
+      "Do not reuse AIbrainV2's post-hoc normalization comparison as if it were preregistered.",
+      "No lossless image encoding or biologically faithful dendrites are assumed."
+    ]
+  },
+  {
+    "id": "oct19-phase-aware-probes-vs-velocity-tracking",
+    "title": "Can a phase-aware reader turn complementary branch probes into better causal object tracking than a velocity model?",
+    "state": "open",
+    "motifs": [
+      "oct19-distributed-visibility-and-active-probing"
+    ],
+    "evidence": [
+      "oct19-v3-complementary-probe-vs-static",
+      "oct19-v3-phase-averaged-tracking-cancel",
+      "oct19-sihtibrain-soma-hidden-modes"
+    ],
+    "competing_explanations": [
+      "Complementary state-conditioned phase measurements carry directional information that a phase-aware multi-column receiver can exploit for motion prediction.",
+      "The demonstrated two-phase gains are only an observability trick for a fixed small classification task; a simple velocity predictor already uses available history better."
+    ],
+    "known": [
+      "Gate 1 adaptive and preset complementary probes both classify three soma-matched patterns at 100% in a controlled toy.",
+      "Gate 2's phase-blind two-ping average algebraically cancels direction (difference ≈3.3e-16).",
+      "In 32 noisy moving-bar movies, adaptive/preset/symmetric next-frame recall is 0.615, while a simple two-frame velocity forecast achieves 0.781."
+    ],
+    "missing_discriminator": "Preserve the two separate phase channels causally at the receiving column, then compare prediction errors and compute/pulse budgets to the velocity baseline and direct sensory histories on new trajectories.",
+    "candidate_experiment": {
+      "design": "Hold movie generation, train/test seeds and two-ping budget fixed. Give the receiver signed phase channels rather than their mean, and compare a learned linear temporal receiver against a same-size velocity/history model plus shuffled-phase and symmetric controls.",
+      "cost": "low: existing 16-column CPU movie model with a phase-aware receiver",
+      "outcomes": [
+        {
+          "if": "Phase-aware receiving beats the two-frame velocity control on new trajectory seeds without extra information or computation",
+          "then": "Promote temporal probing from hidden-state visibility to supported causal tracking utility."
+        },
+        {
+          "if": "Direction survives mathematically but prediction does not improve over velocity/history models",
+          "then": "Keep the first gate as an observability result and the tracking advantage unsupported."
+        }
+      ]
+    },
+    "notes": [
+      "V3's Gate 2 is an explicit failed tracker test; no tracking advantage is inferred from Gate 1."
+    ]
   }
 ]
