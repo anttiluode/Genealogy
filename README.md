@@ -23,6 +23,18 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
+## 2026-10-20 — BrainBox: material memory, temporal transmission and teaching
+
+**[Explore the BrainBox trail on the wall](https://anttiluode.github.io/Genealogy/#brainbox-oct20)** · **[Read the field note](docs/reviews/2026-10-20-brainbox.md)** · [Source-linked pass](data/passes/october-20-brainbox-material-memory-and-teaching.json)
+
+Two reviewed cards, **[BrainBoxSol](https://github.com/anttiluode/BrainBoxSol)** and **[BrainBoxClaude](https://github.com/anttiluode/BrainBoxClaude)**, continue the SihtiBrain return-path question. Eight evidence records preserve separate positive, mixed and failed results.
+
+Sol's supervised conductance memory gives **4,000/4,000** after activity reset, matched by a much cheaper six-parameter classifier. Its reward-only writer **fails** at 75%; the reversed mapping stays at 50% on every fresh seed. A separate label-free history writer and engineered temporal port transmit history at **1,279/1,280**, versus fixed/erased 50%. Offline conditioning and supervised receiver calibration remain explicit; raw charge alone gets 100%.
+
+Claude's geometry protects addresses when redundant interface totals are conserved, but standard digital controls win its drift/continual-learning comparisons. Its computed-teacher wave routing reaches 3/3 routes on three independent seeds. The latest sequential three-phase teacher moves the feedback interaction inside one running field: signal/reference correlation **0.86–0.92**, but only **14/18 routes across two taught mappings**, missing its reliability criterion. Labels, clock, schedule and global normalization/projection remain supplied.
+
+The surviving connection is **experience → changed material → changed response → transmission → conditional teaching**. These simulated mechanisms do not establish an autonomous brain, novel learning law or digital-AI advantage. Source experiments inspected, not independently rerun.
+
 ## 2026-10-19 — Mad Monday: one gradient intuition, many controlled detours
 
 **[Open Local Lens Lab](https://anttiluode.github.io/Genealogy/demos/local-lens-lab.html)** · [Offline HTML source](demos/local-lens-lab.html)

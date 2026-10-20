@@ -583,6 +583,28 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "BrainBoxClaude",
+    "url": "https://github.com/anttiluode/BrainBoxClaude",
+    "default_branch": "main",
+    "size": 317,
+    "visibility": "public",
+    "description": "Opus 55",
+    "created_at": "2026-10-20T06:46:24Z",
+    "updated_at": "2026-10-20T16:23:41Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "BrainBoxSol",
+    "url": "https://github.com/anttiluode/BrainBoxSol",
+    "default_branch": "main",
+    "size": 9468,
+    "visibility": "public",
+    "description": "Sol ",
+    "created_at": "2026-10-20T06:47:31Z",
+    "updated_at": "2026-10-20T15:19:57Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "BrainInspiredVisualProcessing",
     "url": "https://github.com/anttiluode/BrainInspiredVisualProcessing",
     "default_branch": "main",

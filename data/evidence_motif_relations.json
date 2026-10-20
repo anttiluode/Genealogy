@@ -521,5 +521,37 @@
   },
   "oct19-mad-monday-inverse-v3-temporal-readout": {
     "oct19-directional-message-must-be-decodable": "supports"
+  },
+  "oct20-brainbox-supervised-material": {
+    "oct20-material-memory-and-temporal-port": "supports",
+    "oct20-return-needs-correct-teaching": "supports",
+    "oct20-geometry-meets-digital-controls": "limits"
+  },
+  "oct20-brainbox-reward-failure": {
+    "oct20-return-needs-correct-teaching": "limits",
+    "oct20-geometry-meets-digital-controls": "limits"
+  },
+  "oct20-brainbox-temporal-history": {
+    "oct20-material-memory-and-temporal-port": "supports",
+    "oct20-geometry-meets-digital-controls": "limits"
+  },
+  "oct20-brainbox-interface-total": {
+    "oct20-material-memory-and-temporal-port": "supports",
+    "oct20-geometry-meets-digital-controls": "limits"
+  },
+  "oct20-brainbox-digital-controls": {
+    "oct20-geometry-meets-digital-controls": "limits"
+  },
+  "oct20-brainbox-computed-wave-teacher": {
+    "oct20-material-memory-and-temporal-port": "supports",
+    "oct20-return-needs-correct-teaching": "supports"
+  },
+  "oct20-brainbox-reciprocity": {
+    "oct20-return-needs-correct-teaching": "limits"
+  },
+  "oct20-brainbox-sequential-teacher": {
+    "oct20-material-memory-and-temporal-port": "limits",
+    "oct20-return-needs-correct-teaching": "limits",
+    "oct20-geometry-meets-digital-controls": "limits"
   }
 }

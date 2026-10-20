@@ -2,6 +2,12 @@
 
 This file records interpretation work rather than raw repository inventory. The rule is simple: names are discovery hints, not ancestry evidence. Corrections and failed claims remain visible because they are selection events in the genealogy.
 
+## 2026-10-20 — BrainBox: memory, transmission and the conditions for teaching
+
+Added two reviewed repository cards, six documented/conceptual links, three motifs and eight source-linked evidence records, plus a [field note](docs/reviews/2026-10-20-brainbox.md) and landing-wall shortcuts. Both source repositories were consolidated on main with no open PRs.
+
+The results remain separate: Sol's supervised material memory passes (4,000/4,000), reward learning fails (75%, reversed mapping 50% on every fresh seed), and engineered temporal transmission passes (1,279/1,280), with scalar charge/peak controls and receiver calibration counted. Claude's interface-total stabilization survives selected bridge drift; digital drift/continual-learning controls defeat the broader AI claim. Its wave teacher progresses from computed fields to three sequential physical phases, but G9 learns only 14/18 routes across two taught mappings and misses reliability. Reciprocity, settling, supplied labels and global gains are part of the interpretation. No BrainBox simulation was independently rerun for this atlas update.
+
 ## 2026-10-19 — Mad Monday: from Sihti gradients to the question of readable state
 
 The day began with a Sihti purification/dendritic gradient idea, then split among the SihtiBrain cable return, two AI response-memory controls, transformer-address/activation probes, two image reconstruction solvers, BrainAsInverseModelerV3's forecast readout and a Local Lens Lab visualization. This pass preserves the detailed [field note](docs/reviews/2026-10-19-mad-monday.md) on the landing wall rather than promoting each fork to an independent survivor.

@@ -8549,5 +8549,365 @@
     "motifs": [
       "oct19-directional-message-must-be-decodable"
     ]
+  },
+  {
+    "id": "oct20-brainbox-supervised-material",
+    "node": "BrainBoxSol",
+    "claim": "Supervised conductance changes retain a two-cue association after fast activity resets.",
+    "design": "Protocol/source locked at 032974c6269d54ebe24c1c3ec0e12ffa07028ea6; ten fresh device seeds, both mappings and 4,000 primary held-out decisions.",
+    "result": "supports",
+    "metrics": [
+      {
+        "name": "learned accuracy",
+        "treatment": 1,
+        "control": 0.5
+      },
+      {
+        "name": "shuffled-material accuracy",
+        "control": 0.503275
+      },
+      {
+        "name": "six-parameter linear accuracy",
+        "control": 1
+      }
+    ],
+    "controls": [
+      "Frozen, erased, traffic-only and shuffled material",
+      "Six-parameter linear classifier and supplied-identity lookup",
+      "Activity reset, response-map and time-step checks"
+    ],
+    "replication": "Committed source receipt inspected; BrainBox simulations were not independently rerun for this atlas update.",
+    "limitations": [
+      "272 conductances versus six classifier parameters; the digital control matches accuracy at much lower cost.",
+      "Teacher labels and reverse-time adjoint are externally supplied.",
+      "Only two designed cues/mappings; no generalization to new concepts."
+    ],
+    "source": "https://github.com/anttiluode/BrainBoxSol/blob/main/docs/adaptive_medium.md",
+    "motifs": [
+      "oct20-material-memory-and-temporal-port",
+      "oct20-return-needs-correct-teaching",
+      "oct20-geometry-meets-digital-controls"
+    ],
+    "sample": {
+      "unit": "fresh device seed",
+      "count": 10
+    },
+    "held_out": true,
+    "external_data": false
+  },
+  {
+    "id": "oct20-brainbox-reward-failure",
+    "node": "BrainBoxSol",
+    "claim": "One-bit global perturbation learning does not meet the locked 80% association gate.",
+    "design": "Ten fresh seeds × both mappings, 4,000 primary decisions; 8,192 forward training trials per mapping; no adjoints or explicit labels supplied to the writer.",
+    "result": "contradicts",
+    "metrics": [
+      {
+        "name": "reward accuracy",
+        "treatment": 0.75
+      },
+      {
+        "name": "reversed-mapping accuracy, every seed",
+        "treatment": 0.5
+      },
+      {
+        "name": "frozen/erased accuracy",
+        "control": 0.5
+      },
+      {
+        "name": "shuffled-reward accuracy",
+        "control": 0.489
+      }
+    ],
+    "controls": [
+      "Shuffled rewards preserving reward count",
+      "Random direction updates, frozen/erased and shuffled material",
+      "Teacher reference with separately counted adjoint cost"
+    ],
+    "replication": "Committed source receipt inspected; BrainBox simulations were not independently rerun for this atlas update.",
+    "limitations": [
+      "Aligned geometry already solves its mapping; reversed mapping remains at chance.",
+      "Global paired parameter search is not a local plasticity law.",
+      "Action plus binary correctness implicitly reveals the binary target."
+    ],
+    "source": "https://github.com/anttiluode/BrainBoxSol/blob/main/docs/reward_medium.md",
+    "motifs": [
+      "oct20-return-needs-correct-teaching",
+      "oct20-geometry-meets-digital-controls"
+    ],
+    "sample": {
+      "unit": "fresh device seed",
+      "count": 10
+    },
+    "held_out": true,
+    "external_data": false
+  },
+  {
+    "id": "oct20-brainbox-temporal-history",
+    "node": "BrainBoxSol",
+    "claim": "History stored in material can affect a frozen second medium through a matched temporal current.",
+    "design": "Label-free edge-activity history writing; reset activity, apply identical probe, offline waveform conditioning; separately calibrated frozen receiver on device seeds 501–510, 1,280 held-out decisions.",
+    "result": "supports",
+    "metrics": [
+      {
+        "name": "matched temporal-port accuracy",
+        "treatment": 0.99921875
+      },
+      {
+        "name": "fixed/erased accuracy",
+        "control": 0.5
+      },
+      {
+        "name": "shuffled accuracy",
+        "control": 0.50703125
+      },
+      {
+        "name": "raw-charge scalar accuracy",
+        "control": 1
+      },
+      {
+        "name": "matched-peak scalar accuracy",
+        "control": 0.96640625
+      }
+    ],
+    "controls": [
+      "Charge, squared-current integral, support and pulse count matched",
+      "Fixed, shuffled and erased signals",
+      "Raw-charge and matched-peak scalar diagnostics"
+    ],
+    "replication": "Committed source receipt inspected; BrainBox simulations were not independently rerun for this atlas update.",
+    "limitations": [
+      "Whole-window external matching needs a 160-value buffer and latency.",
+      "Supervised threshold/orientation fitted per device and arm; no fixed cross-device decoder transfer.",
+      "Scalar diagnostics remain highly informative; neither full-waveform necessity nor universal scalar blindness follows."
+    ],
+    "source": "https://github.com/anttiluode/BrainBoxSol/blob/main/docs/history_waveform.md",
+    "motifs": [
+      "oct20-material-memory-and-temporal-port",
+      "oct20-geometry-meets-digital-controls"
+    ],
+    "sample": {
+      "unit": "fresh simulated device",
+      "count": 10
+    },
+    "held_out": true,
+    "external_data": false
+  },
+  {
+    "id": "oct20-brainbox-interface-total",
+    "node": "BrainBoxClaude",
+    "claim": "Redundant-interface conductance totals can protect old responses under bridge drift.",
+    "design": "G4 ports and reproduces Sol G0; 384 teacher/write-order cases and three drift draws per setting; compare repairs on identical drifted media.",
+    "result": "supports",
+    "metrics": [
+      {
+        "name": "P=4, coherent+independent drift damage removed",
+        "treatment": 0.9853322608111822,
+        "control": 0.48823369979580333
+      },
+      {
+        "name": "P=4, post-repair relative error",
+        "treatment": 0.005179392177152671,
+        "control": 0.06717232046778
+      }
+    ],
+    "controls": [
+      "Unrepaired, local target replay, per-node scaling and oracle",
+      "P=1 degenerate single-bridge restoration excluded from nontrivial evidence",
+      "Independent/coherent drift and bridge/interior ratio sweeps"
+    ],
+    "replication": "Committed source receipt inspected; BrainBox simulations were not independently rerun for this atlas update.",
+    "limitations": [
+      "Stored total per interface and an interface-level sensor are required.",
+      "Protects bridge drift, not internal content drift; weak-coupling separation matters.",
+      "Replay is restricted to local interior writes; this is not a cost-matched digital-AI comparison."
+    ],
+    "source": "https://github.com/anttiluode/BrainBoxClaude/blob/main/results/g4_sol_bridge_rescue.json",
+    "motifs": [
+      "oct20-material-memory-and-temporal-port",
+      "oct20-geometry-meets-digital-controls"
+    ],
+    "held_out": false,
+    "external_data": false
+  },
+  {
+    "id": "oct20-brainbox-digital-controls",
+    "node": "BrainBoxClaude",
+    "claim": "Geometry-derived protection has not beaten ordinary digital methods in the tested tasks.",
+    "design": "G5b bit-budget-matched drift repair on digits; G6 rotated-digits domain-incremental learning, five seeds and same protected input rank/shared head controls.",
+    "result": "contradicts",
+    "metrics": [
+      {
+        "name": "geometric pyramid final accuracy",
+        "treatment": 0.48592592592592593,
+        "control": 0.553037037037037
+      },
+      {
+        "name": "full GPM final accuracy",
+        "control": 0.7362962962962962
+      },
+      {
+        "name": "EWC final accuracy",
+        "control": 0.7161481481481481
+      }
+    ],
+    "controls": [
+      "Same-rank GPM-16 and random-group projection",
+      "Full GPM, EWC and fine-tuning",
+      "Bit-matched 8-bit snapshots and permuted-pixel drift controls"
+    ],
+    "replication": "Committed source receipt inspected; BrainBox simulations were not independently rerun for this atlas update.",
+    "limitations": [
+      "Pyramid loses to GPM-16 on every one of five seeds; G5b snapshot fully restores tested accuracy.",
+      "G6 benchmark redesigned after a ceiling-limited v0; EWC grid selected optimistically.",
+      "These specific digital failures do not prove the absence of a useful analog substrate mechanism."
+    ],
+    "source": "https://github.com/anttiluode/BrainBoxClaude/blob/main/README.md",
+    "motifs": [
+      "oct20-geometry-meets-digital-controls"
+    ],
+    "held_out": true,
+    "external_data": true
+  },
+  {
+    "id": "oct20-brainbox-computed-wave-teacher",
+    "node": "BrainBoxClaude",
+    "claim": "A supplied phase-sensitive teacher can write a crossing routing into slow material.",
+    "design": "G8b, 32×48 medium, three inputs/outputs, three independent variational-medium birth seeds; compare writers and reset/shuffle slow memory.",
+    "result": "supports",
+    "metrics": [
+      {
+        "name": "variational computed-teacher accuracy",
+        "treatment": 1
+      },
+      {
+        "name": "reborn fast-field accuracy",
+        "treatment": 0.8888888888888888
+      },
+      {
+        "name": "shuffled material accuracy",
+        "control": 0.2222222222222222
+      },
+      {
+        "name": "Hebbian-coincidence accuracy",
+        "control": 0.3333333333333333
+      }
+    ],
+    "controls": [
+      "Wrong mapping, coincidence-only, forward-only, wall-gradient and no-learning writers",
+      "Original nonreciprocal and kappa=0 media",
+      "Uniform birth and full fast-field rebirth"
+    ],
+    "replication": "Committed source receipt inspected; BrainBox simulations were not independently rerun for this atlas update.",
+    "limitations": [
+      "Prototype-selected settings; replication, not a blind held-out prediction.",
+      "Separate copied-state runs and per-pair broadcast teaching signals.",
+      "G9 corrects the incomplete settling used for G8b fields; exact-gradient equivalence was not established.",
+      "Uniform-start/kappa=0 seed repeats are deterministic duplicates; PhiWorld domain birth is not necessary."
+    ],
+    "source": "https://github.com/anttiluode/BrainBoxClaude/blob/main/results/g8b_learning.json",
+    "motifs": [
+      "oct20-material-memory-and-temporal-port",
+      "oct20-return-needs-correct-teaching"
+    ],
+    "sample": {
+      "unit": "independent variational-medium birth seed",
+      "count": 3
+    },
+    "held_out": false,
+    "external_data": false
+  },
+  {
+    "id": "oct20-brainbox-reciprocity",
+    "node": "BrainBoxClaude",
+    "claim": "The constitutive law determines whether a physical echo can serve as the adjoint.",
+    "design": "G8c checks discrete energy derivative, Jacobian symmetry and forward/reverse port transmission around uniform, random and trained media.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "random-material measured reciprocity error",
+        "treatment": 0.033917011481334094,
+        "control": 0.40440037547509655
+      },
+      {
+        "name": "variational Jacobian asymmetry",
+        "treatment": 4.2144231568009335e-11,
+        "control": 0.10889191114786038
+      },
+      {
+        "name": "energy-force max check error",
+        "treatment": 2.0688377677657854e-9
+      }
+    ],
+    "controls": [
+      "Original PhiWorld form versus energy-derived form",
+      "Kappa=0 and uniform backgrounds",
+      "Discrete energy derivative check"
+    ],
+    "replication": "Committed source receipt inspected; BrainBox simulations were not independently rerun for this atlas update.",
+    "limitations": [
+      "Measured variational reciprocity still has 3–4% residual; finite amplitude and settling are proposed explanations, not separately resolved.",
+      "A gradient-compatible carrier still needs objective/label information."
+    ],
+    "source": "https://github.com/anttiluode/BrainBoxClaude/blob/main/results/g8c_reciprocity.json",
+    "motifs": [
+      "oct20-return-needs-correct-teaching"
+    ],
+    "held_out": false,
+    "external_data": false
+  },
+  {
+    "id": "oct20-brainbox-sequential-teacher",
+    "node": "BrainBoxClaude",
+    "claim": "One sequential medium can generate a useful teaching signal, but G9 fails its reliability and no-clock accuracy criteria.",
+    "design": "G9a compares a three-phase 2ω signal with a 600-time-unit-settled computed field-product reference across six media; G9b trains two supplied mappings on three seeds each for 60 epochs.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "physical/reference correlation range",
+        "value": "0.8612–0.9182"
+      },
+      {
+        "name": "primary-mapping routes correct",
+        "treatment": 7,
+        "comparison": "of 9; one of three runs perfect"
+      },
+      {
+        "name": "both taught mappings correct",
+        "treatment": 14,
+        "comparison": "of 18; two of six runs perfect"
+      },
+      {
+        "name": "no-clock primary routes correct",
+        "control": 5,
+        "comparison": "of 9"
+      },
+      {
+        "name": "reborn/shuffled primary accuracy",
+        "treatment": 0.6666666666666666,
+        "control": 0.1111111111111111
+      }
+    ],
+    "controls": [
+      "Two-phase, no-clock and original nonreciprocal medium",
+      "Alternative labels scored on both mappings",
+      "Fast-field rebirth and slow-material shuffle"
+    ],
+    "replication": "Committed source receipt inspected; BrainBox simulations were not independently rerun for this atlas update.",
+    "limitations": [
+      "Three seeds per mapping; 7/9 versus 5/9 does not establish an accuracy advantage.",
+      "R1 requires at least two perfect seeds per mapping; observed one. R2 no-clock at chance also fails.",
+      "Labels, common clock, phase schedule, global percentile gain and material-budget projection remain supplied.",
+      "G9a agreement is with a computed field-product reference, not a new finite-difference proof of the full learning gradient.",
+      "Echo rule changed after failed v1 to capped inverse-amplitude/log teaching; long phase settling is costly."
+    ],
+    "source": "https://github.com/anttiluode/BrainBoxClaude/blob/main/README.md",
+    "motifs": [
+      "oct20-material-memory-and-temporal-port",
+      "oct20-return-needs-correct-teaching",
+      "oct20-geometry-meets-digital-controls"
+    ],
+    "held_out": false,
+    "external_data": false
   }
 ]
