@@ -52,7 +52,7 @@ class JaannosGPT2GenealogyTests(unittest.TestCase):
         node = next(n for n in self.atlas["nodes"] if n["id"] == "Jaannos")
         self.assertEqual(node["status"], "negative")
         self.assertIn("KILL", node["killed"])
-        self.assertIn("outperform", node["killed"] + " outperform")
+        self.assertIn("fixed rank", node["killed"].lower())
         self.assertIn("randomly", node["survived"])
         self.assertIn("not", node["killed"].lower())
         self.assertIn("speedup", node["killed"].lower())
