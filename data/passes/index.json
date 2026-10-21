@@ -434,5 +434,9 @@
   {
     "path": "october-21-barriers-gates-and-measured-closure.json",
     "enabled": true
+  },
+  {
+    "path": "october-21-jaannos-gpt2-residue-routing.json",
+    "enabled": true
   }
 ]

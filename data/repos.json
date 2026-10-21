@@ -2442,6 +2442,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "Jaannos",
+    "url": "https://github.com/anttiluode/Jaannos",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Sol / Opus; local sketched residue routing in GPT-2; G4 matched-budget KILL",
+    "created_at": "2026-10-21T15:19:38Z",
+    "updated_at": "2026-10-21T15:42:47Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "Jalanjalki",
     "url": "https://github.com/anttiluode/Jalanjalki",
     "default_branch": "main",
