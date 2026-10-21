@@ -1,0 +1,69 @@
+{
+  "id": "october-21-jaannos-gpt2-residue-routing",
+  "title": "October 21: Jäännös, the real GPT-2 residue-routing kill",
+  "reviewed_at": "2026-10-21",
+  "order": 132,
+  "summary": "Jäännös turns Sihti-style core/residue separation into an activation-aware banded GPT-2 MLP with cheap local sketches of omitted contributions. The full real-model GPU receipt (8192 WikiText-2 evaluation positions, 24 routed matrices) validates reconstructability and some nonrandom allocation information, but the preregistered G4 local-compute advantage is KILL: fixed uniform rank wins at every matched theoretical MLP-operation budget. Exact residue norms given free still lose. No wall-clock speedup was measured; the full-factor forward computes then masks, and the global-margin alternative substitutes precomputed dense logits. The original user-provided machine-readable receipt is preserved under data/audits; atlas review did not rerun the GPU experiment.",
+  "nodes": [
+    {
+      "id": "Jaannos",
+      "url": "https://github.com/anttiluode/Jaannos",
+      "family": "neuron-machine",
+      "status": "negative",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A frozen GPT-2 experiment splits each of 24 MLP matrices into a rank-256 core, sparse outlier weights and eight 64-rank residue bands. Per-token, per-matrix 4-row sketches estimate remaining band output norm and propose a locally adaptive compute budget, tested against fixed-rank, exact-tail, shuffled and global-margin attackers.",
+      "survived": "All bands reconstruct GPT-2 weights to maximum relative error 3.18e-13; theoretical sketch multiply-adds cost 2.604% of the dense routed MLPs. Local sketch allocation beats the same-cost randomly permuted k-arrays at 0.6/0.7/0.8/0.9 budgets (40.54/48.40/57.41/68.00% versus 37.50/43.43/50.96/61.41% dense top-1 agreement). This is a nonrandom local signal, not a winning compute policy.",
+      "killed": "Preregistered GPT-2 G4 KILL: at theoretical MLP budgets 0.6/0.7/0.8/0.9, uniform fixed rank reaches 53.66/62.53/70.10/76.62% agreement versus local sketch 40.54/48.40/57.41/68.00%. The free exact-tail norm rule also loses (41.42/50.36/60.19/71.51%). Full-rank factorization costs 1.25x dense; high local fidelity costs more than dense. Per-token masked computation and sparse outlier application are not efficient kernels; global-margin has precomputed dense-logit assistance and is not realizable as evaluated. No actual GPU speedup or general no-go theorem.",
+      "evidence": "https://github.com/anttiluode/Genealogy/blob/main/data/audits/jaannos-gpt2-2026-10-21.json",
+      "tags": [
+        "2026-10-21",
+        "residue",
+        "sihti",
+        "gpt-2",
+        "activation-aware-svd",
+        "spectral-bands",
+        "cheap-sketch",
+        "local-computation",
+        "matched-flops",
+        "negative-result",
+        "pre-registered-kill",
+        "fixed-rank-control",
+        "random-matched-control",
+        "theoretical-operations-not-runtime"
+      ],
+      "era": "October 21: residue magnitude is not decision value",
+      "era_order": 143
+    }
+  ],
+  "edges": [
+    {
+      "source": "SihtiBrain",
+      "target": "Jaannos",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Jäännös states that the proposed per-compartment local difficulty gate and earlier Sihti hidden-state/residue discussion motivated its per-token band selection; the connection is conceptual, not code inheritance.",
+      "evidence": "https://github.com/anttiluode/Jaannos/blob/main/README.md"
+    },
+    {
+      "source": "GeometricNeuronV24",
+      "target": "Jaannos",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both test how cheaply measured local signal magnitude relates to the value of an additional observation/computation. Jäännös makes the discrepancy explicit on a pretrained language model; this is a conceptual recurrence, not direct derivation.",
+      "evidence": "https://github.com/anttiluode/Jaannos/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "oct21-jaannos-residue-is-not-decision-value",
+      "title": "Residue size is not the value of a decision",
+      "description": "An exact core/residue representation and a cheap norm sketch do not identify which omitted directions change downstream answers. On GPT-2, a per-token norm-based router allocates nonrandomly and still loses to fixed rank at every registered cost. Information magnitude, causal consequence and useful budget allocation remain distinct.",
+      "nodes": [
+        "Jaannos",
+        "SihtiBrain",
+        "GeometricNeuronV24"
+      ]
+    }
+  ]
+}
