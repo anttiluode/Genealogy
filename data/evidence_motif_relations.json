@@ -583,5 +583,14 @@
   "oct21-addressed-array-symbol-suffices": {
     "oct21-barrier-global-value-local-gate": "supports",
     "oct21-controls-trim-memory-claims": "limits"
+  },
+  "oct21-jaannos-gpt2-band-reconstruction": {
+    "oct21-jaannos-residue-is-not-decision-value": "documents"
+  },
+  "oct21-jaannos-gpt2-fixed-kill": {
+    "oct21-jaannos-residue-is-not-decision-value": "limits"
+  },
+  "oct21-jaannos-local-beats-shuffle-not-fixed": {
+    "oct21-jaannos-residue-is-not-decision-value": "documents"
   }
 }
