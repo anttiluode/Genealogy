@@ -8967,7 +8967,7 @@
       {
         "name": "replacement accuracy",
         "treatment": 0.6510416666666666,
-        "control": 1.0
+        "control": 1
       },
       {
         "name": "wrong replacements reporting old class",
@@ -9228,7 +9228,7 @@
       },
       {
         "name": "trace minus snap whole-array gain",
-        "value": 0.0
+        "value": 0
       },
       {
         "name": "ordinary three-well array operations",
@@ -9262,6 +9262,148 @@
     "sample": {
       "unit": "independent noise-seed batch",
       "count": 5
+    }
+  },
+  {
+    "id": "oct21-jaannos-gpt2-band-reconstruction",
+    "claim": "Full GPT-2 MLP decomposition is numerically reconstructable and the sketched remaining-band estimator is cheap as a theoretical arithmetic instrument.",
+    "design": "GPT-2 small: 24 MLP matrices, rank 256 core plus 8 bands of 64 and sparse 0.01% outliers, m=4 projection rows per residue band; 32,768 calibration tokens. Full reconstruction error from G4 receipt; sketch quality first screened on synthetic GPT-2-shaped matrices in G0.",
+    "result": "supports",
+    "metrics": [
+      {
+        "name": "max relative matrix reconstruction error",
+        "value": "3.1800819265468286e-13"
+      },
+      {
+        "name": "theoretical sketch MLP multiply-add fraction",
+        "value": "0.0260416667"
+      },
+      {
+        "name": "always-on core cost fraction",
+        "value": "0.4167666965"
+      },
+      {
+        "name": "dense GPT-2 held-out perplexity",
+        "value": "41.970484"
+      }
+    ],
+    "controls": [
+      "Complete dense GPT-2 reference weights",
+      "All-bands factorization identity",
+      "Toy G0 synthetic sketch estimate and exact-tail identity"
+    ],
+    "limitations": [
+      "G0 sketch median relative error about 8.7-8.8% was on random GPT-2-shaped matrices, not measured as a calibration error on GPT-2 weights.",
+      "Factor kernels compute all bands before masking; this is not a realized 2.6% wall-clock probe or actual speedup.",
+      "Sparse outliers use a dense matrix multiplication in the present forward implementation."
+    ],
+    "node": "Jaannos",
+    "source": "https://github.com/anttiluode/Genealogy/blob/main/data/audits/jaannos-gpt2-2026-10-21.json",
+    "motifs": [
+      "oct21-jaannos-residue-is-not-decision-value"
+    ],
+    "replication": "Complete machine-readable receipt supplied by the user after the real GPT-2 CUDA run, compared with the Jaannos implementation and preregistration; Genealogy did not rerun GPU code.",
+    "held_out": true,
+    "external_data": true,
+    "sample": {
+      "unit": "WikiText-2 GPT-2 evaluation sequence (512 autoregressive positions each; correlated within sequence)",
+      "count": 16
+    }
+  },
+  {
+    "id": "oct21-jaannos-gpt2-fixed-kill",
+    "claim": "Local sketched residue-norm allocation fails the preregistered advantage gate against fixed rank at all four GPT-2 cost budgets.",
+    "design": "Frozen real GPT-2 small evaluation over 16x512 WikiText-2 test-token positions. Compare local-sketch vs fixed-rank vs an exact-norm free-test oracle and an optimistic global-margin reference, using matched analytic operations for routed MLPs.",
+    "result": "contradicts",
+    "metrics": [
+      {
+        "name": "fixed rank agreement at cost 0.6/0.7/0.8/0.9",
+        "value": "53.66/62.53/70.10/76.62%"
+      },
+      {
+        "name": "local sketch agreement at same budgets",
+        "value": "40.54/48.40/57.41/68.00%"
+      },
+      {
+        "name": "exact local tail-norm oracle at same budgets",
+        "value": "41.42/50.36/60.19/71.51%"
+      },
+      {
+        "name": "preregistered G4 verdict",
+        "value": "KILL"
+      }
+    ],
+    "controls": [
+      "Fixed rank over full k sweep",
+      "Local exact-tail norm router at zero test cost",
+      "Global output-margin reference using dense logits",
+      "Matched-rank shuffled allocation"
+    ],
+    "limitations": [
+      "Single GPT-2 small evaluation configuration; 8,192 token positions are correlated, not independent runs.",
+      "The router computes a separate core forward to evaluate its reference norm and then another full forward; its theoretical accounting assumes reuse not implemented in the PyTorch path.",
+      "Global-margin reference uses precomputed dense logits and ignores real sequence-dependent rerun costs.",
+      "The exact-tail oracle is only exact *norm* knowledge with a frozen threshold rule; it is not an upper bound on all possible decision-aware routing.",
+      "Not measured elapsed inference speed or energy."
+    ],
+    "node": "Jaannos",
+    "source": "https://github.com/anttiluode/Genealogy/blob/main/data/audits/jaannos-gpt2-2026-10-21.json",
+    "motifs": [
+      "oct21-jaannos-residue-is-not-decision-value"
+    ],
+    "replication": "Complete machine-readable receipt supplied by the user after the real GPT-2 CUDA run, compared with the Jaannos implementation and preregistration; Genealogy did not rerun GPU code.",
+    "held_out": true,
+    "external_data": true,
+    "sample": {
+      "unit": "WikiText-2 GPT-2 evaluation sequence (512 autoregressive positions each; correlated within sequence)",
+      "count": 16
+    }
+  },
+  {
+    "id": "oct21-jaannos-local-beats-shuffle-not-fixed",
+    "claim": "Sketched residue magnitude carries useful local allocation information but not enough to outperform uniform rank or guarantee decision relevance.",
+    "design": "Permute each local router's band-count assignments across token positions inside each routed matrix and replay at exactly the same theoretical rank-plus-sketch bill. Compare top-1 agreement at four preregistered costs.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "local sketch at budgets 0.6/0.7/0.8/0.9",
+        "value": "40.54/48.40/57.41/68.00%"
+      },
+      {
+        "name": "random-matched allocation",
+        "value": "37.50/43.43/50.96/61.41%"
+      },
+      {
+        "name": "local minus random points",
+        "value": "3.04/4.96/6.46/6.60 percentage points"
+      },
+      {
+        "name": "fixed rank minus local points",
+        "value": "13.12/14.13/12.68/8.61 percentage points"
+      }
+    ],
+    "controls": [
+      "Random-matched replays share exact per-matrix k distributions and synthetic operation costs",
+      "Uniform fixed-rank Pareto frontier",
+      "Exact-tail free-test oracle"
+    ],
+    "limitations": [
+      "Per-matrix/timestep rank assignments interact through sequential transformer states; token shuffles are a controlled benchmark, not a proof of causal value.",
+      "No repeated independent pretrained LLMs or other calibration distributions.",
+      "The documented sketch estimates ||r||, while eventual task consequence depends on downstream orientation/sensitivity.",
+      "Matched theoretical operations cannot be interpreted as matched actual GPU runtime."
+    ],
+    "node": "Jaannos",
+    "source": "https://github.com/anttiluode/Genealogy/blob/main/data/audits/jaannos-gpt2-2026-10-21.json",
+    "motifs": [
+      "oct21-jaannos-residue-is-not-decision-value"
+    ],
+    "replication": "Complete machine-readable receipt supplied by the user after the real GPT-2 CUDA run, compared with the Jaannos implementation and preregistration; Genealogy did not rerun GPU code.",
+    "held_out": true,
+    "external_data": true,
+    "sample": {
+      "unit": "WikiText-2 GPT-2 evaluation sequence (512 autoregressive positions each; correlated within sequence)",
+      "count": 16
     }
   }
 ]
