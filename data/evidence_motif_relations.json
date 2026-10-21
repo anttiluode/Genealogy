@@ -553,5 +553,35 @@
     "oct20-material-memory-and-temporal-port": "limits",
     "oct20-return-needs-correct-teaching": "limits",
     "oct20-geometry-meets-digital-controls": "limits"
+  },
+  "oct21-bridge-training-reproduced-negative": {
+    "oct21-controls-trim-memory-claims": "limits"
+  },
+  "oct21-slowness-retains-but-resists-replacement": {
+    "oct21-barrier-global-value-local-gate": "limits",
+    "oct21-controls-trim-memory-claims": "limits",
+    "oct21-noise-changes-order-not-universal-time": "limits"
+  },
+  "oct21-wave-medium-texture-not-wires": {
+    "oct21-controls-trim-memory-claims": "limits"
+  },
+  "oct21-noise-sea-phase-dependent": {
+    "oct21-noise-changes-order-not-universal-time": "documents"
+  },
+  "oct21-finite-winding-barrier-and-read-limit": {
+    "oct21-barrier-global-value-local-gate": "supports",
+    "oct21-controls-trim-memory-claims": "limits"
+  },
+  "oct21-per-hole-material-and-heat-gates": {
+    "oct21-barrier-global-value-local-gate": "supports",
+    "oct21-controls-trim-memory-claims": "limits"
+  },
+  "oct21-single-cell-write-pass-read-fail": {
+    "oct21-barrier-global-value-local-gate": "supports",
+    "oct21-controls-trim-memory-claims": "limits"
+  },
+  "oct21-addressed-array-symbol-suffices": {
+    "oct21-barrier-global-value-local-gate": "supports",
+    "oct21-controls-trim-memory-claims": "limits"
   }
 }

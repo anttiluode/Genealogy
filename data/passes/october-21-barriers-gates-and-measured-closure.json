@@ -1,0 +1,133 @@
+{
+  "id": "october-21-barriers-gates-and-measured-closure",
+  "title": "October 21: barriers, gates and measured closure",
+  "reviewed_at": "2026-10-21",
+  "order": 131,
+  "summary": "BrainBox drift repair and a retention/replacement tradeoff lead to finite winding cells and selectively writable arrays. Both Alexander repositories now have working engineered memory components, while ordinary three-well controls remove topology necessity and a discrete address latch removes the demonstrated need for analog address state. Sol first single-query gate stays failed; its separately locked five-query array passes. Claude heat-gating succeeds after a drive-geometry correction, using endpoint oracle checks. Noise Sea behavior reverses between ordered domains and melted sea; it is not physical mass or time dilation. Closure concerns these bounded tests, not near-optimality or a new AI paradigm. The missing traffic-driven choice of where and what to retain needs an external task and conventional benchmark before further claims. Receipts inspected; upstream simulations were not rerun for this atlas pass.",
+  "nodes": [
+    {
+      "id": "AlexandersBrain",
+      "url": "https://github.com/anttiluode/AlexandersBrain",
+      "family": "field-computation",
+      "status": "ledger",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Finite 2-D noisy complex-field loops test phase diffusion, winding barriers, weak-link lifetime and global-value/local-material-or-heat gated writing.",
+      "survived": "Phase diffusion is quantitatively connected to temperature and field amplitude. Small winding integers survive weak local reads. A finite clasp holds n=1 across about 1.5 coherence lengths in the tested geometry. Four-ring arrays with per-hole flux give 120/120 material-gated target requests and 117/120 heat-gated requests, with 0/360 endpoint crosstalk each.",
+      "killed": "A phase alone has no barrier; large winding alphabets and a reliable single local read fail. Whole-box rotation causes crosstalk. The winding arrays use full-field oracle reads, supplied addresses and values; requests include no-ops (79/79 and 70/73 actual changes). Ordinary three-well success in Sol removes topology necessity. Infinite horned-sphere claims and physical/AI superiority are not established.",
+      "evidence": "https://github.com/anttiluode/AlexandersBrain/blob/516b0bc56137cc84631b2374897f3ba2169ef14d/README.md",
+      "tags": [
+        "2026-10-21",
+        "winding-memory",
+        "phase-diffusion",
+        "weak-link",
+        "heat-gate",
+        "ordinary-controls",
+        "supplied-address",
+        "finite-resolution"
+      ],
+      "era": "October 21: a finite barrier and a local write gate",
+      "era_order": 141
+    },
+    {
+      "id": "AlexandersBrainSol",
+      "url": "https://github.com/anttiluode/AlexandersBrainSol",
+      "family": "field-computation",
+      "status": "ledger",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A 64-site winding cell and then a three-cell array test deliberate replacement, local read cost and selective access against discrete-address and ordinary three-well controls.",
+      "survived": "First gate: 240/240 replacements and 240/240 closed retentions, with no monitored damage across 100 reads per history. The independently locked array: 120/120 writes, 240/240 protected bystander exposures, 120/120 correct whole-array endpoints and 357/360 five-query votes per trace/snap/oracle arm. Exact-source full replay compares 588,917 floats with zero difference.",
+      "killed": "First single-query gate fails at 92.72%; later five-query criteria do not rescue it. Ordinary wells match or exceed both winding tests. Analog address benefit fails with zero gain over a discrete latch. Cue ports, reset/trigger markers and command values are supplied; diagnostic arrays preclude a physical two-bit implementation claim. No topology necessity, learned routing, energy advantage or scalable associative recall is demonstrated.",
+      "evidence": "https://github.com/anttiluode/AlexandersBrainSol/blob/eb02232c615ead73f1cd731ea518a3707489b849/docs/addressed_review.md",
+      "tags": [
+        "2026-10-21",
+        "selective-replacement",
+        "winding-memory",
+        "ordinary-controls",
+        "discrete-latch",
+        "failed-analog-benefit",
+        "five-query-read",
+        "independent-replay"
+      ],
+      "era": "October 21: addressed memory works; richer state earns no benefit",
+      "era_order": 142
+    }
+  ],
+  "edges": [
+    {
+      "source": "VMNClaude",
+      "target": "AlexandersBrain",
+      "type": "converges",
+      "confidence": "high",
+      "why": "AlexandersBrain explicitly starts from VMNClaude phase drift and read disturbance, then tests winding barriers rather than claiming code inheritance.",
+      "evidence": "https://github.com/anttiluode/AlexandersBrain/blob/516b0bc56137cc84631b2374897f3ba2169ef14d/README.md"
+    },
+    {
+      "source": "BrainBoxClaude",
+      "target": "AlexandersBrain",
+      "type": "converges",
+      "confidence": "high",
+      "why": "AlexandersBrain names BrainBoxClaude as motivation; local heat later supplies an engineered access gate. The traffic-driven learning loop remains unbuilt.",
+      "evidence": "https://github.com/anttiluode/AlexandersBrain/blob/516b0bc56137cc84631b2374897f3ba2169ef14d/README.md"
+    },
+    {
+      "source": "BrainBoxSol",
+      "target": "AlexandersBrainSol",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The design explicitly responds to BrainBoxSol local slowness retaining old traces while resisting replacement; a temporary access gate addresses the component question.",
+      "evidence": "https://github.com/anttiluode/AlexandersBrainSol/blob/eb02232c615ead73f1cd731ea518a3707489b849/README.md"
+    },
+    {
+      "source": "AlexandersBrainSol",
+      "target": "AlexandersBrain",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Claude Part 2 explicitly takes Sol gated writing into 2-D and an array. This is conceptual/mechanistic convergence, not a code fork or matched performance comparison.",
+      "evidence": "https://github.com/anttiluode/AlexandersBrain/blob/516b0bc56137cc84631b2374897f3ba2169ef14d/README.md"
+    },
+    {
+      "source": "AlexandersBrain",
+      "target": "AlexandersBrainSol",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The addressed follow-up reads Claude finite-gap and memory comparison, corrects gate-only erasure, and tests repeated selective updates with a conventional control.",
+      "evidence": "https://github.com/anttiluode/AlexandersBrainSol/blob/eb02232c615ead73f1cd731ea518a3707489b849/docs/addressed_updates.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "oct21-barrier-global-value-local-gate",
+      "title": "A barrier holds; a global value and local gate replace",
+      "description": "Small winding and ordinary multi-well memories can perform write/hold/read/replace. Engineered access succeeds without establishing topology necessity, learned allocation or a product advantage.",
+      "nodes": [
+        "BrainBoxSol",
+        "BrainBoxClaude",
+        "AlexandersBrain",
+        "AlexandersBrainSol"
+      ]
+    },
+    {
+      "id": "oct21-controls-trim-memory-claims",
+      "title": "Let an ordinary control remove the stronger claim",
+      "description": "Noise-aware writing fails; retention can resist replacement; ordinary wells match winding cells and an address symbol matches an analog trace. Record useful mechanisms separately from unsupported necessity and efficiency claims.",
+      "nodes": [
+        "BrainBoxSol",
+        "BrainBoxClaude",
+        "AlexandersBrain",
+        "AlexandersBrainSol"
+      ]
+    },
+    {
+      "id": "oct21-noise-changes-order-not-universal-time",
+      "title": "Noise changes order; slowing depends on the phase and observable",
+      "description": "PhiWorld effective mode frequency and prescribed propagation coefficient respond differently inside a domain and in the melted sea. A slow mode near melting is a model diagnostic, not physical mass creation or relativistic time dilation.",
+      "nodes": [
+        "phi-world-theory",
+        "BrainBoxClaude",
+        "BrainBoxSol"
+      ]
+    }
+  ]
+}
