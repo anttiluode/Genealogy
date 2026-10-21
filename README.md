@@ -23,6 +23,23 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
+## 2026-10-21 — Barriers, gates and measured closure
+
+**[Explore today on the wall](https://anttiluode.github.io/Genealogy/#memory-closure-oct21)** · **[Read the field note](docs/reviews/2026-10-21-memory-closure.md)** · [Source-linked pass](data/passes/october-21-barriers-gates-and-measured-closure.json)
+
+Today's pass adds **[AlexandersBrain](https://github.com/anttiluode/AlexandersBrain)** and **[AlexandersBrainSol](https://github.com/anttiluode/AlexandersBrainSol)**, updates the two existing BrainBox cards, and records eight evidence entries. It closes specific questions without turning familiar memory components into a new learning paradigm.
+
+| Result | What it permits |
+| --- | --- |
+| BrainBox drift training reproduces; both noise-aware benefit claims fail. Sol repair reduces independent-drift target error by 95.77%; Claude's separate homeostat protocol removes 97–99% of damage. | Active interface repair works in the tested regimes; the two protocols are not pooled. |
+| Sol local slowness retains 99.79% versus 96.77%, but replacement falls to 65.10% versus 100%. | Persistence and selective replacement are distinct requirements; the joint benefit gate fails. |
+| Claude's four-ring array: 120/120 material-gated and 117/120 heat-gated target requests, 0/360 endpoint crosstalk each with per-hole flux. | An engineered global value and local gate work. Requests include no-ops (79/79 and 70/73 actual changes), and reading uses a full-field oracle. |
+| Sol's three-cell array: 120/120 replacements, 240/240 protected bystanders and 357/360 five-query votes. Discrete latch ties analog trace; ordinary wells are perfect. | A working selective-access component, with no demonstrated topology or analog-address necessity. The first 92.72% single-query gate remains failed. |
+
+Claude's Noise Sea measurements distinguish the melted sea from ordered domains: the effective-frequency/clock trends reverse, and a slow mode appears near melting. This is classical model behavior, not physical mass creation or relativistic time dilation. One correction to the comparison is preserved: Sol's first gate-only arm erased all 240 states to zero; 33.33% was requested-label accuracy, not random thirds.
+
+The open question is **traffic-driven choice of where and what to retain**, tested against a conventional continual learner on an external task at matched storage and query/compute cost. Neither repository has built that loop. Convergence on a familiar memory design does not establish near-optimality or product value. The [upstream array replay](https://github.com/anttiluode/AlexandersBrainSol/blob/eb02232c615ead73f1cd731ea518a3707489b849/results/addressed_updates/independent-audit.json) compares 588,917 floats with zero difference; simulations were not rerun for this atlas pass.
+
 ## 2026-10-20 — BrainBox: material memory, temporal transmission and teaching
 
 **[Explore the BrainBox trail on the wall](https://anttiluode.github.io/Genealogy/#brainbox-oct20)** · **[Read the field note](docs/reviews/2026-10-20-brainbox.md)** · [Source-linked pass](data/passes/october-20-brainbox-material-memory-and-teaching.json)

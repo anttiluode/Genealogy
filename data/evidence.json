@@ -8909,5 +8909,359 @@
     ],
     "held_out": false,
     "external_data": false
+  },
+  {
+    "id": "oct21-bridge-training-reproduced-negative",
+    "node": "BrainBoxSol",
+    "claim": "Full locked training reproduces both failed corruption-training benefit claims.",
+    "design": "Ten fresh devices under source lock 7cb745c7; paired ordinary/noise-aware writers and repair controls at independent bridge drift sd=0.6. Separate audit reruns all 20 writers, final fields, losses and observed solve counts.",
+    "result": "contradicts",
+    "metrics": [
+      {
+        "name": "mean normalized target error: ordinary / noise-aware / repair / combined",
+        "value": "0.02617034 / 0.02729738 / 0.00110702 / 0.00369595"
+      },
+      {
+        "name": "ordinary drift target-error reduction by repair",
+        "value": 0.9577
+      },
+      {
+        "name": "reproduced final conductances / intermediate losses",
+        "value": "900 / 960"
+      }
+    ],
+    "controls": [
+      "Ordinary and noisy writers have identical observed solve budgets",
+      "Interface-total repair alone and combined",
+      "Preserved unfavorable development and original receipt"
+    ],
+    "limitations": [
+      "Sol repair reduction is 95.77%, distinct from Claude G11 97–99% under another protocol.",
+      "Neither noise training nor combined training/repair passes its declared benefit.",
+      "Numerical training reproduction is independent execution of the locked implementation, not an independent optimizer or new held-out sample."
+    ],
+    "source": "https://github.com/anttiluode/BrainBoxSol/blob/9b7b35aa6204ce2e2d8f6360db2912496232a67f/docs/bridge_robustness.md",
+    "motifs": [
+      "oct21-controls-trim-memory-claims"
+    ],
+    "replication": "Pinned source and committed receipts inspected; not independently rerun for this atlas pass. Published upstream full training audit inspected.",
+    "held_out": true,
+    "external_data": false,
+    "sample": {
+      "unit": "fresh device",
+      "count": 10
+    }
+  },
+  {
+    "id": "oct21-slowness-retains-but-resists-replacement",
+    "node": "BrainBoxSol",
+    "claim": "Local speed feedback retains old traces but fails retention without rewrite cost.",
+    "design": "Ten fresh devices, three history classes, equal-size trace control; reset fast activity before each probe. Locked gate checks baseline-adjusted retention and absolute/relative replacement adequacy.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "delay-60 accuracy",
+        "treatment": 0.9979166666666667,
+        "control": 0.9677083333333333
+      },
+      {
+        "name": "replacement accuracy",
+        "treatment": 0.6510416666666666,
+        "control": 1.0
+      },
+      {
+        "name": "wrong replacements reporting old class",
+        "value": "335/335"
+      }
+    ],
+    "controls": [
+      "Equal-state activity trace",
+      "Uniform and shuffled material",
+      "Noise-only and noise-off"
+    ],
+    "limitations": [
+      "Retention gain is 3.02 points, below locked 10-point benefit minimum.",
+      "Noise-off nearly ties retention; noise is not necessary here, with input-power mismatch explicit.",
+      "Nine continuous probe samples and offline calibration remain supplied; this does not establish waveform necessity or physical mass."
+    ],
+    "source": "https://github.com/anttiluode/BrainBoxSol/blob/9b7b35aa6204ce2e2d8f6360db2912496232a67f/docs/local_slowness.md",
+    "motifs": [
+      "oct21-barrier-global-value-local-gate",
+      "oct21-controls-trim-memory-claims",
+      "oct21-noise-changes-order-not-universal-time"
+    ],
+    "replication": "Pinned source and committed receipts inspected; not independently rerun for this atlas pass. Published upstream full replay inspected.",
+    "held_out": true,
+    "external_data": false,
+    "sample": {
+      "unit": "fresh device",
+      "count": 10
+    }
+  },
+  {
+    "id": "oct21-wave-medium-texture-not-wires",
+    "node": "BrainBoxClaude",
+    "claim": "Routing transmission uses wavelength-scale texture; neither smooth wires nor a clean Bragg mechanism is established.",
+    "design": "G10a coarse/fine decomposition preserves material totals, re-relaxes the field and sweeps frequency on six previously trained media.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "fine-band fraction of material variance",
+        "value": "77–90%"
+      },
+      {
+        "name": "coarse-only transmission",
+        "value": "0.002–0.010"
+      },
+      {
+        "name": "fine-only perfect routing in computed-teacher media",
+        "value": "1/3"
+      }
+    ],
+    "controls": [
+      "Coarse only, fine only, trained medium",
+      "Doubled coarse contrast",
+      "Frequency sweep"
+    ],
+    "limitations": [
+      "Fine-only transmission need not recover correct routing; coarse structure can select the winning output.",
+      "Same saved media are ablated, not a new held-out learning task; low-transmission accuracy can be misleading."
+    ],
+    "source": "https://github.com/anttiluode/BrainBoxClaude/blob/43bd4d42c84d32a4851579834a18c996ef99bb8b/results/g10a_hologram_or_wires.json",
+    "motifs": [
+      "oct21-controls-trim-memory-claims"
+    ],
+    "replication": "Pinned source and committed receipts inspected; not independently rerun for this atlas pass.",
+    "held_out": false,
+    "external_data": false
+  },
+  {
+    "id": "oct21-noise-sea-phase-dependent",
+    "node": "BrainBoxClaude",
+    "claim": "Noise raises effective mass in the melted sea but has the opposite trend inside an ordered domain.",
+    "design": "G12 Langevin PhiWorld noise ladder, kappa 5 and 0; uniform-mode spectral frequency and mean prescribed propagation coefficient are measured separately.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "sea mode frequency at sigma 1 → 6",
+        "value": "0.793 → 3.409"
+      },
+      {
+        "name": "sea mean c² at sigma 1 → 6",
+        "value": "0.167 → 0.079"
+      },
+      {
+        "name": "domain mean c² at sigma 0.1 → 0.4",
+        "value": "0.040 → 0.097"
+      },
+      {
+        "name": "near-melting uniform-mode frequency",
+        "value": 0.20420352248333656
+      }
+    ],
+    "controls": [
+      "Ordered-domain versus melted-sea regimes",
+      "Kappa=0 without clock rule",
+      "Hartree estimates with stated quantitative mismatch"
+    ],
+    "limitations": [
+      "Finite classical simulation; effective mass means mode frequency, not physical mass creation.",
+      "Critical slowing and prescribed propagation coefficient are different observables, not relativistic time dilation.",
+      "No universal noise-improves-memory conclusion; Sol local slowness is a separate model."
+    ],
+    "source": "https://github.com/anttiluode/BrainBoxClaude/blob/43bd4d42c84d32a4851579834a18c996ef99bb8b/results/g12_noise_sea.json",
+    "motifs": [
+      "oct21-noise-changes-order-not-universal-time"
+    ],
+    "replication": "Pinned source and committed receipts inspected; not independently rerun for this atlas pass.",
+    "held_out": false,
+    "external_data": false
+  },
+  {
+    "id": "oct21-finite-winding-barrier-and-read-limit",
+    "node": "AlexandersBrain",
+    "claim": "A small winding alphabet has a barrier; phase drift and finite weak-link limits remain measurable.",
+    "design": "G1b phase-diffusion estimates, G2 local/reference reads, and G3/G4 long finite-gap lifetime checks in a 2-D complex field.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "stationary n=1 gap window in tested geometry",
+        "value": "about 1.5 coherence lengths; drains at gap ≥2"
+      },
+      {
+        "name": "single-read adjacent-level separation",
+        "value": "about 2.2 noise widths"
+      },
+      {
+        "name": "monitored small-integer changes during G2 reads",
+        "value": "0 across 100 reads per tested |n|≤2 at mu_p=0.6"
+      }
+    ],
+    "controls": [
+      "Disk versus ring",
+      "Phase versus winding",
+      "Read strength and gap/temperature/width ladders"
+    ],
+    "limitations": [
+      "No conventional wells control in this repo; Sol ordinary control prevents a topology-necessity claim.",
+      "Finite durations, grid resolution and a small integer alphabet; no realization of infinite wild topology.",
+      "The original 400-time check was superseded by 4000-time results; no indefinite protection or robust single local read is established."
+    ],
+    "source": "https://github.com/anttiluode/AlexandersBrain/blob/516b0bc56137cc84631b2374897f3ba2169ef14d/README.md",
+    "motifs": [
+      "oct21-barrier-global-value-local-gate",
+      "oct21-controls-trim-memory-claims"
+    ],
+    "replication": "Pinned source and committed receipts inspected; not independently rerun for this atlas pass.",
+    "held_out": false,
+    "external_data": false
+  },
+  {
+    "id": "oct21-per-hole-material-and-heat-gates",
+    "node": "AlexandersBrain",
+    "claim": "Per-hole drive removes endpoint crosstalk in supplied-address material and heat gated arrays.",
+    "design": "Four rings, eight seeded replicas, fifteen global-value/local-target requests per replica. Compare whole-box rotation and per-hole flux; full-field winding is read after each operation.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "correct material-gated target requests",
+        "value": "120/120; 79/79 actual changes"
+      },
+      {
+        "name": "correct heat-gated target requests",
+        "value": "117/120; 70/73 actual changes"
+      },
+      {
+        "name": "per-hole endpoint crosstalk",
+        "value": "0/360 for each gate type"
+      },
+      {
+        "name": "material whole-box rotation endpoint crosstalk",
+        "value": "28/360 at R8; 18/360 at R10"
+      }
+    ],
+    "controls": [
+      "Whole-box rotation versus circulation per hole",
+      "Heat without field erasure",
+      "Cold opposite-field and constricted/full-width rings"
+    ],
+    "limitations": [
+      "Targets include no-op requests; counts are not 120 distinct replacements.",
+      "Endpoint full-field oracle checks do not establish a noisy local reader or absence of transient departures.",
+      "Heat run uses full-width rings and a different opening duration; experimenter supplies both address and value."
+    ],
+    "source": "https://github.com/anttiluode/AlexandersBrain/blob/516b0bc56137cc84631b2374897f3ba2169ef14d/results/g6_array_heat_R10_tw1000_holes_Th1.0.json",
+    "motifs": [
+      "oct21-barrier-global-value-local-gate",
+      "oct21-controls-trim-memory-claims"
+    ],
+    "replication": "Pinned source and committed receipts inspected; not independently rerun for this atlas pass.",
+    "held_out": false,
+    "external_data": false,
+    "sample": {
+      "unit": "seeded array replica per gate condition",
+      "count": 8
+    }
+  },
+  {
+    "id": "oct21-single-cell-write-pass-read-fail",
+    "node": "AlexandersBrainSol",
+    "claim": "Deliberate replacement succeeds, but the declared single-query gate fails and ordinary wells match memory operation.",
+    "design": "Ten independent noise batches, 240 transition histories; gated, closed-command, gate-only and idle arms, 100 local queries per history, and ordinary three-well mechanism control.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "gated replacement / closed retention",
+        "value": "240/240 each"
+      },
+      {
+        "name": "histories damaged during 100 queries",
+        "value": "0/240"
+      },
+      {
+        "name": "single-query read accuracy",
+        "value": 0.9271666666666667
+      },
+      {
+        "name": "gate-only final zero winding",
+        "value": "240/240; 33.33% is requested-label accuracy"
+      }
+    ],
+    "controls": [
+      "Closed command, gate-only and idle",
+      "Paired no-probe trajectory",
+      "Ordinary three-well memory",
+      "Secondary five-query analog and symbol summaries"
+    ],
+    "limitations": [
+      "Single-query 95% criterion stays failed; secondary voting cannot rescue it.",
+      "Ordinary control is perfect but energy, noise and dimension are unmatched.",
+      "Aggregate truncation was transparently recovered from checkpoints; damaged prefix and correction preserved."
+    ],
+    "source": "https://github.com/anttiluode/AlexandersBrainSol/blob/eb02232c615ead73f1cd731ea518a3707489b849/results/switching/report.md",
+    "motifs": [
+      "oct21-barrier-global-value-local-gate",
+      "oct21-controls-trim-memory-claims"
+    ],
+    "replication": "Pinned source and committed receipts inspected; not independently rerun for this atlas pass. Upstream independent first-gate replay is separately archived.",
+    "held_out": true,
+    "external_data": false,
+    "sample": {
+      "unit": "independent noise-seed batch",
+      "count": 10
+    }
+  },
+  {
+    "id": "oct21-addressed-array-symbol-suffices",
+    "node": "AlexandersBrainSol",
+    "claim": "Selective repeated updates work, with no benefit from continuous address state or winding topology in this task.",
+    "design": "Source/protocol lock 23b43c4 precedes five fresh noise batches; six three-cell initial histories each, four updates visiting all cells and returning to the first. Shared broadcast value; six paired access policies. Five-query strict symbol majority is primary.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "writes / protected bystander exposures / correct array endpoints per trace,snap,oracle",
+        "value": "120/120 / 240/240 / 120/120"
+      },
+      {
+        "name": "five-query intended-content votes per good policy",
+        "value": "357/360"
+      },
+      {
+        "name": "trace minus snap whole-array gain",
+        "value": 0.0
+      },
+      {
+        "name": "ordinary three-well array operations",
+        "value": "100% writes, protection, array contents and voted reading"
+      },
+      {
+        "name": "independent replay floats / max absolute difference",
+        "value": "588917 / 0"
+      }
+    ],
+    "controls": [
+      "Analog trace versus discrete address latch and oracle",
+      "Wrong-address, all-open and closed policies",
+      "Ordinary three-well array",
+      "Every-step bystander monitor and pre-read write scoring"
+    ],
+    "limitations": [
+      "Five independent batches contain correlated repeated histories; 360 votes use 1800 primary queries per arm.",
+      "Ports, cue reset, trigger and desired values are engineered; no learned address or content selection.",
+      "Diagnostic analog arrays remain outside latch decision path; address-symbol sufficiency is not physical packed two-bit storage.",
+      "Independent cells share only broadcast value; no energy, capacity or topology advantage tested."
+    ],
+    "source": "https://github.com/anttiluode/AlexandersBrainSol/blob/eb02232c615ead73f1cd731ea518a3707489b849/results/addressed_updates/report/report.md",
+    "motifs": [
+      "oct21-barrier-global-value-local-gate",
+      "oct21-controls-trim-memory-claims"
+    ],
+    "replication": "Pinned source and committed receipts inspected; not independently rerun for this atlas pass. Published exact-lock full replay reproduces all raw/compressed receipts and 588,917 floats exactly.",
+    "held_out": true,
+    "external_data": false,
+    "sample": {
+      "unit": "independent noise-seed batch",
+      "count": 5
+    }
   }
 ]

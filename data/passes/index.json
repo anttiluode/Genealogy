@@ -430,5 +430,9 @@
   {
     "path": "october-20-brainbox-material-memory-and-teaching.json",
     "enabled": true
+  },
+  {
+    "path": "october-21-barriers-gates-and-measured-closure.json",
+    "enabled": true
   }
 ]

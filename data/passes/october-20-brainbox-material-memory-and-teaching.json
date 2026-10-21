@@ -13,8 +13,8 @@
       "usefulness": "scientific",
       "confidence": "high",
       "claim": "Persistent positive conductances store experience separately from fast activity; identical later probes can expose that experience and transmit it through a temporal current into a frozen second medium.",
-      "survived": "Locked supervised learning: 4,000/4,000 decisions after activity reset; frozen/erased/traffic-only 50%, shuffled 50.33%. A separate label-free history writer plus offline charge/energy matching and calibrated receiver transmits history at 1,279/1,280 (99.92%); fixed/erased 50%, shuffled 50.70%. Classical transient response models expose differences hidden from static DC. All experiment branches are integrated into main.",
-      "killed": "Reward-only global perturbation learning fails the 80% gate: 75% overall, with the informative reversed mapping at 50% on every fresh seed. Six-parameter linear learning matches supervised accuracy much more cheaply. Raw charge alone transmits history at 100%, and matched-waveform peak at 96.64%; no universal scalar blindness or need for the full waveform is shown. Offline matching and supervised receiver calibration are explicit costs. Local writes do not generally beat global writes; drift protection needs more than phase gating.",
+      "survived": "Locked supervised learning: 4,000/4,000 decisions after activity reset; frozen/erased/traffic-only 50%, shuffled 50.33%. A separate label-free history writer plus offline charge/energy matching and calibrated receiver transmits history at 1,279/1,280 (99.92%); fixed/erased 50%, shuffled 50.70%. Classical transient response models expose differences hidden from static DC. All experiment branches are integrated into main. October 21: exact locked training reproduces 20 writers; repair reduces independent-drift target error by 95.77%. Local-slowness retention is 99.79% versus 96.77% for the equal-state trace.",
+      "killed": "Reward-only global perturbation learning fails the 80% gate: 75% overall, with the informative reversed mapping at 50% on every fresh seed. Six-parameter linear learning matches supervised accuracy much more cheaply. Raw charge alone transmits history at 100%, and matched-waveform peak at 96.64%; no universal scalar blindness or need for the full waveform is shown. Offline matching and supervised receiver calibration are explicit costs. Local writes do not generally beat global writes; drift protection needs more than phase gating. October 21: both corruption-training benefits fail; combined target error exceeds repair alone. Slowness replacement is 65.10% versus 100%, with all errors reading the old class; noise-off nearly ties retention.",
       "evidence": "https://github.com/anttiluode/BrainBoxSol/blob/main/docs/history_waveform.md",
       "tags": [
         "2026-10-20",
@@ -26,7 +26,8 @@
         "supervised-adjoint",
         "failed-reward-gate",
         "scalar-controls",
-        "consolidated"
+        "consolidated",
+        "2026-10-21"
       ],
       "era": "October 20: persistent material and a temporal boundary",
       "era_order": 139
@@ -39,8 +40,8 @@
       "usefulness": "scientific",
       "confidence": "high",
       "claim": "Tests geometry-derived spectral addresses, interface-total stability and label-directed routing in a PhiWorld-derived medium, then moves the teaching interaction into sequential free/nudged/echo phases.",
-      "survived": "Bridge drift and interior drift dissociate address and content; conserving redundant interface totals removes about 94–99% of drift damage in selected weak-bridge settings. Computed-teacher G8b learns a crossing 3×3 mapping on 3/3 independent variational-medium seeds. G9's second-harmonic local signal correlates 0.86–0.92 with a settled computed field-product reference. The sequential teacher learns 7/9 routes on each of two supplied mappings (14/18 combined); re-born fast field retains 6/9, shuffled slow material 1/9 on the primary mapping.",
-      "killed": "G9 misses its ≥2/3-perfect-seeds criterion: 1/3 perfect per mapping. No-clock gets 5/9 routes, so an accuracy advantage is unresolved at three seeds, despite stronger clocked transmission. Labels, clock, phase schedule, global update normalization and total-material projection remain supplied. G8b used incompletely settled fields; its exact-gradient description was corrected. Original PhiWorld linearization is nonreciprocal; the energy-derived variant restores symmetry but measured reciprocity retains 3–4% residual. Fixed slots match PAC over equal spans. Bit-matched snapshots beat drift repair; geometric continual learning loses to matched-rank GPM (48.6% vs 55.3%, 5/5 seeds). No digital-AI advantage established.",
+      "survived": "Bridge drift and interior drift dissociate address and content; conserving redundant interface totals removes about 94–99% of drift damage in selected weak-bridge settings. Computed-teacher G8b learns a crossing 3×3 mapping on 3/3 independent variational-medium seeds. G9's second-harmonic local signal correlates 0.86–0.92 with a settled computed field-product reference. The sequential teacher learns 7/9 routes on each of two supplied mappings (14/18 combined); re-born fast field retains 6/9, shuffled slow material 1/9 on the primary mapping. October 21: G10a identifies wavelength-scale scattering texture rather than smooth wires. G11 redundant-interface repair removes 97–99% of drift damage. G12 separates ordered-domain and melted-sea noise responses.",
+      "killed": "G9 misses its ≥2/3-perfect-seeds criterion: 1/3 perfect per mapping. No-clock gets 5/9 routes, so an accuracy advantage is unresolved at three seeds, despite stronger clocked transmission. Labels, clock, phase schedule, global update normalization and total-material projection remain supplied. G8b used incompletely settled fields; its exact-gradient description was corrected. Original PhiWorld linearization is nonreciprocal; the energy-derived variant restores symmetry but measured reciprocity retains 3–4% residual. Fixed slots match PAC over equal spans. Bit-matched snapshots beat drift repair; geometric continual learning loses to matched-rank GPM (48.6% vs 55.3%, 5/5 seeds). No digital-AI advantage established. October 21: G11 noise-aware writing adds no robustness benefit in its protocol. Neither a clean Bragg grating nor universal noise-created mass/slower time is established; mode frequency and propagation coefficient differ.",
       "evidence": "https://github.com/anttiluode/BrainBoxClaude/blob/main/README.md",
       "tags": [
         "2026-10-20",
@@ -53,7 +54,8 @@
         "three-phase-teacher",
         "second-harmonic",
         "failed-reliability-gate",
-        "negative-digital-controls"
+        "negative-digital-controls",
+        "2026-10-21"
       ],
       "era": "October 20: geometry, reciprocity and teaching inside the medium",
       "era_order": 140

@@ -1388,5 +1388,48 @@
     "notes": [
       "V3's Gate 2 is an explicit failed tracker test; no tracking advantage is inferred from Gate 1."
     ]
+  },
+  {
+    "id": "oct21-traffic-chosen-memory-vs-conventional-learner",
+    "title": "Can the medium choose useful memory writes and beat a conventional continual learner?",
+    "state": "open",
+    "motifs": [
+      "oct21-barrier-global-value-local-gate",
+      "oct21-controls-trim-memory-claims"
+    ],
+    "evidence": [
+      "oct21-slowness-retains-but-resists-replacement",
+      "oct21-per-hole-material-and-heat-gates",
+      "oct21-addressed-array-symbol-suffices"
+    ],
+    "competing_explanations": [
+      "A local traffic/eligibility signal can choose a writable site and retain useful content with less interference under an external task.",
+      "Engineered gates implement ordinary addressed storage; a conventional learner or indexed store matches the behavior more cheaply once allocation and read costs are counted."
+    ],
+    "known": [
+      "Both Alexander implementations still supply the address and desired value.",
+      "Sol analog address trace ties a discrete latch; ordinary wells are perfect on the bounded array task.",
+      "BrainBoxSol persistent slowness retains old traces but fails replacement adequacy."
+    ],
+    "missing_discriminator": "A preregistered external continual-associative-recall task with no experimenter-supplied internal addresses or desired internal states, matching persistent bytes and read/write compute to a conventional learner; report fresh binding acquisition, untouched retention, overwrite accuracy and time.",
+    "candidate_experiment": {
+      "design": "Choose benchmark and conventional baselines before model changes. Supply identical external observation/reward streams, permit every learner to select its own storage, and compare on unseen interference/reversal sequences under fixed bytes and query/compute budgets. Freeze on development seeds before fresh outcomes; include frozen/shuffled traffic and explicit-address upper bounds.",
+      "cost": "A bounded CPU benchmark is feasible; this is a proposal only, with no implementation or performance result.",
+      "outcomes": [
+        {
+          "then": "Retain the bounded learned-allocation mechanism and document which control it beats.",
+          "if": "A traffic-driven writer wins acquisition and untouched retention at matched cost on fresh sequences"
+        },
+        {
+          "then": "Close the advantage claim and retain only the working memory component.",
+          "if": "An ordinary learner or indexed baseline matches or beats it"
+        }
+      ]
+    },
+    "notes": [
+      "The proposal is unbuilt. Re-deriving a memory bank does not establish near-optimality.",
+      "Energy advantage requires an explicit energy model or measurement; operation counts alone are insufficient.",
+      "Task supervision is allowed; hidden experimenter-selected memory addresses or states are not."
+    ]
   }
 ]
