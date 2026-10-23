@@ -2,6 +2,14 @@
 
 This file records interpretation work rather than raw repository inventory. The rule is simple: names are discovery hints, not ancestry evidence. Corrections and failed claims remain visible because they are selection events in the genealogy.
 
+## 2026-10-23 — The binding/WhiteBox convergence; SihtiStack's October 19 return gate
+
+Added four reviewed research cards in **two dated passes**: SihtiStack retroactively beside SihtiBrain on October 19; BindingClaude, BindingSol and WhiteBox on October 23. Added two pass-index entries, four repository census rows (reviewed), eight source/conceptual edges, four motifs, and seven empirical evidence entries with explicit support/limits relations. Genealogy's own same-day source changes are documented here as atlas curation, not as a fifth scientific model. [Full field note](docs/reviews/2026-10-23-binding-whitebox.md).
+
+The sources are not interchangeable. SihtiStack's own README records the nine local/synthetic tests and still calls Qwen pretrained inference *unrun*; SihtiBrain's later consolidation separately reports the user's real Qwen test as in-context **12/12** versus none/return/wrong-city **2/12**, so the return channel is negative, not missing. BindingClaude reports frozen toy branch completion **99.10%** versus unresolved one-shot expected **50%**, but the chain exploits favourable sequential update order, its lookup and gradient baselines limit superiority claims, and S4 post-flip recovery is **1/10**. BindingSol's independently learned one-bit channel succeeds in only **2/5** registered seeds (G1/G2/G3 FAIL), versus the direct MLP's higher mean score. WhiteBox's exact clean-cube parity surrogate has one coefficient of magnitude one, yet noisy teacher agreement is only **97.3–98.7%** and query search saves calls over full enumeration only at **19** inputs; a later fix removed a spurious near-zero branch.
+
+A living, self-revising, visual computational medium is **proposed**, not implemented. The old Fourier EQ, higher-order energy recurrence, learnable/translated constraints, and long-term structural revision must be benchmarked separately before being called one working system. No upstream model or pretrained trial was rerun by this curation.
+
 ## 2026-10-20 — BrainBox: memory, transmission and the conditions for teaching
 
 Added two reviewed repository cards, six documented/conceptual links, three motifs and eight source-linked evidence records, plus a [field note](docs/reviews/2026-10-20-brainbox.md) and landing-wall shortcuts. Both source repositories were consolidated on main with no open PRs.
