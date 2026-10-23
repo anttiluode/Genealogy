@@ -1,0 +1,169 @@
+{
+  "id": "october-23-binding-sol-claude-whitebox",
+  "title": "October 23: binding, frozen completion and black-box translation",
+  "reviewed_at": "2026-10-23",
+  "order": 134,
+  "summary": "Three distinct October 23 experiments, not one successful self-growing AI: BindingClaude's higher-order learned branches pass synthetic discovery and frozen completion/causal-cut gates, but 9/10 post-flip revision seeds fail and the fair SGD/lookup caveats matter; BindingSol's independently built one-bit sender/receiver passes the instrument gate but only 2/5 meet its 4/5 usable-channel, causal and fresh-reader criteria, while matched-parameter direct MLP averages better; WhiteBox recovers a single exact Walsh-Fourier parity branch from each trained toy MLP on the clean Boolean cube and query-searches the same branch, but shows no general black-box circuit equivalence on noisy inputs or intervention-faithful translation. Genealogy records their convergence with October 19 SihtiStack and the older Sihti/Sigh line while keeping their individual failures and information budgets visible. Upstream ledgers read; atlas did not independently rerun model training.",
+  "nodes": [
+    {
+      "id": "BindingClaude",
+      "url": "https://github.com/anttiluode/BindingClaude",
+      "family": "residue-operator",
+      "status": "ledger",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Experiments on pure-synergy toy bits: exact blindness of lower-order features, exhaustive branch selection, random rewiring of higher-order multiplicative dendrite candidates, and Part 3 unlabeled complete-scene coupling discovery followed by masked asynchronous higher-order energy settling and context-specific cuts.",
+      "survived": "Part 3 ledger reports S0 true couplings 10/10 chain and context; S1 covered final chain variable 50% one-shot expected chance to 99.10% after sequential settling; S2 ~99.59% in both contexts; S2b targeted knockout 49.59% while the other context remains 99.59%. Original Part 1 and Part 2 separately document observed branch discovery and exact parity limits.",
+      "killed": "Revision is not robust: only 1/10 post-flip contexts recovered to >=95% within 20,000 additional experiences; other context stays ~99.61%. A favourable fixed update order resolves the chain in the first asynchronous sweep (not proven long relaxation). A lookup catches up at scale, and direct/hybrid MLP comparisons were not equal compute/capacity; 100 gradient updates were chosen after smoke. These are source-reported synthetic results, not natural-image generation, novel biology or general SGD inferiority.",
+      "evidence": "https://github.com/anttiluode/BindingClaude/blob/main/results/PART3_LEDGER.md",
+      "tags": [
+        "2026-10-23",
+        "binding",
+        "dendritic-turnover",
+        "higher-order-parity",
+        "energy-settling",
+        "synthetic-completion",
+        "causal-knockout",
+        "failed-revision",
+        "fair-baselines",
+        "unlabeled-complete-scenes"
+      ],
+      "era": "October 23: discovered relations become causal settling constraints",
+      "era_order": 147
+    },
+    {
+      "id": "BindingSol",
+      "url": "https://github.com/anttiluode/BindingSol",
+      "family": "residue-operator",
+      "status": "negative",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Independent small sender/receiver communication test: a learned discrete one-bit message should let a fresh supervised reader infer a hidden parity rule on previously withheld combinations; 162 combined parameters matched to a direct MLP, five locked seeds and causal erasure/flip controls.",
+      "survived": "G0 leakage, balance and exact-gradient instrument passes; two seeds (41, 203) achieve 100% train, held-out and full-domain communication, and their erased/random-message controls fall to 50%, sign-flip/opposite-world to 0%. Saved per-seed predictions and weights have a verified reload and a resumable run.",
+      "killed": "Registered G1 usable channel, G2 causal use and G3 fresh supervised reader all FAIL at 2/5 qualifying seeds versus 4/5 required. Remaining three seeds plateau at 75% even on training data; the direct 162-parameter MLP averages 90% held-out versus 85% for sender/reader and the linear control 50%. Fresh reader training is supervised, not zero-shot; the finite 32-state experiment does not establish general message transfer or structural discovery. A visual-circuit design PR is proposed separately, not an implemented follow-up.",
+      "evidence": "https://github.com/anttiluode/BindingSol/blob/main/RESULTS.md",
+      "tags": [
+        "2026-10-23",
+        "binding",
+        "one-bit-communication",
+        "finite-task",
+        "sender-receiver",
+        "causal-message-cut",
+        "failed-reliability",
+        "supervised-fresh-reader",
+        "resumable-ledger"
+      ],
+      "era": "October 23: a useful message is not yet a reliable learned channel",
+      "era_order": 148
+    },
+    {
+      "id": "WhiteBox",
+      "url": "https://github.com/anttiluode/WhiteBox",
+      "family": "residue-operator",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A queryable trained 64-tanh-unit MLP is distilled into a sparse explicit Walsh-Fourier parity hypergraph on binary inputs, by exact fast Walsh transform and Kushilevitz-Mansour-style randomized bucket queries; compares the extracted single branch to network behavior on continuous noisy observations.",
+      "survived": "On the clean Boolean cube the thresholded trained T2 and T3 MLPs each have one nonzero recovered three- or four-body coefficient (theta=1; fidelity 1), at n=11,12,19. The one-branch surrogate agrees on 98.7%, 97.3%, 98.3% of noisy tests; its task accuracies 99.3%, 99.1%, 99.1% exceed MLP 98.3%, 97.0%, 97.9%. Query route locates the branch at n=19 with 56,800 queries against 524,288 enumerated inputs; a spurious T3 tiny coefficient was removed by a later final-threshold fix.",
+      "killed": "These constructed tasks have a single exact parity rule; 100% clean-cube Walsh energy is not 100% agreement on noisy real-valued inputs or internal circuit recovery. Query count at n=11/12 (32,800/37,600) exceeds the full 2,048/4,096 cube; the 19-input saving has not established scalable LLM distillation. No teacher-internal causal knockout, settling-machine edit or real-model Välikäsi gate has run here.",
+      "evidence": "https://github.com/anttiluode/WhiteBox/blob/main/README.md",
+      "tags": [
+        "2026-10-23",
+        "black-box-translation",
+        "walsh-fourier",
+        "hypergraph",
+        "query-distillation",
+        "parity",
+        "surrogate-fidelity",
+        "binary-cube",
+        "noise-transfer-limit",
+        "prior-art"
+      ],
+      "era": "October 23: read learned behavior back into an inspectable relation",
+      "era_order": 149
+    }
+  ],
+  "edges": [
+    {
+      "source": "ClaudeRepo1",
+      "target": "BindingClaude",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "BindingClaude explicitly continues ClaudeRepo1's three-piece binding and world.html question, replacing manually supplied conjunction with branch search and nonlinear coincidence.",
+      "evidence": "https://github.com/anttiluode/BindingClaude/blob/main/README.md"
+    },
+    {
+      "source": "Valikasi",
+      "target": "BindingClaude",
+      "type": "converges",
+      "confidence": "high",
+      "why": "BindingClaude's original preregistration explicitly treats Välikäsi's keyed-message question as its motivation; the toy constraints are separate from the original LLM setup.",
+      "evidence": "https://github.com/anttiluode/BindingClaude/blob/main/PREREG.md"
+    },
+    {
+      "source": "Valikasi",
+      "target": "BindingSol",
+      "type": "converges",
+      "confidence": "high",
+      "why": "BindingSol explicitly isolates the Välikäsi question of message usability into a supervised one-bit sender/receiver experiment and does not inherit a decoder from a real model.",
+      "evidence": "https://github.com/anttiluode/BindingSol/blob/main/README.md"
+    },
+    {
+      "source": "BindingClaude",
+      "target": "BindingSol",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Parallel October 23 parity/usable-channel tests, but different mechanisms and information budgets: discrete supervised sender/receiver versus explicit discovery and frozen constraint settling; no source-code inheritance claimed.",
+      "evidence": "https://github.com/anttiluode/BindingSol/blob/main/PREREG.md"
+    },
+    {
+      "source": "BindingClaude",
+      "target": "WhiteBox",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "WhiteBox explicitly trains on BindingClaude T2/T3 worlds and extracts their MLP baselines' Boolean input-output functions into sparse Walsh coefficients, not internal causal pathways.",
+      "evidence": "https://github.com/anttiluode/WhiteBox/blob/main/README.md"
+    },
+    {
+      "source": "SighImageSuper",
+      "target": "BindingClaude",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "BindingClaude Part 3 explicitly invokes SighImageSuper's repeated-feed intuition when proposing nonlinear constraint-based settling; its energy updates are mathematically distinct from the original Fourier EQ, with no code inheritance.",
+      "evidence": "https://github.com/anttiluode/BindingClaude/blob/main/PREREG.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "oct23-binding-discovery-to-settling",
+      "title": "Learned conjunctions can become constraints during inference",
+      "description": "On controlled parity worlds an unsupervised complete-observation search finds multiplicative branches used later for masked sequential completion and selective knockout. The connection between a discovered relation and active completion survives, while update-order robustness, natural-photo transfer and reliable revision do not.",
+      "nodes": [
+        "ClaudeRepo1",
+        "BindingClaude",
+        "Sihti",
+        "SighImageSuper"
+      ]
+    },
+    {
+      "id": "oct23-useful-message-vs-structure",
+      "title": "A known parity rule and a learnable one-bit communication protocol are different gates",
+      "description": "A sender/receiver with shared task loss attains perfect usable messages in only 2/5 seeds and loses to the direct MLP on average. This failure cannot be patched by importing higher-order branch discovery numbers from a separate world; the recipient information budget and frozen/fresh supervision remain visible.",
+      "nodes": [
+        "Valikasi",
+        "BindingSol",
+        "BindingClaude"
+      ]
+    },
+    {
+      "id": "oct23-whitebox-translation-is-behavioral",
+      "title": "A sparse Fourier surrogate explains a function, not necessarily its internals",
+      "description": "For a clean discrete input cube, a dense MLP's Boolean behavior can equal one parity monomial exactly. Noisy off-cube predictions differ and deletion of surrogate rules is not equivalent to intervening on the original network's mechanism. The open bridge is faithful executable editing at matched input interventions, compute, and held-out behavior.",
+      "nodes": [
+        "BindingClaude",
+        "WhiteBox",
+        "Valikasi"
+      ]
+    }
+  ]
+}
