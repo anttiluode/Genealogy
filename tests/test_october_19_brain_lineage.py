@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PASS_ID = "october-19-sihtibrain-to-ai-query-memory"
 RETIRED = {
     "SihtiBrainV2", "SihtibrainV3", "AIBrain", "AIbrainV2",
-    "RealTimeReadWriteClaude", "SihtiStack",
+    "RealTimeReadWriteClaude",
 }
 RECEIPTS = {
     "oct19-sihtibrain-soma-hidden-modes",
@@ -41,6 +41,16 @@ class October19BrainLineageTests(unittest.TestCase):
         self.assertEqual(inventory["SihtiBrain"]["inventory_status"], "reviewed")
         self.assertFalse(RETIRED.intersection(inventory))
         self.assertFalse(RETIRED.intersection(n["id"] for n in self.atlas["nodes"]))
+
+    def test_sihtistack_has_separate_historical_negative_receipt(self):
+        # The consolidated SihtiBrain card still owns its original nine source receipts.
+        # SihtiStack was subsequently unretired on user request to expose its
+        # own distinct frozen-model return gate, NOT the larger brain project.
+        stack = [n for n in self.atlas["nodes"] if n["id"] == "SihtiStack"]
+        self.assertEqual(len(stack), 1)
+        self.assertEqual(stack[0]["pass_id"], "october-19-sihtistack-return-channel")
+        self.assertIn("2/12", stack[0]["killed"])
+        self.assertIn("SihtiStack", {r["name"] for r in self.atlas["repos"]})
 
     def test_all_nine_results_have_rehomed_source_and_real_controls(self):
         evidence = {e["id"]: e for e in self.atlas["evidence"]}
