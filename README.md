@@ -23,7 +23,23 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
-## 2026-10-23 — Binding, explicit relation circuits and WhiteBox translation
+## 2026-10-23 — Confusing Friday: useful missing-information addresses, failed shortcuts and a ghost
+
+**[Explore the Confusing Friday wall](https://anttiluode.github.io/Genealogy/)** · **[Read the complete Friday field note](docs/reviews/2026-10-23-confusing-friday.md)** · [Image + GhostYou source-linked pass](data/passes/october-23-confusing-friday.json) · [Earlier binding/WhiteBox pass](data/passes/october-23-binding-and-whitebox.json)
+
+Six repository lines now have curated cards for Friday: **[BindingClaude](https://github.com/anttiluode/BindingClaude)**, **[BindingSol](https://github.com/anttiluode/BindingSol)**, **[WhiteBox](https://github.com/anttiluode/WhiteBox)**, **[SihtiGraphModel](https://github.com/anttiluode/SihtiGraphModel)**, **[DoDis](https://github.com/anttiluode/DoDis)** and **[GhostYou](https://github.com/anttiluode/GhostYou)**. The first three were already reviewed; today's supplement adds **three missing wall nodes, four lineage links, three motifs and five evidence records**, preserving rather than duplicating the earlier pass.
+
+| Line | Evidence retained, not hype |
+| --- | --- |
+| **BindingClaude / BindingSol / WhiteBox** | Synthetic relational constraints can be found, communication only reliably succeeds in 2/5 seeds, and clean-cube Fourier surrogates are behavior maps rather than causal network diagrams. BindingClaude's context revision still fails 9/10. |
+| **SihtiGraphModel** | Image-specific graph explanation of a frozen CNN at p=.90 retention reaches held-out R² **0.666 / 0.851** on birds #65 / #70, fitted separately. But at p=.50 bird #65 is **0.295** and misses its gate; learned same-tile links do not overlap across birds. |
+| **DoDis v1** | Donor memory + learned binding gives mean pixel MSE **0.01417** on 12 birds versus memory-only **0.01494** and shuffled-binding **0.01438**. A CNN-purpose term raises the bird margin but worsens MSE to **0.01482**. |
+| **DoDis v2** | Introduces **local cross-scale visible-context addresses** for missing Sihti residues. A 100-bird run folder is now committed; the large aggregate file was not numerically verified in this genealogy review, so no v2 improvement is asserted. |
+| **GhostYou** | A standalone Halloween webcam and theremin-style static web toy — an honest practical artifact, not experimental evidence for the binding research. |
+
+The interesting remaining hypothesis: **partial observations may locate missing content in memory without containing that content themselves.** Test it by comparing local cross-band lookup with global donors, same-band-only lookup and masked-mean controls, then ask if learned binding beats a shuffled relation graph on unseen images. The [Friday field note](docs/reviews/2026-10-23-confusing-friday.md) separates classifier explanation, actual image reconstruction, and a user-facing creative tool.
+
+### Earlier on Friday — Binding, explicit relation circuits and WhiteBox translation
 
 **[Explore the updated genealogy](https://anttiluode.github.io/Genealogy/)** · **[Read the October 23 field note](docs/reviews/2026-10-23-binding-whitebox.md)** · [Binding/WhiteBox source pass](data/passes/october-23-binding-and-whitebox.json) · [Retroactive October 19 SihtiStack pass](data/passes/october-19-sihtistack-return-channel.json)
 
