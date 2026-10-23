@@ -836,6 +836,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "ClaudeRepo1",
+    "url": "https://github.com/anttiluode/ClaudeRepo1",
+    "default_branch": "main",
+    "size": 624,
+    "visibility": "public",
+    "description": "Opus 55 ",
+    "created_at": "2026-10-22T08:32:47Z",
+    "updated_at": "2026-10-22T17:38:30Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "ClaudesBaby",
     "url": "https://github.com/anttiluode/ClaudesBaby",
     "default_branch": "main",
@@ -858,17 +869,6 @@
     "inventory_status": "reviewed"
   },
   {
-    "name": "Clockfield-Anti-Radar-Jamming-Attention",
-    "url": "https://github.com/anttiluode/Clockfield-Anti-Radar-Jamming-Attention",
-    "default_branch": "main",
-    "size": 7,
-    "visibility": "public",
-    "description": "Perhaps is jamming resistant. ",
-    "created_at": "2026-03-31T04:35:35Z",
-    "updated_at": "2026-03-31T04:38:20Z",
-    "inventory_status": "unread"
-  },
-  {
     "name": "Clockfield_Gemini",
     "url": "https://github.com/anttiluode/Clockfield_Gemini",
     "default_branch": "main",
@@ -877,6 +877,17 @@
     "description": "Sonnet compares our clockfield theory to scientists growing crystals inside neurons.",
     "created_at": "2026-04-08T17:00:55Z",
     "updated_at": "2026-04-08T17:01:36Z",
+    "inventory_status": "unread"
+  },
+  {
+    "name": "Clockfield-Anti-Radar-Jamming-Attention",
+    "url": "https://github.com/anttiluode/Clockfield-Anti-Radar-Jamming-Attention",
+    "default_branch": "main",
+    "size": 7,
+    "visibility": "public",
+    "description": "Perhaps is jamming resistant. ",
+    "created_at": "2026-03-31T04:35:35Z",
+    "updated_at": "2026-03-31T04:38:20Z",
     "inventory_status": "unread"
   },
   {
@@ -1958,17 +1969,6 @@
     "inventory_status": "unread"
   },
   {
-    "name": "GeometricNeuron10",
-    "url": "https://github.com/anttiluode/GeometricNeuron10",
-    "default_branch": "main",
-    "size": 1391,
-    "visibility": "public",
-    "description": "Weird take by opus. ",
-    "created_at": "2026-06-27T15:45:27Z",
-    "updated_at": "2026-06-27T17:33:20Z",
-    "inventory_status": "reviewed"
-  },
-  {
     "name": "GeometricNeuron_V20",
     "url": "https://github.com/anttiluode/GeometricNeuron_V20",
     "default_branch": "main",
@@ -1977,6 +1977,17 @@
     "description": "A curation of older ones by opus 48",
     "created_at": "2026-06-30T02:53:15Z",
     "updated_at": "2026-07-01T05:25:11Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "GeometricNeuron10",
+    "url": "https://github.com/anttiluode/GeometricNeuron10",
+    "default_branch": "main",
+    "size": 1391,
+    "visibility": "public",
+    "description": "Weird take by opus. ",
+    "created_at": "2026-06-27T15:45:27Z",
+    "updated_at": "2026-06-27T17:33:20Z",
     "inventory_status": "reviewed"
   },
   {
@@ -2990,6 +3001,17 @@
     "created_at": "2026-07-15T18:49:35Z",
     "updated_at": "2026-07-15T18:52:14Z",
     "inventory_status": "unread"
+  },
+  {
+    "name": "ModelImage",
+    "url": "https://github.com/anttiluode/ModelImage",
+    "default_branch": "main",
+    "size": 91,
+    "visibility": "public",
+    "description": "Sol repo",
+    "created_at": "2026-10-22T14:57:41Z",
+    "updated_at": "2026-10-22T17:33:52Z",
+    "inventory_status": "reviewed"
   },
   {
     "name": "moire-neural-network",
@@ -4290,6 +4312,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "SihtiImageModel5",
+    "url": "https://github.com/anttiluode/SihtiImageModel5",
+    "default_branch": "main",
+    "size": 625,
+    "visibility": "public",
+    "description": "Opus",
+    "created_at": "2026-10-22T06:54:04Z",
+    "updated_at": "2026-10-22T08:09:10Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "SihtiMuisti",
     "url": "https://github.com/anttiluode/SihtiMuisti",
     "default_branch": "main",
@@ -4906,6 +4939,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "The_Ping_And_The_Listener",
+    "url": "https://github.com/anttiluode/The_Ping_And_The_Listener",
+    "default_branch": "main",
+    "size": 200,
+    "visibility": "public",
+    "description": "A paper that fell out of recent papers inspired by some past thoughts and paper 'Action potential waveforms are state dependent' by Burgos & al. Opus 5.5 repo. ",
+    "created_at": "2026-09-26T07:06:34Z",
+    "updated_at": "2026-09-26T07:10:59Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "The-Aether-Of-Time",
     "url": "https://github.com/anttiluode/The-Aether-Of-Time",
     "default_branch": "main",
@@ -4937,17 +4981,6 @@
     "created_at": "2026-02-12T06:59:37Z",
     "updated_at": "2026-02-12T09:18:42Z",
     "inventory_status": "unread"
-  },
-  {
-    "name": "The_Ping_And_The_Listener",
-    "url": "https://github.com/anttiluode/The_Ping_And_The_Listener",
-    "default_branch": "main",
-    "size": 200,
-    "visibility": "public",
-    "description": "A paper that fell out of recent papers inspired by some past thoughts and paper 'Action potential waveforms are state dependent' by Burgos & al. Opus 5.5 repo. ",
-    "created_at": "2026-09-26T07:06:34Z",
-    "updated_at": "2026-09-26T07:10:59Z",
-    "inventory_status": "reviewed"
   },
   {
     "name": "TheClutch",

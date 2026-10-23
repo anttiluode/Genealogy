@@ -1,0 +1,151 @@
+{
+  "id": "october-22-living-paper-conjunctions-and-visual-transfer",
+  "title": "October 22: the living paper, self-discovered conjunctions and real-image wall",
+  "reviewed_at": "2026-10-22",
+  "order": 133,
+  "summary": "Three independent October 22 image mechanisms: SihtiImageModel5 carries a confidence-weighted remembered image across occlusion, detects foreign pasts and fails the full precommitted memory-inside-energy advantage; ClaudeRepo1 rectifies Sihti bands, corrects its non-independent photographic holdout and shows twenty toy learners can self-select a triple by masked self-prediction, while conventional ridge controls still tie on supplied features; ModelImage progresses from a jigsaw to genuinely absent-pixel generation and hierarchical competitive residues, yet its held-out natural photographs are better completed by plain interpolation. Synthetic successes and source-audit corrections are preserved; this is not a natural-image generative model or a demonstrated biological learning law. Results and receipts were read from upstream; this atlas did not rerun them.",
+  "nodes": [
+    {
+      "id": "SihtiImageModel5",
+      "url": "https://github.com/anttiluode/SihtiImageModel5",
+      "family": "residue-operator",
+      "status": "ledger",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Adds motion-aligned, confidence-weighted persistent image state and a likelihood-ratio consistency gate to Model 4's frozen local patch energy; tests identical-last-frame twins, foreign history and memory-as-energy versus simple history pasting.",
+      "survived": "Under 48 long and 48 short held-out-image sequences, remembered history changes completion under identical last images (twin own-truth closer 100%). Foreign history is switched off to match the last-frame-only answer; long-hole MSE is 0.0000764 versus 0.000106 for pasting remembered pixels. History-conditioned response to a local ping is about 23x smaller, an exact model operator check.",
+      "killed": "The full preregistered H3 gate fails: short-hole paper/paste ratio 0.980, confidence interval 0.88-1.03, not <=0.97. Patch-state improvement H1b misses +10-point gate (79.2% to 88.6%). Changes entirely hidden behind the occluder cannot be detected; static scenes, translations, tiny grayscale photographs and known noise prevent cortex/world-model claims.",
+      "evidence": "https://github.com/anttiluode/SihtiImageModel5/blob/main/README.md",
+      "tags": [
+        "2026-10-22",
+        "sihti",
+        "living-paper",
+        "image-energy",
+        "motion-memory",
+        "prediction-residue",
+        "trust-gate",
+        "failed-h3",
+        "occluded-history"
+      ],
+      "era": "October 22: memory changes the medium only when believed",
+      "era_order": 144
+    },
+    {
+      "id": "ClaudeRepo1",
+      "url": "https://github.com/anttiluode/ClaudeRepo1",
+      "family": "residue-operator",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Tests nonlinear rectified cross-scale image relations, memory-dependent completion and the discovery of three-piece conditional structure by self-predictive competition and rewiring; provides a readable browser world and an unrun natural-image logical-anomaly inspector.",
+      "survived": "A1 nonlinear rectified relations separate real crops from phase-scrambles (AUC 0.87 versus signed 0.50). A controlled contrastive-association world gets the same visible image right under two learned histories, but pixel ridge ties. A supplied three-way feature gets 100% while pairwise features get 50%. Subsequently 20/20 rewiring learners discover a three-slot eye-eye-mouth relation on synthetic glyph worlds (median 250 observations), achieve 100% covered-mouth accuracy, versus approximately 50% for the linear pairwise control.",
+      "killed": "A2 typicality gate fails (AUC 0.40). A2b's 0.78 fresh-source claim is withdrawn: skimage cat aliases training chelsea. Untrained all-ones weights tie learned coactivation on one discrimination; contrastive ridge also ties learned associations; a supplied product solves parity trivially. World demo uses known 3x3 slots, glyphs and fixed noise; natural-photo inspector is specified, not benchmarked on MVTec LOCO. Fast/slow persistence Gate B was not built.",
+      "evidence": "https://github.com/anttiluode/ClaudeRepo1/blob/main/README.md",
+      "tags": [
+        "2026-10-22",
+        "sihti",
+        "rectified-relations",
+        "source-alias-correction",
+        "three-way-parity",
+        "masked-self-prediction",
+        "competitive-rewiring",
+        "ridge-control",
+        "synthetic-toy",
+        "unrun-inspector"
+      ],
+      "era": "October 22: experience identifies a missing conjunction in a toy world",
+      "era_order": 145
+    },
+    {
+      "id": "ModelImage",
+      "url": "https://github.com/anttiluode/ModelImage",
+      "family": "residue-operator",
+      "status": "ledger",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "An inspectable browser image assembler advances from shuffled 6x6 tile assignment to generated missing 16x16 motif patches and then competitive coarse/mid/fine residue codebooks with spatially flexible support hypotheses, visible-patch self-check and held-out natural-image tests.",
+      "survived": "V1's learned assignment improves over untrained seam-only jigsaws on exploratory face/city synthetic examples. V2's truly masked synthetic mouth completion scores 100/100 per world versus 50/100 for one-support controls after 360 scenes, without the hidden target entering inference. V3 has exact additive 2x2->4x4->8x8 transforms before learned quantization; a synthetic shifted-support fixture improves from rigid 2/4 to flexible 4/4. Trust gating refuses low-quality real-image proposals.",
+      "killed": "On 24 masked tests from four entirely unseen photographs, V3 two-support MSE 0.03756, one-support 0.03222 and simple interpolation 0.00916; trust chooses interpolation in all 24. On 60 synthetic V3 tests the two-support complete model 0.09019 also loses to interpolation 0.05814. Garden jigsaws are unstable; patch dictionaries and coarse-only conditionals do not yet learn transferable object geometry, scale, or high-frequency detail. Synthetic V2 success is not natural-image generation.",
+      "evidence": "https://github.com/anttiluode/ModelImage/blob/main/README.md",
+      "tags": [
+        "2026-10-22",
+        "sihti",
+        "browser-lab",
+        "image-assembly",
+        "generative-completion",
+        "multiscale-residue",
+        "competitive-prototypes",
+        "deformable-relations",
+        "real-photo-negative",
+        "interpolation-baseline"
+      ],
+      "era": "October 22: transparent generative machinery meets a real-image ceiling",
+      "era_order": 146
+    }
+  ],
+  "edges": [
+    {
+      "source": "Sihtiimagemodel4",
+      "target": "SihtiImageModel5",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Model 5 explicitly vendors Model 4's frozen local patch-energy machinery and adds state transport, trust and a history energy term.",
+      "evidence": "https://github.com/anttiluode/SihtiImageModel5/blob/main/README.md"
+    },
+    {
+      "source": "SihtiImageModel5",
+      "target": "ClaudeRepo1",
+      "type": "converges",
+      "confidence": "high",
+      "why": "ClaudeRepo1 explicitly takes Sihti Model 5's living-paper intuition into a browser experiment and tests whether nonlinear relationships among Sihti scale bands require learning.",
+      "evidence": "https://github.com/anttiluode/ClaudeRepo1/blob/main/README.md"
+    },
+    {
+      "source": "ClaudeRepo1",
+      "target": "ModelImage",
+      "type": "converges",
+      "confidence": "high",
+      "why": "ModelImage's README explicitly identifies the ClaudeRepo1 higher-order experiments as motivation, then learns fragments and relations with separate browser engines; it is not a code fork.",
+      "evidence": "https://github.com/anttiluode/ModelImage/blob/main/README.md"
+    },
+    {
+      "source": "SihtiImageModel5",
+      "target": "ModelImage",
+      "type": "converges",
+      "confidence": "high",
+      "why": "ModelImage explicitly draws on the SihtiImageModel5 lineage and implements a different held-out visible-patch trust check in its V3 generative completion architecture; the check is not a port of Model 5's likelihood ratio.",
+      "evidence": "https://github.com/anttiluode/ModelImage/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "oct22-history-must-pass-present-evidence",
+      "title": "Remembered visual history must earn trust from what is visible",
+      "description": "Persistent image memory can make the same last frame imply different hidden content. Model 5's likelihood-ratio trust check blocks incompatible history, but unobservable scene changes remain undetectable and simple pasting almost ties memory inside the energy on partly unseen holes.",
+      "nodes": [
+        "SihtiImageModel5",
+        "ClaudeRepo1",
+        "ModelImage"
+      ]
+    },
+    {
+      "id": "oct22-learn-conjunction-not-supply-product",
+      "title": "Discover the useful conjunction instead of handing over the product",
+      "description": "Three-way parity is inaccessible to ordinary linear/pairwise features yet trivial when a cubic feature is supplied. ClaudeRepo1's bounded self-prediction rewiring discovers the relevant three-piece group on synthetic glyph worlds; ridge with supplied features and scaffolding remain essential controls.",
+      "nodes": [
+        "ClaudeRepo1",
+        "ModelImage"
+      ]
+    },
+    {
+      "id": "oct22-visual-parts-synthetic-to-real-wall",
+      "title": "A learned synthetic visual alphabet is not natural-image transfer",
+      "description": "ModelImage learns relocatable atoms and conditional patch completion in small synthetic worlds. Its three-band competitive V3 transforms are invertible before quantization, but learned reconstruction loses to untrained interpolation on held-out photographs; multiscale alignment and conditional fine detail remain missing.",
+      "nodes": [
+        "ModelImage",
+        "ClaudeRepo1",
+        "SihtiImageModel5"
+      ]
+    }
+  ]
+}

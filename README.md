@@ -23,6 +23,20 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
+## 2026-10-22 — Living paper, learned conjunctions and the real-image wall
+
+**[Explore the updated genealogy](https://anttiluode.github.io/Genealogy/)** · **[Read the October 22 field note](docs/reviews/2026-10-22-visual-learning.md)** · [Source-linked pass](data/passes/october-22-living-paper-conjunctions-and-visual-transfer.json)
+
+Three source-reviewed cards now connect **[SihtiImageModel5](https://github.com/anttiluode/SihtiImageModel5)**, **[ClaudeRepo1](https://github.com/anttiluode/ClaudeRepo1)** and **[ModelImage](https://github.com/anttiluode/ModelImage)**. Eight evidence ledger entries separate instrument checks, actual learning, failed gates, source corrections and transfer limitations.
+
+| Question | Measured answer |
+| --- | --- |
+| Can remembered experience change the interpretation of an identical obscured frame? | Model 5: yes, but short-hole H3 fails against simple paste memory (ratio **0.980**; gate ≤0.97); correct-history trust and foreign-history rejection work in the tested scenes. |
+| Can the learner find the missing three-way relation rather than receive its product feature? | ClaudeRepo1: **20/20 synthetic learners** find the triplet and get **100%** masked-mouth accuracy; ordinary pairwise ~50%. Earlier supplied-product gate is textbook parity and ridge with the product ties. |
+| Does an interpretable multiscale atom model transfer to unseen photographs? | ModelImage V2: **100/100** synthetic masked mouths per world; V3: learned two-support MSE **0.03756** against **0.00916** for plain interpolation on 24 masked photo tests. |
+
+The source audit matters: ClaudeRepo1's original A2b “fresh photographs” claim was withdrawn because `cat` is `chelsea`, and untrained weights match its simple cross-scale drive. ModelImage's 2×2/4×4/8×8 sieve is invertible **before** lossy dictionary coding, not a proof of accurate learned generation. The open problem is **discovering reusable, aligned multiscale relationships that help predict never-seen pixels on disjoint real photographs at matched storage and compute**. Source results were reviewed, not independently rerun for the atlas.
+
 ## 2026-10-21 — Barriers, gates and measured closure
 
 **[Explore today on the wall](https://anttiluode.github.io/Genealogy/#memory-closure-oct21)** · **[Read the field note](docs/reviews/2026-10-21-memory-closure.md)** · [Source-linked pass](data/passes/october-21-barriers-gates-and-measured-closure.json)

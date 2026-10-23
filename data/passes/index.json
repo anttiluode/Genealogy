@@ -438,5 +438,9 @@
   {
     "path": "october-21-jaannos-gpt2-residue-routing.json",
     "enabled": true
+  },
+  {
+    "path": "october-22-living-paper-conjunctions-and-visual-transfer.json",
+    "enabled": true
   }
 ]

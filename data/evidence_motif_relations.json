@@ -592,5 +592,34 @@
   },
   "oct21-jaannos-local-beats-shuffle-not-fixed": {
     "oct21-jaannos-residue-is-not-decision-value": "documents"
+  },
+  "oct22-model5-history-and-trust": {
+    "oct22-history-must-pass-present-evidence": "supports"
+  },
+  "oct22-model5-full-h3-and-h1b-fail": {
+    "oct22-history-must-pass-present-evidence": "limits",
+    "oct22-visual-parts-synthetic-to-real-wall": "limits"
+  },
+  "oct22-claude-band-relations-source-audit": {
+    "oct22-learn-conjunction-not-supply-product": "documents"
+  },
+  "oct22-claude-parity-supplied-feature": {
+    "oct22-learn-conjunction-not-supply-product": "documents"
+  },
+  "oct22-claude-selfpredictive-branch-discovery": {
+    "oct22-learn-conjunction-not-supply-product": "supports",
+    "oct22-visual-parts-synthetic-to-real-wall": "supports"
+  },
+  "oct22-modelimage-v2-masked-synthetic": {
+    "oct22-learn-conjunction-not-supply-product": "supports",
+    "oct22-visual-parts-synthetic-to-real-wall": "supports"
+  },
+  "oct22-modelimage-v3-natural-transfer-negative": {
+    "oct22-visual-parts-synthetic-to-real-wall": "limits",
+    "oct22-history-must-pass-present-evidence": "limits"
+  },
+  "oct22-modelimage-v3-deformation-and-alignment": {
+    "oct22-learn-conjunction-not-supply-product": "documents",
+    "oct22-visual-parts-synthetic-to-real-wall": "documents"
   }
 }

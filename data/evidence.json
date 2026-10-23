@@ -9405,5 +9405,377 @@
       "unit": "WikiText-2 GPT-2 evaluation sequence (512 autoregressive positions each; correlated within sequence)",
       "count": 16
     }
+  },
+  {
+    "id": "oct22-model5-history-and-trust",
+    "node": "SihtiImageModel5",
+    "claim": "Observed history can disambiguate an identical current view, while a statistical compatibility check can reject an unrelated earlier scene.",
+    "design": "Frozen Model4 energy plus motion-carried remembered image and per-pixel confidence, compared on 48 long+48 short pans of three unseen photographs with identical-last-frame twins and deliberate foreign histories.",
+    "result": "supports",
+    "metrics": [
+      {
+        "name": "twin own-history closer",
+        "value": "100%"
+      },
+      {
+        "name": "foreign history trust on, MSE long",
+        "value": "0.00568 (identical to last-frame only)"
+      },
+      {
+        "name": "foreign history trust off, MSE long",
+        "value": "0.1532"
+      }
+    ],
+    "controls": [
+      "Model 4 last-frame-only",
+      "Foreign history with trust on/off",
+      "True-motion oracle versus estimated motion",
+      "Identical-last-frame twins"
+    ],
+    "limitations": [
+      "Tiny static scenes, 32x32 grayscale, integer shifts, fixed occluder; unseen change exclusively behind the mask is undetectable.",
+      "H1/H2b were predeclared instrument checks, not general model novelty.",
+      "Published source data inspected, not atlas-rerun."
+    ],
+    "source": "https://github.com/anttiluode/SihtiImageModel5/blob/main/README.md",
+    "motifs": [
+      "oct22-history-must-pass-present-evidence"
+    ],
+    "held_out": true,
+    "external_data": true,
+    "sample": {
+      "unit": "last-frame masked photo sequence",
+      "count": 96
+    },
+    "replication": "Upstream precommitted gates and metrics reported in repository; Genealogy did not rerun."
+  },
+  {
+    "id": "oct22-model5-full-h3-and-h1b-fail",
+    "node": "SihtiImageModel5",
+    "claim": "Putting remembered pixels inside patch energy does not achieve the registered advantage for partially previously unseen holes or the required state-choice improvement.",
+    "design": "Compare paper vs strong paste-memory baseline, separate long fully previously seen and short partially unseen holes; compare patch-state agreement.",
+    "result": "contradicts",
+    "metrics": [
+      {
+        "name": "long MSE paper versus paste",
+        "value": "0.0000764 vs 0.000106"
+      },
+      {
+        "name": "short MSE paper versus paste",
+        "value": "0.00236 vs 0.00241"
+      },
+      {
+        "name": "short paper/paste ratio (required <=0.97)",
+        "value": "0.980 (95% CI 0.88-1.03)"
+      },
+      {
+        "name": "correct patch-state match (required +10 points)",
+        "value": "79.2% to 88.6% (+9.3 points)"
+      }
+    ],
+    "controls": [
+      "Strong pasting baseline",
+      "Separate long and short temporal visibility horizons",
+      "Frozen preregistration H1b/H3"
+    ],
+    "limitations": [
+      "Improvement when the entire hole was previously seen is real but mainly denoising; cannot infer a learned lateral transfer mechanism.",
+      "Short sequence CI includes no advantage; no claim about cortical physiology."
+    ],
+    "source": "https://github.com/anttiluode/SihtiImageModel5/blob/main/docs/PREREG.md",
+    "motifs": [
+      "oct22-history-must-pass-present-evidence",
+      "oct22-visual-parts-synthetic-to-real-wall"
+    ],
+    "held_out": true,
+    "external_data": true,
+    "sample": {
+      "unit": "held-out masked photo sequence",
+      "count": 96
+    },
+    "replication": "Gate table verified against repository README, no rerun."
+  },
+  {
+    "id": "oct22-claude-band-relations-source-audit",
+    "node": "ClaudeRepo1",
+    "claim": "A rectified cross-scale coincidence statistic distinguishes phase scrambles, but the original natural-image fresh-source and learned-Hebbian-weight advantage are not supported.",
+    "design": "Band correlations on scikit-image photographs, phase-scrambled and approximate histogram/spectrum controls; readout changes, all-ones/shuffled-weight controls and source-alias audit.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "A1 rectified vs signed phase-control AUC",
+        "value": "0.87 vs 0.50"
+      },
+      {
+        "name": "A2 histogram-matched typicality AUC",
+        "value": "0.40 (FAIL)"
+      },
+      {
+        "name": "A2b drive vs per-band baseline AUC",
+        "value": "0.78 vs 0.56 (fresh-photo claim withdrawn)"
+      },
+      {
+        "name": "untrained all-ones drive AUC",
+        "value": "0.79"
+      }
+    ],
+    "controls": [
+      "Exact power-spectrum-preserving phase scramble",
+      "Approximate histogram/spectrum control with remaining marginal information",
+      "All-ones / shuffled learned weights",
+      "scikit-image cat/chelsea equality audit"
+    ],
+    "limitations": [
+      "Half of original A2b nominally fresh crops share the chelsea training source; corrected full two-source audit unrun.",
+      "Approximate matched controls retain marginal differences; cannot assign all gain to learned multi-band relations.",
+      "A1 is nonlinear statistic, not new physiological evidence."
+    ],
+    "source": "https://github.com/anttiluode/ClaudeRepo1/blob/main/docs/ASTRA_RESULT.md",
+    "motifs": [
+      "oct22-learn-conjunction-not-supply-product"
+    ],
+    "held_out": false,
+    "external_data": true,
+    "replication": "Read upstream source correction and reported tests; no atlas rerun."
+  },
+  {
+    "id": "oct22-claude-parity-supplied-feature",
+    "node": "ClaudeRepo1",
+    "claim": "Three-way product access solves a constructed parity completion test, but providing the product is most of the answer and ordinary ridge with that feature ties.",
+    "design": "Five fixed seeds; opposite balanced three-patch worlds, 64 training pairs per environment, 32 test cues/seed; held-out perturbations with known slots and template orientation readout.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "pairwise / linear ridge accuracy",
+        "value": "50% / 50%"
+      },
+      {
+        "name": "three-way feature contrastive learning",
+        "value": "100%"
+      },
+      {
+        "name": "ordinary ridge plus product feature",
+        "value": "100%"
+      },
+      {
+        "name": "whole-image descriptor diagnostic",
+        "value": "49.375%"
+      }
+    ],
+    "controls": [
+      "Pairwise only",
+      "Linear ridge",
+      "Product-feature ridge",
+      "Label reassignment and swapped world weights"
+    ],
+    "limitations": [
+      "The useful cubic feature, grouping, readout and template bank were supplied by design.",
+      "Held-out nuisance values are not unseen logical combinations.",
+      "This does not establish an advantage over nonlinear supervised learning."
+    ],
+    "source": "https://github.com/anttiluode/ClaudeRepo1/blob/main/docs/THREE_PIECE_RESULT.md",
+    "motifs": [
+      "oct22-learn-conjunction-not-supply-product"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "sample": {
+      "unit": "independent learned seed",
+      "count": 5
+    },
+    "replication": "Upstream report says deterministic rerun matched receipt; not independently rerun in Genealogy."
+  },
+  {
+    "id": "oct22-claude-selfpredictive-branch-discovery",
+    "node": "ClaudeRepo1",
+    "claim": "A bounded self-prediction and rewiring rule discovers a three-slot relationship in a known-position synthetic glyph world rather than requiring the group feature to be manually supplied.",
+    "design": "20 learners, 10 seeds/world, 3000 experiences each, 400 fresh masked-mouth scenes per learner; rewire branches that cannot self-predict; fixed 3x3 slots and two glyphs per slot.",
+    "result": "supports",
+    "metrics": [
+      {
+        "name": "learners finding triple",
+        "value": "20/20"
+      },
+      {
+        "name": "observations before triple found",
+        "value": "median 250 (range 62-1121)"
+      },
+      {
+        "name": "held-out covered-mouth accuracy",
+        "value": "100% per learner"
+      },
+      {
+        "name": "pairwise linear / erased",
+        "value": "49.9% / 50%"
+      }
+    ],
+    "controls": [
+      "Pairs-only linear delta learner with copy-world positive control",
+      "Learned links severed",
+      "Learning erased",
+      "Mouth never observed in training",
+      "Same visible input, opposite learned environments"
+    ],
+    "limitations": [
+      "Known object slots, fixed 3x3 geometry, supplied simple image primitives and calibrated pixel noise.",
+      "Search only among 84 possible triplets and pairs; no real-image scalability or matched strong nonlinear model demonstrated.",
+      "Receipt is upstream, not Genealogy-reexecuted."
+    ],
+    "source": "https://github.com/anttiluode/ClaudeRepo1/blob/main/results/world/receipt.json",
+    "motifs": [
+      "oct22-learn-conjunction-not-supply-product",
+      "oct22-visual-parts-synthetic-to-real-wall"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "sample": {
+      "unit": "independent learner",
+      "count": 20
+    },
+    "replication": "Repo's 20-learner receipt and README read; no atlas rerun."
+  },
+  {
+    "id": "oct22-modelimage-v2-masked-synthetic",
+    "node": "ModelImage",
+    "claim": "V2 can predict and generate absent synthetic face patches from learned position-independent codewords and two-context associations.",
+    "design": "360 complete synthetic training scenes per world and 100 new masked-mouth scenes, translated coarse patches; hidden target removed from inference; compare one-context and shuffled-experience controls.",
+    "result": "supports",
+    "metrics": [
+      {
+        "name": "A/B masked mouth success 2-context",
+        "value": "100/100 per world"
+      },
+      {
+        "name": "A/B one-context success",
+        "value": "50/100 per world"
+      },
+      {
+        "name": "shuffled teaching masked-pixel MSE",
+        "value": "0.0655 vs learned ~0.000012"
+      }
+    ],
+    "controls": [
+      "One-context reader",
+      "Rearranged experience with same patch alphabet",
+      "Copy-world positive control",
+      "Hidden pixel nonleakage identity check"
+    ],
+    "limitations": [
+      "Tiny fixed motif vocabulary with engineered patch grid and translation at 16-pixel increments.",
+      "Exploratory synthetic benchmark; earlier 80-lesson run failed and no natural-image transfer is claimed."
+    ],
+    "source": "https://github.com/anttiluode/ModelImage/blob/main/README.md",
+    "motifs": [
+      "oct22-learn-conjunction-not-supply-product",
+      "oct22-visual-parts-synthetic-to-real-wall"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "sample": {
+      "unit": "masked synthetic scene per world",
+      "count": 100
+    },
+    "replication": "Repo's recorded benchmark, no independent atlas rerun."
+  },
+  {
+    "id": "oct22-modelimage-v3-natural-transfer-negative",
+    "node": "ModelImage",
+    "claim": "V3's multiscale two-support learned prior is inferior to untrained color interpolation for absent patches on unseen photographs; the trust gate falls back to interpolation.",
+    "design": "Eight training scikit-image photographs (96 varied crops), four disjoint original test photographs (coffee, Chelsea cat, rocket, Hubble deep field), 12 crops and 24 masked regions.",
+    "result": "contradicts",
+    "metrics": [
+      {
+        "name": "two-support learned hidden MSE",
+        "value": "0.03756"
+      },
+      {
+        "name": "one-support learned hidden MSE",
+        "value": "0.03222"
+      },
+      {
+        "name": "untrained local interpolation MSE",
+        "value": "0.00916"
+      },
+      {
+        "name": "trust-checked MSE",
+        "value": "0.00916 (24/24 rejections)"
+      }
+    ],
+    "controls": [
+      "Single-support learned model",
+      "Coarse-only model 0.03391",
+      "No-training prototype 0.09547",
+      "Interpolation without learning",
+      "Original photograph held out by source"
+    ],
+    "limitations": [
+      "24 tests from four originals, 96x96 image crops, one local interpolation baseline; no strong neural comparator.",
+      "Trust is a heuristic measured on visible probes, and rejecting every proposal does not demonstrate generative capability.",
+      "Site tests rely on scikit-image gallery; user photos not evaluated here."
+    ],
+    "source": "https://github.com/anttiluode/ModelImage/blob/main/README.md",
+    "motifs": [
+      "oct22-visual-parts-synthetic-to-real-wall",
+      "oct22-history-must-pass-present-evidence"
+    ],
+    "held_out": true,
+    "external_data": true,
+    "sample": {
+      "unit": "masked region on new-source test photo",
+      "count": 24
+    },
+    "replication": "Upstream held-out tests reported, atlas did not rerun."
+  },
+  {
+    "id": "oct22-modelimage-v3-deformation-and-alignment",
+    "node": "ModelImage",
+    "claim": "Flexible geometric support can save a prepared shifted synthetic conjunction but does not rescue the combined multiscale generative model even on a simpler unseen synthetic face benchmark.",
+    "design": "Explicit shifted-support parity fixture and independent 360-lesson V2-style synthetic face evaluation on 60 new images with masked mouth; compare rigid and flexible supports and ordinary interpolation.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "rigid versus shifted support fixture",
+        "value": "2/4 vs 4/4"
+      },
+      {
+        "name": "combined V3 two-support MSE",
+        "value": "0.09019"
+      },
+      {
+        "name": "one-support MSE",
+        "value": "0.06344"
+      },
+      {
+        "name": "plain interpolation MSE",
+        "value": "0.05814"
+      },
+      {
+        "name": "exact decomposition/reconstruction before quantization",
+        "value": "max error < 2e-7"
+      }
+    ],
+    "controls": [
+      "Rigid offset versus one-cell deformable support",
+      "One-support conditional model",
+      "Simple interpolation",
+      "Exact synthesis/analysis identity"
+    ],
+    "limitations": [
+      "Tiny manufactured parity fixture, not optical flow or unconstrained geometric generalization.",
+      "Coarse 8x8 piece fragmentation and unconditioned finer codeword choice confound the combined failure.",
+      "Invertible additive sieve does not make the learned codebooks lossless."
+    ],
+    "source": "https://github.com/anttiluode/ModelImage/blob/main/README.md",
+    "motifs": [
+      "oct22-learn-conjunction-not-supply-product",
+      "oct22-visual-parts-synthetic-to-real-wall"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "sample": {
+      "unit": "unseen synthetic face image",
+      "count": 60
+    },
+    "replication": "Source README and test scripts read; atlas did not rerun."
   }
 ]
