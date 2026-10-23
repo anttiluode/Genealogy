@@ -1,0 +1,65 @@
+{
+  "id": "october-19-sihtistack-return-channel",
+  "title": "October 19: SihtiStack's attempted return channel",
+  "reviewed_at": "2026-10-23",
+  "order": 128.5,
+  "summary": "Retroactive curation of the 2026-10-19 SihtiStack experiment: algebraic residual accounting and a fixed five-arm Qwen2.5-0.5B return-path harness, with local tests passing. SihtiStack's own README still labels pretrained evaluation unrun, while the later SihtiBrain consolidation records the user's real 12-case run: correct factual context 12/12, fact-free, correct return and wrong-city return 2/12. That is a negative channel result, not a restoration or learned memory. This bridge is conceptual and source-linked; no GPU run was rerun here.",
+  "nodes": [
+    {
+      "id": "SihtiStack",
+      "url": "https://github.com/anttiluode/SihtiStack",
+      "family": "residue-operator",
+      "status": "ledger",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Attempts a causally controlled return path for fact-related hidden-state differences in frozen Qwen2.5-0.5B: save a last-token middle-layer donor-minus-base residue, inject it into a fact-free question, and compare with in-context, wrong-city, random and no-write arms.",
+      "survived": "Additive residual-stream telescoping and non-identifiability are explicit. A layer-14, strength-1, 12-name five-arm harness and nine local/synthetic tests were built; the question of return versus memory loss is isolated from automatic address selection. User's later real pretrained run shows explicit fact-in-context 12/12.",
+      "killed": "A stored activation delta did not restore the fact on the reported user run: fact-free, correct return and wrong-city return each 2/12, despite in-context 12/12. The SihtiStack README itself still calls real weights unrun and does not archive that receipt; the 2/12 result is documented in SihtiBrain's consolidation, not claimed as a committed SihtiStack result. The harness supplies a subject key and omits earlier-token K/V, learns no memory-address policy and establishes no neural credit law.",
+      "evidence": "https://github.com/anttiluode/SihtiBrain/blob/main/docs/RESEARCH_MAP_2026-10-19.md",
+      "tags": [
+        "2026-10-19",
+        "sihti",
+        "qwen",
+        "frozen-transformer",
+        "return-path",
+        "residual-stream",
+        "causal-intervention",
+        "failed-return",
+        "separate-source-receipt",
+        "no-native-addressing"
+      ],
+      "era": "October 19: visible residue does not guarantee useful return",
+      "era_order": 136
+    }
+  ],
+  "edges": [
+    {
+      "source": "SihtiBrain",
+      "target": "SihtiStack",
+      "type": "converges",
+      "confidence": "high",
+      "why": "SihtiStack explicitly cites SihtiBrain's branch/ping return question and later SihtiBrain consolidation archives SihtiStack as a separate frozen-model subexperiment; not a graph/code derivation.",
+      "evidence": "https://github.com/anttiluode/SihtiStack/blob/main/README.md"
+    },
+    {
+      "source": "Sihti",
+      "target": "SihtiStack",
+      "type": "converges",
+      "confidence": "high",
+      "why": "SihtiStack explicitly names SihtiImageModel's saved-residue idea as motivation, translating the return question to a frozen transformer's middle hidden state rather than changing the original Sihti code.",
+      "evidence": "https://github.com/anttiluode/SihtiStack/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "oct19-stored-residue-is-not-returned-answer",
+      "title": "A stored internal difference is not necessarily a usable return channel",
+      "description": "Telescoping residual sums and representational differences do not imply that injecting one last-token donor-minus-base vector restores a fact. In-context 12/12 versus reported return 2/12 distinguishes available language capacity from an ineffective tested activation channel; native addressing and K/V history remain untested.",
+      "nodes": [
+        "SihtiStack",
+        "SihtiBrain",
+        "Sihti"
+      ]
+    }
+  ]
+}
