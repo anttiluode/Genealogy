@@ -1431,5 +1431,48 @@
       "Energy advantage requires an explicit energy model or measurement; operation counts alone are insufficient.",
       "Task supervision is allowed; hidden experimenter-selected memory addresses or states are not."
     ]
+  },
+  {
+    "id": "oct23-local-visible-context-as-content-address",
+    "title": "Can incomplete visible Sihti context locate genuinely missing image detail better than global or same-band lookup?",
+    "state": "open",
+    "motifs": [
+      "oct23-visible-context-addresses-hidden-detail"
+    ],
+    "evidence": [
+      "oct23-dodis-first-bird-completion-and-shuffle",
+      "oct23-dodis-v2-visible-local-address-awaits-outcome-audit",
+      "oct23-sihtigraphmodel-retention-dependent-surrogate"
+    ],
+    "competing_explanations": [
+      "Cross-scale visible neighborhoods supply discriminative addresses for selecting useful local residue donors even when global image similarity is misleading.",
+      "Any small reconstruction improvement comes mostly from donor-pool coverage, smoothness or generic regularization; same-band or whole-image retrieval suffices and learned binding adds little."
+    ],
+    "known": [
+      "DoDis v1 learned binding gives 0.01417 MSE on 12 birds, but shuffled binding reaches 0.01438 versus memory+smoothness 0.01494.",
+      "DoDis v2 changes from whole-image donors to independently addressed local donors, with same-band-only and masked-mean comparators.",
+      "One hundred per-bird v2 receipts and a large aggregate JSON were found in the public run folder, but the aggregate performance has not been verified in this atlas.",
+      "SihtiGraphModel's v3 classifier surrogate fits individual image/mask distributions well at p=.90 yet does not transfer its learned tile locations between its two selected birds."
+    ],
+    "missing_discriminator": "Audit DoDis's already-committed v2 results against its preregistered 100-bird protocol and report paired confidence intervals, leakage checks and outcome by image. If incomplete, rerun exactly the locked design before introducing new hyperparameters.",
+    "candidate_experiment": {
+      "design": "On the same 100 held-out test-bird masks and donor bank, compare masked mean, whole-image donors, same-band-only local addresses, cross-scale local addresses, local+learned binding, local+shuffled binding and local+CNN purpose; inspect stored per-image MSE, true CNN margin, provenance and runtime, with paired confidence intervals. Preserve v1 as a separate 12-bird result.",
+      "cost": "Low to moderate: first parse and validate the published 100-bird results.json; new GPU work only if stored receipts are incomplete or invalid.",
+      "outcomes": [
+        {
+          "if": "Cross-scale local retrieval beats global, same-band-only and masked-mean on new withheld pieces with meaningful paired uncertainty; binding further beats shuffled graph",
+          "then": "Keep the bounded visible-context content-address mechanism and report separate evidence for relation learning."
+        },
+        {
+          "if": "Global/same-band/no-repair matches local retrieval, or shuffled graph matches learned graph",
+          "then": "Retain donor-coverage/regularization controls and close the corresponding stronger learning advantage claim."
+        }
+      ]
+    },
+    "notes": [
+      "Ground truth hidden residues may score reconstructions but must not be used to choose donors.",
+      "Classifier margin is a separate metric and can worsen actual pixels.",
+      "Do not infer v2 success from the existence of 100 JSON files."
+    ]
   }
 ]
