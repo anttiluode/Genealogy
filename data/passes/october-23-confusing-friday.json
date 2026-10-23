@@ -1,0 +1,147 @@
+{
+  "id": "october-23-confusing-friday-image-and-ghost",
+  "title": "October 23 — Confusing Friday: visual binding, missing information and a ghost",
+  "reviewed_at": "2026-10-23",
+  "order": 135,
+  "summary": "Complements the separate October 23 BindingClaude/BindingSol/WhiteBox source pass with SihtiGraphModel, DoDis and GhostYou. Image-specific Walsh/relational distillation is measured on two correctly classified CIFAR birds, with retention-conditioned gains and failure at severe masking and no stable cross-bird tile mapping. DoDis v1 replaces hidden multiscale pieces from memory and gets small image-MSE improvement against a strong shuffled-binding comparator; classifier guidance improves margin while worsening image fidelity. DoDis v2 implements local cross-scale addresses and publishes a large 100-bird results folder, but its full aggregate was not verified for this atlas addition. GhostYou is a finished playful, browser-local webcam and audio sketch rather than a model result. The common research question is whether visible context can address unseen detail; nothing here establishes a general image generator or true network-internal circuit.",
+  "nodes": [
+    {
+      "id": "SihtiGraphModel",
+      "url": "https://github.com/anttiluode/SihtiGraphModel",
+      "family": "residue-operator",
+      "status": "ledger",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Train a small CIFAR-10 CNN, decompose one 32x32 image into 64 additive scale-and-tile switches and extract a sparse behavioral interaction graph for that fixed image's masked-input logit margin; v2 directly tests single/pair relations and v3 stratifies by the fraction of original pieces retained.",
+      "survived": "Source-saved v3: on bird #65, the mixture graph has held-out R² 0.666 (90% retained) and 0.635 (95%); bird #70 independently refitted yields 0.851 and 0.882. The p=.90-only graph reaches R² 0.839/0.886 on bird #65 at p=.90/.95, and 0.864/0.918 on #70. These beat the frozen v2 graph under mostly-intact masks on #65; distinct local fits show the query/readout mechanism is workable.",
+      "killed": "Original v1 preregistered graph gates fail; v2 mean-fill global graph reaches R² 0.534 at p=.50 but falls to -3.035 at p=.90. v3 bird #65 mixture misses the p=.50 R²>=.35 gate (0.295), and the p=.90-only graph falls to -3.372 at p=.50. Bird #70 is refit separately, not cross-image transfer; the learned same-tile B0×B3 links have 0 shared tiles across birds. Input mask effects are not recovered internal CNN circuitry or missing-image generation.",
+      "evidence": "https://github.com/anttiluode/SihtiGraphModel/blob/main/runs/v3_birds_mixture_seed41/results.json",
+      "tags": [
+        "2026-10-23",
+        "confusing-friday",
+        "sihti",
+        "cnn-behavioral-distillation",
+        "64-residues",
+        "retention-shift",
+        "heldout-r2",
+        "failed-cross-image-transfer",
+        "mask-interventions"
+      ],
+      "era": "October 23: image-specific relation explanations are sensitive to what remains visible",
+      "era_order": 150
+    },
+    {
+      "id": "DoDis",
+      "url": "https://github.com/anttiluode/DoDis",
+      "family": "residue-operator",
+      "status": "ledger",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Combines an explicit source of actual missing pixel content (donor image memory), learned local/cross-band consistency graph and optionally a frozen-CNN purpose surrogate; accepts only energy-decreasing local piece replacements. V2 adds context-addressed local donor retrieval instead of relying on whole-image nearest-neighbor donors.",
+      "survived": "On 12 held-out CIFAR birds with 50% multiscale pieces hidden, v1 learned binding cuts mean pixel MSE from 0.01494 memory+seams to 0.01417 (9/12 improved). The classifier-purpose term raises actual bird margin from -0.003 to +1.578 with shared choices. V2 code/protocol defines 100 selected fresh birds, seven matched baselines and per-piece visible-context addresses; 100 per-bird receipts and a large results.json exist in runs/v2_local_100_birds on main.",
+      "killed": "Shuffling the learned graph still obtains 0.01438 pixel MSE, capturing most of the improvement against 0.01494: the learned advantage over shuffled is only about 0.00021 on 12 birds, not compelling visual grammar. CNN-purpose increases MSE from 0.01417 to 0.01482 while increasing classifier margin. V1 patches have Frankenstein-like donor artifacts; 32x32 multiscale masking is not natural rectangular inpainting. V2 aggregate outcome was not independently parsed for this pass, and its README still claims no completed v2 CIFAR result: no v2 success verdict is inferred from committed files.",
+      "evidence": "https://github.com/anttiluode/DoDis/blob/main/runs/v1/results.json",
+      "tags": [
+        "2026-10-23",
+        "confusing-friday",
+        "image-completion",
+        "visible-context-address",
+        "memory-donors",
+        "learned-vs-shuffled",
+        "classifier-margin",
+        "held-out-birds",
+        "v2-needs-audit"
+      ],
+      "era": "October 23: incomplete information starts functioning as an address",
+      "era_order": 151
+    },
+    {
+      "id": "GhostYou",
+      "url": "https://github.com/anttiluode/GhostYou",
+      "family": "creative-dsp",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "medium",
+      "claim": "An independent Halloween browser toy uses webcam background calibration and motion to make a moving person transparent and map vertical position and movement to a sine-wave theremin.",
+      "survived": "A self-contained static HTML implementation and browser UI are published on GitHub Pages and Hugging Face Spaces. README describes a three-second empty-room capture, webcam-local processing and motion-controlled audio.",
+      "killed": "No independent live browser/device acceptance test or video-quality measurement was run for Genealogy; it is an expressive interactive sketch, not evidence for learned binding, generative vision or a new perceptual theory.",
+      "evidence": "https://github.com/anttiluode/GhostYou/blob/main/README.md",
+      "tags": [
+        "2026-10-23",
+        "confusing-friday",
+        "halloween",
+        "webcam",
+        "browser-only",
+        "motion",
+        "theremin",
+        "creative-tool"
+      ],
+      "era": "October 23: a ghost-shaped practical detour",
+      "era_order": 152
+    }
+  ],
+  "edges": [
+    {
+      "source": "WhiteBox",
+      "target": "SihtiGraphModel",
+      "type": "converges",
+      "confidence": "high",
+      "why": "SihtiGraphModel explicitly situates its mask-query Fourier search after the WhiteBox toy behavioral extractor, but moves from parity toys to one image and frozen CNN margin; no claim of direct code fork.",
+      "evidence": "https://github.com/anttiluode/SihtiGraphModel/blob/main/README.md"
+    },
+    {
+      "source": "Sihti",
+      "target": "SihtiGraphModel",
+      "type": "converges",
+      "confidence": "high",
+      "why": "SihtiGraphModel explicitly names the Sihti family and implements additive octave/tile residues as external input coordinates for black-box CNN probing.",
+      "evidence": "https://github.com/anttiluode/SihtiGraphModel/blob/main/README.md"
+    },
+    {
+      "source": "SihtiGraphModel",
+      "target": "DoDis",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "DoDis explicitly imports the 64-piece decomposition and frozen CNN/checkpoint from SihtiGraphModel, adding donor retrieval, graph scores and energy-based completion.",
+      "evidence": "https://github.com/anttiluode/DoDis/blob/main/README.md"
+    },
+    {
+      "source": "SihtiImageModel",
+      "target": "DoDis",
+      "type": "converges",
+      "confidence": "high",
+      "why": "DoDis v2 explicitly revisits SihtiImageModel's notion of the coarse core as a partial address to local missing detail; this is a conceptual reuse of the memory-query question.",
+      "evidence": "https://github.com/anttiluode/DoDis/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "oct23-bird-mask-query-is-not-transfer",
+      "title": "An image-specific explanation changes with which fragments remain visible",
+      "description": "SihtiGraphModel extracts useful sparse input-switch dependencies for a frozen classifier on two birds, but each bird is fit afresh, the learned tile links do not overlap, and uniform-mask success does not automatically extrapolate to nearly intact images or natural occlusions.",
+      "nodes": [
+        "WhiteBox",
+        "Sihti",
+        "SihtiGraphModel"
+      ]
+    },
+    {
+      "id": "oct23-visible-context-addresses-hidden-detail",
+      "title": "Incomplete visible context can act as an address into image memory",
+      "description": "DoDis changes the problem from interpreting a frozen classifier to proposing actual missing residue content. The key candidate mechanism is local, cross-scale visible context choosing donors, with binding consistency as a separate filter. Its 12-bird first test leaves most binding gain explainable by a shuffled graph; the 100-bird local-address outcome still needs a complete numerical audit.",
+      "nodes": [
+        "SihtiImageModel",
+        "SihtiGraphModel",
+        "DoDis"
+      ]
+    },
+    {
+      "id": "oct23-ghost-usable-playful-output",
+      "title": "A research day can also end in a usable creative artifact",
+      "description": "GhostYou is a standalone local-browser webcam/theremin Halloween toy; value comes from a runnable interaction, not from proving the day's relational-learning hypothesis.",
+      "nodes": [
+        "GhostYou"
+      ]
+    }
+  ]
+}
