@@ -2,6 +2,16 @@
 
 This file records interpretation work rather than raw repository inventory. The rule is simple: names are discovery hints, not ancestry evidence. Corrections and failed claims remain visible because they are selection events in the genealogy.
 
+## 2026-10-23 — Confusing Friday: from finding bindings to addressing absent residues
+
+Completed the same-day wall with three source-curated cards **SihtiGraphModel**, **DoDis**, **GhostYou**, one new additive pass, four explicitly justified links, three motifs, and five distinct evidence receipts; the earlier BindingClaude/BindingSol/WhiteBox pass and its failed gates remain unchanged. [Friday field note](docs/reviews/2026-10-23-confusing-friday.md).
+
+**SihtiGraphModel:** The saved CNN masked-input graph is image-specific. Bird #65 v3 mixture held-out R² is **0.295** with 50% pieces kept (G3 FAIL), **0.666** at 90% and **0.635** at 95%. Bird #70 is independently distilled and gets **0.508/0.851/0.882** under the same mask fractions; no learned same-tile links overlap between birds. The preregistered v1 negative is not erased by different v2/v3 gates. This explains the CNN's reaction to masks, not its actual internal circuit and not the missing pixels.
+
+**DoDis:** The 12-bird v1 memory+binding MSE **0.01417** is only modestly better than shuffled-binding **0.01438** (memory+seams **0.01494**). CNN purpose pushes the classifier margin to **+1.578** but worsens image MSE to **0.01482**. The v2 local visible-context address is an important architectural change to donor selection, not an established improved image model. One hundred per-bird receipt files and 5.5MB aggregate are on main, but not numerically audited in this curation, despite older README claims that the benchmark remained unrun.
+
+**GhostYou:** A deployed browser-local motion-transparency/theremin Halloween sketch belongs on the practical branch; no invented lineage to the neural experiments. The unresolved principle is whether **partial visible information can point to missing information** better than generic whole-image lookup, after fair masked-mean, same-band, shuffled-graph and compute/storage controls. This review did not rerun any of the upstream experiments.
+
 ## 2026-10-23 — The binding/WhiteBox convergence; SihtiStack's October 19 return gate
 
 Added four reviewed research cards in **two dated passes**: SihtiStack retroactively beside SihtiBrain on October 19; BindingClaude, BindingSol and WhiteBox on October 23. Added two pass-index entries, four repository census rows (reviewed), eight source/conceptual edges, four motifs, and seven empirical evidence entries with explicit support/limits relations. Genealogy's own same-day source changes are documented here as atlas curation, not as a fifth scientific model. [Full field note](docs/reviews/2026-10-23-binding-whitebox.md).
