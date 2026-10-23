@@ -642,5 +642,20 @@
   },
   "oct23-whitebox-km-query-cost-caveat": {
     "oct23-whitebox-translation-is-behavioral": "limits"
+  },
+  "oct23-sihtigraphmodel-retention-dependent-surrogate": {
+    "oct23-bird-mask-query-is-not-transfer": "documents"
+  },
+  "oct23-sihtigraphmodel-v1-v2-limit": {
+    "oct23-bird-mask-query-is-not-transfer": "limits"
+  },
+  "oct23-dodis-first-bird-completion-and-shuffle": {
+    "oct23-visible-context-addresses-hidden-detail": "documents"
+  },
+  "oct23-dodis-v2-visible-local-address-awaits-outcome-audit": {
+    "oct23-visible-context-addresses-hidden-detail": "documents"
+  },
+  "oct23-ghostyou-finished-webcam-toy": {
+    "oct23-ghost-usable-playful-output": "documents"
   }
 }
