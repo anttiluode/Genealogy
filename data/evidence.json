@@ -10095,5 +10095,215 @@
     "held_out": false,
     "external_data": false,
     "replication": "Source scripts and committed ledger read; no atlas rerun."
+  },
+  {
+    "id": "oct23-sihtigraphmodel-retention-dependent-surrogate",
+    "node": "SihtiGraphModel",
+    "claim": "A separate sparse behavioral surrogate can approximate one frozen CNN's masked-input logit margin when retention regime is selected, but not necessarily under a different mask regime.",
+    "design": "CIFAR bird #65 and later bird #70 are correctly classified by the frozen CNN; 64 additive scale/tile toggles, 50-term stratified/global mixture graphs, 2048 held-out masks per retention p=0.5/0.75/0.90/0.95 per image; bird #70 receives its own graph rather than transferring weights.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "bird65 v3 global mixture R², p=.50/.90/.95",
+        "value": "0.295 / 0.666 / 0.635"
+      },
+      {
+        "name": "bird70 independently fitted global mixture R², p=.50/.90/.95",
+        "value": "0.508 / 0.851 / 0.882"
+      },
+      {
+        "name": "bird65 p=.90-only graph R², p=.50/.90/.95",
+        "value": "-3.372 / 0.839 / 0.886"
+      },
+      {
+        "name": "shared B0×B3 tiles across separately fitted birds",
+        "value": "0"
+      }
+    ],
+    "controls": [
+      "Single-retention p=.90-fit graph",
+      "Frozen v2 graph",
+      "64-term unary baseline",
+      "Constant baseline",
+      "p=.50, .75, .90, .95 mask-shift tests",
+      "Second correct bird independently fit"
+    ],
+    "limitations": [
+      "Only two selected CIFAR test birds; each graph conditioned on a specific image.",
+      "One preregistered p=.50 gate fails on bird65; input-mask behavior is not internal CNN neuron circuitry.",
+      "Shared tile sets do not generalize across birds; no evidence of transferable image-level relations."
+    ],
+    "source": "https://github.com/anttiluode/SihtiGraphModel/blob/main/runs/v3_birds_mixture_seed41/results.json",
+    "motifs": [
+      "oct23-bird-mask-query-is-not-transfer"
+    ],
+    "sample": {
+      "unit": "different fixed CIFAR bird, each separately distilled",
+      "count": 2
+    },
+    "held_out": true,
+    "external_data": true,
+    "replication": "Metrics read from saved upstream result JSON; no independent teacher run."
+  },
+  {
+    "id": "oct23-sihtigraphmodel-v1-v2-limit",
+    "node": "SihtiGraphModel",
+    "claim": "The first query-extracted sparse graph failed its locked high-R² gate, and the direct v2 repair fit 50%-retained masks but broke on nearly complete inputs.",
+    "design": "Original v1 KM query extraction plus separate preregistered v2 direct 64-singleton/2016-pair feature search; fixed bird #65; mean-fill held-out p=.50 and p=.90 masks.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "v2 mean-fill global R² p=.50",
+        "value": "0.534"
+      },
+      {
+        "name": "v2 mean-fill global R² p=.90",
+        "value": "-3.035"
+      },
+      {
+        "name": "v1 G1 locked threshold",
+        "value": "FAIL"
+      }
+    ],
+    "controls": [
+      "Source v1 locked gates intact",
+      "64-unary baseline",
+      "Local/spatial feature baseline",
+      "Random matched graph"
+    ],
+    "limitations": [
+      "Revised v2/v3 thresholds differ from v1 and cannot be applied retroactively.",
+      "A local function approximation across masks is not a semantic image model."
+    ],
+    "source": "https://github.com/anttiluode/SihtiGraphModel/blob/main/runs/v2_bird_seed41/results.json",
+    "motifs": [
+      "oct23-bird-mask-query-is-not-transfer"
+    ],
+    "held_out": true,
+    "external_data": true,
+    "replication": "Saved v1/v2 files inspected, experiment not rerun."
+  },
+  {
+    "id": "oct23-dodis-first-bird-completion-and-shuffle",
+    "node": "DoDis",
+    "claim": "Learned consistency slightly reduces error when patching withheld Sihti components from donor images, but matched shuffled consistency accounts for most of the gain.",
+    "design": "12 held-out, originally CNN-recognized CIFAR-10 birds with independent 50%-hidden scale/tile components, 256 donor-memory training birds, separate graph and purpose training images, fixed donor candidates and update order; compare four reconstruction arms.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "memory+seams mean pixel MSE",
+        "value": "0.014938"
+      },
+      {
+        "name": "learned binding MSE",
+        "value": "0.014168"
+      },
+      {
+        "name": "shuffled binding MSE",
+        "value": "0.014378"
+      },
+      {
+        "name": "binding+CNN purpose MSE",
+        "value": "0.014819"
+      },
+      {
+        "name": "actual CNN margin binding / plus purpose",
+        "value": "-0.003 / +1.578"
+      }
+    ],
+    "controls": [
+      "Memory+smoothness alone",
+      "Matched shuffled-binding",
+      "Frozen CNN margin evaluated independently of surrogate",
+      "Same donor pool/masks/update order",
+      "Monotone solver energy checks"
+    ],
+    "limitations": [
+      "Only 12 birds and one reported seed; shuffled graph recovers about 73% of baseline-to-learned MSE improvement.",
+      "CNN preference moves independently of pixel fidelity.",
+      "Withheld components are synthetic additive masks, not natural rectangular holes; donor fragments can look incoherent."
+    ],
+    "source": "https://github.com/anttiluode/DoDis/blob/main/runs/v1/results.json",
+    "motifs": [
+      "oct23-visible-context-addresses-hidden-detail"
+    ],
+    "held_out": true,
+    "external_data": true,
+    "sample": {
+      "unit": "held-out CIFAR bird",
+      "count": 12
+    },
+    "replication": "Committed run JSON checked; no independent training rerun."
+  },
+  {
+    "id": "oct23-dodis-v2-visible-local-address-awaits-outcome-audit",
+    "node": "DoDis",
+    "claim": "DoDis v2 implements a test of local context addresses for missing residues and has uploaded all 100 individual test-bird receipts, but this curation did not verify its aggregate performance.",
+    "design": "100 preregistered CIFAR bird selections, each with seven arms separating global donors, same-band-only local donors, cross-scale local donors, learned/shuffled graph and purpose; stage saves individual bird receipts and 5.5MB aggregate JSON.",
+    "result": "inconclusive",
+    "metrics": [
+      {
+        "name": "committed individual bird receipt count",
+        "value": "100"
+      },
+      {
+        "name": "aggregate results file",
+        "value": "~5.5 MB, not parsed by Genealogy"
+      }
+    ],
+    "controls": [
+      "Masked mean/no-repair",
+      "Global nearest donor images",
+      "Local same-band context only",
+      "Local cross-scale context",
+      "Local plus learned binding",
+      "Local plus shuffled binding",
+      "Local plus CNN purpose"
+    ],
+    "limitations": [
+      "Presence of run files does not establish that any preregistered benchmark condition was met.",
+      "The README still describes v2 outcomes as pending; no numeric PASS/FAIL is assigned by the atlas.",
+      "A full paired confidence-interval and protocol-fingerprint review is still required."
+    ],
+    "source": "https://github.com/anttiluode/DoDis/tree/main/runs/v2_local_100_birds",
+    "motifs": [
+      "oct23-visible-context-addresses-hidden-detail"
+    ],
+    "held_out": true,
+    "external_data": true,
+    "sample": {
+      "unit": "saved individual held-out-bird result",
+      "count": 100
+    },
+    "replication": "Manifest and repository directory inventory inspected; aggregate 5.5MB JSON not inspected."
+  },
+  {
+    "id": "oct23-ghostyou-finished-webcam-toy",
+    "node": "GhostYou",
+    "claim": "A complete static Halloween webcam interaction uses an empty-room reference for transparent motion and a simple audio oscillator whose pitch and level respond to position and motion.",
+    "design": "Review README and public static index.html implementation/deployment links; no standalone browser camera/audio acceptance run.",
+    "result": "inconclusive",
+    "metrics": [
+      {
+        "name": "published entry points",
+        "value": "GitHub Pages and Hugging Face Spaces"
+      },
+      {
+        "name": "empty-room calibration described",
+        "value": "3 seconds"
+      }
+    ],
+    "controls": [],
+    "limitations": [
+      "A deployed static interface is not a measured user-experience or device-compatibility gate.",
+      "The README's browser-local privacy claim was not independently network-audited."
+    ],
+    "source": "https://github.com/anttiluode/GhostYou/blob/main/README.md",
+    "motifs": [
+      "oct23-ghost-usable-playful-output"
+    ],
+    "held_out": false,
+    "external_data": false,
+    "replication": "Repository contents/source description reviewed; webcam/audio not independently run."
   }
 ]
