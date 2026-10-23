@@ -621,5 +621,26 @@
   "oct22-modelimage-v3-deformation-and-alignment": {
     "oct22-learn-conjunction-not-supply-product": "documents",
     "oct22-visual-parts-synthetic-to-real-wall": "documents"
+  },
+  "oct19-sihtistack-instrument-local-tests": {
+    "oct19-stored-residue-is-not-returned-answer": "documents"
+  },
+  "oct19-sihtistack-real-qwen-return-negative": {
+    "oct19-stored-residue-is-not-returned-answer": "limits"
+  },
+  "oct23-bindingclaude-frozen-discovery-and-settling": {
+    "oct23-binding-discovery-to-settling": "supports"
+  },
+  "oct23-bindingclaude-adaptation-negative": {
+    "oct23-binding-discovery-to-settling": "limits"
+  },
+  "oct23-bindingsol-communication-gates-failed": {
+    "oct23-useful-message-vs-structure": "limits"
+  },
+  "oct23-whitebox-exact-boolean-parity-translation": {
+    "oct23-whitebox-translation-is-behavioral": "supports"
+  },
+  "oct23-whitebox-km-query-cost-caveat": {
+    "oct23-whitebox-translation-is-behavioral": "limits"
   }
 }

@@ -484,6 +484,28 @@
     "inventory_status": "unread"
   },
   {
+    "name": "BindingClaude",
+    "url": "https://github.com/anttiluode/BindingClaude",
+    "default_branch": "main",
+    "size": 30,
+    "visibility": "public",
+    "description": "Opus 55",
+    "created_at": "2026-10-23T06:31:27Z",
+    "updated_at": "2026-10-23T08:43:59Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "BindingSol",
+    "url": "https://github.com/anttiluode/BindingSol",
+    "default_branch": "main",
+    "size": 66,
+    "visibility": "public",
+    "description": "Sol repo",
+    "created_at": "2026-10-23T06:29:09Z",
+    "updated_at": "2026-10-23T06:43:01Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "BiomorphicSwarm",
     "url": "https://github.com/anttiluode/BiomorphicSwarm",
     "default_branch": "main",
@@ -4356,6 +4378,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "SihtiStack",
+    "url": "https://github.com/anttiluode/SihtiStack",
+    "default_branch": "main",
+    "size": 29,
+    "visibility": "public",
+    "description": "Sol repo",
+    "created_at": "2026-10-19T07:30:45Z",
+    "updated_at": "2026-10-19T09:07:41Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "SilentPing",
     "url": "https://github.com/anttiluode/SilentPing",
     "default_branch": "main",
@@ -5618,6 +5651,17 @@
     "description": "Sol repo",
     "created_at": "2026-10-18T08:23:31Z",
     "updated_at": "2026-10-18T14:31:14Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "WhiteBox",
+    "url": "https://github.com/anttiluode/WhiteBox",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Opus",
+    "created_at": "2026-10-23T09:15:07Z",
+    "updated_at": "2026-10-23T09:29:04Z",
     "inventory_status": "reviewed"
   },
   {

@@ -25,7 +25,11 @@ class MadMondayTests(unittest.TestCase):
         self.assertEqual({n["id"] for n in nodes}, EXPECTED)
         self.assertEqual(sum(n["id"] == "SihtiBrain" for n in self.atlas["nodes"]), 1)
         self.assertEqual(sum(n["id"] == "BrainAsInverseModelerV3" for n in self.atlas["nodes"]), 1)
-        self.assertEqual(sum(n["id"] == "SihtiStack" for n in self.atlas["nodes"]), 0)
+        # SihtiStack has a distinct retroactive return-channel pass, not a
+        # duplicate Mad Monday node or a replacement for SihtiBrain.
+        stack = [n for n in self.atlas["nodes"] if n["id"] == "SihtiStack"]
+        self.assertEqual(len(stack), 1)
+        self.assertEqual(stack[0]["pass_id"], "october-19-sihtistack-return-channel")
 
     def test_result_failures_and_privileged_oracles_preserved(self):
         nodes = {n["id"]: n for n in self.atlas["nodes"]}

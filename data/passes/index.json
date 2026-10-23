@@ -442,5 +442,13 @@
   {
     "path": "october-22-living-paper-conjunctions-and-visual-transfer.json",
     "enabled": true
+  },
+  {
+    "path": "october-19-sihtistack-return-channel.json",
+    "enabled": true
+  },
+  {
+    "path": "october-23-binding-and-whitebox.json",
+    "enabled": true
   }
 ]

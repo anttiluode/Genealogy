@@ -23,6 +23,21 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
+## 2026-10-23 — Binding, explicit relation circuits and WhiteBox translation
+
+**[Explore the updated genealogy](https://anttiluode.github.io/Genealogy/)** · **[Read the October 23 field note](docs/reviews/2026-10-23-binding-whitebox.md)** · [Binding/WhiteBox source pass](data/passes/october-23-binding-and-whitebox.json) · [Retroactive October 19 SihtiStack pass](data/passes/october-19-sihtistack-return-channel.json)
+
+The October 23 pass adds three curated cards: **[BindingClaude](https://github.com/anttiluode/BindingClaude)**, **[BindingSol](https://github.com/anttiluode/BindingSol)** and **[WhiteBox](https://github.com/anttiluode/WhiteBox)**. A separate October 19 pass restores **[SihtiStack](https://github.com/anttiluode/SihtiStack)** to its correct place alongside SihtiBrain. Seven evidence records retain distinct pass/fail gates; the **Genealogy** repository itself is the curator and census, not another experimental AI node.
+
+| Line | What actually happened | Open limitation |
+| --- | --- | --- |
+| **SihtiStack, Oct 19** | Algebraic residual and synthetic harness tests work; SihtiBrain separately records the user's Qwen test: **in-context 12/12, none and activation return both 2/12**. | SihtiStack's own README still calls pretrained evaluation *unrun*; no demonstrated fact restoration, automatic address discovery or transferred K/V history. |
+| **BindingClaude, Oct 23** | Source-reported ten-seed Part 3: S0/S1/S2/S2b pass; chained hidden target goes from unresolved one-shot expected **50%** to settled **99.10%**, and the context knockout is selective. | **S4 revision fails in 9/10**; the favourable asynchronous order, different training-information budgets and lookup/direct-MLP controls restrict the claim. |
+| **BindingSol, Oct 23** | Exact 32-case one-bit sender/receiver instrument G0 passes; two seeds learn a perfect message, with real causal erase/flip effects. | Reliability **G1/G2/G3 FAIL** (2/5 versus 4/5 required); direct MLP averages **90%** held-out versus **85%** for communication. |
+| **WhiteBox, Oct 23** | Exact Walsh readout finds **one clean-cube parity branch** in each trained toy MLP; query search finds the branch at 19 inputs with **56,800** calls instead of **524,288** enumerations. | This is a behavioral Boolean surrogate, not the MLP's internal causal circuit; noisy inputs disagree in 1.3–2.7% of cases, and queries cost **more** than exhaustive readout at 11–12 inputs. |
+
+The surviving engineering question is **whether source-discovered or teacher-distilled relations can guide a revisable, uncertainty-aware recurrent completion system that beats fair ordinary controls**. SighImageSuper supplies an older recursive frequency operator, not an implementation of the new learned hypergraph energy. No general image model or faithful model-internal translation follows from these toy results. Source ledgers were read; no full training benchmark was independently rerun in this atlas pass.
+
 ## 2026-10-22 — Living paper, learned conjunctions and the real-image wall
 
 **[Explore the updated genealogy](https://anttiluode.github.io/Genealogy/)** · **[Read the October 22 field note](docs/reviews/2026-10-22-visual-learning.md)** · [Source-linked pass](data/passes/october-22-living-paper-conjunctions-and-visual-transfer.json)
