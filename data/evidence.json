@@ -9777,5 +9777,323 @@
       "count": 60
     },
     "replication": "Source README and test scripts read; atlas did not rerun."
+  },
+  {
+    "id": "oct19-sihtistack-instrument-local-tests",
+    "node": "SihtiStack",
+    "claim": "A controlled residue-return harness can isolate middle-layer activation writing from prompt context and unrelated random directions.",
+    "design": "Qwen2.5-0.5B-Instruct planned at decoder output layer 14; five preregistered arms none/in_context/return/wrong_city/random; nine unit and synthetic harness tests; last-token activation difference only.",
+    "result": "supports",
+    "metrics": [
+      {
+        "name": "local and synthetic tests",
+        "value": "9 PASS"
+      }
+    ],
+    "controls": [
+      "No injected vector",
+      "Fact explicitly in context",
+      "Same-subject wrong-city donor",
+      "Norm-matched random vector",
+      "Synthetic fake decoder end-to-end"
+    ],
+    "limitations": [
+      "Local tests do not run downloaded Qwen weights.",
+      "Donor and subject address are supplied by harness.",
+      "Last-token injection does not transfer previous-token attention K/V history."
+    ],
+    "source": "https://github.com/anttiluode/SihtiStack/blob/main/README.md",
+    "motifs": [
+      "oct19-stored-residue-is-not-returned-answer"
+    ],
+    "sample": {
+      "unit": "local/synthetic test",
+      "count": 9
+    },
+    "held_out": false,
+    "external_data": false,
+    "replication": "Upstream README and tests read; no independent Qwen run."
+  },
+  {
+    "id": "oct19-sihtistack-real-qwen-return-negative",
+    "node": "SihtiStack",
+    "claim": "The reported pretrained 12-case Qwen run does not restore a prompted person's city by the tested last-token activation difference.",
+    "design": "User ran the configured Qwen test after source README remained at 'unrun'; SihtiBrain consolidation records four evaluated contrasts on the 12 cases.",
+    "result": "contradicts",
+    "metrics": [
+      {
+        "name": "fact in context",
+        "value": "12/12"
+      },
+      {
+        "name": "none",
+        "value": "2/12"
+      },
+      {
+        "name": "correct return",
+        "value": "2/12"
+      },
+      {
+        "name": "wrong-city return",
+        "value": "2/12"
+      }
+    ],
+    "controls": [
+      "Context positive control",
+      "No-write comparison",
+      "Wrong-city return"
+    ],
+    "limitations": [
+      "Receipt is a later SihtiBrain consolidated report rather than a raw file committed to SihtiStack.",
+      "Candidate-restricted city accuracy, not freely generated answer accuracy.",
+      "A failed tested channel does not establish disappearance of all hidden information."
+    ],
+    "source": "https://github.com/anttiluode/SihtiBrain/blob/main/docs/RESEARCH_MAP_2026-10-19.md",
+    "motifs": [
+      "oct19-stored-residue-is-not-returned-answer"
+    ],
+    "sample": {
+      "unit": "subject/city Qwen trial",
+      "count": 12
+    },
+    "held_out": false,
+    "external_data": true,
+    "replication": "Source-reported user run, not independently rerun in Genealogy."
+  },
+  {
+    "id": "oct23-bindingclaude-frozen-discovery-and-settling",
+    "node": "BindingClaude",
+    "claim": "Sample-discovered higher-order multiplicative relations serve as frozen energy constraints for masked chain and context completion in toy worlds.",
+    "design": "Ten seeds, 20,000 complete training scenes and 2,000 fresh masked tests each, sigma .35, 200 candidate branches of order 2–4, early turnover and asynchronously updated hidden sites.",
+    "result": "supports",
+    "metrics": [
+      {
+        "name": "S0 true bindings",
+        "value": "10/10 chain and context"
+      },
+      {
+        "name": "S1 one-shot / settled",
+        "value": "50.00% expected unresolved / 99.10%"
+      },
+      {
+        "name": "S2 + / -",
+        "value": "99.5909% / 99.5892%"
+      },
+      {
+        "name": "S2b knockout + / retained -",
+        "value": "49.5900% / 99.5892%"
+      }
+    ],
+    "controls": [
+      "True hidden bits removed before settling",
+      "Simultaneous one-shot vs asynchronous settled",
+      "Context-restricted knockout",
+      "Ungated-only and gated-only context audits",
+      "Direct MLP and lookup, reported with budget caveat"
+    ],
+    "limitations": [
+      "Favourable update order resolves chain in the first sweep; no robust prolonged purification claim.",
+      "Binder sees complete scenes, direct MLP gets labelled visible examples; compute and supervision are not matched.",
+      "Source ledger did not include committed full raw Part 3 JSON; no atlas rerun."
+    ],
+    "source": "https://github.com/anttiluode/BindingClaude/blob/main/results/PART3_LEDGER.md",
+    "motifs": [
+      "oct23-binding-discovery-to-settling"
+    ],
+    "sample": {
+      "unit": "independent seed",
+      "count": 10
+    },
+    "held_out": true,
+    "external_data": false,
+    "replication": "Upstream ledger read, not independently rerun."
+  },
+  {
+    "id": "oct23-bindingclaude-adaptation-negative",
+    "node": "BindingClaude",
+    "claim": "The tested slow EMA and branch reopening fail to reliably revise a context-specific three-piece relation after a rule flip.",
+    "design": "Ten seeds, flip t=b*c to t=-b*c only in context + after 20,000 examples; continue up to 20,000 new examples; leave context - unchanged.",
+    "result": "contradicts",
+    "metrics": [
+      {
+        "name": "recovered context + to >=95%",
+        "value": "1/10 seeds"
+      },
+      {
+        "name": "first successful recovery",
+        "value": "14,600 new examples"
+      },
+      {
+        "name": "final context +",
+        "value": "56.01%"
+      },
+      {
+        "name": "final protected context -",
+        "value": "99.61%"
+      }
+    ],
+    "controls": [
+      "Unchanged-context retention",
+      "Frozen pre-flip scores separate",
+      "Prediction-error versus local reopening proxy noted"
+    ],
+    "limitations": [
+      "Reported-only S4, not a registered PASS criterion.",
+      "Specific EMA schedule and z proxy do not rule out other learning rules.",
+      "No adaptation benefit compared with a full retrain was established."
+    ],
+    "source": "https://github.com/anttiluode/BindingClaude/blob/main/results/PART3_LEDGER.md",
+    "motifs": [
+      "oct23-binding-discovery-to-settling"
+    ],
+    "sample": {
+      "unit": "independent seed",
+      "count": 10
+    },
+    "held_out": true,
+    "external_data": false,
+    "replication": "Upstream ledger read, no independent rerun."
+  },
+  {
+    "id": "oct23-bindingsol-communication-gates-failed",
+    "node": "BindingSol",
+    "claim": "A joint one-bit sender/receiver sometimes discovers a usable implicit parity-rule message but does not meet preregistered multi-seed reliability.",
+    "design": "Exactly 32 Boolean world/source/query tuples split 24 train/8 held-out; 5 fixed seeds; 5,000 full-batch Adam updates, supervised shared loss and supervised fresh-reader retrain; direct MLP matched at 162 parameters.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "G0 instrument",
+        "value": "PASS"
+      },
+      {
+        "name": "G1/G2/G3",
+        "value": "FAIL: 2/5 qualifying; required 4/5"
+      },
+      {
+        "name": "joint / fresh reader held-out mean",
+        "value": "85% / 85%"
+      },
+      {
+        "name": "direct 162-param MLP mean",
+        "value": "90%"
+      },
+      {
+        "name": "linear baseline",
+        "value": "50%"
+      }
+    ],
+    "controls": [
+      "Erased and random symbol",
+      "Opposite-world symbol",
+      "Sign-flip symbol",
+      "Fresh frozen-sender supervised receiver",
+      "Direct same-parameter MLP",
+      "Linear input baseline"
+    ],
+    "limitations": [
+      "Failed seeds also miss training cases; this is not isolated transfer failure.",
+      "Fresh receiver has task labels, so zero-shot decode is not established.",
+      "Matched parameter count is not matched FLOPs or matched experimental task class."
+    ],
+    "source": "https://github.com/anttiluode/BindingSol/blob/main/RESULTS.md",
+    "motifs": [
+      "oct23-useful-message-vs-structure"
+    ],
+    "sample": {
+      "unit": "independent seed",
+      "count": 5
+    },
+    "held_out": true,
+    "external_data": false,
+    "replication": "Upstream recorded weights and reloaded results reviewed; Genealogy did not rerun."
+  },
+  {
+    "id": "oct23-whitebox-exact-boolean-parity-translation",
+    "node": "WhiteBox",
+    "claim": "An already trained small tanh MLP's sign output on the full clean Boolean cube is represented exactly by a single third- or fourth-order Walsh-Fourier coefficient.",
+    "design": "Train 64-tanh-unit MLPs on 2,048 noisy examples from three constructed BindingClaude T2/T3 variants, then evaluate their sign outputs on all 2^11, 2^12 or 2^19 clean binary inputs with a fast Walsh transform; compare a one-branch surrogate on fresh noisy examples.",
+    "result": "supports",
+    "metrics": [
+      {
+        "name": "clean-cube largest coefficient / energy",
+        "value": "theta=1 / 100% on all three models"
+      },
+      {
+        "name": "noisy graph/MLP agreement",
+        "value": "98.7% / 97.3% / 98.3%"
+      },
+      {
+        "name": "MLP task accuracy",
+        "value": "98.3% / 97.0% / 97.9%"
+      },
+      {
+        "name": "one-branch task accuracy",
+        "value": "99.3% / 99.1% / 99.1%"
+      }
+    ],
+    "controls": [
+      "Exact enumerated Walsh spectrum",
+      "Fresh noisy test examples",
+      "Ordinary MLP first (no supplied parity features)",
+      "Single product-branch surrogate"
+    ],
+    "limitations": [
+      "Clean Boolean sign-output function is not the continuous/logit function; noisy test predictions are not identical.",
+      "Constructions deliberately contain one simple parity law; no high-complexity model or real dataset.",
+      "Branch knockout is not a causal intervention on the teacher's internal representation."
+    ],
+    "source": "https://github.com/anttiluode/WhiteBox/blob/main/results/results.json",
+    "motifs": [
+      "oct23-whitebox-translation-is-behavioral"
+    ],
+    "sample": {
+      "unit": "toy trained MLP task",
+      "count": 3
+    },
+    "held_out": true,
+    "external_data": false,
+    "replication": "Upstream committed JSON and source read; not independently rerun."
+  },
+  {
+    "id": "oct23-whitebox-km-query-cost-caveat",
+    "node": "WhiteBox",
+    "claim": "Query-only branch search can avoid full-cube enumeration at 19 bits in the demonstrated example but not at 11/12 bits with current fixed queries per bucket.",
+    "design": "KM-style randomized bucket-mass test with q=600 pairs per branch and 4,000 final coefficient queries, on 11-, 12- and 19-bit teacher networks; threshold fix discards one -0.003 spurious coefficient.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "n11 queries vs 2^n",
+        "value": "32,800 vs 2,048"
+      },
+      {
+        "name": "n12 queries vs 2^n",
+        "value": "37,600 vs 4,096"
+      },
+      {
+        "name": "n19 queries vs 2^n",
+        "value": "56,800 vs 524,288"
+      }
+    ],
+    "controls": [
+      "Full enumeration readout",
+      "Final coefficient cutoff",
+      "Randomized bucket sampling"
+    ],
+    "limitations": [
+      "Small n query searches are more expensive than exhaustive evaluation.",
+      "Asymptotic KM bounds do not establish practical scaling with this fixed Monte Carlo budget.",
+      "No arbitrary-architecture LLM transfer or fidelity-under-intervention measurement exists."
+    ],
+    "source": "https://github.com/anttiluode/WhiteBox/blob/main/README.md",
+    "motifs": [
+      "oct23-whitebox-translation-is-behavioral"
+    ],
+    "sample": {
+      "unit": "input dimensionality benchmark",
+      "count": 3
+    },
+    "held_out": false,
+    "external_data": false,
+    "replication": "Source scripts and committed ledger read; no atlas rerun."
   }
 ]
