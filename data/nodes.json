@@ -519,7 +519,10 @@
       "material-ruler",
       "finite-box",
       "analogue-gravity"
-    ]
+    ],
+    "pass_id": "october-24-fields-loops-and-measured-objects",
+    "era": "October 24: field objects and ordered returns",
+    "era_order": 152
   },
   {
     "id": "LoopHolonomyNeuron",
@@ -542,6 +545,9 @@
       "observability",
       "synthetic-control",
       "holonomy"
-    ]
+    ],
+    "pass_id": "october-24-fields-loops-and-measured-objects",
+    "era": "October 24: field objects and ordered returns",
+    "era_order": 152
   }
 ]
