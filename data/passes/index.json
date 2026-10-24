@@ -454,5 +454,9 @@
   {
     "path": "october-23-confusing-friday.json",
     "enabled": true
+  },
+  {
+    "path": "october-24-fields-loops-and-measured-objects.json",
+    "enabled": true
   }
 ]

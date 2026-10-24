@@ -1,0 +1,74 @@
+{
+  "id": "october-24-fields-loops-and-measured-objects",
+  "title": "October 24 — fields, loops and what an observer can recover",
+  "reviewed_at": "2026-10-24",
+  "order": 136,
+  "summary": "Two fresh source reviews join separate branches. ClockfieldRedux advances the clockfield line from homogeneous fixed-ruler tests to a full-complex winding-one vortex: finite-box linear stability and small-noise survival pass, an internal radial breathing mode is measured at tau=0 and 0.1, and none is resolved at tau=0.4. The object’s dimensionless radii and clock ratios vary; fixed outer winding, removed damping and global tau changes limit interpretation. LoopHolonomyNeuron is an independent synthetic ordered-operator observer fixture: late paired internal-reference/return decoding is high while return-only is near chance, and online prediction adapts after a route switch. Its delayed packet, supervised regime maps and known-answer causal intervention do not establish neural holonomy or a biological mechanism. Eromitta’s gradient-screening defect result motivates a future separate test of which screening rule supports defect clocks; it is context, not validation of either new repository. Shared words such as gradient, loop and field are not treated as ancestry.",
+  "nodes": [
+    {
+      "id": "ClockfieldRedux",
+      "url": "https://github.com/anttiluode/ClockfieldRedux",
+      "family": "clockfield",
+      "status": "ledger",
+      "claim": "Directly tests time and material-object claims in two stages: homogeneous clock comparisons in the legacy nonlinear Clockfield force, then a winding-one vortex in the full complex field with fixed boundary winding, full two-component linear-stability checks, measured radii, radial breathing spectrum and nonlinear time evolution.",
+      "survived": "The undamped full-complex vortex passes the finite-box Hessian-sign test and a finite-duration, one-seed small-complex-noise survival test across nine square-grid cases. Its radial breathing frequency/vacuum frequency is 0.9019 at tau=0 and 0.9841 at tau=0.1, with measured full-2D values converging under box/grid/time refinement; r50/xi and r90/xi also change. At tau=0.4 no localized bound radial breathing mode is resolved. A negative transverse kink mode explains why the earlier real-only kink was not a stable complex-field object.",
+      "killed": "Does not establish an isolated finite-energy particle: the global vortex sits in a fixed winding-one boundary sector and is boundary-confined. Damping from the source was removed for the clock experiment; stability covers finite boxes and tested small disturbances, not arbitrary nonlinear perturbations or infinite domains. tau is a global coupling, not a sourced gravitational background. No universal material metric, gravitational dynamics, or equivalence-principle test is shown.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/ClockfieldRedux/blob/main/VORTEX_MODEL.md",
+      "tags": [
+        "2026-10-24",
+        "clockfield",
+        "vortex",
+        "complex-field",
+        "defect-stability",
+        "internal-clock",
+        "material-ruler",
+        "finite-box",
+        "analogue-gravity"
+      ]
+    },
+    {
+      "id": "LoopHolonomyNeuron",
+      "url": "https://github.com/anttiluode/LoopHolonomyNeuron",
+      "family": "neural-dynamics",
+      "status": "ledger",
+      "claim": "A synthetic operator laboratory asks whether an observer can infer the order of changing transformations from a state-bearing packet, delayed return and separately evolving internal reference; three nodes carry resident state that changes later operators.",
+      "survived": "Across 12 seeds, paired late reference+return classifies the hidden AB/BA regime at 98.77% held-out accuracy; full paired accuracy is 99.10%. Return alone and a blind fixed probe are near chance. After an AB-to-BA switch, online local prediction lowers late return prediction MSE from 0.5021 for a frozen predictor to 0.0085. A controlled outgoing-packet flip separates a causal-return fixture from a common-cause fixture that passive data cannot distinguish. Algebraic coordinate-covariance and commuting/blind-probe controls are recorded.",
+      "killed": "This is a synthetic 3D operator fixture, not a cortical simulation. The delayed return is imposed, the time-bin kernels are supplied, and the two class-conditioned transfer maps are supervised. The group commutator is abstract matrix algebra; the neural return path is not a measured Wilson loop, and prediction does not identify a unique internal network. The causal flip validates a known-answer fixture rather than biological causal discovery.",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/LoopHolonomyNeuron/blob/main/results/receipt.json",
+      "tags": [
+        "2026-10-24",
+        "neural-dynamics",
+        "ordered-operators",
+        "state-dependent-network",
+        "return-signal",
+        "active-probing",
+        "observability",
+        "synthetic-control",
+        "holonomy"
+      ]
+    }
+  ],
+  "edges": [],
+  "motifs": [
+    {
+      "id": "object-clock-ruler-must-be-measured",
+      "title": "A field object must supply its own tests of size, time and stability",
+      "description": "ClockfieldRedux moves from coefficient-level clock language to a computed complex vortex, then tests its boundary-conditioned stability, measurable radii and candidate internal oscillation. The finite-box defect improves object-level specificity but does not establish isolated matter or a universal geometry.",
+      "nodes": [
+        "ClockfieldRedux"
+      ]
+    },
+    {
+      "id": "observer-needs-a-discriminating-intervention",
+      "title": "A hidden route is readable only through an informative measurement",
+      "description": "LoopHolonomyNeuron distinguishes paired internal-reference plus return from return-only decoding and includes blind and causal fixture controls. This is a synthetic observability result, not evidence that a neuron computes holonomy.",
+      "nodes": [
+        "LoopHolonomyNeuron"
+      ]
+    }
+  ]
+}

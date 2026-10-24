@@ -1,5 +1,10 @@
 # Genealogy research log
 
+## 2026-10-24 — Field objects and ordered returns
+
+Added two source-curated cards in one dated pass, with separate evidence ledgers and no asserted ancestry between them. **ClockfieldRedux** now includes the fixed-boundary complex vortex assay: the tested finite boxes pass signed full-field linear stability and small-noise survival; a radial breathing clock is resolved at tau=0 and 0.1 but not at 0.4. The result remains a boundary-conditioned, undamped toy, not a universal matter metric. **LoopHolonomyNeuron** records a distinct synthetic operator-observer result: late paired-reference/return decoding reaches 98.77% across 12 seeds, while return-only is 49.15%; the delayed echo, supervised class-conditioned transfer maps and causal-flip fixture remain explicit limitations. Eromitta’s gradient-screening result is logged as motivation for a future comparative experiment only, not corroboration. Neither simulation was rerun by this curation.
+
+
 This file records interpretation work rather than raw repository inventory. The rule is simple: names are discovery hints, not ancestry evidence. Corrections and failed claims remain visible because they are selection events in the genealogy.
 
 ## 2026-10-23 — Confusing Friday: from finding bindings to addressing absent residues
