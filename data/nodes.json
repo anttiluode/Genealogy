@@ -549,5 +549,85 @@
     "pass_id": "october-24-fields-loops-and-measured-objects",
     "era": "October 24: field objects and ordered returns",
     "era_order": 152
+  },
+  {
+    "id": "SimplyPut",
+    "url": "https://github.com/anttiluode/SimplyPut",
+    "family": "practical-tools",
+    "status": "tool",
+    "claim": "Blind bicycle-bell reach toy: context-keyed action/outcome memory reuses successful reaches and reopens search after failure.",
+    "survived": "Transparent replay of practice, changed target and erased memory.",
+    "killed": "Provided situation IDs and ordinary memoization; not a new neural learning rule.",
+    "usefulness": "scientific",
+    "confidence": "medium",
+    "evidence": "https://github.com/anttiluode/SimplyPut/blob/main/README.md",
+    "tags": [
+      "2026-10-25",
+      "active-probing",
+      "skill-memory",
+      "observer"
+    ],
+    "era": "October 25: learning from returning action",
+    "era_order": 153
+  },
+  {
+    "id": "SimplyPutClaude",
+    "url": "https://github.com/anttiluode/SimplyPutClaude",
+    "family": "neural-dynamics",
+    "status": "ledger",
+    "claim": "Sequential blind reaching with route-specific cable functions tests whether new skills overwrite old skills.",
+    "survived": "Explicit shared-network, fixed-gate and route comparisons.",
+    "killed": "Route selection and supervised corrections do not establish biological skill learning.",
+    "usefulness": "scientific",
+    "confidence": "medium",
+    "evidence": "https://github.com/anttiluode/SimplyPutClaude/blob/main/README.md",
+    "tags": [
+      "2026-10-25",
+      "active-probing",
+      "skill-memory",
+      "observer"
+    ],
+    "era": "October 25: learning from returning action",
+    "era_order": 153
+  },
+  {
+    "id": "SimplyPutSol",
+    "url": "https://github.com/anttiluode/SimplyPutSol",
+    "family": "neural-dynamics",
+    "status": "negative",
+    "claim": "Paired motor probes train complex leaky cable branches from scalar returns without target-angle supervision.",
+    "survived": "Four of five declared gates passed; active probe learning was executable.",
+    "killed": "Catastrophic forgetting remained; frozen and phase-off cable controls matched or beat the proposed mechanism.",
+    "usefulness": "scientific",
+    "confidence": "medium",
+    "evidence": "https://github.com/anttiluode/SimplyPutSol/blob/main/README.md",
+    "tags": [
+      "2026-10-25",
+      "active-probing",
+      "skill-memory",
+      "observer"
+    ],
+    "era": "October 25: learning from returning action",
+    "era_order": 153
+  },
+  {
+    "id": "HailMery",
+    "url": "https://github.com/anttiluode/HailMery",
+    "family": "neural-dynamics",
+    "status": "ledger",
+    "claim": "Explores whether slow order parameters and action-conditioned multisensory prediction could define an observer of observers.",
+    "survived": "Distinguishes self-prediction from mere cross-modal coherence and identifies timescale reduction as a candidate description.",
+    "killed": "A toy cannot establish consciousness, neural anatomy, or a unique self-observer.",
+    "usefulness": "scientific",
+    "confidence": "medium",
+    "evidence": "https://github.com/anttiluode/HailMery/blob/main/README.md",
+    "tags": [
+      "2026-10-25",
+      "active-probing",
+      "skill-memory",
+      "observer"
+    ],
+    "era": "October 25: learning from returning action",
+    "era_order": 153
   }
 ]
