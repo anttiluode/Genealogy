@@ -458,5 +458,9 @@
   {
     "path": "october-24-fields-loops-and-measured-objects.json",
     "enabled": true
+  },
+  {
+    "path": "october-25-hilbert-polya-delay-network.json",
+    "enabled": true
   }
 ]
