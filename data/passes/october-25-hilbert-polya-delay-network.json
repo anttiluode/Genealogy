@@ -1,0 +1,67 @@
+{
+  "id": "october-25-hilbert-polya-delay-network",
+  "title": "October 25 — Hilbert–Pólya through Rajapinta prime-delay loops (June 2026 archaeology)",
+  "reviewed_at": "2026-10-25",
+  "order": 137,
+  "summary": "A June 2026 draft reframes Hilbert–Pólya as a reciprocal delay-coupled phase-network and states an unproved Prime Orbit Condition (closed-loop transit time log p, requisite weights and cancellation of non-prime loops). A small Python script evaluates a regularized truncated prime explicit-formula sum; its README reports first-20-zero RMS 0.114→0.0052 as the prime cutoff grows from 3 to 500. That is a known arithmetic reconstruction, not an independently realized self-adjoint delay-network spectrum. The paper's separate 700-site test/code is not included in this repository, and its formal self-adjointness and determinant-identification claims were not independently checked. Connect the prime-log DSP artifact and older failed generic prime-trace test only as conceptual comparisons; no direct lineage is documented.",
+  "nodes": [
+    {
+      "id": "HilbertPolyaReintepretation",
+      "url": "https://github.com/anttiluode/HilbertPolyaReintepretation",
+      "family": "clockfield",
+      "status": "ledger",
+      "usefulness": "scientific",
+      "confidence": "medium",
+      "claim": "Drafts a Rajapinta–Takens Hilbert–Pólya candidate: linearize a phase network with structural time delays, treat prime logarithms as primitive closed-loop transit times, and ask whether the resulting delay operator can have both the exact prime-orbit trace weights and a self-adjoint realization.",
+      "survived": "The Prime Orbit Condition (POC) is an explicit target rather than a vague resemblance between chaos and Riemann zeros. Included truncated_poc_engine.py evaluates a Gaussian-damped prime-loop explicit-formula approximation without supplying zero locations to N_X; the repository reports RMS error to the first 20 known zero ordinates falling from 0.114 at X=3 to ~0.0052 at X=500. The paper explicitly identifies simultaneous POC-realizability and self-adjointness as the unproved core; finite cutoffs are useful demonstrations of the prime-explicit-formula dictionary.",
+      "killed": "No RH proof or constructed self-adjoint operator with exactly the zeta-zero spectrum. The finite numerical curve comes from the established explicit-formula machinery and a cutoff-dependent smoothing window, not an independently generated network operator; known zeros are present in the script for scoring and figure annotations. The paper cites a separate 700-site engine not present in this repository. Its claimed general self-adjointness of a retarded-delay history generator, matching of entire determinants, and de Bruijn–Newman physical identification need independent mathematical scrutiny, and the infinite-limit/realizability gap is open.",
+      "evidence": "https://github.com/anttiluode/HilbertPolyaReintepretation/blob/main/rajapinta_takens_rh_paper.md",
+      "tags": [
+        "2026-06-paper",
+        "2026-10-25-review",
+        "hilbert-polya",
+        "riemann-hypothesis",
+        "rajapinta",
+        "takens",
+        "prime-orbit-condition",
+        "delay-networks",
+        "explicit-formula",
+        "finite-cutoff",
+        "unproved-realizability",
+        "formal-proof-needs-review"
+      ],
+      "era": "June 2026: prime-delay spectral reinterpretation (reviewed October 25)",
+      "era_order": 44
+    }
+  ],
+  "edges": [
+    {
+      "source": "PrimeCrystalVST",
+      "target": "HilbertPolyaReintepretation",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "The earlier audio tool implements log-prime-modulated delay arms as sound design; the later paper interprets log p as primitive closed-walk transit time in a candidate spectrum. This is a shared mathematical motif, not a code inheritance, an operator construction or evidence for RH.",
+      "evidence": "https://github.com/anttiluode/PrimeCrystalVST/blob/main/README.md"
+    },
+    {
+      "source": "BirthOfClockfield",
+      "target": "HilbertPolyaReintepretation",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "BirthOfClockfield's audit showed generic GOE-like spectral repulsion and a null prime-log trace; this later paper demands exact loop times/weights rather than equating chaos statistics with arithmetic zeros. A methodological contrast, not a demonstrated direct historical derivation.",
+      "evidence": "https://github.com/anttiluode/HilbertPolyaReintepretation/blob/main/rajapinta_takens_rh_paper.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "prime-loop-structure-vs-spectral-resemblance",
+      "title": "Prime-log interference is not the missing Hilbert–Pólya operator",
+      "description": "PrimeCrystalVST makes incommensurate log-prime arm interference audible; BirthOfClockfield shows generic random-matrix level statistics have no prime-specific trace; HilbertPolyaReintepretation states the much stronger exact prime-orbit weights and cancellation problem. Finite explicit-formula reconstruction is numerically useful but does not solve the self-adjoint operator existence problem.",
+      "nodes": [
+        "PrimeCrystalVST",
+        "BirthOfClockfield",
+        "HilbertPolyaReintepretation"
+      ]
+    }
+  ]
+}
