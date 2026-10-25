@@ -10305,5 +10305,48 @@
     "held_out": false,
     "external_data": false,
     "replication": "Repository contents/source description reviewed; webcam/audio not independently run."
+  },
+  {
+    "id": "hilbert-polya-truncated-poc-explicit-formula",
+    "node": "HilbertPolyaReintepretation",
+    "claim": "The repo reports improved finite-window estimates of the first 20 Riemann-zero ordinates as a Gaussian-regularized, prime-loop explicit formula includes more primes; this is arithmetic reconstruction, not realization of a reciprocal self-adjoint delay network.",
+    "design": "Source inspection of a Python finite-truncation demonstration; reported RMS to 20 published zero ordinates; not independently rerun in this genealogy pass.",
+    "result": "mixed",
+    "motifs": [
+      "prime-loop-structure-vs-spectral-resemblance"
+    ],
+    "sample": {
+      "unit": "known zero ordinate",
+      "count": 20
+    },
+    "metrics": [
+      {
+        "name": "reported RMS at prime cutoff X=3",
+        "value": 0.114
+      },
+      {
+        "name": "reported RMS at prime cutoff X=500",
+        "value": 0.0052
+      },
+      {
+        "name": "primes at X=500",
+        "value": 95
+      }
+    ],
+    "controls": [
+      "N_X uses a smoothed prime-explicit-formula sum and theta approximation rather than eigenvalues of a constructed delay network",
+      "Known Riemann-zero ordinates are used for scoring and plot reference lines, not within N_X",
+      "Smoothing sigma=1.6/log(X+2) changes with the cutoff; it is not a fixed operator"
+    ],
+    "replication": "One source-reported cutoff sweep [3,10,30,100,500]; no independently checked rerun or multi-seed operator comparison.",
+    "held_out": false,
+    "external_data": true,
+    "limitations": [
+      "Demonstrates a known explicit-formula approximation; no operator satisfying the full Prime Orbit Condition is constructed",
+      "X→infinity convergence with self-adjointness is not shown",
+      "The separate 700-site engine/results claimed in the paper are not committed here",
+      "Formal theorem/proof sketches in the paper have not been validated for domain and self-adjointness assumptions"
+    ],
+    "source": "https://github.com/anttiluode/HilbertPolyaReintepretation/blob/main/truncated_poc_engine.py"
   }
 ]
