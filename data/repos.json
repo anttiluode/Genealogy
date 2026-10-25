@@ -1972,11 +1972,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 2519,
+    "size": 2768,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-10-25T03:46:52Z",
+    "updated_at": "2026-10-25T07:46:08Z",
     "inventory_status": "unread"
   },
   {
@@ -2296,6 +2296,17 @@
     "description": "Sol repo",
     "created_at": "2026-10-16T04:36:36Z",
     "updated_at": "2026-10-16T07:03:46Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "HailMery",
+    "url": "https://github.com/anttiluode/HailMery",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Because A would be solution. Opus. ",
+    "created_at": "2026-10-25T06:49:42Z",
+    "updated_at": "2026-10-25T07:10:14Z",
     "inventory_status": "reviewed"
   },
   {
@@ -4508,6 +4519,39 @@
     "created_at": "2024-10-01T16:48:27Z",
     "updated_at": "2024-10-01T17:24:59Z",
     "inventory_status": "unread"
+  },
+  {
+    "name": "SimplyPut",
+    "url": "https://github.com/anttiluode/SimplyPut",
+    "default_branch": "main",
+    "size": 280,
+    "visibility": "public",
+    "description": "Astra",
+    "created_at": "2026-10-25T04:23:34Z",
+    "updated_at": "2026-10-25T06:12:25Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "SimplyPutClaude",
+    "url": "https://github.com/anttiluode/SimplyPutClaude",
+    "default_branch": "main",
+    "size": 304,
+    "visibility": "public",
+    "description": "Opus 55",
+    "created_at": "2026-10-25T04:45:34Z",
+    "updated_at": "2026-10-25T05:37:23Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "SimplyPutSol",
+    "url": "https://github.com/anttiluode/SimplyPutSol",
+    "default_branch": "main",
+    "size": 22,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-10-25T05:01:10Z",
+    "updated_at": "2026-10-25T05:13:20Z",
+    "inventory_status": "reviewed"
   },
   {
     "name": "SimpsonsUniverse",
