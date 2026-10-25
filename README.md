@@ -23,6 +23,14 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
+## 2026-10-25 — Hilbert–Pólya through prime-delay loops (June 2026 archaeology)
+
+**[Explore the wall](https://anttiluode.github.io/Genealogy/)** · **[Read the source-reviewed field note](docs/reviews/2026-10-25-hilbert-polya-delay-network.md)** · [Source-linked pass](data/passes/october-25-hilbert-polya-delay-network.json) · [Original June paper](https://github.com/anttiluode/HilbertPolyaReintepretation/blob/main/rajapinta_takens_rh_paper.md)
+
+A new curated node, **[HilbertPolyaReintepretation](https://github.com/anttiluode/HilbertPolyaReintepretation)**, proposes prime logarithms as the transit times of primitive closed loops in a Rajapinta–Takens delay network. Its precise open condition is to realize the full prime-orbit weights and cancellation of extraneous loops *within one self-adjoint operator*. The included Python experiment reconstructs a **regularized truncated prime explicit formula**, with source-reported first-20-zero RMS **0.114 → 0.0052** as the prime cutoff rises 3 → 500. It does not supply or validate that operator, or prove RH; the claimed 700-site engine is absent from this repo, and the proof sketches require independent review.
+
+The wall connects this as **conceptual convergence**, not code inheritance, to [PrimeCrystalVST](https://github.com/anttiluode/PrimeCrystalVST) (an actual log-prime-delay audio tool) and [BirthOfClockfield](https://github.com/anttiluode/BirthOfClockfield) (the earlier failed generic prime-trace claim). A source-linked evidence record preserves the finite numerical readout **and** its limits. Paper date: June 2026; atlas review: October 25.
+
 ## 2026-10-23 — Confusing Friday: useful missing-information addresses, failed shortcuts and a ghost
 
 **[Explore the Confusing Friday wall](https://anttiluode.github.io/Genealogy/)** · **[Read the complete Friday field note](docs/reviews/2026-10-23-confusing-friday.md)** · [Image + GhostYou source-linked pass](data/passes/october-23-confusing-friday.json) · [Earlier binding/WhiteBox pass](data/passes/october-23-binding-and-whitebox.json)
