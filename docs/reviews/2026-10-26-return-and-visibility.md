@@ -34,10 +34,9 @@ The conceptual relatives are [Varjoluotain](https://github.com/anttiluode/Varjol
 
 ## Earlier projects worth keeping visible
 
-[PhaseSpaceVisualizerVST](https://github.com/anttiluode/PhaseSpaceVisualizerVST) was already curated in the [Practical Islands pass](../../data/passes/practical-islands.json). Five other frequently visited repositories now receive explicit reviewed cards:
+[PhaseSpaceVisualizerVST](https://github.com/anttiluode/PhaseSpaceVisualizerVST) was already curated in the [Practical Islands pass](../../data/passes/practical-islands.json). Four other frequently visited repositories now receive explicit reviewed cards:
 
 - [LLmit2](https://github.com/anttiluode/LLmit2) and [LLmIT3](https://github.com/anttiluode/LLmIT3): a local LLM-populated social playground, later with bot profiles; both document rough edges. Version succession is supported; emergent autonomous society is not.
-- [SpaceScreensaver](https://github.com/anttiluode/SpaceScreensaver): configurable generative cosmos visuals, not evidence for the true cosmology.
 - [StableAIflow](https://github.com/anttiluode/StableAIflow): a creative diffusion/phase-registration feedback filter; quantitative superiority to other temporal stabilizers has not been independently tested.
 - [ResonantCortex](https://github.com/anttiluode/ResonantCortex): phase/amplitude network with source-reported modular arithmetic and Lorenz metrics, deserving same-budget, same-split baseline reproduction before any general architectural ranking.
 
