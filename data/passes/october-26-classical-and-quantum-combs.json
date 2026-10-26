@@ -1,0 +1,80 @@
+{
+  "id": "october-26-classical-and-quantum-combs",
+  "title": "October 26 — The Comb and QuantumComb: paper, recomputation, interference",
+  "reviewed_at": "2026-10-26",
+  "order": 143,
+  "summary": "Two dependency-free browser demonstrations from Antti's spinning-comb/paper metaphor. TheComb models a circular ReLU convolutional stack and contrasts retained activations with depth-first recomputation, then exactly demonstrates a finite-field Cook–Mertz-style cancellation identity. QuantumComb explicitly identifies itself as the sibling and replaces grooves with qubits, unitary gates and amplitude histories, contrasting classical Schrödinger storage, Feynman path enumeration and measurement. Both are educational simulations: exact source-reported numerical checks support their programmed identities, not real quantum computation, biological learning or a general implementation of Williams' theorem.",
+  "nodes": [
+    {
+      "id": "TheComb",
+      "url": "https://github.com/anttiluode/TheComb",
+      "family": "practical-tools",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Interactive spinning-comb lathe turns weighted teeth into 1-D circular convolution/ReLU grooves. Keep-sheets, depth-first Regrow and finite-field Borrowed Paper modes explain the time–space trade and an exact Cook–Mertz-style phase-cancellation identity.",
+      "survived": "Runs entirely in a single browser page. README reports bit-for-bit regrowth agreement in 27 checks; GF(257) cancellation recovers target polynomials of degree below eight and demonstrates failure for degrees eight and above in sampled trials. Readouts expose live grooves, recomputation work and register restoration.",
+      "killed": "This restricted layered toy is not a proof of Williams' general square-root-space simulation. Regrow relies on one running sum per depth; borrowed-paper exactness needs finite-field arithmetic and degree below the number of phases. Grooves are activations, not learned biological traces, and time is spent to reduce memory.",
+      "evidence": "https://github.com/anttiluode/TheComb/blob/main/README.md",
+      "tags": [
+        "2026-10-26",
+        "browser-demo",
+        "convolution",
+        "relu",
+        "time-space-tradeoff",
+        "recomputation",
+        "cook-mertz",
+        "finite-field",
+        "visualization"
+      ],
+      "era": "October 26: paper, recomputation and amplitude paths",
+      "era_order": 155
+    },
+    {
+      "id": "QuantumComb",
+      "url": "https://github.com/anttiluode/QuantumComb",
+      "family": "practical-tools",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Quantum sibling of TheComb: interactive brickwork qubit circuit with Rx/ZZ gates, complex amplitudes and three perspectives—Schrödinger state evolution, Feynman path sums and shot-based measurement.",
+      "survived": "Single-page classical browser simulator. README reports eight tested settings with gate unitarity error at most 2e-16, normalized amplitude totals within 9e-16, backward return within 1e-15 and path-sum agreement with state-vector amplitudes within 7e-15. Visualizes interference, exponential path counts and measurement's limited readout.",
+      "killed": "Not a physical quantum computer or quantum advantage experiment. The state-vector and Feynman modes are classical simulation schedules; no-cloning and measurement are modeled principles, not experimentally tested hardware properties. The readout is probabilistic, and actual devices suffer noise and error-correction overhead.",
+      "evidence": "https://github.com/anttiluode/QuantumComb/blob/main/README.md",
+      "tags": [
+        "2026-10-26",
+        "browser-demo",
+        "quantum-simulation",
+        "unitary-circuit",
+        "feynman-paths",
+        "schrodinger-evolution",
+        "measurement",
+        "reversibility",
+        "interference"
+      ],
+      "era": "October 26: paper, recomputation and amplitude paths",
+      "era_order": 155
+    }
+  ],
+  "edges": [
+    {
+      "source": "TheComb",
+      "target": "QuantumComb",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "QuantumComb explicitly calls itself the quantum sibling of TheComb and reuses its comb/paper metaphor and keep-versus-regrow comparison while replacing ReLU activation dynamics with unitary qubit gates and path sums. This is an explanatory lineage, not evidence of quantum hardware or code inheritance.",
+      "evidence": "https://github.com/anttiluode/QuantumComb/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "oct26-comb-paper-budget",
+      "title": "Where did the cost go when the paper disappeared?",
+      "description": "TheComb saves intermediate storage by recomputing grooves. QuantumComb contrasts exponential classical state storage and exponential classical history enumeration with an n-qubit physical-state description whose readout yields samples. These are different computation models; their common lesson is to account separately for memory, work, reversibility and observability.",
+      "nodes": [
+        "TheComb",
+        "QuantumComb"
+      ]
+    }
+  ]
+}
