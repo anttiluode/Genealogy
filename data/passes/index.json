@@ -470,5 +470,9 @@
   {
     "path": "october-26-popular-artifact-archaeology.json",
     "enabled": true
+  },
+  {
+    "path": "october-26-classical-and-quantum-combs.json",
+    "enabled": true
   }
 ]

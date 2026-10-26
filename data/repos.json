@@ -3960,6 +3960,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "QuantumComb",
+    "url": "https://github.com/anttiluode/QuantumComb",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Opus",
+    "created_at": "2026-10-26T07:40:16Z",
+    "updated_at": "2026-10-26T07:53:09Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "Query-Addressable-Rate-Distortion-Memory",
     "url": "https://github.com/anttiluode/Query-Addressable-Rate-Distortion-Memory",
     "default_branch": "main",
@@ -5146,6 +5157,17 @@
     "created_at": "2026-07-02T09:45:54Z",
     "updated_at": "2026-08-14T14:28:08Z",
     "inventory_status": "unread"
+  },
+  {
+    "name": "TheComb",
+    "url": "https://github.com/anttiluode/TheComb",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Opus 55",
+    "created_at": "2026-10-26T07:32:41Z",
+    "updated_at": "2026-10-26T07:34:28Z",
+    "inventory_status": "reviewed"
   },
   {
     "name": "TheCriticalClockield",
