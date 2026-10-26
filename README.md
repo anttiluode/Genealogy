@@ -23,6 +23,14 @@ The static atlas includes:
 - one-hop lineage focus,
 - dependency-free SVG wheel zoom, drag pan, `− / + / Fit` controls, and zoom readout.
 
+## 2026-10-26 — Hidden-half sight, returning motor probes and popular project archaeology
+
+**[Live Genealogy wall](https://anttiluode.github.io/Genealogy/#oct26-field-notes)** · **[Read the complete source-linked review](docs/reviews/2026-10-26-return-and-visibility.md)** · [Motor and vision pass](data/passes/october-25-26-return-and-hidden-vision.json) · [Popular artifacts pass](data/passes/october-26-popular-artifact-archaeology.json)
+
+An October 25–26 archaeology pass adds **OddOne** and its hidden-half webcam / indirect-light experiment, plus new evidence ledgers for **SimplyPut**, **SimplyPutClaude**, **SimplyPutSol**, and **HailMery** already on the wall. OddOne's committed synthetic diagnostic separates coarse shadow/light signals from misleading frame continuation, auto-exposure and dramatic failure on novel colour. **No controlled novel real-world hidden-position recovery is claimed**; a new unresolved question specifies the discriminating webcam experiment. The motor-reaching branch likewise keeps the ordinary memoization control, the supervised route-retention gain, the failed cable-phase ablation and the action-conditioned self toy distinct.
+
+Five previously uncurated but popular projects receive cards: **LLmit2, LLmIT3, SpaceScreensaver, StableAIflow, ResonantCortex**. **PhaseSpaceVisualizerVST was already present** in Practical Islands, so it was not duplicated. The census also adds OddOne, raising the current recorded repository inventory from 536 to **537** at this reviewed snapshot. The saved benchmark claims are labeled source-reported rather than independently verified.
+
 ## 2026-10-25 — Hilbert–Pólya through prime-delay loops (June 2026 archaeology)
 
 **[Explore the wall](https://anttiluode.github.io/Genealogy/)** · **[Read the source-reviewed field note](docs/reviews/2026-10-25-hilbert-polya-delay-network.md)** · [Source-linked pass](data/passes/october-25-hilbert-polya-delay-network.json) · [Original June paper](https://github.com/anttiluode/HilbertPolyaReintepretation/blob/main/rajapinta_takens_rh_paper.md)
