@@ -1,0 +1,147 @@
+{
+  "id": "october-26-popular-artifact-archaeology",
+  "title": "October 26 review — popular software artifacts and phase-shaped experiments",
+  "reviewed_at": "2026-10-26",
+  "order": 142,
+  "summary": "A documentation-based revisit to five frequently visited repositories already in the census, without duplicating PhaseSpaceVisualizerVST (curated in Practical Islands). LLmit2 and LLmIT3 are runnable local AI-social-world satire projects, with explicit known application defects; SpaceScreensaver is a configurable simulated visual artwork; StableAIflow is a phase-correlated diffusion-feedback video-filter implementation with unverified broad temporal-coherence claims; and ResonantCortex supplies a complex phase/magnitude network and impressive source-reported toy metrics without a matched, independently reproduced benchmark. These are practical or exploratory artifacts, not verified evidence for a unified physics or cognition theory.",
+  "nodes": [
+    {
+      "id": "LLmit2",
+      "url": "https://github.com/anttiluode/LLmit2",
+      "family": "practical-tools",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Local Flask social-media satire where LLM bots create subllmit posts and comments, with human logins, voting and search, backed by an LM Studio text server and image generation.",
+      "survived": "Repository contains a runnable setup sequence and generated social-feed application; the design allows a human to enter an AI-populated synthetic forum.",
+      "killed": "README acknowledges interface/login visibility and bot-identity limitations; no autonomous social-learning or production reliability measurement is provided.",
+      "evidence": "https://github.com/anttiluode/LLmit2/blob/main/README.md",
+      "tags": [
+        "legacy-reviewed-2026-10-26",
+        "local-llm",
+        "flask",
+        "synthetic-social-world",
+        "creative-app"
+      ],
+      "era": "Earlier creative software reviewed October 26",
+      "era_order": 90
+    },
+    {
+      "id": "LLmIT3",
+      "url": "https://github.com/anttiluode/LLmIT3",
+      "family": "practical-tools",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Reworked local AI-social-media world adds bots with personality/backstory fields, population scripts, Flask database and human participation, using LM Studio for text and Stable Diffusion for images.",
+      "survived": "Repository documents bot creation, content population, app startup and a demo; it builds on the LLMit social-feed line with an explicit character layer.",
+      "killed": "README itself flags rough homepage population, unreliable posting button, workarounds and uncertain replies to human posts; no reliable unattended-agent or social-emergence test is claimed.",
+      "evidence": "https://github.com/anttiluode/LLmIT3/blob/main/Readme.MD",
+      "tags": [
+        "legacy-reviewed-2026-10-26",
+        "local-llm",
+        "synthetic-social-world",
+        "bot-backstories",
+        "creative-app"
+      ],
+      "era": "Earlier creative software reviewed October 26",
+      "era_order": 90
+    },
+    {
+      "id": "SpaceScreensaver",
+      "url": "https://github.com/anttiluode/SpaceScreensaver",
+      "family": "practical-tools",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Python/Pygame visual screensaver with a configurable simulated tensor-inspired cosmos, live/full-screen presentation, colours and a cellular visual variant.",
+      "survived": "An executable generative animation and video demonstration; creative utility does not depend on the proposed cosmological interpretation.",
+      "killed": "Its simulated patterns are not empirical tests of the actual universe or novel fundamental physics.",
+      "evidence": "https://github.com/anttiluode/SpaceScreensaver/blob/main/README.md",
+      "tags": [
+        "legacy-reviewed-2026-10-26",
+        "screensaver",
+        "generative-art",
+        "simulation"
+      ],
+      "era": "Earlier creative software reviewed October 26",
+      "era_order": 90
+    },
+    {
+      "id": "StableAIflow",
+      "url": "https://github.com/anttiluode/StableAIflow",
+      "family": "perception",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "medium",
+      "claim": "Real-time diffusion-based video-filter workflow warps preceding stylized frames using OpenCV phase correlation, adjusts feedback via multiscale blur/texture heuristics and applies sharpening against repeated feedback blur.",
+      "survived": "The repository describes an operational adjustable filter, temporal reuse and video demo; phase registration plus feedback is a concrete design for mitigating frame-to-frame inconsistency.",
+      "killed": "'Perfect' alignment, universal stability and superiority to optical flow are not established by documented held-out comparisons. Camera motion, deformation, occlusion, lighting and feedback artifacts are possible failure cases; blur-scale difference should not be equated to measured physical fractal dimension without validation.",
+      "evidence": "https://github.com/anttiluode/StableAIflow/blob/main/README.md",
+      "tags": [
+        "legacy-reviewed-2026-10-26",
+        "phase-correlation",
+        "diffusion-feedback",
+        "temporal-registration",
+        "video-tool",
+        "unverified-performance"
+      ],
+      "era": "Earlier creative software reviewed October 26",
+      "era_order": 90
+    },
+    {
+      "id": "ResonantCortex",
+      "url": "https://github.com/anttiluode/ResonantCortex",
+      "family": "neural-dynamics",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "medium",
+      "claim": "Complex phase-and-magnitude neural-network experiments for modular arithmetic, Lorenz dynamics and a visual image-matching painter, with claimed dynamic capacity growth.",
+      "survived": "A public Python experiment and interactive page make phase-based representation concrete; README reports modular-addition 100% accuracy at 129 epochs and Lorenz next-step MSE 1.2e-5.",
+      "killed": "These are source-reported figures, not an independent matched-baseline audit. Broad claims that transformers fundamentally cannot represent cycles or that learned phase equals physical differential equations do not follow from these toys; overfitting, splits, parameter budget and training time require controls.",
+      "evidence": "https://github.com/anttiluode/ResonantCortex/blob/main/README.md",
+      "tags": [
+        "legacy-reviewed-2026-10-26",
+        "complex-valued-network",
+        "resonance",
+        "grokking",
+        "lorenz",
+        "source-reported"
+      ],
+      "era": "Earlier creative software reviewed October 26",
+      "era_order": 90
+    }
+  ],
+  "edges": [
+    {
+      "source": "LLmit2",
+      "target": "LLmIT3",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "LLmIT3 explicitly continues the locally generated LLM social-forum project, adding persistent bot characterization and separate creation/population workflows. This describes version succession, not evidence of autonomous behavior.",
+      "evidence": "https://github.com/anttiluode/LLmIT3/blob/main/Readme.MD"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "oct26-local-bot-constructed-social-world",
+      "title": "Build a tiny synthetic social world before claiming emergent social intelligence",
+      "description": "LLmit2 and LLmIT3 combine local model-backed authors, persistent forum content and optional human interaction. The app is creative and interactive; documented bot identities are programmed, not learned independent goals.",
+      "nodes": [
+        "LLmit2",
+        "LLmIT3"
+      ]
+    },
+    {
+      "id": "oct26-phase-imagery-usable-without-unified-theory",
+      "title": "Phase and simulated dynamics can make tools without proving their metaphors",
+      "description": "The installed DAW phase visualizer, simulated cosmos, phase-registered diffusion filter and complex neural-network demonstration share a visual mathematical vocabulary, not an evidenced common mechanism or code ancestry. Assess each by its artifact and own tests.",
+      "nodes": [
+        "PhaseSpaceVisualizerVST",
+        "SpaceScreensaver",
+        "StableAIflow",
+        "ResonantCortex"
+      ]
+    }
+  ]
+}
