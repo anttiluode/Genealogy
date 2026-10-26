@@ -8,6 +8,13 @@ The central premise is that hundreds of repositories are not hundreds of indepen
 
 https://anttiluode.github.io/Genealogy/
 
+### October 26, 2026 — New arrivals: Kahuna, Portaali, Gosh2
+
+The [new arrivals on the wall](https://anttiluode.github.io/Genealogy/#oct26-new-worlds) add three source-reviewed cards and three genealogy edges in [the October 26 pass](data/passes/october-26-comb-learning-and-portal-worlds.json). **[Kahuna](https://github.com/anttiluode/Kahuna)** separates four cue-routed learned operators and tests protected vs adaptive writes; source-reported changed-rule MSE **0.16473 protected vs 0.00001 adaptive**, so protecting an obsolete rule is not a general solution. It is conceptually adjacent to the Comb family, not a physical needle medium or Williams implementation.
+
+**[Portaali](https://github.com/anttiluode/Portaali)** inherits the **[AnttisBrain2](https://github.com/anttiluode/AnttisBrain2)** world as paired two-way portals between hash-generated chambers, with limited 4-second-per-depth webcam history. **[Gosh2](https://github.com/anttiluode/Gosh2)** independently inherits the same engine and brings its webcam dumbflies and evolving 32×32 three-field minds into the world with in-world fly eyes. Both are creative WebGL2 instruments with documented software-GPU tests and unmeasured real-GPU performance. Existing TheComb and QuantumComb cards remain unchanged.
+
+
 ### October 26, 2026 — The Comb family
 
 [TheComb](https://github.com/anttiluode/TheComb) → [QuantumComb](https://github.com/anttiluode/QuantumComb) now have linked cards on the [Genealogy wall](https://anttiluode.github.io/Genealogy/#comb-family-oct26) and a [reviewed pass](data/passes/october-26-classical-and-quantum-combs.json). The first simulates classical ReLU layers, retained grooves, depth-first recomputation and finite-field borrowed-paper cancellation; the second explicitly extends the metaphor to unitary gates, Schrödinger evolution, Feynman path sums and measurement. Both are browser demonstrations with source-reported checks, **not** physical neural or quantum experiments.

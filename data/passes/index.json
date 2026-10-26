@@ -474,5 +474,9 @@
   {
     "path": "october-26-classical-and-quantum-combs.json",
     "enabled": true
+  },
+  {
+    "path": "october-26-comb-learning-and-portal-worlds.json",
+    "enabled": true
   }
 ]
