@@ -10348,5 +10348,324 @@
       "Formal theorem/proof sketches in the paper have not been validated for domain and self-adjointness assumptions"
     ],
     "source": "https://github.com/anttiluode/HilbertPolyaReintepretation/blob/main/truncated_poc_engine.py"
+  },
+  {
+    "id": "oct25-simplyput-memory-vs-shortcut",
+    "node": "SimplyPut",
+    "claim": "The familiar bell-reach behavior is reproduced by ordinary context-keyed action memory; the shortcut does not improve selection accuracy over the ordinary action table.",
+    "design": "32 synthetic hidden-target worlds; train on up to 90 practice episodes per situation, frozen 60-episode evaluation with contact-only feedback and maximum 12 attempted commands.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "memory plus shortcut first-reach success",
+        "value": "100% / 1.00 mean attempt"
+      },
+      {
+        "name": "ordinary table first-reach success",
+        "value": "100% / 1.00 mean attempt"
+      },
+      {
+        "name": "no-write success within 12 attempts",
+        "value": "14.7%"
+      }
+    ],
+    "controls": [
+      "Ordinary action table without shortcut",
+      "No memory writes",
+      "Randomly misassigned action credit"
+    ],
+    "limitations": [
+      "Each context is supplied as an ID; no visual situation identification.",
+      "Only a finite fixed command grid and deterministic hidden targets; no physical arm.",
+      "Shortcut speeds lookup only, not success, in this benchmark."
+    ],
+    "source": "https://github.com/anttiluode/SimplyPut/blob/main/README.md",
+    "motifs": [
+      "oct25-reach-memory-vs-return-learning"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "sample": {
+      "unit": "synthetic hidden-target world",
+      "count": 32
+    },
+    "replication": "Repository-reported frozen results; not independently rerun in this review."
+  },
+  {
+    "id": "oct25-simplyputclaude-route-retention",
+    "node": "SimplyPutClaude",
+    "claim": "Experience-assigned route selection protects earlier synthetic reaches during later sequential skill training better than compared shared and fixed-random-gate controllers.",
+    "design": "Four sequential tasks on a two-joint planar arm; 10 seeds and 200 evaluation postures, prespecified retention, comparator and capacity gates.",
+    "result": "supports",
+    "metrics": [
+      {
+        "name": "final average corrections per reach",
+        "value": "route 0.68 ± 0.04; plain 2.94 ± 0.13; fixed gate 3.39 ± 0.14"
+      },
+      {
+        "name": "old bell corrections after all later skills",
+        "value": "route 0.75; plain 3.42; fixed gate 4.50"
+      },
+      {
+        "name": "capacity failure",
+        "value": "4 routes: bell from 0.58 after training to 3.69 at end"
+      }
+    ],
+    "controls": [
+      "Shared tanh network",
+      "Hand-assigned random gating",
+      "Cue-blind learned routes",
+      "Route capacity sweep"
+    ],
+    "limitations": [
+      "Correction uses a two-dimensional target error near contact, not a contact-only scalar reward.",
+      "Synthetic arm and fixed context cues; learned route selection is not evidence for a particular dendritic substrate.",
+      "Parameter and computational budget matching remains to be audited."
+    ],
+    "source": "https://github.com/anttiluode/SimplyPutClaude/blob/main/results/results.json",
+    "motifs": [
+      "oct25-reach-memory-vs-return-learning"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "sample": {
+      "unit": "random seed",
+      "count": 10
+    },
+    "replication": "Saved source-reported results and preregistration; not rerun here."
+  },
+  {
+    "id": "oct25-simplyputsol-cable-ablation-fails",
+    "node": "SimplyPutSol",
+    "claim": "A paired-probe complex cable controller can train from graded scalar feedback, but its extra adaptive cable phase and tuning do not beat matching fixed or phase-disabled controls.",
+    "design": "Sequential bell/switch/light/horn arm reaches with three-step gust history, paired randomized motor probes, six model arms and five predeclared gates; 3 seeds.",
+    "result": "contradicts",
+    "metrics": [
+      {
+        "name": "predeclared gates passed",
+        "value": "4/5"
+      },
+      {
+        "name": "bell distance after first then later training",
+        "value": "0.029 → 0.736"
+      },
+      {
+        "name": "final mean distance",
+        "value": "adaptive cables 0.396; frozen 0.395; phase-off 0.390; RNN 0.665"
+      }
+    ],
+    "controls": [
+      "Frozen cable parameters",
+      "Phase switched off",
+      "State wiped between input frames",
+      "Trainable RNN",
+      "Static local experts"
+    ],
+    "limitations": [
+      "Finite-difference local perturbation is an established training method.",
+      "Uses graded scalar proximity and resettable simulated episodes, not binary-only click or irreversible riding.",
+      "Only 3 seeds and imperfect parameter matching; the negative verdict is bounded to this fixture."
+    ],
+    "source": "https://github.com/anttiluode/SimplyPutSol/blob/main/RESULTS.md",
+    "motifs": [
+      "oct25-reach-memory-vs-return-learning"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "sample": {
+      "unit": "training seed",
+      "count": 3
+    },
+    "replication": "Frozen v1 repository result; no independent rerun."
+  },
+  {
+    "id": "oct25-hailmery-motor-conditioned-self-model",
+    "node": "HailMery",
+    "claim": "In one engineered multisensory toy, conditioning observations on one's own recent motor commands distinguishes self-related components even when another actor creates correlated sound and vision.",
+    "design": "Synthetic delayed and mixed vision, sound and touch with self and other actor, canonical cross-modal comparison and frozen-time regression on motor history; temporal-window shift and jitter variants.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "motor-predicted self-component held-out R²",
+        "value": "vision 0.995; sound 0.998; touch 0.999"
+      },
+      {
+        "name": "other-actor leakage",
+        "value": "≤ 0.004"
+      },
+      {
+        "name": "chosen motor-history window",
+        "value": "12 steps"
+      }
+    ],
+    "controls": [
+      "Cross-modal agreement without motor actions",
+      "Delayed mirror versus delayed imitator",
+      "Smooth versus jittery action source",
+      "Shifted/shortened/drifting temporal window"
+    ],
+    "limitations": [
+      "Synthetic structure built so motor commands are a strong causal signal; one source-reported run.",
+      "No independently grounded cortical order parameter or mechanism.",
+      "Separating motor-predictable observations does not detect phenomenal self or consciousness."
+    ],
+    "source": "https://github.com/anttiluode/HailMery/blob/main/README.md",
+    "motifs": [
+      "oct25-action-conditioned-self-window"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "replication": "One source-reported constructed synthetic experiment; not externally reproduced."
+  },
+  {
+    "id": "oct25-oddone-shadow-vs-glow-synthetic",
+    "node": "OddOne",
+    "claim": "In the saved synthetic webcam-half diagnosis, a shadow-forming occluder makes more spatial hidden-scene variation linearly predictable than a smooth indirect glow, especially at coarse scales.",
+    "design": "Six-scene programmed signal/transport battery with frozen train/test windows; linear ridge lens, negative independent scene, brightness-only and time-shuffle comparators, multi-resolution R² and canonical-channel readout.",
+    "result": "supports",
+    "metrics": [
+      {
+        "name": "1/8-resolution change-prediction R²",
+        "value": "independent -0.074; glow 0.550; shadow 0.728"
+      },
+      {
+        "name": "full-resolution change-prediction R²",
+        "value": "glow 0.052; shadow 0.131"
+      },
+      {
+        "name": "strong held-out channels > 0.5",
+        "value": "glow 16; shadow 15"
+      }
+    ],
+    "controls": [
+      "Independent halves",
+      "Average visible brightness only",
+      "Time-shuffled source/target pairs",
+      "Novel test colour",
+      "Cross-boundary motion and auto-exposure scenes"
+    ],
+    "limitations": [
+      "A programmed synthetic fixture is not a real room or independent video holdout.",
+      "The channel-count heuristic is not a calibrated estimate of the optical transport operator rank.",
+      "At all scales, modest direct pixel R²; 1/8 success means coarse pattern recovery."
+    ],
+    "source": "https://github.com/anttiluode/OddOne/blob/main/diagnose_synthetic.json",
+    "motifs": [
+      "oct26-hidden-side-identifiability"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "sample": {
+      "unit": "synthetic scenario",
+      "count": 6
+    },
+    "replication": "Numerical values read from committed diagnose_synthetic.json, not independently rerun."
+  },
+  {
+    "id": "oct25-oddone-false-sight-and-novelty",
+    "node": "OddOne",
+    "claim": "The same synthetic lens gets spectacular scores from trivial continuation and camera exposure, while extrapolation to a genuinely novel-colour condition fails; this prevents counting every successful-looking image as hidden-light reconstruction.",
+    "design": "Programmed crossing, exposure and novel-colour controls, using held-out scene segments with measured midline motion, brightness-only R² and novelty fraction.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "cross-boundary continuation R² full resolution",
+        "value": "0.963"
+      },
+      {
+        "name": "exposure R² full resolution",
+        "value": "0.985; brightness-only baseline also 0.985"
+      },
+      {
+        "name": "novel-colour R² full resolution",
+        "value": "-10.516"
+      },
+      {
+        "name": "novel input proportion",
+        "value": "19.1% of visible test changes"
+      }
+    ],
+    "controls": [
+      "Visible-to-hidden object crossing",
+      "Global webcam exposure",
+      "Brightness-only baseline",
+      "Novel colour unseen in training"
+    ],
+    "limitations": [
+      "These controls diagnose contrived synthetic cases, not the real webcam demonstration.",
+      "Novelty threshold changed after checking this synthetic example (20% to 10%): its flag is exploratory, not preregistered.",
+      "Fresh, independently recorded novelty/occluder interventions and device exposure logs remain untested."
+    ],
+    "source": "https://github.com/anttiluode/OddOne/blob/main/diagnose_synthetic.json",
+    "motifs": [
+      "oct26-hidden-side-identifiability"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "sample": {
+      "unit": "synthetic diagnostic scenario",
+      "count": 3
+    },
+    "replication": "Source-saved scenario results; no independently rerun live camera test."
+  },
+  {
+    "id": "oct26-resonantcortex-reported-phase-benchmarks",
+    "node": "ResonantCortex",
+    "claim": "The README reports high performance of a complex-valued phase network on modular addition and Lorenz next-step prediction, but the report does not constitute an independently matched comparison to common architectures.",
+    "design": "Review the published README claims for modular arithmetic and nonlinear dynamical forecasting; no training run or train/test code audit during this genealogy pass.",
+    "result": "inconclusive",
+    "metrics": [
+      {
+        "name": "reported modular-addition result",
+        "value": "100% accuracy at 129 epochs"
+      },
+      {
+        "name": "reported Lorenz next-step MSE",
+        "value": "1.2 × 10^-5"
+      }
+    ],
+    "controls": [],
+    "limitations": [
+      "No independent reproduction in Genealogy.",
+      "No verified same-parameter, same-split, same-budget transformer or LSTM baseline.",
+      "Source-reported performance does not demonstrate novel physics or unique phase-computational superiority."
+    ],
+    "source": "https://github.com/anttiluode/ResonantCortex/blob/main/README.md",
+    "motifs": [
+      "oct26-phase-imagery-usable-without-unified-theory"
+    ],
+    "held_out": false,
+    "external_data": false,
+    "replication": "Documentation read, benchmark not rerun."
+  },
+  {
+    "id": "oct26-stableaiflow-phase-filter-documentation",
+    "node": "StableAIflow",
+    "claim": "A phase-correlation and diffusion-feedback filter is documented as a working interactive video-effect architecture, but the README's strong temporal-coherence superiority claims are not supported by a controlled benchmark in this review.",
+    "design": "Review the documented OpenCV phase-registration, temporal feedback, blur-scale gating, sharpening and demo reference.",
+    "result": "inconclusive",
+    "metrics": [
+      {
+        "name": "reported output",
+        "value": "interactive video filter and demo"
+      },
+      {
+        "name": "controlled flicker/latency baselines",
+        "value": "not verified"
+      }
+    ],
+    "controls": [],
+    "limitations": [
+      "No held-out scene changes, occlusions, non-translational motion, image-quality and latency comparison was inspected.",
+      "Phase correlation estimates translation and may fail for articulated/nonrigid motion.",
+      "Repeated stylization feedback may lock in artifacts, not only useful temporal structure."
+    ],
+    "source": "https://github.com/anttiluode/StableAIflow/blob/main/README.md",
+    "motifs": [
+      "oct26-phase-imagery-usable-without-unified-theory"
+    ],
+    "held_out": false,
+    "external_data": false,
+    "replication": "Source-level descriptive review only."
   }
 ]
