@@ -462,5 +462,13 @@
   {
     "path": "october-25-hilbert-polya-delay-network.json",
     "enabled": true
+  },
+  {
+    "path": "october-25-26-return-and-hidden-vision.json",
+    "enabled": true
+  },
+  {
+    "path": "october-26-popular-artifact-archaeology.json",
+    "enabled": true
   }
 ]
