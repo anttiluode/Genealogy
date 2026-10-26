@@ -8,6 +8,11 @@ The central premise is that hundreds of repositories are not hundreds of indepen
 
 https://anttiluode.github.io/Genealogy/
 
+### October 26, 2026 — The Comb family
+
+[TheComb](https://github.com/anttiluode/TheComb) → [QuantumComb](https://github.com/anttiluode/QuantumComb) now have linked cards on the [Genealogy wall](https://anttiluode.github.io/Genealogy/#comb-family-oct26) and a [reviewed pass](data/passes/october-26-classical-and-quantum-combs.json). The first simulates classical ReLU layers, retained grooves, depth-first recomputation and finite-field borrowed-paper cancellation; the second explicitly extends the metaphor to unitary gates, Schrödinger evolution, Feynman path sums and measurement. Both are browser demonstrations with source-reported checks, **not** physical neural or quantum experiments.
+
+
 The static atlas includes:
 
 - the complete repository census,
