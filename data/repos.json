@@ -2244,6 +2244,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "Gosh2",
+    "url": "https://github.com/anttiluode/Gosh2",
+    "default_branch": "main",
+    "size": 34,
+    "visibility": "public",
+    "description": "Opus 55",
+    "created_at": "2026-10-26T16:28:37Z",
+    "updated_at": "2026-10-26T17:12:34Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "GraphNN",
     "url": "https://github.com/anttiluode/GraphNN",
     "default_branch": "main",
@@ -2605,6 +2616,17 @@
     "created_at": "2026-03-31T05:01:19Z",
     "updated_at": "2026-03-31T09:09:06Z",
     "inventory_status": "unread"
+  },
+  {
+    "name": "Kahuna",
+    "url": "https://github.com/anttiluode/Kahuna",
+    "default_branch": "main",
+    "size": 37,
+    "visibility": "public",
+    "description": "Astra",
+    "created_at": "2026-10-26T15:52:23Z",
+    "updated_at": "2026-10-26T16:08:14Z",
+    "inventory_status": "reviewed"
   },
   {
     "name": "Kaiku",
@@ -3859,6 +3881,17 @@
     "created_at": "2025-05-17T08:54:57Z",
     "updated_at": "2025-05-17T16:54:27Z",
     "inventory_status": "unread"
+  },
+  {
+    "name": "Portaali",
+    "url": "https://github.com/anttiluode/Portaali",
+    "default_branch": "main",
+    "size": 27,
+    "visibility": "public",
+    "description": "Opus 55 ",
+    "created_at": "2026-10-26T15:44:55Z",
+    "updated_at": "2026-10-26T16:06:13Z",
+    "inventory_status": "reviewed"
   },
   {
     "name": "PredictiveHKT",
