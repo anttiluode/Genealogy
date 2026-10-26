@@ -1,0 +1,109 @@
+{
+  "id": "october-25-26-return-and-hidden-vision",
+  "title": "October 25–26 — the returning action and the hidden half",
+  "reviewed_at": "2026-10-26",
+  "order": 141,
+  "summary": "Extends the already curated October 25 SimplyPut, SimplyPutClaude, SimplyPutSol and HailMery cards with their discriminating controls, and adds OddOne's October 25 webcam hidden-half experiment. SimplyPut shows ordinary memoized action selection; Claude's route toy retains learned reaches against shared controls; Sol's active-probe cable mechanism fails its frozen/phase-off ablation; HailMery isolates action-predicted self versus cross-modal agreement in a synthetic fixture. OddOne's six-scene saved synthetic battery distinguishes spatial light leakage from continuation, auto-exposure and failed novelty extrapolation. Its live webcam footage is a demonstration, not a controlled independent novel-position recovery result. The optical and motor branches meet only at the methodological question: can return signals reveal what is hidden without mistaking priors for observations?",
+  "nodes": [
+    {
+      "id": "OddOne",
+      "url": "https://github.com/anttiluode/OddOne",
+      "family": "perception",
+      "status": "ledger",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Online webcam hidden-half predictor: a CPU linear Wiener/ridge lens and an optional CNN predict changes in one half of the image from the other. It includes frozen-test diagnostics, brightness/time-shuffle controls, a synthetic corner-light battery and singular-value experiments.",
+      "survived": "Saved six-scene synthetic diagnosis separates coarse light and shadow readout from independent halves: at 1/8 resolution R² is 0.55 for glow, 0.728 for edge shadow and -0.074 for independent input. The edge case beats glow; the full-resolution gain is smaller (0.131 versus 0.052). A separate idealized singular-value fixture shows why an occluding edge can increase resolvable channels. The code also provides live webcam display, train/freeze, score and channel analysis.",
+      "killed": "Near-perfect synthetic crosser R²=0.963 at full resolution is primarily object continuation across the split; exposure R²=0.985 matches a brightness-only baseline. A novel-colour test collapses to R²=-10.516 at full resolution. Novelty cutoff was revised after seeing the test, and no frozen, independently audited live-camera test establishes that previously unseen positions are physically reconstructed rather than extrapolated. Frame-by-frame prequential scoring alone does not remove temporal dependence.",
+      "evidence": "https://github.com/anttiluode/OddOne/blob/main/diagnose_synthetic.json",
+      "tags": [
+        "2026-10-25",
+        "2026-10-26-review",
+        "webcam",
+        "hidden-half",
+        "optical-leakage",
+        "prequential",
+        "synthetic-controls",
+        "novelty-failure",
+        "brightness-trap",
+        "corner-camera",
+        "linear-vs-cnn"
+      ],
+      "era": "October 25–26: visible evidence versus learned guesses",
+      "era_order": 154
+    }
+  ],
+  "edges": [
+    {
+      "source": "SimplyPut",
+      "target": "SimplyPutClaude",
+      "type": "converges",
+      "confidence": "high",
+      "why": "SimplyPutClaude explicitly names the simpler context-keyed bell memory as its sibling control, then tackles retention under sequential learning in a shared arm controller, not a direct code fork.",
+      "evidence": "https://github.com/anttiluode/SimplyPutClaude/blob/main/README.md"
+    },
+    {
+      "source": "SimplyPutClaude",
+      "target": "SimplyPutSol",
+      "type": "converges",
+      "confidence": "high",
+      "why": "SimplyPutSol explicitly names Claude's route-controller test and changes the learning interface from corrective joint-angle error to scalar feedback from the learner's own randomized probes. The mechanism ablation fails, unlike the route toy's retention gate.",
+      "evidence": "https://github.com/anttiluode/SimplyPutSol/blob/main/README.md"
+    },
+    {
+      "source": "Varjoluotain",
+      "target": "OddOne",
+      "type": "converges",
+      "confidence": "high",
+      "why": "OddOne's README explicitly calls the webcam experiment a cousin of Varjoluotain's light-transport inverse-periscopy problem, without copying its occluder model.",
+      "evidence": "https://github.com/anttiluode/OddOne/blob/main/README.md"
+    },
+    {
+      "source": "KulmanTakaa",
+      "target": "OddOne",
+      "type": "converges",
+      "confidence": "high",
+      "why": "OddOne explicitly refers to KulmanTakaa as the corner-camera relative. Unlike the early browser instrument's proposed hidden-actor bench, OddOne provides a split-webcam lens and measured synthetic optical-leak controls.",
+      "evidence": "https://github.com/anttiluode/OddOne/blob/main/README.md"
+    },
+    {
+      "source": "DoDis",
+      "target": "OddOne",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both ask whether observed image context can constrain missing image content. DoDis retrieves donor residues; OddOne learns a visible-to-hidden predictive channel. This is conceptual comparison, not inheritance or a claim that image plausibility proves optical visibility.",
+      "evidence": "https://github.com/anttiluode/OddOne/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "oct25-reach-memory-vs-return-learning",
+      "title": "A learned action is not the same claim as a learned cable",
+      "description": "A small action table and memoized shortcut succeed at repeated known targets; experience-assigned expert routes protect sequential reaches in a supervised synthetic arm; paired physical-style probes do not yet beat fixed cables or solve forgetting. Compare causal controls before attributing a skill to tissue-like dynamics.",
+      "nodes": [
+        "SimplyPut",
+        "SimplyPutClaude",
+        "SimplyPutSol"
+      ]
+    },
+    {
+      "id": "oct25-action-conditioned-self-window",
+      "title": "The self-model test must contain the system's own actions",
+      "description": "In HailMery's synthetic mirror fixture, correlated sensory streams describe both self and imitator. Conditioning on one's motor history separates components over a finite timing window; the proposed observer-of-observers and consciousness interpretation remain untested.",
+      "nodes": [
+        "HailMery"
+      ]
+    },
+    {
+      "id": "oct26-hidden-side-identifiability",
+      "title": "The hidden scene is recoverable only where a measurable channel carries it",
+      "description": "Visible shadows and low-frequency illumination can constrain hidden motion, but across-boundary continuation, camera auto-exposure and prior-driven completions can mimic sight. OddOne reports synthetic discriminators; fresh live-camera optical interventions remain the decisive missing test.",
+      "nodes": [
+        "Varjoluotain",
+        "KulmanTakaa",
+        "DoDis",
+        "OddOne"
+      ]
+    }
+  ]
+}
