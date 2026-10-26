@@ -3,7 +3,7 @@
   "title": "October 26 review — popular software artifacts and phase-shaped experiments",
   "reviewed_at": "2026-10-26",
   "order": 142,
-  "summary": "A documentation-based revisit to five frequently visited repositories already in the census, without duplicating PhaseSpaceVisualizerVST (curated in Practical Islands). LLmit2 and LLmIT3 are runnable local AI-social-world satire projects, with explicit known application defects; SpaceScreensaver is a configurable simulated visual artwork; StableAIflow is a phase-correlated diffusion-feedback video-filter implementation with unverified broad temporal-coherence claims; and ResonantCortex supplies a complex phase/magnitude network and impressive source-reported toy metrics without a matched, independently reproduced benchmark. These are practical or exploratory artifacts, not verified evidence for a unified physics or cognition theory.",
+  "summary": "A documentation-based revisit to four frequently visited repositories already in the census, without duplicating existing wall cards for SpaceScreensaver or PhaseSpaceVisualizerVST. LLmit2 and LLmIT3 are runnable local AI-social-world satire projects, with explicit known application defects; StableAIflow is a phase-correlated diffusion-feedback video-filter implementation with unverified broad temporal-coherence claims; and ResonantCortex supplies a complex phase/magnitude network and impressive source-reported toy metrics without a matched, independently reproduced benchmark. These are practical or exploratory artifacts, not verified evidence for a unified physics or cognition theory.",
   "nodes": [
     {
       "id": "LLmit2",
@@ -43,26 +43,6 @@
         "synthetic-social-world",
         "bot-backstories",
         "creative-app"
-      ],
-      "era": "Earlier creative software reviewed October 26",
-      "era_order": 90
-    },
-    {
-      "id": "SpaceScreensaver",
-      "url": "https://github.com/anttiluode/SpaceScreensaver",
-      "family": "practical-tools",
-      "status": "tool",
-      "usefulness": "practical",
-      "confidence": "high",
-      "claim": "Python/Pygame visual screensaver with a configurable simulated tensor-inspired cosmos, live/full-screen presentation, colours and a cellular visual variant.",
-      "survived": "An executable generative animation and video demonstration; creative utility does not depend on the proposed cosmological interpretation.",
-      "killed": "Its simulated patterns are not empirical tests of the actual universe or novel fundamental physics.",
-      "evidence": "https://github.com/anttiluode/SpaceScreensaver/blob/main/README.md",
-      "tags": [
-        "legacy-reviewed-2026-10-26",
-        "screensaver",
-        "generative-art",
-        "simulation"
       ],
       "era": "Earlier creative software reviewed October 26",
       "era_order": 90
