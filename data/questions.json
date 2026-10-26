@@ -1474,5 +1474,46 @@
       "Classifier margin is a separate metric and can worsen actual pixels.",
       "Do not infer v2 success from the existence of 100 JSON files."
     ]
+  },
+  {
+    "id": "oct26-oddone-real-hidden-channel-vs-prior",
+    "title": "Can a frozen webcam lens recover new hidden-side positions from optical evidence rather than priors, continuity or auto-exposure?",
+    "state": "open",
+    "motifs": [
+      "oct26-hidden-side-identifiability"
+    ],
+    "evidence": [
+      "oct25-oddone-shadow-vs-glow-synthetic",
+      "oct25-oddone-false-sight-and-novelty"
+    ],
+    "competing_explanations": [
+      "Hidden motion modulates observed wall reflections or cast shadows through a stable, spatially discriminating optical path, so a learned lens can infer some never-trained hidden positions.",
+      "The plausible hidden-half image is explained by continuity over the split line, auto-exposure, correlated room brightness, temporal scene priors or extrapolation of familiar training configurations."
+    ],
+    "known": [
+      "The saved synthetic glow and shadow test improves 1/8-resolution change R² from 0.550 to 0.728 when an edge carries extra spatial structure, against −0.074 for independent halves.",
+      "The synthetic continuation and exposure controls give full-resolution R² 0.963 and 0.985 respectively, without demonstrating non-line-of-sight geometry.",
+      "A novel-colour synthetic probe fails full-resolution R² at −10.516, and the documented novelty detector threshold was changed after seeing that control.",
+      "A user-observed webcam image showing an unfamiliar position is not by itself a frozen, controlled real-world optical-reconstruction score."
+    ],
+    "missing_discriminator": "Record genuinely new hidden-only positions and objects in a room with fixed and measured exposure; score a lens trained on disjoint movement/lighting episodes, using causal occluder insertion/removal and temporally shuffled, global-brightness, continuity and scene-prior baselines.",
+    "candidate_experiment": {
+      "design": "Choose one visible-wall/occluder setting, predeclare novel hidden-only motion trajectories and train/test sessions. Freeze before test, ensure no arm/object crosses the half-image split, log camera exposure and global brightness, then alternate an occluder while retaining the same hidden actions. Compare matched-compute linear and CNN predictors against brightness-only, random-time-pairing, continuity and static hidden-scene baselines. Report true hidden-pixel and coarse-shape R² with uncertainty and replay videos.",
+      "cost": "Low-to-moderate: OddOne webcam, a door edge or chair occluder, printed coloured targets and a fixed protocol, no model-scale GPU training required.",
+      "outcomes": [
+        {
+          "if": "Unseen hidden-only positions outperform all optical-irrelevant controls on fresh sessions, and the spatial advantage vanishes on removing the occluder",
+          "then": "Retain a bounded real-room indirect optical-sensing mechanism, specifying only measured channels and resolutions."
+        },
+        {
+          "if": "Global exposure, continuity, stationary priors or randomized temporal pairings explain the recovery equally well, or novel positions collapse",
+          "then": "Keep OddOne as a useful predictor/demo but close the claim that it reads a physically hidden scene in that setup."
+        }
+      ]
+    },
+    "notes": [
+      "Real webcam observations require temporally separated held-out episodes; frame-prequential labels do not imply independent samples.",
+      "The synthetic novelty cutoff was tuned after feedback, so freeze diagnostics before a real-data gate."
+    ]
   }
 ]
