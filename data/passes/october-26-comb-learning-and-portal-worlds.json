@@ -1,0 +1,131 @@
+{
+  "id": "october-26-comb-learning-and-portal-worlds",
+  "title": "October 26 — Kahuna's learning records and two AnttisBrain2 worlds",
+  "reviewed_at": "2026-10-26",
+  "order": 144,
+  "summary": "Three newly created projects branch in two directions. Kahuna isolates the spinning-comb metaphor into a conventional, equal-persistent-number continual-learning comparison; its five-seed benchmark supports sparse task separation but shows that permanent write locks block adaptation when a task changes. Portaali and Gosh2 independently extend the AnttisBrain2 WebGL2 raymarched chamber world: Portaali makes nested seed-addressed two-way portals and a finite delayed webcam texture history, while Gosh2 brings the original dumbflies perception/memory/decision fields into a 3D fly-eye world with optical moons. The latter two are creative browser instruments, not evidence of neural or quantum computation. All numerical and runtime checks here are source-reported, not independently rerun in this pass.",
+  "nodes": [
+    {
+      "id": "Kahuna",
+      "url": "https://github.com/anttiluode/Kahuna",
+      "family": "search-routing",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Four context-addressed records each hold a trainable 2×2 transformation; nearest-centre routing chooses one, and normalized LMS updates only that record. Compares a fixed 128-write lock, an adaptive bank and an equally sized shared polynomial-feature learner under stable return, changed rules, indistinguishable cues and capacity overflow.",
+      "survived": "Five fixed seeds, 256 observations per block and held-out evaluation reported: stable-rule final MSE protected/adaptive/shared ≈ 0.00001/0.00001/0.01693. When one familiar rule changes, protected/adaptive/shared ≈ 0.16473/0.00001/0.03934. The adaptive bank matches retention on stable contexts while tracking the changed rule; same-cue ambiguity and four-slot capacity expose limits. The record-bank and shared comparator each use 28 persistent numbers (224 numeric payload bytes).",
+      "killed": "Write protection is not the explanation for good stable retention and can preserve an obsolete rule. Equal persistent numeric slots do not match compute cost or model expressivity. The animated records are a metaphor: no coupled waveform medium, resident trace physics, scalar-only reward learner, automatic plan discovery or Williams-style catalytic storage is demonstrated.",
+      "evidence": "https://github.com/anttiluode/Kahuna/blob/main/README.md",
+      "tags": [
+        "2026-10-26",
+        "continual-learning",
+        "comb",
+        "local-routing",
+        "protected-memory",
+        "online-learning",
+        "supervised",
+        "negative-control",
+        "browser-demo"
+      ],
+      "era": "October 26: comb-inspired learning and recursive worlds",
+      "era_order": 156
+    },
+    {
+      "id": "Portaali",
+      "url": "https://github.com/anttiluode/Portaali",
+      "family": "practical-tools",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "AnttisBrain2-derived dependency-free WebGL2 portal descent: each deterministic seed-addressed chamber has a two-way sphere portal to a child world. Ray and camera crossings agree, nested portals show separate worlds, and each depth samples the webcam's buffered history four seconds farther into the past.",
+      "survived": "README documents headless SwiftShader portal traversal into a child and back, traversal two levels deep, and a red-to-blue test pattern that remains red through 2 s but becomes blue after 5 s through a four-second-delayed portal. A 64-frame texture ring sampled every 0.2 s carries about 12.8 s of recorded camera history, capped for deeper worlds. Worlds and geometry are reconstructed from seeds rather than stored in full.",
+      "killed": "The apparent nested infinity is procedural generation with a bounded render and finite camera buffer, not a real multiverse or unbounded photographic memory. Real-GPU frame rate is unmeasured; the original Descent key-hunt is not ported.",
+      "evidence": "https://github.com/anttiluode/Portaali/blob/main/README.md",
+      "tags": [
+        "2026-10-26",
+        "anttisbrain2",
+        "webgl2",
+        "portals",
+        "raymarching",
+        "procedural-world",
+        "time-delay",
+        "webcam",
+        "browser-demo"
+      ],
+      "era": "October 26: comb-inspired learning and recursive worlds",
+      "era_order": 156
+    },
+    {
+      "id": "Gosh2",
+      "url": "https://github.com/anttiluode/Gosh2",
+      "family": "practical-tools",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "medium",
+      "claim": "Ports dumbflies.py's three 32×32 evolving ThinkingFields and fly life-cycle into the AnttisBrain2 raymarched chambers. Each fly sees its own 32×32 GPU-rendered eye through the same camera/moon/wall shader and turns in the same lens field used by rendered rays.",
+      "survived": "Single-HTML WebGL2 instrument with select/ride fly modes, eye-and-field inspector and population JSON save/load. README documents inherited perception/memory/decision constants, energy/eating/mating and mutations, with explicit changes to 3D eye cones, pitch, collisions and rendering. Software-GPU tests at tiny resolution are reported; hardware performance and long-run population dynamics are not yet measured.",
+      "killed": "Not demonstrated as a trained neural model or a faithful real biological fly; its fields, energy heuristics and ray bending are supplied rules. A shader eye does not prove robust perception or open-ended learning. Per-fly rendering is expensive and may force reduced resolution; one inherited child-trait overwrite quirk remains.",
+      "evidence": "https://github.com/anttiluode/Gosh2/blob/main/README.md",
+      "tags": [
+        "2026-10-26",
+        "anttisbrain2",
+        "dumbflies",
+        "flybench",
+        "webgl2",
+        "agent-world",
+        "embodied-perception",
+        "webcam",
+        "browser-demo"
+      ],
+      "era": "October 26: comb-inspired learning and recursive worlds",
+      "era_order": 156
+    }
+  ],
+  "edges": [
+    {
+      "source": "TheComb",
+      "target": "Kahuna",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Kahuna explicitly draws on the comb/record metaphor but replaces the spinning layered-machine demo with an inspectable bank of four context-routed trainable matrices. The two are conceptually related; Kahuna is neither a code fork of TheComb nor an implementation of Williams' theorem.",
+      "evidence": "https://github.com/anttiluode/Kahuna/blob/main/README.md"
+    },
+    {
+      "source": "AnttisBrain2",
+      "target": "Portaali",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Portaali explicitly reuses the AnttisBrain2 raymarching/hashed-world engine, adding two-way paired-sphere world crossings, recursive seeds and per-depth delayed webcam frames. It is a visual-world descendant, not an AI-memory proof.",
+      "evidence": "https://github.com/anttiluode/Portaali/blob/main/README.md"
+    },
+    {
+      "source": "AnttisBrain2",
+      "target": "Gosh2",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Gosh2 explicitly names AnttisBrain2 as the unchanged world engine and integrates dumbflies.py agents, with new per-fly world-camera eyes and 3D movement. This is documented engine ancestry rather than a neuron-computation inference.",
+      "evidence": "https://github.com/anttiluode/Gosh2/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "oct26-comb-local-operator-vs-physical-record",
+      "title": "A visible record is not automatically a material memory",
+      "description": "TheComb renders intermediate ReLU activation grooves; Kahuna renders separately stored 2×2 learned operators. Neither simulates the proposed jointly writable, history-bearing two-sided medium. Kahuna's adaptive control makes permanent protection a measured limitation, not a virtue.",
+      "nodes": [
+        "TheComb",
+        "Kahuna"
+      ]
+    },
+    {
+      "id": "oct26-hashed-brain-world-divergence",
+      "title": "One procedural world engine, two new observable experiences",
+      "description": "AnttisBrain2's seed-addressed raymarched moons reappear as parent-world ancestry for Portaali's nested delay portals and Gosh2's embodied flies with eye and evolving fields. The same virtual-world substrate supports different mechanisms, without the game visuals proving consciousness or biological learning.",
+      "nodes": [
+        "AnttisBrain2",
+        "Portaali",
+        "Gosh2"
+      ]
+    }
+  ]
+}
