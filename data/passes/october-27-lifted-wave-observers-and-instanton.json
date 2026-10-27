@@ -1,0 +1,99 @@
+{
+  "id": "october-27-lifted-wave-observers-and-instanton",
+  "title": "October 27 — Slider3 and Antti's Instanton 2: lifted-wave observers against ordinary controls",
+  "reviewed_at": "2026-10-27",
+  "order": 146,
+  "summary": "Two missing same-day paper-adjacent repositories. Slider3 moves from approximate coherent wave-contrast to a finite seven-coordinate positive conserved wave-current and directional planar solver; phase sensitivity matches ordinary delay-space and coherent-intensity controls. AnttisInstanton2 reproduces a free-wave lifted-current / fixed-fiber Dirichlet construction, tests 256 independent energy-matched waves, finds no held-out prediction advantage beyond L4, flux and phase controls, then instruments the nonlinear phi-four CoM against an approximate focus center with periodic reliability controls. The OpenAI theorem is not a theorem about nonlinear particle jumps or memory.",
+  "reference_paper": "https://github.com/openai/math/blob/main/preprints/Local-smoothing-for-the-Euclidean-wave-equation-October-25-2026/paper.pdf",
+  "nodes": [
+    {
+      "id": "Slider3",
+      "family": "perception",
+      "status": "ledger",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Browser interference microscope comparing matched-power free waves, including coherent versus phase-scrambled conditions, followed by a mathematically traceable finite-wave 7×7 source current and direction-dependent planar Appendix D disk experiment based on the October 25 OpenAI local-smoothing paper.",
+      "survived": "The finite-wave source-current positivity and seven-column divergence checks passed stated numerical tests (maximum residual 5.28e-6 at step 1e-3); the fixed-Q planar discrete equation reports a relative residual 5.08e-14. In 64/64 noiseless phase-change trials the current and planar potential change while Fourier powers remain unchanged (0/64).",
+      "killed": "Ordinary coherent intensity and a three-delay scalar sensor also detect all 64/64 tested phase changes. The original isotropic auxiliary display can peak on six phase-scrambled waves (4.683) more strongly than two phase-locked ones (1.161) at equal displacement power, so a bright instantaneous peak is not evidence of stable coherence. No demonstrated information, accuracy, or cost advantage over phase-aware baselines; the two paper constructions use different finite mode sets and do not recreate the complete local-smoothing proof.",
+      "evidence": "https://github.com/anttiluode/Slider3/blob/main/PAPER_IMPLEMENTATION.md",
+      "tags": [
+        "2026-10-27",
+        "openai-oct25-wave-paper",
+        "interference",
+        "phase-controls",
+        "Friedrichs-current",
+        "planar-Dirichlet",
+        "ordinary-delay-baseline",
+        "no-unique-advantage"
+      ],
+      "url": "https://github.com/anttiluode/Slider3",
+      "era": "October 27: lifted-wave observers and field-defined centers",
+      "era_order": 158
+    },
+    {
+      "id": "AnttisInstanton2",
+      "family": "field-computing",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Preserves Antti's nonlinear phi-four substrate with a green center of positive field, adds exact imaginary-ray free-wave calibration, a free-wave positive conserved lifted tensor and true Proposition 2.2 time density driving a fixed-Phi variable-coefficient Appendix D disk, and compares field/focus centroids through time.",
+      "survived": "Source-reported numerical current positivity, divergence and complex-chart pushforward checks pass; a 256-independent-wave frozen split (166 training/90 test, identical Fourier powers and physical energy) and headless tests reproduce a fair ordinary-versus-paper predictive comparison. The newest live observer saves both periodic center motions, their signed separation, lag curves and ordinary gradient/kinetic controls; 30 tests passed at merge.",
+      "killed": "Paper-derived fixed-Phi slice response correlates 0.999714 with ordinary present L4 across the 256 equal-power waves. Future log-L4 RMSE is 0.040245 for ordinary L4/flux/phase controls and 0.040435 with the auxiliary response; paired CI crosses zero. No held-out predictive benefit established; live nonlinear lead/lag observation is exploratory rather than proof of causation, a transported particle or a conserved nonlinear current. The full fiber/two-circle theorem is not implemented.",
+      "evidence": "https://github.com/anttiluode/AnttisInstanton2/blob/main/EXPERIMENTS.md",
+      "tags": [
+        "2026-10-27",
+        "phi4",
+        "center-of-mass",
+        "positive-field-mass",
+        "periodic-center",
+        "lifted-wave-current",
+        "Appendix-D",
+        "energy-flux-control",
+        "lead-lag",
+        "negative-predictive-gate"
+      ],
+      "url": "https://github.com/anttiluode/AnttisInstanton2",
+      "era": "October 27: lifted-wave observers and field-defined centers",
+      "era_order": 158
+    }
+  ],
+  "edges": [
+    {
+      "source": "ParabolicOrientationSihti",
+      "target": "Slider3",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both explicitly test ideas drawn from the October 25 OpenAI wave paper. Sihti compares directional image windows; Slider3 instead implements a finite coherent current and auxiliary inverse, with conventional phase-delay controls. Independent mechanisms, not a code fork or evidence that the paper improves either.",
+      "evidence": "https://github.com/anttiluode/Slider3/blob/main/README.md"
+    },
+    {
+      "source": "Slider3",
+      "target": "AnttisInstanton2",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Same-day independent implementations of the paper's conserved lifted wave-current and planar Dirichlet geometry meet at the question of interference-sensitive diagnostics versus ordinary observables. Instanton2 adds an unchanged nonlinear phi-four field and held-out prediction testing; conceptual convergence, not inherited source code.",
+      "evidence": "https://github.com/anttiluode/AnttisInstanton2/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "oct27-lifted-wave-vs-ordinary-controls",
+      "title": "A conserved interference current is mathematically richer, not automatically a better detector",
+      "description": "Slider3 shows relative phases affect the paper current and planar disk but also ordinary coherent amplitude and delayed measurements. AnttisInstanton2 obtains nearly the same prediction from ordinary L4/flux/phase summaries as from adding its fixed-fiber auxiliary response. Preserve proof-specific mathematics without claiming new information inaccessible to fair, phase-aware baselines.",
+      "nodes": [
+        "Slider3",
+        "AnttisInstanton2",
+        "ParabolicOrientationSihti"
+      ]
+    },
+    {
+      "id": "oct27-instantaneous-focus-vs-persistent-object",
+      "title": "An instantaneous bright focus is neither memory nor a persistent particle",
+      "description": "Slider3's six phase-scrambled waves can make a higher instantaneous potential peak without stable temporal coherence; AnttisInstanton2's green positive-field CoM and auxiliary focus CoM can separate or coincide as their field distributions reorganize. A global center may lie in a dark region and may become undefined when diffuse. Only future held-out center-motion controls can test a lead–lag claim.",
+      "nodes": [
+        "Slider3",
+        "AnttisInstanton2"
+      ]
+    }
+  ]
+}
