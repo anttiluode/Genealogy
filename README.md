@@ -8,6 +8,18 @@ The central premise is that hundreds of repositories are not hundreds of indepen
 
 https://anttiluode.github.io/Genealogy/
 
+### October 27, 2026 — Berglund → OpenAI wave paper → written-wall memory
+
+**[Open today's research branch on the Genealogy wall](https://anttiluode.github.io/Genealogy/#oct27-wave-memory)** · [Source-linked field review](docs/reviews/2026-10-27-wave-paper-written-wall-memory.md) · [Curated genealogy pass](data/passes/october-27-wave-paper-and-written-wall-memory.json) · [Original OpenAI Euclidean-wave paper](https://github.com/openai/math/blob/main/preprints/Local-smoothing-for-the-Euclidean-wave-equation-October-25-2026/paper.pdf)
+
+Six reviewed cards now connect **[ResonantNeuron](https://github.com/anttiluode/ResonantNeuron)** (the June 2026 Nils Berglund-inspired designed resonator computer, previously present only as an unread census entry) to the new wave/filter/memory branches: **[Kavitaatio](https://github.com/anttiluode/Kavitaatio)**, **[WallMemoryLaw](https://github.com/anttiluode/WallMemoryLaw)**, **[ResonanceAsControlledMethod](https://github.com/anttiluode/ResonanceAsControlledMethod)**, **[ParabolicOrientationSihti](https://github.com/anttiluode/ParabolicOrientationSihti)**, and **[BigKahuna](https://github.com/anttiluode/BigKahuna)** (following Kahuna). Seven typed lineage/convergence links, three motifs, six distinct evidence receipts and an open write–retain–read question prevent these from collapsing into one exaggerated discovery claim.
+
+The strongest *source-reported* numerical advance is **WallMemoryLaw's pre-registered 24-patch stadium**: a frozen ellipse-fitted amplitude model selects **848 calibration states out of 16,777,216** possible memories, then decodes **300/300** fresh 24-bit wall patterns including the specified detector-noise test. The additive control gets **0/300**, and a degree-two-only control gets **56/300**. This is a specific causal-tour calibration law in simulation—not a learned wall writer or a universal complexity theorem.
+
+Two key **negative results are preserved**: a parabolic directional *physical source* modeled after the OpenAI paper loses to a source-tuned fixed-width probe in unfamiliar stadium and rotated-ellipse cavities (**51.1 vs 70.8%**, **34.7 vs 42.2%**); BigKahuna's adaptive needle improves charged loss **23.4%** over no-query feedback but remains **2.4% worse** than its simpler fixed-query comparator and loses in all **20/20** paired seeds. ParabolicOrientationSihti finds useful known curvelet-style direction allocation but no new advantage for the specific paper-derived ray window.
+
+**Scope:** The October 25 OpenAI result supplies the directionally selective Fourier multiplier and mathematical inspiration; its free-Euclidean local-smoothing theorem does *not* establish a learnable memory or inverse decoder in a reflecting/damped cavity. The census now lists **547** repos at this snapshot, including the five October 27 additions.
+
 ### October 26, 2026 — New arrivals: Kahuna, Portaali, Gosh2
 
 The [new arrivals on the wall](https://anttiluode.github.io/Genealogy/#oct26-new-worlds) add three source-reviewed cards and three genealogy edges in [the October 26 pass](data/passes/october-26-comb-learning-and-portal-worlds.json). **[Kahuna](https://github.com/anttiluode/Kahuna)** separates four cue-routed learned operators and tests protected vs adaptive writes; source-reported changed-rule MSE **0.16473 protected vs 0.00001 adaptive**, so protecting an obsolete rule is not a general solution. It is conceptually adjacent to the Comb family, not a physical needle medium or Williams implementation.
