@@ -1,5 +1,16 @@
 # Genealogy research log
 
+## 2026-10-27 — From Berglund's resonator to paper-inspired writable-wall memory
+
+Added the previously unreviewed June **ResonantNeuron** origin plus October 27 **ParabolicOrientationSihti, Kavitaatio, WallMemoryLaw, ResonanceAsControlledMethod, BigKahuna**, with seven typed edges, three cross-repo motifs, six empirical evidence receipts, a new write–retain–read question, five census additions and [a source-linked review](docs/reviews/2026-10-27-wave-paper-written-wall-memory.md).
+
+The mathematical OpenAI October 25 Euclidean-wave local-smoothing multiplier is an *inspiration*, not a proof for any of the synthetic memory machines. **ParabolicOrientationSihti** confirms benefits against certain fixed oriented image representations (145/200 fixed8 wins, 171/200 sp8 wins) while retaining lost matched-PSNR and paper-ray controls. **Kavitaatio** upgrades echo reconstruction from one-patch additions (0/12 multi-patch) to higher-order interactions (93/93 high-weight states with 163/256 calibrations per source). **WallMemoryLaw** reports the pre-registered K24 unfamiliar stadium result: 848 externally calibrated patterns suffice for 300/300 noisy decodes among 16,777,216 possible wall words using the ellipse-trained amplitude-pruning rule; 7,164 geometry-only states also work, while additive (0/300) and pair-only (56/300) fail. This is geometry/window-dependent simulated causal sparsity, not independently confirmed hardware or self-written walls.
+
+**ResonanceAsControlledMethod** runs physically launched angular packets rather than virtual readout filters. Against a fixed-angular-width source chosen only on the original ellipse, its parabolic source loses in two new cavities: 51.1% vs 70.8% on a stadium and 34.7% vs 42.2% in a rotated ellipse. **BigKahuna** follows Kahuna's four-record idea and tests priced adaptive queries; directional charged loss improves 23.4% over no question but is 2.4% worse than fixed, with 0/20 paired seeds favoring adaptive. No part of the original OpenAI theorem guarantees these readout results. The remaining central hypothesis concerns material memory that **writes itself from experience** and can be recalled at measured competitive cost.
+
+This pass is a source-linked documentary audit; the experiments were not independently rerun by Genealogy.
+
+
 ## 2026-10-24 — Field objects and ordered returns
 
 Added two source-curated cards in one dated pass, with separate evidence ledgers and no asserted ancestry between them. **ClockfieldRedux** now includes the fixed-boundary complex vortex assay: the tested finite boxes pass signed full-field linear stability and small-noise survival; a radial breathing clock is resolved at tau=0 and 0.1 but not at 0.4. The result remains a boundary-conditioned, undamped toy, not a universal matter metric. **LoopHolonomyNeuron** records a distinct synthetic operator-observer result: late paired-reference/return decoding reaches 98.77% across 12 seeds, while return-only is 49.15%; the delayed echo, supervised class-conditioned transfer maps and causal-flip fixture remain explicit limitations. Eromitta’s gradient-screening result is logged as motivation for a future comparative experiment only, not corroboration. Neither simulation was rerun by this curation.
