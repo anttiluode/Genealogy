@@ -132,7 +132,7 @@
       "confidence": "high",
       "claim": "Static browser bank of four learned 2×2 transformation records. An active questioning needle can purchase extra diagnostic observations to infer the hidden switching rule before predicting; compares feedback-only, random, fixed and disagreement-adaptive queries in five synthetic worlds.",
       "survived": "Across 20 paired directional-world seeds, questioning reduces charged prediction loss 23.4% relative to ordinary feedback-only tracking; records, probe choices and costs are inspectable. Five-world benchmark and nine engine tests are published with JSON export.",
-      "killed": "The adaptive needle fails the preregistered superiority criterion: charged loss 0.012974 versus 0.012671 for fixed probe (2.4% worse), losing to fixed on all 20 seeds; fast switching is worse. Records were trained on identified examples and frozen for evaluation. No direct OpenAI wave local-smoothing mechanism or learned cavity wall exists here.",
+      "killed": "The adaptive needle fails the preregistered superiority criterion: charged loss 0.012974 versus 0.012671 for fixed probe (2.4% worse), winning 0/20 paired seeds against fixed; fast switching is worse. Records were trained on identified examples and frozen for evaluation. No direct OpenAI wave local-smoothing mechanism or learned cavity wall exists here.",
       "evidence": "https://github.com/anttiluode/BigKahuna/blob/main/RESULTS.md",
       "tags": [
         "2026-10-27",
