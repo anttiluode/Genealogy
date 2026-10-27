@@ -1560,5 +1560,49 @@
       "Reuse WallMemoryLaw's causal-tour calibration as an available model, not as permission to supply hidden target wall bits.",
       "Evidence above is source-reported repository results, not independently rerun by Genealogy."
     ]
+  },
+  {
+    "id": "oct27-does-lifted-focus-lead-positive-field-center-beyond-ordinary-activity",
+    "title": "Does the paper-inspired focus center anticipate nonlinear field reorganization better than ordinary gradient or kinetic activity?",
+    "state": "open",
+    "motifs": [
+      "oct27-instantaneous-focus-vs-persistent-object",
+      "oct27-lifted-wave-vs-ordinary-controls"
+    ],
+    "evidence": [
+      "oct27-instanton2-heldout-no-incremental-paper-benefit",
+      "oct27-instanton2-spatial-two-center-analysis-not-yet-heldout",
+      "oct27-slider3-phase-control-detection-not-unique"
+    ],
+    "competing_explanations": [
+      "An interference-sensitive free-wave lift identifies asymmetric wave concentrations that precede later movement, splitting, or disappearance of a positive-field region beyond ordinary field-activity measures.",
+      "The magenta focus centroid and green CoM are different spatial weights on the same deforming field; apparent crossing or anticipation comes from shifts in mass, wraparound, multimodal circular-center instability or ordinary kinetic/gradient wave activity, with no incremental diagnostic benefit."
+    ],
+    "known": [
+      "AnttisInstanton2's 256 independent equal-power free-wave reference found no reliable improvement in future global L4 prediction from adding its fixed-fiber auxiliary response to ordinary L4, energy flux and phase controls.",
+      "The newer nonlinear live viewer measures spatially separated periodic center trajectories and gradient/kinetic controls but does not yet report a held-out predictive score or stable lag effect.",
+      "Slider3's 64 phase trials prove phase sensitivity versus power alone but an ordinary three-delay sensor and complex coherent intensity detect those same changes.",
+      "The conserved-current theorem applies to free waves, not to the evolving nonlinear phi-four substrate or its derived centroid."
+    ],
+    "missing_discriminator": "A frozen, independently seeded nonlinear multi-run protocol predicting future center motion or local domain-wall reorganization from equal-history observers, with confidence-filtered circular centroids and ordinary gradient/kinetic/phase-aware baselines; all forecasts evaluated before outcomes on held-out runs.",
+    "candidate_experiment": {
+      "design": "Freeze 20–50 independent initial conditions and a lag horizon before inspecting tests. Sample both phi and velocity, compute four centers plus local energy and phase measures, and record full field snapshots. Discard undefined centers by a declared mass/coherence gate; use periodic displacement in all methods. Train an identical time-history predictor on early seeds for green next-step velocity, region split/merge and boundary-motion targets. Evaluate paper focus vs gradient/kinetic and ordinary phase-coherent energy under matched compute and identical input history. Include lag and time-shuffle controls, a peak-tracker alternative and within-event bootstrap by independent seed.",
+      "cost": "Moderate local CPU/GPU numerical simulation and analysis; no physical setup required.",
+      "outcomes": [
+        {
+          "if": "The focus adds statistically clear held-out skill beyond phase-aware ordinary controls across independent seeds and retained validity strata",
+          "then": "Retain a narrowly predictive nonlinear observer (not a new particle or extension of the free-wave theorem), with effect size and compute cost."
+        },
+        {
+          "if": "The focus supplies no incremental skill or its lead disappears under confidence gating, matched periodic tracking or shuffled timing",
+          "then": "Keep a useful interference visualizer and close the stronger anticipation claim."
+        }
+      ]
+    },
+    "notes": [
+      "No causal interaction between the two markers is encoded in the field evolution.",
+      "Overshoot should mean signed separation relative to the instantaneous green velocity, not merely passing on an X plot.",
+      "This Genealogy entry is based on repository source and saved results, not independent benchmark reruns."
+    ]
   }
 ]

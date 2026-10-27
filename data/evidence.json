@@ -10939,5 +10939,197 @@
       "count": 20
     },
     "replication": "Frozen browser/Node experiment and saved benchmark; genealogy pass source-review only."
+  },
+  {
+    "id": "oct27-slider3-phase-control-detection-not-unique",
+    "node": "Slider3",
+    "claim": "The lifted wave-current and planar slice detect coherent phase differences invisible to a magnitude-only power spectrum, but cheap phase-aware observers detect the same seeded differences.",
+    "design": "Finite two-wave same-power, relative-phase changes over 64 deterministic noiseless seeds. Compare Fourier powers, coherent intensity, one-sensor three-delay embedding, paper 7×7 current time component and fixed-fiber planar Dirichlet response.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "phase changes detected from power magnitude",
+        "value": "0/64"
+      },
+      {
+        "name": "paper current and auxiliary response",
+        "value": "64/64 each"
+      },
+      {
+        "name": "ordinary coherent intensity and three-delay scalar sensor",
+        "value": "64/64 each"
+      },
+      {
+        "name": "discrete source-current numerical divergence residual",
+        "value": "max 5.28e-6 at h=1e-3"
+      },
+      {
+        "name": "planar finite-difference equation relative residual",
+        "value": "max 5.08e-14"
+      }
+    ],
+    "controls": [
+      "Equal Fourier coefficient magnitudes for every phase trial",
+      "Noiseless conventional three-sample temporal delay sensor",
+      "Ordinary complex-wave coherent intensity",
+      "Current positivity/divergence and disk equation residual tests"
+    ],
+    "limitations": [
+      "No sensor-budget or noise-matched accuracy or cost advantage demonstrated.",
+      "Noiseless difference is not general classification performance.",
+      "Source tensor and planar density examples use different finite-wave mode sets, not the full theorem."
+    ],
+    "source": "https://github.com/anttiluode/Slider3/blob/main/PAPER_IMPLEMENTATION.md",
+    "motifs": [
+      "oct27-lifted-wave-vs-ordinary-controls"
+    ],
+    "held_out": false,
+    "external_data": false,
+    "sample": {
+      "unit": "seeded relative-phase trial",
+      "count": 64
+    },
+    "replication": "Committed Node numerical tests and documented receipt; Genealogy has not independently rerun the code."
+  },
+  {
+    "id": "oct27-slider3-instantaneous-focus-misleads-coherence",
+    "node": "Slider3",
+    "claim": "An instantaneous positive auxiliary-focus peak can be stronger for phase-scrambled waves than for a phase-locked pair at equal physical mean-square displacement power; temporal persistence remains a separate observable.",
+    "design": "Four synthetic equal-spatial-power wave conditions (real displacement mean-square 0.5): one wave, two phase locked, two phase scrambled across observations, six independent scrambled. Compare disk-potential peak to mean and repeatability.",
+    "result": "contradicts",
+    "metrics": [
+      {
+        "name": "one wave potential concentration",
+        "value": "1.000"
+      },
+      {
+        "name": "two locked waves",
+        "value": "1.161"
+      },
+      {
+        "name": "two scrambled waves",
+        "value": "1.161"
+      },
+      {
+        "name": "six scrambled waves",
+        "value": "4.683"
+      }
+    ],
+    "controls": [
+      "Matched spatial mean-square displacement power 0.5",
+      "Locked-versus-scrambled pair preserves same instantaneous modes",
+      "Repeat-map temporal persistence separated from instantaneous contrast"
+    ],
+    "limitations": [
+      "The original four-condition instrument uses approximate polarization and an isotropic screened operator, not the later exact fixed-fiber paper solver.",
+      "Peak concentration alone is not evidence of a memory or coherent particle."
+    ],
+    "source": "https://github.com/anttiluode/Slider3/blob/main/README.md",
+    "motifs": [
+      "oct27-instantaneous-focus-vs-persistent-object"
+    ],
+    "held_out": false,
+    "external_data": false,
+    "sample": {
+      "unit": "engineered synthetic wave condition",
+      "count": 4
+    },
+    "replication": "Source-reported browser and Node experiment; curation did not rerun."
+  },
+  {
+    "id": "oct27-instanton2-heldout-no-incremental-paper-benefit",
+    "node": "AnttisInstanton2",
+    "claim": "For its finite free-wave ensemble, a true lifted time density driving one fixed-Phi Appendix-D slice does not improve held-out future L4 prediction beyond ordinary L4, energy flux and phase-locking controls.",
+    "design": "256 independently generated positive-frequency free waves across four phase families with identical modal magnitudes and energy. Fixed 166 train / 90 held-out. Ridge predictors with train-only scaling use present-time ordinary L4/contrast/flux/phase variables with and without the paper disk response; predict log future L4 and peak contrast.",
+    "result": "inconclusive",
+    "metrics": [
+      {
+        "name": "future log L4 held-out RMSE ordinary controls",
+        "value": "0.040245"
+      },
+      {
+        "name": "future log L4 held-out RMSE ordinary + paper",
+        "value": "0.040435"
+      },
+      {
+        "name": "paired MSE increment 95% bootstrap interval",
+        "value": "[-3.462e-5, +6.702e-6] (includes zero)"
+      },
+      {
+        "name": "future peak contrast RMSE ordinary / + paper",
+        "value": "0.043420 / 0.043346; CI crosses zero"
+      },
+      {
+        "name": "paper response versus present ordinary L4 Pearson",
+        "value": "0.999714"
+      },
+      {
+        "name": "physical wave-energy spread between ensembles",
+        "value": "5.68e-14"
+      }
+    ],
+    "controls": [
+      "Power and free-wave energy equal across 256 realizations",
+      "Same ridge regression, holdout and train-only normalization for models",
+      "L4 alone, phase coherence and peak/RMS physical energy flux baselines",
+      "Paired held-out bootstrap uncertainty and matched near-L4 pairs"
+    ],
+    "limitations": [
+      "Only one auxiliary fixed-Phi slice, not manuscript's full integrated F_pl or two-circle inequality.",
+      "Shared finite-mode support and engineered phase families limit generalization.",
+      "No nonlinear field prediction tested with this 256-wave reference.",
+      "A nonsignificant negative improvement does not prove zero information in other regimes."
+    ],
+    "source": "https://github.com/anttiluode/AnttisInstanton2/blob/main/EXPERIMENTS.md",
+    "motifs": [
+      "oct27-lifted-wave-vs-ordinary-controls"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "sample": {
+      "unit": "independent free-wave realization (90 held out)",
+      "count": 256
+    },
+    "replication": "Protocol and GitHub Actions run 40538711838 documented in repository; Genealogy review did not independently rerun."
+  },
+  {
+    "id": "oct27-instanton2-spatial-two-center-analysis-not-yet-heldout",
+    "node": "AnttisInstanton2",
+    "claim": "The green positive-field centroid and paper-inspired focus-map centroid can coincide or separate in nonlinear phi-four snapshots; a reproducible motion-analysis instrument now records both along with gradient and kinetic controls, but does not establish predictive lead or physical transport.",
+    "design": "Run original unchanged nonlinear phi-four simulation; project (phi,phi_t) instantaneously onto a free-wave reference for approximate multi-cap Appendix-D response. Track green and magenta periodic circular centers, validity/mass, relative separation, signed offset along green motion and velocity cross-correlation against gradient/kinetic map centers.",
+    "result": "inconclusive",
+    "metrics": [
+      {
+        "name": "automated tests at integration",
+        "value": "30 passing"
+      },
+      {
+        "name": "quantified independent-seed lead/lag advantage",
+        "value": "not yet measured"
+      },
+      {
+        "name": "extracted per-run outputs",
+        "value": "centers.csv, lead_lag.json, center_dynamics.png"
+      }
+    ],
+    "controls": [
+      "Retain original Cartesian green CoM for historical comparison",
+      "Use periodic circular centroid coordinates and shortest-arc displacement",
+      "Flag diffuse/vanishing distributions as undefined instead of fabricating coordinates",
+      "Ordinary phi-gradient and phi-time-derivative kinetic center controls"
+    ],
+    "limitations": [
+      "Single simulation and screenshot motion cannot establish a prediction or causal overshoot.",
+      "Approximate frozen screening and summed per-cap intensities are not full paper's variable-coefficient integrated current.",
+      "A circular center may be ill-defined for diffuse/multimodal distributions.",
+      "Held-out multiple-seed and equal-compute predictive gate remains undone."
+    ],
+    "source": "https://github.com/anttiluode/AnttisInstanton2/blob/main/center_dynamics.py",
+    "motifs": [
+      "oct27-instantaneous-focus-vs-persistent-object"
+    ],
+    "held_out": false,
+    "external_data": false,
+    "replication": "Source implementation with headless and test suite verified by GitHub Actions; no motion-effect size reported."
   }
 ]

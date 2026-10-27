@@ -704,5 +704,17 @@
   },
   "oct27-bigkahuna-adaptive-needle-fails-fixed": {
     "oct27-question-value-vs-focus": "limits"
+  },
+  "oct27-slider3-phase-control-detection-not-unique": {
+    "oct27-lifted-wave-vs-ordinary-controls": "limits"
+  },
+  "oct27-slider3-instantaneous-focus-misleads-coherence": {
+    "oct27-instantaneous-focus-vs-persistent-object": "limits"
+  },
+  "oct27-instanton2-heldout-no-incremental-paper-benefit": {
+    "oct27-lifted-wave-vs-ordinary-controls": "limits"
+  },
+  "oct27-instanton2-spatial-two-center-analysis-not-yet-heldout": {
+    "oct27-instantaneous-focus-vs-persistent-object": "documents"
   }
 }
