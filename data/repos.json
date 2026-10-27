@@ -484,6 +484,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "BigKahuna",
+    "url": "https://github.com/anttiluode/BigKahuna",
+    "default_branch": "main",
+    "size": 3,
+    "visibility": "public",
+    "description": "Astra",
+    "created_at": "2026-10-27T06:46:39Z",
+    "updated_at": "2026-10-27T12:25:28Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "BindingClaude",
     "url": "https://github.com/anttiluode/BindingClaude",
     "default_branch": "main",
@@ -1972,11 +1983,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 2004,
+    "size": 2122,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-10-26T17:59:10Z",
+    "updated_at": "2026-10-27T12:43:50Z",
     "inventory_status": "unread"
   },
   {
@@ -2648,6 +2659,17 @@
     "description": "Narrow Channel. Opus 5.5 thinking about resonation and waves. ",
     "created_at": "2026-09-26T06:40:14Z",
     "updated_at": "2026-09-26T06:40:58Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "Kavitaatio",
+    "url": "https://github.com/anttiluode/Kavitaatio",
+    "default_branch": "main",
+    "size": 80,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-10-27T07:16:44Z",
+    "updated_at": "2026-10-27T08:21:43Z",
     "inventory_status": "reviewed"
   },
   {
@@ -3674,6 +3696,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "ParabolicOrientationSihti",
+    "url": "https://github.com/anttiluode/ParabolicOrientationSihti",
+    "default_branch": "main",
+    "size": 1689,
+    "visibility": "public",
+    "description": "Opus 55",
+    "created_at": "2026-10-27T06:49:08Z",
+    "updated_at": "2026-10-27T07:58:50Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "PerceptionLab",
     "url": "https://github.com/anttiluode/PerceptionLab",
     "default_branch": "main",
@@ -4125,6 +4158,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "ResonanceAsControlledMethod",
+    "url": "https://github.com/anttiluode/ResonanceAsControlledMethod",
+    "default_branch": "main",
+    "size": 114,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-10-27T08:56:03Z",
+    "updated_at": "2026-10-27T10:14:12Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "Resonant-Cortex-Dynamic-Reservoir-Bridge",
     "url": "https://github.com/anttiluode/Resonant-Cortex-Dynamic-Reservoir-Bridge",
     "default_branch": "main",
@@ -4188,7 +4232,7 @@
     "description": "Opus 48 makes resonant neuron based on some visualizations of Nils Berglund (That I saw on tik tok) - and opus \\ mine ideas. ",
     "created_at": "2026-06-28T04:04:14Z",
     "updated_at": "2026-06-30T02:08:41Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "ResonantPhi",
@@ -5673,6 +5717,17 @@
     "description": "Vortex - Matrix - Neuron. Claude 55 repo. ",
     "created_at": "2026-10-07T04:57:25Z",
     "updated_at": "2026-10-07T15:45:42Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "WallMemoryLaw",
+    "url": "https://github.com/anttiluode/WallMemoryLaw",
+    "default_branch": "main",
+    "size": 28823,
+    "visibility": "public",
+    "description": "Opus 55",
+    "created_at": "2026-10-27T08:30:32Z",
+    "updated_at": "2026-10-27T10:09:10Z",
     "inventory_status": "reviewed"
   },
   {
