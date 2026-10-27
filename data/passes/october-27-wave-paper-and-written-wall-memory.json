@@ -1,0 +1,242 @@
+{
+  "id": "october-27-wave-paper-and-written-wall-memory",
+  "title": "October 27 — Berglund cavities, OpenAI wave filtering, and writable-wall memory",
+  "reviewed_at": "2026-10-27",
+  "order": 145,
+  "summary": "Six source-curated nodes: add the previously unreviewed June ResonantNeuron precursor and five October 27 paper-adjacent repos. Nils Berglund-inspired interference computation branches into persistent Robin wall memory, geometry-limited scattering calibration, directional image decomposition, controlled physical incident probes, and a separate four-record questioning needle. K24 stadium confirms the geometry/amplitude pruning rule in simulation; the parabolic incident source and adaptive needle both fail superior-control gates. OpenAI's new Euclidean local-smoothing theorem is inspiration only, not a proof for any inverse memory or learning result.",
+  "reference_paper": "https://github.com/openai/math/blob/main/preprints/Local-smoothing-for-the-Euclidean-wave-equation-October-25-2026/paper.pdf",
+  "nodes": [
+    {
+      "id": "ResonantNeuron",
+      "family": "resonance-memory",
+      "status": "ledger",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "June 2026 Berglund-inspired resonator computer: skewed satellite-cavity dendrites feed an interference soma with a threshold axon. Phase-coded resonator gates compose into a full adder; later V11–V18 explorations confront real-wave and hard-boundary effects.",
+      "survived": "Original source reports XOR from a phasor magnitude-band primitive, 8/8 full-adder truth rows, 1000/1000 algebraic and 60/60 dynamical ripple-add trials; its later V-series separates lumped oscillator computation from harder physical wave propagation and writes down failures.",
+      "killed": "The original logic bands, weights, and gate targets were designed, not learned. A resonant gate is not an experience-written persistent cavity wall or evidence for cortical arithmetic; later real-wave variants do not turn the original arithmetic demonstration into a biological mechanism.",
+      "evidence": "https://github.com/anttiluode/ResonantNeuron/blob/main/README.md",
+      "tags": [
+        "2026-10-27",
+        "june-2026-origin",
+        "nils-berglund-inspiration",
+        "resonance",
+        "interference",
+        "computational-neuron",
+        "physical-boundary",
+        "designed-gates"
+      ],
+      "url": "https://github.com/anttiluode/ResonantNeuron",
+      "era": "October 27: from Berglund cavities to paper-inspired memory interrogation",
+      "era_order": 157
+    },
+    {
+      "id": "ParabolicOrientationSihti",
+      "family": "perception",
+      "status": "ledger",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Uses the October 25 OpenAI Euclidean-wave paper's frequency-dependent angular multiplier as a source of testable hypotheses for lossless oriented Sihti image residues; compares parabolic, fixed8, sp8, anti-parabolic, isotropic and ray windows under a coefficient budget.",
+      "survived": "BSDS500 200-image preregistered test: parabolic beats fixed8 on G4 at 10% budget (145/200 images) and the implemented sp8 angular control (171/200). Coherence ranking concentrates retained energy near human boundaries (148/200) but reduces G4 region alignment.",
+      "killed": "Paper-derived ray window does not outperform stepwise parabolic windows (82/200). Parabolic-vs-fixed8 at equal PSNR is not significant under declared gate (112/200), and isotropic Sihti wins the main G4 comparison (169/200 against parabolic). The tested sp8 is a steerable-style control, not an independent complete stock steerable-pyramid benchmark. No OpenAI theorem about image recognition is established.",
+      "evidence": "https://github.com/anttiluode/ParabolicOrientationSihti/blob/main/README.md",
+      "tags": [
+        "2026-10-27",
+        "openai-oct25-wave-paper",
+        "parabolic-angular-law",
+        "curvelets",
+        "sihti",
+        "phase-coherence",
+        "bsds500",
+        "negative-controls"
+      ],
+      "url": "https://github.com/anttiluode/ParabolicOrientationSihti",
+      "era": "October 27: from Berglund cavities to paper-inspired memory interrogation",
+      "era_order": 157
+    },
+    {
+      "id": "Kavitaatio",
+      "family": "resonance-memory",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Eight externally written Robin boundary springs store bits independently of fleeting wave amplitudes in a damped elliptical cavity. Signed echo probes test whether the receiver can identify the written pattern and which higher-order wall interactions are necessary.",
+      "survived": "Eight-patch experiments recover individually written changes; fourth-order inclusion–exclusion model decodes 93/93 held-out five-or-more-bit states under specified calibration and noise conditions after measuring 163 of 256 configurations per source. Multi-patch echoes exhibit non-additive material interaction even with a linear fixed-wall wave PDE.",
+      "killed": "One-wall additive templates do not recover the multiwall memories (0/12 in the reported control). Persistence is imposed, not learned plasticity; the OpenAI imaginary-ray filter does not automatically improve directional readout or establish a theorem for a bounded reflecting cavity.",
+      "evidence": "https://github.com/anttiluode/Kavitaatio/blob/main/README.md",
+      "tags": [
+        "2026-10-27",
+        "writable-cavity",
+        "robin-springs",
+        "echo-memory",
+        "material-scattering",
+        "nonadditive-interactions",
+        "openai-inspired-operator"
+      ],
+      "url": "https://github.com/anttiluode/Kavitaatio",
+      "era": "October 27: from Berglund cavities to paper-inspired memory interrogation",
+      "era_order": 157
+    },
+    {
+      "id": "WallMemoryLaw",
+      "family": "resonance-memory",
+      "status": "survivor",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Derives a geometry-dependent causal-tour selection of writable-wall interaction subsets: calibrate interactions whose source→patches→receiver scattering tours can arrive in the listening window; an amplitude-pruning rule further cuts the calibration cost.",
+      "survived": "K16 preregistration confirms safe tour/onset bounds but rejects an overly expensive whole-order ceiling. Post-hoc K16 sparse sets use 219 states for 300/300 heldouts. A separate preregistered K24 Bunimovich stadium test reports 300/300 correct at noise with 7,164 per-subset tour calibrations; an ellipse-trained amplitude-pruned 848-state model also scores 300/300 from 16,777,216 possible 24-bit wall states, with explicit inactive-set controls and transferred amplitude correlation r=0.92.",
+      "killed": "A fixed interaction order is an over-costly bound (K16 needed only degree 2 rather than presumed 4–6). The sharper per-subset and amplitude laws were discovered post hoc before stadium confirmation. Calibration was still externally designed and simulated; these numerical findings are not a universal physical-memory capacity theorem nor a rule for learning wall writes.",
+      "evidence": "https://github.com/anttiluode/WallMemoryLaw/blob/main/README.md",
+      "tags": [
+        "2026-10-27",
+        "cavity-memory",
+        "causal-scattering-tour",
+        "calibration-compression",
+        "k16",
+        "k24",
+        "preregistered-stadium",
+        "limited-observation"
+      ],
+      "url": "https://github.com/anttiluode/WallMemoryLaw",
+      "era": "October 27: from Berglund cavities to paper-inspired memory interrogation",
+      "era_order": 157
+    },
+    {
+      "id": "ResonanceAsControlledMethod",
+      "family": "resonance-memory",
+      "status": "negative",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Browser physical-interrogation labs progress from four externally writable wall bits to eight-bit sparse calibration, then physically launch equal-energy directional packets using the OpenAI paper's parabolic angular weighting and compare with fixed-angle sources in held-out cavities.",
+      "survived": "The physical one-cell receiver and blind memory tasks separate stored wall changes from resonance itself. Directional waveform shapes genuinely change source/receiver traces; a frozen original-ellipse tuning selects conventional fixed q=0.45 before validation on a stadium and +25° rotated ellipse, with 37 calibration patterns and two equal-energy pings.",
+      "killed": "Across 657 paired noisy trials in each unfamiliar geometry, parabolic packets lose to the tuned fixed-width baseline: stadium 51.1% vs 70.8%, rotated ellipse 34.7% vs 42.2%. One-frequency parabolic vs arbitrary fixed q had an exact matched-width control; its earlier favorable comparisons cannot establish general superiority. No local-smoothing bound transfers to the reflecting/damped cavity.",
+      "evidence": "https://github.com/anttiluode/ResonanceAsControlledMethod/blob/main/INDEPENDENT_VALIDATION_FINDINGS.md",
+      "tags": [
+        "2026-10-27",
+        "openai-paper-inspired-source",
+        "equal-energy-packets",
+        "blind-interrogation",
+        "heldout-generalization-failed",
+        "matched-fixed-width",
+        "point-receiver"
+      ],
+      "url": "https://github.com/anttiluode/ResonanceAsControlledMethod",
+      "era": "October 27: from Berglund cavities to paper-inspired memory interrogation",
+      "era_order": 157
+    },
+    {
+      "id": "BigKahuna",
+      "family": "search-routing",
+      "status": "negative",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Static browser bank of four learned 2×2 transformation records. An active questioning needle can purchase extra diagnostic observations to infer the hidden switching rule before predicting; compares feedback-only, random, fixed and disagreement-adaptive queries in five synthetic worlds.",
+      "survived": "Across 20 paired directional-world seeds, questioning reduces charged prediction loss 23.4% relative to ordinary feedback-only tracking; records, probe choices and costs are inspectable. Five-world benchmark and nine engine tests are published with JSON export.",
+      "killed": "The adaptive needle fails the preregistered superiority criterion: charged loss 0.012974 versus 0.012671 for fixed probe (2.4% worse), losing to fixed on all 20 seeds; fast switching is worse. Records were trained on identified examples and frozen for evaluation. No direct OpenAI wave local-smoothing mechanism or learned cavity wall exists here.",
+      "evidence": "https://github.com/anttiluode/BigKahuna/blob/main/RESULTS.md",
+      "tags": [
+        "2026-10-27",
+        "questioning-needle",
+        "kahuna",
+        "adaptive-probe-control",
+        "charged-prediction-risk",
+        "failed-superiority",
+        "learned-record-bank"
+      ],
+      "url": "https://github.com/anttiluode/BigKahuna",
+      "era": "October 27: from Berglund cavities to paper-inspired memory interrogation",
+      "era_order": 157
+    }
+  ],
+  "edges": [
+    {
+      "source": "ResonantNeuron",
+      "target": "Kavitaatio",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Kavitaatio is explicitly inspired by the resonant-cavity/neuron question, but replaces designed interference gates with an externally writable reflecting-wall material state. Conceptual lineage; no code fork or biological learning asserted.",
+      "evidence": "https://github.com/anttiluode/Kavitaatio/blob/main/README.md"
+    },
+    {
+      "source": "Sihti",
+      "target": "ParabolicOrientationSihti",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "ParabolicOrientationSihti explicitly extends Sihti's exact core+residue reconstruction and G4 analysis by splitting octave residues into angular components informed by the 2026 OpenAI paper.",
+      "evidence": "https://github.com/anttiluode/ParabolicOrientationSihti/blob/main/README.md"
+    },
+    {
+      "source": "Kavitaatio",
+      "target": "WallMemoryLaw",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "WallMemoryLaw explicitly reuses the same eight-patch material-interaction wave solver and turns the listening deadline into a causal calibration-selection rule, later testing K16 and an unfamiliar K24 stadium.",
+      "evidence": "https://github.com/anttiluode/WallMemoryLaw/blob/main/README.md"
+    },
+    {
+      "source": "Kavitaatio",
+      "target": "ResonanceAsControlledMethod",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "The browser interrogation laboratory states it derives its elliptical wave model and persistent Robin springs from Kavitaatio, adding physical source comparisons, hidden-word scoring and geometry tests.",
+      "evidence": "https://github.com/anttiluode/ResonanceAsControlledMethod/blob/main/README.md"
+    },
+    {
+      "source": "WallMemoryLaw",
+      "target": "ResonanceAsControlledMethod",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Both investigate geometry-limited calibration under finite wave travel times; the browser eight-bit experiment separately compares causal tour selection with degree-first control. Neither proves the other's universal law.",
+      "evidence": "https://github.com/anttiluode/ResonanceAsControlledMethod/blob/main/README.md"
+    },
+    {
+      "source": "Kahuna",
+      "target": "BigKahuna",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "BigKahuna explicitly starts with Kahuna's four separately learned records and needle metaphor, then freezes records to isolate which additional probing strategy reduces prediction loss.",
+      "evidence": "https://github.com/anttiluode/BigKahuna/blob/main/README.md"
+    },
+    {
+      "source": "ResonanceAsControlledMethod",
+      "target": "BigKahuna",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The cavity and switching-record environments independently expose that a smart-looking adaptive query need not beat a tuned fixed readout; this is conceptual comparison, not direct code or theorem inheritance.",
+      "evidence": "https://github.com/anttiluode/BigKahuna/blob/main/RESULTS.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "oct27-written-wall-not-wave",
+      "title": "A memory is the changed material, not the echo",
+      "description": "ResonantNeuron's interference gates motivated the question, Kavitaatio separates a persistent externally written Robin wall from transient wave excitation, and WallMemoryLaw exploits how repeated scatterings from those wall changes become measurable. The missing mechanism is experience-dependent wall writing rather than another focusing picture.",
+      "nodes": [
+        "ResonantNeuron",
+        "Kavitaatio",
+        "WallMemoryLaw",
+        "ResonanceAsControlledMethod"
+      ]
+    },
+    {
+      "id": "oct27-openai-parabolic-directional-law",
+      "title": "A beautiful Fourier multiplier is not a better memory probe by decree",
+      "description": "The October 25 OpenAI Euclidean local-smoothing paper supplies the imaginary-ray directional multiplier motivating the Sihti image tests and physical incident packets. Conventional curvelet-style parabolic scaling already exists; the paper's specific ray window does not beat stepwise parabolic Sihti, and tuned fixed-width packets beat paper-inspired packets in two independent cavity geometries. Mathematical free-space bounds do not prove inverse memory accuracy.",
+      "nodes": [
+        "ParabolicOrientationSihti",
+        "Kavitaatio",
+        "ResonanceAsControlledMethod"
+      ]
+    },
+    {
+      "id": "oct27-question-value-vs-focus",
+      "title": "Useful interrogations require an error-based control",
+      "description": "Both the real wave receiver and the four-record BigKahuna questioning needle show why selecting the strongest focus or greatest response disagreement is not the same as minimizing confusion between memories. A calibrated fixed probe can beat adaptive source selection; prediction risk, calibration budget, and measurement cost must be explicitly accounted for.",
+      "nodes": [
+        "ResonanceAsControlledMethod",
+        "BigKahuna",
+        "Kahuna"
+      ]
+    }
+  ]
+}
