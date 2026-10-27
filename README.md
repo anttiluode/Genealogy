@@ -8,6 +8,16 @@ The central premise is that hundreds of repositories are not hundreds of indepen
 
 https://anttiluode.github.io/Genealogy/
 
+### October 27, 2026 — Slider3 and AnttisInstanton2: two missing late arrivals
+
+**[Open the new two-center / lifted-wave branch on the wall](https://anttiluode.github.io/Genealogy/#oct27-wave-observers)** · [Source-linked review](docs/reviews/2026-10-27-slider3-instanton2-observers.md) · [Curated pass](data/passes/october-27-lifted-wave-observers-and-instanton.json).
+
+This adds **[Slider3](https://github.com/anttiluode/Slider3)** and **[AnttisInstanton2](https://github.com/anttiluode/AnttisInstanton2)** to the five previously reviewed October 27 wave/wall repositories—**seven distinct new repositories total**, without duplicating the older cards. Slider3 reproduces a finite free-wave current and directional disk component: 64/64 phase changes register in the paper's current and potential, but ordinary coherent intensity and a three-delay single-sensor control also register 64/64; power alone registers 0/64. A bright focus is not the same as temporally stable coherence.
+
+AnttisInstanton2 retains the original nonlinear φ⁴ field, calibrates a positive conserved current on separate *free waves*, and compares its fixed-fiber auxiliary response with ordinary concentration, flux and phase. The **256 independent-wave held-out test** finds no predictive benefit for future global L⁴: **RMSE 0.040245 ordinary versus 0.040435 with paper** (paired uncertainty spans zero). Its newer green/magenta center-tracking viewer records periodic centroid separation and gradient/kinetic baselines, but **no validated multi-seed lead or transport effect** yet. The paper's full integrated two-circle construction and nonlinear conservation are not established.
+
+The repository census now includes **549** entries at this snapshot. All numerical claims above are source-reported and explicitly separated from independent genealogy reruns.
+
 ### October 27, 2026 — Berglund → OpenAI wave paper → written-wall memory
 
 **[Open today's research branch on the Genealogy wall](https://anttiluode.github.io/Genealogy/#oct27-wave-memory)** · [Source-linked field review](docs/reviews/2026-10-27-wave-paper-written-wall-memory.md) · [Curated genealogy pass](data/passes/october-27-wave-paper-and-written-wall-memory.json) · [Original OpenAI Euclidean-wave paper](https://github.com/openai/math/blob/main/preprints/Local-smoothing-for-the-Euclidean-wave-equation-October-25-2026/paper.pdf)
@@ -18,7 +28,7 @@ The strongest *source-reported* numerical advance is **WallMemoryLaw's pre-regis
 
 Two key **negative results are preserved**: a parabolic directional *physical source* modeled after the OpenAI paper loses to a source-tuned fixed-width probe in unfamiliar stadium and rotated-ellipse cavities (**51.1 vs 70.8%**, **34.7 vs 42.2%**); BigKahuna's adaptive needle improves charged loss **23.4%** over no-query feedback but remains **2.4% worse** than its simpler fixed-query comparator and loses in all **20/20** paired seeds. ParabolicOrientationSihti finds useful known curvelet-style direction allocation but no new advantage for the specific paper-derived ray window.
 
-**Scope:** The October 25 OpenAI result supplies the directionally selective Fourier multiplier and mathematical inspiration; its free-Euclidean local-smoothing theorem does *not* establish a learnable memory or inverse decoder in a reflecting/damped cavity. The census now lists **547** repos at this snapshot, including the five October 27 additions.
+**Scope:** The October 25 OpenAI result supplies the directionally selective Fourier multiplier and mathematical inspiration; its free-Euclidean local-smoothing theorem does *not* establish a learnable memory or inverse decoder in a reflecting/damped cavity. The October 27 wave/wall curation initially covered five arrivals; the later Slider3 and AnttisInstanton2 pass brings this snapshot to **549** repos, including seven October 27 arrivals.
 
 ### October 26, 2026 — New arrivals: Kahuna, Portaali, Gosh2
 
