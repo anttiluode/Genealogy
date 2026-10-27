@@ -231,11 +231,12 @@
     {
       "id": "oct27-question-value-vs-focus",
       "title": "Useful interrogations require an error-based control",
-      "description": "Both the real wave receiver and the four-record BigKahuna questioning needle show why selecting the strongest focus or greatest response disagreement is not the same as minimizing confusion between memories. A calibrated fixed probe can beat adaptive source selection; prediction risk, calibration budget, and measurement cost must be explicitly accounted for.",
+      "description": "WallMemoryLaw's causal-set selection, the real wave receiver, and the four-record BigKahuna questioning needle show why selecting the strongest focus or greatest response disagreement is not the same as minimizing confusion between memories. A calibrated fixed probe can beat adaptive source selection; prediction risk, calibration budget, and measurement cost must be explicitly accounted for.",
       "nodes": [
         "ResonanceAsControlledMethod",
         "BigKahuna",
-        "Kahuna"
+        "Kahuna",
+        "WallMemoryLaw"
       ]
     }
   ]
