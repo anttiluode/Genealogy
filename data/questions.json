@@ -1515,5 +1515,50 @@
       "Real webcam observations require temporally separated held-out episodes; frame-prequential labels do not imply independent samples.",
       "The synthetic novelty cutoff was tuned after feedback, so freeze diagnostics before a real-data gate."
     ]
+  },
+  {
+    "id": "oct27-can-written-wall-learn-then-be-read-economically",
+    "title": "Can a resonant cavity acquire persistent wall memory from experience and later read it with fewer calibrated probes than ordinary indexed storage?",
+    "state": "open",
+    "motifs": [
+      "oct27-written-wall-not-wave",
+      "oct27-question-value-vs-focus"
+    ],
+    "evidence": [
+      "oct27-kavitaatio-material-multibit-echo",
+      "oct27-wallmemorylaw-preregistered-24bit-stadium",
+      "oct27-resonance-controlledmethod-heldout-parabolic-negative",
+      "oct27-bigkahuna-adaptive-needle-fails-fixed"
+    ],
+    "competing_explanations": [
+      "Local experience-dependent wall updates can construct stable reusable information, while a finite-speed scattering geometry bounds the response combinations a listener must calibrate and a cheap known probe retrieves them.",
+      "All demonstrated capability comes from externally written spring settings plus a deliberately engineered decoder; a conventional indexed memory and fixed readout reproduces or exceeds the useful function once writing, retention and readout costs are counted."
+    ],
+    "known": [
+      "ResonantNeuron's early arithmetic used designed interference weights and gates, rather than learned persistent material changes.",
+      "Kavitaatio's wall spring settings persist after waves die but are externally assigned; multiwall echoes are not additive.",
+      "WallMemoryLaw's pre-registered K24 stadium reports 300/300 held-out 24-bit words from an amplitude-pruned 848-state calibration in a constrained numerical window, with additive and degree-2 controls failing.",
+      "ResonanceAsControlledMethod's new-geometry parabolic beam loses to source-tuned fixed-angle controls, and BigKahuna's adaptive needle loses to a fixed probe while both show that asking can help."
+    ],
+    "missing_discriminator": "A matched write–retain–read demonstration in which local observations and an explicitly defined feedback signal cause the cavity boundary to change and persist without an experimenter writing the target bit pattern, followed by novel mixture recognition at matched material-state capacity, calibrated probes, hardware/compute cost, noise and delay versus ordinary indexed memory.",
+    "candidate_experiment": {
+      "design": "Freeze task/environment, write rule, geometry, probe selection and baseline before evaluation. Introduce an explicit learnable local spring adaptation process, with limited wall energy and bounded parameter magnitude. Train from temporal streams with unknown record identities; remove drive, let wave field decay, and query under novel mixtures. Compare fixed and active probes, unmodified springs, pre-addressed write upper bound, identical-capacity indexed store and equal-parameter standard online model. Score separate acquisition/overwrite/retention/interference, wall wear, calibration-state count, read/query cost and held-out error.",
+      "cost": "Moderate numerical simulation first; hardware adaptation and energy claims require a separate physical implementation.",
+      "outcomes": [
+        {
+          "if": "The local writer retains separable records and reads them at equal or lower full costs on fresh tasks than conventional controls",
+          "then": "Preserve a bounded write–retain–read mechanism and publish which part of the advantage comes from the physical medium."
+        },
+        {
+          "if": "The locally updated wall forgets, cannot address records, or a matched fixed/indexed baseline wins",
+          "then": "Keep the successful forward scattering calibration law and close the stronger physical-learning/readout-advantage claim."
+        }
+      ]
+    },
+    "notes": [
+      "Published OpenAI Euclidean-wave local smoothing does not prove a cavity memory writing or discrimination theorem.",
+      "Reuse WallMemoryLaw's causal-tour calibration as an available model, not as permission to supply hidden target wall bits.",
+      "Evidence above is source-reported repository results, not independently rerun by Genealogy."
+    ]
   }
 ]
