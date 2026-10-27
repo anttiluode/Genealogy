@@ -1,5 +1,15 @@
 # Genealogy research log
 
+## 2026-10-27 — Two missing late arrivals: Slider3 and AnttisInstanton2
+
+The Genealogy census now includes 549 repositories after adding two omitted October 27 repositories, **Slider3** and **AnttisInstanton2**. The other five user-listed October 27 repos (ParabolicOrientationSihti, Kavitaatio, WallMemoryLaw, ResonanceAsControlledMethod and BigKahuna) were already curated in the preceding pass and are not duplicated. A new pass provides two source-reviewed cards, two conservative convergence edges, two motifs, four evidence records, one open multi-seed motion question, and a visible wall section.
+
+**Slider3** implements a numerical 7×7 conserved free-wave source tensor and fixed-fiber planar disk example, but its 64/64 phase-change detection ties ordinary coherent intensity and a three-delay scalar observer; magnitude-only power misses all 64, as expected. The original isotropic six-scrambled-wave potential reaches peak/mean 4.683 versus 1.161 for two locked waves, warning against equating one instantaneous bright focus with persistent coherent memory.
+
+**AnttisInstanton2** tests a wave-derived auxiliary response against ordinary L4/flux/phase summaries in 256 independent free-wave configurations at fixed modal power. On 90 held-out configurations, adding the paper response changes future log L4 RMSE from 0.040245 to 0.040435 (not an improvement; bootstrap CI on paired MSE spans zero). A later nonlinear viewer now logs green positive-field and magenta focus centroids along with gradient/kinetic controls, but no validated lead–lag predictive skill has yet been shown. The nonlinear phi-four particle remains an observer-defined center, not a theorem-backed wave particle.
+
+Source-linked review: [Slider3 and Instanton2](docs/reviews/2026-10-27-slider3-instanton2-observers.md). These are source-reported results; this genealogy curation did not rerun the physics.
+
 ## 2026-10-27 — From Berglund's resonator to paper-inspired writable-wall memory
 
 Added the previously unreviewed June **ResonantNeuron** origin plus October 27 **ParabolicOrientationSihti, Kavitaatio, WallMemoryLaw, ResonanceAsControlledMethod, BigKahuna**, with seven typed edges, three cross-repo motifs, six empirical evidence receipts, a new write–retain–read question, five census additions and [a source-linked review](docs/reviews/2026-10-27-wave-paper-written-wall-memory.md).
