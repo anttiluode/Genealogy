@@ -10667,5 +10667,277 @@
     "held_out": false,
     "external_data": false,
     "replication": "Source-level descriptive review only."
+  },
+  {
+    "id": "oct27-resonantneuron-designed-interference-gates",
+    "node": "ResonantNeuron",
+    "claim": "Berglund-inspired phasor interference and threshold magnitude bands can be designed to realize compositional arithmetic in a numerical resonator network.",
+    "design": "Damped driven resonator soma/dendrite ODE compared with algebraic fixed point, Boolean gate truth tables, multi-stage full/ripple adder; V11–V18 later examines more physical wave and wall variants.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "1-bit full adder",
+        "value": "8/8 truth-table rows"
+      },
+      {
+        "name": "8-bit ripple adder",
+        "value": "1000/1000 algebraic; 60/60 dynamical additions"
+      }
+    ],
+    "controls": [
+      "Dynamical oscillator vs algebraic fixed point",
+      "Skew-coupling and gate truth tables",
+      "Later hard-boundary PDE variants recorded separately"
+    ],
+    "limitations": [
+      "Designed gate weights and threshold bands; no learned write rule.",
+      "Lumped resonator arithmetic does not establish learned biological neural computation.",
+      "Source report; no independent rerun in this genealogy pass."
+    ],
+    "source": "https://github.com/anttiluode/ResonantNeuron/blob/main/README.md",
+    "motifs": [
+      "oct27-written-wall-not-wave"
+    ],
+    "held_out": false,
+    "external_data": false,
+    "replication": "Source-documented arithmetic tests; genealogy inspection only."
+  },
+  {
+    "id": "oct27-parabolic-sihti-orientation-and-ray-controls",
+    "node": "ParabolicOrientationSihti",
+    "claim": "A known parabolic angular band allocation can improve one image-budget G4 metric against tested fixed controls, while the OpenAI-specific ray window does not improve on ordinary parabolic steps.",
+    "design": "Preregistered BSDS500 n=200 test, 10% retained coefficient budget; controlled fixed8, sp8, ray, isotropic and coherence-rank comparisons; additional PSNR-matched analysis.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "parabolic vs fixed8 G4 wins",
+        "value": "145/200"
+      },
+      {
+        "name": "parabolic vs sp8 wins",
+        "value": "171/200"
+      },
+      {
+        "name": "ray vs parabolic steps wins",
+        "value": "82/200 (ray loses)"
+      },
+      {
+        "name": "matched PSNR parabolic vs fixed8 wins",
+        "value": "112/200; p=0.10, criterion failed"
+      },
+      {
+        "name": "coherence edge alignment wins",
+        "value": "148/200"
+      }
+    ],
+    "controls": [
+      "Isotropic Sihti with fewer bands",
+      "Equal-PSNR comparison",
+      "Fixed8 and implemented sp8 angular control",
+      "Anti-parabolic allocation",
+      "Magnitude vs phase-coherence ranking"
+    ],
+    "limitations": [
+      "All orientation arms use undecimated 48-band frames; isotropic baseline uses six bands.",
+      "The sp8 construction is not a full independent conventional steerable-pyramid library benchmark.",
+      "A directional representation is not evidence that the OpenAI free-wave smoothing theorem improves object understanding."
+    ],
+    "source": "https://github.com/anttiluode/ParabolicOrientationSihti/blob/main/README.md",
+    "motifs": [
+      "oct27-openai-parabolic-directional-law"
+    ],
+    "held_out": true,
+    "external_data": true,
+    "sample": {
+      "unit": "BSDS500 test image",
+      "count": 200
+    },
+    "replication": "Saved source-level preregistered image results; not rerun during atlas curation."
+  },
+  {
+    "id": "oct27-kavitaatio-material-multibit-echo",
+    "node": "Kavitaatio",
+    "claim": "Externally written boundary compliance is physically separate from transient wave focus, and multiple changed walls produce significant non-additive signed echo interactions.",
+    "design": "K=8 Robin/Neumann damped elliptical finite-difference wave, one or three sources, Boolean Möbius interaction calibration; compare one-bit additive decoder with degree-4 model on five-plus-bit holdout.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "one-bit additive multibit test",
+        "value": "0/12 correct (1 and 3 sources)"
+      },
+      {
+        "name": "degree-4 model on high-weight holdout",
+        "value": "93/93 exact with 163/256 calibration states per source"
+      },
+      {
+        "name": "two-wall interaction magnitude",
+        "value": "RMS 0.475 times single-wall response at κ=0.28"
+      }
+    ],
+    "controls": [
+      "One-wall additive prediction",
+      "Multiple source positions",
+      "Weaker Robin strength κ=0.07",
+      "Fixed observation windows and detector noise"
+    ],
+    "limitations": [
+      "Memory bits directly assigned and frozen before probing; no experience-dependent learning.",
+      "Interaction model needs 163 of 256 calibration settings in the high-order test.",
+      "Free Euclidean local-smoothing theorem does not imply a bounded reflecting memory decoder."
+    ],
+    "source": "https://github.com/anttiluode/Kavitaatio/blob/main/README.md",
+    "motifs": [
+      "oct27-written-wall-not-wave"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "replication": "Source-reported numerical simulator and unit tests; no independent physics rerun in this genealogy pass."
+  },
+  {
+    "id": "oct27-wallmemorylaw-preregistered-24bit-stadium",
+    "node": "WallMemoryLaw",
+    "claim": "A geometry-based finite-propagation scattering-tour selection and an ellipse-trained amplitude pruning rule can calibrate a 24-bit stadium-wall memory without exhaustive 2^24 enumeration in the reported numerical setup.",
+    "design": "Prior K16 ellipse discovery and confirmatory run; freeze tour-inactive threshold/40-step margin and amplitude coefficients in PREREG_STADIUM.md before K24 chaotic stadium simulation. Use 300 random hidden 24-bit states, 3 physical sources, point receiver, compare geometric, pruned, additive and degree-2 controls.",
+    "result": "supports",
+    "metrics": [
+      {
+        "name": "K24 proposed search space",
+        "value": "16,777,216 wall words"
+      },
+      {
+        "name": "tour subset calibration states",
+        "value": "7,164 (0.043%); 300/300 correct"
+      },
+      {
+        "name": "amplitude-pruned calibrations",
+        "value": "848 (0.005%); 300/300 correct, including specified noise"
+      },
+      {
+        "name": "additive baseline",
+        "value": "0/300 correct"
+      },
+      {
+        "name": "degree-two truncated model",
+        "value": "56/300 correct"
+      },
+      {
+        "name": "amplitude transfer correlation",
+        "value": "r=0.92 over 1,380 active sets"
+      }
+    ],
+    "controls": [
+      "Preregistered new chaotic stadium without ellipse foci",
+      "16 inactive pairs and 24 selected inactive triples checked directly",
+      "Additive and pair-only baselines",
+      "Search-error versus model-error separation",
+      "Amplitude model estimated in earlier ellipse and locked before stadium"
+    ],
+    "limitations": [
+      "Preregistered numeric simulation, not new theorem of universal computation or hardware memory.",
+      "Chosen wave speed, scattering model and finite listening deadline strongly constrain interaction reachability.",
+      "Amplitudes and noise thresholds are model-specific; high K in other media is untested.",
+      "Wall memory still externally assigned, with no local write/learn mechanism."
+    ],
+    "source": "https://github.com/anttiluode/WallMemoryLaw/blob/main/PREREG_STADIUM.md",
+    "motifs": [
+      "oct27-written-wall-not-wave",
+      "oct27-question-value-vs-focus"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "sample": {
+      "unit": "random held-out K24 wall word",
+      "count": 300
+    },
+    "replication": "Source-reported preregistered new geometry and committed results; genealogy review has not independently rerun K24."
+  },
+  {
+    "id": "oct27-resonance-controlledmethod-heldout-parabolic-negative",
+    "node": "ResonanceAsControlledMethod",
+    "claim": "The OpenAI-inspired parabolic beam is not a generally superior cavity-memory readout when compared against a source-tuned fixed angular width in two unfamiliar geometries.",
+    "design": "Tune five fixed-width candidates using original ellipse only; freeze best q=0.45 before independent stadium and rotated-ellipse simulation. Two equal-energy source pings (k=.65, 1.30), 37 wall calibration states, 219 unseen 8-bit wall words and three paired noise trials per word.",
+    "result": "contradicts",
+    "metrics": [
+      {
+        "name": "stadium exact 8-bit accuracy",
+        "value": "parabolic 336/657=51.1%; tuned fixed 465/657=70.8%"
+      },
+      {
+        "name": "rotated ellipse exact 8-bit accuracy",
+        "value": "parabolic 228/657=34.7%; tuned fixed 277/657=42.2%"
+      },
+      {
+        "name": "fixed candidate q selected on source ellipse",
+        "value": "q=0.45 (left edge of candidate grid)"
+      }
+    ],
+    "controls": [
+      "Equal launch energy, receiver and two wave numbers",
+      "Fixed width tuned on the original ellipse only",
+      "Locked 37-state training set and fixed noise",
+      "Single-frequency q=k identity check"
+    ],
+    "limitations": [
+      "q-grid coarse and optimum at boundary; not global conventional-source optimum.",
+      "Two synthetic geometries only; no hardware transfer.",
+      "Not a test of the free-Euclidean smoothing theorem.",
+      "One-frequency advantage over arbitrary q is not evidence of intrinsic superiority."
+    ],
+    "source": "https://github.com/anttiluode/ResonanceAsControlledMethod/blob/main/INDEPENDENT_VALIDATION_FINDINGS.md",
+    "motifs": [
+      "oct27-openai-parabolic-directional-law",
+      "oct27-question-value-vs-focus"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "sample": {
+      "unit": "unseen wall word, three noise repetitions",
+      "count": 219
+    },
+    "replication": "Committed locked protocol and GitHub Actions receipt; genealogy review did not rerun simulations."
+  },
+  {
+    "id": "oct27-bigkahuna-adaptive-needle-fails-fixed",
+    "node": "BigKahuna",
+    "claim": "Buying a diagnostic question can reduce prediction loss, but adaptively selecting the direction of greatest posterior disagreement does not beat a calibrated fixed probe in the declared synthetic record-switching test.",
+    "design": "Four externally trained 2×2 maps frozen during evaluation; hidden Markov switching among maps, five synthetic worlds, 20 paired seeds, 1200 predictions/seed and charged query price; compare no query, fixed, random and adaptive.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "directional charged loss",
+        "value": "feedback 0.016928; fixed 0.012671; adaptive 0.012974"
+      },
+      {
+        "name": "adaptive improvement vs feedback-only",
+        "value": "23.4%"
+      },
+      {
+        "name": "adaptive disadvantage vs fixed",
+        "value": "2.4% higher loss; adaptive wins 0/20 paired seeds"
+      }
+    ],
+    "controls": [
+      "Feedback-only Bayesian tracking",
+      "Calibrated fixed and random queries",
+      "Rotations, identical-record, fast-switch and expensive-query worlds",
+      "Matched query price and ordinary-feedback budget"
+    ],
+    "limitations": [
+      "Ideal known noise and switch model; record identities provided during training.",
+      "No learning of new records during hidden-world tests.",
+      "Not an implementation of the October OpenAI wave theorem or physical cavity memory.",
+      "No evidence that maximum response disagreement is an optimal value-of-information selector."
+    ],
+    "source": "https://github.com/anttiluode/BigKahuna/blob/main/RESULTS.md",
+    "motifs": [
+      "oct27-question-value-vs-focus"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "sample": {
+      "unit": "paired directional-world seed",
+      "count": 20
+    },
+    "replication": "Frozen browser/Node experiment and saved benchmark; genealogy pass source-review only."
   }
 ]
