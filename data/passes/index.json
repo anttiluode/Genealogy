@@ -478,5 +478,9 @@
   {
     "path": "october-26-comb-learning-and-portal-worlds.json",
     "enabled": true
+  },
+  {
+    "path": "october-27-wave-paper-and-written-wall-memory.json",
+    "enabled": true
   }
 ]
