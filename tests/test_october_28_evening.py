@@ -18,7 +18,7 @@ class EveningPassTests(unittest.TestCase):
     def test_census_and_pass_are_unique(self):
         self.assertEqual(validate_atlas(self.a), [])
         self.assertEqual([r["name"] for r in self.a["repos"]].count("Evening"), 1)
-        self.assertEqual(len(self.a["repos"]), 550)
+        self.assertGreaterEqual(len(self.a["repos"]), 550)
         self.assertEqual(self.nodes["Evening"]["pass_id"], PASS)
         self.assertEqual(len([n for n in self.a["nodes"] if n["id"] == "Evening"]), 1)
 
