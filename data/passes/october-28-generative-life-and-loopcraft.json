@@ -1,0 +1,135 @@
+{
+  "id": "october-28-generative-life-and-loopcraft",
+  "title": "October 28 — Emergence family: evolutionary genomes, hunter learning, local signaling; Loopcraft GIF maker",
+  "reviewed_at": "2026-10-28",
+  "order": 148,
+  "summary": "Three independent/related artificial-life experiments distinguish evolution of a genome interpreted by fixed machinery, learning predator agents layered on an evolutionary ecology, and locally learned signaling conventions in a separate CPU world. Emergence2 explicitly extends Emergence; EmergenceAstra is a parallel implementation, not a fork. Loopcraft is a separate usable video-to-GIF desktop tool. Source-reported outcomes and unrun proposals are not conflated.",
+  "nodes": [
+    {
+      "id": "Emergence",
+      "url": "https://github.com/anttiluode/Emergence",
+      "family": "artificial-life",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "GPU artificial-life grid: inherited variable-length token genomes are translated by a fixed randomly initialized transformer into lineage phenotypes; shared cell machinery then senses, eats, shares, steals, attaches, divides and dies while mutation and ecological selection alter populations.",
+      "survived": "The source reports a 128×128, 30,000-step CPU pilot showing selection among lineages, temporary larger attached bodies, and subsequent dominance of small grazing cell groups. Lineage state is fed into the translator periodically, so gene expression depends on both inherited tokens and current circumstances; regulation-off, attack-off and mutation-off controls are specified.",
+      "killed": "No organism morphology or anatomy is programmed, but cell physics, the interpreter, food sources and action vocabulary are engineered. Multicellularity did not persist in the reported small pilot; genomes growing longer are explained by the mutation operator's insertion/duplication bias rather than demonstrated adaptive complexity. Large GPU runs, continual multicellular evolution and open-ended intelligence are not verified.",
+      "tags": [
+        "2026-10-28",
+        "artificial-life",
+        "token-genome",
+        "fixed-transformer",
+        "genotype-phenotype",
+        "selection",
+        "multicellular-bodies",
+        "ecology",
+        "somatic-regulation",
+        "exploratory-pilot"
+      ],
+      "era": "October 28: generative genomes, ecological learners, and creative tools",
+      "era_order": 160,
+      "evidence": "https://github.com/anttiluode/Emergence/blob/main/README.md"
+    },
+    {
+      "id": "Emergence2",
+      "url": "https://github.com/anttiluode/Emergence2",
+      "family": "artificial-life",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Extends Emergence with a second agent ecology: moving hunters consume evolving cells, have a shared trainable convolutional/GRU actor-critic with world-model head, and can deposit slow external marks while prey cells sense a fast danger trace.",
+      "survived": "The README reports a frozen-world foraging sanity check where trained hunters harvest more than random wanderers, but a simple persistent-heading policy sustains substantially more hunters in short regrowing ecologies than random walking. Pre-action, temporally aligned representation probes and harvest-per-hunter-step corrections provide explicit controls for what internal learning could mean.",
+      "killed": "In short complete predator-prey worlds, learning hunters have not clearly beaten the straight-walking control; the world-model loss has not beaten next-frame copy. Learned semantic world concepts, mark-use dependence, predator-induced defensive evolution, and long-term coevolution are unproven. Hunter learning should not be mistaken for evolutionary change in the base cell-genome translator.",
+      "tags": [
+        "2026-10-28",
+        "hunter-prey",
+        "two-level-ecology",
+        "actor-critic",
+        "gru",
+        "external-marks",
+        "danger-trace",
+        "world-model",
+        "straight-policy-control",
+        "negative-baseline"
+      ],
+      "era": "October 28: generative genomes, ecological learners, and creative tools",
+      "era_order": 160,
+      "evidence": "https://github.com/anttiluode/Emergence2/blob/main/README.md"
+    },
+    {
+      "id": "EmergenceAstra",
+      "url": "https://github.com/anttiluode/EmergenceAstra",
+      "family": "artificial-life",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Independent local CPU world of random byte-token genomes: each cell has sender, receiver and developmental policy tables. Sender/receiver policies learn from pairwise catalyst outcomes while cells gain energy, bud mutated offspring, form and prune connections.",
+      "survived": "The README describes deterministic replay, separate stationary-culture and spatial-ecology comparisons, policy-frozen exact expected-correctness assays, and live scramble/mute interventions. Adaptive signaling can be tested against frozen controls without relying on a pretrained language model.",
+      "killed": "The balanced diagnostic's shuffled and muted baselines are analytically 1/3 by construction, not independent empirical findings. The signaling task, fixed alphabet, catalysts and update rules are engineered, offspring do not inherit parental learned weights, and the ecology can hit a programmed population ceiling; open-ended communication or sustainable selection for language is not established.",
+      "tags": [
+        "2026-10-28",
+        "artificial-life",
+        "locally-learned-signals",
+        "arbitrary-symbols",
+        "developmental-rules",
+        "connection-pruning",
+        "genome",
+        "interventions",
+        "cpu-world",
+        "independent-lineage"
+      ],
+      "era": "October 28: generative genomes, ecological learners, and creative tools",
+      "era_order": 160,
+      "evidence": "https://github.com/anttiluode/EmergenceAstra/blob/main/README.md"
+    },
+    {
+      "id": "Loopcraft",
+      "url": "https://github.com/anttiluode/Loopcraft",
+      "family": "practical-tools",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Local Windows desktop YouTube/local-video to animated-GIF studio with filmstrip preview, explicit IN/OUT markers, whole-video navigation, zoomed detail timeline, crop/pad/stretch, speed, size, FPS and palette-based FFmpeg export.",
+      "survived": "The October 28 update changes first-load behavior to a selectable eight-second detail interval, separates full-source navigation from local trimming, applies IN/OUT timecode edits together, and pins Save As / Create GIF beneath a scrollable settings pane for small displays. No cloud processing, watermark or MoviePy required.",
+      "killed": "Tool usability is not a scientific result; media access still depends on yt-dlp and rights, GIFs have no sound and limited palettes, and the source README does not establish exhaustive cross-platform UI tests.",
+      "tags": [
+        "2026-10-28",
+        "video",
+        "gif",
+        "desktop-tool",
+        "youtube",
+        "ffmpeg",
+        "timeline",
+        "in-out-selection",
+        "usability-fix",
+        "windows"
+      ],
+      "era": "October 28: generative genomes, ecological learners, and creative tools",
+      "era_order": 160,
+      "evidence": "https://github.com/anttiluode/Loopcraft/blob/main/README.md"
+    }
+  ],
+  "edges": [
+    {
+      "source": "Emergence",
+      "target": "Emergence2",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Emergence2's README explicitly calls itself the next level of Emergence and describes its cell ecosystem as the inherited level one, with the hunters, danger trace and mark layer added above it.",
+      "evidence": "https://github.com/anttiluode/Emergence2/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "oct28-genome-development-versus-lifetime-learning",
+      "title": "Genome interpretation and lifetime learning are different change mechanisms",
+      "description": "Emergence evolves inherited token genomes through a fixed transformer and fixed shared cell network. Emergence2 layers a shared online-trained hunter brain over that evolving prey. EmergenceAstra separately implements fixed developmental tables plus individually updated sender/receiver policies; no code inheritance between Astra and the other two is claimed. The common question is which changes are inherited, which are learned during life and which are imposed by the experimenter.",
+      "nodes": [
+        "Emergence",
+        "Emergence2",
+        "EmergenceAstra"
+      ]
+    }
+  ]
+}

@@ -8,6 +8,19 @@ The central premise is that hundreds of repositories are not hundreds of indepen
 
 https://anttiluode.github.io/Genealogy/
 
+### October 28, 2026 — Three Emergence worlds and Loopcraft
+
+**[Open the Emergence family and Loopcraft branch on the wall](https://anttiluode.github.io/Genealogy/#oct28-generative-life)** · [Source-linked review](docs/reviews/2026-10-28-emergence-family-loopcraft.md) · [Curated pass](data/passes/october-28-generative-life-and-loopcraft.json)
+
+Four new reviewed repositories enter the atlas (census **554**, previously 550):
+
+- **[Emergence](https://github.com/anttiluode/Emergence)** — token-genome evolution using a fixed transformer interpreter and shared cell network in a GPU resource world. Early bodies arise and then decline in a small CPU pilot; longer genomes can result from biased mutation rather than adaptive complexity.
+- **[Emergence2](https://github.com/anttiluode/Emergence2)** — explicit successor to Emergence: learning hunters consume evolving cells, perceive local patches, and can write marks. Straight-moving foragers remain the important control; the full ecology has not yet shown a clear learned-policy advantage or effective mark use.
+- **[EmergenceAstra](https://github.com/anttiluode/EmergenceAstra)** — separate CPU world in which random genomes initialize signaling and development policies; agents locally learn arbitrary symbol conventions through catalyst outcomes and can change connections. Its balanced one-third shuffled baseline is analytical, not discovered language.
+- **[Loopcraft](https://github.com/anttiluode/Loopcraft)** — stand-alone, locally running video-to-GIF desktop tool with October 28 zoomed timeline and IN/OUT editing fixes, included in the practical-tools branch without invented scientific ancestry.
+
+The curated graph records the **Emergence → Emergence2** direct inheritance edge, a cross-world motif distinguishing inherited rules from lifetime learning, and deliberately **no fork edge for EmergenceAstra**. Source-reported observations are separated from outstanding experiments.
+
 ### October 28, 2026 — Evening: scouts write, waves read, lineage converges
 
 **[Open the Evening branch on the wall](https://anttiluode.github.io/Genealogy/#oct28-evening)** · [Source-linked review](docs/reviews/2026-10-28-evening-read-write-heredity.md) · [Curated pass](data/passes/october-28-evening-scout-wave-read-write-heredity.json) · [Run Evening](https://anttiluode.github.io/Evening/)
