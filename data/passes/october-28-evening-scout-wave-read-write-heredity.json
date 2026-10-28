@@ -1,0 +1,77 @@
+{
+  "id": "october-28-evening-scout-wave-read-write-heredity",
+  "title": "October 28 — Evening: scouts write material, waves read histories, heredity is tested",
+  "reviewed_at": "2026-10-28",
+  "order": 147,
+  "summary": "BlackBoxLab's Cell 0 scout writer meets the finite-speed ping-reader idea explored by WallMemoryLaw. In 48 pre-registered order-test worlds, 16 and 8 pings classify writing order 1.000, outperforming the global material mean (0.625), but shuffled/phase-scrambled maps classify just as well: this reader hears the distribution of amounts, not their spatial arrangement. A separate recency gate fails. The material→ping→child read-write loop does not preserve two stable types: seek-first dominates; a designed quorum only delays loss of avoid-first. Averaging evidence before thresholding or writing two positive signals is an untested next gate.",
+  "nodes": [
+    {
+      "id": "Evening",
+      "url": "https://github.com/anttiluode/Evening",
+      "family": "stigmergy",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Cell 0 scouts copied from BlackBoxLab write a slowly retained bulk material mass into a Klein–Gordon field. After the scouts vanish, fixed source–receiver wave pings read the frozen medium's history; a second experiment uses local ping decisions as the only parent-to-child channel to test physical-medium heredity.",
+      "survived": "Pre-registered equal-total writing-order test on 48 fresh worlds: 16 and 8 broadband pings each classify seek→avoid versus avoid→seek at LOO 1.000 (2000-shuffle p floor 0.0005); one ping gets 0.833, while scalar mean material gets 0.625. Finite-speed elliptical footprints pass Gate 0. Phase-scrambling and pixel-shuffling keep order accuracy at 1.000, establishing readable value-distribution differences rather than necessary spatial-layout information.",
+      "killed": "The harder 32-world recency ping test fails (0.625; p=0.18), while mean material alone achieves 0.812, correcting an earlier 12-world claim. In material→ping→children lineages, 0/8 pure avoid-first lines survive eight generations under single receptors (8/8 seek-first); nine-vote quorum retains only 2/8 avoid-first (8/8 seek-first). No bistable heredity, genetic reproduction, geometry-specific arrangement decoding, real physical hardware or theorem-level physical inheritance is demonstrated; multi-ping and two-presence rescues are predictions, not experiments.",
+      "evidence": "https://github.com/anttiluode/Evening/blob/main/README.md",
+      "tags": [
+        "2026-10-28",
+        "cell0",
+        "blackboxlab",
+        "scout-written-medium",
+        "Klein-Gordon",
+        "wave-ping",
+        "blind-history-reading",
+        "finite-speed-footprint",
+        "preregistered",
+        "heredity-negative",
+        "dominance",
+        "two-state-attractor",
+        "correction"
+      ],
+      "era": "October 28: external observation and inheritance in written media",
+      "era_order": 159
+    }
+  ],
+  "edges": [
+    {
+      "source": "BlackBoxLab",
+      "target": "Evening",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Evening copies BlackBoxLab's Cell 0 writer code and the seek/avoid schedule protocol; it replaces the earlier god's-eye map observer with an independent wave-ping readout.",
+      "evidence": "https://github.com/anttiluode/Evening/blob/main/README.md"
+    },
+    {
+      "source": "WallMemoryLaw",
+      "target": "Evening",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Evening tests a finite-speed source→material→receiver observation footprint inspired by WallMemoryLaw's causal scattering tours, but changes from externally written boundary patches to scout-written distributed Klein–Gordon mass; this is a conceptual/method transfer, not a fork or validation of wall-calibration scaling.",
+      "evidence": "https://github.com/anttiluode/Evening/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "oct28-external-read-of-scout-written-medium",
+      "title": "A wave can read a written history without the god's-eye map",
+      "description": "BlackBoxLab Cell 0 supplies local scouts that write persistent bulk material; WallMemoryLaw supplies a finite-travel-time interrogation idea. Evening connects them: a blind ping hears writing-order signatures in the distribution of material amounts, with footprint and shuffle controls. This is a genuine external observer but does not yet read fine spatial arrangement or prove a cheaper physical memory than direct material statistics.",
+      "nodes": [
+        "BlackBoxLab",
+        "WallMemoryLaw",
+        "Evening"
+      ]
+    },
+    {
+      "id": "oct28-one-state-dominance-vs-heredity",
+      "title": "A self-read/write loop can select a winner without inheriting two states",
+      "description": "Evening's only intergenerational channel is a material field measured by local pings. Seek-first spreads into avoid-first lineages because its signature survives contamination; pure avoid-first is fragile. The one-bit code contracts toward seek-first under the tested receptor, while stronger analog evidence averaging and two positive materials remain falsifiable proposals.",
+      "nodes": [
+        "BlackBoxLab",
+        "Evening"
+      ]
+    }
+  ]
+}

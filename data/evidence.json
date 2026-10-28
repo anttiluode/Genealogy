@@ -11131,5 +11131,146 @@
     "held_out": false,
     "external_data": false,
     "replication": "Source implementation with headless and test suite verified by GitHub Actions; no motion-effect size reported."
+  },
+  {
+    "id": "oct28-evening-order-ping-reader-beats-mean",
+    "node": "Evening",
+    "claim": "Blind finite-speed pings decode two equal-total scout-writing order histories better than the global mean, but are sensitive primarily to the distribution of material values rather than their spatial locations.",
+    "design": "Freeze seek→avoid and avoid→seek writer schedules; 24 fresh worlds per arm; scouts write the bulk mass M, then are removed. Query 16, 8 and 1 source–receiver pings with 12 spectral log-power bands and LOO nearest centroids. Compare global mean, quantiles, radial spectrum and phase-scrambled/shuffled material surrogates. The 16-ping footprint is checked by replacing material outside vs inside source–receiver causal ellipses.",
+    "result": "supports",
+    "metrics": [
+      {
+        "name": "order, 16 and 8 pings LOO accuracy",
+        "value": "1.000 / 1.000, p=0.0005 (2000-shuffle floor)"
+      },
+      {
+        "name": "one ping LOO accuracy",
+        "value": "0.833"
+      },
+      {
+        "name": "global mean-material attacker",
+        "value": "0.625"
+      },
+      {
+        "name": "phase-scrambled and pixel-shuffled accuracy",
+        "value": "1.000 each"
+      },
+      {
+        "name": "exterior footprint swap trace error",
+        "value": "≤1.2e-8 peak with 4-cell margin; ≤4e-12 with 8 cells"
+      }
+    ],
+    "controls": [
+      "Fresh 24+24 pre-registered worlds; identical total material across the two order arms",
+      "Mean-material scalar and full-map quantile/spectral attackers",
+      "Phase scrambling and pixel shuffling destroy arrangement",
+      "Causal interior-versus-exterior footprint swaps"
+    ],
+    "limitations": [
+      "Classifying material distributions is not a demonstration of geometry-specific code recovery.",
+      "Classifier sees labeled pure histories during training; no novel symbolic vocabulary learned.",
+      "The reported p-value is the finite randomization-test floor, not a vanishing probability.",
+      "The numerical model is synthetic and has a documented 1e-4 budget leakage."
+    ],
+    "source": "https://github.com/anttiluode/Evening/blob/main/README.md",
+    "motifs": [
+      "oct28-external-read-of-scout-written-medium"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "sample": {
+      "unit": "fresh simulated writer world",
+      "count": 48
+    },
+    "replication": "Order PREREG.md committed as 1fa7b2b before confirmatory worlds; source-reported results, not independently rerun in Genealogy."
+  },
+  {
+    "id": "oct28-evening-recency-ping-fails-scalar",
+    "node": "Evening",
+    "claim": "The harder recency contrast is not recovered by the 16-ping spectral reader and earlier claims that a scalar cannot distinguish its histories fail on more seeds.",
+    "design": "Compare seek→avoid against avoid-throughout writing schedules in 16 fresh worlds per arm. Freeze reader; score LOO classification and material-mean attacker.",
+    "result": "contradicts",
+    "metrics": [
+      {
+        "name": "16-ping LOO accuracy",
+        "value": "0.625; p=0.18 (gate fail)"
+      },
+      {
+        "name": "mean material LOO accuracy",
+        "value": "0.812; p=0.0005"
+      },
+      {
+        "name": "earlier Aug 31 12-world mean accuracy",
+        "value": "0.583 (not replicated)"
+      }
+    ],
+    "controls": [
+      "Fresh 32-world confirmatory sample",
+      "Same reader and scalar attacker protocol as order test",
+      "Explicit comparison with older 12-world claim"
+    ],
+    "limitations": [
+      "Failure is specific to this 16-ping spectrum and protocol, not proof that no possible wave reader can detect recency.",
+      "Mean material difference is small but reproducibly predictive for this setup."
+    ],
+    "source": "https://github.com/anttiluode/Evening/blob/main/README.md",
+    "motifs": [
+      "oct28-external-read-of-scout-written-medium"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "sample": {
+      "unit": "fresh simulated writer world",
+      "count": 32
+    },
+    "replication": "Source-reported pre-registered P4 failure; curation did not rerun."
+  },
+  {
+    "id": "oct28-evening-inheritance-converges-to-seek",
+    "node": "Evening",
+    "claim": "A material→ping→child feedback loop does not preserve both candidate scout schedules across generations under the tested receptors; seek-first is a dominant attractor.",
+    "design": "Remove parents after 4000 writing steps; 64 sites each ping once and a pre-trained nearest-centroid receptor assigns schedules to children in blank material. Compare eight 8-generation lineages from each pure ancestor under individual and designed 9-site quorum readers. Measure generation map on mixtures with four worlds per p.",
+    "result": "contradicts",
+    "metrics": [
+      {
+        "name": "individual, avoid-first lines retained at gen 8",
+        "value": "0/8; seek-first 8/8"
+      },
+      {
+        "name": "quorum, avoid-first lines retained at gen 8",
+        "value": "2/8; seek-first 8/8"
+      },
+      {
+        "name": "generation map f(0), f(0.05), f(0.10)",
+        "value": "0.117, 0.379, 0.621 (seek-first fraction)"
+      },
+      {
+        "name": "pure seek-first stability",
+        "value": "8/8 both reader types"
+      }
+    ],
+    "controls": [
+      "No direct copying of parent bit into child",
+      "Separate preregistered individual and quorum receptor arms",
+      "Parent mixture-to-child mixture generation map",
+      "Pure seek-first and avoid-first lineage comparisons"
+    ],
+    "limitations": [
+      "Quorum was an engineered amplifier, not an emergent local rule.",
+      "Dominance in the current code is not a general impossibility of two-state heredity.",
+      "Prediction that 9 averaged analog pings/site recover avoid-first stability is model-derived and untested; neighboring sites are spatially correlated.",
+      "Only simulated short eight-generation lineage horizons."
+    ],
+    "source": "https://github.com/anttiluode/Evening/blob/main/PREREG_INHERIT.md",
+    "motifs": [
+      "oct28-one-state-dominance-vs-heredity"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "sample": {
+      "unit": "independent lineage per pure ancestor per receptor",
+      "count": 8
+    },
+    "replication": "Inheritance PREREG_INHERIT.md pushed as bf9c072 before confirmatory runs; source-reported fcb9b65 results, not independently rerun."
   }
 ]

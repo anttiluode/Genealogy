@@ -1604,5 +1604,50 @@
       "Overshoot should mean signed separation relative to the instantaneous green velocity, not merely passing on an X plot.",
       "This Genealogy entry is based on repository source and saved results, not independent benchmark reruns."
     ]
+  },
+  {
+    "id": "oct28-can-scout-ping-code-hold-two-lineages",
+    "title": "Can a locally written, blindly ping-read medium sustain two robust inherited states rather than select a single dominant one?",
+    "state": "open",
+    "motifs": [
+      "oct28-external-read-of-scout-written-medium",
+      "oct28-one-state-dominance-vs-heredity",
+      "oct27-written-wall-not-wave"
+    ],
+    "evidence": [
+      "oct28-evening-order-ping-reader-beats-mean",
+      "oct28-evening-recency-ping-fails-scalar",
+      "oct28-evening-inheritance-converges-to-seek"
+    ],
+    "competing_explanations": [
+      "A receiver that averages analog evidence before thresholding, or two distinguishable positive material signals, creates two stable basins under contamination; fresh scouts can reproduce both writing policies using the medium alone.",
+      "The reported readout mainly sees material-value histograms; spatially correlated local pings and writer mixing erase one schedule's signature, so generations inevitably collapse or require hidden engineered labels and stronger-than-comparable storage capacity."
+    ],
+    "known": [
+      "Evening's equal-total order experiment scores 1.000 with 16 or 8 blind pings on 48 fresh worlds but the successful reader still scores 1.000 when spatial structure is shuffled.",
+      "Recency ping accuracy is 0.625 (p=0.18) on 32 worlds while the simple mean-material scalar scores 0.812, retracting the earlier claim of scalar-blind recency.",
+      "Under the tested reader, pure avoid-first survives 0/8 lineages, or 2/8 with designed quorum, versus 8/8 seek-first; generation map f(0.05)=0.379 shows asymmetric contamination.",
+      "The repo analytically proposes a stable low-p fixed point after 9 independent averaged pings/site, but that experiment has not been run and wall correlation weakens the independence assumption."
+    ],
+    "missing_discriminator": "Run a frozen independent-seed comparison of 1, 4 and 9 analog pings averaged per site before thresholding versus the existing vote, with spatially separated probes and measured correlation; separately add a balanced two-presence writer and matched direct-statistic, non-wave and indexed-memory baselines. Require both initial states to reproduce for multiple generations under contamination without direct copying.",
+    "candidate_experiment": {
+      "design": "Pre-register an 8+8 lineage protocol for all-avoid and all-seek ancestors over at least eight generations, with held-out writer seeds, fixed ping budgets, identical readout capacity and balanced training examples. Measure the empirical f(p) near p=0 and p=1, state-transition error and stability under deliberate 1–5% contamination. For a two-material design compare matched scalar probes, direct access to local material, no-wave controls and ordinary indexed copying. Release per-generation responses, confusion matrices and resource/budget accounting.",
+      "cost": "Modest numerical simulation; an actual physical medium would require separate hardware tests.",
+      "outcomes": [
+        {
+          "if": "Both pure schedules maintain reproducible stable basins under held-out contamination and outperform matched simple-material readers at comparable cost",
+          "then": "Retain a bounded medium-mediated inheritance mechanism with separately identified value of the wave reader."
+        },
+        {
+          "if": "One state still collapses or matched direct statistics reproduce all benefits",
+          "then": "Keep the useful blind reading instrument but close the stronger binary heredity and wave-specific advantage claims."
+        }
+      ]
+    },
+    "notes": [
+      "No direct gene copy in Evening's current loop, but reader training and schedule vocabulary are externally specified.",
+      "WallMemoryLaw's discrete reflecting-wall calibration is not the same PDE or a guaranteed result for Evening's distributed Klein–Gordon mass.",
+      "Results are source-reported; Genealogy has not rerun them."
+    ]
   }
 ]

@@ -1,5 +1,13 @@
 # Genealogy research log
 
+## 2026-10-28 — Evening: the missing writer, a blind reader and a failed inheritance gate
+
+One new reviewed repo added to the census (550). [Evening](https://github.com/anttiluode/Evening) reuses BlackBoxLab's Cell 0 writer and converges methodologically on WallMemoryLaw's finite-speed ping-observation idea. The source-reported, pre-registered order history is externally readable in 48 fresh worlds: 16/8 pings classify perfectly, even after pixel shuffling; this is a material-value-distribution signature, not proven layout decoding. The recency gate fails on 32 worlds (0.625, p=0.18) while mean material reaches 0.812, correcting the August 31 small-sample inference.
+
+A second frozen experiment uses material→ping→children as the only transmission channel. An individual receptor preserves 0/8 avoid-first lineages after 8 generations (8/8 seek-first); an engineered quorum holds only 2/8 avoid-first. A strong asymmetry at p=0.05 → f(p)=0.379 yields dominance, not stable two-state heredity. The latest README retracts the claim that this is impossible even with better readers: 9 analog readings averaged *before* thresholding could yield a low-p basin under an independence model, but this remains unrun and spatial correlations matter.
+
+[Source-linked review](docs/reviews/2026-10-28-evening-read-write-heredity.md) · [Structured pass](data/passes/october-28-evening-scout-wave-read-write-heredity.json). This atlas update is a documentary source audit, not an independent simulation rerun.
+
 ## 2026-10-27 — Two missing late arrivals: Slider3 and AnttisInstanton2
 
 The Genealogy census now includes 549 repositories after adding two omitted October 27 repositories, **Slider3** and **AnttisInstanton2**. The other five user-listed October 27 repos (ParabolicOrientationSihti, Kavitaatio, WallMemoryLaw, ResonanceAsControlledMethod and BigKahuna) were already curated in the preceding pass and are not duplicated. A new pass provides two source-reviewed cards, two conservative convergence edges, two motifs, four evidence records, one open multi-seed motion question, and a visible wall section.

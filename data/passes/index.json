@@ -486,5 +486,9 @@
   {
     "path": "october-27-lifted-wave-observers-and-instanton.json",
     "enabled": true
+  },
+  {
+    "path": "october-28-evening-scout-wave-read-write-heredity.json",
+    "enabled": true
   }
 ]

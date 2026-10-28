@@ -8,6 +8,14 @@ The central premise is that hundreds of repositories are not hundreds of indepen
 
 https://anttiluode.github.io/Genealogy/
 
+### October 28, 2026 — Evening: scouts write, waves read, lineage converges
+
+**[Open the Evening branch on the wall](https://anttiluode.github.io/Genealogy/#oct28-evening)** · [Source-linked review](docs/reviews/2026-10-28-evening-read-write-heredity.md) · [Curated pass](data/passes/october-28-evening-scout-wave-read-write-heredity.json) · [Run Evening](https://anttiluode.github.io/Evening/)
+
+**[Evening](https://github.com/anttiluode/Evening)** connects BlackBoxLab's **Cell 0** local material-writing scouts to WallMemoryLaw's finite-speed ping-reading idea. In **48 pre-registered order worlds**, 16 and 8 pings each classify writing order **1.000** versus **0.625** for global mean material. But pixel-shuffled maps also classify at 1.000: the receiver hears a **distribution of amounts**, not necessarily their arrangement. The separate recency gate fails (**0.625, p=0.18**) while the material mean scores **0.812**.
+
+Part 2 feeds local ping decisions back into the next generation's scout schedules, with **no copied parent gene**. Two-state heredity **does not emerge**: **0/8** avoid-first lineages remain under the individual receptor (**2/8** under engineered quorum); seek-first remains in **8/8**. The later nine-analog-ping averaging / two-presence rescue is **an untested prediction**, not a result. This adds **one distinct reviewed repo**, two typed edges, two motifs, three evidence receipts and one open question. The census is now **550**. All numerical outcomes are source-reported, not independently rerun by Genealogy.
+
 ### October 27, 2026 — Slider3 and AnttisInstanton2: two missing late arrivals
 
 **[Open the new two-center / lifted-wave branch on the wall](https://anttiluode.github.io/Genealogy/#oct27-wave-observers)** · [Source-linked review](docs/reviews/2026-10-27-slider3-instanton2-observers.md) · [Curated pass](data/passes/october-27-lifted-wave-observers-and-instanton.json).
