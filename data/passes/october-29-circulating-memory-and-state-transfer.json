@@ -1,0 +1,209 @@
+{
+  "id": "october-29-circulating-memory-and-state-transfer",
+  "title": "October 29 — phase state, feedback relay, and a residue-trained returning loop",
+  "reviewed_at": "2026-10-29",
+  "order": 149,
+  "summary": "Seven new source-reviewed repositories. Complexity isolates a persistent internal field change; two chain studies separate beat codes, threshold slips and limited state transfer; ThursdaySol finds a fragile history-graft response. MoebiusLoopMemory and LoopAImemory show synthetic trained temporal readouts without a special Möbius advantage. Newly implemented RoundAndRound reawakens a completely erased fast loop using a learned Sihti-residue map; direct-state ridge ties exactly, ruling out a claimed compression advantage.",
+  "nodes": [
+    {
+      "id": "RoundAndRound",
+      "url": "https://github.com/anttiluode/RoundAndRound",
+      "family": "temporal-memory",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A continuously evolving fast phase state leaves Sihti-style ringdown residues; slow cue-to-residue ridge is trained and restores state after complete fast erasure.",
+      "survived": "Five local tests passed. A 12-history, 8-repeat first gate shows cue-trained reawakening RMSE 0.22174 after fast reset, wrong cue 3.67203, empty state 2.95856; telescoping identity error 3.55e-15.",
+      "killed": "Direct cue-to-state ridge ties at RMSE 0.22174, as required for linear telescoping. No demonstrated compression, unsupervised consolidation, long-term continual learning or neural mechanism.",
+      "tags": [
+        "2026-10-29",
+        "sihti-residues",
+        "autonomous-loop",
+        "erase-and-reawaken",
+        "direct-baseline-tie"
+      ],
+      "era": "October 29: circulating state and residue reawakening",
+      "era_order": 161,
+      "evidence": "https://github.com/anttiluode/RoundAndRound/blob/main/README.md"
+    },
+    {
+      "id": "LoopAImemory",
+      "url": "https://github.com/anttiluode/LoopAImemory",
+      "family": "temporal-ai",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Reuses the fixed recurrent state of MoebiusLoopMemory with a trained linear readout and a dual-path synthetic temporal classifier/predictor.",
+      "survived": "Source reports 99.9% held-out dual-path event equality, 100% lag-6 recall and 91.1% second-order synthetic future prediction.",
+      "killed": "A quadratic mean baseline scores 100% on equality, a two-frame oracle ties prediction, and a signed gated loop fails a delayed/noisier OOD test. Real webcam generalization is unmeasured.",
+      "tags": [
+        "2026-10-29",
+        "trained-readout",
+        "bounded-state",
+        "dual-path",
+        "strong-baseline"
+      ],
+      "era": "October 29: circulating state and residue reawakening",
+      "era_order": 161,
+      "evidence": "https://github.com/anttiluode/LoopAImemory/blob/main/README.md"
+    },
+    {
+      "id": "MoebiusLoopMemory",
+      "url": "https://github.com/anttiluode/MoebiusLoopMemory",
+      "family": "temporal-memory",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Fixed rotating feature-state with apical-inspired multiplicative contextual gating and a strictly linear output head.",
+      "survived": "Five-seed signed+gate historical XOR(lags 2,3) 83.3% and lag-6 recall 75.9%; history-erasure control falls to chance. Ungated shift recalls individual past bits better.",
+      "killed": "Ordinary cyclic and random orthogonal loops tie or beat the signed shift on these tested tasks. No special Möbius benefit, physical traveling wave or brain claim.",
+      "tags": [
+        "2026-10-29",
+        "signed-shift",
+        "history-xor",
+        "context-gate",
+        "no-mobius-advantage"
+      ],
+      "era": "October 29: circulating state and residue reawakening",
+      "era_order": 161,
+      "evidence": "https://github.com/anttiluode/MoebiusLoopMemory/blob/main/README.md"
+    },
+    {
+      "id": "ThursdaySol",
+      "url": "https://github.com/anttiluode/ThursdaySol",
+      "family": "feedback-control",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Three deliberately coupled homeostatic/checkerboard feedback loops reconstruct and extend the Perception Lab ECG graph.",
+      "survived": "A deterministic matched-state history graft at B changes downstream C's later probe interaction by 0.666833; cutting B→C yields zero.",
+      "killed": "Default noisy robustness gate fails: 0/8 paired preparations above 0.05 at input noise SD 0.003. Couplings and graft are engineered, not biological relay.",
+      "tags": [
+        "2026-10-29",
+        "history-graft",
+        "feedback",
+        "noise-negative"
+      ],
+      "era": "October 29: circulating state and residue reawakening",
+      "era_order": 161,
+      "evidence": "https://github.com/anttiluode/ThursdaySol/blob/main/README.md"
+    },
+    {
+      "id": "ChainNeuronsWithPhaseSpikeSol",
+      "url": "https://github.com/anttiluode/ChainNeuronsWithPhaseSpikeSol",
+      "family": "oscillator-chains",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Independent analysis of phase-coded two-tone beating, propagation and engineered stationary receiving oscillators.",
+      "survived": "Source reports measured near-field contrast decay and stationary active receiver state re-emission/history-dependent response.",
+      "killed": "Prescribed passive tones do not constitute neuronal threshold spikes; moving bonded-chain regeneration and robust long-range relay have not been shown.",
+      "tags": [
+        "2026-10-29",
+        "independent-audit",
+        "beat-control",
+        "receiver-state"
+      ],
+      "era": "October 29: circulating state and residue reawakening",
+      "era_order": 161,
+      "evidence": "https://github.com/anttiluode/ChainNeuronsWithPhaseSpikeSol/blob/main/README.md"
+    },
+    {
+      "id": "ChainNeuronsWithPhaseSpike",
+      "url": "https://github.com/anttiluode/ChainNeuronsWithPhaseSpike",
+      "family": "oscillator-chains",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Tests pumped phase-coded chain beats, near-critical 2π phase slips and transfer to neighbors using original oscillator field dynamics.",
+      "survived": "A d=3 receiver classifies sender patterns 0.85 versus leakage control 0.62; a near-complement pair exhibits threshold-like slips near a locking edge.",
+      "killed": "Original chain bursts are ordinary beats; reliable regenerative multi-hop spike relay remains unproved.",
+      "tags": [
+        "2026-10-29",
+        "phase-encoded-beat",
+        "threshold-like-slip",
+        "relay-not-established"
+      ],
+      "era": "October 29: circulating state and residue reawakening",
+      "era_order": 161,
+      "evidence": "https://github.com/anttiluode/ChainNeuronsWithPhaseSpike/blob/main/README.md"
+    },
+    {
+      "id": "Complexity",
+      "url": "https://github.com/anttiluode/Complexity",
+      "family": "physical-computation",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Simulated seeded field droplets are tested for geometric recovery, lingering changed response and compact local prediction.",
+      "survived": "Source reports changed breathing state with recovery in 11/11 seeded droplets; local held-out probe prediction error falls from 0.402 to 0.218 with internal phase variables.",
+      "killed": "Objects are seeded and finite-lived; full-world dynamics and generic morphology need not generate useful persistent objects. No general consciousness or memory law follows.",
+      "tags": [
+        "2026-10-29",
+        "seeded-droplets",
+        "internal-phase",
+        "predictive-state"
+      ],
+      "era": "October 29: circulating state and residue reawakening",
+      "era_order": 161,
+      "evidence": "https://github.com/anttiluode/Complexity/blob/main/README.md"
+    }
+  ],
+  "edges": [
+    {
+      "source": "MoebiusLoopMemory",
+      "target": "LoopAImemory",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "LoopAImemory explicitly reuses the recurrence from MoebiusLoopMemory with trained task readouts.",
+      "evidence": "https://github.com/anttiluode/LoopAImemory/blob/main/README.md"
+    },
+    {
+      "source": "MoebiusLoopMemory",
+      "target": "RoundAndRound",
+      "type": "converges",
+      "confidence": "high",
+      "why": "RoundAndRound carries the circulating-state research question forward with continuous-time rotation and Sihti trained residues, rather than copying the shift implementation.",
+      "evidence": "https://github.com/anttiluode/RoundAndRound/blob/main/README.md"
+    },
+    {
+      "source": "LoopAImemory",
+      "target": "RoundAndRound",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Both ask whether a learned reader can use bounded history; RoundAndRound adds fast-state erasure and a separately trained association to restore the state.",
+      "evidence": "https://github.com/anttiluode/RoundAndRound/blob/main/README.md"
+    },
+    {
+      "source": "ChainNeuronsWithPhaseSpike",
+      "target": "ChainNeuronsWithPhaseSpikeSol",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Sol independently audits beat physics and receiver state alongside Claude's chain experiment, rather than reproducing a claimed biological spike.",
+      "evidence": "https://github.com/anttiluode/ChainNeuronsWithPhaseSpikeSol/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "oct29-short-slow-reentry",
+      "title": "Fast circulation, slow association and reactivation are separate mechanisms",
+      "description": "MoebiusLoopMemory and LoopAImemory make temporal history accessible to trained readouts. RoundAndRound trains a cue-to-ringdown-residue memory, erases all fast activity and reactivates it. A direct ridge tie is the central negative control: the decomposition alone yields no extra information.",
+      "nodes": [
+        "MoebiusLoopMemory",
+        "LoopAImemory",
+        "RoundAndRound"
+      ]
+    },
+    {
+      "id": "oct29-state-not-spike",
+      "title": "Retained changes are not automatically regenerated or transmitted spikes",
+      "description": "Complexity's seeded droplet, ThursdaySol's controller history, and independent Claude/Sol chain experiments show different forms of history-dependent response. Their noise, distance, fixed-geometry and intervention limits remain distinct.",
+      "nodes": [
+        "Complexity",
+        "ThursdaySol",
+        "ChainNeuronsWithPhaseSpikeSol",
+        "ChainNeuronsWithPhaseSpike"
+      ]
+    }
+  ]
+}
