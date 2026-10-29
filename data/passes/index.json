@@ -494,5 +494,9 @@
   {
     "path": "october-28-generative-life-and-loopcraft.json",
     "enabled": true
+  },
+  {
+    "path": "october-29-circulating-memory-and-state-transfer.json",
+    "enabled": true
   }
 ]
