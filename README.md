@@ -8,6 +8,21 @@ The central premise is that hundreds of repositories are not hundreds of indepen
 
 https://anttiluode.github.io/Genealogy/
 
+### October 29, 2026 — Circulating memory, state transfer, and residue reawakening
+
+**[View the October 29 research branch](https://anttiluode.github.io/Genealogy/#oct29-roundandround)** · [Source-linked seven-repository review](docs/reviews/2026-10-29-roundandround-memory-and-state-transfer.md) · [Curated pass](data/passes/october-29-circulating-memory-and-state-transfer.json)
+
+Seven reviewed repositories enter the census (**561**, previously 554):
+
+- **[RoundAndRound](https://github.com/anttiluode/RoundAndRound)** — a new NumPy experiment: autonomous phase loops leave Sihti ringdown residues, a slow trained cue memory stores them, and a completely erased fast state can be reconstructed. Five tests pass locally; the direct-state ridge baseline **ties** at RMSE 0.22174, so no compression advantage follows.
+- **[LoopAImemory](https://github.com/anttiluode/LoopAImemory)** — trained readouts over synthetic history, delayed two-event comparisons and prediction, but stronger explicit-memory controls tie or beat important tasks.
+- **[MoebiusLoopMemory](https://github.com/anttiluode/MoebiusLoopMemory)** — circulating state and multiplicative gate make historical relations linearly readable; ordinary cyclic and orthogonal controls do **not** support a unique Möbius benefit.
+- **[ThursdaySol](https://github.com/anttiluode/ThursdaySol)** — three engineered ECG/homeostat loops demonstrate a deterministic history-to-probe effect, **not robust at the default noisy gate (0/8)**.
+- **[ChainNeuronsWithPhaseSpikeSol](https://github.com/anttiluode/ChainNeuronsWithPhaseSpikeSol)** and **[ChainNeuronsWithPhaseSpike](https://github.com/anttiluode/ChainNeuronsWithPhaseSpike)** — complementary audits of pumped phase beats, near-critical slips and state transfer; no general multi-hop regenerative spike mechanism established.
+- **[Complexity](https://github.com/anttiluode/Complexity)** — seeded field droplets retain changed local internal dynamics and probe responses; not unseeded autonomous general memory.
+
+The cross-project hypothesis is now precise: **fast temporal dynamics may be consolidated into separately retained structure that can later reawaken useful state**. The first implemented RoundAndRound gate establishes the mechanics, not a superiority result or a biological hippocampal model. Numerical claims from the other six projects remain source-reported.
+
 ### October 28, 2026 — Three Emergence worlds and Loopcraft
 
 **[Open the Emergence family and Loopcraft branch on the wall](https://anttiluode.github.io/Genealogy/#oct28-generative-life)** · [Source-linked review](docs/reviews/2026-10-28-emergence-family-loopcraft.md) · [Curated pass](data/passes/october-28-generative-life-and-loopcraft.json)
