@@ -847,6 +847,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "ChainsInPumpedGPUfield",
+    "url": "https://github.com/anttiluode/ChainsInPumpedGPUfield",
+    "default_branch": "main",
+    "size": 1194,
+    "visibility": "public",
+    "description": "opus 55",
+    "created_at": "2026-10-28T13:07:24Z",
+    "updated_at": "2026-10-28T16:52:20Z",
+    "inventory_status": "unread"
+  },
+  {
     "name": "ChargingBullTrader",
     "url": "https://github.com/anttiluode/ChargingBullTrader",
     "default_branch": "main",
@@ -1219,6 +1230,17 @@
     "created_at": "2026-10-29T06:05:12Z",
     "updated_at": "2026-10-29T12:42:53Z",
     "inventory_status": "reviewed"
+  },
+  {
+    "name": "ComputationalChainsInPumpedGPUfield",
+    "url": "https://github.com/anttiluode/ComputationalChainsInPumpedGPUfield",
+    "default_branch": "main",
+    "size": 5465,
+    "visibility": "public",
+    "description": "Astra",
+    "created_at": "2026-10-28T17:17:58Z",
+    "updated_at": "2026-10-29T06:24:30Z",
+    "inventory_status": "unread"
   },
   {
     "name": "Concrete",
@@ -2071,11 +2093,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 2157,
+    "size": 2288,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-10-28T12:26:36Z",
+    "updated_at": "2026-10-29T17:15:17Z",
     "inventory_status": "unread"
   },
   {
@@ -3831,11 +3853,11 @@
     "name": "PerceptionLab",
     "url": "https://github.com/anttiluode/PerceptionLab",
     "default_branch": "main",
-    "size": 6727,
+    "size": 6797,
     "visibility": "public",
     "description": "Lego set science ",
     "created_at": "2025-11-06T18:46:00Z",
-    "updated_at": "2026-08-12T07:40:17Z",
+    "updated_at": "2026-10-29T14:11:28Z",
     "inventory_status": "reviewed"
   },
   {
@@ -4418,7 +4440,7 @@
     "visibility": "public",
     "description": "Sol",
     "created_at": "2026-10-29T16:59:59Z",
-    "updated_at": "2026-10-29T17:00:22Z",
+    "updated_at": "2026-10-29T17:10:38Z",
     "inventory_status": "reviewed"
   },
   {
