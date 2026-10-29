@@ -37,3 +37,14 @@ Seven sources enter [Genealogy](https://github.com/anttiluode/Genealogy). They d
 Train sequential sets of distinct histories under an equal total scalar budget; erase fast state between tasks; compare band-selective consolidation with direct memory, fixed-buffer history and trained recurrent baselines on old-task retention, new-task acquisition, noisy cues and out-of-distribution delays. Separate self-generated probes from new external evidence before allowing them to write. Do not claim consciousness, hippocampal circuitry or a general continual-learning cure.
 
 Source attribution: the six earlier projects' numerical findings are sourced from their READMEs and ledgers rather than independently rerun here. RoundAndRound's five tests and deterministic first benchmark were run locally before committing its code.
+
+
+## RoundAndRound Gate 2 — selective consolidation was not enough (October 29, later update)
+
+The follow-up [consolidation protocol](https://github.com/anttiluode/RoundAndRound/blob/main/docs/CONSOLIDATION_GATE.md), [benchmark](https://github.com/anttiluode/RoundAndRound/blob/main/consolidation_benchmark.py), and [eight-seed results ledger](https://github.com/anttiluode/RoundAndRound/blob/main/results/CONSOLIDATION_RESULTS.md) now test three successive task sets A→B→C with fixed **192-scalar** online linear associative memories and complete fast-state erasure between episodes.
+
+Sihti-derived fast-residue/slow-core selective consolidation improved post-C old A late-state NRMSE to **0.9885**, compared with **1.2700** for a uniformly fast direct-state writer. But the **direct per-feature learning-rate control also gets 0.9885**, and a uniformly slow direct writer matches the same old late-state score. On new C, selective encoding scores **0.7565**, worse than direct fast's **0.6622** and outside the locally specified +0.05 tolerance. With a normalized error of **1.0 for predicting zero**, the old A signal has almost disappeared: it worsened from **0.7694** immediately after task A to **0.9885** after task C.
+
+**Decision:** compound gate fails; no residue-specific protection or catastrophic-forgetting solution demonstrated. Eight fixed seeds 401–408, all eight favored selective over uniform fast on old A, but **none of that improvement survives the feature-rate-matched explanation**. The local test passed five unit checks and an independently running GitHub CPU workflow; claims remain synthetic.
+
+The next discriminating hypothesis is learned slow *dynamics/operator structure*, not merely a linearly invertible re-encoding of the same vector. Force complete fast-state erasure, use a later identical neutral probe and compare history-dependent operator response against equally charged direct-state/slow-rate alternatives.
