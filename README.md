@@ -8,6 +8,17 @@ The central premise is that hundreds of repositories are not hundreds of indepen
 
 https://anttiluode.github.io/Genealogy/
 
+### October 30, 2026 — SweepAtlas and TransformerX: spatial observations meet inference-time memory
+
+**[Explore today's two projects on the Genealogy wall](https://anttiluode.github.io/Genealogy/#oct30-atlas-transformerx)** · [Source-linked review](docs/reviews/2026-10-30-sweepatlas-transformerx.md) · [Curated pass](data/passes/october-30-sweepatlas-transformerx.json) · [TransformerX nine-run analysis](https://github.com/anttiluode/TransformerX/blob/main/results/FULL_SWEEP_2026-10-30.md).
+
+Two new reviewed repositories bring the census to **565**; these are **different projects**, not a combined video-transformer architecture.
+
+- **[TransformerX](https://github.com/anttiluode/TransformerX)** freezes pretrained DistilGPT-2 and trains an explicit 64-coordinate recurrent state, adapter bank and read/router to use silent-rule feedback history in current inference. The completed **nine-run, three-seed** source sweep scores **92.27% interaction / 92.22% additive / 92.23% concat** mean test accuracy versus **80.46%** same-stream no-history marginal and **92.89%** known-model Bayesian reference. Cutting the state read drops accuracy **9.81–12.96 percentage points** across the nine runs, then reconnecting state restores predictions. **No clear special router gain:** concat has lower mean test NLL (**0.21884 vs 0.22115** for interaction), 4.02% fewer parameters and near-identical accuracy. Original supervised dictionary and occluded-motion tasks remain **23.96% and 24.74%** (~25% chance); no general chatbot or lifelong-memory result.
+- **[SweepAtlas](https://github.com/anttiluode/SweepAtlas)** stitches *observed pixels* from webcam or local video via OpenCV keyframes, RANSAC and lazily allocated 2-D image tiles. It now offers video file loading, scrub/step/play controls and non-destructive contrast/sharpness for preview and PNG export. Headless synthetic alignment/video/export checks have passing Windows CI. **Not 3-D SLAM:** no depth, global pose optimization, hidden-scene content or reliable nonplanar camera-walk reconstruction; scrubbing previews rather than retrospectively fills tiles.
+
+The structured pass adds **two cards, three convergence edges, three motifs, three evidence records and two unresolved questions**. TransformerX explicitly credits LoopAImemory and RoundAndRound as *inspiration*, not code inheritance. SweepAtlas is placed alongside Loopcraft as an independent video tool; linking its observed atlas to WorldModel/SihtiImageModel5 is a **proposed experiment**, not working integration. All pretrained numerical claims are sourced from TransformerX reports rather than independently retrained by Genealogy.
+
 ### October 29, 2026 — Circulating memory, state transfer, and residue reawakening
 
 **[View the October 29 research branch](https://anttiluode.github.io/Genealogy/#oct29-roundandround)** · [Source-linked seven-repository review](docs/reviews/2026-10-29-roundandround-memory-and-state-transfer.md) · [Curated pass](data/passes/october-29-circulating-memory-and-state-transfer.json)
