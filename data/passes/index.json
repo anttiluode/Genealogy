@@ -498,5 +498,9 @@
   {
     "path": "october-29-circulating-memory-and-state-transfer.json",
     "enabled": true
+  },
+  {
+    "path": "october-30-sweepatlas-transformerx.json",
+    "enabled": true
   }
 ]
