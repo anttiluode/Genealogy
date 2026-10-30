@@ -5244,7 +5244,7 @@
     "description": "Sol",
     "created_at": "2026-10-30T10:18:54Z",
     "updated_at": "2026-10-30T17:18:26Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "SymmetrySihti",
@@ -5684,7 +5684,7 @@
     "description": "Astra",
     "created_at": "2026-10-30T06:10:00Z",
     "updated_at": "2026-10-30T17:30:21Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "TransientWaveCompiler",
