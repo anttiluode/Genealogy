@@ -725,5 +725,15 @@
   },
   "oct28-evening-inheritance-converges-to-seek": {
     "oct28-one-state-dominance-vs-heredity": "limits"
+  },
+  "oct30-transformerx-history-read-disconnection": {
+    "oct30-history-read-into-computation": "supports"
+  },
+  "oct30-transformerx-extra-router-no-clear-benefit": {
+    "oct30-history-read-into-computation": "limits"
+  },
+  "oct30-sweepatlas-2d-video-mosaic-and-image-adjustments": {
+    "oct30-observed-world-vs-predicted-world": "supports",
+    "oct30-video-instruments": "supports"
   }
 }
