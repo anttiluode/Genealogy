@@ -1,5 +1,18 @@
 # Genealogy research log
 
+## 2026-10-30 — Two new arrivals: SweepAtlas video atlas and TransformerX inference-time state
+
+Added [SweepAtlas](https://github.com/anttiluode/SweepAtlas) and [TransformerX](https://github.com/anttiluode/TransformerX) to the Genealogy census and marked them reviewed (**565 total**). A new October 30 pass adds two wall cards, three conservative convergence edges, three motifs, three source-linked evidence receipts and two unresolved experiments.
+
+TransformerX's completed nine-run, three-seed DistilGPT-2 feedback sweep shows approximately 92.2% clean synthetic test accuracy, versus 80.46% marginal, and state-read disconnection removes 9.81–12.96 percentage points. The three routers are practically tied in accuracy; simpler concat has lower NLL in every seed and fewer parameters. Silent-rule gains do not transfer to the near-chance dictionary/vision results; absence of feedback is distribution-shifted. No pretrained GRU/window/token comparisons were included in this sweep.
+
+SweepAtlas is a usable OpenCV webcam/video panorama stitcher with draggable frame timeline, limited keyframe re-localization, tile transparency and reversible display/export contrast/sharpness. Its source-reported Windows CI and synthetic tests do not establish 3-D geometry, long video-loop closure or moving-object permanence.
+
+**Genealogy boundary:** neither project descends from the other. TransformerX explicitly draws inspiration from LoopAImemory and RoundAndRound; Loopcraft and SweepAtlas are independent video tools. Proposed world-model and visual-memory connections remain hypotheses, not implementation claims.
+
+[Live wall](https://anttiluode.github.io/Genealogy/#oct30-atlas-transformerx) · [Review](docs/reviews/2026-10-30-sweepatlas-transformerx.md) · [Pass](data/passes/october-30-sweepatlas-transformerx.json). Numerical claims are source-reported; this curation did not rerun GPU training or record new camera tests.
+
+
 ## 2026-10-28 — Evening: the missing writer, a blind reader and a failed inheritance gate
 
 One new reviewed repo added to the census (550). [Evening](https://github.com/anttiluode/Evening) reuses BlackBoxLab's Cell 0 writer and converges methodologically on WallMemoryLaw's finite-speed ping-observation idea. The source-reported, pre-registered order history is externally readable in 48 fresh worlds: 16/8 pings classify perfectly, even after pixel shuffling; this is a material-value-distribution signature, not proven layout decoding. The recency gate fails on 32 worlds (0.625, p=0.18) while mean material reaches 0.812, correcting the August 31 small-sample inference.
