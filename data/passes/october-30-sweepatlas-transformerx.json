@@ -1,0 +1,119 @@
+{
+  "id": "october-30-sweepatlas-transformerx",
+  "title": "October 30 — observed spatial atlas and transformer state that changes inference",
+  "reviewed_at": "2026-10-30",
+  "order": 150,
+  "summary": "Two distinct new repositories. SweepAtlas is a practical webcam/MP4 feature-matching mosaic with keyframes, tile-backed 2-D observation storage, timeline scrubbing, and non-destructive contrast/sharpness export; not SLAM or a learned world model. TransformerX freezes pretrained DistilGPT-2 and trains recurrent state, adapters and router on synthetic silent-rule feedback. In a three-seed, nine-run sweep all routers use retained history (about 92.2% vs 80.46% marginal), and severing state access removes the gain. The multiplicative interaction router has no established advantage over simpler concat; dictionary and visual tasks remain near chance.",
+  "nodes": [
+    {
+      "id": "TransformerX",
+      "url": "https://github.com/anttiluode/TransformerX",
+      "family": "temporal-ai",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Frozen pretrained DistilGPT-2 is adapted by trainable low-rank residual operators, per-stream 64-coordinate recurrent state and a reader/router that changes inference using earlier noisy feedback on a synthetic silent-rule task.",
+      "survived": "Three-seed, nine-run GPU sweep: interaction/additive/concat mean test accuracy 92.27%/92.22%/92.23% versus 80.46% matched no-history marginal. State-read disconnection reduces means to 80.17%/80.65%/80.17%; restoring unchanged state recovers identical predictions. Source audit reports 6,144 trials per router per seed and validation-selected checkpoints.",
+      "killed": "Interaction beats concat by only 0.038 percentage points on average; concat has lower test NLL in each seed and 4.02% fewer trainable parameters. No-feedback mean is 73.23%/71.25%/72.29% (unseen feedback marker is a distribution shift). Frozen dictionary language 23.96% and occluded-motion vision 24.74% remain at about four-way chance; no chat, continual-learning, router-specific causal benefit or GRU/window/token baseline victory follows.",
+      "tags": [
+        "2026-10-30",
+        "transformer",
+        "frozen-distilgpt2",
+        "state-dependent-inference",
+        "memory-read-ablation",
+        "silent-rule-feedback",
+        "nine-run-sweep",
+        "simpler-router-wins-loss",
+        "no-chat-result"
+      ],
+      "era": "October 30: spatial observations and state-conditioned transformer inference",
+      "era_order": 162,
+      "evidence": "https://github.com/anttiluode/TransformerX/blob/main/results/FULL_SWEEP_2026-10-30.md"
+    },
+    {
+      "id": "SweepAtlas",
+      "url": "https://github.com/anttiluode/SweepAtlas",
+      "family": "practical-tools",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Local OpenCV webcam and uploaded-video mosaic builder: ORB/RANSAC view alignment, affine/homography transforms, keyframe re-anchoring, lazily allocated 2-D pixel tiles, transparent PNG export, and an interactive scrubbable video timeline.",
+      "survived": "Executable webcam and MP4 pipeline, timeline scrub/step/play, 512-pixel default tiles, unobserved-area transparency, source-pixel-only blending, and non-destructive sharpness/contrast preview and export. Windows CI reports passing syntax, video/seek, filter/export, and synthetic planar alignment tests.",
+      "killed": "Seeking previews frames but does not backfill skipped views. Older-keyframe re-anchoring is not global bundle adjustment or true 3-D SLAM; parallax, nonplanar rooms, independently moving objects and poor overlap can distort or break the mosaic. No learned geometry, object identity, or inference from unseen pixels; image enhancements do not restore missing information.",
+      "tags": [
+        "2026-10-30",
+        "webcam",
+        "video",
+        "panorama",
+        "stitching",
+        "spatial-atlas",
+        "opencv",
+        "keyframes",
+        "scrubbing",
+        "contrast-sharpness",
+        "practical-tool",
+        "not-slam"
+      ],
+      "era": "October 30: spatial observations and state-conditioned transformer inference",
+      "era_order": 162,
+      "evidence": "https://github.com/anttiluode/SweepAtlas/blob/main/README.md"
+    }
+  ],
+  "edges": [
+    {
+      "source": "LoopAImemory",
+      "target": "TransformerX",
+      "type": "converges",
+      "confidence": "high",
+      "why": "TransformerX explicitly credits LoopAImemory as inspiration; both investigate history-dependent readouts, but TransformerX modifies a frozen pretrained transformer during its forward computation rather than only learning a final ridge readout.",
+      "evidence": "https://github.com/anttiluode/TransformerX/blob/main/README.md"
+    },
+    {
+      "source": "RoundAndRound",
+      "target": "TransformerX",
+      "type": "converges",
+      "confidence": "high",
+      "why": "TransformerX explicitly names RoundAndRound as inspiration for persistent-state experiments, but implements a different supervised recurrent adapter and has no slow residual-reawakening mechanism.",
+      "evidence": "https://github.com/anttiluode/TransformerX/blob/main/README.md"
+    },
+    {
+      "source": "Loopcraft",
+      "target": "SweepAtlas",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both are independently implemented local-video instruments with timelines: Loopcraft trims and exports GIFs, whereas SweepAtlas aligns observations into a spatial mosaic. This is functional convergence, not a code fork.",
+      "evidence": "https://github.com/anttiluode/SweepAtlas/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "oct30-history-read-into-computation",
+      "title": "Retained history changes the current computational path",
+      "description": "LoopAImemory exposes temporal information to a trained readout; TransformerX causally disconnects an inference-time state access path and loses 9.81–12.96 pp. The nine-run results do not uniquely credit multiplicative routing or establish superiority over conventional recurrent/history baselines.",
+      "nodes": [
+        "LoopAImemory",
+        "RoundAndRound",
+        "TransformerX"
+      ]
+    },
+    {
+      "id": "oct30-observed-world-vs-predicted-world",
+      "title": "Spatial observation, uncertainty and imagination must be distinguished",
+      "description": "SweepAtlas aligns measured pixels into an addressable 2-D image atlas. WorldModel explicitly separates observed evidence from imagined scene geometry; SihtiImageModel5 tests remembered pixels vs completion. Combining them is a future experiment, not completed 3-D reconstruction.",
+      "nodes": [
+        "SweepAtlas",
+        "WorldModel",
+        "SihtiImageModel5"
+      ]
+    },
+    {
+      "id": "oct30-video-instruments",
+      "title": "Inspectable video is useful without claiming learned world understanding",
+      "description": "Loopcraft organizes time for clip/GIF export; SweepAtlas projects overlapping time samples into a spatial mosaic, retaining original imagery independently of display filters. Neither alone establishes depth, object permanence or scene understanding.",
+      "nodes": [
+        "Loopcraft",
+        "SweepAtlas"
+      ]
+    }
+  ]
+}
