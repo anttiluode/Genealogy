@@ -2093,11 +2093,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 2556,
+    "size": 2703,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-10-29T19:22:36Z",
+    "updated_at": "2026-10-30T18:12:26Z",
     "inventory_status": "unread"
   },
   {
@@ -4436,7 +4436,7 @@
     "name": "RoundAndRound",
     "url": "https://github.com/anttiluode/RoundAndRound",
     "default_branch": "main",
-    "size": 26,
+    "size": 127,
     "visibility": "public",
     "description": "Sol",
     "created_at": "2026-10-29T16:59:59Z",
@@ -5236,6 +5236,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "SweepAtlas",
+    "url": "https://github.com/anttiluode/SweepAtlas",
+    "default_branch": "main",
+    "size": 1054,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-10-30T10:18:54Z",
+    "updated_at": "2026-10-30T17:18:26Z",
+    "inventory_status": "unread"
+  },
+  {
     "name": "SymmetrySihti",
     "url": "https://github.com/anttiluode/SymmetrySihti",
     "default_branch": "main",
@@ -5663,6 +5674,17 @@
     "created_at": "2026-09-24T18:18:35Z",
     "updated_at": "2026-09-30T23:09:09Z",
     "inventory_status": "reviewed"
+  },
+  {
+    "name": "TransformerX",
+    "url": "https://github.com/anttiluode/TransformerX",
+    "default_branch": "main",
+    "size": 50631,
+    "visibility": "public",
+    "description": "Astra",
+    "created_at": "2026-10-30T06:10:00Z",
+    "updated_at": "2026-10-30T17:30:21Z",
+    "inventory_status": "unread"
   },
   {
     "name": "TransientWaveCompiler",
