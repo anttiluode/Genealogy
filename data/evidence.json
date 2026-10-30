@@ -11272,5 +11272,155 @@
       "count": 8
     },
     "replication": "Inheritance PREREG_INHERIT.md pushed as bf9c072 before confirmatory runs; source-reported fcb9b65 results, not independently rerun."
+  },
+  {
+    "id": "oct30-transformerx-history-read-disconnection",
+    "node": "TransformerX",
+    "claim": "In a frozen pretrained transformer with trainable recurrent adapters, retaining and reading prior feedback changes synthetic silent-rule answers causally.",
+    "design": "Three seeds (7/17/27), 1,000 training steps each for interaction/additive/concat router; validation-NLL checkpoint selection; same 6,144-trial test streams within seed, state-read disconnection while stored state remains, then restoration.",
+    "result": "supports",
+    "metrics": [
+      {
+        "name": "mean test accuracy interaction/additive/concat",
+        "value": "92.27% / 92.22% / 92.23%"
+      },
+      {
+        "name": "no-history marginal / exact Bayesian filter",
+        "value": "80.46% / 92.89%"
+      },
+      {
+        "name": "read-disconnected means",
+        "value": "80.17% / 80.65% / 80.17%"
+      },
+      {
+        "name": "per-run read benefit",
+        "value": "+9.81 to +12.96 percentage points"
+      },
+      {
+        "name": "selected test episodes",
+        "value": "64 x 96 = 6,144 trials per run"
+      }
+    ],
+    "controls": [
+      "Same test streams across routers within seed",
+      "Persist state through intervention; remove both state routing and additive read and restore unchanged state",
+      "A known-model Bayesian reference and stream-specific marginal",
+      "Validation-NLL selection rather than cherry-picking final training step"
+    ],
+    "limitations": [
+      "This intervention removes both memory-readout and state-dependent routing; it does not isolate multiplicative router effects.",
+      "Three independent training seeds, not an independent general-purpose task distribution.",
+      "This benchmark is supervised synthetic feedback classification, not generated language or live perception.",
+      "Genealogy reviews the source analysis and CSV audit, not new independent GPU training."
+    ],
+    "source": "https://github.com/anttiluode/TransformerX/blob/main/results/FULL_SWEEP_2026-10-30.md",
+    "motifs": [
+      "oct30-history-read-into-computation"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "sample": {
+      "unit": "trained router/seed run",
+      "count": 9
+    },
+    "replication": "Source-reported nine pretrained GPU runs; source audit checks CSV/checkpoint metadata and stream matching, not independent Genealogy rerun."
+  },
+  {
+    "id": "oct30-transformerx-extra-router-no-clear-benefit",
+    "node": "TransformerX",
+    "claim": "The expanded multiplicative interaction router earns a meaningful clean-accuracy advantage over simpler concat on this tested task.",
+    "design": "Compare same-seed interaction, additive, concat variants with identical base pretrained model and task streams; compare clean accuracy, held-out NLL, parameter count, feedback ablations and original language/vision controls.",
+    "result": "contradicts",
+    "metrics": [
+      {
+        "name": "interaction vs concat mean accuracy",
+        "value": "+0.038 percentage points (7 answers / 18,432 predictions)"
+      },
+      {
+        "name": "mean test NLL interaction / concat",
+        "value": "0.22115 / 0.21884"
+      },
+      {
+        "name": "concat parameter reduction",
+        "value": "6,688 (4.02%)"
+      },
+      {
+        "name": "original dictionary-language / occluded-motion accuracy",
+        "value": "23.96% / 24.74% (25% chance)"
+      },
+      {
+        "name": "no-feedback accuracy interaction / additive / concat",
+        "value": "73.23% / 71.25% / 72.29%"
+      }
+    ],
+    "controls": [
+      "Matched streams and validation-selected checkpoints",
+      "Three seeds per router",
+      "Smaller concat as explicit comparison",
+      "Separate task results kept visible rather than transferred from silent-rule success"
+    ],
+    "limitations": [
+      "Three-seed comparison cannot prove formal equivalence among routers.",
+      "Concat has fewer parameters and different initialization shapes; this is not a parameter-matched comparison.",
+      "Unseen no-feedback token creates a distribution-shift confound.",
+      "GRU, token-memory and history-window pretrained controls are configured but not measured in this nine-run sweep."
+    ],
+    "source": "https://github.com/anttiluode/TransformerX/blob/main/results/FULL_SWEEP_2026-10-30.md",
+    "motifs": [
+      "oct30-history-read-into-computation"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "sample": {
+      "unit": "independently seeded router training",
+      "count": 9
+    },
+    "replication": "Source-reported three-seed, nine-run audited sweep; no new model training in genealogy review."
+  },
+  {
+    "id": "oct30-sweepatlas-2d-video-mosaic-and-image-adjustments",
+    "node": "SweepAtlas",
+    "claim": "A local video/webcam player can build a persistent observed-pixel mosaic and let users seek video, change appearance and export without replacing source image tiles.",
+    "design": "OpenCV ORB+RANSAC alignment, affine/homography keyframe matching, tiled pixel averaging, timeline preview seeking (no atlas writes on scrub), transparent PNG export; post-stitch display and export contrast/sharpness controls. Project includes synthetic alignment and headless video/preview/export regression tests plus Windows CI.",
+    "result": "supports",
+    "metrics": [
+      {
+        "name": "default tile",
+        "value": "512 × 512 pixels"
+      },
+      {
+        "name": "default processing frequency",
+        "value": "5 processed frames/s"
+      },
+      {
+        "name": "contrast / sharpness sliders",
+        "value": "0–200% each; defaults 100% / 0%"
+      },
+      {
+        "name": "Windows CI",
+        "value": "smoke tests and original synthetic planar alignment report success"
+      }
+    ],
+    "controls": [
+      "Synthetic planar alignment test checks tracked coverage across a traverse-and-return sequence",
+      "Video seek tests verify nonmonotonic reads and timeline bounds",
+      "Image-adjustment tests verify alpha preservation, unmodified stored tiles and seam-consistent strip export",
+      "Unseen atlas area exported transparent rather than generated"
+    ],
+    "limitations": [
+      "The tests are engineered, planar and decoder-level checks, not a benchmark of arbitrary camera walks.",
+      "Video seeking does not backfill skipped frames into the map.",
+      "Re-anchoring is local keyframe matching, not global pose graph optimization, depth estimation or SLAM.",
+      "Non-planar parallax, moving objects and changing viewpoints can produce ghosting and alignment loss.",
+      "Genealogy did not perform a new real-world reconstruction evaluation."
+    ],
+    "source": "https://github.com/anttiluode/SweepAtlas/blob/main/README.md",
+    "motifs": [
+      "oct30-observed-world-vs-predicted-world",
+      "oct30-video-instruments"
+    ],
+    "held_out": false,
+    "external_data": false,
+    "replication": "Source-reviewed implemented functionality and committed automated test workflow; no separate real-world video dataset audit."
   }
 ]
