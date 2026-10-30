@@ -1649,5 +1649,87 @@
       "WallMemoryLaw's discrete reflecting-wall calibration is not the same PDE or a guaranteed result for Evening's distributed Klein–Gordon mass.",
       "Results are source-reported; Genealogy has not rerun them."
     ]
+  },
+  {
+    "id": "oct30-history-helps-beyond-fair-recurrent-or-window-baselines",
+    "title": "Does state-conditioned transformer inference beat matched GRU, recurrent-token and fixed-window memory on unfamiliar tasks?",
+    "state": "open",
+    "motifs": [
+      "oct30-history-read-into-computation"
+    ],
+    "evidence": [
+      "oct30-transformerx-history-read-disconnection",
+      "oct30-transformerx-extra-router-no-clear-benefit"
+    ],
+    "competing_explanations": [
+      "A learned adapter-state mechanism offers memory-conditioned inference that generalizes across longer delays, missing feedback and task shifts more efficiently than conventional recurrent or bounded-window alternatives.",
+      "The gains arise because history is informative on a constructed task and equally resourced GRU/token/window readers can match them; additional router products add no useful independent inductive bias."
+    ],
+    "known": [
+      "The nine-run source audit finds all three router variants at approximately 92.2% with history, compared to 80.46% stream marginal.",
+      "Read disconnection lowers mean test scores to approximately 80%, demonstrating dependence on state access but not on any one routing operation.",
+      "The simpler concat router has the lowest test NLL in every seed and fewer parameters; interaction's mean accuracy gain is only 0.038 points.",
+      "The original supervised dictionary-language and visual motion setups remain near 25% four-way chance; no-feedback tests introduce an out-of-distribution marker."
+    ],
+    "missing_discriminator": "Freeze a fresh task distribution and run matched-parameter and matched-compute training comparisons across state-conditioned concat/interaction, GRU, recurrent tokens, explicit history windows, and state-only baseline, with truly held-out longer delays and disappearing/returning contexts.",
+    "candidate_experiment": {
+      "design": "Predeclare fresh synthetic families and real sensor histories before looking at test results. Keep backbone, train/validation protocol, data streams, recurrent state scalar budget and optimization budget matched or transparently stratified. Include independent seeds, long-delay OOD, feedback missing at training and evaluation, and causal read/reset/stream-swap controls. Evaluate predictive NLL, action accuracy, compute/VRAM and calibration.",
+      "cost": "Moderate to high: several pretrained GPU training runs with reserved held-out streams.",
+      "outcomes": [
+        {
+          "if": "Loop/state-conditioned adapters consistently outperform matched GRU/token/window baselines on unseen streams with compute/storage gains",
+          "then": "Retain a bounded competitive state-read inference result, while separately testing router-feature benefits."
+        },
+        {
+          "if": "Ordinary recurrent or window memory matches the score and robustness, or gains disappear under data/compute matching",
+          "then": "Classify TransformerX as a valid causal implementation of history-dependent inference, not a new more capable memory architecture."
+        }
+      ]
+    },
+    "notes": [
+      "All current sweep results are source-reported from TransformerX and historical test streams were repeatedly inspected.",
+      "No broad chat/self model should be inferred from silent-rule success."
+    ]
+  },
+  {
+    "id": "oct30-observed-atlas-vs-spatial-world-model",
+    "title": "When does an observed-pixel video atlas improve prediction beyond frame replay without pretending to reconstruct 3D?",
+    "state": "open",
+    "motifs": [
+      "oct30-observed-world-vs-predicted-world",
+      "oct30-video-instruments"
+    ],
+    "evidence": [
+      "oct30-sweepatlas-2d-video-mosaic-and-image-adjustments"
+    ],
+    "competing_explanations": [
+      "Registering past video into stable 2-D coordinates makes region recall, revisits and camera-motion-robust change detection more accurate than frame-only or temporal paste memory in largely planar scenes.",
+      "A conventional latest-frame cache or standard planar stitching baseline supplies the same recall, while parallax, occlusions and moving objects require true depth and object state rather than more 2-D tiles."
+    ],
+    "known": [
+      "SweepAtlas currently stitches observed pixels with ORB/RANSAC and limited earlier-keyframe matching; no synthetic pixels or depth are generated.",
+      "Video scrub previews do not backfill atlas content; filters are applied to preview and export without changing stored imagery.",
+      "The documented local/CI tests concern synthetic planar alignment and video IO, not an independently scored handheld room-walk dataset.",
+      "The WorldModel line previously found that visually coherent RGB scene renderings can have incorrect geometry; that failure is distinct from SweepAtlas's 2-D mosaic."
+    ],
+    "missing_discriminator": "A frozen collection of real, overlapping planar sweeps and non-planar walks, with repeated camera revisits and moved objects, scored against direct frame retrieval, conventional stitching, optical-flow memory, and if appropriate depth-aware reconstruction.",
+    "candidate_experiment": {
+      "design": "Record separated videos of a textured wall/tabletop and a small room with known moved objects and repeated revisits. Reserve held-out clips; record ground-truth feature correspondences/change masks. Evaluate absolute alignment drift, hit-rate of correct region retrieval after occlusion, false-change rate and memory/compute. Compare source pixels, filtered previews, simple frame-cache retrieval and a standard stitcher; separate performance on planar from parallax sequences.",
+      "cost": "Low-moderate CPU/OpenCV effort for a planar first test; depth-aware 3-D branch needs additional capture and calibration.",
+      "outcomes": [
+        {
+          "if": "Persistent atlas improves location-keyed recall/change detection under matched budgets on held-out planar video",
+          "then": "Keep SweepAtlas as an evidence-grounded spatial memory frontend, not an end-to-end world model."
+        },
+        {
+          "if": "Simple frame retrieval ties or 2-D geometry fails systematically on parallax and object motion",
+          "then": "Preserve SweepAtlas as a practical panorama tool and route the worldbuilder idea through calibrated 3-D reconstruction instead."
+        }
+      ]
+    },
+    "notes": [
+      "Conceptual connections to WorldModel, SihtiImageModel5 and video agents are proposed tests, not implemented genealogy ancestry.",
+      "Novel geometry and unseen-scene generation are out of scope of the existing repository."
+    ]
   }
 ]
