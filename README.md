@@ -8,6 +8,12 @@ The central premise is that hundreds of repositories are not hundreds of indepen
 
 https://anttiluode.github.io/Genealogy/
 
+### October 31–November 1, 2026 — Seven repository arrivals
+
+**[Explore the new wall branch](https://anttiluode.github.io/Genealogy/#oct31-nov1-seven-arrivals)** · [Source-linked review](docs/reviews/2026-11-01-seven-arrivals.md) · [Curated pass](data/passes/october-31-november-1-seven-arrivals.json).
+
+The census now contains **572** repositories (previously 565): [2729](https://github.com/anttiluode/2729), [TheCombRedux](https://github.com/anttiluode/TheCombRedux), [VHSImageStitch](https://github.com/anttiluode/VHSImageStitch), [CortexWaveguideLens](https://github.com/anttiluode/CortexWaveguideLens), [Sihtiimagemodel6](https://github.com/anttiluode/Sihtiimagemodel6), [JanusMultiscalePhaseLensSol](https://github.com/anttiluode/JanusMultiscalePhaseLensSol), [Sihtiimagemodel7](https://github.com/anttiluode/Sihtiimagemodel7). Each has a reviewed card. Negative results and classical controls remain visible; Sihtiimagemodel7 currently has a preregistration but not a held-out test ledger. Existing SweepAtlas and TransformerX entries are not duplicated.
+
 ### October 30, 2026 — SweepAtlas and TransformerX: spatial observations meet inference-time memory
 
 **[Explore today's two projects on the Genealogy wall](https://anttiluode.github.io/Genealogy/#oct30-atlas-transformerx)** · [Source-linked review](docs/reviews/2026-10-30-sweepatlas-transformerx.md) · [Curated pass](data/passes/october-30-sweepatlas-transformerx.json) · [TransformerX nine-run analysis](https://github.com/anttiluode/TransformerX/blob/main/results/FULL_SWEEP_2026-10-30.md).

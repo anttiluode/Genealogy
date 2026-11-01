@@ -11,6 +11,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "2729",
+    "url": "https://github.com/anttiluode/2729",
+    "default_branch": "main",
+    "size": 824,
+    "visibility": "public",
+    "description": "Claude",
+    "created_at": "2026-10-31T15:26:56Z",
+    "updated_at": "2026-11-01T04:48:28Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "2MandalaTools",
     "url": "https://github.com/anttiluode/2MandalaTools",
     "default_branch": "main",
@@ -946,17 +957,6 @@
     "inventory_status": "reviewed"
   },
   {
-    "name": "Clockfield-Anti-Radar-Jamming-Attention",
-    "url": "https://github.com/anttiluode/Clockfield-Anti-Radar-Jamming-Attention",
-    "default_branch": "main",
-    "size": 7,
-    "visibility": "public",
-    "description": "Perhaps is jamming resistant. ",
-    "created_at": "2026-03-31T04:35:35Z",
-    "updated_at": "2026-03-31T04:38:20Z",
-    "inventory_status": "unread"
-  },
-  {
     "name": "Clockfield_Gemini",
     "url": "https://github.com/anttiluode/Clockfield_Gemini",
     "default_branch": "main",
@@ -965,6 +965,17 @@
     "description": "Sonnet compares our clockfield theory to scientists growing crystals inside neurons.",
     "created_at": "2026-04-08T17:00:55Z",
     "updated_at": "2026-04-08T17:01:36Z",
+    "inventory_status": "unread"
+  },
+  {
+    "name": "Clockfield-Anti-Radar-Jamming-Attention",
+    "url": "https://github.com/anttiluode/Clockfield-Anti-Radar-Jamming-Attention",
+    "default_branch": "main",
+    "size": 7,
+    "visibility": "public",
+    "description": "Perhaps is jamming resistant. ",
+    "created_at": "2026-03-31T04:35:35Z",
+    "updated_at": "2026-03-31T04:38:20Z",
     "inventory_status": "unread"
   },
   {
@@ -1296,6 +1307,17 @@
     "created_at": "2024-11-26T15:06:24Z",
     "updated_at": "2024-11-26T15:09:25Z",
     "inventory_status": "unread"
+  },
+  {
+    "name": "CortexWaveguideLens",
+    "url": "https://github.com/anttiluode/CortexWaveguideLens",
+    "default_branch": "main",
+    "size": 51,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-11-01T06:27:57Z",
+    "updated_at": "2026-11-01T06:48:40Z",
+    "inventory_status": "reviewed"
   },
   {
     "name": "CorticalLoop",
@@ -2134,17 +2156,6 @@
     "inventory_status": "unread"
   },
   {
-    "name": "GeometricNeuron10",
-    "url": "https://github.com/anttiluode/GeometricNeuron10",
-    "default_branch": "main",
-    "size": 1391,
-    "visibility": "public",
-    "description": "Weird take by opus. ",
-    "created_at": "2026-06-27T15:45:27Z",
-    "updated_at": "2026-06-27T17:33:20Z",
-    "inventory_status": "reviewed"
-  },
-  {
     "name": "GeometricNeuron_V20",
     "url": "https://github.com/anttiluode/GeometricNeuron_V20",
     "default_branch": "main",
@@ -2153,6 +2164,17 @@
     "description": "A curation of older ones by opus 48",
     "created_at": "2026-06-30T02:53:15Z",
     "updated_at": "2026-07-01T05:25:11Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "GeometricNeuron10",
+    "url": "https://github.com/anttiluode/GeometricNeuron10",
+    "default_branch": "main",
+    "size": 1391,
+    "visibility": "public",
+    "description": "Weird take by opus. ",
+    "created_at": "2026-06-27T15:45:27Z",
+    "updated_at": "2026-06-27T17:33:20Z",
     "inventory_status": "reviewed"
   },
   {
@@ -2670,6 +2692,17 @@
     "description": "Opus 55 repo",
     "created_at": "2026-10-06T06:07:02Z",
     "updated_at": "2026-10-06T12:58:49Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "JanusMultiscalePhaseLensSol",
+    "url": "https://github.com/anttiluode/JanusMultiscalePhaseLensSol",
+    "default_branch": "main",
+    "size": 191,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-11-01T09:03:26Z",
+    "updated_at": "2026-11-01T12:50:30Z",
     "inventory_status": "reviewed"
   },
   {
@@ -4664,6 +4697,28 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "Sihtiimagemodel6",
+    "url": "https://github.com/anttiluode/Sihtiimagemodel6",
+    "default_branch": "main",
+    "size": 755,
+    "visibility": "public",
+    "description": "Opus 55 ",
+    "created_at": "2026-11-01T05:58:41Z",
+    "updated_at": "2026-11-01T07:34:12Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "Sihtiimagemodel7",
+    "url": "https://github.com/anttiluode/Sihtiimagemodel7",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Opus 55",
+    "created_at": "2026-11-01T12:42:50Z",
+    "updated_at": "2026-11-01T12:46:06Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "SihtiMuisti",
     "url": "https://github.com/anttiluode/SihtiMuisti",
     "default_branch": "main",
@@ -5346,6 +5401,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "The_Ping_And_The_Listener",
+    "url": "https://github.com/anttiluode/The_Ping_And_The_Listener",
+    "default_branch": "main",
+    "size": 200,
+    "visibility": "public",
+    "description": "A paper that fell out of recent papers inspired by some past thoughts and paper 'Action potential waveforms are state dependent' by Burgos & al. Opus 5.5 repo. ",
+    "created_at": "2026-09-26T07:06:34Z",
+    "updated_at": "2026-09-26T07:10:59Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "The-Aether-Of-Time",
     "url": "https://github.com/anttiluode/The-Aether-Of-Time",
     "default_branch": "main",
@@ -5379,17 +5445,6 @@
     "inventory_status": "unread"
   },
   {
-    "name": "The_Ping_And_The_Listener",
-    "url": "https://github.com/anttiluode/The_Ping_And_The_Listener",
-    "default_branch": "main",
-    "size": 200,
-    "visibility": "public",
-    "description": "A paper that fell out of recent papers inspired by some past thoughts and paper 'Action potential waveforms are state dependent' by Burgos & al. Opus 5.5 repo. ",
-    "created_at": "2026-09-26T07:06:34Z",
-    "updated_at": "2026-09-26T07:10:59Z",
-    "inventory_status": "reviewed"
-  },
-  {
     "name": "TheClutch",
     "url": "https://github.com/anttiluode/TheClutch",
     "default_branch": "main",
@@ -5420,6 +5475,17 @@
     "description": "Opus 55",
     "created_at": "2026-10-26T07:32:41Z",
     "updated_at": "2026-10-26T07:34:28Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "TheCombRedux",
+    "url": "https://github.com/anttiluode/TheCombRedux",
+    "default_branch": "main",
+    "size": 33,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-10-31T09:30:34Z",
+    "updated_at": "2026-10-31T09:48:35Z",
     "inventory_status": "reviewed"
   },
   {
@@ -5827,6 +5893,17 @@
     "description": "Opus 5.5 repo",
     "created_at": "2026-09-30T06:58:42Z",
     "updated_at": "2026-10-03T06:07:01Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "VHSImageStitch",
+    "url": "https://github.com/anttiluode/VHSImageStitch",
+    "default_branch": "main",
+    "size": 1293,
+    "visibility": "public",
+    "description": "Argon \\ Sol",
+    "created_at": "2026-10-31T10:51:44Z",
+    "updated_at": "2026-10-31T12:21:09Z",
     "inventory_status": "reviewed"
   },
   {

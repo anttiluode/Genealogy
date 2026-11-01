@@ -1,0 +1,269 @@
+{
+  "id": "october-31-november-1-seven-arrivals",
+  "title": "October 31–November 1 — seven missing branches reviewed",
+  "reviewed_at": "2026-11-01",
+  "order": 171,
+  "summary": "Seven source-reviewed repositories, separated from already indexed SweepAtlas and TransformerX. Evidence includes a failed Comb gate, failed 2729 held-out order, Model6 error-vs-edge tradeoff, classical phase-copy tie and a Model7 preregistration without test results. Source results are not independently replicated.",
+  "nodes": [
+    {
+      "id": "TheCombRedux",
+      "url": "https://github.com/anttiluode/TheCombRedux",
+      "family": "temporal-ai",
+      "status": "negative",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "An executable browser XOR lab: 16-dimensional rotating state → trained four-class workspace readout → learned copy/invert comb selection.",
+      "survived": "Causal state-read/mask/erase interventions affect actions.",
+      "killed": "Intact Brier 0.29062 loses to cut-read 0.24998; analytical Bayesian filter achieves 81.93% accuracy against 55.86% learned. Not actual Jacobian J-space or superior memory.",
+      "evidence": "https://github.com/anttiluode/TheCombRedux/blob/main/results/GATE0_2026-10-31.md",
+      "tags": [
+        "2026-10-31",
+        "oct31-nov1-seven-arrivals"
+      ],
+      "era": "October 31: practical video, loop control and writable cavity",
+      "era_order": 170
+    },
+    {
+      "id": "VHSImageStitch",
+      "url": "https://github.com/anttiluode/VHSImageStitch",
+      "family": "practical-tools",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Windows EXE/Python stitching system combining a 2-D observed-pixel video atlas with frequency-tuned Sigh/moiré edge matching.",
+      "survived": "Working GUI, frequency controls, crop, PNG export, Windows release/Actions and synthetic self-test.",
+      "killed": "The M key toggles moiré visualization, not frequency processing; 2× output grid is not 2× recovered VHS detail; parallax is uncorrected.",
+      "evidence": "https://github.com/anttiluode/VHSImageStitch/blob/main/README.md",
+      "tags": [
+        "2026-10-31",
+        "oct31-nov1-seven-arrivals"
+      ],
+      "era": "October 31: practical video, loop control and writable cavity",
+      "era_order": 170
+    },
+    {
+      "id": "2729",
+      "url": "https://github.com/anttiluode/2729",
+      "family": "resonance-memory",
+      "status": "negative",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Combines the WallMemoryLaw propagating cavity and ChainNeuronsWithPhaseSpike private phase-pair writers via a declared D→Robin-wall-spring transducer.",
+      "survived": "Parent physics checks pass; 30 reads cause no pair slips. Selected analog spring echoes correlate r=.95 and spring spatial arrangement affects received drive.",
+      "killed": "The A→B/B→A held-out gap/noise task fails and patterned springs never beat pooled springs. Neumann control has undamped zero-mode confound; matched clocks and unforced/reference twins are idealized.",
+      "evidence": "https://github.com/anttiluode/2729/blob/main/README.md",
+      "tags": [
+        "2026-10-31",
+        "oct31-nov1-seven-arrivals"
+      ],
+      "era": "October 31: practical video, loop control and writable cavity",
+      "era_order": 170
+    },
+    {
+      "id": "Sihtiimagemodel6",
+      "url": "https://github.com/anttiluode/Sihtiimagemodel6",
+      "family": "residue-operator",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Convolutional sparse coding coordinates overlapping local atoms to invert Sihti or true heat fog, with Wiener, patch, no-inhibition and EPLL controls.",
+      "survived": "Sihti-fog 400-step CSC MSE 0.00183 vs Wiener .00247, independent .00223 and EPLL .00200; purify^8 at dt=.25 is recognized as band-stop rather than uniform low-pass.",
+      "killed": "Edge-F against no-inhibition fails (.786 vs .810), as does temporal flicker against independent (.0145 vs .0085); converged CSC loses to EPLL. Limited 32×32 crops.",
+      "evidence": "https://github.com/anttiluode/Sihtiimagemodel6/blob/main/README.md",
+      "tags": [
+        "2026-11-01",
+        "oct31-nov1-seven-arrivals"
+      ],
+      "era": "November 1: phase-driven vision and memory",
+      "era_order": 171
+    },
+    {
+      "id": "CortexWaveguideLens",
+      "url": "https://github.com/anttiluode/CortexWaveguideLens",
+      "family": "perception",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Earlier noise probe controls Fourier branch gains for phase-aligned matching; Stage 2 transports image memory through phase and resets on scene change.",
+      "survived": "On synthetic sequences raw MSE .3819, reset phase-copy .0816, stale phase-copy .5123.",
+      "killed": "Classical aligned running average with identical reset ties at .0816; classical inverse-noise weights beat learned branch routing. No biophysical dendrite or real-camera task.",
+      "evidence": "https://github.com/anttiluode/CortexWaveguideLens/blob/main/results/TEMPORAL_STAGE2.md",
+      "tags": [
+        "2026-11-01",
+        "oct31-nov1-seven-arrivals"
+      ],
+      "era": "November 1: phase-driven vision and memory",
+      "era_order": 171
+    },
+    {
+      "id": "JanusMultiscalePhaseLensSol",
+      "url": "https://github.com/anttiluode/JanusMultiscalePhaseLensSol",
+      "family": "perception",
+      "status": "negative",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Exact 17-complex-map directional frame plus learned frozen patch dictionary; second experiment uses wavevector-specific phase shifts for translation.",
+      "survived": "18 held-out synthetic shapes: phase motion mean error .100 px vs phase correlation .205 px; scrambled wavevectors worsen error.",
+      "killed": "Phase vocabulary loses denoising to Gaussian/Wiener and phase-free matched atoms. On unrelated patterns .088 px loses to phase correlation .041 px; no temporal learned world.",
+      "evidence": "https://github.com/anttiluode/JanusMultiscalePhaseLensSol/blob/main/results/EXPERIMENT_002.md",
+      "tags": [
+        "2026-11-01",
+        "oct31-nov1-seven-arrivals"
+      ],
+      "era": "November 1: phase-driven vision and memory",
+      "era_order": 171
+    },
+    {
+      "id": "Sihtiimagemodel7",
+      "url": "https://github.com/anttiluode/Sihtiimagemodel7",
+      "family": "residue-operator",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "medium",
+      "claim": "Preregistered Model 6 CSC extension with complex phase-congruency/energy silence gates, wrong-world dictionaries and precision/trust temporal paper.",
+      "survived": "Contains source scripts, test definitions, a preregistration and pretest amendment; inherits frozen Model 6 CSC settings.",
+      "killed": "At this review, no committed held-out test results ledger or root README; validation pilots are not test successes.",
+      "evidence": "https://github.com/anttiluode/Sihtiimagemodel7/blob/main/docs/PREREG.md",
+      "tags": [
+        "2026-11-01",
+        "oct31-nov1-seven-arrivals"
+      ],
+      "era": "November 1: phase-driven vision and memory",
+      "era_order": 171
+    }
+  ],
+  "edges": [
+    {
+      "source": "WallMemoryLaw",
+      "target": "2729",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Reuses WallMemoryLaw cavity dynamics.",
+      "evidence": "https://github.com/anttiluode/2729/blob/main/README.md"
+    },
+    {
+      "source": "ChainNeuronsWithPhaseSpike",
+      "target": "2729",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Reuses phase-pair wall writers.",
+      "evidence": "https://github.com/anttiluode/2729/blob/main/README.md"
+    },
+    {
+      "source": "TheComb",
+      "target": "TheCombRedux",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Comb operator selection credited, no code fork demonstrated.",
+      "evidence": "https://github.com/anttiluode/TheCombRedux/blob/main/README.md"
+    },
+    {
+      "source": "MoebiusLoopMemory",
+      "target": "TheCombRedux",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Rotating/fading state inspiration, not unique Möbius proof.",
+      "evidence": "https://github.com/anttiluode/TheCombRedux/blob/main/README.md"
+    },
+    {
+      "source": "LoopAImemory",
+      "target": "TheCombRedux",
+      "type": "converges",
+      "confidence": "high",
+      "why": "History-dependent readout inspiration.",
+      "evidence": "https://github.com/anttiluode/TheCombRedux/blob/main/README.md"
+    },
+    {
+      "source": "SweepAtlas",
+      "target": "VHSImageStitch",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Observed-pixel atlas combined with Sigh/moiré matching; code fork unverified.",
+      "evidence": "https://github.com/anttiluode/VHSImageStitch/blob/main/README.md"
+    },
+    {
+      "source": "SihtiImageModel2",
+      "target": "Sihtiimagemodel6",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Revisits Model 2 fine-detail residue problem.",
+      "evidence": "https://github.com/anttiluode/Sihtiimagemodel6/blob/main/README.md"
+    },
+    {
+      "source": "Sihtiimagemodel4",
+      "target": "Sihtiimagemodel6",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Model 4 EPLL serves as separate comparator.",
+      "evidence": "https://github.com/anttiluode/Sihtiimagemodel6/blob/main/README.md"
+    },
+    {
+      "source": "Sihtiimagemodel6",
+      "target": "Sihtiimagemodel7",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Reuses frozen Model 6 CSC and parameters.",
+      "evidence": "https://github.com/anttiluode/Sihtiimagemodel7/blob/main/docs/PREREG.md"
+    },
+    {
+      "source": "TransformerX",
+      "target": "CortexWaveguideLens",
+      "type": "converges",
+      "confidence": "high",
+      "why": "History-conditioned gain analogy rather than transformer inheritance.",
+      "evidence": "https://github.com/anttiluode/CortexWaveguideLens/blob/main/README.md"
+    },
+    {
+      "source": "VHSImageStitch",
+      "target": "CortexWaveguideLens",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Cites multiband VHS work; runs independent synthetic signals.",
+      "evidence": "https://github.com/anttiluode/CortexWaveguideLens/blob/main/README.md"
+    },
+    {
+      "source": "CortexWaveguideLens",
+      "target": "JanusMultiscalePhaseLensSol",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Cites phase lens as inspiration for independent benchmark.",
+      "evidence": "https://github.com/anttiluode/JanusMultiscalePhaseLensSol/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "oct31-written-cavity-limits",
+      "title": "A cavity can carry writable local state without robust event-order inference",
+      "description": "2729 combines wave reading with locally retained pair-state writing. The held-out order and pooled-spring controls fail despite physical sensitivity.",
+      "nodes": [
+        "WallMemoryLaw",
+        "ChainNeuronsWithPhaseSpike",
+        "2729"
+      ]
+    },
+    {
+      "id": "oct31-state-routing-baselines",
+      "title": "A real state-to-operator pathway is not automatically a useful advantage",
+      "description": "Redux's recurrent state causally selects its comb but its benchmark loses to cut-read and Bayes; TransformerX previously found simpler read routers could match an interaction-heavy one.",
+      "nodes": [
+        "TheComb",
+        "LoopAImemory",
+        "TheCombRedux",
+        "TransformerX"
+      ]
+    },
+    {
+      "id": "nov1-phase-context-vision",
+      "title": "Phase and multi-scale restoration require uncertainty and matched ordinary controls",
+      "description": "VHS observed pixels, Sihti sparse atoms, Model7 preregistered gating, Cortex phase-memory and Janus phase geometry have different tasks and limits, not one general visual world model.",
+      "nodes": [
+        "SweepAtlas",
+        "VHSImageStitch",
+        "Sihtiimagemodel6",
+        "Sihtiimagemodel7",
+        "CortexWaveguideLens",
+        "JanusMultiscalePhaseLensSol"
+      ]
+    }
+  ]
+}

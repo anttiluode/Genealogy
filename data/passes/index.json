@@ -502,5 +502,9 @@
   {
     "path": "october-30-sweepatlas-transformerx.json",
     "enabled": true
+  },
+  {
+    "path": "october-31-november-1-seven-arrivals.json",
+    "enabled": true
   }
 ]
