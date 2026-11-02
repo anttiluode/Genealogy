@@ -1,5 +1,16 @@
 # Genealogy research log
 
+## 2026-11-02 — The beach that remembered: closing the writer→reader loop
+
+Promoted the two existing unread ComputingBeachSol and ComputingBeachClaude census entries to reviewed (**577 total records, no duplicate rows**) and added a dedicated essay [The Beach That Remembered](docs/reviews/2026-11-02-the-beach-that-remembered.md), one curated pass with typed links, three motifs, six empirical evidence receipts and a new unresolved competitor-relative question.
+
+The lineage connects the Berglund-inspired ResonantNeuron and earlier cavity/operator experiments, WallMemoryLaw's readable externally written patches, Evening's scout-writing/weak-read results, 2729's failed order test, and the independent physical-writing tests of November 2. Sol's registered K8 feedback order test reads 62/64 (96.875%) against an identical-write frozen-operator 50% control; late K48 ABX/BAX survives at 61/64 (95.31%). Claude's richer sand floor stores order near-perfectly while its physical ping recovers 0.70–0.75. These are distinct simulations, not replications.
+
+The major correction is that computing an ideal interference gradient does not make a passive sediment law learn arbitrary targets. Damping, local conservation, stale stress baselines and moving-material rest all impose negative gates. Explicit four-beach and 16x16 crossbar demos now show the associative-memory/attention *architecture* but still program critical read/learn operations; neither is a full wave-PDE attention solution. The question is whether a physically self-writing/readable medium ever beats conventional matrix memory and recurrent controls at equal costs.
+
+Source-reported ledgers were inspected, not independently rerun. [Wall chapter](https://anttiluode.github.io/Genealogy/#nov2-computing-beach) · [Curated pass](data/passes/november-2-computing-beach-convergence.json) · [Sol](https://github.com/anttiluode/ComputingBeachSol) · [Claude](https://github.com/anttiluode/ComputingBeachClaude).
+
+
 ## 2026-10-30 — Two new arrivals: SweepAtlas video atlas and TransformerX inference-time state
 
 Added [SweepAtlas](https://github.com/anttiluode/SweepAtlas) and [TransformerX](https://github.com/anttiluode/TransformerX) to the Genealogy census and marked them reviewed (**565 total**). A new October 30 pass adds two wall cards, three conservative convergence edges, three motifs, three source-linked evidence receipts and two unresolved experiments.
