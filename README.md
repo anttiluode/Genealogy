@@ -8,6 +8,18 @@ The central premise is that hundreds of repositories are not hundreds of indepen
 
 https://anttiluode.github.io/Genealogy/
 
+### November 2, 2026 — The beach that remembered: from resonators to self-writing operators
+
+**[Visit the new Genealogy wall chapter](https://anttiluode.github.io/Genealogy/#nov2-computing-beach)** · **[Read the treatise: *The Beach That Remembered*](docs/reviews/2026-11-02-the-beach-that-remembered.md)** · [Curated evidence pass](data/passes/november-2-computing-beach-convergence.json).
+
+Two **already inventoried, previously unread** repositories—[ComputingBeachSol](https://github.com/anttiluode/ComputingBeachSol) and [ComputingBeachClaude](https://github.com/anttiluode/ComputingBeachClaude)—are now reviewed. The current census has **577** entries; this promotes two existing rows, **not 577 → 579**. The lineage returns to Berglund's resonators, September's cavity/dendrite operators, October's Kavitaatio–WallMemoryLaw reader, Evening's scout-written material and 2729's failed order gate.
+
+The central demonstration is **material→wave→material feedback**: when writing changes propagation, event order is stored and can survive a shared later exposure. Sol's eight-wall K8 held-out echo reads AB versus BA at **62/64 (96.875%)**, versus an exactly commutative 50% frozen-operator control; the late K48 ABX/BAX probe reaches **61/64 (95.31%)**. Claude's continuous floor preserves order in its material at **0.98–1.00** but can read it by ordinary echo at only **0.70–0.75**. Storage and accessibility are separate. Both have reported reproducible numerical tests, **not independent Genealogy reruns or physical sediment measurements**.
+
+The learning limit is as important as the successful memory: ideal adjoints and software two-exposure subtraction do not establish self-teaching sand; homeostatic baselines drift and strong loss breaks teacher-wave alignment. Sol's independently tested material-moving rest **worsens both strong-loss tasks on 7/8 beds**. Claude's keep/revert strategy succeeds under loss only by supplying an **external judge and perfect rollback**. Finally, both projects now contain explicit software associative-memory/attention demos—but Sol's readout projects Fourier coefficients directly and Claude's 16×16 crossbar assumes one-pass coupling rather than solving a wave PDE. They are **models of a potential architecture, not evidence that the whole network emerges naturally from waves**.
+
+The next decisive test is no longer whether history can inhabit a simulated medium: **does a genuinely wave-read, physically self-modifying operator offer a measured advantage over ordinary fast weights, RNNs, reservoirs and explicit history at matched readout, storage, learning and energy cost?** Today's treatise preserves the strange journey and leaves that question open.
+
 ### November 1, 2026 — Nopee and NopeeClaude: two different video-control experiments
 
 **[Explore both projects on the Genealogy wall](https://anttiluode.github.io/Genealogy/#nov1-nopee-pair)** · [Source-linked review](docs/reviews/2026-11-02-nopee-nopeeclaude.md) · [Curated pass](data/passes/november-1-nopee-dual-video-controls.json).
