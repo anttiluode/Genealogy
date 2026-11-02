@@ -1262,7 +1262,7 @@
     "description": "Opus 55 ",
     "created_at": "2026-11-02T06:32:01Z",
     "updated_at": "2026-11-02T13:11:47Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "ComputingBeachSol",
@@ -1273,7 +1273,7 @@
     "description": "Sol",
     "created_at": "2026-11-02T06:32:25Z",
     "updated_at": "2026-11-02T09:43:51Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "Concrete",
