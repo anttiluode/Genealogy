@@ -28,11 +28,37 @@
       <span id="coverage-text">—</span>
     </div>
     <div id="era-strip" class="era-strip" aria-label="Scientific eras"></div>
-    <div class="eyebrow">RECENT FIELD NOTES · <a href="#oct31-nov1-seven-arrivals">SEVEN ARRIVALS · OCT 31–NOV 1</a> · <a href="#oct30-atlas-transformerx">SWEEPATLAS &amp; TRANSFORMERX · OCTOBER 30</a> · <a href="#oct29-roundandround">ROUNDANDROUND &amp; LOOP MEMORY · OCTOBER 29</a> · <a href="#oct28-generative-life">EMERGENCE FAMILY &amp; LOOPCRAFT · OCTOBER 28</a> · <a href="#oct28-evening">EVENING · OCTOBER 28</a> · <a href="#oct27-wave-observers">LIFTED WAVE OBSERVERS · OCTOBER 27</a> · <a href="#oct27-wave-memory">OPENAI WAVE &amp; WALL MEMORY · OCTOBER 27</a> · <a href="#oct26-new-worlds">KAHUNA &amp; NEW WORLDS · OCTOBER 26</a> · <a href="#comb-family-oct26">COMB FAMILY · OCTOBER 26</a> · <a href="#oct26-field-notes">ODDONE &amp; LEARNING · OCTOBER 25–26</a> · <a href="#memory-closure-oct21">MEMORY &amp; CONTROLS · OCTOBER 21</a> · <a href="#brainbox-oct20">BRAINBOX · OCTOBER 20</a> · <a href="#mad-monday">MAD MONDAY · OCTOBER 19</a></div>
+    <div class="eyebrow">RECENT FIELD NOTES · <a href="#nov1-nopee-pair">NOPEE &amp; NOPEECLAUDE · NOVEMBER 1</a> · <a href="#oct31-nov1-seven-arrivals">SEVEN ARRIVALS · OCT 31–NOV 1</a> · <a href="#oct30-atlas-transformerx">SWEEPATLAS &amp; TRANSFORMERX · OCTOBER 30</a> · <a href="#oct29-roundandround">ROUNDANDROUND &amp; LOOP MEMORY · OCTOBER 29</a> · <a href="#oct28-generative-life">EMERGENCE FAMILY &amp; LOOPCRAFT · OCTOBER 28</a> · <a href="#oct28-evening">EVENING · OCTOBER 28</a> · <a href="#oct27-wave-observers">LIFTED WAVE OBSERVERS · OCTOBER 27</a> · <a href="#oct27-wave-memory">OPENAI WAVE &amp; WALL MEMORY · OCTOBER 27</a> · <a href="#oct26-new-worlds">KAHUNA &amp; NEW WORLDS · OCTOBER 26</a> · <a href="#comb-family-oct26">COMB FAMILY · OCTOBER 26</a> · <a href="#oct26-field-notes">ODDONE &amp; LEARNING · OCTOBER 25–26</a> · <a href="#memory-closure-oct21">MEMORY &amp; CONTROLS · OCTOBER 21</a> · <a href="#brainbox-oct20">BRAINBOX · OCTOBER 20</a> · <a href="#mad-monday">MAD MONDAY · OCTOBER 19</a></div>
     <details><summary>Earlier research trails</summary><p><a href="https://github.com/anttiluode/BrainAsInverseModelerV2">BrainAsInverseModelerV2</a> · <a href="https://github.com/anttiluode/BrainAsInverseModelerV3">BrainAsInverseModelerV3</a> · <a href="https://github.com/anttiluode/Breathing-Qwen">Breathing-Qwen</a> · <a href="https://github.com/anttiluode/Breathing-QwenClaude">Breathing-QwenClaude</a> · <a href="https://github.com/anttiluode/Luotain">Luotain</a> · <a href="https://github.com/anttiluode/SolSwarm">SolSwarm</a> · <a href="https://github.com/anttiluode/BiomorphicSwarm">BiomorphicSwarm</a> · <a href="https://github.com/anttiluode/GeometricNeuronAndSapolskysFractal">GeometricNeuronAndSapolskysFractal</a> · <a href="https://github.com/anttiluode/DevelopmentalSpectralNeuron">DevelopmentalSpectralNeuron</a> · <a href="https://github.com/anttiluode/Smartfly">Smartfly</a> · <a href="https://github.com/anttiluode/Smarfly2">Smarfly2</a> · <a href="https://github.com/anttiluode/FlyBench">FlyBench</a></p></details>
   </header>
 
   <main>
+
+  <section class="mad-monday" id="nov1-nopee-pair" aria-labelledby="nov1-nopee-pair-heading">
+    <div class="mad-monday-header">
+      <div>
+        <div class="eyebrow">NOVEMBER 1, 2026 · TWO INDEPENDENT VIDEO EXPERIMENTS</div>
+        <h2 id="nov1-nopee-pair-heading">Nopee &amp; NopeeClaude <span>— when an inspired adapter meets ordinary controls</span></h2>
+        <p>Same motivating question, different tests. <strong>Nopee trains a tiny frame predictor</strong>; <strong>NopeeClaude measures Wan sampling and caching first</strong>. Neither includes biological measurements or demonstrates a neural speedup.</p>
+      </div>
+      <a class="monday-ledger" href="docs/reviews/2026-11-02-nopee-nopeeclaude.md">Read the source-linked review ↗</a>
+    </div>
+    <div class="monday-paths">
+      <article class="monday-path">
+        <div class="monday-stage">1 NOV / TRAINED TOY FRAME PREDICTION</div>
+        <h3>Nopee: the recurrent branch runs, but the full adapter loses</h3>
+        <p>On 12 toy worlds, two-call whole-frame MSE is <strong>.03390 with adapter off vs .03765 fixed / .03887 learned</strong>. Bypassing the spatial filter improves the learned branch to <strong>.02522</strong>. Synthetic constants; one training seed.</p>
+        <div class="monday-links"><button type="button" data-mad-node="Nopee">Nopee wall card</button><a href="https://github.com/anttiluode/Nopee/blob/main/results/DEMO.md">Source results ↗</a></div>
+      </article>
+      <article class="monday-path">
+        <div class="monday-stage">1 NOV / WAN SAMPLING VS CACHE</div>
+        <h3>NopeeClaude: caching beats the assumed short-step repair problem</h3>
+        <p>At 320×576, 6/12-step Wan samples often change or lose objects. A <strong>separate three-prompt</strong> cache sweep preserves closer latents at comparable runtimes. <strong>Adapter training was paused</strong>; no adapter speed or biological gain shown.</p>
+        <div class="monday-links"><button type="button" data-mad-node="NopeeClaude">NopeeClaude wall card</button><a href="https://github.com/anttiluode/NopeeClaude/blob/main/README.md">Source and caveats ↗</a></div>
+      </article>
+    </div>
+    <p class="small">Both sets of metrics are source-reported, not independently reproduced. The graph link means conceptual convergence, not code inheritance.</p>
+  </section>
 
   <section class="mad-monday" id="oct31-nov1-seven-arrivals" aria-labelledby="oct31-nov1-heading">
     <div class="mad-monday-header"><div><div class="eyebrow">OCTOBER 31–NOVEMBER 1, 2026 · SEVEN NEW REPOS</div><h2 id="oct31-nov1-heading">Seven missing branches <span>— state, walls, video, phase and vision</span></h2><p>Seven missing repository cards have been added. <strong>SweepAtlas and TransformerX were already indexed.</strong> The new graph distinguishes direct inheritance from conceptual convergence and retains negative results.</p></div><a class="monday-ledger" href="docs/reviews/2026-11-01-seven-arrivals.md">Read the source-linked review ↗</a></div>
