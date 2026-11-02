@@ -43,7 +43,7 @@ class ComputingBeachGenealogyTests(unittest.TestCase):
         question = next(q for q in self.atlas["questions"] if q["id"] == "nov2-written-operator-vs-ordinary-weights")
         self.assertEqual(question["state"], "open")
         self.assertEqual(len(question["candidate_experiment"]["outcomes"]), 2)
-        self.assertIn("RNN", question["candidate_experiment"]["design"])
+        self.assertIn("recurrent", question["candidate_experiment"]["design"])
         treatise = ROOT / "docs/reviews/2026-11-02-the-beach-that-remembered.md"
         self.assertTrue(treatise.is_file())
         essay = treatise.read_text(encoding="utf-8")
