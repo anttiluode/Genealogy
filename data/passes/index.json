@@ -510,5 +510,9 @@
   {
     "path": "november-1-nopee-dual-video-controls.json",
     "enabled": true
+  },
+  {
+    "path": "november-2-computing-beach-convergence.json",
+    "enabled": true
   }
 ]
