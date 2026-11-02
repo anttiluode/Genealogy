@@ -506,5 +506,9 @@
   {
     "path": "october-31-november-1-seven-arrivals.json",
     "enabled": true
+  },
+  {
+    "path": "november-1-nopee-dual-video-controls.json",
+    "enabled": true
   }
 ]
