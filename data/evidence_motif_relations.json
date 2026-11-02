@@ -735,5 +735,23 @@
   "oct30-sweepatlas-2d-video-mosaic-and-image-adjustments": {
     "oct30-observed-world-vs-predicted-world": "supports",
     "oct30-video-instruments": "supports"
+  },
+  "nov2-sol-feedback-order-and-common-tail": {
+    "nov2-wave-material-feedback-order-memory": "supports"
+  },
+  "nov2-claude-sand-vs-ping-read": {
+    "nov2-wave-material-feedback-order-memory": "supports"
+  },
+  "nov2-sol-contrast-teacher-and-rest-boundaries": {
+    "nov2-physical-writer-vs-external-teacher": "limits"
+  },
+  "nov2-claude-compliance-vs-task-learning": {
+    "nov2-physical-writer-vs-external-teacher": "limits"
+  },
+  "nov2-attention-analogy-not-pde-advantage": {
+    "nov2-beach-matrix-attention-boundary": "limits"
+  },
+  "nov2-claude-crossbar-ideal-matrix": {
+    "nov2-beach-matrix-attention-boundary": "supports"
   }
 }
