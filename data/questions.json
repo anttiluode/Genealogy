@@ -1731,5 +1731,52 @@
       "Conceptual connections to WorldModel, SihtiImageModel5 and video agents are proposed tests, not implemented genealogy ancestry.",
       "Novel geometry and unseen-scene generation are out of scope of the existing repository."
     ]
+  },
+  {
+    "id": "nov2-written-operator-vs-ordinary-weights",
+    "title": "When does a self-writing wave operator beat an equally budgeted matrix or recurrent memory?",
+    "state": "open",
+    "motifs": [
+      "nov2-wave-material-feedback-order-memory",
+      "nov2-beach-matrix-attention-boundary",
+      "nov2-physical-writer-vs-external-teacher"
+    ],
+    "evidence": [
+      "nov2-sol-feedback-order-and-common-tail",
+      "nov2-claude-sand-vs-ping-read",
+      "nov2-sol-contrast-teacher-and-rest-boundaries",
+      "nov2-claude-compliance-vs-task-learning",
+      "nov2-attention-analogy-not-pde-advantage",
+      "nov2-claude-crossbar-ideal-matrix"
+    ],
+    "competing_explanations": [
+      "Physical substrate plasticity makes cheap local routing, filtering, interference-based memory and distributed robustness possible, conferring a measurable fidelity/cost advantage over ordinary software memories at some operating scale.",
+      "The demonstrated advantage is history dependence already available to conventional recurrent, reservoir and fast-weight systems; once state size, communication, training targets, solver calls and readout costs are matched, physical self-modification confers no useful advantage."
+    ],
+    "known": [
+      "Sol's G1 and later ABX/BAX tests show an echo-readable noncommutative feedback memory with a frozen-operator negative control.",
+      "Claude's distributed sand keeps order more reliably than its receiver echo can recover it.",
+      "Teacher-wave and stress-memory updates lose accuracy with dissipation; external agent controls pay for task evaluation and rollback.",
+      "Both attention demos program some essential matrix and selection operations instead of deriving their readout from the propagated wave field."
+    ],
+    "missing_discriminator": "A single matched-budget benchmark requiring coupled actual wave propagation for writing and interrogation, with no direct material-map readout, against ordinary recurrent/fast-weight memory, static reservoir and explicit history buffer across new geometries, losses and key collisions.",
+    "candidate_experiment": {
+      "design": "Connect 2–4 small physical wave cavities; present event A and B at separate ports in either order, clear the fast state, present a common final event X, and require a weak wave probe to select a correct remote action. Freeze all training choices first. Compare dynamic material, frozen material, shuffled wiring and threshold-disabled waves with matched conventional recurrent state, matrix fast weights, static reservoir and explicit replay buffer. Hold out sequences, material seeds, geometries, receiver noise, and damping. Count physical waves/solves, communication rounds, material state bits, external supervised labels, and readout computation.",
+      "cost": "medium–high: CPU-friendly reduced geometry proof first, then replicated larger-grid tests and careful energy/latency accounting.",
+      "outcomes": [
+        {
+          "if": "The wave-written material achieves a robust held-out accuracy–energy–memory or accuracy–latency frontier that dominates the matched ordinary-memory baselines and vanishes under a material-feedback ablation",
+          "then": "The physical operator's material history becomes evidence of a distinctive useful computational mechanism in the tested regime."
+        },
+        {
+          "if": "Ordinary matrix/RNN/reservoir/history controls meet or beat wave-material performance once readout, teaching, storage and solver costs are counted",
+          "then": "Record the architecture as a useful explanatory simulator/analog teaching instrument rather than an efficiency or AI-performance discovery."
+        }
+      ]
+    },
+    "notes": [
+      "The criterion is measured utility, not resemblance to brains or survival of an order-memory gate alone.",
+      "The earlier October 27 writable-wall question remains open; this asks the stricter competitor-relative engineering question."
+    ]
   }
 ]
