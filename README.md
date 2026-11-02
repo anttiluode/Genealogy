@@ -8,6 +8,15 @@ The central premise is that hundreds of repositories are not hundreds of indepen
 
 https://anttiluode.github.io/Genealogy/
 
+### November 1, 2026 — Nopee and NopeeClaude: two different video-control experiments
+
+**[Explore both projects on the Genealogy wall](https://anttiluode.github.io/Genealogy/#nov1-nopee-pair)** · [Source-linked review](docs/reviews/2026-11-02-nopee-nopeeclaude.md) · [Curated pass](data/passes/november-1-nopee-dual-video-controls.json).
+
+The census now includes **574** repositories, including [Nopee](https://github.com/anttiluode/Nopee) and [NopeeClaude](https://github.com/anttiluode/NopeeClaude). Both have curated cards and separate source-reported negative outcomes; they are parallel, independent responses to a neuron-inspired spatial-plus-temporal adapter idea, **not a code fork**.
+
+- **Nopee:** a trained 32×32 video predictor with a DoG + leaky E/I adapter. In its 12-world, two-refinement-call demonstration, adapter-off whole-frame MSE is **.03390** versus **.03765 fixed / .03887 learned**. Bypassing the spatial filter improves the learned branch to **.02522**. The mechanism affects the forecast, but the full adapter does not improve it.
+- **NopeeClaude:** a Wan2.2 sampling/caching measurement and planned adapter experiment. On 12 validation prompts, reduced 6/12-step samples frequently lose subjects; on a separate three-prompt comparison, 40-step caching maintains better latent agreement at useful time budgets. The adapter training was **paused before real training**, and the small reference resolution is a major caveat. Neither experiment used measured biological constants.
+
 ### October 31–November 1, 2026 — Seven repository arrivals
 
 **[Explore the new wall branch](https://anttiluode.github.io/Genealogy/#oct31-nov1-seven-arrivals)** · [Source-linked review](docs/reviews/2026-11-01-seven-arrivals.md) · [Curated pass](data/passes/october-31-november-1-seven-arrivals.json).
