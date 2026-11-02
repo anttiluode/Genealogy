@@ -1,0 +1,83 @@
+{
+  "id": "november-1-nopee-dual-video-controls",
+  "title": "November 1 — Nopee and NopeeClaude: two different video-speed probes",
+  "reviewed_at": "2026-11-02",
+  "order": 172,
+  "summary": "Two independent November 1 experiments responding to neuron-inspired centre-surround filtering and leaky temporal dynamics. Nopee is a tiny trained frame-forecasting comparison with a negative whole-frame DoG/E-I result; NopeeClaude probes actual Wan2.2 sampling and caching costs, stopping before adapter training when reduced-step samples diverged. Neither tests measured biological constants.",
+  "nodes": [
+    {
+      "id": "Nopee",
+      "url": "https://github.com/anttiluode/Nopee",
+      "family": "perception",
+      "status": "negative",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Standalone 32×32 moving-shapes frame predictor with shared learned transport base and fixed, learned, or shuffled difference-of-Gaussians plus leaky E/I feature-memory branches; includes Gradio demo and interventions.",
+      "survived": "The runnable offline predictor and provenance ledger isolate a real recurrent feature pathway: two refinement calls on 12 held-out toy worlds give adapter-off whole-frame MSE 0.03390, fixed 0.03765 and learned 0.03887. Bypassing spatial filtering lowers learned-adapter MSE to 0.02522.",
+      "killed": "The full DoG/E-I branch worsens overall error and runtime versus the matched no-adapter base; resetting memory also improves the adapters in this run. One training seed, synthetic constants, tiny toy worlds and post-development design choices do not demonstrate biological specificity or video-model speedup.",
+      "evidence": "https://github.com/anttiluode/Nopee/blob/main/results/DEMO.md",
+      "tags": [
+        "2026-11-01",
+        "video-prediction",
+        "difference-of-gaussians",
+        "leaky-memory",
+        "matched-controls",
+        "negative-result"
+      ],
+      "era": "November 1: video prediction and sampling controls",
+      "era_order": 172
+    },
+    {
+      "id": "NopeeClaude",
+      "url": "https://github.com/anttiluode/NopeeClaude",
+      "family": "perception",
+      "status": "negative",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Preregistered Wan2.2-TI2V-5B budget probe compares fewer generation steps with 40-step reference and FirstBlockCache before testing small DoG/E-I-inspired latent or in-block adapters.",
+      "survived": "Source-reported 12-prompt validation: six steps run in 13.9 s but often lose objects; 12 steps in 27.7 s are far from the 40-step reference. Separate three-prompt caching sweep reports 40 steps with cache 0.3 in 28.3 s or cache 0.5 in 21.5 s, with smaller latent disagreement than 12-step sampling.",
+      "killed": "The planned adapter-training comparison was paused before training; it did not demonstrate that any adapter repairs cheap sampling. The reference used off-design 320×576 resolution, and cache and step-budget comparisons used different prompt subsets. No actual neuron-derived constants or general quality-equivalence claim.",
+      "evidence": "https://github.com/anttiluode/NopeeClaude/blob/main/README.md",
+      "tags": [
+        "2026-11-01",
+        "wan",
+        "diffusion-budget",
+        "feature-caching",
+        "preregistration",
+        "negative-result"
+      ],
+      "era": "November 1: video prediction and sampling controls",
+      "era_order": 172
+    }
+  ],
+  "edges": [
+    {
+      "source": "Sihti",
+      "target": "Nopee",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Nopee explicitly credits Antti's Sihti / Janus / SignalIsASignal discussions as motivation for its separate DoG + temporal-memory experiment; no code inheritance is claimed.",
+      "evidence": "https://github.com/anttiluode/Nopee/blob/main/README.md"
+    },
+    {
+      "source": "Nopee",
+      "target": "NopeeClaude",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Independent small-model forecasting and Wan sampler/caching probes of the same neuron-inspired adapter question, not a software fork or evidence one improves the other.",
+      "evidence": "https://github.com/anttiluode/NopeeClaude/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov1-nopee-controls-before-biology",
+      "title": "A neuron-inspired adapter must beat a matched ordinary control before its source constants matter",
+      "description": "Nopee's synthetic DoG/E-I memory harms overall toy prediction while bypassing the spatial filter helps. NopeeClaude finds caching a more promising speed lever than dropping Wan steps, before adapter training. Mechanistic recurrence is not evidence of biological specificity or competitive generation.",
+      "nodes": [
+        "Sihti",
+        "Nopee",
+        "NopeeClaude"
+      ]
+    }
+  ]
+}
