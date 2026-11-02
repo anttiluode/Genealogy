@@ -1,0 +1,150 @@
+{
+  "id": "november-2-computing-beach-convergence",
+  "title": "November 2 — The beach that remembered: wave-written operators and distributed memory",
+  "reviewed_at": "2026-11-02",
+  "order": 173,
+  "summary": "Two independent research branches close the wave→material→later-wave feedback loop with numerical order-memory and physical readout controls, then demonstrate explicit associative/attention software architectures. The decisive controls separate history from commutative writing, stored information from recoverable echoes, and mathematical gradients from autonomous physical teaching. The next gate is measured benefit against ordinary matrices or recurrent memory at matched cost.",
+  "nodes": [
+    {
+      "id": "ComputingBeachSol",
+      "url": "https://github.com/anttiluode/ComputingBeachSol",
+      "family": "resonance-memory",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Independent WallMemoryLaw Robin-wall model with thresholded locally conserving memory, held-out event-order echo tests, ideal-adjoint and edge-local learning diagnostics, and a separate browser fast-weight four-beach attention demonstration.",
+      "survived": "G1 live feedback decodes AB/BA at 62/64 (96.875%) vs fixed-operator 50%; late ABX/BAX at K48 61/64 (95.31%). G8 neighbour edge relay matches its idealized projection control to 6.96e-13 in 16 cases; Beach AI stores directly projected Fourier-grating material coefficients and routes queries across four linked beaches.",
+      "killed": "G2b physical writer does not align reliably with task gradient; ideal G2d numerical-adjoint contrast relies on external two-phase subtraction and global projection. Strong-loss G9 material-moving rest worsens quiet/loud receiver power in 7/8 seeds each. Beach AI's readout and softmax are explicitly programmed, not physical echo-derived attention; fast overtopping is not solved.",
+      "evidence": "https://github.com/anttiluode/ComputingBeachSol/blob/main/README.md",
+      "tags": [
+        "2026-11-02",
+        "wave-written-memory",
+        "feedback",
+        "held-out-order",
+        "teacher-limits",
+        "edge-flux",
+        "fast-weights",
+        "not-physical-attention"
+      ],
+      "era": "November 2: computing beaches and changing operators",
+      "era_order": 173
+    },
+    {
+      "id": "ComputingBeachClaude",
+      "url": "https://github.com/anttiluode/ComputingBeachClaude",
+      "family": "resonance-memory",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Independent 2D WallMemoryLaw-derived stadium with writable sand floor, checked fast wave solver, stress/transport toy laws and material-dependent operator, registered G1–G8 writer/read/gradient/loss tests, and a separate idealized 16×16 crossbar associative attention demo.",
+      "survived": "Sand stores order 0.98 and ABX/BAX at 0.99–1.00 while whole-transient ping recovers only ~0.70–0.75; lossless scour aligns with its own compliance gradient at 0.995. G7 sliding threshold first-step cosine ~0.99 in lossless settings; an external trial/keep agent improves lossy receiver targets on 8/8 tested beds.",
+      "killed": "No broadly reliable physical teacher at the cavity's operating loss; local Exner-style flux fails to preserve task descent. A truly open low-Q boundary worsens teacher direction. Agent uses global evaluation and rollback. The crossbar computes algebraic outer products and scripted read-before-write delta updates, not full PDE propagation or spontaneous sand learning.",
+      "evidence": "https://github.com/anttiluode/ComputingBeachClaude/blob/main/README.md",
+      "tags": [
+        "2026-11-02",
+        "2d-sand",
+        "wave-feedback",
+        "order-memory",
+        "readout-gap",
+        "compliance",
+        "loss",
+        "crossbar",
+        "not-autonomous-learning"
+      ],
+      "era": "November 2: computing beaches and changing operators",
+      "era_order": 173
+    }
+  ],
+  "edges": [
+    {
+      "source": "WallMemoryLaw",
+      "target": "ComputingBeachSol",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Sol preserves the pinned WallMemoryLaw cavity/law modules and runs a checked matching wave stencil while adding slow material writing; an implemented solver lineage, not just a visual analogy.",
+      "evidence": "https://github.com/anttiluode/ComputingBeachSol/blob/main/README.md"
+    },
+    {
+      "source": "WallMemoryLaw",
+      "target": "ComputingBeachClaude",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Claude's 96×96 stadium explicitly begins with WallMemoryLaw's wave geometry and finite difference dynamics then adds a distributed floor and measured read/write protocols.",
+      "evidence": "https://github.com/anttiluode/ComputingBeachClaude/blob/main/README.md"
+    },
+    {
+      "source": "2729",
+      "target": "ComputingBeachSol",
+      "type": "corrects",
+      "confidence": "medium",
+      "why": "2729's held-out phase-pair order gate failed; the newer feedback versus frozen-operator experiment specifically isolates the mechanism needed for readable history. This is a methodological correction, not direct code ancestry.",
+      "evidence": "https://github.com/anttiluode/ComputingBeachSol/blob/main/README.md"
+    },
+    {
+      "source": "Evening",
+      "target": "ComputingBeachClaude",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Evening's scout-written material and successful but constrained order readout informed the beach's separate self-writing and weak physical-ping interrogation gate; distinct writer physics.",
+      "evidence": "https://github.com/anttiluode/ComputingBeachClaude/blob/main/README.md"
+    },
+    {
+      "source": "ObjektiYksi",
+      "target": "ComputingBeachClaude",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "The later keep/revert external objective test revisits the trial-and-selection operator idea, but is a new beach control, not a demonstrated inherited code path.",
+      "evidence": "https://github.com/anttiluode/ComputingBeachClaude/blob/main/README.md"
+    },
+    {
+      "source": "ResonantNeuron",
+      "target": "ComputingBeachSol",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Berglund-inspired cavity gates are a conceptual ancestor of the routed wave problem. No direct solver inheritance or proof that earlier passive gates learned.",
+      "evidence": "https://github.com/anttiluode/ResonantNeuron/blob/main/README.md"
+    },
+    {
+      "source": "ComputingBeachSol",
+      "target": "ComputingBeachClaude",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Two independent, mutually critical approaches to the same material-written wave operator; compare ordered echo memory and physical teacher failures. The four-beach Fourier-memory page and 16×16 crossbar are separate idealized associative architectures, not code forks.",
+      "evidence": "https://github.com/anttiluode/ComputingBeachClaude/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov2-wave-material-feedback-order-memory",
+      "title": "The material changes the wave that writes the next material",
+      "description": "Equal AB and BA episodes commute without material→operator feedback and become order-distinguishable when writing changes subsequent propagation. The physically measured echo is a distinct, capacity-limited observer of the material.",
+      "nodes": [
+        "WallMemoryLaw",
+        "2729",
+        "Evening",
+        "ComputingBeachSol",
+        "ComputingBeachClaude"
+      ]
+    },
+    {
+      "id": "nov2-physical-writer-vs-external-teacher",
+      "title": "A gradient identity is not an autonomous learning law",
+      "description": "Teacher cross terms can be calculated and matched by externally contrasted adjoints, while physical signed transport, loss, conservative flux, drifting baselines and rest remain bottlenecks. A judge with rollback changes the task by adding control machinery.",
+      "nodes": [
+        "ComputingBeachSol",
+        "ComputingBeachClaude",
+        "ObjektiYksi"
+      ]
+    },
+    {
+      "id": "nov2-beach-matrix-attention-boundary",
+      "title": "A changing operator is not yet physically emergent attention",
+      "description": "Four-beach Fourier coefficient memories and sixteen-by-sixteen crossbars supply working fast-weight and delta-rule analogies. Actual wave-ping readout, competitive trained performance, and fair data movement/energy accounting are the unresolved transition.",
+      "nodes": [
+        "ComputingBeachSol",
+        "ComputingBeachClaude",
+        "ResonantNeuron"
+      ]
+    }
+  ]
+}
