@@ -8,7 +8,7 @@ class TestSevenArrivals(unittest.TestCase):
     def test_census_and_nodes(self):
         a=load_atlas(ROOT)
         self.assertEqual(validate_atlas(a),[])
-        self.assertEqual(len(a["repos"]),572)
+        self.assertGreaterEqual(len(a["repos"]),572)  # Later arrivals grow the census.
         self.assertEqual({n["id"] for n in a["nodes"] if n.get("pass_id")=="october-31-november-1-seven-arrivals"},NAMES)
         for name in NAMES:
             self.assertEqual(sum(r["name"]==name for r in a["repos"]),1)
