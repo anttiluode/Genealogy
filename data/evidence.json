@@ -11422,5 +11422,261 @@
     "held_out": false,
     "external_data": false,
     "replication": "Source-reviewed implemented functionality and committed automated test workflow; no separate real-world video dataset audit."
+  },
+  {
+    "id": "nov2-sol-feedback-order-and-common-tail",
+    "node": "ComputingBeachSol",
+    "claim": "Material-to-wave feedback, rather than a commuting sum of independent writes, makes equal-exposure AB and BA histories readable in a controlled synthetic cavity.",
+    "design": "Preregistered K8 receiver-echo test on 32 paired held-out wall seeds, 14 training seeds, with live-writer versus fixed-operator control; later 32 paired held-out K48 ABX/BAX tests and matched late windows.",
+    "result": "supports",
+    "metrics": [
+      {
+        "name": "G1 live feedback",
+        "value": "62/64 (96.875%)"
+      },
+      {
+        "name": "frozen-operator",
+        "value": "50% (AB and BA identical within ~1e-15)"
+      },
+      {
+        "name": "K48 ABX/BAX late window",
+        "value": "61/64 (95.31%)"
+      }
+    ],
+    "controls": [
+      "Same A and B exposures but reverse their order",
+      "Fast wave reset between episodes; only material persists",
+      "Frozen propagation operator but still accumulated material",
+      "Late common-X event and fixed listening windows"
+    ],
+    "limitations": [
+      "Synthetic Robin wall with signed proxy flux, not calibrated sand",
+      "K sweep varies patch size and transport as well as capacity",
+      "Specific cavity, sources, readers, noises and held-out seeds",
+      "Evidence sourced from commit reports; not independently rerun by Genealogy"
+    ],
+    "source": "https://github.com/anttiluode/ComputingBeachSol/blob/main/ROUND3_RESULTS.md",
+    "motifs": [
+      "nov2-wave-material-feedback-order-memory"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "sample": {
+      "unit": "paired K8 evaluation seed",
+      "count": 32
+    },
+    "replication": "Source-reported registered numerical test, independent reproduction workflows in source."
+  },
+  {
+    "id": "nov2-claude-sand-vs-ping-read",
+    "node": "ComputingBeachClaude",
+    "claim": "A distributed writable wave floor can retain event-order information much more reliably in the material than an independent receiver can recover from its wave echo.",
+    "design": "Held-out AB/BA and ABX/BAX tests on distributed 96x96 stadium floor; compare classification of final sand directly versus time-domain probes at harbour ports and strong shared final writes.",
+    "result": "supports",
+    "metrics": [
+      {
+        "name": "AB order decoded from material",
+        "value": "0.98"
+      },
+      {
+        "name": "ABX/BAX order from material",
+        "value": "0.99–1.00"
+      },
+      {
+        "name": "whole-transient echo decoding",
+        "value": "~0.70–0.75"
+      }
+    ],
+    "controls": [
+      "Open-loop writing removes feedback and order",
+      "Multiple read windows, full transient and steady-swell probes",
+      "Common final X wave with varied strength",
+      "Noisy and no-noise ping checks"
+    ],
+    "limitations": [
+      "The continuous-floor writer remains a toy stress/transport law",
+      "Reader suffers from high-dimensional substrate and scrambled echoes",
+      "Best early-window posthoc suggestion did not replicate in registered G4",
+      "No claim of robust decoding for arbitrary geometry or trained nonlinear reader"
+    ],
+    "source": "https://github.com/anttiluode/ComputingBeachClaude/blob/main/README.md",
+    "motifs": [
+      "nov2-wave-material-feedback-order-memory"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "sample": {
+      "unit": "held-out random bed",
+      "count": 48
+    },
+    "replication": "Source-reported simulation; not a new independent curation rerun."
+  },
+  {
+    "id": "nov2-sol-contrast-teacher-and-rest-boundaries",
+    "node": "ComputingBeachSol",
+    "claim": "A mathematically exact numerical-adjoint contrast can improve a projected loss, but this does not demonstrate self-taught conservative sediment dynamics and material-moving rest fails under strong loss.",
+    "design": "G2d equal-mass/equal-update 16 held-out seed comparison plus separate G9 8-seed strong-loss 20-epoch active-rest versus privileged frozen-bed recalibration.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "G2d ideal two-phase cosine",
+        "value": "0.999986"
+      },
+      {
+        "name": "G2d better than projected natural and one-exposure",
+        "value": "16/16 each"
+      },
+      {
+        "name": "G9 strong-loss material-moving rest improves",
+        "value": "1/8 for quiet and 1/8 for loud"
+      }
+    ],
+    "controls": [
+      "Externally calculated ideal adjoint",
+      "Global mean conservation projected for both fair G2d arms",
+      "Moving-material rest vs frozen-bed privileged recalibration",
+      "Separate numerical site and full cavity models distinguished"
+    ],
+    "limitations": [
+      "Two-phase subtraction and global projection computed in code",
+      "Conservative local downstream flux fails",
+      "Strong-loss G9 rest uses an independent synthetic 48-node site, not G2d's cavity",
+      "Rest arm pays extra solves and material updates and is not equal-budget"
+    ],
+    "source": "https://github.com/anttiluode/ComputingBeachSol/blob/main/SITE_G9_RESULTS.md",
+    "motifs": [
+      "nov2-physical-writer-vs-external-teacher"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "sample": {
+      "unit": "independent G9 site seed",
+      "count": 8
+    },
+    "replication": "Source-run GitHub Actions reports; Genealogy did not rerun."
+  },
+  {
+    "id": "nov2-claude-compliance-vs-task-learning",
+    "node": "ComputingBeachClaude",
+    "claim": "Lossless scour can follow a medium-defined compliance objective while teacher-wave learning aimed at an arbitrary harbour objective fails at typical cavity loss; an externally judged trial/keep agent can still improve targets.",
+    "design": "G6 8 beds × 3 drive ports × 3 frequencies, G7 stress-memory and G8 loss/sponges and 200 trial-and-revert proposals on 8 new beds.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "G6 lossless median scour cosine vs negative compliance gradient",
+        "value": "0.995"
+      },
+      {
+        "name": "G6 cavity damping 0.006 median cosine",
+        "value": "0.121"
+      },
+      {
+        "name": "G8 lossy storm trial keep quiet/loud",
+        "value": "−19.6 dB / +8.0 dB (8/8 each)"
+      }
+    ],
+    "controls": [
+      "Explicit compliance gradient and exact oracle",
+      "Loss and open-boundary ablations",
+      "Passive teacher and rest alternatives",
+      "Random white, smooth and wave-shaped perturbation families"
+    ],
+    "limitations": [
+      "Compliance is medium-defined objective, not arbitrary target learning",
+      "Agent knows outcome objective and perfectly reverts material",
+      "200 trials and additional forward solves consumed",
+      "Model uses toy sediment laws and different metrics than Sol's independent site"
+    ],
+    "source": "https://github.com/anttiluode/ComputingBeachClaude/blob/main/README.md",
+    "motifs": [
+      "nov2-physical-writer-vs-external-teacher"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "sample": {
+      "unit": "held-out G8 bed",
+      "count": 8
+    },
+    "replication": "Source-reported registered numerical experiments; not an independent real-world benchmark."
+  },
+  {
+    "id": "nov2-attention-analogy-not-pde-advantage",
+    "node": "ComputingBeachSol",
+    "claim": "The four connected beach demo implements stored associative material coefficients and explicitly programmed content-sensitive attention, but it does not obtain associative recall from actual wave PDE receiver echoes.",
+    "design": "Four-node 36-cell 1D wave display and six orthogonal material Fourier coefficient addresses; code contains programmed readLocal projection, teach delta and softmax mixing with write/no-write regression tests.",
+    "result": "mixed",
+    "metrics": [
+      {
+        "name": "beaches",
+        "value": "4"
+      },
+      {
+        "name": "fast/material cells per beach",
+        "value": "36/36"
+      },
+      {
+        "name": "associative addresses",
+        "value": "3 frequencies × 2 outputs"
+      }
+    ],
+    "controls": [
+      "Disable links and attention separately",
+      "Disable relay teaching",
+      "Compare additive Hebbian order-commutation with delta order dependence",
+      "Weak query verifies material is unchanged"
+    ],
+    "limitations": [
+      "Physical water propagation is not used for the associative memory readout",
+      "Attention is an external softmax over material projections",
+      "No matched comparison to DeltaNet, Titans or conventional matrix memory",
+      "No measured benefit of physical self-modification"
+    ],
+    "source": "https://github.com/anttiluode/ComputingBeachSol/blob/main/BEACH_AI_LAB.md",
+    "motifs": [
+      "nov2-beach-matrix-attention-boundary"
+    ],
+    "held_out": false,
+    "external_data": false,
+    "replication": "Source-code and regression-contract review; not an emergent physical neural-network experiment."
+  },
+  {
+    "id": "nov2-claude-crossbar-ideal-matrix",
+    "node": "ComputingBeachClaude",
+    "claim": "The 16x16 basin-crossbar is an exact software representation of outer-product associative writing and read-before-write delta correction under assumed one-pass coupling, not a solved physical wave crossbar.",
+    "design": "Deterministic tests of stress quadratic cross term, orthogonal keys, additive/delta AB-BA order, weak no-write pings and 8 random-set overlapping-key recall sweep.",
+    "result": "supports",
+    "metrics": [
+      {
+        "name": "crossbar",
+        "value": "16 × 16"
+      },
+      {
+        "name": "orthogonal write error",
+        "value": "6e-17"
+      },
+      {
+        "name": "overlapping-key 8-pair recall, additive vs 3 delta rehearsals",
+        "value": "0.77 vs 0.91"
+      }
+    ],
+    "controls": [
+      "Plain sand stress versus habituated stress",
+      "Additive writes versus read-before-write delta",
+      "Key overlap/capacity sweeps",
+      "Weak probe beneath mobility threshold"
+    ],
+    "limitations": [
+      "Source states no wave-equation solve for crossbar",
+      "Readout assumed proportional to bounded material in one Born-like pass",
+      "Read-before-write delta is explicitly computed",
+      "No hardware or conventional-ML efficiency benchmark"
+    ],
+    "source": "https://github.com/anttiluode/ComputingBeachClaude/blob/main/README.md",
+    "motifs": [
+      "nov2-beach-matrix-attention-boundary"
+    ],
+    "held_out": false,
+    "external_data": false,
+    "replication": "Deterministic software tests and source ledger; not a PDE or independent real-material trial."
   }
 ]
