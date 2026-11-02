@@ -1254,6 +1254,28 @@
     "inventory_status": "unread"
   },
   {
+    "name": "ComputingBeachClaude",
+    "url": "https://github.com/anttiluode/ComputingBeachClaude",
+    "default_branch": "main",
+    "size": 548,
+    "visibility": "public",
+    "description": "Opus 55 ",
+    "created_at": "2026-11-02T06:32:01Z",
+    "updated_at": "2026-11-02T09:11:17Z",
+    "inventory_status": "unread"
+  },
+  {
+    "name": "ComputingBeachSol",
+    "url": "https://github.com/anttiluode/ComputingBeachSol",
+    "default_branch": "main",
+    "size": 376,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-11-02T06:32:25Z",
+    "updated_at": "2026-11-02T09:43:51Z",
+    "inventory_status": "unread"
+  },
+  {
     "name": "Concrete",
     "url": "https://github.com/anttiluode/Concrete",
     "default_branch": "main",
@@ -2115,11 +2137,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 3420,
+    "size": 3565,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-11-02T06:04:34Z",
+    "updated_at": "2026-11-02T06:04:52Z",
     "inventory_status": "unread"
   },
   {
@@ -6035,7 +6057,7 @@
     "visibility": "public",
     "description": "Opus 55",
     "created_at": "2026-10-27T08:30:32Z",
-    "updated_at": "2026-10-27T10:09:10Z",
+    "updated_at": "2026-11-02T08:45:10Z",
     "inventory_status": "reviewed"
   },
   {
