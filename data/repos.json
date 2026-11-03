@@ -5882,7 +5882,7 @@
     "description": "Opus 55",
     "created_at": "2026-11-02T19:16:37Z",
     "updated_at": "2026-11-03T06:52:20Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "UnifiedAIDreamViewer",
