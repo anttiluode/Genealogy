@@ -1,0 +1,101 @@
+{
+  "id": "november-3-brah-ping-and-route-memory",
+  "title": "November 3 — BrahSol and BrahClaude: learning a pathway by writing, pinging and reading",
+  "reviewed_at": "2026-11-03",
+  "order": 175,
+  "summary": "Two parallel November 3 experimental branches reconnect PerceptionLab's feedback checkerboard to hidden neuronal-route identification. BrahSol studies adaptive probing and return prediction in a changing recurrent medium; BrahClaude studies temporal multiscale synaptic traces, silent memory, route identification and writing for later pulses. Source-reported simulations support particular mechanisms but not neuron-level self-knowledge, new Sihti capacity, or a general active-probing advantage.",
+  "nodes": [
+    {
+      "id": "BrahSol",
+      "url": "https://github.com/anttiluode/BrahSol",
+      "family": "geometric-neuron",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Python/NumPy hidden-medium identification laboratory: 24 leaky recurrent units, optional Hebbian updates, 8 stimulation ports and 4 observation channels; action-conditioned learned return models, balanced/random/homeostatic/active probing, a common-world evaluation and a synthetic connectivity shock. A separate route_probe.py tests engineered write–wait–read distinguishability.",
+      "survived": "v1 identical-reference-world evaluation with 100 training pings: active one-step return RMSE 0.02571 versus 0.03146 random and 0.03394 balanced over 20 synthetic seeds. v2 after engineered rerouting, late recovery on 12 seeds: active + forgetting 0.0483 RMSE versus random + forgetting 0.0561; active without forgetting 0.1008. The preliminary write–wait–read pilot reports 97.6% balanced and 97.4% random priming, with ~49% without priming or with memory reset.",
+      "killed": "The v1 advantage nearly vanishes at 650 training pings; v2 recovery chiefly comes from forgetting, not active selection, and remains similar with Hebbian plasticity disabled. The shock deliberately permutes input ports; the model does not learn unknown synapse physiology, explain apical tufts, or establish intelligent route selection. The route_probe pilot pre-engineers an identifiable two-class return; random priming ties balanced priming.",
+      "evidence": "https://github.com/anttiluode/BrahSol/blob/main/RESULTS_V2.md",
+      "tags": [
+        "2026-11-03",
+        "active-probing",
+        "hidden-medium",
+        "homeostasis",
+        "efference-copy-hypothesis",
+        "online-system-identification",
+        "hebbian-plasticity-control",
+        "sample-efficiency",
+        "read-write-probe",
+        "counterfactual-evaluation"
+      ],
+      "era": "November 3: probing and preparing hidden neural routes",
+      "era_order": 175
+    },
+    {
+      "id": "BrahClaude",
+      "url": "https://github.com/anttiluode/BrahClaude",
+      "family": "geometric-neuron",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Eight-timescale exponential traces on neural routes, mapped through invertible Sihti octave differences into terminal-specific pulse gains; preregistered synthetic tests G0–G4 cover Volterra identity, probing, activity-silent memory, amount-versus-age decoding, reward-only writing for later and burst multiplexing.",
+      "survived": "G0 telescoping and explicit second-order Volterra equivalence agree within 5.3e-15. G2a 99.6% decodes which routes were written after 150 silent steps, versus 12.5% on residue-reset control. G2b heterogeneous four-terminal timescale projections classify age and pulse amount at 85.5% versus 40.6% for homogeneous terminals. G3 learns sign-correct write targets and timing near the expected impulse-response lag.",
+      "killed": "Sihti octave differences are an invertible reparameterization of the exponential trace bank, not a new information source. G2a is facilitated by individually observable route outputs; a single global sum loses address identity in that symmetric setup. G3 is a matched-filter optimization in the unclipped linear history model. Preregistered G1 misses its +0.05 accuracy-gain threshold (+0.047); G4 misses event-rate correlation 0.8 (observed 0.757, near its specified ideal event counter). G4 fixes after the first run are disclosed.",
+      "evidence": "https://github.com/anttiluode/BrahClaude/blob/main/README.md",
+      "tags": [
+        "2026-11-03",
+        "temporal-sihti",
+        "exponential-traces",
+        "reparameterization",
+        "silent-working-memory",
+        "age-code",
+        "volterra",
+        "matched-filter-control",
+        "facilitation",
+        "depression",
+        "preregistered-gates"
+      ],
+      "era": "November 3: probing and preparing hidden neural routes",
+      "era_order": 175
+    }
+  ],
+  "edges": [
+    {
+      "source": "PerceptionLab",
+      "target": "BrahSol",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "BrahSol README explicitly identifies the original PerceptionLab checkerboard/homeostatic feedback loop as the historical point of departure and moves the hidden system from a static spatial pattern to a recurrent medium.",
+      "evidence": "https://github.com/anttiluode/BrahSol/blob/main/README.md"
+    },
+    {
+      "source": "Sihti",
+      "target": "BrahClaude",
+      "type": "converges",
+      "confidence": "high",
+      "why": "BrahClaude explicitly uses Sihti's residue-language for differences of exponential route traces, while noting that the transform is invertible and contributes no new degrees of freedom.",
+      "evidence": "https://github.com/anttiluode/BrahClaude/blob/main/README.md"
+    },
+    {
+      "source": "BrahSol",
+      "target": "BrahClaude",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Parallel independent branches examine complementary questions—adaptive return-based probing versus temporally stored route histories. Not code forks, and not yet one integrated controller.",
+      "evidence": "https://github.com/anttiluode/BrahClaude/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov3-ping-read-backaction",
+      "title": "The probe is part of the dynamics, and a remembered route needs an address",
+      "description": "BrahSol measures whether adaptive probing and forgetting recover a changing input-output relation; BrahClaude makes prior pulses alter a route's later response and reads silent memory with heterogeneous temporal projections. Distinguishing routes through a summed receiver and charging the disturbance caused by each ping remain open, rather than established benefits.",
+      "nodes": [
+        "PerceptionLab",
+        "Sihti",
+        "BrahSol",
+        "BrahClaude"
+      ]
+    }
+  ]
+}
