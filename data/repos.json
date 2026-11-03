@@ -1257,11 +1257,11 @@
     "name": "ComputingBeachClaude",
     "url": "https://github.com/anttiluode/ComputingBeachClaude",
     "default_branch": "main",
-    "size": 548,
+    "size": 650,
     "visibility": "public",
     "description": "Opus 55 ",
     "created_at": "2026-11-02T06:32:01Z",
-    "updated_at": "2026-11-02T13:11:47Z",
+    "updated_at": "2026-11-02T15:18:32Z",
     "inventory_status": "reviewed"
   },
   {
@@ -2137,11 +2137,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 3608,
+    "size": 1336,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-11-02T13:44:29Z",
+    "updated_at": "2026-11-03T07:10:50Z",
     "inventory_status": "unread"
   },
   {
@@ -5872,6 +5872,17 @@
     "created_at": "2026-08-26T03:35:55Z",
     "updated_at": "2026-08-26T11:25:14Z",
     "inventory_status": "reviewed"
+  },
+  {
+    "name": "UlamInterlace",
+    "url": "https://github.com/anttiluode/UlamInterlace",
+    "default_branch": "main",
+    "size": 3171,
+    "visibility": "public",
+    "description": "Opus 55",
+    "created_at": "2026-11-02T19:16:37Z",
+    "updated_at": "2026-11-03T06:52:20Z",
+    "inventory_status": "unread"
   },
   {
     "name": "UnifiedAIDreamViewer",
