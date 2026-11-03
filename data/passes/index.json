@@ -518,5 +518,9 @@
   {
     "path": "november-3-ulaminterlace-scale-operator.json",
     "enabled": true
+  },
+  {
+    "path": "november-3-brah-ping-and-route-memory.json",
+    "enabled": true
   }
 ]
