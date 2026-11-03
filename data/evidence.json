@@ -11678,5 +11678,108 @@
     "held_out": false,
     "external_data": false,
     "replication": "Deterministic software tests and source ledger; not a PDE or independent real-material trial."
+  },
+  {
+    "id": "nov3-brahsol-active-probing-and-forgetting",
+    "node": "BrahSol",
+    "claim": "Active action-conditioned return modeling saves samples on one synthetic recurrent family, but after imposed rerouting the dominant recovery mechanism is forgetting obsolete input-output associations.",
+    "design": "source-reported paired-seed synthetic comparisons; 20-seed common-world v1 short-budget and 12-seed v2 shock/forgetting controls",
+    "result": "mixed",
+    "motifs": [
+      "nov3-ping-read-backaction"
+    ],
+    "sample": {
+      "unit": "synthetic seed",
+      "count": 12
+    },
+    "metrics": [
+      {
+        "name": "v1 test RMSE at 100 pings",
+        "treatment": 0.02571,
+        "control": 0.03146,
+        "comparison": "active vs uniform random; 20 seeds"
+      },
+      {
+        "name": "v2 late post-shock RMSE",
+        "treatment": 0.0483,
+        "control": 0.0561,
+        "comparison": "active+forgetting vs random+forgetting; 12 seeds"
+      },
+      {
+        "name": "v2 late post-shock no-forgetting RMSE",
+        "treatment": 0.0483,
+        "control": 0.1008,
+        "comparison": "same active policy; forgetting vs no forgetting"
+      }
+    ],
+    "controls": [
+      "Same held-out reference world and actions per seed for v1 comparison",
+      "Random and shuffled-balanced probing",
+      "No Hebbian plasticity ablation",
+      "No imposed shock ablation",
+      "No forgetting gamma=1 ablation"
+    ],
+    "replication": "source-reported independent seeds; no independent Genealogy rerun",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Changing the stimulus port map is an engineered intervention, not spontaneous biological rewiring",
+      "Plasticity ablation leaves dominant result nearly unchanged",
+      "Results are from one small synthetic recurrent-network family",
+      "At 650 training pings active nearly ties random"
+    ],
+    "source": "https://github.com/anttiluode/BrahSol/blob/main/RESULTS_V2.md"
+  },
+  {
+    "id": "nov3-brahclaude-temporal-route-gates",
+    "node": "BrahClaude",
+    "claim": "Multiple exponential-timescale states with distinct terminal readout mixtures permit activity-silent route identification and age-versus-amount decoding, but Sihti residues are an invertible basis and two registered thresholds failed.",
+    "design": "source-reported preregistered synthetic G0–G4 gates, including residue reset, homogeneous terminal, fixed probe schedules and event-counter diagnostic",
+    "result": "mixed",
+    "motifs": [
+      "nov3-ping-read-backaction"
+    ],
+    "sample": {
+      "unit": "Monte Carlo trial",
+      "count": 20000
+    },
+    "metrics": [
+      {
+        "name": "G2a silent memory classification accuracy",
+        "treatment": 0.9961,
+        "control": 0.1245,
+        "comparison": "intact route traces vs mean-reset route traces"
+      },
+      {
+        "name": "G2b 16-class age/amount accuracy",
+        "treatment": 0.8548,
+        "control": 0.406,
+        "comparison": "four heterogeneously tuned terminals vs four homogeneous terminals"
+      },
+      {
+        "name": "G1 optimized-minus-best-fixed accuracy",
+        "treatment": 0.047,
+        "control": 0.05,
+        "comparison": "achieved improvement vs preregistered required improvement"
+      }
+    ],
+    "controls": [
+      "Reset route residues before reading",
+      "Four homogeneous terminals versus heterogeneous octave projections",
+      "Best fixed six-pulse train",
+      "Flat (residue-free) terminals",
+      "G4 ideal event-onset counting diagnostic"
+    ],
+    "replication": "source-reported seeded experiment and disclosed post-run G4 corrections; not rerun by Genealogy",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "The Sihti band transform is invertible; it adds no representational degrees of freedom",
+      "G2a separately reads each of eight routes, not one summed soma signal",
+      "G3 matched-filter optimum follows from linear history before clipping",
+      "G1 and G4 miss registered thresholds; G4 had post-run bug fixes",
+      "The comparison against homogeneous terminals does not beat every matched four-channel raw trace model"
+    ],
+    "source": "https://github.com/anttiluode/BrahClaude/blob/main/README.md"
   }
 ]
