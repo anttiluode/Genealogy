@@ -753,5 +753,11 @@
   },
   "nov2-claude-crossbar-ideal-matrix": {
     "nov2-beach-matrix-attention-boundary": "supports"
+  },
+  "nov3-brahsol-active-probing-and-forgetting": {
+    "nov3-ping-read-backaction": "limits"
+  },
+  "nov3-brahclaude-temporal-route-gates": {
+    "nov3-ping-read-backaction": "supports"
   }
 }
