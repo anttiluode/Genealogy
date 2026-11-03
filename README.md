@@ -8,6 +8,17 @@ The central premise is that hundreds of repositories are not hundreds of indepen
 
 https://anttiluode.github.io/Genealogy/
 
+### November 3, 2026 — BrahSol and BrahClaude: neuronal routes that remember the ping
+
+**[Open the new Genealogy wall chapter](https://anttiluode.github.io/Genealogy/#nov3-brah-pingers)** · **[Source-linked scientific review](docs/reviews/2026-11-03-brahsol-brahclaude-route-interrogation.md)** · [Curated lineage pass](data/passes/november-3-brah-ping-and-route-memory.json) · [BrahSol](https://github.com/anttiluode/BrahSol) · [BrahClaude](https://github.com/anttiluode/BrahClaude).
+
+Two **new**, separately reviewed repositories bring the census from **578 to 580**. Both return to the old PerceptionLab/GeometricNeuronOriginReview homeostatic checkerboard, in which a changing probe affects the hidden medium's next response. The branches complement one another, **without an asserted code fork**:
+
+- **BrahSol:** active action-conditioned return prediction through eight stimulation ports of a synthetic 24-unit recurrent system. After 100 training pings, a common-world comparison gives **0.02571 RMSE active vs 0.03146 random** (20 seeds); after 650 pings they nearly tie. With an imposed route-mapping shock, **forgetting** recovers more than active selection: **0.0483 active + forgetting vs 0.0561 random + forgetting**, but **0.1008** active without forgetting. Hebbian-plasticity ablation leaves the main result nearly unchanged. Its write–wait–read pilot is deliberately identifiable and balanced priming ties random.
+- **BrahClaude:** eight exponential timescales per edge, recoded as an **invertible** Sihti residue stack. G0 confirms the Volterra identity; G2a reads **99.6%** of an engineered silent-memory task, and G2b's heterogeneous terminals decode age + amount **85% vs 41%** for homogeneous terminals. G3 discovers a matched-filter write-for-later rule. G1 and G4 **fail their registered thresholds**, despite informative outcomes; G4 disclosed post-run bug fixes.
+
+**The bridge is not new biology; it is a measurement problem.** BrahClaude's eight-route silent-memory decoder assumes separate route responses. With only one summed response, its symmetric two-written-route patterns are indistinguishable: the same total is produced for every route pair. A realistic integrated test must compare selective addressing, the cost and back-action of pings, and whether the observer keeps its own outgoing history (an efference copy). No full neuron-like self-identification has been shown. All numerical receipts here are **source-reported**, not independently rerun by Genealogy.
+
 ### November 3, 2026 — UlamInterlace: the pattern made by looking at different scales
 
 **[Open the new Genealogy wall chapter](https://anttiluode.github.io/Genealogy/#nov3-ulaminterlace)** · **[Try UlamInterlace](https://anttiluode.github.io/UlamInterlace/)** · **[Read the source-linked review](docs/reviews/2026-11-03-ulaminterlace-scale-operator.md)** · [Curated pass](data/passes/november-3-ulaminterlace-scale-operator.json) · [Exact XOR zone checker](https://github.com/anttiluode/UlamInterlace/blob/main/analysis/xor_zones.py).
