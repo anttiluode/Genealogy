@@ -8,6 +8,18 @@ The central premise is that hundreds of repositories are not hundreds of indepen
 
 https://anttiluode.github.io/Genealogy/
 
+### November 3, 2026 — UlamInterlace: the pattern made by looking at different scales
+
+**[Open the new Genealogy wall chapter](https://anttiluode.github.io/Genealogy/#nov3-ulaminterlace)** · **[Try UlamInterlace](https://anttiluode.github.io/UlamInterlace/)** · **[Read the source-linked review](docs/reviews/2026-11-03-ulaminterlace-scale-operator.md)** · [Curated pass](data/passes/november-3-ulaminterlace-scale-operator.json) · [Exact XOR zone checker](https://github.com/anttiluode/UlamInterlace/blob/main/analysis/xor_zones.py).
+
+[UlamInterlace](https://github.com/anttiluode/UlamInterlace) joins the atlas as a reviewed browser instrument and a new repository-census entry. It interlaces 1–6 copies of the same Ulam prime spiral at different scales, mixing them by geometric masks, overlay, XOR and Coincide. Quadratic-polynomial prime patterns and modular coincidences are real parts of its story; however, some of the most startling central boxes arise from the **sampling operator alone**.
+
+At base **1 px per cell**, exact scale ratio **101/100** and binary XOR, integer-coordinate checking on the central 101×101 window gives **one universally white rectangle at two layers, nine at four, and 49 at six**. This is exact cancellation of matching adjacent pairs (A⊕A⊕B⊕B=0), independent of whether the sampled field consists of primes or random bits. At odd layer counts the unmatched layer's binary texture remains visible instead of universally cancelling. The exact calculation is reproducible via `python analysis/xor_zones.py` in the UlamInterlace repo.
+
+A separate six-layer ratio-2 Coincide test reports **225 surviving pixels at centre 41**, 223 on the Euler diagonal; an exact 40-position Euler-prime segment survives any number of additional coarser layers under the stipulated integer-cell sampler. Those are not the settings of the video's near-identity XOR sequence. Below 1 px/cell, the renderer multiplies continuous prime-density estimates instead of strictly Boolean prime indicators.
+
+**Possible application, not yet established:** compare tiny magnification differences as a diagnostic for sampling, registration, VHS restoration or image-attention systems. The graph motif relates this idea to SweepAtlas and VHSImageStitch **without asserting code inheritance or a measured advantage**. The next test should use imposed, known scale errors and matched traditional image-alignment baselines; XOR's ability to cancel differing pairs means variance or a signed difference may be the better production signal.
+
 ### November 2, 2026 — The beach that remembered: from resonators to self-writing operators
 
 **[Visit the new Genealogy wall chapter](https://anttiluode.github.io/Genealogy/#nov2-computing-beach)** · **[Read the treatise: *The Beach That Remembered*](docs/reviews/2026-11-02-the-beach-that-remembered.md)** · [Curated evidence pass](data/passes/november-2-computing-beach-convergence.json).
