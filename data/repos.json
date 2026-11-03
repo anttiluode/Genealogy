@@ -605,6 +605,28 @@
     "inventory_status": "unread"
   },
   {
+    "name": "BrahClaude",
+    "url": "https://github.com/anttiluode/BrahClaude",
+    "default_branch": "main",
+    "size": 564,
+    "visibility": "public",
+    "description": "Opus 55 - back to geometric neuron",
+    "created_at": "2026-11-03T08:04:42Z",
+    "updated_at": "2026-11-03T14:10:20Z",
+    "inventory_status": "unread"
+  },
+  {
+    "name": "BrahSol",
+    "url": "https://github.com/anttiluode/BrahSol",
+    "default_branch": "main",
+    "size": 57,
+    "visibility": "public",
+    "description": "Sol - back to geometric neuron",
+    "created_at": "2026-11-03T08:04:18Z",
+    "updated_at": "2026-11-03T13:44:18Z",
+    "inventory_status": "unread"
+  },
+  {
     "name": "BrainArchitectureAnalyzer",
     "url": "https://github.com/anttiluode/BrainArchitectureAnalyzer",
     "default_branch": "main",
@@ -2137,11 +2159,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 1336,
+    "size": 1612,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-11-03T07:13:37Z",
+    "updated_at": "2026-11-03T14:48:40Z",
     "inventory_status": "unread"
   },
   {
@@ -5877,7 +5899,7 @@
     "name": "UlamInterlace",
     "url": "https://github.com/anttiluode/UlamInterlace",
     "default_branch": "main",
-    "size": 3171,
+    "size": 4784,
     "visibility": "public",
     "description": "Opus 55",
     "created_at": "2026-11-02T19:16:37Z",
