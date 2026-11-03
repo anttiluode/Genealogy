@@ -8,11 +8,11 @@
 
 ## What the program actually computes
 
-One browser page draws up to six copies of a Ulam prime spiral with shared centre and cell sizes (z_j=z_0r^j). Interlace chooses one layer by pixel position (Rows, Columns, Checker, Square rings, Round rings). Overlay blends layers; Coincide multiplies their sampled values; XOR uses
+One browser page draws up to six copies of a Ulam prime spiral with shared centre and cell sizes \(z_j=z_0r^j\). Interlace chooses one layer by pixel position (Rows, Columns, Checker, Square rings, Round rings). Overlay blends layers; Coincide multiplies their sampled values; XOR uses
 
-[
-X(v_0,ldots,v_{L-1})=rac{1-prod_j(1-2v_j)}2.
-]
+$
+X(v_0,\ldots,v_{L-1})=\frac{1-\prod_j(1-2v_j)}{2}.
+$
 
 For binary inputs this is the parity of occupied layers. For subpixel prime-density values it is a continuous polynomial, not literal binary XOR.
 
@@ -20,13 +20,13 @@ The original motive was multiscale prime geometry: Ulam rows, columns and diagon
 
 ## The novel-to-this-project, exact box genealogy
 
-With base 1 px/cell, ratio exactly 101/100, and integer image coordinates, layer j reads
+With base 1 px/cell, ratio exactly 101/100, and integer image coordinates, layer \(j\) reads
 
-[
-T_j(x)=leftlfloor x(100/101)^j+rac12ightfloor.
-]
+$
+T_j(x)=\left\lfloor x(100/101)^j+\frac12\right\rfloor.
+$
 
-The same map operates on y. In the 101×101 central window (x,yin[-50,50]), integer-arithmetic enumeration of the code's coordinate rule gives the following **universal** cancellation regions. Universal means white for *any* binary image, not just for the prime spiral.
+The same map operates on y. In the 101×101 central window with integer coordinates (x,yin[-50,50]), integer-arithmetic enumeration of the code's coordinate rule gives the following **universal** cancellation regions. Universal means white for *any* binary image, not just for the prime spiral.
 
 | Number of layers | Pair-agreement x intervals | Guaranteed white rectangles | Forced-white pixels |
 |---|---|---:|---:|
