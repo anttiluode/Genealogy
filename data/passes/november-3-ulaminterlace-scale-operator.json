@@ -1,0 +1,52 @@
+{
+  "id": "november-3-ulaminterlace-scale-operator",
+  "title": "November 3 — UlamInterlace: arithmetic lines, scale-locked XOR and a sampling microscope",
+  "reviewed_at": "2026-11-03",
+  "order": 174,
+  "summary": "One new browser prime-spiral instrument interlaces up to six zoom levels and exposes two distinct structures: established quadratic-prime congruences and exact geometric cancellation from nearest-neighbour scale sampling. A 101×101 exact-arithmetic check at ratio 101/100 yields 1, 9 and 49 universally white XOR rectangles with 2, 4 and 6 layers. Potential applications to image-registration diagnostics are proposed but not benchmarked.",
+  "nodes": [
+    {
+      "id": "UlamInterlace",
+      "url": "https://github.com/anttiluode/UlamInterlace",
+      "family": "practical-tools",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Single-file local/browser multiscale Ulam-prime visualizer with 1–6 independently scaled spiral layers, row/column/checker/square-ring/round-ring interlace, Overlay/XOR/Coincide, centre offset and ratio controls; includes mathematical analysis scripts, video and an exact XOR-zone checker.",
+      "survived": "A six-layer integer-cell source reproduces quadratic prime-line structure and near-rational modular coincidence effects. Independently checked at base 1 px/cell and ratio 101/100, the XOR operator has universally white 1×1, 3×3 and 7×7 Cartesian rectangle families at L=2,4,6 (10,201 / 7,225 / 4,225 forced-white pixels in the ±50 window); the centre-lock half-widths are 50,25,17,12,10 for L=2–6. The source-linked README separately reports a ratio-2 Euler-diagonal Coincide control.",
+      "killed": "The beautiful white boxes are produced by resampling geometry and XOR parity even for arbitrary binary images, not a new prime theorem. The 3-adic/Cantor, physical caustic and Talbot-carpet descriptions are not established. Below 1 px/cell Coincide multiplies density shades, not binary primality. No measured advantage over ordinary image registration, SIFT/DoG, temporal differences or existing VHS stitching has been shown.",
+      "evidence": "https://github.com/anttiluode/UlamInterlace/blob/main/README.md",
+      "tags": [
+        "2026-11-03",
+        "ulam-spiral",
+        "prime-quadratics",
+        "scale-space",
+        "nearest-neighbour",
+        "quantization",
+        "xor",
+        "pairwise-cancellation",
+        "exact-zones",
+        "modular-sieve",
+        "moire",
+        "browser-tool",
+        "registration-hypothesis",
+        "no-new-prime-theorem"
+      ],
+      "era": "November 3: prime spirals reveal a scale-sampling operator",
+      "era_order": 174
+    }
+  ],
+  "edges": [],
+  "motifs": [
+    {
+      "id": "nov3-scale-comparison-reveals-observer",
+      "title": "Scale disagreement is an operator measurement before it is a claim about the observed field",
+      "description": "Near-identity nearest-neighbour resampling creates exact stable and disagreement zones; XOR of an even number of matching sampled pairs cancels for any binary field. In UlamInterlace the 1/9/49 box genealogy is geometry; primes supply independent arithmetic texture. For SweepAtlas and VHSImageStitch the potential use is detecting scale or resampling errors, not an implemented or benchmarked shared algorithm.",
+      "nodes": [
+        "UlamInterlace",
+        "SweepAtlas",
+        "VHSImageStitch"
+      ]
+    }
+  ]
+}
