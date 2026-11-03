@@ -1778,5 +1778,45 @@
       "The criterion is measured utility, not resemblance to brains or survival of an order-memory gate alone.",
       "The earlier October 27 writable-wall question remains open; this asks the stricter competitor-relative engineering question."
     ]
+  },
+  {
+    "id": "nov3-route-addressability-and-destructive-reading",
+    "title": "Can a bounded pinger identify, preserve, and relearn memory-bearing routes through a summed return channel?",
+    "state": "open",
+    "motifs": [
+      "nov3-ping-read-backaction"
+    ],
+    "evidence": [
+      "nov3-brahsol-active-probing-and-forgetting",
+      "nov3-brahclaude-temporal-route-gates"
+    ],
+    "competing_explanations": [
+      "Selective, history-aware stimulation accesses route identities that broadcast probes cannot resolve, and a controller can learn when the expected information is worth destructive read-backaction.",
+      "The apparent advantage comes from supplied decoder templates, privileged separate readout channels, fixed route symmetries, or simple exponential forgetting; equal-budget fixed/random codes suffice once information and perturbation costs are matched."
+    ],
+    "known": [
+      "BrahClaude's symmetric G2a setup reaches 99.6% route-pair decoding with eight individually observed routes, but an undifferentiated sum of the two facilitated and six unmodified responses has identical expectation for each candidate pair.",
+      "BrahSol's 100-ping active comparison beats random in one synthetic medium family; its 650-ping result nearly ties, and the v2 engineered shock shows forgetting contributes more than active choice.",
+      "Sihti octave residues do not add state information beyond the original exponential trace bank; heterogeneous terminal readouts are the effective distinction."
+    ],
+    "missing_discriminator": "A pre-registered integrated controller that learns unknown route-specific input-output and read-backaction models using only a limited summed return, with matched no-ping, broadcast, random subset, fixed addressing, and model-based oracle controls.",
+    "candidate_experiment": {
+      "design": "Implement eight nonlinear short-term facilitation/depletion routes with hidden writing and external third-party impulses. Give an online learner one summed return and a strict pulse/action budget. Compare learned selective writes, neutral reads, silences and refreshes against random and fixed equal-budget probes, with and without an outgoing-ping history (efference copy). Make final diagnostic time equal for all policies, quantify internal route separation after interrogation and held-out identity accuracy, and include independent unseen route parameter distributions.",
+      "cost": "medium: CPU synthetic benchmark, 20–50 seeds per ablation, prespecified held-out route families and noise levels",
+      "outcomes": [
+        {
+          "if": "Learned selective probes outperform equal-budget fixed, random and history-blind strategies on unseen route families while preserving held-out state separability after charging read costs",
+          "then": "Supports an implementable joint mechanism for adaptive addressability and memory-conserving interrogation, without implying biological implementation."
+        },
+        {
+          "if": "The apparent gain disappears when the receiver is limited to one summed channel or when fixed subset codes, matched-cost probes and explicit-history baselines are included",
+          "then": "Limits the claim to engineered identifiability or privileged measurement; route memory alone is insufficient."
+        }
+      ]
+    },
+    "notes": [
+      "The best policy may be deliberate silence rather than additional stimulation.",
+      "Do not treat a revealed static route label as proof that a controller learned its dynamics."
+    ]
   }
 ]
