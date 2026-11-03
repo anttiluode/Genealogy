@@ -514,5 +514,9 @@
   {
     "path": "november-2-computing-beach-convergence.json",
     "enabled": true
+  },
+  {
+    "path": "november-3-ulaminterlace-scale-operator.json",
+    "enabled": true
   }
 ]
