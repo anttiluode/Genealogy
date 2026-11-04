@@ -1,0 +1,164 @@
+{
+  "id": "november-4-environments-index-and-emergent-geometry",
+  "title": "November 4 — three new worlds: indexed beach, evolving graph, and 3D ecology",
+  "reviewed_at": "2026-11-04",
+  "order": 177,
+  "summary": "Three reviewed new repositories separate observable prediction of a writable wave medium (SelfIndexingBeach), coordinate-free adaptive topology with negative geometry null checks (EmergenceNoSpace), and explicitly 3D evolving ecology under opposing light/nutrient sources (Emergence3D). They are different experimental mechanisms, not a merged world model or a demonstrated emergent intelligent universe. Genealogy's own November 4 commits maintain the atlas, not a fourth research descendant.",
+  "nodes": [
+    {
+      "id": "SelfIndexingBeach",
+      "url": "https://github.com/anttiluode/SelfIndexingBeach",
+      "family": "wave-memory",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A 36-link periodic wave ring with slowly writable conductances is read by weak non-writing pings; an external ridge predictor uses measured echo fingerprints and a known next A/B event to forecast the next echo change. A finite-difference sensitivity Jacobian makes readout observability explicit.",
+      "survived": "Source-reported one-split relative change MSE is 0.000476 for read + next-event versus 0.20497 for event-only and 1.0 for no-change. Four queries reveal 29 versus 17 above-threshold local sensitivity directions at a stated 1e-4 absolute threshold; reads do not write, and frozen-bed tests preserve state.",
+      "killed": "The predictor is outside the beach, not a physically self-indexing or self-aware controller. One synthetic ridge fit is not a validated generalization law; sensitivity rank depends on scale and threshold and is not Hankel/predictive-state rank. AB/BA read difference is tiny; robust noisy order decoding is not shown.",
+      "evidence": "https://github.com/anttiluode/SelfIndexingBeach/blob/main/README.md",
+      "tags": [
+        "2026-11-04",
+        "wave-memory",
+        "predictive-readout",
+        "read-write-separation",
+        "sensitivity-jacobian",
+        "observable-rank",
+        "external-ridge-predictor",
+        "synthetic-calibration"
+      ],
+      "era": "November 4: physical memory, geometry and evolving ecology",
+      "era_order": 177
+    },
+    {
+      "id": "EmergenceNoSpace",
+      "url": "https://github.com/anttiluode/EmergenceNoSpace",
+      "family": "artificial-life",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Offline JavaScript and Node graph world with no physical spatial coordinates: conservative resource exchange, locally adapted and pruned weighted links, two-hop link formation, and optionally buds inheriting mutated rule parameters. Visualization uses coordinates only for drawing; matched fixed, rewired and inherited-growth modes are supplied.",
+      "survived": "Source-reported three-seed, 2,500-tick smoke test starts with 120 nodes and ends at 120 fixed, 120 rewired or 152 growing nodes. Links increase from about 240 fixed to 294/356 adaptive/growing; pump imbalance changes from 1.337 fixed to 0.701/0.626. Conservation, reproducibility and graph-geometry measurement tests are included.",
+      "killed": "A fitted graph growth slope around three is also seen in the fixed random graph; fits span fewer than three useful radii on average. Degree-preserving graph swaps can show apparent spectral dimension around three, so no emergent 3D geometry is established. More links alone can lower flow imbalance, and growth without mortality is not selection or intelligence.",
+      "evidence": "https://github.com/anttiluode/EmergenceNoSpace/blob/main/docs/smoke.md",
+      "tags": [
+        "2026-11-04",
+        "coordinate-free-graph",
+        "resource-conservation",
+        "local-rewiring",
+        "heritable-growth",
+        "degree-preserving-null",
+        "diffusion-spectral-dimension",
+        "geometry-false-positive"
+      ],
+      "era": "November 4: physical memory, geometry and evolving ecology",
+      "era_order": 177
+    },
+    {
+      "id": "Emergence3D",
+      "url": "https://github.com/anttiluode/Emergence3D",
+      "family": "artificial-life",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A direct three-dimensional extension of Emergence's token-genome/fixed random transformer and context-dependent lineage STATE-token phenotype mapping. Cells occupy a supplied 3D voxel grid, with light from above, floor nutrient, six-direction growth, shading, energy/nutrient sharing, mutation and selection.",
+      "survived": "In a source-reported seed-0 CPU run (24×64×64, 12,000 ticks), a living layer settles at 0.70–0.78 relative height; shading increases light captured from 36% to 49%; the fraction of cells in bodies at least six layers tall rises from about 1% to 19%, and 419 founding lineages decline to 12.",
+      "killed": "A supplied 3D grid is not emergent space. The mid-depth living layer is expected from opposed light/nutrient gradients; plant/root function and adaptive benefit from sharing are unproven until interventions are run. Only one CPU run is in the repository's README; its random fixed transformer does not learn by gradient updates or comprehend genes.",
+      "evidence": "https://github.com/anttiluode/Emergence3D/blob/main/README.md",
+      "tags": [
+        "2026-11-04",
+        "supplied-3d-grid",
+        "photo-nutrient-compensation",
+        "body-sharing",
+        "genome-evolution",
+        "state-dependent-expression",
+        "shading",
+        "single-seed"
+      ],
+      "era": "November 4: physical memory, geometry and evolving ecology",
+      "era_order": 177
+    }
+  ],
+  "edges": [
+    {
+      "source": "Emergence",
+      "target": "Emergence3D",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Emergence3D explicitly moves Emergence's fixed transformer, genome pool, lineage STATE feedback and cell action rules into a 3D voxel box; this is an implementation-level descendant with added 3D light/nutrient ecology.",
+      "evidence": "https://github.com/anttiluode/Emergence3D/blob/main/README.md"
+    },
+    {
+      "source": "Emergence",
+      "target": "EmergenceNoSpace",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "EmergenceNoSpace explicitly names Emergence as inspiration but replaces the supplied lattice and transformer/genome phenotypes with a coordinate-free local graph model; conceptual convergence, not a documented code fork.",
+      "evidence": "https://github.com/anttiluode/EmergenceNoSpace/blob/main/README.md"
+    },
+    {
+      "source": "EmergenceAstra",
+      "target": "EmergenceNoSpace",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "NoSpace's README names EmergenceAstra as a conceptual precursor for evolving local rules; signaling tables and graph flux are different implemented mechanisms.",
+      "evidence": "https://github.com/anttiluode/EmergenceNoSpace/blob/main/README.md"
+    },
+    {
+      "source": "ComputingBeachClaude",
+      "target": "SelfIndexingBeach",
+      "type": "converges",
+      "confidence": "high",
+      "why": "SelfIndexingBeach explicitly locates its weak-read/write-memory prediction question in ComputingBeachClaude's physical memory discussion; it builds a different 36-cell ring and external predictor.",
+      "evidence": "https://github.com/anttiluode/SelfIndexingBeach/blob/main/README.md"
+    },
+    {
+      "source": "NeuronBeach",
+      "target": "SelfIndexingBeach",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The SelfIndexingBeach README explicitly names the ComputingBeach → NeuronBeach conversation; its experiment measures medium observability instead of simulating compartmental neuron spiking.",
+      "evidence": "https://github.com/anttiluode/SelfIndexingBeach/blob/main/README.md"
+    },
+    {
+      "source": "Emergence3D",
+      "target": "EmergenceNoSpace",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both pursue organizational emergence under local resource constraints, but Emergence3D supplies a Euclidean voxel grid whereas EmergenceNoSpace asks whether spatial geometry can arise from a graph; conceptual contrast, not implementation inheritance.",
+      "evidence": "https://github.com/anttiluode/EmergenceNoSpace/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov4-index-as-observable-response",
+      "title": "A stored difference is not automatically a readable or useful future prediction",
+      "description": "Writable sand can encode event history while the weak-ping sensitivity kernel exposes only particular directions. Better external predictions after a known next write are useful, but do not yet prove self-generated addressing or internally learned anticipation.",
+      "nodes": [
+        "ComputingBeachClaude",
+        "NeuronBeach",
+        "SelfIndexingBeach"
+      ]
+    },
+    {
+      "id": "nov4-geometry-is-a-controlled-hypothesis",
+      "title": "A world can have space by assumption or try to grow effective geometry",
+      "description": "Emergence3D begins with explicit 3D adjacency and opposing ecological gradients; EmergenceNoSpace evolves relations without model coordinates. Finite random graphs can imitate 3D-like scaling over too few radii, so geometry requires independent null controls and multiple scales.",
+      "nodes": [
+        "Emergence",
+        "Emergence3D",
+        "EmergenceNoSpace"
+      ]
+    },
+    {
+      "id": "nov4-structure-not-yet-prediction",
+      "title": "Complex adaptive structure is not proof of a learned predictive model",
+      "description": "The three experiments expose distinct measurable objects—next-echo regression, graph topology, and ecological geometry. Their common research frontier is whether endogenous organization improves new predictions under held-out worlds and matched sensing/edge/energy budgets.",
+      "nodes": [
+        "SelfIndexingBeach",
+        "EmergenceNoSpace",
+        "Emergence3D",
+        "EmergenceAstra"
+      ]
+    }
+  ]
+}
