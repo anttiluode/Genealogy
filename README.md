@@ -8,6 +8,14 @@ The central premise is that hundreds of repositories are not hundreds of indepen
 
 https://anttiluode.github.io/Genealogy/
 
+### November 4, 2026 — NeuronBeach: the AIS as a wave machine
+
+**[Genealogy wall chapter](https://anttiluode.github.io/Genealogy/#nov4-neuronbeach)** · **[Single neuron](https://anttiluode.github.io/NeuronBeach/)** · **[Six-neuron network](https://anttiluode.github.io/NeuronBeach/network.html)** · [Source repository](https://github.com/anttiluode/NeuronBeach) · [Source-linked review](docs/reviews/2026-11-04-neuronbeach-from-coast-to-neuron.md) · [Curated lineage pass](data/passes/november-4-neuronbeach-neuron-coast.json).
+
+NeuronBeach translates the ComputingBeach memory metaphor into two dependency-free browser simulations: dendritic low-pass marshes, soma pool, threshold-triggered AIS and regenerative axon, back-propagating signals, apical-tuft plateau, plastic synaptic sandbars and an optional reward/tide. In **30 held-out six-neuron seeds**, the taught firing order replays **30/30** after 15 lessons, while shuffled order, never training, sand frozen and tide withheld each give **0/30**. With inhibition removed, only **14/30** succeed. At eight neurons and the original fixed sand budget, full replay falls to **7/30**.
+
+**Evidence boundary:** this is a designed educational neural toy, not sediment-driven physical learning: the water-like channels propagate linearly, while threshold, spike, synaptic plasticity and reward are explicitly programmed. A weak ping can still change a temporary eligibility trace even when it leaves the lasting synaptic weight unchanged. The tests report numerical outcomes but do not assert them, and Genealogy has not independently rerun them. Context-dependent or multiple-memory retrieval has not been demonstrated.
+
 ### November 3, 2026 — BrahSol and BrahClaude: neuronal routes that remember the ping
 
 **[Open the new Genealogy wall chapter](https://anttiluode.github.io/Genealogy/#nov3-brah-pingers)** · **[Source-linked scientific review](docs/reviews/2026-11-03-brahsol-brahclaude-route-interrogation.md)** · [Curated lineage pass](data/passes/november-3-brah-ping-and-route-memory.json) · [BrahSol](https://github.com/anttiluode/BrahSol) · [BrahClaude](https://github.com/anttiluode/BrahClaude).
