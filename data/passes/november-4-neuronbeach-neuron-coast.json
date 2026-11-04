@@ -1,0 +1,69 @@
+{
+  "id": "november-4-neuronbeach-neuron-coast",
+  "title": "November 4 — NeuronBeach: soma pool, AIS wave machine and learned replay",
+  "reviewed_at": "2026-11-04",
+  "order": 176,
+  "summary": "A browser-based neuron-as-coast visualization and a six-unit sequence-learning model translate the wave-written beach metaphor into dendritic low-pass propagation, AIS spike initiation, back-propagating timing plasticity and reward gating. Source-reported controls show 30/30 held-out six-neuron sequence replays versus 0/30 for shuffled or non-learning controls, with notable eight-neuron and homeostasis failures. Synaptic sandbars are numerical weights updated by scripted rules, not physical sediment dynamics.",
+  "nodes": [
+    {
+      "id": "NeuronBeach",
+      "url": "https://github.com/anttiluode/NeuronBeach",
+      "family": "geometric-neuron",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Two dependency-free HTML/JavaScript simulators illustrate one neuron as a coast and connect six neurons into an all-to-all delayed network with a low-pass dendritic graph, thresholded AIS, backpropagation, eligibility traces, spike-timing plasticity, inhibition and an optional reward/tide gate.",
+      "survived": "Single-cell controls demonstrate summation, filtered fast ripples, a tuft-plus-backwash burst window and synaptic potentiation. Network held-out tests on seeds 101–130 report full ordered replay 30/30 after 15 lessons, 0/30 after shuffled order, no training, frozen weights or missing tide; only 14/30 without inhibition. Weak pings leave lasting weights unchanged but do alter a transient eligibility trace.",
+      "killed": "This is not physical erosion: synaptic sandbars are numerical weights changed by programmed rules; axonal propagation and Ca plateau are simplified switches rather than biophysical channel models. Eight neurons at fixed sand budget replay only 7/30 (tide 0/30); homeostasis in the six-neuron dev ring fails (0/10). It has not shown context-dependent recall, multiple memories, real units or improved learning beyond known STDP and inhibition.",
+      "evidence": "https://github.com/anttiluode/NeuronBeach/blob/main/README.md",
+      "tags": [
+        "2026-11-04",
+        "neuron-beach",
+        "dendritic-low-pass",
+        "ais",
+        "backpropagation",
+        "apical-tuft",
+        "eligibility-trace",
+        "stdp",
+        "neuromodulation",
+        "sequence-replay",
+        "inhibition",
+        "browser-visualization",
+        "source-reported",
+        "not-physical-scour"
+      ],
+      "era": "November 4: a neuron made legible as a coast",
+      "era_order": 176
+    }
+  ],
+  "edges": [
+    {
+      "source": "ComputingBeachClaude",
+      "target": "NeuronBeach",
+      "type": "converges",
+      "confidence": "high",
+      "why": "NeuronBeach explicitly credits the ComputingBeachClaude beach metaphor. It reuses the conceptual wave/medium picture, but replaces stress-driven physical sand modification with programmed synaptic weights and neuron-like switches, rather than a direct solver fork.",
+      "evidence": "https://github.com/anttiluode/NeuronBeach/blob/main/README.md"
+    },
+    {
+      "source": "GeometricNeuronV24",
+      "target": "NeuronBeach",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both work on neuronal signal propagation, compartmental AIS/gating and learned response geometry. This is a cross-project conceptual parallel, not documented code inheritance.",
+      "evidence": "https://github.com/anttiluode/NeuronBeach/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov4-neuron-beach-feedback-learning",
+      "title": "A wave crosses a pathway; a spike can change how the next wave crosses",
+      "description": "The neuron-coast visual makes dendritic filtering, thresholded regeneration, back-propagating timing coincidence and reward-gated traces observable in one learning loop. The demonstration is a scripted STDP and inhibition model rather than self-eroding sediment. A weak read can alter transient eligibility without changing persistent weight.",
+      "nodes": [
+        "ComputingBeachClaude",
+        "GeometricNeuronV24",
+        "NeuronBeach"
+      ]
+    }
+  ]
+}
