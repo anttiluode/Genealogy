@@ -23,11 +23,11 @@ class NewWorldsNovember4(unittest.TestCase):
 
     def test_distinct_claims_and_controls(self):
         nodes = {x["id"]: x for x in self.atlas["nodes"]}
-        self.assertIn("external", nodes["SelfIndexingBeach"]["killed"])
+        self.assertIn("outside the beach", nodes["SelfIndexingBeach"]["killed"])
         self.assertIn("0.000476",nodes["SelfIndexingBeach"]["survived"])
         self.assertIn("degree-preserving",nodes["EmergenceNoSpace"]["killed"].lower())
         self.assertIn("not emergent",nodes["Emergence3D"]["killed"].lower())
-        self.assertIn("a 3d",nodes["Emergence3D"]["claim"].lower())
+        self.assertIn("3d voxel",nodes["Emergence3D"]["claim"].lower())
 
     def test_ancestry_and_wall(self):
         edges=[x for x in self.atlas["edges"] if x.get("pass_id")==PASS]
