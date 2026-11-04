@@ -11781,5 +11781,150 @@
       "The comparison against homogeneous terminals does not beat every matched four-channel raw trace model"
     ],
     "source": "https://github.com/anttiluode/BrahClaude/blob/main/README.md"
+  },
+  {
+    "id": "nov4-self-indexing-next-echo",
+    "node": "SelfIndexingBeach",
+    "claim": "A weak fingerprint and known next write greatly improve prediction of the later echo change for one deterministic 36-link toy and specific train/test split; material sensitivity is probe-dependent.",
+    "design": "Synthetic 36-link ring with variable writable conductance, four nonwriting read queries and four sensors. Ridge regression predicts post-write echo delta with held-out randomized bed histories; finite-difference Jacobian estimates local observable sensitivity.",
+    "result": "mixed",
+    "motifs": [
+      "nov4-index-as-observable-response",
+      "nov4-structure-not-yet-prediction"
+    ],
+    "sample": {
+      "unit": "held-out synthetic histories",
+      "count": 20
+    },
+    "metrics": [
+      {
+        "name": "relative change MSE current read + known event",
+        "value": 0.000476
+      },
+      {
+        "name": "relative change MSE known event only",
+        "value": 0.20497
+      },
+      {
+        "name": "directions above fixed 1e-4 sensitivity threshold, one vs four queries",
+        "value": "17 vs 29"
+      }
+    ],
+    "controls": [
+      "No-change predictor",
+      "Known event alone",
+      "Current read without next event",
+      "Shuffled read fingerprints",
+      "Frozen bed and strictly weak nonwriting read"
+    ],
+    "replication": "single source-reported train/test split; not rerun independently by Genealogy",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "External predictor is not integrated into the physical medium",
+      "One synthetic split without preregistered parameter selection or confidence intervals",
+      "Sensitivity count uses absolute fixed threshold and is not a Hankel rank",
+      "AB/BA reads have tiny difference; no robust noisy classification claim"
+    ],
+    "source": "https://github.com/anttiluode/SelfIndexingBeach/blob/main/README.md"
+  },
+  {
+    "id": "nov4-nospace-finite-graph-dimension-null",
+    "node": "EmergenceNoSpace",
+    "claim": "Coordinate-free local-graph dynamics and conservative budding are executable; short-range apparent growth and spectral exponents cannot establish 3D geometry because random controls mimic them.",
+    "design": "Three fixed/rewired/rewired+growth matched-seed modes in unembedded resource graph. Three-seed engineering smoke run (120 initial nodes, 2,500 ticks) plus independent lazy-random-walk spectrum and degree-preserving edge-swap comparison.",
+    "result": "mixed",
+    "motifs": [
+      "nov4-geometry-is-a-controlled-hypothesis",
+      "nov4-structure-not-yet-prediction"
+    ],
+    "sample": {
+      "unit": "initial random graph seed",
+      "count": 3
+    },
+    "metrics": [
+      {
+        "name": "final nodes fixed / rewire / growth",
+        "value": "120 / 120 / 152"
+      },
+      {
+        "name": "final edges fixed / rewire / growth",
+        "value": "240 / 293.7 / 355.7"
+      },
+      {
+        "name": "mean pump imbalance",
+        "value": "1.337 / 0.701 / 0.626"
+      },
+      {
+        "name": "short-range growth exponent of fixed random graph",
+        "value": 2.754
+      }
+    ],
+    "controls": [
+      "Fixed-graph frozen topology",
+      "Rewire without births",
+      "Rewire with heritable rule changes",
+      "Degree-preserving randomized graph for diffusion check",
+      "Conservation and deterministic-replay tests"
+    ],
+    "replication": "Source-reported three-seed engineering smoke run; geometry checks not independent cross-family verification",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Mean volume-radius fit based on about two unsaturated radii, insufficient for dimensional inference",
+      "Degree-preserving null has similar apparent spectral exponents on narrow windows",
+      "Adaptive runs add edges; flow imbalance not assessed at equal edge budgets",
+      "No mortality/competition demonstrating natural selection and no world model"
+    ],
+    "source": "https://github.com/anttiluode/EmergenceNoSpace/blob/main/docs/smoke.md"
+  },
+  {
+    "id": "nov4-emergence3d-living-depth-layer",
+    "node": "Emergence3D",
+    "claim": "Supplied 3D light-above/nutrient-below physics forms an intermediate living sheet and can favor down-growing attached lineages in one synthetic seed; root/canopy functional adaptation is not yet shown.",
+    "design": "One source-reported CPU experiment in a 24×64×64 voxel tank, seed 0, 12,000 steps; 3D light attenuation and shading, nutrient floor and diffusion, genome mutation and fixed random translator. Short default calibration preceded run.",
+    "result": "mixed",
+    "motifs": [
+      "nov4-geometry-is-a-controlled-hypothesis",
+      "nov4-structure-not-yet-prediction"
+    ],
+    "sample": {
+      "unit": "source-reported CPU simulation seed",
+      "count": 1
+    },
+    "metrics": [
+      {
+        "name": "living sheet relative height",
+        "value": "0.70–0.78"
+      },
+      {
+        "name": "light captured, early to final",
+        "value": "36% → 49%"
+      },
+      {
+        "name": "cells in bodies >=6 layers, early to final",
+        "value": "1% → 19%"
+      },
+      {
+        "name": "founding lineages remaining",
+        "value": "12 of 419"
+      }
+    ],
+    "controls": [
+      "Available but not yet executed: share_rate=0",
+      "Available but not yet executed: cell_shade=0",
+      "Available but not yet executed: regulation=0"
+    ],
+    "replication": "Single source-reported seed-0 CPU run; no scientific replication or ablation claimed",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Spatial coordinates and six-neighbor topology are hardcoded, not emergent geometry",
+      "Intermediate growth band follows known resource constraints",
+      "No controlled evidence for nutrient-root transport and light-canopy division of labor",
+      "Fixed randomly initialized translator does not train; no evidence of organism intelligence",
+      "No repo-recorded multi-seed GPU results at review time"
+    ],
+    "source": "https://github.com/anttiluode/Emergence3D/blob/main/README.md"
   }
 ]
