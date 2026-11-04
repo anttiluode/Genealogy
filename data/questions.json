@@ -1818,5 +1818,48 @@
       "The best policy may be deliberate silence rather than additional stimulation.",
       "Do not treat a revealed static route label as proof that a controller learned its dynamics."
     ]
+  },
+  {
+    "id": "nov4-evolving-worlds-predictive-function",
+    "title": "When does an evolving medium's structure improve held-out prediction rather than merely showing history, growth or attractive geometry?",
+    "state": "open",
+    "motifs": [
+      "nov4-index-as-observable-response",
+      "nov4-geometry-is-a-controlled-hypothesis",
+      "nov4-structure-not-yet-prediction"
+    ],
+    "evidence": [
+      "nov4-self-indexing-next-echo",
+      "nov4-nospace-finite-graph-dimension-null",
+      "nov4-emergence3d-living-depth-layer"
+    ],
+    "competing_explanations": [
+      "Locally shaped medium/organism topology encodes task-relevant history that reliably improves later novel forecasts and transfer at matched sensing, resource and model-capacity budgets.",
+      "The apparent predictiveness is fully explained by known external drivers, larger edge count, an externally fit readout or ordinary short-term autocorrelation. No useful endogenous predictive structure emerges in the tested regimes."
+    ],
+    "known": [
+      "The SelfIndexingBeach external ridge predictor predicts known-next-event echo deltas exceptionally in one synthetic split, but the sand does not choose questions or learn an internal model.",
+      "EmergenceNoSpace shows resource-conserving local topology changes and heritable growth. Its apparent near-three dimension fails scale/null calibration; lower imbalance comes with more transport edges.",
+      "Emergence3D's intermediate living sheet is expected from supplied light/nutrient physics; source-reported tall-body growth lacks matched sharing/shading/regulation ablations."
+    ],
+    "missing_discriminator": "Held-out future-prediction comparisons with controls that match information available, sensing cost, edge count, growth budget and exogenous forcing; interventions must break mere shared-history correlations.",
+    "candidate_experiment": {
+      "design": "On held-out wave-bed histories, graph seeds and 3D sun/nutrient trajectories, train matched readout probes to forecast future observable states using present physical state, short history and optional local messages. Test the incremental predictive value of adaptive structure versus static/rewired/equal-degree graphs and frozen/disabled plasticity or sharing. Include counterfactual interventions, shuffled readouts, externally trained GRU/ridge baselines, and a blind final diagnostic after input histories diverge.",
+      "cost": "medium-high: first 30-seed CPU instrument on the small wave and graph systems, then controlled GPU ecology runs; log graph edges, data/probe budget and power/compute.",
+      "outcomes": [
+        {
+          "if": "Adaptive structures systematically improve calibrated out-of-distribution future predictions after charging all sensor, edge and model-learning costs, and the gain disappears under matched causal ablations",
+          "then": "Supports a specific emergent predictive organization in the tested substrate, without proving self-awareness or subjective experience."
+        },
+        {
+          "if": "Static/degree-matched/readout-only controls predict as well, or no stable geometry survives independent scale and null checks",
+          "then": "Retain these as useful ecological and measurement simulators and reject the stronger emergent predictive-geometry explanation for the tested settings."
+        }
+      ]
+    },
+    "notes": [
+      "Separately report predictive accuracy, agreement between receivers and actual world-calibrated accuracy: synchronized agents can be jointly wrong.",
+      "Do not collapse a physical material memory, an externally learned decoder, or a fixed 3D habitat into the same mechanism."
+    ]
   }
 ]
