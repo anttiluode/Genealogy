@@ -1,5 +1,16 @@
 # Genealogy research log
 
+## 2026-11-04 — Three reviewed arrivals: observer, relational geometry and 3D ecology
+
+Added **SelfIndexingBeach**, **EmergenceNoSpace** and **Emergence3D** to the inventory (581 → 584 distinct repositories), a three-node curated pass with six deliberately typed lineage/convergence edges and three motifs, a wall chapter, one source-linked research review, three evidence receipts and a falsifiable predictive-function question. The already inventoried **Genealogy** repository is not counted a second time; its commits document curation.
+
+The experiments ask non-identical questions. SelfIndexingBeach uses weak, nonwriting read fingerprints to train an *external* next-echo predictor, and reports 0.000476 vs 0.20497 relative MSE in one synthetic split (read + event vs event only). EmergenceNoSpace evolves an unembedded graph yet finds near-three scaling exponents can arise in fixed/degree-shuffled nulls on short ranges; edge growth alone can improve pump equalization. Emergence3D carries the explicit Emergence genome/translator and STATE feedback into an already spatial 3D ecology; a single CPU run forms a living depth layer from opposite light/nutrient gradients and has not demonstrated functional root or canopy adaptation.
+
+**Boundary:** external readout ≠ internal self-indexing; a random graph's dimension-like exponent ≠ emergent three-dimensional spacetime; ecological stratification ≠ intelligence. Next: matched held-out prediction and intervention tests, with equal observation budgets, edge counts and supplied-world baselines.
+
+[Wall](https://anttiluode.github.io/Genealogy/#nov4-three-worlds) · [Review](docs/reviews/2026-11-04-three-worlds-prediction-and-geometry.md) · [Pass](data/passes/november-4-environments-index-and-emergent-geometry.json).
+
+
 ## 2026-11-02 — The beach that remembered: closing the writer→reader loop
 
 Promoted the two existing unread ComputingBeachSol and ComputingBeachClaude census entries to reviewed (**577 total records, no duplicate rows**) and added a dedicated essay [The Beach That Remembered](docs/reviews/2026-11-02-the-beach-that-remembered.md), one curated pass with typed links, three motifs, six empirical evidence receipts and a new unresolved competitor-relative question.
