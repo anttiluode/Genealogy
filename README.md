@@ -8,6 +8,18 @@ The central premise is that hundreds of repositories are not hundreds of indepen
 
 https://anttiluode.github.io/Genealogy/
 
+### November 4, 2026 — Three new worlds: a readable beach, a coordinate-free graph, and 3D ecology
+
+**[Genealogy wall chapter](https://anttiluode.github.io/Genealogy/#nov4-three-worlds)** · [Curated evidence pass](data/passes/november-4-environments-index-and-emergent-geometry.json) · [Source-linked review](docs/reviews/2026-11-04-three-worlds-prediction-and-geometry.md) · [SelfIndexingBeach](https://github.com/anttiluode/SelfIndexingBeach) · [EmergenceNoSpace](https://github.com/anttiluode/EmergenceNoSpace) · [Emergence3D](https://github.com/anttiluode/Emergence3D).
+
+Three newly reviewed repositories join the census, from **581 to 584**, without duplicating [Genealogy](https://github.com/anttiluode/Genealogy), which is already present as an existing maintenance project. These are three **different systems**, with typed conceptual links rather than assumed code forks:
+
+- **SelfIndexingBeach:** a 36-link synthetic ring with writable conductance, nonwriting weak pings and an **external** ridge predictor. One source-reported split yields **0.000476 relative echo-change MSE** for current read + known next event, versus **0.20497** for event-only; probe sensitivity can reveal 17 vs 29 above-threshold directions. Neither self-chosen internal probing nor physically intelligent indexing is established.
+- **EmergenceNoSpace:** a coordinate-free graph with conserved resource flow, local edge adaptation, two-hop links and heritable budding. The three-seed 120-node smoke run changes topology and lowers pump imbalance, but gains additional edges; **a near-three dimension estimate also appears in random graph nulls over too few radii**. No emergent 3D geometry is shown.
+- **Emergence3D:** [Emergence](https://github.com/anttiluode/Emergence) moved into a *supplied* three-dimensional voxel environment. Light from above, nutrient from the floor and self-shading create an intermediate living layer; one CPU run reports relative height **0.70–0.78** and increasing taller bodies. Functional sharing and root/canopy advantage still require ablations.
+
+**Open question:** when can physical history, evolving topology or ecological organization improve **held-out future predictions** relative to matched static, history-only, external-readout and degree/edge-budget controls? The repository READMEs and experiment records are the source of numbers; Genealogy has not independently rerun these studies. The user's November 3–4 activity list also included five Genealogy commits: those are atlas curation, not a fourth new scientific branch.
+
 ### November 4, 2026 — NeuronBeach: the AIS as a wave machine
 
 **[Genealogy wall chapter](https://anttiluode.github.io/Genealogy/#nov4-neuronbeach)** · **[Single neuron](https://anttiluode.github.io/NeuronBeach/)** · **[Six-neuron network](https://anttiluode.github.io/NeuronBeach/network.html)** · [Source repository](https://github.com/anttiluode/NeuronBeach) · [Source-linked review](docs/reviews/2026-11-04-neuronbeach-from-coast-to-neuron.md) · [Curated lineage pass](data/passes/november-4-neuronbeach-neuron-coast.json).
