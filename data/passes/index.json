@@ -526,5 +526,9 @@
   {
     "path": "november-4-neuronbeach-neuron-coast.json",
     "enabled": true
+  },
+  {
+    "path": "november-4-environments-index-and-emergent-geometry.json",
+    "enabled": true
   }
 ]
