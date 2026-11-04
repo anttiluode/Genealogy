@@ -1749,6 +1749,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "Emergence3D",
+    "url": "https://github.com/anttiluode/Emergence3D",
+    "default_branch": "main",
+    "size": 2934,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-11-04T09:10:06Z",
+    "updated_at": "2026-11-04T12:14:28Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "EmergenceAstra",
     "url": "https://github.com/anttiluode/EmergenceAstra",
     "default_branch": "main",
@@ -1757,6 +1768,17 @@
     "description": "Astra",
     "created_at": "2026-10-28T04:49:04Z",
     "updated_at": "2026-10-28T08:24:26Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "EmergenceNoSpace",
+    "url": "https://github.com/anttiluode/EmergenceNoSpace",
+    "default_branch": "main",
+    "size": 48,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-11-04T09:11:55Z",
+    "updated_at": "2026-11-04T09:33:11Z",
     "inventory_status": "reviewed"
   },
   {
@@ -4595,6 +4617,17 @@
     "description": "Sol thinking repo. ",
     "created_at": "2026-09-20T05:12:58Z",
     "updated_at": "2026-09-20T06:23:29Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "SelfIndexingBeach",
+    "url": "https://github.com/anttiluode/SelfIndexingBeach",
+    "default_branch": "main",
+    "size": 46,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-11-04T07:17:40Z",
+    "updated_at": "2026-11-04T07:35:33Z",
     "inventory_status": "reviewed"
   },
   {
