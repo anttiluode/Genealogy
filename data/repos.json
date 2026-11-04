@@ -608,7 +608,7 @@
     "name": "BrahClaude",
     "url": "https://github.com/anttiluode/BrahClaude",
     "default_branch": "main",
-    "size": 564,
+    "size": 579,
     "visibility": "public",
     "description": "Opus 55 - back to geometric neuron",
     "created_at": "2026-11-03T08:04:42Z",
@@ -1279,11 +1279,11 @@
     "name": "ComputingBeachClaude",
     "url": "https://github.com/anttiluode/ComputingBeachClaude",
     "default_branch": "main",
-    "size": 650,
+    "size": 901,
     "visibility": "public",
     "description": "Opus 55 ",
     "created_at": "2026-11-02T06:32:01Z",
-    "updated_at": "2026-11-02T15:18:32Z",
+    "updated_at": "2026-11-03T18:25:49Z",
     "inventory_status": "reviewed"
   },
   {
@@ -2159,11 +2159,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 1612,
+    "size": 2195,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-11-03T14:52:17Z",
+    "updated_at": "2026-11-04T05:24:38Z",
     "inventory_status": "unread"
   },
   {
@@ -3594,6 +3594,17 @@
     "description": "Hassenstein–Reichardt · Koopman Angular Momentum - motion detection. Live demo",
     "created_at": "2026-06-09T11:53:31Z",
     "updated_at": "2026-06-09T12:34:25Z",
+    "inventory_status": "unread"
+  },
+  {
+    "name": "NeuronBeach",
+    "url": "https://github.com/anttiluode/NeuronBeach",
+    "default_branch": "main",
+    "size": 59,
+    "visibility": "public",
+    "description": "Opus 55",
+    "created_at": "2026-11-03T19:16:50Z",
+    "updated_at": "2026-11-04T04:50:48Z",
     "inventory_status": "unread"
   },
   {
@@ -5899,11 +5910,11 @@
     "name": "UlamInterlace",
     "url": "https://github.com/anttiluode/UlamInterlace",
     "default_branch": "main",
-    "size": 4784,
+    "size": 4822,
     "visibility": "public",
     "description": "Opus 55",
     "created_at": "2026-11-02T19:16:37Z",
-    "updated_at": "2026-11-03T06:52:20Z",
+    "updated_at": "2026-11-03T16:16:49Z",
     "inventory_status": "reviewed"
   },
   {
