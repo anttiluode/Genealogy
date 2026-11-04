@@ -759,5 +759,17 @@
   },
   "nov3-brahclaude-temporal-route-gates": {
     "nov3-ping-read-backaction": "supports"
+  },
+  "nov4-self-indexing-next-echo": {
+    "nov4-index-as-observable-response": "supports",
+    "nov4-structure-not-yet-prediction": "limits"
+  },
+  "nov4-nospace-finite-graph-dimension-null": {
+    "nov4-geometry-is-a-controlled-hypothesis": "limits",
+    "nov4-structure-not-yet-prediction": "limits"
+  },
+  "nov4-emergence3d-living-depth-layer": {
+    "nov4-geometry-is-a-controlled-hypothesis": "documents",
+    "nov4-structure-not-yet-prediction": "limits"
   }
 }
