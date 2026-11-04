@@ -522,5 +522,9 @@
   {
     "path": "november-3-brah-ping-and-route-memory.json",
     "enabled": true
+  },
+  {
+    "path": "november-4-neuronbeach-neuron-coast.json",
+    "enabled": true
   }
 ]
