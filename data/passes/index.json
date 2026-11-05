@@ -530,5 +530,9 @@
   {
     "path": "november-4-environments-index-and-emergent-geometry.json",
     "enabled": true
+  },
+  {
+    "path": "november-5-vines-chains-and-garden-worlds.json",
+    "enabled": true
   }
 ]
