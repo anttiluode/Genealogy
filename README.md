@@ -8,6 +8,18 @@ The central premise is that hundreds of repositories are not hundreds of indepen
 
 https://anttiluode.github.io/Genealogy/
 
+### November 5, 2026 — Vines, chains, and three garden worlds
+
+**[Genealogy wall chapter](https://anttiluode.github.io/Genealogy/#nov5-vines-chains)** · [Curated pass](data/passes/november-5-vines-chains-and-garden-worlds.json) · [Evidence and lineage review](docs/reviews/2026-11-05-vines-borrowed-support-and-game-worlds.md) · [Emergence3DSol](https://github.com/anttiluode/Emergence3DSol) · [Köynnös (live garden)](https://anttiluode.github.io/Koynnos/) · [PsychedelicGarden](https://github.com/anttiluode/PsychedelicGarden).
+
+**584 → 587** distinct repos in the census, three reviewed nodes, three typed lineage/convergence links and two shared motifs:
+
+- **Emergence3DSol:** a direct extension of Emergence3D. Its inherited genomes can express contact-sensitive adhesion and phase-guided support search in a synthetic 3D ecology; rods, no-grip, no-twine and severing conditions make the proposal testable. **No long-run adaptation advantage is established.**
+- **Köynnös:** a playable browser garden of support-seeking vine tips, load-bearing chains, remote pin failure, fig roots, vine-on-vine structure and crystals rising from a writable field. The visuals and controls are real software; the mechanics are stylized and **not a validated evolutionary result**.
+- **PsychedelicGarden:** a procedural WebGL2 game from the AnttisBrain2 Descent engine. SDF vines descend along moon chains; webcam or movement grows a garden to reveal a key and open the next room. Headless logic is reported working; real-GPU performance remains untested.
+
+**Open question:** how could a locally sensing grower account for the remote and cumulative failure cost of a shared support? The three routes are intentionally not merged into a single AI or biological claim.
+
 ### November 4, 2026 — Three new worlds: a readable beach, a coordinate-free graph, and 3D ecology
 
 **[Genealogy wall chapter](https://anttiluode.github.io/Genealogy/#nov4-three-worlds)** · [Curated evidence pass](data/passes/november-4-environments-index-and-emergent-geometry.json) · [Source-linked review](docs/reviews/2026-11-04-three-worlds-prediction-and-geometry.md) · [SelfIndexingBeach](https://github.com/anttiluode/SelfIndexingBeach) · [EmergenceNoSpace](https://github.com/anttiluode/EmergenceNoSpace) · [Emergence3D](https://github.com/anttiluode/Emergence3D).
