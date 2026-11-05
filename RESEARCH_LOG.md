@@ -1,5 +1,17 @@
 # Genealogy research log
 
+## 2026-11-05 — Vine worlds: support economy, shared pin, game progression
+
+Added **Emergence3DSol**, **Koynnos** and **PsychedelicGarden** as reviewed atlas nodes, increasing the distinct-repository census **584 → 587**, alongside three typed edges, two conceptual motifs, a wall chapter, a source-linked review and a test.
+
+**Emergence3DSol** explicitly inherits the original Emergence3D voxel ecology and adds inert rods, contact-sensitive grip, a phase-guided search bias, synthetic altitude stress relief and controlled comparison arms including no grip, no twine, no rods and rod severing. No multi-seed ecological advantage is demonstrated in the README. **Köynnös** is an independent Three.js browser garden in which vines probe and climb structures, their mass loads chain pins, fig roots can respond to distant loading, and a writable 2D field may generate crystals. These are interactive stylized rules, not a validated evolutionary or physical model. **PsychedelicGarden** is a game built on the AnttisBrain2 Descent WebGL2 raymarched rooms: motion promotes SDF-vine growth, releases a key and unlocks the next gate. Headless checks are reported; GPU performance is not established.
+
+**Inheritance boundary:** Emergence3D → Emergence3DSol is a documented implementation continuation; Köynnös explicitly relates itself to both Emergence3DSol and PsychedelicGarden, recorded as convergence, not code forks. The older AnttisBrain2 Descent engine is cited in prose but not given a dangling graph edge.
+
+**Open test:** can locally advantageous attachment avoid overloading a hidden shared pin under matched growth and energy budgets? Hold rod/shading conditions fixed and compare blind versus pin-aware roots, no-grip, no-twine and support severing. The game branch asks a separate question: whether the growth→key→gate loop feels coherent and performs on real hardware.
+
+[Wall](https://anttiluode.github.io/Genealogy/#nov5-vines-chains) · [Review](docs/reviews/2026-11-05-vines-borrowed-support-and-game-worlds.md) · [Pass](data/passes/november-5-vines-chains-and-garden-worlds.json).
+
 ## 2026-11-04 — Three reviewed arrivals: observer, relational geometry and 3D ecology
 
 Added **SelfIndexingBeach**, **EmergenceNoSpace** and **Emergence3D** to the inventory (581 → 584 distinct repositories), a three-node curated pass with six deliberately typed lineage/convergence edges and three motifs, a wall chapter, one source-linked research review, three evidence receipts and a falsifiable predictive-function question. The already inventoried **Genealogy** repository is not counted a second time; its commits document curation.
