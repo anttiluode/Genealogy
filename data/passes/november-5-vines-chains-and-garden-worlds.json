@@ -1,0 +1,135 @@
+{
+  "id": "november-5-vines-chains-and-garden-worlds",
+  "title": "November 5 — vines, borrowed support and procedural garden worlds",
+  "reviewed_at": "2026-11-05",
+  "order": 178,
+  "summary": "Three distinct implementations turn local growth and external support into an evolutionary test, a playable load-bearing garden and a room-based visual game. Emergence3DSol inherits the supplied 3D ecology and adds support-grip interventions; Koynnos models growing tips, chains/pins, load-responsive fig roots and a writable crystal field; PsychedelicGarden extends the AnttisBrain2 Descent room engine with vine-caged keys and motion-fed growth. They share imagery and causal questions but not proven learning or common code.",
+  "nodes": [
+    {
+      "id": "Emergence3DSol",
+      "url": "https://github.com/anttiluode/Emergence3DSol",
+      "family": "artificial-life",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Controlled extension of Emergence3D's fixed-transformer, heritable-genome voxel ecology. Adds inert vertical rods, rod/foreign-body proximity sensing, selectable grip that discounts synthetic altitude stress, inherited phase-guided horizontal search and rod-severing interventions.",
+      "survived": "Implements matched four-arm vine/grip-without-twine/no-grip/no-rods comparisons, a sever-at step intervention, grip and high-cell occupancy diagnostics, save/load, and source-reported CPU integration tests. Rod shading and physical obstruction are held constant across the three primary adhesion comparisons.",
+      "killed": "No committed multi-seed outcome in README demonstrates evolutionary benefit from gripping or twining. Circumnutation and attachment incentives are designed into the world; support is an energy discount, not simulated forces, weight-bearing chains, learned network weights or independently evolved biological strategy.",
+      "evidence": "https://github.com/anttiluode/Emergence3DSol/blob/main/README.md",
+      "tags": [
+        "2026-11-05",
+        "emergence3d",
+        "inherited-genomes",
+        "scaffold",
+        "grip",
+        "circumnutation",
+        "rod-severing",
+        "ablation",
+        "synthetic-stress",
+        "source-reported-tests"
+      ],
+      "era": "November 5: growth, borrowed support and interactive worlds",
+      "era_order": 178
+    },
+    {
+      "id": "Koynnos",
+      "url": "https://github.com/anttiluode/Koynnos",
+      "family": "artificial-life",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "A Three.js browser garden with sweeping vine probes, attached growth, shared hanging chains with cumulative pin loads, fig-like descending roots that may unload pins, woody vine-on-vine supports, and a writable 2D crystal field underneath a 3D scene.",
+      "survived": "Playable published WebGL instrument with controls for planting vines and figs, hanging chains, crystal events, following a growing tip, altering growth rules, observing pin load bars, and seeded replay through URL fragments. Implements support dependency and local-versus-shared cost as observable toy rules.",
+      "killed": "No controlled, multi-seed evidence that circumnutation, root rescue or growing on other vines is adaptively advantageous. The pin/chain physics and writable crystal field are stylized; the system is neither trained AI nor a biological, mechanical or evolutionary validation.",
+      "evidence": "https://github.com/anttiluode/Koynnos/blob/main/README.md",
+      "tags": [
+        "2026-11-05",
+        "interactive-garden",
+        "chain-load",
+        "shared-support",
+        "fig-root",
+        "circumnutation",
+        "vine-on-vine",
+        "crystal-field",
+        "three-js",
+        "browser-tool"
+      ],
+      "era": "November 5: growth, borrowed support and interactive worlds",
+      "era_order": 178
+    },
+    {
+      "id": "PsychedelicGarden",
+      "url": "https://github.com/anttiluode/PsychedelicGarden",
+      "family": "creative-worlds",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Browser WebGL2 raymarched game built from the AnttisBrain2 Descent engine's hashed rooms, mirror moons and webcam-reactive boundaries. Chains suspend moons; analytic SDF vines grow toward them; room-level motion advances a vine cage guarding the key moon and opens the exit seal.",
+      "survived": "Repository describes a complete key/cage/gate/next-room gameplay loop with WASD, vertical flight, webcam-or-navigation growth input and SDF-rendered chained moons. README reports a headless shader-compile and game-logic test.",
+      "killed": "No measured real-GPU frame rate, player usability or long-run game performance. Reported headless checks do not establish interactive browser performance; growth is an authored game mechanic, not evolved biological or AI learning.",
+      "evidence": "https://github.com/anttiluode/PsychedelicGarden/blob/main/README.md",
+      "tags": [
+        "2026-11-05",
+        "anttisbrain2-descent",
+        "raymarch",
+        "procedural-rooms",
+        "analytic-sdf",
+        "webcam-reactive",
+        "chain",
+        "vine-key",
+        "browser-game",
+        "headless-check"
+      ],
+      "era": "November 5: growth, borrowed support and interactive worlds",
+      "era_order": 178
+    }
+  ],
+  "edges": [
+    {
+      "source": "Emergence3D",
+      "target": "Emergence3DSol",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Emergence3DSol explicitly identifies itself as a controlled extension of the Emergence3D voxel world and preserves the prior genome/ecology loop while adding rods, contact sensing, support and controls.",
+      "evidence": "https://github.com/anttiluode/Emergence3DSol/blob/main/README.md"
+    },
+    {
+      "source": "Emergence3DSol",
+      "target": "Koynnos",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Koynnos explicitly cites Emergence3DSol as a related but independent implementation: both examine support-seeking vine growth, but only Emergence3DSol frames inherited selection and quantitative ablations.",
+      "evidence": "https://github.com/anttiluode/Koynnos/blob/main/README.md"
+    },
+    {
+      "source": "PsychedelicGarden",
+      "target": "Koynnos",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Koynnos explicitly cites PsychedelicGarden as related in spirit; both stage vines and chains in interactive 3D scenes, but one is a key-and-gate raymarched game and the other a support/load toy garden.",
+      "evidence": "https://github.com/anttiluode/Koynnos/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov5-borrowed-support-hides-shared-cost",
+      "title": "Local contact can help one tip while accumulating cost elsewhere",
+      "description": "Grip in Emergence3DSol discounts a local synthetic stress; Koynnos makes the shared chain pin and its capacity visible, with rescue by grounded fig roots. The two are distinct representations of dependency and need intervention controls before transferring conclusions.",
+      "nodes": [
+        "Emergence3D",
+        "Emergence3DSol",
+        "Koynnos"
+      ]
+    },
+    {
+      "id": "nov5-growth-as-world-and-gameplay",
+      "title": "Growth can be an ecological hypothesis, a readable instrument or a game gate",
+      "description": "One branch tests an evolutionary support advantage, one offers interactive chain/vine exploration, and one turns motion into rule-governed progression through procedural rooms. Similar 3D plant imagery is not evidence of the same solver or learned algorithm.",
+      "nodes": [
+        "Emergence3DSol",
+        "Koynnos",
+        "PsychedelicGarden"
+      ]
+    }
+  ]
+}
