@@ -1947,6 +1947,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "FourierFlower",
+    "url": "https://github.com/anttiluode/FourierFlower",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-11-06T04:26:12Z",
+    "updated_at": "2026-11-06T04:50:09Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "fractal_forest",
     "url": "https://github.com/anttiluode/fractal_forest",
     "default_branch": "main",
@@ -5146,6 +5157,28 @@
     "created_at": "2026-08-11T05:30:13Z",
     "updated_at": "2026-08-11T05:30:21Z",
     "inventory_status": "unread"
+  },
+  {
+    "name": "SolAndTheBeanStalk",
+    "url": "https://github.com/anttiluode/SolAndTheBeanStalk",
+    "default_branch": "main",
+    "size": 1200,
+    "visibility": "public",
+    "description": "Sol makes a game",
+    "created_at": "2026-11-05T16:36:34Z",
+    "updated_at": "2026-11-05T17:34:51Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "SolAndTheBeanstalk2",
+    "url": "https://github.com/anttiluode/SolAndTheBeanstalk2",
+    "default_branch": "main",
+    "size": 187,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-11-05T17:50:45Z",
+    "updated_at": "2026-11-05T18:28:55Z",
+    "inventory_status": "reviewed"
   },
   {
     "name": "SolsBaby",

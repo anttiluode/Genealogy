@@ -1,5 +1,17 @@
 # Genealogy research log
 
+## 2026-11-06 — The Beanstalk games and FourierFlower
+
+Added **SolAndTheBeanStalk**, **SolAndTheBeanstalk2** and **FourierFlower** to the inventory and curated wall: **587 → 590** unique repositories. Emergence3DSol, Köynnös and PsychedelicGarden were already indexed in the November 5 pass and are not duplicated.
+
+The first Beanstalk is a five-chapter third-person WebGL2 game with seeded crossings, a distant pin-load dilemma and root/release endings. Its README explicitly names Köynnös as a game-mechanic influence, not as reused physics or code. The second game has four rooms and makes shoot/root/follow actions immediate, with recoverable overload and audible/visual strain. It **directly inherits PsychedelicGarden's raymarch shader**, not the first game's triangle renderer, while redesigning the first game's paced gameplay. Source-reported rule checks exist; normal-GPU performance remains unverified.
+
+FourierFlower is a separate mathematical-art tool using harmonic epicycles to draw 3D blooms. There is no evidence-backed direct code-descent connection to the vine-game graph, and no claim about learning or biological emergence.
+
+Four documented types of link: Köynnös → first Beanstalk **extracts**; PsychedelicGarden → first Beanstalk **converges**; PsychedelicGarden → second Beanstalk **inherits**; first → second Beanstalk **corrects**. The [source-linked review](docs/reviews/2026-11-06-beanstalk-games-and-fourier-flower.md) explains each limit.
+
+[Live wall](https://anttiluode.github.io/Genealogy/#nov6-beanstalk-fourier) · [Curated pass](data/passes/november-6-beanstalk-games-and-fourier-flower.json)
+
 ## 2026-11-05 — Vine worlds: support economy, shared pin, game progression
 
 Added **Emergence3DSol**, **Koynnos** and **PsychedelicGarden** as reviewed atlas nodes, increasing the distinct-repository census **584 → 587**, alongside three typed edges, two conceptual motifs, a wall chapter, a source-linked review and a test.

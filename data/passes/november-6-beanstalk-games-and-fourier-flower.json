@@ -1,0 +1,134 @@
+{
+  "id": "november-6-beanstalk-games-and-fourier-flower",
+  "title": "November 5–6 — two Beanstalk games and FourierFlower",
+  "reviewed_at": "2026-11-06",
+  "order": 179,
+  "summary": "The vine support economy becomes authored game choices in the first Beanstalk and immediate vine shooting in its successor. The second game directly inherits the PsychedelicGarden shader, not the first game's triangle renderer. FourierFlower is a separate interactive harmonic-geometry artwork, not an evolved or learned plant.",
+  "nodes": [
+    {
+      "id": "SolAndTheBeanStalk",
+      "family": "creative-worlds",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Five-chapter, third-person 3D WebGL2 game. Seeded floating islands, bridge vines, root/pulse/flower seeds, distant chain-pin load, and two rooted-or-released endings.",
+      "survived": "Implements reproducible world seeding, story and inventory checks, follow-vine traversal, autosave, touch controls and source-reported Node progression tests; README credits Köynnös and PsychedelicGarden as inspirations.",
+      "killed": "The pin load is authored gameplay, not structural mechanics or evolved behavior. Browser GPU performance and broad usability were not fully established; its triangle-based WebGL2 renderer is not the PsychedelicGarden shader.",
+      "tags": [
+        "2026-11-05",
+        "webgl2",
+        "five-chapters",
+        "borrowed-support",
+        "root-choice",
+        "seeded-world",
+        "source-reported-tests"
+      ],
+      "url": "https://github.com/anttiluode/SolAndTheBeanStalk",
+      "evidence": "https://github.com/anttiluode/SolAndTheBeanStalk/blob/main/README.md",
+      "era": "November 5–6: beanstalk games and Fourier geometry",
+      "era_order": 179
+    },
+    {
+      "id": "SolAndTheBeanstalk2",
+      "family": "creative-worlds",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Four-room vine-shooting game directly derived from PsychedelicGarden's raymarched engine, with immediate shoot/root/follow verbs, pin loading, recoverable snaps and two endings.",
+      "survived": "README documents immediate seed shots, chain sag/red strain/pitch feedback, local seeded saves, touch controls and source-reported deterministic game rules/syntax tests; it explicitly identifies PsychedelicGarden as the shader ancestor.",
+      "killed": "The full raymarch shader was not successfully GPU-playtested; normal-device performance is unverified. The load is a simplified game rule, not physical fracture or a validated endless world.",
+      "tags": [
+        "2026-11-05",
+        "raymarch",
+        "four-chapters",
+        "gameplay-correction",
+        "shader-inheritance",
+        "chain-load",
+        "source-reported-tests"
+      ],
+      "url": "https://github.com/anttiluode/SolAndTheBeanstalk2",
+      "evidence": "https://github.com/anttiluode/SolAndTheBeanstalk2/blob/main/README.md",
+      "era": "November 5–6: beanstalk games and Fourier geometry",
+      "era_order": 179
+    },
+    {
+      "id": "FourierFlower",
+      "family": "creative-worlds",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Standalone interactive 3D mathematical flower garden: Fourier epicycles from summed complex rotating exponentials, arranged along a logarithmic spiral.",
+      "survived": "README describes harmonic/petal/depth/speed controls, orbit and zoom, particles, screenshots, and WebGL with a separate software-canvas fallback; no runtime server or external build dependency.",
+      "killed": "Procedural harmonic flowers are not biological growth, learned vines or a new mathematical claim about pi. The interpretation is not a reproduction of the reference artist's source code.",
+      "tags": [
+        "2026-11-06",
+        "fourier",
+        "epicycles",
+        "logarithmic-spiral",
+        "interactive-3d",
+        "procedural-art",
+        "no-server"
+      ],
+      "url": "https://github.com/anttiluode/FourierFlower",
+      "evidence": "https://github.com/anttiluode/FourierFlower/blob/main/README.md",
+      "era": "November 5–6: beanstalk games and Fourier geometry",
+      "era_order": 179
+    }
+  ],
+  "edges": [
+    {
+      "source": "Koynnos",
+      "target": "SolAndTheBeanStalk",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "First game's README credits Köynnös's vine and distant-pin mechanics; conceptual gameplay transfer, not code inheritance.",
+      "evidence": "https://github.com/anttiluode/SolAndTheBeanStalk/blob/main/README.md"
+    },
+    {
+      "source": "PsychedelicGarden",
+      "target": "SolAndTheBeanStalk",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "First game names PsychedelicGarden as a visual/gameplay influence but uses a separate WebGL implementation.",
+      "evidence": "https://github.com/anttiluode/SolAndTheBeanStalk/blob/main/README.md"
+    },
+    {
+      "source": "PsychedelicGarden",
+      "target": "SolAndTheBeanstalk2",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Second game's README explicitly identifies the PsychedelicGarden WebGL2 raymarch shader as its renderer ancestor.",
+      "evidence": "https://github.com/anttiluode/SolAndTheBeanstalk2/blob/main/README.md"
+    },
+    {
+      "source": "SolAndTheBeanStalk",
+      "target": "SolAndTheBeanstalk2",
+      "type": "corrects",
+      "confidence": "high",
+      "why": "Second game's immediate shoot/root/follow play loop addresses the first game's slower grow-then-cross pacing. Design revision, not a claim of mesh-code reuse.",
+      "evidence": "https://github.com/anttiluode/SolAndTheBeanstalk2/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov6-borrowed-support-as-gameplay",
+      "title": "Local gains can overload distant supports",
+      "description": "Köynnös's cumulative pin-load motif becomes a visible, authored root-versus-release dilemma in two distinct Beanstalk games. No mechanical or evolutionary inference follows from this transfer.",
+      "nodes": [
+        "Koynnos",
+        "SolAndTheBeanStalk",
+        "SolAndTheBeanstalk2"
+      ]
+    },
+    {
+      "id": "nov6-geometry-is-not-adaptation",
+      "title": "Generated plant forms are not automatically biological or learned",
+      "description": "PsychedelicGarden and Beanstalk 2 render SDF vines, while FourierFlower generates epicycle curves. All are designed graphics; this resemblance alone does not establish a common solver or adaptive mechanism.",
+      "nodes": [
+        "PsychedelicGarden",
+        "SolAndTheBeanstalk2",
+        "FourierFlower"
+      ]
+    }
+  ]
+}

@@ -534,5 +534,9 @@
   {
     "path": "november-5-vines-chains-and-garden-worlds.json",
     "enabled": true
+  },
+  {
+    "path": "november-6-beanstalk-games-and-fourier-flower.json",
+    "enabled": true
   }
 ]

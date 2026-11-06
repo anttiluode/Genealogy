@@ -8,6 +8,18 @@ The central premise is that hundreds of repositories are not hundreds of indepen
 
 https://anttiluode.github.io/Genealogy/
 
+### November 5–6, 2026 — two Beanstalk games and FourierFlower
+
+**[Live wall](https://anttiluode.github.io/Genealogy/#nov6-beanstalk-fourier)** · [Curated pass](data/passes/november-6-beanstalk-games-and-fourier-flower.json) · [Source-linked review](docs/reviews/2026-11-06-beanstalk-games-and-fourier-flower.md) · [First Beanstalk](https://github.com/anttiluode/SolAndTheBeanStalk) · [Second Beanstalk](https://github.com/anttiluode/SolAndTheBeanstalk2) · [FourierFlower](https://github.com/anttiluode/FourierFlower).
+
+The census grows **587 → 590** distinct repos: three newly reviewed nodes and four typed edges. The existing November 5 pass already covers Emergence3DSol, Köynnös and PsychedelicGarden.
+
+- **SolAndTheBeanStalk** (Nov 5): five-chapter third-person 3D game of planted bridges, chains, root choices and a giant. Köynnös's shared-pin burden is carried over as a **gameplay idea**, not inherited simulation code.
+- **SolAndTheBeanstalk2** (Nov 5): a four-room immediate shoot/root/follow vine game with visible pin strain. The **renderer actually descends from PsychedelicGarden**; the first game's slower growing-bridge mechanic is revised, not its mesh code reused. Full GPU playtesting of the normal raymarch shader remains incomplete.
+- **FourierFlower** (Nov 6): standalone interactive mathematical 3D flowers drawn from rotating Fourier harmonics on a logarithmic spiral. It has no supported direct lineage edge to the vine games; procedural flowers are not biological evolution.
+
+**Key distinction:** a reused shader, an extracted game mechanic, and a visually similar mathematical artwork are not the same kind of inheritance. The new [review](docs/reviews/2026-11-06-beanstalk-games-and-fourier-flower.md) records the evidence boundaries.
+
 ### November 5, 2026 — Vines, chains, and three garden worlds
 
 **[Genealogy wall chapter](https://anttiluode.github.io/Genealogy/#nov5-vines-chains)** · [Curated pass](data/passes/november-5-vines-chains-and-garden-worlds.json) · [Evidence and lineage review](docs/reviews/2026-11-05-vines-borrowed-support-and-game-worlds.md) · [Emergence3DSol](https://github.com/anttiluode/Emergence3DSol) · [Köynnös (live garden)](https://anttiluode.github.io/Koynnos/) · [PsychedelicGarden](https://github.com/anttiluode/PsychedelicGarden).
