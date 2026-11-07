@@ -1,0 +1,238 @@
+{
+  "id": "november-7-written-memory-phase-worlds-and-story",
+  "title": "November 6–7 — written memory, phase worlds, sound and story",
+  "reviewed_at": "2026-11-07",
+  "order": 180,
+  "summary": "Seven missing projects added without duplicating Beanstalk 2 or FourierFlower. Keep measured order memory, hidden-mode access, conventional prediction, sampled neural worlds, creative DSP and fiction distinct.",
+  "nodes": [
+    {
+      "id": "Story2",
+      "family": "meta-narrative",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "The Distance Between Houses: a complete fictional political thriller, 24 chapters plus an epilogue, with a static reader and local audiobook/illustrated-film production tools.",
+      "survived": "The repository contains the prose, chapter manifest, Piper narration pipeline and Film Lab with graphic, local Diffusers and supplied-image modes; whole-book batch rendering can resume and join chapter videos.",
+      "killed": "Published prose and production software do not establish that generated narration or a finished film is included. The political scenario is fiction; no documented code ancestry from Story is asserted.",
+      "tags": [
+        "2026-11-07",
+        "fiction",
+        "local-tts",
+        "film-lab",
+        "static-reader"
+      ],
+      "url": "https://github.com/anttiluode/Story2",
+      "evidence": "https://github.com/anttiluode/Story2/blob/main/README.md",
+      "era": "November 6–7: written memory, phase worlds and creative tools",
+      "era_order": 180
+    },
+    {
+      "id": "ZetaDreamer3D",
+      "family": "creative-worlds",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Walk inside a sampled trained complex image field Z(x,y,t), preserving the original 32 prime-frequency arms and three complex hidden layers of width 128.",
+      "survived": "The exporter stores RGB and complex field samples in standalone WebGL2 HTML. A 96-cubed default, narrower t slab and tetrahedral complex-zero filament extraction address coarse, foggy exports; an upgrader repairs existing HTML viewers.",
+      "killed": "The browser samples textures rather than executing the full MLP at each ray step. Old quantized volumes cannot recover discarded detail; synthetic example checkpoints are not the user’s trained images. Riemann-zero markers and visual structure do not establish zeta solutions or an AdS dual.",
+      "tags": [
+        "2026-11-07",
+        "complex-neural-field",
+        "sampled-volume",
+        "vortex-lines",
+        "offline-html"
+      ],
+      "url": "https://github.com/anttiluode/ZetaDreamer3D",
+      "evidence": "https://github.com/anttiluode/ZetaDreamer3D/blob/main/README.md",
+      "era": "November 6–7: written memory, phase worlds and creative tools",
+      "era_order": 180
+    },
+    {
+      "id": "ZetaDreamer3DV2",
+      "family": "creative-worlds",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Phase Observatory extends ZetaDreamer3D with nine views, including interference residue, phase current, a harmonic reference and learned-minus-harmonic discrepancy.",
+      "survived": "The full original complex network is retained. The reference solves Laplace’s equation between two sampled complex end planes with Neumann lateral walls, making the comparison assumptions explicit.",
+      "killed": "The harmonic field is a chosen reference, not ground-truth reconstruction. Image magnitudes do not identify phase, two planes do not identify the learned interior, and sampled filaments are not physical singularities or an AdS/CFT result.",
+      "tags": [
+        "2026-11-07",
+        "harmonic-control",
+        "phase-current",
+        "interference",
+        "neural-field"
+      ],
+      "url": "https://github.com/anttiluode/ZetaDreamer3DV2",
+      "evidence": "https://github.com/anttiluode/ZetaDreamer3DV2/blob/main/README.md",
+      "era": "November 6–7: written memory, phase worlds and creative tools",
+      "era_order": 180
+    },
+    {
+      "id": "FridayLolSol",
+      "family": "creative-dsp",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Residue Orchestra is a local browser instrument for nonlinear interactions among 2–12 audio tracks: pair products, delayed antisymmetric products, envelope imprints and triple products.",
+      "survived": "An embedded AudioWorklet, synthetic demo, pair-selection matrix, independent start/in-point controls and live recording turn waveform relationships into an immediately playable DSP tool.",
+      "killed": "These are designed time-domain transformations inspired by cross-terms, not inverse Wigner–Ville synthesis, stem separation or quantum music. Tempo matching is manual and recording is live browser-compressed audio.",
+      "tags": [
+        "2026-11-06",
+        "web-audio",
+        "nonlinear-dsp",
+        "audio-worklet",
+        "local-audio"
+      ],
+      "url": "https://github.com/anttiluode/FridayLolSol",
+      "evidence": "https://github.com/anttiluode/FridayLolSol/blob/main/README.md",
+      "era": "November 6–7: written memory, phase worlds and creative tools",
+      "era_order": 180
+    },
+    {
+      "id": "GhostWorld",
+      "family": "perception",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Offline blind-prediction lab: observe two marked moving objects, disconnect the sensor, extrapolate an internal state estimate and score predictions before observations return.",
+      "survived": "The documented deterministic core separates hidden World from Belief. Hold, linear and three constant-turn hypotheses can be compared; replay preserves predictions made at the time.",
+      "killed": "The predictor is conventional state estimation, not a trained neural model; trajectory spread is not calibrated uncertainty. Its writable eight-oscillator graph is a separate instrument and does not currently steer predictions or establish visual identity memory.",
+      "tags": [
+        "2026-11-06",
+        "blackout",
+        "pre-reveal-scoring",
+        "no-leak",
+        "constant-turn",
+        "separate-wave-graph"
+      ],
+      "url": "https://github.com/anttiluode/GhostWorld",
+      "evidence": "https://github.com/anttiluode/GhostWorld/blob/main/README.md",
+      "era": "November 6–7: written memory, phase worlds and creative tools",
+      "era_order": 180
+    },
+    {
+      "id": "SliderV3",
+      "family": "resonance-memory",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Eight damped oscillators write 16 graph edges from measured wave exposure; AB and BA histories leave structural differences that a later non-writing probe can read after fast-state reset.",
+      "survived": "Source-reported five-seed blind decoding and learning-off/erase/fixed-propagation controls support partial synthetic order memory. A separate 16-mutable-scalar comparison measures wave recall against recurrent and trace baselines.",
+      "killed": "Dense ESN16 is stronger at short-to-medium suffix lengths; all models approach chance by 16 further writes. Scalar slots and readout count were matched, but transducers, fixed coefficients and computation were not. No practical, energy or capacity advantage is established; SliderV3 is distinct from the existing Slider3 repository.",
+      "tags": [
+        "2026-11-06",
+        "wave-written-weights",
+        "non-writing-probe",
+        "order-memory",
+        "matched-baselines"
+      ],
+      "url": "https://github.com/anttiluode/SliderV3",
+      "evidence": "https://github.com/anttiluode/SliderV3/blob/main/README.md",
+      "era": "November 6–7: written memory, phase worlds and creative tools",
+      "era_order": 180
+    },
+    {
+      "id": "Friday",
+      "family": "field-computing",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A 30-node magnetic graph has 15 modes dark at its five connecting nodes. Changing outer phases preserves this hidden subspace; opening an internal phase makes those modes observable.",
+      "survived": "The source gives an analytic dark-mode basis and numerical observability audit. Connecting-node rank rises from 15/30 to 30/30 after an internal phase offset, while the weakest observation singular value remains small for small offsets.",
+      "killed": "Full rank is not robust retrieval. Rational outer phases can match the golden-angle visibility result at interior sensors. Ideal complex-amplitude/unitary dynamics do not establish durable memory under dissipation, a write-retain-read device, or a new theorem about pi.",
+      "tags": [
+        "2026-11-06",
+        "dark-modes",
+        "observability",
+        "internal-phase",
+        "access-conditioning"
+      ],
+      "url": "https://github.com/anttiluode/Friday",
+      "evidence": "https://github.com/anttiluode/Friday/blob/main/README.md",
+      "era": "November 6–7: written memory, phase worlds and creative tools",
+      "era_order": 180
+    }
+  ],
+  "edges": [
+    {
+      "source": "ZetaDreamer3D",
+      "target": "ZetaDreamer3DV2",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "V2 explicitly retains the original complex network, checkpoint/export workflow and sampled-field viewer, adding phase and harmonic-reference modes.",
+      "evidence": "https://github.com/anttiluode/ZetaDreamer3DV2/blob/main/README.md"
+    },
+    {
+      "source": "Friday",
+      "target": "SliderV3",
+      "type": "converges",
+      "confidence": "high",
+      "why": "SliderV3 explicitly connects Friday’s probe-access question to history-written structure. This documents a shared question, not inherited code or demonstrated protected modes.",
+      "evidence": "https://github.com/anttiluode/SliderV3/blob/main/README.md"
+    },
+    {
+      "source": "SelfIndexingBeach",
+      "target": "SliderV3",
+      "type": "converges",
+      "confidence": "high",
+      "why": "SliderV3 names the writable wave medium and weak-probe experiments as related roots; the link is conceptual rather than verified code descent.",
+      "evidence": "https://github.com/anttiluode/SliderV3/blob/main/README.md"
+    },
+    {
+      "source": "ComputingBeachClaude",
+      "target": "SliderV3",
+      "type": "converges",
+      "confidence": "high",
+      "why": "SliderV3 names ComputingBeachClaude as a related writable-medium experiment. Separate synthetic mechanisms are retained.",
+      "evidence": "https://github.com/anttiluode/SliderV3/blob/main/README.md"
+    },
+    {
+      "source": "SliderV3",
+      "target": "GhostWorld",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "GhostWorld cites SliderV3’s phase/strain-written graph among its roots and implements a separate locally writable oscillator instrument; this is mechanism transfer, not a demonstrated forecasting improvement.",
+      "evidence": "https://github.com/anttiluode/GhostWorld/blob/main/README.md"
+    },
+    {
+      "source": "RoundAndRound",
+      "target": "GhostWorld",
+      "type": "converges",
+      "confidence": "high",
+      "why": "GhostWorld explicitly cites autonomous latent dynamics as a research root, while its current predictor remains a conventional constant-turn estimate.",
+      "evidence": "https://github.com/anttiluode/GhostWorld/blob/main/README.md"
+    },
+    {
+      "source": "SihtiResponseGraph",
+      "target": "GhostWorld",
+      "type": "converges",
+      "confidence": "high",
+      "why": "GhostWorld cites query-sensitive structural image memory as a root; a learned graph-to-forecast reader is still a proposed experiment.",
+      "evidence": "https://github.com/anttiluode/GhostWorld/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov7-written-state-and-readable-state",
+      "title": "Writing structure, accessing it and using it are separate tests",
+      "description": "Friday tests access to hidden modes; SliderV3 tests order written into edges; GhostWorld keeps its wave graph separate from the motion predictor. A connection between these questions is not yet an integrated memory system.",
+      "nodes": [
+        "Friday",
+        "SliderV3",
+        "GhostWorld",
+        "SelfIndexingBeach",
+        "ComputingBeachClaude"
+      ]
+    },
+    {
+      "id": "nov7-sampled-field-and-explicit-reference",
+      "title": "Inspect the learned field against a specified mathematical reference",
+      "description": "The Zeta viewers retain sampled complex information. V2 compares the learned interior to a harmonic extension under stated boundary assumptions; the discrepancy is not reconstruction error against a known physical interior.",
+      "nodes": [
+        "ZetaDreamer3D",
+        "ZetaDreamer3DV2"
+      ]
+    }
+  ]
+}

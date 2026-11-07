@@ -11926,5 +11926,102 @@
       "No repo-recorded multi-seed GPU results at review time"
     ],
     "source": "https://github.com/anttiluode/Emergence3D/blob/main/README.md"
+  },
+  {
+    "id": "friday-dark-mode-access",
+    "node": "Friday",
+    "claim": "An internal phase offset exposes the 15 connecting-node-dark modes; observability rank and robust readability remain different.",
+    "design": "Source-reported analytic basis and numerical observation-stack audit of one 30-node graph; not rerun for this atlas update.",
+    "result": "supports",
+    "motifs": [
+      "nov7-written-state-and-readable-state"
+    ],
+    "sample": {
+      "unit": "specified graph",
+      "count": 1
+    },
+    "metrics": [
+      {
+        "name": "connecting-node observable dimension, delta=0",
+        "value": 15
+      },
+      {
+        "name": "connecting-node observable dimension, delta=0.0001",
+        "value": 30
+      },
+      {
+        "name": "smallest normalized observation singular value, delta=0.0001",
+        "value": 7.25e-06
+      }
+    ],
+    "controls": [
+      "Original rational, golden and rational 1/11-turn outer phases",
+      "Connecting, interior and combined sensor placements",
+      "Internal phase opening sweep with 80 samples at spacing 0.37"
+    ],
+    "replication": "source-reported deterministic audit",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Ideal complex amplitudes and unitary dynamics",
+      "One toy graph; rank does not measure noisy retrieval",
+      "No demonstrated payload writing and retention"
+    ],
+    "source": "https://github.com/anttiluode/Friday/blob/main/README.md"
+  },
+  {
+    "id": "sliderv3-resource-matched-order-memory",
+    "node": "SliderV3",
+    "claim": "Wave-written order memory remains decodable, but the 16-state dense ESN wins at short-to-medium suffix lengths; no computational advantage is established.",
+    "design": "Source-reported five seeds, 48 training and 24 held-out matched pairs per seed; same mutable scalar slots, 128 scalar read samples and ridge decoder, with different transducers.",
+    "result": "mixed",
+    "motifs": [
+      "nov7-written-state-and-readable-state"
+    ],
+    "sample": {
+      "unit": "seed",
+      "count": 5
+    },
+    "metrics": [
+      {
+        "name": "single-read accuracy after 2 common writes (%)",
+        "treatment": 70.4,
+        "control": 100.0,
+        "comparison": "wave16 vs ESN16"
+      },
+      {
+        "name": "single-read accuracy after 4 common writes (%)",
+        "treatment": 71.7,
+        "control": 90.8,
+        "comparison": "wave16 vs ESN16"
+      },
+      {
+        "name": "single-read accuracy after 8 common writes (%)",
+        "treatment": 61.7,
+        "control": 59.6,
+        "comparison": "wave16 vs ESN16; small difference not established reliable"
+      },
+      {
+        "name": "single-read accuracy after 16 common writes (%)",
+        "treatment": 52.9,
+        "control": 50.4,
+        "comparison": "wave16 vs ESN16; both near chance"
+      }
+    ],
+    "controls": [
+      "16-state dense ESN, sparse recurrent ring and exponential trace bank",
+      "8- and 32-state ESNs and commutative bag-of-inputs null",
+      "Separate blind-read benchmark: learning disabled, erased weights and fixed propagation return to chance"
+    ],
+    "replication": "five source-reported seeded runs; not independently rerun for this atlas update",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Binary order recall does not measure multi-bit capacity",
+      "Different transducers and fixed coefficient counts",
+      "Wave simulation uses substantially more arithmetic",
+      "No demonstrated statistically reliable long-suffix advantage"
+    ],
+    "source": "https://github.com/anttiluode/SliderV3/blob/main/RESOURCE_MATCHED_RESULTS.md"
   }
 ]
