@@ -6,6 +6,14 @@ The central premise is that hundreds of repositories are not hundreds of indepen
 
 ## Live atlas
 
+### November 7, 2026 — CrystalMoon's light-writing and hyperbolic descendants
+
+**[Live chapter](https://anttiluode.github.io/Genealogy/#nov7-crystal-descendants)** · [Source-linked review](docs/reviews/2026-11-07-crystalmoon-descendants.md) · [Curated pass](data/passes/november-7-crystalmoon-descendants.json).
+
+**597 → 599** distinct repositories. The documented code lineage is **[CrystalMoon](https://github.com/anttiluode/CrystalMoon) → [CrystalMoonV2](https://github.com/anttiluode/CrystalMoonV2) → [NotKansas](https://github.com/anttiluode/NotKansas)**. V2 adds nested crystal-growth feedback, traced moonlight writing into the field, a moon membrane and transparent refraction. NotKansas makes the inside a Poincaré ball tiled by a {4,3,5} cubic honeycomb while retaining V2's simulation.
+
+The living crystal still evolves on a flat grid and is mirrored into the hyperbolic chambers. The additional Kaplansky visualization concerns **Gardam's 2021 *unit* conjecture counterexample**, not the November 2026 zero-divisor counterexamples. Source-reported tests are documented without claiming independent reruns or measured native GPU FPS. Story2 and both ZetaDreamer3D repositories are already present in the previous seven-project pass.
+
 https://anttiluode.github.io/Genealogy/
 
 ### November 6–7, 2026 — seven new projects: memory, phase worlds, sound and story

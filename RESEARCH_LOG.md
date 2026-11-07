@@ -1,5 +1,13 @@
 # Genealogy research log
 
+## 2026-11-07 — CrystalMoonV2 and NotKansas
+
+Added two previously absent GitHub repositories, **597 → 599**, with curated nodes, two direct inheritance links, one motif, a wall chapter, a source-linked review and regression checks. The chain is **CrystalMoon → CrystalMoonV2 → NotKansas**. Today's Story2/ZetaDreamer3D entries were already indexed and are not duplicated.
+
+V2 implements coarse/fine growth, ray-deposited moonlight feedback, membrane coupling and transparent refraction; its README reports 12/12 controls and headless GPU parity, but no native 3060 timing. NotKansas retains V2 and adds a Poincaré-ball honeycomb and a Gardam 2021 group-algebra *unit* visualization. Its crystal is still a flat-grid simulation folded into the honeycomb, not genuine hyperbolic field growth. The unit conjecture visualization is unrelated as a counterexample to the 2026 zero-divisor conjecture.
+
+[Wall](https://anttiluode.github.io/Genealogy/#nov7-crystal-descendants) · [Review](docs/reviews/2026-11-07-crystalmoon-descendants.md) · [Pass](data/passes/november-7-crystalmoon-descendants.json).
+
 ## 2026-11-06 — The Beanstalk games and FourierFlower
 
 Added **SolAndTheBeanStalk**, **SolAndTheBeanstalk2** and **FourierFlower** to the inventory and curated wall: **587 → 590** unique repositories. Emergence3DSol, Köynnös and PsychedelicGarden were already indexed in the November 5 pass and are not duplicated.

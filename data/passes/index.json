@@ -542,5 +542,9 @@
   {
     "path": "november-7-written-memory-phase-worlds-and-story.json",
     "enabled": true
+  },
+  {
+    "path": "november-7-crystalmoon-descendants.json",
+    "enabled": true
   }
 ]

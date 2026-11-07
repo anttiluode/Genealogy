@@ -1,0 +1,84 @@
+{
+  "id": "november-7-crystalmoon-descendants",
+  "title": "CrystalMoonV2 and NotKansas: light-writing worlds to hyperbolic geometry",
+  "reviewed_at": "2026-11-07",
+  "order": 181,
+  "summary": "Direct CrystalMoon implementation descendants, separated from the mathematical conjectures used as visual inspiration. Source-reported numerical tests; no independently repeated GPU benchmark.",
+  "nodes": [
+    {
+      "id": "CrystalMoonV2",
+      "url": "https://github.com/anttiluode/CrystalMoonV2",
+      "family": "procedural-world",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Extends CrystalMoon's periodic 64³ crystal field, density lens and inverted moon with coarse/fine crystal layers, feedback, traced moonlight deposited into growth, a membrane that mirrors world coordinates and refraction through transparent crystal.",
+      "survived": "The implementation and source-reported 12/12 core tests demonstrate two-scale field behavior, exact membrane mapping and a controlled simulated ray guide: rod light 0.058 with straight tracing versus a capped 3.0 with bending. A reported headless GPU/CPU parity run has differences around 10^-8.",
+      "killed": "Photons are geometric rays, not a wave-equation Kerr optical soliton. The membrane glues supplied world models, not a derived physical duality. The 4.9s to 2.2s headless SwiftShader frame timing is not an RTX 3060 measurement; no real-GPU frame-rate claim is supported.",
+      "evidence": "https://github.com/anttiluode/CrystalMoonV2/blob/main/README.md",
+      "tags": [
+        "2026-11-07",
+        "two-scale-crystal",
+        "light-feedback",
+        "membrane",
+        "ray-optics",
+        "glass",
+        "source-reported-tests"
+      ],
+      "era": "November 7: CrystalMoon descendants",
+      "era_order": 181
+    },
+    {
+      "id": "NotKansas",
+      "url": "https://github.com/anttiluode/NotKansas",
+      "family": "procedural-world",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Direct CrystalMoonV2 extension with Poincaré-ball hyperbolic geodesics, a {4,3,5} mirrored cubic honeycomb and a separate animation of Gardam's 2021 Kaplansky nontrivial unit in the Hantzsche–Wendt group.",
+      "survived": "The source reports three hyperbolic-geometric tests and six Gardam-unit checks. A separate viewer illustrates 21 by 21 group-algebra products landing on 121 elements, cancelling modulo 2 to an identity product in both orders. The underlying V2 crystal and camera still run.",
+      "killed": "The crystal grows on a flat periodic 64³ grid and is mirrored into hyperbolic chambers, rather than evolved by a hyperbolic Laplace–Beltrami law. The renderer cuts off before the ideal boundary. The Coxeter group has torsion and is not one of the 2026 random-group zero-divisor counterexamples. Gardam's 2021 unit conjecture counterexample is not a zero-divisor counterexample or a new result; real-GPU timing is unmeasured.",
+      "evidence": "https://github.com/anttiluode/NotKansas/blob/main/README.md",
+      "tags": [
+        "2026-11-07",
+        "poincare-ball",
+        "coxeter-honeycomb",
+        "hyperbolic-geodesics",
+        "kaplansky-unit",
+        "source-reported-tests"
+      ],
+      "era": "November 7: CrystalMoon descendants",
+      "era_order": 181
+    }
+  ],
+  "edges": [
+    {
+      "source": "CrystalMoon",
+      "target": "CrystalMoonV2",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "V2 explicitly retains CrystalMoon's field, clock, lens and moon engine while extending the implementation.",
+      "evidence": "https://github.com/anttiluode/CrystalMoonV2/blob/main/README.md"
+    },
+    {
+      "source": "CrystalMoonV2",
+      "target": "NotKansas",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "NotKansas explicitly retains the V2 engine, camera, membrane and lighting while replacing the moon's interior geometry and adding a separate Gardam viewer.",
+      "evidence": "https://github.com/anttiluode/NotKansas/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov7-crystalmoon-writing-and-viewing",
+      "title": "The evolving material changes its rays, then its viewing geometry",
+      "description": "An evolving crystal affects viewing rays; V2 makes deposited ray intensity affect later growth; NotKansas changes interior viewing geometry but still mirrors a flat-grid evolving field.",
+      "nodes": [
+        "CrystalMoon",
+        "CrystalMoonV2",
+        "NotKansas"
+      ]
+    }
+  ]
+}
