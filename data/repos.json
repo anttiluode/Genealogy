@@ -2079,6 +2079,28 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "Friday",
+    "url": "https://github.com/anttiluode/Friday",
+    "default_branch": "main",
+    "size": 19,
+    "visibility": "public",
+    "description": "Astra",
+    "created_at": "2026-11-06T06:55:51Z",
+    "updated_at": "2026-11-06T07:05:28Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "FridayLolSol",
+    "url": "https://github.com/anttiluode/FridayLolSol",
+    "default_branch": "main",
+    "size": 584,
+    "visibility": "public",
+    "description": "sol",
+    "created_at": "2026-11-06T17:59:19Z",
+    "updated_at": "2026-11-06T18:21:53Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "FridayRepo",
     "url": "https://github.com/anttiluode/FridayRepo",
     "default_branch": "main",
@@ -2439,6 +2461,17 @@
     "description": "Heck. Sol. Go. ",
     "created_at": "2026-08-25T06:03:00Z",
     "updated_at": "2026-08-25T07:49:28Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "GhostWorld",
+    "url": "https://github.com/anttiluode/GhostWorld",
+    "default_branch": "main",
+    "size": 701,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-11-06T16:37:58Z",
+    "updated_at": "2026-11-06T17:05:15Z",
     "inventory_status": "reviewed"
   },
   {
@@ -5115,6 +5148,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "SliderV3",
+    "url": "https://github.com/anttiluode/SliderV3",
+    "default_branch": "main",
+    "size": 650,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-11-06T08:38:56Z",
+    "updated_at": "2026-11-06T09:19:37Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "SlipNSlide",
     "url": "https://github.com/anttiluode/SlipNSlide",
     "default_branch": "main",
@@ -5431,6 +5475,17 @@
     "description": "Attempt at something weird. Sol. ",
     "created_at": "2026-09-05T07:06:10Z",
     "updated_at": "2026-09-05T17:00:23Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "Story2",
+    "url": "https://github.com/anttiluode/Story2",
+    "default_branch": "main",
+    "size": 477,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-11-07T06:17:53Z",
+    "updated_at": "2026-11-07T12:39:47Z",
     "inventory_status": "reviewed"
   },
   {
@@ -6488,5 +6543,27 @@
     "created_at": "2026-08-16T14:37:59Z",
     "updated_at": "2026-08-16T15:41:54Z",
     "inventory_status": "unread"
+  },
+  {
+    "name": "ZetaDreamer3D",
+    "url": "https://github.com/anttiluode/ZetaDreamer3D",
+    "default_branch": "main",
+    "size": 6533,
+    "visibility": "public",
+    "description": "Astra",
+    "created_at": "2026-11-07T05:07:22Z",
+    "updated_at": "2026-11-07T05:42:11Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "ZetaDreamer3DV2",
+    "url": "https://github.com/anttiluode/ZetaDreamer3DV2",
+    "default_branch": "main",
+    "size": 333,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-11-07T05:52:49Z",
+    "updated_at": "2026-11-07T06:21:33Z",
+    "inventory_status": "reviewed"
   }
 ]

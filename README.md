@@ -8,6 +8,14 @@ The central premise is that hundreds of repositories are not hundreds of indepen
 
 https://anttiluode.github.io/Genealogy/
 
+### November 6–7, 2026 — seven new projects: memory, phase worlds, sound and story
+
+**[Live wall](https://anttiluode.github.io/Genealogy/#nov7-seven-projects)** · [Curated pass](data/passes/november-7-written-memory-phase-worlds-and-story.json) · [Source-linked review](docs/reviews/2026-11-07-seven-projects.md).
+
+The census grows **590 → 597** repositories. Added **Story2, ZetaDreamer3D, ZetaDreamer3DV2, FridayLolSol, GhostWorld, SliderV3 and Friday**. SolAndTheBeanstalk2 and FourierFlower were already present and are not duplicated. SliderV3 is a different repository from Slider3.
+
+Friday separates hidden modes from usable access; SliderV3 writes wave history into graph edges but does not beat the dense ESN at short-to-medium retention; GhostWorld scores blind forecasts before reconnecting its sensor, while its wave graph remains separate from prediction. Zeta V2 directly extends ZetaDreamer3D with an explicit harmonic control. Residue Orchestra is creative DSP; Story2 is completed fiction plus local media-production tools. Seven documented links and two source-reported evidence records preserve these distinctions.
+
 ### November 5–6, 2026 — two Beanstalk games and FourierFlower
 
 **[Live wall](https://anttiluode.github.io/Genealogy/#nov6-beanstalk-fourier)** · [Curated pass](data/passes/november-6-beanstalk-games-and-fourier-flower.json) · [Source-linked review](docs/reviews/2026-11-06-beanstalk-games-and-fourier-flower.md) · [First Beanstalk](https://github.com/anttiluode/SolAndTheBeanStalk) · [Second Beanstalk](https://github.com/anttiluode/SolAndTheBeanstalk2) · [FourierFlower](https://github.com/anttiluode/FourierFlower).

@@ -538,5 +538,9 @@
   {
     "path": "november-6-beanstalk-games-and-fourier-flower.json",
     "enabled": true
+  },
+  {
+    "path": "november-7-written-memory-phase-worlds-and-story.json",
+    "enabled": true
   }
 ]
