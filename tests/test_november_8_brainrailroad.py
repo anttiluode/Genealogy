@@ -31,7 +31,7 @@ class BrainRailRoadGenealogyTests(unittest.TestCase):
 
     def test_control_and_negative_result_have_traceable_evidence(self):
         evs = [e for e in self.atlas["evidence"] if e["node"] == "BrainRailRoad"]
-        self.assertEqual(len(evs), 2)
+        self.assertEqual(len(evs), 3)
         for e in evs:
             self.assertIn(MOTIF, e["motifs"])
         gru = next(e for e in evs if e["id"] == "nov8-brainrailroad-gru-and-silence")
@@ -43,7 +43,7 @@ class BrainRailRoadGenealogyTests(unittest.TestCase):
         ev = next(e for e in self.atlas["evidence"] if e["id"] == "nov8-brainrailroad-rescue-clock-and-dead-credit")
         self.assertEqual(ev["result"], "mixed")
         self.assertEqual(ev["sample"]["count"], 512)
-        self.assertIn("one seed", " ".join(ev["limitations"]).lower())
+        self.assertIn("single seed", " ".join(ev["limitations"]).lower())
         self.assertIn("600", (ROOT / "docs/reviews/2026-11-08-brainrailroad.md").read_text(encoding="utf8"))
 
     def test_visible_chapter_and_written_audit(self):
