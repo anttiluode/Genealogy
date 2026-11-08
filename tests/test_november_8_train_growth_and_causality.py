@@ -21,7 +21,7 @@ class November8TrainGrowthTests(unittest.TestCase):
         self.assertGreaterEqual(len(self.atlas["repos"]), 604)
         self.assertEqual(
             {n["id"] for n in self.atlas["nodes"] if n.get("pass_id") == PASS},
-            NAMES,
+            NAMES - {"GeometricNeuronOriginReview"},
         )
         for name in NAMES:
             self.assertEqual(sum(x["name"] == name for x in self.atlas["repos"]), 1)
@@ -34,7 +34,7 @@ class November8TrainGrowthTests(unittest.TestCase):
             ("TurntableNeuron", "KasvavatKiskotSol", "extracts"),
             ("TurntableNeuron", "KasvavatKiskotClaude", "extracts"),
             ("Friday", "TorsionFreeMirrorLock", "converges"),
-            ("PerceptionLab", "GeometricNeuronOriginReview", "extracts"),
+            ("PerceptionLab", "GeometricNeuronOriginReview", "corrects"),
             ("KasvavatKiskotClaude", "KasvavatKiskotSol", "converges"),
         ):
             self.assertIn(expected, edges)
