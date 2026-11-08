@@ -1,5 +1,17 @@
 # Genealogy research log
 
+## 2026-11-08 — From train clocks to self-constructed tracks, with two causal reductions
+
+The November 8 activity list records **15 commits across six projects**: TurntableNeuron (5), TurntableAISol (4), KasvavatKiskotSol (3), KasvavatKiskotClaude (1), TorsionFreeMirrorLock (1), and GeometricNeuronOriginReview (1). Five repositories were missing from census 599 and enter as new records; GeometricNeuronOriginReview was already indexed. Unique census is now **604**.
+
+TurntableNeuron's v2-v5 sequence isolates the linear load, vector XOR, phase timing, shared pilot synchronization and width/jitter tradeoff. TurntableAISol extends the research question to *nine handwired multilayer stations*, with separate apical context, basket shunting and chandelier AIS veto. Two later growing-rail repositories are deliberately **parallel**, not parent/child code reuse: Sol designs a deterministic earliest-arrival exploratory wave with an ACK and a 15-unit budget; Claude builds stochastic walkers, an arrival-window reward and explicit Physarum/time-blind controls across 20 constructed worlds. Sol's 73-vs-94 single-terrain route and Claude's 14/20-vs-5/20 window task are source-reported, not directly comparable benchmarks; a global exploration/credit advantage must not be mislabeled emergent intelligence. Claude's false-route lock-in is retained in the evidence narrative.
+
+TorsionFreeMirrorLock's November 8 review withdraws the unsupported torsion-free-group reading and corrects stale-reader error versus actual word erasure. GeometricNeuronOriginReview's causal reduction shows the supposed 256x256-state ECG can be replaced by one lookup, while the real 50-sample ordered controller and four-tick host scheduling give period **59**, not **52**. The integral state is dead in this mode. Preserving these negative results is part of the work, not an embarrassment.
+
+The cross-project frontier remains local causal credit, adaptive connectivity under an honest material budget, and eventually an internally readable/rewriteable target for repair. Nothing here yet proves that an organism, trained AI, or Feynman quantum paths are being simulated faithfully.
+
+[Live wall](https://anttiluode.github.io/Genealogy/#nov8-railway-causality) · [Source review](docs/reviews/2026-11-08-train-growth-and-causality.md) · [Curated pass](data/passes/november-8-train-growth-and-causal-audits.json).
+
 ## 2026-11-07 — CrystalMoonV2 and NotKansas
 
 Added two previously absent GitHub repositories, **597 → 599**, with curated nodes, two direct inheritance links, one motif, a wall chapter, a source-linked review and regression checks. The chain is **CrystalMoon → CrystalMoonV2 → NotKansas**. Today's Story2/ZetaDreamer3D entries were already indexed and are not duplicated.
