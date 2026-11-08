@@ -12,6 +12,8 @@ The central premise is that hundreds of repositories are not hundreds of indepen
 
 The latest addition connects **TurntableNeuron and TurntableAISol → BrainRailRoad** as conceptual descendants, and records separate convergences with the two KasvavatKiskot growth experiments. A **12-hidden-yard, 36-active-rail** hard-event network has working Python↔JavaScript parity, a genuine offline browser simulator and nonzero surrogate gradients. **The railway itself has not learned**: development attempts collapse into silent output ties. A five-seed **15-unit GRU does learn** the same task (source-reported frozen-split median 100% interpolation, 99.61% jitter, 95.12% out-of-range), isolating the current failure to the railway/training setup rather than inherent task impossibility. The earlier six-project, 15-commit tally remains a separate historical snapshot. **Census 604 → 605.**
 
+**Later rescue result:** the optional label-neutral stimulus-reset pilot prevents total silence on random onsets, but an independent 512-trial hard-reference validation still scores only 50% after 600 updates: one order fires, the other has no output. A measured zero-vector magnitude Jacobian blocks useful upstream credit on silent trials. [Rescue audit](docs/reviews/2026-11-08-brainrailroad.md#follow-up-rescue--the-zero-vector-credit-bottleneck-november-8).
+
 ### November 8, 2026 — 15 commits, six connected research branches
 
 **[Live wall chapter](https://anttiluode.github.io/Genealogy/#nov8-railway-causality)** · [Source-linked review](docs/reviews/2026-11-08-train-growth-and-causality.md) · [Curated pass](data/passes/november-8-train-growth-and-causal-audits.json).

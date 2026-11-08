@@ -26,6 +26,30 @@ The separate GRU comparator has **15 hidden units**, **977 trainable parameters*
 
 [Machine-readable five-seed GRU receipts](https://github.com/anttiluode/BrainRailRoad/blob/main/circuits/results/gru_five_seed_development_summary.json). The earlier tick-319 GRU failed to learn in one development probe, so changing the readout was a labeled **development intervention**, not a stealth gain for the railway. The GRU result proves the task can be learned under that comparator; it **does not** establish a trained railway, superior inference efficiency, local growth, or a fair matched-energy result.
 
+## Follow-up rescue — the zero-vector credit bottleneck (November 8)
+
+[Measured rescue protocol, source data and reproducibility instructions](https://github.com/anttiluode/BrainRailRoad/blob/main/circuits/RESCUE.md).
+
+Claude's later CPU rescue uses **one seed (11)**, identical training batches across the four combinations (absolute/stimulus-reset clock × penalties on/off), a separate 128-trial dev selector, and **512 held-out validation trials scored through the float64 hard reference**, not an analog surrogate. This is *order only*; the full context-XOR task was not retested.
+
+| Random-onset configuration | Hard validation accuracy | Abstentions |
+| --- | ---: | ---: |
+| Absolute clock, penalties on | 0% | 512/512 |
+| Absolute clock, no penalties | 0% | 512/512 |
+| Stimulus reset, penalties on | 19.7% | 411/512 |
+| Stimulus reset, no penalties | 50% | 256/512 |
+| Stimulus reset, no penalties, 600 updates | 50% | 256/512 |
+
+On fixed-onset order-only trials, the original clock likewise reaches **50% with 256 ties**. Both that model and the randomized-onset reset model possess an *order-discriminating* fire-versus-silence code: one input order produces output events, the other produces none. The design deliberately counts a tie as an error, so one-sided discrimination is **not** successful two-class hard-event classification.
+
+The optional label-neutral first-source pilot reaches all 14 yards, resets their 32-tick phase reference and costs **14 counted pilot deliveries per trial**. It is exported and mirrored in JavaScript; the original clock remains default. Source reports 12 reset parity fixtures, exact 512-trial decision/count parity of a trained reset export, and full event-trace agreement for the first 24.
+
+**Mechanistic failure:** class-zero trials have zero H2 and output events; when integrated complex vector z is zero, the derivative of its magnitude with respect to upstream inputs is zero. Removing the empty-yard surrogate fire mask adds gradients only to thresholds, not operational rail weights, topology or delays; those remain zero in the measured probe. Further 600-update optimization is therefore a fixed point, not a missing learning-rate sweep. The proposed differentiable scalar-load credit path is a **new backward estimator, not yet tested**, and must preserve the original hard forward and valid scoring rules.
+
+**Historical comparison:** [JelloBrain](https://github.com/anttiluode/JelloBrain) S3 restored a trapped spatial route from 0 to 1.0 via context-specific prediction-error exploration; this is *an analogous credit/trapping issue*, not a demonstrated cure for a zero-vector Jacobian. [NSSN2](https://github.com/anttiluode/NSSN2) prediction-residual learning partially repaired Hebbian damage but lost to its frozen control; no direct dead-output cure is demonstrated there either. [SilentPing](https://github.com/anttiluode/SilentPing) showed that neutral pings can read activity-silent state, a different inference/memory question.
+
+**Decision:** keep the original negative railway-learning verdict. The rescue makes the *clock* hypothesis partially supported and localizes the next falsifiable optimizer intervention.
+
 ## What genealogy should preserve
 
 - **TurntableNeuron → BrainRailRoad**: timed reception and phase release extracted into a new hard-event architecture.

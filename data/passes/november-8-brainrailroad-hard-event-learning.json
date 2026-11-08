@@ -13,8 +13,8 @@
       "usefulness": "scientific",
       "confidence": "high",
       "claim": "Phase-addressed, hard-event 12-hidden-yard/2-output railway with 36 active of 90 candidate directed rails, four phase release addresses, 32-tick exit clocks, simulated apical/basket/chandelier controls and supervised surrogate-BPTT search for contextual A/B order classification.",
-      "survived": "Python/JavaScript hard-event parity and real offline browser execution are implemented. Source reports nonzero finite parameter gradients and separate five-seed 15-hidden-unit GRU controls: median 100% frozen interpolation, 99.61% ±2-tick jitter and 95.12% out-of-range gaps.",
-      "killed": "The railway has NOT learned the classification task in reported development runs: output silence/ties cause abstention. Working gradients and a successful GRU baseline establish trainability of the task and operational plumbing, not trained railway performance, autonomous local plasticity, energy advantage or biological realism.",
+      "survived": "Python/JavaScript hard-event parity and real offline browser execution are implemented. Source reports nonzero finite parameter gradients and separate five-seed 15-hidden-unit GRU controls: median 100% frozen interpolation, 99.61% ±2-tick jitter and 95.12% out-of-range gaps. Later one-seed hard-reference rescue: optional first-stimulus pilot reset removes full output silence under randomized onset, but yields a one-sided event code. Fixed-onset original and randomized-onset reset both preserve order information as fire-versus-silence.",
+      "killed": "The railway has NOT learned the classification task in reported development runs: output silence/ties cause abstention. Working gradients and a successful GRU baseline establish trainability of the task and operational plumbing, not trained railway performance, autonomous local plasticity, energy advantage or biological realism. A four-configuration CPU rescue and 600-update extension never exceeded 50% hard validation accuracy; one order has zero H2/output events. At empty yards, upstream weight/delay/topology credit vanishes through zero vector magnitude; removing the empty-yard mask alone changes only spurious threshold gradients.",
       "evidence": "https://github.com/anttiluode/BrainRailRoad/blob/main/README.md",
       "tags": [
         "2026-11-08",
@@ -67,7 +67,7 @@
     {
       "id": "nov8-hard-event-learning-is-not-guaranteed",
       "title": "A runnable phase-addressed circuit is not yet a learned phase-addressed circuit",
-      "description": "Hard forward events, browser parity, nonzero surrogate gradients, frozen splits and a strong GRU comparator distinguish simulator correctness, task learnability and the still-unsolved railway training objective. The topology/weights/delays are trained nonlocally, unlike locally grown material rails.",
+      "description": "Hard forward events, browser parity, nonzero surrogate gradients, frozen splits and a strong GRU comparator distinguish simulator correctness, task learnability and the still-unsolved railway training objective. The topology/weights/delays are trained nonlocally, unlike locally grown material rails. A measured stimulus-reset rescue makes timing readable but does not turn one-sided fire-versus-silence discrimination into two correct labeled outputs; zero-vector gradients prevent silent-path credit.",
       "nodes": [
         "TurntableNeuron",
         "TurntableAISol",

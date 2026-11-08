@@ -39,6 +39,13 @@ class BrainRailRoadGenealogyTests(unittest.TestCase):
         self.assertIn("railway", " ".join(gru["limitations"]).lower())
         self.assertEqual(gru["sample"]["count"], 5)
 
+    def test_rescue_is_recorded_as_negative_learning_evidence(self):
+        ev = next(e for e in self.atlas["evidence"] if e["id"] == "nov8-brainrailroad-rescue-clock-and-dead-credit")
+        self.assertEqual(ev["result"], "mixed")
+        self.assertEqual(ev["sample"]["count"], 512)
+        self.assertIn("one seed", " ".join(ev["limitations"]).lower())
+        self.assertIn("600", (ROOT / "docs/reviews/2026-11-08-brainrailroad.md").read_text(encoding="utf8"))
+
     def test_visible_chapter_and_written_audit(self):
         html = (ROOT / "index.html").read_text(encoding="utf-8")
         self.assertIn('data-mad-node="BrainRailRoad"', html)

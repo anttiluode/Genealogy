@@ -12337,5 +12337,61 @@
       "Not a matched inference-energy comparison; full railway five-seed protocol and lesion tests unfinished"
     ],
     "source": "https://github.com/anttiluode/BrainRailRoad/blob/main/circuits/results/gru_five_seed_development_summary.json"
+  },
+  {
+    "id": "nov8-brainrailroad-rescue-clock-and-dead-credit",
+    "node": "BrainRailRoad",
+    "claim": "Stimulus-locked phase pilot rescues absolute-clock silence on random onset but the trained hard railway still solves order using a one-sided fire/silence code; silent H2/output yards have no useful gradient through their zero vector magnitude.",
+    "design": "One seed, matched batch stream, four 200-update combinations of absolute/reset clock and penalties on/off; fixed-onset control; extend reset/no-penalties to 600 updates. Dev-set checkpoint selection and separate 512-trial validation; Python float64 hard-event scoring; class-split gradient probe, with/without empty-yard surrogate mask and JS parity.",
+    "result": "mixed",
+    "motifs": [
+      "nov8-hard-event-learning-is-not-guaranteed"
+    ],
+    "sample": {
+      "unit": "held-out validation trial",
+      "count": 512
+    },
+    "metrics": [
+      {
+        "name": "strict validation accuracy reset/no-penalty at 600 updates (%)",
+        "treatment": 50,
+        "comparison": "one-seed random-onset order-only hard model, ties count as errors"
+      },
+      {
+        "name": "strict validation accuracy absolute/no-penalty at 200 updates (%)",
+        "treatment": 0,
+        "comparison": "random-onset order-only model, 512 abstentions"
+      },
+      {
+        "name": "reset/no-penalty ties at 600 updates / 512",
+        "treatment": 256,
+        "control": 512,
+        "comparison": "reset/no-penalty extended vs absolute/no-penalty, separate training configs"
+      },
+      {
+        "name": "upstream weight/score/delay/context gradient norm on class-0 silent trials",
+        "treatment": 0,
+        "comparison": "trained reset model, masked vs unmasked output surrogate"
+      }
+    ],
+    "controls": [
+      "Fixed-onset order-only absolute-clock run",
+      "Random-onset matched four-way run",
+      "Shared first-stimulus pilot carries onset only, counted as 14 deliveries/trial",
+      "Check frozen hard reference, not differentiable readout",
+      "Remove empty-yard surrogate mask for gradient probe only",
+      "600-update longer run, balanced 512-validation cases",
+      "Python↔JavaScript exact event/decision parity"
+    ],
+    "replication": "Source-reported 13 CPU-minutes on 2 cores and parity: 12 new reset fixtures, 512 matched decisions, first 24 full event traces; reproducible scripts and receipts in circuits/RESCUE.md and circuits/results/rescue/.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Single seed, order-only task; context-XOR not yet evaluated",
+      "The reset is engineered zero-delay 14-yard global pilot, not an emergent local clock",
+      "Perfect order information in event-vs-silence pattern is not valid two-output task performance",
+      "Mask removal cannot fix zero magnitude derivative, and surrogate-only scalar load credit remains untested"
+    ],
+    "source": "https://github.com/anttiluode/BrainRailRoad/blob/main/circuits/RESCUE.md"
   }
 ]
