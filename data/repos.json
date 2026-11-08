@@ -979,17 +979,6 @@
     "inventory_status": "reviewed"
   },
   {
-    "name": "Clockfield-Anti-Radar-Jamming-Attention",
-    "url": "https://github.com/anttiluode/Clockfield-Anti-Radar-Jamming-Attention",
-    "default_branch": "main",
-    "size": 7,
-    "visibility": "public",
-    "description": "Perhaps is jamming resistant. ",
-    "created_at": "2026-03-31T04:35:35Z",
-    "updated_at": "2026-03-31T04:38:20Z",
-    "inventory_status": "unread"
-  },
-  {
     "name": "Clockfield_Gemini",
     "url": "https://github.com/anttiluode/Clockfield_Gemini",
     "default_branch": "main",
@@ -998,6 +987,17 @@
     "description": "Sonnet compares our clockfield theory to scientists growing crystals inside neurons.",
     "created_at": "2026-04-08T17:00:55Z",
     "updated_at": "2026-04-08T17:01:36Z",
+    "inventory_status": "unread"
+  },
+  {
+    "name": "Clockfield-Anti-Radar-Jamming-Attention",
+    "url": "https://github.com/anttiluode/Clockfield-Anti-Radar-Jamming-Attention",
+    "default_branch": "main",
+    "size": 7,
+    "visibility": "public",
+    "description": "Perhaps is jamming resistant. ",
+    "created_at": "2026-03-31T04:35:35Z",
+    "updated_at": "2026-03-31T04:38:20Z",
     "inventory_status": "unread"
   },
   {
@@ -2277,17 +2277,6 @@
     "inventory_status": "unread"
   },
   {
-    "name": "GeometricNeuron10",
-    "url": "https://github.com/anttiluode/GeometricNeuron10",
-    "default_branch": "main",
-    "size": 1391,
-    "visibility": "public",
-    "description": "Weird take by opus. ",
-    "created_at": "2026-06-27T15:45:27Z",
-    "updated_at": "2026-06-27T17:33:20Z",
-    "inventory_status": "reviewed"
-  },
-  {
     "name": "GeometricNeuron_V20",
     "url": "https://github.com/anttiluode/GeometricNeuron_V20",
     "default_branch": "main",
@@ -2296,6 +2285,17 @@
     "description": "A curation of older ones by opus 48",
     "created_at": "2026-06-30T02:53:15Z",
     "updated_at": "2026-07-01T05:25:11Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "GeometricNeuron10",
+    "url": "https://github.com/anttiluode/GeometricNeuron10",
+    "default_branch": "main",
+    "size": 1391,
+    "visibility": "public",
+    "description": "Weird take by opus. ",
+    "created_at": "2026-06-27T15:45:27Z",
+    "updated_at": "2026-06-27T17:33:20Z",
     "inventory_status": "reviewed"
   },
   {
@@ -2324,11 +2324,11 @@
     "name": "GeometricNeuronOriginReview",
     "url": "https://github.com/anttiluode/GeometricNeuronOriginReview",
     "default_branch": "main",
-    "size": 139,
+    "size": 286,
     "visibility": "public",
     "description": "ECG json ecg pulse finally explained. ",
     "created_at": "2026-09-08T04:07:23Z",
-    "updated_at": "2026-09-08T04:14:22Z",
+    "updated_at": "2026-11-08T06:07:31Z",
     "inventory_status": "reviewed"
   },
   {
@@ -2934,6 +2934,28 @@
     "description": "Narrow Channel. Opus 5.5 thinking about resonation and waves. ",
     "created_at": "2026-09-26T06:40:14Z",
     "updated_at": "2026-09-26T06:40:58Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "KasvavatKiskotClaude",
+    "url": "https://github.com/anttiluode/KasvavatKiskotClaude",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Opus 5.5 ",
+    "created_at": "2026-11-08T08:21:07Z",
+    "updated_at": "2026-11-08T08:30:02Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "KasvavatKiskotSol",
+    "url": "https://github.com/anttiluode/KasvavatKiskotSol",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-11-08T08:22:00Z",
+    "updated_at": "2026-11-08T08:43:08Z",
     "inventory_status": "reviewed"
   },
   {
@@ -5665,6 +5687,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "The_Ping_And_The_Listener",
+    "url": "https://github.com/anttiluode/The_Ping_And_The_Listener",
+    "default_branch": "main",
+    "size": 200,
+    "visibility": "public",
+    "description": "A paper that fell out of recent papers inspired by some past thoughts and paper 'Action potential waveforms are state dependent' by Burgos & al. Opus 5.5 repo. ",
+    "created_at": "2026-09-26T07:06:34Z",
+    "updated_at": "2026-09-26T07:10:59Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "The-Aether-Of-Time",
     "url": "https://github.com/anttiluode/The-Aether-Of-Time",
     "default_branch": "main",
@@ -5696,17 +5729,6 @@
     "created_at": "2026-02-12T06:59:37Z",
     "updated_at": "2026-02-12T09:18:42Z",
     "inventory_status": "unread"
-  },
-  {
-    "name": "The_Ping_And_The_Listener",
-    "url": "https://github.com/anttiluode/The_Ping_And_The_Listener",
-    "default_branch": "main",
-    "size": 200,
-    "visibility": "public",
-    "description": "A paper that fell out of recent papers inspired by some past thoughts and paper 'Action potential waveforms are state dependent' by Burgos & al. Opus 5.5 repo. ",
-    "created_at": "2026-09-26T07:06:34Z",
-    "updated_at": "2026-09-26T07:10:59Z",
-    "inventory_status": "reviewed"
   },
   {
     "name": "TheClutch",
@@ -5962,6 +5984,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "TorsionFreeMirrorLock",
+    "url": "https://github.com/anttiluode/TorsionFreeMirrorLock",
+    "default_branch": "main",
+    "size": 41,
+    "visibility": "public",
+    "description": "opus 5.5",
+    "created_at": "2026-11-07T18:40:53Z",
+    "updated_at": "2026-11-08T04:46:51Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "ToyPhysicsModelCalleTads",
     "url": "https://github.com/anttiluode/ToyPhysicsModelCalleTads",
     "default_branch": "main",
@@ -6058,6 +6091,28 @@
     "description": "A Opus 5.5 repo. ",
     "created_at": "2026-10-05T02:50:36Z",
     "updated_at": "2026-10-05T07:55:25Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "TurntableAISol",
+    "url": "https://github.com/anttiluode/TurntableAISol",
+    "default_branch": "main",
+    "size": 23,
+    "visibility": "public",
+    "description": "Sol ",
+    "created_at": "2026-11-08T07:47:40Z",
+    "updated_at": "2026-11-08T08:02:15Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "TurntableNeuron",
+    "url": "https://github.com/anttiluode/TurntableNeuron",
+    "default_branch": "main",
+    "size": 67,
+    "visibility": "public",
+    "description": "Claude",
+    "created_at": "2026-11-08T07:00:14Z",
+    "updated_at": "2026-11-08T08:13:44Z",
     "inventory_status": "reviewed"
   },
   {
