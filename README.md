@@ -6,6 +6,16 @@ The central premise is that hundreds of repositories are not hundreds of indepen
 
 ## Live atlas
 
+### November 8, 2026 — 15 commits, six connected research branches
+
+**[Live wall chapter](https://anttiluode.github.io/Genealogy/#nov8-railway-causality)** · [Source-linked review](docs/reviews/2026-11-08-train-growth-and-causality.md) · [Curated pass](data/passes/november-8-train-growth-and-causal-audits.json).
+
+**TurntableNeuron 5 commits · TurntableAISol 4 · KasvavatKiskotSol 3 · KasvavatKiskotClaude 1 · TorsionFreeMirrorLock 1 · GeometricNeuronOriginReview 1.** The repository census goes from **599 to 604**: only five new repositories are added because GeometricNeuronOriginReview was already inventoried.
+
+A phase-selective turntable learns to communicate with a pilot clock; Sol's nine-yards experiment adds vertical routes and apical/basket/chandelier controls. Then two *independent* growing-rail implementations ask whether time-window feedback can consolidate and repair tracks under construction limits, one with a deterministic shortest-arrival wavefront and one with stochastic walkers and a Physarum comparator. Their constructed-task results and lock-in failures are recorded without a claim of spontaneous biological optimality.
+
+The November 8 side audits distinguish hidden *parameter fibers* from dynamical dark modes (TorsionFreeMirrorLock) and reduce PerceptionLab's ECG-like image controller to its causal scalar lookup and ordered memory window (**period 59**, not the one-tick reconstruction's **52**). The unresolved goal-repair question remains explicitly separate from the railway's supplied destinations.
+
 ### November 7, 2026 — CrystalMoon's light-writing and hyperbolic descendants
 
 **[Live chapter](https://anttiluode.github.io/Genealogy/#nov7-crystal-descendants)** · [Source-linked review](docs/reviews/2026-11-07-crystalmoon-descendants.md) · [Curated pass](data/passes/november-7-crystalmoon-descendants.json).
