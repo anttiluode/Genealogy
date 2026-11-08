@@ -1861,5 +1861,46 @@
       "Separately report predictive accuracy, agreement between receivers and actual world-calibrated accuracy: synchronized agents can be jointly wrong.",
       "Do not collapse a physical material memory, an externally learned decoder, or a fixed 3D habitat into the same mechanism."
     ]
+  },
+  {
+    "id": "nov8-phase-growth-locality-versus-oracle",
+    "title": "Does timing-aware growth retain a benefit when exploration, credit and construction are fully local and time-aware baselines are matched?",
+    "state": "open",
+    "motifs": [
+      "nov8-communication-by-timing",
+      "nov8-growth-by-timed-credit"
+    ],
+    "evidence": [
+      "nov8-turntable-locked-delay",
+      "nov8-kiskot-sol-timed-route-repair",
+      "nov8-kiskot-claude-timing-and-trap"
+    ],
+    "competing_explanations": [
+      "A bounded, distributed phase-sensitive pulse and feedback rule can adapt connectivity reliably even after eliminating global knowledge of optimal arrival, full predecessor paths and resource inventories.",
+      "The current gains are largely consequences of precomputed earliest-arrival exploration, designed timing-window reward or path-memory/global-budget bookkeeping, and shrink against equally informed time-aware baselines."
+    ],
+    "known": [
+      "TurntableNeuron's pilot removes shared delays, but private data jitter remains an identified limit.",
+      "KasvavatKiskotSol demonstrates reconstruction on one designed terrain with an explicit earliest-arrival wavefront and globally limited material.",
+      "KasvavatKiskotClaude reports better window-task success on deliberately timing-sensitive worlds but shows a false-head-start lock-in failure."
+    ],
+    "missing_discriminator": "Same pre-registered graph families, timing tasks and resource budgets; local-only forward and reply messages, no full-path retracing or global graph shortest-arrival solver inside the candidate.",
+    "candidate_experiment": {
+      "design": "Compare both growing-rail implementations with strict local ACK coincidence and locally transported construction material against static, time-blind flow, Physarum, and a time-aware shortest-path oracle on 30 or more randomized maps. Include independent clock jitter, moving timing windows, inaccessible bridge cuts and delayed target reversal. Account for every exploratory pulse and nutrient move.",
+      "cost": "medium: CPU/Node simulation with 30-100 seeded maps, fixed training and delivery budgets",
+      "outcomes": [
+        {
+          "if": "A local phase-aware rule wins on valid timed delivery at matched resources across new maps and after bridge lesions",
+          "then": "The adaptive-timing route-credit motif receives an independently discriminating result beyond the current designed exploratory oracle."
+        },
+        {
+          "if": "Strong time-aware baselines match or exceed the phase-gated local rule once global information and budget advantages are removed",
+          "then": "Narrow the result to a useful designed encoding and control architecture; do not claim autonomous efficient route discovery."
+        }
+      ]
+    },
+    "notes": [
+      "An internally stored, rewritable desired destination is a separate Levin-shaped challenge, not a prerequisite assumed accomplished in these models."
+    ]
   }
 ]
