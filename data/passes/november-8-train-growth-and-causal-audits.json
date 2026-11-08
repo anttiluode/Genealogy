@@ -3,7 +3,7 @@
   "title": "November 8: growing rails, timing communication and causal reductions",
   "reviewed_at": "2026-11-08",
   "order": 182,
-  "summary": "User's November 8 activity tally: 15 commits across six repositories; five newly indexed repositories, plus one previously inventoried historical ECG repository promoted to reviewed status. Source-reported numerical claims are distinguished from independent test execution.",
+  "summary": "User's November 8 activity tally: 15 commits across six repositories; five newly indexed repositories, plus one previously inventoried and already-curated ECG repository updated in its original geometric-ladder pass. Source-reported numerical claims are distinguished from independent test execution.",
   "nodes": [
     {
       "id": "TurntableNeuron",
@@ -99,36 +99,9 @@
       ],
       "era": "November 8: phase trains and growing rails",
       "era_order": 182
-    },
-    {
-      "id": "GeometricNeuronOriginReview",
-      "url": "https://github.com/anttiluode/GeometricNeuronOriginReview",
-      "family": "feedback-autopsy",
-      "status": "ledger",
-      "usefulness": "scientific",
-      "confidence": "high",
-      "claim": "Causal reduction of the old PerceptionLab image-to-feedback ECG-like controller: 256x256 image branch replaced by a one-dimensional lookup, with ordered 50-sample controller history and four-tick host scheduler.",
-      "survived": "Source reports bit-exact reduced trajectory over 3000 ticks; faithful host period 59 instead of the old 52 from a one-tick reconstruction. Clamp and sample-window permutation alter the dynamics; integral_state is updated but never read.",
-      "killed": "The four output wires were image samples, not eigenmodes; the large image did not constitute high-dimensional autonomous state, and the 52-tick interpretation was not the faithful host loop.",
-      "evidence": "https://github.com/anttiluode/GeometricNeuronOriginReview/blob/main/README.md",
-      "tags": [
-        "2026-11-08",
-        "reviewed",
-        "causal-mechanism"
-      ],
-      "era": "November 8: phase trains and growing rails",
-      "era_order": 182
     }
   ],
   "edges": [
-    {
-      "source": "PerceptionLab",
-      "target": "GeometricNeuronOriginReview",
-      "type": "extracts",
-      "confidence": "high",
-      "why": "The historical ECG graph and node implementations were frozen in the audit for an exact causal reduction.",
-      "evidence": "https://github.com/anttiluode/GeometricNeuronOriginReview/blob/main/README.md"
-    },
     {
       "source": "Friday",
       "target": "TorsionFreeMirrorLock",
