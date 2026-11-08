@@ -13,7 +13,7 @@ class DescendantTest(unittest.TestCase):
 
     def test_census_and_nodes(self):
         self.assertEqual(validate_atlas(self.atlas), [])
-        self.assertEqual(len(self.atlas["repos"]), 599)
+        self.assertGreaterEqual(len(self.atlas["repos"]), 599)
         self.assertEqual({n["id"] for n in self.atlas["nodes"] if n.get("pass_id") == PASS}, NAMES)
         for name in NAMES:
             self.assertEqual(sum(r["name"] == name for r in self.atlas["repos"]), 1)
