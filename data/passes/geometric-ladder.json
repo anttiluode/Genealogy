@@ -10,9 +10,9 @@
       "url": "https://github.com/anttiluode/GeometricNeuronOriginReview",
       "family": "geometric-neuron",
       "status": "ledger",
-      "claim": "Freezes and mechanically re-audits the PerceptionLab ECG loop that helped start the later line.",
-      "survived": "Bounded observation inside feedback can change the trajectory; changing vector size changed the measurement operator.",
-      "killed": "The four feedback values were not four eigenmodes; the ECG-like rhythm did not require a hidden neuron model.",
+      "claim": "Freezes the original PerceptionLab ECG-like loop and, on November 8, exactly reduces its checkerboard/image/vector pipeline to a scalar lookup inside a nonlinear finite-history feedback controller.",
+      "survived": "Changing vector size changes what the controller samples, not eigenmodes. The November 8 faithful host reconstruction is bit-exact over 3000 ticks with the image branch replaced by a scalar lookup. Its actual four-tick host scheduler has period 59 (the one-tick reconstruction gave 52); clamping feedback breaks the rhythm, and permuting the ordered 50-sample window changes the future.",
+      "killed": "The four feedback values were not eigenmodes. The image was not an autonomous 256x256 hidden state, the old 52-cycle result was a one-tick scheduler artifact, and integral_state is updated but never read in this mode. The ECG-like pulse does not require a biological neuron model.",
       "usefulness": "scientific",
       "confidence": "high",
       "evidence": "https://github.com/anttiluode/GeometricNeuronOriginReview/blob/main/README.md",
@@ -20,7 +20,11 @@
         "origin",
         "ecg",
         "bounded-observation",
-        "correction"
+        "correction",
+        "2026-11-08",
+        "scalar-collapse",
+        "scheduler-period-59",
+        "ordered-feedback-history"
       ],
       "era": "Origin accident & autopsy",
       "era_order": 1
