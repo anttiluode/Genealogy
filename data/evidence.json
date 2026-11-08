@@ -12268,5 +12268,74 @@
       "Same mean and variance are not a sufficient state when sample exit order differs"
     ],
     "source": "https://github.com/anttiluode/GeometricNeuronOriginReview/blob/main/README.md"
+  },
+  {
+    "id": "nov8-brainrailroad-hard-event-parity",
+    "node": "BrainRailRoad",
+    "claim": "The exported hard-event rail model runs in Python and JavaScript with deterministic packet, release-tick and state-trace agreement, and a supervised surrogate optimizer propagates finite nonzero gradients.",
+    "design": "Reference hard float64 Python event engine, Node/browser mirror, parity fixtures; straight-through surrogate gradient check and offline operational model import/export",
+    "result": "supports",
+    "motifs": [
+      "nov8-hard-event-learning-is-not-guaranteed"
+    ],
+    "metrics": [],
+    "controls": [
+      "Python vs Node packet/release state parity",
+      "Dormant vs active rail separation",
+      "Real imported hard model vs untrained embedded reference"
+    ],
+    "replication": "Source-reported 14 Python tests, 16 event-trace parity fixtures and 8 baseline parity fixtures from initial release; real exported forward engine used in browser.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Proves implementation/parity, not that the railway has learned the task",
+      "Surrogate BPTT is supervised nonlocal optimization, not biologically local learning"
+    ],
+    "source": "https://github.com/anttiluode/BrainRailRoad/blob/main/README.md"
+  },
+  {
+    "id": "nov8-brainrailroad-gru-and-silence",
+    "node": "BrainRailRoad",
+    "claim": "The binary contextual order task is learnable by a controlled 15-unit GRU but initial supervised railway training collapses to silent, tied outputs.",
+    "design": "Five seeds (11,23,37,53,71) of 15-hidden-unit/977-parameter GRU, 700 updates, validation-selected checkpoints and frozen 2048-item evaluation splits; compare to unsuccessful railway development threshold probes.",
+    "result": "mixed",
+    "motifs": [
+      "nov8-hard-event-learning-is-not-guaranteed"
+    ],
+    "sample": {
+      "unit": "GRU development seed",
+      "count": 5
+    },
+    "metrics": [
+      {
+        "name": "GRU frozen interpolation median accuracy (%)",
+        "treatment": 100,
+        "comparison": "five GRU seeds, NOT the railway"
+      },
+      {
+        "name": "GRU frozen independent jitter median accuracy (%)",
+        "treatment": 99.61,
+        "comparison": "independent ±2-tick noise, GRU"
+      },
+      {
+        "name": "GRU frozen out-of-range gap median accuracy (%)",
+        "treatment": 95.12,
+        "comparison": "GRU, not railway"
+      }
+    ],
+    "controls": [
+      "GRU with 15 hidden units and 977 trainable parameters",
+      "Validation selection separate from frozen evaluation",
+      "Railway threshold probes at 0.35, 0.20 and 0.16"
+    ],
+    "replication": "Source-reported five-seed receipts in circuits/results/gru_five_seed_development_summary.json; railway developmental training failure recorded in README.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Railway training has no successful trained checkpoint or comparable end-to-end accuracy",
+      "GRU change to readout at tick 127 is a labeled development change",
+      "Not a matched inference-energy comparison; full railway five-seed protocol and lesion tests unfinished"
+    ],
+    "source": "https://github.com/anttiluode/BrainRailRoad/blob/main/circuits/results/gru_five_seed_development_summary.json"
   }
 ]

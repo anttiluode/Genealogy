@@ -795,5 +795,11 @@
   },
   "nov8-ecg-scalar-reduction": {
     "nov8-feedback-causal-collapse": "supports"
+  },
+  "nov8-brainrailroad-hard-event-parity": {
+    "nov8-hard-event-learning-is-not-guaranteed": "supports"
+  },
+  "nov8-brainrailroad-gru-and-silence": {
+    "nov8-hard-event-learning-is-not-guaranteed": "documents"
   }
 }

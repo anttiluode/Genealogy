@@ -550,5 +550,9 @@
   {
     "path": "november-8-train-growth-and-causal-audits.json",
     "enabled": true
+  },
+  {
+    "path": "november-8-brainrailroad-hard-event-learning.json",
+    "enabled": true
   }
 ]

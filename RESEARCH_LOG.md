@@ -1,5 +1,13 @@
 # Genealogy research log
 
+## 2026-11-08 — BrainRailRoad, an auditable but not-yet-trained phase railway
+
+Added **BrainRailRoad** as the next phase-addressed network experiment, raising the unique repository census **604 → 605**. This later addition is separate from the already recorded 15-commit/six-repository November 8 tally.
+
+The 12 hidden yards, two output yards, 36-of-90 active rails, discrete phase addresses and exported hard forward model descend conceptually from TurntableNeuron and TurntableAISol. The KasvavatKiskot approaches remain independently implemented route-growth experiments, not code parents. BrainRailRoad's Python/JavaScript packet-event parity and surrogate-gradient plumbing are implemented; three development threshold probes collapse toward silent output ties. A 15-hidden-unit GRU comparator reaches a five-seed median of 100% interpolation, 99.61% jitter and 95.12% extrapolated gaps on frozen splits, proving task learnability under the control **without** claiming railway learning. Held-out railway classification and damage success are outstanding.
+
+[Source-backed learning audit](docs/reviews/2026-11-08-brainrailroad.md) · [Curated pass](data/passes/november-8-brainrailroad-hard-event-learning.json) · [BrainRailRoad](https://github.com/anttiluode/BrainRailRoad).
+
 ## 2026-11-08 — From train clocks to self-constructed tracks, with two causal reductions
 
 The November 8 activity list records **15 commits across six projects**: TurntableNeuron (5), TurntableAISol (4), KasvavatKiskotSol (3), KasvavatKiskotClaude (1), TorsionFreeMirrorLock (1), and GeometricNeuronOriginReview (1). Five repositories were missing from census 599 and enter as new records; GeometricNeuronOriginReview was already indexed. Unique census is now **604**.

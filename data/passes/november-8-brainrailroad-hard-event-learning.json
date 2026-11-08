@@ -1,0 +1,80 @@
+{
+  "id": "november-8-brainrailroad-hard-event-learning",
+  "title": "November 8: BrainRailRoad turns phase yards into an auditable learning experiment",
+  "reviewed_at": "2026-11-08",
+  "order": 183,
+  "summary": "One new repository extends the November 8 turntable family into a hard-event differentiable training laboratory. Python/JavaScript parity and supervised gradients work; initial railway learning fails through silence while a 15-unit GRU learns the same task under a documented five-seed development control. Earlier 15-commit activity counts are historical and are not reattributed to this addition.",
+  "nodes": [
+    {
+      "id": "BrainRailRoad",
+      "url": "https://github.com/anttiluode/BrainRailRoad",
+      "family": "adaptive-neural-network",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Phase-addressed, hard-event 12-hidden-yard/2-output railway with 36 active of 90 candidate directed rails, four phase release addresses, 32-tick exit clocks, simulated apical/basket/chandelier controls and supervised surrogate-BPTT search for contextual A/B order classification.",
+      "survived": "Python/JavaScript hard-event parity and real offline browser execution are implemented. Source reports nonzero finite parameter gradients and separate five-seed 15-hidden-unit GRU controls: median 100% frozen interpolation, 99.61% ±2-tick jitter and 95.12% out-of-range gaps.",
+      "killed": "The railway has NOT learned the classification task in reported development runs: output silence/ties cause abstention. Working gradients and a successful GRU baseline establish trainability of the task and operational plumbing, not trained railway performance, autonomous local plasticity, energy advantage or biological realism.",
+      "evidence": "https://github.com/anttiluode/BrainRailRoad/blob/main/README.md",
+      "tags": [
+        "2026-11-08",
+        "reviewed",
+        "hard-events",
+        "phase-routing",
+        "surrogate-bptt",
+        "negative-training-result",
+        "control-baseline"
+      ],
+      "era": "November 8: phase trains and growing rails",
+      "era_order": 183
+    }
+  ],
+  "edges": [
+    {
+      "source": "TurntableNeuron",
+      "target": "BrainRailRoad",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "BrainRailRoad explicitly cites the earlier phase-selective turntable, phase-addressed release and receiver timing as prior work, reimplemented in a larger hard-event model; this is conceptual lineage, not proof of shared source files.",
+      "evidence": "https://github.com/anttiluode/BrainRailRoad/blob/main/README.md"
+    },
+    {
+      "source": "TurntableAISol",
+      "target": "BrainRailRoad",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "The nine-yard apical/basket/chandelier computational roles motivate corresponding interventions in the 12-hidden-yard trainable hard-event system; separate implementation, not demonstrated file ancestry.",
+      "evidence": "https://github.com/anttiluode/BrainRailRoad/blob/main/README.md"
+    },
+    {
+      "source": "KasvavatKiskotSol",
+      "target": "BrainRailRoad",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both explore modifiable railway structure and delayed delivery, but BrainRailRoad uses globally supervised surrogate topology selection whereas KasvavatKiskotSol uses destination-ACK structural material reinforcement.",
+      "evidence": "https://github.com/anttiluode/BrainRailRoad/blob/main/README.md"
+    },
+    {
+      "source": "KasvavatKiskotClaude",
+      "target": "BrainRailRoad",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both treat timing as operational and candidate rail structure as variable; the ant-like path-memory growth and the supervised hard-event classifier remain algorithmically distinct.",
+      "evidence": "https://github.com/anttiluode/BrainRailRoad/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov8-hard-event-learning-is-not-guaranteed",
+      "title": "A runnable phase-addressed circuit is not yet a learned phase-addressed circuit",
+      "description": "Hard forward events, browser parity, nonzero surrogate gradients, frozen splits and a strong GRU comparator distinguish simulator correctness, task learnability and the still-unsolved railway training objective. The topology/weights/delays are trained nonlocally, unlike locally grown material rails.",
+      "nodes": [
+        "TurntableNeuron",
+        "TurntableAISol",
+        "KasvavatKiskotSol",
+        "KasvavatKiskotClaude",
+        "BrainRailRoad"
+      ]
+    }
+  ]
+}
