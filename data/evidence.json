@@ -11951,7 +11951,7 @@
       },
       {
         "name": "smallest normalized observation singular value, delta=0.0001",
-        "value": 7.25e-06
+        "value": 0.00000725
       }
     ],
     "controls": [
@@ -11986,7 +11986,7 @@
       {
         "name": "single-read accuracy after 2 common writes (%)",
         "treatment": 70.4,
-        "control": 100.0,
+        "control": 100,
         "comparison": "wave16 vs ESN16"
       },
       {
@@ -12023,5 +12023,250 @@
       "No demonstrated statistically reliable long-suffix advantage"
     ],
     "source": "https://github.com/anttiluode/SliderV3/blob/main/RESOURCE_MATCHED_RESULTS.md"
+  },
+  {
+    "id": "nov8-turntable-locked-delay",
+    "node": "TurntableNeuron",
+    "claim": "A separate pilot signal allows phase-coded data listeners to tolerate shared but not private timing errors.",
+    "design": "Synthetic sender-listener delay sweep with pilot on/off, timed data and controlled clock offsets",
+    "result": "mixed",
+    "motifs": [
+      "nov8-communication-by-timing"
+    ],
+    "sample": {
+      "unit": "shared-delay condition",
+      "count": 32
+    },
+    "metrics": [
+      {
+        "name": "common-delay conditions preserving all three address routes",
+        "treatment": 32,
+        "control": 4,
+        "comparison": "pilot locking vs free-running, 32 shifts"
+      }
+    ],
+    "controls": [
+      "Free-running listener at identical data routes",
+      "Earlier v2/v3 regression files unchanged",
+      "Private data jitter tested separately"
+    ],
+    "replication": "Source-reported deterministic Node experiments R9 and R10",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Private jitter and balanced XOR still fragile",
+      "Designed clock rules, not measured neuron physiology"
+    ],
+    "source": "https://github.com/anttiluode/TurntableNeuron/blob/main/README.md"
+  },
+  {
+    "id": "nov8-aisol-context-interventions",
+    "node": "TurntableAISol",
+    "claim": "Apical, basket and chandelier operations have distinct causal effects on a nine-yard synthetic network.",
+    "design": "Matched interventions on a shared JS engine; 30 apical trials and fixed-input basket/chandelier comparisons",
+    "result": "supports",
+    "motifs": [
+      "nov8-communication-by-timing"
+    ],
+    "sample": {
+      "unit": "apical trial",
+      "count": 30
+    },
+    "metrics": [
+      {
+        "name": "apical-enabled vs basal-only exit events",
+        "treatment": 30,
+        "control": 0,
+        "comparison": "same basal amplitude 0.7, 30/30 vs 0/30"
+      },
+      {
+        "name": "all-yard departure events with vs without vertical edges",
+        "treatment": 72,
+        "control": 31,
+        "comparison": "420 ticks, fixed topology"
+      }
+    ],
+    "controls": [
+      "Basal without apical",
+      "Basket off vs on",
+      "Chandelier off vs on",
+      "Vertical wiring removed"
+    ],
+    "replication": "Source-reported deterministic Node regression and bench",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Prespecified wiring",
+      "Synthetic cell-type analogies; no actual developmental growth"
+    ],
+    "source": "https://github.com/anttiluode/TurntableAISol/blob/main/README.md"
+  },
+  {
+    "id": "nov8-kiskot-sol-timed-route-repair",
+    "node": "KasvavatKiskotSol",
+    "claim": "Under one designed global material budget, time-aware acknowledgments can build a faster working route and regrow after a severed edge.",
+    "design": "Fixed 12x7 terrain, 15-unit global construction budget; phase, flow-only, static, damage and retarget interventions",
+    "result": "mixed",
+    "motifs": [
+      "nov8-growth-by-timed-credit"
+    ],
+    "sample": {
+      "unit": "designed terrain",
+      "count": 1
+    },
+    "metrics": [
+      {
+        "name": "prelesion travel ticks",
+        "treatment": 73,
+        "control": 94,
+        "comparison": "phase-aware vs flow-only"
+      },
+      {
+        "name": "postlesion travel ticks",
+        "treatment": 80,
+        "control": null,
+        "comparison": "phase-aware route vs no-flow-only route at budget 15"
+      }
+    ],
+    "controls": [
+      "Flow-only construction",
+      "Static wiring",
+      "Exact earliest-arrival reference",
+      "False-head-start route",
+      "Cut and alternate destination"
+    ],
+    "replication": "Source-reported 11 local tests, reproducible JS results and GitHub Actions",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Explorer computes time-dependent earliest arrivals across all potential edges",
+      "Global resource pool and predecessor traceback; one selected terrain"
+    ],
+    "source": "https://github.com/anttiluode/KasvavatKiskotSol/blob/main/README.md"
+  },
+  {
+    "id": "nov8-kiskot-claude-timing-and-trap",
+    "node": "KasvavatKiskotClaude",
+    "claim": "Timing-gated path reinforcement can beat time-blind flow on constructed phase-window tasks, but strongly reinforced first routes lock in and a Physarum baseline wins ordinary shortest paths.",
+    "design": "20 random 7x7 worlds deliberately constructed with cheapest route missing receiver timing; phase, flow, static, Physarum, oracle and seeded bad-route controls",
+    "result": "mixed",
+    "motifs": [
+      "nov8-growth-by-timed-credit"
+    ],
+    "sample": {
+      "unit": "constructed world",
+      "count": 20
+    },
+    "metrics": [
+      {
+        "name": "valid timed route successes / 20",
+        "treatment": 14,
+        "control": 5,
+        "comparison": "timing-gated walker vs flow-only"
+      },
+      {
+        "name": "bad-head-start worlds stuck or failed / 20",
+        "treatment": 15,
+        "control": null,
+        "comparison": "default gamma=2 reinforcement"
+      }
+    ],
+    "controls": [
+      "Static rails",
+      "Time-blind stochastic walker",
+      "Kirchhoff Physarum",
+      "Timing-aware route oracle",
+      "Time-blind shortest-path task",
+      "Wrong-route head start and low-exploration variants"
+    ],
+    "replication": "Source-reported deterministic 20-world benchmark and seven unit tests",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Phase-window worlds intentionally reward phase-aware acceptance",
+      "Path-memory acknowledgments and global scaling are not local growth cone feedback",
+      "Physarum reaches the ordinary shortest route in 20/20 worlds"
+    ],
+    "source": "https://github.com/anttiluode/KasvavatKiskotClaude/blob/main/README.md"
+  },
+  {
+    "id": "nov8-fiberlock-recalibration",
+    "node": "TorsionFreeMirrorLock",
+    "claim": "Public-port-indistinguishable interior parameters can be distinguished by privileged clamped probes; apparent loss under a stale fixed key is often calibration drift before noise eventually erases reliable discrimination.",
+    "design": "Four-port/ten-interior parameter-fiber model; 64 hidden words, interior/boundary plasticity and recalibrated vs stale keys",
+    "result": "mixed",
+    "motifs": [
+      "nov8-hidden-access-is-not-hidden-state"
+    ],
+    "sample": {
+      "unit": "stored word",
+      "count": 64
+    },
+    "metrics": [
+      {
+        "name": "decoded words at 50 writes and 1% noise (%)",
+        "treatment": 100,
+        "control": 1.6,
+        "comparison": "recalibrated key vs fixed old key"
+      },
+      {
+        "name": "selected hidden fiber dimension",
+        "treatment": 9,
+        "comparison": "bulk density 0.8"
+      }
+    ],
+    "controls": [
+      "Old vs recalibrated templates",
+      "Boundary-only vs interior plasticity",
+      "Shared hidden gain",
+      "Held-out frequency probes and noise sweeps"
+    ],
+    "replication": "Source-reported run_all and followup numerical receipt",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Privileged nonlocal clamp/interior key",
+      "No torsion-free group law; all dynamical modes are port-observable",
+      "High noise or edge saturation can genuinely collapse words"
+    ],
+    "source": "https://github.com/anttiluode/TorsionFreeMirrorLock/blob/main/README.md"
+  },
+  {
+    "id": "nov8-ecg-scalar-reduction",
+    "node": "GeometricNeuronOriginReview",
+    "claim": "The old image-based PerceptionLab feedback pulse is exactly reproducible by a scalar lookup plus an ordered finite-memory controller, with a host-dependent period and unused integral state.",
+    "design": "Bit-exact 3000-tick image vs lookup comparison; four-tick host scheduler vs one-tick reconstruction; feedback clamping and 50-sample history permutation",
+    "result": "supports",
+    "motifs": [
+      "nov8-feedback-causal-collapse"
+    ],
+    "sample": {
+      "unit": "simulated tick",
+      "count": 3000
+    },
+    "metrics": [
+      {
+        "name": "faithful four-tick host period",
+        "treatment": 59,
+        "control": 52,
+        "comparison": "four-tick scheduler vs old one-tick reconstruction"
+      }
+    ],
+    "controls": [
+      "Full image path vs reduced scalar lookup",
+      "Clamp feedback",
+      "History order permutation with matched moments",
+      "Perturb integral_state",
+      "One- vs four-tick update"
+    ],
+    "replication": "Source-reported causal reduction script and eight regression checks",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Synthetic delayed controller, not clinical ECG",
+      "Four samples are not eigenmodes",
+      "Same mean and variance are not a sufficient state when sample exit order differs"
+    ],
+    "source": "https://github.com/anttiluode/GeometricNeuronOriginReview/blob/main/README.md"
   }
 ]
