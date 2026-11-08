@@ -777,5 +777,23 @@
   },
   "sliderv3-resource-matched-order-memory": {
     "nov7-written-state-and-readable-state": "supports"
+  },
+  "nov8-turntable-locked-delay": {
+    "nov8-communication-by-timing": "documents"
+  },
+  "nov8-aisol-context-interventions": {
+    "nov8-communication-by-timing": "supports"
+  },
+  "nov8-kiskot-sol-timed-route-repair": {
+    "nov8-growth-by-timed-credit": "documents"
+  },
+  "nov8-kiskot-claude-timing-and-trap": {
+    "nov8-growth-by-timed-credit": "documents"
+  },
+  "nov8-fiberlock-recalibration": {
+    "nov8-hidden-access-is-not-hidden-state": "documents"
+  },
+  "nov8-ecg-scalar-reduction": {
+    "nov8-feedback-causal-collapse": "supports"
   }
 }
