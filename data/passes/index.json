@@ -546,5 +546,9 @@
   {
     "path": "november-7-crystalmoon-descendants.json",
     "enabled": true
+  },
+  {
+    "path": "november-8-train-growth-and-causal-audits.json",
+    "enabled": true
   }
 ]
