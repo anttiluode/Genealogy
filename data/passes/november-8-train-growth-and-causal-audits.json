@@ -1,0 +1,230 @@
+{
+  "id": "november-8-train-growth-and-causal-audits",
+  "title": "November 8: growing rails, timing communication and causal reductions",
+  "reviewed_at": "2026-11-08",
+  "order": 182,
+  "summary": "User's November 8 activity tally: 15 commits across six repositories; five newly indexed repositories, plus one previously inventoried historical ECG repository promoted to reviewed status. Source-reported numerical claims are distinguished from independent test execution.",
+  "nodes": [
+    {
+      "id": "TurntableNeuron",
+      "url": "https://github.com/anttiluode/TurntableNeuron",
+      "family": "phase-routing",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "v2-v5 rotating train-yard input sampler; vector AIS computes phase-coded XOR under balanced conditions, while a separate pilot entrains listeners and v5 measures timing windows and path sums.",
+      "survived": "Source reports 1.44 extra bits from phase release beyond scalar count (no jitter); pilot locking tolerates 32/32 common-delay conditions against 4/32 unlocked. V5 documents phase-window/jitter tradeoff, classical phasor sums and 19 Node tests.",
+      "killed": "Private data jitter is not removed by pilot locking. The device is a designed mathematical toy, not a biological neuron, quantum path integral, shortest-route solver or trained neural network.",
+      "evidence": "https://github.com/anttiluode/TurntableNeuron/blob/main/README.md",
+      "tags": [
+        "2026-11-08",
+        "reviewed",
+        "causal-mechanism"
+      ],
+      "era": "November 8: phase trains and growing rails",
+      "era_order": 182
+    },
+    {
+      "id": "TurntableAISol",
+      "url": "https://github.com/anttiluode/TurntableAISol",
+      "family": "adaptive-neural-network",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Independent nine-yard three-layer graph with local clocks, vertical and lateral packets, apical modulatory input, basket-style soma shunt and chandelier-style AIS veto.",
+      "survived": "Source reports 30/30 apical-enabled exits vs 0/30 basal alone; basket reduces 1.5 load to 0.3699; chandelier holds 1.5 load while preventing exit. All-yard test gives 72 exits vs 31 with vertical wiring removed.",
+      "killed": "Its topology, route types and biological labels are hand-supplied. Not realistic neurons or proof of AI superiority; it has no learned growing tracks.",
+      "evidence": "https://github.com/anttiluode/TurntableAISol/blob/main/README.md",
+      "tags": [
+        "2026-11-08",
+        "reviewed",
+        "causal-mechanism"
+      ],
+      "era": "November 8: phase trains and growing rails",
+      "era_order": 182
+    },
+    {
+      "id": "KasvavatKiskotSol",
+      "url": "https://github.com/anttiluode/KasvavatKiskotSol",
+      "family": "structural-growth",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Sol's independent deterministic phase-gated growing rails: every possible lattice edge receives an exploratory wavefront, a target ACK reinforces the predecessor route, and a 15-unit global material budget makes rails compete.",
+      "survived": "On one constructed 12x7 landscape, source reports 73-tick phase-aware delivery vs 94 flow-only; after severing a rail it rebuilds an 80-tick route, and after retargeting gets 78 ticks vs 118 flow-only. Eleven tests and passing Actions reported.",
+      "killed": "The explorer is a time-dependent shortest-arrival scheduler with path traceback, not a demonstrated purely local growing organism. Budget and target are global/external. One scenario; not a general TSP solution.",
+      "evidence": "https://github.com/anttiluode/KasvavatKiskotSol/blob/main/README.md",
+      "tags": [
+        "2026-11-08",
+        "reviewed",
+        "causal-mechanism"
+      ],
+      "era": "November 8: phase trains and growing rails",
+      "era_order": 182
+    },
+    {
+      "id": "KasvavatKiskotClaude",
+      "url": "https://github.com/anttiluode/KasvavatKiskotClaude",
+      "family": "structural-growth",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Claude's independent stochastic ant-colony-like walkers, phase-window target reply, budgeted material and evaporating rail strengths in 20 constructed 7x7 worlds.",
+      "survived": "Time-aware walker succeeds 14/20 timing-window worlds vs 5/20 time-blind flow and 1/20 Physarum, after cut 13/20 and after retargeting 19/20. Physarum finds optimum 20/20 on the plain shortest-route task.",
+      "killed": "The worlds are intentionally constructed so cheapest routes miss the timing window. ACK remembers the walk, the resource budget is nonlocal, and the default strong-feedback learner stays on a bad head-start route or fails in 15/20 worlds.",
+      "evidence": "https://github.com/anttiluode/KasvavatKiskotClaude/blob/main/README.md",
+      "tags": [
+        "2026-11-08",
+        "reviewed",
+        "causal-mechanism"
+      ],
+      "era": "November 8: phase trains and growing rails",
+      "era_order": 182
+    },
+    {
+      "id": "TorsionFreeMirrorLock",
+      "url": "https://github.com/anttiluode/TorsionFreeMirrorLock",
+      "family": "hidden-parameter-fiber",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "No-graph-symmetry example of boundary-indistinguishable interior graph *parameters*; a privileged clamped interior key can decode which hidden realization is present.",
+      "survived": "Source reports 9-dimensional hidden fiber, 64 keyed words, safe boundary-only plasticity and common hidden scaling. November 8 correction finds that many apparently erased words were merely misread by an out-of-date codebook.",
+      "killed": "The storage is parameter nonidentifiability, not a dark dynamical state. Maps between hidden words do not compose, so torsion-freeness is not earned. Interior key/clamp is privileged, and arbitrary plasticity leaks/collapses information.",
+      "evidence": "https://github.com/anttiluode/TorsionFreeMirrorLock/blob/main/README.md",
+      "tags": [
+        "2026-11-08",
+        "reviewed",
+        "causal-mechanism"
+      ],
+      "era": "November 8: phase trains and growing rails",
+      "era_order": 182
+    },
+    {
+      "id": "GeometricNeuronOriginReview",
+      "url": "https://github.com/anttiluode/GeometricNeuronOriginReview",
+      "family": "feedback-autopsy",
+      "status": "ledger",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Causal reduction of the old PerceptionLab image-to-feedback ECG-like controller: 256x256 image branch replaced by a one-dimensional lookup, with ordered 50-sample controller history and four-tick host scheduler.",
+      "survived": "Source reports bit-exact reduced trajectory over 3000 ticks; faithful host period 59 instead of the old 52 from a one-tick reconstruction. Clamp and sample-window permutation alter the dynamics; integral_state is updated but never read.",
+      "killed": "The four output wires were image samples, not eigenmodes; the large image did not constitute high-dimensional autonomous state, and the 52-tick interpretation was not the faithful host loop.",
+      "evidence": "https://github.com/anttiluode/GeometricNeuronOriginReview/blob/main/README.md",
+      "tags": [
+        "2026-11-08",
+        "reviewed",
+        "causal-mechanism"
+      ],
+      "era": "November 8: phase trains and growing rails",
+      "era_order": 182
+    }
+  ],
+  "edges": [
+    {
+      "source": "PerceptionLab",
+      "target": "GeometricNeuronOriginReview",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "The historical ECG graph and node implementations were frozen in the audit for an exact causal reduction.",
+      "evidence": "https://github.com/anttiluode/GeometricNeuronOriginReview/blob/main/README.md"
+    },
+    {
+      "source": "Friday",
+      "target": "TorsionFreeMirrorLock",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Friday's mirror-protected dark sector inspired a distinct non-symmetry parameter fiber; no direct code ancestry or same storage mode is claimed.",
+      "evidence": "https://github.com/anttiluode/TorsionFreeMirrorLock/blob/main/README.md"
+    },
+    {
+      "source": "SliderV3",
+      "target": "TorsionFreeMirrorLock",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "The fiber project explicitly uses SliderV3 strain-driven plasticity as a perturbation.",
+      "evidence": "https://github.com/anttiluode/TorsionFreeMirrorLock/blob/main/README.md"
+    },
+    {
+      "source": "TurntableNeuron",
+      "target": "TurntableAISol",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "The later nine-yard network reimplements angular sampling and phase-delayed departures with a multilayer routing graph.",
+      "evidence": "https://github.com/anttiluode/TurntableAISol/blob/main/README.md"
+    },
+    {
+      "source": "TurntableNeuron",
+      "target": "KasvavatKiskotSol",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "Sol cites the original turntable's clock windows as conceptual ingredients of a separate structural-growth engine.",
+      "evidence": "https://github.com/anttiluode/KasvavatKiskotSol/blob/main/README.md"
+    },
+    {
+      "source": "TurntableNeuron",
+      "target": "KasvavatKiskotClaude",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "Claude uses the time-window problem from the single yard in a separate ant-like route-selection algorithm.",
+      "evidence": "https://github.com/anttiluode/KasvavatKiskotClaude/blob/main/README.md"
+    },
+    {
+      "source": "TurntableAISol",
+      "target": "KasvavatKiskotSol",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Sol cites AISol's multilevel yards but explicitly says its apical/basket/chandelier controls are not yet integrated.",
+      "evidence": "https://github.com/anttiluode/KasvavatKiskotSol/blob/main/README.md"
+    },
+    {
+      "source": "KasvavatKiskotClaude",
+      "target": "KasvavatKiskotSol",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Independent same-day growing-rail programs with different exploration/credit mechanisms; no file inheritance.",
+      "evidence": "https://github.com/anttiluode/KasvavatKiskotSol/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov8-communication-by-timing",
+      "title": "The receiver clock makes time a selective address",
+      "description": "Track length, rotating input windows, complex-phase departure, pilot synchronization and time-dependent routing produce complementary but designed timing mechanisms. A biological neural analogy is not itself a physiological validation.",
+      "nodes": [
+        "TurntableNeuron",
+        "TurntableAISol",
+        "KasvavatKiskotSol",
+        "KasvavatKiskotClaude"
+      ]
+    },
+    {
+      "id": "nov8-growth-by-timed-credit",
+      "title": "Rails can store which deliveries were useful",
+      "description": "Two independent construction models reinforce ACK-winning routes under resource limits, cut pathways, retarget and expose lock-in. Their global budgets and path knowledge are not yet a completely local growth process.",
+      "nodes": [
+        "TurntableAISol",
+        "KasvavatKiskotSol",
+        "KasvavatKiskotClaude"
+      ]
+    },
+    {
+      "id": "nov8-hidden-access-is-not-hidden-state",
+      "title": "Parameter nonidentifiability differs from a mirror-protected dynamical sector",
+      "description": "Friday's mirror and TorsionFreeMirrorLock's port-indistinguishable interior are separate constructions. The latter has a privileged read key; usable local self-repair remains to be shown.",
+      "nodes": [
+        "Friday",
+        "TorsionFreeMirrorLock"
+      ]
+    },
+    {
+      "id": "nov8-feedback-causal-collapse",
+      "title": "A spectacular representation may conceal a very small active loop",
+      "description": "GeometricNeuronOriginReview proves an old PerceptionLab image feedback branch is an exact scalar lookup; the ordered window and four-tick host scheduler, not pixel count or unused integral state, set the behavior.",
+      "nodes": [
+        "PerceptionLab",
+        "GeometricNeuronOriginReview"
+      ]
+    }
+  ]
+}
