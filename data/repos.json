@@ -740,7 +740,7 @@
     "name": "BrainRailRoad",
     "url": "https://github.com/anttiluode/BrainRailRoad",
     "default_branch": "main",
-    "size": 163,
+    "size": 283,
     "visibility": "public",
     "description": "Sol ",
     "created_at": "2026-11-08T10:12:55Z",
@@ -2247,11 +2247,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 3054,
+    "size": 3412,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-11-08T16:15:11Z",
+    "updated_at": "2026-11-08T16:15:26Z",
     "inventory_status": "unread"
   },
   {
