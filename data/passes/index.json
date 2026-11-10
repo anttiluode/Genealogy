@@ -558,5 +558,9 @@
   {
     "path": "november-9-10-active-eyes-private-memory-fable-worlds.json",
     "enabled": true
+  },
+  {
+    "path": "november-10-return-to-geometric-neuron.json",
+    "enabled": true
   }
 ]
