@@ -1,0 +1,56 @@
+{
+  "id": "november-10-return-to-geometric-neuron",
+  "title": "November 10: the forgetting clock becomes a six-unit routing experiment",
+  "reviewed_at": "2026-11-10",
+  "order": 185,
+  "summary": "ReturnToGeometricNeuron directly reuses the bit-exact ECG loop from GeometricNeuronOriginReview as six coupled units. Its state-gated News rule preserves a weak temporal trace through fast common forcing, but does not learn bidirectional routing. An ideal hand-set chain works; a newly engineered nearest-predecessor event counter extracts that chain from externally forced teaching schedules, with a hard 1–5-tick credit window, fixed 5-tick replay, and an important last-taught-order confound. Learned 16-tap filters do not outperform fixed beat-only taps. No unit-state-dependent rule has been shown to self-learn the useful routing structure.",
+  "nodes": [
+    {
+      "id": "ReturnToGeometricNeuron",
+      "url": "https://github.com/anttiluode/ReturnToGeometricNeuron",
+      "family": "geometric-neuron",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Six connected copies of the archived 59-tick GeometricNeuronOriginReview excitable feedback loop; learned edge weights, measured phase sensitivity, fast-forcing protection, and controlled bidirectional replay using an optional hand-written trigger/refractory.",
+      "survived": "Phase-response measurement finds an 8-tick susceptibility pattern nested in the 59-tick cycle (its cause remains unproven). News-gated weights preserve taught order through a fast common forcing regime and perturbations reveal learned directed influence; unequal frozen weights alone explain desynchronization. With a frozen hand-set bidirectional chain, endpoint cues produce 62.5%/67.7% exact replay (96 trials per direction); a separately designed nearest-predecessor event rule gives 68.8%/80.2% with fixed beat taps 0–1, making adjacent weights 0.198 versus 0.032 shortcuts at a 3-tick teaching gap.",
+      "killed": "A colony with identical frozen weights remaining synchronous is not evidence learning rescued it. Original News weights fail two-order selection (7.3%/1.0%). The successful predecessor rule is an offline count from *externally forced* training pulses; the six oscillators' internal state does not determine credit. Its 1–5-tick window fails at teaching gaps 6 and 8; replay timing defaults to the hand-written five-tick trigger delay. Spontaneous reverse replay is heavily biased by whichever teaching block came last; replay at gaps without learning is partly residual fast-state timing. Learned 16-tap filters do not beat fixed taps 0–1. No endogenous goal-directed learning, useful external task, MIT-style theta cognition, or new biological synapse has been shown.",
+      "evidence": "https://github.com/anttiluode/ReturnToGeometricNeuron/blob/main/README.md",
+      "tags": [
+        "2026-11-10",
+        "ecg",
+        "excitable-loop",
+        "phase-gating",
+        "bidirectional-replay",
+        "teacher-forcing",
+        "nearest-predecessor",
+        "eligibility-window",
+        "fast-state-confound",
+        "negative-controls"
+      ],
+      "era": "November 10: the coupled forgetting clock",
+      "era_order": 185
+    }
+  ],
+  "edges": [
+    {
+      "source": "GeometricNeuronOriginReview",
+      "target": "ReturnToGeometricNeuron",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "The six-unit colony imports the previously established bit-exact reduced ECG feedback loop, with the same 50-sample history and four-tick delayed image/tap response; new coupled edges and plasticity are explicit additions, not properties of the archived original.",
+      "evidence": "https://github.com/anttiluode/ReturnToGeometricNeuron/blob/main/gn/core.py"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov10-routed-activity-versus-learned-route",
+      "title": "A circuit able to replay a sequence is not necessarily able to learn its own routing",
+      "description": "The old feedback loop produces refractory-like timing. A six-unit network with appropriate frozen connections can replay two opposite orders, but the original local News gate only stores temporal traces and the later successful predecessor rule counts *forced* external teaching events within a fixed 1–5-tick window. Stable structure, activity-dependent learning, endogenous credit assignment, and useful context selection are separate requirements. The sixth-round last-block reversal exposes how fast transient phase state can masquerade as stored replay.",
+      "nodes": [
+        "GeometricNeuronOriginReview",
+        "ReturnToGeometricNeuron"
+      ]
+    }
+  ]
+}
