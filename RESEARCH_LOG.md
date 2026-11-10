@@ -1,5 +1,17 @@
 # Genealogy research log
 
+## 2026-11-10 — Five curated arrivals: active query, P3 eye, persistent Body, and two Fable descendants
+
+Five repositories already present in the automatic **610-repo** inventory, previously labeled unread, enter the curated wall: **OneTinyTransformer**, **SihtiSilma**, **Muru**, **CrystalMoonV3** and **NotKansas2**. Added five nodes, six correctly typed lineage edges, three motifs and five evidence records. This is a promotion from inventory to interpretation, not a fresh five-repository census increment.
+
+OneTinyTransformer's learned query policy succeeds over random but loses to analytic disagreement (**73.0% / 62.5% / 87.8%** after four looks). SihtiSilma directly reuses SihtiImageModel's trained P3 and on 200 fresh BSDS500 test scenes improves selection over edge choice **+0.57 dB**, with corrected feedback **+0.12 dB**. Muru draws on those active observation ideas and shows causal Eye/Body persistence, but its vertical pillars are mostly architectural broadcast and EMA; five-seed clamped ranks are not proof of intelligence.
+
+Fable's **CrystalMoonV3** is directly descended from CrystalMoonV2: RGB-dispersive moonlight, colour-written fine lattice and improved glass/rendering, with **unchanged coarse blobs**, missing end-to-end loop proof and no native 3060 benchmark. The separate branch **NotKansas → NotKansas2** changes its moon interior from one Poincaré-ball honeycomb to eight connected regular Coxeter honeycombs with pearl descent, but **not** the flat 64³ crystal growth law. Frame, pearls and cell-face symmetry are rendered rather than grown.
+
+The November 8 phase railway and negative BrainRailRoad result remain in their existing notes; Fable's provisional ECG/refractory analysis also retains its existing November 10 chapter. Parent-project performance numbers are **source-reported, not independently rerun** in this curation pass.
+
+[Live wall](https://anttiluode.github.io/Genealogy/#nov9-10-new-branches) · [Review](docs/reviews/2026-11-10-five-branches-active-eyes-fable-worlds.md) · [Pass](data/passes/november-9-10-active-eyes-private-memory-fable-worlds.json).
+
 ## 2026-11-10 — The accidental ECG as a refractory-like, phase-resetting controller
 
 A follow-up read of [GeometricNeuronOriginReview](https://github.com/anttiluode/GeometricNeuronOriginReview) reframes the 59-tick software oscillation as a **refractory-like delayed feedback clock**, not an artificial neuron. The **published November 8 reduction** already establishes the lookup-equivalent image path, 50-sample ordered controller memory, four-tick host path, clamp sensitivity and sensor-footprint effects. The **new Fable analysis, supplied by the user, is provisional**: a proposed 50 + 1 + 4 + 4 period mechanism, a 204-setting period sweep (18 approximate doublings), convergence to one sampled cycle from 3,000 starts, and one-tick perturbations at 59 phases that distinguish weak-insensitive from strong-reset responses. The three test scripts were not included in the source repo or independently inspected here; the new numbers are *reported*, not independently reproduced.
