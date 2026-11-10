@@ -1,5 +1,13 @@
 # Genealogy research log
 
+## 2026-11-10 — The accidental ECG as a refractory-like, phase-resetting controller
+
+A follow-up read of [GeometricNeuronOriginReview](https://github.com/anttiluode/GeometricNeuronOriginReview) reframes the 59-tick software oscillation as a **refractory-like delayed feedback clock**, not an artificial neuron. The **published November 8 reduction** already establishes the lookup-equivalent image path, 50-sample ordered controller memory, four-tick host path, clamp sensitivity and sensor-footprint effects. The **new Fable analysis, supplied by the user, is provisional**: a proposed 50 + 1 + 4 + 4 period mechanism, a 204-setting period sweep (18 approximate doublings), convergence to one sampled cycle from 3,000 starts, and one-tick perturbations at 59 phases that distinguish weak-insensitive from strong-reset responses. The three test scripts were not included in the source repo or independently inspected here; the new numbers are *reported*, not independently reproduced.
+
+The follow-up separates a phase-resettable clock from a durable writable memory, and a refractory-like history variable from a synapse: no ion-channel model, pre/post synaptic transmission, stored learned weights or physically grounded spike generator is present. It also sharpens the scientific lens problem: increasing nominal image resolution altered the *feedback measurement*, not just how sharply the same object appeared. The next falsifiable step is to smooth the response and threshold independently, measure infinitesimal phase response versus finite kicks, and test local adaptive learning against a numerical gradient.
+
+[Live wall chapter](https://anttiluode.github.io/Genealogy/#nov10-geometricneuron) · [Follow-up note](docs/reviews/2026-11-10-ecg-refractory-phase-and-lenses.md) · [Original code-backed causal reduction](https://github.com/anttiluode/GeometricNeuronOriginReview/blob/main/docs/CAUSAL_REDUCTION.md).
+
 ## 2026-11-08 — BrainRailRoad, an auditable but not-yet-trained phase railway
 
 Added **BrainRailRoad** as the next phase-addressed network experiment, raising the unique repository census **604 → 605**. This later addition is separate from the already recorded 15-commit/six-repository November 8 tally.
