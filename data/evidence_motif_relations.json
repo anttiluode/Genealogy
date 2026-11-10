@@ -819,5 +819,11 @@
   },
   "nov10-notkansas2-geometry-pearls": {
     "nov10-rendered-geometry-versus-growing-geometry": "documents"
+  },
+  "nov10-ecg-colony-phase-gate-and-directed-weight-control": {
+    "nov10-routed-activity-versus-learned-route": "documents"
+  },
+  "nov10-colony-cue-ideal-versus-temporal-counter-and-gap": {
+    "nov10-routed-activity-versus-learned-route": "supports"
   }
 }
