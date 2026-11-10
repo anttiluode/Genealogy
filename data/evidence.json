@@ -12393,5 +12393,255 @@
       "Mask removal cannot fix zero magnitude derivative, and surrogate-only scalar load credit remains untested"
     ],
     "source": "https://github.com/anttiluode/BrainRailRoad/blob/main/circuits/RESCUE.md"
+  },
+  {
+    "id": "nov9-tiny-transformer-trained-selector",
+    "node": "OneTinyTransformer",
+    "claim": "Under a fixed four-coordinate sensing budget a trained transformer can outperform random selection, but not an analytic posterior-disagreement rule; reusing the tiny pretrained language model's weights has no established advantage.",
+    "design": "One seeded 960-trial evaluation with eight competing 24D patterns; Gaussian noise sigma 0.9; 45 train and 24 held-out word embeddings; same Gaussian decoder and observation budget, including randomly initialized and frozen-block controls.",
+    "result": "mixed",
+    "motifs": [
+      "nov9-budgeted-looking-needs-controlled-information"
+    ],
+    "sample": {
+      "unit": "held-out synthetic trial",
+      "count": 960
+    },
+    "metrics": [
+      {
+        "name": "accuracy after four observations (%)",
+        "treatment": 73,
+        "control": 62.5,
+        "comparison": "learned pretrained-tuned vs seeded random"
+      },
+      {
+        "name": "accuracy after four observations (%), analytic disagreement",
+        "treatment": 87.8,
+        "control": 73,
+        "comparison": "analytic rule vs learned pretrained-tuned"
+      },
+      {
+        "name": "random-initialized learned transformer accuracy (%)",
+        "treatment": 72.6,
+        "control": 73,
+        "comparison": "random-block vs pretrained-block fine-tuned"
+      }
+    ],
+    "controls": [
+      "Fixed coordinate order",
+      "Seeded random",
+      "Frozen original transformer blocks",
+      "Randomly initialized tuned blocks",
+      "Same posterior decoder for every policy",
+      "Held-out word-embedding split"
+    ],
+    "replication": "Source-reported one-seed scored result and machine-readable experiments/results_learned_policy.json",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Counterfactual labeled training feedback supplies hidden-target identity",
+      "Only one evaluation seed and narrow synthetic candidate family",
+      "Analytic selector cheaper and stronger than learned model",
+      "Promptless recurrence is a newly added rule, not existing LM autonomy"
+    ],
+    "source": "https://github.com/anttiluode/OneTinyTransformer/blob/main/experiments/LEARNED_POLICY.md"
+  },
+  {
+    "id": "nov9-sihtisilma-200-image-active-selection",
+    "node": "SihtiSilma",
+    "claim": "Previously trained local P3 expert disagreement guides tile observations better than a coarse-edge sensing policy on a fresh held-out image split; feedback v2 adds a smaller gain.",
+    "design": "Pre-registered, single run on all 200 BSDS500 test photos (P3 trained on 200 separate BSDS500 train photos), 96x64 grayscale, 20 disjoint 8x8 pixel tile reveals and matched budgets; four-photo dev used for debugging.",
+    "result": "mixed",
+    "motifs": [
+      "nov9-budgeted-looking-needs-controlled-information"
+    ],
+    "sample": {
+      "unit": "BSDS500 test photo",
+      "count": 200
+    },
+    "metrics": [
+      {
+        "name": "PSNR after 20 looks (dB)",
+        "treatment": 24.06,
+        "control": 23.49,
+        "comparison": "P3+expert disagreement vs P3+coarse edges"
+      },
+      {
+        "name": "feedback v2 improvement (dB)",
+        "treatment": 24.18,
+        "control": 24.06,
+        "comparison": "scale-free feedback vs disagreement only"
+      },
+      {
+        "name": "look-conditioned gain improvement (dB)",
+        "treatment": 24.21,
+        "control": 24.18,
+        "comparison": "fails >=0.2dB pre-registered gate"
+      }
+    ],
+    "controls": [
+      "Seeded random",
+      "No-memory coarse edges",
+      "Original P3 plus coarse edges",
+      "Oracle using forbidden truth",
+      "No raw hidden-pixel access in observer path",
+      "P3 not rerun after revealed tiles"
+    ],
+    "replication": "Source-reported pre-registered run; reproducible tests/benchmark_v2.cjs test and results/v2_test.json",
+    "held_out": true,
+    "external_data": true,
+    "limitations": [
+      "Disagreement is a heuristic, not calibrated posterior uncertainty",
+      "Spatial crops and one sensor budget, grayscale only",
+      "New pixels are pasted, not used to rerun P3",
+      "Test split independence as stated in source; no independent rerun by Genealogy"
+    ],
+    "source": "https://github.com/anttiluode/SihtiSilma/blob/main/RESULTS_V2.md"
+  },
+  {
+    "id": "nov9-muru-pillars-matched-observation",
+    "node": "Muru",
+    "claim": "The visually striking Eye/Body pillars separate into near-rank-one Eye weight-change geometry, richer Body weight changes, and low-rank persistent Body EMA memory that appears even when reciprocal coupling is clamped.",
+    "design": "Five deterministic seeds with identical forced 96 pixel observations, same world switch at look 48; mutual, clamped at look 24 and clamped from start; compare effective rank of delta value-weight matrices and real Body EMA memory.",
+    "result": "mixed",
+    "motifs": [
+      "nov9-retained-state-does-not-equal-learned-meaning"
+    ],
+    "sample": {
+      "unit": "matched-observation seed",
+      "count": 5
+    },
+    "metrics": [
+      {
+        "name": "Eye delta-W effective rank at look 96",
+        "treatment": 1.041,
+        "control": 0,
+        "comparison": "mutual vs always clamped"
+      },
+      {
+        "name": "Body delta-W effective rank at look 96",
+        "treatment": 5.454,
+        "control": 0,
+        "comparison": "mutual vs always clamped"
+      },
+      {
+        "name": "Body EMA memory effective rank at look 96",
+        "treatment": 1.058,
+        "control": 1.058,
+        "comparison": "mutual vs always clamped"
+      }
+    ],
+    "controls": [
+      "Always clamped",
+      "Clamp after 24 looks",
+      "Identical sensor values and locations",
+      "New world and programmed Eye reset",
+      "Separate delta-W from Body-memory measurements"
+    ],
+    "replication": "Source-reported five-seed rank audit with diagnostics.js, scripts/rank_report.cjs and tests",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Attention weights are untrained",
+      "Nearly uniform memory rows follow EMA broadcast design",
+      "No superior held-out perception or learning demonstrated",
+      "Forced observations remove free-running behavior during audit"
+    ],
+    "source": "https://github.com/anttiluode/Muru/blob/main/RESULTS_RANK.md"
+  },
+  {
+    "id": "nov9-crystalmoon-v3-colour-growth",
+    "node": "CrystalMoonV3",
+    "claim": "Three-colour refractive moonlight can sculpt the fine grain differently inside a crystal, but does not yet establish a new closed feedback mechanism or altered large-scale crystal morphology.",
+    "design": "CPU controlled crystal-ball dispersion and blue/red/white illumination checks, inherited V2 regression ledger, plus 25-step software-rendered GPU-vs-CPU parity with synthetic RGB light.",
+    "result": "mixed",
+    "motifs": [
+      "nov10-rendered-geometry-versus-growing-geometry"
+    ],
+    "sample": {
+      "unit": "controlled simulation configuration",
+      "count": 1
+    },
+    "metrics": [
+      {
+        "name": "fine lattice occupancy (%) blue vs red",
+        "treatment": 74,
+        "control": 29,
+        "comparison": "same body in synthetic blue vs red light"
+      },
+      {
+        "name": "white-light fine lattice occupancy (%)",
+        "treatment": 62,
+        "comparison": "same body under white-light control"
+      },
+      {
+        "name": "mean absolute blue-red intensity in grown lit voxels",
+        "treatment": 0.09,
+        "comparison": "headless generated level-0 world"
+      }
+    ],
+    "controls": [
+      "Original V2 12 core tests",
+      "D=0 white-equivalent paths",
+      "Blue/red/white same-body comparison",
+      "Software GPU-vs-CPU field parity"
+    ],
+    "replication": "Source-reported 4/4 new tests, 12/12 inherited tests; software rendering only",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Coarse body law remains blob-forming",
+      "Link-by-link evidence not a closed end-to-end grain/light feedback proof",
+      "GPU photon tracer not compared number-for-number",
+      "RTX 3060 real-time FPS unmeasured"
+    ],
+    "source": "https://github.com/anttiluode/CrystalMoonV3/blob/main/README.md"
+  },
+  {
+    "id": "nov10-notkansas2-geometry-pearls",
+    "node": "NotKansas2",
+    "claim": "A direct hyperbolic world successor renders eight regular honeycomb families and lets camera descent through cell-centre pearls, while crystal itself is still grown in flat Euclidean space.",
+    "design": "Eight Coxeter mirror configurations; analytic relation, dihedral, duality and strut controls; 4,000 fold points per honeycomb, plus software-rendered level-2 to level-3 pearl travel.",
+    "result": "mixed",
+    "motifs": [
+      "nov10-rendered-geometry-versus-growing-geometry"
+    ],
+    "sample": {
+      "unit": "fold trial per honeycomb",
+      "count": 4000
+    },
+    "metrics": [
+      {
+        "name": "maximum unfinished folds / 4000 for ideal-corner honeycomb",
+        "treatment": 6,
+        "control": 0,
+        "comparison": "up to 40 passes vs full chamber convergence"
+      },
+      {
+        "name": "distinct honeycomb geometries",
+        "treatment": 8,
+        "comparison": "levels 0 to 7 before repeating"
+      }
+    ],
+    "controls": [
+      "N1 Coxeter mirror identities",
+      "N2 dihedral angles and boundary orthogonality",
+      "N3 duality",
+      "N4 fold convergence and distance preservation",
+      "N5 exact strut distance",
+      "N6 eight-level cycle and pearl fit",
+      "Software-rendered level-transition check"
+    ],
+    "replication": "Source-reported 6/6 tests in tests/kansas2.test.cjs and headless Chromium",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Crystal simulated on original flat grid and projected onto mirrored faces",
+      "Pearls and frame are drawn not grown",
+      "No return ascent; equivalent pearl destinations",
+      "Ideal-vertex near-wall folding can remain unfinished",
+      "Native GPU FPS unmeasured"
+    ],
+    "source": "https://github.com/anttiluode/NotKansas2/blob/main/README.md"
   }
 ]
