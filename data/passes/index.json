@@ -554,5 +554,9 @@
   {
     "path": "november-8-brainrailroad-hard-event-learning.json",
     "enabled": true
+  },
+  {
+    "path": "november-9-10-active-eyes-private-memory-fable-worlds.json",
+    "enabled": true
   }
 ]
