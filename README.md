@@ -4,6 +4,20 @@ Evidence-backed archaeology of Antti Luode's research repositories.
 
 The central premise is that hundreds of repositories are not hundreds of independent ideas. The project separates raw repository inventory from curated scientific interpretation, then records explicit inheritance, corrections, rediscoveries, convergences, extracted mechanisms, empirical evidence, and the scientific questions that remain unresolved.
 
+## 9–10 November 2026 — Five previously unread branches join the curated wall (inventory 610)
+
+**[Live wall chapter](https://anttiluode.github.io/Genealogy/#nov9-10-new-branches)** · [Source-linked audit](docs/reviews/2026-11-10-five-branches-active-eyes-fable-worlds.md) · [Curated pass](data/passes/november-9-10-active-eyes-private-memory-fable-worlds.json).
+
+The automatic repository census **already contained all five**, so this is **five new curated nodes, six typed lineage edges and three motifs**, not five newly discovered GitHub repos. The five now marked reviewed are **[OneTinyTransformer](https://github.com/anttiluode/OneTinyTransformer), [SihtiSilma](https://github.com/anttiluode/SihtiSilma), [Muru](https://github.com/anttiluode/Muru), [CrystalMoonV3](https://github.com/anttiluode/CrystalMoonV3), and [NotKansas2](https://github.com/anttiluode/NotKansas2)**. Earlier railway projects were already curated and are not duplicated.
+
+- **Active queries:** after four looks, OneTinyTransformer's trained observation policy reaches **73.0%** on 960 synthetic held-out trials versus **62.5%** random, but a simple analytic rule achieves **87.8%**; pretrained weights confer no established advantage over a random-weight control.
+- **The Sihti eye:** on **200 BSDS500 test photos**, trained P3 expert disagreement improves selection by **+0.57 dB** PSNR over P3+coarse-edge tile choice, and corrected feedback adds **+0.12 dB**. New observed tiles are pasted, not used to rerun P3.
+- **Muru:** fast four-look Eye and persistent Body are different mechanisms. The apparent pillar shapes are largely explained by shared-message EMA and rank-one Eye weight *changes*: Eye ΔW rank **1.041**, Body ΔW rank **5.454**, slow-memory rank **1.058** under matched five-seed observations. No improved curiosity policy or biological cognition is established.
+- **Fable 5.2, CrystalMoonV3:** chromatic moonlight writes the fine grain and more clearly shows it through glass, but **does not replace V2's coarse blob law**; a closed feedback benefit and real-GPU speed remain unverified.
+- **Fable 5.2, NotKansas2:** direct **NotKansas** successor with eight hyperbolic Coxeter honeycombs and pearl-based descent. The crystal still grows on a **flat 64³ grid** and is *rendered* on hyperbolic faces, not evolved by hyperbolic physics.
+
+The existing **November 10 ECG follow-up** is retained as a separate provisional source-reported interpretation; the **November 8 turntable/growing-rail/BrainRailRoad branch** remains in its prior passes, including the negative learning result.
+
 ## 10 November 2026 — The ECG-like loop that forgets
 
 The [Genealogy wall follow-up](https://anttiluode.github.io/Genealogy/#nov10-geometricneuron) revisits [GeometricNeuronOriginReview](https://github.com/anttiluode/GeometricNeuronOriginReview). The original reproducible causal reduction describes a delayed, finite-window switching oscillator rather than a neuron. A newer **source-reported Fable analysis** interprets the 59-tick rhythm as refractory-like forgetting and reports a window/delay sweep, finite phase resets and a sampled single-cycle attractor. **The new test scripts are not published or independently checked**, so the reported numerical extensions remain provisional. The mechanism resembles recovery of excitability, not a functioning biological synapse or learned synaptic plasticity. The lens lesson: changing vector resolution also changed the observation operator *inside feedback*, making the phenomenon itself change.
