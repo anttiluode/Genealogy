@@ -4,7 +4,7 @@
 
 ## Inventory versus interpretation
 
-The repository inventory already lists **610 distinct repos**, including the five reviewed here as `unread`. This pass changes **five existing inventory records to reviewed** and adds **five curated nodes**, **six typed links** and **three motifs**. It does **not** claim 610 new discoveries or duplicate the previously curated November 8 railways. User-provided activity totals are historical commit snapshots; they are not a comprehensive GitHub activity census.
+The repository inventory already lists **610 distinct repos**, with the five covered here previously marked `unread`. This pass changes **five existing inventory records to reviewed** and adds **five curated nodes**, **six typed links** and **three motifs**. It does **not** claim 610 new discoveries or duplicate the previously curated November 8 railways. User-provided activity totals are historical commit snapshots; they are not a comprehensive GitHub activity census.
 
 ## 1. OneTinyTransformer — a learned question is not necessarily the best question
 
