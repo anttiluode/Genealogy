@@ -1430,6 +1430,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "CrystalMoonV3",
+    "url": "https://github.com/anttiluode/CrystalMoonV3",
+    "default_branch": "main",
+    "size": 2586,
+    "visibility": "public",
+    "description": "Fable 5.2",
+    "created_at": "2026-11-09T19:14:55Z",
+    "updated_at": "2026-11-10T05:51:27Z",
+    "inventory_status": "unread"
+  },
+  {
     "name": "cubetrix",
     "url": "https://github.com/anttiluode/cubetrix",
     "default_branch": "main",
@@ -2247,11 +2258,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 3412,
+    "size": 3457,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-11-08T16:15:26Z",
+    "updated_at": "2026-11-10T07:16:22Z",
     "inventory_status": "unread"
   },
   {
@@ -3663,6 +3674,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "Muru",
+    "url": "https://github.com/anttiluode/Muru",
+    "default_branch": "main",
+    "size": 113,
+    "visibility": "public",
+    "description": "Sol makes a pet for itself. ",
+    "created_at": "2026-11-09T16:19:26Z",
+    "updated_at": "2026-11-09T17:27:42Z",
+    "inventory_status": "unread"
+  },
+  {
     "name": "Naula",
     "url": "https://github.com/anttiluode/Naula",
     "default_branch": "main",
@@ -3861,6 +3883,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "NotKansas2",
+    "url": "https://github.com/anttiluode/NotKansas2",
+    "default_branch": "main",
+    "size": 2467,
+    "visibility": "public",
+    "description": "",
+    "created_at": "2026-11-10T05:58:55Z",
+    "updated_at": "2026-11-10T06:55:40Z",
+    "inventory_status": "unread"
+  },
+  {
     "name": "NotSoSimpleNeuron",
     "url": "https://github.com/anttiluode/NotSoSimpleNeuron",
     "default_branch": "main",
@@ -3958,6 +3991,17 @@
     "created_at": "2026-03-15T11:16:43Z",
     "updated_at": "2026-03-15T11:23:17Z",
     "inventory_status": "reviewed"
+  },
+  {
+    "name": "OneTinyTransformer",
+    "url": "https://github.com/anttiluode/OneTinyTransformer",
+    "default_branch": "main",
+    "size": 140,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-11-09T14:32:40Z",
+    "updated_at": "2026-11-09T15:18:45Z",
+    "inventory_status": "unread"
   },
   {
     "name": "OOfCookies",
@@ -4992,6 +5036,17 @@
     "created_at": "2026-10-13T15:57:45Z",
     "updated_at": "2026-10-14T06:02:22Z",
     "inventory_status": "reviewed"
+  },
+  {
+    "name": "SihtiSilma",
+    "url": "https://github.com/anttiluode/SihtiSilma",
+    "default_branch": "main",
+    "size": 4544,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-11-09T15:40:56Z",
+    "updated_at": "2026-11-09T16:30:37Z",
+    "inventory_status": "unread"
   },
   {
     "name": "SihtiSort",
