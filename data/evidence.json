@@ -12643,5 +12643,116 @@
       "Native GPU FPS unmeasured"
     ],
     "source": "https://github.com/anttiluode/NotKansas2/blob/main/README.md"
+  },
+  {
+    "id": "nov10-ecg-colony-phase-gate-and-directed-weight-control",
+    "node": "ReturnToGeometricNeuron",
+    "claim": "Original ECG-loop response depends on arrival phase. Learned News weights retain temporally directed influence through fast common forcing, but unequal weights alone break deterministic synchrony.",
+    "design": "Six bit-exact loop copies, controlled pulse phase sweep at 59 phases, 12 seeds per teaching order, freeze/shuffle matrix controls, common forced 20-tick rhythm.",
+    "result": "mixed",
+    "motifs": [
+      "nov10-routed-activity-versus-learned-route"
+    ],
+    "sample": {
+      "unit": "seed per taught direction",
+      "count": 12
+    },
+    "metrics": [
+      {
+        "name": "post-forcing history decoded from News weights (24 runs)",
+        "treatment": 22,
+        "control": 12,
+        "comparison": "News vs frozen uniform matrix"
+      },
+      {
+        "name": "correct taught firing-order sign (24 runs)",
+        "treatment": 22,
+        "control": 14,
+        "comparison": "learned vs shuffled weights"
+      },
+      {
+        "name": "mean leader-to-follower next-beat displacement (ticks)",
+        "treatment": 14.2,
+        "control": 5.2,
+        "comparison": "reverse follower-to-leader, learned weights"
+      }
+    ],
+    "controls": [
+      "identical frozen weights",
+      "shuffled heterogeneously learned weights",
+      "single untrained-loop phase perturbations",
+      "multiple fast common-force durations"
+    ],
+    "replication": "Source-code experiments/colony.py and experiments/phase.py; result files published; not rerun by Genealogy",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Artificial externally forced rhythm is not a biological seizure",
+      "News update rule and homeostasis explicitly designed",
+      "Learned vs shuffled controls isolate ordered effects, not arbitrary task utility",
+      "The 8-tick susceptibility ripple's mechanistic cause has not been isolated"
+    ],
+    "source": "https://github.com/anttiluode/ReturnToGeometricNeuron/blob/main/results/phase.json"
+  },
+  {
+    "id": "nov10-colony-cue-ideal-versus-temporal-counter-and-gap",
+    "node": "ReturnToGeometricNeuron",
+    "claim": "Frozen bidirectional adjacency can support opposite-end cue replay, while endogenous state-gated News plasticity does not learn it. An externally scheduled nearest-predecessor counter can construct usable adjacency only inside its hard-coded temporal eligibility window.",
+    "design": "Rounds 3–6: 12 seed, 8 checkpoint, 96-trial paired cue/sham first-beat-order tests; frozen hand-given vs News vs learned-nearest neighbours; fixed, learned and shuffled tap filters; six taught gaps and reversed last training block.",
+    "result": "mixed",
+    "motifs": [
+      "nov10-routed-activity-versus-learned-route"
+    ],
+    "sample": {
+      "unit": "paired replay trial per condition",
+      "count": 96
+    },
+    "metrics": [
+      {
+        "name": "exact forward replay after cue (%)",
+        "treatment": 68.75,
+        "control": 7.2916666667,
+        "comparison": "nearest-predecessor learned edges and fixed beat taps vs News learned AB weights, gap 3"
+      },
+      {
+        "name": "exact reverse replay after cue (%)",
+        "treatment": 80.2083333333,
+        "control": 1.0416666667,
+        "comparison": "same conditions"
+      },
+      {
+        "name": "adjacent versus shortcut edge weight",
+        "treatment": 0.1975900432,
+        "control": 0.0319341078,
+        "comparison": "engineered nearest-predecessor credit with forced teaching, gap 3"
+      },
+      {
+        "name": "spontaneous forward replay (%) after opposite last block",
+        "treatment": 31.25,
+        "control": 3.125,
+        "comparison": "last taught 0123 vs last taught 3210, same gap"
+      }
+    ],
+    "controls": [
+      "frozen ideal bidirectional chain and shuffled ideal chain",
+      "original News and uniform weights",
+      "fixed 0+1 and fixed 6+7 tap detectors",
+      "shuffled learned taps and shuffled learned edges",
+      "no-cue from same snapshot",
+      "teaching gaps 1,2,3,4,5,6,8",
+      "reverse final teaching block"
+    ],
+    "replication": "Original six regression tests and rounds 4/5 successfully run on GitHub Actions; round 6 source-reported local rerun by Fable and published code and results; Genealogy has not rerun entire study",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "The predecessor rule uses externally forced beats; same weights follow from teaching schedule without oscillators",
+      "Eligibility credit window deliberately set to 1–5 ticks; fails at 6 and 8",
+      "5-tick trigger propagation is hand-written, not timing learned from examples",
+      "Last teaching block strongly biases no-cue activity and some apparent cue success",
+      "16-tap learned filter does not beat the fixed 0+1 detector",
+      "Replay accuracy is incomplete; no broader ML baseline or general AI functionality has been demonstrated"
+    ],
+    "source": "https://github.com/anttiluode/ReturnToGeometricNeuron/blob/main/results/round5_check.json"
   }
 ]
