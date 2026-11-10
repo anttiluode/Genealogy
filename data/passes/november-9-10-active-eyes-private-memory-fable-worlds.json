@@ -1,0 +1,204 @@
+{
+  "id": "november-9-10-active-eyes-private-memory-fable-worlds",
+  "title": "November 9–10: active eyes, private memory, and Fable's branching crystal worlds",
+  "reviewed_at": "2026-11-10",
+  "order": 184,
+  "summary": "Five already-inventoried but previously unread repositories are newly curated, not re-added to the 610-repository census. Two active-measurement experiments distinguish learned selectors from strong analytic policies; Muru's internal memory geometry is audited with clamping; Fable's V3 and NotKansas2 extend two separate Crystal Moon branches while preserving their growth-law limitations. Existing November 8 railway findings and November 10 ECG follow-up are not duplicated.",
+  "nodes": [
+    {
+      "id": "OneTinyTransformer",
+      "family": "adaptive-neural-network",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Self-contained 24-feature, four-layer/two-head trained browser transformer plus explicit promptless recurrence and a separate trained coordinate-query transformer for budgeted hidden-pattern observations.",
+      "survived": "On one seeded 960-trial held-out synthetic task with four observations, the trained fine-tuned policy scores 73.0% versus 62.5% seeded random and 60.7% fixed; the original 70-word tiny LM runs offline and its residual stream is inspectable.",
+      "killed": "The original autoregressive transformer is not autonomously thinking in a loop: recurrence is added externally. Analytic posterior disagreement reaches 87.8%, while randomly initialized trainable blocks reach 72.6%, so no meaningful pretrained-weight advantage is established; privileged training feedback and one seed limit generalization.",
+      "tags": [
+        "2026-11-09",
+        "active-query",
+        "tiny-transformer",
+        "frozen-weights",
+        "trained-policy",
+        "negative-control"
+      ],
+      "era": "November 9–10: active eyes, private memory, and changing worlds",
+      "era_order": 184,
+      "url": "https://github.com/anttiluode/OneTinyTransformer",
+      "evidence": "https://github.com/anttiluode/OneTinyTransformer/blob/main/README.md"
+    },
+    {
+      "id": "SihtiSilma",
+      "family": "visual-memory",
+      "status": "survivor",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Dependency-free active-sensing eye around the existing BSDS500-trained SihtiImageModel P3 512-expert patch memory: reveal budgeted 8×8 image tiles chosen by local expert disagreement or observed-error feedback.",
+      "survived": "On 200 BSDS500 test photos after 20 looks: P3+edge 23.49 dB; P3+disagreement 24.06 dB (+0.57 dB, 89% scene wins, bootstrap CI 0.49–0.66); scale-free feedback 24.18 dB (+0.12 dB). Experiment preregistration and a no-unobserved-pixel read boundary are documented.",
+      "killed": "Four-photo v1 feedback had a clamped, ineffective multiplier. Look-conditioned P3 amplitude-gain adjustment adds just +0.03 dB (below +0.2 gate). P3 is not rerun or trained after new looks; ground truth is pasted into revealed tiles, disagreement is not calibrated uncertainty, and the oracle is a forbidden-information ceiling.",
+      "tags": [
+        "2026-11-09",
+        "active-vision",
+        "sihti-p3",
+        "held-out-images",
+        "pre-registration",
+        "measurement-budget"
+      ],
+      "era": "November 9–10: active eyes, private memory, and changing worlds",
+      "era_order": 184,
+      "url": "https://github.com/anttiluode/SihtiSilma",
+      "evidence": "https://github.com/anttiluode/SihtiSilma/blob/main/README.md"
+    },
+    {
+      "id": "Muru",
+      "family": "adaptive-neural-network",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Offline untrained two-attention-organ research pet with fast four-observation Eye and slower persistent Body storing processed 16D Eye messages, asymmetric weight plasticity, next-look feedback and intervention-based rank diagnostics.",
+      "survived": "Eye resets fast value-weight changes across new worlds while Body EMA state and value weights survive. Five-seed matched-observation pillar audit: Eye delta-W effective rank 1.041/row uniformity 0.993; Body delta-W rank 5.454/uniformity 0.284; Body slow-memory rank 1.058 even when reciprocal weight feedback is clamped.",
+      "killed": "Body-memory pillars arise from a shared processed-message broadcast across EMA timescales, not proof of emergent conceptual representations. Muru's look policy is approximately tied with the simple Bayesian variance baseline; no learned curiosity, conscious pet or better held-out perception established. Original weight matrices are not themselves the plotted weight-change maps.",
+      "tags": [
+        "2026-11-09",
+        "eye-body",
+        "persistent-state",
+        "active-sensing",
+        "rank-audit",
+        "clamped-feedback"
+      ],
+      "era": "November 9–10: active eyes, private memory, and changing worlds",
+      "era_order": 184,
+      "url": "https://github.com/anttiluode/Muru",
+      "evidence": "https://github.com/anttiluode/Muru/blob/main/README.md"
+    },
+    {
+      "id": "CrystalMoonV3",
+      "family": "procedural-world",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Direct CrystalMoonV2 descendant with three ray-traced moonlight bands, dispersion-dependent bending, blue-minus-red modulation of fine-lattice growth, visible beads inside refractive glass and HDR-like glow/tone rendering.",
+      "survived": "The project reports V2's 12 tests and four additional RGB/colour-growth tests passing. Controlled blue/red/white illumination gives lattice in 74%/29%/62% of a test body; software-rendered GPU-vs-CPU growth parity is around 10^-7. Flight code remains present.",
+      "killed": "Coarse crystal body law and swollen blob morphology are unchanged; the closed feedback loop from colour-written grain to meaningfully re-bent light was not demonstrated. D=0.5 dispersion is exaggerated relative to glass; GPU photon tracer not parity-checked number-for-number; no physical-GPU frame rate or interactive flight performance verified.",
+      "tags": [
+        "2026-11-09",
+        "2026-11-10",
+        "fable-5.2",
+        "crystal",
+        "chromatic-dispersion",
+        "light-feedback",
+        "rendering"
+      ],
+      "era": "November 9–10: active eyes, private memory, and changing worlds",
+      "era_order": 184,
+      "url": "https://github.com/anttiluode/CrystalMoonV3",
+      "evidence": "https://github.com/anttiluode/CrystalMoonV3/blob/main/README.md"
+    },
+    {
+      "id": "NotKansas2",
+      "family": "procedural-world",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Direct NotKansas successor with eight alternating regular hyperbolic Coxeter honeycombs across levels, crystal imagery on cell faces, exact-distance struts and a pearl at each cell centre that descends into the next outside world.",
+      "survived": "Source-reported N1–N6 check mirror relations, dihedral angles, duality, chamber folding, strut distances and eight-level cycling; tested browser teleport from level 2 to 3 and rendered eight hyperbolic interiors headlessly. Four cells are finite-corner honeycombs and four have ideal vertices.",
+      "killed": "The living crystal still evolves in a flat 64^3 grid then is mirrored onto hyperbolic faces; struts and pearls are drawn rather than grown, pearls all lead to the same arrival, ascent is unsupported, and corner-near folding fails on up to 6/4000 samples for an ideal-vertex case. Native GPU speed is unmeasured.",
+      "tags": [
+        "2026-11-10",
+        "fable-5.2",
+        "hyperbolic-honeycomb",
+        "pearls",
+        "coxeter",
+        "flat-growth-mapped"
+      ],
+      "era": "November 9–10: active eyes, private memory, and changing worlds",
+      "era_order": 184,
+      "url": "https://github.com/anttiluode/NotKansas2",
+      "evidence": "https://github.com/anttiluode/NotKansas2/blob/main/README.md"
+    }
+  ],
+  "edges": [
+    {
+      "source": "SihtiImageModel",
+      "target": "SihtiSilma",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "SihtiSilma exports the trained P3 BSDS500 patch memory and reuses the five-stage sieve; new tile-selection logic is added.",
+      "evidence": "https://github.com/anttiluode/SihtiSilma/blob/main/README.md"
+    },
+    {
+      "source": "OneTinyTransformer",
+      "target": "SihtiSilma",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "SihtiSilma explicitly cites the tiny-transformer query experiments as active-observation inspiration, not as inherited weights or vision code.",
+      "evidence": "https://github.com/anttiluode/SihtiSilma/blob/main/README.md"
+    },
+    {
+      "source": "OneTinyTransformer",
+      "target": "Muru",
+      "type": "extracts",
+      "confidence": "medium",
+      "why": "Muru explicitly draws on the tiny-transformer attention/query study as conceptual inspiration; its two untrained 16-channel attention organs are newly implemented.",
+      "evidence": "https://github.com/anttiluode/Muru/blob/main/README.md"
+    },
+    {
+      "source": "SihtiSilma",
+      "target": "Muru",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "Muru's authors identify the active-eye experiment as inspiration for its budgeted pixel sensing and Body-regulated look selection; P3 BSDS weights are not reused.",
+      "evidence": "https://github.com/anttiluode/Muru/blob/main/README.md"
+    },
+    {
+      "source": "CrystalMoonV2",
+      "target": "CrystalMoonV3",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "V3 preserves V2's 64^3 two-scale crystal, membrane and flight implementation while adding RGB photon transport, colour-written fine grain and a new renderer.",
+      "evidence": "https://github.com/anttiluode/CrystalMoonV3/blob/main/README.md"
+    },
+    {
+      "source": "NotKansas",
+      "target": "NotKansas2",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "NotKansas2 inherits hyperbolic flight and the V2 flat-grid crystal simulation, extends the chamber construction from one to eight regular honeycombs and adds descending pearls.",
+      "evidence": "https://github.com/anttiluode/NotKansas2/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov9-budgeted-looking-needs-controlled-information",
+      "title": "Choose the next observation under a genuinely limited read budget",
+      "description": "The tiny transformer learns which coordinate to reveal but loses to an analytic disagreement rule; SihtiSilma's pretrained local experts choose useful image tiles on 200 test scenes; Muru exposes an internal Eye/Body control loop whose curiosity advantage remains unshown. A selected sensor address is not yet a learned world model.",
+      "nodes": [
+        "OneTinyTransformer",
+        "SihtiImageModel",
+        "SihtiSilma",
+        "Muru"
+      ]
+    },
+    {
+      "id": "nov9-retained-state-does-not-equal-learned-meaning",
+      "title": "An internal trace or pillar is not by itself intelligent memory",
+      "description": "Muru's near-rank-one Eye delta-weights and slow-memory pillars are explained by fixed broadcast/EMA mechanics, while its Body delta-weights have higher effective rank. Controlled new-world resets distinguish what persists from what learns; no performance advantage is inferred from attractive heatmaps.",
+      "nodes": [
+        "Muru",
+        "OneTinyTransformer",
+        "SihtiSilma"
+      ]
+    },
+    {
+      "id": "nov10-rendered-geometry-versus-growing-geometry",
+      "title": "Distinguish evolving fields from the geometry used to view them",
+      "description": "CrystalMoonV3 alters spectral transport and fine-lattice response but not the coarse blob law; NotKansas2 makes an eight-stage hyperbolic traversal but still folds a flat-grid living field into its faces. Neither demonstrates crystal growth governed by a hyperbolic Laplace–Beltrami operator; real GPU performance remains unmeasured.",
+      "nodes": [
+        "CrystalMoonV2",
+        "CrystalMoonV3",
+        "NotKansas",
+        "NotKansas2"
+      ]
+    }
+  ]
+}
