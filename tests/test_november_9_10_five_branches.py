@@ -54,7 +54,8 @@ class NovemberNineTenGenealogyTests(unittest.TestCase):
         for name in NAMES:
             self.assertIn(f'data-mad-node="{name}"', html)
         self.assertTrue(REVIEW.is_file())
-        self.assertIn("flat 64", REVIEW.read_text(encoding="utf8"))
+        self.assertIn("flat", REVIEW.read_text(encoding="utf8"))
+        self.assertIn("64³", REVIEW.read_text(encoding="utf8"))
 
 
 if __name__ == "__main__":
