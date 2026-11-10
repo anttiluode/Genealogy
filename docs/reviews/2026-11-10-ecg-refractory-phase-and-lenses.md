@@ -2,7 +2,7 @@
 
 *10 November 2026 · Follow-up to [GeometricNeuronOriginReview](https://github.com/anttiluode/GeometricNeuronOriginReview) and the [8 November causal reduction](https://github.com/anttiluode/GeometricNeuronOriginReview/blob/main/docs/CAUSAL_REDUCTION.md).*
 
-> **Evidence status:** The original 8 November reduction is published with code and measurements. The additional pulse mechanism, 204-setting sweep, 3,000-start attractor search and 59-phase perturbation sweep below were **reported by Fable in the user's 10 November conversation**. Its three test scripts were said to be in its workspace, **not committed**. Genealogy has **not rerun, independently verified, or inspected those scripts**. Treat them as testable provisional findings, not as confirmed source-code receipts.
+> **Updated evidence status (10 November 2026):** At this note's initial writing, the pulse mechanism, 204-setting sweep, 3,000-start search and phase-response studies were **reported from Fable's workspace before their code was available to Genealogy**. They have since been committed in [experiments/forgetting_clock.py](https://github.com/anttiluode/GeometricNeuronOriginReview/blob/main/experiments/forgetting_clock.py), with [results/forgetting_clock.json](https://github.com/anttiluode/GeometricNeuronOriginReview/blob/main/results/forgetting_clock.json) and the [mechanism note](https://github.com/anttiluode/GeometricNeuronOriginReview/blob/main/docs/FORGETTING_CLOCK.md). The reported numbers are therefore **source-code-backed rather than uncommitted claims**. Genealogy has inspected the published methods but **has not independently rerun the entire sweep**. A subsequent, separate six-unit descendant with its own measured limits is [ReturnToGeometricNeuron](https://github.com/anttiluode/ReturnToGeometricNeuron) ([six-round review](2026-11-10-return-to-geometric-neuron-six-rounds.md)).
 
 ## What was already established (published reduction)
 
@@ -12,14 +12,14 @@ Clamping its feedback to a constant stops the rhythm after its window flushes. R
 
 ## Fable's proposed mechanism: an excitable forgetting clock
 
-Fable's follow-up describes the 50-sample window as a **refractory-like memory**. In its reported 256-dimensional run, a burst includes two large sampled returns (3.47 and 3.88), holding estimated variance above target. Most intervening ticks idle between square sizes 43 and 48. Once those returns leave the sliding history, the controller crosses its hard threshold, produces a kick and passes through a blind response region; a zero relative to the nonzero setpoint is an effective input, not an inert absence.
+Fable's now-published follow-up describes the 50-sample window as a **refractory-like memory**. In its reported 256-dimensional run, a burst includes two large sampled returns (3.47 and 3.88), holding estimated variance above target. Most intervening ticks idle between square sizes 43 and 48. Once those returns leave the sliding history, the controller crosses its hard threshold, produces a kick and passes through a blind response region; a zero relative to the nonzero setpoint is an effective input, not an inert absence.
 
-Its explanatory period count is **50 (window) + 1 (threshold recognition) + 4 (outbound delay) + 4 (return delay) = 59**. This is a proposed mechanism for this operating regime, **not a universal period theorem**. Fable reports a 204-setting window/delay sweep: the approximation `period ≈ window + 2 × delay + c` had `c` in [−1, +4] except for 18 settings exhibiting approximately doubled periods. The exact period and all components of that decomposition should be checked against the uncommitted scripts before being promoted as replicated evidence.
+Its explanatory period count is **50 (window) + 1 (threshold recognition) + 4 (outbound delay) + 4 (return delay) = 59**. This is a proposed mechanism for this operating regime, **not a universal period theorem**. The published follow-up reports a 204-setting window/delay sweep: the approximation `period ≈ window + 2 × delay + c` had `c` in [−1, +4] except for 18 settings exhibiting approximately doubled periods. The period decomposition is supported by the source's committed experiment and report; Genealogy still has not independently rerun its parameter sweep, so it is a bounded result for this configuration rather than a universal theorem.
 
 ## Reported interventions: one sampled cycle, finite reset, weak-push insensitivity
 
-- **Attractor search:** Fable reports 3,000 random initial states converged to the same 59-tick limit cycle. This supports one observed basin under that sampling; it does **not prove** there are no other attractors.
-- **Phase kicks:** Reportedly tested a one-tick kick at all 59 cycle phases. Kicks through 0.03 produced no lasting phase displacement; a 0.000001 kick washed out in four ticks. Positive kicks +0.3/+1 shifted phase by one tick at most phases; a −1 kick commonly restarted the phase clock.
+- **Attractor search:** The committed source reports 3,000 random initial states converged to the same 59-tick limit cycle. This supports one observed basin under that sampling; it does **not prove** there are no other attractors.
+- **Phase kicks:** The published experiment tests a one-tick kick at all 59 cycle phases. Kicks through 0.03 produced no lasting phase displacement; a 0.000001 kick washed out in four ticks. Positive kicks +0.3/+1 shifted phase by one tick at most phases; a −1 kick commonly restarted the phase clock.
 - **Interpretation:** The current staircase response has little small-perturbation sensitivity yet large finite-perturbation effects. Thus **zero infinitesimal gradient does not imply zero finite causal effect**. The cycle could provide a resettable timing reference; it has **not** been shown to retain independently writable information about previous histories, nor to implement local learning.
 
 The reported tests **do not establish** that all possible internal histories are erased; rather they suggest no persistent, distinguishable memory *beyond phase* in the sampled attraction regime. The 59 phases correspond to fewer than six binary bits of *possible phase states*, **not six demonstrated reliable information bits**.
@@ -44,9 +44,9 @@ Distinguish three claims:
 
 No resolution level is inherently more truthful. A deeper explanation is one that survives carefully chosen interventions and predicts when another apparent explanation will fail.
 
-## Falsifiable next step (not run here)
+## Later tests and remaining open question
 
-Smooth the quantized sensor response and hard controller switch **one at a time**, preserving the loop delay and window. Measure an infinitesimal phase-response curve and compare it to finite phase kicks, across seeds and parameter sweeps. Then introduce an actual slowly adaptive local parameter and ask whether its free-versus-nudged change predicts a numerically measured objective gradient. Include a frozen-parameter control, shuffled histories and a conventional recurrent/timing baseline.
+The [10 November forgetting-clock note](https://github.com/anttiluode/GeometricNeuronOriginReview/blob/main/docs/FORGETTING_CLOCK.md) **now includes** a bounded, six-variant smoothing study. The original hard loop is phase-rigid, while tested softened versions gave lumpy or irregular phase responses, not a measured smooth proportional gradient. The separate [six-round colony](2026-11-10-return-to-geometric-neuron-six-rounds.md) measures phase-gated communication and two-direction replay, but its most successful learning rule counts externally forced teaching beats. A genuinely **self-generated, state-gated learning rule** that constructs useful routing—and an external task comparison—remain open.
 
 A smooth phase response could help credit assignment, but **having a limit cycle does not by itself guarantee a usable training gradient**. Nor does a phase-resetting controller imply that a synapse has been simulated.
 
@@ -55,4 +55,5 @@ A smooth phase response could help credit assignment, but **having a limit cycle
 - [Source model and archived nodes](https://github.com/anttiluode/GeometricNeuronOriginReview)
 - [Reproducible 8 November causal reduction](https://github.com/anttiluode/GeometricNeuronOriginReview/blob/main/docs/CAUSAL_REDUCTION.md)
 - [Genealogy's 8 November review](2026-11-08-train-growth-and-causality.md)
-- **10 November follow-up:** numerical details and interpretations supplied through the user's pasted Fable response; experiment scripts unavailable in the published repository at the time of this note. No independent Genealogy rerun.
+- **10 November follow-up:** initially reported in conversation; now backed by committed [experiment](https://github.com/anttiluode/GeometricNeuronOriginReview/blob/main/experiments/forgetting_clock.py), [results](https://github.com/anttiluode/GeometricNeuronOriginReview/blob/main/results/forgetting_clock.json), and [note](https://github.com/anttiluode/GeometricNeuronOriginReview/blob/main/docs/FORGETTING_CLOCK.md). No independent full Genealogy rerun.
+- [Six-round coupled-neuron descendant audit](2026-11-10-return-to-geometric-neuron-six-rounds.md): successful hand-specified replay, engineered timing-counter learner, and negative controls.
