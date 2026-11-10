@@ -4,6 +4,12 @@ Evidence-backed archaeology of Antti Luode's research repositories.
 
 The central premise is that hundreds of repositories are not hundreds of independent ideas. The project separates raw repository inventory from curated scientific interpretation, then records explicit inheritance, corrections, rediscoveries, convergences, extracted mechanisms, empirical evidence, and the scientific questions that remain unresolved.
 
+## 10 November 2026 — The ECG-like loop that forgets
+
+The [Genealogy wall follow-up](https://anttiluode.github.io/Genealogy/#nov10-geometricneuron) revisits [GeometricNeuronOriginReview](https://github.com/anttiluode/GeometricNeuronOriginReview). The original reproducible causal reduction describes a delayed, finite-window switching oscillator rather than a neuron. A newer **source-reported Fable analysis** interprets the 59-tick rhythm as refractory-like forgetting and reports a window/delay sweep, finite phase resets and a sampled single-cycle attractor. **The new test scripts are not published or independently checked**, so the reported numerical extensions remain provisional. The mechanism resembles recovery of excitability, not a functioning biological synapse or learned synaptic plasticity. The lens lesson: changing vector resolution also changed the observation operator *inside feedback*, making the phenomenon itself change.
+
+[Read the detailed follow-up and evidence limits](docs/reviews/2026-11-10-ecg-refractory-phase-and-lenses.md) · [Original code-backed causal reduction](https://github.com/anttiluode/GeometricNeuronOriginReview/blob/main/docs/CAUSAL_REDUCTION.md).
+
 ## Live atlas
 
 ### November 8, 2026 — BrainRailRoad joins the railway family (census 605)
