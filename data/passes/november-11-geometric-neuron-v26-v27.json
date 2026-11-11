@@ -3,7 +3,7 @@
   "title": "November 11: native setpoint excitation (V26) and the proposed V27 cable/ring branch",
   "reviewed_at": "2026-11-11",
   "order": 186,
-  "summary": "GeometricNeuronOriginReview is an archival causal review, not a numbered implementation. SurfaceListener (informally V26) reuses the audited feedback oscillator to study state-dependent surface listening, endogenous setpoint-port excitation, constant-dependent operating regimes, and a reliable but hand-wired one-way relay; the same setup does not yet learn, provide true refractory protection, or demonstrate persistent information. GeometricNeuronV27 exists as a repository and proposed spatial/ring continuation, but had only a licence at the time of review: its ring, memory, cable and growth mechanisms are untested hypotheses.",
+  "summary": "GeometricNeuronOriginReview is an archival causal review, not a numbered implementation. SurfaceListener (V26) reuses the audited feedback oscillator to study state-dependent surface listening, endogenous setpoint-port excitation, constant-dependent operating regimes, and a reliable but hand-wired one-way relay; the same setup does not yet learn, provide true refractory protection, or demonstrate persistent information. GeometricNeuronV27 exists as a repository and proposed spatial/ring continuation, but had only a licence at the time of review: its ring, memory, cable and growth mechanisms are untested hypotheses.",
   "nodes": [
     {
       "id": "GeometricNeuronSurfaceListener",
@@ -12,13 +12,13 @@
       "status": "experiment",
       "usefulness": "scientific",
       "confidence": "high",
-      "claim": "Informal 'V26': a ten-round continuation of the audited Perception Lab geometric feedback loop, using moving checkerboard coupling and the original Homeostatic Coupler setpoint_mod input to study inter-unit excitation, oscillator/relay operating regimes and one-way transmission.",
+      "claim": "V26: a ten-round continuation of the audited Perception Lab geometric feedback loop, using moving checkerboard coupling and the original Homeostatic Coupler setpoint_mod input to study inter-unit excitation, oscillator/relay operating regimes and one-way transmission.",
       "survived": "With setpoint_mod open, the reduced native.py returns the original loop when uncoupled (parity test), and an arriving two-tap signal can elicit a receiver-generated beat without output override. At constant 1.6, otherwise silent followers relayed a one-way chain at weight -6 with 300/300 reaches and 4 ticks per hop; an eight-unit chain relayed 50/50 observed beats. The constant sweep finds self-beating and silent-but-excitable regimes. These are source-reported code/test results, not independent Genealogy reruns.",
       "killed": "The checkerboard's apparent special spatial code has not been isolated from scalar square-size dynamics. Moving-surface coupling could silence a colony, and merely removing the isolated-unit saw worsened it. The one-way chain uses hand-set constants and weights, bidirectional wiring runs away, and the silent relay responds without an absolute refractory period. No endogenous learning, long-term memory, physical dendritic cable or biological neuron has been established.",
       "evidence": "https://github.com/anttiluode/GeometricNeuronSurfaceListener/blob/main/README.md",
       "tags": [
         "2026-11-11",
-        "v26-informal",
+        "v26",
         "setpoint-mod",
         "original-loop",
         "native-excitation",
@@ -37,7 +37,7 @@
       "status": "active",
       "usefulness": "conceptual",
       "confidence": "high",
-      "claim": "Newly created continuation proposed for spatially delayed/attenuated wiring and a circulating ring of silent geometric-neuron relays. The initial hypothesis is that a pulse may circulate without a separate oscillator; no implementation had been committed when this note was written.",
+      "claim": "Newly created continuation after GeometricNeuronSurfaceListener (V26) proposed for spatially delayed/attenuated wiring and a circulating ring of silent geometric-neuron relays. The initial hypothesis is that a pulse may circulate without a separate oscillator; no implementation had been committed when this note was written.",
       "survived": "The repository exists and the proposed experiment follows from V26's demonstrated one-way event regeneration. No V27 experimental success is recorded yet.",
       "killed": "A persistent ring, stable multi-pulse patterns, erase, increased capacity with longer cables, and selective excitation by distance have not been tested. A one-way loop is not automatically reliable memory: pulses can collide or cause repeated excitation, and finite propagation timing/recovery must be measured. Physical cable biophysics and learning are not implemented.",
       "evidence": "https://github.com/anttiluode/GeometricNeuronV27",
