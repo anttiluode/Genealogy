@@ -4,6 +4,14 @@ Evidence-backed archaeology of Antti Luode's research repositories.
 
 The central premise is that hundreds of repositories are not hundreds of independent ideas. The project separates raw repository inventory from curated scientific interpretation, then records explicit inheritance, corrections, rediscoveries, convergences, extracted mechanisms, empirical evidence, and the scientific questions that remain unresolved.
 
+## 11 November 2026 — Moon: formula-written weights for quasicrystal light (census 614)
+
+**[Live wall chapter](https://anttiluode.github.io/Genealogy/#nov11-handwritten-moon)** · [Moon](https://github.com/anttiluode/Moon) · [Curated pass](data/passes/november-11-handwritten-moon.json) · [Matthew Gribben's original HypaNet](https://github.com/Hypabolic/HypaNet) · [Gribben's article](https://matthewgribben.com/blog/building-ai-models-without-gradient-descent).
+
+One **newly inventoried and reviewed** repository brings the recorded census from **613 to 614**. Moon takes inspiration from Gribben's MIT-licensed idea of AI-written neural weights without gradient descent and independently constructs a radiative-transfer network for a **fixed translucent quasicrystal moon**. It is not documented as a HypaNet code fork, nor as a descendant of CrystalMoonV3's light-responsive crystal growth. Any substantively copied HypaNet source still requires retention of the original MIT copyright and license notice.
+
+**Measured boundary:** Moon's README reports **7.1%** mean relative luminance error on 12 reference and six held-back camera/sun views (compiled browser output: **6.9%** held-back). These are within **one scene and medium**, not out-of-scene tests; two constants (**BETA=0.6, LAM=0.7**) were manually calibrated against reference views. No gradient descent was used, but the result is not calibration-free. Genealogy has **not independently rerun** the measurements. The graph records a **conceptual convergence** with CrystalMoonV3's optical-moon theme, not inherited code, learned material physics, or equivalent benchmarks.
+
 ## 11 November 2026 — From the origin *review* to V26 and the proposed V27 (census 613)
 
 **[Curated lineage pass](data/passes/november-11-geometric-neuron-v26-v27.json)** · [OriginReview — archival causal review](https://github.com/anttiluode/GeometricNeuronOriginReview) · [SurfaceListener / V26, rounds 1–10](https://github.com/anttiluode/GeometricNeuronSurfaceListener) · [V26 live experiments](https://anttiluode.github.io/GeometricNeuronSurfaceListener/) · [GeometricNeuronV27 — proposal](https://github.com/anttiluode/GeometricNeuronV27).
