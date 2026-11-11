@@ -1,3 +1,9 @@
+## 2026-11-11 — Moon: authored neural light transport, HypaNet inspiration
+
+Moon joins the 614-entry repository inventory and curated wall through [the November 11 pass](data/passes/november-11-handwritten-moon.json). It independently extends the written-weights technique publicly described by Matthew Gribben ([HypaNet](https://github.com/Hypabolic/HypaNet), MIT license) to a fixed quasicrystal-moon light-transport network. The README credits the original article and community discussion. The relevant lineage edge to CrystalMoonV3 is typed **converges**, not **inherits**: Moon's deterministic scattering network is not V3's light-driven crystal-growth simulation.
+
+Moon reports 7.1% mean relative luminance error on both 12 reference and six held-back camera/sun conditions, with 6.9% for the baked browser implementation on held-back conditions. The medium is fixed and BETA/LAM were calibrated by hand against reference views; these are source-reported measurements, not independent Genealogy replication or a cross-scene generalization result. Any copied HypaNet code remains subject to the original MIT notice requirement.
+
 # Genealogy research log
 
 ## 2026-11-10 — Five curated arrivals: active query, P3 eye, persistent Body, and two Fable descendants
