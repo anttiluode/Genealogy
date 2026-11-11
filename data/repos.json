@@ -2258,11 +2258,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 4292,
+    "size": 1810,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-11-10T16:44:31Z",
+    "updated_at": "2026-11-10T16:44:49Z",
     "inventory_status": "unread"
   },
   {
@@ -2346,7 +2346,7 @@
     "name": "GeometricNeuronOriginReview",
     "url": "https://github.com/anttiluode/GeometricNeuronOriginReview",
     "default_branch": "main",
-    "size": 302,
+    "size": 307,
     "visibility": "public",
     "description": "ECG json ecg pulse finally explained. ",
     "created_at": "2026-09-08T04:07:23Z",
@@ -2362,6 +2362,17 @@
     "description": "Geometric neuron as mass that produces field and the field computing together with it. ",
     "created_at": "2026-08-08T04:40:02Z",
     "updated_at": "2026-08-13T12:13:35Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "GeometricNeuronSurfaceListener",
+    "url": "https://github.com/anttiluode/GeometricNeuronSurfaceListener",
+    "default_branch": "main",
+    "size": 198,
+    "visibility": "public",
+    "description": "Fable",
+    "created_at": "2026-11-10T16:47:09Z",
+    "updated_at": "2026-11-11T07:01:01Z",
     "inventory_status": "reviewed"
   },
   {
@@ -2428,6 +2439,17 @@
     "description": "What if we treat generational genetic algorithms as data for linear transform and let that generate a future trajectory. A sol repo",
     "created_at": "2026-09-12T03:29:41Z",
     "updated_at": "2026-09-12T05:49:18Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "GeometricNeuronV27",
+    "url": "https://github.com/anttiluode/GeometricNeuronV27",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Yes. Really. Why? God knows. Fable and sol. ",
+    "created_at": "2026-11-11T07:46:10Z",
+    "updated_at": "2026-11-11T07:46:20Z",
     "inventory_status": "reviewed"
   },
   {
@@ -4711,7 +4733,7 @@
     "name": "ReturnToGeometricNeuron",
     "url": "https://github.com/anttiluode/ReturnToGeometricNeuron",
     "default_branch": "main",
-    "size": 119,
+    "size": 136,
     "visibility": "public",
     "description": "Fable 5.2",
     "created_at": "2026-11-10T08:47:21Z",
