@@ -562,5 +562,9 @@
   {
     "path": "november-10-return-to-geometric-neuron.json",
     "enabled": true
+  },
+  {
+    "path": "november-11-geometric-neuron-v26-v27.json",
+    "enabled": true
   }
 ]
