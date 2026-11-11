@@ -566,5 +566,9 @@
   {
     "path": "november-11-geometric-neuron-v26-v27.json",
     "enabled": true
+  },
+  {
+    "path": "november-11-handwritten-moon.json",
+    "enabled": true
   }
 ]
