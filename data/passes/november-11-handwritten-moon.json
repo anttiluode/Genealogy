@@ -1,0 +1,56 @@
+{
+  "id": "november-11-handwritten-moon",
+  "title": "November 11: Moon — formula-written light-transport weights, inspired by HypaNet",
+  "reviewed_at": "2026-11-11",
+  "order": 187,
+  "summary": "Moon adapts Matthew Gribben's publicly documented idea of AI-authored neural-network weights without gradient descent to a new translucent quasicrystal-moon transport problem. It is an independent scene and implementation, not a demonstrated fork of HypaNet or CrystalMoonV3. Its source-reported held-back camera/sun tests are promising within one fixed medium, but two constants were manually selected using reference views; generalization beyond that scene and independent replication remain open. Gribben's HypaNet code is MIT-licensed; retained original copyright/notice is required for any copied substantial code.",
+  "nodes": [
+    {
+      "id": "Moon",
+      "url": "https://github.com/anttiluode/Moon",
+      "family": "procedural-world",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Hand-Written Moon: a translucent quasicrystal-sphere light-transport network whose weights are generated deterministically from radiative-transfer formulas, without gradient-descent training. Inspired by Matthew Gribben's HypaNet written-weight research, but with a different target scene, custom reference tracer, analytic network construction and browser shader.",
+      "survived": "The README reports mean relative luminance error of 7.1% on 12 reference camera/sun views and 7.1% on six held-back views for the written all-light network; its compiled and baked browser shader reports 6.7%/6.9%. build_network.py deterministically constructs network.json from analytic formulas. These figures are source-reported, not independently rerun by Genealogy.",
+      "killed": "The 7.1% error is scene-specific and not directly comparable to HypaNet's cloud benchmark or previous CrystalMoon physics. BETA=0.6 and LAM=0.7 were hand-set against reference views, so 'no training' means no gradient/optimiser, not no empirical calibration. Only one density medium is tested; no general transport solver, learned weights, new quasicrystal growth law or code inheritance from CrystalMoonV3 has been established.",
+      "evidence": "https://github.com/anttiluode/Moon/blob/main/README.md",
+      "tags": [
+        "2026-11-11",
+        "fable-5.2",
+        "hand-written-weights",
+        "light-transport",
+        "quasicrystal",
+        "no-backprop",
+        "calibrated-constants",
+        "held-back-views",
+        "hypanet-inspired",
+        "mit-attribution"
+      ],
+      "era": "November 11: formula-written optical networks",
+      "era_order": 187
+    }
+  ],
+  "edges": [
+    {
+      "source": "CrystalMoonV3",
+      "target": "Moon",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both projects explore quasicrystal-moon imagery and illumination, but CrystalMoonV3 simulates RGB-responsive crystal growth while Moon constructs a fixed-scene radiative-transfer neural network; no code fork, shared model weights or demonstrated computational inheritance is claimed. Moon directly credits Matthew Gribben's external HypaNet work as conceptual inspiration.",
+      "evidence": "https://github.com/anttiluode/Moon/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov11-written-weights-vs-grown-worlds",
+      "title": "A physically written network is not a learned world or a grown material",
+      "description": "Moon explicitly encodes a physics approximation in fixed neural weights, while CrystalMoonV3 lets illumination affect a simulated crystal texture. Similar lunar visuals do not imply shared code or dynamics. Moon's 12/6 reference and held-back camera/sun conditions test view generality within one medium, not out-of-scene generality; manual scalar calibration is distinct from gradient-descent training.",
+      "nodes": [
+        "Moon",
+        "CrystalMoonV3"
+      ]
+    }
+  ]
+}
