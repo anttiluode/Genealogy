@@ -4,6 +4,16 @@ Evidence-backed archaeology of Antti Luode's research repositories.
 
 The central premise is that hundreds of repositories are not hundreds of independent ideas. The project separates raw repository inventory from curated scientific interpretation, then records explicit inheritance, corrections, rediscoveries, convergences, extracted mechanisms, empirical evidence, and the scientific questions that remain unresolved.
 
+## 12 November 2026 — TärinäSR: subpixel camera shake becomes resolution
+
+**[Live wall chapter](https://anttiluode.github.io/Genealogy/#nov12-tarinasr)** · [TarinaSR source](https://github.com/anttiluode/TarinaSR/) · [Playable page](https://anttiluode.github.io/TarinaSR/) · [Curated pass](data/passes/november-12-tarinasr-shake-superresolution.json) · [Source-linked review](docs/reviews/2026-11-12-tarinasr-subpixel-shake.md).
+
+A practical descendant of **[SihtiSR](https://github.com/anttiluode/SihtiSR)**. TarinaSR copies SihtiSR's one-frame ridge-filter model unchanged as the initial estimate, then registers 16 camera views by phase correlation and Lucas–Kanade (shift plus small rotation), holds them in a ring, and back-projects observation residuals into a ×2 grayscale image. It credits **GoldOpus**'s ring and the shared-alignment idea of **PhaseLockedPredictiveCoding** as conceptual influences. Importantly, this is *spatial subpixel registration*, **not** the earlier temporal phase-hub algorithm, native GN, or XOR logic.
+
+**Source-reported eight-scene synthetic test:** mean PSNR **37.42 dB** with 16 frames versus **31.86 dB** for SihtiSR from one of those frames and **30.90 dB** bicubic. Registered averaging before SihtiSR gives **31.64 dB**; restricting the shake to whole-low-res-pixel shifts gives **32.05 dB**. Thus the tested gain is driven by additional subpixel samples, not simply noise averaging. A simulated lens-blur/JPEG85 stress test gives **32.06 dB** with the correct lens model versus **29.99 dB** SihtiSR; without lens calibration the ring gets **30.83 dB**.
+
+**Crucial boundaries:** iterative multi-frame back-projection has been known since Irani & Peleg (1991); Google Pixel burst SR already exploits natural hand tremor (Wronski et al., 2019). These are *eight simulated static scenes*, **not** measured improvement on real handheld video. The absolute PSNR figures should not be compared directly with SihtiSR's separate **200-image BSDS500** test. This is a small readable practical implementation, not a priority claim; Genealogy has not independently rerun the benchmarks.
+
 ## 12 November 2026 — Eight-repository XOR madness, reduction and phase controls
 
 **[Live wall chapter](https://anttiluode.github.io/Genealogy/#nov12-xor-madness)** · [Curated pass](data/passes/november-12-gn-xor-self-writing-rings.json) · [Detailed scientific audit](docs/reviews/2026-11-12-native-rings-xor-and-controls.md).
