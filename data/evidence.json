@@ -13088,5 +13088,61 @@
       "Synthetic periodic frames; not spatial-camera alignment, learned PLL or speedup"
     ],
     "source": "https://github.com/anttiluode/PhaseLockedPredictiveCoding/blob/main/README.md"
+  },
+  {
+    "id": "nov12-tarinasr-16frame-subpixel-sr",
+    "node": "TarinaSR",
+    "claim": "A small multi-frame back-projection ring uses subpixel camera shifts to reconstruct higher-frequency image detail in controlled simulation.",
+    "design": "Eight scikit-image grayscale scenes, ×2 downsampling, 16 independently shifted noisy 8-bit frames, frame-to-frame subpixel registration estimated, plus average-only/integer-shift controls and synthetic optical/JPEG stress.",
+    "result": "supports",
+    "motifs": [],
+    "sample": {
+      "unit": "synthetic source scenes",
+      "count": 8
+    },
+    "metrics": [
+      {
+        "name": "mean PSNR dB",
+        "treatment": 37.42,
+        "control": 31.86,
+        "comparison": "TarinaSR 16 frames vs SihtiSR first-frame initialization on same eight scenes"
+      },
+      {
+        "name": "registered averaging control PSNR dB",
+        "treatment": 37.42,
+        "control": 31.64,
+        "comparison": "ring reconstruction vs registered-average/SihtiSR"
+      },
+      {
+        "name": "integer-pixel-only control PSNR dB",
+        "treatment": 37.42,
+        "control": 32.05,
+        "comparison": "subpixel motion vs shifts by whole low-res pixels"
+      },
+      {
+        "name": "simulated JPEG/lens PSNR dB",
+        "treatment": 32.06,
+        "control": 29.99,
+        "comparison": "matched sigma=0.7 lens model vs SihtiSR"
+      }
+    ],
+    "controls": [
+      "Same frames registered and averaged before SihtiSR (31.64 dB)",
+      "Whole-low-resolution-pixel motion only (32.05 dB)",
+      "2/4/8 frame counts (32.57/34.14/36.01 dB)",
+      "Rotation ±0.3° and ±1°, shake ±40 high-res pixels",
+      "Lens blur σ=0.7 plus JPEG85 with correct and mismatched lens models"
+    ],
+    "replication": "Source-reported deterministic experiments; Genealogy inspected README, experiment source and stored result files but did not independently rerun.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Only eight standard scenes and simulated acquisition; no measured real-phone reconstruction gain",
+      "Full synthetic clean case gives +5.56 dB vs single-frame SihtiSR; simulated JPEG/lens case yields only +2.07 dB with correct lens, +0.84 without lens model",
+      "Rigid spatial motion, fixed ×2 grayscale; moving subjects/perspective/rolling shutter can violate assumptions",
+      "Classical multi-frame super-resolution and iterative back-projection predate the project",
+      "Numerical results not comparable with the separate 200-image SihtiSR BSDS500 evaluation"
+    ],
+    "source": "https://github.com/anttiluode/TarinaSR/blob/main/results/benchmark.json"
   }
 ]
