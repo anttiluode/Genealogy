@@ -1,0 +1,74 @@
+{
+  "id": "november-12-tarinasr-shake-superresolution",
+  "title": "November 12: TärinäSR — shaking-camera phase diversity becomes measurable image resolution",
+  "reviewed_at": "2026-11-12",
+  "order": 190,
+  "summary": "TarinaSR directly inherits SihtiSR's one-frame learned filters and implements classical motion-aligned multi-frame super-resolution by iterative back-projection from a 16-frame ring. The ring and phase metaphors converge with GoldOpus and PhaseLockedPredictiveCoding, but the 2026 code solves spatial subpixel registration, not temporal-phase XOR. The eight-scene synthetic benchmark reports large PSNR gains and meaningful whole-pixel/averaging controls; realistic synthetic lens/JPEG stress reduces the gain. Multi-frame super-resolution and natural camera-tremor sampling are established prior art, and gains on real handheld-camera footage are unmeasured.",
+  "nodes": [
+    {
+      "id": "TarinaSR",
+      "url": "https://github.com/anttiluode/TarinaSR",
+      "family": "visual-memory",
+      "status": "experiment",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "TärinäSR (TarinaSR): a small readable browser implementation of multi-frame ×2 grayscale super-resolution. Phase-correlation plus blurred-image Lucas–Kanade registers small spatial shifts/rotations; a ring stores 16 frames and repeatedly back-projects observation residuals into a high-resolution state initialized by SihtiSR.",
+      "survived": "Source-reported 8 standard scikit-image photos, simulated subpixel motion/noise: mean 37.42 dB PSNR (16-frame ring), compared with 31.86 dB SihtiSR single frame and 30.90 dB bicubic. Two-frame 32.57, four-frame 34.14, eight-frame 36.01. Registered averaging plus SihtiSR scored 31.64; whole-low-res-pixel shifts 32.05, supporting subpixel phase diversity rather than mere averaging. With synthetic lens blur σ=0.7, JPEG quality 85 and small rotation, mean 32.06 dB with correct lens parameter vs 29.99 SihtiSR, 30.83 without lens calibration.",
+      "killed": "Not a new super-resolution method: iterative back-projection dates to Irani & Peleg (1991), and Pixel-phone burst SR exploits hand tremor (Wronski et al., 2019). Eight synthesized rigid-motion scenes, not a held-out real-video camera benchmark; no proof of gain on actual phone footage, moving scenes, perspective changes or unknown strong optics. Synthetic demo generates input with its own forward warp; the separate Python benchmark uses scipy transforms. This is not native GN27, XOR memory, a learned temporal phase hub or transformer acceleration.",
+      "evidence": "https://github.com/anttiluode/TarinaSR/blob/main/README.md",
+      "tags": [
+        "2026-11-12",
+        "sihti",
+        "super-resolution",
+        "iterative-back-projection",
+        "subpixel-motion",
+        "phase-correlation",
+        "lucas-kanade",
+        "shaky-camera",
+        "multiframe",
+        "browser"
+      ],
+      "era": "November 12: from periodic-memory rings to subpixel image reconstruction",
+      "era_order": 190
+    }
+  ],
+  "edges": [
+    {
+      "source": "SihtiSR",
+      "target": "TarinaSR",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "TarinaSR directly copies sihtisr.py, sihti.js and model.* unchanged, uses the SihtiSR single-frame output as its initial high-resolution image, then adds registration and iterative multi-frame back-projection.",
+      "evidence": "https://github.com/anttiluode/TarinaSR/blob/main/README.md"
+    },
+    {
+      "source": "GoldOpus",
+      "target": "TarinaSR",
+      "type": "extracts",
+      "confidence": "medium",
+      "why": "The new work explicitly credits GoldOpus's circulating ring and turns the prior negative timing-jitter motif into subpixel sample diversity; no GoldOpus neuron or code reuse is claimed.",
+      "evidence": "https://github.com/anttiluode/TarinaSR/blob/main/README.md"
+    },
+    {
+      "source": "PhaseLockedPredictiveCoding",
+      "target": "TarinaSR",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both use a shared alignment idea and memory/residual comparison, but TarinaSR estimates *spatial* subpixel camera motion while PhaseLockedPredictiveCoding chose *temporal* offsets in a periodic template. No common implementation of a phase hub is asserted.",
+      "evidence": "https://github.com/anttiluode/TarinaSR/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov12-shake-as-spatial-samples",
+      "title": "In temporal memory jitter is error; in multi-frame imaging spatial jitter can supply missing samples",
+      "description": "GoldOpus's event jitter broke a precisely timed predictive ring; TarinaSR instead models frame-to-frame rigid subpixel motion and reuses differently phased spatial observations to recover high-resolution detail. The subpixel-versus-whole-pixel ablation identifies the information source. This is established multi-frame super-resolution, not a newly discovered law or an original GN result.",
+      "nodes": [
+        "GoldOpus",
+        "PhaseLockedPredictiveCoding",
+        "SihtiSR",
+        "TarinaSR"
+      ]
+    }
+  ]
+}
