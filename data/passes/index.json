@@ -578,5 +578,9 @@
   {
     "path": "november-12-gn-xor-self-writing-rings.json",
     "enabled": true
+  },
+  {
+    "path": "november-12-tarinasr-shake-superresolution.json",
+    "enabled": true
   }
 ]
