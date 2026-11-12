@@ -1,0 +1,127 @@
+{
+  "id": "november-11-v27-v28-tunnistus-sihtisr",
+  "title": "November 11 — V27 implemented, V28 native reader, Tunnistus benchmark, SihtiSR super-resolution",
+  "reviewed_at": "2026-11-12",
+  "order": 188,
+  "summary": "Corrects an early-November-11 snapshot when V27 contained only a proposal, but does not duplicate V27's existing node. The later V27 work shows real native event-ring storage and selective erase. V28 reads sparse-ring windows with a second native autonomous clock. Tunnistus measures one interrupted instruction-blinded mutated-box investigation. SihtiSR revisits existing RAISR-like structure-sorted super-resolution; Moon remains in its earlier pass.",
+  "nodes": [
+    {
+      "id": "GeometricNeuronV28",
+      "url": "https://github.com/anttiluode/GeometricNeuronV28",
+      "family": "geometric-neuron",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A native ~59-tick original oscillator drives a hand-wired coincidence reader attached to a 32-tick eight-relay V27 circulating memory.",
+      "survived": "Source: 1,917/1,917 correct two-tick OR-window reads over 27 sparse/empty patterns, 27/27 rings retained, 32/32 sampled start phases; clock-only/ring-only ablations silent.",
+      "killed": "Dense all-ones rings corrupt (55/71 correct); operator-timed one-bit reads 190/192; two-tick OR does not distinguish arbitrary adjacent bits. No trained weights or biologically validated memory.",
+      "evidence": "https://github.com/anttiluode/GeometricNeuronV28/blob/main/README.md",
+      "tags": [
+        "2026-11-11",
+        "native-clock",
+        "reader",
+        "coincidence",
+        "v28"
+      ],
+      "era": "November 11: delayed memory, native reader, blind archaeology and Sihti residue",
+      "era_order": 188
+    },
+    {
+      "id": "Tunnistus",
+      "url": "https://github.com/anttiluode/Tunnistus",
+      "family": "geometric-neuron",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Blind Machine Archaeologist benchmark: an instruction-blinded Fable subject inspects a renamed documented Perception Lab loop and an altered black-box machine; two runs were stopped early.",
+      "survived": "Beta subject committed 4/4 correct hidden parameter/port changes, 19/19 live/dead results, 8/8 unseen change predictions, and passed native clock and 40-bit ring-memory gates; brute-force baseline did not find memory. Resolution sweep retained approximately 59-tick rhythm.",
+      "killed": "Alpha run committed no gates and scores zero; beta reader gate not attempted. One interrupted trial and one mutated box; documented rules supplied, subject shares model family, blindness only by instructions.",
+      "evidence": "https://github.com/anttiluode/Tunnistus/blob/main/README.md",
+      "tags": [
+        "2026-11-11",
+        "blind-archaeology",
+        "falsification",
+        "mutant-box",
+        "interrupted"
+      ],
+      "era": "November 11: delayed memory, native reader, blind archaeology and Sihti residue",
+      "era_order": 188
+    },
+    {
+      "id": "SihtiSR",
+      "url": "https://github.com/anttiluode/SihtiSR",
+      "family": "visual-memory",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Small ×2 grayscale super-resolution model: 216 edge-angle/strength/coherence buckets, each fitted with a 25-to-4 ridge-regression map and mean-preserving output lock.",
+      "survived": "Source-reported BSDS500 200-image held-out PSNR: 29.45 dB versus bicubic 28.56, Lanczos 28.81 and single filter 29.09; 21,600 solved parameters, browser and Python output agree.",
+      "killed": "Reimplements known RAISR-like structure-bucket super-resolution rather than new method. Lock adds no measured PSNR. Evaluation assumes 2×2 mean downsample and does not establish performance on real JPEG/camera or current deep SR.",
+      "evidence": "https://github.com/anttiluode/SihtiSR/blob/main/README.md",
+      "tags": [
+        "2026-11-11",
+        "sihti",
+        "raisr",
+        "bsds500",
+        "superresolution"
+      ],
+      "era": "November 11: delayed memory, native reader, blind archaeology and Sihti residue",
+      "era_order": 188
+    }
+  ],
+  "edges": [
+    {
+      "source": "GeometricNeuronSurfaceListener",
+      "target": "GeometricNeuronV27",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "V27 preserves the native V26 silent relay and existing setpoint port and adds fixed delay/attenuation wires.",
+      "evidence": "https://github.com/anttiluode/GeometricNeuronV27/blob/main/README.md"
+    },
+    {
+      "source": "GeometricNeuronV27",
+      "target": "GeometricNeuronV28",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "V28 retains V27's core and ring but adds a second original clocked neuron driving a native coincidence readout.",
+      "evidence": "https://github.com/anttiluode/GeometricNeuronV28/blob/main/README.md"
+    },
+    {
+      "source": "GeometricNeuronOriginReview",
+      "target": "Tunnistus",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "Tunnistus repackages and secretly alters the documented Perception Lab/origin-review loop for an AI black-box audit.",
+      "evidence": "https://github.com/anttiluode/Tunnistus/blob/main/README.md"
+    },
+    {
+      "source": "SihtiSilma",
+      "target": "SihtiSR",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both arise from Sihti coarse/fine visual-residue inquiry; SihtiSR's RAISR-like filter does not claim direct inherited SihtiSilma code.",
+      "evidence": "https://github.com/anttiluode/SihtiSR/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov11-native-ring-readout",
+      "title": "Stored event patterns become readable by another native clock",
+      "description": "V27 recirculates and selectively erases events; V28's separately self-oscillating original unit reads two-tick windows through native coincidence. Sparse patterns succeeded; dense/all-one and precise single-tick readouts are bounded failures, not unlimited memory.",
+      "nodes": [
+        "GeometricNeuronSurfaceListener",
+        "GeometricNeuronV27",
+        "GeometricNeuronV28"
+      ]
+    },
+    {
+      "id": "nov11-model-vs-measurement",
+      "title": "A benchmark may succeed while its architecture is already familiar",
+      "description": "Tunnistus's committed mutated-box gates are a single interrupted blind trial; SihtiSR's concrete held-out PSNR gain uses the known RAISR family, not a new SR principle.",
+      "nodes": [
+        "Tunnistus",
+        "SihtiSR"
+      ]
+    }
+  ]
+}
