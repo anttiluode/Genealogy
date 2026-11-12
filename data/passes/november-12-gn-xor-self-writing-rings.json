@@ -1,0 +1,282 @@
+{
+  "id": "november-12-gn-xor-self-writing-rings",
+  "title": "November 12 — GN-XOR, self-writing one-wire loops, window controls, jitter and shared phase",
+  "reviewed_at": "2026-11-12",
+  "order": 189,
+  "summary": "Eight related repositories: GN-XOR, KultaaVaiKatinkultaa, KultaaVaiKatinkultaaOpus, GoldOpus, GoldSol, GoldGemini, PhaseLockedPredictiveCoding and MuistoVaihde. Synchronous native GN27 mismatch works, and one unsigned error pulse feeds a ring that both writes and erases. But a ~25-line checkerboard-free window unit reproduces 255/255 pattern learning, while native-specific behavior is so far faults and an unexploited clock. K integration and global temporal alignment work in defined synthetic settings, not as new AI principles or measured transformer accelerators.",
+  "nodes": [
+    {
+      "id": "MuistoVaihde",
+      "url": "https://github.com/anttiluode/MuistoVaihde",
+      "family": "memory",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "5×7 coprime-ring conjunction learner with a 35-entry explicit weight table and a 35-slot joint-memory ring; independent V2 directed-transition replay loop.",
+      "survived": "All 35 A/B phase meetings occur in one cycle; trained A-only cues reconstruct taught B patterns. V2 replay from seed P emits A@7, B@14, END@21 after observed P→A→B→END teaching.",
+      "killed": "Designed Hebbian-like table and transition lookup, not a native GN mechanism; identical cues linked to different episodes recall their union. Shared tick, no self-organized learning of temporal routes.",
+      "evidence": "https://github.com/anttiluode/MuistoVaihde/blob/main/README.md",
+      "tags": [
+        "2026-11-12",
+        "crt",
+        "phase-address",
+        "association",
+        "replay"
+      ],
+      "era": "November 12: nonlinear memory and phase controls",
+      "era_order": 189
+    },
+    {
+      "id": "GN-XOR",
+      "url": "https://github.com/anttiluode/GN-XOR",
+      "family": "geometric-neuron",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Three unchanged V27 native units implement a synchronous event-presence XOR through a non-monotone setpoint response, and an eight-relay seeded prediction ring detects mismatches.",
+      "survived": "Native truth table 4/4 at hand-selected −4.5 input weights; omitted or unexpected beat produces expected error spikes at the comparison node.",
+      "killed": "One-tick offset breaks both-present cancellation. The initial ring is seeded; no learning or general Boolean identity detection is demonstrated.",
+      "evidence": "https://github.com/anttiluode/GN-XOR/blob/main/README.md",
+      "tags": [
+        "2026-11-12",
+        "gn27",
+        "nonmonotone",
+        "xor",
+        "synchrony"
+      ],
+      "era": "November 12: nonlinear memory and phase controls",
+      "era_order": 189
+    },
+    {
+      "id": "KultaaVaiKatinkultaa",
+      "url": "https://github.com/anttiluode/KultaaVaiKatinkultaa",
+      "family": "geometric-neuron",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Sol's unchanged GN27 signed innovation/omission and single unsigned XOR feedback into an eight-unit event-memory ring.",
+      "survived": "Native 11-unit signed circuit performs write/erase; simpler one-wire configuration and window control both eventually learn 255/255 nonempty synchronized eight-slot rhythms. Native isolated c=1 clock ~59 ticks.",
+      "killed": "Hand-selected timing/weights; some source events merge; ±1 timing jitter breaks silence; nine-relay native leak persists even with damp-branch forcing; no performance advantage over small control.",
+      "evidence": "https://github.com/anttiluode/KultaaVaiKatinkultaa/blob/main/README.md",
+      "tags": [
+        "2026-11-12",
+        "one-wire",
+        "255-patterns",
+        "signed-error",
+        "clock"
+      ],
+      "era": "November 12: nonlinear memory and phase controls",
+      "era_order": 189
+    },
+    {
+      "id": "KultaaVaiKatinkultaaOpus",
+      "url": "https://github.com/anttiluode/KultaaVaiKatinkultaaOpus",
+      "family": "geometric-neuron",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Opus's independent native GN27 audit and checkerboard-free window-model reduction of the one-wire mismatch-feedback ring.",
+      "survived": "255/255 nonempty eight-slot rhythms learned on both. In 33-case stress, native one-wire ring memory exact 31/33 vs native signed pair 22/33; abstract window ring exact 33/33 relative to emitted source. Abstract unit ~17× faster.",
+      "killed": "Source emitted correct requested beat stream in only 20/33 cases because close pulses merge; native-specific ring leak is a fault. XOR and toggle/delay-line logic are known; checkerboard is unnecessary for core behavior.",
+      "evidence": "https://github.com/anttiluode/KultaaVaiKatinkultaaOpus/blob/main/README.md",
+      "tags": [
+        "2026-11-12",
+        "control",
+        "ablation",
+        "simplification",
+        "negative-boundary"
+      ],
+      "era": "November 12: nonlinear memory and phase controls",
+      "era_order": 189
+    },
+    {
+      "id": "GoldOpus",
+      "url": "https://github.com/anttiluode/GoldOpus",
+      "family": "memory",
+      "status": "experiment",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Public ten-neuron reduced-window tapping looper with a K-consecutive-tick integration gate for human rhythm jitter.",
+      "survived": "At correctly spaced hops, tested K=2j+1 handles ±j timing jitter across 255/255 eight-slot rhythms (K5 at ±2, K7 at ±3). Error events rewrite changed rhythms and become silent.",
+      "killed": "Not native checkerboard GN27; K window is conventional debouncing/coincidence integration. Tempo is tied to supplied click track and there is no compute/energy advantage over simple digital memory.",
+      "evidence": "https://github.com/anttiluode/GoldOpus/blob/main/README.md",
+      "tags": [
+        "2026-11-12",
+        "human-tapping",
+        "k-window",
+        "jitter"
+      ],
+      "era": "November 12: nonlinear memory and phase controls",
+      "era_order": 189
+    },
+    {
+      "id": "GoldSol",
+      "url": "https://github.com/anttiluode/GoldSol",
+      "family": "geometric-neuron",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Independent attempt to identify native GN27 slow-state advantage via signal_in jitter rescue and two history-state ablations.",
+      "survived": "No consistent jitter benefit across 12 tested settings; 12 of 336 identical probes differed after conditioning, all at two-tick recovery, restored by swapping four-tick pipeline (12/12), not the 50-tick variance buffer (0/12).",
+      "killed": "Negative finite test only, not proof against all GN applications; reducing error spikes alone did not mean fewer missed or extra predicted beats.",
+      "evidence": "https://github.com/anttiluode/GoldSol/blob/main/README.md",
+      "tags": [
+        "2026-11-12",
+        "negative-result",
+        "jitter",
+        "pipeline",
+        "history"
+      ],
+      "era": "November 12: nonlinear memory and phase controls",
+      "era_order": 189
+    },
+    {
+      "id": "GoldGemini",
+      "url": "https://github.com/anttiluode/GoldGemini",
+      "family": "memory",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Visual 64×64 grayscale scene represented by four bit planes/pixel, each a logical delay stream updated by reduced-window one-wire mismatch feedback.",
+      "survived": "16,384 logical bit streams with period-16 memory amount to 262,144 stored logical bits, displaying world, ring replay and error.",
+      "killed": "Ordinary buffer-backed software update, not 16,384 original GN27 instances, hardware efficiency proof or novel video-background algorithm.",
+      "evidence": "https://github.com/anttiluode/GoldGemini/blob/main/README.md",
+      "tags": [
+        "2026-11-12",
+        "large-visualization",
+        "logical-rings",
+        "reduced-model"
+      ],
+      "era": "November 12: nonlinear memory and phase controls",
+      "era_order": 189
+    },
+    {
+      "id": "PhaseLockedPredictiveCoding",
+      "url": "https://github.com/anttiluode/PhaseLockedPredictiveCoding",
+      "family": "memory",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Global three-candidate temporal phase selection by Hamming distance before comparing many stored binary streams to the current known-period world.",
+      "survived": "On synthetic frozen 16-frame templates with ±1 independent global timing shifts, 128/128 phase selections correct; fixed-phase 77,071 false mismatch bits vs hub zero (no intruders); with intruders 768/768 true local changes caught, versus per-pixel best phase 741/768.",
+      "killed": "Only temporal frame-phase selection, not camera spatial warp or learned PLL; ±2 offsets, independent regional timings and phase-shaped novelty produce failures; no transformer speedup measured.",
+      "evidence": "https://github.com/anttiluode/PhaseLockedPredictiveCoding/blob/main/README.md",
+      "tags": [
+        "2026-11-12",
+        "phase-hub",
+        "shared-address",
+        "synthetic-benchmark",
+        "negative-controls"
+      ],
+      "era": "November 12: nonlinear memory and phase controls",
+      "era_order": 189
+    }
+  ],
+  "edges": [
+    {
+      "source": "GeometricNeuronV27",
+      "target": "GN-XOR",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "GN-XOR copies V27 unchanged core and tests its native three-unit synchronous XOR.",
+      "evidence": "https://github.com/anttiluode/GN-XOR/blob/main/README.md"
+    },
+    {
+      "source": "GN-XOR",
+      "target": "KultaaVaiKatinkultaa",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Sol extends the native comparator to signed discrepancy and error-written circulating memory.",
+      "evidence": "https://github.com/anttiluode/KultaaVaiKatinkultaa/blob/main/README.md"
+    },
+    {
+      "source": "GN-XOR",
+      "target": "KultaaVaiKatinkultaaOpus",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Opus reuses the original V27 code and creates a reduced window control.",
+      "evidence": "https://github.com/anttiluode/KultaaVaiKatinkultaaOpus/blob/main/README.md"
+    },
+    {
+      "source": "KultaaVaiKatinkultaa",
+      "target": "KultaaVaiKatinkultaaOpus",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Independently made Sol/Opus circuits are later cross-tested; conceptual reconciliation rather than an inherited code fork.",
+      "evidence": "https://github.com/anttiluode/KultaaVaiKatinkultaaOpus/blob/main/README.md"
+    },
+    {
+      "source": "KultaaVaiKatinkultaaOpus",
+      "target": "GoldOpus",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "The abstract window control is extended with K-tick integration and a browser rhythm looper.",
+      "evidence": "https://github.com/anttiluode/GoldOpus/blob/main/README.md"
+    },
+    {
+      "source": "KultaaVaiKatinkultaa",
+      "target": "GoldSol",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "GoldSol extends Sol's native one-wire audit with original signal_in and history perturbations.",
+      "evidence": "https://github.com/anttiluode/GoldSol/blob/main/README.md"
+    },
+    {
+      "source": "KultaaVaiKatinkultaaOpus",
+      "target": "GoldGemini",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "Reduced band-pass XOR/toggle rule scales to buffer-backed logical pixel-stream rings, not GN27 replicas.",
+      "evidence": "https://github.com/anttiluode/GoldGemini/blob/main/README.md"
+    },
+    {
+      "source": "GoldGemini",
+      "target": "PhaseLockedPredictiveCoding",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "The reduced ring-buffer comparison is extended with shared temporal phase search and novelty controls.",
+      "evidence": "https://github.com/anttiluode/PhaseLockedPredictiveCoding/blob/main/README.md"
+    },
+    {
+      "source": "GeometricNeuronV27",
+      "target": "MuistoVaihde",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Conceptual circular-memory influence only; MuistoVaihde explicitly engineers independent CRT/Hebbian/transition mechanisms.",
+      "evidence": "https://github.com/anttiluode/MuistoVaihde/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov12-error-write-erase-control",
+      "title": "One endogenous error signal toggles memory; the native geometry is dispensable",
+      "description": "For synchronized binary events, e=w XOR r and r_next=r XOR e=w. One non-monotonic comparator, one writeback wire, and an event loop work; an abstract band window reproduces the central results. Classic T flip-flop/delay-line algebra, not demonstrated novelty.",
+      "nodes": [
+        "GN-XOR",
+        "KultaaVaiKatinkultaa",
+        "KultaaVaiKatinkultaaOpus",
+        "GoldOpus",
+        "GoldSol"
+      ]
+    },
+    {
+      "id": "nov12-jitter-and-global-phase",
+      "title": "Local temporal tolerance and a shared temporal address are distinct mechanisms",
+      "description": "GoldOpus integrates coincidence windows; the phase hub chooses among t±1 remembered templates for many streams. Both work under specified synthetic timing tests; neither proves spatial camera-motion compensation or hardware speedup.",
+      "nodes": [
+        "GoldOpus",
+        "GoldGemini",
+        "PhaseLockedPredictiveCoding"
+      ]
+    },
+    {
+      "id": "nov12-memory-address-and-episode-limit",
+      "title": "Shared clocking organizes memory but does not learn context for free",
+      "description": "MuistoVaihde uses 5×7 CRT addresses and explicit association weights, with episode collision; shared global template phase is an address chosen by exhaustive comparison, not a persistent learned complex main state.",
+      "nodes": [
+        "MuistoVaihde",
+        "PhaseLockedPredictiveCoding"
+      ]
+    }
+  ]
+}
