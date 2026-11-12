@@ -3,7 +3,7 @@
   "title": "November 11: native setpoint excitation (V26) and the proposed V27 cable/ring branch",
   "reviewed_at": "2026-11-11",
   "order": 186,
-  "summary": "GeometricNeuronOriginReview is an archival causal review, not a numbered implementation. SurfaceListener (V26) reuses the audited feedback oscillator to study state-dependent surface listening, endogenous setpoint-port excitation, constant-dependent operating regimes, and a reliable but hand-wired one-way relay; the same setup does not yet learn, provide true refractory protection, or demonstrate persistent information. GeometricNeuronV27 exists as a repository and proposed spatial/ring continuation, but had only a licence at the time of review: its ring, memory, cable and growth mechanisms are untested hypotheses.",
+  "summary": "GeometricNeuronOriginReview is an archival causal review, not a numbered implementation. SurfaceListener (V26) reuses the audited feedback oscillator to study state-dependent surface listening, endogenous setpoint-port excitation, constant-dependent operating regimes, and a reliable but hand-wired one-way relay; the same setup does not yet learn, provide true refractory protection, or demonstrate persistent information. At this early checkpoint GeometricNeuronV27 contained only a licence and its ring/cable work was an untested proposal. Its later native ring, erase, and V28 experiments are documented in the November 11 follow-up pass.",
   "nodes": [
     {
       "id": "GeometricNeuronSurfaceListener",
@@ -34,12 +34,12 @@
       "id": "GeometricNeuronV27",
       "url": "https://github.com/anttiluode/GeometricNeuronV27",
       "family": "geometric-neuron",
-      "status": "active",
-      "usefulness": "conceptual",
+      "status": "experiment",
+      "usefulness": "scientific",
       "confidence": "high",
-      "claim": "Newly created continuation after GeometricNeuronSurfaceListener (V26) proposed for spatially delayed/attenuated wiring and a circulating ring of silent geometric-neuron relays. The initial hypothesis is that a pulse may circulate without a separate oscillator; no implementation had been committed when this note was written.",
-      "survived": "The repository exists and the proposed experiment follows from V26's demonstrated one-way event regeneration. No V27 experimental success is recorded yet.",
-      "killed": "A persistent ring, stable multi-pulse patterns, erase, increased capacity with longer cables, and selective excitation by distance have not been tested. A one-way loop is not automatically reliable memory: pulses can collide or cause repeated excitation, and finite propagation timing/recovery must be measured. Physical cable biophysics and learning are not implemented.",
+      "claim": "At the first November 11 checkpoint V27 was only a proposal; later on November 11 it implemented fixed cable delay/attenuation and native ring-memory tests using the unchanged original 2025 Perception Lab/V26 feedback loop. The evidence is recorded in the separate follow-up.",
+      "survived": "Later V27 results report 40/40 sampled random patterns preserved for 1000 laps for eight- and sixteen-relay rings; longer delay-cable loops also regenerated stored events; one-tick setpoint_mod +12 erased exactly the selected event in 12/12 tests. These are source-reported, not independently rerun.",
+      "killed": "Dense all-ones patterns can change the 50-tick variance regime and corrupt memory; some shorter rings fail long retention. Fixed cable lengths and couplings are engineered, and classical delay-line storage predates this work. Native GN27 has no demonstrated new learning rule or capacity advantage.",
       "evidence": "https://github.com/anttiluode/GeometricNeuronV27",
       "tags": [
         "2026-11-11",
@@ -48,7 +48,10 @@
         "spatial-delay",
         "ring-hypothesis",
         "unverified-memory",
-        "no-code-yet"
+        "no-code-yet",
+        "followup-implemented",
+        "ring-memory",
+        "selective-erase"
       ],
       "era": "November 11: setpoint excitation and proposed spatial cables",
       "era_order": 186
@@ -76,7 +79,7 @@
     {
       "id": "nov11-operating-regime-versus-memory",
       "title": "Native excitability and event relaying do not by themselves create stored information",
-      "description": "A fixed homeostatic coupler changes from spontaneous clock to excitable relay as its setpoint constant changes. The sender's beat can drive the receiver through a port already present in the original graph, yet one-way transmission with manual weights, runaway bidirectional excitation and loss of activity when the input stops do not establish learning or persistent memory. The V27 ring is a proposed next falsification, not a measured successor mechanism.",
+      "description": "A fixed homeostatic coupler changes from spontaneous clock to excitable relay as its setpoint constant changes. The sender's beat can drive the receiver through a port already present in the original graph, yet one-way transmission with manual weights, runaway bidirectional excitation and loss of activity when the input stops do not establish learning or persistent memory. V27 was proposed at this checkpoint but later implemented measured ring memory, recorded in a separate November 11 follow-up.",
       "nodes": [
         "GeometricNeuronOriginReview",
         "ReturnToGeometricNeuron",
