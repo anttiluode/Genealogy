@@ -570,5 +570,13 @@
   {
     "path": "november-11-handwritten-moon.json",
     "enabled": true
+  },
+  {
+    "path": "november-11-v27-v28-tunnistus-sihtisr.json",
+    "enabled": true
+  },
+  {
+    "path": "november-12-gn-xor-self-writing-rings.json",
+    "enabled": true
   }
 ]
