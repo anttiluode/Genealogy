@@ -1,5 +1,11 @@
 # Genealogy research log
 
+## 2026-11-12 — TärinäSR, a practical output of the ring/phase research
+
+Newly curated <a href="https://anttiluode.github.io/Genealogy/#nov12-tarinasr">TarinaSR wall chapter</a>, [review](docs/reviews/2026-11-12-tarinasr-subpixel-shake.md) and [pass](data/passes/november-12-tarinasr-shake-superresolution.json). TarinaSR copies SihtiSR's one-frame model and builds a 16-frame spatially registered ring of iterative back-projection residuals. The GoldOpus circulating-memory and PhaseLockedPredictiveCoding shared-phase ideas are conceptual precedents, not source-code inheritance or the same timing mechanism. On eight source-reported synthetically moved scikit-image scenes, 16 frames yield **37.42 dB**, versus **31.86 dB** one-frame SihtiSR; registered averaging 31.64 dB and integer-shift-only 32.05 dB isolate the subpixel sample diversity. Realistic *simulated* lens/JPEG stress produces 32.06 dB with correct lens vs 29.99 dB SihtiSR, but real phone video remains unmeasured. Classical iterative back-projection and handheld burst SR are prior art. No new algorithm claim; no independent Genealogy rerun.
+
+
+
 ## 2026-11-12 — The eight-repository XOR investigation
 
 The <a href="https://anttiluode.github.io/Genealogy/#nov12-xor-madness">live wall chapter</a> and [curated pass](data/passes/november-12-gn-xor-self-writing-rings.json) now connect **GN-XOR, KultaaVaiKatinkultaa, KultaaVaiKatinkultaaOpus, GoldOpus, GoldSol, GoldGemini, PhaseLockedPredictiveCoding and MuistoVaihde** without pretending they all implement the same substrate.
