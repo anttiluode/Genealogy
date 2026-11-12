@@ -2258,11 +2258,11 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 2053,
+    "size": 2392,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
-    "updated_at": "2026-11-11T08:59:18Z",
+    "updated_at": "2026-11-11T10:29:21Z",
     "inventory_status": "unread"
   },
   {
@@ -2445,22 +2445,22 @@
     "name": "GeometricNeuronV27",
     "url": "https://github.com/anttiluode/GeometricNeuronV27",
     "default_branch": "main",
-    "size": 68,
+    "size": 81,
     "visibility": "public",
     "description": "Yes. Really. Why? God knows. Fable and sol. ",
     "created_at": "2026-11-11T07:46:10Z",
-    "updated_at": "2026-11-11T08:54:34Z",
+    "updated_at": "2026-11-11T09:53:55Z",
     "inventory_status": "reviewed"
   },
   {
     "name": "GeometricNeuronV28",
     "url": "https://github.com/anttiluode/GeometricNeuronV28",
     "default_branch": "main",
-    "size": 0,
+    "size": 95,
     "visibility": "public",
     "description": "Perhaps version 29934543 will think. Sol. ",
     "created_at": "2026-11-11T09:27:16Z",
-    "updated_at": "2026-11-11T09:27:23Z",
+    "updated_at": "2026-11-11T10:44:49Z",
     "inventory_status": "unread"
   },
   {
@@ -2560,6 +2560,50 @@
     "description": "A game where you have to guess where countries or states are on a map. ",
     "created_at": "2025-07-31T15:12:37Z",
     "updated_at": "2025-09-14T03:06:20Z",
+    "inventory_status": "unread"
+  },
+  {
+    "name": "GN-XOR",
+    "url": "https://github.com/anttiluode/GN-XOR",
+    "default_branch": "main",
+    "size": 33,
+    "visibility": "public",
+    "description": "Opus and sol ",
+    "created_at": "2026-11-12T08:18:37Z",
+    "updated_at": "2026-11-12T09:28:17Z",
+    "inventory_status": "unread"
+  },
+  {
+    "name": "GoldGemini",
+    "url": "https://github.com/anttiluode/GoldGemini",
+    "default_branch": "main",
+    "size": 31,
+    "visibility": "public",
+    "description": "Argon",
+    "created_at": "2026-11-12T09:36:39Z",
+    "updated_at": "2026-11-12T10:37:34Z",
+    "inventory_status": "unread"
+  },
+  {
+    "name": "GoldOpus",
+    "url": "https://github.com/anttiluode/GoldOpus",
+    "default_branch": "main",
+    "size": 325,
+    "visibility": "public",
+    "description": "Opus 5.5",
+    "created_at": "2026-11-12T09:17:33Z",
+    "updated_at": "2026-11-12T09:37:20Z",
+    "inventory_status": "unread"
+  },
+  {
+    "name": "GoldSol",
+    "url": "https://github.com/anttiluode/GoldSol",
+    "default_branch": "main",
+    "size": 39,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-11-12T09:18:54Z",
+    "updated_at": "2026-11-12T10:20:33Z",
     "inventory_status": "unread"
   },
   {
@@ -3124,6 +3168,28 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "KultaaVaiKatinkultaa",
+    "url": "https://github.com/anttiluode/KultaaVaiKatinkultaa",
+    "default_branch": "main",
+    "size": 101,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-11-12T08:43:50Z",
+    "updated_at": "2026-11-12T09:51:32Z",
+    "inventory_status": "unread"
+  },
+  {
+    "name": "KultaaVaiKatinkultaaOpus",
+    "url": "https://github.com/anttiluode/KultaaVaiKatinkultaaOpus",
+    "default_branch": "main",
+    "size": 30,
+    "visibility": "public",
+    "description": "Opus 5.5",
+    "created_at": "2026-11-12T08:48:51Z",
+    "updated_at": "2026-11-12T10:11:03Z",
+    "inventory_status": "unread"
+  },
+  {
     "name": "Kuulustelu",
     "url": "https://github.com/anttiluode/Kuulustelu",
     "default_branch": "main",
@@ -3622,11 +3688,11 @@
     "name": "Moon",
     "url": "https://github.com/anttiluode/Moon",
     "default_branch": "main",
-    "size": 0,
+    "size": 2018,
     "visibility": "public",
     "description": "AI weight editing.  Fable 5.2",
     "created_at": "2026-11-11T09:12:21Z",
-    "updated_at": "2026-11-11T09:24:34Z",
+    "updated_at": "2026-11-11T10:14:45Z",
     "inventory_status": "reviewed"
   },
   {
@@ -3694,6 +3760,17 @@
     "created_at": "2026-10-08T04:37:56Z",
     "updated_at": "2026-10-08T15:04:40Z",
     "inventory_status": "reviewed"
+  },
+  {
+    "name": "MuistoVaihde",
+    "url": "https://github.com/anttiluode/MuistoVaihde",
+    "default_branch": "main",
+    "size": 32,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-11-12T06:14:07Z",
+    "updated_at": "2026-11-12T07:26:35Z",
+    "inventory_status": "unread"
   },
   {
     "name": "MultipleTemporalLenses",
@@ -4265,6 +4342,17 @@
     "description": "P-KAS: Phase-Keyed Associative Storage (The Structural Loom).. ",
     "created_at": "2025-10-10T17:46:14Z",
     "updated_at": "2025-10-12T06:45:25Z",
+    "inventory_status": "unread"
+  },
+  {
+    "name": "PhaseLockedPredictiveCoding",
+    "url": "https://github.com/anttiluode/PhaseLockedPredictiveCoding",
+    "default_branch": "main",
+    "size": 41,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-11-12T09:56:56Z",
+    "updated_at": "2026-11-12T10:01:42Z",
     "inventory_status": "unread"
   },
   {
@@ -5115,6 +5203,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "SihtiSR",
+    "url": "https://github.com/anttiluode/SihtiSR",
+    "default_branch": "main",
+    "size": 81,
+    "visibility": "public",
+    "description": "Fable",
+    "created_at": "2026-11-11T18:11:42Z",
+    "updated_at": "2026-11-12T06:15:31Z",
+    "inventory_status": "unread"
+  },
+  {
     "name": "SihtiStack",
     "url": "https://github.com/anttiluode/SihtiStack",
     "default_branch": "main",
@@ -5775,6 +5874,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "TarinaSR",
+    "url": "https://github.com/anttiluode/TarinaSR",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "opus",
+    "created_at": "2026-11-12T10:59:20Z",
+    "updated_at": "2026-11-12T10:59:40Z",
+    "inventory_status": "unread"
+  },
+  {
     "name": "TATWATASW",
     "url": "https://github.com/anttiluode/TATWATASW",
     "default_branch": "main",
@@ -6201,6 +6311,17 @@
     "description": "Geometric brain ideas once again fused and updated. Pure Sonnet 5.6 repo. ",
     "created_at": "2026-02-24T06:51:58Z",
     "updated_at": "2026-02-24T06:53:25Z",
+    "inventory_status": "unread"
+  },
+  {
+    "name": "Tunnistus",
+    "url": "https://github.com/anttiluode/Tunnistus",
+    "default_branch": "main",
+    "size": 101,
+    "visibility": "public",
+    "description": "Fable. ",
+    "created_at": "2026-11-11T13:26:23Z",
+    "updated_at": "2026-11-12T06:25:04Z",
     "inventory_status": "unread"
   },
   {
