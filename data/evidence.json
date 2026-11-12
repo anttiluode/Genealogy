@@ -12754,5 +12754,339 @@
       "Replay accuracy is incomplete; no broader ML baseline or general AI functionality has been demonstrated"
     ],
     "source": "https://github.com/anttiluode/ReturnToGeometricNeuron/blob/main/results/round5_check.json"
+  },
+  {
+    "id": "nov11-v27-ring-measured-followup",
+    "node": "GeometricNeuronV27",
+    "claim": "The later native ring retains sampled patterns and can selectively erase one event.",
+    "design": "8-/16-relay delayed-loop experiments, plus single-tick positive setpoint pulse",
+    "result": "supports",
+    "motifs": [],
+    "sample": {
+      "unit": "random patterns",
+      "count": 40
+    },
+    "metrics": [
+      {
+        "name": "retained after 1000 laps",
+        "treatment": 40,
+        "control": 40,
+        "comparison": "observed / tested"
+      },
+      {
+        "name": "selective erasures",
+        "treatment": 12,
+        "control": 12,
+        "comparison": "correct / tested"
+      }
+    ],
+    "controls": [
+      "different loop sizes and cable delays",
+      "all-ones dense ring"
+    ],
+    "replication": "source-reported; Genealogy did not rerun experiments",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Synthetic ring, fixed weights; short dense all-one sequences can corrupt memory"
+    ],
+    "source": "https://github.com/anttiluode/GeometricNeuronV27/blob/main/README.md"
+  },
+  {
+    "id": "nov11-v28-native-readout",
+    "node": "GeometricNeuronV28",
+    "claim": "A separate original oscillator reads two-tick memory windows through a native coincidence gate.",
+    "design": "27 ring patterns; ~59-tick clock; 32-tick ring",
+    "result": "supports",
+    "motifs": [],
+    "sample": {
+      "unit": "window queries",
+      "count": 1917
+    },
+    "metrics": [
+      {
+        "name": "correct sparse-window queries",
+        "treatment": 1917,
+        "control": 1917,
+        "comparison": "observed / tested"
+      },
+      {
+        "name": "correct dense-all-one queries",
+        "treatment": 55,
+        "control": 71,
+        "comparison": "observed / tested"
+      }
+    ],
+    "controls": [
+      "ring-only input",
+      "clock-only input",
+      "dense all-ones ring"
+    ],
+    "replication": "source-reported; Genealogy did not rerun experiments",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Only a two-tick OR window; hand-selected weights, no arbitrary retrieval"
+    ],
+    "source": "https://github.com/anttiluode/GeometricNeuronV28/blob/main/README.md"
+  },
+  {
+    "id": "nov11-tunnistus-mutated-box",
+    "node": "Tunnistus",
+    "claim": "An instruction-blinded subject reconstructed four hidden modifications to a documented feedback machine.",
+    "design": "one mutated box and interrupted subject run, versus ordinary sweep baseline",
+    "result": "supports",
+    "motifs": [],
+    "sample": {
+      "unit": "hidden mutations",
+      "count": 4
+    },
+    "metrics": [
+      {
+        "name": "identified hidden mutations",
+        "treatment": 4,
+        "control": 4,
+        "comparison": "correct / tested"
+      },
+      {
+        "name": "live/dead tests",
+        "treatment": 19,
+        "control": 19,
+        "comparison": "correct / tested"
+      },
+      {
+        "name": "withheld predictions",
+        "treatment": 8,
+        "control": 8,
+        "comparison": "correct / tested"
+      }
+    ],
+    "controls": [
+      "uncommitted alpha run",
+      "naive sweep baseline"
+    ],
+    "replication": "source-reported; Genealogy did not rerun experiments",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "One interrupted subject/model family, instruction-based blindness; reader gate never reached"
+    ],
+    "source": "https://github.com/anttiluode/Tunnistus/blob/main/README.md"
+  },
+  {
+    "id": "nov11-sihtisr-held-out",
+    "node": "SihtiSR",
+    "claim": "Structure-sorted linear filters outperform bicubic and one global filter on a specified held-out ×2 grayscale image task.",
+    "design": "200 BSDS500 training and 200 held-out test photos; 2×2-mean synthetic shrink",
+    "result": "supports",
+    "motifs": [],
+    "sample": {
+      "unit": "held-out images",
+      "count": 200
+    },
+    "metrics": [
+      {
+        "name": "sorted PSNR dB",
+        "treatment": 29.45,
+        "control": 28.56,
+        "comparison": "vs bicubic"
+      },
+      {
+        "name": "sorted PSNR dB",
+        "treatment": 29.45,
+        "control": 29.09,
+        "comparison": "vs global linear filter"
+      }
+    ],
+    "controls": [
+      "Lanczos 28.81 dB",
+      "mean-lock adds 0 dB"
+    ],
+    "replication": "source-reported; Genealogy did not rerun experiments",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "RAISR-like known method; synthetic shrink, not general real-photo super-resolution"
+    ],
+    "source": "https://github.com/anttiluode/SihtiSR/blob/main/README.md"
+  },
+  {
+    "id": "nov12-gnxor-native-truth",
+    "node": "GN-XOR",
+    "claim": "A native three-unit V27 circuit performs precisely synchronized XOR-like event detection.",
+    "design": "binary truth table plus 1-tick lag probe",
+    "result": "mixed",
+    "motifs": [],
+    "sample": {
+      "unit": "truth-table cases",
+      "count": 4
+    },
+    "metrics": [
+      {
+        "name": "synchronous cases correct",
+        "treatment": 4,
+        "control": 4,
+        "comparison": "matched / tested"
+      }
+    ],
+    "controls": [
+      "one-tick shifted two-input case",
+      "no-learning seeded ring"
+    ],
+    "replication": "source-reported; Genealogy did not rerun experiments",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "One-tick lag breaks cancellation; no general symbol comparison"
+    ],
+    "source": "https://github.com/anttiluode/GN-XOR/blob/main/README.md"
+  },
+  {
+    "id": "nov12-opus-window-neuron-control",
+    "node": "KultaaVaiKatinkultaaOpus",
+    "claim": "The checkerboard-free window relay reproduces exhaustive one-wire memory learning and outperforms native GN faults.",
+    "design": "255 synchronized patterns, 33-pattern stress, matched simplified control",
+    "result": "mixed",
+    "motifs": [],
+    "sample": {
+      "unit": "nonempty patterns",
+      "count": 255
+    },
+    "metrics": [
+      {
+        "name": "native correct patterns",
+        "treatment": 255,
+        "control": 255,
+        "comparison": "GN27 vs window"
+      },
+      {
+        "name": "native memory exact on stress",
+        "treatment": 31,
+        "control": 22,
+        "comparison": "one wire vs signed pair, of 33"
+      }
+    ],
+    "controls": [
+      "simple window neuron 255/255",
+      "source exact only 20/33",
+      "native 9-relay leak"
+    ],
+    "replication": "source-reported; Genealogy did not rerun experiments",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Mathematical toggle known; native GN not necessary for tested memory behavior"
+    ],
+    "source": "https://github.com/anttiluode/KultaaVaiKatinkultaaOpus/blob/main/README.md"
+  },
+  {
+    "id": "nov12-goldopus-bounded-jitter",
+    "node": "GoldOpus",
+    "claim": "K-tick integration makes the reduced one-wire rhythm ring robust to bounded event jitter in synchronized tests.",
+    "design": "all 255 nonempty 8-slot rhythms, ±j timing noise",
+    "result": "supports",
+    "motifs": [],
+    "sample": {
+      "unit": "patterns",
+      "count": 255
+    },
+    "metrics": [
+      {
+        "name": "K5 ±2 patterns correct",
+        "treatment": 255,
+        "control": 0,
+        "comparison": "K5 vs K1 at ±2"
+      }
+    ],
+    "controls": [
+      "K3 ±1, K7 ±3",
+      "equal-hop K1"
+    ],
+    "replication": "source-reported; Genealogy did not rerun experiments",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Ordinary integration; fixed tempo; no native GN27 or hardware power proof"
+    ],
+    "source": "https://github.com/anttiluode/GoldOpus/blob/main/README.md"
+  },
+  {
+    "id": "nov12-goldsol-jitter-negative",
+    "node": "GoldSol",
+    "claim": "No tested signal_in variant produced a consistent native GN27 predictive-jitter advantage.",
+    "design": "12 fixed variants and 336 conditioning/history probes",
+    "result": "inconclusive",
+    "motifs": [],
+    "sample": {
+      "unit": "history probes",
+      "count": 336
+    },
+    "metrics": [
+      {
+        "name": "condition-dependent differences",
+        "treatment": 12,
+        "control": 336,
+        "comparison": "12 of 336, all at 2-tick recovery"
+      },
+      {
+        "name": "pipeline swap corrected differences",
+        "treatment": 12,
+        "control": 0,
+        "comparison": "pipeline vs variance history"
+      }
+    ],
+    "controls": [
+      "window baseline",
+      "50-tick variance buffer swap",
+      "four-tick pipeline swap"
+    ],
+    "replication": "source-reported; Genealogy did not rerun experiments",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Finite experiment not proof that native dynamics never help"
+    ],
+    "source": "https://github.com/anttiluode/GoldSol/blob/main/README.md"
+  },
+  {
+    "id": "nov12-phasehub-frozen-templates",
+    "node": "PhaseLockedPredictiveCoding",
+    "claim": "Global temporal phase search removes synthetic timing mismatches while preserving isolated local patch changes.",
+    "design": "frozen 16-frame periodic templates; 128 frames, independent ±1 shifts; 3 patches",
+    "result": "supports",
+    "motifs": [],
+    "sample": {
+      "unit": "frames",
+      "count": 128
+    },
+    "metrics": [
+      {
+        "name": "false mismatch bits without intrusions",
+        "treatment": 0,
+        "control": 77071,
+        "comparison": "shared phase vs fixed phase"
+      },
+      {
+        "name": "detected patch bits",
+        "treatment": 768,
+        "control": 741,
+        "comparison": "shared phase vs independently selected local phase"
+      }
+    ],
+    "controls": [
+      "fixed phase",
+      "per-pixel phase",
+      "three-tick sustained errors",
+      "±2 shifts",
+      "split-region movement",
+      "phase masquerade"
+    ],
+    "replication": "source-reported; Genealogy did not rerun experiments",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Synthetic periodic frames; not spatial-camera alignment, learned PLL or speedup"
+    ],
+    "source": "https://github.com/anttiluode/PhaseLockedPredictiveCoding/blob/main/README.md"
   }
 ]
