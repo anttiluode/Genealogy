@@ -1,10 +1,22 @@
+# Genealogy research log
+
+## 2026-11-12 — The eight-repository XOR investigation
+
+The <a href="https://anttiluode.github.io/Genealogy/#nov12-xor-madness">live wall chapter</a> and [curated pass](data/passes/november-12-gn-xor-self-writing-rings.json) now connect **GN-XOR, KultaaVaiKatinkultaa, KultaaVaiKatinkultaaOpus, GoldOpus, GoldSol, GoldGemini, PhaseLockedPredictiveCoding and MuistoVaihde** without pretending they all implement the same substrate.
+
+A native V27 comparator exhibited synchronous band-pass XOR, then one unsigned error wire into a circulating ring performed both write and erase. Exhaustive synchronized 8-slot rhythms reached **255/255**, but a minimal checkerboard-free window control reproduced them all. Opus's 33-source audit: native one-wire memory **31/33** vs signed-pair **22/33**, window control **33/33** relative to emitted source; only **20/33** demanded source patterns were faithfully emitted. GoldOpus made the *reduced* mechanism tolerate bounded timing jitter using ordinary K-tick integration (K=2j+1 in tested conditions). GoldSol found no clear native GN jitter gain. GoldGemini visualized 16,384 **logical buffer-backed** memory streams, and the phase hub selected a global ±1 **temporal template** offset (128/128 exact phase, 77,071→0 baseline false errors; 768/768 local changes with patches), while preserving the phase-masquerade and independently moving-region failures. MuistoVaihde is an engineered phase-indexed association and separate temporal transition experiment, not a GN-XOR code descendant.
+
+**Correction:** `r'=r XOR (w XOR r)=w` is established T-flip-flop/delay-line logic. No world-first gate, native checkerboard advantage, energy reduction or transformer acceleration has been demonstrated. [Full audit](docs/reviews/2026-11-12-native-rings-xor-and-controls.md).
+
+## 2026-11-11 — V27 becomes implemented, V28 reads, Tunnistus and SihtiSR arrive
+
+The previous genealogy snapshot described V27 as a *proposal*, correctly for that moment. Later V27 built actual delay-line memory and a one-tick selective erase. The source reports 40/40 random event patterns held for 1,000 laps on 8-/16-relay rings. Native V28 uses the ~59-tick original oscillator to sample a 32-tick ring through a coincidence reader: **1,917/1,917** correct two-tick windows on 27 sparse patterns, but **55/71** for a dense all-ones ring. **Tunnistus**, previously missing, assessed a single interrupted instruction-blind mutated-box subject: committed 4/4 hidden changes, 19/19 port-state tests, 8/8 withheld predictions, native clock and a 40-bit memory; no reader result, and alpha made no committed submissions. **SihtiSR** is a compact RAISR-like structure-sorted learned filter, 29.45 dB ×2 grayscale PSNR on 200 held-out mean-downsampled BSDS500 photos vs 28.56 dB bicubic; not new SR mathematics. Moon retains its existing separate review. [November 11 curated pass](data/passes/november-11-v27-v28-tunnistus-sihtisr.json).
+
 ## 2026-11-11 — Moon: authored neural light transport, HypaNet inspiration
 
 Moon joined the then-614-entry repository inventory (subsequently refreshed to 615) and curated wall through [the November 11 pass](data/passes/november-11-handwritten-moon.json). It independently extends the written-weights technique publicly described by Matthew Gribben ([HypaNet](https://github.com/Hypabolic/HypaNet), MIT license) to a fixed quasicrystal-moon light-transport network. The README credits the original article and community discussion. The relevant lineage edge to CrystalMoonV3 is typed **converges**, not **inherits**: Moon's deterministic scattering network is not V3's light-driven crystal-growth simulation.
 
 Moon reports 7.1% mean relative luminance error on both 12 reference and six held-back camera/sun conditions, with 6.9% for the baked browser implementation on held-back conditions. The medium is fixed and BETA/LAM were calibrated by hand against reference views; these are source-reported measurements, not independent Genealogy replication or a cross-scene generalization result. Any copied HypaNet code remains subject to the original MIT notice requirement.
-
-# Genealogy research log
 
 ## 2026-11-10 — Five curated arrivals: active query, P3 eye, persistent Body, and two Fable descendants
 
