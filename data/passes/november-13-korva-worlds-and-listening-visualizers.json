@@ -3,32 +3,8 @@
   "title": "November 13 — Korva, Astra's KORVA / WORLDS and Entrain's live cochlea",
   "reviewed_at": "2026-11-13",
   "order": 191,
-  "summary": "A practical/audio-visualization branch. July's Entrain demonstrates microphone-driven Stuart–Landau resonators and measured entrainment, not audio-style transfer. November's Korva uses period-selecting delay rings as auxiliary tokens for a small transformer on synthetic rhythm tasks. The upgraded MusicVisualizer1 / KORVA / WORLDS (Astra) reuses the Korva model and offers six GPU/Canvas artistic audio-reactive scenes. Only Korva-to-MusicVisualizer1 is a direct code-inheritance claim; other visual analogies are inspirations, not imported neural or physical systems. The new visualizer directory is a navigation aid rather than a scientific ranking.",
+  "summary": "A practical/audio-visualization branch. July's already-curated Entrain demonstrates microphone-driven Stuart–Landau resonators and measured entrainment, not audio-style transfer. November's Korva uses period-selecting delay rings as auxiliary tokens for a small transformer on synthetic rhythm tasks. The upgraded MusicVisualizer1 / KORVA / WORLDS (Astra) reuses the Korva model and offers six GPU/Canvas artistic audio-reactive scenes. Only Korva-to-MusicVisualizer1 is a direct code-inheritance claim; other visual analogies are inspirations, not imported neural or physical systems. The new visualizer directory is a navigation aid rather than a scientific ranking.",
   "nodes": [
-    {
-      "id": "Entrain",
-      "url": "https://github.com/anttiluode/Entrain",
-      "family": "audio-visualization",
-      "status": "experiment",
-      "usefulness": "practical",
-      "confidence": "high",
-      "claim": "Interactive browser cochlea: incoming microphone sound or built-in tones excite a growing bank of Stuart–Landau resonators, with phase-lock coherence displayed on the page.",
-      "survived": "The README reports source-run benchmarks on frequency-selective growth, Arnold-tongue entrainment and a closed-ring directional memory control; the HTML exposes START — MICROPHONE and colored lock indicators.",
-      "killed": "Not a novel discovery of entrainment, cochlear mechanics, or autonomous intelligence. Frequency resolution depends on detuning/coupling; the README documents an unstable Euler discretization that had to be replaced and a failed lazy surprise gate. No causal source-code inheritance to Korva or MusicVisualizer1 is asserted.",
-      "evidence": "https://github.com/anttiluode/Entrain/blob/main/README.md",
-      "tags": [
-        "2026-07-03",
-        "visualizer",
-        "audio",
-        "microphone",
-        "oscillator",
-        "frequency",
-        "entrainment",
-        "browser"
-      ],
-      "era": "November 13: sound as measured dynamics and art",
-      "era_order": 191
-    },
     {
       "id": "Korva",
       "url": "https://github.com/anttiluode/Korva",

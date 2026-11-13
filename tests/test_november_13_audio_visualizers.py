@@ -10,7 +10,7 @@ class AudioVisualizerGenealogyTests(unittest.TestCase):
         names = {x["name"] for x in repos}
         self.assertTrue({"Korva", "MusicVisualizer1", "Entrain"} <= names)
         p = json.loads((ROOT / "data/passes/november-13-korva-worlds-and-listening-visualizers.json").read_text(encoding="utf-8"))
-        self.assertEqual({n["id"] for n in p["nodes"]}, {"Entrain", "Korva", "MusicVisualizer1"})
+        self.assertEqual({n["id"] for n in p["nodes"]}, {"Korva", "MusicVisualizer1"})
         self.assertIn(("Korva", "MusicVisualizer1", "inherits"), {(e["source"],e["target"],e["type"]) for e in p["edges"]})
     def test_visualizer_directory_is_linked(self):
         page = (ROOT / "index.html").read_text(encoding="utf-8")
