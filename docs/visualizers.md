@@ -13,6 +13,7 @@ These are **browseable projects and visual-instrument ideas**, not a scientific 
 | [MusicVisualizer1 / KORVA / WORLDS](https://github.com/anttiluode/MusicVisualizer1) | Astra's six sound-reactive worlds, live audio and unchanged Korva organ | [Live](https://anttiluode.github.io/MusicVisualizer1/) |
 | [World — weather becomes matter](https://github.com/anttiluode/World) | Sound-driven oscillator field writes lasting terrain and compaction; visual GPU basin, not a genuine sounding plate | [Live](https://anttiluode.github.io/World/) |
 | [ResonatingMatter](https://github.com/anttiluode/ResonatingMatter) | Playable, history-shaped Chladni-like membrane: sand, gold bridges, two movable pickups, mode figures | [Live](https://anttiluode.github.io/ResonatingMatter/) |
+| [MusicalDelayLabyrinth](https://github.com/anttiluode/MusicalDelayLabyrinth) | Audio-reactive delay maze: timing-locked corridors, glowing buffer positions, audible fading post-song echoes | [Live](https://anttiluode.github.io/MusicalDelayLabyrinth/) |
 | [WorldAsResonator](https://github.com/anttiluode/WorldAsResonator) | Headless grow/freeze/listen tuning benchmark for World; negative own-song result | — (research benchmark) |
 | [TakensPhaseSpaceVisualizerVST](https://github.com/anttiluode/TakensPhaseSpaceVisualizerVST) | Audio delay-embedding/attractor trajectories inside a VST | — |
 | [PhaseSpaceVisualizerVST](https://github.com/anttiluode/PhaseSpaceVisualizerVST) | Phase-space audio instrument for a DAW | — |

@@ -1,9 +1,9 @@
 {
   "id": "november-13-world-resonating-matter",
-  "title": "November 13 — World, WorldAsResonator, ResonatingMatter: sound writes material, material becomes an instrument",
+  "title": "November 13 — World → WorldAsResonator → ResonatingMatter → MusicalDelayLabyrinth: sound-written matter and timing-aware echoes",
   "reviewed_at": "2026-11-13",
   "order": 192,
-  "summary": "Three newly inventoried projects trace a tested evolution from World’s sound-driven sediment/oscillator feedback, through WorldAsResonator’s failed own-song tuning test, to ResonatingMatter’s genuinely audible membrane whose sand mass and grown gold-link stiffness alter its modes. The plate also detunes away from its training pitches; this is not song recognition, learned sequence continuation, or established utility. Genealogy itself receives a meta-tool node; the already curated MusicVisualizer1/KORVA WORLDS is not duplicated.",
+  "summary": "World closes the oscillator/sand/compaction feedback loop; WorldAsResonator tests and falsifies own-song gain tuning; ResonatingMatter turns the material into an audible membrane but again finds habituation/detuning, not song recognition. MusicalDelayLabyrinth follows with an independently written delay-network instrument: a signed early/late onset error retimes corridors and gives them stronger routing weights, letting rhythmic echoes persist after the input stops. Source-reported six synthetic groove trials retime in all six, while learned-vs-frozen beat-tail improvement passes only 5/6. No established real-song generalization or composed new music. Genealogy meta-archive and previously curated MusicVisualizer1 remain separate.",
   "nodes": [
     {
       "id": "World",
@@ -106,6 +106,34 @@
       ],
       "era": "November 13: sound reshapes material and resonance",
       "era_order": 192
+    },
+    {
+      "id": "MusicalDelayLabyrinth",
+      "url": "https://github.com/anttiluode/MusicalDelayLabyrinth",
+      "family": "resonance-memory",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A browser/AudioWorklet music instrument in which the lengths of bidirectional delay-line corridors are visible as maze geometry. Rooms sum filtered arrivals, while a signed early/late onset mismatch adjusts corridor delay and timely echoes gain routing weight.",
+      "survived": "Source-reported tests on three seeds × 96/120 BPM synthetic grooves show corridors within 15 ms of the half-beat grid increase in all 6 runs (e.g. 4→50 of 58 for seed 7 at 96 BPM); learned labyrinths retain on-beat autocorrelation through 10 s after input stops. Same seed/song gives identical delays/weights; a 30 s silence tail after loud noise decays near zero under memory 0.99.",
+      "killed": "Learned vs learning-off improvement holds in only 5/6 synthetic runs: seed 11 at 120 BPM ties/fails the strict gate, intentionally preserved as a failing test. The system repeats and rearranges delayed fragments; it does not generate new musical material, recognize a song or prove neural learning. Real music and RTX 3060 were not benchmarked; initial maze topology and room notes are hand/seed selected.",
+      "evidence": "https://github.com/anttiluode/MusicalDelayLabyrinth/blob/main/README.md",
+      "tags": [
+        "2026-11-13",
+        "music",
+        "interactive-visualizer",
+        "delay-lines",
+        "phase-timing",
+        "early-late-error",
+        "rhythm",
+        "auditory-echoes",
+        "after-sound",
+        "retiming",
+        "synthetic-grooves",
+        "Opus"
+      ],
+      "era": "November 13: sound reshapes material and resonance",
+      "era_order": 192
     }
   ],
   "edges": [
@@ -180,6 +208,14 @@
       "confidence": "medium",
       "why": "ResonatingMatter credits Moon's compile-slow-structure/respond-fast strategy: the plate is compiled into modal coefficients. It does not copy Moon's light-transport arithmetic.",
       "evidence": "https://github.com/anttiluode/ResonatingMatter/blob/main/README.md"
+    },
+    {
+      "source": "ResonatingMatter",
+      "target": "MusicalDelayLabyrinth",
+      "type": "corrects",
+      "confidence": "high",
+      "why": "MusicalDelayLabyrinth explicitly follows ResonatingMatter's negative loudness-only tuning result and changes the learning signal to a signed early/late onset error; it builds a new delay-line maze rather than inheriting membrane or gold physics.",
+      "evidence": "https://github.com/anttiluode/MusicalDelayLabyrinth/blob/main/README.md"
     }
   ],
   "motifs": [
@@ -203,6 +239,16 @@
         "World",
         "WorldAsResonator",
         "ResonatingMatter"
+      ]
+    },
+    {
+      "id": "nov13-early-late-time-error-becomes-a-route",
+      "title": "A signed timing mismatch can retime a network that power-only feedback could not tune",
+      "description": "WorldAsResonator and ResonatingMatter did not produce positive own-song resonance; MusicalDelayLabyrinth employs external song-onset timing signals to adjust corridor lengths and emphasize timely returns. Its synthetic tests support retiming and residual beat echoes, not causal reconstruction of a song or autonomous composition. The frozen-learning control remains competitive in one of six runs.",
+      "nodes": [
+        "WorldAsResonator",
+        "ResonatingMatter",
+        "MusicalDelayLabyrinth"
       ]
     }
   ]
