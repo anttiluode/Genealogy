@@ -586,5 +586,9 @@
   {
     "path": "november-13-korva-worlds-and-listening-visualizers.json",
     "enabled": true
+  },
+  {
+    "path": "data/passes/november-13-world-resonating-matter.json",
+    "enabled": true
   }
 ]

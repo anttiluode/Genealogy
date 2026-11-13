@@ -4,6 +4,16 @@ Evidence-backed archaeology of Antti Luode's research repositories.
 
 The central premise is that hundreds of repositories are not hundreds of independent ideas. The project separates raw repository inventory from curated scientific interpretation, then records explicit inheritance, corrections, rediscoveries, convergences, extracted mechanisms, empirical evidence, and the scientific questions that remain unresolved.
 
+## 13 November 2026 — World → WorldAsResonator → ResonatingMatter: sound writes matter
+
+**[Live wall chapter](https://anttiluode.github.io/Genealogy/#nov13-world-matter)** · [New curated pass](data/passes/november-13-world-resonating-matter.json) · [World](https://github.com/anttiluode/World) · [WorldAsResonator](https://github.com/anttiluode/WorldAsResonator) · [ResonatingMatter](https://github.com/anttiluode/ResonatingMatter).
+
+Three newly inventoried projects complete the November 13 line. **World** (Astra) routes eight-band sound into GPU oscillators and conservative sediment transport: sand/compaction changes the following force update, but its four-tone sonification is *not* the sound of the whole surface. **WorldAsResonator** (Opus) evaluates unmodified World with five-seed grow/freeze/listen controls, finding **−0.67%** own-song response rather than song-specific tuning, alongside a 4–8% overall dulling. **ResonatingMatter** (Opus) creates an actual 32×32 audio-rate membrane, a finer sand field, and shear-grown gold bridges. Its material controls its sound; 1,024 compiled modes match time-stepped strikes to **2.8% RMS** in the reported test. Its own-song effect is again *negative* (~19% weaker), not recognition, and order learning fails a timing control.
+
+The connections are documented explicitly: **[Kerrostuma](https://github.com/anttiluode/Kerrostuma)** and **[ComputingBeachClaude](https://github.com/anttiluode/ComputingBeachClaude)** inform World conceptually; World adapts Entrain oscillator integration and a Korva-style ring organ. WorldAsResonator vendors World's original simulation. ResonatingMatter reuses WorldAsResonator's experimental protocol, Kerrostuma's traffic-to-conductance concept, and Moon's slow-structure/fast-response compilation strategy; it does **not** borrow Moon's optical equations. All numerical results are repository-reported, not independently rerun by Genealogy.
+
+**Census:** World, WorldAsResonator and ResonatingMatter were missing and are now included; **[MusicVisualizer1](https://github.com/anttiluode/MusicVisualizer1)** was already curated in the listening-visualizers pass, so it is not duplicated. Genealogy itself receives a meta-tool node to make its archival role explicit.
+
 ## 13 November 2026 — visualizers, listening organs and Astra's KORVA / WORLDS
 
 **[New visualizer category on the wall](https://anttiluode.github.io/Genealogy/#visualizers)** · [Categorized directory](docs/visualizers.md) · [Curated pass](data/passes/november-13-korva-worlds-and-listening-visualizers.json).

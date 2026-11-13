@@ -1,0 +1,209 @@
+{
+  "id": "november-13-world-resonating-matter",
+  "title": "November 13 — World, WorldAsResonator, ResonatingMatter: sound writes material, material becomes an instrument",
+  "reviewed_at": "2026-11-13",
+  "order": 192,
+  "summary": "Three newly inventoried projects trace a tested evolution from World’s sound-driven sediment/oscillator feedback, through WorldAsResonator’s failed own-song tuning test, to ResonatingMatter’s genuinely audible membrane whose sand mass and grown gold-link stiffness alter its modes. The plate also detunes away from its training pitches; this is not song recognition, learned sequence continuation, or established utility. Genealogy itself receives a meta-tool node; the already curated MusicVisualizer1/KORVA WORLDS is not duplicated.",
+  "nodes": [
+    {
+      "id": "World",
+      "url": "https://github.com/anttiluode/World",
+      "family": "resonance-memory",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Astra's WebGL2 weather-becomes-matter stage-one simulation: 192² oscillator/transport fields receive eight audio band features plus a Korva-style ring organ; motion erodes, deposits and compacts sand, and the resulting material alters later forces.",
+      "survived": "Source-reported 8/8 core checks and 13/13 EGL graphics checks; unchanged features/seed reproduce unchanged material, sediment transport is conserving under the measured conditions, and hidden compaction affects subsequent evolution after a constructed matched-present intervention.",
+      "killed": "No grown life/crystal/Moon lighting at stage one; four synthesized 'hear matter' sine voices are sonification, not whole-body acoustics. Music is compressed to eight feature bands at 8 Hz. The quoted GPU checks ran on Mesa llvmpipe, not a working browser or the user's RTX 3060.",
+      "evidence": "https://github.com/anttiluode/World/blob/main/README.md",
+      "tags": [
+        "2026-11-13",
+        "sand",
+        "persistent-matter",
+        "causal-feedback",
+        "oscillators",
+        "sound-weather",
+        "Korva",
+        "Entrain",
+        "Astra",
+        "WebGL2",
+        "stage-1"
+      ],
+      "era": "November 13: sound reshapes material and resonance",
+      "era_order": 192
+    },
+    {
+      "id": "WorldAsResonator",
+      "url": "https://github.com/anttiluode/WorldAsResonator",
+      "family": "resonance-memory",
+      "status": "negative",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A grow/freeze/listen 8×8 crossover experiment on the unmodified World code: can ground grown under synthetic song A ring preferentially for A rather than other stimuli?",
+      "survived": "Five source-reported seed runs found the opposite of the proposed tuning: mean own-song response −0.67% (two-sided p=0.017 in the reported pooled analysis); 4–8% general dulling. Mechanism swaps assigned tempo habituation mainly to compaction, partly to resting sand, with zero contribution from mobile sand to the force pass.",
+      "killed": "No useful own-song gain tuning or song identification using total oscillator energy; the earliest claimed register preference was corrected after discovering a loudness-biased normalization. Results are synthetic drum songs on CPU-based Mesa llvmpipe, not a real-music or GPU/browser test; spatial readouts remain untested.",
+      "evidence": "https://github.com/anttiluode/WorldAsResonator/blob/main/README.md",
+      "tags": [
+        "2026-11-13",
+        "World",
+        "crossover",
+        "negative-result",
+        "habituation",
+        "compaction",
+        "EGL",
+        "causal-mechanism",
+        "synthetic-music"
+      ],
+      "era": "November 13: sound reshapes material and resonance",
+      "era_order": 192
+    },
+    {
+      "id": "ResonatingMatter",
+      "url": "https://github.com/anttiluode/ResonatingMatter",
+      "family": "resonance-memory",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Opus's cracked 32×32 vibrating membrane, simulated at audio rate, with a 128×128 Chladni-like sand layer, shear-grown gold links across initially weak Voronoi cracks, two movable pickups and a Moon-inspired 1,024-mode compiler. The actual membrane vibrations both move matter and produce audio.",
+      "survived": "Repository reports 16/16 core tests; independent sand/gold swaps alter the same strike response. Compiled 1,024-mode strike matches time-step sound at 2.8% RMS error. A bridge cut near the driven tile reduces far-pickup energy 4.7 dB vs 1.0 dB for a non-matched-gold control. Different synthetic music histories leave measurably different strike responses.",
+      "killed": "Five-seed own-song tuning is negative (about 19% lower response to the growing song), not a learned resonator or recognizer; order differences did not exceed onset-timing control. Gold grows by authored shear thresholds, crack map is seeded, not emergent; model is a tension membrane rather than a bending-stiffness steel plate. No test of real-song improvement or RTX 3060 performance.",
+      "evidence": "https://github.com/anttiluode/ResonatingMatter/blob/main/README.md",
+      "tags": [
+        "2026-11-13",
+        "Chladni",
+        "membrane",
+        "plate-reverb-analogy",
+        "sand",
+        "gold",
+        "grown-conductance",
+        "modal-synthesis",
+        "detuning",
+        "intervention",
+        "Opus"
+      ],
+      "era": "November 13: sound reshapes material and resonance",
+      "era_order": 192
+    },
+    {
+      "id": "Genealogy",
+      "url": "https://github.com/anttiluode/Genealogy",
+      "family": "research-tools",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "The active evidence-backed atlas recording repository inventory, curated project nodes, explicit lineage edges, experiment receipts, corrections, unresolved questions and dated visualizer/research notes.",
+      "survived": "Data are separated into a repository census and individually reviewable passes; a validation script checks duplicate nodes, edges and dangling references. The wall is a navigation and epistemic record, not a model that proves the archived claims.",
+      "killed": "The repo count is not a scientific productivity metric; inherited claims remain source-reported unless independently rerun. The archive should not convert conceptual inspiration into direct code ancestry or merge separate experimental benchmarks.",
+      "evidence": "https://github.com/anttiluode/Genealogy/blob/main/README.md",
+      "tags": [
+        "2026-11-13",
+        "meta-archive",
+        "genealogy-wall",
+        "lineage",
+        "reproducibility",
+        "research-ledger",
+        "visualizers"
+      ],
+      "era": "November 13: sound reshapes material and resonance",
+      "era_order": 192
+    }
+  ],
+  "edges": [
+    {
+      "source": "Kerrostuma",
+      "target": "World",
+      "type": "converges",
+      "confidence": "high",
+      "why": "World's source notes explicitly credit Kerrostuma's persistent material, history controls and fossil-world question. This is a conceptual relationship, not a copied crust/torus codebase.",
+      "evidence": "https://github.com/anttiluode/World/blob/main/docs/SOURCE_NOTES.md"
+    },
+    {
+      "source": "ComputingBeachClaude",
+      "target": "World",
+      "type": "converges",
+      "confidence": "high",
+      "why": "World's source notes identify ComputingBeachClaude's wave→material→wave feedback as the central causal loop, implemented with a newly written conservative transport rule.",
+      "evidence": "https://github.com/anttiluode/World/blob/main/docs/SOURCE_NOTES.md"
+    },
+    {
+      "source": "Entrain",
+      "target": "World",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "World's implementation notes say it adapts Entrain's damped nonlinear Stuart–Landau oscillator integration and exact rotation into a GPU spatial field; it does not reuse Entrain's growth/classifier task.",
+      "evidence": "https://github.com/anttiluode/World/blob/main/docs/SOURCE_NOTES.md"
+    },
+    {
+      "source": "Korva",
+      "target": "World",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "World explicitly adapts a Korva-style delay-ring echo/surprise organ at 8 Hz, without importing Korva's trained transformer.",
+      "evidence": "https://github.com/anttiluode/World/blob/main/docs/SOURCE_NOTES.md"
+    },
+    {
+      "source": "World",
+      "target": "WorldAsResonator",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "WorldAsResonator vendors an unmodified, commit-identified World HTML engine and executes its original shader/audio features in a headless grow/freeze/listen crossover.",
+      "evidence": "https://github.com/anttiluode/WorldAsResonator/blob/main/README.md"
+    },
+    {
+      "source": "World",
+      "target": "ResonatingMatter",
+      "type": "converges",
+      "confidence": "high",
+      "why": "ResonatingMatter explicitly borrows World's causal principle and freeze/kill controls, but builds a new membrane/acoustic solver rather than copying its oscillators or visual shader.",
+      "evidence": "https://github.com/anttiluode/ResonatingMatter/blob/main/README.md"
+    },
+    {
+      "source": "WorldAsResonator",
+      "target": "ResonatingMatter",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "ResonatingMatter reuses the grow/freeze/listen 2×2 scoring protocol from WorldAsResonator to test a different vibration-based material body.",
+      "evidence": "https://github.com/anttiluode/ResonatingMatter/blob/main/README.md"
+    },
+    {
+      "source": "Kerrostuma",
+      "target": "ResonatingMatter",
+      "type": "converges",
+      "confidence": "high",
+      "why": "ResonatingMatter re-sources Kerrostuma's traffic-becomes-conductance idea as shear-excited gold growth across cracked membrane links, without claiming the same mechanics.",
+      "evidence": "https://github.com/anttiluode/ResonatingMatter/blob/main/README.md"
+    },
+    {
+      "source": "Moon",
+      "target": "ResonatingMatter",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "ResonatingMatter credits Moon's compile-slow-structure/respond-fast strategy: the plate is compiled into modal coefficients. It does not copy Moon's light-transport arithmetic.",
+      "evidence": "https://github.com/anttiluode/ResonatingMatter/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov13-sound-matter-causal-chain",
+      "title": "Sound writes material; material changes the subsequent acoustic operator",
+      "description": "World couples audio-driven oscillators to sediment but synthesizes only diagnostic sine sonification; WorldAsResonator measures a negative tuning result. ResonatingMatter repairs the acoustic mismatch with one vibrating body whose sand and gold govern both the transport and heard signal. Causal feedback and readable memory do not establish song learning or computational benefit.",
+      "nodes": [
+        "Kerrostuma",
+        "ComputingBeachClaude",
+        "World",
+        "WorldAsResonator",
+        "ResonatingMatter"
+      ]
+    },
+    {
+      "id": "nov13-negative-song-tuning",
+      "title": "Two successive failures to learn familiarity, with a new physical hypothesis",
+      "description": "WorldAsResonator observes weak own-song habituation in a fixed-band field; ResonatingMatter shows stronger own-song detuning in a material-dependent membrane. In ResonatingMatter, both sand and gold contribute in measured channel swaps, but the conjecture that raised mode frequencies cause detuning remains untested; neither experiment establishes novel-song detection on held-out examples.",
+      "nodes": [
+        "World",
+        "WorldAsResonator",
+        "ResonatingMatter"
+      ]
+    }
+  ]
+}
