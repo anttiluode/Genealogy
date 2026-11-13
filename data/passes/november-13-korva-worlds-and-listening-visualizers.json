@@ -1,0 +1,121 @@
+{
+  "id": "november-13-korva-worlds-and-listening-visualizers",
+  "title": "November 13 — Korva, Astra's KORVA / WORLDS and Entrain's live cochlea",
+  "reviewed_at": "2026-11-13",
+  "order": 191,
+  "summary": "A practical/audio-visualization branch. July's Entrain demonstrates microphone-driven Stuart–Landau resonators and measured entrainment, not audio-style transfer. November's Korva uses period-selecting delay rings as auxiliary tokens for a small transformer on synthetic rhythm tasks. The upgraded MusicVisualizer1 / KORVA / WORLDS (Astra) reuses the Korva model and offers six GPU/Canvas artistic audio-reactive scenes. Only Korva-to-MusicVisualizer1 is a direct code-inheritance claim; other visual analogies are inspirations, not imported neural or physical systems. The new visualizer directory is a navigation aid rather than a scientific ranking.",
+  "nodes": [
+    {
+      "id": "Entrain",
+      "url": "https://github.com/anttiluode/Entrain",
+      "family": "audio-visualization",
+      "status": "experiment",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Interactive browser cochlea: incoming microphone sound or built-in tones excite a growing bank of Stuart–Landau resonators, with phase-lock coherence displayed on the page.",
+      "survived": "The README reports source-run benchmarks on frequency-selective growth, Arnold-tongue entrainment and a closed-ring directional memory control; the HTML exposes START — MICROPHONE and colored lock indicators.",
+      "killed": "Not a novel discovery of entrainment, cochlear mechanics, or autonomous intelligence. Frequency resolution depends on detuning/coupling; the README documents an unstable Euler discretization that had to be replaced and a failed lazy surprise gate. No causal source-code inheritance to Korva or MusicVisualizer1 is asserted.",
+      "evidence": "https://github.com/anttiluode/Entrain/blob/main/README.md",
+      "tags": [
+        "2026-07-03",
+        "visualizer",
+        "audio",
+        "microphone",
+        "oscillator",
+        "frequency",
+        "entrainment",
+        "browser"
+      ],
+      "era": "November 13: sound as measured dynamics and art",
+      "era_order": 191
+    },
+    {
+      "id": "Korva",
+      "url": "https://github.com/anttiluode/Korva",
+      "family": "audio-visualization",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A rhythm-memory organ of 52 fixed delay rings (laps 13–64 ticks) selects three low-surprise periods and feeds their expectations to a tiny two-layer, two-head transformer.",
+      "survived": "The README reports F1 0.91 on synthetic periodic rhythm bands for a window-12 transformer with ring organ, compared with 0.00 without organ under the same short training budget; random lap selection yields 0.13. The browser page demonstrates local files, demo songs and keyboard tapping.",
+      "killed": "Period-selection comb filters and memory-enhanced attention have prior art. The task favors long-period memory, the baselines are training-limited, and the real-song example scores only 0.27 rhythm-band F1. Gating writes did not improve the tested synthetic result. The original Korva page has no microphone input.",
+      "evidence": "https://github.com/anttiluode/Korva/blob/main/README.md",
+      "tags": [
+        "2026-11-12",
+        "visualizer",
+        "audio",
+        "rhythm",
+        "ring-memory",
+        "transformer",
+        "browser",
+        "cochlea"
+      ],
+      "era": "November 13: sound as measured dynamics and art",
+      "era_order": 191
+    },
+    {
+      "id": "MusicVisualizer1",
+      "url": "https://github.com/anttiluode/MusicVisualizer1",
+      "family": "audio-visualization",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Astra's KORVA / WORLDS update to MusicVisualizer1: six sound-reactive browser worlds (Crystal Cathedral, Fourier Bloom, Tidal Silk, Phase Loom, Resonant Cortex and Event Horizon), with local file/mic/tab audio, captures and unchanged Korva organ/transformer code.",
+      "survived": "The README documents direct browser playback, real-time FFT-based audio response, WebGL-1 ray-marched/Canvas fallback scenes, six selectable worlds, memory-ring overlays, PNG/WebM export and original synthesized demo music. Tests are described for shader/offscreen behavior and JS controls.",
+      "killed": "Artistic worlds are not implementations of Moon's light-transport model, CrystalMoon's voxel simulation or RCNet inference. Phase Loom is a delay embedding, not proof of a reconstructed attractor. Korva's synthetic-rhythm scores do not validate next-beat accuracy on arbitrary real songs; no universal FPS guarantee.",
+      "evidence": "https://github.com/anttiluode/MusicVisualizer1/blob/main/README.md",
+      "tags": [
+        "2026-11-13",
+        "visualizer",
+        "music",
+        "audio",
+        "WebGL",
+        "Canvas",
+        "browser",
+        "six-worlds",
+        "Astra",
+        "Korva"
+      ],
+      "era": "November 13: sound as measured dynamics and art",
+      "era_order": 191
+    }
+  ],
+  "edges": [
+    {
+      "source": "Korva",
+      "target": "MusicVisualizer1",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "MusicVisualizer1 explicitly reuses Korva's 52-ring organ, trained tiny transformer and unchanged korva-engine.js/weights.js, while adding a new renderer and live audio front end.",
+      "evidence": "https://github.com/anttiluode/MusicVisualizer1/blob/main/README.md"
+    },
+    {
+      "source": "PhaseSpaceVisualizerVST",
+      "target": "MusicVisualizer1",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "The KORVA / WORLDS README explicitly credits the earlier phase-space visualization idea; Phase Loom renders delay-coordinate trajectories from actual samples. This is inspiration, not a claim that VST code is imported.",
+      "evidence": "https://github.com/anttiluode/MusicVisualizer1/blob/main/README.md"
+    },
+    {
+      "source": "FourierFlower",
+      "target": "MusicVisualizer1",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "The new Fourier Bloom world explicitly credits FourierFlower as harmonic-flower visual inspiration; new procedural rendering code is original to MusicVisualizer1.",
+      "evidence": "https://github.com/anttiluode/MusicVisualizer1/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov13-listening-versus-rendering",
+      "title": "Listening organ, resonator and visual world are different machines",
+      "description": "Entrain displays physically modeled oscillator response and measured phase-locking; Korva reads ring-period memories into transformer attention; MusicVisualizer1 uses audio features to animate original artwork while retaining Korva as a separate inspectable organ. Their shared word 'resonance' does not turn them into the same algorithm. This group is a visual-demo directory, not a novelty or empirical-performance claim.",
+      "nodes": [
+        "Entrain",
+        "Korva",
+        "MusicVisualizer1"
+      ]
+    }
+  ]
+}

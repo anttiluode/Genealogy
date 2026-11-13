@@ -582,5 +582,9 @@
   {
     "path": "november-12-tarinasr-shake-superresolution.json",
     "enabled": true
+  },
+  {
+    "path": "november-13-korva-worlds-and-listening-visualizers.json",
+    "enabled": true
   }
 ]

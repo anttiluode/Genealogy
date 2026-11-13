@@ -4,6 +4,14 @@ Evidence-backed archaeology of Antti Luode's research repositories.
 
 The central premise is that hundreds of repositories are not hundreds of independent ideas. The project separates raw repository inventory from curated scientific interpretation, then records explicit inheritance, corrections, rediscoveries, convergences, extracted mechanisms, empirical evidence, and the scientific questions that remain unresolved.
 
+## 13 November 2026 — visualizers, listening organs and Astra's KORVA / WORLDS
+
+**[New visualizer category on the wall](https://anttiluode.github.io/Genealogy/#visualizers)** · [Categorized directory](docs/visualizers.md) · [Curated pass](data/passes/november-13-korva-worlds-and-listening-visualizers.json).
+
+The dated listening line now documents **[Entrain](https://github.com/anttiluode/Entrain)** (already in the old census, now curated), **[Korva](https://github.com/anttiluode/Korva)** (52 delay rings providing time-period tokens to a tiny transformer), and **[MusicVisualizer1 / KORVA / WORLDS](https://github.com/anttiluode/MusicVisualizer1)** (Astra's new six-world browser visualizer). Only the Korva → MusicVisualizer1 code inheritance is asserted: the renderer retains Korva's engine and weights. The page also has independent FFT-driven art, live microphone/tab input, Canvas fallback, recording and capture. Its procedural scenes borrow ideas, not models, from other visual experiments.
+
+**Caveat:** Entrain's oscillator locking, Korva's synthetic-rhythm results and MusicVisualizer1's artistic response are different claims. The real-song benchmark for Korva is weak, and no validation is inferred from attractive graphics. More work with Astra is in progress, not silently entered as a completed project.
+
 ## 12 November 2026 — TärinäSR: subpixel camera shake becomes resolution
 
 **[Live wall chapter](https://anttiluode.github.io/Genealogy/#nov12-tarinasr)** · [TarinaSR source](https://github.com/anttiluode/TarinaSR/) · [Playable page](https://anttiluode.github.io/TarinaSR/) · [Curated pass](data/passes/november-12-tarinasr-shake-superresolution.json) · [Source-linked review](docs/reviews/2026-11-12-tarinasr-subpixel-shake.md).
