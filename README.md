@@ -4,6 +4,16 @@ Evidence-backed archaeology of Antti Luode's research repositories.
 
 The central premise is that hundreds of repositories are not hundreds of independent ideas. The project separates raw repository inventory from curated scientific interpretation, then records explicit inheritance, corrections, rediscoveries, convergences, extracted mechanisms, empirical evidence, and the scientific questions that remain unresolved.
 
+## 14 November 2026 — SlimeBody: the missing hydraulic body already exists
+
+**[Live wall chapter](https://anttiluode.github.io/Genealogy/#nov14-slimebody)** · [SlimeBody repository](https://github.com/anttiluode/SlimeBody) · [Curated audit](data/passes/november-14-slimebody-physical-pumping.json).
+
+SlimeBody (Fable) is a distinct, newly written physical model connecting **Limasieni**'s flux-dependent veins, **Elävä Matriisi**'s material maintenance and refunds, and **GelatinIsland**'s spatial growth front. It uses node contraction phases, elastic pressure and implicit graph flow, advects nutrients and signals with that flow, converts eaten food to fluid locally, and grows new front nodes from over-full regions. Its renderer is not the physics; the simulated tubes are the flow network. The repository explicitly says no old code was copied.
+
+The most informative test is not whether the body looks alive but whether **phase coordination transports food**. Over three grown frozen bodies, an imposed body-length contraction wave moved on average **12.7%** of a tracer dose past the halfway line, against **0.02%** with phase-shuffled contractions and **0.9%** with the body's *own* spontaneous rhythm. These arms matched contraction amplitude but **not pumping work**: shuffled phases spent about 20–25 times less work. Thus this is not an energy-matched efficiency victory, and the native oscillator network is not an optimized pump. The layer audit also finds that pumping sustains body size (4,536 final nodes full versus 713 with pumping removed), while smell—not pumping—is the primary food finder. Turning off tube adaptation does not damage foraging in this benchmark.
+
+**Open/falsifiable:** equal-work transport comparison; spontaneous body-length wave selection; functioning local return/feedback signal; cut-and-reconnect; history-dependent retention. The engine does **not** simulate Taylor dispersion or demonstrate maze solving, learned timing or general intelligence.
+
 ## 14 November 2026 — Six living-matrix and LIFE projects
 
 **[Live wall chapter](https://anttiluode.github.io/Genealogy/#nov14-living-lives)** · [Curated lineage and limitations](data/passes/november-14-living-matrices-and-lives.json).
