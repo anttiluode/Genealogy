@@ -4,6 +4,18 @@ Evidence-backed archaeology of Antti Luode's research repositories.
 
 The central premise is that hundreds of repositories are not hundreds of independent ideas. The project separates raw repository inventory from curated scientific interpretation, then records explicit inheritance, corrections, rediscoveries, convergences, extracted mechanisms, empirical evidence, and the scientific questions that remain unresolved.
 
+## 14 November 2026 — Six living-matrix and LIFE projects
+
+**[Live wall chapter](https://anttiluode.github.io/Genealogy/#nov14-living-lives)** · [Curated lineage and limitations](data/passes/november-14-living-matrices-and-lives.json).
+
+The real vine, Köynnös and the shared-budget question became two independent simulation branches: **[ElavaMatriisiClaude](https://github.com/anttiluode/ElavaMatriisiClaude)** and **[ElavaMatriisiSol](https://github.com/anttiluode/ElavaMatriisiSol)**. Claude's reported 192-life Gate 0 sweep shows transport-driven channel survival and a minimum loan-patience threshold. Gate 0b mostly rejected the attractive *jättebra* memory-savings prediction (11 of 12 conditions), found no costly-curiosity optimum and no effective single-life selection on inherited patience. Sol's first gate conserves locally transported resources but has explicit loan expiry; its signaling comparison supplies the factorized code beforehand, and its dormancy/savings mechanism is intentionally constructed. These are **experiments about structural metabolism and accessibility, not verified neural intelligence**.
+
+The same metaphor became three games: **[LifeSucks](https://github.com/anttiluode/LifeSucks)** (Claude's original attention-and-relationship vine game), **[Life](https://github.com/anttiluode/Life)** (Sol's distinct offline narrative/canvas/voice/save adaptation which preserves the original LifeSucks model), and **[Life2](https://github.com/anttiluode/Life2)** (Claude's historical family-dynasty expansion with heirs, dated events and assets). These are real source-derived software branches, not evidence that actual human relationships obey plant conductance equations. Life2 reports local-model *mock* integration tests, not verified real-model output.
+
+**[LifeAtHuggingface](https://github.com/anttiluode/LifeAtHuggingface)** is explicitly recorded as a **work-in-progress deployment branch based on Life2**, not based on Life. Its GitHub repository contained only LICENSE at this review, so it must not be counted as a working Hugging Face app or Space. Once Claude's implementation lands, this genealogy node should be re-reviewed.
+
+**Census:** six new reviewed entries, six curated nodes and seven directed ancestry/convergence links. No existing Köynnös node is duplicated. This separation between source observations, failed predictions, constructed mechanisms, playable adaptations and unverified deployment plans is the point of the Genealogy wall.
+
 ## 13 November 2026 — World → WorldAsResonator → ResonatingMatter → MusicalDelayLabyrinth
 
 **[Live wall chapter](https://anttiluode.github.io/Genealogy/#nov13-world-matter)** · [New curated pass](data/passes/november-13-world-resonating-matter.json) · [World](https://github.com/anttiluode/World) · [WorldAsResonator](https://github.com/anttiluode/WorldAsResonator) · [ResonatingMatter](https://github.com/anttiluode/ResonatingMatter).
