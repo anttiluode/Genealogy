@@ -1,0 +1,85 @@
+{
+  "id": "november-14-slimebody-physical-pumping",
+  "title": "November 14 — SlimeBody: from gel and flow to a pumping, nutrient-carrying body",
+  "reviewed_at": "2026-11-14",
+  "order": 194,
+  "summary": "SlimeBody closes a previously missing physical loop: local contractions determine elastic pressure and tube flow; upwind flow carries nutrient/signal; local food intake creates fluid and pressure, while flow supports adaptive veins and nutrient-funded growth. Its three-seed tests reveal that an imposed body-length wave moves tracer much farther than the self-organized rhythm, but equal amplitude is not equal pumping work. The engine omits Taylor dispersion and does not establish autonomous optimization, maze solving, or a useful learned timing rule.",
+  "nodes": [
+    {
+      "id": "SlimeBody",
+      "url": "https://github.com/anttiluode/SlimeBody",
+      "family": "living-matrices",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A continuous spatial slime-mould-inspired body couples node contraction phases to elastic pressure, implicit graph flow, upwind nutrient/signal transport, flow-dependent tube upkeep, local food-to-fluid conversion and front growth.",
+      "survived": "The README and tests report a pressure/transport engine rather than decorative moving trails. In three frozen-body gate-1 trials, an imposed body-length contraction wave transported a mean 12.7% of tracer nutrient past halfway, versus 0.02% for shuffled phases and 0.9% for the body's own rhythm. The three-seed living-world layer audit reports 4,536 end nodes for the full model versus 713 without pumping.",
+      "killed": "Transport does not implement Taylor dispersion; parcels mix at well-mixed nodes. Gate 1 matches contraction amplitude but not pump work (shuffled waves do 20–25 times less work), so the large delivery gap is not an energy-matched efficiency advantage. The body self-organizes poor long-range waves, the food-signal ablation is effectively null, tube adaptation does not improve food acquisition in the tested world, the near-gap-only path result is chemotaxis rather than maze solving, and history/reconnection/tempo tests remain unmeasured.",
+      "evidence": "https://github.com/anttiluode/SlimeBody/blob/main/README.md",
+      "tags": [
+        "2026-11-14",
+        "slime-mould",
+        "physarum",
+        "hydraulic-pressure",
+        "phase-waves",
+        "nutrient-transport",
+        "metabolism",
+        "structural-plasticity",
+        "controlled-ablation",
+        "unequal-work-control",
+        "negative-results"
+      ],
+      "era": "November 14: living material learns to pump",
+      "era_order": 194
+    }
+  ],
+  "edges": [
+    {
+      "source": "Limasieni",
+      "target": "SlimeBody",
+      "type": "converges",
+      "confidence": "high",
+      "why": "SlimeBody's README explicitly credits the Physarum/Tero conductance and flux-adaptation ideas from Limasieni; its hydraulic body is new code, not imported Limasieni code.",
+      "evidence": "https://github.com/anttiluode/SlimeBody/blob/main/README.md"
+    },
+    {
+      "source": "ElavaMatriisiClaude",
+      "target": "SlimeBody",
+      "type": "converges",
+      "confidence": "high",
+      "why": "SlimeBody explicitly credits the vine/economy line for maintenance, pruning and nutrient refund. This records conceptual transfer rather than reused source code.",
+      "evidence": "https://github.com/anttiluode/SlimeBody/blob/main/README.md"
+    },
+    {
+      "source": "GelatinIsland",
+      "target": "SlimeBody",
+      "type": "converges",
+      "confidence": "high",
+      "why": "SlimeBody explicitly credits GelatinIsland's spatial growing front but replaces the excitable medium with hydraulics, nutrients and phase-coupled contractions.",
+      "evidence": "https://github.com/anttiluode/SlimeBody/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov14-slimebody-phase-transport-versus-autonomy",
+      "title": "A useful imposed wave is not a self-discovered pumping strategy",
+      "description": "The same built hydraulic body transports an end-loaded tracer under externally imposed body-length contractions, but its native phase field transports much less. This motivates an equal-work comparison and a test of whether local nutrient/contraction feedback can discover long-range coordinated pumping without an external phase target.",
+      "nodes": [
+        "Limasieni",
+        "GelatinIsland",
+        "ElavaMatriisiClaude",
+        "SlimeBody"
+      ]
+    },
+    {
+      "id": "nov14-slimebody-foraging-versus-maintenance",
+      "title": "A layer can sustain a body without improving food finding",
+      "description": "SlimeBody's layer audit separates chemotactic discovery (strongly smell-dependent) from hydraulic support of a grown body (pumping-dependent); tube adaptation can make anatomy look physiological without improving food acquisition in the current meadow. This is a functional dissociation, not proof of learned self-maintaining intelligence.",
+      "nodes": [
+        "GelatinIsland",
+        "ElavaMatriisiClaude",
+        "SlimeBody"
+      ]
+    }
+  ]
+}
