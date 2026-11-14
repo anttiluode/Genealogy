@@ -1749,6 +1749,28 @@
     "inventory_status": "unread"
   },
   {
+    "name": "ElavaMatriisiClaude",
+    "url": "https://github.com/anttiluode/ElavaMatriisiClaude",
+    "default_branch": "main",
+    "size": 2960,
+    "visibility": "public",
+    "description": "Opus 55",
+    "created_at": "2026-11-14T04:04:53Z",
+    "updated_at": "2026-11-14T04:34:06Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "ElavaMatriisiSol",
+    "url": "https://github.com/anttiluode/ElavaMatriisiSol",
+    "default_branch": "main",
+    "size": 105,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-11-14T04:05:23Z",
+    "updated_at": "2026-11-14T04:18:48Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "Ember",
     "url": "https://github.com/anttiluode/Ember",
     "default_branch": "main",
@@ -3289,6 +3311,28 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "Life",
+    "url": "https://github.com/anttiluode/Life",
+    "default_branch": "main",
+    "size": 131,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-11-14T05:45:52Z",
+    "updated_at": "2026-11-14T06:21:13Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "Life2",
+    "url": "https://github.com/anttiluode/Life2",
+    "default_branch": "main",
+    "size": 115,
+    "visibility": "public",
+    "description": "Opus",
+    "created_at": "2026-11-14T05:48:46Z",
+    "updated_at": "2026-11-14T06:21:02Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "life2o2",
     "url": "https://github.com/anttiluode/life2o2",
     "default_branch": "main",
@@ -3298,6 +3342,28 @@
     "created_at": "2025-01-30T11:07:43Z",
     "updated_at": "2025-01-30T13:56:30Z",
     "inventory_status": "unread"
+  },
+  {
+    "name": "LifeAtHuggingface",
+    "url": "https://github.com/anttiluode/LifeAtHuggingface",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Opus",
+    "created_at": "2026-11-14T08:07:52Z",
+    "updated_at": "2026-11-14T08:07:54Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "LifeSucks",
+    "url": "https://github.com/anttiluode/LifeSucks",
+    "default_branch": "main",
+    "size": 233,
+    "visibility": "public",
+    "description": "Opus 55",
+    "created_at": "2026-11-14T05:19:32Z",
+    "updated_at": "2026-11-14T05:39:12Z",
+    "inventory_status": "reviewed"
   },
   {
     "name": "Limasieni",
