@@ -1,0 +1,246 @@
+{
+  "id": "november-14-living-matrices-and-lives",
+  "title": "November 14 — Living matrices become lived lives: Sol, Claude, LifeSucks, LIFE, Life² and Hugging Face handoff",
+  "reviewed_at": "2026-11-14",
+  "order": 193,
+  "summary": "The photographed vine and Köynnös inspired two distinct, deliberately limited resource-economy experiments. Claude's Gate 0 demonstrates flux-linked retention and withering, but its 0b sweep mostly rejects savings and fails to find costly curiosity. Sol's Gate 0 models conservative local reserves and explicit loan expiry; Gate 1 probes communication with an engineered factorized code; Gate 1b builds a dormant-word savings mechanism without claiming it emerges naturally. The same economic metaphor becomes LifeSucks' life-allocation game, Sol's separate offline narrative adaptation LIFE, and Claude's historically situated multi-generational Life². LifeAtHuggingface is an announced Life²-derived Hugging Face app project but currently only has a license in GitHub; deployment is not established.",
+  "nodes": [
+    {
+      "id": "ElavaMatriisiClaude",
+      "url": "https://github.com/anttiluode/ElavaMatriisiClaude",
+      "family": "living-matrices",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Claude's Gate 0 tests a single-resource vine economy where transport flux maintains channels, exploratory shoots receive decaying loans and unused channels close without an explicit pruning decision.",
+      "survived": "The README reports 192 lives over bright/dim rooms, eleven loan settings and eight seeds, plus a FREE comparison: light-aligned conductance, self-scaffolding growth, spontaneous closure and a reach-dependent patience threshold. Slow wood retains more body through some shocks.",
+      "killed": "Gate 0b finds no reliable savings in 11 of 12 conditions, no measurable optimum for long exploration loans, and no useful inherited patience within one lifetime. All-fast vines can survive window shifts; slow wood is a retention-versus-agility tradeoff, not a universal survival requirement. These are engineered ecological simulations, not brain intelligence.",
+      "evidence": "https://github.com/anttiluode/ElavaMatriisiClaude/blob/main/README.md",
+      "tags": [
+        "2026-11-14",
+        "vine",
+        "canalization",
+        "flux",
+        "energy-economy",
+        "negative-results",
+        "wood-memory",
+        "exploration-loan",
+        "Claude"
+      ],
+      "era": "November 14: living economy becomes a life story",
+      "era_order": 193
+    },
+    {
+      "id": "ElavaMatriisiSol",
+      "url": "https://github.com/anttiluode/ElavaMatriisiSol",
+      "family": "living-matrices",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Sol's staged living-matrix instrument starts with local resource reserves and transport-limited growth, then explores separate sender/receiver matrices (Gate 1) and deliberately engineered dormant word associations (Gate 1b).",
+      "survived": "The repository documents seeded local-energy accounting, light/cut interventions, isolated two-agent signal tests, a fresh third receiver without copied weights, and controlled dormant versus erased-memory relearning comparisons.",
+      "killed": "Gate 0 remains a tree with explicit loan-expiry pruning rather than a general recurrent intelligent network. Gate 1's two-slot compositional structure is supplied by design, not invented grammar. Gate 1b's storage/accessibility split is deliberately built, not independently emergent savings or validated neuroscience.",
+      "evidence": "https://github.com/anttiluode/ElavaMatriisiSol/blob/main/README.md",
+      "tags": [
+        "2026-11-14",
+        "vine",
+        "resource-transport",
+        "signaling",
+        "language",
+        "dormancy",
+        "savings",
+        "Sol",
+        "controls"
+      ],
+      "era": "November 14: living economy becomes a life story",
+      "era_order": 193
+    },
+    {
+      "id": "LifeSucks",
+      "url": "https://github.com/anttiluode/LifeSucks",
+      "family": "life-simulation",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Claude's single-life browser game expresses relationships, work, self-care and dreams as conductance-bearing branches maintained by a limited annual attention budget, from age eighteen through the funeral.",
+      "survived": "The pure seeded life.js model runs separately from drawing, allows choices and withering via flux, renders a personal vine and epitaph, and reports bot simulations for workaholic, family-oriented, social, balanced and solitary play styles.",
+      "killed": "Money, death, affection and loneliness dynamics are fiction and hand-balanced using simulated players, not predictive human-life or population data. A seeded share link reproduces a starting world, not necessarily the user's actual choices.",
+      "evidence": "https://github.com/anttiluode/LifeSucks/blob/main/README.md",
+      "tags": [
+        "2026-11-14",
+        "life-game",
+        "vine-economy",
+        "attention-budget",
+        "relationships",
+        "funeral",
+        "Claude"
+      ],
+      "era": "November 14: living economy becomes a life story",
+      "era_order": 193
+    },
+    {
+      "id": "Life",
+      "url": "https://github.com/anttiluode/Life",
+      "family": "life-simulation",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Sol's separate, offline-first LIFE game directly preserves the LifeSucks life.js economy and adds context-aware story composition, procedural cinematic canvas, optional local speech/models and exact seed-plus-decision life replay.",
+      "survived": "The README describes a storybook, retell-versus-new-seed distinction, portable JSON archives, rewind, procedural art, optional local GGUF and diffusion asset generators, and GitHub Actions tests for complete seeded lives and interface flows.",
+      "killed": "Default narrative text and pictures are procedural, not AI-model outputs. True neural narration and diffusion images require locally supplied models and extra tools; the simulator still has the simplifying assumptions and subjective balance of LifeSucks.",
+      "evidence": "https://github.com/anttiluode/Life/blob/main/README.md",
+      "tags": [
+        "2026-11-14",
+        "life-game",
+        "narration",
+        "visualization",
+        "local-AI-optional",
+        "offline",
+        "saved-journal",
+        "Sol"
+      ],
+      "era": "November 14: living economy becomes a life story",
+      "era_order": 193
+    },
+    {
+      "id": "Life2",
+      "url": "https://github.com/anttiluode/Life2",
+      "family": "life-simulation",
+      "status": "active",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Claude's Life² — Bloodlines extends the attention-and-relationship vine game into multi-generation dynasties affected by historical dates, migrations, inheritance, class and family fortune.",
+      "survived": "The README describes seven starting eras from Rome 150 to Finland 1990, dated historical event forks, heir selection, replayable dynasty histories and a book of generations. It reports bot runs and headless page tests with mocked local narrator and painter.",
+      "killed": "Historical outcomes and economics are deliberately stylized; balance is measured only against simulated players. Real local narrator/painter model execution and browser WebLLM are not claimed to be validated by the mock tests.",
+      "evidence": "https://github.com/anttiluode/Life2/blob/main/README.md",
+      "tags": [
+        "2026-11-14",
+        "life-game",
+        "dynasties",
+        "historical-events",
+        "generations",
+        "inheritance",
+        "local-models",
+        "Claude"
+      ],
+      "era": "November 14: living economy becomes a life story",
+      "era_order": 193
+    },
+    {
+      "id": "LifeAtHuggingface",
+      "url": "https://github.com/anttiluode/LifeAtHuggingface",
+      "family": "life-simulation",
+      "status": "active",
+      "usefulness": "conceptual",
+      "confidence": "low",
+      "claim": "Named repository reserved for a Hugging Face app adaptation of Life², which the user says Claude is currently writing.",
+      "survived": "A public repository exists with an initial license; its intended source lineage is the active Life² dynasty project, not the single-life LIFE presentation branch.",
+      "killed": "At review time the GitHub repository contains only LICENSE. No Hugging Face Space, deployed application, implementation, runtime AI model or working demo is verified.",
+      "evidence": "https://github.com/anttiluode/LifeAtHuggingface",
+      "tags": [
+        "2026-11-14",
+        "work-in-progress",
+        "hugging-face",
+        "deployment-target",
+        "life2",
+        "Claude",
+        "unverified"
+      ],
+      "era": "November 14: living economy becomes a life story",
+      "era_order": 193
+    }
+  ],
+  "edges": [
+    {
+      "source": "Koynnos",
+      "target": "ElavaMatriisiClaude",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The Gate 0 README explicitly traces its origin to the real chain-climbing vine and Koynnos-like self-scaffolding, adopting flux-maintained sugar channels. Shared physical metaphor, not verified code import.",
+      "evidence": "https://github.com/anttiluode/ElavaMatriisiClaude/blob/main/README.md"
+    },
+    {
+      "source": "Koynnos",
+      "target": "ElavaMatriisiSol",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Sol's README credits the real vine and Köynnös for the support/loan/canalization questions. This link denotes inspiration rather than identical simulation code.",
+      "evidence": "https://github.com/anttiluode/ElavaMatriisiSol/blob/main/README.md"
+    },
+    {
+      "source": "ElavaMatriisiClaude",
+      "target": "ElavaMatriisiSol",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Independently built contemporaneous answers to the same shared-budget matrix question. Both expose controlled failures; Sol adds signal and dormancy gates rather than copying Claude's sweep.",
+      "evidence": "https://github.com/anttiluode/ElavaMatriisiSol/blob/main/README.md"
+    },
+    {
+      "source": "ElavaMatriisiClaude",
+      "target": "LifeSucks",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "LifeSucks explicitly maps Claude's vine economy to social relationships: conductance, reciprocal return, annual attention allocation and slow wood become game mechanics.",
+      "evidence": "https://github.com/anttiluode/LifeSucks/blob/main/README.md"
+    },
+    {
+      "source": "LifeSucks",
+      "target": "Life",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "LIFE's README explicitly states that the original LifeSucks life.js simulation was preserved while a new story, artwork, voice, save/replay and presentation layer were added.",
+      "evidence": "https://github.com/anttiluode/Life/blob/main/README.md"
+    },
+    {
+      "source": "LifeSucks",
+      "target": "Life2",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Life² explicitly describes its same limited-attention/relationship-vine economy as inherited from LifeSucks while extending the game to historical periods and descendants.",
+      "evidence": "https://github.com/anttiluode/Life2/blob/main/README.md"
+    },
+    {
+      "source": "Life2",
+      "target": "LifeAtHuggingface",
+      "type": "forks",
+      "confidence": "low",
+      "why": "User-directed intended Hugging Face application based on Life²; only a LICENSE file exists at this review, so the edge records planned lineage, not verified code reuse or a published Space.",
+      "evidence": "https://github.com/anttiluode/LifeAtHuggingface"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov14-metabolic-structure-to-attention-economy",
+      "title": "From vine flux to a finite budget of human attention",
+      "description": "The analogy is an explicit design transfer: limited resource flow maintains physical channels in the living-matrix labs, while time and reciprocal care maintain social branches in LifeSucks/LIFE/Life². That cross-domain reuse is valuable game design, not evidence that real relationships literally obey plant phloem equations or that vines automatically compute minds.",
+      "nodes": [
+        "Koynnos",
+        "ElavaMatriisiClaude",
+        "ElavaMatriisiSol",
+        "LifeSucks",
+        "Life",
+        "Life2"
+      ]
+    },
+    {
+      "id": "nov14-honest-memory-and-language-controls",
+      "title": "Structural retention is not itself learned meaning",
+      "description": "Claude's Gate 0b mostly rejects a savings hypothesis and fails to find costly curiosity; Sol's signal-factorization and dormant-accessibility effects rely on explicitly supplied design structures. Documenting nulls and built-in biases is part of the genealogy, not a failure of the research map.",
+      "nodes": [
+        "ElavaMatriisiClaude",
+        "ElavaMatriisiSol"
+      ]
+    },
+    {
+      "id": "nov14-life-model-versus-narrator-and-deployment",
+      "title": "Life outcome, storytelling and publishing are separate layers",
+      "description": "The original seeded game dynamics remain independent of prose and drawn scenes. LIFE adds procedural local narration and exact decision replay; Life² adds multi-generation history and optional real local models. The proposed Hugging Face deployment is a distinct unverified downstream work-in-progress, not already a demonstrated AI app.",
+      "nodes": [
+        "LifeSucks",
+        "Life",
+        "Life2",
+        "LifeAtHuggingface"
+      ]
+    }
+  ]
+}
