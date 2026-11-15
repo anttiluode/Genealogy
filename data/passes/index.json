@@ -598,5 +598,9 @@
   {
     "path": "november-14-slimebody-physical-pumping.json",
     "enabled": true
+  },
+  {
+    "path": "november-15-perceptionlab-fossil-bed.json",
+    "enabled": true
   }
 ]

@@ -4378,6 +4378,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "PerceptionLabNodes",
+    "url": "https://github.com/anttiluode/PerceptionLabNodes",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Claude Opus 5.5",
+    "created_at": "2026-11-15T04:54:53Z",
+    "updated_at": "2026-11-15T04:54:55Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "Perinto",
     "url": "https://github.com/anttiluode/Perinto",
     "default_branch": "main",

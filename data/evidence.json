@@ -13144,5 +13144,118 @@
       "Numerical results not comparable with the separate 200-image SihtiSR BSDS500 evaluation"
     ],
     "source": "https://github.com/anttiluode/TarinaSR/blob/main/results/benchmark.json"
+  },
+  {
+    "id": "nov15-pl-wavefield-headless-calibration",
+    "node": "PerceptionLabNodes",
+    "claim": "PerceptionLab's second-order WaveField with four equally spaced read apertures gives a mean absolute probe lag of 22.0 frames (13.2 frames per gap × 10/6), as measured by TemporalMultiScope.",
+    "design": "wave_field_probe.json replayed headless for 1,500 steps with the host's BaseNode code and scheduling order (pre-step, transfer previous outputs, step); scope outputs recorded every step.",
+    "result": "supports",
+    "motifs": [],
+    "sample": {
+      "unit": "headless runs",
+      "count": 1
+    },
+    "metrics": [
+      {
+        "name": "mean absolute lag (frames)",
+        "treatment": 22.17,
+        "control": 22.0,
+        "comparison": "headless measurement from step 200 onward vs the repository's geometric prediction"
+      },
+      {
+        "name": "lag-optimised coherence",
+        "treatment": 0.98,
+        "control": 0.0,
+        "comparison": "best-lag coherence vs zero-lag coherence in the same run"
+      }
+    ],
+    "controls": [
+      "The same runner reproduces ecg.json's 59-step period found independently by GeometricNeuronOriginReview"
+    ],
+    "limitations": [
+      "One deterministic configuration; no parameter sweep",
+      "Confirms the instrument, not any biological reading of temporal thickness"
+    ],
+    "replication": "Independent headless rerun by this Genealogy pass (tools/run_graph.py in PerceptionLabNodes); August 2026 manual GUI readings were 21.3-22.2 frames.",
+    "held_out": false,
+    "external_data": false,
+    "source": "https://github.com/anttiluode/PerceptionLabNodes/tree/main/data"
+  },
+  {
+    "id": "nov15-pl-ecg-moebius-feedback-inert",
+    "node": "PerceptionLabNodes",
+    "claim": "ecg_moebius_feedback.json lets MoebiusLoopMemory's bounded memory signal modulate the ECG loop through the HomeostaticCoupler's gain_mod input.",
+    "design": "ecg.json, ecg_moebius_observer.json and ecg_moebius_feedback.json replayed headless for 600 steps from identical seeds; coupler signal_out and memory_signal recorded; separately a one-input-unplugged knob test of HomeostaticCouplerNode.",
+    "result": "contradicts",
+    "motifs": [],
+    "sample": {
+      "unit": "paired headless runs",
+      "count": 3
+    },
+    "metrics": [
+      {
+        "name": "max |coupler output difference|",
+        "treatment": 0.0,
+        "control": 0.0,
+        "comparison": "feedback vs observer graph (treatment) and observer vs plain ecg.json (control) over 600 steps"
+      },
+      {
+        "name": "memory_signal standard deviation",
+        "treatment": 0.081,
+        "control": 0.0,
+        "comparison": "the memory scalar does vary, yet changes nothing downstream"
+      }
+    ],
+    "controls": [
+      "Passive observer graph",
+      "Original ecg.json",
+      "Knob test: gain_mod is the only silent coupler input"
+    ],
+    "limitations": [
+      "Code-level cause identified (effective_gain computed, self.gain applied); behaviour after the one-line fix is untested"
+    ],
+    "replication": "Independent headless rerun by this Genealogy pass.",
+    "held_out": false,
+    "external_data": false,
+    "source": "https://github.com/anttiluode/PerceptionLab/blob/main/nodes/coupler.py"
+  },
+  {
+    "id": "nov15-pl-jewishstar-avalanche-suppressed",
+    "node": "PerceptionLabNodes",
+    "claim": "The saved jewishstar.json graph displays the Self-Consistent Resonance node's tension-avalanche-scar mechanism.",
+    "design": "SelfConsistentResonanceNode driven for 600 steps with a 1/f-shaped six-value band vector, with and without the saved feedback edges (eigenfrequencies out_0 + out_1 into feedback_modulation); two seeds each; avalanche counts, correlation of the final log-FFT with the initial random structure, and angular-harmonic power of the eigen-image.",
+    "result": "contradicts",
+    "motifs": [],
+    "sample": {
+      "unit": "seeded runs",
+      "count": 4
+    },
+    "metrics": [
+      {
+        "name": "steps with avalanches (of 600)",
+        "treatment": 0,
+        "control": 158,
+        "comparison": "saved feedback wiring vs no feedback (mean of two seeds)"
+      },
+      {
+        "name": "final vs initial log-FFT correlation",
+        "treatment": 0.73,
+        "control": 0.02,
+        "comparison": "saved wiring vs no feedback"
+      }
+    ],
+    "controls": [
+      "Same node without the feedback edges",
+      "Two random seeds per arm"
+    ],
+    "limitations": [
+      "Synthetic band vector instead of the original EDF file; input is max-normalised by the node so amplitude does not matter",
+      "Avalanches could resume after roughly 47,000 steps when tension reaches the raised threshold"
+    ],
+    "replication": "Independent headless rerun by this Genealogy pass (tools/star_replication.py).",
+    "held_out": false,
+    "external_data": false,
+    "source": "https://github.com/anttiluode/PerceptionLab/blob/main/graph%20workflows/jewishstar.json"
   }
 ]

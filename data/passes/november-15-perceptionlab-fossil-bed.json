@@ -1,0 +1,75 @@
+{
+  "id": "november-15-perceptionlab-fossil-bed",
+  "title": "November 15 — PerceptionLab as a fossil bed: 466 node files, 379 graphs, a headless audit",
+  "reviewed_at": "2026-11-15",
+  "order": 195,
+  "summary": "PerceptionLabNodes turns the November 14 functional-taxonomy paper into a genealogy of the lab itself: every node file dated by its first commit, grouped into eighteen clans, joined by code-similarity forks, with 52 marked workflows, 22 lost classes and twelve cross-strata idea crossings. A headless runner that executes saved graphs in the host's scheduling order reproduces the ECG loop's 59-step period and the wave-field calibration (22.17 frames vs 22.0 predicted), shows the ECG+Moebius 'feedback' graph is bit-identical to its passive observer because the coupler never applies gain_mod, and shows the saved 'jewishstar' wiring suppresses the avalanche mechanism it is meant to display. A knob test (unplug one input at a time) automates the lab's own December rz_angle lesson: 186 of 457 judged classes have at least one input that changes no output under a 30-step probe.",
+  "nodes": [
+    {
+      "id": "PerceptionLabNodes",
+      "url": "https://github.com/anttiluode/PerceptionLabNodes",
+      "family": "perception",
+      "status": "ledger",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A genealogy and headless audit of PerceptionLab's node library and saved workflows: first-commit dates for 466 node files, eighteen interpretive clans, 72 code-similarity forks, 52 marked workflows, 22 lost node classes still requested by saved graphs, a graph runner that follows the host scheduler, and a one-input-at-a-time knob test.",
+      "survived": "Headless reruns reproduce the ECG loop's 59-step coupler period (matching GeometricNeuronOriginReview's independent reduction) and the August wave-field calibration: mean absolute lag 22.17 frames against a predicted 22.0, lag-optimised coherence about 0.98 and zero-lag coherence about 0. 458 of 466 node files import under Python 3.13 / OpenCV 4.14 / SciPy 1.18 / torch 2.15. The knob test independently reproduces the paper's static findings (HomeostaticCoupler gain_mod and all four TokenQKV inputs are silent) and rediscovers the original BlochQubit rz_angle bug that quantum_darwinism.py documented in December 2025.",
+      "killed": "The ECG+Moebius feedback graph does not feed back: its coupler output is bit-identical to the observer graph over 600 steps although the memory signal varies (sd 0.08), because effective_gain is computed and never used. In the saved jewishstar graph the eigen-spectrum DC term (~15,000) enters the avalanche threshold, so zero avalanches occur in 600 steps and the pictured star stays 0.73-correlated with the random seed; without that feedback the eigen-image is 4/8-fold, not six-fold. The v3 livingcheckerboardnode.py does not compile in the committed repo, so living-field graphs silently fall back to an older node and lose five settings. Four nodes call a set_output method that no host defines. Clans and marks are interpretive; a node that imports and steps is not thereby scientifically correct; silent-under-probe inputs are flags, not proofs.",
+      "evidence": "https://anttiluode.github.io/PerceptionLabNodes/",
+      "tags": [
+        "genealogy",
+        "audit",
+        "instrumentation",
+        "perception",
+        "controls"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "PerceptionLab",
+      "target": "PerceptionLabNodes",
+      "type": "corrects",
+      "confidence": "high",
+      "why": "PerceptionLabNodes reruns PerceptionLab's own graphs headless and records where the saved wiring does not do what its name says (silent gain_mod in the ECG+Moebius feedback graph, suppressed avalanches in jewishstar, an uncompilable Living Checkerboard v3, set_output calls), while confirming the ECG period and wave-field calibration.",
+      "evidence": "https://github.com/anttiluode/PerceptionLabNodes/tree/main/data"
+    },
+    {
+      "source": "Genealogy",
+      "target": "PerceptionLabNodes",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "PerceptionLabNodes applies Genealogy's archaeology method (dated inventory, typed descent, explicit limitations, lost and corrected items) one level down, to the node files and workflows inside a single repository, and links back to this atlas.",
+      "evidence": "https://anttiluode.github.io/PerceptionLabNodes/#method"
+    },
+    {
+      "source": "GeometricNeuronOriginReview",
+      "target": "PerceptionLabNodes",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Two independent routes give the same 59-step ECG period: OriginReview's causal reduction and PerceptionLabNodes' headless replay of ecg.json in the host scheduling order.",
+      "evidence": "https://github.com/anttiluode/PerceptionLabNodes/blob/main/tools/run_graph.py"
+    },
+    {
+      "source": "PerceptionLab",
+      "target": "SighImageSuper",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "PerceptionLab's phi_sigh_bridge_node.py (3 Jan 2026) already names an FFT band-pass 'Sigh' and asks whether it equals golden-angle sparse sampling, eight months before SighImageSuper. Same name and same frequency-domain filtering family; no code inheritance is claimed and the later recursive EQ loop is a different mechanism.",
+      "evidence": "https://github.com/anttiluode/PerceptionLab/blob/main/nodes/phi_sigh_bridge_node.py"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov15-wired-is-not-effective",
+      "title": "A wired input is not an effect",
+      "description": "Three times the record shows an input that looks connected and does nothing: December 2025's BlochQubit rz_angle (evolution optimised a disconnected knob), the HomeostaticCoupler's gain_mod (the ECG+Moebius feedback graph equals its observer), and TokenQKV's inputs. Unplugging one input at a time and checking whether any output changes is the cheapest control there is, and it should run before any feedback or learning claim.",
+      "nodes": [
+        "PerceptionLab",
+        "PerceptionLabNodes",
+        "MoebiusLoopMemory",
+        "GeometricNeuronOriginReview"
+      ]
+    }
+  ]
+}
