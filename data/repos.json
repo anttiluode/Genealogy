@@ -221,24 +221,24 @@
   },
   {
     "name": "AlgoWorld1",
+    "url": "https://github.com/anttiluode/AlgoWorld1",
     "default_branch": "main",
     "size": 1339,
     "visibility": "public",
     "description": "opus 5.5",
     "created_at": "2026-11-15T05:45:58Z",
     "updated_at": "2026-11-15T06:04:08Z",
-    "url": "https://github.com/anttiluode/AlgoWorld1",
     "inventory_status": "reviewed"
   },
   {
     "name": "Algoworld2",
+    "url": "https://github.com/anttiluode/Algoworld2",
     "default_branch": "main",
     "size": 176,
     "visibility": "public",
     "description": "Fable",
     "created_at": "2026-11-15T06:26:42Z",
     "updated_at": "2026-11-15T06:44:59Z",
-    "url": "https://github.com/anttiluode/Algoworld2",
     "inventory_status": "reviewed"
   },
   {
@@ -2302,7 +2302,7 @@
     "name": "Genealogy",
     "url": "https://github.com/anttiluode/Genealogy",
     "default_branch": "main",
-    "size": 2200,
+    "size": 2212,
     "visibility": "public",
     "description": "My repo genealogy. Sol repo. ",
     "created_at": "2026-09-15T14:42:27Z",
@@ -2509,13 +2509,13 @@
   },
   {
     "name": "GeometricNeuronV30",
+    "url": "https://github.com/anttiluode/GeometricNeuronV30",
     "default_branch": "main",
     "size": 34,
     "visibility": "public",
     "description": "Fable. ",
     "created_at": "2026-11-15T08:50:11Z",
     "updated_at": "2026-11-15T09:00:23Z",
-    "url": "https://github.com/anttiluode/GeometricNeuronV30",
     "inventory_status": "reviewed"
   },
   {
@@ -4403,7 +4403,7 @@
     "name": "PerceptionLab",
     "url": "https://github.com/anttiluode/PerceptionLab",
     "default_branch": "main",
-    "size": 6797,
+    "size": 6899,
     "visibility": "public",
     "description": "Lego set science ",
     "created_at": "2025-11-06T18:46:00Z",
@@ -4412,20 +4412,20 @@
   },
   {
     "name": "PerceptionLabAI",
+    "url": "https://github.com/anttiluode/PerceptionLabAI",
     "default_branch": "main",
     "size": 401,
     "visibility": "public",
     "description": "A working repo where AI's can think about perception lab nodes before uploading them to perceptionlab main repo. ",
     "created_at": "2026-11-15T06:02:39Z",
     "updated_at": "2026-11-15T08:08:48Z",
-    "url": "https://github.com/anttiluode/PerceptionLabAI",
     "inventory_status": "reviewed"
   },
   {
     "name": "PerceptionLabNodes",
     "url": "https://github.com/anttiluode/PerceptionLabNodes",
     "default_branch": "main",
-    "size": 0,
+    "size": 604,
     "visibility": "public",
     "description": "Claude Opus 5.5",
     "created_at": "2026-11-15T04:54:53Z",
@@ -5886,13 +5886,13 @@
   },
   {
     "name": "StateShapedPingRecall",
+    "url": "https://github.com/anttiluode/StateShapedPingRecall",
     "default_branch": "main",
     "size": 0,
     "visibility": "public",
     "description": "Astra",
     "created_at": "2026-11-15T18:12:54Z",
     "updated_at": "2026-11-15T18:13:42Z",
-    "url": "https://github.com/anttiluode/StateShapedPingRecall",
     "inventory_status": "reviewed"
   },
   {
