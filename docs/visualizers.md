@@ -26,6 +26,8 @@ These are **browseable projects and visual-instrument ideas**, not a scientific 
 
 ## Walkable 3D worlds, procedural gardens and games
 
+Added 15 November: **[AlgoWorld1](https://anttiluode.github.io/AlgoWorld1/)** — looping zoom through different live laws and a shared ECG clock; **[Algoworld2](https://anttiluode.github.io/Algoworld2/)** — 3D trees/crystals, branch slime and crystal waves, with no heartbeat. Both are visual constructions, not validated physical models. [Genealogy checkpoint](../index.html#nov15-memory-worlds).
+
 [Emergence3DSol](https://github.com/anttiluode/Emergence3DSol) · [EmergenceNoSpace](https://github.com/anttiluode/EmergenceNoSpace) · [PsychedelicGarden](https://github.com/anttiluode/PsychedelicGarden) · [FourierFlower](https://github.com/anttiluode/FourierFlower) · [AnttisBrain2](https://github.com/anttiluode/AnttisBrain2) · [MagicBox](https://github.com/anttiluode/MagicBox) · [ZetaDreamer3D](https://github.com/anttiluode/ZetaDreamer3D) · [ZetaDreamer3DV2](https://github.com/anttiluode/ZetaDreamer3DV2) · [CrystalMoonV3](https://github.com/anttiluode/CrystalMoonV3) · [Moon](https://github.com/anttiluode/Moon) · [PolyrhythmicSea](https://github.com/anttiluode/PolyrhythmicSea) · [SelfIndexingBeach](https://github.com/anttiluode/SelfIndexingBeach) · [NeuronBeach](https://github.com/anttiluode/NeuronBeach) · [VineComputer](https://github.com/anttiluode/VineComputer) · [GhostWorld](https://github.com/anttiluode/GhostWorld) · [CrystalHunt](https://github.com/anttiluode/CrystalHunt) · [SpaceScreensaver](https://github.com/anttiluode/SpaceScreensaver) · [BlocksScreensaver](https://github.com/anttiluode/BlocksScreensaver).
 
 ## Mathematical, phase, interference and field graphics

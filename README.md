@@ -4,6 +4,20 @@ Evidence-backed archaeology of Antti Luode's research repositories.
 
 The central premise is that hundreds of repositories are not hundreds of independent ideas. The project separates raw repository inventory from curated scientific interpretation, then records explicit inheritance, corrections, rediscoveries, convergences, extracted mechanisms, empirical evidence, and the scientific questions that remain unresolved.
 
+## 15 November 2026 — stored histories, missing waves and algorithmic worlds
+
+**[Live wall chapter](https://anttiluode.github.io/Genealogy/#nov15-memory-worlds)** · [Curated pass](data/passes/november-15-memory-recall-and-algorithmic-worlds.json).
+
+Five missing projects bring the census **640 → 645**: [PerceptionLabAI](https://github.com/anttiluode/PerceptionLabAI), [GeometricNeuronV30](https://github.com/anttiluode/GeometricNeuronV30), [StateShapedPingRecall](https://github.com/anttiluode/StateShapedPingRecall), [AlgoWorld1](https://github.com/anttiluode/AlgoWorld1), and [Algoworld2](https://github.com/anttiluode/Algoworld2). PerceptionLabNodes and all seven listed November 14 projects were already present; none is duplicated.
+
+The scientific branch now separates **readable history from generated recall**. PerceptionLabAI 009 reports 89/96 grown histories read after a full activity wipe, but cue recall and pruning protection failed. V30 is the explanatory ledger, not a second independent result. 010 did not confirm use-hardening; uniform ageing is an exploratory positive observation. **011 is ongoing at this checkpoint**: preflight/smoke success is not its scientific outcome.
+
+Astra's StateShapedPingRecall tests actual missing-wave reconstruction without a fitted decoder: four median errors are **182.2%, 168.4%, 166.6%, 179.3%**, where 100% is passive A-only propagation. State-shaped pings prefer their own history in 11/24 bodies. This pass restored the uploaded directory layout and reproduced the complete 96-body batch, matching the original results exactly except elapsed time. The separate supplied-physics inverse also reproduces (0.253% median source-amplitude error); it is not a learned neuronal model. [Review and next gates](https://github.com/anttiluode/StateShapedPingRecall/blob/main/REVIEW.md).
+
+The visual branch turns different laws into different depths: [open AlgoWorld1](https://anttiluode.github.io/AlgoWorld1/) for its looping zoom and shared ECG clock; [open Algoworld2](https://anttiluode.github.io/Algoworld2/) for 3D trees/crystals and branch-versus-crystal surface worlds without a heartbeat. Köynnös and SlimeBody are explicit inspirations for Algoworld2, not copied engines or transferred experimental results.
+
+**Status correction:** LifeAtHuggingface is now implemented with game assets, Gradio narration/painting and documented mock startup checks. The old license-only checkpoint is retained as history; real-model inference, GPU allocation and live Space operation remain unverified here.
+
 ## 15 November 2026 — PerceptionLab as a fossil bed
 
 **[Live wall chapter](https://anttiluode.github.io/Genealogy/#nov15-perceptionlab-nodes)** · [Fossil-bed page](https://anttiluode.github.io/PerceptionLabNodes/) · [PerceptionLabNodes repository](https://github.com/anttiluode/PerceptionLabNodes) · [Curated pass](data/passes/november-15-perceptionlab-fossil-bed.json).
@@ -32,7 +46,7 @@ The real vine, Köynnös and the shared-budget question became two independent s
 
 The same metaphor became three games: **[LifeSucks](https://github.com/anttiluode/LifeSucks)** (Claude's original attention-and-relationship vine game), **[Life](https://github.com/anttiluode/Life)** (Sol's distinct offline narrative/canvas/voice/save adaptation which preserves the original LifeSucks model), and **[Life2](https://github.com/anttiluode/Life2)** (Claude's historical family-dynasty expansion with heirs, dated events and assets). These are real source-derived software branches, not evidence that actual human relationships obey plant conductance equations. Life2 reports local-model *mock* integration tests, not verified real-model output.
 
-**[LifeAtHuggingface](https://github.com/anttiluode/LifeAtHuggingface)** is explicitly recorded as a **work-in-progress deployment branch based on Life2**, not based on Life. Its GitHub repository contained only LICENSE at this review, so it must not be counted as a working Hugging Face app or Space. Once Claude's implementation lands, this genealogy node should be re-reviewed.
+**[LifeAtHuggingface](https://github.com/anttiluode/LifeAtHuggingface)** is a **deployment branch based on Life2**, not based on Life. The initial November 14 review saw only LICENSE. A November 15 re-review supersedes that checkpoint: the game assets, Gradio APIs and startup tests are committed. Mock testing is documented; actual GPU/model execution and a working public Space are not verified here.
 
 **Census:** six new reviewed entries, six curated nodes and seven directed ancestry/convergence links. No existing Köynnös node is duplicated. This separation between source observations, failed predictions, constructed mechanisms, playable adaptations and unverified deployment plans is the point of the Genealogy wall.
 

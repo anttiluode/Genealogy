@@ -1902,5 +1902,46 @@
     "notes": [
       "An internally stored, rewritable desired destination is a separate Levin-shaped challenge, not a prerequisite assumed accomplished in these models."
     ]
+  },
+  {
+    "id": "nov15-learning-missing-sensory-consequences",
+    "title": "Can a learned internal model predict unobserved wave consequences, and do shaped messages help?",
+    "state": "open",
+    "motifs": [
+      "nov15-record-versus-reconstruction"
+    ],
+    "evidence": [
+      "nov15-grown-history-not-recall",
+      "nov15-state-shaped-recall-negative",
+      "nov15-supplied-wave-inverse"
+    ],
+    "competing_explanations": [
+      "The local growth rule lacks a suitable prediction-learning objective; richer messages alone cannot provide the missing map.",
+      "The encoding, timing or small architecture prevents recall even when history is retained; a different local mechanism may succeed."
+    ],
+    "known": [
+      "009 structure retains readable order after an activity wipe.",
+      "The tested shape code does not reconstruct the missing sequence.",
+      "An exact supplied forward dictionary permits accurate inverse amplitude estimation."
+    ],
+    "missing_discriminator": "Learn the predictive map from independent calibration episodes, then test partial-input prediction with fixed versus shaped packets under the same learning rule and measured budgets.",
+    "candidate_experiment": {
+      "design": "Freeze a forward dictionary learned from calibration episodes; infer amplitudes and predict withheld sensors on fresh mixtures. Compare exact dictionary, direct linear predictor, learning-off and address-shuffled controls. Treat this as a system-identification gate before testing a local neuronal learner and message-shape ablations.",
+      "cost": "small CPU pilot; no GPU required; final sample size and thresholds fixed before evaluation",
+      "outcomes": [
+        {
+          "if": "A learned map predicts withheld consequences and shaped packets improve matched-rule held-out performance",
+          "then": "Support a bounded learned-model result and a conditional communication benefit."
+        },
+        {
+          "if": "Only the supplied dictionary succeeds or shape benefits vanish under controls",
+          "then": "Retain the negative result and locate the gap in learning or encoding without claiming reconstruction."
+        }
+      ]
+    },
+    "notes": [
+      "Proposed experiment, not implemented here.",
+      "011 tests old/new history accessibility under hardening, a different question."
+    ]
   }
 ]

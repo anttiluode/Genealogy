@@ -131,12 +131,12 @@
       "url": "https://github.com/anttiluode/LifeAtHuggingface",
       "family": "life-simulation",
       "status": "active",
-      "usefulness": "conceptual",
-      "confidence": "low",
-      "claim": "Named repository reserved for a Hugging Face app adaptation of Life², which the user says Claude is currently writing.",
-      "survived": "A public repository exists with an initial license; its intended source lineage is the active Life² dynasty project, not the single-life LIFE presentation branch.",
-      "killed": "At review time the GitHub repository contains only LICENSE. No Hugging Face Space, deployed application, implementation, runtime AI model or working demo is verified.",
-      "evidence": "https://github.com/anttiluode/LifeAtHuggingface",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Implemented Hugging Face adaptation based on Life2, with Gradio narration/painting APIs and the game page served at the root.",
+      "survived": "November 15 source re-review: app.py, game assets, model routing, startup regression tests and deployment workflow are now committed. README reports end-to-end mock tests and explains api.launch() startup hooks. The Life2 ancestry is explicit in source documentation.",
+      "killed": "Historical November 14 checkpoint contained only LICENSE. That limitation is superseded by committed implementation, but actual model inference, GPU allocation and successful public Space operation are not verified by this review. Mock results are not real-model results.",
+      "evidence": "https://github.com/anttiluode/LifeAtHuggingface/blob/main/README.md",
       "tags": [
         "2026-11-14",
         "work-in-progress",
@@ -144,7 +144,9 @@
         "deployment-target",
         "life2",
         "Claude",
-        "unverified"
+        "mock-tested",
+        "gpu-unverified",
+        "reviewed-2026-11-15"
       ],
       "era": "November 14: living economy becomes a life story",
       "era_order": 193
@@ -203,9 +205,9 @@
       "source": "Life2",
       "target": "LifeAtHuggingface",
       "type": "forks",
-      "confidence": "low",
-      "why": "User-directed intended Hugging Face application based on Life²; only a LICENSE file exists at this review, so the edge records planned lineage, not verified code reuse or a published Space.",
-      "evidence": "https://github.com/anttiluode/LifeAtHuggingface"
+      "confidence": "high",
+      "why": "November 15 source documentation confirms game/ is copied from Life2, with Gradio narrator/painter endpoints added. This supersedes the November 14 planned-only edge; live model execution is still unverified.",
+      "evidence": "https://github.com/anttiluode/LifeAtHuggingface/blob/main/README.md"
     }
   ],
   "motifs": [

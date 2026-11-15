@@ -602,5 +602,9 @@
   {
     "path": "november-15-perceptionlab-fossil-bed.json",
     "enabled": true
+  },
+  {
+    "path": "november-15-memory-recall-and-algorithmic-worlds.json",
+    "enabled": true
   }
 ]

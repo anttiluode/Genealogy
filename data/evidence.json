@@ -13257,5 +13257,125 @@
     "held_out": false,
     "external_data": false,
     "source": "https://github.com/anttiluode/PerceptionLab/blob/main/graph%20workflows/jewishstar.json"
+  },
+  {
+    "id": "nov15-grown-history-not-recall",
+    "node": "PerceptionLabAI",
+    "claim": "A locally grown arrangement can retain event order through silence and expose it to an external reader.",
+    "design": "Experiment 009: grow AB/BA bodies, wipe all activity, apply an identical probe; compare grown, no-growth and destination-scrambled bodies.",
+    "result": "mixed",
+    "motifs": [
+      "nov15-record-versus-reconstruction"
+    ],
+    "sample": {
+      "unit": "held-out bodies per condition",
+      "count": 96
+    },
+    "metrics": [
+      {
+        "name": "history read correctly",
+        "treatment": "89/96",
+        "control": "48/96 no growth; 55/96 destination scramble"
+      }
+    ],
+    "controls": [
+      "Full activity wipe",
+      "Growth disabled",
+      "Branch destination scramble",
+      "Weights-only upper bound 91/96"
+    ],
+    "limitations": [
+      "Outside fitted linear reader",
+      "Cue recall failed",
+      "Pruning protection not significant",
+      "No plain Hebbian matrix comparator"
+    ],
+    "replication": "Source-reported experiment 009; not independently rerun in this pass.",
+    "held_out": true,
+    "external_data": false,
+    "source": "https://github.com/anttiluode/PerceptionLabAI/tree/main/experiments/009_morphology_as_memory"
+  },
+  {
+    "id": "nov15-state-shaped-recall-negative",
+    "node": "StateShapedPingRecall",
+    "claim": "State-dependent packet shapes let the grown network reconstruct a missing learned sequence.",
+    "design": "Twelve paired schedules × two histories × four payloads. Twenty training episodes, complete fast-state wipe, frozen growth, common A-only cue; eight-sensor signed wave reconstruction without fitted gain or lag.",
+    "result": "contradicts",
+    "motifs": [
+      "nov15-record-versus-reconstruction"
+    ],
+    "sample": {
+      "unit": "independent paired training schedules",
+      "count": 12
+    },
+    "metrics": [
+      {
+        "name": "median relative squared reconstruction error",
+        "treatment": 1.7929370659794246,
+        "control": "1.0 passive A-only; 1.6844406025471983 fixed early; 1.6656864259339658 fixed late"
+      },
+      {
+        "name": "own history preferred",
+        "treatment": "11/24",
+        "control": "15/24 impulse; 14/24 fixed early; 13/24 fixed late"
+      }
+    ],
+    "controls": [
+      "No growth",
+      "Scrambled destinations",
+      "No-cue silence",
+      "Exact-target scoring",
+      "Fixed-onset payload permutation",
+      "Exact 009 impulse regression"
+    ],
+    "limitations": [
+      "One toy encoding, three units, one growth rule",
+      "Per-packet matching only; total drive and original impulse squared drive differ",
+      "Permutation changes only 16/24 bodies and 44 events",
+      "Schedule-clustered intervals cross zero against both fixed packet controls"
+    ],
+    "replication": "Same-code full 96-body rerun after directory repair; results exactly match except elapsed time. Not an independent algorithmic replication.",
+    "held_out": false,
+    "external_data": false,
+    "source": "https://github.com/anttiluode/StateShapedPingRecall/blob/main/REPRODUCTION.md"
+  },
+  {
+    "id": "nov15-supplied-wave-inverse",
+    "node": "StateShapedPingRecall",
+    "claim": "Three hidden amplitudes are recoverable from partial wave observations when the correct forward dictionary is supplied.",
+    "design": "Known source locations/onset/medium; two sensors × 26 noisy time samples infer three amplitudes by least squares; six withheld sensors at later times test the forward prediction on 32 fresh mixtures.",
+    "result": "supports",
+    "motifs": [
+      "nov15-record-versus-reconstruction"
+    ],
+    "sample": {
+      "unit": "fresh source mixtures",
+      "count": 32
+    },
+    "metrics": [
+      {
+        "name": "median relative amplitude error",
+        "treatment": 0.0025312500572164547
+      },
+      {
+        "name": "median held-out wave score",
+        "treatment": 0.9999983332960658
+      }
+    ],
+    "controls": [
+      "Full-rank observation matrix",
+      "1% observation-RMS Gaussian noise",
+      "Sensor and time holdout"
+    ],
+    "limitations": [
+      "Exact forward dictionary supplied, not learned",
+      "Same physics generates and fits data",
+      "Known source positions and onset",
+      "Not comparable to the associative recall task"
+    ],
+    "replication": "Same-code rerun exactly matches the committed 32-mixture inverse receipt.",
+    "held_out": true,
+    "external_data": false,
+    "source": "https://github.com/anttiluode/StateShapedPingRecall/blob/main/inverse_control.py"
   }
 ]

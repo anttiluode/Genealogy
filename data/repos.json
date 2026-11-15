@@ -220,6 +220,28 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "AlgoWorld1",
+    "default_branch": "main",
+    "size": 1339,
+    "visibility": "public",
+    "description": "opus 5.5",
+    "created_at": "2026-11-15T05:45:58Z",
+    "updated_at": "2026-11-15T06:04:08Z",
+    "url": "https://github.com/anttiluode/AlgoWorld1",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "Algoworld2",
+    "default_branch": "main",
+    "size": 176,
+    "visibility": "public",
+    "description": "Fable",
+    "created_at": "2026-11-15T06:26:42Z",
+    "updated_at": "2026-11-15T06:44:59Z",
+    "url": "https://github.com/anttiluode/Algoworld2",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "Alkuluku",
     "url": "https://github.com/anttiluode/Alkuluku",
     "default_branch": "main",
@@ -2486,6 +2508,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "GeometricNeuronV30",
+    "default_branch": "main",
+    "size": 34,
+    "visibility": "public",
+    "description": "Fable. ",
+    "created_at": "2026-11-15T08:50:11Z",
+    "updated_at": "2026-11-15T09:00:23Z",
+    "url": "https://github.com/anttiluode/GeometricNeuronV30",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "GeometricNeuronV4",
     "url": "https://github.com/anttiluode/GeometricNeuronV4",
     "default_branch": "main",
@@ -4378,6 +4411,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "PerceptionLabAI",
+    "default_branch": "main",
+    "size": 401,
+    "visibility": "public",
+    "description": "A working repo where AI's can think about perception lab nodes before uploading them to perceptionlab main repo. ",
+    "created_at": "2026-11-15T06:02:39Z",
+    "updated_at": "2026-11-15T08:08:48Z",
+    "url": "https://github.com/anttiluode/PerceptionLabAI",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "PerceptionLabNodes",
     "url": "https://github.com/anttiluode/PerceptionLabNodes",
     "default_branch": "main",
@@ -5838,6 +5882,17 @@
     "description": "A real-time, physics-based AI video filter that uses **Phase Locking** and **Fractal Feedback** to create stable, temporally consistent hallucinations without training a video model.",
     "created_at": "2026-01-18T09:15:17Z",
     "updated_at": "2026-01-19T02:58:11Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "StateShapedPingRecall",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Astra",
+    "created_at": "2026-11-15T18:12:54Z",
+    "updated_at": "2026-11-15T18:13:42Z",
+    "url": "https://github.com/anttiluode/StateShapedPingRecall",
     "inventory_status": "reviewed"
   },
   {

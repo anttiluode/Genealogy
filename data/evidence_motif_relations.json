@@ -825,5 +825,14 @@
   },
   "nov10-colony-cue-ideal-versus-temporal-counter-and-gap": {
     "nov10-routed-activity-versus-learned-route": "supports"
+  },
+  "nov15-grown-history-not-recall": {
+    "nov15-record-versus-reconstruction": "documents"
+  },
+  "nov15-state-shaped-recall-negative": {
+    "nov15-record-versus-reconstruction": "limits"
+  },
+  "nov15-supplied-wave-inverse": {
+    "nov15-record-versus-reconstruction": "documents"
   }
 }

@@ -31,18 +31,20 @@ class November14LivingLives(unittest.TestCase):
         self.assertEqual(7, len(raw["edges"]))
         self.assertEqual(3, len(raw["motifs"]))
 
-    def test_ancestry_and_planned_hugging_face_not_overclaimed(self):
+    def test_ancestry_and_implemented_hugging_face_not_overclaimed(self):
         p = json.loads((ROOT / "data/passes" / PASS).read_text(encoding="utf-8"))
         edge_map = {(e["source"], e["target"]): e for e in p["edges"]}
         self.assertEqual("inherits", edge_map["LifeSucks", "Life"]["type"])
         self.assertEqual("inherits", edge_map["LifeSucks", "Life2"]["type"])
         self.assertEqual("forks", edge_map["Life2", "LifeAtHuggingface"]["type"])
-        self.assertEqual("low", edge_map["Life2", "LifeAtHuggingface"]["confidence"])
+        self.assertEqual("high", edge_map["Life2", "LifeAtHuggingface"]["confidence"])
         self.assertNotIn(("Life", "LifeAtHuggingface"), edge_map)
 
         nodes = {n["id"]: n for n in p["nodes"]}
         self.assertEqual("active", nodes["LifeAtHuggingface"]["status"])
-        self.assertEqual("low", nodes["LifeAtHuggingface"]["confidence"])
+        self.assertEqual("high", nodes["LifeAtHuggingface"]["confidence"])
+        self.assertIn("not verified", nodes["LifeAtHuggingface"]["killed"])
+        self.assertIn("app.py", nodes["LifeAtHuggingface"]["survived"])
         self.assertIn("only LICENSE", nodes["LifeAtHuggingface"]["killed"])
         self.assertIn("11 of 12", nodes["ElavaMatriisiClaude"]["killed"])
         self.assertIn("supplied by design", nodes["ElavaMatriisiSol"]["killed"])

@@ -1,0 +1,210 @@
+{
+  "id": "november-15-memory-recall-and-algorithmic-worlds",
+  "title": "November 15 — stored histories, missing waves and worlds within worlds",
+  "reviewed_at": "2026-11-15",
+  "order": 196,
+  "summary": "Five missing repositories join the census (640 → 645). The workshop and V30 distinguish transient memory from grown structure; Astra tests actual waveform recall and records a negative. AlgoWorld1 and Algoworld2 turn the lab/vine lineage into multiscale browser worlds. PerceptionLabNodes and all seven November 14 projects were already present and are not duplicated. Experiment 011 remains ongoing at this snapshot.",
+  "nodes": [
+    {
+      "id": "PerceptionLabAI",
+      "url": "https://github.com/anttiluode/PerceptionLabAI",
+      "family": "perception",
+      "status": "active",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Experimental workshop reusing PerceptionLab nodes, with numbered hypotheses, host-order runners, controls, receipts and GUI workflows.",
+      "survived": "Repository-reported 009: grown AB/BA structure survives a complete activity wipe and is read from an identical probe response in 89/96 held-out bodies; growth off 48/96 and scrambled destinations 55/96. 010 age-hardening retained 84/96 first histories after twenty opposite episodes, an exploratory observation.",
+      "killed": "009 cue recall and pruning protection failed. 008 self-tuned returns scored 60/96 versus 81/96 fixed returns. 010 use-hardening missed its pre-stated test (p=0.064). 011 dual-history protocol is committed and ongoing at this review; preflight/smoke success is not a scientific result. These upstream experiments were not rerun for this pass.",
+      "evidence": "https://github.com/anttiluode/PerceptionLabAI/blob/main/README.md",
+      "tags": [
+        "2026-11-15",
+        "wave-field",
+        "structural-memory",
+        "negative-results",
+        "workshop"
+      ],
+      "era": "November 15: stored history, missing waves and worlds within worlds",
+      "era_order": 196
+    },
+    {
+      "id": "GeometricNeuronV30",
+      "url": "https://github.com/anttiluode/GeometricNeuronV30",
+      "family": "perception",
+      "status": "ledger",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "The Order of Falls: a synthesis of the PerceptionLabAI fade-triggered wave experiments, with a separate single-loop reproduction receipt and later corrections.",
+      "survived": "Documents delayed-feedback rhythms, suppression/turn-taking, readable order in ongoing pulse trains, and the move from transient dynamics to grown structural memory. Keeps the 007 one-way-dependence correction and the 008 reversal of the earlier third-unit interpretation.",
+      "killed": "The fade-triggered unit is explicitly not a port of native GeometricNeuron V26–V29 equations. This is a research write-up, not another independently trained architecture. Reusing PerceptionLabAI results here does not double the evidence.",
+      "evidence": "https://github.com/anttiluode/GeometricNeuronV30/blob/main/README.md",
+      "tags": [
+        "2026-11-15",
+        "fade-trigger",
+        "wave",
+        "research-ledger",
+        "corrections"
+      ],
+      "era": "November 15: stored history, missing waves and worlds within worlds",
+      "era_order": 196
+    },
+    {
+      "id": "StateShapedPingRecall",
+      "url": "https://github.com/anttiluode/StateShapedPingRecall",
+      "family": "perception",
+      "status": "negative",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Astra tests whether locally state-shaped packets let three grown fade-triggered units reconstruct a missing ABC/ACB wave from A alone after a full activity wipe. A concurrent Fable follow-up tests Gemini’s signed predictive-damping proposal with a 24-timer bank; its preregistered cancellation criterion is distinct and results are pending at this checkpoint.",
+      "survived": "Full 96-body recall batch reproduced after restoring the flattened vendor/traces layout; parsed results match original except runtime. Separate known-physics least-squares inverse: 32 mixtures, median amplitude error 0.253%, held-out waveform score 0.9999983; inverse receipt and summary reproduce exactly.",
+      "killed": "All recall arms fail: median errors 182.2%, 168.4%, 166.6%, 179.3% against 100% passive baseline; state-shaped own-order preference 11/24. Fixed two-frame packets match per-packet area and squared drive; original impulse and whole episodes are not energy-matched. Twelve paired schedules, not 96 independent replicates. Known inverse dictionary is supplied, not learned.",
+      "evidence": "https://github.com/anttiluode/StateShapedPingRecall/blob/main/README.md",
+      "tags": [
+        "2026-11-15",
+        "state-shaped-pings",
+        "recall",
+        "inverse-model",
+        "reproduced",
+        "negative-results"
+      ],
+      "era": "November 15: stored history, missing waves and worlds within worlds",
+      "era_order": 196
+    },
+    {
+      "id": "AlgoWorld1",
+      "url": "https://github.com/anttiluode/AlgoWorld1",
+      "family": "visual-worlds",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "A browser world that zooms through different live algorithms: planet, landscape, grove, bark, cell and a return to planet.",
+      "survived": "README describes explicit four-number downward couplings and switches, a port of the 59-tick PerceptionLab ECG loop as shared clock, and different procedural/simulation laws at each depth. Published browser entry point is linked.",
+      "killed": "An artistic computational construction, not a measured multiscale physical model. Reported rendering tests used a software renderer; real-GPU performance is unmeasured. Simulation states are not guaranteed bit-identical across machines and upward coupling is only via the clock.",
+      "evidence": "https://github.com/anttiluode/AlgoWorld1/blob/main/README.md",
+      "tags": [
+        "2026-11-15",
+        "visualizer",
+        "procedural-world",
+        "zoom",
+        "ecg"
+      ],
+      "era": "November 15: stored history, missing waves and worlds within worlds",
+      "era_order": 196
+    },
+    {
+      "id": "Algoworld2",
+      "url": "https://github.com/anttiluode/Algoworld2",
+      "family": "visual-worlds",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "A new 3D interpretation joining AlgoWorld1 scale changes with Koynnos-style trees, vines and crystals; zoom branches into slime tubes or a crystal lattice.",
+      "survived": "README describes instanced 3D geometry, a live Physarum-agent/oscillator simulation on the approached branch and a wave field on the approached crystal. Planet is static apart from clouds; no ECG heartbeat is used.",
+      "killed": "New implementation inspired by Koynnos, not a copy of its vine engine; no load, breaking, light sensing or death. Slime is not SlimeBody pressure-flow physics. Only the visited surface simulates and branches regrow from seed on return. Source-reported software-renderer performance only.",
+      "evidence": "https://github.com/anttiluode/Algoworld2/blob/main/README.md",
+      "tags": [
+        "2026-11-15",
+        "visualizer",
+        "3d",
+        "vines",
+        "crystals",
+        "zoom"
+      ],
+      "era": "November 15: stored history, missing waves and worlds within worlds",
+      "era_order": 196
+    }
+  ],
+  "edges": [
+    {
+      "source": "PerceptionLab",
+      "target": "PerceptionLabAI",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "The workshop explicitly reuses PerceptionLab node classes and host scheduling, with reusable changes proposed upstream.",
+      "evidence": "https://github.com/anttiluode/PerceptionLabAI/blob/main/README.md"
+    },
+    {
+      "source": "PerceptionLabNodes",
+      "target": "PerceptionLabAI",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The workshop links the node inventory/audit and adopts port-effect checks; this is documentary/methodological convergence, not an asserted code fork.",
+      "evidence": "https://github.com/anttiluode/PerceptionLabAI/blob/main/README.md"
+    },
+    {
+      "source": "PerceptionLabAI",
+      "target": "GeometricNeuronV30",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "V30 explicitly identifies PerceptionLabAI as the implementation and receipts behind this write-up.",
+      "evidence": "https://github.com/anttiluode/GeometricNeuronV30/blob/main/README.md"
+    },
+    {
+      "source": "GeometricNeuronOriginReview",
+      "target": "GeometricNeuronV30",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Both investigate firing tied to fading history; V30 explicitly isolates that idea with different equations rather than porting the native GN.",
+      "evidence": "https://github.com/anttiluode/GeometricNeuronV30/blob/main/README.md"
+    },
+    {
+      "source": "PerceptionLabAI",
+      "target": "StateShapedPingRecall",
+      "type": "forks",
+      "confidence": "high",
+      "why": "Vendored 009 core, fade and growth nodes from pinned workshop revision 54b20b90b9356d7d622695ad9072b07ce569c5f7; new three-event assay and pulse-shape wrapper.",
+      "evidence": "https://github.com/anttiluode/StateShapedPingRecall/blob/main/REPORT.md"
+    },
+    {
+      "source": "PerceptionLab",
+      "target": "StateShapedPingRecall",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "WaveFieldNode and PulseSourceNode are pinned source snapshots at 0291f579123ce4261aade4e6c5a7b040f8177f1e.",
+      "evidence": "https://github.com/anttiluode/StateShapedPingRecall/blob/main/REPORT.md"
+    },
+    {
+      "source": "PerceptionLab",
+      "target": "AlgoWorld1",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "js/ecg.js is documented as a port of the lab ECG loop, preserving its 59-tick rhythm at saved settings.",
+      "evidence": "https://github.com/anttiluode/AlgoWorld1/blob/main/README.md"
+    },
+    {
+      "source": "AlgoWorld1",
+      "target": "Algoworld2",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Algoworld2 explicitly keeps the earlier zoom-between-laws idea in a newly written 3D world; this edge does not assert source-code inheritance.",
+      "evidence": "https://github.com/anttiluode/Algoworld2/blob/main/README.md"
+    },
+    {
+      "source": "Koynnos",
+      "target": "Algoworld2",
+      "type": "converges",
+      "confidence": "high",
+      "why": "README credits Koynnos-style 3D trees/vines/crystals and instanced pools, and explicitly says its vine engine is not imported.",
+      "evidence": "https://github.com/anttiluode/Algoworld2/blob/main/README.md"
+    },
+    {
+      "source": "SlimeBody",
+      "target": "Algoworld2",
+      "type": "converges",
+      "confidence": "high",
+      "why": "SlimeBody inspires the surface organism metaphor; the README distinguishes its pressure/flow engine from this Physarum-agent simulation.",
+      "evidence": "https://github.com/anttiluode/Algoworld2/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov15-record-versus-reconstruction",
+      "title": "A readable record is not yet reconstruction",
+      "description": "History can persist in branches and be read by an external decoder while a cue fails to regenerate its missing sensory consequence. Supplying an inverse dictionary demonstrates a separate capability; learning that map remains open.",
+      "nodes": [
+        "PerceptionLabAI",
+        "GeometricNeuronV30",
+        "StateShapedPingRecall"
+      ]
+    }
+  ]
+}

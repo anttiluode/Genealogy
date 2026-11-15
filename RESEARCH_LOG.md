@@ -1,5 +1,20 @@
 # Genealogy research log
 
+## 15 November 2026 — stored histories, missing waves and algorithmic worlds
+
+**[Live wall chapter](https://anttiluode.github.io/Genealogy/#nov15-memory-worlds)** · [Curated pass](data/passes/november-15-memory-recall-and-algorithmic-worlds.json).
+
+Five missing projects bring the census **640 → 645**: [PerceptionLabAI](https://github.com/anttiluode/PerceptionLabAI), [GeometricNeuronV30](https://github.com/anttiluode/GeometricNeuronV30), [StateShapedPingRecall](https://github.com/anttiluode/StateShapedPingRecall), [AlgoWorld1](https://github.com/anttiluode/AlgoWorld1), and [Algoworld2](https://github.com/anttiluode/Algoworld2). PerceptionLabNodes and all seven listed November 14 projects were already present; none is duplicated.
+
+The scientific branch now separates **readable history from generated recall**. PerceptionLabAI 009 reports 89/96 grown histories read after a full activity wipe, but cue recall and pruning protection failed. V30 is the explanatory ledger, not a second independent result. 010 did not confirm use-hardening; uniform ageing is an exploratory positive observation. **011 is ongoing at this checkpoint**: preflight/smoke success is not its scientific outcome.
+
+Astra's StateShapedPingRecall tests actual missing-wave reconstruction without a fitted decoder: four median errors are **182.2%, 168.4%, 166.6%, 179.3%**, where 100% is passive A-only propagation. State-shaped pings prefer their own history in 11/24 bodies. This pass restored the uploaded directory layout and reproduced the complete 96-body batch, matching the original results exactly except elapsed time. The separate supplied-physics inverse also reproduces (0.253% median source-amplitude error); it is not a learned neuronal model. [Review and next gates](https://github.com/anttiluode/StateShapedPingRecall/blob/main/REVIEW.md).
+
+The visual branch turns different laws into different depths: [open AlgoWorld1](https://anttiluode.github.io/AlgoWorld1/) for its looping zoom and shared ECG clock; [open Algoworld2](https://anttiluode.github.io/Algoworld2/) for 3D trees/crystals and branch-versus-crystal surface worlds without a heartbeat. Köynnös and SlimeBody are explicit inspirations for Algoworld2, not copied engines or transferred experimental results.
+
+**Status correction:** LifeAtHuggingface is now implemented with game assets, Gradio narration/painting and documented mock startup checks. The old license-only checkpoint is retained as history; real-model inference, GPU allocation and live Space operation remain unverified here.
+
+
 ## 2026-11-15 — PerceptionLabNodes: the lab's own fossil bed, rerun headless
 
 New repository and curated pass: <a href="https://anttiluode.github.io/Genealogy/#nov15-perceptionlab-nodes">wall chapter</a>, [pass](data/passes/november-15-perceptionlab-fossil-bed.json), [fossil-bed page](https://anttiluode.github.io/PerceptionLabNodes/). Census 639 → 640. Unlike most passes, the key numbers here **were independently rerun** by this curation (tools in PerceptionLabNodes/tools): ECG period 59; wave-field mean lag 22.17 vs 22.0; ECG+Moebius feedback graph identical to observer (silent `gain_mod`); jewishstar 0 avalanches in 600 steps with the saved feedback vs ~158 without. A one-input-at-a-time knob test flags at least one silent input in 186 of 457 judged node classes: it rediscovers the December 2025 BlochQubit rz_angle bug unprompted and confirms the paper's gain_mod and TokenQKV findings, but many silent inputs belong to nodes waiting for an EEG file, a grown crystal or a trigger the probe never supplies, so they are flags rather than verdicts. Three evidence records added (`nov15-pl-*`). Clans and marks are interpretation; import/step success is a contract check, not a scientific result.
