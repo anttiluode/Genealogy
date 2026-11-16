@@ -4741,26 +4741,37 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "QualeX",
+    "url": "https://github.com/anttiluode/QualeX",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Opus 5.5 - compressed findings from qualiaastra and qualiaclaude",
+    "created_at": "2026-11-16T16:29:30Z",
+    "updated_at": "2026-11-16T16:29:32Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "QualiaAstra",
     "url": "https://github.com/anttiluode/QualiaAstra",
     "default_branch": "main",
-    "size": 873,
+    "size": 1104,
     "visibility": "public",
     "description": "Astra",
     "created_at": "2026-11-16T05:43:08Z",
     "updated_at": "2026-11-16T09:02:56Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "QualiaClaude",
     "url": "https://github.com/anttiluode/QualiaClaude",
     "default_branch": "main",
-    "size": 624,
+    "size": 1207,
     "visibility": "public",
     "description": "Opus 5.5",
     "created_at": "2026-11-16T05:43:55Z",
     "updated_at": "2026-11-16T05:53:26Z",
-    "inventory_status": "unread"
+    "inventory_status": "reviewed"
   },
   {
     "name": "QualiaSchmualia",

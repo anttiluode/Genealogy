@@ -606,5 +606,9 @@
   {
     "path": "november-15-memory-recall-and-algorithmic-worlds.json",
     "enabled": true
+  },
+  {
+    "path": "november-16-qualia-shared-prediction.json",
+    "enabled": true
   }
 ]
