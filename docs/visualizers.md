@@ -4,6 +4,14 @@
 
 These are **browseable projects and visual-instrument ideas**, not a scientific ranking or a statement that every project has a running online demo. Where a verified browser page is known, it is linked separately. Repositories can be experimental, visual art, or simulation; an attractive plot is not proof that an AI mechanism works.
 
+## Shared prediction laboratories — added 16 November 2026
+
+| Repository | What is visible / interactive | Page |
+|---|---|---|
+| [QualiaAstra](https://github.com/anttiluode/QualiaAstra) | Seven engineered inference/prediction gates: reveal clues, cut or reverse messages, inspect held beliefs, screening and source signatures. The viewers are computational demonstrations, not tests of experience. | [Shared-world viewer](https://anttiluode.github.io/QualiaAstra/) · [Gate 7](https://anttiluode.github.io/QualiaAstra/gate7.html) |
+
+QualiaClaude supplies the related Python wave-body experiments and QualeX their synthesis; neither is catalogued here as a separate live viewer.
+
 ## Listening, audio and music
 
 | Repository | What is visible / interactive | Page |

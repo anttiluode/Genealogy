@@ -1943,5 +1943,45 @@
       "Proposed experiment, not implemented here.",
       "011 tests old/new history accessibility under hardening, a different question."
     ]
+  },
+  {
+    "id": "nov16-content-with-context-gain",
+    "title": "Can a wave-body unit relay content while retaining calibrated uncertainty?",
+    "state": "open",
+    "motifs": [
+      "nov16-content-residue-and-provenance"
+    ],
+    "evidence": [
+      "nov16-qualia-relay-innovation-limits",
+      "nov16-astra-screened-imagined-relay"
+    ],
+    "competing_explanations": [
+      "Content scaled by context and sensory reliability can combine relay with calibrated uncertainty.",
+      "Timing and source/event ambiguity remain the bottleneck; a gain alone will not fix the physical body."
+    ],
+    "known": [
+      "Soft relay is weak; regenerated relay loses calibration at changed reliability.",
+      "Innovation retains much of the confidence but misses contradiction-reversal and paired-superiority gates.",
+      "Engineered Gate 7 succeeds with supplied inference and source calibration; OLS ties the residual fit."
+    ],
+    "missing_discriminator": "Test context gain in the actual clock-and-wave body under uncertain B evidence, with matched timing and provenance controls.",
+    "candidate_experiment": {
+      "design": "QualeX proposes comparing subtractive innovation, content-only relay and content with context/reliability gain on the same bodies across clean, noisy, contradictory and absent B. Pre-register calibration and sign-reversal criteria; include matched linear/Bayes controls and repeated-echo checks.",
+      "cost": "CPU wave-body pilot; runtime and confirmation sample size to be measured and fixed before a new run",
+      "outcomes": [
+        {
+          "then": "Support the proposed combination in this model.",
+          "if": "Gain improves calibrated prediction specifically under noisy B without overshooting clean B."
+        },
+        {
+          "then": "Retain the split as unresolved and reject gain alone as the explanation.",
+          "if": "Benefits disappear with timing or provenance controls, or clean B is amplified incorrectly."
+        }
+      ]
+    },
+    "notes": [
+      "Proposed in QualeX; not implemented or run by this genealogy update.",
+      "No conclusion about subjective experience follows from these computational tests."
+    ]
   }
 ]

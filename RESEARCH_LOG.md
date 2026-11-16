@@ -1,5 +1,15 @@
 # Genealogy research log
 
+## 16 November 2026 — shared prediction, content and residue
+
+**[Live wall chapter](https://anttiluode.github.io/Genealogy/#nov16-qualia)** · [Curated pass](data/passes/november-16-qualia-shared-prediction.json) · [Source review](docs/reviews/2026-11-16-qualia.md).
+
+[QualiaAstra](https://github.com/anttiluode/QualiaAstra), [QualiaClaude](https://github.com/anttiluode/QualiaClaude), and [QualeX](https://github.com/anttiluode/QualeX) now have separate curated entries. Astra and Claude were already unread census entries; adding QualeX brings **647 → 648**. Nine documented connections distinguish inherited code, conceptual exchange and synthesis.
+
+**QualiaAstra** supplies engineered reference gates and interactive labs. Gate 4 finds the route in 12/12 populations but shows **no residual-growth advantage (0/12)**. Gate 7 combines screening, imagined relay and waveform-source inference: all seven checks pass in 12/12, with ordinary joint OLS tying the residual rule exactly. **QualiaClaude** inherits the StateShapedPingRecall wave/fading-unit/damping line: initial cross-sense revision holds in 16/16; screening leaves A share 0.011 versus 0.445 for independent similarity. Its relay and innovation tests retain their failed criteria, clock-reset findings and calibration limits.
+
+**QualeX is the synthesis, not a third experimental result.** It separates content, held prediction and residue and proposes testing context gain under noisy evidence. Six source-linked evidence records retain both successes and failures. These are source-reported results inspected for curation, not independent reruns; none measures subjective experience.
+
 ## 15 November 2026 — stored histories, missing waves and algorithmic worlds
 
 **[Live wall chapter](https://anttiluode.github.io/Genealogy/#nov15-memory-worlds)** · [Curated pass](data/passes/november-15-memory-recall-and-algorithmic-worlds.json).

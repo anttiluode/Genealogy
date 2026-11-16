@@ -13377,5 +13377,325 @@
     "held_out": true,
     "external_data": false,
     "source": "https://github.com/anttiluode/StateShapedPingRecall/blob/main/inverse_control.py"
+  },
+  {
+    "id": "nov16-qualia-shared-revision",
+    "node": "QualiaClaude",
+    "claim": "A separate-sense tone coherently revises the shared expectation of two hidden worlds.",
+    "design": "Forty balanced training episodes, frozen returns and omitted future event; 16 fresh bodies per informative, uninformative and A-bank-only condition. Summary checked against engine routing.",
+    "result": "supports",
+    "motifs": [
+      "nov16-content-residue-and-provenance",
+      "nov16-predictive-role-by-intervention"
+    ],
+    "sample": {
+      "unit": "independent bodies or trained populations",
+      "count": 16
+    },
+    "metrics": [
+      {
+        "name": "median revision index",
+        "treatment": 1.2860094990341062
+      },
+      {
+        "name": "coherent informative bodies",
+        "treatment": 16
+      },
+      {
+        "name": "coherent uninformative bodies",
+        "treatment": 0
+      },
+      {
+        "name": "bank swaps reversing revision",
+        "treatment": 16
+      }
+    ],
+    "controls": [
+      "Uninformative tones",
+      "A-bank-only bodies",
+      "Tone-bank swap",
+      "Unit-output removal",
+      "Zero clipped frames"
+    ],
+    "limitations": [
+      "Additive correction; units hear passive world/tone inputs, not one another.",
+      "One deterministic geometry; no noise.",
+      "Not a test of subjective experience."
+    ],
+    "replication": "Repository-reported result; source documentation inspected for this genealogy pass, not independently rerun.",
+    "held_out": true,
+    "external_data": false,
+    "source": "https://github.com/anttiluode/QualiaClaude/blob/13fba5d6661b0116a6046dd00497b3777e54a8b2/summary.json"
+  },
+  {
+    "id": "nov16-qualia-screening",
+    "node": "QualiaClaude",
+    "claim": "Learning from shared residue suppresses a redundant A→C shortcut that independent similarity retains.",
+    "design": "Sixteen schedules, 240 full-observation training episodes each; same fixed candidate axons and DampingReturnNode, differing only in shared versus own-contribution residual.",
+    "result": "supports",
+    "motifs": [
+      "nov16-content-residue-and-provenance"
+    ],
+    "sample": {
+      "unit": "independent bodies or trained populations",
+      "count": 16
+    },
+    "metrics": [
+      {
+        "name": "A share, residual",
+        "treatment": 0.011
+      },
+      {
+        "name": "A share, similarity",
+        "treatment": 0.445
+      },
+      {
+        "name": "residual smaller, paired bodies",
+        "treatment": 16
+      },
+      {
+        "name": "B influence / Bayes, residual",
+        "treatment": 0.9
+      },
+      {
+        "name": "B influence / Bayes, similarity",
+        "treatment": 2.06
+      }
+    ],
+    "controls": [
+      "Matched rates/window/clipping",
+      "Measured own-contribution kernel",
+      "A-only probe",
+      "Paired training schedules"
+    ],
+    "limitations": [
+      "Fixed candidate axons and separate receptors; not spontaneous growth.",
+      "A-only prediction nearly vanishes without imagined B.",
+      "Growth-then-pruning timing follow-up failed its rule, 1/4."
+    ],
+    "replication": "Repository-reported result; source documentation inspected for this genealogy pass, not independently rerun.",
+    "held_out": true,
+    "external_data": false,
+    "source": "https://github.com/anttiluode/QualiaClaude/blob/13fba5d6661b0116a6046dd00497b3777e54a8b2/screen/README.md"
+  },
+  {
+    "id": "nov16-qualia-relay-innovation-limits",
+    "node": "QualiaClaude",
+    "claim": "Relay and innovation preserve different parts of prediction but neither completes calibrated, contradiction-sensitive propagation under all registered criteria.",
+    "design": "Linked wave-body experiments compare real versus imagined B, regenerated relay, and B-minus-prediction innovation, with reliability and timing controls.",
+    "result": "mixed",
+    "motifs": [
+      "nov16-content-residue-and-provenance"
+    ],
+    "sample": {
+      "unit": "independent bodies or trained populations",
+      "count": 16
+    },
+    "metrics": [
+      {
+        "name": "soft relay / Bayes",
+        "treatment": 0.45
+      },
+      {
+        "name": "regenerated relay / Bayes",
+        "treatment": 1.03
+      },
+      {
+        "name": "innovation / Bayes at q1=0.85",
+        "treatment": 0.83
+      },
+      {
+        "name": "innovation / Bayes at q1=0.70",
+        "treatment": 0.88
+      },
+      {
+        "name": "innovation paired wins, required 12",
+        "treatment": 11
+      },
+      {
+        "name": "innovation contradiction reversals, required 14",
+        "treatment": 11
+      }
+    ],
+    "controls": [
+      "Eyes open/closed",
+      "Real and contradictory B",
+      "Regenerated versus soft imagined B",
+      "Changed first-link reliability",
+      "Spike timing and amplitude checks"
+    ],
+    "limitations": [
+      "Soft relay misses required 0.5 strength.",
+      "Regenerated 1.03 is cancelling errors, not calibrated inference.",
+      "Innovation misses two criteria; a larger residue delays the fade-triggered spike.",
+      "Related follow-ups on the same bodies are not independent replications."
+    ],
+    "replication": "Repository-reported result; source documentation inspected for this genealogy pass, not independently rerun.",
+    "held_out": true,
+    "external_data": false,
+    "source": "https://github.com/anttiluode/QualiaClaude/blob/13fba5d6661b0116a6046dd00497b3777e54a8b2/README.md"
+  },
+  {
+    "id": "nov16-astra-message-intervention",
+    "node": "QualiaAstra",
+    "claim": "Causal messages propagate a local clue to remote predictions; output removal alone does not change remote beliefs.",
+    "design": "Frozen twelve-seed confirmation with 6,144 cases, supplied three-node binary factor graph, calibrated sensory likelihoods and withheld B/C traces.",
+    "result": "supports",
+    "motifs": [
+      "nov16-predictive-role-by-intervention"
+    ],
+    "sample": {
+      "unit": "independent bodies or trained populations",
+      "count": 12
+    },
+    "metrics": [
+      {
+        "name": "remote waveform error, shared messages",
+        "treatment": 0.1723
+      },
+      {
+        "name": "remote error, cut or disconnected",
+        "treatment": 1.0
+      },
+      {
+        "name": "remote error, exact Bayes",
+        "treatment": 0.1723
+      },
+      {
+        "name": "maximum inference discrepancy",
+        "treatment": 8.33e-16
+      }
+    ],
+    "controls": [
+      "Message cut",
+      "Directed message reversal",
+      "Relations shuffled",
+      "Additive output removal",
+      "Exact Bayesian enumeration"
+    ],
+    "limitations": [
+      "Known chain/topology/alphabet and inference algorithm.",
+      "No demonstrated advantage over exact Bayes or necessity of message passing over all simpler alternatives.",
+      "Not recurrent consensus or evidence of experience."
+    ],
+    "replication": "Repository-reported result; source documentation inspected for this genealogy pass, not independently rerun.",
+    "held_out": true,
+    "external_data": false,
+    "source": "https://github.com/anttiluode/QualiaAstra/blob/8e706edac9fbfcf77e024aa01efe2d6364069c9f/README.md"
+  },
+  {
+    "id": "nov16-astra-route-advantage-negative",
+    "node": "QualiaAstra",
+    "claim": "Residual-driven growth has a special advantage over matched delay-aware similarity on the clean-route task.",
+    "design": "Twelve held-out populations; all directed pairs and twelve candidate delays compete under the same two-edge budget and weight-fitting procedure.",
+    "result": "contradicts",
+    "motifs": [
+      "nov16-content-residue-and-provenance"
+    ],
+    "sample": {
+      "unit": "independent bodies or trained populations",
+      "count": 12
+    },
+    "metrics": [
+      {
+        "name": "route recovery, residual",
+        "treatment": 12
+      },
+      {
+        "name": "route recovery, matched similarity",
+        "treatment": 12
+      },
+      {
+        "name": "populations with residual advantage",
+        "treatment": 0
+      },
+      {
+        "name": "relative waveform MSE",
+        "treatment": 0.464
+      }
+    ],
+    "controls": [
+      "Delay-aware signed correlation",
+      "Unsigned coactivity",
+      "Same edge budget and delays",
+      "Correct-anatomy oracle",
+      "Disconnected predictor"
+    ],
+    "limitations": [
+      "Route discovery itself passes; only the comparative advantage fails.",
+      "Engineered three-tap cable and synthetic world.",
+      "Redundant predictors are tested separately in Claude screen/ and Astra Gate 7."
+    ],
+    "replication": "Repository-reported result; source documentation inspected for this genealogy pass, not independently rerun.",
+    "held_out": true,
+    "external_data": false,
+    "source": "https://github.com/anttiluode/QualiaAstra/blob/8e706edac9fbfcf77e024aa01efe2d6364069c9f/README.md"
+  },
+  {
+    "id": "nov16-astra-screened-imagined-relay",
+    "node": "QualiaAstra",
+    "claim": "Screening the direct shortcut can coexist with imagined-B relay and waveform-based source inference in an engineered statistical model.",
+    "design": "Gate 7: twelve independently calibrated populations, 512 full ABC training episodes, 320 known-source probes per class, and 4,096 held-out events each; seven registered checks.",
+    "result": "supports",
+    "motifs": [
+      "nov16-content-residue-and-provenance"
+    ],
+    "sample": {
+      "unit": "independent bodies or trained populations",
+      "count": 12
+    },
+    "metrics": [
+      {
+        "name": "all seven checks, populations",
+        "treatment": 12
+      },
+      {
+        "name": "absolute direct A weight, residual",
+        "treatment": 0.0247
+      },
+      {
+        "name": "absolute direct A weight, similarity",
+        "treatment": 0.4961
+      },
+      {
+        "name": "C error, residual relay",
+        "treatment": 0.72603
+      },
+      {
+        "name": "C error, exact Bayes",
+        "treatment": 0.72519
+      },
+      {
+        "name": "C error, joint OLS",
+        "treatment": 0.72603
+      },
+      {
+        "name": "C error, rescaled similarity",
+        "treatment": 0.73727
+      },
+      {
+        "name": "C error, A-only shortcut",
+        "treatment": 0.75886
+      }
+    ],
+    "controls": [
+      "Joint OLS ties exactly",
+      "Globally rescaled similarity",
+      "A-only shortcut",
+      "No imagined relay",
+      "Source waveform swap/equalization",
+      "Hidden-truth/provenance poisoning",
+      "Cut preserves held B"
+    ],
+    "limitations": [
+      "Global batch regression; supplied A/B candidates and Bayesian update.",
+      "Engineered waveforms calibrated on known sources.",
+      "Not the physical QualiaClaude clock-and-wave engine.",
+      "Source identity does not identify repeated copies of the same event."
+    ],
+    "replication": "Repository-reported result; source documentation inspected for this genealogy pass, not independently rerun.",
+    "held_out": true,
+    "external_data": false,
+    "source": "https://github.com/anttiluode/QualiaAstra/blob/8e706edac9fbfcf77e024aa01efe2d6364069c9f/docs/GATE7_RESULTS.md"
   }
 ]

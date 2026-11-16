@@ -1,0 +1,174 @@
+{
+  "id": "november-16-qualia-shared-prediction",
+  "title": "November 16 — shared prediction, content and residue",
+  "reviewed_at": "2026-11-16",
+  "order": 197,
+  "summary": "Three curated entries: QualiaAstra supplies engineered reference gates, QualiaClaude tests learned wave bodies, and QualeX synthesizes both. Two existing unread census entries become reviewed; QualeX brings the census 647 → 648. Source-reported successes and failures remain separate from independent replication and from claims about experience.",
+  "nodes": [
+    {
+      "id": "QualiaAstra",
+      "url": "https://github.com/anttiluode/QualiaAstra",
+      "family": "perception",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Engineered shared-prediction reference gates: hidden-cause inference, sensory prediction, route selection, evidence provenance and screening with imagined relay.",
+      "survived": "Gate 1 passes causal message controls and matches exact Bayes (remote error 0.1723). Gate 3 learns sensor prototypes without sign labels. Gate 7 reports all seven checks in 12/12 populations: direct A→C weight 0.025 versus 0.496 for independent similarity; hidden-C error 0.726 versus 0.954. Ordinary joint OLS ties residual screening exactly. Offline/live viewers expose the interventions.",
+      "killed": "Gate 2 is development-only. Gate 4 route recovery passes 12/12 but residual growth advantage fails 0/12. Anatomy/inference structure and engineered source waveforms remain supplied; known-source calibration is used. Gate 7 is a batch Bayesian/linear surrogate, not the QualiaClaude wave engine. Source identity does not solve repeated-event identity. No subjective experience is measured. Source reports inspected, not independently rerun for this pass.",
+      "evidence": "https://github.com/anttiluode/QualiaAstra/blob/8e706edac9fbfcf77e024aa01efe2d6364069c9f/README.md",
+      "tags": [
+        "2026-11-16",
+        "shared-prediction",
+        "bayes",
+        "provenance",
+        "screening-off",
+        "interactive-lab",
+        "negative-results"
+      ],
+      "era": "November 16: shared prediction, content and residue",
+      "era_order": 197
+    },
+    {
+      "id": "QualiaClaude",
+      "url": "https://github.com/anttiluode/QualiaClaude",
+      "family": "perception",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Fade-triggered units with learned signed returns test shared cross-sense expectation, imagined chains, residual screening, relay and innovation in a wave-body family.",
+      "survived": "Initial coherent tone-driven revision and bank-swap reversal hold in 16/16 bodies; uninformative tones give 0/16 coherent revisions. Screening leaves A share 0.011 versus 0.445 for independent similarity. A latch fixes the chain sign failures (16/16). Relay and innovation expose different content/confidence tradeoffs rather than one finished mechanism.",
+      "killed": "Initial revision is additive: timers listen to passive world/tone inputs, not each other. Screening supplies fixed candidate axons and separate receptors. Soft relay reaches 0.45 of Bayes, below the 0.5 gate; regeneration reaches 1.03 through cancelling errors and overshoots at weaker reliability. Innovation misses its paired-superiority and contradiction-reversal criteria. No evidence of feeling. Source reports and initial summary inspected; experimental batches not rerun here.",
+      "evidence": "https://github.com/anttiluode/QualiaClaude/blob/13fba5d6661b0116a6046dd00497b3777e54a8b2/README.md",
+      "tags": [
+        "2026-11-16",
+        "wave-field",
+        "fade-trigger",
+        "adaptive-cancellation",
+        "shared-prediction",
+        "clock-reset",
+        "negative-results"
+      ],
+      "era": "November 16: shared prediction, content and residue",
+      "era_order": 197
+    },
+    {
+      "id": "QualeX",
+      "url": "https://github.com/anttiluode/QualeX",
+      "family": "perception",
+      "status": "ledger",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Compressed synthesis of QualiaClaude and QualiaAstra: separate content, held prediction and residue, and preserve the failure map between relay and innovation.",
+      "survived": "Documents both experimental lines, their controls and failed criteria. Identifies predicted-event clock reset, surprise-as-delay, source versus event identity, and a proposed content-with-context-gain comparison under noisy B evidence.",
+      "killed": "README and license only at this snapshot: no independent implementation, run or replication. Its source checkpoints are QualiaClaude e8ab4e9 and QualiaAstra d173631. Context gain is a proposal, not an established result; biological interpretation and subjective experience remain untested. Repeated numbers are not additional evidence.",
+      "evidence": "https://github.com/anttiluode/QualeX/blob/d741506a1531706d4055a544e80002d383dd26bc/README.md",
+      "tags": [
+        "2026-11-16",
+        "synthesis",
+        "content",
+        "residue",
+        "context-gain",
+        "proposal"
+      ],
+      "era": "November 16: shared prediction, content and residue",
+      "era_order": 197
+    }
+  ],
+  "edges": [
+    {
+      "source": "StateShapedPingRecall",
+      "target": "QualiaClaude",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Vendored WaveFieldNode, FadingHistorySpikeNode and DampingReturnNode plus the damping/damping2 timer-bank design; the README pins the source at d552719. PerceptionLabAI and PerceptionLab are upstream through that source.",
+      "evidence": "https://github.com/anttiluode/QualiaClaude/blob/13fba5d6661b0116a6046dd00497b3777e54a8b2/README.md"
+    },
+    {
+      "source": "StateShapedPingRecall",
+      "target": "QualiaAstra",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Explicit conceptual companion distinguishing waveform completion, cancellation and hidden-cause inference; no wave-engine code or experimental results are copied.",
+      "evidence": "https://github.com/anttiluode/QualiaAstra/blob/8e706edac9fbfcf77e024aa01efe2d6364069c9f/README.md"
+    },
+    {
+      "source": "RoundAndRound",
+      "target": "QualiaAstra",
+      "type": "converges",
+      "confidence": "high",
+      "why": "README explicitly connects selectable learned operators and evidence-driven re-entry; conceptual relation, not code inheritance.",
+      "evidence": "https://github.com/anttiluode/QualiaAstra/blob/8e706edac9fbfcf77e024aa01efe2d6364069c9f/README.md"
+    },
+    {
+      "source": "TATWATASW",
+      "target": "QualiaAstra",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Explicit order-writing and timing precedent; no code inheritance claimed.",
+      "evidence": "https://github.com/anttiluode/QualiaAstra/blob/8e706edac9fbfcf77e024aa01efe2d6364069c9f/README.md"
+    },
+    {
+      "source": "MusicalDelayLabyrinth",
+      "target": "QualiaAstra",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Explicit timing precedent; not a transferred wave-engine result.",
+      "evidence": "https://github.com/anttiluode/QualiaAstra/blob/8e706edac9fbfcf77e024aa01efe2d6364069c9f/README.md"
+    },
+    {
+      "source": "QualiaAstra",
+      "target": "QualiaClaude",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The chain tests an imagined middle event in a learned wave body; screen/ follows Gate 4’s residual-versus-similarity tie with redundant candidate inputs. Documentary cross-fertilization, not a code fork.",
+      "evidence": "https://github.com/anttiluode/QualiaClaude/blob/13fba5d6661b0116a6046dd00497b3777e54a8b2/screen/README.md"
+    },
+    {
+      "source": "QualiaClaude",
+      "target": "QualiaAstra",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Gate 7 explicitly follows Claude’s screening experiment, joining screening, imagined B and source inference in an engineered statistical surrogate; it does not import Claude’s physical wave engine.",
+      "evidence": "https://github.com/anttiluode/QualiaAstra/blob/8e706edac9fbfcf77e024aa01efe2d6364069c9f/docs/GATE7_RESULTS.md"
+    },
+    {
+      "source": "QualiaAstra",
+      "target": "QualeX",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "QualeX condenses the engineered gates at d173631; a documentary synthesis, not a new experiment or independent replication.",
+      "evidence": "https://github.com/anttiluode/QualeX/blob/d741506a1531706d4055a544e80002d383dd26bc/README.md"
+    },
+    {
+      "source": "QualiaClaude",
+      "target": "QualeX",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "QualeX condenses wave-body results at e8ab4e9, including negative relay/innovation controls; no additional empirical sample.",
+      "evidence": "https://github.com/anttiluode/QualeX/blob/d741506a1531706d4055a544e80002d383dd26bc/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov16-content-residue-and-provenance",
+      "title": "Content, residue and provenance do different jobs",
+      "description": "Learning from shared residue can screen redundant inputs, while relaying an expectation requires held content and calibrated confidence. A real-versus-imagined source cue is not an identity for repeated copies of one event.",
+      "nodes": [
+        "StateShapedPingRecall",
+        "QualiaAstra",
+        "QualiaClaude",
+        "QualeX"
+      ]
+    },
+    {
+      "id": "nov16-predictive-role-by-intervention",
+      "title": "A contribution is not the same as a message intervention",
+      "description": "Removing a term from an additive output measures its contribution. Cutting or reversing a transmitted message and recomputing the body tests its downstream predictive role. Neither establishes subjective experience.",
+      "nodes": [
+        "QualiaAstra",
+        "QualiaClaude",
+        "QualeX"
+      ]
+    }
+  ]
+}

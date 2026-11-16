@@ -834,5 +834,24 @@
   },
   "nov15-supplied-wave-inverse": {
     "nov15-record-versus-reconstruction": "documents"
+  },
+  "nov16-qualia-shared-revision": {
+    "nov16-content-residue-and-provenance": "supports",
+    "nov16-predictive-role-by-intervention": "supports"
+  },
+  "nov16-qualia-screening": {
+    "nov16-content-residue-and-provenance": "supports"
+  },
+  "nov16-qualia-relay-innovation-limits": {
+    "nov16-content-residue-and-provenance": "limits"
+  },
+  "nov16-astra-message-intervention": {
+    "nov16-predictive-role-by-intervention": "supports"
+  },
+  "nov16-astra-route-advantage-negative": {
+    "nov16-content-residue-and-provenance": "limits"
+  },
+  "nov16-astra-screened-imagined-relay": {
+    "nov16-content-residue-and-provenance": "supports"
   }
 }
