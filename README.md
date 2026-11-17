@@ -4,6 +4,16 @@ Evidence-backed archaeology of Antti Luode's research repositories.
 
 The central premise is that hundreds of repositories are not hundreds of independent ideas. The project separates raw repository inventory from curated scientific interpretation, then records explicit inheritance, corrections, rediscoveries, convergences, extracted mechanisms, empirical evidence, and the scientific questions that remain unresolved.
 
+## 17 November 2026 — spatial context and a held thought beyond tokens
+
+**[Live Genealogy Wall](https://anttiluode.github.io/Genealogy/#nov17-distributed-imagination)** · [Three-node curated pass](data/passes/november-17-distributed-context-and-jspace.json) · [Source review](docs/reviews/2026-11-17-distributed-context-and-jspace.md).
+
+Three later Nov 17 repositories complete the day's eight-project census, **653 → 656**: [TuftSheet](https://github.com/anttiluode/TuftSheet), [TuftSheetSol](https://github.com/anttiluode/TuftSheetSol) and [Qwenimagination](https://github.com/anttiluode/Qwenimagination). The earlier five curated Nov 17 projects remain in their original chapter.
+
+**TuftSheet** extends the scalar WaveCortex apical rule into many local contexts shared by a diffusive Layer-1-like sheet: 0.80 sign accuracy vs 0.69 global and 0.59 unlinked, with five of six preregistered checks passing. The attempt to learn the true boundary fails (22/32 where 24 was required), and learned conductances trail uniform links. **TuftSheetSol** is an offline interactive two-sheet JS model where a separate excitable medium transiently disturbs a *hand-specified* readout; six toy numerical checks pass in all 32 held learning seeds, but storage remains intact by construction and this is not a clinical or biological model. **Qwenimagination** pre-registers an attempt to carry a derived one-token concept between separate conversations in a recurrent external J-space loop. Strict answer-versus-cue and matched-KL controls are specified; **only random-weight plumbing has run, not a pretrained Qwen experiment**.
+
+The deeper seam: a single global hidden rule gives way to locally maintained context; a world-model state becomes distinguishable from its readout machinery; now we can ask whether the same architecture holds internal content beyond a transformer's token stream. None proves phenomenal qualia.
+
 ## 17 November 2026 — from the Qualia branch to SyntheticQualia and WaveCortex
 
 **[Live wall chapter](https://anttiluode.github.io/Genealogy/#nov17-synthetic-qualia)** · [Curated pass](data/passes/november-17-synthetic-qualia-wave-cortex.json) · [Pinned source review](docs/reviews/2026-11-17-synthetic-qualia.md) · [November 16 precursor](https://anttiluode.github.io/Genealogy/#nov16-qualia).

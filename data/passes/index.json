@@ -614,5 +614,9 @@
   {
     "path": "november-17-synthetic-qualia-wave-cortex.json",
     "enabled": true
+  },
+  {
+    "path": "november-17-distributed-context-and-jspace.json",
+    "enabled": true
   }
 ]

@@ -1,0 +1,157 @@
+{
+  "id": "november-17-distributed-context-and-jspace",
+  "title": "November 17 — distributed context and off-token imagination",
+  "reviewed_at": "2026-11-17",
+  "order": 199,
+  "summary": "Three Nov 17 repositories complete the eight-repo census (653→656): TuftSheet spatializes a shared apical rule into independent local contexts; TuftSheetSol separates world-state persistence from a deliberately perturbed readout; Qwenimagination pre-registers external J-space retention between disjoint language-model contexts. Two source-reported numerical toy experiments and one pending real-model test; no evidence of phenomenal consciousness.",
+  "nodes": [
+    {
+      "id": "TuftSheet",
+      "url": "https://github.com/anttiluode/TuftSheet",
+      "family": "perception",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A 24-column, horizontally diffusive context sheet replaces WaveCortex's single global apical rule to represent two independent changing latent rules.",
+      "survived": "Five of six pre-registered tests pass in 32 source-reported bodies. Uniform-sheet sign accuracy 0.80 vs global g 0.69, unlinked 0.59 and ideal 0.88; post-switch neighbor transfer 0.81 vs no-links 0.40; unchanged-region stability 0.94; causal g cut to chance 0.50.",
+      "killed": "T6 local boundary learning fails (22/32 versus required 24/32); correct boundary weakest in only 3/32. Learned links are worse than uniform (0.76 versus 0.80). Column order, two regions and diffusion rates supplied. This is a diffusive message field, not a physical travelling wave.",
+      "evidence": "https://github.com/anttiluode/TuftSheet/blob/ed1790e79b97e98eaa06ea64370db157495bf152/README.md",
+      "tags": [
+        "2026-11-17",
+        "distributed-context",
+        "apical-tuft",
+        "boundary-learning-negative",
+        "diffusive-sheet"
+      ],
+      "era": "November 17: spatial inner worlds and off-token memory",
+      "era_order": 199
+    },
+    {
+      "id": "TuftSheetSol",
+      "url": "https://github.com/anttiluode/TuftSheetSol",
+      "family": "perception",
+      "status": "experiment",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "A dependency-free browser lab separates stored local world context from a second excitable reaction–diffusion medium, and perturbs only a hand-specified perceptual readout.",
+      "survived": "Six numerical gates reportedly pass in all 32 held learning seeds: two fixed-rule contexts reach sign accuracy 1.000; at +50 ticks seeded coupling adds 0.3351 readout MSE relative to uncoupled; front radius 22.36 cells; by +160 excess MSE relative to sham is 0.000105.",
+      "killed": "Midpoint weak boundary is supplied, perceptual impairment coupling is hand-coded and equality of internal context under sensory blackout is ensured by design. The 32 seeds do not vary the underlying deterministic disturbance physics. Not a biological migraine-aura model or evidence for phenomenal qualia.",
+      "evidence": "https://github.com/anttiluode/TuftSheetSol/blob/5bae4c4810ef5237cb17377e0fff437da2a6546b/README.md",
+      "tags": [
+        "2026-11-17",
+        "offline-visualizer",
+        "two-sheets",
+        "context-vs-medium",
+        "readout-intervention"
+      ],
+      "era": "November 17: spatial inner worlds and off-token memory",
+      "era_order": 199
+    },
+    {
+      "id": "Qwenimagination",
+      "url": "https://github.com/anttiluode/Qwenimagination",
+      "family": "transformer",
+      "status": "active",
+      "usefulness": "scientific",
+      "confidence": "medium",
+      "claim": "A preregistered frozen-Qwen test asks whether a derived one-token concept can survive across contexts as an external recurrent J-space state without being written as text.",
+      "survived": "Protocol fixes G0a/G0b and G1–G3, developer/test partition, answer-versus-cue scoring, matched-KL damage budgets, none/cue/oracle/in-context/snapshot/open/closed baselines. Random-weight Qwen-shaped plumbing tests pass read/write and isolation checks; an oracle can write its known answer.",
+      "killed": "No real pretrained Qwen run yet: random weights fail derived-answer gate G0. The hold is instructed and concept vocabulary is preselected; no spontaneous imagination, autonomously revised concept state or consciousness demonstrated. Closed-loop superiority is a preregistered hypothesis expected possibly to fail.",
+      "evidence": "https://github.com/anttiluode/Qwenimagination/blob/f18c0bb952faa7c0f654f290ce8230005b13180b/README.md",
+      "tags": [
+        "2026-11-17",
+        "qwen",
+        "j-space",
+        "off-token-state",
+        "preregistered",
+        "real-run-pending"
+      ],
+      "era": "November 17: spatial inner worlds and off-token memory",
+      "era_order": 199
+    }
+  ],
+  "edges": [
+    {
+      "source": "ApicalRuleReversalMachine",
+      "target": "TuftSheet",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Normalized apical W+gV gated learning is reused with local context at each column.",
+      "evidence": "https://github.com/anttiluode/TuftSheet/blob/ed1790e79b97e98eaa06ea64370db157495bf152/README.md"
+    },
+    {
+      "source": "WaveCortex",
+      "target": "TuftSheet",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "WaveCortex's more accurate scalar relational-column version forms the local computational unit; one global g becomes a spatial context field.",
+      "evidence": "https://github.com/anttiluode/TuftSheet/blob/ed1790e79b97e98eaa06ea64370db157495bf152/README.md"
+    },
+    {
+      "source": "SyntheticQualia",
+      "target": "TuftSheet",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "The paper motivates multi-region world modeling; this is a documented conceptual bridge, not source-code inheritance.",
+      "evidence": "https://github.com/anttiluode/TuftSheet/blob/ed1790e79b97e98eaa06ea64370db157495bf152/README.md"
+    },
+    {
+      "source": "TuftSheet",
+      "target": "TuftSheetSol",
+      "type": "converges",
+      "confidence": "high",
+      "why": "An independently written JS context field carries the sheet idea and adds a separate excitable medium and readout, not the original Python engine.",
+      "evidence": "https://github.com/anttiluode/TuftSheetSol/blob/5bae4c4810ef5237cb17377e0fff437da2a6546b/README.md"
+    },
+    {
+      "source": "TuftSheet",
+      "target": "Qwenimagination",
+      "type": "extracts",
+      "confidence": "medium",
+      "why": "A sustained local belief/context loop becomes the motivation for a recurrent residual-space LM state; the real-model experiment is not run.",
+      "evidence": "https://github.com/anttiluode/Qwenimagination/blob/f18c0bb952faa7c0f654f290ce8230005b13180b/README.md"
+    },
+    {
+      "source": "SyntheticQualia",
+      "target": "Qwenimagination",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both ask how a latent prediction might persist independently of emitted content, but this is conceptual and does not imply phenomenal experience.",
+      "evidence": "https://github.com/anttiluode/Qwenimagination/blob/f18c0bb952faa7c0f654f290ce8230005b13180b/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov17-local-context-field",
+      "title": "Many local latent contexts instead of one global rule",
+      "description": "A spatially diffusive scalar context field can hold two independently changing simple hidden rules, while the attempted unsupervised boundary learner fails.",
+      "nodes": [
+        "ApicalRuleReversalMachine",
+        "WaveCortex",
+        "TuftSheet",
+        "TuftSheetSol"
+      ]
+    },
+    {
+      "id": "nov17-world-vs-medium",
+      "title": "The stored world and its readout medium can be distinguished",
+      "description": "A numerical perturbation of a separate excitable field can change designed perceptual readout without overwriting representation, but the impairment coupling is supplied.",
+      "nodes": [
+        "TuftSheet",
+        "TuftSheetSol",
+        "SyntheticQualia"
+      ]
+    },
+    {
+      "id": "nov17-offtoken-workspace",
+      "title": "Can a derived thought outlast the text that evoked it?",
+      "description": "A proposed external J-space loop could preserve derived content between disjoint language contexts; no pretrained Qwen evaluation yet.",
+      "nodes": [
+        "WaveCortex",
+        "TuftSheet",
+        "SyntheticQualia",
+        "Qwenimagination"
+      ]
+    }
+  ]
+}
