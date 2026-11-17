@@ -853,5 +853,29 @@
   },
   "nov16-astra-screened-imagined-relay": {
     "nov16-content-residue-and-provenance": "supports"
+  },
+  "nov17-wavecomputer-two-form": {
+    "nov17-twoform-contextual-imagination": "supports",
+    "nov17-functional-qualia-boundary": "documents"
+  },
+  "nov17-wavecomputer-noisy-b": {
+    "nov17-twoform-contextual-imagination": "supports"
+  },
+  "nov17-astra-addressed-relay": {
+    "nov17-twoform-contextual-imagination": "supports",
+    "nov17-linear-wave-scalar-baseline": "documents"
+  },
+  "nov17-astra-accuracy-negative": {
+    "nov17-linear-wave-scalar-baseline": "supports"
+  },
+  "nov17-apical-rule-reversal": {
+    "nov17-twoform-contextual-imagination": "supports"
+  },
+  "nov17-wavecortex-gated-imagination": {
+    "nov17-twoform-contextual-imagination": "supports",
+    "nov17-functional-qualia-boundary": "documents"
+  },
+  "nov17-wavecortex-scalar-negative": {
+    "nov17-linear-wave-scalar-baseline": "supports"
   }
 }
