@@ -1983,5 +1983,48 @@
       "Proposed in QualeX; not implemented or run by this genealogy update.",
       "No conclusion about subjective experience follows from these computational tests."
     ]
+  },
+  {
+    "id": "nov17-persistent-inner-world",
+    "title": "Can one learned latent world persist through blindness, bind multiple senses, and answer unvisited counterfactuals?",
+    "state": "open",
+    "motifs": [
+      "nov17-twoform-contextual-imagination",
+      "nov17-functional-qualia-boundary"
+    ],
+    "evidence": [
+      "nov16-qualia-shared-revision",
+      "nov17-wavecomputer-two-form",
+      "nov17-wavecortex-gated-imagination"
+    ],
+    "competing_explanations": [
+      "Two-form expectation and fast surprise-driven context can become one persistent learned hidden-state model shared by perception and imagination.",
+      "The chain results depend on supplied sites, timing and symbolic rules; object permanence, cross-modal causal binding and counterfactuals require a separately learned generative world model."
+    ],
+    "known": [
+      "QualiaClaude reports coherent cross-sense revision of a shared expectation, but it is additive and does not bind a persistent hidden object.",
+      "WaveComputer uses the same learned relays for a seen B and an imagined B, with graded confidence.",
+      "WaveCortex infers a hidden rule and passes that contextual belief through imagined B with frozen weights, but scalar baselines remain better.",
+      "SyntheticQualia explicitly identifies Q7 hidden-object persistence, Q8 causal multisensory binding and Q9 counterfactual sensing as not yet tested."
+    ],
+    "missing_discriminator": "A single intervenable learned state should predict hidden-object return, correct audiovisual expectations from either sense and generate held-out viewpoint/action predictions beyond matched baselines.",
+    "candidate_experiment": {
+      "design": "Simulate a moving sphere with occlusion and occasional acoustic impacts. Withhold both sensory channels for controlled intervals; measure expected return, cross-modal correction and action/view counterfactuals, with state cuts and matched static, scalar-gated and wave baselines.",
+      "cost": "Small CPU simulation first, with pre-registered seeds, metrics and compute budgets before confirmation.",
+      "outcomes": [
+        {
+          "if": "State-dependent, causal latent representations predict withheld audiovisual consequences and unseen counterfactuals beyond matched baselines",
+          "then": "Evidence for a functional generative perceptual world model, not phenomenal consciousness."
+        },
+        {
+          "if": "Only supplied labels or explicit solvers work, or the state cut is not selectively causal",
+          "then": "Q7–Q9 remain open and identify the missing learning/representation step."
+        }
+      ]
+    },
+    "notes": [
+      "A future experiment derived from SyntheticQualia; not implemented in this curation.",
+      "No current experiment measures what it feels like to be the system."
+    ]
   }
 ]

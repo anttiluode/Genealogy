@@ -4,6 +4,16 @@ Evidence-backed archaeology of Antti Luode's research repositories.
 
 The central premise is that hundreds of repositories are not hundreds of independent ideas. The project separates raw repository inventory from curated scientific interpretation, then records explicit inheritance, corrections, rediscoveries, convergences, extracted mechanisms, empirical evidence, and the scientific questions that remain unresolved.
 
+## 17 November 2026 — from the Qualia branch to SyntheticQualia and WaveCortex
+
+**[Live wall chapter](https://anttiluode.github.io/Genealogy/#nov17-synthetic-qualia)** · [Curated pass](data/passes/november-17-synthetic-qualia-wave-cortex.json) · [Pinned source review](docs/reviews/2026-11-17-synthetic-qualia.md) · [November 16 precursor](https://anttiluode.github.io/Genealogy/#nov16-qualia).
+
+Five new curated November 17 repositories bring the census **648 → 653**: [WaveComputer](https://github.com/anttiluode/WaveComputer), [WaveComputerAstra](https://github.com/anttiluode/WaveComputerAstra), [ApicalRuleReversalMachine](https://github.com/anttiluode/ApicalRuleReversalMachine), [WaveCortex](https://github.com/anttiluode/WaveCortex), and [SyntheticQualia](https://github.com/anttiluode/SyntheticQualia). The November 16 QualiaAstra, QualiaClaude and QualeX entries already existed and are linked, not duplicated.
+
+**WaveComputer** combines local residue and content-with-confidence into one learned imagined A→B→C chain; its impulse-response implementation reportedly speeds simulation up 55×. **WaveComputerAstra** shows addressed two-hop relay with 96/96 fidelity but requires supplied clocks and writer channels and loses to a scalar comparator (strong-world error 0.135 vs 0.023). **ApicalRuleReversalMachine** adds slow W/V weights and a fast surprise-driven context gate. **WaveCortex** combines this gate with two-form imagination: 32/32 links sort correctly, its gated chain drops to chance (0.50) under an apical cut while the fixed B→C link stays at 1.00, and the scalar copy is closer to ideal in 32/32 bodies (wave error 0.091 vs scalar 0.049). Its two-form slope is only 0.64.
+
+**SyntheticQualia** is an evolving README-format paper that organizes Q1–Q6 functional criteria measured across bounded toy systems; Q7 hidden-object persistence, Q8 common-cause multisensory binding and Q9 counterfactual sensing remain open. The paper does not add new experimental data or establish phenomenal consciousness. This curation inspected source reports; it did not rerun the experimental batches.
+
 ## 16 November 2026 — shared prediction, content and residue
 
 **[Live wall chapter](https://anttiluode.github.io/Genealogy/#nov16-qualia)** · [Curated pass](data/passes/november-16-qualia-shared-prediction.json) · [Source review](docs/reviews/2026-11-16-qualia.md).
