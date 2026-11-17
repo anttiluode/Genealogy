@@ -429,6 +429,17 @@
     "inventory_status": "unread"
   },
   {
+    "name": "ApicalRuleReversalMachine",
+    "url": "https://github.com/anttiluode/ApicalRuleReversalMachine",
+    "default_branch": "main",
+    "size": 1030,
+    "visibility": "public",
+    "description": "Opus 5.5",
+    "created_at": "2026-11-17T08:47:24Z",
+    "updated_at": "2026-11-17T09:04:40Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "ArborBody",
     "url": "https://github.com/anttiluode/ArborBody",
     "default_branch": "main",
@@ -6039,6 +6050,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "SyntheticQualia",
+    "url": "https://github.com/anttiluode/SyntheticQualia",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Opus - Sol. ",
+    "created_at": "2026-11-17T10:04:18Z",
+    "updated_at": "2026-11-17T10:04:20Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "T-800NNP",
     "url": "https://github.com/anttiluode/T-800NNP",
     "default_branch": "main",
@@ -6795,6 +6817,39 @@
     "description": "Opus 55",
     "created_at": "2026-10-27T08:30:32Z",
     "updated_at": "2026-11-02T08:45:10Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "WaveComputer",
+    "url": "https://github.com/anttiluode/WaveComputer",
+    "default_branch": "main",
+    "size": 647,
+    "visibility": "public",
+    "description": "Opus 5.5",
+    "created_at": "2026-11-17T07:01:24Z",
+    "updated_at": "2026-11-17T07:24:53Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "WaveComputerAstra",
+    "url": "https://github.com/anttiluode/WaveComputerAstra",
+    "default_branch": "main",
+    "size": 1434,
+    "visibility": "public",
+    "description": "Astra",
+    "created_at": "2026-11-17T07:46:43Z",
+    "updated_at": "2026-11-17T09:26:42Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "WaveCortex",
+    "url": "https://github.com/anttiluode/WaveCortex",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "WaveCortex",
+    "created_at": "2026-11-17T09:17:19Z",
+    "updated_at": "2026-11-17T09:26:27Z",
     "inventory_status": "reviewed"
   },
   {
