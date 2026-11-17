@@ -13160,13 +13160,13 @@
       {
         "name": "mean absolute lag (frames)",
         "treatment": 22.17,
-        "control": 22.0,
+        "control": 22,
         "comparison": "headless measurement from step 200 onward vs the repository's geometric prediction"
       },
       {
         "name": "lag-optimised coherence",
         "treatment": 0.98,
-        "control": 0.0,
+        "control": 0,
         "comparison": "best-lag coherence vs zero-lag coherence in the same run"
       }
     ],
@@ -13196,14 +13196,14 @@
     "metrics": [
       {
         "name": "max |coupler output difference|",
-        "treatment": 0.0,
-        "control": 0.0,
+        "treatment": 0,
+        "control": 0,
         "comparison": "feedback vs observer graph (treatment) and observer vs plain ecg.json (control) over 600 steps"
       },
       {
         "name": "memory_signal standard deviation",
         "treatment": 0.081,
-        "control": 0.0,
+        "control": 0,
         "comparison": "the memory scalar does vary, yet changes nothing downstream"
       }
     ],
@@ -13555,7 +13555,7 @@
       },
       {
         "name": "remote error, cut or disconnected",
-        "treatment": 1.0
+        "treatment": 1
       },
       {
         "name": "remote error, exact Bayes",
@@ -13697,5 +13697,317 @@
     "held_out": true,
     "external_data": false,
     "source": "https://github.com/anttiluode/QualiaAstra/blob/8e706edac9fbfcf77e024aa01efe2d6364069c9f/docs/GATE7_RESULTS.md"
+  },
+  {
+    "id": "nov17-wavecomputer-two-form",
+    "node": "WaveComputer",
+    "claim": "Two-form relay carries the body's learned belief through an imagined B to C while preserving screening and residue.",
+    "design": "Source-committed, pre-registered toy world and matched interventions as described in the source README and protocol",
+    "result": "supports",
+    "motifs": [
+      "nov17-twoform-contextual-imagination",
+      "nov17-functional-qualia-boundary"
+    ],
+    "sample": {
+      "unit": "source-reported body",
+      "count": 32
+    },
+    "metrics": [
+      {
+        "name": "correct-sign imagined-C bodies",
+        "treatment": 32
+      },
+      {
+        "name": "weak/strong reliability predicted-C ratio",
+        "treatment": 0.65,
+        "control": 0.57
+      },
+      {
+        "name": "regeneration weak/strong ratio",
+        "treatment": 0.93
+      }
+    ],
+    "controls": [
+      "Content-only and regenerated relays",
+      "Different A→B reliability worlds",
+      "Eyes-open contradictory B"
+    ],
+    "replication": "Source reported; not independently rerun by Genealogy.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Supplied event positions/times and calibration",
+      "0.97/1.02 self-link accuracy is a median, not body-wise exactness"
+    ],
+    "source": "https://github.com/anttiluode/WaveComputer/blob/09620f6c99a69747d72ab29126378b6602eb434d/README.md"
+  },
+  {
+    "id": "nov17-wavecomputer-noisy-b",
+    "node": "WaveComputer",
+    "claim": "Noisy contradictory B removes most of the C expectation while restoring a proportionate contribution from A.",
+    "design": "Source-committed, pre-registered toy world and matched interventions as described in the source README and protocol",
+    "result": "supports",
+    "motifs": [
+      "nov17-twoform-contextual-imagination"
+    ],
+    "sample": {
+      "unit": "source-reported body",
+      "count": 32
+    },
+    "metrics": [
+      {
+        "name": "noisy contradictory median C",
+        "treatment": 0.035,
+        "control": 0
+      },
+      {
+        "name": "clean contradictory median C",
+        "treatment": 0.61
+      },
+      {
+        "name": "A contribution under noisy B",
+        "treatment": 0.26,
+        "control": 0.33
+      }
+    ],
+    "controls": [
+      "Noisy vs clean B",
+      "Innovation body",
+      "Direct-path screening"
+    ],
+    "replication": "Source reported; not independently rerun by Genealogy.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Binary ±1 world has a linear exact posterior",
+      "No arbitrary continuous sensory input"
+    ],
+    "source": "https://github.com/anttiluode/WaveComputer/blob/09620f6c99a69747d72ab29126378b6602eb434d/README.md"
+  },
+  {
+    "id": "nov17-astra-addressed-relay",
+    "node": "WaveComputerAstra",
+    "claim": "With supplied stage addresses and clocks, two imagined hops preserve each body's learned amplitudes and support causal cuts.",
+    "design": "Source-committed, pre-registered toy world and matched interventions as described in the source README and protocol",
+    "result": "supports",
+    "motifs": [
+      "nov17-twoform-contextual-imagination",
+      "nov17-linear-wave-scalar-baseline"
+    ],
+    "sample": {
+      "unit": "source-reported body",
+      "count": 96
+    },
+    "metrics": [
+      {
+        "name": "amplitude-faithful bodies",
+        "treatment": 96
+      },
+      {
+        "name": "weaken-first-link D ratio",
+        "treatment": 0.57,
+        "control": 0.571
+      },
+      {
+        "name": "weaken-middle-link D ratio",
+        "treatment": 0.541,
+        "control": 0.571
+      }
+    ],
+    "controls": [
+      "Cut B",
+      "Cut C",
+      "Contradictory B or C",
+      "Unaddressed mixed-field relays"
+    ],
+    "replication": "Source reported; not independently rerun by Genealogy.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Writer channels and timing supplied",
+      "Additional training-only gain fit"
+    ],
+    "source": "https://github.com/anttiluode/WaveComputerAstra/blob/66f201909971775693c2148d9f9db130a9c1cb2a/README.md"
+  },
+  {
+    "id": "nov17-astra-accuracy-negative",
+    "node": "WaveComputerAstra",
+    "claim": "Wave computation matches or beats a scalar predictor in the strong-link A→B→C→D world.",
+    "design": "Source-committed, pre-registered toy world and matched interventions as described in the source README and protocol",
+    "result": "contradicts",
+    "motifs": [
+      "nov17-linear-wave-scalar-baseline"
+    ],
+    "sample": {
+      "unit": "source-reported body",
+      "count": 32
+    },
+    "metrics": [
+      {
+        "name": "wave strong-world median absolute error",
+        "treatment": 0.135,
+        "control": 0.023
+      },
+      {
+        "name": "wave D vs ideal D",
+        "treatment": 0.478,
+        "control": 0.343
+      }
+    ],
+    "controls": [
+      "Scalar regression baseline",
+      "Strong-world registered amplitude and waveform gates",
+      "Mixed-field cross-talk"
+    ],
+    "replication": "Source reported; not independently rerun by Genealogy.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "A failure on these synthetic discrete chains, not proof waves cannot compute",
+      "Strong-world accuracy and waveform criteria fail"
+    ],
+    "source": "https://github.com/anttiluode/WaveComputerAstra/blob/66f201909971775693c2148d9f9db130a9c1cb2a/README.md"
+  },
+  {
+    "id": "nov17-apical-rule-reversal",
+    "node": "ApicalRuleReversalMachine",
+    "claim": "Slow W/V and a fast surprise-driven apical context infer a hidden rule with frozen weights; cut affects reversing cues selectively.",
+    "design": "Source-committed, pre-registered toy world and matched interventions as described in the source README and protocol",
+    "result": "supports",
+    "motifs": [
+      "nov17-twoform-contextual-imagination"
+    ],
+    "sample": {
+      "unit": "source-reported body",
+      "count": 32
+    },
+    "metrics": [
+      {
+        "name": "W/V sorting success bodies",
+        "treatment": 31
+      },
+      {
+        "name": "cut reversing vs fixed cue accuracy",
+        "treatment": 0.49,
+        "control": 1
+      },
+      {
+        "name": "post-switch transfer vs plastic learner",
+        "treatment": 0.92,
+        "control": 0.08
+      },
+      {
+        "name": "wave ideal error vs scalar",
+        "treatment": 0.105,
+        "control": 0.069
+      }
+    ],
+    "controls": [
+      "Apical g clamp",
+      "Fixed and reversing cues",
+      "Per-cue plastic learner",
+      "Scalar no-wave version"
+    ],
+    "replication": "Source reported; not independently rerun by Genealogy.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "One shared g and starting sign provided",
+      "Single binary rule; synthetic body, not mouse neurons"
+    ],
+    "source": "https://github.com/anttiluode/ApicalRuleReversalMachine/blob/2cf9f59caa982ce7b1c4581e2415daee6da5fd8d/README.md"
+  },
+  {
+    "id": "nov17-wavecortex-gated-imagination",
+    "node": "WaveCortex",
+    "claim": "An uncued hidden rule inferred from surprise propagates through imagined B to C in the same trained chain.",
+    "design": "Source-committed, pre-registered toy world and matched interventions as described in the source README and protocol",
+    "result": "supports",
+    "motifs": [
+      "nov17-twoform-contextual-imagination",
+      "nov17-functional-qualia-boundary"
+    ],
+    "sample": {
+      "unit": "source-reported body",
+      "count": 32
+    },
+    "metrics": [
+      {
+        "name": "W/V link-sorting bodies",
+        "treatment": 32
+      },
+      {
+        "name": "eyes-closed C accuracy",
+        "treatment": 0.87,
+        "control": 0.94
+      },
+      {
+        "name": "post-switch transfer vs plastic",
+        "treatment": 0.79,
+        "control": 0.08
+      },
+      {
+        "name": "apical cut chain vs fixed link",
+        "treatment": 0.5,
+        "control": 1
+      },
+      {
+        "name": "belief-amplitude correlation",
+        "treatment": 0.79
+      }
+    ],
+    "controls": [
+      "g=0 apical cut",
+      "Content/regeneration relays",
+      "Plastic learner",
+      "Scalar copy"
+    ],
+    "replication": "Source reported; not independently rerun by Genealogy.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "One rule, given sites and calibrated fade clocks",
+      "Slope against ideal only 0.64",
+      "No Q7–Q9 or phenomenal tests"
+    ],
+    "source": "https://github.com/anttiluode/WaveCortex/blob/89c7e592ba1222a4dce5b288571d9733cd4db726/README.md"
+  },
+  {
+    "id": "nov17-wavecortex-scalar-negative",
+    "node": "WaveCortex",
+    "claim": "The wave-based version is more accurate than a no-wave scalar copy of the same context-gated imagination algorithm.",
+    "design": "Source-committed, pre-registered toy world and matched interventions as described in the source README and protocol",
+    "result": "contradicts",
+    "motifs": [
+      "nov17-linear-wave-scalar-baseline"
+    ],
+    "sample": {
+      "unit": "source-reported body",
+      "count": 32
+    },
+    "metrics": [
+      {
+        "name": "wave ideal error vs scalar error",
+        "treatment": 0.091,
+        "control": 0.049
+      },
+      {
+        "name": "scalar better bodies",
+        "treatment": 32
+      }
+    ],
+    "controls": [
+      "Matched scalar algorithm",
+      "Same hidden-rule test trials",
+      "Exact Bayesian ideal"
+    ],
+    "replication": "Source reported; not independently rerun by Genealogy.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Specific point-to-point symbolic chain only",
+      "Does not test a continuous spatial input"
+    ],
+    "source": "https://github.com/anttiluode/WaveCortex/blob/89c7e592ba1222a4dce5b288571d9733cd4db726/README.md"
   }
 ]
