@@ -1,0 +1,251 @@
+{
+  "id": "november-17-synthetic-qualia-wave-cortex",
+  "title": "November 17 — toward Synthetic Qualia",
+  "reviewed_at": "2026-11-17",
+  "order": 198,
+  "summary": "Five newly reviewed Nov 17 repositories (census 648→653), connected to the already-curated Nov 16 Qualia chapter. Distinguishes inherited two-form circuit, addressed two-hop relay, apical rule reversal, fusion in WaveCortex, and paper-only SyntheticQualia. Sources report positive preregistered gates and negative scalar comparisons; not independently rerun here. No evidence for phenomenal experience.",
+  "nodes": [
+    {
+      "id": "WaveComputer",
+      "url": "https://github.com/anttiluode/WaveComputer",
+      "family": "perception",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Unifies content, residue, latched clocks and the two-form imagined relay in one learned A→B→C wave body.",
+      "survived": "Seven pre-registered checks pass in 32-body matched conditions. Imagined C sign is right in 32/32. Weaker A→B gives ratio 0.65 (Bayes 0.57; certain regen 0.93). Noisy-B contradiction gives C 0.035. A kernel built from the linear grid reportedly runs 55× faster and retrains 48 old bodies to 8e−8.",
+      "killed": "Event locations, timing, calibration and perception/imagination mode are supplied. Eyes-closed/own-link ratios 0.97 and 1.02 are medians, not zero per-body error; learned B→C is only 0.86–0.90 of Bayes. No wave accuracy advantage or subjective-experience test.",
+      "evidence": "https://github.com/anttiluode/WaveComputer/blob/09620f6c99a69747d72ab29126378b6602eb434d/README.md",
+      "tags": [
+        "2026-11-17",
+        "two-form",
+        "imagined-chain",
+        "screening",
+        "impulse-response"
+      ],
+      "era": "November 17: from shared prediction to synthetic qualia",
+      "era_order": 198
+    },
+    {
+      "id": "WaveComputerAstra",
+      "url": "https://github.com/anttiluode/WaveComputerAstra",
+      "family": "perception",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Tests a four-event wave body, A→imagined B→imagined C→D, with explicit writer addressing, clocks and amplitude fitting.",
+      "survived": "Addressed design preserves measured learned-link amplitudes in 96/96 bodies; both relay cuts abolish D, contradictory real evidence reverses it, and weakening either link reduces D by factors 0.570 and 0.541 (Bayes 0.571).",
+      "killed": "Writer channels, event slots and a second training-only gain fit are supplied. Strong-link world fails amplitude and full-waveform criteria: 0.135 absolute error vs 0.023 scalar; mixed field shows 21–42% cross-talk error. It does not infer addresses itself.",
+      "evidence": "https://github.com/anttiluode/WaveComputerAstra/blob/66f201909971775693c2148d9f9db130a9c1cb2a/README.md",
+      "tags": [
+        "2026-11-17",
+        "two-hop",
+        "addressing",
+        "negative-results",
+        "scalar-baseline"
+      ],
+      "era": "November 17: from shared prediction to synthetic qualia",
+      "era_order": 198
+    },
+    {
+      "id": "ApicalRuleReversalMachine",
+      "url": "https://github.com/anttiluode/ApicalRuleReversalMachine",
+      "family": "perception",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Adds a multiplicative apical W+gV rule gate to WaveComputer's verified fade-clock wave machine.",
+      "survived": "Five registered tests pass in 32 bodies: stable F and reversing R cues sort into W and V (31/32); apical cut leaves fixed F at 1.00, reversing cues at 0.49; inferred-rule accuracy 0.86; first-unseen-cue transfer 0.92 vs plastic 0.08.",
+      "killed": "A single shared g, its starting sign, cue labels and rates are supplied. Only one binary rule reversal is tested; scalar-copy error 0.069 beats wave 0.105. Cortical lesion comparison is qualitative, not a claim of biological identity.",
+      "evidence": "https://github.com/anttiluode/ApicalRuleReversalMachine/blob/2cf9f59caa982ce7b1c4581e2415daee6da5fd8d/README.md",
+      "tags": [
+        "2026-11-17",
+        "apical-gating",
+        "hidden-rule",
+        "causal-cut",
+        "scalar-baseline"
+      ],
+      "era": "November 17: from shared prediction to synthetic qualia",
+      "era_order": 198
+    },
+    {
+      "id": "WaveCortex",
+      "url": "https://github.com/anttiluode/WaveCortex",
+      "family": "perception",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Fuses WaveComputer's two-form imagined B relay with ApicalRuleReversalMachine's fast surprise-driven context g along the same A→B→C chain.",
+      "survived": "All six pre-registered checks pass with inherited constants and no retuning across 32 bodies: links sort gated into V vs fixed into W in 32/32; imagined C accuracy 0.87; transfer 0.79 vs plastic 0.08; apical cut makes the imagined chain 0.50 but preserves fixed real-B link at 1.00; belief-amplitude correlation 0.79.",
+      "killed": "Two-form slope against ideal is 0.64. Scalar model error 0.049 beats wave 0.091 in 32/32. One shared g, clock calibrations, geometry and event slots are given; no object permanence or consciousness established.",
+      "evidence": "https://github.com/anttiluode/WaveCortex/blob/89c7e592ba1222a4dce5b288571d9733cd4db726/README.md",
+      "tags": [
+        "2026-11-17",
+        "rule-gated-imagination",
+        "two-form",
+        "double-dissociation",
+        "scalar-baseline"
+      ],
+      "era": "November 17: from shared prediction to synthetic qualia",
+      "era_order": 198
+    },
+    {
+      "id": "SyntheticQualia",
+      "url": "https://github.com/anttiluode/SyntheticQualia",
+      "family": "perception",
+      "status": "ledger",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "README-format paper defines a functional synthetic quale, distinguishing it from phenomenal qualia, and synthesizes the preceding predictive experiments.",
+      "survived": "Organizes small-toy findings as six tested functional properties Q1–Q6: shared prediction, hidden causes, perception/imagination reuse, graded certainty, state revision under frozen weights and causal meaning. Identifies Q7 hidden-object persistence, Q8 multisensory binding and Q9 counterfactual sensing as untested.",
+      "killed": "A research synthesis, not an additional trained body or independent replication. Q1–Q6 occur across different toy settings, not one persistent multimodal world. No assay establishes subjective experience; the label is functional, not a consciousness claim.",
+      "evidence": "https://github.com/anttiluode/SyntheticQualia/blob/549e7d140cbf7d504525111df9c734e0eaf51b29/README.md",
+      "tags": [
+        "2026-11-17",
+        "functional-qualia",
+        "paper",
+        "synthesis",
+        "open-questions"
+      ],
+      "era": "November 17: from shared prediction to synthetic qualia",
+      "era_order": 198
+    }
+  ],
+  "edges": [
+    {
+      "source": "QualiaClaude",
+      "target": "WaveComputer",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Explicit reuse of QualiaClaude relay/ geometry, 72 fade clocks, wave field and residual branch learning.",
+      "evidence": "https://github.com/anttiluode/WaveComputer/blob/09620f6c99a69747d72ab29126378b6602eb434d/README.md"
+    },
+    {
+      "source": "QualeX",
+      "target": "WaveComputer",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "QualeX proposed a two-form unit; WaveComputer implements and tests that mechanism, not a code fork of the README.",
+      "evidence": "https://github.com/anttiluode/WaveComputer/blob/09620f6c99a69747d72ab29126378b6602eb434d/README.md"
+    },
+    {
+      "source": "WaveComputer",
+      "target": "WaveComputerAstra",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Astra explicitly builds on WaveComputer's wave physics and fade-clock node banks.",
+      "evidence": "https://github.com/anttiluode/WaveComputerAstra/blob/66f201909971775693c2148d9f9db130a9c1cb2a/README.md"
+    },
+    {
+      "source": "WaveComputer",
+      "target": "ApicalRuleReversalMachine",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Rule-reversal body reuses WaveComputer's impulse-response field, clocks and damping tips.",
+      "evidence": "https://github.com/anttiluode/ApicalRuleReversalMachine/blob/2cf9f59caa982ce7b1c4581e2415daee6da5fd8d/README.md"
+    },
+    {
+      "source": "WaveComputer",
+      "target": "WaveCortex",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "WaveCortex retains WaveComputer's field, units, local residue and two-form relay.",
+      "evidence": "https://github.com/anttiluode/WaveCortex/blob/89c7e592ba1222a4dce5b288571d9733cd4db726/README.md"
+    },
+    {
+      "source": "ApicalRuleReversalMachine",
+      "target": "WaveCortex",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "WaveCortex imports the W/V branch weights, shared g and three-factor rule update.",
+      "evidence": "https://github.com/anttiluode/WaveCortex/blob/89c7e592ba1222a4dce5b288571d9733cd4db726/README.md"
+    },
+    {
+      "source": "WaveComputerAstra",
+      "target": "WaveCortex",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Astra supplies an explicit scalar baseline and causal-cut discipline; addressed two-hop code is not inherited.",
+      "evidence": "https://github.com/anttiluode/WaveCortex/blob/89c7e592ba1222a4dce5b288571d9733cd4db726/README.md"
+    },
+    {
+      "source": "QualeX",
+      "target": "SyntheticQualia",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "SyntheticQualia synthesizes QualeX as prior research, not as an independent experimental confirmation.",
+      "evidence": "https://github.com/anttiluode/SyntheticQualia/blob/549e7d140cbf7d504525111df9c734e0eaf51b29/README.md"
+    },
+    {
+      "source": "WaveComputer",
+      "target": "SyntheticQualia",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "SyntheticQualia synthesizes WaveComputer as prior research, not as an independent experimental confirmation.",
+      "evidence": "https://github.com/anttiluode/SyntheticQualia/blob/549e7d140cbf7d504525111df9c734e0eaf51b29/README.md"
+    },
+    {
+      "source": "WaveComputerAstra",
+      "target": "SyntheticQualia",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "SyntheticQualia synthesizes WaveComputerAstra as prior research, not as an independent experimental confirmation.",
+      "evidence": "https://github.com/anttiluode/SyntheticQualia/blob/549e7d140cbf7d504525111df9c734e0eaf51b29/README.md"
+    },
+    {
+      "source": "ApicalRuleReversalMachine",
+      "target": "SyntheticQualia",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "SyntheticQualia synthesizes ApicalRuleReversalMachine as prior research, not as an independent experimental confirmation.",
+      "evidence": "https://github.com/anttiluode/SyntheticQualia/blob/549e7d140cbf7d504525111df9c734e0eaf51b29/README.md"
+    },
+    {
+      "source": "WaveCortex",
+      "target": "SyntheticQualia",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "SyntheticQualia synthesizes WaveCortex as prior research, not as an independent experimental confirmation.",
+      "evidence": "https://github.com/anttiluode/SyntheticQualia/blob/549e7d140cbf7d504525111df9c734e0eaf51b29/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov17-twoform-contextual-imagination",
+      "title": "Context-sensitive imagination carries content and belief",
+      "description": "Two-form relay, slow W/V weights and fast inferred g combine to pass an imagined event through a context-dependent chain, with residual-based learning and graded confidence but imperfect calibration.",
+      "nodes": [
+        "QualeX",
+        "WaveComputer",
+        "WaveComputerAstra",
+        "ApicalRuleReversalMachine",
+        "WaveCortex",
+        "SyntheticQualia"
+      ]
+    },
+    {
+      "id": "nov17-linear-wave-scalar-baseline",
+      "title": "Linear wave transport costs accuracy on these symbolic chains",
+      "description": "An impulse-response Green's function is an exact representation of the linear wave carrier, but scalar copies of the task algorithm beat the wave bodies. This is a task-specific negative, not an impossibility result for spatial wave computation.",
+      "nodes": [
+        "WaveComputer",
+        "WaveComputerAstra",
+        "ApicalRuleReversalMachine",
+        "WaveCortex",
+        "SyntheticQualia"
+      ]
+    },
+    {
+      "id": "nov17-functional-qualia-boundary",
+      "title": "Functional shared prediction is testable; felt experience is not shown",
+      "description": "The paper organizes toy tests of Q1–Q6 while leaving Q7 hidden-object persistence, Q8 causal multisensory binding and Q9 counterfactual sensing open. Its functional definition is not proof of phenomenal qualia.",
+      "nodes": [
+        "QualiaClaude",
+        "QualeX",
+        "WaveComputer",
+        "WaveCortex",
+        "SyntheticQualia"
+      ]
+    }
+  ]
+}
