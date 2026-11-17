@@ -29,6 +29,14 @@ class DistributedWorldAndJspaceTests(unittest.TestCase):
         self.assertIn("hand-coded", nodes["TuftSheetSol"]["killed"])
         self.assertIn("No real pretrained Qwen", nodes["Qwenimagination"]["killed"])
 
+    def test_evidence_and_open_questions(self):
+        evidence = {e["id"]: e for e in json.loads((ROOT / "data/evidence.json").read_text(encoding="utf-8"))}
+        self.assertEqual("contradicts", evidence["nov17-tuftsheet-boundary-negative"]["result"])
+        self.assertEqual("inconclusive", evidence["nov17-qwen-jspace-pending"]["result"])
+        qs = {q["id"]: q for q in json.loads((ROOT / "data/questions.json").read_text(encoding="utf-8"))}
+        self.assertEqual("open", qs["nov17-tuftsheet-boundary-learning"]["state"])
+        self.assertEqual("open", qs["nov17-qwen-persistent-derived-thought"]["state"])
+
     def test_site_and_docs(self):
         html = (ROOT / "index.html").read_text(encoding="utf-8")
         self.assertIn('id="nov17-distributed-imagination"', html)

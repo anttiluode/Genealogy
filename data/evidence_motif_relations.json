@@ -877,5 +877,17 @@
   },
   "nov17-wavecortex-scalar-negative": {
     "nov17-linear-wave-scalar-baseline": "supports"
+  },
+  "nov17-tuftsheet-two-contexts": {
+    "nov17-local-context-field": "supports"
+  },
+  "nov17-tuftsheet-boundary-negative": {
+    "nov17-local-context-field": "limits"
+  },
+  "nov17-tuftsheetsol-readout-separation": {
+    "nov17-world-vs-medium": "supports"
+  },
+  "nov17-qwen-jspace-pending": {
+    "nov17-offtoken-workspace": "documents"
   }
 }

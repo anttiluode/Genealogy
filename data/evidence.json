@@ -14009,5 +14009,180 @@
       "Does not test a continuous spatial input"
     ],
     "source": "https://github.com/anttiluode/WaveCortex/blob/89c7e592ba1222a4dce5b288571d9733cd4db726/README.md"
+  },
+  {
+    "id": "nov17-tuftsheet-two-contexts",
+    "node": "TuftSheet",
+    "claim": "A spatially diffusive local context field holds two independently switching hidden sign rules more accurately than one global g.",
+    "design": "Source-reported 24-column preregistered synthetic world, six development seeds, 32 held confirmation bodies and matched global/local/oracle/ideal controls.",
+    "result": "supports",
+    "motifs": [
+      "nov17-local-context-field"
+    ],
+    "sample": {
+      "unit": "source-reported independent body",
+      "count": 32
+    },
+    "metrics": [
+      {
+        "name": "median sign accuracy uniform vs global",
+        "treatment": 0.8,
+        "control": 0.69
+      },
+      {
+        "name": "post-switch near transfer uniform vs unlinked",
+        "treatment": 0.81,
+        "control": 0.4
+      },
+      {
+        "name": "unchanged-region stability uniform vs global",
+        "treatment": 0.94,
+        "control": 0.73
+      }
+    ],
+    "controls": [
+      "One global shared apical state",
+      "No links between columns",
+      "Oracle known boundary",
+      "Exact Bayesian filter",
+      "g=0 tuft cut"
+    ],
+    "replication": "Source-reported preregistered 32-body confirmation; not independently rerun by Genealogy.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Two supplied regions and their column adjacency",
+      "One cue per trial and simple synthetic binary rules",
+      "Diffusive sheet is not a biological cortical travelling wave"
+    ],
+    "source": "https://github.com/anttiluode/TuftSheet/blob/ed1790e79b97e98eaa06ea64370db157495bf152/README.md"
+  },
+  {
+    "id": "nov17-tuftsheet-boundary-negative",
+    "node": "TuftSheet",
+    "claim": "The specified local neighbor-ping learning rule autonomously identifies the correct boundary between hidden contexts.",
+    "design": "Source-reported, pre-registered TuftSheet T6 in 32 held toy bodies, with uniform and oracle-link controls.",
+    "result": "contradicts",
+    "motifs": [
+      "nov17-local-context-field"
+    ],
+    "sample": {
+      "unit": "source-reported independent body",
+      "count": 32
+    },
+    "metrics": [
+      {
+        "name": "boundary link below typical links, bodies vs threshold",
+        "treatment": 22,
+        "control": 24
+      },
+      {
+        "name": "true boundary weakest link, bodies",
+        "treatment": 3
+      },
+      {
+        "name": "learned vs uniform sign accuracy",
+        "treatment": 0.76,
+        "control": 0.8
+      }
+    ],
+    "controls": [
+      "Uniform link conductance",
+      "Oracle true-boundary link cut",
+      "Separate development versus held seeds"
+    ],
+    "replication": "Source-reported held confirmation; not independently rerun.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Specific rare-ping agreement rule fails; no general impossibility claim about discovering boundaries"
+    ],
+    "source": "https://github.com/anttiluode/TuftSheet/blob/ed1790e79b97e98eaa06ea64370db157495bf152/README.md"
+  },
+  {
+    "id": "nov17-tuftsheetsol-readout-separation",
+    "node": "TuftSheetSol",
+    "claim": "An independently excitable medium can transiently change a prescribed perceptual readout without modifying a stored distributed context.",
+    "design": "Source-reported 32 held training seeds, 650-tick learning then sensory blackout; coupled/seeded, uncoupled/seeded and coupled/sham controls.",
+    "result": "supports",
+    "motifs": [
+      "nov17-world-vs-medium"
+    ],
+    "sample": {
+      "unit": "source-reported independent learning seed",
+      "count": 32
+    },
+    "metrics": [
+      {
+        "name": "numerical gates passed per held seed",
+        "treatment": 6,
+        "control": 6
+      },
+      {
+        "name": "coupled readout excess MSE at +50 ticks",
+        "treatment": 0.3351
+      },
+      {
+        "name": "maximum active-front radius, grid cells",
+        "treatment": 22.36
+      },
+      {
+        "name": "excess MSE versus sham at +160",
+        "treatment": 0.000105
+      }
+    ],
+    "controls": [
+      "Seeded with coupling removed",
+      "Unseeded sham",
+      "Same initial context and sensory blackout",
+      "Identical deterministic wave physics across seeds"
+    ],
+    "replication": "Source-reported CI workflow and reproducible JS; not independently rerun by Genealogy.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "The readout impairment is hand-coded",
+      "The storage equality is imposed architecturally by blackout/isolation",
+      "Weak region boundary is supplied",
+      "Not a mechanistic model of migraine aura"
+    ],
+    "source": "https://github.com/anttiluode/TuftSheetSol/blob/5bae4c4810ef5237cb17377e0fff437da2a6546b/README.md"
+  },
+  {
+    "id": "nov17-qwen-jspace-pending",
+    "node": "Qwenimagination",
+    "claim": "A real frozen Qwen retains and recalls a derived concept using an external J-space loop across independent token contexts.",
+    "design": "Pre-registered planned Qwen2.5-1.5B-Instruct trial with G0–G3, strict answer/cue scoring, held test items, matched-KL damage budgets and feedback ablations; random-weight plumbing only.",
+    "result": "inconclusive",
+    "motifs": [
+      "nov17-offtoken-workspace"
+    ],
+    "metrics": [
+      {
+        "name": "real pretrained Qwen trials reported",
+        "treatment": 0
+      },
+      {
+        "name": "random-weight model derived-answer gate passed",
+        "treatment": 0
+      }
+    ],
+    "controls": [
+      "No-state route",
+      "Explicit answer oracle",
+      "Cue-only write",
+      "In-context ceiling",
+      "Open and closed at matched KL",
+      "Zero-feedback equality"
+    ],
+    "replication": "Source committed protocol and random-weight plumbing; no pretrained model evaluation to replicate.",
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "A frozen real model has not run",
+      "Concept set and hold instruction are hand-selected",
+      "Oracle steering does not show emergent thought or consciousness"
+    ],
+    "source": "https://github.com/anttiluode/Qwenimagination/blob/f18c0bb952faa7c0f654f290ce8230005b13180b/README.md"
   }
 ]

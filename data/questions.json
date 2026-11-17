@@ -2026,5 +2026,84 @@
       "A future experiment derived from SyntheticQualia; not implemented in this curation.",
       "No current experiment measures what it feels like to be the system."
     ]
+  },
+  {
+    "id": "nov17-tuftsheet-boundary-learning",
+    "title": "Can distributed context fields learn their own persistent rule boundaries without an oracle split?",
+    "state": "open",
+    "motifs": [
+      "nov17-local-context-field"
+    ],
+    "evidence": [
+      "nov17-tuftsheet-two-contexts",
+      "nov17-tuftsheet-boundary-negative"
+    ],
+    "competing_explanations": [
+      "A slow field-aware mismatch trace can separate stable spatial boundaries from temporary rule reversals using local information alone.",
+      "Rare cue sampling and fluctuating hidden rules may make a truly local conductance estimate too noisy without extra structural knowledge."
+    ],
+    "known": [
+      "The uniform sheet holds two independently changing hidden contexts and beats a global-context control.",
+      "The specified local neighbor-ping boundary learner fails T6 (22/32 versus 24 required) and is less accurate than uniform links.",
+      "TuftSheetSol's weak boundary is supplied, not learned."
+    ],
+    "missing_discriminator": "Preregister a local field-consistency plasticity rule and test it on unseen independent and moving-boundary worlds against uniform, shuffled and oracle controls.",
+    "candidate_experiment": {
+      "design": "Learn conductances from persistent neighboring field disagreements rather than isolated pings, then freeze rates before a held 2D and moving-region batch; score actual boundary placement and predictive benefit at matched evidence budgets.",
+      "cost": "CPU-friendly small simulation; exact test seeds and thresholds must be registered before tuning",
+      "outcomes": [
+        {
+          "if": "A local learner consistently places low links at true interfaces and improves held-out prediction over uniform",
+          "then": "Support a narrow self-discovered segmentation mechanism."
+        },
+        {
+          "if": "The links stay noisy or only oracle boundaries improve predictions",
+          "then": "Preserve the limitation: diffusion shares context but cannot yet autonomously segment it."
+        }
+      ]
+    },
+    "notes": [
+      "TuftSheet's five successes do not cancel T6's failure.",
+      "No claim about anatomical cortical layer-1 segmentation."
+    ]
+  },
+  {
+    "id": "nov17-qwen-persistent-derived-thought",
+    "title": "Can a frozen language model carry a derived, never-tokenized answer across conversations without cue leakage?",
+    "state": "open",
+    "motifs": [
+      "nov17-offtoken-workspace"
+    ],
+    "evidence": [
+      "nov17-qwen-jspace-pending"
+    ],
+    "competing_explanations": [
+      "The model internally encodes a derived answer in a recoverable representation, and an external loop transports it across token-disjoint contexts.",
+      "The extracted concept only echoes the prompt cue or supports generic output steering, not a sustained internally derived idea; open-loop injection may match feedback."
+    ],
+    "known": [
+      "The lens/write and context isolation pipeline was tested on a random-weight model shape.",
+      "No pretrained Qwen2.5-1.5B-Instruct study has run in the source.",
+      "The protocol pre-registers G0 gating and expects that closed-loop superiority may fail."
+    ],
+    "missing_discriminator": "Execute the frozen protocol on pretrained weights, preserve disjoint hold/recall contexts, score answers against cue competitors, and compare all routes at matched next-token distribution distortion.",
+    "candidate_experiment": {
+      "design": "Run the committed G0a/G0b and G1–G3 gates once on Qwen2.5-1.5B-Instruct, separate dev selection and held-out items, and publish answer, cue and oracle baselines with matched-KL budgets before any tuning.",
+      "cost": "One local 12 GB GPU and bounded checkpoint evaluation; record actual runtime and settings",
+      "outcomes": [
+        {
+          "if": "Derived G0 passes and held J-state recall exceeds both no-state and cue at matched damage",
+          "then": "Support off-token transport for the specified prompted one-token concepts; evaluate feedback advantage separately."
+        },
+        {
+          "if": "G0 fails or cue/oracle explains the apparent recall",
+          "then": "Do not claim persistent hidden thought; retain negative and test alternate models or lenses only under new preregistrations."
+        }
+      ]
+    },
+    "notes": [
+      "Instructed holding is not spontaneous imagination.",
+      "No subjective experience or human-like consciousness conclusion follows."
+    ]
   }
 ]
