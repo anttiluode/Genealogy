@@ -11,7 +11,7 @@ class DistributedWorldAndJspaceTests(unittest.TestCase):
     def test_inventory_schema_and_pass(self):
         atlas = load_atlas(ROOT)
         self.assertEqual([], validate_atlas(atlas))
-        self.assertEqual(656, len(atlas["repos"]))
+        self.assertEqual(657, len(atlas["repos"]))
         for name in NAMES:
             self.assertEqual(1, sum(r["name"] == name and r["inventory_status"] == "reviewed" for r in atlas["repos"]))
             self.assertEqual(1, sum(n["id"] == name for n in atlas["nodes"]))
@@ -27,12 +27,12 @@ class DistributedWorldAndJspaceTests(unittest.TestCase):
         nodes = {x["id"]:x for x in p["nodes"]}
         self.assertIn("22/32", nodes["TuftSheet"]["killed"])
         self.assertIn("hand-coded", nodes["TuftSheetSol"]["killed"])
-        self.assertIn("No real pretrained Qwen", nodes["Qwenimagination"]["killed"])
+        self.assertIn("V5 derived", nodes["Qwenimagination"]["killed"])
 
     def test_evidence_and_open_questions(self):
         evidence = {e["id"]: e for e in json.loads((ROOT / "data/evidence.json").read_text(encoding="utf-8"))}
         self.assertEqual("contradicts", evidence["nov17-tuftsheet-boundary-negative"]["result"])
-        self.assertEqual("inconclusive", evidence["nov17-qwen-jspace-pending"]["result"])
+        self.assertEqual("supports", evidence["nov17-qwen-jspace-pending"]["result"])
         qs = {q["id"]: q for q in json.loads((ROOT / "data/questions.json").read_text(encoding="utf-8"))}
         self.assertEqual("open", qs["nov17-tuftsheet-boundary-learning"]["state"])
         self.assertEqual("open", qs["nov17-qwen-persistent-derived-thought"]["state"])
