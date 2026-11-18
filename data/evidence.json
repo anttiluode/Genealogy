@@ -14151,38 +14151,198 @@
   {
     "id": "nov17-qwen-jspace-pending",
     "node": "Qwenimagination",
-    "claim": "A real frozen Qwen retains and recalls a derived concept using an external J-space loop across independent token contexts.",
-    "design": "Pre-registered planned Qwen2.5-1.5B-Instruct trial with G0–G3, strict answer/cue scoring, held test items, matched-KL damage budgets and feedback ablations; random-weight plumbing only.",
-    "result": "inconclusive",
+    "claim": "Frozen Qwen2.5-1.5B-Instruct shows item-specific externally carried derived-concept information at answer-time in held-out forced-choice tasks.",
+    "design": "V2 held-out 60-item Qwen test with concept read at layer 26, stored eight-coordinate residue above usual hold and layer-22 question-time write; V3 50 fresh items replicate with frozen default selection.",
+    "result": "supports",
     "motifs": [
       "nov17-offtoken-workspace"
     ],
     "metrics": [
       {
-        "name": "real pretrained Qwen trials reported",
-        "treatment": 0
+        "name": "V2 derived exact",
+        "value": 18,
+        "denominator": 60
       },
       {
-        "name": "random-weight model derived-answer gate passed",
-        "treatment": 0
+        "name": "V2 no-write",
+        "value": 1,
+        "denominator": 60
+      },
+      {
+        "name": "V2 shuffled",
+        "value": 0,
+        "denominator": 60
+      },
+      {
+        "name": "V3 derived exact",
+        "value": 11,
+        "denominator": 50
+      },
+      {
+        "name": "V3 no-write",
+        "value": 1,
+        "denominator": 50
+      },
+      {
+        "name": "V2 direct bag-reader",
+        "value": 29,
+        "denominator": 60
+      },
+      {
+        "name": "V3 direct bag-reader",
+        "value": 25,
+        "denominator": 50
       }
     ],
     "controls": [
-      "No-state route",
-      "Explicit answer oracle",
-      "Cue-only write",
-      "In-context ceiling",
-      "Open and closed at matched KL",
-      "Zero-feedback equality"
+      "No injection",
+      "Cue only",
+      "Shuffled other item",
+      "Known-answer oracle",
+      "In-context baseline",
+      "Fixed concept vocabulary"
     ],
-    "replication": "Source committed protocol and random-weight plumbing; no pretrained model evaluation to replicate.",
-    "held_out": false,
+    "replication": "Source-reported separate 60- and 50-item held-out sets; trained-model receipt not independently rerun in Genealogy",
+    "held_out": true,
     "external_data": false,
     "limitations": [
-      "A frozen real model has not run",
-      "Concept set and hold instruction are hand-selected",
-      "Oracle steering does not show emergent thought or consciousness"
+      "External Python keeps and selects the concept bag",
+      "Answer-time writing is not durable memory",
+      "Forced-choice words from a curated candidate vocabulary",
+      "In-context comparison confidence interval overlaps zero",
+      "No autonomous imagination or native state binding"
     ],
-    "source": "https://github.com/anttiluode/Qwenimagination/blob/f18c0bb952faa7c0f654f290ce8230005b13180b/README.md"
+    "source": "https://github.com/anttiluode/Qwenimagination/blob/main/results/Qwen_Qwen2.5-1.5B-Instruct/confirm_v2/summary.txt",
+    "sample": {
+      "unit": "V2 fresh one-token item",
+      "count": 60
+    }
+  },
+  {
+    "id": "nov18-qwen-v5-no-delayed-recall",
+    "node": "Qwenimagination",
+    "claim": "One-shot pre-question activation writes do not enable exact delayed retrieval by the tested frozen model.",
+    "design": "29 paired Alpha/Beta memory trials with crossed label and item orders; read 232 queries per arm after writer turned off.",
+    "result": "contradicts",
+    "motifs": [
+      "nov17-offtoken-workspace"
+    ],
+    "sample": {
+      "unit": "query per arm",
+      "count": 232
+    },
+    "metrics": [
+      {
+        "name": "derived exact",
+        "value": 0,
+        "denominator": 232
+      },
+      {
+        "name": "answer-word-oracle exact",
+        "value": 0,
+        "denominator": 232
+      },
+      {
+        "name": "printed-text exact",
+        "value": 176,
+        "denominator": 232
+      }
+    ],
+    "controls": [
+      "No write",
+      "Printed words at role labels",
+      "Correct answer-word vector",
+      "Crossed roles"
+    ],
+    "limitations": [
+      "Specific layer, write site and task only",
+      "Small logit effects persist without changing top choice",
+      "Not evidence against every recurrent architecture"
+    ],
+    "source": "https://github.com/anttiluode/Qwenimagination/blob/main/results/Qwen_Qwen2.5-1.5B-Instruct/delayed_v5/full.json"
+  },
+  {
+    "id": "nov18-qwen-v6-timing-boundary",
+    "node": "Qwenimagination",
+    "claim": "Clean answer-word direction has a large immediate steering effect but almost no useful pre-question effect.",
+    "design": "Replay V2 oracle and compare final answer-token injection against before-question and before-gap markers on 60 known items.",
+    "result": "mixed",
+    "motifs": [
+      "nov17-offtoken-workspace"
+    ],
+    "sample": {
+      "unit": "known V2 item",
+      "count": 60
+    },
+    "metrics": [
+      {
+        "name": "answer token correct",
+        "value": 46,
+        "denominator": 60
+      },
+      {
+        "name": "pre-question correct",
+        "value": 2,
+        "denominator": 60
+      },
+      {
+        "name": "no write correct",
+        "value": 2,
+        "denominator": 60
+      }
+    ],
+    "controls": [
+      "V2 oracle reproduction",
+      "Repeated write",
+      "Identical before-gap and before-question marker tokens",
+      "No write"
+    ],
+    "limitations": [
+      "Exploratory, not fresh item replication",
+      "Position, local token context and distance covary",
+      "Only supplied answer direction evaluated"
+    ],
+    "source": "https://github.com/anttiluode/Qwenimagination/blob/main/results/Qwen_Qwen2.5-1.5B-Instruct/timing_v6/full.json"
+  },
+  {
+    "id": "nov18-qwen-v7-category-control",
+    "node": "Qwenimagination",
+    "claim": "V7 category-transfer inference is uninformative because the printed-word control also fails: Qwen prefers answer A under both letter maps.",
+    "design": "20 held-out living/manufactured item pairs, crossed letter mapping, derived and swapped J-space writes, native-token patch, printed text and external classifier.",
+    "result": "inconclusive",
+    "motifs": [
+      "nov17-offtoken-workspace"
+    ],
+    "sample": {
+      "unit": "held-out item pair",
+      "count": 20
+    },
+    "metrics": [
+      {
+        "name": "Qwen letter-task accuracy all arms",
+        "value": 0.5
+      },
+      {
+        "name": "external supervised bag-reader accuracy",
+        "value": 0.9125
+      },
+      {
+        "name": "baseline mean A-B logit",
+        "value": 4.135643
+      }
+    ],
+    "controls": [
+      "Printed-word positive control failed",
+      "Swapped derived write",
+      "Native-token patch",
+      "Reversed letter mapping",
+      "No write"
+    ],
+    "limitations": [
+      "No passing text control means no semantic transfer inference",
+      "External classifier uses labeled examples and is not Qwen's answer",
+      "Letter preference dominates"
+    ],
+    "source": "https://github.com/anttiluode/Qwenimagination/blob/main/results/Qwen_Qwen2.5-1.5B-Instruct/category_v7/full.json"
   }
 ]
