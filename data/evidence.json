@@ -14344,5 +14344,75 @@
       "Letter preference dominates"
     ],
     "source": "https://github.com/anttiluode/Qwenimagination/blob/main/results/Qwen_Qwen2.5-1.5B-Instruct/category_v7/full.json"
+  },
+  {
+    "id": "nov18-waveformer-v1-ablation-null",
+    "node": "WaveFormer",
+    "claim": "V1's late resonant head offers no demonstrated causal contribution to task accuracy; the preserved conventional attention path solves the training-length role memory task.",
+    "design": "Three source-reported RTX 3060 seed runs (42,43,44), 800 steps per variant on 24-token two-role value binding; held-out 512 examples per sequence length 24/48/96 and paired evaluation with the recurrent head zeroed.",
+    "result": "contradicts",
+    "motifs": [
+      "nov18-resonant-hybrid"
+    ],
+    "sample": {
+      "unit": "independent model initialization seed",
+      "count": 3
+    },
+    "metrics": [
+      {
+        "name": "24-token accuracy (all three)",
+        "value": 1
+      },
+      {
+        "name": "48-token attention mean",
+        "value": 0.76953125
+      },
+      {
+        "name": "48-token leaky mean",
+        "value": 0.7845052083333334
+      },
+      {
+        "name": "48-token wave mean",
+        "value": 0.830078125
+      },
+      {
+        "name": "96-token attention mean",
+        "value": 0.5611979166666666
+      },
+      {
+        "name": "96-token leaky mean",
+        "value": 0.5123697916666666
+      },
+      {
+        "name": "96-token wave mean",
+        "value": 0.5462239583333334
+      },
+      {
+        "name": "48-token wave mean after head ablation",
+        "value": 0.8313802083333334
+      },
+      {
+        "name": "96-token wave mean after head ablation",
+        "value": 0.5475260416666666
+      }
+    ],
+    "controls": [
+      "All three arms train for 800 steps on identical seeded synthetic episode streams",
+      "Nonoscillatory leaky recurrent head versus phase-rotating wave head",
+      "Ordinary full-attention arm",
+      "Same held-out item streams per seed and length",
+      "Exact same model with recurrent head zeroed at evaluation"
+    ],
+    "replication": "Source-reported 3 seeded training runs on one GPU. Calculated means across committed JSON receipts, not independently rerun.",
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Ablation at inference diagnoses direct recurrent-head use, not all training-time regularization effects",
+      "The first block still has two full-attention heads and the second another full-attention head, permitting a solution that bypasses recurrence",
+      "Only toy synthetic role-value task; no pretraining, language modeling or long-term autonomous memory",
+      "Python recurrent loop leads to longer measured wall times, not optimized throughput claim",
+      "Three seeds and changed sequence-length distribution insufficient for a broad architectural efficiency conclusion"
+    ],
+    "source": "https://github.com/anttiluode/WaveFormer/blob/main/README.md"
   }
 ]
