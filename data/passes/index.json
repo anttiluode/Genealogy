@@ -618,5 +618,9 @@
   {
     "path": "november-17-distributed-context-and-jspace.json",
     "enabled": true
+  },
+  {
+    "path": "november-18-waveformer-hybrid.json",
+    "enabled": true
   }
 ]
