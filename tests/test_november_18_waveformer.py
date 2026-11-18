@@ -22,7 +22,7 @@ class WaveFormerNovember18Tests(unittest.TestCase):
         html = (ROOT / "index.html").read_text(encoding="utf-8")
         self.assertIn('id="nov18-waveformer"', html)
         self.assertIn('data-mad-node="WaveFormer"', html)
-        self.assertIn("there is <strong>no implementation or benchmark yet</strong>", html)
+        self.assertIn("the full trained benchmark remains unrun", html)
 
 if __name__ == "__main__":
     unittest.main()
