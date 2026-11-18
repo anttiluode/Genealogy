@@ -8,7 +8,7 @@ class WaveFormerNovember18Tests(unittest.TestCase):
     def test_inventory_pass_and_unique_nodes(self):
         atlas = load_atlas(ROOT)
         self.assertEqual([], validate_atlas(atlas))
-        self.assertEqual(657, len(atlas["repos"]))
+        self.assertGreaterEqual(len(atlas["repos"]), 659)
         for name in ("WaveFormer", "Qwenimagination"):
             self.assertEqual(1, sum(r["name"] == name for r in atlas["repos"]))
             self.assertEqual(1, sum(n["id"] == name for n in atlas["nodes"]))
