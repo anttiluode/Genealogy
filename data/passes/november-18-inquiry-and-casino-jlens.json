@@ -1,0 +1,111 @@
+{
+  "id": "november-18-inquiry-and-casino-jlens",
+  "title": "November 18 — from learned inquiry to the casino J-lens microscope",
+  "reviewed_at": "2026-11-18",
+  "order": 201,
+  "summary": "Two previously unlisted repositories complete a bridge from controlled active inference to an instrumented frozen Qwen. WonderingQwenSol's learned question-gated GRU retains useful hypotheses; its raw surprise-pull routing fails to help. GamblerQwen exposes Qwen's 12/20/26-layer J-lens concept responses during a hidden-odds reversal, but both free and forced-observation controls mostly select B, so hidden-rule detection is not established.",
+  "nodes": [
+    {
+      "id": "WonderingQwenSol",
+      "url": "https://github.com/anttiluode/WonderingQwenSol",
+      "family": "transformer",
+      "status": "active",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "WorldLoop 001 tests world-change versus sensor-fault hypotheses and active measurement; 002A/002B train small recurrent question-gated controllers on Bayesian teacher targets, with a separate harder changing-world challenge.",
+      "survived": "001 engineered active policy: 84% full-state accuracy on 200 worlds vs 76% random and 54% repeat vision; no-fault representation 26% on the same evidence. 002A learned GRU reaches 81% vs 29.5% with state reset and 24% separately memoryless. 002B Challenge B: 77–80% four-probe accuracy vs 33.5% state-reset, 44% fixed calibration and 80.5% Bayes. Clamping the question affects actions.",
+      "killed": "001's posterior and information-gain selector are programmed, not Qwen cognition. 002A/002B are small teacher-distilled networks, not frozen Qwen reasoning. The post-hoc 002B surprise-pull ablation matched or improved accuracy (Challenge B 78.5% with surprise off); causal questions are partly structurally imposed. Frozen-Qwen J-lens bridge has fake-model tests but no verified real-model result.",
+      "evidence": "https://github.com/anttiluode/WonderingQwenSol/blob/main/RESULTS_002B.md",
+      "tags": [
+        "2026-11-18",
+        "inquiry",
+        "causal-question-gate",
+        "bayesian-teacher",
+        "recurrent-memory",
+        "surprise-pull-negative",
+        "qwen-bridge-pending"
+      ],
+      "era": "November 18: self-steering and latent observatory",
+      "era_order": 201
+    },
+    {
+      "id": "GamblerQwen",
+      "url": "https://github.com/anttiluode/GamblerQwen",
+      "family": "transformer",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Offline HTML / CUDA 1.5B Qwen two-armed bandit instrument logs hidden P(A/B), actions, constrained A/B next-token scores and a small-corpus Jacobian-lens read of verbalizable concept directions at layers 12/20/26.",
+      "survived": "Two recorded 48-round reversal runs (P(A/B) .76/.24→.24/.76 at round 25) with same underlying latent random draws: real Qwen free-choice records 24 wins and proposes B 45/48; controlled alternating observations record 21 executed wins and Qwen proposes B 47/48. The HTML site replays actual runs and concept traces without inventing feelings or detector confidence.",
+      "killed": "No successful rule-change sensing demonstrated. Under forced alternating evidence pre-reversal, A won 8/12 vs B 2/12 but Qwen still proposed B on 23/24 rounds. Its late-layer 'changed' or 'switch' scores drift without matched stationary-world controls; letter bias, prompt length and poor numerical inference remain confounds. Alternating policy rewards are not rewards from Qwen's proposed decisions.",
+      "evidence": "https://github.com/anttiluode/GamblerQwen/blob/main/FINDINGS.md",
+      "tags": [
+        "2026-11-18",
+        "qwen-1.5b",
+        "j-lens",
+        "local-gpu",
+        "offline-observatory",
+        "bandit",
+        "negative-change-detection"
+      ],
+      "era": "November 18: self-steering and latent observatory",
+      "era_order": 201
+    }
+  ],
+  "edges": [
+    {
+      "source": "Qwenimagination",
+      "target": "GamblerQwen",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "GamblerQwen directly reuses Qwenimagination qimag.lens Jacobian code and applies the readout to bandit decision histories.",
+      "evidence": "https://github.com/anttiluode/GamblerQwen/blob/main/build_lens.py"
+    },
+    {
+      "source": "Qwenimagination",
+      "target": "WonderingQwenSol",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Sol's independent branch builds active hypotheses and question-gated inquiry to complement externally steered concept loops; Qwen read/write bridge remains unconfirmed.",
+      "evidence": "https://github.com/anttiluode/WonderingQwenSol/blob/main/README.md"
+    },
+    {
+      "source": "WaveFormer",
+      "target": "WonderingQwenSol",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "WaveFormer V2's head-essential recurrent recall motivates persistent latent memory, but WonderingQwenSol uses an independently trained GRU, not a WaveFormer code fork.",
+      "evidence": "https://github.com/anttiluode/WonderingQwenSol/blob/main/README.md"
+    },
+    {
+      "source": "WonderingQwenSol",
+      "target": "GamblerQwen",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both interrogate frozen-Qwen behavior under changing latent conditions, but GamblerQwen is a separate observation-only instrument and does not use WonderingQwenSol's GRU.",
+      "evidence": "https://github.com/anttiluode/GamblerQwen/blob/main/FINDINGS.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov18-question-state-action",
+      "title": "Questions matter only if they alter the selected observation",
+      "description": "The teacher-distilled recurrent inquiry controller makes question-conditioned action gating causal; imposed surprise routing did not help, and real Qwen is not yet in this loop.",
+      "nodes": [
+        "Qwenimagination",
+        "WaveFormer",
+        "WonderingQwenSol"
+      ]
+    },
+    {
+      "id": "nov18-lens-vs-choice",
+      "title": "Reading a concept is not enough to show it controls a choice",
+      "description": "A J-lens microscope records gambling-related concept directions during an odds reversal, but Qwen's B preference survives evidence favoring A; detector behavior and causal steering remain open.",
+      "nodes": [
+        "Qwenimagination",
+        "WonderingQwenSol",
+        "GamblerQwen"
+      ]
+    }
+  ]
+}
