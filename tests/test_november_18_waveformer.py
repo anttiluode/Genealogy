@@ -22,7 +22,7 @@ class WaveFormerNovember18Tests(unittest.TestCase):
         html = (ROOT / "index.html").read_text(encoding="utf-8")
         self.assertIn('id="nov18-waveformer"', html)
         self.assertIn('data-mad-node="WaveFormer"', html)
-        self.assertIn("the full trained benchmark remains unrun", html)
+        self.assertIn("ablating the wave head changes almost nothing", html)
 
 if __name__ == "__main__":
     unittest.main()
