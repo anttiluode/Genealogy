@@ -3,7 +3,7 @@
   "title": "November 18 — WaveFormer: resonant recurrence with attention",
   "reviewed_at": "2026-11-18",
   "order": 200,
-  "summary": "WaveFormer V1 trained on three RTX 3060 seeds: all models reached 100% on 24-token role retrieval. Wave scored 83.0% at 48 versus 77.0% attention and 78.5% leaky, but zeroing the recurrent head changed mean accuracy negligibly; the retained attention pathway appears sufficient. V2 now introduces a locality cutoff forcing long-range recall through recurrence. Full V2 results pending.",
+  "summary": "WaveFormer V1's wave lead at 48 tokens is ablation-negative. Three uploaded V2 seed receipts now enforce a local-attention cutoff: at 48 tokens full attention 86.52%, local-only 25.98%, leaky recurrence 95.51%, and phase-rotating wave recurrence 55.34%. Disabling either recurrent head drops results to chance. Recurrent memory is necessary here; phase rotation loses to plain leaking.",
   "nodes": [
     {
       "id": "WaveFormer",
@@ -12,10 +12,10 @@
       "status": "active",
       "usefulness": "scientific",
       "confidence": "high",
-      "claim": "Tiny two-block WaveFormer V1 tests attention against leaky and phase-rotating recurrent head on paired synthetic role memory; V2 isolates recurrence with a short local-attention window and out-of-reach writes.",
-      "survived": "V1 800-step runs (seeds 42–44) confirm all arms learn 24-token training task at 100%; 48-token held-out averages: attention 76.95%, leaky 78.45%, wave 83.01%. V2 source and unit tests implement an explicit memory cutoff: local attention receptive field reaches 6 prior positions, target writes at least 9 back.",
-      "killed": "V1 accuracy ablation gives no evidence that the recurrent head carries answers: wave 48-token accuracy 83.01% intact and 83.14% with its recurrent head removed; at 96 tokens attention wins 56.12% to wave 54.62%. Training wall time is longer for wave (~56 s/seed) than attention (~14 s), though kernels are unoptimized. V2 full trained results pending; no wave-specific memory or efficiency advantage yet.",
-      "evidence": "https://github.com/anttiluode/WaveFormer/blob/main/README.md",
+      "claim": "Tiny two-block WaveFormer V1 compares attention and phase-rotating or leaky second heads; V2 constrains attention to a local 4-token window so distant role memories can only cross via recurrence.",
+      "survived": "V1 24-token accuracy reaches 100% in all arms, and at 48 tokens wave is 83.01%, but V1 recurrent ablation is null. V2 three trained seeds (42–44; 512 held-out episodes/length/seed): at 48 tokens full attention 86.52%, local-only 25.98% (chance 25%), leaky recurrence 95.51%, wave recurrence 55.34%. With recurrent pathways ablated leaky drops to 24.48% and wave to 24.22%. The trained recurrence is therefore causally load-bearing on this synthetic task.",
+      "killed": "V1: wave 83.01% intact vs 83.14% head-zeroed at 48, so attention carried that result. In V2 phase rotation loses to nonoscillatory leak in each of the three seeds (leaky 95.51% vs wave 55.34% at length 48; 61.85% vs 41.02% at length 96). The recurrent head uses sequential Python; no wave efficiency, improved general reasoning, or autonomous ongoing thought shown. README still says trained V2 pending even though results/v2 JSON receipts are committed.",
+      "evidence": "https://github.com/anttiluode/WaveFormer/blob/main/results/v2/benchmark_seed42.json",
       "tags": [
         "2026-11-18",
         "waveformer",
@@ -23,7 +23,10 @@
         "cpu-smoke-pass",
         "v1-trained-three-seeds",
         "v1-ablation-null",
-        "v2-cutoff-built"
+        "v2-cutoff-built",
+        "v2-three-seeds",
+        "v2-recurrence-essential",
+        "v2-wave-loses-leaky"
       ],
       "era": "November 18: resonant hybrid language models",
       "era_order": 200
@@ -59,7 +62,7 @@
     {
       "id": "nov18-resonant-hybrid",
       "title": "Precise attention alongside persistent recurrent state",
-      "description": "Proposed learned resonant recurrence compared with ordinary attention and a nonoscillatory recurrent control; no outcome yet.",
+      "description": "Under a forced local-attention cutoff, recurrent memory becomes essential; on this role-retrieval task leaky recurrence substantially outperforms phase-rotating recurrence across three seeds.",
       "nodes": [
         "WaveCortex",
         "TuftSheet",
