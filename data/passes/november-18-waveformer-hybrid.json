@@ -3,7 +3,7 @@
   "title": "November 18 — WaveFormer: resonant recurrence with attention",
   "reviewed_at": "2026-11-18",
   "order": 200,
-  "summary": "WaveFormer now includes a runnable tiny hybrid architecture (ordinary attention, phase-disabled leaky recurrence, resonant recurrent head), a synthetic two-slot memory task and passing CPU unit/smoke tests. Full held-out training and a wave-specific performance advantage are not yet measured. Qwenimagination V2/V3 positive external transfer and V5/V6 negative delayed-write boundaries remain separate.",
+  "summary": "WaveFormer V1 trained on three RTX 3060 seeds: all models reached 100% on 24-token role retrieval. Wave scored 83.0% at 48 versus 77.0% attention and 78.5% leaky, but zeroing the recurrent head changed mean accuracy negligibly; the retained attention pathway appears sufficient. V2 now introduces a locality cutoff forcing long-range recall through recurrence. Full V2 results pending.",
   "nodes": [
     {
       "id": "WaveFormer",
@@ -12,16 +12,18 @@
       "status": "active",
       "usefulness": "scientific",
       "confidence": "high",
-      "claim": "Executable tiny two-block causal transformer experiment comparing two attention heads against one attention + leaky recurrent head and one attention + resonant state head, with matching episode streams.",
-      "survived": "Source now includes causal attention/RoPE, phase-rotating and phase-disabled heads, balanced two-role generator, training/evaluation runner, five CPU unit tests and a passing two-step CPU smoke run on GitHub Actions (Nov 18). No trained outcome is reported.",
-      "killed": "Scientific benchmark still pending. A smoke test is plumbing only; attention versus recurrence accuracy and wave-specific benefit are unknown. No pretrained Qwen integration, long-term native memory or text-generating language model yet.",
-      "evidence": "https://github.com/anttiluode/WaveFormer/actions/runs/44254507039",
+      "claim": "Tiny two-block WaveFormer V1 tests attention against leaky and phase-rotating recurrent head on paired synthetic role memory; V2 isolates recurrence with a short local-attention window and out-of-reach writes.",
+      "survived": "V1 800-step runs (seeds 42–44) confirm all arms learn 24-token training task at 100%; 48-token held-out averages: attention 76.95%, leaky 78.45%, wave 83.01%. V2 source and unit tests implement an explicit memory cutoff: local attention receptive field reaches 6 prior positions, target writes at least 9 back.",
+      "killed": "V1 accuracy ablation gives no evidence that the recurrent head carries answers: wave 48-token accuracy 83.01% intact and 83.14% with its recurrent head removed; at 96 tokens attention wins 56.12% to wave 54.62%. Training wall time is longer for wave (~56 s/seed) than attention (~14 s), though kernels are unoptimized. V2 full trained results pending; no wave-specific memory or efficiency advantage yet.",
+      "evidence": "https://github.com/anttiluode/WaveFormer/blob/main/README.md",
       "tags": [
         "2026-11-18",
         "waveformer",
         "hybrid-attention",
         "cpu-smoke-pass",
-        "trained-benchmark-pending"
+        "v1-trained-three-seeds",
+        "v1-ablation-null",
+        "v2-cutoff-built"
       ],
       "era": "November 18: resonant hybrid language models",
       "era_order": 200
