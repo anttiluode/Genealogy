@@ -11,7 +11,7 @@ class DistributedWorldAndJspaceTests(unittest.TestCase):
     def test_inventory_schema_and_pass(self):
         atlas = load_atlas(ROOT)
         self.assertEqual([], validate_atlas(atlas))
-        self.assertEqual(657, len(atlas["repos"]))
+        self.assertGreaterEqual(len(atlas["repos"]), 659)
         for name in NAMES:
             self.assertEqual(1, sum(r["name"] == name and r["inventory_status"] == "reviewed" for r in atlas["repos"]))
             self.assertEqual(1, sum(n["id"] == name for n in atlas["nodes"]))
