@@ -4,6 +4,16 @@ Evidence-backed archaeology of Antti Luode's research repositories.
 
 The central premise is that hundreds of repositories are not hundreds of independent ideas. The project separates raw repository inventory from curated scientific interpretation, then records explicit inheritance, corrections, rediscoveries, convergences, extracted mechanisms, empirical evidence, and the scientific questions that remain unresolved.
 
+## 18 November 2026 — learned inquiry and the gambling J-lens observatory
+
+[Live two-branch wall chapter](https://anttiluode.github.io/Genealogy/#nov18-inquiry-gambler) · [Curated scientific pass](data/passes/november-18-inquiry-and-casino-jlens.json) · [WonderingQwenSol](https://github.com/anttiluode/WonderingQwenSol) · [GamblerQwen](https://github.com/anttiluode/GamblerQwen) · [Recorded Qwen dashboard](https://anttiluode.github.io/GamblerQwen/) · [Short demonstration video](https://youtu.be/i5L00zl5E18).
+
+Two new reviewed branches enlarge the local census **657 → 659**; **WaveFormer and Qwenimagination were already curated and are updated, not duplicated.** WonderingQwenSol separates a transparent Bayesian world/sensor-fault model from a small learned recurrent inquiry controller. Its 002A GRU gets 81% full-state accuracy at four probes versus 29.5% with recurrent state reset; 002B on an independently specified world-changing task gets 77–80% with question-conditioned control versus 33.5% state-erased. Forcing the question changes what is measured, but the post-hoc ablation of its direct surprise-pull route offers **no support for surprise improving performance**; Qwen's own early-band bridge is unconfirmed.
+
+GamblerQwen applies Qwenimagination's Jacobian-lens implementation to a *frozen* Qwen2.5-1.5B bandit game and publishes replayable per-round actions and L12/L20/L26 concept readings. When P(win A/B) flips from 0.76/0.24 to 0.24/0.76, Qwen chooses B on 45/48 original actions and proposes B on 47/48 controlled A/B-alternating-observation rounds. Before the change, forced observations show A winning 8/12 while B wins 2/12, yet Qwen still favors B. The internal word directions are **not** literal thoughts, probabilities or validated change alarms. Stationary and A/B label-swap controls are still needed. The site is a working interpretability instrument, **not evidence that Qwen detects a rigged game**.
+
+WaveFormer has also acquired source-reported V2 training records: at length 48 with local-only access cut off, three-seed means are **25.98%** local attention (chance 25%), **95.51%** leaky recurrence and **55.34%** phase-rotating recurrence. Ablating the recurrent pathway takes both back near chance. It demonstrates genuine task-relevant recurrent memory without proving a wave-specific advantage. Qwenimagination's V9 early-band swap is positive (0.35 cross flips versus 0.10 within-category), while V11b's preregistered comparison to random swap fails (+0.05, CI spanning zero). We keep those distinctions in the existing wall nodes.
+
 ## 18 November 2026 — WaveFormer and updated Qwenimagination results
 
 [Live WaveFormer chapter](https://anttiluode.github.io/Genealogy/#nov18-waveformer) · [Curated pass](data/passes/november-18-waveformer-hybrid.json) · [WaveFormer](https://github.com/anttiluode/WaveFormer) · [Qwenimagination](https://github.com/anttiluode/Qwenimagination).
