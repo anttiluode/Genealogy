@@ -3,7 +3,7 @@
   "title": "November 17 — distributed context and off-token imagination",
   "reviewed_at": "2026-11-17",
   "order": 199,
-  "summary": "Three Nov 17 repositories; Qwenimagination's Nov 18 update confirms item-specific off-token transfer on pretrained Qwen but not durable native write/retrieval. TuftSheet and TuftSheetSol findings and limits remain as documented.",
+  "summary": "TuftSheet and TuftSheetSol retain their tested limits. Qwenimagination later V9 reproduces useful early-band printed-word swapping, V11b shows exploratory derived-concept transfer but the preregistered random control fails; ruminate and think are externally driven association loops, not autonomous reasoning.",
   "nodes": [
     {
       "id": "TuftSheet",
@@ -54,9 +54,9 @@
       "status": "active",
       "usefulness": "scientific",
       "confidence": "medium",
-      "claim": "Frozen Qwen2.5-1.5B-Instruct contains item-specific concept information that can be extracted and transported outside its text context; later experiments separate answer-time injection from genuine delayed retrieval.",
-      "survived": "V2: 18/60 (30%) held-out exact recall with derived concept write at answer-time versus 1/60 (2%) no write and 0/60 cue or shuffled. V3 replicates 11/50 (22%) versus 1/50 none. Direct bag reader recovers 29/60 and 25/50. V6 clean answer-word write at final token: 46/60.",
-      "killed": "V1 failed all gates. V3 tuft selector did not improve baseline. V4 engineered role binder cannot test learned roles. V5 derived and oracle one-shot delayed writes yield 0/232 exact retrieval. V6 pre-question write yields 2/60. V7 category run is inconclusive because the printed-word positive control also fails (always predicts A); external category reader reaches 91.25%. No autonomous imagination, learned binding, or persistent native memory shown.",
+      "claim": "Frozen Qwen2.5-1.5B has externally readable late-layer concepts; early-band (layers 4–12) J-space coordinate swaps can steer a different category question. Follow-up V10/V11 and external rumination loops test silent-derived content under explicit confound controls.",
+      "survived": "V2 carried-concept transfer 18/60 vs 1/60 no-write; V3 replication 11/50 vs 1/50. V9 matched concept swaps (early L4–12) move category answers: cross flips 0.35 vs same-category 0.10 (difference +0.25, CI +0.15..+0.35). V11b thought vs same-category swap gate passes (+0.25), but post-hoc content-sensitive comparison in living slots still requires replication. Rumination has mean top-8 association overlap 0.41 silent versus printed, 0.07 against different word.",
+      "killed": "V5 derived and oracle one-shot delayed writes yield 0/232 correct; V6 pre-question write 2/60. V7 printed-word positive control fails. V10 fails both preregistered gates and derived concept is not readable at early layers. V11 first run has a swap-scale bug, and V11b's thought-vs-random preregistered gate fails (+0.05, CI −0.08..+0.18); random often removes a living decoy just as effectively. Fatigue/selection/goal loop is scripted externally, no true native recurrent self-steering or persistent Qwen weights shown.",
       "evidence": "https://github.com/anttiluode/Qwenimagination/blob/main/README.md",
       "tags": [
         "2026-11-17",
@@ -67,7 +67,10 @@
         "2026-11-18-update",
         "v2-replicated",
         "v5-negative",
-        "v7-inconclusive"
+        "v7-inconclusive",
+        "v9-causal-swap",
+        "v11b-random-control-negative",
+        "rumination-external-loop"
       ],
       "era": "November 17: spatial inner worlds and off-token memory",
       "era_order": 199
