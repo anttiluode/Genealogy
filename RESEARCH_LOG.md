@@ -1,12 +1,18 @@
 # Genealogy research log
 
+## 18 November 2026 — WaveFormer registered and Qwenimagination evidence corrected
+
+[WaveFormer chapter](https://anttiluode.github.io/Genealogy/#nov18-waveformer) · [new pass](data/passes/november-18-waveformer-hybrid.json).
+
+WaveFormer, the 657th inventory repo, starts with an MIT license only; the proposed resonant/attention-head benchmark has not run. Qwenimagination's existing Nov 17 curated node is revised to incorporate its trained-Qwen results rather than duplicated: V2 18/60 versus 1/60 no-write, V3 11/50 versus 1/50; direct bag readers 29/60 and 25/50. V5 delayed exact recall 0/232, V6 answer-time oracle 46/60 against 2/60 pre-question, V7 inconclusive because even plain-text classification prefers A across all trials; 91.25% is an external trained reader, not Qwen. No persistent native thought or wave advantage demonstrated.
+
 ## 17 November 2026 — spatial context and a held thought beyond tokens
 
 **[Live Genealogy Wall](https://anttiluode.github.io/Genealogy/#nov17-distributed-imagination)** · [Three-node curated pass](data/passes/november-17-distributed-context-and-jspace.json) · [Source review](docs/reviews/2026-11-17-distributed-context-and-jspace.md).
 
 Three later Nov 17 repositories complete the day's eight-project census, **653 → 656**: [TuftSheet](https://github.com/anttiluode/TuftSheet), [TuftSheetSol](https://github.com/anttiluode/TuftSheetSol) and [Qwenimagination](https://github.com/anttiluode/Qwenimagination). The earlier five curated Nov 17 projects remain in their original chapter.
 
-**TuftSheet** extends the scalar WaveCortex apical rule into many local contexts shared by a diffusive Layer-1-like sheet: 0.80 sign accuracy vs 0.69 global and 0.59 unlinked, with five of six preregistered checks passing. The attempt to learn the true boundary fails (22/32 where 24 was required), and learned conductances trail uniform links. **TuftSheetSol** is an offline interactive two-sheet JS model where a separate excitable medium transiently disturbs a *hand-specified* readout; six toy numerical checks pass in all 32 held learning seeds, but storage remains intact by construction and this is not a clinical or biological model. **Qwenimagination** pre-registers an attempt to carry a derived one-token concept between separate conversations in a recurrent external J-space loop. Strict answer-versus-cue and matched-KL controls are specified; **only random-weight plumbing has run, not a pretrained Qwen experiment**.
+**TuftSheet** extends the scalar WaveCortex apical rule into many local contexts shared by a diffusive Layer-1-like sheet: 0.80 sign accuracy vs 0.69 global and 0.59 unlinked, with five of six preregistered checks passing. The attempt to learn the true boundary fails (22/32 where 24 was required), and learned conductances trail uniform links. **TuftSheetSol** is an offline interactive two-sheet JS model where a separate excitable medium transiently disturbs a *hand-specified* readout; six toy numerical checks pass in all 32 held learning seeds, but storage remains intact by construction and this is not a clinical or biological model. **Qwenimagination** now has trained-Qwen V2–V7 evidence; the Nov 18 update above distinguishes successful answer-time external transfer from failed delayed writes and an inconclusive category task.
 
 The deeper seam: a single global hidden rule gives way to locally maintained context; a world-model state becomes distinguishable from its readout machinery; now we can ask whether the same architecture holds internal content beyond a transformer's token stream. None proves phenomenal qualia.
 
