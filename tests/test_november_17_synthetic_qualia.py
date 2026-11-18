@@ -9,7 +9,7 @@ class November17QualiaTests(unittest.TestCase):
     def test_census_curated_and_valid(self):
         a=load_atlas(ROOT)
         self.assertEqual([],validate_atlas(a))
-        self.assertEqual(656,len(a["repos"]))
+        self.assertEqual(657,len(a["repos"]))
         for name in NAMES|{"QualiaAstra","QualiaClaude","QualeX"}:
             self.assertEqual(1,sum(r["name"]==name for r in a["repos"]))
         for name in NAMES:
