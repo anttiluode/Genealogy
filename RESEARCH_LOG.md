@@ -4,7 +4,7 @@
 
 [WaveFormer chapter](https://anttiluode.github.io/Genealogy/#nov18-waveformer) · [new pass](data/passes/november-18-waveformer-hybrid.json).
 
-WaveFormer, the 657th inventory repo, starts with an MIT license only; the proposed resonant/attention-head benchmark has not run. Qwenimagination's existing Nov 17 curated node is revised to incorporate its trained-Qwen results rather than duplicated: V2 18/60 versus 1/60 no-write, V3 11/50 versus 1/50; direct bag readers 29/60 and 25/50. V5 delayed exact recall 0/232, V6 answer-time oracle 46/60 against 2/60 pre-question, V7 inconclusive because even plain-text classification prefers A across all trials; 91.25% is an external trained reader, not Qwen. No persistent native thought or wave advantage demonstrated.
+WaveFormer, the 657th inventory repo, began MIT-license-only and now contains a two-block attention/resonant-leaky benchmark with passing GitHub Actions CPU unit and smoke tests. Its full trained benchmark has not run. Qwenimagination's existing Nov 17 curated node is revised to incorporate its trained-Qwen results rather than duplicated: V2 18/60 versus 1/60 no-write, V3 11/50 versus 1/50; direct bag readers 29/60 and 25/50. V5 delayed exact recall 0/232, V6 answer-time oracle 46/60 against 2/60 pre-question, V7 inconclusive because even plain-text classification prefers A across all trials; 91.25% is an external trained reader, not Qwen. No persistent native thought or wave advantage demonstrated.
 
 ## 17 November 2026 — spatial context and a held thought beyond tokens
 
