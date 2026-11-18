@@ -889,5 +889,14 @@
   },
   "nov17-qwen-jspace-pending": {
     "nov17-offtoken-workspace": "documents"
+  },
+  "nov18-qwen-v5-no-delayed-recall": {
+    "nov17-offtoken-workspace": "limits"
+  },
+  "nov18-qwen-v6-timing-boundary": {
+    "nov17-offtoken-workspace": "limits"
+  },
+  "nov18-qwen-v7-category-control": {
+    "nov17-offtoken-workspace": "documents"
   }
 }
