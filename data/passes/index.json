@@ -622,5 +622,9 @@
   {
     "path": "november-18-waveformer-hybrid.json",
     "enabled": true
+  },
+  {
+    "path": "november-18-inquiry-and-casino-jlens.json",
+    "enabled": true
   }
 ]
