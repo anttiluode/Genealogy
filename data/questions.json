@@ -2069,35 +2069,45 @@
   },
   {
     "id": "nov17-qwen-persistent-derived-thought",
-    "title": "Can a frozen language model carry a derived, never-tokenized answer across conversations without cue leakage?",
+    "title": "Can an externally readable derived concept become persistent, independently queryable memory inside a frozen language model?",
     "state": "open",
     "motifs": [
       "nov17-offtoken-workspace"
     ],
     "evidence": [
-      "nov17-qwen-jspace-pending"
+      "nov17-qwen-jspace-pending",
+      "nov18-qwen-v5-no-delayed-recall",
+      "nov18-qwen-v6-timing-boundary",
+      "nov18-qwen-v7-category-control"
     ],
     "competing_explanations": [
-      "The model internally encodes a derived answer in a recoverable representation, and an external loop transports it across token-disjoint contexts.",
-      "The extracted concept only echoes the prompt cue or supports generic output steering, not a sustained internally derived idea; open-loop injection may match feedback."
+      "The concept bag carries sufficient semantic content, but a frozen transformer can only use it immediately near the output; trainable recurrent reads might enable later use.",
+      "The eight-coordinate concept bag lacks role/relational structure and only steers generic word output.",
+      "An external reader or structured dictionary is sufficient and a physical wave mechanism adds no advantage."
     ],
     "known": [
-      "The lens/write and context isolation pipeline was tested on a random-weight model shape.",
-      "No pretrained Qwen2.5-1.5B-Instruct study has run in the source.",
-      "The protocol pre-registers G0 gating and expects that closed-loop superiority may fail."
+      "V2 held-out answer-time derived concept write 18/60 target exact vs 1/60 none; V3 replicated 11/50 vs 1/50.",
+      "Simple direct concept-bag reader outperforms injection readout (29/60 and 25/50).",
+      "V5 one-shot delayed writes returned no exact answers in 232 queries even with oracle-known word.",
+      "V6 final-answer-token oracle 46/60, before-question 2/60, implying output steering does not establish persistent memory.",
+      "V7 semantic category test is inconclusive because the printed-word positive control fails."
     ],
-    "missing_discriminator": "Execute the frozen protocol on pretrained weights, preserve disjoint hold/recall contexts, score answers against cue competitors, and compare all routes at matched next-token distribution distortion.",
+    "missing_discriminator": "A validated category-question positive control, followed by held-out answer-position semantic transfer; then a trained delayed read/write interface against matched non-resonant and attention baselines.",
     "candidate_experiment": {
-      "design": "Run the committed G0a/G0b and G1–G3 gates once on Qwen2.5-1.5B-Instruct, separate dev selection and held-out items, and publish answer, cue and oracle baselines with matched-KL budgets before any tuning.",
-      "cost": "One local 12 GB GPU and bounded checkpoint evaluation; record actual runtime and settings",
+      "design": "Choose a category format using printed-word development items, freeze it, compare derived and answer-word vectors at the final answer token with no-state, shuffled, printed-word, and supervised reader controls on held-out items. Only if successful test delayed writes through a trained recurrent memory against an equally sized real-valued leaky state.",
+      "cost": "RTX 3060 small Qwen evaluation and modest recurrent adapter training, no full-model fine-tuning assumed",
       "outcomes": [
         {
-          "if": "Derived G0 passes and held J-state recall exceeds both no-state and cue at matched damage",
-          "then": "Support off-token transport for the specified prompted one-token concepts; evaluate feedback advantage separately."
+          "if": "Derived answer-time write changes held-out category responses above shuffled and no-state baselines",
+          "then": "Support semantic use of externally carried content but not persistence."
         },
         {
-          "if": "G0 fails or cue/oracle explains the apparent recall",
-          "then": "Do not claim persistent hidden thought; retain negative and test alternate models or lenses only under new preregistrations."
+          "if": "Text control works but all writes fail",
+          "then": "Keep external concept reader as positive result and design a learned interface."
+        },
+        {
+          "if": "Recurrent wave reader beats matched non-resonant baseline on blind held-out sequences",
+          "then": "Support a wave-specific computational advantage for the tested tasks."
         }
       ]
     },
