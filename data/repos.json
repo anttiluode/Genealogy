@@ -2266,6 +2266,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "GamblerQwen",
+    "url": "https://github.com/anttiluode/GamblerQwen",
+    "default_branch": "main",
+    "size": 140,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-11-18T15:44:44Z",
+    "updated_at": "2026-11-18T15:52:56Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "GATGRILS",
     "url": "https://github.com/anttiluode/GATGRILS",
     "default_branch": "main",
@@ -7093,6 +7104,17 @@
     "created_at": "2024-11-03T06:43:53Z",
     "updated_at": "2024-11-03T10:11:00Z",
     "inventory_status": "unread"
+  },
+  {
+    "name": "WonderingQwenSol",
+    "url": "https://github.com/anttiluode/WonderingQwenSol",
+    "default_branch": "main",
+    "size": 461,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-11-18T08:31:21Z",
+    "updated_at": "2026-11-18T08:38:46Z",
+    "inventory_status": "reviewed"
   },
   {
     "name": "World",
