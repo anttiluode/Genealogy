@@ -3,7 +3,7 @@
   "title": "November 17 — distributed context and off-token imagination",
   "reviewed_at": "2026-11-17",
   "order": 199,
-  "summary": "Three Nov 17 repositories complete the eight-repo census (653→656): TuftSheet spatializes a shared apical rule into independent local contexts; TuftSheetSol separates world-state persistence from a deliberately perturbed readout; Qwenimagination pre-registers external J-space retention between disjoint language-model contexts. Two source-reported numerical toy experiments and one pending real-model test; no evidence of phenomenal consciousness.",
+  "summary": "Three Nov 17 repositories; Qwenimagination's Nov 18 update confirms item-specific off-token transfer on pretrained Qwen but not durable native write/retrieval. TuftSheet and TuftSheetSol findings and limits remain as documented.",
   "nodes": [
     {
       "id": "TuftSheet",
@@ -54,17 +54,20 @@
       "status": "active",
       "usefulness": "scientific",
       "confidence": "medium",
-      "claim": "A preregistered frozen-Qwen test asks whether a derived one-token concept can survive across contexts as an external recurrent J-space state without being written as text.",
-      "survived": "Protocol fixes G0a/G0b and G1–G3, developer/test partition, answer-versus-cue scoring, matched-KL damage budgets, none/cue/oracle/in-context/snapshot/open/closed baselines. Random-weight Qwen-shaped plumbing tests pass read/write and isolation checks; an oracle can write its known answer.",
-      "killed": "No real pretrained Qwen run yet: random weights fail derived-answer gate G0. The hold is instructed and concept vocabulary is preselected; no spontaneous imagination, autonomously revised concept state or consciousness demonstrated. Closed-loop superiority is a preregistered hypothesis expected possibly to fail.",
-      "evidence": "https://github.com/anttiluode/Qwenimagination/blob/f18c0bb952faa7c0f654f290ce8230005b13180b/README.md",
+      "claim": "Frozen Qwen2.5-1.5B-Instruct contains item-specific concept information that can be extracted and transported outside its text context; later experiments separate answer-time injection from genuine delayed retrieval.",
+      "survived": "V2: 18/60 (30%) held-out exact recall with derived concept write at answer-time versus 1/60 (2%) no write and 0/60 cue or shuffled. V3 replicates 11/50 (22%) versus 1/50 none. Direct bag reader recovers 29/60 and 25/50. V6 clean answer-word write at final token: 46/60.",
+      "killed": "V1 failed all gates. V3 tuft selector did not improve baseline. V4 engineered role binder cannot test learned roles. V5 derived and oracle one-shot delayed writes yield 0/232 exact retrieval. V6 pre-question write yields 2/60. V7 category run is inconclusive because the printed-word positive control also fails (always predicts A); external category reader reaches 91.25%. No autonomous imagination, learned binding, or persistent native memory shown.",
+      "evidence": "https://github.com/anttiluode/Qwenimagination/blob/main/README.md",
       "tags": [
         "2026-11-17",
         "qwen",
         "j-space",
         "off-token-state",
         "preregistered",
-        "real-run-pending"
+        "2026-11-18-update",
+        "v2-replicated",
+        "v5-negative",
+        "v7-inconclusive"
       ],
       "era": "November 17: spatial inner worlds and off-token memory",
       "era_order": 199
@@ -145,7 +148,7 @@
     {
       "id": "nov17-offtoken-workspace",
       "title": "Can a derived thought outlast the text that evoked it?",
-      "description": "A proposed external J-space loop could preserve derived content between disjoint language contexts; no pretrained Qwen evaluation yet.",
+      "description": "Actual pretrained Qwen supports externally transported concept information, but one-shot delayed writes and later native retrieval remain unshown.",
       "nodes": [
         "WaveCortex",
         "TuftSheet",
