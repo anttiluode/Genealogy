@@ -1,0 +1,68 @@
+{
+  "id": "november-18-waveformer-hybrid",
+  "title": "November 18 — WaveFormer: resonant recurrence with attention",
+  "reviewed_at": "2026-11-18",
+  "order": 200,
+  "summary": "WaveFormer is an MIT-licensed new repository for testing a resonant recurrent attention-head replacement. At registration it contains only a license: no implementation, training run, or performance advantage. Qwenimagination's V2/V3 concept transfer is real but later persistent-write tests remain negative.",
+  "nodes": [
+    {
+      "id": "WaveFormer",
+      "url": "https://github.com/anttiluode/WaveFormer",
+      "family": "transformer",
+      "status": "active",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "New experimental repo proposed to compare a tiny transformer's attention head with damped resonant recurrence and non-oscillatory recurrent controls, at matched compute.",
+      "survived": "The repo exists under an MIT license; its implementation and experimental result are pending.",
+      "killed": "At registration only the license is committed. No model or outcome exists, and earlier wave-relais often underperform scalar baselines.",
+      "evidence": "https://github.com/anttiluode/WaveFormer",
+      "tags": [
+        "2026-11-18",
+        "waveformer",
+        "hybrid-attention",
+        "not-yet-run"
+      ],
+      "era": "November 18: resonant hybrid language models",
+      "era_order": 200
+    }
+  ],
+  "edges": [
+    {
+      "source": "Qwenimagination",
+      "target": "WaveFormer",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Off-token concept transfer motivates a learned recurrent read/write interface, but there is no shared implementation.",
+      "evidence": "https://github.com/anttiluode/Qwenimagination/blob/main/README.md"
+    },
+    {
+      "source": "WaveCortex",
+      "target": "WaveFormer",
+      "type": "extracts",
+      "confidence": "medium",
+      "why": "The two-form content/prediction distinction informs a proposed resonant head; waves have not yet earned a numerical advantage.",
+      "evidence": "https://github.com/anttiluode/WaveCortex"
+    },
+    {
+      "source": "TuftSheet",
+      "target": "WaveFormer",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Distributed persistent context motivates future local gates, not yet implemented in WaveFormer.",
+      "evidence": "https://github.com/anttiluode/TuftSheet"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov18-resonant-hybrid",
+      "title": "Precise attention alongside persistent recurrent state",
+      "description": "Proposed learned resonant recurrence compared with ordinary attention and a nonoscillatory recurrent control; no outcome yet.",
+      "nodes": [
+        "WaveCortex",
+        "TuftSheet",
+        "Qwenimagination",
+        "WaveFormer"
+      ]
+    }
+  ]
+}
