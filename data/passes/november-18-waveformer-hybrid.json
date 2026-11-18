@@ -3,7 +3,7 @@
   "title": "November 18 — WaveFormer: resonant recurrence with attention",
   "reviewed_at": "2026-11-18",
   "order": 200,
-  "summary": "WaveFormer is an MIT-licensed new repository for testing a resonant recurrent attention-head replacement. At registration it contains only a license: no implementation, training run, or performance advantage. Qwenimagination's V2/V3 concept transfer is real but later persistent-write tests remain negative.",
+  "summary": "WaveFormer now includes a runnable tiny hybrid architecture (ordinary attention, phase-disabled leaky recurrence, resonant recurrent head), a synthetic two-slot memory task and passing CPU unit/smoke tests. Full held-out training and a wave-specific performance advantage are not yet measured. Qwenimagination V2/V3 positive external transfer and V5/V6 negative delayed-write boundaries remain separate.",
   "nodes": [
     {
       "id": "WaveFormer",
@@ -12,15 +12,16 @@
       "status": "active",
       "usefulness": "scientific",
       "confidence": "high",
-      "claim": "New experimental repo proposed to compare a tiny transformer's attention head with damped resonant recurrence and non-oscillatory recurrent controls, at matched compute.",
-      "survived": "The repo exists under an MIT license; its implementation and experimental result are pending.",
-      "killed": "At registration only the license is committed. No model or outcome exists, and earlier wave-relais often underperform scalar baselines.",
-      "evidence": "https://github.com/anttiluode/WaveFormer",
+      "claim": "Executable tiny two-block causal transformer experiment comparing two attention heads against one attention + leaky recurrent head and one attention + resonant state head, with matching episode streams.",
+      "survived": "Source now includes causal attention/RoPE, phase-rotating and phase-disabled heads, balanced two-role generator, training/evaluation runner, five CPU unit tests and a passing two-step CPU smoke run on GitHub Actions (Nov 18). No trained outcome is reported.",
+      "killed": "Scientific benchmark still pending. A smoke test is plumbing only; attention versus recurrence accuracy and wave-specific benefit are unknown. No pretrained Qwen integration, long-term native memory or text-generating language model yet.",
+      "evidence": "https://github.com/anttiluode/WaveFormer/actions/runs/44254507039",
       "tags": [
         "2026-11-18",
         "waveformer",
         "hybrid-attention",
-        "not-yet-run"
+        "cpu-smoke-pass",
+        "trained-benchmark-pending"
       ],
       "era": "November 18: resonant hybrid language models",
       "era_order": 200
