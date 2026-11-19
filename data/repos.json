@@ -33,6 +33,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "3",
+    "url": "https://github.com/anttiluode/3",
+    "default_branch": "main",
+    "size": 48,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-11-19T14:32:39Z",
+    "updated_at": "2026-11-19T14:47:48Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "368",
     "url": "https://github.com/anttiluode/368",
     "default_branch": "main",
@@ -2013,6 +2024,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "FireIntoSilence",
+    "url": "https://github.com/anttiluode/FireIntoSilence",
+    "default_branch": "main",
+    "size": 20,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-11-19T04:49:39Z",
+    "updated_at": "2026-11-19T05:00:16Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "FirstOrderClockfield",
     "url": "https://github.com/anttiluode/FirstOrderClockfield",
     "default_branch": "main",
@@ -2219,6 +2241,17 @@
     "description": "ChatGPT Sol thnks of geometric neuron. ",
     "created_at": "2026-08-07T18:40:18Z",
     "updated_at": "2026-08-08T04:12:59Z",
+    "inventory_status": "reviewed"
+  },
+  {
+    "name": "FunWithOpticalLoops",
+    "url": "https://github.com/anttiluode/FunWithOpticalLoops",
+    "default_branch": "main",
+    "size": 0,
+    "visibility": "public",
+    "description": "Neon",
+    "created_at": "2026-11-19T16:51:08Z",
+    "updated_at": "2026-11-19T16:52:01Z",
     "inventory_status": "reviewed"
   },
   {
@@ -3421,6 +3454,17 @@
     "inventory_status": "reviewed"
   },
   {
+    "name": "LightScan",
+    "url": "https://github.com/anttiluode/LightScan",
+    "default_branch": "main",
+    "size": 13489,
+    "visibility": "public",
+    "description": "Sol",
+    "created_at": "2026-11-19T05:38:33Z",
+    "updated_at": "2026-11-19T06:00:19Z",
+    "inventory_status": "reviewed"
+  },
+  {
     "name": "Limasieni",
     "url": "https://github.com/anttiluode/Limasieni",
     "default_branch": "main",
@@ -4519,6 +4563,17 @@
     "created_at": "2025-10-10T17:46:14Z",
     "updated_at": "2025-10-12T06:45:25Z",
     "inventory_status": "unread"
+  },
+  {
+    "name": "PhaseLabyrinth",
+    "url": "https://github.com/anttiluode/PhaseLabyrinth",
+    "default_branch": "main",
+    "size": 600,
+    "visibility": "public",
+    "description": "Gemini Neon",
+    "created_at": "2026-11-19T05:13:03Z",
+    "updated_at": "2026-11-19T05:17:11Z",
+    "inventory_status": "reviewed"
   },
   {
     "name": "PhaseLockedPredictiveCoding",
@@ -5938,6 +5993,17 @@
     "created_at": "2026-07-22T07:44:38Z",
     "updated_at": "2026-07-22T14:58:16Z",
     "inventory_status": "unread"
+  },
+  {
+    "name": "SplatYou",
+    "url": "https://github.com/anttiluode/SplatYou",
+    "default_branch": "main",
+    "size": 579,
+    "visibility": "public",
+    "description": "Sol \\ Neon",
+    "created_at": "2026-11-19T15:16:52Z",
+    "updated_at": "2026-11-19T15:35:24Z",
+    "inventory_status": "reviewed"
   },
   {
     "name": "StableAIflow",
