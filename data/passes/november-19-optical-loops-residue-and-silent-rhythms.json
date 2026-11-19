@@ -1,0 +1,241 @@
+{
+  "id": "november-19-optical-loops-residue-and-silent-rhythms",
+  "title": "November 19 — measuring through light, material from residue, sound from silence",
+  "reviewed_at": "2026-11-19",
+  "order": 202,
+  "summary": "Six new repositories grow the curated census from 659 to 665: LightScan, FunWithOpticalLoops, 3 / THREE, PhaseLabyrinth, SplatYou and FireIntoSilence. Distinguishes physical optical validation from a convincing simulation, artistic frequency depth from 3D geometry, and musical feedback from neural novelty.",
+  "nodes": [
+    {
+      "id": "LightScan",
+      "url": "https://github.com/anttiluode/LightScan",
+      "family": "perception",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A calibrated monitor–diffuser–phone optical inverse with held-out screen patterns and live 8×8 image reconstruction.",
+      "survived": "The README describes black/white camera references, measured pattern responses, a regularized inverse and saved held-out reports.",
+      "killed": "Real diffuser recovery of new text is not proven by a Gaussian-blur simulation; it is neither X-ray imaging nor 3D tomography.",
+      "evidence": "https://github.com/anttiluode/LightScan/blob/main/README.md",
+      "tags": [
+        "2026-11-19",
+        "optics-wave-feedback"
+      ],
+      "era": "November 19: measured light, residue and feedback music",
+      "era_order": 202
+    },
+    {
+      "id": "FunWithOpticalLoops",
+      "url": "https://github.com/anttiluode/FunWithOpticalLoops",
+      "family": "visual-worlds",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Browser WebGL cavity with simulated and physical webcam-to-monitor feedback modes.",
+      "survived": "Homography lock, delay ring buffer, fractional rotation/zoom, auto-exposure ballast, kymograph and Poincaré diagnostics.",
+      "killed": "Simulated regimes are not validation on real optics; camera exposure, rolling shutter and flicker constrain live results.",
+      "evidence": "https://github.com/anttiluode/FunWithOpticalLoops/blob/main/README.md",
+      "tags": [
+        "2026-11-19",
+        "optics-wave-feedback"
+      ],
+      "era": "November 19: measured light, residue and feedback music",
+      "era_order": 202
+    },
+    {
+      "id": "3",
+      "url": "https://github.com/anttiluode/3",
+      "family": "visual-worlds",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "THREE: three optical-art scenes built from greedy Gabor packets and coarse-to-fine residue.",
+      "survived": "A standalone HTML demo of self-carving crystals, artistic frequency-as-depth layers and shatter/reform pieces.",
+      "killed": "No calibrated 3D geometry or material depth; the fitter is hand-written and does not include trained SplatWorld weights.",
+      "evidence": "https://github.com/anttiluode/3/blob/main/README.md",
+      "tags": [
+        "2026-11-19",
+        "optics-wave-feedback"
+      ],
+      "era": "November 19: measured light, residue and feedback music",
+      "era_order": 202
+    },
+    {
+      "id": "PhaseLabyrinth",
+      "url": "https://github.com/anttiluode/PhaseLabyrinth",
+      "family": "audio",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Five fade-triggered wave voices create corridors and feed a stereophonic musical delay labyrinth.",
+      "survived": "Playable browser synthesizer, editable voices, feedback-cut and phase-freeze controls, Fourier petal editor and Takens scope.",
+      "killed": "This is a designed dynamical instrument, not demonstrated biological learning or spontaneous understanding of music.",
+      "evidence": "https://github.com/anttiluode/PhaseLabyrinth/blob/main/README.md",
+      "tags": [
+        "2026-11-19",
+        "optics-wave-feedback"
+      ],
+      "era": "November 19: measured light, residue and feedback music",
+      "era_order": 202
+    },
+    {
+      "id": "SplatYou",
+      "url": "https://github.com/anttiluode/SplatYou",
+      "family": "perception",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "SplatWorld's unchanged 7.2 MB ONNX face decoder meets frozen photo residue, optical inverse and semantic feedback.",
+      "survived": "Residue Studio, active screen-mask probing and closed-loop camera innovation are implemented; synthetic numerical checks are documented.",
+      "killed": "Actual diffuser inversion remains unvalidated; a face prior can invent a face for unrelated inputs and anchor details require a real photograph.",
+      "evidence": "https://github.com/anttiluode/SplatYou/blob/main/README.md",
+      "tags": [
+        "2026-11-19",
+        "optics-wave-feedback"
+      ],
+      "era": "November 19: measured light, residue and feedback music",
+      "era_order": 202
+    },
+    {
+      "id": "FireIntoSilence",
+      "url": "https://github.com/anttiluode/FireIntoSilence",
+      "family": "audio",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Two fade-triggered wave units become a clockless and causally interruptible music instrument.",
+      "survived": "Dependency-free browser field simulation, woven/dominant/silent presets, wave and event raster, feedback cut and MIDI output.",
+      "killed": "Its engine is not bit-identical to the source Python and can settle into repeating rhythms; no learned beat or novel neural law is claimed.",
+      "evidence": "https://github.com/anttiluode/FireIntoSilence/blob/main/README.md",
+      "tags": [
+        "2026-11-19",
+        "optics-wave-feedback"
+      ],
+      "era": "November 19: measured light, residue and feedback music",
+      "era_order": 202
+    }
+  ],
+  "edges": [
+    {
+      "source": "Moon",
+      "target": "LightScan",
+      "type": "converges",
+      "confidence": "high",
+      "why": "LightScan credits Moon as a compact inverse/forward-model influence, not a direct code port.",
+      "evidence": "https://github.com/anttiluode/LightScan/blob/main/README.md"
+    },
+    {
+      "source": "PerceptionLabAI",
+      "target": "FireIntoSilence",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "FireIntoSilence ports PerceptionLabAI's WaveFieldNode and FadingHistorySpikeNode mechanisms.",
+      "evidence": "https://github.com/anttiluode/FireIntoSilence/blob/main/README.md"
+    },
+    {
+      "source": "GeometricNeuronV30",
+      "target": "FireIntoSilence",
+      "type": "converges",
+      "confidence": "high",
+      "why": "FireIntoSilence cites the fade-triggered GeometricNeuronV30 research thread.",
+      "evidence": "https://github.com/anttiluode/FireIntoSilence/blob/main/README.md"
+    },
+    {
+      "source": "FireIntoSilence",
+      "target": "PhaseLabyrinth",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "PhaseLabyrinth explicitly builds on the fade-triggered voice mechanism in FireIntoSilence.",
+      "evidence": "https://github.com/anttiluode/PhaseLabyrinth/blob/main/README.md"
+    },
+    {
+      "source": "MusicalDelayLabyrinth",
+      "target": "PhaseLabyrinth",
+      "type": "converges",
+      "confidence": "high",
+      "why": "PhaseLabyrinth credits its cross-coupled stereo delay corridor design.",
+      "evidence": "https://github.com/anttiluode/PhaseLabyrinth/blob/main/README.md"
+    },
+    {
+      "source": "TakensPhaseSpaceVisualizerVST",
+      "target": "PhaseLabyrinth",
+      "type": "extracts",
+      "confidence": "high",
+      "why": "PhaseLabyrinth credits its live delay-embedding scope.",
+      "evidence": "https://github.com/anttiluode/PhaseLabyrinth/blob/main/README.md"
+    },
+    {
+      "source": "SplatWorld",
+      "target": "SplatYou",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "SplatYou embeds the unchanged original SplatWorld ONNX face decoder.",
+      "evidence": "https://github.com/anttiluode/SplatYou/blob/main/README.md"
+    },
+    {
+      "source": "SplatWorld4",
+      "target": "SplatYou",
+      "type": "converges",
+      "confidence": "high",
+      "why": "SplatYou cites weak-direction active sensing for screen mask selection.",
+      "evidence": "https://github.com/anttiluode/SplatYou/blob/main/README.md"
+    },
+    {
+      "source": "LightScan",
+      "target": "SplatYou",
+      "type": "converges",
+      "confidence": "high",
+      "why": "SplatYou explicitly adopts the practical real-camera calibration discipline from LightScan.",
+      "evidence": "https://github.com/anttiluode/SplatYou/blob/main/README.md"
+    },
+    {
+      "source": "SplatWorld",
+      "target": "3",
+      "type": "converges",
+      "confidence": "high",
+      "why": "THREE credits oriented splat primitives but runs a new untrained greedy image fitter.",
+      "evidence": "https://github.com/anttiluode/3/blob/main/README.md"
+    },
+    {
+      "source": "Moon",
+      "target": "3",
+      "type": "converges",
+      "confidence": "high",
+      "why": "THREE credits Moon's relightable design, with no physical BRDF calibration.",
+      "evidence": "https://github.com/anttiluode/3/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov19-measured-optical-loop",
+      "title": "Calibrated physical transfer versus invented image content",
+      "description": "LightScan measures an optical forward response; FunWithOpticalLoops feeds a camera back to the display; SplatYou restricts a camera inverse with a genuine face prior. All demand hardware controls.",
+      "nodes": [
+        "Moon",
+        "LightScan",
+        "FunWithOpticalLoops",
+        "SplatYou"
+      ]
+    },
+    {
+      "id": "nov19-fading-voices",
+      "title": "Inhibitory wave memory can trigger an event when input fades",
+      "description": "FireIntoSilence uses two fade-triggered units and PhaseLabyrinth expands the idea to five voices with delay feedback.",
+      "nodes": [
+        "PerceptionLabAI",
+        "GeometricNeuronV30",
+        "FireIntoSilence",
+        "PhaseLabyrinth"
+      ]
+    },
+    {
+      "id": "nov19-residue-is-not-depth",
+      "title": "Residual details need a source, and stylized depth is not measured depth",
+      "description": "THREE fashions Gabor residue into crystals; SplatYou borrows detail only from an immutable photograph. Neither recovers undisclosed 3D ground truth.",
+      "nodes": [
+        "SplatWorld",
+        "3",
+        "SplatYou"
+      ]
+    }
+  ]
+}
