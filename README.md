@@ -4,6 +4,18 @@ Evidence-backed archaeology of Antti Luode's research repositories.
 
 The central premise is that hundreds of repositories are not hundreds of independent ideas. The project separates raw repository inventory from curated scientific interpretation, then records explicit inheritance, corrections, rediscoveries, convergences, extracted mechanisms, empirical evidence, and the scientific questions that remain unresolved.
 
+## 19 November 2026 — optical loops, material residue and sound from silence
+
+[Live six-repository wall chapter](https://anttiluode.github.io/Genealogy/#nov19-optics-silence) · [Curated scientific pass](data/passes/november-19-optical-loops-residue-and-silent-rhythms.json).
+
+Six new repositories bring the curated census **659 → 665**: [LightScan](https://github.com/anttiluode/LightScan) (22 reported November 19 commits), [FunWithOpticalLoops](https://github.com/anttiluode/FunWithOpticalLoops) (7), [3 / THREE](https://github.com/anttiluode/3) (6), [PhaseLabyrinth](https://github.com/anttiluode/PhaseLabyrinth) (6), [SplatYou](https://github.com/anttiluode/SplatYou) (5), and [FireIntoSilence](https://github.com/anttiluode/FireIntoSilence) (3).
+
+**Optical line:** LightScan tries to reconstruct unseen screen images from a measured diffuser/camera transfer, with held-out patterns and direct camera baseline; the physical success is not established by its Gaussian-blur simulation. FunWithOpticalLoops adds a calibrated WebGL webcam/monitor feedback cavity with homography lock, loop delay and instability diagnostics. SplatYou reuses the original real SplatWorld 7.2 MB ONNX face decoder, optionally carries detail from an immutable photo, and adds an actively probed optical inverse and innovation feedback. Its real phone/diffuser reconstruction is not yet independently validated. THREE explores a different destination for residue: greedy Gabor packets, self-carving crystal material, frequency-layer peeling and shatter/reform; the supposed optical depth is artistic, not 3D recovery.
+
+**Musical line:** FireIntoSilence turns two fade-triggered wave units into a feedback-controlled, clockless MIDI-capable browser instrument. PhaseLabyrinth extends this into five audiovisual voices with stigmergic pathways, stereo delay corridors, petal harmonics and a Takens scope. It is a fusion of designed dynamical instruments, not evidence of autonomous musical reasoning or a novel neurological phenomenon.
+
+**Lineage discipline:** PerceptionLabAI → FireIntoSilence → PhaseLabyrinth and SplatWorld → SplatYou are documented inheritance. LightScan → SplatYou is documented conceptual/experimental convergence. THREE, Moon and the optical feedback bench retain their own distinct mechanisms rather than being collapsed into a single supposed reconstruction method. Source-reported numerical checks and physical validation are separate claims.
+
 ## 18 November 2026 — learned inquiry and the gambling J-lens observatory
 
 [Live two-branch wall chapter](https://anttiluode.github.io/Genealogy/#nov18-inquiry-gambler) · [Curated scientific pass](data/passes/november-18-inquiry-and-casino-jlens.json) · [WonderingQwenSol](https://github.com/anttiluode/WonderingQwenSol) · [GamblerQwen](https://github.com/anttiluode/GamblerQwen) · [Recorded Qwen dashboard](https://anttiluode.github.io/GamblerQwen/) · [Short demonstration video](https://youtu.be/i5L00zl5E18).
