@@ -1,5 +1,15 @@
 # Genealogy research log
 
+## 19 November 2026 — six optical and wave-feedback arrivals
+
+[Live six-project wall chapter](https://anttiluode.github.io/Genealogy/#nov19-optics-silence) · [Curated pass](data/passes/november-19-optical-loops-residue-and-silent-rhythms.json).
+
+Reviewed LightScan, FunWithOpticalLoops, 3 / THREE, PhaseLabyrinth, SplatYou and FireIntoSilence. Added 6 curated nodes, 11 documented inheritance or convergence links and three cross-family motifs. The public census increased from 659 to 665 without duplicate records.
+
+Two counterpoints frame the day. **A plausible inverse image is not the same as a measured inverse**: LightScan reports a calibration and held-out capture protocol; SplatYou documents synthetic tests and a proposed real optical calibration; FunWithOpticalLoops distinguishes shader simulation from live webcam physics; THREE deliberately constructs artistic material from 2D residue without pretending to recover physical depth. **A self-sustained instrument is not an autonomous mind**: FireIntoSilence ports the two-wave fading release mechanism, and PhaseLabyrinth extends it to five voices and delay paths. Both have direct causal cut-feedback controls, but no biological or music-learning claim follows.
+
+The review is based on the public README documents and source-described tests, not an independent rerun of hardware measurements or browser instruments.
+
 ## 18 November 2026 — WaveFormer registered and Qwenimagination evidence corrected
 
 [WaveFormer chapter](https://anttiluode.github.io/Genealogy/#nov18-waveformer) · [new pass](data/passes/november-18-waveformer-hybrid.json).
