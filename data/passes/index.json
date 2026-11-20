@@ -630,5 +630,9 @@
   {
     "path": "november-19-optical-loops-residue-and-silent-rhythms.json",
     "enabled": true
+  },
+  {
+    "path": "november-20-complex-clockfield-and-wificam.json",
+    "enabled": true
   }
 ]
