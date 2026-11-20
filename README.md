@@ -4,6 +4,17 @@ Evidence-backed archaeology of Antti Luode's research repositories.
 
 The central premise is that hundreds of repositories are not hundreds of independent ideas. The project separates raw repository inventory from curated scientific interpretation, then records explicit inheritance, corrections, rediscoveries, convergences, extracted mechanisms, empirical evidence, and the scientific questions that remain unresolved.
 
+## 20 November 2026 — complex clocks and a standalone camera
+
+[Live two-project wall chapter](https://anttiluode.github.io/Genealogy/#nov20-clockfield-wificam) · [Curated scientific pass](data/passes/november-20-complex-clockfield-and-wificam.json) · [ComplexClockfield](https://github.com/anttiluode/ComplexClockfield) · [WIFIcam](https://github.com/anttiluode/WIFIcam).
+
+Two November 20 repositories extend the curated census **665 → 667**: **ComplexClockfield** (37 user-reported commits) and **WIFIcam** (21). They are distinct branches: a testable complex-field idea and a usable phone/PC camera instrument.
+
+**ComplexClockfield — topology is not identity:** the earlier real-scalar PhiWorld and Clockfield idea become a two-component Mexican-hat field with measurable vortex winding and spatially graded effective inertia. Under a default bounded perturbation, a +1 vortex remains detectable; sham-subtracted AB/BA comparisons distinguish linear superposition from nonlinear history sensitivity. The stringent control is negative: a nonlinear vacuum shows substantial history-sensitive response even without a vortex, and transplanting the central state is donor-like in both vacuum and vortex. The tested graded clock does not outperform uniform-clock controls. No physical gravity, stable free particle, or defect-specific memory advantage is established. [Source identity tests](https://github.com/anttiluode/ComplexClockfield/blob/main/IDENTITY.md) · [Sweep results](https://github.com/anttiluode/ComplexClockfield/blob/main/RESULTS.md).
+
+**WIFIcam — independent practical tool:** a native Android Camera2 local camera server with a web dashboard, camera/lens/zoom/focus/ISO/shutter/white-balance controls, and a dedicated Windows Tkinter GUI. Users can [download the APK](https://raw.githubusercontent.com/anttiluode/WIFIcam/main/app-debug.apk) directly and run the Windows controller from the repository; the two devices communicate across a trusted local Wi-Fi network. It spun out of the practical phone-camera concerns encountered around LightScan but does **not** depend on LightScan at runtime. Android camera capabilities vary by model, and the current APK is a debug-signed installable build rather than a Play Store release.
+
+**Lineage:** Clockfield and phi-world-theory conceptually converge in ComplexClockfield; LightScan's instrumentation branch yields an independently useful WIFIcam tool. These are provenance links, not assertions that a complex vortex is a remembering particle or that the camera app reproduces optical inversion.
 ## 19 November 2026 — optical loops, material residue and sound from silence
 
 [Live six-repository wall chapter](https://anttiluode.github.io/Genealogy/#nov19-optics-silence) · [Curated scientific pass](data/passes/november-19-optical-loops-residue-and-silent-rhythms.json).
