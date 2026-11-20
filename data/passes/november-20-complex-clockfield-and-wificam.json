@@ -1,0 +1,100 @@
+{
+  "id": "november-20-complex-clockfield-and-wificam",
+  "title": "November 20 — a world with winding, and a camera that left the lab",
+  "reviewed_at": "2026-11-20",
+  "order": 203,
+  "summary": "Two newly reviewed projects grow the census from 665 to 667. ComplexClockfield tests topology, structural clocks and the difference between history-dependent nonlinear responses and vortex-specific memory. WIFIcam is a separately installable Android Camera2 server with browser and Windows desktop controls, independent of LightScan.",
+  "nodes": [
+    {
+      "id": "ComplexClockfield",
+      "url": "https://github.com/anttiluode/ComplexClockfield",
+      "family": "clockfield",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Interactive complex Mexican-hat field Ψ=u+iv with measured +/− phase winding, static or adaptive structure-based effective inertia, and controlled AB/BA probe experiments; an identity lab separately tests vortex survival, history-sensitive response and core-transplant interventions.",
+      "survived": "In deterministic tests a +1 winding remained detectable after a bounded impulse (+1→+1, ~2-cell displacement). The linear sham-subtracted AB/BA response is effectively zero, while nonlinear systems can respond differently after AB and BA. A core-region transplant can change later probe response.",
+      "killed": "No demonstrated particle-specific memory or advantage for a slowed structural clock: nonlinear vacuum can show stronger history sensitivity, both vortex and vacuum transplants become donor-like, and the tested graded-clock vortex trails its uniform-clock control. Finite pinned boundaries and one deterministic configuration do not prove free particles, gravity or cognition.",
+      "evidence": "https://github.com/anttiluode/ComplexClockfield/blob/main/IDENTITY.md",
+      "tags": [
+        "2026-11-20",
+        "complex-field",
+        "topological-winding",
+        "structure-clock",
+        "sham-subtraction",
+        "negative-controls"
+      ],
+      "era": "November 20: clocks, winding and a practical camera",
+      "era_order": 203
+    },
+    {
+      "id": "WIFIcam",
+      "url": "https://github.com/anttiluode/WIFIcam",
+      "family": "practical-tools",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Installable Android Camera2 camera server with a token-protected Wi-Fi URL, live browser controls and a Windows Tkinter GUI for camera/lens choice, zoom, manual focus, ISO, shutter, white balance, torch, still JPEG and bursts.",
+      "survived": "The project provides native Android source, a directly downloadable debug APK, a self-contained browser interface, a desktop Python controller and screenshots. Local LAN operation is independent of LightScan and does not need a cloud account.",
+      "killed": "Not a universal replacement for phone camera firmware: usable physical cameras and manual controls are device-dependent, the phone app must stay awake in the foreground, HTTP is unencrypted, and source-reported operation is not a cross-device compatibility benchmark.",
+      "evidence": "https://github.com/anttiluode/WIFIcam/blob/main/README.md",
+      "tags": [
+        "2026-11-20",
+        "android",
+        "camera2",
+        "windows-gui",
+        "local-network",
+        "practical-tool"
+      ],
+      "era": "November 20: clocks, winding and a practical camera",
+      "era_order": 203
+    }
+  ],
+  "edges": [
+    {
+      "source": "Clockfield",
+      "target": "ComplexClockfield",
+      "type": "converges",
+      "confidence": "high",
+      "why": "ComplexClockfield explicitly revisits Clockfield's idea that field structure changes effective local oscillator timescales; the new engine uses a two-component complex scalar and exposes uniform/stamped/adaptive controls.",
+      "evidence": "https://github.com/anttiluode/ComplexClockfield/blob/main/THEORY.md"
+    },
+    {
+      "source": "phi-world-theory",
+      "target": "ComplexClockfield",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The source README and theory explicitly contrast the older real-scalar PhiWorld peaks with phase-winding defects in the new complex field; conceptual continuation, not asserted code inheritance.",
+      "evidence": "https://github.com/anttiluode/ComplexClockfield/blob/main/README.md"
+    },
+    {
+      "source": "LightScan",
+      "target": "WIFIcam",
+      "type": "extracts",
+      "confidence": "medium",
+      "why": "The earlier phone-camera setup motivated separate, reusable camera control; the resulting native Camera2 app and Windows interface stand on their own. This is a practical spinout, not a LightScan runtime dependency or port of its inverse code.",
+      "evidence": "https://github.com/anttiluode/WIFIcam/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov20-invariant-versus-causal-memory",
+      "title": "A surviving defect is not the same as a remembering individual",
+      "description": "ComplexClockfield separates charge survival from counterfactual nonlinear readout and transplantation. Its nonlinear-vacuum controls prevent attributing generic nonlinear memory to a vortex.",
+      "nodes": [
+        "Clockfield",
+        "phi-world-theory",
+        "ComplexClockfield"
+      ]
+    },
+    {
+      "id": "nov20-independent-camera-tool",
+      "title": "A reusable instrument can leave its original experiment",
+      "description": "WIFIcam turns phone-camera acquisition into a standalone local Android and Windows camera controller. The tool has practical value even when the LightScan optical inverse remains unresolved.",
+      "nodes": [
+        "LightScan",
+        "WIFIcam"
+      ]
+    }
+  ]
+}
