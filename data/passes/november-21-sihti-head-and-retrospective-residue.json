@@ -1,0 +1,234 @@
+{
+  "id": "november-21-sihti-head-and-retrospective-residue",
+  "title": "November 21 — The Sihti line: retained residues, choosing a read, excavating delayed memory",
+  "reviewed_at": "2026-11-21",
+  "order": 204,
+  "summary": "Five new reviewed projects extend the curated census 667 → 672. SihtiAI feeds spatial residue persistence into an affinity graph; SaturdayAfterRHproof isolates an action-conditioned collision; HEAD examines unsigned selective reading with supervised gradient optimization; PredictiveSihtiV2 adds a backprop-free spatial transition atlas with B-triggered routing; LazyRetrospectiveCreditAssignment tests saved-history delayed latches and a real webcam lens. The 2/20 null false latches and -31.3% webcam prediction result remain explicit.",
+  "nodes": [
+    {
+      "id": "SaturdayAfterRHproof",
+      "url": "https://github.com/anttiluode/SaturdayAfterRHproof",
+      "family": "residue-operator",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Exact action-dependent predictive closure witnesses: an eight-cell ring and a two-channel sum whose hidden sign matters under copy-left.",
+      "survived": "A one-bit signed contrast closes the constructed action-conditioned example; a light-only ring predictor requires seven readings to synchronize for the specified task.",
+      "killed": "The example does not imply arbitrary hidden histories can be recovered, and the successful candidate was offered among a deliberately small feature menu.",
+      "evidence": "https://github.com/anttiluode/SaturdayAfterRHproof/blob/main/README.md",
+      "tags": [
+        "2026-11-21",
+        "collision-witness",
+        "action-conditioned",
+        "one-bit-residue"
+      ],
+      "era": "November 21: Sihti saved-residue and retrospective head",
+      "era_order": 204
+    },
+    {
+      "id": "HEAD",
+      "url": "https://github.com/anttiluode/HEAD",
+      "family": "probe-inference",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Tests how a limited read head can expose an otherwise hidden contrast through selective second reads; contains supervised gradient-based training tests.",
+      "survived": "Reported unsigned corrective feedback succeeded 10/10 seeds in both original and fresh controls and survived output-sign reversal; the restricted scratch reader was equivalent to positional-key attention.",
+      "killed": "The training does use supervised backpropagation. No new general attention mechanism, general neural routing law or fully gradient-free training is established.",
+      "evidence": "https://github.com/anttiluode/HEAD/blob/main/UNSIGNED.md",
+      "tags": [
+        "2026-11-21",
+        "unsigned-feedback",
+        "reader",
+        "gradient-control"
+      ],
+      "era": "November 21: Sihti saved-residue and retrospective head",
+      "era_order": 204
+    },
+    {
+      "id": "SihtiAI",
+      "url": "https://github.com/anttiluode/SihtiAI",
+      "family": "residue-operator",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Reuses the original lossless Sihti sieve; tests whether signed and unsigned lifetime residues can guide a second affinity graph and explores local predictive bridging.",
+      "survived": "Core plus signed spatial residues reconstruct the input exactly. In a tuned synthetic stripe task, exploratory beta=8 unsigned persistence reached about 0.970 mean ARI across ten seeds while shuffled and signed controls failed.",
+      "killed": "The initially proposed beta=1 setting failed. Beta=8 was selected after the stripe result, and success on that scene does not establish robust general segmentation.",
+      "evidence": "https://github.com/anttiluode/SihtiAI/blob/main/README.md",
+      "tags": [
+        "2026-11-21",
+        "residue-feedback",
+        "unsigned-energy",
+        "posthoc-scale"
+      ],
+      "era": "November 21: Sihti saved-residue and retrospective head",
+      "era_order": 204
+    },
+    {
+      "id": "PredictiveSihtiV2",
+      "url": "https://github.com/anttiluode/PredictiveSihtiV2",
+      "family": "residue-operator",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Causal local patch-based next-frame atlas using the exact Sihti split, merged motion prototypes, and local B-triggered access to additional history.",
+      "survived": "Its deterministic frozen one-to-five synthetic transfer in V2.2.1 automatic mode reduced prediction MSE about 39.6% versus hold-last. The live Edge audit exercised the real browser engine and confirmed exact reconstruction.",
+      "killed": "A user-supplied real-webcam run scored 480 frames and lost 31.3% to hold-last; ghost motion, slow sampling and repeated alarms remain limitations. High recalled B is not a confirmed hidden cause.",
+      "evidence": "https://github.com/anttiluode/PredictiveSihtiV2/blob/main/README.md",
+      "tags": [
+        "2026-11-21",
+        "local-bridges",
+        "B-routing",
+        "browser",
+        "negative-camera"
+      ],
+      "era": "November 21: Sihti saved-residue and retrospective head",
+      "era_order": 204
+    },
+    {
+      "id": "LazyRetrospectiveCreditAssignment",
+      "url": "https://github.com/anttiluode/LazyRetrospectiveCreditAssignment",
+      "family": "residue-operator",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Archives overlooked residues for later search, uses recurring predictive collisions to trigger lagged candidate excavation and sample-split statistical confirmation, and exposes real webcam residues in a visual lens.",
+      "survived": "The deterministic 80-tick hidden-cue miner found exact cues in 20/20 sparse, 20/20 noisy and 20/20 polarity-reversed trials. The real-webcam retrospective probe declined to promote a weak candidate (WAIT).",
+      "killed": "Two of twenty synthetic null seeds still received spurious latches: B fell but frozen held-out error worsened. The delayed-cue miner uses a simpler synthetic FastHead, not the complete spatial engine, and no real camera precursor was demonstrated.",
+      "evidence": "https://github.com/anttiluode/LazyRetrospectiveCreditAssignment/blob/main/README.md",
+      "tags": [
+        "2026-11-21",
+        "retrospective",
+        "archive",
+        "WAIT",
+        "false-latches",
+        "webcam"
+      ],
+      "era": "November 21: Sihti saved-residue and retrospective head",
+      "era_order": 204
+    }
+  ],
+  "edges": [
+    {
+      "source": "Sihti",
+      "target": "SihtiAI",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "SihtiAI directly calls the Sihti signed telescoping sieve and tests a residue-informed affinity graph.",
+      "evidence": "https://github.com/anttiluode/SihtiAI/blob/main/README.md"
+    },
+    {
+      "source": "Sihti",
+      "target": "PredictiveSihtiV2",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "PredictiveSihtiV2 retains the exact Sihti C+R middle+R fast reconstruction in its next-frame head.",
+      "evidence": "https://github.com/anttiluode/PredictiveSihtiV2/blob/main/README.md"
+    },
+    {
+      "source": "SihtiAI",
+      "target": "PredictiveSihtiV2",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "The predictor explicitly grows from the SihtiAI predictive ResidueHead prototype into coordinate-free shared local patch banks.",
+      "evidence": "https://github.com/anttiluode/PredictiveSihtiV2/blob/main/README.md"
+    },
+    {
+      "source": "Sihti",
+      "target": "SaturdayAfterRHproof",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The constructed action witness explicitly represents hidden signed contrast as Sihti-style preserved detail.",
+      "evidence": "https://github.com/anttiluode/SaturdayAfterRHproof/blob/main/README.md"
+    },
+    {
+      "source": "SaturdayAfterRHproof",
+      "target": "HEAD",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "HEAD's two-read one-specimen contrast comes from the SaturdayAfterRHproof copy-left example.",
+      "evidence": "https://github.com/anttiluode/HEAD/blob/main/README.md"
+    },
+    {
+      "source": "Sihti",
+      "target": "HEAD",
+      "type": "converges",
+      "confidence": "high",
+      "why": "HEAD contrasts a coarse mean reading with a Sihti-like kept detail; it investigates selective access in a separate supervised training task.",
+      "evidence": "https://github.com/anttiluode/HEAD/blob/main/README.md"
+    },
+    {
+      "source": "SaturdayAfterRHproof",
+      "target": "PredictiveSihtiV2",
+      "type": "converges",
+      "confidence": "high",
+      "why": "The controlled identical-address/different-future witness motivates the local collision B score.",
+      "evidence": "https://github.com/anttiluode/PredictiveSihtiV2/blob/main/README.md"
+    },
+    {
+      "source": "PredictiveSihtiV2",
+      "target": "LazyRetrospectiveCreditAssignment",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "The delayed archive builds from predictive transition memory, and the webcam edition uses the real spatial Sihti head.",
+      "evidence": "https://github.com/anttiluode/LazyRetrospectiveCreditAssignment/blob/main/README.md"
+    },
+    {
+      "source": "HEAD",
+      "target": "LazyRetrospectiveCreditAssignment",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Sign-invariant historical relevance was inspired by HEAD's unsigned feedback, but retrospective mining uses non-gradient contingency and validation.",
+      "evidence": "https://github.com/anttiluode/LazyRetrospectiveCreditAssignment/blob/main/README.md"
+    },
+    {
+      "source": "SaturdayAfterRHproof",
+      "target": "LazyRetrospectiveCreditAssignment",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Saved history is asked to resolve a previously indistinguishable pair of predictive futures.",
+      "evidence": "https://github.com/anttiluode/LazyRetrospectiveCreditAssignment/blob/main/README.md"
+    },
+    {
+      "source": "Sihti",
+      "target": "LazyRetrospectiveCreditAssignment",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "The core organizing mechanism is that discarded signed residue remains available for future retrieval.",
+      "evidence": "https://github.com/anttiluode/LazyRetrospectiveCreditAssignment/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov21-saved-detail-late-relevance",
+      "title": "What was unnecessary now may be essential later",
+      "description": "Sihti saves signed leftovers; PredictiveSihtiV2 detects conflicts among recalled futures; LazyRetrospectiveCreditAssignment mines past residues for candidate repairs. This is synthetic evidence plus a real-world negative control, not a proven general future-cause learner.",
+      "nodes": [
+        "Sihti",
+        "SihtiAI",
+        "PredictiveSihtiV2",
+        "LazyRetrospectiveCreditAssignment"
+      ]
+    },
+    {
+      "id": "nov21-reading-is-a-decision",
+      "title": "A collision can choose which wire to read",
+      "description": "SaturdayAfterRHproof's action-conditioned sign bit, HEAD's access experiment and PredictiveSihtiV2's B-gated motion routing ask related but different questions. HEAD's supervised gradients are not inherited by the gradient-free associative heads.",
+      "nodes": [
+        "SaturdayAfterRHproof",
+        "HEAD",
+        "PredictiveSihtiV2"
+      ]
+    },
+    {
+      "id": "nov21-no-free-certainty",
+      "title": "Smaller B can hide a worse model",
+      "description": "Two null synthetic latches appeared to suppress recalled variance while making held-out forecasts worse. In real webcam footage the predictor lost to hold-last and the retrospective probe correctly declined unconfirmed associations.",
+      "nodes": [
+        "PredictiveSihtiV2",
+        "LazyRetrospectiveCreditAssignment"
+      ]
+    }
+  ]
+}
