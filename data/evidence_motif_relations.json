@@ -901,5 +901,17 @@
   },
   "nov18-waveformer-v1-ablation-null": {
     "nov18-resonant-hybrid": "limits"
+  },
+  "nov21-luotain2-process-noise-recovery": {
+    "nov21-residue-guided-law-search": "supports"
+  },
+  "nov21-luotain2-nonlocal-and-delay": {
+    "nov21-residue-guided-law-search": "supports"
+  },
+  "nov21-luotain2-measurement-noise-failure": {
+    "nov21-residue-guided-law-search": "limits"
+  },
+  "nov21-luotain2-real-media-boundary": {
+    "nov21-residue-guided-law-search": "limits"
   }
 }

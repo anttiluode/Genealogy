@@ -1,5 +1,13 @@
 # Genealogy research log
 
+## 21 November 2026 — Luotain2: residue-guided field laws
+
+[Live Luotain2 wall chapter](https://anttiluode.github.io/Genealogy/#nov21-luotain2) · [Source](https://github.com/anttiluode/Luotain2) · [Curated pass](data/passes/november-21-luotain2-residue-guided-law-search.json).
+
+Luotain2 is the seventh November 21 curated arrival (census 673 → 674): the original Luotain's cheap counterexample probes become a guided search through candidate space/time terms of field equations. FFT correlation nominates offsets and delays from leftover prediction error; early sampled probes, symmetry completion, held-out validation, pruning and independent certification keep the final equation explicit.
+
+Result: 44/45 exact and one equivalent law at each of 2% and 10% process noise; 20/20 recovery of the two nonlocal/lagged known laws; zero false non-null discoveries in 15 null trials. Failure: 1% measurement noise prevented non-null true-law recovery, and a sparse predictor on real bird video (0.1265 NMSE) lagged dense 40-term regression (0.1061), with weak benefits on typical natural photographs. These are *repository-reported* frozen trials, not an independently repeated physical discovery. The lineage separates **Luotain inheritance** from **Sihti conceptual convergence**.
+
 ## 19 November 2026 — six optical and wave-feedback arrivals
 
 [Live six-project wall chapter](https://anttiluode.github.io/Genealogy/#nov19-optics-silence) · [Curated pass](data/passes/november-19-optical-loops-residue-and-silent-rhythms.json).

@@ -14414,5 +14414,191 @@
       "Three seeds and changed sequence-length distribution insufficient for a broad architectural efficiency conclusion"
     ],
     "source": "https://github.com/anttiluode/WaveFormer/blob/main/README.md"
+  },
+  {
+    "id": "nov21-luotain2-process-noise-recovery",
+    "node": "Luotain2",
+    "claim": "Residue-guided search retrieves sparse generating rules on hidden synthetic fields with process noise.",
+    "design": "Nine fixed-law synthetic worlds (including a no-law null); development seeds 1–5, held-out seeds 101–105; 45 runs at each of 2% and 10% process noise, comparing fixed radius-2 STLSQ and randomly proposed open-grammar terms.",
+    "result": "supports",
+    "motifs": [
+      "nov21-residue-guided-law-search"
+    ],
+    "sample": {
+      "unit": "synthetic world/seed trial per process-noise level",
+      "count": 45
+    },
+    "metrics": [
+      {
+        "name": "exact recovery at 2% process noise",
+        "value": 44
+      },
+      {
+        "name": "equivalent Burgers law at 2%",
+        "value": 1
+      },
+      {
+        "name": "exact recovery at 10% process noise",
+        "value": 44
+      },
+      {
+        "name": "equivalent Burgers law at 10%",
+        "value": 1
+      },
+      {
+        "name": "fixed library exact per level",
+        "value": 35
+      },
+      {
+        "name": "null-world false laws across all levels",
+        "value": 0
+      }
+    ],
+    "controls": [
+      "Independent train, validation and test trajectories",
+      "Fixed radius-2 library with STLSQ",
+      "Random proposal sampler with same open grammar",
+      "No-law/null world"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "replication": "Repository-reported committed numerical runs; not independently rerun here.",
+    "limitations": [
+      "World families and selection thresholds were defined/tuned during development; held-out seeds are within those families",
+      "A conservative Burgers formulation is equivalent, not exact term recovery",
+      "The fixed library recovers ordinary local laws at lower median runtime"
+    ],
+    "source": "https://github.com/anttiluode/Luotain2/blob/main/RESULTS.md"
+  },
+  {
+    "id": "nov21-luotain2-nonlocal-and-delay",
+    "node": "Luotain2",
+    "claim": "Residual FFT proposals find offsets and temporal delays that a prelisted fixed small stencil excludes.",
+    "design": "Known nonlocal link (+17,-9) and lag-3 echo (-11,+23), five held-out seeds each at two process-noise levels, with fixed radius-2 stencil and random proposal controls.",
+    "result": "supports",
+    "motifs": [
+      "nov21-residue-guided-law-search"
+    ],
+    "sample": {
+      "unit": "held-out synthetic seed/world/noise trial",
+      "count": 20
+    },
+    "metrics": [
+      {
+        "name": "Luotain2 exact",
+        "value": 20
+      },
+      {
+        "name": "fixed-stencil exact",
+        "value": 0
+      },
+      {
+        "name": "random-proposal exact",
+        "value": 0
+      }
+    ],
+    "controls": [
+      "Same held-out trajectories and process-noise levels",
+      "Fixed radius-2 candidate stencil",
+      "Unguided candidate selection from open grammar"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Hidden laws were sparse and present within the designed grammar",
+      "Does not show unrestricted symbolic physics discovery or unseen hidden-variable handling"
+    ],
+    "source": "https://github.com/anttiluode/Luotain2/blob/main/RESULTS.md"
+  },
+  {
+    "id": "nov21-luotain2-measurement-noise-failure",
+    "node": "Luotain2",
+    "claim": "Out-of-sample predictive fit alone is insufficient to recover the true sparse law when sensor readings are noisy.",
+    "design": "1% measurement noise on eight non-null known-law synthetic worlds with five held-out seeds each; compare true generating law against discovered predictor, fixed library and random controls.",
+    "result": "contradicts",
+    "motifs": [
+      "nov21-residue-guided-law-search"
+    ],
+    "sample": {
+      "unit": "held-out non-null synthetic world/seed trial",
+      "count": 40
+    },
+    "metrics": [
+      {
+        "name": "non-null exact law recoveries",
+        "value": 0
+      },
+      {
+        "name": "best predictor to true-law held-out NMSE ratio in wave world",
+        "value": 0.465
+      }
+    ],
+    "controls": [
+      "Known generating equations",
+      "Fixed radius-2 STLSQ",
+      "Random proposals",
+      "Independent test streams"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Model lacks explicit errors-in-variables measurement-noise treatment",
+      "A better predictor of noisy observations is not necessarily better physical-law identification"
+    ],
+    "source": "https://github.com/anttiluode/Luotain2/blob/main/RESULTS.md"
+  },
+  {
+    "id": "nov21-luotain2-real-media-boundary",
+    "node": "Luotain2",
+    "claim": "A small composable sparse grammar does not yet consistently outperform standard real-image and real-video prediction baselines.",
+    "design": "Ten still-image held-out bottom-band lossless coding comparisons against JPEG-LS median and fixed local stencils, plus 90×160 grayscale cockatoo video with final 30% of frames held out.",
+    "result": "mixed",
+    "motifs": [
+      "nov21-residue-guided-law-search"
+    ],
+    "sample": {
+      "unit": "real still-image benchmark",
+      "count": 10
+    },
+    "metrics": [
+      {
+        "name": "text discovered-law bits per pixel",
+        "value": 4.066
+      },
+      {
+        "name": "text fixed radius-2 bits per pixel",
+        "value": 4.119
+      },
+      {
+        "name": "text JPEG-LS median bits per pixel",
+        "value": 4.208
+      },
+      {
+        "name": "cockatoo discovered sparse law test NMSE",
+        "value": 0.1265
+      },
+      {
+        "name": "cockatoo hold-last NMSE",
+        "value": 0.1302
+      },
+      {
+        "name": "cockatoo dense 40-term regression NMSE",
+        "value": 0.1061
+      }
+    ],
+    "controls": [
+      "JPEG-LS median causal predictor",
+      "Fixed radius-1 and radius-2 predictors",
+      "Hold-last on video",
+      "Dense fixed-library regression on video"
+    ],
+    "held_out": true,
+    "external_data": true,
+    "limitations": [
+      "Text, coffee and gravel benefits are narrow, while natural image performance is often similar or worse",
+      "Image predictor bits-per-pixel results do not include a production entropy coder",
+      "One short real video does not establish generalization to arbitrary movement or physics"
+    ],
+    "source": "https://github.com/anttiluode/Luotain2/blob/main/RESULTS.md"
   }
 ]

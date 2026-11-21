@@ -638,5 +638,9 @@
   {
     "path": "november-21-sihti-head-and-retrospective-residue.json",
     "enabled": true
+  },
+  {
+    "path": "november-21-luotain2-residue-guided-law-search.json",
+    "enabled": true
   }
 ]

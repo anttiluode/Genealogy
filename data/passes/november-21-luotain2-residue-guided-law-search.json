@@ -1,0 +1,62 @@
+{
+  "id": "november-21-luotain2-residue-guided-law-search",
+  "title": "November 21 — Luotain2: the residue proposes the next physical-law term",
+  "reviewed_at": "2026-11-21",
+  "order": 205,
+  "summary": "A new 674th repository extends Luotain's cheap-probe philosophy from multiplication-table equational logic into spatial/temporal field-law search. FFT-guided residual proposals recovered 44/45 exact +1 equivalent per process-noise level and found a nonlocal link or delayed echo in 20/20 trials. Measurement-noise law identification failed; general photographs and video remain largely outside the sparse grammar's advantage.",
+  "nodes": [
+    {
+      "id": "Luotain2",
+      "url": "https://github.com/anttiluode/Luotain2",
+      "family": "probe-inference",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A residue-guided sparse law-discovery instrument for moving 2D fields and causal still-image prediction: FFT cross-correlations propose unrestricted spatial offsets and temporal delays, cheap probes screen candidates, held-out validation decides, coefficients are simplified to fractions and independently re-scored.",
+      "survived": "At 2% and 10% process noise it recovered 44/45 exact known laws plus one equivalently predictive conservative Burgers form at each level; nonlocal offset (+17,-9) and 3-frame delayed echo recovered 20/20 where fixed radius-2 stencil and random proposals recovered 0/20. No spurious non-null law on 15 null trials. On a real text image held-out coding improved to 4.066 bpp versus 4.119 fixed-stencil and 4.208 JPEG-LS median.",
+      "killed": "With 1% measurement noise it recovered no non-null exact laws, because denoising mixtures beat the true generating equation on observed-data prediction. Natural photos were mostly similar or inferior to fixed/JPEG-LS predictors, and real cockatoo video barely beat hold-last (0.1265 vs 0.1302 NMSE) and lost to dense regression (0.1061). Components are known sparse-regression/FFT techniques; candidate thresholds were tuned on development seeds of the same world families.",
+      "evidence": "https://github.com/anttiluode/Luotain2/blob/main/README.md",
+      "tags": [
+        "2026-11-21",
+        "residue-proposals",
+        "fft-cross-correlation",
+        "symbolic-law-discovery",
+        "held-out-validation",
+        "negative-controls",
+        "field-dynamics"
+      ],
+      "era": "November 21: residue starts proposing field laws",
+      "era_order": 205
+    }
+  ],
+  "edges": [
+    {
+      "source": "Luotain",
+      "target": "Luotain2",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Luotain2 explicitly names the original Luotain and ports its cheap-probe-before-expensive-validation strategy to data-driven field laws, rather than to implication classes of equational theories.",
+      "evidence": "https://github.com/anttiluode/Luotain2/blob/main/README.md"
+    },
+    {
+      "source": "Sihti",
+      "target": "Luotain2",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both treat what a current operator leaves unexplained as structured information; Luotain2 uses the residual to propose new shift/delay terms rather than preserving signed multiscale pixels losslessly. This is a conceptual convergence, not a direct Sihti-code port.",
+      "evidence": "https://github.com/anttiluode/Luotain2/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov21-residue-guided-law-search",
+      "title": "A residual can propose the next explicit term, but prediction is not identification",
+      "description": "Sihti retains what a sieve removes; Luotain rejects most false laws with cheap probes; Luotain2 lets spatial and temporal residual correlations nominate a new term in a readable law. Held-out improvements are useful but measurement noise shows that the best predictor need not equal the generating law.",
+      "nodes": [
+        "Sihti",
+        "Luotain",
+        "Luotain2"
+      ]
+    }
+  ]
+}

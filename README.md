@@ -4,6 +4,18 @@ Evidence-backed archaeology of Antti Luode's research repositories.
 
 The central premise is that hundreds of repositories are not hundreds of independent ideas. The project separates raw repository inventory from curated scientific interpretation, then records explicit inheritance, corrections, rediscoveries, convergences, extracted mechanisms, empirical evidence, and the scientific questions that remain unresolved.
 
+## 21 November 2026 — Luotain2: when the residue starts proposing a law
+
+[**New Luotain2 wall chapter**](https://anttiluode.github.io/Genealogy/#nov21-luotain2) · [Source repository](https://github.com/anttiluode/Luotain2) · [Full results](https://github.com/anttiluode/Luotain2/blob/main/RESULTS.md) · [Curated pass](data/passes/november-21-luotain2-residue-guided-law-search.json).
+
+**Seventh November 21 curated arrival; census 673 → 674.** [Luotain](https://github.com/anttiluode/Luotain) used tiny multiplication tables as cheap probes to eliminate impossible algebraic implications. **Luotain2 moves the same economy into spatial and temporal fields:** fit a small readable operator, inspect what it fails to predict, use FFT correlation of that residue to nominate a missing offset or lag, screen proposals cheaply, and retain only changes supported on independent validation. The resulting law is simplified to fractions and independently re-scored.
+
+**What survived:** across each of two process-noise conditions (2% and 10%), the instrument found **44/45 exact generating laws plus one equivalent Burgers form**. It recovered a deliberately distant (+17, −9) link and a three-frame delayed echo in **20/20** total fresh tests; radius-2 fixed stencils and random proposals found **0/20**. The null world yielded no invented law. A held-out text-image predictor reached **4.066 bits/pixel**, beating the fixed radius-2 predictor (**4.119**) and JPEG-LS median (**4.208**) on that specific image.
+
+**What failed:** under **1% observation/measurement noise**, no non-null exact generating laws were identified—predictive denoising mixtures can beat the true law's test MSE without being the true law. On a real cockatoo clip the sparse rule was only marginally better than hold-last (**0.1265** vs **0.1302** NMSE), and a dense 40-term regression was better (**0.1061**). Ordinary natural photos were mostly ties or losses against simple baselines. These are controlled synthetic law families with held-out seeds, not discovery of an unknown physical law.
+
+**Lineage:** **Luotain → Luotain2** is an explicit inheritance of cheap probes and readable certificates. **Sihti ↝ Luotain2** is a conceptual convergence: the leftover signal becomes a guide for the *next* operator term rather than merely being stored for exact reconstruction. [Read the original Luotain README](https://github.com/anttiluode/Luotain/blob/main/README.md).
+
 ## 21 November 2026 — the Sihti line: what the future asks the residue to remember
 
 [**Special top-of-wall Sihti lineage**](https://anttiluode.github.io/Genealogy/#nov21-sihti-lineage) · [Curated scientific pass](data/passes/november-21-sihti-head-and-retrospective-residue.json) · [Detailed family study](docs/sihti-lineage.md).

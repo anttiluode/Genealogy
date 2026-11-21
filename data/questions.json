@@ -2115,5 +2115,47 @@
       "Instructed holding is not spontaneous imagination.",
       "No subjective experience or human-like consciousness conclusion follows."
     ]
+  },
+  {
+    "id": "nov21-luotain2-measurement-identification",
+    "title": "Can residue-guided law search identify a generating law from noisy physical measurements, rather than merely improve prediction?",
+    "state": "open",
+    "motifs": [
+      "nov21-residue-guided-law-search"
+    ],
+    "evidence": [
+      "nov21-luotain2-process-noise-recovery",
+      "nov21-luotain2-nonlocal-and-delay",
+      "nov21-luotain2-measurement-noise-failure",
+      "nov21-luotain2-real-media-boundary"
+    ],
+    "competing_explanations": [
+      "A correctly specified measurement-noise model and errors-in-variables estimator will restore identifiable sparse terms from longer independent observations, while the residue can still propose the right offsets.",
+      "Under unknown noise, hidden state and unobserved forcing, several law families are observationally equivalent; better prediction cannot by itself distinguish the true generator."
+    ],
+    "known": [
+      "Held-out process-noise worlds yielded 44 exact and one equivalent sparse law per level, with open-offset and lag-3 targets found in 20/20 runs.",
+      "At 1% measurement noise, no non-null exact law was recovered even though fitted predictors sometimes beat the true law on held-out noisy observations.",
+      "On cockatoo video the proposed sparse law only slightly beat hold-last and was worse than dense fixed regression."
+    ],
+    "missing_discriminator": "A preregistered measurement-noise, hidden-forcing and sensor-specific holdout suite with independently measured noise parameters and interventions that distinguish competing generators.",
+    "candidate_experiment": {
+      "design": "Use the same underlying heat/wave/transport worlds with separate process noise, observation noise and spatially correlated sensor noise; estimate noise on calibration-only data. Compare original Luotain2, an errors-in-variables or latent-state variant, fixed STLSQ and dense prediction. Freeze thresholds, then evaluate exact generator recovery and interventions on unseen world families and a calibrated physical stream.",
+      "cost": "CPU-friendly synthetic sweeps plus one short real sensor capture; no cloud training required.",
+      "outcomes": [
+        {
+          "if": "Recovered sparse terms and intervention responses generalize across held-out sensor-noise families",
+          "then": "Support a narrow, interpretable identification result, beyond predictive fit."
+        },
+        {
+          "if": "Only denoising predictors improve held-out MSE while generators remain ambiguous",
+          "then": "Preserve the distinction: good compressor/predictor does not imply discovered physical law."
+        }
+      ]
+    },
+    "notes": [
+      "Existing hidden worlds are controlled synthetic laws; held-out seeds are not evidence of arbitrary physical discovery.",
+      "Known ingredients include matching pursuit, SINDy/PDE-FIND, stepwise regression and FFT template correlation."
+    ]
   }
 ]
