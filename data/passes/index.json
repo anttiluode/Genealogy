@@ -634,5 +634,9 @@
   {
     "path": "november-20-complex-clockfield-and-wificam.json",
     "enabled": true
+  },
+  {
+    "path": "november-21-sihti-head-and-retrospective-residue.json",
+    "enabled": true
   }
 ]
