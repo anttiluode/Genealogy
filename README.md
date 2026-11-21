@@ -4,6 +4,20 @@ Evidence-backed archaeology of Antti Luode's research repositories.
 
 The central premise is that hundreds of repositories are not hundreds of independent ideas. The project separates raw repository inventory from curated scientific interpretation, then records explicit inheritance, corrections, rediscoveries, convergences, extracted mechanisms, empirical evidence, and the scientific questions that remain unresolved.
 
+## 21 November 2026 — the Sihti line: what the future asks the residue to remember
+
+[**Special top-of-wall Sihti lineage**](https://anttiluode.github.io/Genealogy/#nov21-sihti-lineage) · [Curated scientific pass](data/passes/november-21-sihti-head-and-retrospective-residue.json) · [Detailed family study](docs/sihti-lineage.md).
+
+**Five new curated repositories, census 667 → 672:** [SaturdayAfterRHproof](https://github.com/anttiluode/SaturdayAfterRHproof) (**2** user-reported commits), [HEAD](https://github.com/anttiluode/HEAD) (**5**), [SihtiAI](https://github.com/anttiluode/SihtiAI) (**21**), [PredictiveSihtiV2](https://github.com/anttiluode/PredictiveSihtiV2) (**7**), and [LazyRetrospectiveCreditAssignment](https://github.com/anttiluode/LazyRetrospectiveCreditAssignment) (**6**). The counts describe activity, not scientific merit.
+
+**The image-and-memory spine:** [SighImageSuper](https://github.com/anttiluode/SighImageSuper) → [Sihti](https://github.com/anttiluode/Sihti) → **SihtiAI** → **PredictiveSihtiV2** → **LazyRetrospectiveCreditAssignment**. Sihti keeps the exact signed differences between a coarse core and discarded structure. SihtiAI tests whether unsigned lifetime residue can shape a new pixel relation (the beta=1 experiment failed; beta=8 was exploratory). PredictiveSihtiV2 stores coordinate-free, local observed transitions and lets conflicting recalled futures **B** trigger selective motion reads. LazyRetrospectiveCreditAssignment saves the previously irrelevant residue and tests whether later collisions justify promoting an old signal into a working memory latch.
+
+**The converging head/closure branch:** **SaturdayAfterRHproof → HEAD**. A future copy-left action makes a previously invisible sign bit necessary; HEAD experimentally studies how an access-limited read head can recover hidden contrast. HEAD's supervised training uses gradients, even though the newer Predictive Sihti and retrospective miner are backprop-free. These links are scientific provenance and conceptual convergence, not a claim that all projects use the same architecture.
+
+**What survived:** the Predictive Sihti V2.2.1 frozen 1→5 synthetic benchmark reduced MSE **39.6%** versus hold-last with automatic routing. The delayed-cue miner retrieved the exact historical channel and lag on **20/20** sparse, **20/20** noisy and **20/20** sign-reversed 80-tick cue trials.
+
+**What failed in the world:** in 20 null-world seeds, **two false latches** made internal disagreement B look smaller while *worsening* held-out prediction. In a real 480-scored-frame webcam export, the predictor scored **−31.3%** against hold-last, and the retrospective miner returned **WAIT** without validating any delayed cause. Camera recordings were not added to this public genealogy. The exact Sihti spatial reconstruction remains intact; that is not yet a useful real-time predictive model.
+
 ## 20 November 2026 — complex clocks and a standalone camera
 
 [Live two-project wall chapter](https://anttiluode.github.io/Genealogy/#nov20-clockfield-wificam) · [Curated scientific pass](data/passes/november-20-complex-clockfield-and-wificam.json) · [ComplexClockfield](https://github.com/anttiluode/ComplexClockfield) · [WIFIcam](https://github.com/anttiluode/WIFIcam).
