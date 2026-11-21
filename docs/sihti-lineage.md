@@ -18,6 +18,14 @@ SihtiAI asks if the unsigned persistence of a disappearing texture can write a b
 
 These are documentary inheritance and conceptual convergence links, *not* a claim that each repository is the same codebase.
 
+## The newest convergent branch: SihtiZipper
+
+[SihtiZipper](https://github.com/anttiluode/SihtiZipper) explores a genuinely different operation: **links** between separately preserved vector tracks. The original synthetic switchyard stores an index seam that can slip, detach and rezip without changing the underlying vectors. At noise 0.13 it reports 91.66% correct matching versus 91.31% for an equally local greedy reader, so the extra state has only a modest measured effect.
+
+Its [Experiment 002](https://github.com/anttiluode/SihtiZipper/tree/main/experiment002) trains an 80,786-parameter, 18-step *pixel DDPM* to reconstruct a clean 24×24 two-object scene from obscured observations. An explicitly coded new zipper-inspired tracker, an identical ungated constant-velocity baseline and hold-last see the same partial stream. On 24 test videos, the gated tracker makes 2 wrong observed joins among 567 accepted versus 40/625 ungated, with 201 vs 143 abstentions. Masked-strip MSE is 0.006566 (zipper), 0.007788 (ungated), 0.012496 (hold-last), 0.136207 (raw DDPM), and 0.011443 (validation-calibrated DDPM). The raw DDPM better reconstructs true hidden *foreground*, but paints unwanted background. Calibrating its background can erase the object too. Identity is encoded by two distinct appearance channels when visible, and the tracker retains longer history than the DDPM; **this is not a result against modern video diffusion or a genuinely identity-blind occlusion test**.
+
+The zipper belongs alongside HEAD and PredictiveSihti's selective-routing motif as a convergent experiment, not above LazyRetrospective in a fabricated linear ancestry.
+
 ## The cold wall: what did not work
 
 | Test | Observation | Interpretation limit |

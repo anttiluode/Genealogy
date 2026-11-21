@@ -3,7 +3,7 @@
   "title": "November 21 — The Sihti line: retained residues, choosing a read, excavating delayed memory",
   "reviewed_at": "2026-11-21",
   "order": 204,
-  "summary": "Five new reviewed projects extend the curated census 667 → 672. SihtiAI feeds spatial residue persistence into an affinity graph; SaturdayAfterRHproof isolates an action-conditioned collision; HEAD examines unsigned selective reading with supervised gradient optimization; PredictiveSihtiV2 adds a backprop-free spatial transition atlas with B-triggered routing; LazyRetrospectiveCreditAssignment tests saved-history delayed latches and a real webcam lens. The 2/20 null false latches and -31.3% webcam prediction result remain explicit.",
+  "summary": "Six new reviewed projects extend the curated census 667 → 673. SihtiAI feeds spatial residue persistence into an affinity graph; SaturdayAfterRHproof isolates an action-conditioned collision; HEAD examines unsigned selective reading with supervised gradient optimization; PredictiveSihtiV2 adds a backprop-free spatial transition atlas with B-triggered routing; LazyRetrospectiveCreditAssignment tests saved-history delayed latches and a real webcam lens. The 2/20 null false latches and -31.3% webcam prediction result remain explicit. A reversible multi-stream zipper branch and a small trained diffusion comparator join the November 21 record.",
   "nodes": [
     {
       "id": "SaturdayAfterRHproof",
@@ -107,6 +107,29 @@
       ],
       "era": "November 21: Sihti saved-residue and retrospective head",
       "era_order": 204
+    },
+    {
+      "id": "SihtiZipper",
+      "url": "https://github.com/anttiluode/SihtiZipper",
+      "family": "residue-operator",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Explicit multi-track vector zipper prototype retains separate original vector tapes and reversible index links. Jam, slip, lock and detach decisions maintain local phase binding; Experiment 002 compares a new zipper-inspired, gated object tracker with a genuinely trained conditional pixel diffusion model on synthetic occluded videos.",
+      "survived": "Original 40-seed synthetic 4D switchyard scored about 91.66% correct joins versus 91.31% for local greedy and 62.47% for fixed alignment at noise 0.13. A separately trained 80,786-parameter 18-step pixel DDPM and an explicit gated tracking port received the same partially occluded video inputs; held-out test: gated tracker 2 false observed joins of 567 accepted versus 40/625 ungated, with hidden-region MSE 0.006566 versus 0.007788 ungated. Fully recorded offline video replay and frozen checkpoint exist.",
+      "killed": "The first zipper advantage over greedy joining is small on controlled synthetic schedules. The later Python gate is a conventional constant-velocity tracker's rejection mechanism with zipper-style reversible links, not an invocation of the original JavaScript switchyard. The tiny DDPM is not a competitive modern video diffusion architecture, its raw output hallucinates bright background, and the calibrated variant can erase real foreground. The two observed color channels make identities distinguishable when visible; natural-video object identity, truly indistinguishable objects and superior multimodal reasoning remain unproved.",
+      "evidence": "https://github.com/anttiluode/SihtiZipper/blob/main/experiment002/README.md",
+      "tags": [
+        "2026-11-21",
+        "reversible-binding",
+        "phase-lock",
+        "synthetic-video",
+        "gated-tracker",
+        "diffusion-control",
+        "negative-results"
+      ],
+      "era": "November 21: Sihti saved-residue and retrospective head",
+      "era_order": 204
     }
   ],
   "edges": [
@@ -197,6 +220,30 @@
       "confidence": "high",
       "why": "The core organizing mechanism is that discarded signed residue remains available for future retrieval.",
       "evidence": "https://github.com/anttiluode/LazyRetrospectiveCreditAssignment/blob/main/README.md"
+    },
+    {
+      "source": "Sihti",
+      "target": "SihtiZipper",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Saved original signals and explicit reversible link archives echo Sihti's commitment to not destroying discarded distinction; the zipper is a new association operator, not a port of the diffusion sieve.",
+      "evidence": "https://github.com/anttiluode/SihtiZipper/blob/main/README.md"
+    },
+    {
+      "source": "HEAD",
+      "target": "SihtiZipper",
+      "type": "converges",
+      "confidence": "high",
+      "why": "HEAD investigates selective reading; SihtiZipper explores local reversible links and abortable access without writing into other heads' original vector tracks.",
+      "evidence": "https://github.com/anttiluode/SihtiZipper/blob/main/README.md"
+    },
+    {
+      "source": "PredictiveSihtiV2",
+      "target": "SihtiZipper",
+      "type": "converges",
+      "confidence": "high",
+      "why": "PredictiveSihti's local disagreement and learned historical patches motivated a switchyard that can explicitly jam and detach incompatible streams; present zipper tension is not the predictive B variance.",
+      "evidence": "https://github.com/anttiluode/SihtiZipper/blob/main/README.md"
     }
   ],
   "motifs": [
@@ -228,6 +275,17 @@
       "nodes": [
         "PredictiveSihtiV2",
         "LazyRetrospectiveCreditAssignment"
+      ]
+    },
+    {
+      "id": "nov21-zipper-can-abstain",
+      "title": "Preserved detail still needs a trustworthy link",
+      "description": "The zipper branch separates reversible binding from prediction. Explicit link gates resist wrong observations in a synthetic occluded-video task but cost coverage; a separate tiny trained diffusion denoiser has different pixel reconstruction failure modes. No demonstrated dominance over mature trackers or diffusion architectures.",
+      "nodes": [
+        "Sihti",
+        "HEAD",
+        "PredictiveSihtiV2",
+        "SihtiZipper"
       ]
     }
   ]

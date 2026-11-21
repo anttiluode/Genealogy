@@ -48,3 +48,8 @@
 @media(max-width:1190px){.sihti-feature-cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:780px){.sihti-feature-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.sihti-feature-outcomes{grid-template-columns:1fr}}
 @media(max-width:530px){.sihti-feature-cards{grid-template-columns:1fr}.sihti-feature{padding:15px}.sihti-spine{padding:13px}.sihti-feature-lede{font-size:14px}}
+
+/* Six November 21 Sihti descendants: balanced three-column chapter cards. */
+.sihti-feature-cards{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:780px){.sihti-feature-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:530px){.sihti-feature-cards{grid-template-columns:1fr}}
