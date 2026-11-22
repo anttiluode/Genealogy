@@ -1,0 +1,235 @@
+{
+  "id": "november-22-inverse-head-and-cabbage-generators",
+  "title": "November 22 — From Sigh's inverse EQ to attention probes and parent-conditioned residue growth",
+  "reviewed_at": "2026-11-22",
+  "order": 206,
+  "summary": "Five new November 22 repositories (curated census 674 → 679) connect fixed Fourier inverses, content-written EQs, isolated transformer-head probing, dark-zone nonlinear image writers and donor-conditioned multiscale residue synthesis. Luotain2 already has a November 21 pass and is linked here rather than duplicated. The strongest results are constrained-system identification and controlled synthetic tests; natural-photo super-resolution and natural-leaf generation remain unproved.",
+  "nodes": [
+    {
+      "id": "SighImageInverse",
+      "url": "https://github.com/anttiluode/SighImageInverse",
+      "family": "probe-inference",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Offline before/after identification of the ten-control radial Fourier EQ in the actual SighImageSuper recursion, fitting residual spectral mismatch while showing evidence for identifiable and dark frequency bands.",
+      "survived": "Built-in matched-forward synthetic mysteries recover supported filter bands and replay the transformed image; the implementation tests held-out source images, known α and pass counts, zero-energy bands, spatial shifts and exact Sigh k² lookup.",
+      "killed": "This is a known-family EQ inverse, not arbitrary matrix or neural-head identification. No input power means no spectral identifiability; one image pair cannot in general identify both α and number of passes. Float-valued synthetic data can reveal tiny gains that rounded 8-bit images cannot.",
+      "evidence": "https://github.com/anttiluode/SighImageInverse/blob/main/README.md",
+      "tags": [
+        "2026-11-22",
+        "inverse-EQ",
+        "Sigh-recursion",
+        "identifiability",
+        "residue-search",
+        "known-family"
+      ],
+      "era": "November 22: the inverse, the writer, and the cabbage",
+      "era_order": 206
+    },
+    {
+      "id": "BlackBoxSpotlight",
+      "url": "https://github.com/anttiluode/BlackBoxSpotlight",
+      "family": "probe-inference",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Output-only-in-the-observation-boundary probes of a frozen OneTinyTransformer first-layer head recover token-pair/distance log-odds patterns and forecast positional attention mass on unseen token sequences without reading actual attention weights during fitting.",
+      "survived": "Both isolated first-layer heads passed the measured-head routing audit. Extrapolating beyond directly probed lags 1–16 to lags 17–23, the recurrence transferred from head 1 to head 2 with a new vocabulary at 0.0060% mean attention total-variation distance versus 7.093% hold-flat; a predicted peak at lag 21 was observed. The three fastest measured oscillations align with RoPE frequencies.",
+      "killed": "At layer 2 singleton-value mixture assumptions fail already in the first two-word probe. Results concern one frozen trained model, two first-layer heads and small controlled vocabularies, with isolated head outputs rather than generated text; the work does not recover arbitrary attention matrices, unique query/key weights, or global model importance.",
+      "evidence": "https://github.com/anttiluode/BlackBoxSpotlight/blob/main/README.md",
+      "tags": [
+        "2026-11-22",
+        "attention-probe",
+        "RoPE",
+        "positional-rhythm",
+        "held-out-distance",
+        "layer2-failure"
+      ],
+      "era": "November 22: the inverse, the writer, and the cabbage",
+      "era_order": 206
+    },
+    {
+      "id": "SighImageX",
+      "url": "https://github.com/anttiluode/SighImageX",
+      "family": "image-generation",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "A two-stage adaptive Sigh image-restoration filter in which each current image's ten power-spectrum features write ten radial FFT gains per pass; a separate boundary observer recovers both per-image curves and the declared affine-logistic writer.",
+      "survived": "On synthetic held-out blur/noise, adaptive filters improved over one fixed EQ. Known-family curve recovery on 32 images reached worst discrepancy 2.6e-14 and affine-logistic writer reconstruction roughly 3.4e-15/3.7e-15 RMSE. A one-mode checkerboard intervention changed other modes by RMS 0.0417 only when gains rewrote, versus 0 for the fixed model.",
+      "killed": "A two-specialist-filter-plus-energy-threshold baseline nearly matched restoration accuracy; photo-noise MSE 0.01640 was slightly worse than its 0.01634. The first writer sees only magnitudes and ignores phase arrangement. One global radial EQ has no local object or edge addresses and cannot create frequencies absent from its input by multiplication alone.",
+      "evidence": "https://github.com/anttiluode/SighImageX/blob/main/README.md",
+      "tags": [
+        "2026-11-22",
+        "self-writing-EQ",
+        "Fourier",
+        "output-boundary",
+        "phase-blind",
+        "restoration-controls"
+      ],
+      "era": "November 22: the inverse, the writer, and the cabbage",
+      "era_order": 206
+    },
+    {
+      "id": "JanusBoxCabbageSihtiX",
+      "url": "https://github.com/anttiluode/JanusBoxCabbageSihtiX",
+      "family": "image-generation",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Nonlinear Fourier dark-zone detail writing: a sign-blind, cross-scale phase-congruence flashlight selects where a sign-sensitive odd translator generates harmonics that magnitude-only EQ cannot create; includes an external black-box reader.",
+      "survived": "A fixed Fourier gain is mathematically unable to create energy in a completely empty dark band. On held-out synthetic edge scenes, an edge-trained flashlight+odd translator reached dark-band R² +0.746 versus +0.432 for an ungated odd translator and approximately zero for even terms. Wrong-parent displacement and phase-scrambled twins sharply defeated it; the reader recovers dictionary-composed synthetic box weights and refuses an out-of-dictionary example.",
+      "killed": "On held-out natural-photo crops photo-trained dark-band R² was only +0.053; edge-trained model was -0.205 and a mixed model -0.005. Phase twins turned strongly negative. Its best single term resembles established clip/high-pass extrapolation (Greenspan et al.), and a supplied dictionary does not imply arbitrary operator discovery. No competitive real photo super-resolution has been shown.",
+      "evidence": "https://github.com/anttiluode/JanusBoxCabbageSihtiX/blob/main/README.md",
+      "tags": [
+        "2026-11-22",
+        "dark-frequency-zone",
+        "flashlight-translator",
+        "odd-symmetry",
+        "phase-congruence",
+        "negative-natural-photos"
+      ],
+      "era": "November 22: the inverse, the writer, and the cabbage",
+      "era_order": 206
+    },
+    {
+      "id": "CabbageSuper",
+      "url": "https://github.com/anttiluode/CabbageSuper",
+      "family": "image-generation",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Offline coarse-to-fine conditional residue regrowth: a donor-trained library matches coarse descriptors to fine patches, cross-leaf held-out targets test spatial parent conditioning, and a donor-calibrated novelty gate abstains on unfamiliar parent geometry.",
+      "survived": "On four new leaves generated by the same synthetic procedure and three selection seeds each, correct-parent retrieval won 12/12 (mean residue MSE 0.000153) versus no-detail 0.000311, shuffled-parent 0.000629 and independent patches 0.000697. Phase-scrambling the generated residue preserved Fourier magnitudes to ~2.54e-14 yet harmed placement. A donor-only 95th-percentile nearest-neighbor gate rejected flat input (0 coverage, 0 invented-detail error) while retaining 74–84% of four synthetic-leaf target regions.",
+      "killed": "The ungated version hallucinates detail on a flat field (MSE 0.000304 versus zero from no detail). All successful leaves derive from a constructed synthetic family; there is no validated natural-leaf benchmark. The target coarse parent is supplied, detail patches are retrieved rather than newly learned by a neural operator, and there is no endless coordinate-consistent full-cabbage generation.",
+      "evidence": "https://github.com/anttiluode/CabbageSuper/blob/main/results/experiment002_003.json",
+      "tags": [
+        "2026-11-22",
+        "cabbage",
+        "cross-scale-conditioning",
+        "wrong-parent",
+        "phase-scramble",
+        "abstention",
+        "synthetic-only"
+      ],
+      "era": "November 22: the inverse, the writer, and the cabbage",
+      "era_order": 206
+    }
+  ],
+  "edges": [
+    {
+      "source": "SighImageSuper",
+      "target": "SighImageInverse",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Inverse matches the original Sigh ten-band squared-radial-frequency convention and α feedback recursion; it explicitly reads that source.",
+      "evidence": "https://github.com/anttiluode/SighImageInverse/blob/main/README.md"
+    },
+    {
+      "source": "Luotain2",
+      "target": "SighImageInverse",
+      "type": "converges",
+      "confidence": "high",
+      "why": "SighImageInverse explicitly applies Luotain2's residue-guided proposal discipline to a narrower known EQ parameter family, not Luotain2's open sparse field grammar.",
+      "evidence": "https://github.com/anttiluode/SighImageInverse/blob/main/README.md"
+    },
+    {
+      "source": "OneTinyTransformer",
+      "target": "BlackBoxSpotlight",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "A frozen trained model and output boundary are taken from OneTinyTransformer; its attention weights are held back as an answer key.",
+      "evidence": "https://github.com/anttiluode/BlackBoxSpotlight/blob/main/README.md"
+    },
+    {
+      "source": "Luotain2",
+      "target": "BlackBoxSpotlight",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Held-out model selection, simple probes and retention of failed explanations transfer conceptually from Luotain2 to output-side attention identification.",
+      "evidence": "https://github.com/anttiluode/BlackBoxSpotlight/blob/main/README.md"
+    },
+    {
+      "source": "SighImageInverse",
+      "target": "SighImageX",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Reuses the original Sigh radial EQ convention and inverse boundary measurement to inspect the gains written by an image.",
+      "evidence": "https://github.com/anttiluode/SighImageX/blob/main/README.md"
+    },
+    {
+      "source": "BlackBoxSpotlight",
+      "target": "SighImageX",
+      "type": "converges",
+      "confidence": "high",
+      "why": "SighImageX credits BlackBoxSpotlight's observation-boundary principle: discover a hidden operator from outputs, then reveal the answer.",
+      "evidence": "https://github.com/anttiluode/SighImageX/blob/main/README.md"
+    },
+    {
+      "source": "SighImageX",
+      "target": "JanusBoxCabbageSihtiX",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "JanusBoxCabbageSihtiX explicitly develops the dark-frequency-zone failure of gain-only SighImageX, retaining its bands and adding nonlinear sign-sensitive generation.",
+      "evidence": "https://github.com/anttiluode/JanusBoxCabbageSihtiX/blob/main/README.md"
+    },
+    {
+      "source": "BlackBoxSpotlight",
+      "target": "JanusBoxCabbageSihtiX",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "The new black-box reader follows BlackBoxSpotlight's outside-observer method but examines small synthetic image writers rather than trained attention routing.",
+      "evidence": "https://github.com/anttiluode/JanusBoxCabbageSihtiX/blob/main/README.md"
+    },
+    {
+      "source": "CabbageFarmSihti",
+      "target": "CabbageSuper",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "CabbageSuper explicitly takes up CabbageFarmSihti's unfinished correct-parent-versus-shuffled-parent residue-regrowth experiment, replacing hand-authored orientation with donor-conditioned patch retrieval.",
+      "evidence": "https://github.com/anttiluode/CabbageSuper/blob/main/README.md"
+    },
+    {
+      "source": "SighImageInverse",
+      "target": "CabbageSuper",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "The Sigh residue/inverse question motivates CabbageSuper's decomposition, but the later code does not invert Sigh's ten-band EQ; it tests local spatial synthesis.",
+      "evidence": "https://github.com/anttiluode/CabbageSuper/blob/main/README.md"
+    },
+    {
+      "source": "Luotain2",
+      "target": "CabbageSuper",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "CabbageSuper inherits the held-out and wrong-law control philosophy, not Luotain2's symbolic field law or FFT proposal engine.",
+      "evidence": "https://github.com/anttiluode/CabbageSuper/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov22-visible-inverse-and-operator-writer",
+      "title": "An operator's output can identify a restricted law; the residue marks where the explanation stops",
+      "description": "SighImageInverse measures a known EQ, SighImageX reads a declared input-conditioned EQ writer, BlackBoxSpotlight infers first-layer RoPE-dependent attention routing from a restricted output boundary, and JanusBoxCabbageSihtiX tests whether a sealed writer belongs to a provided nonlinear vocabulary. Different inverse problems and identifiability limits must remain distinct.",
+      "nodes": [
+        "SighImageInverse",
+        "SighImageX",
+        "BlackBoxSpotlight",
+        "JanusBoxCabbageSihtiX",
+        "Luotain2"
+      ]
+    },
+    {
+      "id": "nov22-phase-provenance-and-abstaining-regrowth",
+      "title": "Frequency inventory is not spatial provenance, and regrowth must sometimes abstain",
+      "description": "Pure Fourier magnitude scaling cannot light zero-power bands; cross-scale phase and parent location influence where synthetic detail can be written. JanusBoxCabbageSihtiX works on held-out edges but fails on natural photos; CabbageSuper's donor-conditioned patch relation beats wrong-parent controls only on designed synthetic leaves and needs abstention for null worlds. Neither is evidence for an unlimited cabbage generator.",
+      "nodes": [
+        "CabbageFarmSihti",
+        "SighImageX",
+        "JanusBoxCabbageSihtiX",
+        "CabbageSuper"
+      ]
+    }
+  ]
+}
