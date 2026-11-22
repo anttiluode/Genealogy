@@ -2157,5 +2157,99 @@
       "Existing hidden worlds are controlled synthetic laws; held-out seeds are not evidence of arbitrary physical discovery.",
       "Known ingredients include matching pursuit, SINDy/PDE-FIND, stepwise regression and FFT template correlation."
     ]
+  },
+  {
+    "id": "nov22-real-cabbage-parent-rule",
+    "title": "Does conditioning fine residue on the correct coarse parent improve generation on wholly unseen natural cabbage leaves?",
+    "state": "open",
+    "motifs": [
+      "nov22-phase-provenance-and-abstaining-regrowth"
+    ],
+    "evidence": [
+      "nov22-janus-dark-zone-edge-and-photo",
+      "nov22-cabbagesuper-crossleaf-phase",
+      "nov22-cabbagesuper-flat-abstention"
+    ],
+    "competing_explanations": [
+      "A local parent-child relationship generalizes to different real leaves: the spatial address and relative orientation carry predictive detail beyond power-spectrum statistics.",
+      "Synthetic success results mainly from a hand-designed procedural relation, and a small donor dictionary cannot capture natural vein branching, local material changes or scale.",
+      "The apparent gains are attributable to trivial coarse luminance/gradient statistics or copying training patches; an equally budgeted unconditional texture model and a matched-spectrum baseline would do as well.",
+      "A nearest-neighbor novelty gate prevents false positives by refusing large regions but also refuses many legitimate structures, losing useful coverage."
+    ],
+    "known": [
+      "CabbageSuper reports 12/12 correct-parent wins against no-detail, shuffled and independent controls within one synthetic family; natural leaves have not been tested.",
+      "Exact Fourier magnitude phase scrambling worsens synthetic reconstruction, so matching the frequency inventory is not sufficient in that controlled scene.",
+      "The ungated model hallucinates on a flat world; donor-only 95th-percentile gating gives zero flat coverage and 74–84% coverage on valid synthetic leaves.",
+      "JanusBoxCabbageSihtiX's higher-frequency writer performs strongly on synthetic edges but reaches only +0.053 dark-band R² on held-out photographs with photo-trained weights."
+    ],
+    "missing_discriminator": "Frozen evaluation on independently photographed cabbage leaves, separated at the plant level, with explicit no-detail, identical-spectrum, wrong-parent and mismatched-scale controls, precommitted seeds and acceptance-coverage requirements.",
+    "candidate_experiment": {
+      "design": "Acquire at least five disjoint donor/test leaf pairs from different plants and lighting conditions; register and normalize scale on a development set, then freeze patch size, model, novelty threshold, and random seeds. Hide each target's fine band from generation. Compare correct parent, shuffled parent, independent texture, same-PSD phase scramble and no-detail. Report vein alignment/branch statistics and held-out pixel error, as well as coverage and negative-texture false writing.",
+      "cost": "Five to ten real leaf photos, offline browser/CPU processing, no model cloud compute; evaluate before parameter tuning.",
+      "outcomes": [
+        {
+          "if": "Correct-parent condition improves morphology and error at reasonable coverage on different plants, while shuffled and spectrum-matched controls fail",
+          "then": "Support a transferable, inspectable cross-scale local relation but not full new-cabbage generation."
+        },
+        {
+          "if": "No-detail, shuffled or spectrum-matched methods match it, or the gate refuses most real leaves",
+          "then": "Classify the synthetic result as a constructed relation or a brittle novelty filter, not a general learned leaf law."
+        },
+        {
+          "if": "Patch retrieval fails but a comparably budgeted learned local conditional operator wins the same frozen test",
+          "then": "Attribute the gain to a richer representation and retain the original dictionary as a simple baseline."
+        }
+      ]
+    },
+    "notes": [
+      "Generating new detail atop an observed coarse leaf is distinct from generating a whole new plant or unbounded spatial field.",
+      "Phase-scrambled synthetic images are not biological ground truth."
+    ]
+  },
+  {
+    "id": "nov22-blackbox-head-beyond-layer1",
+    "title": "Can an output-only attention probe identify routing in deeper transformer layers when incoming value vectors depend on context?",
+    "state": "open",
+    "motifs": [
+      "nov22-visible-inverse-and-operator-writer"
+    ],
+    "evidence": [
+      "nov22-blackboxspotlight-ropes-transfer",
+      "nov22-blackboxspotlight-layer2-span-failure",
+      "nov22-sighx-selfwriting-restoration"
+    ],
+    "competing_explanations": [
+      "First-layer geometry exposes a general positional component, but deeper layers require context-dependent value dictionaries or direct layer-input interventions.",
+      "A richer mixture model can predict head outputs without actually identifying individual attention weights, because different routing patterns produce the same observed vector.",
+      "A single head-output boundary is fundamentally underdetermined where value vectors overlap; additional probes or interventions are necessary to identify content-routing beyond positional rhythm."
+    ],
+    "known": [
+      "BlackBoxSpotlight inferred first-layer RoPE positional components and predicted held-out lag 17–23 routing; transferred timing recurrence gives 0.0060% mean TV error.",
+      "Two-word second-layer outputs were already outside the measured singleton-value segment, with relative span residuals 0.0192 and 0.128.",
+      "SighImageInverse identifies only a declared EQ family, and SighImageX reads a known writer family; neither establishes generic deep-layer operator recovery."
+    ],
+    "missing_discriminator": "Blindly held-out deeper-layer prompts with independently intervened, known incoming hidden states and routing audit; compare fixed-singleton, context-dependent value and full local-Jacobian candidates.",
+    "candidate_experiment": {
+      "design": "Freeze OneTinyTransformer and optionally a second small trained transformer. For first- and second-layer heads, provide the same isolated head-output interface but hide routing. Fit baseline fixed-value mixtures, context-dependent value readers, and output-sensitivity probes from train sequences; predict held-out 24+ token queries under controlled context swaps. Audit attention total variation and intervention effect, and explicitly mark unidentifiable cases.",
+      "cost": "CPU or RTX 3060 with small frozen transformer and modest NumPy probing.",
+      "outcomes": [
+        {
+          "if": "A context-aware reader predicts deeper-layer routing on held-out interventions with low TV and causal output error",
+          "then": "Support an expanded black-box probe under a specified observation boundary without claiming unique Q/K matrix identification."
+        },
+        {
+          "if": "Output prediction improves but routing remains ambiguous or changes under equivalent hidden mixtures",
+          "then": "Record the identification boundary between model behavior and internal routing."
+        },
+        {
+          "if": "No candidate materially beats fixed baselines on layer two",
+          "then": "Keep the first-layer positional rhythm result and treat the deep-layer extension as failed."
+        }
+      ]
+    },
+    "notes": [
+      "Head-output access is not the same as access to ordinary model text or token probabilities.",
+      "A high routing-fit score does not by itself show semantic importance or a new transformer architecture."
+    ]
   }
 ]
