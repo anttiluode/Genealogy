@@ -642,5 +642,9 @@
   {
     "path": "november-21-luotain2-residue-guided-law-search.json",
     "enabled": true
+  },
+  {
+    "path": "november-22-inverse-head-and-cabbage-generators.json",
+    "enabled": true
   }
 ]
