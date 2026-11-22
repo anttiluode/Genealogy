@@ -1,5 +1,19 @@
 # Genealogy research log
 
+## 22 November 2026 — inverse law, measured attention, nonlinear dark-band writing, and parent-conditioned cabbage
+
+[The five-project wall chapter](https://anttiluode.github.io/Genealogy/#nov22-inverse-cabbage) · [Scientific pass](data/passes/november-22-inverse-head-and-cabbage-generators.json) · [Experiment 002–003 results](https://github.com/anttiluode/CabbageSuper/blob/main/results/experiment002_003.json).
+
+**Census 674 → 679.** Added SighImageInverse (16 user-reported commits), BlackBoxSpotlight (2), SighImageX (2), JanusBoxCabbageSihtiX (2) and CabbageSuper (23). Luotain2 was inspected and confirmed already in the November 21 curated census, existing node and wall chapter. No duplicate record was created.
+
+**Distinct research objects:** recovering the known Sigh spectral EQ from before/after; inferring frozen OneTinyTransformer head positional routing from isolated head output; observing two images that write differing gain curves; using sign-sensitive nonlinear features to create frequencies the EQ cannot scale into existence; and selecting fine-scale donor residue patches using the correct coarse parent with a confidence gate that may abstain. The original CabbageFarm/Sihti lineage is an ancestor of the last branch, not an automatically solved image-generation model.
+
+**What survived:** BlackBoxSpotlight's held-out attention distance recurrence transferred to head 2/new words (0.0060% mean TV vs 7.093% constant-lag baseline). SighImageX recovered declared curve/writer parameters to numerical precision and distinguished adaptive from fixed-gain effects. JanusBoxCabbageSihtiX achieved +0.746 dark-zone R² on held-out edge scenes; CabbageSuper's correct-parent patch rule won 12/12 across a single synthetic-family generator and its donor-only confidence gate refused a flat target.
+
+**What failed or was not established:** BlackBoxSpotlight's second-layer outputs violated the singleton-span assumption. SighImageInverse needs known forward family and sufficiently excited frequencies, and SighImageX's learned restoration came close to a simpler threshold+specialists baseline. JanusBoxCabbageSihtiX reached only +0.053 dark-zone R² on photo-held-out crops after photo training. CabbageSuper hallucinates detail without the gate on flat inputs and has never been shown to transfer to wholly independent natural cabbage leaves. All reported evidence is from source records and earlier in-chat numerical checks, not a newly commissioned multi-laboratory validation.
+
+The pass adds five nodes, eleven confidence-tagged links, two motifs, seven empirical evidence ledger entries with explicit support/limit relations, and two new questions: blind multi-plant leaf transfer, and whether an output-only probe can identify routing beyond the first transformer layer. The source-reported commits are not weighted as scientific significance.
+
 ## 21 November 2026 — Luotain2: residue-guided field laws
 
 [Live Luotain2 wall chapter](https://anttiluode.github.io/Genealogy/#nov21-luotain2) · [Source](https://github.com/anttiluode/Luotain2) · [Curated pass](data/passes/november-21-luotain2-residue-guided-law-search.json).
