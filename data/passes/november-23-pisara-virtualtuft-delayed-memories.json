@@ -1,0 +1,94 @@
+{
+  "id": "november-23-pisara-virtualtuft-delayed-memories",
+  "title": "November 23 — Pisara and VirtualTuft: time as memory, measured against strong controls",
+  "reviewed_at": "2026-11-23",
+  "order": 208,
+  "summary": "Two sister experiments grew from coffee drips, Shaw's faucet, Takens embeddings and delayed recurrent neurons. Pisara separates periodic readout-free echoes/omission timing from decorrelated temporal embeddings; VirtualTuft isolates leaky/nonlinear memory from explicit feedback, correcting weak linear baselines and odd-symmetric tanh bias. Strong controls often outperform or tie the loops. Neither shows biological tuft computation or general law discovery.",
+  "nodes": [
+    {
+      "id": "Pisara",
+      "url": "https://github.com/anttiluode/Pisara",
+      "family": "temporal-neurobiology",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "One-node continuous-time pulse simulator tests coincidence-tuned feedback delay for rhythmic echo/omission timing and decorrelation-tuned delays for Takens-style histories with k-NN, linear or quadratic readouts.",
+      "survived": "Under a favorable 600 ms period-two lock, the echo signals omitted drops around 4–5 ms from their expected time; Gate 6 explicit lag-two phase clock ties the loop's median performance. Seven delayed trace coordinates with fixed quadratic readout score about 0.017–0.018 Hénon NMSE, versus 0.008–0.009 with a k-NN archive.",
+      "killed": "An earlier crippled quadratic baseline and jitter-trigger artifact were corrected. The learned delay has harmonic basins, ratchets on draining inputs, and Gate 4 fusion fails to improve forecasting. Some omission scores use windows centered on actual withheld events and are not yet fully prospective alarms; no biological apical computation is shown.",
+      "evidence": "https://github.com/anttiluode/Pisara/blob/main/README.md",
+      "tags": [
+        "2026-11-23",
+        "delay-loop",
+        "Takens",
+        "coincidence-plasticity",
+        "decorrelation",
+        "omission",
+        "corrections"
+      ],
+      "era": "November 23: physical timing and virtual time-memory",
+      "era_order": 208
+    },
+    {
+      "id": "VirtualTuft",
+      "url": "https://github.com/anttiluode/VirtualTuft",
+      "family": "temporal-neurobiology",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Single time-multiplexed tanh node with 50 virtual slots compares delayed feedback, ordinary leaky state, stateless cascades, local gain adaptation and matched explicit nonlinear-history predictors on synthetic drop and hidden-state worlds.",
+      "survived": "After a fixed, label-independent bias corrected odd-symmetry, explicit returning feedback improved over the leaky-only reservoir on noisy Hénon (0.0732→0.0630 MAE) and a delayed quadratic world (0.0991→0.0753 MAE), across five held-out seeds.",
+      "killed": "Centered quadratic history still wins (0.0370 and 0.0314 MAE), and the simple adaptive gain rule fails. Gate 0's apparent nonlinear advantage over linear taps disappeared with stronger polynomial controls; 50 virtual slots are not a physically mapped cortex or a native homogeneous 2D Luotain2 field.",
+      "evidence": "https://github.com/anttiluode/VirtualTuft/blob/main/GATE2.md",
+      "tags": [
+        "2026-11-23",
+        "virtual-nodes",
+        "delay-reservoir",
+        "symmetry-breaking",
+        "Hénon",
+        "negative-results",
+        "local-learning"
+      ],
+      "era": "November 23: physical timing and virtual time-memory",
+      "era_order": 208
+    }
+  ],
+  "edges": [
+    {
+      "source": "Pisara",
+      "target": "VirtualTuft",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Two experiments created from the same coffee-drip/Takens/apical-loop question: Pisara emphasizes continuous-time coincidence and omission; VirtualTuft emphasizes virtual-node representation and delayed-feedback ablations. They are independent implementations, not a code fork.",
+      "evidence": "https://github.com/anttiluode/VirtualTuft/blob/main/README.md"
+    },
+    {
+      "source": "TakensPhaseSpaceVisualizerVST",
+      "target": "Pisara",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both use delayed observations as dynamical coordinates, but Pisara asks how temporal traces become predictive rather than visualizing sound phase spaces.",
+      "evidence": "https://github.com/anttiluode/Pisara/blob/main/README.md"
+    },
+    {
+      "source": "Luotain2",
+      "target": "VirtualTuft",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Luotain2 provides an outside-observer identification question; VirtualTuft explicitly treats its node×time trace as not yet suitable for Luotain2's spatial FFT grammar, deferring a validated audit.",
+      "evidence": "https://github.com/anttiluode/VirtualTuft/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov23-time-as-memory-with-ablation",
+      "title": "Time as physical memory: recurrence helps some states, but strong explicit history often wins",
+      "description": "Pisara shows coincidence-tuned echoes and distinct decorrelation-based temporal representations while acknowledging that a simple phase-preserving clock can tie its omission timing. VirtualTuft shows a biased returning-feedback contribution on two hidden-state surrogates but nonlinear historical features still win. There is no evidence here that either synthetic system models dendritic tufts in living neurons.",
+      "nodes": [
+        "TakensPhaseSpaceVisualizerVST",
+        "Pisara",
+        "VirtualTuft",
+        "Luotain2"
+      ]
+    }
+  ]
+}

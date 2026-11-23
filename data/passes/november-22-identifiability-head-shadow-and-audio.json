@@ -1,0 +1,134 @@
+{
+  "id": "november-22-identifiability-head-shadow-and-audio",
+  "title": "November 22 catch-up — ShadowValley, HeadAsResonator3 and Theorem",
+  "reviewed_at": "2026-11-23",
+  "order": 207,
+  "summary": "Three late November 22 repositories missing from the earlier five-node curation: transformer look-away/complement readings; phase-preserving audio-to-electrode measurements with common-average-reference controls; and difference-aware identifiability using active probes and sensor-calibration failure cases. Existing Nov 22 inverse/cabbage nodes are linked, never duplicated.",
+  "nodes": [
+    {
+      "id": "ShadowValley",
+      "url": "https://github.com/anttiluode/ShadowValley",
+      "family": "probe-inference",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Ports HEAD's eight-slot zero-sum 'look away' trap to small attention layers, gives an analytic optimal-readout error geometry, and tests unsigned residual-guided routing against matched misleading-teacher controls.",
+      "survived": "On the constrained attention-only scalar-cue task, plain softmax gets stuck looking away in 6/20 runs and an unsigned teacher solves 20/20 for both target signs; attention maps can hide exact complement reading.",
+      "killed": "A standard pre-LN block showed no corresponding look-away traps in the examined runs; richer queries and different attentions change the failure. Results are tiny synthetic CPU models, not an explanation of arbitrary real LLM heads.",
+      "evidence": "https://github.com/anttiluode/ShadowValley/blob/main/README.md",
+      "tags": [
+        "2026-11-22",
+        "attention",
+        "HEAD",
+        "look-away",
+        "complement",
+        "routing",
+        "negative-controls"
+      ],
+      "era": "November 22: three late identifiability bridges",
+      "era_order": 207
+    },
+    {
+      "id": "HeadAsResonator3",
+      "url": "https://github.com/anttiluode/HeadAsResonator3",
+      "family": "probe-inference",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Phase-preserving transfer-function and lagged-model microscope compares speaking-microphone signals with multichannel public EEG recordings, with shifted-input nulls and rereferencing interventions.",
+      "survived": "Real Gate 003B finds strong held-out audio-related electrode prediction in 5/9 recordings across 2/3 participants; common-average referencing removes 88–96% of positive raw mean R² in those five recordings, supporting a substantial shared recorded component.",
+      "killed": "The original eight-new-person Gate 003 failed eligibility: only one new participant was available. Microphone-to-electrode coherence does not identify a skull resonance, neural pathway or audio source; recording and reference effects remain confounded.",
+      "evidence": "https://github.com/anttiluode/HeadAsResonator3/blob/main/README.md",
+      "tags": [
+        "2026-11-22",
+        "EEG",
+        "microphone",
+        "phase",
+        "common-average-reference",
+        "identifiability",
+        "real-data"
+      ],
+      "era": "November 22: three late identifiability bridges",
+      "era_order": 207
+    },
+    {
+      "id": "Theorem",
+      "url": "https://github.com/anttiluode/Theorem",
+      "family": "probe-inference",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Integrates ShadowValley, Luotain2 and HeadAsResonator3 into difference-aware identifiability: candidate laws must differ in directions excited by the input and preserved by the measurement; explores controlled interventions and noisy field-law inference.",
+      "survived": "Gate 003 recovered all six known wormhole-law spatial terms in 20/20 flat-spectrum 48-probe trials, with zero false links in 60 null runs. Gate 008 detected an Allen–Cahn cubic term in 27/40 held-out synthetic worlds with targeted pulses vs 1/40 white-noise pulses.",
+      "killed": "This is an algorithmic test of known SVD/experiment-design geometry, not a new universal theorem. Active broadband white outperformed candidate-directed probes in earlier linear search, and a nonlinear detector fabricated false physical cubic laws in 21/40 targeted Gate 008 cases until an idealized independent sensor was supplied.",
+      "evidence": "https://github.com/anttiluode/Theorem/blob/main/GATE_008_REPORT.md",
+      "tags": [
+        "2026-11-22",
+        "active-identification",
+        "identifiability",
+        "interventions",
+        "sensor-bias",
+        "finite-difference",
+        "null-worlds"
+      ],
+      "era": "November 22: three late identifiability bridges",
+      "era_order": 207
+    }
+  ],
+  "edges": [
+    {
+      "source": "HEAD",
+      "target": "ShadowValley",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "ShadowValley explicitly ports the HEAD zero-sum look-away toy into attention layers and tests the complementary reader.",
+      "evidence": "https://github.com/anttiluode/ShadowValley/blob/main/README.md"
+    },
+    {
+      "source": "Luotain2",
+      "target": "HeadAsResonator3",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Both use candidate lag proposals, held-out evaluation and noise/mixing restraint; the audio-electrode code is ordinary FIR estimation, not Luotain2's spatial-law learner.",
+      "evidence": "https://github.com/anttiluode/HeadAsResonator3/blob/main/README.md"
+    },
+    {
+      "source": "ShadowValley",
+      "target": "Theorem",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Theorem explicitly uses ShadowValley's zero-sum complement case as one of its three identifiability laboratories.",
+      "evidence": "https://github.com/anttiluode/Theorem/blob/main/README.md"
+    },
+    {
+      "source": "HeadAsResonator3",
+      "target": "Theorem",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Theorem explicitly incorporates reference-induced ambiguity in audio/electrode source attribution.",
+      "evidence": "https://github.com/anttiluode/Theorem/blob/main/README.md"
+    },
+    {
+      "source": "Luotain2",
+      "target": "Theorem",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Theorem explicitly takes Luotain2's weak-excitation and hidden-wormhole laws into controlled active interventions and sensor-noise checks.",
+      "evidence": "https://github.com/anttiluode/Theorem/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov22-excitation-observation-and-identifiability",
+      "title": "A missing law may be a missing excitation or an untrustworthy measurement",
+      "description": "ShadowValley exposes how zero-sum structure permits a misleading complement read; HeadAsResonator3 identifies reproducible microphone-linked signals but not their physical path; Theorem deliberately stimulates discriminating directions but also demonstrates detector-induced false nonlinear laws. Observability and true causality must be separated.",
+      "nodes": [
+        "HEAD",
+        "ShadowValley",
+        "Luotain2",
+        "HeadAsResonator3",
+        "Theorem"
+      ]
+    }
+  ]
+}

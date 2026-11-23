@@ -4,6 +4,30 @@ Evidence-backed archaeology of Antti Luode's research repositories.
 
 The central premise is that hundreds of repositories are not hundreds of independent ideas. The project separates raw repository inventory from curated scientific interpretation, then records explicit inheritance, corrections, rediscoveries, convergences, extracted mechanisms, empirical evidence, and the scientific questions that remain unresolved.
 
+## 23 November 2026 — Pisara & VirtualTuft: how time becomes a physical memory
+
+[**November 23 wall chapter**](https://anttiluode.github.io/Genealogy/#nov23-delay-memory) · [Curated pass](data/passes/november-23-pisara-virtualtuft-delayed-memories.json).
+
+The November 23 pair takes the inventory **682 → 684**: [**Pisara**](https://github.com/anttiluode/Pisara) (Opus/Claude; 2 commits listed by user for the creation window) and [**VirtualTuft**](https://github.com/anttiluode/VirtualTuft) (Sol; 17 user-reported commits). These are separate simulations sparked by a coffee drip, Shaw's 1984 faucet, Takens embeddings and the apical feedback/delay-line hypothesis—not working biological neurons.
+
+**Pisara — two different jobs.** Coincidence-based delay learning creates a readout-free timing echo. Under favorable period-two locking, it rises close to omitted drops (about 4–5 ms), yet an explicit phase-preserving lag-two clock ties its median timing. The learned delay has harmonic basins and fails on the draining cliff. Opposite, decorrelating delay learning finds a useful observation timescale, but filter memory also determines it. An Hénon history with fixed quadratic weights scores **0.017–0.018 NMSE**; its archived k-NN analogue scores **0.008–0.009**. The naive fusion of timing and describing loops was negative.
+
+**VirtualTuft — feedback is useful, but not magic.** A one-node 50-slot reservoir was handicapped by zero-bias odd tanh symmetry; a fixed bias corrected the quadratic capacity. In Gate 2 the explicit returning feedback improved noisy Hénon versus leaky-only memory (MAE **0.0732 → 0.0630**) and a 3-step delayed quadratic world (0.0991 → 0.0753), but the stronger explicit quadratic-history model wins (0.0370 and 0.0314). The adaptive-gain heuristic failed across Gates 0–2. Tests separate zero-feedback leaky memory from a truly stateless control.
+
+**Boundary:** all numbers are small synthetic studies with important control and detector caveats. A virtual-node array is not intrinsically a homogeneous spatial field for Luotain2, and no apical tuft, myelin plasticity or cerebral omission detector was measured.
+
+## 22 November 2026 — missing late projects: ShadowValley, HeadAsResonator3, Theorem
+
+[**Three-project catch-up wall chapter**](https://anttiluode.github.io/Genealogy/#nov22-shadow-theorem-resonator) · [Curated pass](data/passes/november-22-identifiability-head-shadow-and-audio.json) · [Previously curated five-project chapter](https://anttiluode.github.io/Genealogy/#nov22-inverse-cabbage).
+
+The missing three raise the census **679 → 682**, completing **eight distinct November 22 repositories**. The existing **CabbageSuper, JanusBoxCabbageSihtiX, SighImageX, BlackBoxSpotlight and SighImageInverse** nodes were already recorded and are not duplicated.
+
+[**ShadowValley**](https://github.com/anttiluode/ShadowValley) brings the HEAD look-away trap into small attention networks: 6/20 scalar-cue softmax runs trap in complement reading, while an unsigned auxiliary routing teacher resolves 20/20, including sign reversal. Standard pre-LN blocks do not reproduce that same trap, so the mechanism is constrained, not a general language-model diagnosis.
+
+[**HeadAsResonator3**](https://github.com/anttiluode/HeadAsResonator3) finds reproducible microphone-to-electrode transfer on 5/9 recorded windows in 2/3 public participants, with common-average referencing removing 88–96% of positive raw mean prediction quality in the strong windows. The original eight-new-person protocol failed due to insufficient eligible participants; source identification remains open.
+
+[**Theorem**](https://github.com/anttiluode/Theorem) unifies weak excitation, ambiguous observation and intervention design. Targeted sparse pulses identify the cubic response in 27/40 held-out Allen–Cahn synthetic cases against 1/40 for white-noise pulses; an unmodeled nonlinear detector also generates false cubic attributions in 21/40 target cases, resolved only under a trusted reference-sensor assumption. This is not a newly proved universal theorem.
+
 ## 22 November 2026 — inverse EQs, a trained attention spotlight, and a growing cabbage
 
 [**November 22 wall chapter**](https://anttiluode.github.io/Genealogy/#nov22-inverse-cabbage) · [Curated pass](data/passes/november-22-inverse-head-and-cabbage-generators.json) · [Earlier Luotain2 chapter](https://anttiluode.github.io/Genealogy/#nov21-luotain2).

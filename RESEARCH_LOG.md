@@ -1,5 +1,17 @@
 # Genealogy research log
 
+## 23 November 2026 — physical delay as clock, representation and negative control
+
+[New wall chapter](https://anttiluode.github.io/Genealogy/#nov23-delay-memory) · [Scientific pass](data/passes/november-23-pisara-virtualtuft-delayed-memories.json).
+
+**Curated census 682 → 684:** Pisara and VirtualTuft added once each. Pisara distinguishes coincidence-tuned rhythmic echoes/omission signals from anti-Hebbian decorrelation-tuned embeddings, with a lag-two explicit clock tying its conditional omission timing and a failed combined-forecast Gate 4. VirtualTuft's Gates 0–2 were corrected after Neon audits: nonlinear-history controls eliminate the initial apparent victory; bias restores even-degree reservoir features; returning feedback improves leaky memory on noisy Hénon, but explicit polynomial history remains superior. Both preserve negative results, and no synthetic delay-line result establishes actual tuft physiology.
+
+## 22 November 2026 — three forgotten identifiability experiments recovered
+
+[Catch-up wall chapter](https://anttiluode.github.io/Genealogy/#nov22-shadow-theorem-resonator) · [Scientific pass](data/passes/november-22-identifiability-head-shadow-and-audio.json).
+
+**Curated census 679 → 682:** ShadowValley, HeadAsResonator3 and Theorem added once each; five earlier Nov 22 records retained. ShadowValley ports HEAD's zero-sum complement trap to toy attention, and its unsigned correction does not establish a general attention diagnosis. HeadAsResonator3 reproduces a common-mode audio-linked recorded response in two participants without identifying the physical source. Theorem tests how intervention and measurement determine which field laws can be distinguished, but its nonlinear sensor can fabricate the apparent law. These three form a documented identifiability branch through HEAD and Luotain2.
+
 ## 22 November 2026 — inverse law, measured attention, nonlinear dark-band writing, and parent-conditioned cabbage
 
 [The five-project wall chapter](https://anttiluode.github.io/Genealogy/#nov22-inverse-cabbage) · [Scientific pass](data/passes/november-22-inverse-head-and-cabbage-generators.json) · [Experiment 002–003 results](https://github.com/anttiluode/CabbageSuper/blob/main/results/experiment002_003.json).

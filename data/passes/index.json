@@ -646,5 +646,13 @@
   {
     "path": "november-22-inverse-head-and-cabbage-generators.json",
     "enabled": true
+  },
+  {
+    "path": "november-22-identifiability-head-shadow-and-audio.json",
+    "enabled": true
+  },
+  {
+    "path": "november-23-pisara-virtualtuft-delayed-memories.json",
+    "enabled": true
   }
 ]
