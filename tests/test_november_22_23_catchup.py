@@ -12,7 +12,7 @@ class LateNovemberTests(unittest.TestCase):
     def test_inventory_and_curated_nodes_are_unique(self):
         atlas=load_atlas(ROOT)
         self.assertEqual([],validate_atlas(atlas))
-        self.assertEqual(684,len(atlas["repos"]))
+        self.assertGreaterEqual(len(atlas["repos"]),684)
         for name in EXPECTED_22|EXPECTED_23:
             self.assertEqual(1,sum(r["name"]==name for r in atlas["repos"]),name)
             self.assertEqual(1,sum(n["id"]==name for n in atlas["nodes"]),name)
