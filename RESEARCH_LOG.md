@@ -1,5 +1,33 @@
 # Genealogy research log
 
+## 24 November 2026 — from shared memory to semantic grain
+
+[**November 24 wall chapter**](https://anttiluode.github.io/Genealogy/#nov24-semantic-grain) · [Curated pass](data/passes/november-24-memory-grain-and-semantic-geometry.json) · [Qwen research note](https://github.com/anttiluode/RakeisuusClaude/blob/main/HIERARCHICAL_GEOMETRY.md).
+
+**Ten new repositories; census 684 → 694.** The Sihti core/residue idea meets frozen-model intervention after graph-memory interference, Walsh geometry and active probe controls. The original effect and Theory's negative controls must be read together.
+
+**[GraphNNSol](https://github.com/anttiluode/GraphNNSol)** — Tests positive, signed, binary and phase edge memory against ordinary slots. Prior audit signed B MSE 0.018213 vs phase 0.024474; slot baselines and real/sham rewrite probes are explicit. **Boundary:** No general distributed-memory benefit established; read FLOPs not matched.
+
+**[GraphNNClaude](https://github.com/anttiluode/GraphNNClaude)** — Extends graph memory to K=2,4,8 and separates writer from reader limitations. CPU pilot: slots win every K; at K=4 slots 0.0152 chain MSE vs signed 0.0413 and raw-byte direct 0.0416. **Boundary:** Elastic pressure sweep fails. Single-seed pilot, not full GPU gate; raw-byte control is not proof against all possible readers.
+
+**[GeneralInstrument](https://github.com/anttiluode/GeneralInstrument)** — Selects equal-energy probes to distinguish competing models and abstain on equivalent hypotheses. Adaptive pair separation and Bayesian EIG each correctly identify 139/144 groups with zero confidently wrong and five abstentions. **Boundary:** Ties standard EIG; known model library; real benchmark runs unexecuted.
+
+**[CommunicationGeometryHasNoPositiveCurvature](https://github.com/anttiluode/CommunicationGeometryHasNoPositiveCurvature)** — Interactive wire-price, rank-cut, curvature, crossing and MERA min-cut illustrations. Python and JS checks agree for small crossing tables q=2,3,4. **Boundary:** Explains AI-authored VP versus VNP proof claim; does not verify proof, resolve P vs NP or measure physical prices.
+
+**[NumberHell](https://github.com/anttiluode/NumberHell)** — Walsh chessboards, state-dependent XOR read/write and Soar multiscale search. Thresholded search finds three injected patterns 200/200; flying without writing beats fixed and random search in toy. **Boundary:** Each bucket touches whole vector; not faster than fast Walsh here. Fixed wire beats moving read in one-way world; repository reader not yet verified.
+
+**[GrainLensSol](https://github.com/anttiluode/GrainLensSol)** — Numeric activation coarsening tests native/rotated/J-subspace directions, matched energy and restoration. V2 adds whole-suffix cuts, aligned donor checks and nonlexical fine properties after V1 audit. **Boundary:** No validated semantic-grain result in README; fake quantization is not a storage or speedup claim.
+
+**[RakeisuusClaude](https://github.com/anttiluode/RakeisuusClaude)** — Frozen Qwen3-1.7B sibling-mean clamp through block 12 tests kind versus identity. 22/22 held-out leaves gain category evidence (+3.92 nats); identity drops 22/22 to 3/22. Category-word move −0.58; random −6.61. Open label 7/8 from means vs fixed first exemplar 2/8. **Boundary:** Random matched category-word length, not sibling length. Eight supplied families, one checkpoint. Sign residue restores 18/22, below preregistered 80% recovery. Theory weakens amplification.
+
+**[Category](https://github.com/anttiluode/Category)** — Live common thread, odd-one-out, blends, caricature and activation arithmetic. Implements neutral-slot clamp, calibrated readouts and open-ended descriptions. **Boundary:** Not independent replication; multi-token and prompt dependence; no universal concept algebra.
+
+**[CrossWord](https://github.com/anttiluode/CrossWord)** — Combines letter constraints, calibrated clue scores and optional second-meaning activation average. Pattern filters proposals; early-layer patch ranks candidates by both meanings. **Boundary:** Can miss answers; no held-out crossword benchmark or superiority established.
+
+**[Theory](https://github.com/anttiluode/Theory)** — Tests tree-Haar/shared-plus-private account, same-length random null, chord gain and synthetic siblings; proposes Pythia timeline. Few-shot 46 leaves: sibling +0.28 nats vs random −0.54; identity 17/46 vs 46/46. Synthetic overshoot +0.13 vs real +0.12; chord correlation −0.01 (p=.92). **Boundary:** 22/22 not reproduced in few-shot; special private synergy and predicted normalization gain unsupported. Chat replication and training timeline pending in README; no dendritic mechanism established.
+
+**Open question:** distinguish prompt-dependent amplification from a robust learned mechanism by matched-frame, raw-logit, synthetic-sibling and training-context controls. No universal law or biological mechanism has been established.
+
 ## 23 November 2026 — physical delay as clock, representation and negative control
 
 [New wall chapter](https://anttiluode.github.io/Genealogy/#nov23-delay-memory) · [Scientific pass](data/passes/november-23-pisara-virtualtuft-delayed-memories.json).

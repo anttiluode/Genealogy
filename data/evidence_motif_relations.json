@@ -936,5 +936,19 @@
   },
   "nov22-cabbagesuper-flat-abstention": {
     "nov22-phase-provenance-and-abstaining-regrowth": "limits"
+  },
+  "nov24-rakeisuus-sibling-clamp": {
+    "nov24-owned-residue-semantic-grain": "supports"
+  },
+  "nov24-theory-chord-controls": {
+    "nov24-owned-residue-semantic-grain": "documents",
+    "nov24-discriminating-probes-and-baselines": "documents"
+  },
+  "nov24-graphnn-capacity-pilot": {
+    "nov24-owned-residue-semantic-grain": "limits",
+    "nov24-discriminating-probes-and-baselines": "limits"
+  },
+  "nov24-generalinstrument-known-library": {
+    "nov24-discriminating-probes-and-baselines": "documents"
   }
 }

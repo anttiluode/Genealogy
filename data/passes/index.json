@@ -654,5 +654,9 @@
   {
     "path": "november-23-pisara-virtualtuft-delayed-memories.json",
     "enabled": true
+  },
+  {
+    "path": "november-24-memory-grain-and-semantic-geometry.json",
+    "enabled": true
   }
 ]

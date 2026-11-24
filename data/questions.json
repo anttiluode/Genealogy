@@ -2251,5 +2251,42 @@
       "Head-output access is not the same as access to ordinary model text or token probabilities.",
       "A high routing-fit score does not by itself show semantic importance or a new transformer architecture."
     ]
+  },
+  {
+    "id": "nov24-semantic-grain-frame-and-origin",
+    "title": "Is semantic abstraction intrinsic or a prompt-dependent shared-prototype effect?",
+    "state": "open",
+    "motifs": [
+      "nov24-owned-residue-semantic-grain",
+      "nov24-discriminating-probes-and-baselines"
+    ],
+    "evidence": [
+      "nov24-rakeisuus-sibling-clamp",
+      "nov24-theory-chord-controls"
+    ],
+    "competing_explanations": [
+      "Shared category signal remains while private identity cancels.",
+      "Chat readout, scoring or clamping amplifies category evidence in a frame-specific way.",
+      "Training co-occurrence structure creates generalizable hierarchical modes."
+    ],
+    "known": [
+      "Original 22/22 chat leaves gain evidence.",
+      "Few-shot synthetic siblings tie real ones; identity loss persists."
+    ],
+    "missing_discriminator": "Matched items, clamp and frames; raw-logit scoring control and matched random and synthetic siblings; manipulate shared contexts in training.",
+    "candidate_experiment": {
+      "design": "Run Theory chord in both frames on identical items, compare raw-logit interpolation with hidden-state blends, then train matched tiny models with intact versus shuffled shared contexts.",
+      "cost": "Local RTX 3060 and small synthetic corpus.",
+      "outcomes": [
+        {
+          "if": "Effect tracks frame or raw-logit scoring",
+          "then": "Retain prototype explanation without universal amplification."
+        },
+        {
+          "if": "Intact training contexts yield robust gains beyond matched nulls across frames and families",
+          "then": "Support a training-structure-dependent causal abstraction result under tested conditions."
+        }
+      ]
+    }
   }
 ]

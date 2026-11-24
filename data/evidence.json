@@ -14926,5 +14926,205 @@
       "Donor-only feature threshold is a conventional OOD heuristic and has not been validated on real leaves"
     ],
     "source": "https://github.com/anttiluode/CabbageSuper/blob/main/results/experiment002_003.json"
+  },
+  {
+    "id": "nov24-rakeisuus-sibling-clamp",
+    "node": "RakeisuusClaude",
+    "claim": "Sibling-directed edits raise category evidence and remove identity in original chat frame.",
+    "design": "22 held-out single-token leaves; 75% clamp embedding through block 12.",
+    "result": "supports",
+    "motifs": [
+      "nov24-owned-residue-semantic-grain"
+    ],
+    "sample": {
+      "unit": "held-out leaf",
+      "count": 22
+    },
+    "metrics": [
+      {
+        "name": "sibling evidence change nats",
+        "value": 3.92
+      },
+      {
+        "name": "leaves increased",
+        "value": 22
+      },
+      {
+        "name": "identity after",
+        "value": 3
+      },
+      {
+        "name": "category word change",
+        "value": -0.58
+      },
+      {
+        "name": "random change",
+        "value": -6.61
+      }
+    ],
+    "controls": [
+      "category word",
+      "random matched category-word displacement",
+      "unedited"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "One checkpoint and frame",
+      "Eight families share donors",
+      "Random not matched to sibling length"
+    ],
+    "source": "https://github.com/anttiluode/RakeisuusClaude/blob/main/HIERARCHICAL_GEOMETRY.md"
+  },
+  {
+    "id": "nov24-theory-chord-controls",
+    "node": "Theory",
+    "claim": "Few-shot shared-mean/private-identity contrast survives, but special sibling synergy and chord gain do not.",
+    "design": "46 leaves, 110 pairs, matched random and synthetic siblings.",
+    "result": "mixed",
+    "motifs": [
+      "nov24-owned-residue-semantic-grain",
+      "nov24-discriminating-probes-and-baselines"
+    ],
+    "sample": {
+      "unit": "leaf",
+      "count": 46
+    },
+    "metrics": [
+      {
+        "name": "sibling change nats",
+        "value": 0.28
+      },
+      {
+        "name": "random change nats",
+        "value": -0.54
+      },
+      {
+        "name": "sibling identity correct",
+        "value": 17
+      },
+      {
+        "name": "random identity correct",
+        "value": 46
+      },
+      {
+        "name": "real overshoot",
+        "value": 0.12
+      },
+      {
+        "name": "synthetic overshoot",
+        "value": 0.13
+      },
+      {
+        "name": "chord gain correlation",
+        "value": -0.01
+      }
+    ],
+    "controls": [
+      "same-length random",
+      "synthetic siblings",
+      "chord gain correlation"
+    ],
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Different frame and sample",
+      "Restricted chord gain range",
+      "Timeline unrun"
+    ],
+    "source": "https://github.com/anttiluode/Theory/blob/main/README.md"
+  },
+  {
+    "id": "nov24-graphnn-capacity-pilot",
+    "node": "GraphNNClaude",
+    "claim": "Slots beat tested graph transports in CPU capacity pilot; raw-byte reader does not close gap.",
+    "design": "One seed, 600 steps, K=2,4,8; separate K=4 reader gate.",
+    "result": "contradicts",
+    "motifs": [
+      "nov24-owned-residue-semantic-grain",
+      "nov24-discriminating-probes-and-baselines"
+    ],
+    "sample": {
+      "unit": "training seed",
+      "count": 1
+    },
+    "metrics": [
+      {
+        "name": "K4 slots MSE",
+        "value": 0.0152
+      },
+      {
+        "name": "signed MSE",
+        "value": 0.0413
+      },
+      {
+        "name": "direct raw byte MSE",
+        "value": 0.0416
+      },
+      {
+        "name": "elastic sweep MSE",
+        "value": 0.0462
+      }
+    ],
+    "controls": [
+      "slots",
+      "raw-byte reader",
+      "linear sweep",
+      "elastic single ping"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Single seed",
+      "Unmatched FLOPs",
+      "No universal impossibility"
+    ],
+    "source": "https://github.com/anttiluode/GraphNNClaude/blob/main/README.md"
+  },
+  {
+    "id": "nov24-generalinstrument-known-library",
+    "node": "GeneralInstrument",
+    "claim": "Adaptive pair separation ties standard Bayesian EIG.",
+    "design": "144 trials per arm, 36 supplied models, 3 equal-energy probes.",
+    "result": "mixed",
+    "motifs": [
+      "nov24-discriminating-probes-and-baselines"
+    ],
+    "sample": {
+      "unit": "trial per arm",
+      "count": 144
+    },
+    "metrics": [
+      {
+        "name": "adaptive correct groups",
+        "value": 139
+      },
+      {
+        "name": "Bayesian EIG correct groups",
+        "value": 139
+      },
+      {
+        "name": "wrong confident",
+        "value": 0
+      },
+      {
+        "name": "abstentions",
+        "value": 5
+      }
+    ],
+    "controls": [
+      "constant",
+      "random",
+      "fixed EIG",
+      "Bayesian EIG"
+    ],
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Known model library",
+      "No real hardware run",
+      "Sensor/plant equivalence"
+    ],
+    "source": "https://github.com/anttiluode/GeneralInstrument/blob/main/README.md"
   }
 ]

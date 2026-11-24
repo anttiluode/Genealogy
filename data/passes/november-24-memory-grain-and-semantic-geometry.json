@@ -1,0 +1,341 @@
+{
+  "id": "november-24-memory-grain-and-semantic-geometry",
+  "title": "November 24 — from shared memory to semantic grain",
+  "reviewed_at": "2026-11-24",
+  "order": 209,
+  "summary": "Ten projects connect graph memory, active identification, Walsh geometry and frozen-model semantic grain. The original category gain is not yet established across frames. Sihti core/residue is an explicit conceptual ancestor, not a shared mechanism.",
+  "nodes": [
+    {
+      "id": "GraphNNSol",
+      "url": "https://github.com/anttiluode/GraphNNSol",
+      "family": "graph-memory",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Tests positive, signed, binary and phase edge memory against ordinary slots.",
+      "survived": "Prior audit signed B MSE 0.018213 vs phase 0.024474; slot baselines and real/sham rewrite probes are explicit.",
+      "killed": "No general distributed-memory benefit established; read FLOPs not matched.",
+      "evidence": "https://github.com/anttiluode/GraphNNSol/blob/main/README.md",
+      "tags": [
+        "2026-11-24",
+        "graph-memory"
+      ],
+      "era": "November 24: protected memory, semantic grain and discriminating probes",
+      "era_order": 209
+    },
+    {
+      "id": "GraphNNClaude",
+      "url": "https://github.com/anttiluode/GraphNNClaude",
+      "family": "graph-memory",
+      "status": "negative",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Extends graph memory to K=2,4,8 and separates writer from reader limitations.",
+      "survived": "CPU pilot: slots win every K; at K=4 slots 0.0152 chain MSE vs signed 0.0413 and raw-byte direct 0.0416.",
+      "killed": "Elastic pressure sweep fails. Single-seed pilot, not full GPU gate; raw-byte control is not proof against all possible readers.",
+      "evidence": "https://github.com/anttiluode/GraphNNClaude/blob/main/README.md",
+      "tags": [
+        "2026-11-24",
+        "graph-memory"
+      ],
+      "era": "November 24: protected memory, semantic grain and discriminating probes",
+      "era_order": 209
+    },
+    {
+      "id": "GeneralInstrument",
+      "url": "https://github.com/anttiluode/GeneralInstrument",
+      "family": "identifiability",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Selects equal-energy probes to distinguish competing models and abstain on equivalent hypotheses.",
+      "survived": "Adaptive pair separation and Bayesian EIG each correctly identify 139/144 groups with zero confidently wrong and five abstentions.",
+      "killed": "Ties standard EIG; known model library; real benchmark runs unexecuted.",
+      "evidence": "https://github.com/anttiluode/GeneralInstrument/blob/main/README.md",
+      "tags": [
+        "2026-11-24",
+        "identifiability"
+      ],
+      "era": "November 24: protected memory, semantic grain and discriminating probes",
+      "era_order": 209
+    },
+    {
+      "id": "CommunicationGeometryHasNoPositiveCurvature",
+      "url": "https://github.com/anttiluode/CommunicationGeometryHasNoPositiveCurvature",
+      "family": "mathematical-geometry",
+      "status": "tool",
+      "usefulness": "conceptual",
+      "confidence": "high",
+      "claim": "Interactive wire-price, rank-cut, curvature, crossing and MERA min-cut illustrations.",
+      "survived": "Python and JS checks agree for small crossing tables q=2,3,4.",
+      "killed": "Explains AI-authored VP versus VNP proof claim; does not verify proof, resolve P vs NP or measure physical prices.",
+      "evidence": "https://github.com/anttiluode/CommunicationGeometryHasNoPositiveCurvature/blob/main/README.md",
+      "tags": [
+        "2026-11-24",
+        "mathematical-geometry"
+      ],
+      "era": "November 24: protected memory, semantic grain and discriminating probes",
+      "era_order": 209
+    },
+    {
+      "id": "NumberHell",
+      "url": "https://github.com/anttiluode/NumberHell",
+      "family": "spectral-routing",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Walsh chessboards, state-dependent XOR read/write and Soar multiscale search.",
+      "survived": "Thresholded search finds three injected patterns 200/200; flying without writing beats fixed and random search in toy.",
+      "killed": "Each bucket touches whole vector; not faster than fast Walsh here. Fixed wire beats moving read in one-way world; repository reader not yet verified.",
+      "evidence": "https://github.com/anttiluode/NumberHell/blob/main/README.md",
+      "tags": [
+        "2026-11-24",
+        "spectral-routing"
+      ],
+      "era": "November 24: protected memory, semantic grain and discriminating probes",
+      "era_order": 209
+    },
+    {
+      "id": "GrainLensSol",
+      "url": "https://github.com/anttiluode/GrainLensSol",
+      "family": "transformer-interpretability",
+      "status": "active",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Numeric activation coarsening tests native/rotated/J-subspace directions, matched energy and restoration.",
+      "survived": "V2 adds whole-suffix cuts, aligned donor checks and nonlexical fine properties after V1 audit.",
+      "killed": "No validated semantic-grain result in README; fake quantization is not a storage or speedup claim.",
+      "evidence": "https://github.com/anttiluode/GrainLensSol/blob/main/README.md",
+      "tags": [
+        "2026-11-24",
+        "transformer-interpretability"
+      ],
+      "era": "November 24: protected memory, semantic grain and discriminating probes",
+      "era_order": 209
+    },
+    {
+      "id": "RakeisuusClaude",
+      "url": "https://github.com/anttiluode/RakeisuusClaude",
+      "family": "transformer-interpretability",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Frozen Qwen3-1.7B sibling-mean clamp through block 12 tests kind versus identity.",
+      "survived": "22/22 held-out leaves gain category evidence (+3.92 nats); identity drops 22/22 to 3/22. Category-word move −0.58; random −6.61. Open label 7/8 from means vs fixed first exemplar 2/8.",
+      "killed": "Random matched category-word length, not sibling length. Eight supplied families, one checkpoint. Sign residue restores 18/22, below preregistered 80% recovery. Theory weakens amplification.",
+      "evidence": "https://github.com/anttiluode/RakeisuusClaude/blob/main/HIERARCHICAL_GEOMETRY.md",
+      "tags": [
+        "2026-11-24",
+        "transformer-interpretability"
+      ],
+      "era": "November 24: protected memory, semantic grain and discriminating probes",
+      "era_order": 209
+    },
+    {
+      "id": "Category",
+      "url": "https://github.com/anttiluode/Category",
+      "family": "transformer-interpretability",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Live common thread, odd-one-out, blends, caricature and activation arithmetic.",
+      "survived": "Implements neutral-slot clamp, calibrated readouts and open-ended descriptions.",
+      "killed": "Not independent replication; multi-token and prompt dependence; no universal concept algebra.",
+      "evidence": "https://github.com/anttiluode/Category/blob/main/README.md",
+      "tags": [
+        "2026-11-24",
+        "transformer-interpretability"
+      ],
+      "era": "November 24: protected memory, semantic grain and discriminating probes",
+      "era_order": 209
+    },
+    {
+      "id": "CrossWord",
+      "url": "https://github.com/anttiluode/CrossWord",
+      "family": "transformer-interpretability",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Combines letter constraints, calibrated clue scores and optional second-meaning activation average.",
+      "survived": "Pattern filters proposals; early-layer patch ranks candidates by both meanings.",
+      "killed": "Can miss answers; no held-out crossword benchmark or superiority established.",
+      "evidence": "https://github.com/anttiluode/CrossWord/blob/main/README.md",
+      "tags": [
+        "2026-11-24",
+        "transformer-interpretability"
+      ],
+      "era": "November 24: protected memory, semantic grain and discriminating probes",
+      "era_order": 209
+    },
+    {
+      "id": "Theory",
+      "url": "https://github.com/anttiluode/Theory",
+      "family": "transformer-interpretability",
+      "status": "negative",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Tests tree-Haar/shared-plus-private account, same-length random null, chord gain and synthetic siblings; proposes Pythia timeline.",
+      "survived": "Few-shot 46 leaves: sibling +0.28 nats vs random −0.54; identity 17/46 vs 46/46. Synthetic overshoot +0.13 vs real +0.12; chord correlation −0.01 (p=.92).",
+      "killed": "22/22 not reproduced in few-shot; special private synergy and predicted normalization gain unsupported. Chat replication and training timeline pending in README; no dendritic mechanism established.",
+      "evidence": "https://github.com/anttiluode/Theory/blob/main/README.md",
+      "tags": [
+        "2026-11-24",
+        "transformer-interpretability"
+      ],
+      "era": "November 24: protected memory, semantic grain and discriminating probes",
+      "era_order": 209
+    }
+  ],
+  "edges": [
+    {
+      "source": "GraphNN",
+      "target": "GraphNNSol",
+      "type": "forks",
+      "why": "Original writer, decoder and protocol retained.",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/GraphNNSol/blob/main/README.md"
+    },
+    {
+      "source": "GraphNNSol",
+      "target": "GraphNNClaude",
+      "type": "inherits",
+      "why": "Extends transport code to K items.",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/GraphNNClaude/blob/main/README.md"
+    },
+    {
+      "source": "GraphNNClaude",
+      "target": "RakeisuusClaude",
+      "type": "converges",
+      "why": "Owned residue motivates semantic-grain question.",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/RakeisuusClaude/blob/main/README.md"
+    },
+    {
+      "source": "GraphNNSol",
+      "target": "GeneralInstrument",
+      "type": "converges",
+      "why": "Control audit motivates discriminating probes.",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/GeneralInstrument/blob/main/README.md"
+    },
+    {
+      "source": "Theorem",
+      "target": "GeneralInstrument",
+      "type": "inherits",
+      "why": "Extends identifiability question into active probe instrument.",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/GeneralInstrument/blob/main/README.md"
+    },
+    {
+      "source": "Luotain2",
+      "target": "GeneralInstrument",
+      "type": "converges",
+      "why": "Competing laws and informative tests.",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/GeneralInstrument/blob/main/README.md"
+    },
+    {
+      "source": "CommunicationGeometryHasNoPositiveCurvature",
+      "target": "NumberHell",
+      "type": "converges",
+      "why": "Cuts and spectral patterns motivate separate Walsh toy.",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/NumberHell/blob/main/README.md"
+    },
+    {
+      "source": "NumberHell",
+      "target": "GrainLensSol",
+      "type": "converges",
+      "why": "Coarse/fine distinction becomes numeric perturbation.",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/GrainLensSol/blob/main/README.md"
+    },
+    {
+      "source": "Qwenimagination",
+      "target": "GrainLensSol",
+      "type": "inherits",
+      "why": "Imports and recalibrates J-lens.",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/GrainLensSol/blob/main/README.md"
+    },
+    {
+      "source": "GrainLensSol",
+      "target": "RakeisuusClaude",
+      "type": "converges",
+      "why": "Sister numeric and semantic grain experiments.",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/RakeisuusClaude/blob/main/README.md"
+    },
+    {
+      "source": "RakeisuusClaude",
+      "target": "Category",
+      "type": "extracts",
+      "why": "Turns clamp into interactive tool.",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Category/blob/main/README.md"
+    },
+    {
+      "source": "RakeisuusClaude",
+      "target": "CrossWord",
+      "type": "extracts",
+      "why": "Adapts activation averaging to two-meaning ranking.",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/CrossWord/blob/main/README.md"
+    },
+    {
+      "source": "Category",
+      "target": "CrossWord",
+      "type": "converges",
+      "why": "Open-ended and constrained applications.",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/CrossWord/blob/main/README.md"
+    },
+    {
+      "source": "RakeisuusClaude",
+      "target": "Theory",
+      "type": "corrects",
+      "why": "Repairs random matching and tests synthetic siblings.",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Theory/blob/main/README.md"
+    },
+    {
+      "source": "NumberHell",
+      "target": "Theory",
+      "type": "converges",
+      "why": "Distinguishes Walsh from Haar modes.",
+      "confidence": "high",
+      "evidence": "https://github.com/anttiluode/Theory/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov24-owned-residue-semantic-grain",
+      "title": "What can shared representation forget, and what must remain owned?",
+      "description": "Graph memory exposes interference; sibling averaging preserves kind while erasing names; Theory tests whether shared means suffice. Conceptual convergence, not a universal mechanism.",
+      "nodes": [
+        "GraphNNSol",
+        "GraphNNClaude",
+        "NumberHell",
+        "GrainLensSol",
+        "RakeisuusClaude",
+        "Category",
+        "CrossWord",
+        "Theory"
+      ]
+    },
+    {
+      "id": "nov24-discriminating-probes-and-baselines",
+      "title": "Probe choice and strong baselines delimit identification",
+      "description": "Matched controls constrain memory, known-library and semantic claims.",
+      "nodes": [
+        "GraphNNSol",
+        "GraphNNClaude",
+        "GeneralInstrument",
+        "GrainLensSol",
+        "Theory",
+        "CommunicationGeometryHasNoPositiveCurvature"
+      ]
+    }
+  ]
+}
