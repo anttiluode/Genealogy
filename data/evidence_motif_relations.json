@@ -950,5 +950,23 @@
   },
   "nov24-generalinstrument-known-library": {
     "nov24-discriminating-probes-and-baselines": "documents"
+  },
+  "nov25-maatuska-pca": {
+    "nov25-separate-readings-and-evidence": "documents"
+  },
+  "nov25-theory-read-write": {
+    "nov25-separate-readings-and-evidence": "limits"
+  },
+  "nov25-ajatuspaa-pilot": {
+    "nov25-separate-readings-and-evidence": "documents"
+  },
+  "nov25-head1": {
+    "nov25-separate-readings-and-evidence": "limits"
+  },
+  "nov25-head2": {
+    "nov25-separate-readings-and-evidence": "limits"
+  },
+  "nov25-head3": {
+    "nov25-separate-readings-and-evidence": "supports"
   }
 }

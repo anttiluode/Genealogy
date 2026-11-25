@@ -2288,5 +2288,50 @@
         }
       ]
     }
+  },
+  {
+    "id": "nov25-head-independent-verification",
+    "title": "Can independent cue verification recover retrieved remote associates under matched compute?",
+    "state": "open",
+    "motifs": [
+      "nov25-separate-readings-and-evidence"
+    ],
+    "evidence": [
+      "nov25-head3",
+      "nov25-head2",
+      "nov25-theory-read-write"
+    ],
+    "competing_explanations": [
+      "Independent cue evidence exposes associations missed by a joint prompt.",
+      "Prompt framing, candidate restriction or extra compute explain part of the gain.",
+      "Compound verification can distinguish generic association from the relation; adaptive rereading may not outperform fixed verification."
+    ],
+    "known": [
+      "Head 003: 17/144 vs native 7/144 and union 2/144.",
+      "Lambda 1 retrieves 41/144 in top ten, lambda 2 retrieves 37/144.",
+      "Head 002 corrected regulator loses to fixed sharp and discrete controls."
+    ],
+    "missing_discriminator": "Matched candidate masks and prompt budget; fixed compound verifier versus adaptive per-cue verification on independent held-out items.",
+    "candidate_experiment": {
+      "design": "Freeze candidate generation. Compare matched-vocabulary direct prompting, prior-corrected intersection, fixed bidirectional compound verification and adaptive allocation at equal forward cost. Evaluate on held-out items.",
+      "cost": "Local frozen small LLM with batched candidate scoring.",
+      "outcomes": [
+        {
+          "if": "Fixed verifier improves over matched controls",
+          "then": "Support retrieval/verification separation."
+        },
+        {
+          "if": "Adaptive verification beats fixed at equal budget",
+          "then": "Support task-directed allocation in this setting."
+        },
+        {
+          "if": "Neither improves",
+          "then": "Keep Head 003 as a narrow benchmark result."
+        }
+      ]
+    },
+    "notes": [
+      "No new Bayesian principle or demonstrated latent reasoning."
+    ]
   }
 ]

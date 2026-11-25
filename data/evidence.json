@@ -15126,5 +15126,343 @@
       "Sensor/plant equivalence"
     ],
     "source": "https://github.com/anttiluode/GeneralInstrument/blob/main/README.md"
+  },
+  {
+    "id": "nov25-maatuska-pca",
+    "node": "Maatuska",
+    "claim": "Unlabeled PCA prefixes carry more taxonomy than equal-width random directions in tested models.",
+    "design": "192 test words; 4000 unlabeled words; five random bases; Pythia and Qwen extension.",
+    "result": "supports",
+    "motifs": [
+      "nov25-separate-readings-and-evidence"
+    ],
+    "sample": {
+      "unit": "checkpoint",
+      "count": 3
+    },
+    "metrics": [
+      {
+        "name": "410m PCA d16",
+        "value": 0.335
+      },
+      {
+        "name": "410m random",
+        "value": 0.26
+      },
+      {
+        "name": "1b PCA d16",
+        "value": 0.321
+      },
+      {
+        "name": "1b random",
+        "value": 0.238
+      },
+      {
+        "name": "Qwen PCA d16",
+        "value": 0.28
+      },
+      {
+        "name": "Qwen random",
+        "value": 0.207
+      }
+    ],
+    "controls": [
+      "random",
+      "raw",
+      "reverse",
+      "synthetic worlds"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "One taxonomy",
+      "Qwen extension descriptive",
+      "No intervention benefit established"
+    ],
+    "source": "https://github.com/anttiluode/Maatuska/blob/main/ANALYSIS.md"
+  },
+  {
+    "id": "nov25-theory-read-write",
+    "node": "Theory",
+    "claim": "Iris repair exists in Pythia but PCA writeback and narrow PCA neighbor choice do not establish improvement.",
+    "design": "124 Pythia answers with matched edits; generic pool and Qwen extension.",
+    "result": "mixed",
+    "motifs": [
+      "nov25-separate-readings-and-evidence"
+    ],
+    "sample": {
+      "unit": "Pythia item",
+      "count": 124
+    },
+    "metrics": [
+      {
+        "name": "native correct",
+        "value": 42
+      },
+      {
+        "name": "always edit correct",
+        "value": 56
+      },
+      {
+        "name": "residue router correct",
+        "value": 53
+      },
+      {
+        "name": "bridge PCA accuracy",
+        "value": 0.306
+      },
+      {
+        "name": "3NN accuracy",
+        "value": 0.452
+      },
+      {
+        "name": "Qwen native accuracy",
+        "value": 0.96
+      }
+    ],
+    "controls": [
+      "full-state router",
+      "random subspace",
+      "random neighbors",
+      "full-width selection"
+    ],
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Router gate failed",
+      "Bridge and Ocular gates failed",
+      "Qwen ceiling",
+      "Identity cost"
+    ],
+    "source": "https://github.com/anttiluode/Theory/blob/main/README.md"
+  },
+  {
+    "id": "nov25-ajatuspaa-pilot",
+    "node": "Ajatuspaa",
+    "claim": "Adaptive continuous carrier changes recurrent dynamics; semantic usefulness not established.",
+    "design": "Nine arms, oak/winter, 16 ticks, one trial each.",
+    "result": "mixed",
+    "motifs": [
+      "nov25-separate-readings-and-evidence"
+    ],
+    "sample": {
+      "unit": "seed concept",
+      "count": 2
+    },
+    "metrics": [
+      {
+        "name": "fixed recurrence",
+        "value": 0.988
+      },
+      {
+        "name": "adaptive recurrence",
+        "value": 0.568
+      },
+      {
+        "name": "residue recurrence",
+        "value": 0.494
+      },
+      {
+        "name": "fixed residue recurrence",
+        "value": 0.994
+      },
+      {
+        "name": "discrete recurrence",
+        "value": 0.557
+      }
+    ],
+    "controls": [
+      "fixed",
+      "random",
+      "periodic",
+      "reset",
+      "shuffled"
+    ],
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Pilot only; full gate incomplete",
+      "No seed specificity estimate",
+      "Repetitive token fragments"
+    ],
+    "source": "https://github.com/anttiluode/Ajatuspaa/blob/main/runs/pilot/summary.json"
+  },
+  {
+    "id": "nov25-head1",
+    "node": "Theory",
+    "claim": "Qwen-driven proposals improve association versus static geometry; all performance gates fail.",
+    "design": "60 free starts and 130 RAT items; 12 ticks, frozen Qwen3-1.7B.",
+    "result": "mixed",
+    "motifs": [
+      "nov25-separate-readings-and-evidence"
+    ],
+    "sample": {
+      "unit": "free start",
+      "count": 60
+    },
+    "metrics": [
+      {
+        "name": "static SWOW",
+        "value": 0.154
+      },
+      {
+        "name": "loop SWOW",
+        "value": 0.427
+      },
+      {
+        "name": "fixed loop SWOW",
+        "value": 0.475
+      },
+      {
+        "name": "native SWOW",
+        "value": 0.78
+      },
+      {
+        "name": "loop RAT correct",
+        "value": 1
+      },
+      {
+        "name": "native RAT correct",
+        "value": 6
+      }
+    ],
+    "controls": [
+      "static",
+      "random",
+      "fixed grain",
+      "no residue",
+      "native"
+    ],
+    "held_out": false,
+    "external_data": true,
+    "limitations": [
+      "Inverted feedback sign",
+      "Voice lag",
+      "Cue mixture and picker flaws",
+      "Reasoning stopped early"
+    ],
+    "source": "https://github.com/anttiluode/Theory/blob/main/HEAD.md"
+  },
+  {
+    "id": "nov25-head2",
+    "node": "Theory",
+    "claim": "Corrected homeostat regulates movement but fails to improve association; discrete matches best blend.",
+    "design": "60 starts, 12 steps, 12 fixed cells, 200 identical-state interventions.",
+    "result": "contradicts",
+    "motifs": [
+      "nov25-separate-readings-and-evidence"
+    ],
+    "sample": {
+      "unit": "start",
+      "count": 60
+    },
+    "metrics": [
+      {
+        "name": "best latent",
+        "value": 0.773
+      },
+      {
+        "name": "discrete",
+        "value": 0.783
+      },
+      {
+        "name": "native",
+        "value": 0.78
+      },
+      {
+        "name": "corrected regulator",
+        "value": 0.623
+      },
+      {
+        "name": "random aperture",
+        "value": 0.618
+      },
+      {
+        "name": "per-start held-out delta",
+        "value": -0.079
+      }
+    ],
+    "controls": [
+      "12 fixed cells",
+      "random aperture",
+      "discrete",
+      "native"
+    ],
+    "held_out": false,
+    "external_data": true,
+    "limitations": [
+      "k also changes fatigue mask size",
+      "Held-out halves not independent items",
+      "Only free association"
+    ],
+    "source": "https://github.com/anttiluode/Theory/blob/main/HEAD2.md"
+  },
+  {
+    "id": "nov25-head3",
+    "node": "Theory",
+    "claim": "Independent association distributions with prior correction beat native prompting and corrected union on RAT.",
+    "design": "144 RAT items, 16,477 SWOW candidates, 200 base-rate queries, three independent readings; preregistered lambda=2.",
+    "result": "supports",
+    "motifs": [
+      "nov25-separate-readings-and-evidence"
+    ],
+    "sample": {
+      "unit": "RAT item",
+      "count": 144
+    },
+    "metrics": [
+      {
+        "name": "native correct",
+        "value": 7
+      },
+      {
+        "name": "raw product correct",
+        "value": 4
+      },
+      {
+        "name": "lambda1 correct",
+        "value": 13
+      },
+      {
+        "name": "lambda2 correct",
+        "value": 17
+      },
+      {
+        "name": "union correct",
+        "value": 2
+      },
+      {
+        "name": "lambda1 top10",
+        "value": 41
+      },
+      {
+        "name": "lambda2 top10",
+        "value": 37
+      },
+      {
+        "name": "paired gain",
+        "value": 0.069
+      },
+      {
+        "name": "human ease rank correlation",
+        "value": 0.367
+      }
+    ],
+    "controls": [
+      "raw product",
+      "lambda1",
+      "native",
+      "union"
+    ],
+    "held_out": false,
+    "external_data": true,
+    "limitations": [
+      "Different prompts and answer filters",
+      "Three versus about two forwards plus calibration",
+      "Union prior correction differs",
+      "Estimated prior and independence assumption",
+      "11.8% absolute accuracy; one model/dataset"
+    ],
+    "source": "https://github.com/anttiluode/Theory/blob/main/HEAD3.md"
   }
 ]
