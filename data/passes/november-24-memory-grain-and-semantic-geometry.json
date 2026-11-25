@@ -171,16 +171,18 @@
       "id": "Theory",
       "url": "https://github.com/anttiluode/Theory",
       "family": "transformer-interpretability",
-      "status": "negative",
+      "status": "experiment",
       "usefulness": "scientific",
       "confidence": "high",
-      "claim": "Tests tree-Haar/shared-plus-private account, same-length random null, chord gain and synthetic siblings; proposes Pythia timeline.",
-      "survived": "Few-shot 46 leaves: sibling +0.28 nats vs random −0.54; identity 17/46 vs 46/46. Synthetic overshoot +0.13 vs real +0.12; chord correlation −0.01 (p=.92).",
-      "killed": "22/22 not reproduced in few-shot; special private synergy and predicted normalization gain unsupported. Chat replication and training timeline pending in README; no dendritic mechanism established.",
+      "claim": "Shared/private semantic geometry, emerging taxonomy, state repair, adaptive walks and independent cue evidence.",
+      "survived": "Chat prototype gain 46/46, synthetic siblings tie real; Pythia external map precedes native answers. Head 003 corrected cue intersection 17/144 vs native 7/144 and union 2/144; both gates pass.",
+      "killed": "Special sibling synergy and normalization explanation unsupported. Iris routing, Bridge PCA writeback, Ocular band selection and Head 001/002 performance gates fail. Head 003 has unequal prompts, vocabulary and compute; 11.8% absolute accuracy.",
       "evidence": "https://github.com/anttiluode/Theory/blob/main/README.md",
       "tags": [
         "2026-11-24",
-        "transformer-interpretability"
+        "transformer-interpretability",
+        "2026-11-25",
+        "independent-evidence"
       ],
       "era": "November 24: protected memory, semantic grain and discriminating probes",
       "era_order": 209

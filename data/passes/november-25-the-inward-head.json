@@ -1,0 +1,93 @@
+{
+  "id": "november-25-the-inward-head",
+  "title": "November 25 — the inward head: from grain to independent evidence",
+  "reviewed_at": "2026-11-25",
+  "order": 210,
+  "summary": "Two new repositories, one major Theory continuation. Reading geometry does not imply useful writeback; adaptive association fails, independent evidence improves RAT.",
+  "nodes": [
+    {
+      "id": "Maatuska",
+      "url": "https://github.com/anttiluode/Maatuska",
+      "family": "transformer-interpretability",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Unlabeled PCA taxonomy reading against matched random directions.",
+      "survived": "K1 passes on three checkpoints; d16 purity 0.335/0.321/0.280 vs random 0.260/0.238/0.207. Exploratory lid removal restores late-layer advantage.",
+      "killed": "K3 fails all three; one taxonomy, Qwen extension descriptive; Bridge and Ocular do not establish intervention benefit.",
+      "evidence": "https://github.com/anttiluode/Maatuska/blob/main/ANALYSIS.md",
+      "tags": [
+        "2026-11-25",
+        "transformer-interpretability",
+        "reader"
+      ],
+      "era": "November 25: the inward head and separate evidence",
+      "era_order": 210
+    },
+    {
+      "id": "Ajatuspaa",
+      "url": "https://github.com/anttiluode/Ajatuspaa",
+      "family": "transformer-interpretability",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Frozen Qwen continuous embedding feedback with adaptive layer/PCA aperture and omitted-state residue.",
+      "survived": "Two-concept pilot recurrence fixed .988, adaptive .568, residue .494; reset pre-intervention agreement.",
+      "killed": "Full gate incomplete; one trial per concept, aperture saturation, no semantic benefit established.",
+      "evidence": "https://github.com/anttiluode/Ajatuspaa/blob/main/runs/pilot/summary.json",
+      "tags": [
+        "2026-11-25",
+        "transformer-interpretability",
+        "reader"
+      ],
+      "era": "November 25: the inward head and separate evidence",
+      "era_order": 210
+    }
+  ],
+  "edges": [
+    {
+      "source": "Theory",
+      "target": "Maatuska",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Maatuska explicitly traces semantic grain to Theory; Bridge tests PCA writeback, not code inheritance.",
+      "evidence": "https://github.com/anttiluode/Maatuska/blob/main/README.md"
+    },
+    {
+      "source": "NumberHell",
+      "target": "Maatuska",
+      "type": "converges",
+      "confidence": "high",
+      "why": "README explicitly names zoomable vector as conceptual precursor.",
+      "evidence": "https://github.com/anttiluode/Maatuska/blob/main/README.md"
+    },
+    {
+      "source": "Theory",
+      "target": "Ajatuspaa",
+      "type": "converges",
+      "confidence": "high",
+      "why": "README names Theory as conceptual precursor; distinct engines.",
+      "evidence": "https://github.com/anttiluode/Ajatuspaa/blob/main/README.md"
+    },
+    {
+      "source": "Maatuska",
+      "target": "Ajatuspaa",
+      "type": "converges",
+      "confidence": "high",
+      "why": "README names Maatuska; PCA variance aperture is not established semantic grain.",
+      "evidence": "https://github.com/anttiluode/Ajatuspaa/blob/main/EXPERIMENT001.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov25-separate-readings-and-evidence",
+      "title": "Separate observations before combining evidence",
+      "description": "Reading is not writing; movement regulation is not task progress. Independent cue evidence improves this RAT benchmark, without proving a general cognitive law.",
+      "nodes": [
+        "Theory",
+        "Maatuska",
+        "Ajatuspaa"
+      ]
+    }
+  ]
+}
