@@ -4,6 +4,24 @@ Evidence-backed archaeology of Antti Luode's research repositories.
 
 The central premise is that hundreds of repositories are not hundreds of independent ideas. The project separates raw repository inventory from curated scientific interpretation, then records explicit inheritance, corrections, rediscoveries, convergences, extracted mechanisms, empirical evidence, and the scientific questions that remain unresolved.
 
+## 25 November 2026 — the inward head: from grain to independent evidence
+
+[**November 25 wall chapter**](https://anttiluode.github.io/Genealogy/#nov25-inward-head) · [Curated pass](data/passes/november-25-the-inward-head.json) · [Theory](https://github.com/anttiluode/Theory).
+
+**Three repositories reviewed today; census 697.** Two new entries, one major continuation. Reading, writing, moving and deciding are distinct operations.
+
+**[Maatuska](https://github.com/anttiluode/Maatuska)** — Label-free PCA prefixes beat equal-width random taxonomy readers on three tested checkpoints (d=16 purity 0.335/0.321/0.280 vs 0.260/0.238/0.207). Tail dilution fails; one taxonomy; Qwen extension descriptive; no proven intervention benefit. [Analysis](https://github.com/anttiluode/Maatuska/blob/main/ANALYSIS.md).
+
+**[Ajatuspaa](https://github.com/anttiluode/Ajatuspaa)** — Frozen Qwen continuous embedding feedback, adaptive layer/aperture and omitted-state residue. Two-concept pilot recurrence: fixed 0.988, adaptive 0.568, adaptive+residue 0.494. Full gate incomplete; aperture saturation; no semantic advantage established. [Pilot](https://github.com/anttiluode/Ajatuspaa/blob/main/runs/pilot/summary.json).
+
+**[Theory](https://github.com/anttiluode/Theory)** — Existing November 24 node extended. Chat prototype effect 46/46; synthetic siblings tie real; normalization explanation unsupported. Pythia map precedes native answers; Iris routing, Bridge PCA writeback and Ocular band selection fail their gates.
+
+- [Head 001](https://github.com/anttiluode/Theory/blob/main/HEAD.md): Qwen-driven association 0.427 vs static 0.154; fixed loop 0.475, native 0.780. Performance gates fail.
+- [Head 002](https://github.com/anttiluode/Theory/blob/main/HEAD2.md): corrected regulator 0.623 vs fixed latent 0.773 and discrete 0.783. All three gates fail. Wider averaging reduces movement and raises next-proposal entropy in controlled one-step tests.
+- [Head 003](https://github.com/anttiluode/Theory/blob/main/HEAD3.md): prior-corrected independent cue evidence scores 17/144 RAT vs native 7/144 and union 2/144; both registered gates pass. Absolute accuracy 11.8%; different prompts, filters and compute; estimated prior and independence assumptions.
+
+**Surviving distinction:** read without overwriting; keep independent observations separate before combining evidence. Next open test: matched-budget candidate verification. Negative experiments remain in the lineage.
+
 ## 24 November 2026 — from shared memory to semantic grain
 
 [**November 24 wall chapter**](https://anttiluode.github.io/Genealogy/#nov24-semantic-grain) · [Curated pass](data/passes/november-24-memory-grain-and-semantic-geometry.json) · [Qwen research note](https://github.com/anttiluode/RakeisuusClaude/blob/main/HIERARCHICAL_GEOMETRY.md).
