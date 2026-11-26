@@ -968,5 +968,32 @@
   },
   "nov25-head3": {
     "nov25-separate-readings-and-evidence": "supports"
+  },
+  "nov26-sweepsol-wiring": {
+    "nov26-frozen-map-adaptive-reader": "documents"
+  },
+  "nov26-sweep-roads": {
+    "nov26-frozen-map-adaptive-reader": "limits"
+  },
+  "nov26-sweep-temperature": {
+    "nov26-frozen-map-adaptive-reader": "supports"
+  },
+  "nov26-sweep-development": {
+    "nov26-frozen-map-adaptive-reader": "supports"
+  },
+  "nov26-sweep-unlock": {
+    "nov26-frozen-map-adaptive-reader": "supports"
+  },
+  "nov26-play-sol-fatigue": {
+    "nov26-frozen-map-adaptive-reader": "supports"
+  },
+  "nov26-play-claude-dynamics": {
+    "nov26-frozen-map-adaptive-reader": "supports"
+  },
+  "nov26-alive-free": {
+    "nov26-frozen-map-adaptive-reader": "documents"
+  },
+  "nov26-alive-learning": {
+    "nov26-frozen-map-adaptive-reader": "limits"
   }
 }
