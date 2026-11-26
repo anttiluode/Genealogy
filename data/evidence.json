@@ -16004,5 +16004,188 @@
       "Hand-designed toy; costs not matched; no real-bank held-out result; old trace memory field did not log AliveAI recall; global patience only."
     ],
     "source": "https://github.com/anttiluode/AliveAI/blob/main/README.md"
+  },
+  {
+    "id": "nov26-cone-clock",
+    "node": "Kartiokello",
+    "claim": "Ellipse-path timing agrees with numerical integration and is insensitive to turning at fixed speed in the implemented law.",
+    "design": "Synthetic hyperbolic curves, direct RK4 integration, global SL(2,R) pose changes, speed/turning lane tests.",
+    "result": "supports",
+    "motifs": [
+      "nov26-geometric-clock-instrument"
+    ],
+    "sample": {
+      "unit": "random texture in RK4 check",
+      "count": 12
+    },
+    "metrics": [
+      {
+        "name": "max RK4 relative error",
+        "value": 0.0000016
+      },
+      {
+        "name": "isometry relative change",
+        "value": 7e-7
+      },
+      {
+        "name": "nonisometric stretch relative change",
+        "value": 0.51
+      },
+      {
+        "name": "same speed different turning clock difference",
+        "value": 0.000005
+      },
+      {
+        "name": "clock speed bit accuracy",
+        "value": 0.95
+      },
+      {
+        "name": "clock turning bit accuracy",
+        "value": 0.52
+      },
+      {
+        "name": "shape turning bit accuracy",
+        "value": 0.85
+      }
+    ],
+    "controls": [
+      "Direct RK4",
+      "Nonisometric stretch",
+      "Fixed speed varied turning"
+    ],
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Numerical checks of adopted law, not independent gravity evidence; vanishing endpoint cost causes logarithmic affordable-mode leak; no area-law closure."
+    ],
+    "source": "https://github.com/anttiluode/Kartiokello/blob/main/README.md"
+  },
+  {
+    "id": "nov26-cone-ring-recall",
+    "node": "Kartiokello",
+    "claim": "Segmented content-dependent timing supports matching jittered ring queries but fails under single-bit corruption.",
+    "design": "24 stored rings; query jitter ±10%; segment mesh and phase oscillator synchronization; random poses in separate reader experiment.",
+    "result": "mixed",
+    "motifs": [
+      "nov26-geometric-clock-instrument"
+    ],
+    "sample": {
+      "unit": "stored ring",
+      "count": 24
+    },
+    "metrics": [
+      {
+        "name": "jittered mesh recall",
+        "value": 0.96
+      },
+      {
+        "name": "lap time recall",
+        "value": 0.32
+      },
+      {
+        "name": "Hamming oracle",
+        "value": 1
+      },
+      {
+        "name": "synchrony correct of 40",
+        "value": 35
+      },
+      {
+        "name": "corrupt bit mesh recall",
+        "value": 0.15
+      },
+      {
+        "name": "corrupt bit Hamming oracle",
+        "value": 0.61
+      },
+      {
+        "name": "corrupt bit synchrony correct of 40",
+        "value": 4
+      },
+      {
+        "name": "sweep speed bit accuracy",
+        "value": 1
+      },
+      {
+        "name": "sweep turning bit accuracy",
+        "value": 0.94
+      },
+      {
+        "name": "frame turning bit accuracy",
+        "value": 0.5
+      }
+    ],
+    "controls": [
+      "Lap time alone",
+      "True-bit Hamming oracle",
+      "Frame reader",
+      "One-bit corruption"
+    ],
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Synthetic ring bank; mesh^10 chosen; unequal bit weights; strong texture regime; no error-correcting memory or derived canonical gear generator."
+    ],
+    "source": "https://github.com/anttiluode/Kartiokello/blob/main/README.md"
+  },
+  {
+    "id": "nov26-guitar-scanner",
+    "node": "GuitarMicScanner",
+    "claim": "Streaming improves old GUI audio path and geometric features survive synthetic fixed coil mixing; extra practical utility unproved.",
+    "design": "Ramp listening test, synthetic GSM-like buzz, two-dimensional field with noise and 10 random mixing matrices.",
+    "result": "mixed",
+    "motifs": [
+      "nov26-geometric-clock-instrument"
+    ],
+    "sample": {
+      "unit": "random mixing matrix in invariance check",
+      "count": 10
+    },
+    "metrics": [
+      {
+        "name": "old delay at 80ms GUI s",
+        "value": 2.52
+      },
+      {
+        "name": "new block delay s",
+        "value": 0.012
+      },
+      {
+        "name": "new coverage",
+        "value": 0.996
+      },
+      {
+        "name": "PLL error ppm",
+        "value": 5
+      },
+      {
+        "name": "integer stacked SNR dB",
+        "value": 0.6
+      },
+      {
+        "name": "locked stacked SNR dB",
+        "value": 7.5
+      },
+      {
+        "name": "median speed correlation",
+        "value": 0.997
+      },
+      {
+        "name": "median turning correlation",
+        "value": 0.992
+      }
+    ],
+    "controls": [
+      "Old Tempest Explorer",
+      "Integer lap",
+      "Raw ellipse coordinates",
+      "Degenerate linear field"
+    ],
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Synthetic tests, not measured physical round-trip latency; Windows duplex and real dual-coil polarization untested; author reports normal FL Studio effects can reproduce most audible effect, no controlled comparison; scale-envelope test dropped."
+    ],
+    "source": "https://github.com/anttiluode/GuitarMicScanner/blob/main/README.md"
   }
 ]

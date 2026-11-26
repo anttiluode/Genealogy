@@ -995,5 +995,14 @@
   },
   "nov26-alive-learning": {
     "nov26-frozen-map-adaptive-reader": "limits"
+  },
+  "nov26-cone-clock": {
+    "nov26-geometric-clock-instrument": "supports"
+  },
+  "nov26-cone-ring-recall": {
+    "nov26-geometric-clock-instrument": "limits"
+  },
+  "nov26-guitar-scanner": {
+    "nov26-geometric-clock-instrument": "documents"
   }
 }

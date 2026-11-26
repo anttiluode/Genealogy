@@ -3,7 +3,7 @@
   "title": "November 26 — from sweep to the living reader",
   "reviewed_at": "2026-11-26",
   "order": 211,
-  "summary": "Five new repositories; 54 user-reported commits. Frozen map, downhill navigation, early geometry, conjunction, continuous workspace and external plasticity; preserve negative controls.",
+  "summary": "Seven new repositories; 54 user-reported commits for the first five (two later additions not counted). Frozen map, adaptive reader, geometric clocks and pickup scanner; preserve negative controls and practical limitations.",
   "nodes": [
     {
       "id": "SweepSol",
@@ -104,6 +104,47 @@
       ],
       "era": "November 26: the living reader",
       "era_order": 211
+    },
+    {
+      "id": "Kartiokello",
+      "url": "https://github.com/anttiluode/Kartiokello",
+      "family": "temporal-neurobiology",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Null-cone-inspired hyperbolic ellipse clock, deadline costs and content-dependent ring timing.",
+      "survived": "Reported numerical clock/RK4 agreement, pose-invariant speed/turning lanes and segmented ring recall (96% for jittered queries).",
+      "killed": "Corner mode count leaks logarithmically; no area-law proof or gravity simulation. One wrong bit reduces mesh recall to 15%; canonical gear coupling is a design analogy.",
+      "evidence": "https://github.com/anttiluode/Kartiokello/blob/main/README.md",
+      "tags": [
+        "2026-11-26",
+        "hyperbolic-geometry",
+        "clock",
+        "ring-memory"
+      ],
+      "era": "November 26: the living reader",
+      "era_order": 211
+    },
+    {
+      "id": "GuitarMicScanner",
+      "url": "https://github.com/anttiluode/GuitarMicScanner",
+      "family": "temporal-neurobiology",
+      "status": "tool",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Tempest Explorer (bundled original/Tempestessss.py) revision with live pickup audio, fractional lap lock and ellipse geometry.",
+      "survived": "Synthetic block-delay/coverage, PLL lock and two-channel shape-invariant benchmarks; old GUI sonification delay removed.",
+      "killed": "Author's practical assessment: ordinary FL Studio effects cover most audible utility. No comparative DAW benchmark, real dual-coil validation or novel sensing advantage shown.",
+      "evidence": "https://github.com/anttiluode/GuitarMicScanner/blob/main/README.md",
+      "tags": [
+        "2026-11-26",
+        "audio",
+        "tempest",
+        "signal-reader",
+        "negative-practical-assessment"
+      ],
+      "era": "November 26: the living reader",
+      "era_order": 211
     }
   ],
   "edges": [
@@ -186,6 +227,22 @@
       "confidence": "high",
       "why": "Shared exported representation bank.",
       "evidence": "https://github.com/anttiluode/AliveAI/blob/main/README.md"
+    },
+    {
+      "source": "Kartiokello",
+      "target": "GuitarMicScanner",
+      "type": "converges",
+      "confidence": "high",
+      "why": "README explicitly adapts Kartiokello exp6 shape speed/turning invariants and exp7 ring-lock idea into a fractional PLL and pickup instrument.",
+      "evidence": "https://github.com/anttiluode/GuitarMicScanner/blob/main/README.md"
+    },
+    {
+      "source": "Pisara",
+      "target": "Kartiokello",
+      "type": "converges",
+      "confidence": "medium",
+      "why": "Conceptual relationship: signal-dependent timing and memory carried by delayed channels; no code inheritance claimed.",
+      "evidence": "https://github.com/anttiluode/Kartiokello/blob/main/README.md"
     }
   ],
   "motifs": [
@@ -199,6 +256,15 @@
         "CombinatoryPlaySol",
         "CombinatoryPlayClaude",
         "AliveAI"
+      ]
+    },
+    {
+      "id": "nov26-geometric-clock-instrument",
+      "title": "Geometry-dependent timing and invariant sensing",
+      "description": "A clock integrates path speed but not turning. Local differential invariants can read more than the clock; a practical instrument must also beat ordinary signal-processing baselines.",
+      "nodes": [
+        "Kartiokello",
+        "GuitarMicScanner"
       ]
     }
   ]
