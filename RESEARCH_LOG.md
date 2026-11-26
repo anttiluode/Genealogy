@@ -1,5 +1,19 @@
 # Genealogy research log
 
+## 26 November 2026 — from sweep to the living reader
+
+[**November 26 wall chapter**](https://anttiluode.github.io/Genealogy/#nov26-living-reader) · [Curated pass](data/passes/november-26-living-reader.json).
+
+**Five new repositories; census 697 → 702.** User-reported activity: 54 commits (SweepSol 25, AliveAI 15, CombinatoryPlaySol 10, Sweep 3, CombinatoryPlayClaude 1). One shared frozen Qwen3-1.7B bank (8,000 entries, 128 cached PCs, layer 14) supports independent readers.
+
+- **[SweepSol](https://github.com/anttiluode/SweepSol)** — Anchor/probe separation, scalar-only pursuit, independent steering and grain, simultaneous swarm and recoverable road memory. Empty sectors, narrow-band scoring bias and repeated dimers motivate temperature and common-space scoring. No proven road-transfer advantage.
+- **[Sweep](https://github.com/anttiluode/Sweep)** — [Fields](https://github.com/anttiluode/Sweep/tree/main/runs/fields_qwen_h20): 95/100/98% temperature arrival versus 49/55/55% cold across three 300-pair sets (401 rescues, zero losses); hot best-step control nearly matches; roads and transferred aversion fail to help clearly. [Development](https://github.com/anttiluode/Sweep/tree/main/runs/develop_pythia-410m_h20): step0 arrival 93% but mature-map step cosine .003, step512 arrival dips to 74%, step1000 arrival 91% and cosine .369, final .484. Native family-answer accuracy at step1000 is .08; the tasks differ. [Unlock](https://github.com/anttiluode/Sweep/tree/main/runs/unlock_qwen): 6,000 pairs; moderately related cues expose about seven new coherent neighbors; unrelated blends are no better than the random-direction control in coherence. Normalized vector addition, not a demonstrated nonlinear gate.
+- **[CombinatoryPlaySol](https://github.com/anttiluode/CombinatoryPlaySol)** — Continuous recurrent workspace instead of discrete word commits. Real-bank trap: 79 entries in 516 beats, last discovery at beat 91. Temperature after top-k cannot directly change membership. Recoverable address/regional fatigue before selection enables movement; too much fatigue sacrifices coherence. Regional superiority remains unproved. User-tuned fluid settings: fatigue .44, burn .12, recovery .015, temperature .09, feedback .48, cue tether .18.
+- **[CombinatoryPlayClaude](https://github.com/anttiluode/CombinatoryPlayClaude)** — Independent implementation on the same bank. 200 triples, 30 beats: continuous state smoothness .94 versus discrete .71/.61; without fatigue stationary 94% of steps. Different tags yield 15% observed overlap versus 46% noise-only; tag bias is explicit and native-Qwen comparison unrun.
+- **[AliveAI](https://github.com/anttiluode/AliveAI)** — Direct descendant of CombinatoryPlaySol. Adds signed external feedback, context-dependent persistent records, energy replenishment, patience relaxation and live sensory cue injection. Real-bank baseline 550 beats: 1,776 entries, .4918 coherence, 5.62/12 retained per step. Toy held-out static 3/3 versus learned 2/3; no validated learning transfer. Old trace's empty episode field was not evidence of no recall; corrected telemetry separates recall from regulatory change.
+
+**Surviving distinction:** stored geometry, current workspace, movement policy, recoverable adaptation, external value and learned memory are separate. A random cloud can be navigable; a coherent cluster can be a trap; movement and novelty are not task success. Latching and annealing are established mechanisms, not discoveries of consciousness or new physical laws. The open questions are matched-budget useful exploration and held-out benefit from external plasticity.
+
 ## 25 November 2026 — the inward head: from grain to independent evidence
 
 [**November 25 wall chapter**](https://anttiluode.github.io/Genealogy/#nov25-inward-head) · [Curated pass](data/passes/november-25-the-inward-head.json) · [Theory](https://github.com/anttiluode/Theory).
