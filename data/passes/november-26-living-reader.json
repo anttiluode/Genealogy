@@ -1,0 +1,205 @@
+{
+  "id": "november-26-living-reader",
+  "title": "November 26 — from sweep to the living reader",
+  "reviewed_at": "2026-11-26",
+  "order": 211,
+  "summary": "Five new repositories; 54 user-reported commits. Frozen map, downhill navigation, early geometry, conjunction, continuous workspace and external plasticity; preserve negative controls.",
+  "nodes": [
+    {
+      "id": "SweepSol",
+      "url": "https://github.com/anttiluode/SweepSol",
+      "family": "transformer-interpretability",
+      "status": "experiment",
+      "usefulness": "practical",
+      "confidence": "high",
+      "claim": "Anchored alternating scalar-drive reader and shared frozen Qwen bank; swarm workbench.",
+      "survived": "Separate anchor and probe; 8,000 cached word states, 128 PCs at Qwen layer 14; real user navigation and swarm traces; temperature port.",
+      "killed": "One-sided blind sectors, dimers and narrow-band bias prompted corrections; no demonstrated road-transfer or reasoning advantage.",
+      "evidence": "https://github.com/anttiluode/SweepSol/blob/main/README.md",
+      "tags": [
+        "2026-11-26",
+        "frozen-model",
+        "associative-reader",
+        "navigation"
+      ],
+      "era": "November 26: the living reader",
+      "era_order": 211
+    },
+    {
+      "id": "Sweep",
+      "url": "https://github.com/anttiluode/Sweep",
+      "family": "transformer-interpretability",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Independent Python sweep; swarm, fields, developmental checkpoint and conjunction experiments.",
+      "survived": "Temperature 95/100/98% vs cold 49/55/55% across three 300-pair sets; meaningful-map proxy emerges early; moderate cue blends unlock coherent new neighbors.",
+      "killed": "Roads lose to shuffled/random long jumps; aversion does not transfer; step0 arrival 93% with final-map cosine .003; cosine oracle is not reasoning.",
+      "evidence": "https://github.com/anttiluode/Sweep/blob/main/README.md",
+      "tags": [
+        "2026-11-26",
+        "frozen-model",
+        "associative-reader",
+        "navigation"
+      ],
+      "era": "November 26: the living reader",
+      "era_order": 211
+    },
+    {
+      "id": "CombinatoryPlaySol",
+      "url": "https://github.com/anttiluode/CombinatoryPlaySol",
+      "family": "transformer-interpretability",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Continuous recurrent state reads a weighted workspace without token generation; recoverable fatigue.",
+      "survived": "Real-bank trap: 79 distinct entries in 516 beats, last new at 91; fatigue acts before selection. User-tuned intermediate regime balances continuity and novelty.",
+      "killed": "Original temperature only reweights selected words; strong fatigue can force novelty at coherence cost; no validated task gain.",
+      "evidence": "https://github.com/anttiluode/CombinatoryPlaySol/blob/main/README.md",
+      "tags": [
+        "2026-11-26",
+        "frozen-model",
+        "associative-reader",
+        "recurrent-state"
+      ],
+      "era": "November 26: the living reader",
+      "era_order": 211
+    },
+    {
+      "id": "CombinatoryPlayClaude",
+      "url": "https://github.com/anttiluode/CombinatoryPlayClaude",
+      "family": "transformer-interpretability",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Independent continuous associative reader with tags, fatigue, grain and temperature.",
+      "survived": "200 triples: state smoothness .94, no-fatigue stalls 94%; tag conditions share 15% of observed words vs 46% noise-only; swap retains history.",
+      "killed": "Different tag is explicitly biased; word-chain controls differ in observations per beat; no native-Qwen comparison or task advantage established.",
+      "evidence": "https://github.com/anttiluode/CombinatoryPlayClaude/blob/main/README.md",
+      "tags": [
+        "2026-11-26",
+        "frozen-model",
+        "associative-reader",
+        "recurrent-state"
+      ],
+      "era": "November 26: the living reader",
+      "era_order": 211
+    },
+    {
+      "id": "AliveAI",
+      "url": "https://github.com/anttiluode/AliveAI",
+      "family": "transformer-interpretability",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Inherits CombinatoryPlaySol reader; adds external feedback, signed contextual memory, patience and sensory cue injection.",
+      "survived": "550-beat real-bank baseline: 1,776 distinct entries, coherence .4918, 5.62/12 retained. Patience relaxation and retrieval telemetry implemented; synthetic learning wiring passes.",
+      "killed": "Toy static retrieval 3/3 vs learned 2/3 held-out; no demonstrated transfer or native transformer closed loop; no consciousness claim.",
+      "evidence": "https://github.com/anttiluode/AliveAI/blob/main/README.md",
+      "tags": [
+        "2026-11-26",
+        "frozen-model",
+        "associative-reader",
+        "external-plasticity"
+      ],
+      "era": "November 26: the living reader",
+      "era_order": 211
+    }
+  ],
+  "edges": [
+    {
+      "source": "Theory",
+      "target": "SweepSol",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Exporter uses Theory item frame and PCA bands; conceptual harvest, not model-weight inheritance.",
+      "evidence": "https://github.com/anttiluode/SweepSol/blob/main/README.md"
+    },
+    {
+      "source": "Maatuska",
+      "target": "Sweep",
+      "type": "converges",
+      "confidence": "high",
+      "why": "README explicitly harvests grain windows.",
+      "evidence": "https://github.com/anttiluode/Sweep/blob/main/README.md"
+    },
+    {
+      "source": "SweepSol",
+      "target": "Sweep",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Independent implementations share exported Qwen bank; Sweep explicitly imports it.",
+      "evidence": "https://github.com/anttiluode/Sweep/blob/main/README.md"
+    },
+    {
+      "source": "SweepSol",
+      "target": "CombinatoryPlaySol",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Reuses cached word-state bank; new continuous rather than discrete reader.",
+      "evidence": "https://github.com/anttiluode/CombinatoryPlaySol/blob/main/README.md"
+    },
+    {
+      "source": "Sweep",
+      "target": "CombinatoryPlaySol",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Explicit Unlock and checkpoint precursors; independent recurrent engine.",
+      "evidence": "https://github.com/anttiluode/CombinatoryPlaySol/blob/main/README.md"
+    },
+    {
+      "source": "SweepSol",
+      "target": "CombinatoryPlayClaude",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Reads same frozen Qwen bank.",
+      "evidence": "https://github.com/anttiluode/CombinatoryPlayClaude/blob/main/README.md"
+    },
+    {
+      "source": "Sweep",
+      "target": "CombinatoryPlayClaude",
+      "type": "converges",
+      "confidence": "high",
+      "why": "README explicitly incorporates Unlock definition and accepts Sweep banks.",
+      "evidence": "https://github.com/anttiluode/CombinatoryPlayClaude/blob/main/README.md"
+    },
+    {
+      "source": "CombinatoryPlaySol",
+      "target": "CombinatoryPlayClaude",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Documented sibling implementations; not direct code inheritance.",
+      "evidence": "https://github.com/anttiluode/CombinatoryPlayClaude/blob/main/README.md"
+    },
+    {
+      "source": "CombinatoryPlaySol",
+      "target": "AliveAI",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "AliveAI explicitly vendors the reader and carries forward the fluid-regime settings.",
+      "evidence": "https://github.com/anttiluode/AliveAI/blob/main/README.md"
+    },
+    {
+      "source": "SweepSol",
+      "target": "AliveAI",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Shared exported representation bank.",
+      "evidence": "https://github.com/anttiluode/AliveAI/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov26-frozen-map-adaptive-reader",
+      "title": "Frozen map, adaptive reader",
+      "description": "Separate learned representation, navigation, workspace recurrence, recoverable fatigue and consequence-dependent memory. Navigability, coherent association and useful task performance are different measurements.",
+      "nodes": [
+        "SweepSol",
+        "Sweep",
+        "CombinatoryPlaySol",
+        "CombinatoryPlayClaude",
+        "AliveAI"
+      ]
+    }
+  ]
+}
