@@ -662,5 +662,9 @@
   {
     "path": "november-25-the-inward-head.json",
     "enabled": true
+  },
+  {
+    "path": "november-26-living-reader.json",
+    "enabled": true
   }
 ]
