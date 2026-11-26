@@ -2333,5 +2333,83 @@
     "notes": [
       "No new Bayesian principle or demonstrated latent reasoning."
     ]
+  },
+  {
+    "id": "nov26-fluid-reader-regime",
+    "title": "Does recoverable fatigue produce useful continuity rather than mere novelty?",
+    "state": "open",
+    "motifs": [
+      "nov26-frozen-map-adaptive-reader"
+    ],
+    "evidence": [
+      "nov26-play-sol-fatigue",
+      "nov26-play-claude-dynamics",
+      "nov26-alive-free",
+      "nov26-sweep-development"
+    ],
+    "competing_explanations": [
+      "Slow recovery and moderate inhibition sustain coherent transitions.",
+      "Observed continuity follows the bank density and hand-picked settings rather than a robust operating region.",
+      "A simpler diversity-aware retrieval policy yields comparable useful exploration."
+    ],
+    "known": [
+      "Original real-bank reader saturates at 79 entries.",
+      "Claude's no-fatigue reader is stationary 94% of steps; tagged streams differ.",
+      "AliveAI remains mobile for 550 beats without rewards."
+    ],
+    "missing_discriminator": "Matched cue sets and budgets across fatigue strength, burn and recovery; independent relevance metric and static diversity baseline.",
+    "candidate_experiment": {
+      "design": "Freeze bank and cues, sweep fatigue and recovery on held-out cue sets; compare static retrieval, diversity-aware retrieval, no-feedback, discrete, continuous and regional versus address-only fatigue at matched observations; score relevance, continuity, revisits and coverage.",
+      "cost": "CPU; existing cached banks.",
+      "outcomes": [
+        {
+          "if": "Intermediate regime improves independent task utility at matched cost",
+          "then": "Support regulated recurrent reading beyond descriptive movement."
+        },
+        {
+          "if": "Static diversity or simple fatigue matches it",
+          "then": "Retain as a dynamical instrument, not a superior task reader."
+        }
+      ]
+    }
+  },
+  {
+    "id": "nov26-external-plasticity-transfer",
+    "title": "Can consequence-dependent memory improve a frozen model's later decisions?",
+    "state": "open",
+    "motifs": [
+      "nov26-frozen-map-adaptive-reader"
+    ],
+    "evidence": [
+      "nov26-alive-learning",
+      "nov26-sweep-roads",
+      "nov26-sweep-temperature",
+      "nov26-sweep-unlock"
+    ],
+    "competing_explanations": [
+      "Context-specific records improve future useful selection.",
+      "Recall is mainly persistent bias or memorization of answer words.",
+      "Global regulation explains apparent changes without contextual learning."
+    ],
+    "known": [
+      "AliveAI synthetic memory affects candidate selection; static retrieval wins tiny held-out test.",
+      "Sweep's roads and goal-tagged aversion do not generalize clearly.",
+      "Temperature improves cosine-oracle navigation, not demonstrated reasoning."
+    ],
+    "missing_discriminator": "Frozen learned memory versus no memory and shuffled reward at matched budgets on answer-disjoint held-out tasks.",
+    "candidate_experiment": {
+      "design": "Use independent scored association or retrieval tasks with cue and answer disjoint splits; compare static, diversity retrieval, recurrent regulation, contextual memory, shuffled-memory and memory-only arms. Match calls and report map scans/runtime; optionally give the same context budget to native Qwen.",
+      "cost": "CPU cached bank; optional local GPU for frozen Qwen reference.",
+      "outcomes": [
+        {
+          "if": "Learned memory improves held-out task utility over matched baselines",
+          "then": "Support external plasticity in this setting."
+        },
+        {
+          "if": "Gain is limited to seen answers or disappears with regulation controls",
+          "then": "Narrow claim to contextual preference storage."
+        }
+      ]
+    }
   }
 ]
