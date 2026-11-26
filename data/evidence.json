@@ -15464,5 +15464,545 @@
       "11.8% absolute accuracy; one model/dataset"
     ],
     "source": "https://github.com/anttiluode/Theory/blob/main/HEAD3.md"
+  },
+  {
+    "id": "nov26-sweepsol-wiring",
+    "node": "SweepSol",
+    "claim": "Anchored alternating scalar-only reader and swarm are executable; road advantage not established.",
+    "design": "Synthetic matched road evaluation; updated engine and swarm wiring checks.",
+    "result": "mixed",
+    "motifs": [
+      "nov26-frozen-map-adaptive-reader"
+    ],
+    "sample": {
+      "unit": "test pair",
+      "count": 4
+    },
+    "metrics": [
+      {
+        "name": "road successes",
+        "value": 3
+      },
+      {
+        "name": "baseline successes",
+        "value": 3
+      },
+      {
+        "name": "paired gain",
+        "value": 0
+      }
+    ],
+    "controls": [
+      "Frozen roads vs no roads"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Toy ring; real-bank warm/cold comparison not reported in README; side-axis correction unverified."
+    ],
+    "source": "https://github.com/anttiluode/SweepSol/blob/main/README.md"
+  },
+  {
+    "id": "nov26-sweep-roads",
+    "node": "Sweep",
+    "claim": "Learned directed trails do not outperform longer shuffled or random jumps on the tested map.",
+    "design": "2000 training walkers; 300 fresh pairs in each of five settings; matched seeds.",
+    "result": "contradicts",
+    "motifs": [
+      "nov26-frozen-map-adaptive-reader"
+    ],
+    "sample": {
+      "unit": "test pair per setting",
+      "count": 300
+    },
+    "metrics": [
+      {
+        "name": "random pairs no road",
+        "value": 0.43
+      },
+      {
+        "name": "random pairs roads",
+        "value": 0.47
+      },
+      {
+        "name": "random pairs shuffled",
+        "value": 0.56
+      },
+      {
+        "name": "random pairs arbitrary far jump",
+        "value": 0.6
+      },
+      {
+        "name": "random pairs swarm-word jump",
+        "value": 0.66
+      }
+    ],
+    "controls": [
+      "Shuffled roads",
+      "Random edges",
+      "Swarm-word jumps",
+      "Any-word jumps"
+    ],
+    "held_out": true,
+    "external_data": true,
+    "limitations": [
+      "Scalar cosine target oracle; approximately 90% of learned edges lie within horizon; sequential walkers."
+    ],
+    "source": "https://github.com/anttiluode/Sweep/blob/main/README.md"
+  },
+  {
+    "id": "nov26-sweep-temperature",
+    "node": "Sweep",
+    "claim": "Permitting temporary downhill moves rescues hidden-target search; aversion transfer and loop memory do not add clear benefit.",
+    "design": "Qwen horizon 20; 300 fresh pairs per set; same seeds; 150 beats.",
+    "result": "supports",
+    "motifs": [
+      "nov26-frozen-map-adaptive-reader"
+    ],
+    "sample": {
+      "unit": "paired journey",
+      "count": 900
+    },
+    "metrics": [
+      {
+        "name": "plain seen",
+        "value": 0.49
+      },
+      {
+        "name": "plain near",
+        "value": 0.55
+      },
+      {
+        "name": "plain new",
+        "value": 0.55
+      },
+      {
+        "name": "temp seen",
+        "value": 0.95
+      },
+      {
+        "name": "temp near",
+        "value": 1
+      },
+      {
+        "name": "temp new",
+        "value": 0.98
+      },
+      {
+        "name": "hot seen",
+        "value": 0.91
+      },
+      {
+        "name": "hot near",
+        "value": 0.99
+      },
+      {
+        "name": "hot new",
+        "value": 0.97
+      },
+      {
+        "name": "blind seen",
+        "value": 0.05
+      },
+      {
+        "name": "blind near",
+        "value": 0.08
+      },
+      {
+        "name": "blind new",
+        "value": 0.05
+      },
+      {
+        "name": "rescued pairs",
+        "value": 401
+      },
+      {
+        "name": "lost pairs",
+        "value": 0
+      },
+      {
+        "name": "seen map searches plain",
+        "value": 500
+      },
+      {
+        "name": "seen map searches temp",
+        "value": 200
+      },
+      {
+        "name": "seen warmth calls plain",
+        "value": 54
+      },
+      {
+        "name": "seen warmth calls temp",
+        "value": 132
+      },
+      {
+        "name": "aversion seen",
+        "value": 0.58
+      },
+      {
+        "name": "aversion near",
+        "value": 0.55
+      },
+      {
+        "name": "aversion new",
+        "value": 0.55
+      }
+    ],
+    "controls": [
+      "Far glance",
+      "Always best even downhill",
+      "Blind random read",
+      "Revisit reflex",
+      "Learned loop trace",
+      "Goal-tagged aversion"
+    ],
+    "held_out": true,
+    "external_data": true,
+    "limitations": [
+      "Warmth supplied by cosine to hidden target; costs differ; little loop opportunity; not independent task reward."
+    ],
+    "source": "https://github.com/anttiluode/Sweep/blob/main/runs/fields_qwen_h20/REPORT.md"
+  },
+  {
+    "id": "nov26-sweep-development",
+    "node": "Sweep",
+    "claim": "Arrival and mature-map consistency separate; relational structure emerges early despite weak native answers.",
+    "design": "Pythia-410m layer 12; seven checkpoints, same 300 pairs chosen using mature map.",
+    "result": "supports",
+    "motifs": [
+      "nov26-frozen-map-adaptive-reader"
+    ],
+    "sample": {
+      "unit": "pair per checkpoint",
+      "count": 300
+    },
+    "metrics": [
+      {
+        "name": "step0 temp arrival",
+        "value": 0.93
+      },
+      {
+        "name": "step512 temp arrival",
+        "value": 0.74
+      },
+      {
+        "name": "step1000 temp arrival",
+        "value": 0.91
+      },
+      {
+        "name": "final temp arrival",
+        "value": 0.98
+      },
+      {
+        "name": "step0 final-map cosine",
+        "value": 0.003
+      },
+      {
+        "name": "step512 final-map cosine",
+        "value": 0.27
+      },
+      {
+        "name": "step1000 final-map cosine",
+        "value": 0.369
+      },
+      {
+        "name": "final final-map cosine",
+        "value": 0.484
+      },
+      {
+        "name": "step1000 native answer",
+        "value": 0.08
+      },
+      {
+        "name": "final native answer",
+        "value": 0.39
+      }
+    ],
+    "controls": [
+      "Plain",
+      "Hot",
+      "Blind",
+      "Random cloud"
+    ],
+    "held_out": false,
+    "external_data": true,
+    "limitations": [
+      "Final-map cosine is geometric proxy, not semantic judgement; table scores successful temperature paths; native family-answer task differs; checkpoint-512 sink explanation remains descriptive."
+    ],
+    "source": "https://github.com/anttiluode/Sweep/blob/main/runs/develop_pythia-410m_h20/REPORT.md"
+  },
+  {
+    "id": "nov26-sweep-unlock",
+    "node": "Sweep",
+    "claim": "Moderately related cue sums expose novel coherent neighbors; unrelated sums do no better than random direction in coherence.",
+    "design": "6000 cue pairs, top-20 normalized sum vs each individual cue.",
+    "result": "supports",
+    "motifs": [
+      "nov26-frozen-map-adaptive-reader"
+    ],
+    "sample": {
+      "unit": "pair",
+      "count": 6000
+    },
+    "metrics": [
+      {
+        "name": "moderate unlocked count",
+        "value": 7
+      },
+      {
+        "name": "moderate median single-cue rank",
+        "value": 38
+      },
+      {
+        "name": "moderate package cosine",
+        "value": 0.36
+      },
+      {
+        "name": "random direction package cosine",
+        "value": 0.31
+      },
+      {
+        "name": "unrelated package cosine",
+        "value": 0.29
+      },
+      {
+        "name": "close package cosine",
+        "value": 0.4
+      },
+      {
+        "name": "close unlocked count",
+        "value": 2.4
+      }
+    ],
+    "controls": [
+      "Single cue neighborhoods",
+      "Cue plus random direction"
+    ],
+    "held_out": false,
+    "external_data": true,
+    "limitations": [
+      "Static linear blend with ranking; no nonlinear gate, recurrent opening, or demonstrated fractal scaling."
+    ],
+    "source": "https://github.com/anttiluode/Sweep/blob/main/runs/unlock_qwen/REPORT.md"
+  },
+  {
+    "id": "nov26-play-sol-fatigue",
+    "node": "CombinatoryPlaySol",
+    "claim": "Recurrent workspace can lock into a neighborhood; preselection recoverable fatigue expands exploration.",
+    "design": "Real Qwen free-association trace and 300-beat synthetic fatigue comparison.",
+    "result": "mixed",
+    "motifs": [
+      "nov26-frozen-map-adaptive-reader"
+    ],
+    "sample": {
+      "unit": "real-bank beat",
+      "count": 516
+    },
+    "metrics": [
+      {
+        "name": "original real-bank distinct",
+        "value": 79
+      },
+      {
+        "name": "last new real-bank beat",
+        "value": 91
+      },
+      {
+        "name": "temperature cap",
+        "value": 0.36
+      },
+      {
+        "name": "toy baseline distinct",
+        "value": 15
+      },
+      {
+        "name": "toy address fatigue distinct",
+        "value": 45
+      },
+      {
+        "name": "toy regional fatigue distinct",
+        "value": 45
+      },
+      {
+        "name": "toy baseline coherence",
+        "value": 0.836
+      },
+      {
+        "name": "toy regional coherence",
+        "value": 0.716
+      }
+    ],
+    "controls": [
+      "Address-only fatigue",
+      "Regional fatigue",
+      "No fatigue"
+    ],
+    "held_out": false,
+    "external_data": true,
+    "limitations": [
+      "Real-bank trap is single trajectory; synthetic fatigue arms saturate; regional fatigue not superior on distinct count; no independent task metric."
+    ],
+    "source": "https://github.com/anttiluode/CombinatoryPlaySol/blob/main/README.md"
+  },
+  {
+    "id": "nov26-play-claude-dynamics",
+    "node": "CombinatoryPlayClaude",
+    "claim": "Continuous weighted workspace moves more smoothly than discrete chains; fatigue and tag change trajectories.",
+    "design": "200 random cue triples, 30 beats each.",
+    "result": "supports",
+    "motifs": [
+      "nov26-frozen-map-adaptive-reader"
+    ],
+    "sample": {
+      "unit": "cue triple",
+      "count": 200
+    },
+    "metrics": [
+      {
+        "name": "player smoothness",
+        "value": 0.94
+      },
+      {
+        "name": "nearest-word smoothness",
+        "value": 0.71
+      },
+      {
+        "name": "random-of-10 smoothness",
+        "value": 0.61
+      },
+      {
+        "name": "no-fatigue stationary fraction",
+        "value": 0.94
+      },
+      {
+        "name": "player stationary fraction",
+        "value": 0.02
+      },
+      {
+        "name": "different-tag observed overlap",
+        "value": 0.15
+      },
+      {
+        "name": "noise-only observed overlap",
+        "value": 0.46
+      }
+    ],
+    "controls": [
+      "No fatigue",
+      "Nearest-word chain",
+      "Random-of-10 chain",
+      "Tag swap",
+      "Untagged noise runs"
+    ],
+    "held_out": false,
+    "external_data": true,
+    "limitations": [
+      "Explicit tag bias; unequal number of observations per step; no native Qwen comparison; descriptive dynamics not reasoning."
+    ],
+    "source": "https://github.com/anttiluode/CombinatoryPlayClaude/blob/main/README.md"
+  },
+  {
+    "id": "nov26-alive-free",
+    "node": "AliveAI",
+    "claim": "Fluid-regime reader remains mobile on real Qwen bank without feedback.",
+    "design": "One user real-bank free-association trace, 550 beats.",
+    "result": "supports",
+    "motifs": [
+      "nov26-frozen-map-adaptive-reader"
+    ],
+    "sample": {
+      "unit": "beat",
+      "count": 550
+    },
+    "metrics": [
+      {
+        "name": "distinct entries",
+        "value": 1776
+      },
+      {
+        "name": "mean coherence",
+        "value": 0.4918
+      },
+      {
+        "name": "mean motion",
+        "value": 0.0222
+      },
+      {
+        "name": "mean retained entries of 12",
+        "value": 5.62
+      },
+      {
+        "name": "mean bank energy",
+        "value": 0.9823
+      },
+      {
+        "name": "mean active energy",
+        "value": 0.8256
+      }
+    ],
+    "controls": [],
+    "held_out": false,
+    "external_data": true,
+    "limitations": [
+      "Single uncontrolled trace; no learning or task reward during baseline; no neuronal or consciousness claim."
+    ],
+    "source": "https://github.com/anttiluode/AliveAI/blob/main/README.md"
+  },
+  {
+    "id": "nov26-alive-learning",
+    "node": "AliveAI",
+    "claim": "Signed contextual memory affects preselection; toy benchmark does not establish held-out benefit.",
+    "design": "Two toy training tasks, three held-out tasks, budget 10, 20 beats, 2 epochs; frozen memory during evaluation.",
+    "result": "mixed",
+    "motifs": [
+      "nov26-frozen-map-adaptive-reader"
+    ],
+    "sample": {
+      "unit": "held-out toy task",
+      "count": 3
+    },
+    "metrics": [
+      {
+        "name": "static successes",
+        "value": 3
+      },
+      {
+        "name": "reader successes",
+        "value": 2
+      },
+      {
+        "name": "regulated successes",
+        "value": 2
+      },
+      {
+        "name": "learned successes",
+        "value": 2
+      },
+      {
+        "name": "learned mean calls",
+        "value": 4.67
+      },
+      {
+        "name": "regulated mean calls",
+        "value": 5.33
+      },
+      {
+        "name": "patience relaxation per beat",
+        "value": 0.02
+      }
+    ],
+    "controls": [
+      "Static retrieval",
+      "Unregulated reader",
+      "Regulated no-memory reader",
+      "Learned reader"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Hand-designed toy; costs not matched; no real-bank held-out result; old trace memory field did not log AliveAI recall; global patience only."
+    ],
+    "source": "https://github.com/anttiluode/AliveAI/blob/main/README.md"
   }
 ]
