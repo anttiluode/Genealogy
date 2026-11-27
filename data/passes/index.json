@@ -666,5 +666,9 @@
   {
     "path": "november-26-living-reader.json",
     "enabled": true
+  },
+  {
+    "path": "november-27-unfinished-computation.json",
+    "enabled": true
   }
 ]

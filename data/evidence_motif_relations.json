@@ -1004,5 +1004,41 @@
   },
   "nov26-guitar-scanner": {
     "nov26-geometric-clock-instrument": "documents"
+  },
+  "nov27-witness-clock": {
+    "nov27-shared-witness-reader": "documents"
+  },
+  "nov27-joint-witness": {
+    "nov27-shared-witness-reader": "supports"
+  },
+  "nov27-reader-cost": {
+    "nov27-shared-witness-reader": "limits"
+  },
+  "nov27-composable-macros": {
+    "nov27-exact-structure-reuse": "supports"
+  },
+  "nov27-port-compilation": {
+    "nov27-exact-structure-reuse": "supports"
+  },
+  "nov27-symbolic-reuse": {
+    "nov27-exact-structure-reuse": "supports"
+  },
+  "nov27-fitness-transfer": {
+    "nov27-exact-structure-reuse": "limits"
+  },
+  "nov27-trajectory-reader": {
+    "nov27-cost-of-reading-and-geometry": "limits"
+  },
+  "nov27-false-death": {
+    "nov27-cost-of-reading-and-geometry": "documents"
+  },
+  "nov27-quadratic-peel": {
+    "nov27-cost-of-reading-and-geometry": "supports"
+  },
+  "nov27-frame-continuation": {
+    "nov27-cost-of-reading-and-geometry": "supports"
+  },
+  "nov27-tier-economics": {
+    "nov27-cost-of-reading-and-geometry": "limits"
   }
 }

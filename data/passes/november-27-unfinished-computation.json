@@ -1,0 +1,144 @@
+{
+  "id": "november-27-unfinished-computation",
+  "title": "November 27 — the shape of unfinished computation",
+  "reviewed_at": "2026-11-27",
+  "order": 212,
+  "summary": "Two repositories, 184 user-reported commits (6 singular, 178 plural). Manual human/Sol/Neon relay from proof sockets to bounded symbolic inheritance and quadratic internal stabilizer charts. Gate 14b unopened.",
+  "nodes": [
+    {
+      "id": "ProofSearchExperiment",
+      "url": "https://github.com/anttiluode/ProofSearchExperiment",
+      "family": "search-routing",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Shared-witness sockets, canonical renaming and exact Lean proof assembly; debt-aware priority.",
+      "survived": "Repaired stale scheduler restores 24/24; priority-only live attempts 1656 to 1276; joint witness chooses correct three-premise rule 32/32.",
+      "killed": "Graph reachability and exact joins are stronger controls; no general proof-search advantage or physical clock derivation.",
+      "evidence": "https://github.com/anttiluode/ProofSearchExperiment/blob/main/README.md",
+      "tags": [
+        "2026-11-27",
+        "proof-sockets",
+        "shared-witness",
+        "Lean"
+      ],
+      "era": "November 27: the shape of unfinished computation",
+      "era_order": 212
+    },
+    {
+      "id": "ProofSearchExperiments",
+      "url": "https://github.com/anttiluode/ProofSearchExperiments",
+      "family": "search-routing",
+      "status": "experiment",
+      "usefulness": "scientific",
+      "confidence": "high",
+      "claim": "Bounded symbolic discovery/reuse and constraint compilation for constructed coupling-matrix realizations, with diagnostic trajectory and cost audits.",
+      "survived": "Composable macros, bounded Givens inheritance, exact support identities and conditional projected internal leaf chart. All 64 witness reconstructions and 256 tier derivative comparisons pass.",
+      "killed": "Approximate readers and cheap numerical steps often lose; static fitness fails to transfer, progress leash kills recovering trajectories, tier full-stage cost misses FIRST. No fresh Gate 14b, runtime or global coverage claim.",
+      "evidence": "https://github.com/anttiluode/ProofSearchExperiments/blob/main/README.md",
+      "tags": [
+        "2026-11-27",
+        "symbolic-reuse",
+        "givens",
+        "constraint-elimination",
+        "SIM",
+        "Lean"
+      ],
+      "era": "November 27: the shape of unfinished computation",
+      "era_order": 212
+    }
+  ],
+  "edges": [
+    {
+      "source": "ProofSearchExperiment",
+      "target": "ProofSearchExperiments",
+      "type": "inherits",
+      "confidence": "high",
+      "why": "Explicit continuation of singular proof socket experiment.",
+      "evidence": "https://github.com/anttiluode/ProofSearchExperiments/blob/main/README.md"
+    },
+    {
+      "source": "PkasPCL3satSolver",
+      "target": "ProofSearchExperiment",
+      "type": "converges",
+      "confidence": "high",
+      "why": "README identifies local constraint feedback as conceptual inspiration; not code inheritance.",
+      "evidence": "https://github.com/anttiluode/ProofSearchExperiment/blob/main/README.md"
+    },
+    {
+      "source": "PkasDeerskin",
+      "target": "ProofSearchExperiment",
+      "type": "converges",
+      "confidence": "high",
+      "why": "README identifies adapting exploration when a configuration stalls.",
+      "evidence": "https://github.com/anttiluode/ProofSearchExperiment/blob/main/README.md"
+    },
+    {
+      "source": "Kartiokello",
+      "target": "ProofSearchExperiment",
+      "type": "converges",
+      "confidence": "high",
+      "why": "README links witness charge and clock analogy, not a physical derivation.",
+      "evidence": "https://github.com/anttiluode/ProofSearchExperiment/blob/main/README.md"
+    },
+    {
+      "source": "Sweep",
+      "target": "ProofSearchExperiments",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Experiment 5 explicitly names this predecessor in its strategy-fatigue lineage; conceptual connection, not direct code inheritance.",
+      "evidence": "https://github.com/anttiluode/ProofSearchExperiments/blob/main/README.md"
+    },
+    {
+      "source": "CombinatoryPlaySol",
+      "target": "ProofSearchExperiments",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Experiment 5 explicitly names this predecessor in its strategy-fatigue lineage; conceptual connection, not direct code inheritance.",
+      "evidence": "https://github.com/anttiluode/ProofSearchExperiments/blob/main/README.md"
+    },
+    {
+      "source": "CombinatoryPlayClaude",
+      "target": "ProofSearchExperiments",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Experiment 5 explicitly names this predecessor in its strategy-fatigue lineage; conceptual connection, not direct code inheritance.",
+      "evidence": "https://github.com/anttiluode/ProofSearchExperiments/blob/main/README.md"
+    },
+    {
+      "source": "AliveAI",
+      "target": "ProofSearchExperiments",
+      "type": "converges",
+      "confidence": "high",
+      "why": "Experiment 5 explicitly names this predecessor in its strategy-fatigue lineage; conceptual connection, not direct code inheritance.",
+      "evidence": "https://github.com/anttiluode/ProofSearchExperiments/blob/main/README.md"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "nov27-shared-witness-reader",
+      "title": "Shared identity outranks pairwise resemblance",
+      "description": "Jointly satisfiable sockets require the same witness across premises. Approximate scores may recognize the correct proof but cost more than an indexed exact join.",
+      "nodes": [
+        "ProofSearchExperiment",
+        "ProofSearchExperiments"
+      ]
+    },
+    {
+      "id": "nov27-exact-structure-reuse",
+      "title": "Exact computational structures can become reusable building materials",
+      "description": "Compatible output grouping makes verified rewrites self-composable; smaller Givens programs seed bounded larger support synthesis. Distinguish exact symbolic reuse from unproven numerical fitness transfer.",
+      "nodes": [
+        "ProofSearchExperiments"
+      ]
+    },
+    {
+      "id": "nov27-cost-of-reading-and-geometry",
+      "title": "Reading, regulating and removing computation have different costs",
+      "description": "Late trajectory information is expensive; rejected steps can be recovery, not death. Exact projected constraints remove free variables but derivative dependency and chart gauges determine actual work.",
+      "nodes": [
+        "ProofSearchExperiments"
+      ]
+    }
+  ]
+}

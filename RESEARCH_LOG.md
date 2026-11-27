@@ -1,5 +1,18 @@
 # Genealogy research log
 
+## 27 November 2026 — the shape of unfinished computation
+
+[**November 27 wall chapter**](https://anttiluode.github.io/Genealogy/#nov27-unfinished-computation) · [Curated pass](data/passes/november-27-unfinished-computation.json) · [The complete research diary](https://github.com/anttiluode/ProofSearchExperiments/blob/main/STORY_OF_TODAY.md).
+
+**Two new repositories; census 704 → 706. 184 user-reported commits** (6 singular, 178 plural, before this wall update).
+
+- [ProofSearchExperiment](https://github.com/anttiluode/ProofSearchExperiment) — protein-folding analogy, shared witness sockets, canonical binders and Lean interlock. Stale queue repair restores 24/24; matched priority 1,656 → 1,276 live attempts; joint reader 32/32 vs pairwise 4/32, direct join cheaper.
+- [ProofSearchExperiments](https://github.com/anttiluode/ProofSearchExperiments) — wave and phase readers, fatigue, composable macros, TWC bridge, exact port charts, bounded symbolic inheritance, trajectory regulation and conditional quadratic leaf elimination. Triple44 reuse 120 charged candidates vs flat searches capped at 200,000. Gate13 LONG 5/16 vs BASE 2/16 at n9/2M; UNLEASH false death on rejected steps. Gate14a 64/64 witnesses, dimension 28 → 19; local frame correction 100/100 finite paths; tier 256/256 derivative matches, smooth/full median 74.4k/78.5k vs FIRST 74.9k/77.2k. Full-stage cost prediction failed; no fresh Gate14b solves.
+
+**Lineage:** P-KAS/Deerskin/Kartiokello feed the singular parent conceptually; Sweep, CombinatoryPlaySol/Claude and AliveAI inform fatigue; TransientWaveCompiler is the documented geometric bridge. Google's [SIM preprint](https://arxiv.org/abs/2611.18856), [null-cone gravity preprint](https://arxiv.org/abs/2611.34924) and [global workspace/Jacobian lens preprint](https://arxiv.org/abs/2607.15495) appear in the research diary. The manual human/Sol/Neon relay maintains frozen protocols, raw receipts and failed predictions; no autonomous self-improvement result. Prior art, partial work accounting, numerical rather than Lean matrix verification, conditional coverage and no runtime or commercial advantage remain explicit.
+
+**Surviving distinction:** recognizing computation can cost more than doing it; reusable exact structure sometimes removes work rather than redistributing it. A smaller dimension is not automatically a cheaper solve. Holdout 85000–85031 remains unopened.
+
 ## 26 November 2026 — from sweep to the living reader
 
 [**November 26 wall chapter**](https://anttiluode.github.io/Genealogy/#nov26-living-reader) · [Curated pass](data/passes/november-26-living-reader.json).

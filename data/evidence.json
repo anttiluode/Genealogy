@@ -16187,5 +16187,548 @@
       "Synthetic tests, not measured physical round-trip latency; Windows duplex and real dual-coil polarization untested; author reports normal FL Studio effects can reproduce most audible effect, no controlled comparison; scale-envelope test dropped."
     ],
     "source": "https://github.com/anttiluode/GuitarMicScanner/blob/main/README.md"
+  },
+  {
+    "id": "nov27-witness-clock",
+    "node": "ProofSearchExperiment",
+    "claim": "Corrected witness-debt priority reduces live attempts without sacrificing coverage.",
+    "design": "Matched priority-only diagnostic on original positives.",
+    "result": "mixed",
+    "motifs": [
+      "nov27-shared-witness-reader"
+    ],
+    "sample": {
+      "unit": "positive case",
+      "count": 24
+    },
+    "metrics": [
+      {
+        "name": "ordinary live attempts",
+        "value": 1656
+      },
+      {
+        "name": "debt priority live attempts",
+        "value": 1276
+      },
+      {
+        "name": "solved both",
+        "value": 24
+      }
+    ],
+    "controls": [
+      "Matched shortest-proof dominance",
+      "Graph-specific BFS",
+      "Original stale queue"
+    ],
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Diagnostic replay, not fresh general theorem prover comparison."
+    ],
+    "source": "https://github.com/anttiluode/ProofSearchExperiment/blob/main/FOLLOWUP.md"
+  },
+  {
+    "id": "nov27-joint-witness",
+    "node": "ProofSearchExperiment",
+    "claim": "Joint witness identity distinguishes rules missed by pairwise overlap; direct joins are cheaper.",
+    "design": "Competing eight-rule family with every socket pair intersecting.",
+    "result": "mixed",
+    "motifs": [
+      "nov27-shared-witness-reader"
+    ],
+    "sample": {
+      "unit": "three-premise positive case",
+      "count": 32
+    },
+    "metrics": [
+      {
+        "name": "pairwise first choice",
+        "value": 4
+      },
+      {
+        "name": "joint first choice",
+        "value": 32
+      },
+      {
+        "name": "joint mean intersections",
+        "value": 18
+      },
+      {
+        "name": "direct mean intersections",
+        "value": 9
+      }
+    ],
+    "controls": [
+      "Pairwise counts",
+      "Direct indexed join",
+      "Paired negatives",
+      "Lean certificate checks"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Finite synthetic relation grammar; no unrestricted Lean speed claim."
+    ],
+    "source": "https://github.com/anttiluode/ProofSearchExperiment/blob/main/FOLLOWUP.md"
+  },
+  {
+    "id": "nov27-reader-cost",
+    "node": "ProofSearchExperiments",
+    "claim": "Wave shadow identifies correct witness but costs more than exact BFS.",
+    "design": "Five-step positive diffusion and paired negative reachability controls.",
+    "result": "contradicts",
+    "motifs": [
+      "nov27-shared-witness-reader"
+    ],
+    "sample": {
+      "unit": "positive case",
+      "count": 64
+    },
+    "metrics": [
+      {
+        "name": "correct rule",
+        "value": 64
+      },
+      {
+        "name": "mean wave plus BFS edge visits",
+        "value": 3923.16
+      },
+      {
+        "name": "mean blind BFS edge visits",
+        "value": 1011.69
+      }
+    ],
+    "controls": [
+      "Visited-set BFS",
+      "Exact fallback"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Floating arithmetic and dense witness products not included in edge visits; no timing."
+    ],
+    "source": "https://github.com/anttiluode/ProofSearchExperiments/blob/main/README.md"
+  },
+  {
+    "id": "nov27-composable-macros",
+    "node": "ProofSearchExperiments",
+    "claim": "Matched split-bucket indexing and compatible macro outputs reduce modeled work in a repeated rewrite grammar.",
+    "design": "Diagnostic replay of 72 expressions after matching-ledger and association fixes; separate 12-conjugate stress.",
+    "result": "supports",
+    "motifs": [
+      "nov27-exact-structure-reuse"
+    ],
+    "sample": {
+      "unit": "replayed target expression",
+      "count": 72
+    },
+    "metrics": [
+      {
+        "name": "primitive mean work",
+        "value": 2159.74
+      },
+      {
+        "name": "macro mean work",
+        "value": 1591.01
+      },
+      {
+        "name": "length12 primitive applications",
+        "value": 67
+      },
+      {
+        "name": "length12 macro applications",
+        "value": 23
+      }
+    ],
+    "controls": [
+      "Matched primitive scan",
+      "Signed-word oracle",
+      "Random expressions"
+    ],
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Same targets replayed, partial ledger, no development break-even or Lean runtime claim."
+    ],
+    "source": "https://github.com/anttiluode/ProofSearchExperiments/blob/main/results/operator_lazy.json"
+  },
+  {
+    "id": "nov27-port-compilation",
+    "node": "ProofSearchExperiments",
+    "claim": "Exact rank-two port compilation with continuation improves fixed-budget solves.",
+    "design": "7h 72 fresh feasible masks, 12 exact integer negative controls.",
+    "result": "supports",
+    "motifs": [
+      "nov27-exact-structure-reuse"
+    ],
+    "sample": {
+      "unit": "feasible matrix",
+      "count": 72
+    },
+    "metrics": [
+      {
+        "name": "full baseline solved",
+        "value": 16
+      },
+      {
+        "name": "compiled smooth solved",
+        "value": 46
+      },
+      {
+        "name": "integer certificates",
+        "value": 12
+      }
+    ],
+    "controls": [
+      "Full LM",
+      "Matched chart initialization",
+      "Numerical nullspace step"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Constructed family; support and rank assumptions; double-precision verification distinct from symbolic checks."
+    ],
+    "source": "https://github.com/anttiluode/ProofSearchExperiments/blob/main/results/rotation_compiler_summary.json"
+  },
+  {
+    "id": "nov27-symbolic-reuse",
+    "node": "ProofSearchExperiments",
+    "claim": "Inherited structural prefixes dramatically reduce charged bounded Givens discovery candidates.",
+    "design": "9a same primitive grammar and priority, larger solutions withheld; three target contracts.",
+    "result": "supports",
+    "motifs": [
+      "nov27-exact-structure-reuse"
+    ],
+    "sample": {
+      "unit": "support contract",
+      "count": 3
+    },
+    "metrics": [
+      {
+        "name": "double34 reuse",
+        "value": 70
+      },
+      {
+        "name": "double34 best",
+        "value": 24660
+      },
+      {
+        "name": "double44 reuse",
+        "value": 128
+      },
+      {
+        "name": "triple44 reuse",
+        "value": 120
+      },
+      {
+        "name": "triple44 best cap",
+        "value": 200000
+      }
+    ],
+    "controls": [
+      "Flat BFS",
+      "No-memory best-first"
+    ],
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Two rediscoveries and one unseen support; no unrestricted complexity or global coverage claim."
+    ],
+    "source": "https://github.com/anttiluode/ProofSearchExperiments/blob/main/results/rotation_reuse_summary.json"
+  },
+  {
+    "id": "nov27-fitness-transfer",
+    "node": "ProofSearchExperiments",
+    "claim": "Source lineage fitness does not reliably select better target numerical charts.",
+    "design": "Six parents, fresh target matrices, disjoint source fitness selection.",
+    "result": "contradicts",
+    "motifs": [
+      "nov27-exact-structure-reuse"
+    ],
+    "sample": {
+      "unit": "target matrix",
+      "count": 48
+    },
+    "metrics": [
+      {
+        "name": "fixed Spearman",
+        "value": 0.029
+      },
+      {
+        "name": "rotation-only Spearman",
+        "value": 0.086
+      },
+      {
+        "name": "source winner target fixed solved",
+        "value": 31
+      },
+      {
+        "name": "best observed parent fixed solved",
+        "value": 33
+      }
+    ],
+    "controls": [
+      "Static rank",
+      "Uniform expectation",
+      "Oracle union"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Six ranks descriptive; oracle not a deployable policy."
+    ],
+    "source": "https://github.com/anttiluode/ProofSearchExperiments/blob/main/results/rotation_lineage_summary.json"
+  },
+  {
+    "id": "nov27-trajectory-reader",
+    "node": "ProofSearchExperiments",
+    "claim": "Late trajectory discrimination carries substantial acquisition cost.",
+    "design": "Gate12 read-only diagnostic exact replay of FIRST/TOP.",
+    "result": "mixed",
+    "motifs": [
+      "nov27-cost-of-reading-and-geometry"
+    ],
+    "sample": {
+      "unit": "replayed solver run",
+      "count": 128
+    },
+    "metrics": [
+      {
+        "name": "exact replay",
+        "value": 128
+      },
+      {
+        "name": "starts",
+        "value": 404
+      },
+      {
+        "name": "completed trials",
+        "value": 6897
+      },
+      {
+        "name": "n9 trial10 progress AUC",
+        "value": 0.908
+      },
+      {
+        "name": "median winning work at trial10",
+        "value": 757308
+      }
+    ],
+    "controls": [
+      "Full loss",
+      "Denominator margin",
+      "Early prefixes"
+    ],
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Quota-censored starts; late survivor conditioning; no fresh regulator performance."
+    ],
+    "source": "https://github.com/anttiluode/ProofSearchExperiments/blob/main/results/rotation_trajectory_summary.json"
+  },
+  {
+    "id": "nov27-false-death",
+    "node": "ProofSearchExperiments",
+    "claim": "Longer uninterrupted leash rescues feasible cases; a single rejected step is not a terminal signal.",
+    "design": "Gate13 32 fresh cases × eight arms × two budgets; matched trajectory counterexamples 84020 and 84022.",
+    "result": "mixed",
+    "motifs": [
+      "nov27-cost-of-reading-and-geometry"
+    ],
+    "sample": {
+      "unit": "solver run",
+      "count": 512
+    },
+    "metrics": [
+      {
+        "name": "baseline replays",
+        "value": 64
+      },
+      {
+        "name": "path checks",
+        "value": 512
+      },
+      {
+        "name": "n9 2M base solved",
+        "value": 2
+      },
+      {
+        "name": "n9 2M long solved",
+        "value": 5
+      },
+      {
+        "name": "aggregate UNLEASH solved of64",
+        "value": 29
+      },
+      {
+        "name": "aggregate LONG solved of64",
+        "value": 27
+      },
+      {
+        "name": "aggregate BASE solved of64",
+        "value": 22
+      }
+    ],
+    "controls": [
+      "Original base",
+      "Local fixed leashes",
+      "Loss racing",
+      "Progress racing"
+    ],
+    "held_out": true,
+    "external_data": false,
+    "limitations": [
+      "Four cells share cases; not 64 independent samples. UNLEASH and n9 racing predictions failed; partial work model."
+    ],
+    "source": "https://github.com/anttiluode/ProofSearchExperiments/blob/main/results/rotation_regulator_summary.json"
+  },
+  {
+    "id": "nov27-quadratic-peel",
+    "node": "ProofSearchExperiments",
+    "claim": "Conditional exact stabilizer chart removes nine n9 degrees of freedom and reconstructs diagnostic witnesses.",
+    "design": "32 old cases × two peel depths; generic local analytic derivative checks.",
+    "result": "supports",
+    "motifs": [
+      "nov27-cost-of-reading-and-geometry"
+    ],
+    "sample": {
+      "unit": "witness-depth pair",
+      "count": 64
+    },
+    "metrics": [
+      {
+        "name": "n9 original dimension",
+        "value": 28
+      },
+      {
+        "name": "n9 peel2 dimension",
+        "value": 19
+      },
+      {
+        "name": "witness reconstructions",
+        "value": 64
+      },
+      {
+        "name": "generic audits",
+        "value": 256
+      },
+      {
+        "name": "max normalized witness error",
+        "value": 5.6375956534650054e-14
+      }
+    ],
+    "controls": [
+      "Frozen port chart",
+      "Conditional witness reconstruction",
+      "Central differences"
+    ],
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Extracted core matrix, not complete angular inverse; no global coverage or fresh solves."
+    ],
+    "source": "https://github.com/anttiluode/ProofSearchExperiments/blob/main/results/rotation_peel_summary.json"
+  },
+  {
+    "id": "nov27-frame-continuation",
+    "node": "ProofSearchExperiments",
+    "claim": "Retained local frames avoid the dynamic pivot discontinuity on sampled finite paths.",
+    "design": "100 length-.5 paths, 20 subdivisions, same local endpoints.",
+    "result": "supports",
+    "motifs": [
+      "nov27-cost-of-reading-and-geometry"
+    ],
+    "sample": {
+      "unit": "finite path",
+      "count": 100
+    },
+    "metrics": [
+      {
+        "name": "old switched paths",
+        "value": 84
+      },
+      {
+        "name": "old switch events",
+        "value": 170
+      },
+      {
+        "name": "old max adjacent jump",
+        "value": 0.8374386958264944
+      },
+      {
+        "name": "local max adjacent jump",
+        "value": 0.035534936869730235
+      },
+      {
+        "name": "local passes",
+        "value": 100
+      },
+      {
+        "name": "max rebase error",
+        "value": 2.7463411661780188e-15
+      }
+    ],
+    "controls": [
+      "Old max-pivot gauge",
+      "Dense derivative reference"
+    ],
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "Conditional local smoothness, finite samples, unbalanced size coverage."
+    ],
+    "source": "https://github.com/anttiluode/ProofSearchExperiments/blob/main/results/rotation_peel_fast_summary.json"
+  },
+  {
+    "id": "nov27-tier-economics",
+    "node": "ProofSearchExperiments",
+    "claim": "Tier-specific Lie derivatives reach approximate matched step cost parity but fail full-stage cost gate.",
+    "design": "64 old n9 PEEL2 endpoints per smooth/full stage; 256 derivative comparisons.",
+    "result": "mixed",
+    "motifs": [
+      "nov27-cost-of-reading-and-geometry"
+    ],
+    "sample": {
+      "unit": "matched endpoint per stage",
+      "count": 64
+    },
+    "metrics": [
+      {
+        "name": "tier derivative matches",
+        "value": 256
+      },
+      {
+        "name": "FIRST smooth median",
+        "value": 74900.5
+      },
+      {
+        "name": "tier smooth median",
+        "value": 74369
+      },
+      {
+        "name": "FIRST full median",
+        "value": 77220
+      },
+      {
+        "name": "tier full median",
+        "value": 78506.5
+      },
+      {
+        "name": "tier max derivative error",
+        "value": 3.4763858458575214e-14
+      }
+    ],
+    "controls": [
+      "FIRST same endpoint",
+      "Sparse pullback",
+      "Same residual and Cholesky"
+    ],
+    "held_out": false,
+    "external_data": false,
+    "limitations": [
+      "One-step partial ledger; no physical rotation/path comparison, no runtime or fresh solve advantage; topology split exploratory."
+    ],
+    "source": "https://github.com/anttiluode/ProofSearchExperiments/blob/main/results/rotation_peel_tier_summary.json"
   }
 ]

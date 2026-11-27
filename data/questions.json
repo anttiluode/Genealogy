@@ -2411,5 +2411,86 @@
         }
       ]
     }
+  },
+  {
+    "id": "nov27-symbolic-inheritance",
+    "title": "When does exact inherited structure remove more computation than its discovery costs?",
+    "state": "open",
+    "motifs": [
+      "nov27-shared-witness-reader",
+      "nov27-exact-structure-reuse"
+    ],
+    "evidence": [
+      "nov27-joint-witness",
+      "nov27-reader-cost",
+      "nov27-composable-macros",
+      "nov27-port-compilation",
+      "nov27-symbolic-reuse",
+      "nov27-fitness-transfer"
+    ],
+    "competing_explanations": [
+      "Reusable exact subprograms transfer across structural families and amortize discovery.",
+      "The bounded grammar and supplied invariants account for the savings, and specialized exact methods match or beat reuse.",
+      "Symbolic structural transfer succeeds but numerical conditioning does not transfer."
+    ],
+    "known": [
+      "Macro split-scan reduces modeled work on diagnostic replay; bounded triple44 reuse uses 120 candidates where flat searches cap at 200000.",
+      "Source fitness ranking fails to identify the best target chart."
+    ],
+    "missing_discriminator": "Independent support families and stronger specialized symbolic controls with complete development and execution costs.",
+    "candidate_experiment": {
+      "design": "Freeze grammar, source library and unseen support contracts; compare reuse, no-memory best-first, constructive classical methods and matched search with full accounting and certificate checks.",
+      "cost": "CPU, existing symbolic engine.",
+      "outcomes": [
+        {
+          "if": "Reuse earns back development cost on independent contracts",
+          "then": "Support transferable exact structure in this family."
+        },
+        {
+          "if": "Specialized construction ties or wins",
+          "then": "Limit claim to bounded grammar search acceleration."
+        }
+      ]
+    }
+  },
+  {
+    "id": "nov27-peel-economics",
+    "title": "Does exact internal constraint elimination improve complete numerical solves at matched cost?",
+    "state": "open",
+    "motifs": [
+      "nov27-cost-of-reading-and-geometry"
+    ],
+    "evidence": [
+      "nov27-trajectory-reader",
+      "nov27-false-death",
+      "nov27-quadratic-peel",
+      "nov27-frame-continuation",
+      "nov27-tier-economics"
+    ],
+    "competing_explanations": [
+      "Reduced dimension makes full trajectories cheaper or more successful despite derivative overhead.",
+      "Dependent frame work and conditioning offset the reduced dimension.",
+      "Benefits vary by actual derivative dependency structure, not dimension alone."
+    ],
+    "known": [
+      "All tested diagnostic witnesses reconstruct and local derivative audits pass; retained frame repairs sampled pivot jumps.",
+      "Tier smooth median slightly below FIRST, full median above; no fresh solve performance claim.",
+      "Gate14b seeds 85000–85031 remain unopened."
+    ],
+    "missing_discriminator": "Production path/rotation interlock and full matched-budget trajectory comparison on untouched cases.",
+    "candidate_experiment": {
+      "design": "Finish path reconstruction, rotation accounting and accepted/rejected local state handling; freeze controls and costs before comparing port-only and peel arms on fresh cases at 2M and 4M work. Report failures and runtime separately.",
+      "cost": "CPU Node.js; independent matrix path and response verification.",
+      "outcomes": [
+        {
+          "if": "Reduced chart improves paired solved cases at matched complete costs",
+          "then": "Support economical exact internal reduction on this family."
+        },
+        {
+          "if": "No gain or singular/conditioning failure",
+          "then": "Retain conditional geometry as a validated instrument; do not promote solver."
+        }
+      ]
+    }
   }
 ]
